@@ -311,7 +311,7 @@ body:after, body::after {
   user-select: none;
 }
 .typeWindows-15E0Ys .wordmark-2L03Wr:after, .typeWindows-15E0Ys .wordmark-2L03Wr::after {
-  content: "ClearVision v6-pre-16";
+  content: "ClearVision v6-pre-17";
   position: absolute;
   left: 100%;
   color: rgba(255, 255, 255, 0.7);
@@ -859,7 +859,7 @@ body:after, body::after {
   margin-bottom: 10px;
 }
 .channels-3g2vYe > .container-iksrDt:after, .channels-3g2vYe > .container-iksrDt::after {
-  content: "ClearVision v6-pre-16";
+  content: "ClearVision v6-pre-17";
   color: #fff;
   font-size: 11px;
   font-weight: 700;
