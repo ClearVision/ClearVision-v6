@@ -1,5 +1,5 @@
 {
-    "version": "6.0.0-pre-17",
+    "version": "6.0.0-pre-17b",
     "css": {
         "main": "https://gitlab.com/ClearVisionTesters/ClearVision/raw/ClearVision6/main.css",
         "settings": "https://zerthox.github.io/ClearVision/v6/settings.css"
