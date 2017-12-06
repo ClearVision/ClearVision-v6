@@ -50,10 +50,10 @@ class ClearVision {
 				r = fs.readFileSync(p).toString();
 			}
 			catch (e) {
-				s.src = "https://rawgit.com/Zerthox/985c6335da55492a36d243a3eb9051a4/raw/core.js";
+				s.src = "https://gitlab.com/ClearVisionTesters/ClearVision/raw/ClearVision6/core.js";
 			}
 			if (r === null) {
-				s.src = "https://rawgit.com/Zerthox/985c6335da55492a36d243a3eb9051a4/raw/core.js";
+				s.src = "https://gitlab.com/ClearVisionTesters/ClearVision/raw/ClearVision6/core.js";
 			}
 			else {
 				s.innerHTML = r;
