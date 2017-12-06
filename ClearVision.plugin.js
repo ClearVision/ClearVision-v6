@@ -27,6 +27,7 @@ class ClearVision {
 		if (!window.cvcore) {
 			var s = document.createElement("script");
 			s.type = "text/javascript";
+			s.id = "cvcore";
 			var r = null;
 			try {
 				var process = window.require("process"),
