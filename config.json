@@ -1,0 +1,23 @@
+{
+    "version": "6.0.0-pre-16",
+    "css": {
+        "main": "https://rawgit.com/Zerthox/985c6335da55492a36d243a3eb9051a4/raw/v6.css",
+        "settings": "https://zerthox.github.io/ClearVision/v6/settings.css"
+    },
+    "js": {
+        "core": "https://rawgit.com/Zerthox/985c6335da55492a36d243a3eb9051a4/raw/core.js"
+    },
+    "settings": {
+        "default": {
+            "main-color": "#2780e6",
+            "hover-color": "#1e63b3",
+            "online-color": "#43b581",
+            "idle-color": "#faa61a",
+            "dnd-color": "#982929",
+            "offline-color": "#808080",
+            "background-image": "https://zerthox.github.io/ClearVision/images/sapphire.jpg",
+            "background-brightness": "100%",
+            "background-blur": "0px"
+        }
+    }
+}
