@@ -1,13 +1,12 @@
 /* ClearVision Core by Zerthox */
 !function() {
-    var config = "https://gitlab.com/ClearVisionTesters/ClearVision/raw/ClearVision6/config.json";
+    var config = "https://rawgit.com/Zerthox/985c6335da55492a36d243a3eb9051a4/raw/config.json";
     var process = window.require("process"),
         fs = window.require("fs"),
         path = window.require("path"),
         rimraf = window.require("rimraf");
     window.cvcore = new class cvcore {
         constructor(config) {
-            var self = this;
             this.enabled = false;
             this.files = {
                 config: config
@@ -28,16 +27,16 @@
             }
             this.dir = path.resolve(dir, "ClearVision");
             this.storage = {
-                create: function() {
-                    if (!fs.existsSync(self.dir)) {
-                        fs.mkdirSync(self.dir);
+                create: () => {
+                    if (!fs.existsSync(this.dir)) {
+                        fs.mkdirSync(this.dir);
                     }
                 },
-                set: function(name, content) {
-                    this.create();
+                set: (name, content) => {
+                    this.storage.create();
                     var p = name.split(/[/\\]/g);
                     if (p.length > 1) {
-                        let c = self.dir;
+                        let c = this.dir;
                         for (var i = 0; i < p.length - 1; i++) {
                             c = path.resolve(c, p[i]);
                             if (!fs.existsSync(c)) {
@@ -45,48 +44,47 @@
                             }
                         }
                     }
-                    return fs.writeFileSync(path.resolve(self.dir, name), content);
+                    return fs.writeFileSync(path.resolve(this.dir, name), content);
                 },
-                get: function(name) {
+                get: name => {
                     try {
-                        return fs.readFileSync(path.resolve(self.dir, name)).toString();
+                        return fs.readFileSync(path.resolve(this.dir, name)).toString();
                     }
                     catch (e) {
                         return null;
                     }
                 },
-                delete: function(name) {
-                    return rimraf.sync(path.resolve(self.dir, name));
+                delete: name => {
+                    return rimraf.sync(path.resolve(this.dir, name));
                 },
-                list: function() {
-                    return fs.readdirSync(path.resolve(self.dir));
+                list: () => {
+                    return fs.readdirSync(path.resolve(this.dir));
                 }
             };
             this.storage.create();
             this.styles = [];
-            self.css = {
-                settings: self.storage.get("settings.css")
+            this.css = {
+                settings: this.storage.get("settings.css")
             };
             this.checkVersion();
         }
         enable() {
-            var self = this;
             this.clearCSS();
-            let c = this.storage.get("main.css");
-            function f() {
-                self.update();
-                self.enabled = true;
-                self.log("Enabled");
+            var c = this.storage.get("main.css");
+            var f = () => {
+                this.update();
+                this.enabled = true;
+                this.log("Enabled");
             }
             var s = (this.css.settings === null);
             if (c === null) {
-                this.fetch(self.files.css.main, function(r) {
-                    self.injectCSS("cv-main", r);
-                    self.storage.set("main.css", r);
+                this.fetch(this.files.css.main, r => {
+                    this.injectCSS("cv-main", r);
+                    this.storage.set("main.css", r);
                     if (s) {
-                        self.fetch(self.files.css.settings, function(r) {
-                            self.css.settings = r;
-                            self.storage.set("settings.css", r);
+                        this.fetch(this.files.css.settings, r => {
+                            this.css.settings = r;
+                            this.storage.set("settings.css", r);
                             f();
                         });
                     }
@@ -96,10 +94,10 @@
                 });
             }
             else if (s) {
-                self.injectCSS("cv-main", c);
-                self.fetch(self.files.css.settings, function(r) {
-                    self.css.settings = r;
-                    self.storage.set("settings.css", r);
+                this.injectCSS("cv-main", c);
+                this.fetch(this.files.css.settings, r => {
+                    this.css.settings = r;
+                    this.storage.set("settings.css", r);
                     f();
                 });
             }
@@ -110,7 +108,7 @@
         }
         disable() {
             this.clearCSS();
-            self.enabled = false;
+            this.enabled = false;
             this.log("Disabled");
         }
         update() {
@@ -127,32 +125,43 @@
             this.storage.set("config.json", JSON.stringify(o));
         }
         checkVersion() {
-            var self = this;
             var s = JSON.parse(this.storage.get("config.json"));
-            this.fetch(this.files.config, function(r) {
+            this.fetch(this.files.config, r => {
                 var r = JSON.parse(r);
-                self.version = r.version;
-                self.files.css = r.css;
-                self.files.js = r.js;
-                self.settings = {
+                this.version = r.version;
+                this.files.css = r.css;
+                this.files.js = r.js;
+                this.settings = {
                     default: r.settings.default,
                     user: s && s.settings && s instanceof Object ? s.settings.user : r.settings.default
                 };
-                if (self.version != (s &&s.version)) {
-                    self.storage.delete("");
-                    self.storage.create();
-                    self.fetch(self.files.js.core, function(r) {
-                        self.storage.set("core.js", r);
-                        self.fetch(self.files.css.main, function(r) {
-                            self.storage.set("main.css", r);
-                            self.fetch(self.files.css.settings, function(r) {
-                                self.storage.set("settings.css", r);
-                                if (self.enabled) {
-                                    self.disable();
-                                    self.enable();
+                if (this.version != (s &&s.version)) {
+                    this.storage.delete("");
+                    this.storage.create();
+                    this.fetch(this.files.js.core, r => {
+                        this.storage.set("core.js", r);
+                        this.fetch(this.files.css.main, r => {
+                            this.storage.set("main.css", r);
+                            this.fetch(this.files.css.settings, r => {
+                                this.storage.set("settings.css", r);
+                                let b = false;
+                                if (this.enabled) {
+                                    this.disable();
+                                    b = true;
                                 }
                                 else {
                                     this.save();
+                                }
+                                var e = document.createElement("script");
+                                e.type = "text/javascript";
+                                e.id = "cvcore";
+                                e.innerHTML = this.storage.get("core.js");
+                                let a = document.querySelectorAll("#cvcore");
+                                for (var i = 0; i < a.length; i++) {
+                                    a[i].remove();
+                                }
+                                if (b) {
+                                    window.cvcore.enable();
                                 }
                             });
                         });
@@ -238,14 +247,13 @@
             return r;
         }
         fetch(url, callback) {
-            var self = this,
-                r = null;
-            fetch(url).then(function(r) {
+            var r = null;
+            fetch(url).then(r => {
                 if (r.status === 200) {
                     return r.text();
                 }
                 else {
-                    function resolveStatus(c) {
+                    var resolveStatus = c => {
                         var r = `[${c}] `;
                         switch(c) {
                             case 0: {
@@ -265,7 +273,7 @@
                             }
                         }
                     }
-                    self.alert("ClearVision Error", `Error fetching data from server: ${resolveStatus(r.status)}`);
+                    this.alert("ClearVision Error", `Error fetching data from server: ${resolveStatus(r.status)}`);
                 }
             }).then(callback);
         }
@@ -294,12 +302,12 @@
                     </div>
                 </div>
             </div>`;
-            function toNode(html) {
+            var toNode = html => {
                 var d = document.createElement("div");
                 d.innerHTML = html;
                 return d.firstElementChild;
             }
-            function close() {
+            var close = () => {
                 target.innerHTML = "";
             }
             var b = toNode(`<div class="backdrop-2ohBEd" style="opacity: 0.85; background-color: rgb(0, 0, 0); transform: translateZ(0px);"></div>`);
