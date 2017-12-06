@@ -1,6 +1,6 @@
 /* ClearVision Core by Zerthox */
 !function() {
-    var config = "https://rawgit.com/Zerthox/985c6335da55492a36d243a3eb9051a4/raw/config.json";
+    var config = "https://gitlab.com/ClearVisionTesters/ClearVision/raw/ClearVision6/core.js";
     var process = window.require("process"),
         fs = window.require("fs"),
         path = window.require("path"),
