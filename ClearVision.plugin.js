@@ -24,6 +24,7 @@ class ClearVision {
 		return $('<div class="cv-container" style="display: flex;"></div>').append(html)[0];
 	}
 	constructor() {
+		var url = "https://clearvision.gitlab.io/v6/core.js";
 		if (!window.cvcore) {
 			var s = document.createElement("script");
 			s.type = "text/javascript";
@@ -51,10 +52,10 @@ class ClearVision {
 				r = fs.readFileSync(p).toString();
 			}
 			catch (e) {
-				s.src = "https://gitlab.com/ClearVisionTesters/ClearVision/raw/ClearVision6/core.js";
+				s.src = url;
 			}
 			if (r === null) {
-				s.src = "https://gitlab.com/ClearVisionTesters/ClearVision/raw/ClearVision6/core.js";
+				s.src = url;
 			}
 			else {
 				s.innerHTML = r;
