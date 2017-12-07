@@ -31,7 +31,7 @@ class ClearVision {
 			s.id = "cvcore";
 			var r = null;
 			try {
-				var process = window.require("process"),
+				const process = window.require("process"),
 					fs = window.require("fs"),
 					path = window.require("path");
 				let dir;
