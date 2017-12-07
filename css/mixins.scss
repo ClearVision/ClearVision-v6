@@ -1,0 +1,188 @@
+// Mixin Collection by Zerthox
+@mixin prefix($property, $value...) {
+	$p: if(length(prefixes) == 0, $prefixes, (webkit, moz, ms, o));
+	@if type-of($property) == map {
+		$prefixes: if($value, $value, $prefixes);
+		@each $k in map-keys($property) {
+			@each $e in $p {
+				#{'-' + $e + '-' + $k}: map-get($property, $k);
+			}
+			#{$k}: map-get($property, $k);
+		}
+	}
+	@else {
+		@each $e in $p {
+			#{'-' + $e + '-' + $property}: $value;
+		}
+		#{$property}: $value;
+	}
+}
+@mixin keyframes($a) {
+	@-webkit-keyframes #{$a} {
+		@content;
+	}
+	@-moz-keyframes #{$a} {
+		@content;
+	}
+	@-ms-keyframes #{$a} {
+		@content;
+	}
+	@-o-keyframes #{$a} {
+		@content;
+	}
+	@keyframes #{$a} {
+		@content;
+	}
+}
+@mixin bg($color: null, $image: null, $img: null, $size: null, $position: null, $pos: null, $repeat: null) {
+	$image: if($image, $image, $img);
+	$position: if($position, $position, $pos);
+	@if $color {
+		background-color: #{$color};
+	}
+	@if $image {
+		background-image: url(#{$image});
+	}
+	@if $size {
+		background-size: #{$size};
+	}
+	@if $position {
+		background-position: #{$position};
+	}
+	@if $repeat {
+		background-repeat: #{$repeat};
+	}
+}
+@mixin pseudo($a...) {
+	@each $p in $a {
+		&:#{$p},
+		&::#{$p} {
+			@content;
+		}
+	}
+}
+@mixin pos($top: null, $right: null, $bottom: null, $left: null) {
+    @if $top {
+        top: $top;
+    }
+    @if $right {
+        right: $right;
+    }
+    @if $bottom {
+        bottom: $bottom;
+    }
+    @if $left {
+        left: $left;
+    }
+}
+@mixin display-flex {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+@mixin flex-direction($a) {
+    -webkit-flex-direction: $a;
+    -ms-flex-direction: $a;
+    flex-direction: $a;
+}
+@mixin flex($a) {
+    -webkit-flex: $a;
+    -ms-flex: $a;
+    flex: $a;
+}
+@mixin flex-grow($a) {
+    -webkit-flex-grow: $a;
+    -ms-flex-grow: $a;
+    flex-grow: $a;
+}
+@mixin flex-shrink($a) {
+    -webkit-flex-shrink: $a;
+    -ms-flex-shrink: $a;
+    flex-shrink: $a;
+}
+@mixin flex-basis($a) {
+    -webkit-flex-basis: $a;
+    -ms-flex-basis: $a;
+    flex-basis: $a;
+}
+@mixin flex-wrap($a) {
+    -webkit-flex-wrap: $a;
+    -ms-flex-wrap: $a;
+    flex-wrap: $a;
+}
+@mixin justify-content($a) {
+    -webkit-justify-content: $a;
+    -ms-flex-pack: $a;
+    @if $a == start or $a == end {
+        justify-content: flex- + $a;
+    }
+    @else {
+        justify-content: $a;
+    }
+}
+@mixin align-items($a) {
+    -webkit-box-align: $a;
+    -ms-flex-align: $a;
+    @if $a == start or $a == end {
+        align-items: flex- + $a;
+    }
+    @else {
+        align-items: $a;
+    }
+}
+@mixin align-self($a) {
+    -webkit-align-self: $a;
+    -ms-align-self: $a;
+    align-self: $a;
+}
+@mixin transition($a...) {
+    -webkit-transition: $a;
+    -ms-transition: $a;
+    transition: $a;
+}
+@mixin animation($a...) {
+    -webkit-animation: $a;
+    animation: $a;
+}
+@mixin transform($a) {
+    -webkit-transform: $a;
+    -ms-transform: $a;
+    transform: $a;
+}
+@mixin box-shadow($a...) {
+    -webkit-box-shadow: $a;
+    box-shadow: $a;
+}
+@mixin filter($a) {
+    -webkit-filter: $a;
+    filter: $a;
+}
+@mixin user-select($a) {
+    -webkit-user-select: $a;
+    -moz-user-select: $a;
+    -ms-user-select: $a;
+    user-select: $a;
+}
+@mixin font($name, $url: null, $format: null, $weight: null, $style: null, $decoration: null) {
+    @font-face {
+        font-family: $name;
+        @if $url != null and $format != null {
+            src: url($url) format($format);
+        }
+        @else if $url != null {
+            src: url($url);
+        }
+        @else {
+            @content;
+        }
+        @if variable-exists(weight) {
+            font-weight: $weight;
+        }
+        @if variable-exists(style) {
+            font-style: $style;
+        }
+        @if variable-exists(decoration) {
+            font-decoration: $decoration;
+        }
+    }
+}
