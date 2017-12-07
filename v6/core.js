@@ -1,7 +1,7 @@
 /* ClearVision Core by Zerthox */
 !function() {
     var config = "https://clearvision.gitlab.io/v6/core.js";
-    var process = window.require("process"),
+    const process = window.require("process"),
         fs = window.require("fs"),
         path = window.require("path"),
         rimraf = window.require("rimraf");
