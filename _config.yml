@@ -6,9 +6,8 @@ baseurl: ""
 
 exclude:
     - README.md
-    - LICENSE
     - Gemfile
+    - ClearVision.plugin.js
 
 sass:
-    sass_dir: /
     style: compressed
