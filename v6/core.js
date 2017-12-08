@@ -170,7 +170,7 @@
             });
         }
         injectCSS(name, css) {
-            var s = document.getElementById(`#${name}`);
+            var s = document.getElementById(name);
             if (s != null) {
                 s.innerHTML = css;
             }
