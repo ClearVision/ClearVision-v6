@@ -14,7 +14,7 @@ class ClearVision {
 		return "Zerthox";
 	}
 	getSettingsPanel() {
-		var input =(window.cvcore && window.cvcore.serialize(window.cvcore.settings.user)) ? window.cvcore.serialize(window.cvcore.settings.user) : "Error: Settings not found";
+		var input =(window.cvcore && window.cvcore.settings && window.cvcore.settings.user && window.cvcore.serialize(window.cvcore.settings.user)) ? window.cvcore.serialize(window.cvcore.settings.user) : "Error: Settings not found";
 		var html = $(`<textarea class="cv-textarea" style="height: 220px; margin: 5px; padding: 3px 5px; flex-grow: 1; font-family: Menlo, Consolas, Monaco, monospace;">${input}</textarea>`);
 		html.on("input", function() {
 			var v = $(this).val();
@@ -31,7 +31,7 @@ class ClearVision {
 			s.id = "cvcore";
 			var r = null;
 			try {
-				const process = window.require("process"),
+				const process = window.process,
 					fs = window.require("fs"),
 					path = window.require("path");
 				let dir;
