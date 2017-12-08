@@ -226,9 +226,6 @@
                 s = s.replace("\n", "");
                 return s;
             }
-            else {
-                return undefined;
-            }
         }
         parse(settings) {
             var r = {};
