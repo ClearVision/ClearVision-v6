@@ -1,5 +1,33 @@
 ---
 ---
+// VARIABLES
+$version: "ClearVision v6-pre-19";
+$marks: (
+	BD Dev: 81388395867156480, // Jiiks
+	CV Dev: 144881947557101568, // Zerthox
+	CV Mod: (
+	    194151269399527425, // untuned
+	    66043140208857088 // tehbasshunter
+	),
+	Contrib: (
+		236579127090610176, // Danielle
+		97797564866236416 // w/
+	),
+	Donator: (
+		168551219135119361, // Auro
+		151995147150819328, // Kinghellish
+		78890013378486272, // Macpot
+		66214870705516544, // Lordmau5
+		107965218868457472, // Mudock Yatho
+		174525242939670528, // L. T. S.
+		387275388419833858 // Aetheryx
+	)
+);
+$green: #43b581;
+$red: #f04747;
+$dark-red: #a93d3d;
+$purple: #593695;
+
 // MIXINS
 @import "mixins.scss";
 
@@ -56,34 +84,6 @@
 // .radio-theme.dark label {
 // 	background-image: url(https://zerthox.github.io/ClearVision/images/sapphire.jpg) !important;
 // }
-
-// VARIABLES
-$version: "ClearVision v6-pre-18";
-$marks: (
-	BD Dev: 81388395867156480, // Jiiks
-	CV Dev: 144881947557101568, // Zerthox
-	CV Mod: (
-	    194151269399527425, // untuned
-	    66043140208857088 // tehbasshunter
-	),
-	Contrib: (
-		236579127090610176, // Danielle
-		97797564866236416 // w/
-	),
-	Donator: (
-		168551219135119361, // Auro
-		151995147150819328, // Kinghellish
-		78890013378486272, // Macpot
-		66214870705516544, // Lordmau5
-		107965218868457472, // Mudock Yatho
-		174525242939670528, // L. T. S.
-		387275388419833858 // Aetheryx
-	)
-);
-$green: #43b581;
-$red: #f04747;
-$dark-red: #a93d3d;
-$purple: #593695;
 
 // MARKS
 @each $e in map-keys($marks) {
