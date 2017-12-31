@@ -1,7 +1,7 @@
 ---
 ---
 // VARIABLES
-$version: "ClearVision v6-pre-19";
+$version: "ClearVision v6-pre-19b";
 $marks: (
 	BD Dev: 81388395867156480, // Jiiks
 	CV Dev: 144881947557101568, // Zerthox
@@ -11,7 +11,8 @@ $marks: (
 	),
 	Contrib: (
 		236579127090610176, // Danielle
-		97797564866236416 // w/
+		97797564866236416, // w/
+		150750980097441792 // Orangutan
 	),
 	Donator: (
 		168551219135119361, // Auro
@@ -20,7 +21,7 @@ $marks: (
 		66214870705516544, // Lordmau5
 		107965218868457472, // Mudock Yatho
 		174525242939670528, // L. T. S.
-		387275388419833858 // Aetheryx
+		284122164582416385 // Aetheryx
 	)
 );
 $green: #43b581;
@@ -58,32 +59,32 @@ $purple: #593695;
 }
 
 // TEST SETTINGS [REMOVE]
-// :root {
-// 	--main-color: #2780e6;
-// 	--hover-color: #1e63b3;
-// 	--background-blur: 0px;
-// 	--background-brightness: 100%;
-// 	--online-color: #43b581;
-// 	--idle-color: #faa61a;
-// 	--dnd-color: #982929;
-// 	--offline-color: #808080;
-// }
-// body:after,
-// body::after,
-// .callout-backdrop,
-// .userPopout-4pfA0d:before,
-// .userPopout-4pfA0d::before,
-// #user-profile-modal .header:before,
-// #user-profile-modal .header::before,
-// #pubs-container:before,
-// #pubs-container::before,
-// .auth-background,
-// .auth-tiling-bg,
-// .invite-modal .invite-splash,
-// .radio-theme.light label,
-// .radio-theme.dark label {
-// 	background-image: url(https://zerthox.github.io/ClearVision/images/sapphire.jpg) !important;
-// }
+:root {
+	--main-color: #2780e6;
+	--hover-color: #1e63b3;
+	--background-blur: 0px;
+	--background-brightness: 100%;
+	--online-color: #43b581;
+	--idle-color: #faa61a;
+	--dnd-color: #982929;
+	--offline-color: #808080;
+}
+body:after,
+body::after,
+.callout-backdrop,
+.userPopout-4pfA0d:before,
+.userPopout-4pfA0d::before,
+.root-2sNHUF:before,
+.root-2sNHUF::before,
+#pubs-container:before,
+#pubs-container::before,
+.auth-background,
+.auth-tiling-bg,
+.invite-modal .invite-splash,
+.radio-theme.light label,
+.radio-theme.dark label {
+	background-image: url(https://zerthox.github.io/ClearVision/images/sapphire.jpg) !important;
+}
 
 // MARKS
 @each $e in map-keys($marks) {
@@ -166,11 +167,10 @@ body {
 
 // TITLEBAR
 .typeWindows-15E0Ys {
-//   position: fixed;
   height: 18px;
   width: 100vw;
   margin: 0;
-  padding: 1.5px 0;
+  padding-top: 4px;
   background-color: rgba(0, 0, 0, .6);
 	.wordmark-2L03Wr {
 		opacity: 1;
@@ -234,6 +234,9 @@ body {
 				background-color: rgba(0, 0, 0, .5)!important;
 				@include prefix(box-shadow, 0 0 5px rgba(0, 0, 0, .5));
 				@include prefix(transition, transform .1s ease-in-out);
+				&:active {
+					@include prefix(transform, scale(.9));
+				}
 			}
 			.friends-icon {
 				@include prefix(transition, all .3s ease-in-out);
@@ -410,6 +413,9 @@ body {
 	.icon-3tVJnl {
 		opacity: .7 !important;
 		@include prefix(transition, all .15s ease-in-out);
+		path {
+			opacity: .3;
+		}
 	}
 	.iconSpacing-5GIHkT svg {
 		opacity: .3 !important;
@@ -420,7 +426,6 @@ body {
 	}
 	.content-2mSKOj .marginReset-1YolDJ path {
 		fill: #fff;
-		opacity: .3;
 		@include prefix(transition, all .15s ease-in-out);
 	}
 	// HOVER
@@ -911,6 +916,25 @@ body {
 					@include prefix(box-shadow, 0 0 3px var(--main-color));
 				}
 			}
+		}
+	}
+	// WELCOME STUFF
+	.welcome-message {
+		& > h1 {
+			color: var(--main-color);
+		}
+		& > .item-container {
+			& > .icon {
+				@include prefix(filter, grayscale(1));
+				opacity: .3;
+			}
+			& > p {
+				color: hsla(0, 0%, 100%, .5);
+			}
+		}
+		a {
+			color: var(--main-color) !important;
+			@include hover-shadow;
 		}
 	}
 }
