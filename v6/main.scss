@@ -1,7 +1,7 @@
 ---
 ---
 // VARIABLES
-$version: "ClearVision v6-pre-20";
+$version: "ClearVision v6-pre-20b";
 $marks: (
 	BD Dev: 81388395867156480, // Jiiks
 	CV Dev: 144881947557101568, // Zerthox
@@ -1310,8 +1310,8 @@ body {
 		}
 	}
 	// EMBEDS
-	.embed-wrapper {
-		.embed-color-pill {
+	.embed-2diOCQ {
+		.embedPill-3sYS1X {
 			opacity: .3;
 			border-radius: 0;
 			&:not([style*=background-color]) {
@@ -1319,16 +1319,17 @@ body {
 				opacity: 1;
 			}
 		}
-		.embed {
+		.embedInner-t4ag7g {
 			background-color: transparent;
 			border-color: transparent;
-			a[href] {
-				color: var(--main-color) !important;
+			.embedLink-2Cft4i {
+				color: var(--main-color);
 				@include hover-shadow;
 			}
-			.embed-video-actions {
-				.embed-video-actions-inner {
+			.embedVideoActionsInner-24mu2S {
+				& > .wrapper--CAL_v {
 					background: rgba(0, 0, 0, .5);
+					color: #fff;
 					@include prefix(box-shadow, inset 0 0 10px rgba(0, 0, 0, .5));
 				}
 			}
