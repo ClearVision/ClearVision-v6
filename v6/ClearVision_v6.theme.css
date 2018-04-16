@@ -18,13 +18,6 @@ body::after,
 .userPopout-11hFKo:before,
 .userPopout-11hFKo::before,
 .root-2sNHUF:before,
-.root-2sNHUF::before,
-#pubs-container:before,
-#pubs-container::before,
-.auth-background,
-.auth-tiling-bg,
-.invite-modal .invite-splash,
-.radio-theme.light label,
-.radio-theme.dark label {
+.root-2sNHUF::before {
 	background-image: url(https://zerthox.github.io/ClearVision/images/sapphire.jpg) !important;
 }
