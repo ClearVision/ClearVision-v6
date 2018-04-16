@@ -1,7 +1,7 @@
 ---
 ---
 // VARIABLES
-$version: "ClearVision v6-pre-20c";
+$version: "ClearVision v6-pre-21";
 $marks: (
 	BD Dev: 81388395867156480, // Jiiks
 	CV Dev: 144881947557101568, // Zerthox
@@ -79,14 +79,7 @@ body::after,
 .userPopout-11hFKo:before,
 .userPopout-11hFKo::before,
 .root-2sNHUF:before,
-.root-2sNHUF::before,
-#pubs-container:before,
-#pubs-container::before,
-.auth-background,
-.auth-tiling-bg,
-.invite-modal .invite-splash,
-.radio-theme.light label,
-.radio-theme.dark label {
+.root-2sNHUF::before {
 	background-image: url(https://zerthox.github.io/ClearVision/images/sapphire.jpg) !important;
 }
 
@@ -1326,6 +1319,9 @@ body {
 				color: var(--main-color);
 				@include hover-shadow;
 			}
+			.embedTitleLink-1IGDvg {
+				color: var(--main-color) !important;
+			}
 			.embedVideoActionsInner-24mu2S {
 				& > .wrapper--CAL_v {
 					background: rgba(0, 0, 0, .5);
@@ -1658,6 +1654,22 @@ body {
 		&:hover {
 			background-color: var(--hover-color) !important;
 		}
+	}
+}
+.lookFilled-luDKDo.colorGreen-22At8E {
+	background: var(--main-color);
+	@include prefix(transition, all .3s ease-in-out);
+	&:hover {
+		background: var(--hover-color);
+	}
+}
+.lookInverted-2lPGe7.colorBrand-3PmwCE {
+	background: hsla(0, 0%, 100%, .1);
+	color: hsla(0, 0%, 100%, .7);
+	@include prefix(transition, all .3s ease-in-out);
+	&:hover {
+		background: hsla(0, 0%, 100%, .2);
+		color: #fff;
 	}
 }
 
@@ -2254,6 +2266,80 @@ textarea {
 }
 .member-perms .member-perm {
 	cursor: default;
+}
+
+// USER PROFILE MODALS
+.root-2sNHUF {
+	@include pseudo(before) {
+		content: "";
+		position: absolute;
+		@include pos(-5px, -5px, -5px, -5px);
+		background-position: center;
+		@include prefix(filter, blur(3px));
+		z-index: -1;
+	}
+	& > .body-3_tdh6 {
+		background: rgba(0, 0, 0, .7);
+	}
+	& > .topSectionNormal-2LlRG1,
+	& > .topSectionPlaying-3jAH9b {
+		background: -webkit-linear-gradient(top, rgba(0, 0, 0, .3), rgba(0, 0, 0, .5));
+		background: linear-gradient(top, rgba(0, 0, 0, .3), rgba(0, 0, 0, .5));
+	}
+}
+.headerFill-TTyrtz {
+	background: rgba(0, 0, 0, .04);
+	& > .activityProfile-2pymp0,
+	& > .activityUserPopout-1nmgaw {
+		.headerText-2CVBxK {
+			color: hsla(0, 0%, 100%, .7);
+		}
+	}
+}
+.activityProfile-2pymp0 {
+	.nameNormal-1LgIgN {
+		color: var(--main-color);
+		@include prefix(text-shadow, 0 0 5px rgba(0, 0, 0, .5));
+		font-weight: 600;
+		& > .activityName-1L6vjN {
+			color: inherit;
+			&.bodyLink-rRVoAA:hover {
+				@include prefix(text-shadow, 0 0 5px rgba(0, 0, 0, .5), 0 0 1px);
+			}
+		}
+	}
+	.timestamp-3IDuMO {
+		font-style: italic;
+	}
+	.bodyLink-rRVoAA {
+		@include hover-shadow;
+	}
+}
+.tabBarContainer-3RVZc- {
+	border-color: hsla(0, 0%, 100%, .04);
+}
+.tab-bar.tabBar-2z50ux .tabBarItem-1Lg555 {
+	color: hsla(0, 0%, 100%, .5);
+	@include prefix(transition, all .2s ease-in-out);
+	&:hover {
+		color: hsla(0, 0%, 100%, .7);
+		border-color: hsla(0, 0%, 100%, .7);
+	}
+	&.selected {
+		border-color: var(--main-color);
+		color: var(--main-color);
+	}
+}
+.body-3_tdh6 {
+	.userInfoSection-2WJxMm + .userInfoSection-2WJxMm {
+		border-color: hsla(0, 0%, 100%, .04);
+	}
+}
+.connectedAccounts-3WWAND {
+	& > .connectedAccount-3mKaTA {
+		background-color: hsla(0, 0%, 100%, .04);
+		border-color: transparent;
+	}
 }
 
 // NOTICES
