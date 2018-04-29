@@ -14,10 +14,9 @@
 }
 body:after,
 body::after,
-.callout-backdrop,
-.userPopout-11hFKo:before,
-.userPopout-11hFKo::before,
-.root-2sNHUF:before,
-.root-2sNHUF::before {
+.userPopout-3XzG_A:before,
+.userPopout-3XzG_A::before,
+.root-SR8cQa:before,
+.root-SR8cQa::before {
 	background-image: url(https://zerthox.github.io/ClearVision/images/sapphire.jpg) !important;
 }
