@@ -1,0 +1,32 @@
+---
+---
+// MIXINS
+@import "mixins.scss";
+
+// COLOR SETTINGS
+:root {
+    --main-color: #{"$main-color"};
+    --hover-color: #{"$hover-color"};
+    --background-blur: #{"$background-brightness"};
+	--background-brightness: #{"$background-blur"};
+    --online-color: #{"$online-color"};
+	--idle-color: #{"$idle-color"};
+	--dnd-color: #{"$dnd-color"};
+	--offline-color: #{"$offline-color"};
+}
+
+// BACKGROUND SETTINGS
+%bg {
+    background-image: url(#{"$background-image"}) !important;
+}
+body {
+    @include pseudo(after) {
+        @extend %bg;
+    }
+}
+.userPopout-3XzG_A,
+.root-SR8cQa {
+	@include pseudo(before) {
+        @extend %bg;
+    }
+}
