@@ -2,6 +2,7 @@ image: ruby:2.3
 
 variables:
   JEKYLL_ENV: production
+  LANG: C.UTF-8
 
 before_script:
 - bundle install
