@@ -1,7 +1,7 @@
 ---
 ---
 // VARIABLES
-$version: "ClearVision v6-pre-23";
+$version: "ClearVision v6-pre-24";
 $marks: (
 	BD Dev: 81388395867156480, // Jiiks
 	CV Dev: 144881947557101568, // Zerthox
@@ -354,7 +354,7 @@ body {
 		}
 	}
 	.nameHovered-1gxhWH,
-	.nameHoveredCollapsed-2c-2orEWB, {
+	.nameHoveredCollapsed-2orEWB, {
 		color: hsla(0, 0%, 100%, .7);
 		@include pseudo(before, after) {
 			background-color: hsla(0, 0%, 100%, .7);
@@ -1312,8 +1312,9 @@ body {
 		.username-1cB_5E {
 			font-size: 14px;
 		}
-		.ownerIcon-uZ6mE7 > g > path {
-			fill: var(--main-color);
+		.ownerIcon-uZ6mE7 > g > path,
+		.activityIconForeground-qYIPPg {
+			fill: hsla(0, 0%, 100%, .4);
 		}
 		.activityText-sLG0UL {
 			& > strong {
@@ -2182,14 +2183,128 @@ textarea {
 	opacity: .3 !important;
 }
 
-// SETTINGS
+// SETTINGS SIDEBAR
+.ui-standard-sidebar-view {
+	@include clear;
+	.sidebar-region {
+		.sidebar {
+			height: 100%;
+			padding: 0px 6px 0px 20px;
+		}
+	}
+}
 .sidebar-region {
+	@include clear;
 	.sidebar-region-scroller {
 		margin-right: 8px;
 		&::-webkit-scrollbar {
 			width: 0 !important;
 		}
 	}
+	.scroller-2FKFPG {
+		margin: 30px 0;
+		@include prefix(mask-image, -webkit-linear-gradient(top,transparent 0%,#000 5%, #000 95%,transparent 100%));
+	}
+	.side-8zPYf6 {
+		padding: 30px 0;
+		.header-2RyJ0Y {
+			color: var(--main-color);
+		}
+		.item-PXvHYJ {
+			color: hsla(0, 0%, 100%, .3) !important;
+			padding: 8px 0 8px 20px;
+			margin: 0;
+			cursor: pointer;
+			@include prefix(transition, all .15s ease-in-out);
+			@include pseudo(before) {
+				opacity: .3;
+				@include prefix(transition, all .15s ease-in-out);
+			}
+			&:hover {
+				background-color: hsla(0, 0%, 100%, .07) !important;
+				color: hsla(0, 0%, 100%, .7) !important;
+				@include pseudo(before) {
+					opacity: .7;
+				}
+			}
+			&.itemSelected-1qLhcL {
+				background-color: var(--main-color) !important;
+				color: #fff !important;
+				@include pseudo(before) {
+					opacity: 1;
+				}
+			}
+			&[style*="color: rgb(240, 71, 71)"] {
+				background-color: rgba($red, .5) !important;
+				color: hsla(0, 0%, 100%, .5) !important;
+				@include pseudo(before) {
+					opacity: .5;
+				}
+				&:hover {
+					background-color: rgba($red, .7) !important;
+					color: hsla(0, 0%, 100%, 1) !important;
+					@include pseudo(before) {
+						opacity: 1;
+						@include prefix(transform, rotateY(180deg));
+					}
+				}
+			}
+		}
+		.separator-gCa7yv {
+			background-color: hsla(0, 0%, 100%, .04);
+		}
+	}
+}
+
+// BD SETTINGS SIDEBAR
+#bd-settings-sidebar {
+	.ui-tab-bar-header {
+		color: var(--main-color);
+		font-weight: 700;
+	}
+	.ui-tab-bar-item {
+		color: hsla(0, 0%, 100%, .3) !important;
+		padding: 8px 0 8px 20px;
+		margin: 0;
+		cursor: pointer;
+		@include prefix(transition, all .15s ease-in-out);
+			@include pseudo(before) {
+				opacity: .3;
+				@include prefix(transition, all .15s ease-in-out);
+			}
+		&:hover {
+			background-color: hsla(0, 0%, 100%, .07) !important;
+			color: hsla(0, 0%, 100%, .7) !important;
+			@include pseudo(before) {
+				opacity: .7;
+			}
+		}
+		&.selected {
+			background-color: var(--main-color) !important;
+			color: #fff !important;
+			@include pseudo(before) {
+				opacity: 1;
+			}
+		}
+	}
+	.ui-tab-bar-separator {
+		background-color: hsla(0, 0%, 100%, .04);
+	}
+	div[style] {
+		color: hsla(0, 0%, 100%, .3) !important;
+	}
+	a {
+		color: var(--main-color);
+		@include hover-shadow;
+	}
+}
+
+// SETTINGS ICONS
+@import "icons-settings.scss";
+
+// SETTINGS CONTENT
+.content-region {
+	@include clear;
 }
 
 // KEYFRAMES
