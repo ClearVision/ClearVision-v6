@@ -1,7 +1,7 @@
 ---
 ---
 // VARIABLES
-$version: "ClearVision v6-pre-24";
+$version: "ClearVision v6-pre-25";
 $marks: (
 	BD Dev: 81388395867156480, // Jiiks
 	CV Dev: 144881947557101568, // Zerthox
@@ -27,7 +27,14 @@ $marks: (
 		112619227466182656, // PieterVMB
 		251260900252712962, // viwalon
 		241500427105992704, // Ghost_Recon131
-		172426681800196096 // Luan San
+		172426681800196096, // Luan San
+		122731339890950145, // Lilith
+		245133485688225793, // Shadowcloud
+		109933711142719488, // SamTheGr8est
+		436228721033216009, // Hattyot
+		297873043265552384, // PureFallen
+		213263668312408066, // Nikolas
+		152431535914614785 // Paco
 	)
 );
 $green: #43b581;
@@ -87,31 +94,31 @@ body::after,
 }
 
 // MARKS
-@each $e in map-keys($marks) {
-	@each $v in map-get($marks, $e) {
-		[style*="#{$v}"] {
-			.message-group &.avatar-large + .comment .user-name {
-				@include pseudo(after) {
-					content: "#{$e}";
-					position: relative;
-					height: 14px;
-					padding: 1px 2px;
-					border-radius: 3px;
-					background: rgba(100, 100, 100, .3);
-					color: hsla(0, 0%, 100%, .6);
-					font-size: 10px;
-					text-align: center;
-					font-weight: 700;
-					line-height: 17px;
-					text-shadow: 0 0 1px rgba(0, 0, 0, .3);
-					text-transform: uppercase;
-					vertical-align: bottom;
-					margin-left: 6px;
-				}
-			}
-		}
-	}
-}
+// @each $e in map-keys($marks) {
+// 	@each $v in map-get($marks, $e) {
+// 		[style*="#{$v}"] {
+// 			.message-group &.avatar-large + .comment .user-name {
+// 				@include pseudo(after) {
+// 					content: "#{$e}";
+// 					position: relative;
+// 					height: 14px;
+// 					padding: 1px 2px;
+// 					border-radius: 3px;
+// 					background: rgba(100, 100, 100, .3);
+// 					color: hsla(0, 0%, 100%, .6);
+// 					font-size: 10px;
+// 					text-align: center;
+// 					font-weight: 700;
+// 					line-height: 17px;
+// 					text-shadow: 0 0 1px rgba(0, 0, 0, .3);
+// 					text-transform: uppercase;
+// 					vertical-align: bottom;
+// 					margin-left: 6px;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
 
 // GENERAL
 body {
@@ -188,25 +195,25 @@ body {
 }
 
 // GUILDS
-.guilds-wrapper {
+.guildsWrapper-5TJh6A {
 	@include clear;
 	@include prefix(box-shadow, inset -10px 0 20px -10px rgba(0, 0, 0, .2));
 	// GUILD LIST
-	.guilds {
-		.guild {
-			&.unread:not(.selected) {
+	.guilds-1q_RqH {
+		.guild-1EfMGQ {
+			&.unread-qLkInr:not(.selected-ML3OIq) {
 				@include pseudo(before) {
 					margin-top: -5px;
 				}
 			}
-			&.selected {
+			&.selected-ML3OIq {
 				@include pseudo(before) {
 					background: var(--main-color) !important;
 					@include prefix(animation, guild-select .5s cubic-bezier(.22, .61, .36, 1));
 				}
 			}
-			&.selected,
-			&.unread {
+			&.selected-ML3OIq,
+			&.unread-qLkInr {
 				@include pseudo(before) {
 					width: 13px;
 					left: -17px;
@@ -214,26 +221,31 @@ body {
 					@include prefix(transition, all .3s ease-in-out);
 				}
 			}
-			.guild-inner {
-				background-color: rgba(0, 0, 0, .5)!important;
+			.guildInner-3DSoA4 {
+				background-color: rgba(0, 0, 0, .5) !important;
 				@include prefix(box-shadow, 0 0 5px rgba(0, 0, 0, .5));
 				@include prefix(transition, transform .1s ease-in-out);
 				&:active {
 					@include prefix(transform, scale(.9));
 				}
 			}
-			&.audio .guild-inner {
+			&.audio-3vVhBi .guildInner-3DSoA4 {
 				@include pseudo(after) {
 					background-color: #000;
 					opacity: .7;
 				}
 			}
-			.friends-icon {
-				@include prefix(transition, all .3s ease-in-out);
-			}
-			&:hover .friends-icon,
-			&.active .friends-icon {
-				background-color: var(--main-color);
+			// HOME BUTTON
+			&:not(.da-guild) {
+				.guildInner-3DSoA4 {
+					@include prefix(transition, all .3s ease-in-out);
+				}
+				&:hover,
+				&.selected-ML3OIq {
+					.guildInner-3DSoA4 {
+						background-color: var(--main-color) !important;
+					}
+				}
 			}
 			.guilds-error {
 				background-color: rgba(0, 0, 0, .5);
@@ -243,7 +255,7 @@ body {
 					background-color: var(--main-color);
 				}
 			}
-			&.guilds-add {
+			&.guildsAdd-21_IdK {
 				background-color: rgba(0, 0, 0, .5);
 				opacity: .7;
 				@include prefix(transition, all .1s ease-in-out);
@@ -285,7 +297,7 @@ body {
 				}
 			}
 		}
-		.friends-online {
+		.friendsOnline-_wi_fM {
 			@include clear;
 			color: hsla(0, 0%, 100%, .7);
 			text-transform: uppercase;
@@ -301,9 +313,8 @@ body {
 		}
 	}
 	// SEPERATORS
-	.guild-separator,
-	.btn-download-apps,
-	.guild[separator] {
+	.guildSeparator-1X4GQ1,
+	.guild-1EfMGQ[separator] {
 		@include pseudo(after) {
 			background-color: hsla(0, 0%, 100%, .2);
 		}
@@ -741,12 +752,15 @@ body {
 }
 
 // CHAT
-.chat {
+.chat-3bRxxu {
 	@include clear;
-	.content {
+	.content-yTz4x3 {
 		@include clear;
 		.flex-spacer {
 			background-color: rgba(0, 0, 0, .6) !important;
+		}
+		.messagesWrapper-3lZDfY {
+			@include clear;
 		}
 	}
 	.titleWrapper-1l0xT9 {
@@ -754,11 +768,11 @@ body {
 			background-color: rgba(0, 0, 0, .7) !important;
 		}
 	}
-	.user-name {
+	.username-_4ZSMR {
 		@include hover-shadow;
 	}
 	// NEW MESSAGES BAR
-	.new-messages-bar {
+	.newMessagesBar-mujexs {
 		@include clear;
 		@include prefix(transition, all .15s ease-in-out);
 		@include pseudo(before) {
@@ -787,7 +801,7 @@ body {
 		}
 	}
 	// JUMP TO PRESENT BAR
-	.jump-to-present-bar {
+	.jumpToPresentBar-9P20AM {
 		background-color: rgba(0, 0, 0, .7) !important;
 		@include prefix(transition, all .15s ease-in-out);
 		&:hover,
@@ -806,7 +820,7 @@ body {
 		}
 	}
 	// LOAD MORE MESSAGES BNUTTON
-	.has-more {
+	.hasMore-3e72_v {
 		& > button {
 			background-color: rgba(0, 0, 0, .5) !important;
 			color: var(--main-color);
@@ -814,14 +828,14 @@ body {
 		}
 	}
 	// DIVIDERS
-	.divider {
+	.divider-3gKybi {
 		margin: 10px 6px 10px 20px;
 		@include pseudo(before) {
 			@include clear;
 		}
 
-		&.divider-red {
-			& + .divider {
+		&.dividerRed-MKoLlr {
+			& + .divider-3gKybi {
 				margin-top: 40px;
 			}
 			& > span {
