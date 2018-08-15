@@ -1,0 +1,62 @@
+/*! Using Discord Selectors v15-08-18 by Zerthox */
+
+// GUILDS
+.guildsWrapper-5TJh6A {
+    @extend %guildsWrapper !optional;
+}
+.guilds-1q_RqH {
+    @extend %guilds !optional;
+}
+.guild-1EfMGQ {
+    @extend %guild !optional;
+}
+.unread-qLkInr {
+    @extend %guildUnread !optional;
+}
+.selected-ML3OIq {
+    @extend %guildSelected !optional;
+}
+.audio-3vVhBi {
+    @extend %guildAudio !optional;
+}
+.guildInner-3DSoA4 {
+    @extend %guildInner !optional;
+}
+.guildsAdd-21_IdK {
+    @extend %guildsAdd !optional;
+}
+.friendsOnline-_wi_fM {
+    @extend %friendsOnline !optional;
+}
+.guildSeparator-1X4GQ1,
+%guild[separator] {
+    @extend %guildSeprator !optional;
+}
+
+// CHANNELS
+.channels-Ie2l6A {
+    @extend %channels !optional;
+}
+
+// CHAT
+.container-1YxwTf {
+    @extend %messageGroup !optional;
+}
+.markup-2BOw-j {
+    @extend %markup !optional;
+}
+
+// BADGE
+.wrapper-232cHJ {
+    @extend %badge !optional;
+}
+
+// USER POPOUT
+.userPopout-3XzG_A {
+    @extend %userPopout !optional;
+}
+
+// USER MODAL
+.root-SR8cQa {
+    @extend %userModal !optional;
+}
