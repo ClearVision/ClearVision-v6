@@ -1,7 +1,7 @@
 ---
 ---
 // VARIABLES
-$version: "ClearVision v6-pre-25";
+$version: "ClearVision v6-pre-26";
 $marks: (
 	BD Dev: 81388395867156480, // Jiiks
 	CV Dev: 144881947557101568, // Zerthox
@@ -73,6 +73,9 @@ $purple: #593695;
 
 /*! ClearVision #{$version} by Zerthox */
 
+// SELECTORS
+@import "selectors.scss";
+
 // TEST SETTINGS [REMOVE]
 :root {
 	--main-color: #2780e6;
@@ -86,10 +89,10 @@ $purple: #593695;
 }
 body:after,
 body::after,
-.userPopout-3XzG_A:before,
-.userPopout-3XzG_A::before,
-.root-SR8cQa:before,
-.root-SR8cQa::before {
+%userPopout:before,
+%userPopout::before,
+%userModal:before,
+%userModal::before {
 	background-image: url(https://zerthox.github.io/ClearVision/images/sapphire.jpg) !important;
 }
 
@@ -195,109 +198,107 @@ body {
 }
 
 // GUILDS
-.guildsWrapper-5TJh6A {
+%guildsWrapper {
 	@include clear;
 	@include prefix(box-shadow, inset -10px 0 20px -10px rgba(0, 0, 0, .2));
 	// GUILD LIST
-	.guilds-1q_RqH {
-		.guild-1EfMGQ {
-			&.unread-qLkInr:not(.selected-ML3OIq) {
-				@include pseudo(before) {
-					margin-top: -5px;
-				}
+	%guilds {
+		%guildUnread {
+			@include pseudo(before) {
+				margin-top: -5px;
 			}
-			&.selected-ML3OIq {
-				@include pseudo(before) {
-					background: var(--main-color) !important;
-					@include prefix(animation, guild-select .5s cubic-bezier(.22, .61, .36, 1));
-				}
+		}
+		%guildSelected {
+			@include pseudo(before) {
+				background: var(--main-color) !important;
+				margin-top: -20px;
+				@include prefix(animation, guild-select .5s cubic-bezier(.22, .61, .36, 1));
 			}
-			&.selected-ML3OIq,
-			&.unread-qLkInr {
-				@include pseudo(before) {
-					width: 13px;
-					left: -17px;
-					background: var(--main-color) !important;
-					@include prefix(transition, all .3s ease-in-out);
-				}
-			}
-			.guildInner-3DSoA4 {
-				background-color: rgba(0, 0, 0, .5) !important;
-				@include prefix(box-shadow, 0 0 5px rgba(0, 0, 0, .5));
-				@include prefix(transition, transform .1s ease-in-out);
-				&:active {
-					@include prefix(transform, scale(.9));
-				}
-			}
-			&.audio-3vVhBi .guildInner-3DSoA4 {
-				@include pseudo(after) {
-					background-color: #000;
-					opacity: .7;
-				}
-			}
-			// HOME BUTTON
-			&:not(.da-guild) {
-				.guildInner-3DSoA4 {
-					@include prefix(transition, all .3s ease-in-out);
-				}
-				&:hover,
-				&.selected-ML3OIq {
-					.guildInner-3DSoA4 {
-						background-color: var(--main-color) !important;
-					}
-				}
-			}
-			.guilds-error {
-				background-color: rgba(0, 0, 0, .5);
-				border-color: var(--main-color);
+		}
+		%guildSelected,
+		%guildUnread {
+			@include pseudo(before) {
+				width: 13px;
+				left: -17px;
+				background: var(--main-color) !important;
 				@include prefix(transition, all .3s ease-in-out);
-				&:hover {
-					background-color: var(--main-color);
-				}
 			}
-			&.guildsAdd-21_IdK {
-				background-color: rgba(0, 0, 0, .5);
+		}
+		%guildInner {
+			background-color: rgba(0, 0, 0, .5) !important;
+			@include prefix(box-shadow, 0 0 5px rgba(0, 0, 0, .5));
+			@include prefix(transition, transform .1s ease-in-out);
+			&:active {
+				@include prefix(transform, scale(.9));
+			}
+		}
+		&%guildAudio %guildInner {
+			@include pseudo(after) {
+				background-color: #000;
 				opacity: .7;
-				@include prefix(transition, all .1s ease-in-out);
-				&:hover {
-					color: var(--main-color);
-					border-color: var(--main-color);
-					@include prefix(animation, pulsate-border 2s infinite ease-in-out);
-					@include pseudo(before, after) {
-						background-color: var(--main-color) !important;
-						@include prefix(animation, pulsate-color 2s infinite ease-in-out);
-					}
-				}
-				&:active {
-					@include prefix(transform, scale(.9));
-				}
-				span {
-					display: none;
-				}
-				@include pseudo(before, after) {
-					content: "";
-					position: absolute;
-					background-color: #333539;
-					border-radius: 3px;
-					@include prefix(transition, all .1s ease-in-out);
-				}
-				@include pseudo(before) {		
-					width: 2px;
-					top: 25%;
-					bottom: 25%;
-					left: 50%;
-					@include prefix(transform, translateX(-50%));
-				}
-				@include pseudo(after) {
-					height: 2px;
-					top: 50%;
-					right: 25%;
-					left: 25%;
-					@include prefix(transform, translateY(-50%));
+			}
+		}
+		%guild:not(.da-guild) {
+			%guildInner {
+				@include prefix(transition, background-color .3s ease-in-out);
+			}
+			&:hover,
+			&%selected {
+				%guildInner {
+					background-color: var(--main-color) !important;
 				}
 			}
 		}
-		.friendsOnline-_wi_fM {
+		.guilds-error {
+			background-color: rgba(0, 0, 0, .5);
+			border-color: var(--main-color);
+			@include prefix(transition, all .3s ease-in-out);
+			&:hover {
+				background-color: var(--main-color);
+			}
+		}
+		%guildsAdd {
+			background-color: rgba(0, 0, 0, .5);
+			opacity: .7;
+			@include prefix(transition, all .1s ease-in-out);
+			&:hover {
+				color: var(--main-color);
+				border-color: var(--main-color);
+				@include prefix(animation, pulsate-border 2s infinite ease-in-out);
+				@include pseudo(before, after) {
+					background-color: var(--main-color) !important;
+					@include prefix(animation, pulsate-color 2s infinite ease-in-out);
+				}
+			}
+			&:active {
+				@include prefix(transform, scale(.9));
+			}
+			span {
+				display: none;
+			}
+			@include pseudo(before, after) {
+				content: "";
+				position: absolute;
+				background-color: #333539;
+				border-radius: 3px;
+				@include prefix(transition, all .1s ease-in-out);
+			}
+			@include pseudo(before) {		
+				width: 2px;
+				top: 25%;
+				bottom: 25%;
+				left: 50%;
+				@include prefix(transform, translateX(-50%));
+			}
+			@include pseudo(after) {
+				height: 2px;
+				top: 50%;
+				right: 25%;
+				left: 25%;
+				@include prefix(transform, translateY(-50%));
+			}
+		}
+		%friendsOnline {
 			@include clear;
 			color: hsla(0, 0%, 100%, .7);
 			text-transform: uppercase;
@@ -308,13 +309,12 @@ body {
 				color: #fff;
 			}
 		}
-		.badge {
+		%badge {
 			@include prefix(animation, badge 1s ease-in-out infinite alternate);
 		}
 	}
 	// SEPERATORS
-	.guildSeparator-1X4GQ1,
-	.guild-1EfMGQ[separator] {
+	%guildSeparator {
 		@include pseudo(after) {
 			background-color: hsla(0, 0%, 100%, .2);
 		}
@@ -322,7 +322,7 @@ body {
 }
 
 // CHANNELS
-.channels-Ie2l6A {
+%channels {
 	background-color: rgba(0, 0, 0, .35) !important;
 	width: 220px;
 	// CHANNELS CONTAINER
@@ -591,9 +591,8 @@ body {
 			right: 0;
 			opacity: .3;
 		}
-		.avatar-small {
+		.wrapper-2F3Zv8 {
 			position: relative;
-			@include bg($size: 100%, $repeat: no-repeat);
 			@include prefix(transition, all .15s ease-in-out);
 			@include pseudo(after) {
 				content: "Status";
@@ -610,6 +609,7 @@ body {
 				@include prefix(box-shadow, inset 0 0 70px rgba(0, 0, 0, .75));
 				opacity: 0;
 				@include prefix(transition, all .15s ease-in-out);
+				pointer-events: none;
 			}
 			&:hover {
 				@include pseudo(after) {
@@ -624,6 +624,14 @@ body {
 					font-size: 10px;
 					line-height: 45px;
 				}
+				.avatar-3JE4B3 {
+					width: 45px;
+					height: 45px;
+				}
+			}
+			.avatar-3JE4B3 {
+				@include bg($size: 100%, $repeat: no-repeat);
+				@include prefix(transition, all .15s ease-in-out);
 			}
 			.status {
 				top: 90%;
@@ -1621,7 +1629,7 @@ textarea {
 
 // BADGES
 .badge,
-.wrapper-232cHJ {
+%badge {
 	background-color: var(--main-color) !important;
 	color: #fff !important;
 	padding: 3px 5px;
@@ -1636,7 +1644,7 @@ textarea {
 	}
 }
 .contentSelectedText-3wUhMi {
-	.wrapper-232cHJ {
+	%badge {
 		background-color: #fff !important;
 		color: var(--main-color) !important;
 	}
@@ -1854,7 +1862,7 @@ textarea {
 }
 
 // USER POPOUTS
-.userPopout-3XzG_A {
+%userPopout {
 	position: relative;
 	border-radius: 5px;
 	@include prefix(box-shadow, 0 2px 10px 0 rgba(0, 0, 0, .2));
@@ -2077,7 +2085,7 @@ textarea {
 }
 
 // USER PROFILE MODALS
-.root-SR8cQa {
+%userModal {
 	@include pseudo(before) {
 		content: "";
 		position: absolute;
