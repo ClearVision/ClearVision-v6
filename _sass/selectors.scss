@@ -1,4 +1,9 @@
-/*! Using Discord Selectors v15-08-18 by Zerthox */
+/*! Using Discord Selectors v17-08-18 by Zerthox */
+
+// GENERAL
+.flex-1O1GKY {
+    @extend %flex !optional;
+}
 
 // GUILDS
 .guildsWrapper-5TJh6A {
@@ -30,12 +35,317 @@
 }
 .guildSeparator-1X4GQ1,
 %guild[separator] {
-    @extend %guildSeprator !optional;
+    @extend %guildSeparator !optional;
 }
 
 // CHANNELS
 .channels-Ie2l6A {
     @extend %channels !optional;
+}
+.container-PNkimc {
+    @extend %channelsContainer !optional;
+}
+// Categories
+.containerDefault-3GGEv_ {
+    @extend %categoryContainer !optional;
+    @extend %categoryContainerDefault !optional;
+}
+.containerDragAfter-3TEhpe {
+    @extend %categoryContainer !optional;
+    @extend %categoryContainerDrag !optional;
+    @extend %categoryContainerDragAfter !optional;
+}
+.containerDragBefore-3Dzc5x {
+    @extend %categoryContainer !optional;
+    @extend %categoryContainerDrag !optional;
+    @extend %categoryContainerDragBefore !optional;
+}
+.containerUserOver-1Tcb7l {
+    @extend %categoryContainer !optional;
+    @extend %categoryContainerUserOver !optional;
+}
+.wrapperDefault-10Jfvz {
+    @extend %categoryWrapper !optional;
+    @extend %categoryWrapperDefault !optional;
+}
+.wrapperCollapsed-3Fbxl6 {
+    @extend %categoryWrapper !optional;
+    @extend %categoryWrapperCollapsed !optional;
+}
+.wrapperHovered-28fu1D {
+    @extend %categoryWrapper !optional;
+    @extend %categoryWrapperHovered !optional;
+}
+.wrapperHoveredCollapsed-1PADEo {
+    @extend %categoryWrapper !optional;
+    @extend %categoryWrapperHoveredCollapsed !optional;
+}
+.wrapperMuted-3KeA2M {
+    @extend %categoryWrapper !optional;
+    @extend %categoryWrapperMuted !optional;
+}
+.wrapperUnread-1JPWj3 {
+    @extend %categoryWrapper !optional;
+    @extend %categoryWrapperUnread !optional;
+}
+.iconDefault-3Gr8d2 {
+    @extend %categoryIcon !optional;
+    @extend %categoryIconDefault !optional;
+}
+.iconCollapsed-3hFp_8 {
+    @extend %categoryIcon !optional;
+    @extend %categoryIconCollapsed !optional;
+}
+.iconHovered-2L3-fB {
+    @extend %categoryIcon !optional;
+    @extend %categoryIconHovered !optional;
+}
+.iconHoveredCollapsed-3caIIZ {
+    @extend %categoryIcon !optional;
+    @extend %categoryIconHoveredCollapsed !optional;
+}
+.iconMuted-1HVBGH {
+    @extend %categoryIcon !optional;
+    @extend %categoryIconMuted !optional;
+}
+.directionRight-O8AY4M {
+    @extend %categoryIconMutedCollapsed !optional;
+}
+.iconUnread-2eGkvX {
+    @extend %categoryIcon !optional;
+    @extend %categoryIconUnread !optional;
+}
+.nameDefault-2DI02H {
+    @extend %categoryName !optional;
+    @extend %categoryNameDefault !optional;
+}
+.nameCollapsed-34uFWo {
+    @extend %categoryName !optional;
+    @extend %categoryNameCollapsed !optional;
+}
+.nameHovered-1gxhWH {
+    @extend %categoryName !optional;
+    @extend %categoryNameHovered !optional;
+}
+.nameHoveredCollapsed-2orEWB {
+    @extend %categoryName !optional;
+    @extend %categoryNameHoveredCollapsed !optional;
+}
+.nameMuted-1MCOt4 {
+    @extend %categoryName !optional;
+    @extend %categoryNameMuted !optional;
+}
+.nameUnread-njOjIS {
+    @extend %categoryName !optional;
+    @extend %categoryNameUnread !optional;
+}
+// Voice & Text Channels
+.containerDefault-1ZnADq {
+    @extend %channelContainer !optional;
+    @extend %channelContainerDefault !optional;
+}
+.containerDragAfter-1F4fgZ {
+    @extend %channelContainer !optional;
+    @extend %channelContainerDrag !optional;
+    @extend %channelContainerDragAfter !optional;
+}
+.containerDragBefore-31UGCO {
+    @extend %channelContainer !optional;
+    @extend %channelContainerDrag !optional;
+    @extend %channelContainerDragBefore !optional;
+}
+.containerUserOver-1U5YnL {
+    @extend %channelContainer !optional;
+    @extend %channelContainerUserOver !optional;
+}
+.content-20Aix8 {
+    @extend %channelContent !optional;
+}
+.contentDefaultText-3vZplL {
+    @extend %channelContentText !optional;
+    @extend %channelContentDefault !optional;
+    @extend %channelContentDefaultText !optional;
+}
+.contentHoveredText-2D9B-x {
+    @extend %channelContentText !optional;
+    @extend %channelContentHovered !optional;
+    @extend %channelContentHoveredText !optional;
+}
+.contentLockedText-1aHuz8 {
+    @extend %channelContentText !optional;
+    @extend %channelContentLocked !optional;
+    @extend %channelContentLockedText !optional;
+}
+.contentMutedText-2y6aPQ {
+    @extend %channelContentText !optional;
+    @extend %channelContentMuted !optional;
+    @extend %channelContentMutedText !optional;
+}
+.contentSelectedText-3wUhMi {
+    @extend %channelContentText !optional;
+    @extend %channelContentSelected !optional;
+    @extend %channelContentSelectedText !optional;
+}
+.contentUnreadText-2vNnZc {
+    @extend %channelContentText !optional;
+    @extend %channelContentUnread !optional;
+    @extend %channelContentUnreadText !optional;
+}
+.contentDefaultVoice-2ko43i {
+    @extend %channelContentVoice !optional;
+    @extend %channelContentDefault !optional;
+    @extend %channelContentDefaultVoice !optional;
+}
+.contentHoveredVoice-3p_NEO {
+    @extend %channelContentVoice !optional;
+    @extend %channelContentHovered !optional;
+    @extend %channelContentHoveredVoice !optional;
+}
+.contentLockedVoice-1gx-SP {
+    @extend %channelContentVoice !optional;
+    @extend %channelContentLocked !optional;
+    @extend %channelContentLockedVoice !optional;
+}
+.contentMutedVoice-2lJ0UD {
+    @extend %channelContentVoice !optional;
+    @extend %channelContentMuted !optional;
+    @extend %channelContentMutedVoice !optional;
+}
+.contentSelectedVoice-1WDIBM {
+    @extend %channelContentVoice !optional;
+    @extend %channelContentSelected !optional;
+    @extend %channelContentSelectedVoice !optional;
+}
+.contentUnreadVoice-1dijOt {
+    @extend %channelContentVoice !optional;
+    @extend %channelContentUnread !optional;
+    @extend %channelContentUnreadVoice !optional;
+}
+.name-3M0b8v {
+    @extend %channelName !optional;
+}
+.nameDefaultText-24KCy5 {
+    @extend %channelNameText !optional;
+    @extend %channelNameDefault !optional;
+    @extend %channelNameDefaultText !optional;
+}
+.nameConnectedText-3CzNQn {
+    @extend %channelNameText !optional;
+    @extend %channelNameConnected !optional;
+    @extend %channelNameConnectedText !optional;
+}
+.nameHoveredText-1uO31y {
+    @extend %channelNameText !optional;
+    @extend %channelNameHovered !optional;
+    @extend %channelNameHoveredText !optional;
+}
+.nameLockedText-3pqQcL {
+    @extend %channelNameText !optional;
+    @extend %channelNameLocked !optional;
+    @extend %channelNameLockedText !optional;
+}
+.nameMutedText-3Vj4bM {
+    @extend %channelNameText !optional;
+    @extend %channelNameMuted !optional;
+    @extend %channelNameMutedText !optional;
+}
+.nameSelectedText-sp_EUw {
+    @extend %channelNameText !optional;
+    @extend %channelNameSelected !optional;
+    @extend %channelNameSelectedText !optional;
+}
+.nameUnreadText-DfkrI4 {
+    @extend %channelNameText !optional;
+    @extend %channelNameUnread !optional;
+    @extend %channelNameUnreadText !optional;
+}
+.nameDefaultVoice-3WUH7s {
+    @extend %channelNameVoice !optional;
+    @extend %channelNameDefault !optional;
+    @extend %channelNameDefaultVoice !optional;
+}
+.nameConnectedVoice-MHUX5F {
+    @extend %channelNameVoice !optional;
+    @extend %channelNameConnected !optional;
+    @extend %channelNameConnectedVoice !optional;
+}
+.nameHoveredVoice-YJ1Vfd {
+    @extend %channelNameVoice !optional;
+    @extend %channelNameHovered !optional;
+    @extend %channelNameHoveredVoice !optional;
+}
+.nameLockedVoice-26MhB1 {
+    @extend %channelNameVoice !optional;
+    @extend %channelNameLocked !optional;
+    @extend %channelNameLockedVoice !optional;
+}
+.nameMutedVoice-3oxyQZ {
+    @extend %channelNameVoice !optional;
+    @extend %channelNameMuted !optional;
+    @extend %channelNameMutedVoice !optional;
+}
+.nameSelectedVoice-1qSph5 {
+    @extend %channelNameVoice !optional;
+    @extend %channelNameSelected !optional;
+    @extend %channelNameSelectedVoice !optional;
+}
+.nameUnreadVoice-EVo-wI {
+    @extend %channelNameVoice !optional;
+    @extend %channelNameUnread !optional;
+    @extend %channelNameUnreadVoice !optional;
+}
+.icon-sxakjD {
+    @extend %channelIcon !optional;
+}
+.actionIcon-2Hi9ZG {
+    @extend %channelActionIcon !optional;
+}
+.unread-1Dp-OI {
+    @extend %channelUnreadIndicator !optional;
+}
+// Voice Channel
+.draggable-1KoBzC {
+    @extend %voiceUser !optional;
+}
+.avatarDefault-35WC3R {
+    @extend %voiceUserAvatar !optional;
+    @extend %voiceUserAvatarDefault !optional;
+}
+.avatarSpeaking-1wJCNq {
+    @extend %voiceUserAvatar !optional;
+    @extend %voiceUserAvatarSpeaking !optional;
+}
+// Account Container
+.container-2Thooq {
+    @extend %accountContainer !optional;
+}
+.wrapper-2F3Zv8 {
+    @extend %accountContainerAvatarWrapper !optional;
+}
+.avatar-3JE4B3 {
+    @extend %accountContainerAvatar !optional;
+}
+%accountContainer > %flex {
+    @extend %accountContainerButtonWrapper !optional;
+}
+.button-2b6hmh {
+    @extend %accountContainerButton !optional;
+}
+.iconButton-3V4WS5 {
+    @extend %accountContainerIconButton !optional;
+}
+// Connection Container
+.container-1UB9sr {
+    @extend %connectionContainer !optional;
+}
+%connectionContainer > %flex {
+    @extend %connectionContainerButtonWrapper !optional;
+}
+.button-2KyEfG {
+    @extend %connectionContainerButton !optional;
+}
+.buttonDisconnect-3W_SJc {
+    @extend %connectionContainerButtonDisconnect !optional;
 }
 
 // CHAT
