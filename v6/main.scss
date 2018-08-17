@@ -1,7 +1,7 @@
 ---
 ---
 // VARIABLES
-$version: "ClearVision v6-pre-26";
+$version: "ClearVision v6-pre-2.2";
 $marks: (
 	BD Dev: 81388395867156480, // Jiiks
 	CV Dev: 144881947557101568, // Zerthox
@@ -326,27 +326,17 @@ body {
 	background-color: rgba(0, 0, 0, .35) !important;
 	width: 220px;
 	// CHANNELS CONTAINER
-	& > .container-PNkimc {
+	& > %channelsContainer {
 		@include clear;
 	}
 	// CHANNEL CATEGORIES
-	.wrapperMuted-3KeA2M { 
+	%categoryWrapperMuted { 
 		opacity: .5;
 	}
-	.iconDefault-3Gr8d2,
-	.iconHovered-2L3-fB,
-	.iconCollapsed-3hFp_8,
-	.iconHoveredCollapsed-3caIIZ,
-	.iconMuted-1HVBGH,
-	.iconUnread-2eGkvX {
+	%categoryIcon {
 		display: none;
 	}
-	.nameDefault-2DI02H,
-	.nameHovered-1gxhWH,
-	.nameCollapsed-34uFWo,
-	.nameHoveredCollapsed-2orEWB,
-	.nameMuted-1MCOt4,
-	.nameUnread-njOjIS {
+	%categoryName {
 		position: relative;
 		@include display-flex;
 		@include justify-content(center);
@@ -364,28 +354,25 @@ body {
 			@include prefix(transition, all .3s ease-in-out);
 		}
 	}
-	.nameHovered-1gxhWH,
-	.nameHoveredCollapsed-2orEWB, {
+	%cateogryNameHovered,
+	%categoryNameHoveredCollapsed, {
 		color: hsla(0, 0%, 100%, .7);
 		@include pseudo(before, after) {
 			background-color: hsla(0, 0%, 100%, .7);
 		}
 	}
-	.nameCollapsed-34uFWo,
-	.nameHoveredCollapsed-2orEWB,
-	.closed-2Hef-I + .nameMuted-1n0LSj {
+	%categoryNameCollapsed,
+	%categoryNameHoveredCollapsed,
+	%categoryIconMutedCollapsed + %categoryNameMuted {
 		@include pseudo(before, after) {
 			flex-grow: 0;
 		}
 	}
-	.containerDefault-3GGEv_,
-	.containerDragAfter-3TEhpe,
-	.containerDragBefore-3Dzc5x,
-	.containerUserOver-1Tcb7l {
+	%categoryContainer {
 		padding-top: 24px;
 	}
-	.containerDefault-3GGEv_,
-	.containerDefault-1ZnADq {
+	%categoryContainerDefault,
+	%channelContainerDefault {
 		// [FADES]
 		// @include prefix(animation, fade-in .3s ease-in-out);
 	}
@@ -393,70 +380,53 @@ body {
 		opacity: .3;
 	}
 	// TEXT & VOICE CHANNELS
-	.contentDefaultText-3vZplL,
-	.contentHoveredText-2D9B-x,
-	.contentLockedText-1aHuz8,
-	.contentMutedText-2y6aPQ,
-	.contentSelectedText-3wUhMi,
-	.contentUnreadText-2vNnZc,
-	.contentDefaultVoice-2ko43i,
-	.contentHoveredVoice-3p_NEO,
-	.contentLockedVoice-1gx-SP,
-	.contentMutedVoice-2lJ0UD,
-	.contentSelectedVoice-1WDIBM,
-	.contentUnreadVoice-1dijOt {
+	%channelContent {
 		@include prefix(transition, all .15s ease-in-out);
 	}
-	.contentDefaultVoice-2ko43i,
-	.contentHoveredVoice-3p_NEO,
-	.contentLockedVoice-1gx-SP,
-	.contentMutedVoice-2lJ0UD,
-	.contentSelectedVoice-1WDIBM,
-	.contentUnreadVoice-1dijOt {
+	%channelContentVoice {
 		&:active {
 			background-color: hsla(0, 0%, 100%, .1);
 		}
 	}
-	.name-3M0b8v {
+	%channelName {
 		color: hsla(0, 0%, 100%, .3);
 		@include prefix(transition, all .15s ease-in-out);
 	}
-	.icon-sxakjD {
+	%channelIcon {
 		opacity: .7 !important;
 		@include prefix(transition, all .15s ease-in-out);
 		path {
 			opacity: .3;
 		}
 	}
-	.iconSpacing-3JkGQO > svg {
+	%channelActionIcon {
 		opacity: .3 !important;
 		@include prefix(transition, all .15s ease-in-out);
 		&:hover {
 			opacity: .7 !important;
 		}
 	}
-	.content-20Aix8 > .marginReset-3RfdVe path {
+	%channelContent path {
 		fill: #fff;
 		@include prefix(transition, all .15s ease-in-out);
 	}
 	// HOVER
-	.contentHoveredText-2D9B-x {
+	%channelContentHoveredText {
 		background-color: hsla(0, 0%, 100%, .1);
 	}
-	.contentHoveredText-2D9B-x,
-	.contentHoveredVoice-3p_NEO {
-		.name-3M0b8v {
+	%channelContentHoveredText,
+	%channelContentHoveredVoice {
+		%channelName {
 			color: hsla(0, 0%, 100%, .7);
 		}
 	}
 	// UNREAD
-	.nameUnreadText-DfkrI4,
-	.nameUnreadVoice-EVo-wI {
+	%channelNameUnread {
 		color: hsla(0, 0%, 100%, .8) !important;
 	}
-	.unread-1Dp-OI {
+	%channelUnreadIndicator {
 		display: none;
-		& + .content-20Aix8 > .marginReset-3RfdVe > .icon-sxakjD {
+		& + %channelContent %channelIcon {
 			@include prefix(filter, drop-shadow(0 0 3px var(--main-color)));
 			path {
 				fill: var(--main-color) !important;
@@ -465,47 +435,46 @@ body {
 		}
 	}
 	// SELECTED
-	.contentSelectedText-3wUhMi {
+	%channelContentSelectedText {
 		background-color: var(--main-color);
-		.icon-sxakjD  > path {
+		%channelIcon  > path {
 			fill: #fff;
 			opacity: 1 !important;
 		}
-		.iconSpacing-3JkGQO svg {
+		%channelActionIcon svg {
 			opacity: .7 !important;
 			&:hover {
 				opacity: 1 !important;
 			}
 		}
 	}
-	.nameSelectedText-sp_EUw {
+	%channelNameSelectedText {
 		color: #fff !important;
 	}
-	.contentSelectedVoice-1WDIBM {
-		.name-3M0b8v {
+	%channelContentSelectedVoice {
+		%channelName {
 			color: hsla(0, 0%, 100%, .7);
 		}
-		&:hover .name-3M0b8v {
+		&:hover %channelName {
 			color: #fff;
 		}
 	}
 	// MUTED
-	.contentMutedText-2y6aPQ,
-	.contentMutedVoice-2lJ0UD {
-		.name-3M0b8v {
+	%channelContentMutedText,
+	%channelContentMutedVoice {
+		%channelName {
 			color: hsla(0, 0%, 100%, .1);
 		}
-		.icon-sxakjD > path {
+		%channelIcon > path {
 			opacity: .1 !important;
 		}
 	}
 	// VOICE USER LIST
-	.draggable-1KoBzC {
+	%voiceUser {
 		position: relative;
 		z-index: 1;
 	}
-	.avatarDefault-35WC3R,
-	.avatarSpeaking-1wJCNq {
+	%voiceUserAvatar {
 		z-index: 1;
 		@include pseudo(after, before) {
 			content: "";
@@ -528,7 +497,7 @@ body {
 			border-left: 4px solid var(--main-color);
 		}
 	}
-	.avatarSpeaking-1wJCNq {
+	%voiceUserAvatarSpeaking {
 		@include prefix(box-shadow, none);
 		@include pseudo(before) {
 			opacity: 1;
@@ -538,45 +507,44 @@ body {
 		}
 	}
 	// DRAG INDICATORS
-	.containerDragBefore-31UGCO,
-	.containerDragAfter-1F4fgZ,
-	.containerDragBefore-3Dzc5x,
-	.containerDragAfter-3TEhpe, {
+	%categoryContainerDrag,
+	%channelContainerDrag {
 		@include pseudo(after, before) {
 			background-color: var(--main-color);
 			border-radius: 0;
 		}
 	}
-	.containerUserOver-1U5YnL {
+	%channelContainerUserOver {
 		@include pseudo(after) {
 			background-color: var(--main-color);
 			border-color: transparent;
 			opacity: .1;
 		}
 	}
-	// ACCOUNT & VOICE CONTAINER
-	& > .container-2Thooq,
-	& > .container-1UB9sr {
+	// ACCOUNT & CONNECTION CONTAINER
+	& > %accountContainer,
+	& > %connectionContainer {
 		@include clear;
-		.flex-1O1GKY {
-			background-color: rgba(0, 0, 0, .3);
-			border-radius: 15px;
-			& > * + * {
-				position: relative;
-				@include pseudo(before) {
-					content: "";
-					position: absolute;
-					left: 0;
-					top: 2px;
-					bottom: 2px;
-					width: 1px;
-					background: hsla(0, 0%, 100%, .2);
-				}
+	}
+	%accountContainerButtonWrapper,
+	%connectionContainerButtonWrapper {
+		background-color: rgba(0, 0, 0, .3);
+		border-radius: 15px;
+		& > * + * {
+			position: relative;
+			@include pseudo(before) {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 2px;
+				bottom: 2px;
+				width: 1px;
+				background: hsla(0, 0%, 100%, .2);
 			}
 		}
 	}
 	// ACCOUNT CONTAINER
-	& > .container-2Thooq {
+	& > %accountContainer {
 		position: relative;
 		margin-bottom: 10px;
 		@include pseudo(after) {
@@ -591,7 +559,7 @@ body {
 			right: 0;
 			opacity: .3;
 		}
-		.wrapper-2F3Zv8 {
+		%accountContainerAvatarWrapper {
 			position: relative;
 			@include prefix(transition, all .15s ease-in-out);
 			@include pseudo(after) {
@@ -624,12 +592,12 @@ body {
 					font-size: 10px;
 					line-height: 45px;
 				}
-				.avatar-3JE4B3 {
+				%accountContainerAvatar {
 					width: 45px;
 					height: 45px;
 				}
 			}
-			.avatar-3JE4B3 {
+			%accountContainerAvatar {
 				@include bg($size: 100%, $repeat: no-repeat);
 				@include prefix(transition, all .15s ease-in-out);
 			}
@@ -641,33 +609,33 @@ body {
 				z-index: 2;
 			}
 		}
-		.button-2b6hmh {
+		%accountContainerButton {
 			opacity: 1;
-			&.iconButton-3V4WS5,
+			&%accountContainerIconButton,
 			svg {
 				opacity: .3;
 				@include prefix(transition, all .1s ease-in-out);
 			}
 			&:hover {
 				@include clear;
-				&.iconButton-3V4WS5,
+				&%accountContainerIconButton,
 				svg {
 					opacity: .7;
 				}
 			}
 		}
 	}
-	// VOICE CONTAINER
-	& > .container-1UB9sr {
+	// CONNECTION CONTAINER
+	& > %connectionContainer {
 		border-color: transparent;
-		.button-2KyEfG {
+		%connectionContainerButton {
 			@include clear;
 			opacity: .3;
 			&:hover {
 				opacity: .7;
 			}
 		}
-		.buttonDisconnect-3W_SJc {
+		%connectionContainerButtonDisconnect {
 			position: relative;
 			opacity: 1 !important;
 			background-size: 0;
