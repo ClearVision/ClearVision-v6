@@ -1,4 +1,4 @@
-/*! Using Discord Selectors v17-08-18 by Zerthox */
+/*! Using Discord Selectors v24-08-18 by Zerthox */
 
 // GENERAL
 .flex-1O1GKY {
@@ -29,6 +29,9 @@
 }
 .guildsAdd-21_IdK {
     @extend %guildsAdd !optional;
+}
+.guildsError-3cFMtY {
+    @extend %guildsError !optional;
 }
 .friendsOnline-_wi_fM {
     @extend %friendsOnline !optional;
@@ -347,13 +350,103 @@
 .buttonDisconnect-3W_SJc {
     @extend %connectionContainerButtonDisconnect !optional;
 }
+// Unread & Mention Indicator
+.unread-1xRYoj {
+    @extend %channelsUnreadIndicator !optional;
+}
+.mention-1f5kbO {
+    @extend %channelsMentionIndicator !optional;
+}
 
 // CHAT
+.chat-3bRxxu {
+    @extend %chat !optional;
+}
+.titleWrapper-1l0xT9 {
+    @extend %chatTitleWrapper !optional;
+}
+.title-3qD0b- {
+    @extend %chatTitle !optional;
+}
+.titleCall-_b9o8P {
+    @extend %chatTitleCall !optional;
+}
+.content-yTz4x3 {
+    @extend %chatContainer !optional;
+}
+%chatContainer > .flex-spacer {
+    @extend %chatSpacer !optional;
+}
+// Messages
+.messagesWrapper-3lZDfY {
+    @extend %messagesWrapper !optional;
+}
+.messages-3amgkR {
+    @extend %messages !optional;
+}
 .container-1YxwTf {
     @extend %messageGroup !optional;
 }
+.message-1PNnaP {
+    @extend %message !optional;
+}
+.headerCozy-2N9HOL {
+    @extend %messageHeader !optional;
+    @extend %messageHeaderCozy !optional;
+}
+.headerCompact-3wRt2W {
+    @extend %messageHeader !optional;
+    @extend %messageHeaderCompact !optional;
+}
+.usernameWrapper-1S-G5O {
+    @extend %messageUsernameWrapper !optional;
+}
+.username-_4ZSMR {
+    @extend %messageUsername !optional;
+}
+.timestampCozy-2hLAPV {
+    @extend %messageTimestamp !optional;
+    @extend %messageTimestampCozy !optional;
+}
+.timestampCompact-MHgFLv {
+    @extend %messageTimestamp !optional;
+    @extend %messageTimestampCompact !optional;
+}
+.content-3dzVd8 {
+    @extend %messageContent !optional;
+}
 .markup-2BOw-j {
     @extend %markup !optional;
+}
+.buttonContainer-KtQ8wc {
+    @extend %messageButtonContainer !optional;
+}
+.reactionBtn-2na4rd {
+    @extend %messageButton !optional;
+    @extend %messageReactionButton !optional;
+}
+.button-3Jq0g9 {
+    @extend %messageButton !optional;
+    @extend %messageOptionsButton !optional;
+}
+// Dividers
+.divider-3gKybi {
+    @extend %divider !optional;
+}
+.dividerRed-MKoLlr {
+    @extend %dividerRed !optional;
+}
+// New Messages Bar
+.newMessagesBar-mujexs {
+    @extend %newMessagesBar !optional;
+}
+// Jump to Present Bar
+.jumpToPresentBar-9P20AM {
+    @extend %jumpToPresentBar !optional;
+}
+// Has more Button {
+.hasMore-3e72_v {
+    @extend %hasMore !optional;
 }
 
 // BADGE
