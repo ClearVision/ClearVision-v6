@@ -249,7 +249,7 @@ body {
 				}
 			}
 		}
-		.guilds-error {
+		%guildsError {
 			background-color: rgba(0, 0, 0, .5);
 			border-color: var(--main-color);
 			@include prefix(transition, all .3s ease-in-out);
@@ -584,8 +584,7 @@ body {
 					opacity: 1;
 				}
 			}
-			&:hover,
-			&.popout-open {
+			&:hover {
 				width: 45px;
 				height: 45px;
 				@include pseudo(after) {
@@ -658,8 +657,8 @@ body {
 }
 
 // UNREAD MESSAGES INDICATOR
-.unread-1xRYoj,
-.mention-1f5kbO {
+%channelsUnreadIndicator,
+%channelsMentionIndicator {
 	position: relative;
 	@include clear;
 	@include pseudo(after) {
@@ -728,27 +727,26 @@ body {
 }
 
 // CHAT
-.chat-3bRxxu {
+%chat {
 	@include clear;
-	.content-yTz4x3 {
+	%chatContainer {
 		@include clear;
-		.flex-spacer {
-			background-color: rgba(0, 0, 0, .6) !important;
-		}
-		.messagesWrapper-3lZDfY {
-			@include clear;
-		}
 	}
-	.titleWrapper-1l0xT9 {
-		& > .title-3qD0b-, .titleCall-_b9o8P{
-			background-color: rgba(0, 0, 0, .7) !important;
-		}
+	%chatSpacer {
+		background-color: rgba(0, 0, 0, .6) !important;
 	}
-	.username-_4ZSMR {
+	%messagesWrapper {
+		@include clear;
+	}
+	%chatTitle,
+	%chatTitleCall {
+		background-color: rgba(0, 0, 0, .7) !important;
+	}
+	%messageUsername {
 		@include hover-shadow;
 	}
 	// NEW MESSAGES BAR
-	.newMessagesBar-mujexs {
+	%newMessagesBar {
 		@include clear;
 		@include prefix(transition, all .15s ease-in-out);
 		@include pseudo(before) {
@@ -777,7 +775,7 @@ body {
 		}
 	}
 	// JUMP TO PRESENT BAR
-	.jumpToPresentBar-9P20AM {
+	%jumpToPresentBar {
 		background-color: rgba(0, 0, 0, .7) !important;
 		@include prefix(transition, all .15s ease-in-out);
 		&:hover,
@@ -796,7 +794,7 @@ body {
 		}
 	}
 	// LOAD MORE MESSAGES BNUTTON
-	.hasMore-3e72_v {
+	%hasMore {
 		& > button {
 			background-color: rgba(0, 0, 0, .5) !important;
 			color: var(--main-color);
@@ -804,14 +802,14 @@ body {
 		}
 	}
 	// DIVIDERS
-	.divider-3gKybi {
+	%divider {
 		margin: 10px 6px 10px 20px;
 		@include pseudo(before) {
 			@include clear;
 		}
 
-		&.dividerRed-MKoLlr {
-			& + .divider-3gKybi {
+		&%dividerRed {
+			& + %divider {
 				margin-top: 40px;
 			}
 			& > span {
