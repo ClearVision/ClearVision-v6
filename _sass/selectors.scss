@@ -1,8 +1,37 @@
 /*! Using Discord Selectors v24-08-18 by Zerthox */
 
 // GENERAL
+.layers-3iHuyZ {
+    @extend %layers !optional;
+}
+.layer-3QrUeG {
+    @extend %layer !optional;
+}
+.container-2lgZY8 {
+    @extend %containerMain !optional;
+}
+.base-3dtUhz {
+    @extend %base !optional;
+}
 .flex-1O1GKY {
     @extend %flex !optional;
+}
+
+// TITLEBAR
+.typeWindows-1za-n7 {
+    @extend %titlebarWin !optional;
+}
+.wordmark-2iDDfm {
+    @extend %titlebarWordmark !optional;
+}
+.winButton-iRh8-Z {
+    @extend %titlebarWinButton !optional;
+}
+.winButtonMinMax-PBQ2gm {
+    @extend %titlebarWinButtonMinMax !optional;
+}
+.winButtonClose-1HsbF- {
+    @extend %titlebarWinButtonClose !optional;
 }
 
 // GUILDS
@@ -377,6 +406,9 @@
 %chatContainer > .flex-spacer {
     @extend %chatSpacer !optional;
 }
+.noChannel-Z1DQK7 {
+	@extend %noChannel !optional;
+}
 // Messages
 .messagesWrapper-3lZDfY {
     @extend %messagesWrapper !optional;
@@ -436,6 +468,9 @@
 .dividerRed-MKoLlr {
     @extend %dividerRed !optional;
 }
+.dividerContent-2L12VI {
+    @extend %dividerContent !optional;
+}
 // New Messages Bar
 .newMessagesBar-mujexs {
     @extend %newMessagesBar !optional;
@@ -447,6 +482,56 @@
 // Has more Button {
 .hasMore-3e72_v {
     @extend %hasMore !optional;
+}
+// Channel Textarea
+.typing-2GQL18 {
+    @extend %textareaTyping !optional;
+}
+.inner-zqa7da {
+    @extend %textareaInner !optional;
+}
+.attachButton-1UjEWA {
+    @extend %textareaAttachButton !optional;
+}
+.attachButtonPlus-rUdX-B {
+    @extend %textareaAttachButtonPlus !optional;
+}
+.emojiButton-3uL3Aw {
+    @extend %textareaEmojiButton !optional;
+}
+// Channel Textarea Autocomplete
+.autocomplete-i9yVHs {
+    @extend %autocomplete !optional;
+}
+.contentTitle-2tG_sM {
+    @extend %autocompleteTitle !optional;
+}
+.content-Qb0rXO {
+    @extend %autocompleteContent !optional;
+}
+.icon-3ZzoN7 {
+    @extend %autocompleteIcon !optional;
+}
+.iconForeground-1w5n7R {
+    @extend %autocompleteIconForeground !optional;
+}
+.description-11DmNu {
+    @extend %autocompleteDescription !optional;
+}
+.descriptionUsername-J_75O8 {
+    @extend %autocompleteDescriptionUsername !optional;
+}
+.descriptionDiscriminator-3vUOCc {
+    @extend %autocompleteDiscriminator !optional;
+}
+.selector-2IcQBU {
+    @extend %autocompleteSelector !optional;
+}
+.selectorSelected-1_M1WV {
+    @extend %autocompleteSelectorSelected !optional;
+}
+.content-Qb0rXO {
+    @extend %autocompleteSelectorContent !optional;
 }
 
 // BADGE
