@@ -135,19 +135,19 @@ body {
 		z-index: -9999;
 	}
 }
-.layers-3iHuyZ,
-.layer-3QrUeG,
-.layer-3QrUeG > .container-2lgZY8 {
+%layers,
+%layer,
+%layer > %containerMain {
 	@include clear;
 }
 #app-mount {
 	background: rgba(0, 0, 0, .6) !important;
 }
-.layer-3QrUeG {
-	&  > .container-2lgZY8 {
+%layer {
+	&  > %containerMain {
 		// [FADES]
 		// @include prefix(animation, fade-in .3s ease-in-out);
-		& > .base-3dtUhz {
+		& > %base {
 			border-radius: 0;
 		}
 	}		
@@ -160,13 +160,13 @@ body {
 }
 
 // TITLEBAR
-.typeWindows-1za-n7 {
+%titlebarWin {
 	height: 18px;
 	width: 100vw;
 	margin: 0;
 	padding-top: 4px;
 	background-color: rgba(0, 0, 0, .6);
-	& > .wordmark-2iDDfm {
+	& > %titlebarWordmark {
 		opacity: 1;
 		pointer-events: none;
 		@include prefix(user-select, none);
@@ -183,14 +183,14 @@ body {
 			fill: var(--main-color);
 		}
 	}
-	& > .winButton-iRh8-Z {
+	& > %titlebarWinButton {
 		opacity: 1 !important;
 		&:hover {
 			background-color: hsla(0, 0%, 100%, .1);
 			background-color: hsla(0, 0%, 100%, .1);
 		}
 	}
-	& > .winButtonClose-1HsbF- {
+	& > %titlebarWinButtonClose {
 		&:hover {
 			background-color: var(--dnd-color);
 		}
@@ -476,7 +476,7 @@ body {
 	}
 	%voiceUserAvatar {
 		z-index: 1;
-		@include pseudo(after, before) {
+		@include pseudo(before, after) {
 			content: "";
 			position: absolute;
 			top: 1px;
@@ -509,7 +509,7 @@ body {
 	// DRAG INDICATORS
 	%categoryContainerDrag,
 	%channelContainerDrag {
-		@include pseudo(after, before) {
+		@include pseudo(before, after) {
 			background-color: var(--main-color);
 			border-radius: 0;
 		}
@@ -803,41 +803,44 @@ body {
 	}
 	// DIVIDERS
 	%divider {
+		position: relative;
 		margin: 10px 6px 10px 20px;
 		@include pseudo(before) {
-			@include clear;
+			content: "";
+			position: absolute;
+			@include stretch;
+			background-color: hsla(0, 0%, 100%, .2);
+			border-radius: 3px;
+			opacity: .8;
+			z-index: -1;
 		}
-
 		&%dividerRed {
+			@include pseudo(before) {
+				background-color: var(--main-color);
+			}
 			& + %divider {
 				margin-top: 40px;
 			}
-			& > span {
+			& > %dividerContent {
 				position: relative;
 				@include clear;
 				color: hsla(0, 0%, 100%, .8) !important;
-				@include pseudo(before) {
-					content: "";
-					position: absolute;
-					@include stretch;
-					z-index: -1;
-					background-color: var(--main-color);
-					border-radius: 3px;
-					opacity: .8;
-				}
 			}
 		}		
-		& > span {
+		& > %dividerContent {
 			width: 100%;
 			margin: 10px 0;
 			padding: 5px 15px;
-			background: hsla(0, 0%, 100%, .2) !important;
+			display: block;
 			color: hsla(0, 0%, 100%, 1) !important;
 			font-size: 12px;
 			text-transform: uppercase;
 			text-align: center;
 			border-radius: 3px;
 			opacity: .9;
+			@include pseudo(before, after) {
+				display: none;
+			}
 		}
 	}
 	// CHANNEL TEXTAREA
@@ -850,21 +853,21 @@ body {
 			color: hsla(0, 0%, 100%, .7);
 		}
 	}
-	.typing-2GQL18 {
+	%textareaTyping {
 		@include clear;
 	}
-	.inner-zqa7da{
+	%textareaInner {
 		background-color: rgba(0, 0, 0, .5);
 		border: 2px solid hsla(0, 0%, 100%, .1) !important;
 		@include prefix(transform, translateZ(0));
-		.attachButton-1UjEWA {
+		%textareaAttachButton {
 			@include prefix(transform, none);
-			.attachButtonPlus-rUdX-B {
+			%textareaAttachButtonPlus {
 				opacity: .3;
 				@include prefix(transition, all .15s ease-in-out);
 			}
 			&:hover {
-				.attachButtonPlus-rUdX-B {
+				%textareaAttachButtonPlus {
 					opacity: .7;
 				}
 			}
@@ -884,7 +887,7 @@ body {
 			&::-webkit-input-placeholder {
 				color: hsla(0, 0%, 100%, .2);
 			}
-			& + .emojiButton-3uL3Aw {
+			& + %textareaEmojiButton {
 				@include pseudo(after) {
 					content: "";
 					position: fixed;
@@ -896,7 +899,7 @@ body {
 					pointer-events: none;
 				}
 			}
-			&:focus + .emojiButton-3uL3Aw {
+			&:focus + %textareaEmojiButton {
 				@include pseudo(after) {
 					border-color: var(--main-color);
 					@include prefix(box-shadow, 0 0 3px var(--main-color));
@@ -905,37 +908,37 @@ body {
 		}
 	}
 	// CHANNEL TEXTAREA AUTOCOMPLETE
-	.autocomplete-i9yVHs {
+	%autocomplete {
 		background-color: rgba(0, 0, 0, .8);
-		.contentTitle-2tG_sM {
+		%autocompleteTitle {
 			color: hsla(0, 0%, 100%, .5);
 		}
-		.content-Qb0rXO {
+		%autocompleteContent {
 			color: hsla(0, 0%, 100%, .6);
 		}
-		.iconForeground-1w5n7R {
+		%autocompleteIconForeground {
 			fill: hsla(0, 0%, 100%, .3);
 		}
-		.description-11DmNu,
-		.descriptionUsername-J_75O8 {
+		%autocompleteDescription,
+		%autocompleteDescriptionUsername {
 			color: hsla(0, 0%, 100%, .3);
 		}
-		.descriptionDiscriminator-3vUOCc {
+		%autocompleteDescriptionDiscriminator {
 			color: hsla(0, 0%, 100%, .15);
 		}
-		.selectorSelected-1_M1WV {
+		%autocompleteSelectorSelected {
 			background-color: var(--main-color);
-			& > .content-Qb0rXO {
+			& > %autocompleteContent {
 				color: #fff;
 			}
-			.iconForeground-1w5n7R {
+			%autocompleteIconForeground {
 				fill: hsla(0, 0%, 100%, .5);
 			}
-			.description-11DmNu,
-			.descriptionUsername-J_75O8 {
+			%autocompleteDescription,
+			%autocompleteDescriptionUsername {
 				color: hsla(0, 0%, 100%, .5);
 			}
-			.descriptionDiscriminator-3vUOCc {
+			%autocompleteDescriptionDiscriminator {
 				color: hsla(0, 0%, 100%, .25);
 			}
 		}
@@ -960,7 +963,7 @@ body {
 		}
 	}
 }
-.noChannel-Z1DQK7 {
+%noChannel {
 	background-color: rgba(0, 0, 0, .6) !important;
 }
 
@@ -1132,7 +1135,7 @@ body {
 			position: relative;
 			background-size: 0;
 			background-color: hsla(0, 0%, 100%, .04);
-			@include pseudo(after, before) {
+			@include pseudo(before, after) {
 				content: "";
 				position: absolute;
 				top: 10%;
@@ -1810,7 +1813,7 @@ textarea {
 	section {
 		background-color: rgba(0, 0, 0, .7);
 		border-radius: 0 0 3px 3px;
-		@include pseudo(after, before) {
+		@include pseudo(before, after) {
 			content: none;
 		}
 	}
