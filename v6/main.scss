@@ -1,7 +1,7 @@
 ---
 ---
 // VARIABLES
-$version: "ClearVision v6-pre-2.3.1";
+$version: "ClearVision v6-pre-2.3.2";
 $marks: (
 	BD Dev: 81388395867156480, // Jiiks
 	CV Dev: 144881947557101568, // Zerthox
@@ -828,7 +828,6 @@ body {
 			}
 		}		
 		& > %dividerContent {
-			width: 100%;
 			margin: 10px 0;
 			padding: 5px 15px;
 			display: block;
@@ -968,17 +967,17 @@ body {
 }
 
 // MESSAGES
-.message-group,
-.divider,
-.message {
+%message,
+%messageGroup,
+%divider {
 	// [FADES]
 	// @include prefix(animation, message-fade .5s ease-in-out);
 }
-.messages-wrapper {
+%messagesWrapper {
 	@include clear;
 }
-.message-group {
-	.avatar-large {
+%messageGroup {
+	%avatarLarge {
 		@include prefix(transition, all .3s ease-in-out, transform .1s ease-in-out);
 		&:active {
 			@include prefix(transform, scale(.9));
@@ -999,6 +998,18 @@ body {
 			color: hsla(0, 0%, 100%, .7) !important;
 		}
 	}
+	a {
+		color: var(--main-color) !important;
+		@include hover-shadow;
+	}
+	%mentioned {
+		background-color: rgba(100, 100, 100, .3) !important;
+		@include pseudo(after) {
+			background: rgba(100, 100, 100, .3);
+			border-left: 4px solid var(--main-color);
+			border-radius: 2px 0 0 2px;
+		}
+	}
 	// CODEBLOCKS
 	.inline {
 		background-color: hsla(0, 0%, 100%, .1) !important;
@@ -1011,17 +1022,18 @@ body {
 		}
 	}
 	pre {
-		max-width: 93% !important;
+		max-width: 93%;
 		background-color: transparent !important;
-		border: 2px solid hsla(0, 0%, 100%, .1) !important;
+		border-width: 2px;
+		border-color: transparent !important;
 		padding: 0;
-		border-radius: 5px !important;
 	}
 	.hljs {
 		position: relative;
+		padding: 6px !important;
 		background-color: rgba(0, 0, 0, .42) !important;
 		color: hsla(0, 0%, 100%, .7) !important;
-		padding: 6px !important;
+		border-radius: 5px;
 		@include pseudo(before) {
 			display: block;
 			float: right;
@@ -1080,21 +1092,10 @@ body {
 			}
 		}
 	}
-	a {
-		color: var(--main-color) !important;
-		@include hover-shadow;
-	}
-	.mentioned .message-text {
-		background-color: rgba(100, 100, 100, .3) !important;
-		@include pseudo(after) {
-			background: rgba(100, 100, 100, .3);
-			border-left: 4px solid var(--main-color);
-			border-radius: 2px 0 0 2px;
-		}
-	}
 	// EMBEDS
-	.embed-IeVjo6 {
-		.embedPill-1Zntps {
+	%embed {
+		position: relative;
+		%embedPill {
 			opacity: .3;
 			border-radius: 0;
 			&:not([style*=background-color]) {
@@ -1102,18 +1103,18 @@ body {
 				opacity: 1;
 			}
 		}
-		.embedInner-1-fpTo {
+		%embedInner {
 			background-color: transparent;
 			border-color: transparent;
-			.embedLink-1G1K1D {
+			%embedLink {
 				color: var(--main-color);
 				@include hover-shadow;
 			}
-			.embedTitleLink-1Zla9e {
+			%embedTitleLink {
 				color: var(--main-color) !important;
 			}
-			.embedVideoActionsInner-2reMo2 {
-				& > .wrapper-129saQ {
+			%embedVideoActionsInner {
+				& > %embedVideoActionsButtonWrapper {
 					background: rgba(0, 0, 0, .5);
 					color: #fff;
 					@include prefix(box-shadow, inset 0 0 10px rgba(0, 0, 0, .5));
@@ -1122,16 +1123,19 @@ body {
 		}
 	}
 	// INVITE LINKS
-	.wrapper-35wsBm {
+	%inviteWrapper {
 		background-color: rgba(0, 0, 0, .4);
 		border-color: transparent;
-		.guildName-2hvnt_ {
-			color: hsla(0, 0%, 100%, .7);
+		%inviteGuildName{
+			color: var(--main-color);
+			&:hover {
+				@include hover-shadow;
+			}
 		}
-		.guildNameExpired-2Hp80V {
+		%inviteGuildNameExpired {
 			color: var(--dnd-color);
 		}
-		.guildIconExpired-2Qcq05 {
+		%inviteGuildIconExpired {
 			position: relative;
 			background-size: 0;
 			background-color: hsla(0, 0%, 100%, .04);
@@ -1152,32 +1156,18 @@ body {
 				@include prefix(transform, translateX(-50%) rotate(-45deg));
 			}
 		}
-		.guildDetail-1nRKNE {
+		%inviteGuildDetail {
 			padding-left: 1px;
 			margin-left: -1px;
 		}
-		.h5-18_1nd,
-		.guildDetail-1nRKNE {
+		%inviteTitle,
+		%inviteGuildDetail {
 			color: hsla(0, 0%, 100%, .5);
 		}
-		.button-3To2tQ {
+		%inviteButton{
 			border-color: transparent;
 		}
-		.lookOutlined-3sRXeN.colorPrimary-3b3xI6 {
-			background-color: hsla(0, 0%, 100%, .1);
-			border-color: transparent;
-			opacity: .3;
-			cursor: default;
-		}
-		.buttonBrandFilled-3Mv0Ra { // [TD]
-			background-color: transparent;
-			border: 1px solid var(--dnd-color);
-			@include prefix(transition, all .3s ease-in-out);
-			&:hover {
-				background-color: var(--dnd-color);
-			}
-		}
-		.lookFilled-1Gx00P.colorGreen-29iAKY{
+		%inviteButtonAccept {
 			background-color: transparent;
 			border: 1px solid $green;
 			@include prefix(transition, all .3s ease-in-out);
@@ -1185,46 +1175,63 @@ body {
 				background-color: $green;
 			}
 		}
-	}
-	.statusOnline-8PnF5L,
-	.statusOffline-37RKt7 {
-		@include prefix(box-shadow, 0 0 3px, 0 0 5px rgba(0, 0, 0, .5));
-	}
-	.statusOnline-8PnF5L {
-		background-color: var(--online-color);
-		color: var(--online-color);
-	}
-	.statusOffline-37RKt7 {
-		background-color: var(--offline-color);
-		color: var(--offline-color);
+		%inviteButtonJoined {
+			background-color: hsla(0, 0%, 100%, .1);
+			border-color: transparent;
+			opacity: .3;
+			cursor: default;
+		}
+		%inviteButtonExpired {
+			background-color: transparent;
+			border: 1px solid var(--dnd-color);
+			@include prefix(transition, all .3s ease-in-out);
+			&:hover {
+				background-color: var(--dnd-color);
+			}
+		}
 	}
 }
 
 // BLOCKED MESSAGES
-.message-group-blocked {
-	background-color: rgba(0, 0, 0, .1) !important;
-	border-color: transparent !important;
-	border-top: 1px solid hsla(0, 0%, 100%, .04) !important;
-    border-bottom: 1px solid hsla(0, 0%, 100%, .04) !important;
+%messageGroupBlocked {
+	position: relative;
+	background-color: rgba(0, 0, 0, .2) !important;
+	border: none;
 	border-radius: 0;
-	.message-group-blocked-btn {
+	&:hover {
+		@include prefix(box-shadow, none !important);
+	}
+	%messageGroupBlockedButton {
 		@include clear;
 		color: hsla(0, 0%, 100%, .3) !important;
 		@include prefix(transition, all .3s ease-in-out);
+		@include pseudo(after) {
+			content: "";
+			position: absolute;
+			@include stretch; 
+			border-top: 1px solid;
+			border-bottom: 1px solid;
+			border-color: hsla(0, 0%, 100%, .04);
+			@include prefix(transition, all .3s ease-in-out);
+			pointer-events: none;
+		}
 		&:hover {
 			color: hsla(0, 0%, 100%, .7) !important;
+			@include pseudo(after) {
+				border-color: hsla(0, 0%, 100%, .1);
+			}
 		}
 	}
-	.message-group {
+	%messageGroup {
 		margin-top: -20px;
 		margin-left: 0;
 		// [FADES]
 		// @include prefix(animation, fade-in .3s ease-in-out);
 	}
-	& + .divider {
+	& + %divider {
 		margin-top: 25px;
 	}
-	.divider + & {
+	%divider + & {
 		margin-top: 25px;
 	}
 }
@@ -1240,11 +1247,12 @@ body {
 	border-radius: 6px;
 	@include prefix(transition, all .3s ease-in-out);
 	white-space: nowrap;
+	cursor: pointer;
 	&:hover {
 		background-color: var(--main-color) !important;
 		color: #fff !important;
 	}
-	.mentioned & {
+	%mentioned & {
 		@include clear;
 		color: var(--main-color) !important;
 		@include hover-shadow;
@@ -1263,7 +1271,7 @@ body {
 		background-color: var(--main-color) !important;
 	}
 }
-.message-group:not(:hover) .replyer {
+%messageGroup:not(:hover) .replyer {
 	visibility: visible;
 	opacity: 0;
 }
@@ -1517,7 +1525,7 @@ body {
 		}
 	}
 }
-.chat,
+%chat,
 .friends-table,
 .context-menu {
 	.scroller {
