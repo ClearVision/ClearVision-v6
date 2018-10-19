@@ -1,4 +1,4 @@
-/*! Using Discord Selectors v24-08-18 by Zerthox */
+/*! Using Discord Selectors v19-19-18 by Zerthox */
 
 // GENERAL
 .layers-3iHuyZ {
@@ -419,6 +419,12 @@
 .container-1YxwTf {
     @extend %messageGroup !optional;
 }
+.messageGroupBlocked-3wrQQX {
+    @extend %messageGroupBlocked !optional;
+}
+.messageGroupBlockedBtn-1PBBh- {
+    @extend %messageGroupBlockedButton !optional;
+}
 .message-1PNnaP {
     @extend %message !optional;
 }
@@ -447,6 +453,9 @@
 .content-3dzVd8 {
     @extend %messageContent !optional;
 }
+.isMentioned-N-h9aa {
+    @extend %mentioned !optional;
+}
 .markup-2BOw-j {
     @extend %markup !optional;
 }
@@ -470,6 +479,62 @@
 }
 .dividerContent-2L12VI {
     @extend %dividerContent !optional;
+}
+// Embeds
+.embed-IeVjo6 {
+    @extend %embed !optional;
+}
+.embedPill-1Zntps {
+    @extend %embedPill !optional;
+}
+.embedInner-1-fpTo {
+    @extend %embedInner !optional;
+}
+.embedLink-1G1K1D {
+    @extend %embedLink !optional;
+}
+.embedTitleLink-1Zla9e {
+    @extend %embedTitleLink !optional;
+}
+.embedVideoActionsInner-2reMo2 {
+    @extend %embedVideoActionsInner !optional;
+}
+.wrapper-129saQ {
+    @extend %embedVideoActionsButtonWrapper !optional; 
+}
+// Invite Links
+.wrapper-35wsBm {
+    @extend %inviteWrapper !optional;
+}
+.guildName-2hvnt_ {
+    @extend %inviteGuildName !optional;
+}
+.guildNameExpired-2Hp80V {
+    @extend %inviteGuildNameExpired !optional;
+}
+.guildIcon-lQ0uiM {
+    @extend %inviteGuildIcon !optional;
+}
+.guildIconExpired-2Qcq05 {
+    @extend %inviteGuildIconExpired !optional;
+}
+.guildDetail-1nRKNE {
+    @extend %inviteGuildDetail !optional;
+}
+.h5-18_1nd {
+    @extend %inviteTitle !optional;
+}
+.button-3To2tQ {
+    @extend %inviteButton !optional;
+}
+.lookFilled-1Gx00P.colorGreen-29iAKY{
+    @extend %inviteButtonAccept !optional;
+}
+.lookOutlined-3sRXeN.colorPrimary-3b3xI6 {
+    @extend %inviteButtonJoined !optional;
+}
+.lookFilled-1Gx00P.colorBrand-3pXr91 {
+    @extend %inviteButtonExpired !optional;
 }
 // New Messages Bar
 .newMessagesBar-mujexs {
@@ -532,6 +597,11 @@
 }
 .content-Qb0rXO {
     @extend %autocompleteSelectorContent !optional;
+}
+
+// AVATARS
+.large-3ChYtB {
+    @extend %avatarLarge !optional;
 }
 
 // BADGE
