@@ -1,4 +1,4 @@
-/*! Using Discord Selectors v19-10-18 by Zerthox */
+/*! Using Discord Selectors v19-11-30 by Zerthox */
 
 // GENERAL
 .layers-3iHuyZ {
@@ -386,6 +386,10 @@
 .mention-1f5kbO {
     @extend %channelsMentionIndicator !optional;
 }
+// Private channels
+.private-channels {
+    @extend %channelsPrivate !optional;
+}
 
 // CHAT
 .chat-3bRxxu {
@@ -599,14 +603,207 @@
     @extend %autocompleteSelectorContent !optional;
 }
 
+// CHANNEL MEMBERS
+.members-1998pB {
+    @extend %members !optional;
+}
+.membersGroup-v9BXpm {
+    @extend %membersGroup !optional;
+}
+.member-3W1lQa {
+    @extend %member !optional;
+}
+.memberOffline-2lN7gt {
+    @extend %memberOffline !optional;
+}
+.content-OzHfo4 {
+    @extend %memberContent !optional;
+}
+.username-1cB_5E {
+    @extend %memberUsername !optional;
+}
+.ownerIcon-uZ6mE7 {
+    @extend %memberOwnerIcon !optional;
+}
+.activity-1IYsbk {
+    @extend %memberActivity !optional;
+}
+.activityText-sLG0UL {
+    @extend %memberActivityText !optional;
+}
+.activityIcon-S3CciC {
+    @extend %memberActivityIcon !optional;
+}
+.activityIconForeground-qYIPPg {
+    @extend %memberActivityIconForeground !optional;
+}
+.placeholderAvatar-uzH8f6 {
+    @extend %memberPlaceholder !optional;
+    @extend %memberPlaceholderAvatar !optional;
+}
+.placeholderUsername-236yYU  {
+    @extend %memberPlaceholder !optional;
+    @extend %memberPlaceholderUsername !optional;
+}
+
+// FRIENDS TABLE
+#friends {
+    @extend %friends !optional;
+}
+.headerBar-UHpsPw {
+    @extend %friendsHeaderBar !optional;
+}
+.friends-table {
+    @extend %friendsTable !optional;
+}
+.friends-table-header {
+    @extend %friendsTableHeader !optional;
+}
+.friends-column {
+    @extend %friendsColumn !optional;
+}
+.friends-column-separator {
+    @extend %friendsColumnSeparator !optional;
+}
+.friend-table-add-header {
+    @extend %friendsTableAddHeader !optional;
+}
+.add-friend-input-wrapper {
+    @extend %friendsAddFriendInputWrapper !optional;
+}
+.add-friend-input {
+    @extend %friendsAddFriendInput !optional;
+}
+.add-friend-hint {
+    @extend %friendsAddFriendHint !optional;
+}
+.friends-row {
+    @extend %friendsRow !optional;
+}
+.friend-table-suggestions-header {
+    @extend %friendsTableSuggestionsHeader !optional;
+}
+.friends-column-name {
+    @extend %friendsColumnName !optional;
+}
+.friends-column-status {
+    @extend %friendsColumnStatus !optional;
+}
+.friend-activity-text {
+    @extend %friendsActivityText !optional;
+}
+.friends-column-guilds {
+    @extend %friendsColumnGuilds !optional;
+}
+.friends-column-actions {
+    @extend %friendsColumnActions !optional;
+}
+.friends-action {
+    @extend %friendsAction !optional;
+}
+
 // AVATARS
-.large-3ChYtB {
+.avatar-large,
+.avatar-17mtNa {
     @extend %avatarLarge !optional;
+}
+.avatar-small,
+.wrapper-2F3Zv8 {
+    @extend %avatarSmall !optional;
+}
+.avatarOffline-3GF27z {
+    @extend %avatarOffline !optional;
+}
+.avatar-3EQepX {
+    @extend %avatarProfile !optional;
+}
+%avatarSmall,
+%avatarLarge,
+%avatarProfile {
+    @extend %avatar !optional;
+}
+
+// BUTTONS
+.btn {
+    @extend %button !optional;
+}
+.btn-primary {
+    @extend %buttonPrimary !optional;
+}
+.lookFilled-luDKDo {
+    @extend %buttonFilled !optional;
+}
+.lookInverted-2lPGe7 {
+    @extend %buttonInverted !optional;
+}
+.lookOutlined-3sRXeN {
+    @extend %buttonOutlined !optional;
+}
+.colorWhite-rEQuAQ {
+    @extend %buttonWhite !optional;
+}
+.colorGreen-22At8E {
+    @extend %buttonGreen !optional;
+}
+.colorBrand-3PmwCE {
+    @extend %buttonBrand !optional;
+}
+%buttonOutlined {
+    &%buttonWhite {
+        @extend %buttonOutlinedWhite !optional;
+    }
+    &%buttonGreen {
+        @extend %buttonOutlinedGreen !optional;
+    }
+    &%buttonBrand {
+        @extend %buttonOutlinedBrand !optional;
+    }
+}
+%buttonFilled {
+    &%buttonWhite {
+        @extend %buttonFilledWhite !optional;
+    }
+    &%buttonGreen {
+        @extend %buttonFilledGreen !optional;
+    }
+    &%buttonBrand {
+        @extend %buttonFilledBrand !optional;
+    }
+}
+%buttonInverted {
+    &%buttonWhite {
+        @extend %buttonInvertedWhite !optional;
+    }
+    &%buttonGreen {
+        @extend %buttonInvertedGreen !optional;
+    }
+    &%buttonBrand {
+        @extend %buttonInvertedBrand !optional;
+    }
 }
 
 // BADGE
 .wrapper-232cHJ {
     @extend %badge !optional;
+}
+
+// TAB BAR
+.tab-bar {
+    @extend %tabBar !optional;
+}
+.tab-bar-item {
+    @extend %tabBarItem !optional;
+}
+%tabBarItem.selected {
+    @extend %tabBarItemSelected !optional;
+}
+
+// SCROLLERS
+.scroller-2FKFPG {
+    @extend %scrollerChannels !optional;
+}
+.scoller {
+    @extend %scroller !optional;
 }
 
 // USER POPOUT
