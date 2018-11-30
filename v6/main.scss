@@ -1,7 +1,7 @@
 ---
 ---
 // VARIABLES
-$version: "ClearVision v6-pre-2.3.2";
+$version: "ClearVision v6-pre-2.3.3";
 $marks: (
 	BD Dev: 81388395867156480, // Jiiks
 	CV Dev: 144881947557101568, // Zerthox
@@ -826,7 +826,7 @@ body {
 				@include clear;
 				color: hsla(0, 0%, 100%, .8) !important;
 			}
-		}		
+		}
 		& > %dividerContent {
 			margin: 10px 0;
 			padding: 5px 15px;
@@ -1277,9 +1277,9 @@ body {
 }
 
 // CHANNEL MEMBERS
-.members-1998pB {
+%members {
 	background-color: rgba(0, 0, 0, .75) !important;
-	& > .membersGroup-v9BXpm {
+	& > %membersGroup {
 		height: auto;
 		margin: 5px 15px;
 		padding: 2px 8px;
@@ -1292,49 +1292,46 @@ body {
 		letter-spacing: .08em;
 		border-radius: 3px;
 	}
-	& > .member-3W1lQa {
+	& > %member {
 		@include prefix(backface-visibility, hidden);
-		& > .content-OzHfo4 {
+		& > %memberContent {
 			@include prefix(transition, all .1s ease-in-out);
 		}
 		&:hover,
 		&.popout-open {
-			& > .content-OzHfo4 {
+			& > %memberContent {
 				background: linear-gradient(to right, rgba(0, 0, 0, .3) 85%, transparent) !important;
 			}
 		}
 		&:active {
-			& > .content-OzHfo4 {
+			& > %memberContent {
 				@include prefix(transform, scale(.9));
 			}
 		}
-		.username-1cB_5E {
+		%memberUsername {
 			font-size: 14px;
 		}
-		.ownerIcon-uZ6mE7 > g > path,
-		.activityIconForeground-qYIPPg {
+		%memberOwnerIcon > g > path,
+		%memberActivityIconForeground {
 			fill: hsla(0, 0%, 100%, .4);
 		}
-		.activityText-sLG0UL {
+		%memberActivityText {
 			& > strong {
 				color: var(--main-color) !important;
 				font-weight: 700;
 			}
 		}
-		&.memberOffline-2lN7gt {
-			.avatar-16XVId {
-				@include prefix(filter, grayscale(100%) blur(1px));
-				@include prefix(transition, all .5s ease-in-out);
-			}
-			&:hover {
-				.avatar-16XVId {
-					@include prefix(filter, none);
-				}
+		%avatarOffline {
+			@include prefix(filter, grayscale(100%) blur(1px));
+			@include prefix(transition, all .5s ease-in-out);
+		}
+		&:hover {
+			%avatarOffline {
+				@include prefix(filter, none);
 			}
 		}
 	}
-	.placeholderAvatar-uzH8f6,
-	.placeholderUsername-236yYU {
+	%memberPlaceholder {
 		background: hsla(0, 0%, 100%, .3);
 	}
 }
@@ -1345,48 +1342,48 @@ body {
 }
 
 // FRIENDS TABLE
-#friends {
+%friends {
 	@include clear;
-	.headerBar-UHpsPw {
+	%friendsHeaderBar {
 		background-color: rgba(0, 0, 0, .7) !important;
-		.tab-bar {
-			.tab-bar-item {
+		%tabBar {
+			%tabBarItem {
 				@include clear;
 				color: hsla(0, 0%, 100%, .6) !important;
 				@include prefix(transition, all .3s ease-in-out);
 				&:hover {
 					background-color: rgba(0, 0, 0, .5) !important;
 				}
-				&.selected {
-					background-color: var(--main-color) !important;
-					color: #fff !important;
-				}
+			}
+			%tabBarItemSelected {
+				background-color: var(--main-color) !important;
+				color: #fff !important
 			}
 		}
 	}
-	.friends-table {
+	%friendsTable {
 		background-color: rgba(0, 0, 0, .6) !important;
 		margin-top: 0;
-		.friends-table-header {
-			.friends-column {
+		%friendsTableHeader {
+			%friendsColumn {
 				color: hsla(0, 0%, 100%, .5) !important;
 			}
-			.friends-column-separator {
+			%friendsColumnSeparator {
 				background-color: hsla(0, 0%, 100%, .04) !important;
 			}
 		}
-		.friend-table-add-header {
+		%friendsTableAddHeader {
 			background: transparent !important;
 			border-bottom: 1px solid hsla(0, 0%, 100%, .1) !important;
-			.add-friend-input-wrapper {
+			%friendsAddFriendInputWrapper {
 				background-color: rgba(0, 0, 0, .3);
 				border-color: transparent;
 				@include prefix(transform, translateZ(0));
-				& > .add-friend-input {
+				& > %friendsAddFriendInput {
 					&::-webkit-input-placeholder {
 						color: hsla(0, 0%, 100%, .2);
 					}
-					& + .add-friend-hint {
+					& + %friendsAddFriendHint {
 						
 						@include pseudo(after) {
 							content: "";
@@ -1398,53 +1395,53 @@ body {
 							pointer-events: none;
 						}
 					}
-					&:focus + .add-friend-hint {
+					&:focus + %friendsAddFriendHint {
 						@include pseudo(after) {
 							border-color: var(--main-color);
 						}
 					}
 				}
-				& > .add-friend-hint {
+				& > %friendsAddFriendHint {
 					color: hsla(0, 0%, 100%, .2);
 				}
 			}
 		}
-		.friend-table-suggestions-header {
+		%friendsTableSuggestionsHeader {
 			@include clear;
 			border-bottom: 1px solid hsla(0, 0%, 100%, .1) !important;
 		}
-		.friends-row {
+		%friendsRow {
 			&:hover {
 				background-color: rgba(0, 0, 0, .3) !important;
 			}
-			.friends-column-name {
+			%friendsColumnName {
 				color: hsla(0, 0%, 100%, .4) !important;
 			}
-			.friends-column-status {
-				.friend-activity-text {
+			%friendsColumnStatus {
+				%friendActivityText {
 					& > strong {
 						font-weight: 600;
 					}
 				}
 			}
-			.friends-column-guilds {
-				.avatar-small {
+			%friendsColumnGuilds {
+				%avatarSmall {
 					background-color: transparent;
 				}
 			}
-			.friends-column-actions .friends-action {
+			%friendsColumnActions %friendsAction {
 				background-color: var(--main-color) !important;
 				@include prefix(transition, all .3s ease-in-out);
 				&:hover {
 					background-color: var(--hover-color) !important
 				}
 			}
-			& + .friends-row {
+			& + %friendsRow {
 				border-color: hsla(0, 0%, 100%, .04) !important;
 			}
 		}
 	}
-	.btn {
+	%button {
 		background-color: var(--main-color) !important;
 		&:hover {
 			background-color: var(--hover-color) !important;
@@ -1453,24 +1450,24 @@ body {
 }
 
 // BUTTONS
-.btn {
+%button {
 	border-radius: 3px;
 	@include prefix(transition, all .3s ease-in-out);
-	&.btn-primary {
+	&%buttonPrimary {
 		background-color: var(--main-color) !important;
 		&:hover {
 			background-color: var(--hover-color) !important;
 		}
 	}
 }
-.lookFilled-luDKDo.colorGreen-22At8E {
+%buttonFilledGreen {
 	background: var(--main-color);
 	@include prefix(transition, all .3s ease-in-out);
 	&:hover {
 		background: var(--hover-color);
 	}
 }
-.lookInverted-2lPGe7.colorBrand-3PmwCE {
+%buttonInvertedBrand {
 	background: hsla(0, 0%, 100%, .1);
 	color: hsla(0, 0%, 100%, .7);
 	@include prefix(transition, all .3s ease-in-out);
@@ -1479,7 +1476,7 @@ body {
 		color: #fff;
 	}
 }
-.lookOutlined-3sRXeN.colorWhite-rEQuAQ {
+%buttonOutlinedWhite {
 	background-color: hsla(0, 0%, 100%, .05);
 	border-color: transparent;
 	@include prefix(transition, all .3s ease-in-out);
@@ -1511,9 +1508,9 @@ body {
 ::-webkit-scrollbar-track-piece {
 	background-color: transparent !important;
 }
-.channels-Ie2l6A,
-.private-channels {
-	.scroller-2FKFPG {
+%channels,
+%channelsPrivate {
+	%scollerChannels {
 		&::-webkit-scrollbar-track-piece {
 			background-color: rgba(0, 0, 0, .3) !important;
 		}
@@ -1526,9 +1523,9 @@ body {
 	}
 }
 %chat,
-.friends-table,
+%friendsTable,
 .context-menu {
-	.scroller {
+	%scroller {
 		&::-webkit-scrollbar-track-piece {
 			background-color: rgba(0, 0, 0, .3) !important;
 		}
@@ -1541,16 +1538,15 @@ textarea {
 }
 
 // AVATARS
-.avatar-small,
-.avatar-large,
-.avatar-16XVId {
+%avatar {
 	@include clear;
 	@include prefix(box-shadow, 0 0 5px rgba(0, 0, 0, .5));
 }
-.avatar-large {
-	margin-left: 8px;
-	margin-right: 12px !important;
-}
+// [OUTDATED?]
+// .avatar-large {
+// 	margin-left: 8px;
+// 	margin-right: 12px !important;
+// }
 
 // STATUS
 .status,
