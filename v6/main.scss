@@ -1,7 +1,7 @@
 ---
 ---
 // VARIABLES
-$version: "ClearVision v6-pre-2.3.3";
+$version: "ClearVision v6-pre-2.3.4";
 $marks: (
 	BD Dev: 81388395867156480, // Jiiks
 	CV Dev: 144881947557101568, // Zerthox
@@ -97,6 +97,7 @@ body::after,
 }
 
 // MARKS
+// Hidden since avatars are in wrappers now!
 // @each $e in map-keys($marks) {
 // 	@each $v in map-get($marks, $e) {
 // 		[style*="#{$v}"] {
@@ -852,21 +853,21 @@ body {
 			color: hsla(0, 0%, 100%, .7);
 		}
 	}
-	%textareaTyping {
+	%channelTextareaTyping {
 		@include clear;
 	}
-	%textareaInner {
+	%channelTextareaInner {
 		background-color: rgba(0, 0, 0, .5);
 		border: 2px solid hsla(0, 0%, 100%, .1) !important;
 		@include prefix(transform, translateZ(0));
-		%textareaAttachButton {
+		%channelTextareaAttachButton {
 			@include prefix(transform, none);
-			%textareaAttachButtonPlus {
+			%channelTextareaAttachButtonPlus {
 				opacity: .3;
 				@include prefix(transition, all .15s ease-in-out);
 			}
 			&:hover {
-				%textareaAttachButtonPlus {
+				%channelTextareaAttachButtonPlus {
 					opacity: .7;
 				}
 			}
@@ -886,7 +887,7 @@ body {
 			&::-webkit-input-placeholder {
 				color: hsla(0, 0%, 100%, .2);
 			}
-			& + %textareaEmojiButton {
+			& + %channelTextareaButtons {
 				@include pseudo(after) {
 					content: "";
 					position: fixed;
@@ -898,7 +899,7 @@ body {
 					pointer-events: none;
 				}
 			}
-			&:focus + %textareaEmojiButton {
+			&:focus + %channelTextareaButtons {
 				@include pseudo(after) {
 					border-color: var(--main-color);
 					@include prefix(box-shadow, 0 0 3px var(--main-color));
@@ -1460,11 +1461,15 @@ body {
 		}
 	}
 }
-%buttonFilledGreen {
-	background: var(--main-color);
+%buttonFilledGreen,
+%buttonFilledBrand {
+	background-color: var(--main-color);
 	@include prefix(transition, all .3s ease-in-out);
 	&:hover {
-		background: var(--hover-color);
+		background-color: var(--hover-color);
+	}
+	&:disabled {
+		background-color: var(--main-color);
 	}
 }
 %buttonInvertedBrand {
@@ -1549,59 +1554,34 @@ textarea {
 // }
 
 // STATUS
-.status,
-.status-2s6iDp,
-.statusProfile-3ynqtt {
+%status,
+%statusProfile {
 	@include prefix(box-shadow, 0 0 3px, 0 0 5px rgba(0, 0, 0, .5));
 	@include prefix(transition, all .3s ease-in-out);
 }
-.status,
-.status-2s6iDp {
+%status {
 	border: none !important;
 	margin: 2px;
 }
-.status {
-	&.status-online {
-		background-color: var(--online-color);
-		color: var(--online-color);
-	}
-	&.status-idle {
-		background-color: var(--idle-color);
-		color: var(--idle-color);
-	}
-	&.status-dnd {
-		background-color: var(--dnd-color);
-		color: var(--dnd-color);
-	}
-	&.status-offline,
-	&.status-invisible {
-		background-color: var(--offline-color);
-		color: var(--offline-color);
-	}
+%statusOnline {
+	background-color: var(--online-color);
+	color: var(--online-color);
 }
-.status-2s6iDp,
-.statusProfile-3ynqtt {
-	&.statusOnline-1FlpW_ {
-		background-color: var(--online-color);
-		color: var(--online-color);
-	}
-	&.statusIdle-1XoSCz {
-		background-color: var(--idle-color);
-		color: var(--idle-color);
-	}
-	&.statusDnd-2DDKST {
-		background-color: var(--dnd-color);
-		color: var(--dnd-color);
-	}
-	&.statusInvisible-23hZKw,
-	&.statusOffline-3R-4Bv {
-		background-color: var(--offline-color);
-		color: var(--offline-color);
-	}
+%statusIdle {
+	background-color: var(--idle-color);
+	color: var(--idle-color);
+}
+%statusDnd {
+	background-color: var(--dnd-color);
+	color: var(--dnd-color);
+}
+%statusOffline,
+%statusInvisible {
+	background-color: var(--offline-color);
+	color: var(--offline-color);
 }
 
 // BADGES
-.badge,
 %badge {
 	background-color: var(--main-color) !important;
 	color: #fff !important;
@@ -1609,12 +1589,6 @@ textarea {
     font-weight: 600;
 	@include prefix(box-shadow, none);
 	@include prefix(transition, all .3s ease-in-out);
-}
-.selected {
-	.badge {		
-		background-color: #fff !important;
-		color: var(--main-color) !important;
-	}
 }
 .contentSelectedText-3wUhMi {
 	%badge {
@@ -1624,7 +1598,6 @@ textarea {
 }
 
 // BOT TAGS
-.bot-tag,
 .botTag-2WPJ74 {
 	padding: 1px 2px;
 	background: rgba(100, 100, 100, .3) !important;
@@ -1639,11 +1612,6 @@ textarea {
 	color: hsla(0, 0%, 100%, .8) !important;
 	font-size: 11px;
     border-radius: 5px;
-}
-.bot-tag {
-	.channel-members & {
-		font-size: 11px;
-	}
 }
 
 // OWNER TAG
@@ -2179,16 +2147,16 @@ textarea {
 }
 
 // SETTINGS SIDEBAR
-.ui-standard-sidebar-view {
+%standardSidebarView {
 	@include clear;
-	.sidebar-region {
-		.sidebar {
+	%settingsSidebarRegion {
+		%settingsSidebar {
 			height: 100%;
 			padding: 0px 6px 0px 20px;
 		}
 	}
 }
-.sidebar-region {
+%settingsSidebarRegion {
 	@include clear;
 	.sidebar-region-scroller {
 		margin-right: 8px;
@@ -2298,7 +2266,7 @@ textarea {
 @import "icons-settings.scss";
 
 // SETTINGS CONTENT
-.content-region {
+%settingsContentRegion {
 	@include clear;
 }
 
