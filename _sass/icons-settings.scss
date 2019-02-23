@@ -1,30 +1,36 @@
 // MIXINS
 @import "mixins.scss";
 
+// SELECTORS
+@import "selectors.scss";
+
 $icons: (
     // USER SETTINGS 
     "My Account": "https://zerthox.github.io/ClearVision/icons/person.svg",
     "Privacy & Safety": "https://zerthox.github.io/ClearVision/icons/security.svg",
     "Authorized Apps": "https://zerthox.github.io/ClearVision/icons/apps.svg",
     "Connections": "https://zerthox.github.io/ClearVision/icons/link.svg",
+    "Billing": "https://zerthox.github.io/ClearVision/icons/payment.svg",
 
     "Discord Nitro": "https://zerthox.github.io/ClearVision/icons/speed.svg",
+    "HypeSquad": "https://zerthox.github.io/ClearVision/icons/hypesquad.svg",
 
     "Voice & Video": "https://zerthox.github.io/ClearVision/icons/mic.svg",
-    "Overlay": "https://zerthox.github.io/ClearVision/icons/desktop_windows.svg",
+    "Overlay": "https://zerthox.github.io/ClearVision/icons/aspect_ratio.svg",
     "Notifications": "https://zerthox.github.io/ClearVision/icons/notifications.svg",
     "Keybinds": "https://zerthox.github.io/ClearVision/icons/keyboard.svg",
-    "Games": "https://zerthox.github.io/ClearVision/icons/games.svg",
+    "Game Activity": "https://zerthox.github.io/ClearVision/icons/games.svg",
+    "Game Library": "https://zerthox.github.io/ClearVision/icons/games.svg",
     "Text & Images": "https://zerthox.github.io/ClearVision/icons/chat.svg",
     "Appearance": "https://zerthox.github.io/ClearVision/icons/camera.svg",
     "Streamer Mode": "https://zerthox.github.io/ClearVision/icons/videocam.svg",
     "Language": "https://zerthox.github.io/ClearVision/icons/language.svg",
-    "Windows Settings": "https://zerthox.github.io/ClearVision/icons/desktop_windows.svg",
+    "Windows Settings": "https://zerthox.github.io/ClearVision/icons/windows.svg",
 
     "Change Log": "https://zerthox.github.io/ClearVision/icons/history.svg",
 
     "Core": "https://zerthox.github.io/ClearVision/icons/betterdiscord.svg",
-    "Zere's Fork": "https://omgdani.github.io/ClearVisionFixes/Icons/bandage.svg",
+    "Bandages": "https://omgdani.github.io/ClearVisionFixes/Icons/bandage.svg",
     "Emotes": "https://zerthox.github.io/ClearVision/icons/emote.svg",
     "Custom CSS": "https://zerthox.github.io/ClearVision/icons/code.svg",
     "Plugins": "https://zerthox.github.io/ClearVision/icons/puzzle.svg",
@@ -34,7 +40,7 @@ $icons: (
 );
 
 // GENERAL STUFF
-[layer-id="user-settings"] .sidebar-region .side-8zPYf6 .item-PXvHYJ,
+[aria-label="USER_SETTINGS"] %settingsSidebarRegion %settingsSide %tabBarItem,
 #bd-settings-sidebar .ui-tab-bar-item {
     padding-left: 50px;
     @include pseudo(before) {
@@ -48,7 +54,7 @@ $icons: (
 }
 
 // USER SETTINGS
-[layer-id="user-settings"] .sidebar-region .side-8zPYf6 .item-PXvHYJ {
+[aria-label="USER_SETTINGS"] %settingsSidebarRegion %settingsSide %tabBarItem {
     &:nth-child(2) {
         @include pseudo(before) {
             background-image: url(map-get($icons, "My Account"));
@@ -69,72 +75,88 @@ $icons: (
             background-image: url(map-get($icons, "Connections"));
         }
     }
-    &:nth-child(7) {
+    &:nth-child(6) {
+        @include pseudo(before) {
+            background-image: url(map-get($icons, "Billing"));
+        }
+    }
+    &:nth-child(8) {
         @include pseudo(before) {
             background-image: url(map-get($icons, "Discord Nitro"));
         }
     }
-    &:nth-child(10) {
+    &:nth-child(9) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Voice & Video"));
-        }
-    }
-    &:nth-child(11) {
-        @include pseudo(before) {
-            background-image: url(map-get($icons, "Overlay"));
+            background-image: url(map-get($icons, "HypeSquad"));
         }
     }
     &:nth-child(12) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Notifications"));
+            background-image: url(map-get($icons, "Voice & Video"));
         }
     }
     &:nth-child(13) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Keybinds"));
+            background-image: url(map-get($icons, "Overlay"));
         }
     }
     &:nth-child(14) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Games"));
+            background-image: url(map-get($icons, "Notifications"));
         }
     }
     &:nth-child(15) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Text & Images"));
+            background-image: url(map-get($icons, "Keybinds"));
         }
     }
     &:nth-child(16) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Appearance"));
+            background-image: url(map-get($icons, "Game Activity"));
         }
     }
     &:nth-child(17) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Streamer Mode"));
+            background-image: url(map-get($icons, "Game Library"));
         }
     }
     &:nth-child(18) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Language"));
+            background-image: url(map-get($icons, "Text & Images"));
         }
     }
     &:nth-child(19) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Windows Settings"));
+            background-image: url(map-get($icons, "Appearance"));
+        }
+    }
+    &:nth-child(20) {
+        @include pseudo(before) {
+            background-image: url(map-get($icons, "Streamer Mode"));
         }
     }
     &:nth-child(21) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Change Log"));
+            background-image: url(map-get($icons, "Language"));
+        }
+    }
+    &:nth-child(22) {
+        @include pseudo(before) {
+            background-image: url(map-get($icons, "Windows Settings"));
         }
     }
     &:nth-child(24) {
+        @include pseudo(before) {
+            background-image: url(map-get($icons, "Change Log"));
+        }
+    }
+    &:nth-child(27) {
         @include pseudo(before) {
             background-image: url(map-get($icons, "Log Out"));
         }
     }
 }
+
 // BD USER SETTINGS
 #bd-settings-sidebar .ui-tab-bar-item {
     &:nth-child(3) {
@@ -144,7 +166,7 @@ $icons: (
     }
     &:nth-child(4) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Zere's Fork"));
+            background-image: url(map-get($icons, "Bandages"));
         }
     }
     &:nth-child(5) {
