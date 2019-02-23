@@ -1,4 +1,4 @@
-/*! Using Discord Selectors v19-11-30 by Zerthox */
+/*! Using Discord Selectors v19-02-23 by Zerthox */
 
 // GENERAL
 .layers-3iHuyZ {
@@ -407,7 +407,7 @@
 .content-yTz4x3 {
     @extend %chatContainer !optional;
 }
-%chatContainer > .flex-spacer {
+%chatContainer > .spacer-1fA9zc {
     @extend %chatSpacer !optional;
 }
 .noChannel-Z1DQK7 {
@@ -553,20 +553,26 @@
     @extend %hasMore !optional;
 }
 // Channel Textarea
+.channelTextArea-rNsIhG {
+    @extend %channelTextarea !optional;
+}
 .typing-2GQL18 {
-    @extend %textareaTyping !optional;
+    @extend %channelTextareaTyping !optional;
 }
 .inner-zqa7da {
-    @extend %textareaInner !optional;
+    @extend %channelTextareaInner !optional;
 }
 .attachButton-1UjEWA {
-    @extend %textareaAttachButton !optional;
+    @extend %channelTextareaAttachButton !optional;
 }
 .attachButtonPlus-rUdX-B {
-    @extend %textareaAttachButtonPlus !optional;
+    @extend %channelTextareaAttachButtonPlus !optional;
+}
+.buttons-205you {
+    @extend %channelTextareaButtons !optional;
 }
 .emojiButton-3uL3Aw {
-    @extend %textareaEmojiButton !optional;
+    @extend %channelTextareaEmojiButton !optional;
 }
 // Channel Textarea Autocomplete
 .autocomplete-i9yVHs {
@@ -647,59 +653,65 @@
 }
 
 // FRIENDS TABLE
-#friends {
+.container-3gCOGc {
     @extend %friends !optional;
 }
 .headerBar-UHpsPw {
     @extend %friendsHeaderBar !optional;
 }
-.friends-table {
+.friendsTable-133bsv {
     @extend %friendsTable !optional;
 }
-.friends-table-header {
+// Friends Table Header
+.friendsTableHeader-32yE7d {
     @extend %friendsTableHeader !optional;
 }
-.friends-column {
+.friendsColumn-eVHFqJ {
     @extend %friendsColumn !optional;
 }
-.friends-column-separator {
+.friendsColumnSeparator-3MqtMA {
     @extend %friendsColumnSeparator !optional;
 }
-.friend-table-add-header {
-    @extend %friendsTableAddHeader !optional;
+// Friends Table Body
+.friendsTableBody-1ZhKif {
+    @extend %friendsTableBody !optional;
 }
-.add-friend-input-wrapper {
-    @extend %friendsAddFriendInputWrapper !optional;
-}
-.add-friend-input {
-    @extend %friendsAddFriendInput !optional;
-}
-.add-friend-hint {
-    @extend %friendsAddFriendHint !optional;
-}
-.friends-row {
+.friendsRow-2yicud {
     @extend %friendsRow !optional;
 }
-.friend-table-suggestions-header {
-    @extend %friendsTableSuggestionsHeader !optional;
-}
-.friends-column-name {
+.friendsColumnName-1zBOKm {
     @extend %friendsColumnName !optional;
 }
-.friends-column-status {
+.friendsColumnStatus-ZH4ho2 {
     @extend %friendsColumnStatus !optional;
 }
-.friend-activity-text {
+.friendActivityText-2lmziy {
     @extend %friendsActivityText !optional;
 }
-.friends-column-guilds {
+.friendsColumnGuilds-2we6jb {
     @extend %friendsColumnGuilds !optional;
 }
-.friends-column-actions {
+.friendsColumnActions-1LT3_M {
     @extend %friendsColumnActions !optional;
 }
-.friends-action {
+.friendsAction-__WNE9 {
     @extend %friendsAction !optional;
+}
+// Friends Table Add Tab
+.friendTableAddHeader-m9bzFr {
+    @extend %friendsTableAddHeader !optional;
+}
+.wrapper-1cBijl {
+    @extend %friendsAddFriendInputWrapper !optional;
+}
+.addFriendInput-4bcerK {
+    @extend %friendsAddFriendInput !optional;
+}
+.addFriendHint-3Y70FX {
+    @extend %friendsAddFriendHint !optional;
+}
+.friendTableSuggestionsHeader-2zSnpD {
+    @extend %friendsTableSuggestionsHeader !optional;
 }
 
 // AVATARS
@@ -730,7 +742,7 @@
 .btn-primary {
     @extend %buttonPrimary !optional;
 }
-.lookFilled-luDKDo {
+.lookFilled-1Gx00P{
     @extend %buttonFilled !optional;
 }
 .lookInverted-2lPGe7 {
@@ -745,7 +757,7 @@
 .colorGreen-22At8E {
     @extend %buttonGreen !optional;
 }
-.colorBrand-3PmwCE {
+.colorBrand-3pXr91 {
     @extend %buttonBrand !optional;
 }
 %buttonOutlined {
@@ -782,19 +794,42 @@
     }
 }
 
+// STATUS
+.status-oxiHuE {
+    @extend %status !optional;
+}
+.statusProfile-3ynqtt {
+    @extend %statusProfile !optional;
+}
+.online-2S838R {
+	@extend %statusOnline !optional;
+}
+.idle-3DEnRT {
+    @extend %statusIdle !optional;
+}
+.dnd-1_xrcq {
+    @extend %statusDnd !optional;
+}
+.offline-3qoTek {
+    @extend %statusOffline !optional;
+}
+.invisible-1kp8Z0 {
+    @extend %statusInvisible !optional;
+}
+
 // BADGE
 .wrapper-232cHJ {
     @extend %badge !optional;
 }
 
 // TAB BAR
-.tab-bar {
+.tabBar-1E2ExX {
     @extend %tabBar !optional;
 }
-.tab-bar-item {
+.item-PXvHYJ {
     @extend %tabBarItem !optional;
 }
-%tabBarItem.selected {
+%tabBarItem.itemSelected-1qLhcL {
     @extend %tabBarItemSelected !optional;
 }
 
@@ -814,4 +849,21 @@
 // USER MODAL
 .root-SR8cQa {
     @extend %userModal !optional;
+}
+
+// SETTINGS
+.standardSidebarView-3F1I7i {
+    @extend %standardSidebarView !optional;
+}
+.sidebarRegion-VFTUkN {
+    @extend %settingsSidebarRegion !optional;
+}
+.sidebar-CFHs9e {
+    @extend %settingsSidebar !optional;
+}
+.side-8zPYf6 {
+    @extend %settingsSide !optional;
+}
+.contentRegion-3nDuYy {
+    @extend %settingsContentRegion !optional;
 }
