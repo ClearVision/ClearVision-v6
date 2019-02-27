@@ -48,19 +48,22 @@ $purple: #593695;
 @mixin clear {
 	background-color: transparent !important;
 }
+
 @mixin stretch {
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
 }
+
 @mixin hover-shadow {
-	@include prefix(transition, all .1s ease-in-out);
+	@include transition(all .1s ease-in-out);
 	&:hover {
 		@include prefix(text-shadow, 0 0 1px);
 		text-decoration: none !important;
 	}
 }
+
 @mixin hover-cutout {
 	mix-blend-mode: screen;
 	background-color: transparent;
@@ -126,13 +129,12 @@ body::after,
 
 // GENERAL
 body {
-	@include prefix(backface-visibility, hidden);
 	@include pseudo(after) {
 		content: "";
 		position: absolute;
 		@include stretch;
 		@include bg($size: cover, $pos: center);
-		@include prefix(filter, brightness(var(--background-brightness)) blur(var(--background-blur)));
+		@include filter(brightness(var(--background-brightness)) blur(var(--background-blur)));
 		z-index: -9999;
 	}
 }
@@ -147,7 +149,7 @@ body {
 %layer {
 	&  > %containerMain {
 		// [FADES]
-		// @include prefix(animation, fade-in .3s ease-in-out);
+		// @include animation(fade-in .3s ease-in-out);
 		& > %base {
 			border-radius: 0;
 		}
@@ -170,7 +172,7 @@ body {
 	& > %titlebarWordmark {
 		opacity: 1;
 		pointer-events: none;
-		@include prefix(user-select, none);
+		@include user-select(none);
 		@include pseudo(after) {
 			content: "#{$version}";
 			position: absolute;
@@ -201,7 +203,7 @@ body {
 // GUILDS
 %guildsWrapper {
 	@include clear;
-	@include prefix(box-shadow, inset -10px 0 20px -10px rgba(0, 0, 0, .2));
+	@include box-shadow(inset -10px 0 20px -10px rgba(0, 0, 0, .2));
 	// GUILD LIST
 	%guilds {
 		%guildUnread {
@@ -213,7 +215,7 @@ body {
 			@include pseudo(before) {
 				background: var(--main-color) !important;
 				margin-top: -20px;
-				@include prefix(animation, guild-select .5s cubic-bezier(.22, .61, .36, 1));
+				@include animation(guild-select .5s cubic-bezier(.22, .61, .36, 1));
 			}
 		}
 		%guildSelected,
@@ -222,15 +224,15 @@ body {
 				width: 13px;
 				left: -17px;
 				background: var(--main-color) !important;
-				@include prefix(transition, all .3s ease-in-out);
+				@include transition(all .3s ease-in-out);
 			}
 		}
 		%guildInner {
 			background-color: rgba(0, 0, 0, .5) !important;
-			@include prefix(box-shadow, 0 0 5px rgba(0, 0, 0, .5));
-			@include prefix(transition, transform .1s ease-in-out);
+			@include box-shadow(0 0 5px rgba(0, 0, 0, .5));
+			@include transition(transform .1s ease-in-out);
 			&:active {
-				@include prefix(transform, scale(.9));
+				@include transform(scale(.9));
 			}
 		}
 		&%guildAudio %guildInner {
@@ -241,7 +243,7 @@ body {
 		}
 		%guild:not(.da-guild) {
 			%guildInner {
-				@include prefix(transition, background-color .3s ease-in-out);
+				@include transition(background-color .3s ease-in-out);
 			}
 			&:hover,
 			&%selected {
@@ -253,7 +255,7 @@ body {
 		%guildsError {
 			background-color: rgba(0, 0, 0, .5);
 			border-color: var(--main-color);
-			@include prefix(transition, all .3s ease-in-out);
+			@include transition(all .3s ease-in-out);
 			&:hover {
 				background-color: var(--main-color);
 			}
@@ -261,18 +263,18 @@ body {
 		%guildsAdd {
 			background-color: rgba(0, 0, 0, .5);
 			opacity: .7;
-			@include prefix(transition, all .1s ease-in-out);
+			@include transition(all .1s ease-in-out);
 			&:hover {
 				color: var(--main-color);
 				border-color: var(--main-color);
-				@include prefix(animation, pulsate-border 2s infinite ease-in-out);
+				@include animation(pulsate-border 2s infinite ease-in-out);
 				@include pseudo(before, after) {
 					background-color: var(--main-color) !important;
-					@include prefix(animation, pulsate-color 2s infinite ease-in-out);
+					@include animation(pulsate-color 2s infinite ease-in-out);
 				}
 			}
 			&:active {
-				@include prefix(transform, scale(.9));
+				@include transform(scale(.9));
 			}
 			span {
 				display: none;
@@ -282,21 +284,21 @@ body {
 				position: absolute;
 				background-color: #333539;
 				border-radius: 3px;
-				@include prefix(transition, all .1s ease-in-out);
+				@include transition(all .1s ease-in-out);
 			}
 			@include pseudo(before) {		
 				width: 2px;
 				top: 25%;
 				bottom: 25%;
 				left: 50%;
-				@include prefix(transform, translateX(-50%));
+				@include transform(translateX(-50%));
 			}
 			@include pseudo(after) {
 				height: 2px;
 				top: 50%;
 				right: 25%;
 				left: 25%;
-				@include prefix(transform, translateY(-50%));
+				@include transform(translateY(-50%));
 			}
 		}
 		%friendsOnline {
@@ -304,14 +306,14 @@ body {
 			color: hsla(0, 0%, 100%, .7);
 			text-transform: uppercase;
 			border-radius: 25px;
-			@include prefix(transition, all .3s ease-in-out);
+			@include transition(all .3s ease-in-out);
 			cursor: default;
 			&:hover {
 				color: #fff;
 			}
 		}
 		%badge {
-			@include prefix(animation, badge 1s ease-in-out infinite alternate);
+			@include animation(badge 1s ease-in-out infinite alternate);
 		}
 	}
 	// SEPERATORS
@@ -344,7 +346,7 @@ body {
 		@include align-items(center);
 		color: hsla(0, 0%, 100%, .5);
 		text-align: center;
-		@include prefix(transition, all .3s ease-in-out);
+		@include transition(all .3s ease-in-out);
 		@include pseudo(before, after) {
 			content: "";
 			display: inline-block;
@@ -352,11 +354,11 @@ body {
 			height: 2px;
 			background-color: hsla(0, 0%, 100%, .3);
 			margin: -1px 5px 0;
-			@include prefix(transition, all .3s ease-in-out);
+			@include transition(all .3s ease-in-out);
 		}
 	}
-	%cateogryNameHovered,
-	%categoryNameHoveredCollapsed, {
+	%categoryNameHovered,
+	%categoryNameHoveredCollapsed {
 		color: hsla(0, 0%, 100%, .7);
 		@include pseudo(before, after) {
 			background-color: hsla(0, 0%, 100%, .7);
@@ -375,14 +377,14 @@ body {
 	%categoryContainerDefault,
 	%channelContainerDefault {
 		// [FADES]
-		// @include prefix(animation, fade-in .3s ease-in-out);
+		// @include animation(fade-in .3s ease-in-out);
 	}
 	.container-hidden {
 		opacity: .3;
 	}
 	// TEXT & VOICE CHANNELS
 	%channelContent {
-		@include prefix(transition, all .15s ease-in-out);
+		@include transition(all .15s ease-in-out);
 	}
 	%channelContentVoice {
 		&:active {
@@ -391,25 +393,25 @@ body {
 	}
 	%channelName {
 		color: hsla(0, 0%, 100%, .3);
-		@include prefix(transition, all .15s ease-in-out);
+		@include transition(all .15s ease-in-out);
 	}
 	%channelIcon {
 		opacity: .7 !important;
-		@include prefix(transition, all .15s ease-in-out);
+		@include transition(all .15s ease-in-out);
 		path {
 			opacity: .3;
 		}
 	}
 	%channelActionIcon {
 		opacity: .3 !important;
-		@include prefix(transition, all .15s ease-in-out);
+		@include transition(all .15s ease-in-out);
 		&:hover {
 			opacity: .7 !important;
 		}
 	}
 	%channelContent path {
 		fill: #fff;
-		@include prefix(transition, all .15s ease-in-out);
+		@include transition(all .15s ease-in-out);
 	}
 	// HOVER
 	%channelContentHoveredText {
@@ -428,7 +430,7 @@ body {
 	%channelUnreadIndicator {
 		display: none;
 		& + %channelContent %channelIcon {
-			@include prefix(filter, drop-shadow(0 0 3px var(--main-color)));
+			@include filter(drop-shadow(0 0 3px var(--main-color)));
 			path {
 				fill: var(--main-color) !important;
 				opacity: 1 !important;
@@ -484,7 +486,7 @@ body {
 			left: 0;
 			bottom: 1px;
 			opacity: 0;
-			@include prefix(transition, all .1s ease-in-out);
+			@include transition(all .1s ease-in-out);
 			pointer-events: none;
 			z-index: -1;
 		}
@@ -499,7 +501,7 @@ body {
 		}
 	}
 	%voiceUserAvatarSpeaking {
-		@include prefix(box-shadow, none);
+		@include box-shadow(none);
 		@include pseudo(before) {
 			opacity: 1;
 		}
@@ -562,7 +564,7 @@ body {
 		}
 		%accountContainerAvatarWrapper {
 			position: relative;
-			@include prefix(transition, all .15s ease-in-out);
+			@include transition(all .15s ease-in-out);
 			@include pseudo(after) {
 				content: "Status";
 				position: absolute;
@@ -575,9 +577,9 @@ body {
 				text-align: center;
 				line-height: 30px;
 				border-radius: 50%;
-				@include prefix(box-shadow, inset 0 0 70px rgba(0, 0, 0, .75));
+				@include box-shadow(inset 0 0 70px rgba(0, 0, 0, .75));
 				opacity: 0;
-				@include prefix(transition, all .15s ease-in-out);
+				@include transition(all .15s ease-in-out);
 				pointer-events: none;
 			}
 			&:hover {
@@ -599,7 +601,7 @@ body {
 			}
 			%accountContainerAvatar {
 				@include bg($size: 100%, $repeat: no-repeat);
-				@include prefix(transition, all .15s ease-in-out);
+				@include transition(all .15s ease-in-out);
 			}
 			.status {
 				top: 90%;
@@ -614,7 +616,7 @@ body {
 			&%accountContainerIconButton,
 			svg {
 				opacity: .3;
-				@include prefix(transition, all .1s ease-in-out);
+				@include transition(all .1s ease-in-out);
 			}
 			&:hover {
 				@include clear;
@@ -646,7 +648,7 @@ body {
 				background: inherit;
 				background-size: 18px;
 				opacity: .3;
-				@include prefix(transition, all .15s ease-in-out);
+				@include transition(all .15s ease-in-out);
 			}
 			&:hover {
 				@include pseudo(after) {
@@ -670,7 +672,7 @@ body {
 		border-radius: 3px;
 		opacity: .9;
 		z-index: -1;
-		@include prefix(transition, all .15s ease-in-out);
+		@include transition(all .15s ease-in-out);
 	}
 	&:hover {
 		@include pseudo(after) {
@@ -683,9 +685,9 @@ body {
 .private-channels {
 	.channel {
 		a {
-			@include prefix(transition, all .15s ease-in-out);
+			@include transition(all .15s ease-in-out);
 			* {
-				@include prefix(transition, inherit);
+				@include transition(inherit);
 			}
 		}
 		.close {
@@ -714,7 +716,7 @@ body {
 .search-bar {
 	margin-top: 10px;
 	margin-bottom: 0;
-	@include prefix(box-shadow, none !important);
+	@include box-shadow(none !important);
 	.search-bar-inner {
 		background-color: rgba(0, 0, 0, .4);
 		padding-top: 0;
@@ -739,6 +741,9 @@ body {
 	%messagesWrapper {
 		@include clear;
 	}
+	%messages {
+		@include prefix(backface-visibility, hidden);
+	}
 	%chatTitle,
 	%chatTitleCall {
 		background-color: rgba(0, 0, 0, .7) !important;
@@ -749,7 +754,7 @@ body {
 	// NEW MESSAGES BAR
 	%newMessagesBar {
 		@include clear;
-		@include prefix(transition, all .15s ease-in-out);
+		@include transition(all .15s ease-in-out);
 		@include pseudo(before) {
 			content: "";
 			position: absolute;
@@ -758,7 +763,7 @@ body {
 			border-radius: 0 0 3px 3px;
 			opacity: .8;
 			z-index: -1;
-			@include prefix(transition, all .15s ease-in-out);
+			@include transition(all .15s ease-in-out);
 		}
 		&:hover,
 		&:active {
@@ -768,7 +773,7 @@ body {
 		}
 		&:active {
 			padding-top: 0;
-			@include prefix(transform, scale(.99));
+			@include transform(scale(.99));
 		}
 		button,
 		button:last-child {
@@ -778,7 +783,7 @@ body {
 	// JUMP TO PRESENT BAR
 	%jumpToPresentBar {
 		background-color: rgba(0, 0, 0, .7) !important;
-		@include prefix(transition, all .15s ease-in-out);
+		@include transition(all .15s ease-in-out);
 		&:hover,
 		&:active {
 			background-color: var(--main-color) !important;
@@ -787,11 +792,11 @@ body {
 			}
 		}
 		&:active {
-			@include prefix(transform, scale(.99));
+			@include transform(scale(.99));
 		}
 		& > button {
 			color: hsla(0, 0%, 100%, .6);
-			@include prefix(transition, inherit);
+			@include transition(inherit);
 		}
 	}
 	// LOAD MORE MESSAGES BNUTTON
@@ -846,7 +851,7 @@ body {
 	// CHANNEL TEXTAREA
 	form {
 		@include clear;
-		@include prefix(box-shadow, none !important);
+		@include box-shadow(none !important);
 		#charcounter {
 			top: 100%;
 			margin-top: 7.5px;
@@ -859,12 +864,12 @@ body {
 	%channelTextareaInner {
 		background-color: rgba(0, 0, 0, .5);
 		border: 2px solid hsla(0, 0%, 100%, .1) !important;
-		@include prefix(transform, translateZ(0));
+		@include transform(translateZ(0));
 		%channelTextareaAttachButton {
-			@include prefix(transform, none);
+			@include transform(none);
 			%channelTextareaAttachButtonPlus {
 				opacity: .3;
-				@include prefix(transition, all .15s ease-in-out);
+				@include transition(all .15s ease-in-out);
 			}
 			&:hover {
 				%channelTextareaAttachButtonPlus {
@@ -875,7 +880,7 @@ body {
 		.sendembeds-button {
 			@include pseudo(before) {
 				opacity: .3;
-				@include prefix(transition, all .15s ease-in-out);
+				@include transition(all .15s ease-in-out);
 			}
 			&:hover {
 				@include pseudo(before) {
@@ -895,14 +900,14 @@ body {
 					border: 2px solid transparent;
 					border-radius: 3px;
 					opacity: 1;
-					@include prefix(transition, all .15s ease-in-out);
+					@include transition(all .15s ease-in-out);
 					pointer-events: none;
 				}
 			}
 			&:focus + %channelTextareaButtons {
 				@include pseudo(after) {
 					border-color: var(--main-color);
-					@include prefix(box-shadow, 0 0 3px var(--main-color));
+					@include box-shadow(0 0 3px var(--main-color));
 				}
 			}
 		}
@@ -950,7 +955,7 @@ body {
 		}
 		& > .item-container {
 			& > .icon {
-				@include prefix(filter, grayscale(1));
+				@include filter(grayscale(1));
 				opacity: .3;
 			}
 			& > p {
@@ -972,16 +977,16 @@ body {
 %messageGroup,
 %divider {
 	// [FADES]
-	// @include prefix(animation, message-fade .5s ease-in-out);
+	// @include animation(message-fade .5s ease-in-out);
 }
 %messagesWrapper {
 	@include clear;
 }
 %messageGroup {
 	%avatarLarge {
-		@include prefix(transition, all .3s ease-in-out, transform .1s ease-in-out);
+		@include transition(all .3s ease-in-out, transform .1s ease-in-out);
 		&:active {
-			@include prefix(transform, scale(.9));
+			@include transform(scale(.9));
 		}	
 	}
 	&:not(.has-divider) {
@@ -992,7 +997,7 @@ body {
 	}
 	.timestamp {
 		color: hsla(0, 0%, 100%, .3) !important;
-		@include prefix(transition, all .3s ease-in-out);
+		@include transition(all .3s ease-in-out);
 	}
 	&:hover {
 		.timestamp {
@@ -1024,7 +1029,7 @@ body {
 	}
 	pre {
 		max-width: 93%;
-		background-color: transparent !important;
+		@include clear;
 		border-width: 2px;
 		border-color: transparent !important;
 		padding: 0;
@@ -1051,8 +1056,8 @@ body {
 			border: none !important;
 			border-top-left-radius: 3px;
 			opacity: 0;
-			@include prefix(transition, all .3s ease-in-out);
-			@include prefix(user-select, none);
+			@include transition(all .3s ease-in-out);
+			@include user-select(none);
 			&:hover {
 				color: #fff !important;
 			}
@@ -1089,7 +1094,7 @@ body {
 				text-align: right;
 				overflow: hidden;
 				vertical-align: top;
-				@include prefix(user-select, none);
+				@include user-select(none);
 			}
 		}
 	}
@@ -1118,7 +1123,7 @@ body {
 				& > %embedVideoActionsButtonWrapper {
 					background: rgba(0, 0, 0, .5);
 					color: #fff;
-					@include prefix(box-shadow, inset 0 0 10px rgba(0, 0, 0, .5));
+					@include box-shadow(inset 0 0 10px rgba(0, 0, 0, .5));
 				}
 			}
 		}
@@ -1151,10 +1156,10 @@ body {
 				border-radius: 1px;
 			}
 			@include pseudo(after) {
-				@include prefix(transform, translateX(-50%) rotate(45deg));
+				@include transform(translateX(-50%) rotate(45deg));
 			}
 			@include pseudo(before) {
-				@include prefix(transform, translateX(-50%) rotate(-45deg));
+				@include transform(translateX(-50%) rotate(-45deg));
 			}
 		}
 		%inviteGuildDetail {
@@ -1171,7 +1176,7 @@ body {
 		%inviteButtonAccept {
 			background-color: transparent;
 			border: 1px solid $green;
-			@include prefix(transition, all .3s ease-in-out);
+			@include transition(all .3s ease-in-out);
 			&:hover {
 				background-color: $green;
 			}
@@ -1185,7 +1190,7 @@ body {
 		%inviteButtonExpired {
 			background-color: transparent;
 			border: 1px solid var(--dnd-color);
-			@include prefix(transition, all .3s ease-in-out);
+			@include transition(all .3s ease-in-out);
 			&:hover {
 				background-color: var(--dnd-color);
 			}
@@ -1200,12 +1205,12 @@ body {
 	border: none;
 	border-radius: 0;
 	&:hover {
-		@include prefix(box-shadow, none !important);
+		@include box-shadow(none !important);
 	}
 	%messageGroupBlockedButton {
 		@include clear;
 		color: hsla(0, 0%, 100%, .3) !important;
-		@include prefix(transition, all .3s ease-in-out);
+		@include transition(all .3s ease-in-out);
 		@include pseudo(after) {
 			content: "";
 			position: absolute;
@@ -1213,7 +1218,7 @@ body {
 			border-top: 1px solid;
 			border-bottom: 1px solid;
 			border-color: hsla(0, 0%, 100%, .04);
-			@include prefix(transition, all .3s ease-in-out);
+			@include transition(all .3s ease-in-out);
 			pointer-events: none;
 		}
 		&:hover {
@@ -1227,7 +1232,7 @@ body {
 		margin-top: -20px;
 		margin-left: 0;
 		// [FADES]
-		// @include prefix(animation, fade-in .3s ease-in-out);
+		// @include animation(fade-in .3s ease-in-out);
 	}
 	& + %divider {
 		margin-top: 25px;
@@ -1246,7 +1251,7 @@ body {
 	background-color: rgba(115, 139, 215, .1) !important;
 	color: #ddd !important;
 	border-radius: 6px;
-	@include prefix(transition, all .3s ease-in-out);
+	@include transition(all .3s ease-in-out);
 	white-space: nowrap;
 	cursor: pointer;
 	&:hover {
@@ -1266,8 +1271,8 @@ body {
 .quoter,
 .discrypt {
 	border-radius: 3px;
-	@include prefix(transition, all .3s ease-in-out);
-	@include prefix(animation, fade-in .3s ease-in-out);
+	@include transition(all .3s ease-in-out);
+	@include animation(fade-in .3s ease-in-out);
 	&:hover {
 		background-color: var(--main-color) !important;
 	}
@@ -1296,7 +1301,7 @@ body {
 	& > %member {
 		@include prefix(backface-visibility, hidden);
 		& > %memberContent {
-			@include prefix(transition, all .1s ease-in-out);
+			@include transition(all .1s ease-in-out);
 		}
 		&:hover,
 		&.popout-open {
@@ -1306,7 +1311,7 @@ body {
 		}
 		&:active {
 			& > %memberContent {
-				@include prefix(transform, scale(.9));
+				@include transform(scale(.9));
 			}
 		}
 		%memberUsername {
@@ -1323,12 +1328,12 @@ body {
 			}
 		}
 		%avatarOffline {
-			@include prefix(filter, grayscale(100%) blur(1px));
-			@include prefix(transition, all .5s ease-in-out);
+			@include filter(grayscale(100%) blur(1px));
+			@include transition(all .5s ease-in-out);
 		}
 		&:hover {
 			%avatarOffline {
-				@include prefix(filter, none);
+				@include filter(none);
 			}
 		}
 	}
@@ -1351,7 +1356,7 @@ body {
 			%tabBarItem {
 				@include clear;
 				color: hsla(0, 0%, 100%, .6) !important;
-				@include prefix(transition, all .3s ease-in-out);
+				@include transition(all .3s ease-in-out);
 				&:hover {
 					background-color: rgba(0, 0, 0, .5) !important;
 				}
@@ -1374,12 +1379,12 @@ body {
 			}
 		}
 		%friendsTableAddHeader {
-			background: transparent !important;
+			@include clear;
 			border-bottom: 1px solid hsla(0, 0%, 100%, .1) !important;
 			%friendsAddFriendInputWrapper {
 				background-color: rgba(0, 0, 0, .3);
 				border-color: transparent;
-				@include prefix(transform, translateZ(0));
+				@include transform(translateZ(0));
 				& > %friendsAddFriendInput {
 					&::-webkit-input-placeholder {
 						color: hsla(0, 0%, 100%, .2);
@@ -1392,7 +1397,7 @@ body {
 							@include stretch;
 							border: 1px solid transparent;
 							border-radius: 3px;
-							@include prefix(transition, all .3s ease-in-out);
+							@include transition(all .3s ease-in-out);
 							pointer-events: none;
 						}
 					}
@@ -1432,7 +1437,7 @@ body {
 			}
 			%friendsColumnActions %friendsAction {
 				background-color: var(--main-color) !important;
-				@include prefix(transition, all .3s ease-in-out);
+				@include transition(all .3s ease-in-out);
 				&:hover {
 					background-color: var(--hover-color) !important
 				}
@@ -1453,7 +1458,7 @@ body {
 // BUTTONS
 %button {
 	border-radius: 3px;
-	@include prefix(transition, all .3s ease-in-out);
+	@include transition(all .3s ease-in-out);
 	&%buttonPrimary {
 		background-color: var(--main-color) !important;
 		&:hover {
@@ -1464,7 +1469,7 @@ body {
 %buttonFilledGreen,
 %buttonFilledBrand {
 	background-color: var(--main-color);
-	@include prefix(transition, all .3s ease-in-out);
+	@include transition(all .3s ease-in-out);
 	&:hover {
 		background-color: var(--hover-color);
 	}
@@ -1475,7 +1480,7 @@ body {
 %buttonInvertedBrand {
 	background: hsla(0, 0%, 100%, .1);
 	color: hsla(0, 0%, 100%, .7);
-	@include prefix(transition, all .3s ease-in-out);
+	@include transition(all .3s ease-in-out);
 	&:hover {
 		background: hsla(0, 0%, 100%, .2);
 		color: #fff;
@@ -1484,7 +1489,7 @@ body {
 %buttonOutlinedWhite {
 	background-color: hsla(0, 0%, 100%, .05);
 	border-color: transparent;
-	@include prefix(transition, all .3s ease-in-out);
+	@include transition(all .3s ease-in-out);
 	&:hover {
 		background-color: hsla(0, 0%, 100%, .1);
 		border-color: transparent;
@@ -1515,7 +1520,7 @@ body {
 }
 %channels,
 %channelsPrivate {
-	%scollerChannels {
+	%scroller {
 		&::-webkit-scrollbar-track-piece {
 			background-color: rgba(0, 0, 0, .3) !important;
 		}
@@ -1528,8 +1533,7 @@ body {
 	}
 }
 %chat,
-%friendsTable,
-.context-menu {
+%friendsTable {
 	%scroller {
 		&::-webkit-scrollbar-track-piece {
 			background-color: rgba(0, 0, 0, .3) !important;
@@ -1545,7 +1549,7 @@ textarea {
 // AVATARS
 %avatar {
 	@include clear;
-	@include prefix(box-shadow, 0 0 5px rgba(0, 0, 0, .5));
+	@include box-shadow(0 0 5px rgba(0, 0, 0, .5));
 }
 // [OUTDATED?]
 // .avatar-large {
@@ -1556,8 +1560,8 @@ textarea {
 // STATUS
 %status,
 %statusProfile {
-	@include prefix(box-shadow, 0 0 3px, 0 0 5px rgba(0, 0, 0, .5));
-	@include prefix(transition, all .3s ease-in-out);
+	@include box-shadow(0 0 3px, 0 0 5px rgba(0, 0, 0, .5));
+	@include transition(all .3s ease-in-out);
 }
 %status {
 	border: none !important;
@@ -1587,10 +1591,10 @@ textarea {
 	color: #fff !important;
 	padding: 3px 5px;
     font-weight: 600;
-	@include prefix(box-shadow, none);
-	@include prefix(transition, all .3s ease-in-out);
+	@include box-shadow(none);
+	@include transition(all .3s ease-in-out);
 }
-.contentSelectedText-3wUhMi {
+%channelContentSelectedText {
 	%badge {
 		background-color: #fff !important;
 		color: var(--main-color) !important;
@@ -1598,7 +1602,7 @@ textarea {
 }
 
 // BOT TAGS
-.botTag-2WPJ74 {
+%botTag {
 	padding: 1px 2px;
 	background: rgba(100, 100, 100, .3) !important;
 	color: hsla(0, 0%, 100%, .6) !important;
@@ -1606,7 +1610,7 @@ textarea {
 	text-shadow: 0 0 1px rgba(0, 0, 0, .3);
 	border-radius: 3px;
 }
-.botTagInvert-18-95s {
+%botTagInvert {
 	padding: 2px 3px;
     background-color: rgba(0, 0, 0, .2) !important;
 	color: hsla(0, 0%, 100%, .8) !important;
@@ -1614,16 +1618,16 @@ textarea {
     border-radius: 5px;
 }
 
-// OWNER TAG
-.kawaii-tag {
-	&.kawaii-tag-invert {
+// KAWAII TAG (OWNER TAG)
+%kawaiiTag {
+	&%kawaiiTagInvert {
 		padding: 2px 3px;
 		background-color: rgba(0, 0, 0, .2);
 		color: hsla(0, 0%, 100%, .8) !important;
 		font-size: 11px;
 		border-radius: 5px;
 	}
-	.channel-members & {
+	%members & {
 		padding: 1px 2px;
 		color: #fff;
 		height: 14px;
@@ -1639,18 +1643,18 @@ textarea {
 }
 
 // TOOLTIPS
-.tooltip {
-	&.tooltip-black,
-	&.tooltip-red {
+%tooltip {
+	&%tooltipBlack,
+	&%tooltipRed {
 		padding: 5px 10px;
 		background-color: var(--main-color);
 		color: #fff;
 		font-size: 13px;
 		font-weight: 600;
 		border-radius: 3px;
-		@include prefix(box-shadow, 0 2px 10px 0 rgba(0, 0, 0, .2));
-		@each $e in top, right, bottom, left {
-			&.tooltip-#{$e} {
+		@include box-shadow(0 2px 10px 0 rgba(0, 0, 0, .2));
+		@each $e in Top, Right, Bottom, Left {
+			&%tooltip#{$e} {
 				@include pseudo(after) {
 					border-#{$e}-color: var(--main-color);
 				}
@@ -1672,7 +1676,7 @@ textarea {
 			background-color: transparent !important;
 			border: none !important;
 			border-radius: 10px;
-			@include prefix(transition, all .2s ease-in-out);
+			@include transition(all .2s ease-in-out);
 			@include pseudo(after) {
 				content: "";
 				display: block;
@@ -1684,9 +1688,9 @@ textarea {
 				background-color: #fff !important;
 				border: none !important;
 				border-radius: 50%;
-				@include prefix(box-shadow, 0 0 1px 1px rgba(0, 0, 0, .3));
-				@include prefix(transition, all .2s ease-in-out !important);
-				@include prefix(transform, none !important);
+				@include box-shadow(0 0 1px 1px rgba(0, 0, 0, .3));
+				@include transition(all .2s ease-in-out !important);
+				@include transform(none !important);
 			}
 		}
 		input:checked {
@@ -1705,13 +1709,13 @@ textarea {
 .small-popout-box {
 	background-color: rgba(0, 0, 0, .5);
 	border: 1px solid transparent;
-	@include prefix(animation, menu-fold .3s cubic-bezier(.2, .6, .5, 1.1));
+	@include animation(menu-fold .3s cubic-bezier(.2, .6, .5, 1.1));
 	@include prefix(transform-origin, 50% 0);
 }
 .option-popout {
 	.btn-item {
 		color: hsla(0, 0%, 100%, .4);
-		@include prefix(transition, all .15s ease-in-out);
+		@include transition(all .15s ease-in-out);
 		&:hover {
 			color: hsla(0, 0%, 100%, .7);
 		}
@@ -1722,8 +1726,8 @@ textarea {
 .contextMenu-HLZMGh {
 	background-color: rgba(0, 0, 0, .7) !important;
 	border-color: transparent !important;
-	@include prefix(box-shadow, 0 0 1px rgba(0, 0, 0, .82), 0 1px 4px rgba(0, 0, 0, .1) !important);
-	@include prefix(animation, menu-fold .3s cubic-bezier(.2, .6, .5, 1.1));
+	@include box-shadow(0 0 1px rgba(0, 0, 0, .82), 0 1px 4px rgba(0, 0, 0, .1) !important);
+	@include animation(menu-fold .3s cubic-bezier(.2, .6, .5, 1.1));
 	@include prefix(transform-origin, 50% 0);
 	&.undefined {
 		@include prefix(transform-origin, 50% 100%);
@@ -1735,7 +1739,7 @@ textarea {
 		@include clear;
 		color: hsla(0, 0%, 100%, .6);
 		border-radius: 3px;
-		@include prefix(transition, all .1s ease-in-out);
+		@include transition(all .1s ease-in-out);
 		&:hover {
 			color: #fff;
 			background-color: rgba(0, 0, 0, .7) !important;
@@ -1754,7 +1758,7 @@ textarea {
 	}
 	.itemSubMenu-1vN_Yn {
 		.contextMenu-HLZMGh {
-			@include prefix(animation, menu-slide .15s cubic-bezier(.2, .6, .5, 1.1));
+			@include animation(menu-slide .15s cubic-bezier(.2, .6, .5, 1.1));
 			@include prefix(transform-origin, 0% 50%);
 		}
 	}
@@ -1806,15 +1810,15 @@ textarea {
 %userPopout {
 	position: relative;
 	border-radius: 5px;
-	@include prefix(box-shadow, 0 2px 10px 0 rgba(0, 0, 0, .2));
-	@include prefix(transform, none !important);
-	@include prefix(animation, menu-pop .15s cubic-bezier(.2, .6, .5, 1.1));
+	@include box-shadow(0 2px 10px 0 rgba(0, 0, 0, .2));
+	@include transform(none !important);
+	@include animation(menu-pop .15s cubic-bezier(.2, .6, .5, 1.1));
 	@include pseudo(before) {
 		content: "";
 		position: absolute;
 		@include pos(-5px, -5px, -5px, -5px);
 		background-position: center;
-		@include prefix(filter, blur(3px));
+		@include filter(blur(3px));
 		z-index: -1;
 	}
 	// USER POPOUT HEADER
@@ -1849,7 +1853,7 @@ textarea {
 		}
 	}
 	.avatar-16XVId {
-		@include prefix(box-shadow, 0 0 5px rgba(0, 0, 0, .5));
+		@include box-shadow(0 0 5px rgba(0, 0, 0, .5));
 		.image-EVRGPw {
 			background-color: transparent;
 		}
@@ -1872,7 +1876,7 @@ textarea {
 		textarea {
 			@include clear;
 			color: hsla(0, 0%, 100%, .8) !important;
-			@include prefix(transition, all .3s ease-in-out);
+			@include transition(all .3s ease-in-out);
 			&::-webkit-input-placeholder {	
 				color: hsla(0, 0%, 100%, .5);
 			}
@@ -1887,7 +1891,7 @@ textarea {
 		background: rgba(0, 0, 0, .3);
 		border-color: transparent;
 		color: #fff;
-		@include prefix(transition, all .3s ease-in-out);
+		@include transition(all .3s ease-in-out);
 		&::-webkit-input-placeholder {	
 			color: hsla(0, 0%, 100%, .5);
 		}
@@ -1908,7 +1912,7 @@ textarea {
 	@include display-flex;
 	@include flex-direction(row-reverse);
 	border-radius: 3px;
-	@include prefix(transition, all .1s ease-in-out);
+	@include transition(all .1s ease-in-out);
 	cursor: default;
 	&[style] {
 		&:not(:hover) {
@@ -1933,14 +1937,14 @@ textarea {
 			border-radius: 3px;
 			background-color: inherit;
 			opacity: .1;
-			@include prefix(transition, all .1s ease-in-out);
+			@include transition(all .1s ease-in-out);
 			pointer-events: none;
 		}
 		& > .roleRemoveIcon-2-TeGW {
 			position: absolute;
 			display: block;
 			opacity: 0;
-			@include prefix(transition, all .1s ease-in-out);
+			@include transition(all .1s ease-in-out);
 			.fill {
 				fill: #fff !important;
 			}
@@ -1950,7 +1954,7 @@ textarea {
 		margin-right: 0;
 		margin-left: 4px;
 		color: hsla(0, 0%, 100%, .7);
-		@include prefix(transition, all .1s ease-in-out);
+		@include transition(all .1s ease-in-out);
 	}
 	&:hover  {
 		& > .roleCircle-3xAZ1j {
@@ -1968,7 +1972,7 @@ textarea {
 }
 .addButton-pcyyf6 {
 	background-color: hsla(0, 0%, 100%, .1);
-	@include prefix(transition, all .1s ease-in-out);
+	@include transition(all .1s ease-in-out);
 	cursor: pointer;
 	&:hover {
 		background-color: hsla(0, 0%, 100%, .2);
@@ -1977,7 +1981,7 @@ textarea {
 		width: 7px;
 		height: 7px;
 		color: hsla(0, 0%, 100%, .5);
-		@include prefix(transition, inherit);
+		@include transition(inherit);
 	}
 	&:hover > svg {
 		color: #fff;
@@ -1986,7 +1990,7 @@ textarea {
 // OLD MEMBER ROLES
 .ui-role-list-role {
 	position: relative;
-	@include prefix(transition, all .1s ease-in-out);
+	@include transition(all .1s ease-in-out);
 	@include pseudo(after) {
 		content: "";
 		position: absolute;
@@ -1994,7 +1998,7 @@ textarea {
 		border-radius: 3px;
 		background-color: inherit;
 		opacity: 0;
-		@include prefix(transition, all .1s ease-in-out);
+		@include transition(all .1s ease-in-out);
 		pointer-events: none;
 	}
 	&:hover {
@@ -2016,7 +2020,7 @@ textarea {
 .ui-role-list-add {
 	background-color: hsla(0, 0%, 100%, .1);
 	border-color: transparent !important;
-	@include prefix(transition, all .1s ease-in-out);
+	@include transition(all .1s ease-in-out);
 	&:hover {
 		background-color: hsla(0, 0%, 100%, .2);
 	}
@@ -2032,7 +2036,7 @@ textarea {
 		position: absolute;
 		@include pos(-5px, -5px, -5px, -5px);
 		background-position: center;
-		@include prefix(filter, blur(3px));
+		@include filter(blur(3px));
 		z-index: -1;
 	}
 	& > .body-3ND3kc {
@@ -2078,7 +2082,7 @@ textarea {
 .tab-bar.tabBar-2MuP6- {
 	& > .tabBarItem-1b8RUP {
 		color: hsla(0, 0%, 100%, .5);
-		@include prefix(transition, all .2s ease-in-out);
+		@include transition(all .2s ease-in-out);
 		&:hover {
 			color: hsla(0, 0%, 100%, .7);
 			border-color: hsla(0, 0%, 100%, .7);
@@ -2107,7 +2111,7 @@ textarea {
 	&.notice-danger {
 		background-color: rgba($red, .7);
 		.btn {
-			@include prefix(transition, all .3s ease-in-out);
+			@include transition(all .3s ease-in-out);
 			@include hover-cutout;
 		}
 	}
@@ -2116,7 +2120,7 @@ textarea {
 // TOAST
 .toast {
 	background-color: rgba(0, 0, 0, .5) ;
-	@include prefix(box-shadow, 0 2px 10px 0 rgba(0, 0, 0, .2));
+	@include box-shadow(0 2px 10px 0 rgba(0, 0, 0, .2));
 	color: hsla(0, 0%, 100%, .7);
 }
 
@@ -2178,10 +2182,10 @@ textarea {
 			padding: 8px 0 8px 20px;
 			margin: 0;
 			cursor: pointer;
-			@include prefix(transition, all .15s ease-in-out);
+			@include transition(all .15s ease-in-out);
 			@include pseudo(before) {
 				opacity: .3;
-				@include prefix(transition, all .15s ease-in-out);
+				@include transition(all .15s ease-in-out);
 			}
 			&:hover {
 				background-color: hsla(0, 0%, 100%, .07) !important;
@@ -2208,7 +2212,7 @@ textarea {
 					color: hsla(0, 0%, 100%, 1) !important;
 					@include pseudo(before) {
 						opacity: 1;
-						@include prefix(transform, rotateY(180deg));
+						@include transform(rotateY(180deg));
 					}
 				}
 			}
@@ -2230,10 +2234,10 @@ textarea {
 		padding: 8px 0 8px 20px;
 		margin: 0;
 		cursor: pointer;
-		@include prefix(transition, all .15s ease-in-out);
+		@include transition(all .15s ease-in-out);
 			@include pseudo(before) {
 				opacity: .3;
-				@include prefix(transition, all .15s ease-in-out);
+				@include transition(all .15s ease-in-out);
 			}
 		&:hover {
 			background-color: hsla(0, 0%, 100%, .07) !important;
@@ -2317,31 +2321,31 @@ textarea {
 }
 @include keyframes(menu-fold) {
 	from {
-		@include prefix(transform, rotateX(-90deg));
+		@include transform(rotateX(-90deg));
 		opacity: 0;
 	}
 	to {
-		@include prefix(transform, none);
+		@include transform(none);
 		opacity: 1;
 	}
 }
 @include keyframes(menu-slide) {
 	from {
-		@include prefix(transform, rotateY(-90deg));
+		@include transform(rotateY(-90deg));
 		opacity: 0;
 	}
 	to {
-		@include prefix(transform, none);
+		@include transform(none);
 		opacity: 1;
 	}
 }
 @include keyframes(menu-pop) {
     from {
-		@include prefix(transform, scale(0));
+		@include transform(scale(0));
         opacity: 0;
     }
     to {
-		@include prefix(transform, none);
+		@include transform(none);
         opacity: 1;
     }
 }
