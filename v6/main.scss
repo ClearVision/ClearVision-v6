@@ -59,7 +59,7 @@ $purple: #593695;
 @mixin hover-shadow {
 	@include transition(all .1s ease-in-out);
 	&:hover {
-		@include prefix(text-shadow, 0 0 1px);
+		text-shadow: 0 0 1px;
 		text-decoration: none !important;
 	}
 }
@@ -1836,12 +1836,12 @@ textarea {
 		}
 		.nameNormal-2lqVQK {
 			color: var(--main-color);
-			@include prefix(text-shadow, 0 0 5px rgba(0, 0, 0, .5));
+			text-shadow: 0 0 5px rgba(0, 0, 0, .5);
 			font-weight: 600;
 			& > .activityName-1L6vjN {
 				color: inherit;
 				&.bodyLink-3A8Buv:hover {
-					@include prefix(text-shadow, 0 0 5px rgba(0, 0, 0, .5), 0 0 1px);
+					text-shadow: 0 0 5px rgba(0, 0, 0, .5), 0 0 1px;
 				}
 			}
 		}
@@ -2060,12 +2060,12 @@ textarea {
 .activityProfile-2bJRaP {
 	.nameNormal-2lqVQK {
 		color: var(--main-color);
-		@include prefix(text-shadow, 0 0 5px rgba(0, 0, 0, .5));
+		text-shadow: 0 0 5px rgba(0, 0, 0, .5);
 		font-weight: 600;
 		& > .activityName-1L6vjN {
 			color: inherit;
 			&.bodyLink-3A8Buv:hover {
-				@include prefix(text-shadow, 0 0 5px rgba(0, 0, 0, .5), 0 0 1px);
+				text-shadow: 0 0 5px rgba(0, 0, 0, .5), 0 0 1px;
 			}
 		}
 	}
