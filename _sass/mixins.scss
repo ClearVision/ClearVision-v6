@@ -1,4 +1,9 @@
-// Mixin Collection by Zerthox
+/* Mixin Collection by Zerthox */
+
+/// Prefix an attribute with a set of prefixes
+/// @param {string} $property - attribute name
+/// @param {*} $value... - attribute value
+/// @param {list} $prefixes [(webkit, moz, ms, o)] - list of prefixes
 @mixin prefix($property, $value...) {
 	$p: if(length(prefixes) == 0, $prefixes, (webkit, moz, ms, o));
 	@if type-of($property) == map {
@@ -17,6 +22,10 @@
 		#{$property}: $value;
 	}
 }
+
+/// Set prefixed keyframes in one mixin
+/// @param {*} $a - animation name
+/// @content [keyframe content]
 @mixin keyframes($a) {
 	@-webkit-keyframes #{$a} {
 		@content;
@@ -34,6 +43,15 @@
 		@content;
 	}
 }
+
+/// Set background attributes in one mixin
+/// @param {*} $color [null] - background-color attribute value
+/// @param {*} $image [null] - background-image attribute value
+/// @param {*} $img [null] - background-image attribute value (alternative param)
+/// @param {*} $size [null] - background-size attribute value
+/// @param {*} $position [null] - background-position attribute value
+/// @param {*} $pos [null] - background-position attribute value (alternative param)
+/// @param {*} $repeat [null] - background-repeat attribute value
 @mixin bg($color: null, $image: null, $img: null, $size: null, $position: null, $pos: null, $repeat: null) {
 	$image: if($image, $image, $img);
 	$position: if($position, $position, $pos);
@@ -53,6 +71,10 @@
 		background-repeat: #{$repeat};
 	}
 }
+
+/// Set one or multiple pseudo elements in one mixin
+/// @param {string} $a... - list of pseudo element selectors
+/// @content [pseudo element content]
 @mixin pseudo($a...) {
 	@each $p in $a {
 		&:#{$p},
@@ -61,6 +83,12 @@
 		}
 	}
 }
+
+/// Set position attributes in a single mixin
+/// @param {*} $top [null] - top attribute value
+/// @param {*} $right [null] - right attribute value
+/// @param {*} $bottom  [null]- bottom attribute value
+/// @param {*} $left [null] - left attribute value
 @mixin pos($top: null, $right: null, $bottom: null, $left: null) {
     @if $top {
         top: $top;
@@ -75,41 +103,64 @@
         left: $left;
     }
 }
+
+/// Set display attribute to flex with prefixes
 @mixin display-flex {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
 }
+
+/// Set flex-direction with prefixes
+/// @param {*} $a - flex-direction attribute value
 @mixin flex-direction($a) {
     -webkit-flex-direction: $a;
     -ms-flex-direction: $a;
     flex-direction: $a;
 }
+
+/// Set flex attribute with prefixes
+/// @param {*} $a - flex attribute value
 @mixin flex($a) {
     -webkit-flex: $a;
     -ms-flex: $a;
     flex: $a;
 }
+
+/// Set flex-grow attribute with prefixes
+/// @param {*} $a - flex-grow attribute value
 @mixin flex-grow($a) {
     -webkit-flex-grow: $a;
     -ms-flex-grow: $a;
     flex-grow: $a;
 }
+
+/// Set flex-shrink attribute with prefixes
+/// @param {*} $a - flex-shrink attribute value
 @mixin flex-shrink($a) {
     -webkit-flex-shrink: $a;
     -ms-flex-shrink: $a;
     flex-shrink: $a;
 }
+
+/// Set flex-basis attribute with prefixes
+/// @param {*} $a - flex-basis attribute value
 @mixin flex-basis($a) {
     -webkit-flex-basis: $a;
     -ms-flex-basis: $a;
     flex-basis: $a;
 }
+
+/// Set flex-wrap attribute with prefixes
+/// @param {*} $a - flex-wrap attribute value
 @mixin flex-wrap($a) {
     -webkit-flex-wrap: $a;
     -ms-flex-wrap: $a;
     flex-wrap: $a;
 }
+
+/// Set justify-content attribute with prefixes
+/// @param {*} $a - justify-content attribute value
 @mixin justify-content($a) {
     -webkit-justify-content: $a;
     -ms-flex-pack: $a;
@@ -120,6 +171,9 @@
         justify-content: $a;
     }
 }
+
+/// Set align-items attribute with prefixes
+/// @param {*} $a - align-items attribute value
 @mixin align-items($a) {
     -webkit-box-align: $a;
     -ms-flex-align: $a;
@@ -130,40 +184,70 @@
         align-items: $a;
     }
 }
+
+/// Set align-self attribute with prefixes
+/// @param {*} $a - align-self attribute value
 @mixin align-self($a) {
     -webkit-align-self: $a;
     -ms-align-self: $a;
     align-self: $a;
 }
+
+
+/// Set transition attribute with prefixes
+/// @param {*} $a... - transition attribute value
 @mixin transition($a...) {
     -webkit-transition: $a;
     -ms-transition: $a;
     transition: $a;
 }
+
+/// Set animation attribute with prefixes
+/// @param {*} $a... - animation attribute value
 @mixin animation($a...) {
     -webkit-animation: $a;
     animation: $a;
 }
+
+/// Set transform attribute with prefixes
+/// @param {*} $a - transfom attribute value
 @mixin transform($a) {
     -webkit-transform: $a;
     -ms-transform: $a;
     transform: $a;
 }
+
+/// Set box-shadow attribute with prefixes
+/// @param {*} $a... - box-shadow attribute value
 @mixin box-shadow($a...) {
     -webkit-box-shadow: $a;
     box-shadow: $a;
 }
+
+/// Set filter attribute with prefixes
+/// @param {*} $a - filter attribute value
 @mixin filter($a) {
     -webkit-filter: $a;
     filter: $a;
 }
+
+/// Set user-select attribute with prefixes
+/// @param {*} $a - user-select attribute value
 @mixin user-select($a) {
     -webkit-user-select: $a;
     -moz-user-select: $a;
     -ms-user-select: $a;
     user-select: $a;
 }
-@mixin font($name, $url: null, $format: null, $weight: null, $style: null, $decoration: null) {
+
+/// Specify a new web-hosted font via @font-face
+/// @param {*} $name - font name
+/// @param {*} $url [null] - font source (as url)
+/// @param {*} $format [null] - font file format
+/// @param {*} $weight [null] - font-weight value
+/// @param {*} $style [null] - font-style value
+/// @param {*} $decoration [null] - font-decoration value
+@mixin font($name, $local: null, $url: null, $format: null, $weight: null, $style: null, $decoration: null) {
     @font-face {
         font-family: $name;
         @if $url != null and $format != null {
