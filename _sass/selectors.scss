@@ -1,4 +1,4 @@
-/*! Using Discord Selectors v19-02-23 by Zerthox */
+/*! Using Discord Selectors v19-02-27 by Zerthox */
 
 // GENERAL
 .layers-3iHuyZ {
@@ -822,6 +822,24 @@
     @extend %badge !optional;
 }
 
+// BOT TAG
+.botTag-2WPJ74 {
+	@extend %botTag !optional;
+}
+.botTagInvert-18-95s {
+	@extend %botTagInvert !optional;
+}
+
+// OWNER TAG
+.kawaii-tag {
+    @extend %ownerTag !optional;
+    @extend %kawaiiTag !optional;
+}
+.kawaii-tag-invert {
+    @extend %ownerTagInvert !optional;
+    @extend %kawaiiTagInvert !optional;
+}
+
 // TAB BAR
 .tabBar-1E2ExX {
     @extend %tabBar !optional;
@@ -835,10 +853,42 @@
 
 // SCROLLERS
 .scroller-2FKFPG {
-    @extend %scrollerChannels !optional;
-}
-.scoller {
     @extend %scroller !optional;
+}
+
+// TOOLTIPS
+.tooltips-FhwIyl {
+    @extend %tooltips !optional;
+}
+.tooltip-1OS-Ti {
+    @extend %tooltip !optional;
+}
+.top-1pTh1F {
+    @extend %tooltipTop !optional;
+}
+.bottom-19kp6S {
+    @extend %tooltipBottom !optional;
+}
+.left-1wV7VO {
+    @extend %tooltipLeft !optional;
+}
+.right-KM_vfY {
+    @extend %tooltipRight !optional;
+}
+.black-2bmmnj {
+    @extend %tooltipBlack !optional;
+}
+.brand-3tBTjG {
+    @extend %tooltipBrand !optional;
+}
+.red-m6f4-H {
+    @extend %tooltipRed !optional;
+}
+.green-hbUqD5 {
+    @extend %tooltipGreen !optional;
+}
+.yellow-1oq44m {
+    @extend %tooltipYellow !optional;
 }
 
 // USER POPOUT
