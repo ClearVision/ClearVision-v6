@@ -16,6 +16,9 @@
     @return $string;
 }
 
+// SELECTORS
+@import "selectors.scss";
+
 // LANGUAGE MAP
 $languages: (
     "1c": "1c",
@@ -211,9 +214,9 @@ $languages: (
 );
 
 // OUTPUT
-.message-group .hljs {
+%messageGroup .hljs {
     @each $l in map-keys($languages) {
-        %t#{str-classify($l)} {
+        &%t#{str-classify($l)} {
             @include pseudo(before) {
                 content: "#{$l}";
             }
