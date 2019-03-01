@@ -3,9 +3,9 @@
 /// Prefix an attribute with a set of prefixes
 /// @param {string} $property - attribute name
 /// @param {*} $value... - attribute value
-/// @param {list} $prefixes [(webkit, moz, ms, o)] - list of prefixes
+/// @param {list} $prefixes [(webkit, moz, ms)] - list of prefixes
 @mixin prefix($property, $value...) {
-	$p: if(length(prefixes) == 0, $prefixes, (webkit, moz, ms, o));
+	$p: if(length(prefixes) == 0, $prefixes, (webkit, moz, ms));
 	@if type-of($property) == map {
 		$prefixes: if($value, $value, $prefixes);
 		@each $k in map-keys($property) {
@@ -28,15 +28,6 @@
 /// @content [keyframe content]
 @mixin keyframes($a) {
 	@-webkit-keyframes #{$a} {
-		@content;
-	}
-	@-moz-keyframes #{$a} {
-		@content;
-	}
-	@-ms-keyframes #{$a} {
-		@content;
-	}
-	@-o-keyframes #{$a} {
 		@content;
 	}
 	@keyframes #{$a} {
@@ -191,15 +182,6 @@
     -webkit-align-self: $a;
     -ms-align-self: $a;
     align-self: $a;
-}
-
-
-/// Set transition attribute with prefixes
-/// @param {*} $a... - transition attribute value
-@mixin transition($a...) {
-    -webkit-transition: $a;
-    -ms-transition: $a;
-    transition: $a;
 }
 
 /// Set animation attribute with prefixes
