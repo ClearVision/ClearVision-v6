@@ -76,7 +76,7 @@
                 this.enabled = true;
                 this.log("Enabled");
             }
-            var s = (this.css.settings === null);
+            var s = (typeof this.css.settings === "undefined");
             if (c === null) {
                 this.fetch(this.files.css.main, r => {
                     this.injectCSS("cv-main", r);
