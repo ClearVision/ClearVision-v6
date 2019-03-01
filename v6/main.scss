@@ -46,7 +46,7 @@ $purple: #593695;
 @import "mixins.scss";
 
 @mixin clear {
-	background-color: transparent !important;
+	background: transparent !important;
 }
 
 @mixin stretch {
@@ -241,12 +241,12 @@ body {
 				opacity: .7;
 			}
 		}
-		%guild:not(.da-guild) {
+		%guild:first-child {
 			%guildInner {
 				transition: background-color .3s ease-in-out;
 			}
 			&:hover,
-			&%selected {
+			&%guildSelected {
 				%guildInner {
 					background-color: var(--main-color) !important;
 				}
@@ -603,7 +603,7 @@ body {
 				@include bg($size: 100%, $repeat: no-repeat);
 				transition: all .15s ease-in-out;
 			}
-			.status {
+			%status {
 				top: 90%;
 				left: 90%;
 				margin-top: -6.5px;
@@ -682,42 +682,43 @@ body {
 }
 
 // PRIVATE CHANNELS
-.private-channels {
-	.channel {
-		a {
+%privateChannels {
+	%privateChannel {
+		& > a,
+		%privateChannelClose {
 			transition: all .15s ease-in-out;
-			* {
-				transition: inherit;
-			}
 		}
-		.close {
+		%privateChannelClose {
 			@include bg($image: "https://zerthox.github.io/ClearVision/icons/close.svg", $repeat: no-repeat, $pos: center, $size: 18px);
-			display: initial;
+			display: block;
 			opacity: 0;
-			&:hover {
-				opacity: .7;
-			}
 		}
 		&:hover {
-			a {
+			& > a {
 				background-color: hsla(0, 0%, 100%, .1) !important;
 				color: #fff !important;
 			}
-			.close {
+			%privateChannelClose {
 				opacity: .3;
+				&:hover {
+					opacity: .7;
+				}
 			}
 		}
-		&.selected a {
+		&%privateChannelSelected > a {
 			background-color: var(--main-color) !important;
 			color: #fff !important;
 		}
 	}
 }
-.search-bar {
+%privateChannelsSearchBar {
 	margin-top: 10px;
 	margin-bottom: 0;
 	@include box-shadow(none !important);
-	.search-bar-inner {
+	%privateChannelsSearchBarComponent {
+		@include clear;
+	}
+	%privateChannelsSearchBarInner {
 		background-color: rgba(0, 0, 0, .4);
 		padding-top: 0;
 		padding-bottom: 0;
@@ -877,17 +878,6 @@ body {
 				}
 			}
 		}
-		.sendembeds-button {
-			@include pseudo(before) {
-				opacity: .3;
-				transition: all .15s ease-in-out;
-			}
-			&:hover {
-				@include pseudo(before) {
-					opacity: .7;
-				}
-			}
-		}
 		textarea {
 			&::-webkit-input-placeholder {
 				color: hsla(0, 0%, 100%, .2);
@@ -989,18 +979,18 @@ body {
 			@include transform(scale(.9));
 		}	
 	}
-	&:not(.has-divider) {
-		border-bottom-color: hsla(0, 0%, 100%, .04) !important;
+	%dividerEnabled {
+		border-bottom-color: hsla(0, 0%, 100%, .04);
 	}
-	.comment {
+	%messageContent {
 		line-height: 1em;
 	}
-	.timestamp {
+	%messageTimestamp {
 		color: hsla(0, 0%, 100%, .3) !important;
 		transition: all .3s ease-in-out;
 	}
 	&:hover {
-		.timestamp {
+		%messageTimestamp {
 			color: hsla(0, 0%, 100%, .7) !important;
 		}
 	}
@@ -1017,7 +1007,7 @@ body {
 		}
 	}
 	// CODEBLOCKS
-	.inline {
+	%codeInline {
 		background-color: hsla(0, 0%, 100%, .1) !important;
 		color: hsla(0, 0%, 100%, .7) !important;
 		padding: 3.5px 7.5px !important;
@@ -1027,14 +1017,14 @@ body {
 			margin-top: -1px;
 		}
 	}
-	pre {
+	%codePre {
 		max-width: 93%;
 		@include clear;
 		border-width: 2px;
 		border-color: transparent !important;
 		padding: 0;
 	}
-	.hljs {
+	%codeHLJS {
 		position: relative;
 		padding: 6px !important;
 		background-color: rgba(0, 0, 0, .42) !important;
@@ -1050,7 +1040,7 @@ body {
 			pointer-events: none;
 		}
 		// COPYBUTTON
-		.copybutton {
+		%codeCopybutton {
 			background-color: hsla(0, 0%, 100%, .1) !important;
 			color: hsla(0, 0%, 100%, .7) !important;
 			border: none !important;
@@ -1066,13 +1056,13 @@ body {
 			}
 		}
 		&:hover {
-			.copybutton {
+			%codeCopybutton {
 				opacity: 1;
 			}
 		}
 	}
 	// LINENUMBERS
-	.kawaii-linenumbers {
+	%kawaiiLinenumbers {
 		list-style: none;
 		counter-reset: linenumbers;
 		border-left: 2.6ch solid hsla(0, 0%, 100%, .04);
@@ -1246,7 +1236,7 @@ body {
 @import "languages.scss";
 
 // MENTIONS
-.mention {
+%mention {
 	padding: 1px 4px;
 	background-color: rgba(115, 139, 215, .1) !important;
 	color: #ddd !important;
@@ -1266,10 +1256,10 @@ body {
 }
 
 // PLUGIN BUTTONS
-.replyer,
-.citar-btn,
-.quoter,
-.discrypt {
+%replyerButton,
+%quoteButton,
+%citarButton,
+%discryptButton {
 	border-radius: 3px;
 	transition: all .3s ease-in-out;
 	@include animation(fade-in .3s ease-in-out);
@@ -1277,7 +1267,7 @@ body {
 		background-color: var(--main-color) !important;
 	}
 }
-%messageGroup:not(:hover) .replyer {
+%messageGroup:not(:hover) %replyerButton {
 	visibility: visible;
 	opacity: 0;
 }
@@ -1304,7 +1294,7 @@ body {
 			transition: all .1s ease-in-out;
 		}
 		&:hover,
-		&.popout-open {
+		&%memberPopoutOpen {
 			& > %memberContent {
 				background: linear-gradient(to right, rgba(0, 0, 0, .3) 85%, transparent) !important;
 			}
@@ -1343,7 +1333,7 @@ body {
 }
 
 // SEARCH RESULTS
-.search-results-wrap {
+%searchResultsWrap {
 	background-color: rgba(0, 0, 0, .75) !important;
 }
 
@@ -1447,25 +1437,9 @@ body {
 			}
 		}
 	}
-	%button {
-		background-color: var(--main-color) !important;
-		&:hover {
-			background-color: var(--hover-color) !important;
-		}
-	}
 }
 
 // BUTTONS
-%button {
-	border-radius: 3px;
-	transition: all .3s ease-in-out;
-	&%buttonPrimary {
-		background-color: var(--main-color) !important;
-		&:hover {
-			background-color: var(--hover-color) !important;
-		}
-	}
-}
 %buttonFilledGreen,
 %buttonFilledBrand {
 	background-color: var(--main-color);
