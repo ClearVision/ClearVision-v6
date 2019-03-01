@@ -1,6 +1,6 @@
-/*! Using Discord Selectors v19-02-27 by Zerthox */
+/*! Using Discord Selectors v19-03-01 by Zerthox */
 
-// GENERAL
+/* GENERAL */
 .layers-3iHuyZ {
     @extend %layers !optional;
 }
@@ -17,7 +17,7 @@
     @extend %flex !optional;
 }
 
-// TITLEBAR
+/* TITLEBAR */
 .typeWindows-1za-n7 {
     @extend %titlebarWin !optional;
 }
@@ -34,7 +34,7 @@
     @extend %titlebarWinButtonClose !optional;
 }
 
-// GUILDS
+/* GUILDS */
 .guildsWrapper-5TJh6A {
     @extend %guildsWrapper !optional;
 }
@@ -70,7 +70,7 @@
     @extend %guildSeparator !optional;
 }
 
-// CHANNELS
+/* CHANNELS */
 .channels-Ie2l6A {
     @extend %channels !optional;
 }
@@ -386,12 +386,35 @@
 .mention-1f5kbO {
     @extend %channelsMentionIndicator !optional;
 }
-// Private channels
-.private-channels {
-    @extend %channelsPrivate !optional;
+
+/* PRIVATE CHANNELS */
+.privateChannels-1nO12o {
+    @extend %privateChannels !optional;
+}
+.channel-2QD9_O {
+    @extend %privateChannel !optional;
+}
+.selected-1HYmZZ {
+    @extend %privateChannelSelected !optional;
+}
+.name-2WpE7M {
+    @extend %privateChannelName !optional;
+}
+.close-3hZ5Ni {
+    @extend %privateChannelClose !optional;
+}
+// Search Bar
+.searchBar-6Kv8R2 {
+    @extend %privateChannelsSearchBar !optional;
+}
+.searchBarComponent-32dTOx {
+    @extend %privateChannelsSearchBarComponent !optional;
+}
+.searchBarInner-1_Tg2R {
+    @extend %privateChannelsSearchBarInner !optional;
 }
 
-// CHAT
+/* CHAT */
 .chat-3bRxxu {
     @extend %chat !optional;
 }
@@ -463,6 +486,9 @@
 .markup-2BOw-j {
     @extend %markup !optional;
 }
+.mention {
+    @extend %mention !optional;
+}
 .buttonContainer-KtQ8wc {
     @extend %messageButtonContainer !optional;
 }
@@ -474,15 +500,15 @@
     @extend %messageButton !optional;
     @extend %messageOptionsButton !optional;
 }
-// Dividers
-.divider-3gKybi {
-    @extend %divider !optional;
+// Codeblocks
+.inline {
+    @extend %codeInline !optional;
 }
-.dividerRed-MKoLlr {
-    @extend %dividerRed !optional;
+%markup > pre {
+    @extend %codePre !optional;
 }
-.dividerContent-2L12VI {
-    @extend %dividerContent !optional;
+.hljs {
+    @extend %codeHLJS !optional;
 }
 // Embeds
 .embed-IeVjo6 {
@@ -539,6 +565,22 @@
 }
 .lookFilled-1Gx00P.colorBrand-3pXr91 {
     @extend %inviteButtonExpired !optional;
+}
+// Dividers
+.divider-3gKybi {
+    @extend %divider !optional;
+}
+.dividerRed-MKoLlr {
+    @extend %dividerRed !optional;
+}
+.dividerContent-2L12VI {
+    @extend %dividerContent !optional;
+}
+.divider-32i8lo {
+    @extend %dividerSmall !optional;
+}
+.dividerEnabled-2TTlcf {
+    @extend %dividerEnabled !optional;
 }
 // New Messages Bar
 .newMessagesBar-mujexs {
@@ -609,7 +651,7 @@
     @extend %autocompleteSelectorContent !optional;
 }
 
-// CHANNEL MEMBERS
+/* CHANNEL MEMBERS */
 .members-1998pB {
     @extend %members !optional;
 }
@@ -621,6 +663,9 @@
 }
 .memberOffline-2lN7gt {
     @extend %memberOffline !optional;
+}
+%member.popout-open {
+    @extend %memberPopoutOpen !optional;
 }
 .content-OzHfo4 {
     @extend %memberContent !optional;
@@ -652,7 +697,12 @@
     @extend %memberPlaceholderUsername !optional;
 }
 
-// FRIENDS TABLE
+/* SEARCH */
+.searchResultsWrap-2DKFzt {
+    @extend %searchResultsWrap !optional;
+}
+
+/* FRIENDS TABLE */
 .container-3gCOGc {
     @extend %friends !optional;
 }
@@ -714,7 +764,7 @@
     @extend %friendsTableSuggestionsHeader !optional;
 }
 
-// AVATARS
+/* AVATARS */
 .avatar-large,
 .avatar-17mtNa {
     @extend %avatarLarge !optional;
@@ -735,13 +785,7 @@
     @extend %avatar !optional;
 }
 
-// BUTTONS
-.btn {
-    @extend %button !optional;
-}
-.btn-primary {
-    @extend %buttonPrimary !optional;
-}
+/* BUTTONS */
 .lookFilled-1Gx00P{
     @extend %buttonFilled !optional;
 }
@@ -794,7 +838,7 @@
     }
 }
 
-// STATUS
+/* STATUS */
 .status-oxiHuE {
     @extend %status !optional;
 }
@@ -830,16 +874,6 @@
 	@extend %botTagInvert !optional;
 }
 
-// OWNER TAG
-.kawaii-tag {
-    @extend %ownerTag !optional;
-    @extend %kawaiiTag !optional;
-}
-.kawaii-tag-invert {
-    @extend %ownerTagInvert !optional;
-    @extend %kawaiiTagInvert !optional;
-}
-
 // TAB BAR
 .tabBar-1E2ExX {
     @extend %tabBar !optional;
@@ -851,12 +885,12 @@
     @extend %tabBarItemSelected !optional;
 }
 
-// SCROLLERS
+/* SCROLLERS */
 .scroller-2FKFPG {
     @extend %scroller !optional;
 }
 
-// TOOLTIPS
+/* TOOLTIPS */
 .tooltips-FhwIyl {
     @extend %tooltips !optional;
 }
@@ -891,17 +925,17 @@
     @extend %tooltipYellow !optional;
 }
 
-// USER POPOUT
+/* USER POPOUT */
 .userPopout-3XzG_A {
     @extend %userPopout !optional;
 }
 
-// USER MODAL
+/* USER MODAL */
 .root-SR8cQa {
     @extend %userModal !optional;
 }
 
-// SETTINGS
+/* SETTINGS */
 .standardSidebarView-3F1I7i {
     @extend %standardSidebarView !optional;
 }
@@ -916,4 +950,40 @@
 }
 .contentRegion-3nDuYy {
     @extend %settingsContentRegion !optional;
+}
+
+/* PLUGINS */
+// Owner Tag by noodlebox
+.kawaii-tag {
+    @extend %ownerTag !optional;
+    @extend %kawaiiTag !optional;
+}
+.kawaii-tag-invert {
+    @extend %ownerTagInvert !optional;
+    @extend %kawaiiTagInvert !optional;
+}
+// Codeblock Linenumbers by noodlebox
+.kawaii-linenumbers {
+    @extend %codeLinenumbers !optional;
+    @extend %kawaiiLineNumbers !optional;
+}
+// Copy Code by Finicalmist
+.copybutton {
+    @extend %codeCopybutton !optional;
+}
+// Replyer by Hammock, Natsulus, Zerebos & BetterReplyer by Zerthox
+.replyer {
+    @extend %replyerButton !optional;
+}
+// Citador by Nirewen
+.citar-btn {
+    @extend %citarButton !optional;
+}
+// Quoter by samogot
+.btn-quote {
+    @extend %quoteButton !optional;
+}
+// Discrypt
+.discrypt {
+	@extend %discryptButton !optional;
 }
