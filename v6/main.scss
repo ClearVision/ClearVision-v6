@@ -57,7 +57,7 @@ $purple: #593695;
 }
 
 @mixin hover-shadow {
-	@include transition(all .1s ease-in-out);
+	transition: all .1s ease-in-out;
 	&:hover {
 		text-shadow: 0 0 1px;
 		text-decoration: none !important;
@@ -224,13 +224,13 @@ body {
 				width: 13px;
 				left: -17px;
 				background: var(--main-color) !important;
-				@include transition(all .3s ease-in-out);
+				transition: all .3s ease-in-out;
 			}
 		}
 		%guildInner {
 			background-color: rgba(0, 0, 0, .5) !important;
 			@include box-shadow(0 0 5px rgba(0, 0, 0, .5));
-			@include transition(transform .1s ease-in-out);
+			transition: transform .1s ease-in-out;
 			&:active {
 				@include transform(scale(.9));
 			}
@@ -243,7 +243,7 @@ body {
 		}
 		%guild:not(.da-guild) {
 			%guildInner {
-				@include transition(background-color .3s ease-in-out);
+				transition: background-color .3s ease-in-out;
 			}
 			&:hover,
 			&%selected {
@@ -255,7 +255,7 @@ body {
 		%guildsError {
 			background-color: rgba(0, 0, 0, .5);
 			border-color: var(--main-color);
-			@include transition(all .3s ease-in-out);
+			transition: all .3s ease-in-out;
 			&:hover {
 				background-color: var(--main-color);
 			}
@@ -263,7 +263,7 @@ body {
 		%guildsAdd {
 			background-color: rgba(0, 0, 0, .5);
 			opacity: .7;
-			@include transition(all .1s ease-in-out);
+			transition: all .1s ease-in-out;
 			&:hover {
 				color: var(--main-color);
 				border-color: var(--main-color);
@@ -284,7 +284,7 @@ body {
 				position: absolute;
 				background-color: #333539;
 				border-radius: 3px;
-				@include transition(all .1s ease-in-out);
+				transition: all .1s ease-in-out;
 			}
 			@include pseudo(before) {		
 				width: 2px;
@@ -306,7 +306,7 @@ body {
 			color: hsla(0, 0%, 100%, .7);
 			text-transform: uppercase;
 			border-radius: 25px;
-			@include transition(all .3s ease-in-out);
+			transition: all .3s ease-in-out;
 			cursor: default;
 			&:hover {
 				color: #fff;
@@ -346,7 +346,7 @@ body {
 		@include align-items(center);
 		color: hsla(0, 0%, 100%, .5);
 		text-align: center;
-		@include transition(all .3s ease-in-out);
+		transition: all .3s ease-in-out;
 		@include pseudo(before, after) {
 			content: "";
 			display: inline-block;
@@ -354,7 +354,7 @@ body {
 			height: 2px;
 			background-color: hsla(0, 0%, 100%, .3);
 			margin: -1px 5px 0;
-			@include transition(all .3s ease-in-out);
+			transition: all .3s ease-in-out;
 		}
 	}
 	%categoryNameHovered,
@@ -384,7 +384,7 @@ body {
 	}
 	// TEXT & VOICE CHANNELS
 	%channelContent {
-		@include transition(all .15s ease-in-out);
+		transition: all .15s ease-in-out;
 	}
 	%channelContentVoice {
 		&:active {
@@ -393,25 +393,25 @@ body {
 	}
 	%channelName {
 		color: hsla(0, 0%, 100%, .3);
-		@include transition(all .15s ease-in-out);
+		transition: all .15s ease-in-out;
 	}
 	%channelIcon {
 		opacity: .7 !important;
-		@include transition(all .15s ease-in-out);
+		transition: all .15s ease-in-out;
 		path {
 			opacity: .3;
 		}
 	}
 	%channelActionIcon {
 		opacity: .3 !important;
-		@include transition(all .15s ease-in-out);
+		transition: all .15s ease-in-out;
 		&:hover {
 			opacity: .7 !important;
 		}
 	}
 	%channelContent path {
 		fill: #fff;
-		@include transition(all .15s ease-in-out);
+		transition: all .15s ease-in-out;
 	}
 	// HOVER
 	%channelContentHoveredText {
@@ -486,7 +486,7 @@ body {
 			left: 0;
 			bottom: 1px;
 			opacity: 0;
-			@include transition(all .1s ease-in-out);
+			transition: all .1s ease-in-out;
 			pointer-events: none;
 			z-index: -1;
 		}
@@ -564,7 +564,7 @@ body {
 		}
 		%accountContainerAvatarWrapper {
 			position: relative;
-			@include transition(all .15s ease-in-out);
+			transition: all .15s ease-in-out;
 			@include pseudo(after) {
 				content: "Status";
 				position: absolute;
@@ -579,7 +579,7 @@ body {
 				border-radius: 50%;
 				@include box-shadow(inset 0 0 70px rgba(0, 0, 0, .75));
 				opacity: 0;
-				@include transition(all .15s ease-in-out);
+				transition: all .15s ease-in-out;
 				pointer-events: none;
 			}
 			&:hover {
@@ -601,7 +601,7 @@ body {
 			}
 			%accountContainerAvatar {
 				@include bg($size: 100%, $repeat: no-repeat);
-				@include transition(all .15s ease-in-out);
+				transition: all .15s ease-in-out;
 			}
 			.status {
 				top: 90%;
@@ -616,7 +616,7 @@ body {
 			&%accountContainerIconButton,
 			svg {
 				opacity: .3;
-				@include transition(all .1s ease-in-out);
+				transition: all .1s ease-in-out;
 			}
 			&:hover {
 				@include clear;
@@ -648,7 +648,7 @@ body {
 				background: inherit;
 				background-size: 18px;
 				opacity: .3;
-				@include transition(all .15s ease-in-out);
+				transition: all .15s ease-in-out;
 			}
 			&:hover {
 				@include pseudo(after) {
@@ -672,7 +672,7 @@ body {
 		border-radius: 3px;
 		opacity: .9;
 		z-index: -1;
-		@include transition(all .15s ease-in-out);
+		transition: all .15s ease-in-out;
 	}
 	&:hover {
 		@include pseudo(after) {
@@ -685,9 +685,9 @@ body {
 .private-channels {
 	.channel {
 		a {
-			@include transition(all .15s ease-in-out);
+			transition: all .15s ease-in-out;
 			* {
-				@include transition(inherit);
+				transition: inherit;
 			}
 		}
 		.close {
@@ -754,7 +754,7 @@ body {
 	// NEW MESSAGES BAR
 	%newMessagesBar {
 		@include clear;
-		@include transition(all .15s ease-in-out);
+		transition: all .15s ease-in-out;
 		@include pseudo(before) {
 			content: "";
 			position: absolute;
@@ -763,7 +763,7 @@ body {
 			border-radius: 0 0 3px 3px;
 			opacity: .8;
 			z-index: -1;
-			@include transition(all .15s ease-in-out);
+			transition: all .15s ease-in-out;
 		}
 		&:hover,
 		&:active {
@@ -783,7 +783,7 @@ body {
 	// JUMP TO PRESENT BAR
 	%jumpToPresentBar {
 		background-color: rgba(0, 0, 0, .7) !important;
-		@include transition(all .15s ease-in-out);
+		transition: all .15s ease-in-out;
 		&:hover,
 		&:active {
 			background-color: var(--main-color) !important;
@@ -796,7 +796,7 @@ body {
 		}
 		& > button {
 			color: hsla(0, 0%, 100%, .6);
-			@include transition(inherit);
+			transition: inherit;
 		}
 	}
 	// LOAD MORE MESSAGES BNUTTON
@@ -869,7 +869,7 @@ body {
 			@include transform(none);
 			%channelTextareaAttachButtonPlus {
 				opacity: .3;
-				@include transition(all .15s ease-in-out);
+				transition: all .15s ease-in-out;
 			}
 			&:hover {
 				%channelTextareaAttachButtonPlus {
@@ -880,7 +880,7 @@ body {
 		.sendembeds-button {
 			@include pseudo(before) {
 				opacity: .3;
-				@include transition(all .15s ease-in-out);
+				transition: all .15s ease-in-out;
 			}
 			&:hover {
 				@include pseudo(before) {
@@ -900,7 +900,7 @@ body {
 					border: 2px solid transparent;
 					border-radius: 3px;
 					opacity: 1;
-					@include transition(all .15s ease-in-out);
+					transition: all .15s ease-in-out;
 					pointer-events: none;
 				}
 			}
@@ -984,7 +984,7 @@ body {
 }
 %messageGroup {
 	%avatarLarge {
-		@include transition(all .3s ease-in-out, transform .1s ease-in-out);
+		transition: all .3s ease-in-out, transform .1s ease-in-out;
 		&:active {
 			@include transform(scale(.9));
 		}	
@@ -997,7 +997,7 @@ body {
 	}
 	.timestamp {
 		color: hsla(0, 0%, 100%, .3) !important;
-		@include transition(all .3s ease-in-out);
+		transition: all .3s ease-in-out;
 	}
 	&:hover {
 		.timestamp {
@@ -1056,7 +1056,7 @@ body {
 			border: none !important;
 			border-top-left-radius: 3px;
 			opacity: 0;
-			@include transition(all .3s ease-in-out);
+			transition: all .3s ease-in-out;
 			@include user-select(none);
 			&:hover {
 				color: #fff !important;
@@ -1176,7 +1176,7 @@ body {
 		%inviteButtonAccept {
 			background-color: transparent;
 			border: 1px solid $green;
-			@include transition(all .3s ease-in-out);
+			transition: all .3s ease-in-out;
 			&:hover {
 				background-color: $green;
 			}
@@ -1190,7 +1190,7 @@ body {
 		%inviteButtonExpired {
 			background-color: transparent;
 			border: 1px solid var(--dnd-color);
-			@include transition(all .3s ease-in-out);
+			transition: all .3s ease-in-out;
 			&:hover {
 				background-color: var(--dnd-color);
 			}
@@ -1210,7 +1210,7 @@ body {
 	%messageGroupBlockedButton {
 		@include clear;
 		color: hsla(0, 0%, 100%, .3) !important;
-		@include transition(all .3s ease-in-out);
+		transition: all .3s ease-in-out;
 		@include pseudo(after) {
 			content: "";
 			position: absolute;
@@ -1218,7 +1218,7 @@ body {
 			border-top: 1px solid;
 			border-bottom: 1px solid;
 			border-color: hsla(0, 0%, 100%, .04);
-			@include transition(all .3s ease-in-out);
+			transition: all .3s ease-in-out;
 			pointer-events: none;
 		}
 		&:hover {
@@ -1251,7 +1251,7 @@ body {
 	background-color: rgba(115, 139, 215, .1) !important;
 	color: #ddd !important;
 	border-radius: 6px;
-	@include transition(all .3s ease-in-out);
+	transition: all .3s ease-in-out;
 	white-space: nowrap;
 	cursor: pointer;
 	&:hover {
@@ -1271,7 +1271,7 @@ body {
 .quoter,
 .discrypt {
 	border-radius: 3px;
-	@include transition(all .3s ease-in-out);
+	transition: all .3s ease-in-out;
 	@include animation(fade-in .3s ease-in-out);
 	&:hover {
 		background-color: var(--main-color) !important;
@@ -1301,7 +1301,7 @@ body {
 	& > %member {
 		@include prefix(backface-visibility, hidden);
 		& > %memberContent {
-			@include transition(all .1s ease-in-out);
+			transition: all .1s ease-in-out;
 		}
 		&:hover,
 		&.popout-open {
@@ -1329,7 +1329,7 @@ body {
 		}
 		%avatarOffline {
 			@include filter(grayscale(100%) blur(1px));
-			@include transition(all .5s ease-in-out);
+			transition: all .5s ease-in-out;
 		}
 		&:hover {
 			%avatarOffline {
@@ -1356,7 +1356,7 @@ body {
 			%tabBarItem {
 				@include clear;
 				color: hsla(0, 0%, 100%, .6) !important;
-				@include transition(all .3s ease-in-out);
+				transition: all .3s ease-in-out;
 				&:hover {
 					background-color: rgba(0, 0, 0, .5) !important;
 				}
@@ -1397,7 +1397,7 @@ body {
 							@include stretch;
 							border: 1px solid transparent;
 							border-radius: 3px;
-							@include transition(all .3s ease-in-out);
+							transition: all .3s ease-in-out;
 							pointer-events: none;
 						}
 					}
@@ -1437,7 +1437,7 @@ body {
 			}
 			%friendsColumnActions %friendsAction {
 				background-color: var(--main-color) !important;
-				@include transition(all .3s ease-in-out);
+				transition: all .3s ease-in-out;
 				&:hover {
 					background-color: var(--hover-color) !important
 				}
@@ -1458,7 +1458,7 @@ body {
 // BUTTONS
 %button {
 	border-radius: 3px;
-	@include transition(all .3s ease-in-out);
+	transition: all .3s ease-in-out;
 	&%buttonPrimary {
 		background-color: var(--main-color) !important;
 		&:hover {
@@ -1469,7 +1469,7 @@ body {
 %buttonFilledGreen,
 %buttonFilledBrand {
 	background-color: var(--main-color);
-	@include transition(all .3s ease-in-out);
+	transition: all .3s ease-in-out;
 	&:hover {
 		background-color: var(--hover-color);
 	}
@@ -1480,7 +1480,7 @@ body {
 %buttonInvertedBrand {
 	background: hsla(0, 0%, 100%, .1);
 	color: hsla(0, 0%, 100%, .7);
-	@include transition(all .3s ease-in-out);
+	transition: all .3s ease-in-out;
 	&:hover {
 		background: hsla(0, 0%, 100%, .2);
 		color: #fff;
@@ -1489,7 +1489,7 @@ body {
 %buttonOutlinedWhite {
 	background-color: hsla(0, 0%, 100%, .05);
 	border-color: transparent;
-	@include transition(all .3s ease-in-out);
+	transition: all .3s ease-in-out;
 	&:hover {
 		background-color: hsla(0, 0%, 100%, .1);
 		border-color: transparent;
@@ -1561,7 +1561,7 @@ textarea {
 %status,
 %statusProfile {
 	@include box-shadow(0 0 3px, 0 0 5px rgba(0, 0, 0, .5));
-	@include transition(all .3s ease-in-out);
+	transition: all .3s ease-in-out;
 }
 %status {
 	border: none !important;
@@ -1592,7 +1592,7 @@ textarea {
 	padding: 3px 5px;
     font-weight: 600;
 	@include box-shadow(none);
-	@include transition(all .3s ease-in-out);
+	transition: all .3s ease-in-out;
 }
 %channelContentSelectedText {
 	%badge {
@@ -1676,7 +1676,7 @@ textarea {
 			background-color: transparent !important;
 			border: none !important;
 			border-radius: 10px;
-			@include transition(all .2s ease-in-out);
+			transition: all .2s ease-in-out;
 			@include pseudo(after) {
 				content: "";
 				display: block;
@@ -1689,7 +1689,7 @@ textarea {
 				border: none !important;
 				border-radius: 50%;
 				@include box-shadow(0 0 1px 1px rgba(0, 0, 0, .3));
-				@include transition(all .2s ease-in-out !important);
+				transition: all .2s ease-in-out !important;
 				@include transform(none !important);
 			}
 		}
@@ -1715,7 +1715,7 @@ textarea {
 .option-popout {
 	.btn-item {
 		color: hsla(0, 0%, 100%, .4);
-		@include transition(all .15s ease-in-out);
+		transition: all .15s ease-in-out;
 		&:hover {
 			color: hsla(0, 0%, 100%, .7);
 		}
@@ -1739,7 +1739,7 @@ textarea {
 		@include clear;
 		color: hsla(0, 0%, 100%, .6);
 		border-radius: 3px;
-		@include transition(all .1s ease-in-out);
+		transition: all .1s ease-in-out;
 		&:hover {
 			color: #fff;
 			background-color: rgba(0, 0, 0, .7) !important;
@@ -1876,7 +1876,7 @@ textarea {
 		textarea {
 			@include clear;
 			color: hsla(0, 0%, 100%, .8) !important;
-			@include transition(all .3s ease-in-out);
+			transition: all .3s ease-in-out;
 			&::-webkit-input-placeholder {	
 				color: hsla(0, 0%, 100%, .5);
 			}
@@ -1891,7 +1891,7 @@ textarea {
 		background: rgba(0, 0, 0, .3);
 		border-color: transparent;
 		color: #fff;
-		@include transition(all .3s ease-in-out);
+		transition: all .3s ease-in-out;
 		&::-webkit-input-placeholder {	
 			color: hsla(0, 0%, 100%, .5);
 		}
@@ -1912,7 +1912,7 @@ textarea {
 	@include display-flex;
 	@include flex-direction(row-reverse);
 	border-radius: 3px;
-	@include transition(all .1s ease-in-out);
+	transition: all .1s ease-in-out;
 	cursor: default;
 	&[style] {
 		&:not(:hover) {
@@ -1937,14 +1937,14 @@ textarea {
 			border-radius: 3px;
 			background-color: inherit;
 			opacity: .1;
-			@include transition(all .1s ease-in-out);
+			transition: all .1s ease-in-out;
 			pointer-events: none;
 		}
 		& > .roleRemoveIcon-2-TeGW {
 			position: absolute;
 			display: block;
 			opacity: 0;
-			@include transition(all .1s ease-in-out);
+			transition: all .1s ease-in-out;
 			.fill {
 				fill: #fff !important;
 			}
@@ -1954,7 +1954,7 @@ textarea {
 		margin-right: 0;
 		margin-left: 4px;
 		color: hsla(0, 0%, 100%, .7);
-		@include transition(all .1s ease-in-out);
+		transition: all .1s ease-in-out;
 	}
 	&:hover  {
 		& > .roleCircle-3xAZ1j {
@@ -1972,7 +1972,7 @@ textarea {
 }
 .addButton-pcyyf6 {
 	background-color: hsla(0, 0%, 100%, .1);
-	@include transition(all .1s ease-in-out);
+	transition: all .1s ease-in-out;
 	cursor: pointer;
 	&:hover {
 		background-color: hsla(0, 0%, 100%, .2);
@@ -1981,7 +1981,7 @@ textarea {
 		width: 7px;
 		height: 7px;
 		color: hsla(0, 0%, 100%, .5);
-		@include transition(inherit);
+		transition: inherit;
 	}
 	&:hover > svg {
 		color: #fff;
@@ -1990,7 +1990,7 @@ textarea {
 // OLD MEMBER ROLES
 .ui-role-list-role {
 	position: relative;
-	@include transition(all .1s ease-in-out);
+	transition: all .1s ease-in-out;
 	@include pseudo(after) {
 		content: "";
 		position: absolute;
@@ -1998,7 +1998,7 @@ textarea {
 		border-radius: 3px;
 		background-color: inherit;
 		opacity: 0;
-		@include transition(all .1s ease-in-out);
+		transition: all .1s ease-in-out;
 		pointer-events: none;
 	}
 	&:hover {
@@ -2020,7 +2020,7 @@ textarea {
 .ui-role-list-add {
 	background-color: hsla(0, 0%, 100%, .1);
 	border-color: transparent !important;
-	@include transition(all .1s ease-in-out);
+	transition: all .1s ease-in-out;
 	&:hover {
 		background-color: hsla(0, 0%, 100%, .2);
 	}
@@ -2082,7 +2082,7 @@ textarea {
 .tab-bar.tabBar-2MuP6- {
 	& > .tabBarItem-1b8RUP {
 		color: hsla(0, 0%, 100%, .5);
-		@include transition(all .2s ease-in-out);
+		transition: all .2s ease-in-out;
 		&:hover {
 			color: hsla(0, 0%, 100%, .7);
 			border-color: hsla(0, 0%, 100%, .7);
@@ -2111,7 +2111,7 @@ textarea {
 	&.notice-danger {
 		background-color: rgba($red, .7);
 		.btn {
-			@include transition(all .3s ease-in-out);
+			transition: all .3s ease-in-out;
 			@include hover-cutout;
 		}
 	}
@@ -2182,10 +2182,10 @@ textarea {
 			padding: 8px 0 8px 20px;
 			margin: 0;
 			cursor: pointer;
-			@include transition(all .15s ease-in-out);
+			transition: all .15s ease-in-out;
 			@include pseudo(before) {
 				opacity: .3;
-				@include transition(all .15s ease-in-out);
+				transition: all .15s ease-in-out;
 			}
 			&:hover {
 				background-color: hsla(0, 0%, 100%, .07) !important;
@@ -2234,10 +2234,10 @@ textarea {
 		padding: 8px 0 8px 20px;
 		margin: 0;
 		cursor: pointer;
-		@include transition(all .15s ease-in-out);
+		transition: all .15s ease-in-out;
 			@include pseudo(before) {
 				opacity: .3;
-				@include transition(all .15s ease-in-out);
+				transition: all .15s ease-in-out;
 			}
 		&:hover {
 			background-color: hsla(0, 0%, 100%, .07) !important;
