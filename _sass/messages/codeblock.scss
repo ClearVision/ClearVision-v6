@@ -1,0 +1,82 @@
+// CODEBLOCK
+%markup > %codeInline {
+    background-color: hsla(0, 0%, 100%, .1) !important;
+    color: hsla(0, 0%, 100%, .7) !important;
+    padding: 3.5px 7.5px !important;
+    border-radius: 3px !important;
+    line-height: 22px;
+    & + pre {
+        margin-top: -1px;
+    }
+}
+%codePre {
+    max-width: 93%;
+    @include clear;
+    border-width: 2px;
+    border-color: transparent !important;
+    padding: 0;
+}
+%codeHLJS {
+    position: relative;
+    padding: 6px !important;
+    background-color: rgba(0, 0, 0, .42) !important;
+    color: hsla(0, 0%, 100%, .7) !important;
+    border-radius: 5px;
+    @include pseudo(before) {
+        display: block;
+        float: right;
+        height: 10px;
+        color: hsla(0, 0%, 100%, .3);
+        text-align: right;
+        line-height: 10px;
+        pointer-events: none;
+    }
+    // COPYBUTTON (PLUGIN)
+    %codeCopybutton {
+        background-color: hsla(0, 0%, 100%, .1) !important;
+        color: hsla(0, 0%, 100%, .7) !important;
+        border: none !important;
+        border-top-left-radius: 3px;
+        opacity: 0;
+        transition: all .3s ease-in-out;
+        @include user-select(none);
+        &:hover {
+            color: #fff !important;
+        }
+        &:active {
+            color: var(--main-color) !important;
+        }
+    }
+    &:hover {
+        %codeCopybutton {
+            opacity: 1;
+        }
+    }
+}
+// LINENUMBERS (PLUGIN)
+%kawaiiLinenumbers {
+    list-style: none;
+    counter-reset: linenumbers;
+    border-left: 2.6ch solid hsla(0, 0%, 100%, .04);
+    margin: -6px;
+    padding: 6px;
+    li {
+        text-indent: -3ch;
+        margin-left: 0;
+        padding: 0;
+        border: none;
+        @include pseudo(before) {
+            content: counter(linenumbers);
+            counter-increment: linenumbers;
+            color: hsla(0, 0%, 100%, .5);
+            display: inline-block;
+            width: 2ch;
+            margin-right: .5ch;
+            padding-right: .5ch;
+            text-align: right;
+            overflow: hidden;
+            vertical-align: top;
+            @include user-select(none);
+        }
+    }
+}

@@ -1,0 +1,30 @@
+// EMBED
+%embed {
+    position: relative;
+    %embedPill {
+        opacity: .3;
+        border-radius: 0;
+        &:not([style*=background-color]) {
+            background-color: hsla(0, 0%, 100%, .1);
+            opacity: 1;
+        }
+    }
+    %embedInner {
+        background-color: transparent;
+        border-color: transparent;
+        %embedLink {
+            color: var(--main-color);
+            @include hover-shadow;
+        }
+        %embedTitleLink {
+            color: var(--main-color) !important;
+        }
+        %embedVideoActionsInner {
+            & > %embedVideoActionsButtonWrapper {
+                background: rgba(0, 0, 0, .5);
+                color: #fff;
+                @include box-shadow(inset 0 0 10px rgba(0, 0, 0, .5));
+            }
+        }
+    }
+}

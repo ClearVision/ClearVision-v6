@@ -1,0 +1,38 @@
+// APP
+body {
+	@include pseudo(after) {
+		content: "";
+		position: absolute;
+		@include stretch;
+		@include bg($size: cover, $pos: center);
+		@include filter(brightness(var(--background-brightness)) blur(var(--background-blur)));
+		z-index: -9999;
+	}
+}
+#app-mount {
+	background: rgba(0, 0, 0, .6) !important;
+}
+
+// LAYERS
+%layers,
+%layer,
+%layer > %containerMain {
+	@include clear;
+}
+%layer {
+	&  > %containerMain {
+		// [FADES]
+		// @include animation(fade-in .3s ease-in-out);
+		& > %base {
+			border-radius: 0;
+		}
+	}		
+}
+
+// SELECTION
+@each $selector in  -moz-selection, selection {
+    ::#{$selector} {
+        color: #fff;
+		background: var(--main-color);
+    }
+}

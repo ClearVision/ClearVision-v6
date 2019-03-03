@@ -1,0 +1,23 @@
+// OWNER TAG
+%kawaiiTag {
+	&%kawaiiTagInvert {
+		padding: 2px 3px;
+		background-color: rgba(0, 0, 0, .2);
+		color: hsla(0, 0%, 100%, .8) !important;
+		font-size: 11px;
+		border-radius: 5px;
+	}
+	%members & {
+		padding: 1px 2px;
+		color: #fff;
+		height: 14px;
+		border-radius: 3px;
+		font-size: 10px;
+		text-align: center;
+		font-weight: 500;
+		text-shadow: 0 0 1px rgba(0, 0, 0, .3);
+		text-transform: uppercase;
+		vertical-align: bottom;
+		margin-left: 6px;
+	}
+}

@@ -1,0 +1,59 @@
+// MEMBERS
+%members {
+	background-color: rgba(0, 0, 0, .75) !important;
+	& > %membersGroup {
+		height: auto;
+		margin: 5px 15px;
+		padding: 2px 8px;
+		background-color: rgba(0, 0, 0, .5);
+		color: var(--main-color) !important;
+		font-size: 11px;
+		font-weight: 700;
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: .08em;
+		border-radius: 3px;
+	}
+	& > %member {
+		@include prefix(backface-visibility, hidden);
+		& > %memberContent {
+			transition: all .1s ease-in-out;
+		}
+		&:hover,
+		&%memberPopoutOpen {
+			& > %memberContent {
+				background: linear-gradient(to right, rgba(0, 0, 0, .3) 85%, transparent) !important;
+			}
+		}
+		&:active {
+			& > %memberContent {
+				@include transform(scale(.9));
+			}
+		}
+		%memberUsername {
+			font-size: 14px;
+		}
+		%memberOwnerIcon > g > path,
+		%memberActivityIconForeground {
+			fill: hsla(0, 0%, 100%, .4);
+		}
+		%memberActivityText {
+			& > strong {
+				color: var(--main-color) !important;
+				font-weight: 700;
+			}
+		}
+		%avatarOffline {
+			@include filter(grayscale(100%) blur(1px));
+			transition: all .5s ease-in-out;
+		}
+		&:hover {
+			%avatarOffline {
+				@include filter(none);
+			}
+		}
+	}
+	%memberPlaceholder {
+		background: hsla(0, 0%, 100%, .3);
+	}
+}

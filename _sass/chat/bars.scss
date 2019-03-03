@@ -1,0 +1,58 @@
+// NEW MESSAGES BAR 
+%newMessagesBar {
+	@include clear;
+	transition: all .15s ease-in-out;
+	@include pseudo(before) {
+		content: "";
+		position: absolute;
+		@include stretch;
+		background-color: var(--main-color);
+		border-radius: 0 0 3px 3px;
+		opacity: .8;
+		z-index: -1;
+		transition: all .15s ease-in-out;
+	}
+	&:hover,
+	&:active {
+		@include pseudo(before) {
+			opacity: 1;
+		}
+	}
+	&:active {
+		padding-top: 0;
+		@include transform(scale(.99));
+	}
+	button,
+	button:last-child {
+		color: #fff;
+	}
+}
+
+// JUMP TO PRESENT BAR
+%jumpToPresentBar {
+	background-color: rgba(0, 0, 0, .7) !important;
+	transition: all .15s ease-in-out;
+	&:hover,
+	&:active {
+		background-color: var(--main-color) !important;
+		& > button {
+			color: #fff;
+		}
+	}
+	&:active {
+		@include transform(scale(.99));
+	}
+	& > button {
+		color: hsla(0, 0%, 100%, .6);
+		transition: inherit;
+	}
+}
+
+// HAS MORE BAR
+%hasMore {
+	& > button {
+		background-color: rgba(0, 0, 0, .5) !important;
+		color: var(--main-color);
+		border: none !important;
+	}
+}

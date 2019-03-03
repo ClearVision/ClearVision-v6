@@ -1,0 +1,15 @@
+// BADGE
+%badge {
+	background-color: var(--main-color) !important;
+	color: #fff !important;
+	padding: 3px 5px;
+    font-weight: 600;
+	@include box-shadow(none);
+	transition: all .3s ease-in-out;
+}
+%channelContentSelectedText {
+	%badge {
+		background-color: #fff !important;
+		color: var(--main-color) !important;
+	}
+}

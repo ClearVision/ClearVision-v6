@@ -1,6 +1,60 @@
+// FILE CONTENTS
+// 1) Version notice
+// 2) App
+// 3) Titlebar
+// 4) Guilds
+// 5) Channels
+//     5.1) Channel Categories
+//     5.2) Voice & Text Channels
+//     5.3) Voice User list
+//     5.4) Account Container
+//     5.5) Connection Container
+//     5.6) Unread & Mention Indicators
+//     5.7) Private Channels
+// 6) Chat
+//     6.1) Messages
+//         6.1.1) Invite Links
+//         6.1.2) Embeds
+//         6.1.3) Codeblocks
+//     6.2) Dividers
+//     6.3) Chat Bars
+//         6.3.1) New Messages Bar
+//         6.3.2) Jump To Present Bar
+//         6.3.3) Has More Bar
+//     6.4) Channel Textarea
+//         6.4.1) Channel Textarea Autocomplete
+// 7) Members
+// 8) Search
+// 9) Home Tab
+//     9.1) Friends Table
+//         9.1.1) Header
+//         9.1.2) Body
+//         9.1.3) Add Tab
+// 10) Avatars
+// 11) Status
+// 12) Bot Tags
+// 13) General Elements
+//     13.1) Buttons
+//     13.2) Scrollers
+//     13.3) Badges
+//     13.4) Tab Bar
+// 14) Tooltips
+// 15) User Popout
+// 16) User Modal
+// 17) Settings
+// 18) Plugins 
+//     18.1) Owner Tag by noodlebox
+//     18.2) Codeblock Linenumbers by noodlebox
+//     18.3) Copy Code by Finicalmist
+//     18.4) Replyer by Hammock, Natsulus, Zerebos & BetterReplyer by Zerthox
+//     18.5) Citador by Nirewen
+//     18.6) Quoter by samogot
+//     18.7) Discrypt by Zerthox
+
+// 1) VERSION NOTICE
 /*! Using Discord Selectors v19-03-01 by Zerthox */
 
-/* GENERAL */
+// 2) APP
 .layers-3iHuyZ {
     @extend %layers !optional;
 }
@@ -17,7 +71,7 @@
     @extend %flex !optional;
 }
 
-/* TITLEBAR */
+// 3) TITLEBAR
 .typeWindows-1za-n7 {
     @extend %titlebarWin !optional;
 }
@@ -34,7 +88,7 @@
     @extend %titlebarWinButtonClose !optional;
 }
 
-/* GUILDS */
+// 4) GUILDS
 .guildsWrapper-5TJh6A {
     @extend %guildsWrapper !optional;
 }
@@ -70,14 +124,14 @@
     @extend %guildSeparator !optional;
 }
 
-/* CHANNELS */
+// 5) CHANNELS
 .channels-Ie2l6A {
     @extend %channels !optional;
 }
 .container-PNkimc {
     @extend %channelsContainer !optional;
 }
-// Categories
+// 5.1) Categories
 .containerDefault-3GGEv_ {
     @extend %categoryContainer !optional;
     @extend %categoryContainerDefault !optional;
@@ -171,7 +225,7 @@
     @extend %categoryName !optional;
     @extend %categoryNameUnread !optional;
 }
-// Voice & Text Channels
+// 5.2) Voice & Text Channels
 .containerDefault-1ZnADq {
     @extend %channelContainer !optional;
     @extend %channelContainerDefault !optional;
@@ -335,7 +389,7 @@
 .unread-1Dp-OI {
     @extend %channelUnreadIndicator !optional;
 }
-// Voice Channel
+// 5.3) Voice User List
 .draggable-1KoBzC {
     @extend %voiceUser !optional;
 }
@@ -347,7 +401,7 @@
     @extend %voiceUserAvatar !optional;
     @extend %voiceUserAvatarSpeaking !optional;
 }
-// Account Container
+// 5.4) Account Container
 .container-2Thooq {
     @extend %accountContainer !optional;
 }
@@ -366,7 +420,7 @@
 .iconButton-3V4WS5 {
     @extend %accountContainerIconButton !optional;
 }
-// Connection Container
+// 5.5) Connection Container
 .container-1UB9sr {
     @extend %connectionContainer !optional;
 }
@@ -379,15 +433,14 @@
 .buttonDisconnect-3W_SJc {
     @extend %connectionContainerButtonDisconnect !optional;
 }
-// Unread & Mention Indicator
+// 5.6) Unread & Mention Indicator
 .unread-1xRYoj {
     @extend %channelsUnreadIndicator !optional;
 }
 .mention-1f5kbO {
     @extend %channelsMentionIndicator !optional;
 }
-
-/* PRIVATE CHANNELS */
+// 5.7) Private Channels
 .privateChannels-1nO12o {
     @extend %privateChannels !optional;
 }
@@ -414,7 +467,7 @@
     @extend %privateChannelsSearchBarInner !optional;
 }
 
-/* CHAT */
+// 6) CHAT
 .chat-3bRxxu {
     @extend %chat !optional;
 }
@@ -436,7 +489,7 @@
 .noChannel-Z1DQK7 {
 	@extend %noChannel !optional;
 }
-// Messages
+// 6.1) Messages
 .messagesWrapper-3lZDfY {
     @extend %messagesWrapper !optional;
 }
@@ -500,39 +553,7 @@
     @extend %messageButton !optional;
     @extend %messageOptionsButton !optional;
 }
-// Codeblocks
-.inline {
-    @extend %codeInline !optional;
-}
-%markup > pre {
-    @extend %codePre !optional;
-}
-.hljs {
-    @extend %codeHLJS !optional;
-}
-// Embeds
-.embed-IeVjo6 {
-    @extend %embed !optional;
-}
-.embedPill-1Zntps {
-    @extend %embedPill !optional;
-}
-.embedInner-1-fpTo {
-    @extend %embedInner !optional;
-}
-.embedLink-1G1K1D {
-    @extend %embedLink !optional;
-}
-.embedTitleLink-1Zla9e {
-    @extend %embedTitleLink !optional;
-}
-.embedVideoActionsInner-2reMo2 {
-    @extend %embedVideoActionsInner !optional;
-}
-.wrapper-129saQ {
-    @extend %embedVideoActionsButtonWrapper !optional; 
-}
-// Invite Links
+// 6.1.1) Invite Links
 .wrapper-35wsBm {
     @extend %inviteWrapper !optional;
 }
@@ -566,7 +587,39 @@
 .lookFilled-1Gx00P.colorBrand-3pXr91 {
     @extend %inviteButtonExpired !optional;
 }
-// Dividers
+// 6.1.2) Embeds
+.embed-IeVjo6 {
+    @extend %embed !optional;
+}
+.embedPill-1Zntps {
+    @extend %embedPill !optional;
+}
+.embedInner-1-fpTo {
+    @extend %embedInner !optional;
+}
+.embedLink-1G1K1D {
+    @extend %embedLink !optional;
+}
+.embedTitleLink-1Zla9e {
+    @extend %embedTitleLink !optional;
+}
+.embedVideoActionsInner-2reMo2 {
+    @extend %embedVideoActionsInner !optional;
+}
+.wrapper-129saQ {
+    @extend %embedVideoActionsButtonWrapper !optional; 
+}
+// 6.1.3) Codeblocks
+.inline {
+    @extend %codeInline !optional;
+}
+%markup > pre {
+    @extend %codePre !optional;
+}
+.hljs {
+    @extend %codeHLJS !optional;
+}
+// 6.2) Dividers
 .divider-3gKybi {
     @extend %divider !optional;
 }
@@ -582,19 +635,20 @@
 .dividerEnabled-2TTlcf {
     @extend %dividerEnabled !optional;
 }
-// New Messages Bar
+// 6.3) Chat Bars
+// 6.3.1) New Messages Bar
 .newMessagesBar-mujexs {
     @extend %newMessagesBar !optional;
 }
-// Jump to Present Bar
+// 6.3.2) Jump To Present Bar
 .jumpToPresentBar-9P20AM {
     @extend %jumpToPresentBar !optional;
 }
-// Has more Button {
+// 6.3.3) Has More Bar {
 .hasMore-3e72_v {
     @extend %hasMore !optional;
 }
-// Channel Textarea
+// 6.4) Channel Textarea
 .channelTextArea-rNsIhG {
     @extend %channelTextarea !optional;
 }
@@ -616,7 +670,7 @@
 .emojiButton-3uL3Aw {
     @extend %channelTextareaEmojiButton !optional;
 }
-// Channel Textarea Autocomplete
+// 6.4.1) Channel Textarea Autocomplete
 .autocomplete-i9yVHs {
     @extend %autocomplete !optional;
 }
@@ -651,7 +705,7 @@
     @extend %autocompleteSelectorContent !optional;
 }
 
-/* CHANNEL MEMBERS */
+// 7) MEMBERS
 .members-1998pB {
     @extend %members !optional;
 }
@@ -697,12 +751,13 @@
     @extend %memberPlaceholderUsername !optional;
 }
 
-/* SEARCH */
+// 8) SEARCH
 .searchResultsWrap-2DKFzt {
     @extend %searchResultsWrap !optional;
 }
 
-/* FRIENDS TABLE */
+// 9) HOME TAB
+// 9.1) Friends Table
 .container-3gCOGc {
     @extend %friends !optional;
 }
@@ -712,7 +767,7 @@
 .friendsTable-133bsv {
     @extend %friendsTable !optional;
 }
-// Friends Table Header
+// 9.1.1) Header
 .friendsTableHeader-32yE7d {
     @extend %friendsTableHeader !optional;
 }
@@ -722,7 +777,7 @@
 .friendsColumnSeparator-3MqtMA {
     @extend %friendsColumnSeparator !optional;
 }
-// Friends Table Body
+// 9.1.2) Body
 .friendsTableBody-1ZhKif {
     @extend %friendsTableBody !optional;
 }
@@ -747,7 +802,7 @@
 .friendsAction-__WNE9 {
     @extend %friendsAction !optional;
 }
-// Friends Table Add Tab
+// 9.1.3) Add Tab
 .friendTableAddHeader-m9bzFr {
     @extend %friendsTableAddHeader !optional;
 }
@@ -764,7 +819,7 @@
     @extend %friendsTableSuggestionsHeader !optional;
 }
 
-/* AVATARS */
+// 10) AVATARS
 .avatar-large,
 .avatar-17mtNa {
     @extend %avatarLarge !optional;
@@ -785,7 +840,39 @@
     @extend %avatar !optional;
 }
 
-/* BUTTONS */
+// 11) STATUS
+.status-oxiHuE {
+    @extend %status !optional;
+}
+.statusProfile-3ynqtt {
+    @extend %statusProfile !optional;
+}
+.online-2S838R {
+	@extend %statusOnline !optional;
+}
+.idle-3DEnRT {
+    @extend %statusIdle !optional;
+}
+.dnd-1_xrcq {
+    @extend %statusDnd !optional;
+}
+.offline-3qoTek {
+    @extend %statusOffline !optional;
+}
+.invisible-1kp8Z0 {
+    @extend %statusInvisible !optional;
+}
+
+// 12) BOT TAG
+.botTag-2WPJ74 {
+	@extend %botTag !optional;
+}
+.botTagInvert-18-95s {
+	@extend %botTagInvert !optional;
+}
+
+// 13) GENERAL ELEMENTS
+// 13.1) Buttons
 .lookFilled-1Gx00P{
     @extend %buttonFilled !optional;
 }
@@ -837,44 +924,15 @@
         @extend %buttonInvertedBrand !optional;
     }
 }
-
-/* STATUS */
-.status-oxiHuE {
-    @extend %status !optional;
+// 13.2) Scrollers
+.scroller-2FKFPG {
+    @extend %scroller !optional;
 }
-.statusProfile-3ynqtt {
-    @extend %statusProfile !optional;
-}
-.online-2S838R {
-	@extend %statusOnline !optional;
-}
-.idle-3DEnRT {
-    @extend %statusIdle !optional;
-}
-.dnd-1_xrcq {
-    @extend %statusDnd !optional;
-}
-.offline-3qoTek {
-    @extend %statusOffline !optional;
-}
-.invisible-1kp8Z0 {
-    @extend %statusInvisible !optional;
-}
-
-// BADGE
+// 13.3) Badges
 .wrapper-232cHJ {
     @extend %badge !optional;
 }
-
-// BOT TAG
-.botTag-2WPJ74 {
-	@extend %botTag !optional;
-}
-.botTagInvert-18-95s {
-	@extend %botTagInvert !optional;
-}
-
-// TAB BAR
+// 13.4) Tab Bar
 .tabBar-1E2ExX {
     @extend %tabBar !optional;
 }
@@ -885,12 +943,7 @@
     @extend %tabBarItemSelected !optional;
 }
 
-/* SCROLLERS */
-.scroller-2FKFPG {
-    @extend %scroller !optional;
-}
-
-/* TOOLTIPS */
+// 14) TOOLTIPS
 .tooltips-FhwIyl {
     @extend %tooltips !optional;
 }
@@ -925,17 +978,17 @@
     @extend %tooltipYellow !optional;
 }
 
-/* USER POPOUT */
+// 15) USER POPOUT
 .userPopout-3XzG_A {
     @extend %userPopout !optional;
 }
 
-/* USER MODAL */
+// 16) USER MODAL
 .root-SR8cQa {
     @extend %userModal !optional;
 }
 
-/* SETTINGS */
+// 17) SETTINGS
 .standardSidebarView-3F1I7i {
     @extend %standardSidebarView !optional;
 }
@@ -952,8 +1005,8 @@
     @extend %settingsContentRegion !optional;
 }
 
-/* PLUGINS */
-// Owner Tag by noodlebox
+// 18) PLUGINS
+// 18.1) Owner Tag by noodlebox
 .kawaii-tag {
     @extend %ownerTag !optional;
     @extend %kawaiiTag !optional;
@@ -962,28 +1015,28 @@
     @extend %ownerTagInvert !optional;
     @extend %kawaiiTagInvert !optional;
 }
-// Codeblock Linenumbers by noodlebox
+// 18.2) Codeblock Linenumbers by noodlebox
 .kawaii-linenumbers {
     @extend %codeLinenumbers !optional;
     @extend %kawaiiLineNumbers !optional;
 }
-// Copy Code by Finicalmist
+// 18.3) Copy Code by Finicalmist
 .copybutton {
     @extend %codeCopybutton !optional;
 }
-// Replyer by Hammock, Natsulus, Zerebos & BetterReplyer by Zerthox
+// 18.4) Replyer by Hammock, Natsulus, Zerebos & BetterReplyer by Zerthox
 .replyer {
     @extend %replyerButton !optional;
 }
-// Citador by Nirewen
+// 18.5) Citador by Nirewen
 .citar-btn {
     @extend %citarButton !optional;
 }
-// Quoter by samogot
+// 18.6) Quoter by samogot
 .btn-quote {
     @extend %quoteButton !optional;
 }
-// Discrypt
+// 18.7) Discrypt by Zerthox
 .discrypt {
 	@extend %discryptButton !optional;
 }

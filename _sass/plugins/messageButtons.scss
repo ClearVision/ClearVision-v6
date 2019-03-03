@@ -1,0 +1,16 @@
+// MESSAGE BUTTONS
+%replyerButton,
+%quoteButton,
+%citarButton,
+%discryptButton {
+	border-radius: 3px;
+	transition: all .3s ease-in-out;
+	@include animation(fade-in .3s ease-in-out);
+	&:hover {
+		background-color: var(--main-color) !important;
+	}
+}
+%messageGroup:not(:hover) %replyerButton {
+	visibility: visible;
+	opacity: 0;
+}

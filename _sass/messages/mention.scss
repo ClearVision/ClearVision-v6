@@ -1,0 +1,19 @@
+// MENTIONS
+%mention {
+	padding: 1px 4px;
+	background-color: rgba(115, 139, 215, .1) !important;
+	color: #ddd !important;
+	border-radius: 6px;
+	transition: all .3s ease-in-out;
+	white-space: nowrap;
+	cursor: pointer;
+	&:hover {
+		background-color: var(--main-color) !important;
+		color: #fff !important;
+	}
+	%mentioned & {
+		@include clear;
+		color: var(--main-color) !important;
+		@include hover-shadow;
+	}
+}

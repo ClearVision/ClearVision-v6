@@ -1,0 +1,205 @@
+// CHANNELS
+%channels {
+	background-color: rgba(0, 0, 0, .35) !important;
+	width: 220px;
+
+	// CHANNELS CONTAINER
+	& > %channelsContainer {
+		@include clear;
+	}
+
+	// CHANNEL CATEGORIES
+	%categoryWrapperMuted { 
+		opacity: .5;
+	}
+	%categoryIcon {
+		display: none;
+	}
+	%categoryName {
+		position: relative;
+		@include display-flex;
+		@include justify-content(center);
+		@include align-items(center);
+		color: hsla(0, 0%, 100%, .5);
+		text-align: center;
+		transition: all .3s ease-in-out;
+		@include pseudo(before, after) {
+			content: "";
+			display: inline-block;
+			flex-grow: 1;
+			height: 2px;
+			background-color: hsla(0, 0%, 100%, .3);
+			margin: -1px 5px 0;
+			transition: all .3s ease-in-out;
+		}
+	}
+	%categoryNameHovered,
+	%categoryNameHoveredCollapsed {
+		color: hsla(0, 0%, 100%, .7);
+		@include pseudo(before, after) {
+			background-color: hsla(0, 0%, 100%, .7);
+		}
+	}
+	%categoryNameCollapsed,
+	%categoryNameHoveredCollapsed,
+	%categoryIconMutedCollapsed + %categoryNameMuted {
+		@include pseudo(before, after) {
+			flex-grow: 0;
+		}
+	}
+	%categoryContainer {
+		padding-top: 24px;
+	}
+	.container-hidden {
+		opacity: .3;
+	}
+
+	// TEXT & VOICE CHANNELS
+	%channelContent {
+		transition: all .15s ease-in-out;
+	}
+	%channelContentVoice {
+		&:active {
+			background-color: hsla(0, 0%, 100%, .1);
+		}
+	}
+	%channelName {
+		color: hsla(0, 0%, 100%, .3);
+		transition: all .15s ease-in-out;
+	}
+	%channelIcon {
+		opacity: .7 !important;
+		transition: all .15s ease-in-out;
+		path {
+			opacity: .3;
+		}
+	}
+	%channelActionIcon {
+		opacity: .3 !important;
+		transition: all .15s ease-in-out;
+		&:hover {
+			opacity: .7 !important;
+		}
+	}
+	%channelContent path {
+		fill: #fff;
+		transition: all .15s ease-in-out;
+	}
+
+	// HOVER
+	%channelContentHoveredText {
+		background-color: hsla(0, 0%, 100%, .1);
+	}
+	%channelContentHoveredText,
+	%channelContentHoveredVoice {
+		%channelName {
+			color: hsla(0, 0%, 100%, .7);
+		}
+	}
+
+	// UNREAD
+	%channelNameUnread {
+		color: hsla(0, 0%, 100%, .8) !important;
+	}
+	%channelUnreadIndicator {
+		display: none;
+		& + %channelContent %channelIcon {
+			@include filter(drop-shadow(0 0 3px var(--main-color)));
+			path {
+				fill: var(--main-color) !important;
+				opacity: 1 !important;
+			}
+		}
+	}
+
+	// SELECTED
+	%channelContentSelectedText {
+		background-color: var(--main-color);
+		%channelIcon  > path {
+			fill: #fff;
+			opacity: 1 !important;
+		}
+		%channelActionIcon svg {
+			opacity: .7 !important;
+			&:hover {
+				opacity: 1 !important;
+			}
+		}
+	}
+	%channelNameSelectedText {
+		color: #fff !important;
+	}
+	%channelContentSelectedVoice {
+		%channelName {
+			color: hsla(0, 0%, 100%, .7);
+		}
+		&:hover %channelName {
+			color: #fff;
+		}
+	}
+
+	// MUTED
+	%channelContentMutedText,
+	%channelContentMutedVoice {
+		%channelName {
+			color: hsla(0, 0%, 100%, .1);
+		}
+		%channelIcon > path {
+			opacity: .1 !important;
+		}
+	}
+
+	// VOICE USER LIST
+	%voiceUser {
+		position: relative;
+		z-index: 1;
+	}
+	%voiceUserAvatar {
+		z-index: 1;
+		@include pseudo(before, after) {
+			content: "";
+			position: absolute;
+			top: 1px;
+			left: 0;
+			bottom: 1px;
+			opacity: 0;
+			transition: all .1s ease-in-out;
+			pointer-events: none;
+			z-index: -1;
+		}
+		@include pseudo(before) {
+			width: 4px;
+			background: var(--main-color);
+		}
+		@include pseudo(after) {
+			right: 0;
+			background: linear-gradient(to right, var(--main-color) 0%, transparent 35%);
+			border-left: 4px solid var(--main-color);
+		}
+	}
+	%voiceUserAvatarSpeaking {
+		@include box-shadow(none);
+		@include pseudo(before) {
+			opacity: 1;
+		}
+		@include pseudo(after) {
+			opacity: .5;
+		}
+	}
+
+	// DRAG INDICATORS
+	%categoryContainerDrag,
+	%channelContainerDrag {
+		@include pseudo(before, after) {
+			background-color: var(--main-color);
+			border-radius: 0;
+		}
+	}
+	%channelContainerUserOver {
+		@include pseudo(after) {
+			background-color: var(--main-color);
+			border-color: transparent;
+			opacity: .1;
+		}
+	}
+}

@@ -1,0 +1,21 @@
+// CHANNEL UNREAD INDICATOR
+%channelsUnreadIndicator,
+%channelsMentionIndicator {
+	position: relative;
+	@include clear;
+	@include pseudo(after) {
+		content: "";
+		position: absolute;
+		@include stretch;
+		background-color: var(--main-color);
+		border-radius: 3px;
+		opacity: .9;
+		z-index: -1;
+		transition: all .15s ease-in-out;
+	}
+	&:hover {
+		@include pseudo(after) {
+			opacity: 1;
+		}
+	}
+}

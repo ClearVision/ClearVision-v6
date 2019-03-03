@@ -1,0 +1,68 @@
+// INVITE LINK
+%messageGroup %inviteWrapper {
+    background-color: rgba(0, 0, 0, .4);
+    border-color: transparent;
+    %inviteGuildName{
+        color: var(--main-color);
+        &:hover {
+            @include hover-shadow;
+        }
+    }
+    %inviteGuildNameExpired {
+        color: var(--dnd-color);
+    }
+    %inviteGuildIconExpired {
+        position: relative;
+        background-size: 0;
+        background-color: hsla(0, 0%, 100%, .04);
+        @include pseudo(before, after) {
+            content: "";
+            position: absolute;
+            top: 10%;
+            bottom: 10%;
+            left: 50%;
+            width: 6px;
+            background-color: var(--dnd-color);
+            border-radius: 1px;
+        }
+        @include pseudo(after) {
+            @include transform(translateX(-50%) rotate(45deg));
+        }
+        @include pseudo(before) {
+            @include transform(translateX(-50%) rotate(-45deg));
+        }
+    }
+    %inviteGuildDetail {
+        padding-left: 1px;
+        margin-left: -1px;
+    }
+    %inviteTitle,
+    %inviteGuildDetail {
+        color: hsla(0, 0%, 100%, .5);
+    }
+    %inviteButton{
+        border-color: transparent;
+    }
+    %inviteButtonAccept {
+        background-color: transparent;
+        border: 1px solid $green;
+        transition: all .3s ease-in-out;
+        &:hover {
+            background-color: $green;
+        }
+    }
+    %inviteButtonJoined {
+        background-color: hsla(0, 0%, 100%, .1);
+        border-color: transparent;
+        opacity: .3;
+        cursor: default;
+    }
+    %inviteButtonExpired {
+        background-color: transparent;
+        border: 1px solid var(--dnd-color);
+        transition: all .3s ease-in-out;
+        &:hover {
+            background-color: var(--dnd-color);
+        }
+    }
+}

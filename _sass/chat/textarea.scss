@@ -1,0 +1,92 @@
+// TEXTAREA
+%chat {
+	form {
+		@include clear;
+		@include box-shadow(none !important);
+		#charcounter {
+			top: 100%;
+			margin-top: 7.5px;
+			color: hsla(0, 0%, 100%, .7);
+		}
+	}
+	%channelTextareaTyping {
+		@include clear;
+	}
+	%channelTextareaInner {
+		background-color: rgba(0, 0, 0, .5);
+		border: 2px solid hsla(0, 0%, 100%, .1) !important;
+		@include transform(translateZ(0));
+		%channelTextareaAttachButton {
+			@include transform(none);
+			%channelTextareaAttachButtonPlus {
+				opacity: .3;
+				transition: all .15s ease-in-out;
+			}
+			&:hover {
+				%channelTextareaAttachButtonPlus {
+					opacity: .7;
+				}
+			}
+		}
+	}
+	textarea {
+		&::-webkit-input-placeholder {
+			color: hsla(0, 0%, 100%, .2);
+		}
+		& + %channelTextareaButtons {
+			@include pseudo(after) {
+				content: "";
+				position: fixed;
+				@include pos(-2px, -2px, -2px, -2px);
+				border: 2px solid transparent;
+				border-radius: 3px;
+				opacity: 1;
+				transition: all .15s ease-in-out;
+				pointer-events: none;
+			}
+		}
+		&:focus + %channelTextareaButtons {
+			@include pseudo(after) {
+				border-color: var(--main-color);
+				@include box-shadow(0 0 3px var(--main-color));
+			}
+		}
+	}
+	
+	// CHANNEL TEXTAREA AUTOCOMPLETE
+	%autocomplete {
+		background-color: rgba(0, 0, 0, .8);
+		%autocompleteTitle {
+			color: hsla(0, 0%, 100%, .5);
+		}
+		%autocompleteContent {
+			color: hsla(0, 0%, 100%, .6);
+		}
+		%autocompleteIconForeground {
+			fill: hsla(0, 0%, 100%, .3);
+		}
+		%autocompleteDescription,
+		%autocompleteDescriptionUsername {
+			color: hsla(0, 0%, 100%, .3);
+		}
+		%autocompleteDescriptionDiscriminator {
+			color: hsla(0, 0%, 100%, .15);
+		}
+		%autocompleteSelectorSelected {
+			background-color: var(--main-color);
+			& > %autocompleteContent {
+				color: #fff;
+			}
+			%autocompleteIconForeground {
+				fill: hsla(0, 0%, 100%, .5);
+			}
+			%autocompleteDescription,
+			%autocompleteDescriptionUsername {
+				color: hsla(0, 0%, 100%, .5);
+			}
+			%autocompleteDescriptionDiscriminator {
+				color: hsla(0, 0%, 100%, .25);
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+// WELCOME MESSAGE
+.welcome-message {
+    & > h1 {
+        color: var(--main-color);
+    }
+    & > .item-container {
+        & > .icon {
+            @include filter(grayscale(1));
+            opacity: .3;
+        }
+        & > p {
+            color: hsla(0, 0%, 100%, .5);
+        }
+    }
+    a {
+        color: var(--main-color) !important;
+        @include hover-shadow;
+    }
+}

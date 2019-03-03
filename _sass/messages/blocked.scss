@@ -1,0 +1,43 @@
+// BLOCKED MESSAGES
+%messageGroupBlocked {
+	position: relative;
+	background-color: rgba(0, 0, 0, .2) !important;
+	border: none;
+	border-radius: 0;
+	&:hover {
+		@include box-shadow(none !important);
+	}
+	%messageGroupBlockedButton {
+		@include clear;
+		color: hsla(0, 0%, 100%, .3) !important;
+		transition: all .3s ease-in-out;
+		@include pseudo(after) {
+			content: "";
+			position: absolute;
+			@include stretch; 
+			border-top: 1px solid;
+			border-bottom: 1px solid;
+			border-color: hsla(0, 0%, 100%, .04);
+			transition: all .3s ease-in-out;
+			pointer-events: none;
+		}
+		&:hover {
+			color: hsla(0, 0%, 100%, .7) !important;
+			@include pseudo(after) {
+				border-color: hsla(0, 0%, 100%, .1);
+			}
+		}
+	}
+	%messageGroup {
+		margin-top: -20px;
+		margin-left: 0;
+		// [FADES]
+		// @include animation(fade-in .3s ease-in-out);
+	}
+	& + %divider {
+		margin-top: 25px;
+	}
+	%divider + & {
+		margin-top: 25px;
+	}
+}

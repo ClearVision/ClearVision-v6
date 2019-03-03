@@ -1,0 +1,30 @@
+// BUTTON
+%buttonFilledGreen,
+%buttonFilledBrand {
+	background-color: var(--main-color);
+	transition: all .3s ease-in-out;
+	&:hover {
+		background-color: var(--hover-color);
+	}
+	&:disabled {
+		background-color: var(--main-color);
+	}
+}
+%buttonInvertedBrand {
+	background: hsla(0, 0%, 100%, .1);
+	color: hsla(0, 0%, 100%, .7);
+	transition: all .3s ease-in-out;
+	&:hover {
+		background: hsla(0, 0%, 100%, .2);
+		color: #fff;
+	}
+}
+%buttonOutlinedWhite {
+	background-color: hsla(0, 0%, 100%, .05);
+	border-color: transparent;
+	transition: all .3s ease-in-out;
+	&:hover {
+		background-color: hsla(0, 0%, 100%, .1);
+		border-color: transparent;
+	}
+}

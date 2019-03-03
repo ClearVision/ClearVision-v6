@@ -1,0 +1,27 @@
+// STATUS
+%status,
+%statusProfile {
+	@include box-shadow(0 0 3px, 0 0 5px rgba(0, 0, 0, .5));
+	transition: all .3s ease-in-out;
+}
+%status {
+	border: none !important;
+	margin: 2px;
+}
+%statusOnline {
+	background-color: var(--online-color);
+	color: var(--online-color);
+}
+%statusIdle {
+	background-color: var(--idle-color);
+	color: var(--idle-color);
+}
+%statusDnd {
+	background-color: var(--dnd-color);
+	color: var(--dnd-color);
+}
+%statusOffline,
+%statusInvisible {
+	background-color: var(--offline-color);
+	color: var(--offline-color);
+}

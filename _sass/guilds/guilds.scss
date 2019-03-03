@@ -1,0 +1,125 @@
+// GUILDS
+%guildsWrapper {
+	@include clear;
+	@include box-shadow(inset -10px 0 20px -10px rgba(0, 0, 0, .2));
+
+	// GUILD LIST
+	%guilds {
+		%guildUnread {
+			@include pseudo(before) {
+				margin-top: -5px;
+			}
+		}
+		%guildSelected {
+			@include pseudo(before) {
+				background: var(--main-color) !important;
+				margin-top: -20px;
+				@include animation(guild-select .5s cubic-bezier(.22, .61, .36, 1));
+			}
+		}
+		%guildSelected,
+		%guildUnread {
+			@include pseudo(before) {
+				width: 13px;
+				left: -17px;
+				background: var(--main-color) !important;
+				transition: all .3s ease-in-out;
+			}
+		}
+		%guildInner {
+			background-color: rgba(0, 0, 0, .5) !important;
+			@include box-shadow(0 0 5px rgba(0, 0, 0, .5));
+			transition: transform .1s ease-in-out;
+			&:active {
+				@include transform(scale(.9));
+			}
+		}
+		&%guildAudio %guildInner {
+			@include pseudo(after) {
+				background-color: #000;
+				opacity: .7;
+			}
+		}
+		%guild:first-child {
+			%guildInner {
+				transition: background-color .3s ease-in-out;
+			}
+			&:hover,
+			&%guildSelected {
+				%guildInner {
+					background-color: var(--main-color) !important;
+				}
+			}
+		}
+		%guildsError {
+			background-color: rgba(0, 0, 0, .5);
+			border-color: var(--main-color);
+			transition: all .3s ease-in-out;
+			&:hover {
+				background-color: var(--main-color);
+			}
+		}
+		%guildsAdd {
+			background-color: rgba(0, 0, 0, .5);
+			opacity: .7;
+			transition: all .1s ease-in-out;
+			&:hover {
+				color: var(--main-color);
+				border-color: var(--main-color);
+				@include animation(pulsate-border 2s infinite ease-in-out);
+				@include pseudo(before, after) {
+					background-color: var(--main-color) !important;
+					@include animation(pulsate-color 2s infinite ease-in-out);
+				}
+			}
+			&:active {
+				@include transform(scale(.9));
+			}
+			span {
+				display: none;
+			}
+			@include pseudo(before, after) {
+				content: "";
+				position: absolute;
+				background-color: #333539;
+				border-radius: 3px;
+				transition: all .1s ease-in-out;
+			}
+			@include pseudo(before) {		
+				width: 2px;
+				top: 25%;
+				bottom: 25%;
+				left: 50%;
+				@include transform(translateX(-50%));
+			}
+			@include pseudo(after) {
+				height: 2px;
+				top: 50%;
+				right: 25%;
+				left: 25%;
+				@include transform(translateY(-50%));
+			}
+		}
+		%friendsOnline {
+			@include clear;
+			color: hsla(0, 0%, 100%, .7);
+			text-transform: uppercase;
+			border-radius: 25px;
+			transition: all .3s ease-in-out;
+			cursor: default;
+			&:hover {
+				color: #fff;
+			}
+		}
+		%badge {
+			@include animation(badge 1s ease-in-out infinite alternate);
+		}
+	}
+
+	// GUILD SEPERATORS
+	%guildSeparator {
+		@include pseudo(after) {
+			background-color: hsla(0, 0%, 100%, .2);
+		}
+	}
+}

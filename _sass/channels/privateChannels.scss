@@ -1,0 +1,50 @@
+// PRIVATE CHANNELS
+%privateChannels {
+	%privateChannel {
+		& > a,
+		%privateChannelClose {
+			transition: all .15s ease-in-out;
+		}
+		%privateChannelClose {
+			@include bg($image: "https://zerthox.github.io/ClearVision/icons/close.svg", $repeat: no-repeat, $pos: center, $size: 18px);
+			display: block;
+			opacity: 0;
+		}
+		&:hover {
+			& > a {
+				background-color: hsla(0, 0%, 100%, .1) !important;
+				color: #fff !important;
+			}
+			%privateChannelClose {
+				opacity: .3;
+				&:hover {
+					opacity: .7;
+				}
+			}
+		}
+		&%privateChannelSelected > a {
+			background-color: var(--main-color) !important;
+			color: #fff !important;
+		}
+	}
+}
+
+// PRIVATE CHANNELS SEARCH BAR
+%privateChannelsSearchBar {
+	margin-top: 10px;
+	margin-bottom: 0;
+	@include box-shadow(none !important);
+	%privateChannelsSearchBarComponent {
+		@include clear;
+	}
+	%privateChannelsSearchBarInner {
+		background-color: rgba(0, 0, 0, .4);
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	input {
+		&::-webkit-input-placeholder {
+			color: hsla(0, 0%, 100%, .3);
+		}
+	}
+}

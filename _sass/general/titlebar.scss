@@ -1,0 +1,37 @@
+// TITLEBAR
+%titlebarWin {
+	height: 18px;
+	width: 100vw;
+	margin: 0;
+	padding-top: 4px;
+	background-color: rgba(0, 0, 0, .6);
+	& > %titlebarWordmark {
+		opacity: 1;
+		pointer-events: none;
+		@include user-select(none);
+		@include pseudo(after) {
+			content: "#{$version}";
+			position: absolute;
+			left: 100%;
+			color: hsla(0, 0%, 100%, .7);
+			font-size: 14px;
+			font-weight: bold;
+			white-space: nowrap;
+		}
+		& > svg > path {
+			fill: var(--main-color);
+		}
+	}
+	& > %titlebarWinButton {
+		opacity: 1 !important;
+		&:hover {
+			background-color: hsla(0, 0%, 100%, .1);
+			background-color: hsla(0, 0%, 100%, .1);
+		}
+	}
+	& > %titlebarWinButtonClose {
+		&:hover {
+			background-color: var(--dnd-color);
+		}
+	}
+}

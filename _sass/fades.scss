@@ -1,0 +1,33 @@
+// CHANNELS
+%channels {
+    %categoryContainerDefault,
+	%channelContainerDefault {
+		@include animation(fade-in .3s ease-in-out);
+	}
+}
+
+// MESSAGES
+%message,
+%messageGroup,
+%divider {
+	@include animation(message-fade .5s ease-in-out);
+}
+
+// KEYFRAMES
+@include keyframes(fade-in) {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@include keyframes(message-fade) {
+	0%,
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

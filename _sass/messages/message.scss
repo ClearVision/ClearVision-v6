@@ -1,0 +1,39 @@
+// MESSAGE
+%messagesWrapper {
+	@include clear;
+}
+%messageGroup {
+	%avatarLarge {
+		transition: all .3s ease-in-out, transform .1s ease-in-out;
+		&:active {
+			@include transform(scale(.9));
+		}	
+	}
+	%dividerEnabled {
+		border-bottom-color: hsla(0, 0%, 100%, .04);
+	}
+	%messageContent {
+		line-height: 1em;
+	}
+	%messageTimestamp {
+		color: hsla(0, 0%, 100%, .3) !important;
+		transition: all .3s ease-in-out;
+	}
+	&:hover {
+		%messageTimestamp {
+			color: hsla(0, 0%, 100%, .7) !important;
+		}
+	}
+	a {
+		color: var(--main-color) !important;
+		@include hover-shadow;
+	}
+	%mentioned {
+		background-color: rgba(100, 100, 100, .3) !important;
+		@include pseudo(after) {
+			background: rgba(100, 100, 100, .3);
+			border-left: 4px solid var(--main-color);
+			border-radius: 2px 0 0 2px;
+		}
+	}
+}

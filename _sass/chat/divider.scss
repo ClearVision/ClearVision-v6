@@ -1,0 +1,41 @@
+// DIVIDER
+%chat %divider {
+    position: relative;
+    margin: 10px 6px 10px 20px;
+    @include pseudo(before) {
+        content: "";
+        position: absolute;
+        @include stretch;
+        background-color: hsla(0, 0%, 100%, .2);
+        border-radius: 3px;
+        opacity: .8;
+        z-index: -1;
+    }
+    &%dividerRed {
+        @include pseudo(before) {
+            background-color: var(--main-color);
+        }
+        & + %divider {
+            margin-top: 40px;
+        }
+        & > %dividerContent {
+            position: relative;
+            @include clear;
+            color: hsla(0, 0%, 100%, .8) !important;
+        }
+    }
+    & > %dividerContent {
+        margin: 10px 0;
+        padding: 5px 15px;
+        display: block;
+        color: hsla(0, 0%, 100%, 1) !important;
+        font-size: 12px;
+        text-transform: uppercase;
+        text-align: center;
+        border-radius: 3px;
+        opacity: .9;
+        @include pseudo(before, after) {
+            display: none;
+        }
+    }
+}

@@ -1,6 +1,3 @@
-// MIXINS
-@import "mixins.scss";
-
 // CUSTOM FUNCTIONS
 @function str-replace($string, $search, $replace: "") {
     $index: str-index($string, $search);
@@ -15,9 +12,6 @@
     }
     @return $string;
 }
-
-// SELECTORS
-@import "selectors.scss";
 
 // LANGUAGE MAP
 $languages: (
