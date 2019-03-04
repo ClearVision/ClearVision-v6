@@ -3,7 +3,7 @@
 	@include clear;
 	%friendsHeaderBar {
 		background-color: rgba(0, 0, 0, .7) !important;
-		%tabBar {
+		%friendsTabBar {
 			%tabBarItem {
 				@include clear;
 				color: hsla(0, 0%, 100%, .6) !important;
@@ -11,10 +11,10 @@
 				&:hover {
 					background-color: rgba(0, 0, 0, .5) !important;
 				}
-			}
-			%tabBarItemSelected {
-				background-color: var(--main-color) !important;
-				color: #fff !important
+				&%tabBarItemSelected {
+					background-color: var(--main-color) !important;
+					color: #fff !important
+				}
 			}
 		}
 	}

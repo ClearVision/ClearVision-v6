@@ -1,12 +1,14 @@
 // CODEBLOCK
-%markup > %codeInline {
-    background-color: hsla(0, 0%, 100%, .1) !important;
-    color: hsla(0, 0%, 100%, .7) !important;
-    padding: 3.5px 7.5px !important;
-    border-radius: 3px !important;
-    line-height: 22px;
-    & + pre {
-        margin-top: -1px;
+%messageGroup %markup code {
+    &%codeInline {
+        background-color: hsla(0, 0%, 100%, .1);
+        color: hsla(0, 0%, 100%, .7);
+        padding: 3.5px 7.5px;
+        border-radius: 3px;
+        line-height: 22px;
+        & + pre {
+            margin-top: -1px;
+        }
     }
 }
 %codePre {
