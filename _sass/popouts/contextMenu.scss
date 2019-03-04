@@ -1,0 +1,35 @@
+// CONTEXT MENU
+%contextMenu {
+	background-color: rgba(0, 0, 0, .7) !important;
+	border-color: transparent !important;
+	@include box-shadow(0 0 1px rgba(0, 0, 0, .82), 0 1px 4px rgba(0, 0, 0, .1) !important);
+	@include animation(menu-slide .3s cubic-bezier(.2, .6, .5, 1.1));
+    @include prefix(transform-origin, 0 50%);
+    &%contextMenuInvertChildX {
+        @include prefix(transform-origin, 100% 50%);
+    }
+	%contextMenuItemGroup {
+		border-top-color: hsla(0, 0%, 100%, .04) !important;
+	}
+	%contextMenuItem {
+		@include clear;
+		color: hsla(0, 0%, 100%, .6);
+		border-radius: 3px;
+		transition: all .1s ease-in-out;
+		&:hover {
+			color: #fff;
+			background-color: rgba(0, 0, 0, .7) !important;
+		}
+		&%contextMenuItemDanger {
+			background-color: $dark-red !important;
+			color: hsla(0, 0%, 100%, .6) !important;
+			width: calc(100% - 4px);
+			margin: 2px;
+			&:hover {
+				background-color: $red !important;
+				color: #fff !important;
+
+			}
+		}
+	}
+}

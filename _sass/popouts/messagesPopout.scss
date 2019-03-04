@@ -1,0 +1,75 @@
+// MESSAGES POPOUT
+%popouts {
+	%themedPopout {
+		background-color: rgba(0, 0, 0, .7);
+		border: none;
+		border-radius: 5px;
+		%popoutHeader {
+			background-color: rgba(0, 0, 0, .5);
+			border-radius: 3px 3px 0 0;
+		}
+		%popoutFooter {
+			background-color: rgba(0, 0, 0, .5);
+		}
+	}
+	%messagesPopout {
+		%messageGroupWrapper {
+			background-color: transparent;
+			border: none;
+			border-bottom: solid 1px hsla(0, 0%, 100%, .04);
+			border-radius: 0px;
+			&:last-child {
+				border-bottom: none;
+			}
+			%messagesPopoutActionButtons {
+				background-color: transparent;
+				opacity: 0;
+				transition: all .15s ease-in-out;
+				@include box-shadow(none);
+				%messagesPopoutJumpButton {
+					background-color: rgba(0, 0, 0, .3);
+					color: hsla(0, 0%, 100%, .5);
+					border-radius: 3px;
+					transition: all .15s ease-in-out;
+					&:hover {
+						background-color: var(--main-color);
+						color: #fff;
+					}
+				}
+				%messagesPopoutCloseButton {
+					opacity: .3;
+					transition: all .15s ease-in-out;
+					&:hover {
+						opacity: .7;
+					}
+				}
+			}
+			&:hover {
+				%messagesPopoutActionButtons {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+%messagesPopoutTabBar {
+	& > %messagesPopoutTabBarItem {
+		color: hsla(0, 0%, 100%, .5) !important;
+		transition: all .2s ease-in-out;
+		&:hover {
+			color: hsla(0, 0%, 100%, .7) !important;
+			border-color: hsla(0, 0%, 100%, .7) !important;
+		}
+		&%tabBarItemSelected {
+			border-color: var(--main-color) !important;
+			color: var(--main-color) !important;
+		}
+	}
+}
+%recentMentionsFilterPopout {
+	@include animation(menu-fold .3s cubic-bezier(.2, .6, .5, 1.1));
+	@include prefix(transform-origin, 50% 0);
+}
+%statusGreen {
+	color: var(--online-color);
+}

@@ -1,0 +1,76 @@
+// USER PROFILE MODAl
+%userModal {
+	@include pseudo(before) {
+		content: "";
+		position: absolute;
+		@include pos(-5px, -5px, -5px, -5px);
+		background-position: center;
+		@include filter(blur(3px));
+		z-index: -1;
+	}
+	& > %userModalBody {
+		background: rgba(0, 0, 0, .7);
+	}
+	& > %userModalTopSection {
+		background: -webkit-linear-gradient(top, rgba(0, 0, 0, .3), rgba(0, 0, 0, .5));
+		background: linear-gradient(top, rgba(0, 0, 0, .3), rgba(0, 0, 0, .5));
+	}
+}
+%userModalHeaderFill {
+	background: rgba(0, 0, 0, .04);
+	& > %activity{
+		%activityHeaderText {
+			color: hsla(0, 0%, 100%, .7);
+		}
+	}
+}
+// ACTIVITY
+%activity {
+	%activityNameNormal {
+		color: var(--main-color);
+		text-shadow: 0 0 5px rgba(0, 0, 0, .5);
+		font-weight: 600;
+		& > %activityName {
+			color: inherit;
+			&%activityBodyLink:hover {
+				text-shadow: 0 0 5px rgba(0, 0, 0, .5), 0 0 1px;
+			}
+		}
+	}
+	%activityTimestamp {
+		font-style: italic;
+	}
+	%activityBodyLink {
+		@include hover-shadow;
+	}
+}
+// TAB BAR
+%userModalTabBarContainer {
+	border-color: hsla(0, 0%, 100%, .04);
+}
+%userModalTabBar {
+	& > %tabBarItem {
+		color: hsla(0, 0%, 100%, .5) !important;
+		transition: all .2s ease-in-out;
+		&:hover {
+			color: hsla(0, 0%, 100%, .7) !important;
+			border-color: hsla(0, 0%, 100%, .7) !important;
+		}
+		&%tabBarItemSelected {
+			border-color: var(--main-color) !important;
+			color: var(--main-color) !important;
+		}
+	}
+}
+// BODY
+%userModalBody {
+	%userModalInfoSection + %userModalInfoSection {
+		border-color: hsla(0, 0%, 100%, .04);
+	}
+}
+%userModalConnectedAccounts {
+	& > %userModalConnectedAccount {
+		background-color: hsla(0, 0%, 100%, .04);
+		border-color: transparent;
+	}
+}

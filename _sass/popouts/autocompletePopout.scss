@@ -1,0 +1,31 @@
+// AUTOCOMPLETE POPOUT
+%popout > %autocompletePopout {
+	%autocompletePopoutShadow {
+		@include box-shadow(0 0 1px rgba(0, 0, 0, .82), 0 1px 4px rgba(0, 0, 0, .1));
+	}
+	%autocompletePopoutArrow,
+	%autocompletePopoutHeaderBackground {
+		background-color: var(--main-color);
+	}
+	%autocompletePopoutHeaderText,
+	%autocompletePopoutInput {
+		color: hsla(0, 0%, 100%, .7);
+	}
+	%autocompletePopoutInput {
+		&::-webkit-input-placeholder {
+			color: hsla(0, 0%, 100%, .3);
+		}
+	}
+	%autocompletePopoutSection {
+		background-color: rgba(0, 0, 0, .7);
+	}
+	%autocompletePopoutScroller {
+		overflow-y: auto;
+	}
+	%autocompletePopoutRow {
+		&:hover,
+		&%autocompletePopoutSelected {
+			background: rgba(0, 0, 0, .7);
+		}
+	}
+}

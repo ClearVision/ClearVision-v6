@@ -1,0 +1,12 @@
+// POPOUT
+%popout {
+    @include box-shadow(none);
+    header {
+        background-color: var(--main-color);
+        border-radius: 3px 3px 0 0;
+    }
+    section {
+        background-color: rgba(0, 0, 0, .7);
+        border-radius: 0 0 3px 3px;
+    }
+}

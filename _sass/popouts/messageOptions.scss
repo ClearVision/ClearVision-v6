@@ -1,0 +1,16 @@
+// MESSAGE OPTIONS POPOUT
+%popout > %messageOptions {
+	border: 1px solid transparent;
+    background-color: rgba(0, 0, 0, .5);
+    @include box-shadow(0 0 5px rgba(0, 0, 0, .5));
+	@include animation(menu-fold .3s cubic-bezier(.2, .6, .5, 1.1));
+	@include prefix(transform-origin, 50% 0);
+	%popoutItem {
+		@include clear;
+		color: hsla(0, 0%, 100%, .4);
+		transition: all .15s ease-in-out;
+		&:hover {
+			color: hsla(0, 0%, 100%, .7);
+		}
+	}
+}
