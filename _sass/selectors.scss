@@ -4,863 +4,959 @@
 // 3) Titlebar
 // 4) Guilds
 // 5) Channels
-//     5.1) Channel Categories
-//     5.2) Voice & Text Channels
-//     5.3) Voice User list
-//     5.4) Account Container
-//     5.5) Connection Container
-//     5.6) Unread & Mention Indicators
-//     5.7) Private Channels
+//	5.1) Channel Categories
+//	5.2) Voice & Text Channels
+//	5.3) Voice User list
+//	5.4) Account Container
+//	5.5) Connection Container
+//	5.6) Unread & Mention Indicators
+//	5.7) Private Channels
 // 6) Chat
-//     6.1) Messages
-//         6.1.1) Invite Links
-//         6.1.2) Embeds
-//         6.1.3) Codeblocks
-//     6.2) Dividers
-//     6.3) Chat Bars
-//         6.3.1) New Messages Bar
-//         6.3.2) Jump To Present Bar
-//         6.3.3) Has More Bar
-//     6.4) Channel Textarea
-//         6.4.1) Channel Textarea Autocomplete
+//		6.1) Messages
+//			6.1.1) Invite Links
+//			6.1.2) Embeds
+//			6.1.3) Codeblocks
+//		6.2) Dividers
+//		6.3) Chat Bars
+//			6.3.1) New Messages Bar
+//			6.3.2) Jump To Present Bar
+//			6.3.3) Has More Bar
+//		6.4) Channel Textarea
+//			6.4.1) Channel Textarea Autocomplete
 // 7) Members
 // 8) Search
 // 9) Home Tab
-//     9.1) Friends Table
-//         9.1.1) Header
-//         9.1.2) Body
-//         9.1.3) Add Tab
+//		9.1) Friends Table
+//			9.1.1) Header
+//		 	9.1.2) Body
+//		 	9.1.3) Add Tab
 // 10) Avatars
 // 11) Status
 // 12) Bot Tags
 // 13) General Elements
-//     13.1) Buttons
-//     13.2) Scrollers
-//     13.3) Badges
-//     13.4) Tab Bar
+//		13.1) Buttons
+//		13.2) Scrollers
+//		13.3) Badges
+//		13.4) Tab Bar
+//			13.4.1) Friends
+//			13.4.2) Messages Popout
+//			13.4.3) User Popout
+//		13.5) Checkbox
 // 14) Tooltips
-// 15) User Popout
-// 16) User Modal
-// 17) Settings
-// 18) Plugins 
-//     18.1) Owner Tag by noodlebox
-//     18.2) Codeblock Linenumbers by noodlebox
-//     18.3) Copy Code by Finicalmist
-//     18.4) Replyer by Hammock, Natsulus, Zerebos & BetterReplyer by Zerthox
-//     18.5) Citador by Nirewen
-//     18.6) Quoter by samogot
-//     18.7) Discrypt by Zerthox
+// 15) Context Menu
+// 16) Popouts
+//		16.1) Message Options Popout
+//		16.2) Messages Popout
+//		16.3) Autocomplete Popout
+// 17) User Popout
+// 18) Activity
+// 19) Member Roles
+// 20) User Modal
+//		20.1) Header
+//		20.2) Body
+// 21) Settings
+// 22) Plugins 
+//		22.1) Owner Tag by noodlebox
+//		22.2) Codeblock Linenumbers by noodlebox
+//		22.3) Copy Code by Finicalmist
+//		22.4) Replyer by Hammock, Natsulus, Zerebos & BetterReplyer by Zerthox
+//		22.5) Citador by Nirewen
+// 		22.6) Quoter by samogot
+// 		22.7) Discrypt by Zerthox
 
 // 1) VERSION NOTICE
-/*! Using Discord Selectors v19-03-01 by Zerthox */
+/*! Using Discord Selectors v19-03-04 by Zerthox */
 
 // 2) APP
 .layers-3iHuyZ {
-    @extend %layers !optional;
+	@extend %layers !optional;
 }
 .layer-3QrUeG {
-    @extend %layer !optional;
+	@extend %layer !optional;
 }
 .container-2lgZY8 {
-    @extend %containerMain !optional;
+	@extend %containerMain !optional;
 }
 .base-3dtUhz {
-    @extend %base !optional;
+	@extend %base !optional;
 }
 .flex-1O1GKY {
-    @extend %flex !optional;
+	@extend %flex !optional;
 }
 
 // 3) TITLEBAR
 .typeWindows-1za-n7 {
-    @extend %titlebarWin !optional;
+	@extend %titlebarWin !optional;
 }
 .wordmark-2iDDfm {
-    @extend %titlebarWordmark !optional;
+	@extend %titlebarWordmark !optional;
 }
 .winButton-iRh8-Z {
-    @extend %titlebarWinButton !optional;
+	@extend %titlebarWinButton !optional;
 }
 .winButtonMinMax-PBQ2gm {
-    @extend %titlebarWinButtonMinMax !optional;
+	@extend %titlebarWinButtonMinMax !optional;
 }
 .winButtonClose-1HsbF- {
-    @extend %titlebarWinButtonClose !optional;
+	@extend %titlebarWinButtonClose !optional;
 }
 
 // 4) GUILDS
 .guildsWrapper-5TJh6A {
-    @extend %guildsWrapper !optional;
+	@extend %guildsWrapper !optional;
 }
 .guilds-1q_RqH {
-    @extend %guilds !optional;
+	@extend %guilds !optional;
 }
 .guild-1EfMGQ {
-    @extend %guild !optional;
+	@extend %guild !optional;
 }
 .unread-qLkInr {
-    @extend %guildUnread !optional;
+	@extend %guildUnread !optional;
 }
 .selected-ML3OIq {
-    @extend %guildSelected !optional;
+	@extend %guildSelected !optional;
 }
 .audio-3vVhBi {
-    @extend %guildAudio !optional;
+	@extend %guildAudio !optional;
 }
 .guildInner-3DSoA4 {
-    @extend %guildInner !optional;
+	@extend %guildInner !optional;
 }
 .guildsAdd-21_IdK {
-    @extend %guildsAdd !optional;
+	@extend %guildsAdd !optional;
 }
 .guildsError-3cFMtY {
-    @extend %guildsError !optional;
+	@extend %guildsError !optional;
 }
 .friendsOnline-_wi_fM {
-    @extend %friendsOnline !optional;
+	@extend %friendsOnline !optional;
 }
 .guildSeparator-1X4GQ1,
 %guild[separator] {
-    @extend %guildSeparator !optional;
+	@extend %guildSeparator !optional;
 }
 
 // 5) CHANNELS
 .channels-Ie2l6A {
-    @extend %channels !optional;
+	@extend %channels !optional;
 }
 .container-PNkimc {
-    @extend %channelsContainer !optional;
+	@extend %channelsContainer !optional;
 }
 // 5.1) Categories
 .containerDefault-3GGEv_ {
-    @extend %categoryContainer !optional;
-    @extend %categoryContainerDefault !optional;
-}
-.containerDragAfter-3TEhpe {
-    @extend %categoryContainer !optional;
-    @extend %categoryContainerDrag !optional;
-    @extend %categoryContainerDragAfter !optional;
-}
-.containerDragBefore-3Dzc5x {
-    @extend %categoryContainer !optional;
-    @extend %categoryContainerDrag !optional;
-    @extend %categoryContainerDragBefore !optional;
+	@extend %categoryContainerDefault !optional;
 }
 .containerUserOver-1Tcb7l {
-    @extend %categoryContainer !optional;
-    @extend %categoryContainerUserOver !optional;
+	@extend %categoryContainerUserOver !optional;
+}
+.containerDragBefore-3Dzc5x {
+	@extend %categoryContainerDragBefore !optional;
+}
+.containerDragAfter-3TEhpe {
+	@extend %categoryContainerDragAfter !optional;
+}
+%categoryContainerDragBefore,
+%categoryContainerDragAfter {
+	@extend %categoryContainerDrag !optional;
+}
+%categoryContainerDefault,
+%categoryContainerDrag,
+%categoryContainerUserOver {
+	@extend %categoryContainer !optional;
 }
 .wrapperDefault-10Jfvz {
-    @extend %categoryWrapper !optional;
-    @extend %categoryWrapperDefault !optional;
-}
-.wrapperCollapsed-3Fbxl6 {
-    @extend %categoryWrapper !optional;
-    @extend %categoryWrapperCollapsed !optional;
+	@extend %categoryWrapperDefault !optional;
 }
 .wrapperHovered-28fu1D {
-    @extend %categoryWrapper !optional;
-    @extend %categoryWrapperHovered !optional;
-}
-.wrapperHoveredCollapsed-1PADEo {
-    @extend %categoryWrapper !optional;
-    @extend %categoryWrapperHoveredCollapsed !optional;
-}
-.wrapperMuted-3KeA2M {
-    @extend %categoryWrapper !optional;
-    @extend %categoryWrapperMuted !optional;
+	@extend %categoryWrapperHovered !optional;
 }
 .wrapperUnread-1JPWj3 {
-    @extend %categoryWrapper !optional;
-    @extend %categoryWrapperUnread !optional;
+	@extend %categoryWrapperUnread !optional;
+}
+.wrapperCollapsed-3Fbxl6 {
+	@extend %categoryWrapperCollapsed !optional;
+}
+.wrapperHoveredCollapsed-1PADEo {
+	@extend %categoryWrapperHoveredCollapsed !optional;
+}
+.wrapperMuted-3KeA2M {
+	@extend %categoryWrapperMuted !optional;
+}
+%categoryWrapperDefault,
+%categoryWrapperHovered,
+%categoryWrapperUnread,
+%categoryWrapperCollapsed,
+%categoryWrapperHoveredCollapsed,
+%categoryWrapperMuted {
+	@extend %categoryWrapper !optional;
 }
 .iconDefault-3Gr8d2 {
-    @extend %categoryIcon !optional;
-    @extend %categoryIconDefault !optional;
-}
-.iconCollapsed-3hFp_8 {
-    @extend %categoryIcon !optional;
-    @extend %categoryIconCollapsed !optional;
-}
-.iconHovered-2L3-fB {
-    @extend %categoryIcon !optional;
-    @extend %categoryIconHovered !optional;
-}
-.iconHoveredCollapsed-3caIIZ {
-    @extend %categoryIcon !optional;
-    @extend %categoryIconHoveredCollapsed !optional;
-}
-.iconMuted-1HVBGH {
-    @extend %categoryIcon !optional;
-    @extend %categoryIconMuted !optional;
-}
-.directionRight-O8AY4M {
-    @extend %categoryIconMutedCollapsed !optional;
+	@extend %categoryIconDefault !optional;
 }
 .iconUnread-2eGkvX {
-    @extend %categoryIcon !optional;
-    @extend %categoryIconUnread !optional;
+	@extend %categoryIconUnread !optional;
+}
+.iconHovered-2L3-fB {
+	@extend %categoryIconHovered !optional;
+}
+.iconCollapsed-3hFp_8 {
+	@extend %categoryIconCollapsed !optional;
+}
+.iconHoveredCollapsed-3caIIZ {
+	@extend %categoryIconHoveredCollapsed !optional;
+}
+.iconMuted-1HVBGH {
+	@extend %categoryIconMuted !optional;
+}
+.directionRight-O8AY4M {
+	@extend %categoryIconMutedCollapsed !optional;
+}
+%categoryIconDefault,
+%categoryIconHovered,
+%categoryIconUnread,
+%categoryIconCollapsed,
+%categoryIconHoveredCollapsed,
+%categoryIconMuted {
+	@extend %categoryIcon !optional;
 }
 .nameDefault-2DI02H {
-    @extend %categoryName !optional;
-    @extend %categoryNameDefault !optional;
+	@extend %categoryNameDefault !optional;
 }
 .nameCollapsed-34uFWo {
-    @extend %categoryName !optional;
-    @extend %categoryNameCollapsed !optional;
+	@extend %categoryNameCollapsed !optional;
 }
 .nameHovered-1gxhWH {
-    @extend %categoryName !optional;
-    @extend %categoryNameHovered !optional;
+	@extend %categoryNameHovered !optional;
 }
 .nameHoveredCollapsed-2orEWB {
-    @extend %categoryName !optional;
-    @extend %categoryNameHoveredCollapsed !optional;
+	@extend %categoryNameHoveredCollapsed !optional;
 }
 .nameMuted-1MCOt4 {
-    @extend %categoryName !optional;
-    @extend %categoryNameMuted !optional;
+	@extend %categoryNameMuted !optional;
 }
 .nameUnread-njOjIS {
-    @extend %categoryName !optional;
-    @extend %categoryNameUnread !optional;
+	@extend %categoryNameUnread !optional;
+}
+%categoryNameDefault,
+%categoryNameUnread,
+%categoryNameHovered,
+%categoryNameCollapsed,
+%categoryNameHoveredCollapsed,
+%categoryNameMuted {
+	@extend %categoryName !optional;
 }
 // 5.2) Voice & Text Channels
 .containerDefault-1ZnADq {
-    @extend %channelContainer !optional;
-    @extend %channelContainerDefault !optional;
+	@extend %channelContainer !optional;
+	@extend %channelContainerDefault !optional;
 }
 .containerDragAfter-1F4fgZ {
-    @extend %channelContainer !optional;
-    @extend %channelContainerDrag !optional;
-    @extend %channelContainerDragAfter !optional;
+	@extend %channelContainer !optional;
+	@extend %channelContainerDrag !optional;
+	@extend %channelContainerDragAfter !optional;
 }
 .containerDragBefore-31UGCO {
-    @extend %channelContainer !optional;
-    @extend %channelContainerDrag !optional;
-    @extend %channelContainerDragBefore !optional;
+	@extend %channelContainer !optional;
+	@extend %channelContainerDrag !optional;
+	@extend %channelContainerDragBefore !optional;
 }
 .containerUserOver-1U5YnL {
-    @extend %channelContainer !optional;
-    @extend %channelContainerUserOver !optional;
+	@extend %channelContainer !optional;
+	@extend %channelContainerUserOver !optional;
+}
+%channelContainerDragBefore,
+%channelContainerDragAfter {
+	@extend %channelContainerDrag !optional;
+}
+%channelContainerDefault,
+%channelContainerDrag,
+%channelContainerUserOver {
+	@extend %channelContainer !optional;
 }
 .content-20Aix8 {
-    @extend %channelContent !optional;
+	@extend %channelContent !optional;
 }
 .contentDefaultText-3vZplL {
-    @extend %channelContentText !optional;
-    @extend %channelContentDefault !optional;
-    @extend %channelContentDefaultText !optional;
+	@extend %channelContentDefault !optional;
+	@extend %channelContentDefaultText !optional;
 }
 .contentHoveredText-2D9B-x {
-    @extend %channelContentText !optional;
-    @extend %channelContentHovered !optional;
-    @extend %channelContentHoveredText !optional;
-}
-.contentLockedText-1aHuz8 {
-    @extend %channelContentText !optional;
-    @extend %channelContentLocked !optional;
-    @extend %channelContentLockedText !optional;
-}
-.contentMutedText-2y6aPQ {
-    @extend %channelContentText !optional;
-    @extend %channelContentMuted !optional;
-    @extend %channelContentMutedText !optional;
+	@extend %channelContentHovered !optional;
+	@extend %channelContentHoveredText !optional;
 }
 .contentSelectedText-3wUhMi {
-    @extend %channelContentText !optional;
-    @extend %channelContentSelected !optional;
-    @extend %channelContentSelectedText !optional;
+	@extend %channelContentSelected !optional;
+	@extend %channelContentSelectedText !optional;
 }
 .contentUnreadText-2vNnZc {
-    @extend %channelContentText !optional;
-    @extend %channelContentUnread !optional;
-    @extend %channelContentUnreadText !optional;
+	@extend %channelContentUnread !optional;
+	@extend %channelContentUnreadText !optional;
+}
+.contentLockedText-1aHuz8 {
+	@extend %channelContentLocked !optional;
+	@extend %channelContentLockedText !optional;
+}
+.contentMutedText-2y6aPQ {
+	@extend %channelContentMuted !optional;
+	@extend %channelContentMutedText !optional;
+}
+%channelContentDefaultText,
+%channelContentHoveredText,
+%channelContentSelectedText,
+%channelContentUnreadText,
+%channelContentLockedText,
+%channelContentMutedText {
+	@extend %channelContentText !optional;
 }
 .contentDefaultVoice-2ko43i {
-    @extend %channelContentVoice !optional;
-    @extend %channelContentDefault !optional;
-    @extend %channelContentDefaultVoice !optional;
+	@extend %channelContentVoice !optional;
+	@extend %channelContentDefault !optional;
+	@extend %channelContentDefaultVoice !optional;
 }
 .contentHoveredVoice-3p_NEO {
-    @extend %channelContentVoice !optional;
-    @extend %channelContentHovered !optional;
-    @extend %channelContentHoveredVoice !optional;
-}
-.contentLockedVoice-1gx-SP {
-    @extend %channelContentVoice !optional;
-    @extend %channelContentLocked !optional;
-    @extend %channelContentLockedVoice !optional;
-}
-.contentMutedVoice-2lJ0UD {
-    @extend %channelContentVoice !optional;
-    @extend %channelContentMuted !optional;
-    @extend %channelContentMutedVoice !optional;
+	@extend %channelContentVoice !optional;
+	@extend %channelContentHovered !optional;
+	@extend %channelContentHoveredVoice !optional;
 }
 .contentSelectedVoice-1WDIBM {
-    @extend %channelContentVoice !optional;
-    @extend %channelContentSelected !optional;
-    @extend %channelContentSelectedVoice !optional;
+	@extend %channelContentVoice !optional;
+	@extend %channelContentSelected !optional;
+	@extend %channelContentSelectedVoice !optional;
 }
 .contentUnreadVoice-1dijOt {
-    @extend %channelContentVoice !optional;
-    @extend %channelContentUnread !optional;
-    @extend %channelContentUnreadVoice !optional;
+	@extend %channelContentVoice !optional;
+	@extend %channelContentUnread !optional;
+	@extend %channelContentUnreadVoice !optional;
+}
+.contentLockedVoice-1gx-SP {
+	@extend %channelContentVoice !optional;
+	@extend %channelContentLocked !optional;
+	@extend %channelContentLockedVoice !optional;
+}
+.contentMutedVoice-2lJ0UD {
+	@extend %channelContentVoice !optional;
+	@extend %channelContentMuted !optional;
+	@extend %channelContentMutedVoice !optional;
+}
+%channelContentDefaultVoice,
+%channelContentHoveredVoice,
+%channelContentSelectedVoice,
+%channelContentUnreadVoice,
+%channelContentLockedVoice,
+%channelContentMutedVoice {
+	@extend %channelContentVoice !optional;
+}
+%channelContentDefaultText,
+%channelContentDefaultVoice {
+	@extend %channelContentDefault !optional;
+}
+%channelContentHoveredText,
+%channelContentHoveredVoice {
+	@extend %channelContentHovered !optional;
+}
+%channelContentSelectedText,
+%channelContentSelectedVoice {
+	@extend %channelContentSelected !optional;
+}
+%channelContentUnreadText,
+%channelContentUnreadVoice {
+	@extend %channelContentUnread !optional;
+}
+%channelContentLockedText,
+%channelContentLockedVoice {
+	@extend %channelContentLocked !optional;
+}
+%channelContentMutedText,
+%channelContentMutedVoice {
+	@extend %channelContentMuted !optional;
 }
 .name-3M0b8v {
-    @extend %channelName !optional;
+	@extend %channelName !optional;
 }
 .nameDefaultText-24KCy5 {
-    @extend %channelNameText !optional;
-    @extend %channelNameDefault !optional;
-    @extend %channelNameDefaultText !optional;
-}
-.nameConnectedText-3CzNQn {
-    @extend %channelNameText !optional;
-    @extend %channelNameConnected !optional;
-    @extend %channelNameConnectedText !optional;
+	@extend %channelNameDefaultText !optional;
 }
 .nameHoveredText-1uO31y {
-    @extend %channelNameText !optional;
-    @extend %channelNameHovered !optional;
-    @extend %channelNameHoveredText !optional;
-}
-.nameLockedText-3pqQcL {
-    @extend %channelNameText !optional;
-    @extend %channelNameLocked !optional;
-    @extend %channelNameLockedText !optional;
-}
-.nameMutedText-3Vj4bM {
-    @extend %channelNameText !optional;
-    @extend %channelNameMuted !optional;
-    @extend %channelNameMutedText !optional;
+	@extend %channelNameHoveredText !optional;
 }
 .nameSelectedText-sp_EUw {
-    @extend %channelNameText !optional;
-    @extend %channelNameSelected !optional;
-    @extend %channelNameSelectedText !optional;
+	@extend %channelNameSelectedText !optional;
 }
 .nameUnreadText-DfkrI4 {
-    @extend %channelNameText !optional;
-    @extend %channelNameUnread !optional;
-    @extend %channelNameUnreadText !optional;
+	@extend %channelNameUnreadText !optional;
+}
+.nameConnectedText-3CzNQn {
+	@extend %channelNameConnectedText !optional;
+}
+.nameLockedText-3pqQcL {
+	@extend %channelNameLockedText !optional;
+}
+.nameMutedText-3Vj4bM {
+	@extend %channelNameMutedText !optional;
+}
+%channelNameDefaultText,
+%channelNameHoveredText,
+%channelNameSelectedText,
+%channelNameUnreadText,
+%channelNameConnectedText,
+%channelNameLockedText,
+%channelNameMutedText {
+	@extend %channelNameText !optional;
 }
 .nameDefaultVoice-3WUH7s {
-    @extend %channelNameVoice !optional;
-    @extend %channelNameDefault !optional;
-    @extend %channelNameDefaultVoice !optional;
-}
-.nameConnectedVoice-MHUX5F {
-    @extend %channelNameVoice !optional;
-    @extend %channelNameConnected !optional;
-    @extend %channelNameConnectedVoice !optional;
+	@extend %channelNameDefaultVoice !optional;
 }
 .nameHoveredVoice-YJ1Vfd {
-    @extend %channelNameVoice !optional;
-    @extend %channelNameHovered !optional;
-    @extend %channelNameHoveredVoice !optional;
-}
-.nameLockedVoice-26MhB1 {
-    @extend %channelNameVoice !optional;
-    @extend %channelNameLocked !optional;
-    @extend %channelNameLockedVoice !optional;
-}
-.nameMutedVoice-3oxyQZ {
-    @extend %channelNameVoice !optional;
-    @extend %channelNameMuted !optional;
-    @extend %channelNameMutedVoice !optional;
+	@extend %channelNameHoveredVoice !optional;
 }
 .nameSelectedVoice-1qSph5 {
-    @extend %channelNameVoice !optional;
-    @extend %channelNameSelected !optional;
-    @extend %channelNameSelectedVoice !optional;
+	@extend %channelNameSelectedVoice !optional;
 }
 .nameUnreadVoice-EVo-wI {
-    @extend %channelNameVoice !optional;
-    @extend %channelNameUnread !optional;
-    @extend %channelNameUnreadVoice !optional;
+	@extend %channelNameUnreadVoice !optional;
+}
+.nameConnectedVoice-MHUX5F {
+	@extend %channelNameConnectedVoice !optional;
+}
+.nameLockedVoice-26MhB1 {
+	@extend %channelNameLockedVoice !optional;
+}
+.nameMutedVoice-3oxyQZ {
+	@extend %channelNameMutedVoice !optional;
+}
+%channelNameDefaultVoice,
+%channelNameHoveredVoice,
+%channelNameSelectedVoice,
+%channelNameUnreadVoice,
+%channelNameConnectedVoice,
+%channelNameLockedVoice,
+%channelNameMutedVoice {
+	@extend %channelNameVoice !optional;
+}
+%channelNameDefaultText,
+%channelNameDefaultVoice {
+	@extend %channelNameDefault !optional;
+}
+%channelNameHoveredText,
+%channelNameHoveredVoice {
+	@extend %channelNameHovered !optional;
+}
+%channelNameSelectedText,
+%channelNameSelectedVoice {
+	@extend %channelNameSelected !optional;
+}
+%channelNameUnreadText,
+%channelNameUnreadVoice {
+	@extend %channelNameUnread !optional;
+}
+%channelNameConnectedText,
+%channelNameConnectedVoice {
+	@extend %channelNameConnected !optional;
+}
+%channelNameLockedText,
+%channelNameLockedVoice {
+	@extend %channelNameLocked !optional;
+}
+%channelNameMutedText,
+%channelNameMutedVoice {
+	@extend %channelNameMuted !optional;
 }
 .icon-sxakjD {
-    @extend %channelIcon !optional;
+	@extend %channelIcon !optional;
 }
 .actionIcon-2Hi9ZG {
-    @extend %channelActionIcon !optional;
+	@extend %channelActionIcon !optional;
 }
 .unread-1Dp-OI {
-    @extend %channelUnreadIndicator !optional;
+	@extend %channelUnreadIndicator !optional;
 }
 // 5.3) Voice User List
 .draggable-1KoBzC {
-    @extend %voiceUser !optional;
+	@extend %voiceUser !optional;
 }
 .avatarDefault-35WC3R {
-    @extend %voiceUserAvatar !optional;
-    @extend %voiceUserAvatarDefault !optional;
+	@extend %voiceUserAvatarDefault !optional;
 }
 .avatarSpeaking-1wJCNq {
-    @extend %voiceUserAvatar !optional;
-    @extend %voiceUserAvatarSpeaking !optional;
+	@extend %voiceUserAvatarSpeaking !optional;
+}
+%voiceUserAvatarDefault,
+%voiceUserAvatarSpeaking {
+	@extend %voiceUserAvatar !optional;
 }
 // 5.4) Account Container
 .container-2Thooq {
-    @extend %accountContainer !optional;
+	@extend %accountContainer !optional;
 }
 .wrapper-2F3Zv8 {
-    @extend %accountContainerAvatarWrapper !optional;
+	@extend %accountContainerAvatarWrapper !optional;
 }
 .avatar-3JE4B3 {
-    @extend %accountContainerAvatar !optional;
+	@extend %accountContainerAvatar !optional;
 }
 %accountContainer > %flex {
-    @extend %accountContainerButtonWrapper !optional;
+	@extend %accountContainerButtonWrapper !optional;
 }
 .button-2b6hmh {
-    @extend %accountContainerButton !optional;
+	@extend %accountContainerButton !optional;
 }
 .iconButton-3V4WS5 {
-    @extend %accountContainerIconButton !optional;
+	@extend %accountContainerIconButton !optional;
 }
 // 5.5) Connection Container
 .container-1UB9sr {
-    @extend %connectionContainer !optional;
+	@extend %connectionContainer !optional;
 }
 %connectionContainer > %flex {
-    @extend %connectionContainerButtonWrapper !optional;
+	@extend %connectionContainerButtonWrapper !optional;
 }
 .button-2KyEfG {
-    @extend %connectionContainerButton !optional;
+	@extend %connectionContainerButton !optional;
 }
 .buttonDisconnect-3W_SJc {
-    @extend %connectionContainerButtonDisconnect !optional;
+	@extend %connectionContainerButtonDisconnect !optional;
 }
 // 5.6) Unread & Mention Indicator
 .unread-1xRYoj {
-    @extend %channelsUnreadIndicator !optional;
+	@extend %channelsUnreadIndicator !optional;
 }
 .mention-1f5kbO {
-    @extend %channelsMentionIndicator !optional;
+	@extend %channelsMentionIndicator !optional;
 }
 // 5.7) Private Channels
 .privateChannels-1nO12o {
-    @extend %privateChannels !optional;
+	@extend %privateChannels !optional;
 }
 .channel-2QD9_O {
-    @extend %privateChannel !optional;
+	@extend %privateChannel !optional;
 }
 .selected-1HYmZZ {
-    @extend %privateChannelSelected !optional;
+	@extend %privateChannelSelected !optional;
 }
 .name-2WpE7M {
-    @extend %privateChannelName !optional;
+	@extend %privateChannelName !optional;
 }
 .close-3hZ5Ni {
-    @extend %privateChannelClose !optional;
+	@extend %privateChannelClose !optional;
 }
 // Search Bar
 .searchBar-6Kv8R2 {
-    @extend %privateChannelsSearchBar !optional;
+	@extend %privateChannelsSearchBar !optional;
 }
 .searchBarComponent-32dTOx {
-    @extend %privateChannelsSearchBarComponent !optional;
+	@extend %privateChannelsSearchBarComponent !optional;
 }
 .searchBarInner-1_Tg2R {
-    @extend %privateChannelsSearchBarInner !optional;
+	@extend %privateChannelsSearchBarInner !optional;
 }
 
 // 6) CHAT
 .chat-3bRxxu {
-    @extend %chat !optional;
+	@extend %chat !optional;
 }
 .titleWrapper-1l0xT9 {
-    @extend %chatTitleWrapper !optional;
+	@extend %chatTitleWrapper !optional;
 }
 .title-3qD0b- {
-    @extend %chatTitle !optional;
+	@extend %chatTitle !optional;
 }
 .titleCall-_b9o8P {
-    @extend %chatTitleCall !optional;
+	@extend %chatTitleCall !optional;
 }
 .content-yTz4x3 {
-    @extend %chatContainer !optional;
+	@extend %chatContainer !optional;
 }
 %chatContainer > .spacer-1fA9zc {
-    @extend %chatSpacer !optional;
+	@extend %chatSpacer !optional;
 }
 .noChannel-Z1DQK7 {
 	@extend %noChannel !optional;
 }
 // 6.1) Messages
 .messagesWrapper-3lZDfY {
-    @extend %messagesWrapper !optional;
+	@extend %messagesWrapper !optional;
 }
 .messages-3amgkR {
-    @extend %messages !optional;
+	@extend %messages !optional;
 }
 .container-1YxwTf {
-    @extend %messageGroup !optional;
+	@extend %messageGroup !optional;
 }
 .messageGroupBlocked-3wrQQX {
-    @extend %messageGroupBlocked !optional;
+	@extend %messageGroupBlocked !optional;
 }
 .messageGroupBlockedBtn-1PBBh- {
-    @extend %messageGroupBlockedButton !optional;
+	@extend %messageGroupBlockedButton !optional;
 }
 .message-1PNnaP {
-    @extend %message !optional;
+	@extend %message !optional;
 }
 .headerCozy-2N9HOL {
-    @extend %messageHeader !optional;
-    @extend %messageHeaderCozy !optional;
+	@extend %messageHeaderCozy !optional;
 }
 .headerCompact-3wRt2W {
-    @extend %messageHeader !optional;
-    @extend %messageHeaderCompact !optional;
+	@extend %messageHeaderCompact !optional;
+}
+%messageHeaderCozy,
+%messageHeaderCompact {
+	@extend %messageHeader !optional;
 }
 .usernameWrapper-1S-G5O {
-    @extend %messageUsernameWrapper !optional;
+	@extend %messageUsernameWrapper !optional;
 }
 .username-_4ZSMR {
-    @extend %messageUsername !optional;
+	@extend %messageUsername !optional;
 }
 .timestampCozy-2hLAPV {
-    @extend %messageTimestamp !optional;
-    @extend %messageTimestampCozy !optional;
+	@extend %messageTimestampCozy !optional;
 }
 .timestampCompact-MHgFLv {
-    @extend %messageTimestamp !optional;
-    @extend %messageTimestampCompact !optional;
+	@extend %messageTimestampCompact !optional;
+}
+%messageTimestampCozy,
+%messageTimestampCompact {
+	@extend %messageTimestamp !optional;
 }
 .content-3dzVd8 {
-    @extend %messageContent !optional;
+	@extend %messageContent !optional;
 }
 .isMentioned-N-h9aa {
-    @extend %mentioned !optional;
+	@extend %mentioned !optional;
 }
 .markup-2BOw-j {
-    @extend %markup !optional;
+	@extend %markup !optional;
 }
 .mention {
-    @extend %mention !optional;
+	@extend %mention !optional;
 }
 .buttonContainer-KtQ8wc {
-    @extend %messageButtonContainer !optional;
+	@extend %messageButtonContainer !optional;
 }
 .reactionBtn-2na4rd {
-    @extend %messageButton !optional;
-    @extend %messageReactionButton !optional;
+	@extend %messageReactionButton !optional;
 }
 .button-3Jq0g9 {
-    @extend %messageButton !optional;
-    @extend %messageOptionsButton !optional;
+	@extend %messageOptionsButton !optional;
+}
+%messageReactionButton,
+%messageOptionsButton {
+	@extend %messageButton !optional;
 }
 // 6.1.1) Invite Links
 .wrapper-35wsBm {
-    @extend %inviteWrapper !optional;
+	@extend %inviteWrapper !optional;
 }
 .guildName-2hvnt_ {
-    @extend %inviteGuildName !optional;
+	@extend %inviteGuildName !optional;
 }
 .guildNameExpired-2Hp80V {
-    @extend %inviteGuildNameExpired !optional;
+	@extend %inviteGuildNameExpired !optional;
 }
 .guildIcon-lQ0uiM {
-    @extend %inviteGuildIcon !optional;
+	@extend %inviteGuildIcon !optional;
 }
 .guildIconExpired-2Qcq05 {
-    @extend %inviteGuildIconExpired !optional;
+	@extend %inviteGuildIconExpired !optional;
 }
 .guildDetail-1nRKNE {
-    @extend %inviteGuildDetail !optional;
+	@extend %inviteGuildDetail !optional;
 }
 .h5-18_1nd {
-    @extend %inviteTitle !optional;
+	@extend %inviteTitle !optional;
 }
 .button-3To2tQ {
-    @extend %inviteButton !optional;
+	@extend %inviteButton !optional;
 }
 .lookFilled-1Gx00P.colorGreen-29iAKY{
-    @extend %inviteButtonAccept !optional;
+	@extend %inviteButtonAccept !optional;
 }
 .lookOutlined-3sRXeN.colorPrimary-3b3xI6 {
-    @extend %inviteButtonJoined !optional;
+	@extend %inviteButtonJoined !optional;
 }
 .lookFilled-1Gx00P.colorBrand-3pXr91 {
-    @extend %inviteButtonExpired !optional;
+	@extend %inviteButtonExpired !optional;
 }
 // 6.1.2) Embeds
 .embed-IeVjo6 {
-    @extend %embed !optional;
+	@extend %embed !optional;
 }
 .embedPill-1Zntps {
-    @extend %embedPill !optional;
+	@extend %embedPill !optional;
 }
 .embedInner-1-fpTo {
-    @extend %embedInner !optional;
+	@extend %embedInner !optional;
 }
 .embedLink-1G1K1D {
-    @extend %embedLink !optional;
+	@extend %embedLink !optional;
 }
 .embedTitleLink-1Zla9e {
-    @extend %embedTitleLink !optional;
+	@extend %embedTitleLink !optional;
 }
 .embedVideoActionsInner-2reMo2 {
-    @extend %embedVideoActionsInner !optional;
+	@extend %embedVideoActionsInner !optional;
 }
 .wrapper-129saQ {
-    @extend %embedVideoActionsButtonWrapper !optional; 
+	@extend %embedVideoActionsButtonWrapper !optional; 
 }
 // 6.1.3) Codeblocks
 .inline {
-    @extend %codeInline !optional;
+	@extend %codeInline !optional;
 }
 %markup > pre {
-    @extend %codePre !optional;
+	@extend %codePre !optional;
 }
 .hljs {
-    @extend %codeHLJS !optional;
+	@extend %codeHLJS !optional;
 }
 // 6.2) Dividers
 .divider-3gKybi {
-    @extend %divider !optional;
+	@extend %divider !optional;
 }
 .dividerRed-MKoLlr {
-    @extend %dividerRed !optional;
+	@extend %dividerRed !optional;
 }
 .dividerContent-2L12VI {
-    @extend %dividerContent !optional;
+	@extend %dividerContent !optional;
 }
 .divider-32i8lo {
-    @extend %dividerSmall !optional;
+	@extend %dividerSmall !optional;
 }
 .dividerEnabled-2TTlcf {
-    @extend %dividerEnabled !optional;
+	@extend %dividerEnabled !optional;
 }
 // 6.3) Chat Bars
 // 6.3.1) New Messages Bar
 .newMessagesBar-mujexs {
-    @extend %newMessagesBar !optional;
+	@extend %newMessagesBar !optional;
 }
 // 6.3.2) Jump To Present Bar
 .jumpToPresentBar-9P20AM {
-    @extend %jumpToPresentBar !optional;
+	@extend %jumpToPresentBar !optional;
 }
 // 6.3.3) Has More Bar {
 .hasMore-3e72_v {
-    @extend %hasMore !optional;
+	@extend %hasMore !optional;
 }
 // 6.4) Channel Textarea
 .channelTextArea-rNsIhG {
-    @extend %channelTextarea !optional;
+	@extend %channelTextarea !optional;
 }
 .typing-2GQL18 {
-    @extend %channelTextareaTyping !optional;
+	@extend %channelTextareaTyping !optional;
 }
 .inner-zqa7da {
-    @extend %channelTextareaInner !optional;
+	@extend %channelTextareaInner !optional;
 }
 .attachButton-1UjEWA {
-    @extend %channelTextareaAttachButton !optional;
+	@extend %channelTextareaAttachButton !optional;
 }
 .attachButtonPlus-rUdX-B {
-    @extend %channelTextareaAttachButtonPlus !optional;
+	@extend %channelTextareaAttachButtonPlus !optional;
 }
 .buttons-205you {
-    @extend %channelTextareaButtons !optional;
+	@extend %channelTextareaButtons !optional;
 }
 .emojiButton-3uL3Aw {
-    @extend %channelTextareaEmojiButton !optional;
+	@extend %channelTextareaEmojiButton !optional;
 }
 // 6.4.1) Channel Textarea Autocomplete
 .autocomplete-i9yVHs {
-    @extend %autocomplete !optional;
+	@extend %autocomplete !optional;
 }
 .contentTitle-2tG_sM {
-    @extend %autocompleteTitle !optional;
+	@extend %autocompleteTitle !optional;
 }
 .content-Qb0rXO {
-    @extend %autocompleteContent !optional;
+	@extend %autocompleteContent !optional;
 }
 .icon-3ZzoN7 {
-    @extend %autocompleteIcon !optional;
+	@extend %autocompleteIcon !optional;
 }
 .iconForeground-1w5n7R {
-    @extend %autocompleteIconForeground !optional;
+	@extend %autocompleteIconForeground !optional;
 }
 .description-11DmNu {
-    @extend %autocompleteDescription !optional;
+	@extend %autocompleteDescription !optional;
 }
 .descriptionUsername-J_75O8 {
-    @extend %autocompleteDescriptionUsername !optional;
+	@extend %autocompleteDescriptionUsername !optional;
 }
 .descriptionDiscriminator-3vUOCc {
-    @extend %autocompleteDiscriminator !optional;
+	@extend %autocompleteDiscriminator !optional;
 }
 .selector-2IcQBU {
-    @extend %autocompleteSelector !optional;
+	@extend %autocompleteSelector !optional;
 }
 .selectorSelected-1_M1WV {
-    @extend %autocompleteSelectorSelected !optional;
+	@extend %autocompleteSelectorSelected !optional;
 }
 .content-Qb0rXO {
-    @extend %autocompleteSelectorContent !optional;
+	@extend %autocompleteSelectorContent !optional;
 }
 
 // 7) MEMBERS
 .members-1998pB {
-    @extend %members !optional;
+	@extend %members !optional;
 }
 .membersGroup-v9BXpm {
-    @extend %membersGroup !optional;
+	@extend %membersGroup !optional;
 }
 .member-3W1lQa {
-    @extend %member !optional;
+	@extend %member !optional;
 }
 .memberOffline-2lN7gt {
-    @extend %memberOffline !optional;
+	@extend %memberOffline !optional;
 }
 %member.popout-open {
-    @extend %memberPopoutOpen !optional;
+	@extend %memberPopoutOpen !optional;
 }
 .content-OzHfo4 {
-    @extend %memberContent !optional;
+	@extend %memberContent !optional;
 }
 .username-1cB_5E {
-    @extend %memberUsername !optional;
+	@extend %memberUsername !optional;
 }
 .ownerIcon-uZ6mE7 {
-    @extend %memberOwnerIcon !optional;
+	@extend %memberOwnerIcon !optional;
 }
 .activity-1IYsbk {
-    @extend %memberActivity !optional;
+	@extend %memberActivity !optional;
 }
 .activityText-sLG0UL {
-    @extend %memberActivityText !optional;
+	@extend %memberActivityText !optional;
 }
 .activityIcon-S3CciC {
-    @extend %memberActivityIcon !optional;
+	@extend %memberActivityIcon !optional;
 }
 .activityIconForeground-qYIPPg {
-    @extend %memberActivityIconForeground !optional;
+	@extend %memberActivityIconForeground !optional;
 }
 .placeholderAvatar-uzH8f6 {
-    @extend %memberPlaceholder !optional;
-    @extend %memberPlaceholderAvatar !optional;
+	@extend %memberPlaceholderAvatar !optional;
 }
 .placeholderUsername-236yYU  {
-    @extend %memberPlaceholder !optional;
-    @extend %memberPlaceholderUsername !optional;
+	@extend %memberPlaceholderUsername !optional;
+}
+%memberPlaceholderAvatar,
+%memberPlacceholderUsername {
+	@extend %memberPlaceholder !optional;
 }
 
 // 8) SEARCH
 .searchResultsWrap-2DKFzt {
-    @extend %searchResultsWrap !optional;
+	@extend %searchResultsWrap !optional;
 }
 
 // 9) HOME TAB
 // 9.1) Friends Table
 .container-3gCOGc {
-    @extend %friends !optional;
+	@extend %friends !optional;
 }
 .headerBar-UHpsPw {
-    @extend %friendsHeaderBar !optional;
+	@extend %friendsHeaderBar !optional;
 }
 .friendsTable-133bsv {
-    @extend %friendsTable !optional;
+	@extend %friendsTable !optional;
 }
 // 9.1.1) Header
 .friendsTableHeader-32yE7d {
-    @extend %friendsTableHeader !optional;
+	@extend %friendsTableHeader !optional;
 }
 .friendsColumn-eVHFqJ {
-    @extend %friendsColumn !optional;
+	@extend %friendsColumn !optional;
 }
 .friendsColumnSeparator-3MqtMA {
-    @extend %friendsColumnSeparator !optional;
+	@extend %friendsColumnSeparator !optional;
 }
 // 9.1.2) Body
 .friendsTableBody-1ZhKif {
-    @extend %friendsTableBody !optional;
+	@extend %friendsTableBody !optional;
 }
 .friendsRow-2yicud {
-    @extend %friendsRow !optional;
+	@extend %friendsRow !optional;
 }
 .friendsColumnName-1zBOKm {
-    @extend %friendsColumnName !optional;
+	@extend %friendsColumnName !optional;
 }
 .friendsColumnStatus-ZH4ho2 {
-    @extend %friendsColumnStatus !optional;
+	@extend %friendsColumnStatus !optional;
 }
 .friendActivityText-2lmziy {
-    @extend %friendsActivityText !optional;
+	@extend %friendsActivityText !optional;
 }
 .friendsColumnGuilds-2we6jb {
-    @extend %friendsColumnGuilds !optional;
+	@extend %friendsColumnGuilds !optional;
 }
 .friendsColumnActions-1LT3_M {
-    @extend %friendsColumnActions !optional;
+	@extend %friendsColumnActions !optional;
 }
 .friendsAction-__WNE9 {
-    @extend %friendsAction !optional;
+	@extend %friendsAction !optional;
 }
 // 9.1.3) Add Tab
 .friendTableAddHeader-m9bzFr {
-    @extend %friendsTableAddHeader !optional;
+	@extend %friendsTableAddHeader !optional;
 }
 .wrapper-1cBijl {
-    @extend %friendsAddFriendInputWrapper !optional;
+	@extend %friendsAddFriendInputWrapper !optional;
 }
 .addFriendInput-4bcerK {
-    @extend %friendsAddFriendInput !optional;
+	@extend %friendsAddFriendInput !optional;
 }
 .addFriendHint-3Y70FX {
-    @extend %friendsAddFriendHint !optional;
+	@extend %friendsAddFriendHint !optional;
 }
 .friendTableSuggestionsHeader-2zSnpD {
-    @extend %friendsTableSuggestionsHeader !optional;
+	@extend %friendsTableSuggestionsHeader !optional;
 }
 
 // 10) AVATARS
+.image-33JSyf {
+	@extend %avatarImage !optional;
+}
 .avatar-large,
 .avatar-17mtNa {
-    @extend %avatarLarge !optional;
+	@extend %avatarLarge !optional;
 }
 .avatar-small,
 .wrapper-2F3Zv8 {
-    @extend %avatarSmall !optional;
+	@extend %avatarSmall !optional;
 }
 .avatarOffline-3GF27z {
-    @extend %avatarOffline !optional;
+	@extend %avatarOffline !optional;
 }
 .avatar-3EQepX {
-    @extend %avatarProfile !optional;
+	@extend %avatarProfile !optional;
 }
 %avatarSmall,
 %avatarLarge,
 %avatarProfile {
-    @extend %avatar !optional;
+	@extend %avatar !optional;
 }
 
 // 11) STATUS
 .status-oxiHuE {
-    @extend %status !optional;
+	@extend %status !optional;
 }
 .statusProfile-3ynqtt {
-    @extend %statusProfile !optional;
+	@extend %statusProfile !optional;
 }
 .online-2S838R {
 	@extend %statusOnline !optional;
 }
 .idle-3DEnRT {
-    @extend %statusIdle !optional;
+	@extend %statusIdle !optional;
 }
 .dnd-1_xrcq {
-    @extend %statusDnd !optional;
+	@extend %statusDnd !optional;
 }
 .offline-3qoTek {
-    @extend %statusOffline !optional;
+	@extend %statusOffline !optional;
 }
 .invisible-1kp8Z0 {
-    @extend %statusInvisible !optional;
+	@extend %statusInvisible !optional;
 }
 
 // 12) BOT TAG
@@ -874,169 +970,413 @@
 // 13) GENERAL ELEMENTS
 // 13.1) Buttons
 .lookFilled-1Gx00P{
-    @extend %buttonFilled !optional;
+	@extend %buttonFilled !optional;
 }
 .lookInverted-2lPGe7 {
-    @extend %buttonInverted !optional;
+	@extend %buttonInverted !optional;
 }
 .lookOutlined-3sRXeN {
-    @extend %buttonOutlined !optional;
+	@extend %buttonOutlined !optional;
 }
 .colorWhite-rEQuAQ {
-    @extend %buttonWhite !optional;
+	@extend %buttonWhite !optional;
 }
 .colorGreen-22At8E {
-    @extend %buttonGreen !optional;
+	@extend %buttonGreen !optional;
 }
 .colorBrand-3pXr91 {
-    @extend %buttonBrand !optional;
+	@extend %buttonBrand !optional;
 }
 %buttonOutlined {
-    &%buttonWhite {
-        @extend %buttonOutlinedWhite !optional;
-    }
-    &%buttonGreen {
-        @extend %buttonOutlinedGreen !optional;
-    }
-    &%buttonBrand {
-        @extend %buttonOutlinedBrand !optional;
-    }
+	&%buttonWhite {
+		@extend %buttonOutlinedWhite !optional;
+	}
+	&%buttonGreen {
+		@extend %buttonOutlinedGreen !optional;
+	}
+	&%buttonBrand {
+		@extend %buttonOutlinedBrand !optional;
+	}
 }
 %buttonFilled {
-    &%buttonWhite {
-        @extend %buttonFilledWhite !optional;
-    }
-    &%buttonGreen {
-        @extend %buttonFilledGreen !optional;
-    }
-    &%buttonBrand {
-        @extend %buttonFilledBrand !optional;
-    }
+	&%buttonWhite {
+		@extend %buttonFilledWhite !optional;
+	}
+	&%buttonGreen {
+		@extend %buttonFilledGreen !optional;
+	}
+	&%buttonBrand {
+		@extend %buttonFilledBrand !optional;
+	}
 }
 %buttonInverted {
-    &%buttonWhite {
-        @extend %buttonInvertedWhite !optional;
-    }
-    &%buttonGreen {
-        @extend %buttonInvertedGreen !optional;
-    }
-    &%buttonBrand {
-        @extend %buttonInvertedBrand !optional;
-    }
+	&%buttonWhite {
+		@extend %buttonInvertedWhite !optional;
+	}
+	&%buttonGreen {
+		@extend %buttonInvertedGreen !optional;
+	}
+	&%buttonBrand {
+		@extend %buttonInvertedBrand !optional;
+	}
 }
 // 13.2) Scrollers
 .scroller-2FKFPG {
-    @extend %scroller !optional;
+	@extend %scroller !optional;
 }
 // 13.3) Badges
 .wrapper-232cHJ {
-    @extend %badge !optional;
+	@extend %badge !optional;
 }
 // 13.4) Tab Bar
-.tabBar-1E2ExX {
-    @extend %tabBar !optional;
+.itemSelected-1qLhcL {
+	@extend %tabBarItemSelected !optional;
 }
 .item-PXvHYJ {
-    @extend %tabBarItem !optional;
+	@extend %tabBarItem !optional;
 }
-%tabBarItem.itemSelected-1qLhcL {
-    @extend %tabBarItemSelected !optional;
+// 13.4.1) Friends
+.tabBar-1E2ExX {
+	@extend %friendsTabBar !optional;
+}
+// 13.4.2) Messages Popout
+.tabBar-2UKwcE {
+	@extend %messagesPopoutTabBar !optional;
+}
+.tabBarItem-1Cg-MI {
+	@extend %messagesPopoutTabBarItem !optional;
+}
+// 13.4.3) User Modal
+.tabBarContainer-1s1u-z {
+	@extend %userModalTabBarContainer !optional;
+}
+.tabBar-2MuP6- {
+	@extend %userModalTabBar !optional;
+}
+.tabBarItem-1b8RUP {
+	@extend %userModalTabBarItem !optional;
+}
+// 13.5) Checkbox
+.checkbox-3kaeSU {
+	@extend %checkbox !optional;
+}
+.checkboxInner-3yjcPe {
+	@extend %checkboxInner !optional;
+}
+.checkboxElement-1qV33p {
+	@extend %checkboxElement !optional;
 }
 
 // 14) TOOLTIPS
 .tooltips-FhwIyl {
-    @extend %tooltips !optional;
+	@extend %tooltips !optional;
 }
 .tooltip-1OS-Ti {
-    @extend %tooltip !optional;
+	@extend %tooltip !optional;
 }
 .top-1pTh1F {
-    @extend %tooltipTop !optional;
+	@extend %tooltipTop !optional;
 }
 .bottom-19kp6S {
-    @extend %tooltipBottom !optional;
+	@extend %tooltipBottom !optional;
 }
 .left-1wV7VO {
-    @extend %tooltipLeft !optional;
+	@extend %tooltipLeft !optional;
 }
 .right-KM_vfY {
-    @extend %tooltipRight !optional;
+	@extend %tooltipRight !optional;
 }
 .black-2bmmnj {
-    @extend %tooltipBlack !optional;
+	@extend %tooltipBlack !optional;
 }
 .brand-3tBTjG {
-    @extend %tooltipBrand !optional;
+	@extend %tooltipBrand !optional;
 }
 .red-m6f4-H {
-    @extend %tooltipRed !optional;
+	@extend %tooltipRed !optional;
 }
 .green-hbUqD5 {
-    @extend %tooltipGreen !optional;
+	@extend %tooltipGreen !optional;
 }
 .yellow-1oq44m {
-    @extend %tooltipYellow !optional;
+	@extend %tooltipYellow !optional;
 }
 
-// 15) USER POPOUT
+// 15) CONTEXT MENU
+.contextMenu-HLZMGh {
+	@extend %contextMenu !optional;
+}
+.invertChildX-2fq7sY {
+	@extend %contextMenuInvertChildX !optional;
+}
+.itemGroup-1tL0uz {
+	@extend %contextMenuItemGroup !optional;
+}
+.item-1Yvehc {
+	@extend %contextMenuItem !optional;
+}
+.danger-2dXSTE {
+	@extend %contextMenuItemDanger !optional;
+}
+.itemSubMenu-1vN_Yn {
+	@extend %contextMenuItemSubMenu !optional;
+}
+
+// 16) POPOUTS
+.popouts-3dRSmE {
+	@extend %popouts !optional;
+}
+.popout-3sVMXz {
+	@extend %popout !optional;
+}
+.themedPopout-25DgLi {
+	@extend %themedPopout !optional;
+}
+.header-ykumBX {
+	@extend %popoutHeader !optional;
+}
+.scrollerWrap-2lJEkd {
+	@extend %popoutScrollerWrap !optional;
+}
+.footer-1kmXd4 {
+	@extend %popoutFooter !optional;
+}
+// 16.1) Message Options Popout
+.container-3cGP6G {
+	@extend %messageOptions !optional;
+}
+.item-2J1YMK {
+	@extend %popoutItem !optional;
+}
+// 16.2) Messages Popout
+.messagesPopoutWrap-1MQ1bW {
+	@extend %messagesPopoutWrap !optional;
+}
+.messagesPopout-24nkyi {
+	@extend %messagesPopout !optional;
+}
+.messageGroupWrapper-o-Zw7G {
+	@extend %messageGroupWrapper !optional;
+}
+.actionButtons-1sUUug {
+	@extend %messagesPopoutActionButtons !optional;
+}
+.jumpButton-3DTcS_ {
+	@extend %messagesPopoutJumpButton !optional;
+}
+.closeButton-17RIVZ {
+	@extend %messagesPopoutCloseButton !optional;
+}
+.recentMentionsFilterPopout-24_uDU {
+	@extend %recentMentionsFilterPopout !optional;
+}
+.statusGreen-pvYWjA {
+	@extend %statusGreen !optional;
+}
+// 16.3) Autocomplete Popout
+.container-VSDcQc {
+	@extend %autocompletePopout !optional;
+}
+.autocompleteShadow-iiGWFU {
+	@extend %autocompletePopoutShadow !optional;
+}
+.autocompleteArrowWrapper-3Z7OuM {
+	@extend %autocompletePopoutArrowWrapper !optional;
+}
+.autocompleteArrow-Zxoy9H {
+	@extend %autocompletePopoutArrow !optional;
+}
+.positionBottom-3oo9L9 {
+	@extend %autocompletePopoutBottom !optional;
+}
+.positionTop-3e-X1p {
+	@extend %autocompletePopoutTop !optional;
+}
+.header-2bNvm4 {
+	@extend %autocompletePopoutHeader !optional;
+}
+.autocompleteHeaderBackground-30T70q {
+	@extend %autocompletePopoutHeaderBackground !optional;
+}
+.headerText-3i6A8K {
+	@extend %autocompletePopoutHeaderText !optional;
+}
+.input-1ppKdn {
+	@extend %autocompletePopoutInput !optional;
+}
+.sectionTag-pXyto9 {
+	@extend %autocompletePopoutSection !optional;
+}
+.autocompleteScroller-iInVqR {
+	@extend %autocompletePopoutScroller !optional;
+}
+.row-rrHHJU {
+	@extend %autocompletePopoutRow !optional;
+}
+.selected-1pIgLL {
+	@extend %autocompletePopoutSelected !optional;
+}
+
+// 17) USER POPOUT
 .userPopout-3XzG_A {
-    @extend %userPopout !optional;
+	@extend %userPopout !optional;
+}
+// 17.1) User Popout Header
+.header-2BwW8b {
+	@extend %userPopoutHeader !optional;
+}
+.headerStreaming-2FjmGz {
+	@extend %userPopoutHeaderStreaming !optional;
+}
+.activityUserPopout-2yItg2 {
+	@extend %userPopoutActivity !optional;
+}
+// 17.2) User Popout Body
+.body-3iLsc4 {
+	@extend %userPopoutBody !optional;
+}
+.bodyTitle-Y0qMQz{
+	@extend %userPopoutBodyTitle !optional;
+}
+.rolesList-22qj2L {
+	@extend %userPopoutRolesList !optional;
+}
+.note-3HfJZ5 {
+	@extend %userPopoutNote !optional;
+}
+// 17.3) User Popout Footer
+.footer-1fjuF6 {
+	@extend %userPopoutFooter !optional;
+}
+.quickMessage-1yeL4E {
+	@extend %userPopoutQuickMessage !optional;
+}
+.pro-1T8RK7 {
+	@extend %userPopoutPro !optional;
 }
 
-// 16) USER MODAL
+// 18) ACTIVITY
+%userPopoutActivity,
+%userModalActivity {
+	@extend %activity !optional;
+}
+.headerText-1HLrL7 {
+	@extend %activityHeaderText !optional;
+}
+.nameNormal-2lqVQK {
+	@extend %activityNameNormal !optional;
+}
+.activityName-1L6vjN {
+	@extend %activityName !optional;
+}
+.bodyLink-3A8Buv {
+	@extend %activityBodyLink !optional;
+}
+.timestamp-VjAZmo {
+	@extend %activityTimestamp !optional;
+}
+
+// 19) MEMBER ROLES
+.role-2irmRk {
+	@extend %role !optional;
+}
+.roleCircle-3xAZ1j {
+	@extend %roleCircle !optional;
+}
+.roleRemoveIcon-2-TeGW {
+	@extend %roleRemoveIcon !optional;
+}
+.roleName-32vpEy {
+	@extend %roleName !optional;
+}
+.addButton-pcyyf6 {
+	@extend %roleAddButton !optional;
+}
+
+// 20) USER MODAL
 .root-SR8cQa {
-    @extend %userModal !optional;
+	@extend %userModal !optional;
+}
+// 20.1) Header
+.topSectionNormal-2-vo2m {
+	@extend %userModalTopSection !optional;
+}
+.topSectionPlaying-1J5E4n {
+	@extend %userModalTopSection !optional;
+}
+%userModalTopSectionNormal,
+%userModalTopSectionPlaying {
+	@extend %userModalTopSection !optional;
+}
+.headerFill-adLl4x {
+	@extend %userModalHeaderFill !optional;
+}
+.activityProfile-2bJRaP {
+	@extend %userModalActivityProfile !optional;
+}
+// 20.1) Body
+.body-3ND3kc {
+	@extend %userModalBody !optional;
+}
+.userInfoSection-2acyCx {
+	@extend %userModalInfoSection !optional;
+}
+.connectedAccounts-repVzS {
+	@extend %userModalConnectedAccounts !optional;
+}
+.connectedAccount-36nQx7{
+	@extend %userModalConnectedAccount !optional;
 }
 
-// 17) SETTINGS
+// 21) SETTINGS
 .standardSidebarView-3F1I7i {
-    @extend %standardSidebarView !optional;
+	@extend %standardSidebarView !optional;
 }
 .sidebarRegion-VFTUkN {
-    @extend %settingsSidebarRegion !optional;
+	@extend %settingsSidebarRegion !optional;
 }
 .sidebar-CFHs9e {
-    @extend %settingsSidebar !optional;
+	@extend %settingsSidebar !optional;
 }
 .side-8zPYf6 {
-    @extend %settingsSide !optional;
+	@extend %settingsSide !optional;
 }
 .contentRegion-3nDuYy {
-    @extend %settingsContentRegion !optional;
+	@extend %settingsContentRegion !optional;
 }
 
-// 18) PLUGINS
-// 18.1) Owner Tag by noodlebox
+// 22) PLUGINS
+// 22.1) Owner Tag by noodlebox
 .kawaii-tag {
-    @extend %ownerTag !optional;
-    @extend %kawaiiTag !optional;
+	@extend %ownerTag !optional;
+	@extend %kawaiiTag !optional;
 }
 .kawaii-tag-invert {
-    @extend %ownerTagInvert !optional;
-    @extend %kawaiiTagInvert !optional;
+	@extend %ownerTagInvert !optional;
+	@extend %kawaiiTagInvert !optional;
 }
-// 18.2) Codeblock Linenumbers by noodlebox
+// 22.2) Codeblock Linenumbers by noodlebox
 .kawaii-linenumbers {
-    @extend %codeLinenumbers !optional;
-    @extend %kawaiiLineNumbers !optional;
+	@extend %codeLinenumbers !optional;
+	@extend %kawaiiLineNumbers !optional;
 }
-// 18.3) Copy Code by Finicalmist
+// 22.3) Copy Code by Finicalmist
 .copybutton {
-    @extend %codeCopybutton !optional;
+	@extend %codeCopybutton !optional;
 }
-// 18.4) Replyer by Hammock, Natsulus, Zerebos & BetterReplyer by Zerthox
+// 22.4) Replyer by Hammock, Natsulus, Zerebos & BetterReplyer by Zerthox
 .replyer {
-    @extend %replyerButton !optional;
+	@extend %replyerButton !optional;
 }
-// 18.5) Citador by Nirewen
+// 22.5) Citador by Nirewen
 .citar-btn {
-    @extend %citarButton !optional;
+	@extend %citarButton !optional;
 }
-// 18.6) Quoter by samogot
+// 22.6) Quoter by samogot
 .btn-quote {
-    @extend %quoteButton !optional;
+	@extend %quoteButton !optional;
 }
-// 18.7) Discrypt by Zerthox
+// 22.7) Discrypt by Zerthox
 .discrypt {
 	@extend %discryptButton !optional;
 }
