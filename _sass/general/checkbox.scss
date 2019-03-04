@@ -1,0 +1,41 @@
+// CHECKBOX
+%checkbox {
+	%checkboxInner {
+		width: 35px;
+		height: 18px;
+		background: rgba(0, 0, 0, .3);
+		border-radius: 10px;
+		left: 0;
+		& > span {
+			width: 0;
+			background-color: transparent !important;
+			border: none !important;
+			border-radius: 10px;
+			transition: all .2s ease-in-out;
+			@include pseudo(after) {
+				content: "";
+				display: block;
+				top: 0 !important;
+				left: 0 !important;
+				width: 18px !important;
+				height: 18px !important;
+				margin: 0;
+				background-color: #fff !important;
+				border: none !important;
+				border-radius: 50%;
+				@include box-shadow(0 0 1px 1px rgba(0, 0, 0, .3));
+				transition: all .2s ease-in-out !important;
+				@include transform(none !important);
+			}
+		}
+		%checkboxElement:checked {
+			& + span {
+				width: 100%;
+				background-color: var(--main-color) !important;
+				@include pseudo(after) {
+					margin-left: 17px !important;
+				}
+			}
+		}
+	}
+}
