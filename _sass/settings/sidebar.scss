@@ -12,7 +12,7 @@
 	@include clear;
 	%scroller {
 		margin: 30px 8px 30px 0;
-		@include prefix(mask-image, -webkit-linear-gradient(top,transparent 0%,#000 5%, #000 95%,transparent 100%));
+		@include prefix(mask-image, linear-gradient(to bottom, transparent 0%, #000 5%, #000 95%, transparent 100%));
 		&::-webkit-scrollbar {
 			width: 0 !important;
 		}
