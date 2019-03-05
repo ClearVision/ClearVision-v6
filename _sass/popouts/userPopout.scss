@@ -1,4 +1,4 @@
-// USER POPOUTS
+// USER POPOUT
 %userPopout {
 	position: relative;
 	border-radius: 5px;
@@ -13,17 +13,22 @@
 		@include filter(blur(3px));
 		z-index: -1;
 	}
+
 	// USER POPOUT HEADER
-    %userPopoutHeader {
-		background-color: rgba(0, 0, 0, .3);
+	%userPopoutHeader {
+		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .4));
 	}
 	%userPopoutHeaderStreaming {
-		%activity {
-			background-color: rgba($purple, .5);
-		}
+		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .4)), rgba($twitchPurple, .4);
+	}
+	%userPopoutHeaderSpotify {
+		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .4)), rgba($spotifyGreen, .4);
+	}
+	%userPopoutHeaderXbox {
+		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .4)), rgba($xboxGreen, .4);
 	}
 	%activity {
-        background-color: rgba(0, 0, 0, .04);
+		background-color: rgba(0, 0, 0, .04);
 		%activityHeaderText {
 			color: hsla(0, 0%, 100%, .7);
 		}
@@ -45,6 +50,7 @@
 			@include hover-shadow;
 		}
 	}
+
 	// USER POPOUT BODY
 	%userPopoutBody {
 		background-color: rgba(0, 0, 0, .65);
@@ -66,6 +72,7 @@
 			}
 		}
 	}
+	
 	// USER POPOUT FOOTER
 	%userPopoutFooter {
 		background-color: rgba(0, 0, 0, .65);
