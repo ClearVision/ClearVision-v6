@@ -97,7 +97,7 @@
                 transition: all .1s ease-in-out;
             }
             &:hover {
-                @include clear;
+                background-color: transparent;
                 &%accountContainerIconButton,
                 svg {
                     opacity: .7;
