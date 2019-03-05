@@ -12,8 +12,16 @@
 		background: rgba(0, 0, 0, .7);
 	}
 	& > %userModalTopSection {
-		background: -webkit-linear-gradient(top, rgba(0, 0, 0, .3), rgba(0, 0, 0, .5));
-		background: linear-gradient(top, rgba(0, 0, 0, .3), rgba(0, 0, 0, .5));
+		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6));
+	}
+	& > %userModalTopSectionStreaming {
+		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)), rgba($twitchPurple, .4);
+	}
+	& > %userModalTopSectionSpotify {
+		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)), rgba($spotifyGreen, .4);
+	}
+	& > %userModalTopSectionXbox {
+		background: -linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)), rgba($xboxGreen, .4);
 	}
 }
 %userModalHeaderFill {
@@ -24,26 +32,7 @@
 		}
 	}
 }
-// ACTIVITY
-%activity {
-	%activityNameNormal {
-		color: var(--main-color);
-		text-shadow: 0 0 5px rgba(0, 0, 0, .5);
-		font-weight: 600;
-		& > %activityName {
-			color: inherit;
-			&%activityBodyLink:hover {
-				text-shadow: 0 0 5px rgba(0, 0, 0, .5), 0 0 1px;
-			}
-		}
-	}
-	%activityTimestamp {
-		font-style: italic;
-	}
-	%activityBodyLink {
-		@include hover-shadow;
-	}
-}
+
 // TAB BAR
 %userModalTabBarContainer {
 	border-color: hsla(0, 0%, 100%, .04);
@@ -62,6 +51,7 @@
 		}
 	}
 }
+
 // BODY
 %userModalBody {
 	%userModalInfoSection + %userModalInfoSection {
