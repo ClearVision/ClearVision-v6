@@ -149,6 +149,13 @@
 		}
 	}
 
+	// USER LIMIT
+	%channelUserLimit {
+		background-color: hsla(0, 0%, 100%, .04);
+		color: hsla(0, 0%, 100%, .3);
+		font-weight: 600;
+	}
+
 	// VOICE USER LIST
 	%voiceUser {
 		position: relative;
