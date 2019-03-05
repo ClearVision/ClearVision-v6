@@ -1,73 +1,79 @@
+/*! Using Discord Selectors v19-03-05 by Zerthox */
 // FILE CONTENTS
-// 1) Version notice
-// 2) App
-// 3) Titlebar
-// 4) Guilds
-// 5) Channels
-//	5.1) Channel Categories
-//	5.2) Voice & Text Channels
-//	5.3) Voice User list
-//	5.4) Account Container
-//	5.5) Connection Container
-//	5.6) Unread & Mention Indicators
-//	5.7) Private Channels
-// 6) Chat
-//		6.1) Messages
-//			6.1.1) Invite Links
-//			6.1.2) Embeds
-//			6.1.3) Codeblocks
-//		6.2) Dividers
-//		6.3) Chat Bars
-//			6.3.1) New Messages Bar
-//			6.3.2) Jump To Present Bar
-//			6.3.3) Has More Bar
-//		6.4) Channel Textarea
-//			6.4.1) Channel Textarea Autocomplete
-// 7) Members
-// 8) Search
-// 9) Home Tab
-//		9.1) Friends Table
-//			9.1.1) Header
-//		 	9.1.2) Body
-//		 	9.1.3) Add Tab
-// 10) Avatars
-// 11) Status
-// 12) Bot Tags
-// 13) General Elements
-//		13.1) Buttons
-//		13.2) Scrollers
-//		13.3) Badges
-//		13.4) Tab Bar
-//			13.4.1) Friends
-//			13.4.2) Messages Popout
-//			13.4.3) User Popout
-//		13.5) Checkbox
-// 14) Tooltips
-// 15) Context Menu
-// 16) Popouts
-//		16.1) Message Options Popout
-//		16.2) Messages Popout
-//		16.3) Autocomplete Popout
-// 17) User Popout
-// 18) Activity
-// 19) Member Roles
-// 20) User Modal
-//		20.1) Header
-//		20.2) Body
-// 21) Settings
+// 1) App
+// 2) Titlebar
+// 3) Guilds
+// 4) Channels
+//	4.1) Channel Categories
+//	4.2) Voice & Text Channels
+//	4.3) Voice User list
+//	4.4) Account Container
+//	4.5) Connection Container
+//	4.6) Unread & Mention Indicators
+//	4.7) Private Channels
+//		5.7.1) Search Bar
+// 5) Chat
+//	5.1) Messages
+//		5.1.1) Invite Links
+//		5.1.2) Embeds
+//		5.1.3) Codeblocks
+//	5.2) Dividers
+//	5.3) Chat Bars
+//		5.3.1) New Messages Bar
+//		5.3.2) Jump To Present Bar
+//		5.3.3) Has More Bar
+//	5.4) Channel Textarea
+//		5.4.1) Channel Textarea Autocomplete
+// 6) Members
+// 7) Search
+// 8) Home Tab
+//	8.1) Friends Table
+//		8.1.1) Header
+//	 	8.1.2) Body
+//	 	8.1.3) Add Tab
+// 9) Avatars
+// 10) Status
+// 11) Bot Tags
+// 12) General Elements
+//	12.1) Buttons
+//	12.2) Scrollers
+//	12.3) Badges
+//	12.4) Tab Bar
+//		12.4.1) Friends
+//		12.4.2) Messages Popout
+//		12.4.3) User Popout
+//	12.5) Checkbox
+//	12.6) Spinners
+// 13) Tooltips
+// 14) Context Menu
+// 15) Popouts
+//	15.1) Message Options Popout
+//	15.2) Messages Popout
+//	15.3) Autocomplete Popout
+// 16) User Popout
+//		16.1) Header
+//		16.1) Body
+//		16.1) Footer
+// 17) Activity
+// 18) Member Roles
+// 19) User Modal
+//	19.1) Header
+//	19.2) Body
+// 20) Settings
+//	20.1) Sidebar
+//	20.2) Content
+// 21) Screens
+//	21.1) Loading
 // 22) Plugins 
-//		22.1) Owner Tag by noodlebox
-//		22.2) Codeblock Linenumbers by noodlebox
-//		22.3) Copy Code by Finicalmist
-//		22.4) Replyer by Hammock, Natsulus, Zerebos & BetterReplyer by Zerthox
-//		22.5) Citador by Nirewen
-// 		22.6) Quoter by samogot
-// 		22.7) Discrypt by Zerthox
+//	22.1) Owner Tag by noodlebox
+//	22.2) Codeblock Linenumbers by noodlebox
+//	22.3) Copy Code by Finicalmist
+//	22.4) Replyer by Hammock, Natsulus, Zerebos & BetterReplyer by Zerthox
+//	22.5) Citador by Nirewen
+//	22.6) Quoter by samogot
+//	22.7) Discrypt by Zerthox
 
-// 1) VERSION NOTICE
-/*! Using Discord Selectors v19-03-04 by Zerthox */
-
-// 2) APP
+// 1) APP
 .layers-3iHuyZ {
 	@extend %layers !optional;
 }
@@ -84,7 +90,7 @@
 	@extend %flex !optional;
 }
 
-// 3) TITLEBAR
+// 2) TITLEBAR
 .typeWindows-1za-n7 {
 	@extend %titlebarWin !optional;
 }
@@ -101,7 +107,7 @@
 	@extend %titlebarWinButtonClose !optional;
 }
 
-// 4) GUILDS
+// 3) GUILDS
 .guildsWrapper-5TJh6A {
 	@extend %guildsWrapper !optional;
 }
@@ -137,14 +143,14 @@
 	@extend %guildSeparator !optional;
 }
 
-// 5) CHANNELS
+// 4) CHANNELS
 .channels-Ie2l6A {
 	@extend %channels !optional;
 }
 .container-PNkimc {
 	@extend %channelsContainer !optional;
 }
-// 5.1) Categories
+// 4.1) Categories
 .containerDefault-3GGEv_ {
 	@extend %categoryContainerDefault !optional;
 }
@@ -247,7 +253,7 @@
 %categoryNameMuted {
 	@extend %categoryName !optional;
 }
-// 5.2) Voice & Text Channels
+// 4.2) Voice & Text Channels
 .containerDefault-1ZnADq {
 	@extend %channelContainer !optional;
 	@extend %channelContainerDefault !optional;
@@ -472,7 +478,10 @@
 .unread-1Dp-OI {
 	@extend %channelUnreadIndicator !optional;
 }
-// 5.3) Voice User List
+.wrapper-2NJDcI {
+	@extend %channelUserLimit !optional;
+}
+// 4.3) Voice User List
 .draggable-1KoBzC {
 	@extend %voiceUser !optional;
 }
@@ -486,7 +495,7 @@
 %voiceUserAvatarSpeaking {
 	@extend %voiceUserAvatar !optional;
 }
-// 5.4) Account Container
+// 4.4) Account Container
 .container-2Thooq {
 	@extend %accountContainer !optional;
 }
@@ -505,7 +514,7 @@
 .iconButton-3V4WS5 {
 	@extend %accountContainerIconButton !optional;
 }
-// 5.5) Connection Container
+// 4.5) Connection Container
 .container-1UB9sr {
 	@extend %connectionContainer !optional;
 }
@@ -518,14 +527,14 @@
 .buttonDisconnect-3W_SJc {
 	@extend %connectionContainerButtonDisconnect !optional;
 }
-// 5.6) Unread & Mention Indicator
+// 4.6) Unread & Mention Indicator
 .unread-1xRYoj {
 	@extend %channelsUnreadIndicator !optional;
 }
 .mention-1f5kbO {
 	@extend %channelsMentionIndicator !optional;
 }
-// 5.7) Private Channels
+// 4.7) Private Channels
 .privateChannels-1nO12o {
 	@extend %privateChannels !optional;
 }
@@ -541,7 +550,7 @@
 .close-3hZ5Ni {
 	@extend %privateChannelClose !optional;
 }
-// Search Bar
+// 4.7.1) Search Bar
 .searchBar-6Kv8R2 {
 	@extend %privateChannelsSearchBar !optional;
 }
@@ -552,7 +561,7 @@
 	@extend %privateChannelsSearchBarInner !optional;
 }
 
-// 6) CHAT
+// 5) CHAT
 .chat-3bRxxu {
 	@extend %chat !optional;
 }
@@ -574,7 +583,7 @@
 .noChannel-Z1DQK7 {
 	@extend %noChannel !optional;
 }
-// 6.1) Messages
+// 5.1) Messages
 .messagesWrapper-3lZDfY {
 	@extend %messagesWrapper !optional;
 }
@@ -644,7 +653,7 @@
 %messageOptionsButton {
 	@extend %messageButton !optional;
 }
-// 6.1.1) Invite Links
+// 5.1.1) Invite Links
 .wrapper-35wsBm {
 	@extend %inviteWrapper !optional;
 }
@@ -678,7 +687,7 @@
 .lookFilled-1Gx00P.colorBrand-3pXr91 {
 	@extend %inviteButtonExpired !optional;
 }
-// 6.1.2) Embeds
+// 5.1.2) Embeds
 .embed-IeVjo6 {
 	@extend %embed !optional;
 }
@@ -700,7 +709,7 @@
 .wrapper-129saQ {
 	@extend %embedVideoActionsButtonWrapper !optional; 
 }
-// 6.1.3) Codeblocks
+// 5.1.3) Codeblocks
 .inline {
 	@extend %codeInline !optional;
 }
@@ -710,7 +719,7 @@
 .hljs {
 	@extend %codeHLJS !optional;
 }
-// 6.2) Dividers
+// 5.2) Dividers
 .divider-3gKybi {
 	@extend %divider !optional;
 }
@@ -726,20 +735,20 @@
 .dividerEnabled-2TTlcf {
 	@extend %dividerEnabled !optional;
 }
-// 6.3) Chat Bars
-// 6.3.1) New Messages Bar
+// 5.3) Chat Bars
+// 5.3.1) New Messages Bar
 .newMessagesBar-mujexs {
 	@extend %newMessagesBar !optional;
 }
-// 6.3.2) Jump To Present Bar
+// 5.3.2) Jump To Present Bar
 .jumpToPresentBar-9P20AM {
 	@extend %jumpToPresentBar !optional;
 }
-// 6.3.3) Has More Bar {
+// 5.3.3) Has More Bar {
 .hasMore-3e72_v {
 	@extend %hasMore !optional;
 }
-// 6.4) Channel Textarea
+// 5.4) Channel Textarea
 .channelTextArea-rNsIhG {
 	@extend %channelTextarea !optional;
 }
@@ -761,7 +770,7 @@
 .emojiButton-3uL3Aw {
 	@extend %channelTextareaEmojiButton !optional;
 }
-// 6.4.1) Channel Textarea Autocomplete
+// 5.4.1) Channel Textarea Autocomplete
 .autocomplete-i9yVHs {
 	@extend %autocomplete !optional;
 }
@@ -796,7 +805,7 @@
 	@extend %autocompleteSelectorContent !optional;
 }
 
-// 7) MEMBERS
+// 6) MEMBERS
 .members-1998pB {
 	@extend %members !optional;
 }
@@ -844,13 +853,13 @@
 	@extend %memberPlaceholder !optional;
 }
 
-// 8) SEARCH
+// 7) SEARCH
 .searchResultsWrap-2DKFzt {
 	@extend %searchResultsWrap !optional;
 }
 
-// 9) HOME TAB
-// 9.1) Friends Table
+// 8) HOME TAB
+// 8.1) Friends Table
 .container-3gCOGc {
 	@extend %friends !optional;
 }
@@ -860,7 +869,7 @@
 .friendsTable-133bsv {
 	@extend %friendsTable !optional;
 }
-// 9.1.1) Header
+// 8.1.1) Header
 .friendsTableHeader-32yE7d {
 	@extend %friendsTableHeader !optional;
 }
@@ -870,7 +879,7 @@
 .friendsColumnSeparator-3MqtMA {
 	@extend %friendsColumnSeparator !optional;
 }
-// 9.1.2) Body
+// 8.1.2) Body
 .friendsTableBody-1ZhKif {
 	@extend %friendsTableBody !optional;
 }
@@ -895,7 +904,7 @@
 .friendsAction-__WNE9 {
 	@extend %friendsAction !optional;
 }
-// 9.1.3) Add Tab
+// 8.1.3) Add Tab
 .friendTableAddHeader-m9bzFr {
 	@extend %friendsTableAddHeader !optional;
 }
@@ -912,7 +921,7 @@
 	@extend %friendsTableSuggestionsHeader !optional;
 }
 
-// 10) AVATARS
+// 9) AVATARS
 .image-33JSyf {
 	@extend %avatarImage !optional;
 }
@@ -936,7 +945,7 @@
 	@extend %avatar !optional;
 }
 
-// 11) STATUS
+// 10) STATUS
 .status-oxiHuE {
 	@extend %status !optional;
 }
@@ -959,7 +968,7 @@
 	@extend %statusInvisible !optional;
 }
 
-// 12) BOT TAG
+// 11) BOT TAG
 .botTag-2WPJ74 {
 	@extend %botTag !optional;
 }
@@ -967,12 +976,12 @@
 	@extend %botTagInvert !optional;
 }
 
-// 13) GENERAL ELEMENTS
-// 13.1) Buttons
+// 12) GENERAL ELEMENTS
+// 12.1) Buttons
 .lookFilled-1Gx00P{
 	@extend %buttonFilled !optional;
 }
-.lookInverted-2lPGe7 {
+.lookInverted-2D7oAl {
 	@extend %buttonInverted !optional;
 }
 .lookOutlined-3sRXeN {
@@ -981,72 +990,102 @@
 .colorWhite-rEQuAQ {
 	@extend %buttonWhite !optional;
 }
-.colorGreen-22At8E {
-	@extend %buttonGreen !optional;
-}
 .colorBrand-3pXr91 {
 	@extend %buttonBrand !optional;
+}
+.colorGreen-29iAKY {
+	@extend %buttonGreen !optional;
+}
+.colorRed-1TFJan {
+	@extend %buttonRed !optional;
+}
+.colorGrey-2DXtkV {
+	@extend %buttonGrey !optional;
 }
 %buttonOutlined {
 	&%buttonWhite {
 		@extend %buttonOutlinedWhite !optional;
 	}
+	&%buttonBrand {
+		@extend %buttonOutlinedBrand !optional;
+	}
 	&%buttonGreen {
 		@extend %buttonOutlinedGreen !optional;
 	}
-	&%buttonBrand {
-		@extend %buttonOutlinedBrand !optional;
+	&%buttonRed {
+		@extend %buttonOutlinedRed !optional;
+	}
+	&%buttonGrey {
+		@extend %buttonOutlinedGrey !optional;
 	}
 }
 %buttonFilled {
 	&%buttonWhite {
 		@extend %buttonFilledWhite !optional;
 	}
+	&%buttonBrand {
+		@extend %buttonFilledBrand !optional;
+	}
 	&%buttonGreen {
 		@extend %buttonFilledGreen !optional;
 	}
-	&%buttonBrand {
-		@extend %buttonFilledBrand !optional;
+	&%buttonRed {
+		@extend %buttonFilledRed !optional;
+	}
+	&%buttonGrey {
+		@extend %buttonFilledGrey !optional;
 	}
 }
 %buttonInverted {
 	&%buttonWhite {
 		@extend %buttonInvertedWhite !optional;
 	}
-	&%buttonGreen {
-		@extend %buttonInvertedGreen !optional;
-	}
 	&%buttonBrand {
 		@extend %buttonInvertedBrand !optional;
 	}
+	&%buttonGreen {
+		@extend %buttonInvertedGreen !optional;
+	}
+	&%buttonRed {
+		@extend %buttonInvertedRed !optional;
+	}
+	&%buttonGrey {
+		@extend %buttonInvertedGrey !optional;
+	}
 }
-// 13.2) Scrollers
+// 12.2) Scrollers
 .scroller-2FKFPG {
 	@extend %scroller !optional;
 }
-// 13.3) Badges
+// 12.3) Badges
 .wrapper-232cHJ {
 	@extend %badge !optional;
 }
-// 13.4) Tab Bar
+// 12.4) Tab Bar
 .itemSelected-1qLhcL {
 	@extend %tabBarItemSelected !optional;
 }
 .item-PXvHYJ {
 	@extend %tabBarItem !optional;
 }
-// 13.4.1) Friends
+.header-2RyJ0Y {
+	@extend %tabBarHeader !optional;
+}
+.separator-gCa7yv {
+	@extend %tabBarSeparator !optional;
+}
+// 12.4.1) Friends
 .tabBar-1E2ExX {
 	@extend %friendsTabBar !optional;
 }
-// 13.4.2) Messages Popout
+// 12.4.2) Messages Popout
 .tabBar-2UKwcE {
 	@extend %messagesPopoutTabBar !optional;
 }
 .tabBarItem-1Cg-MI {
 	@extend %messagesPopoutTabBarItem !optional;
 }
-// 13.4.3) User Modal
+// 12.4.3) User Modal
 .tabBarContainer-1s1u-z {
 	@extend %userModalTabBarContainer !optional;
 }
@@ -1056,7 +1095,7 @@
 .tabBarItem-1b8RUP {
 	@extend %userModalTabBarItem !optional;
 }
-// 13.5) Checkbox
+// 12.5) Checkbox
 .checkbox-3kaeSU {
 	@extend %checkbox !optional;
 }
@@ -1066,8 +1105,18 @@
 .checkboxElement-1qV33p {
 	@extend %checkboxElement !optional;
 }
+// 12.6) Spinners
+.spinner-2enMB9 {
+    @extend %spinner !optional;
+}
+.inner-1gJC7_ {
+    @extend %spinnerInner !optional;
+}
+.wanderingCubesItem-WPXqao {
+    @extend %spinnerWanderingCubesItem !optional;
+}
 
-// 14) TOOLTIPS
+// 13) TOOLTIPS
 .tooltips-FhwIyl {
 	@extend %tooltips !optional;
 }
@@ -1102,7 +1151,7 @@
 	@extend %tooltipYellow !optional;
 }
 
-// 15) CONTEXT MENU
+// 14) CONTEXT MENU
 .contextMenu-HLZMGh {
 	@extend %contextMenu !optional;
 }
@@ -1122,7 +1171,7 @@
 	@extend %contextMenuItemSubMenu !optional;
 }
 
-// 16) POPOUTS
+// 15) POPOUTS
 .popouts-3dRSmE {
 	@extend %popouts !optional;
 }
@@ -1141,14 +1190,14 @@
 .footer-1kmXd4 {
 	@extend %popoutFooter !optional;
 }
-// 16.1) Message Options Popout
+// 15.1) Message Options Popout
 .container-3cGP6G {
 	@extend %messageOptions !optional;
 }
 .item-2J1YMK {
 	@extend %popoutItem !optional;
 }
-// 16.2) Messages Popout
+// 15.2) Messages Popout
 .messagesPopoutWrap-1MQ1bW {
 	@extend %messagesPopoutWrap !optional;
 }
@@ -1173,7 +1222,7 @@
 .statusGreen-pvYWjA {
 	@extend %statusGreen !optional;
 }
-// 16.3) Autocomplete Popout
+// 15.3) Autocomplete Popout
 .container-VSDcQc {
 	@extend %autocompletePopout !optional;
 }
@@ -1217,21 +1266,30 @@
 	@extend %autocompletePopoutSelected !optional;
 }
 
-// 17) USER POPOUT
+// 16) USER POPOUT
 .userPopout-3XzG_A {
 	@extend %userPopout !optional;
 }
-// 17.1) User Popout Header
+// 16.1) Header
 .header-2BwW8b {
 	@extend %userPopoutHeader !optional;
+}
+.headerPlaying-j0WQBV {
+	@extend %userPopoutHeaderPlaying !optional;
 }
 .headerStreaming-2FjmGz {
 	@extend %userPopoutHeaderStreaming !optional;
 }
+.headerSpotify-zpWxgT {
+	@extend %userPopoutHeaderSpotify !optional;
+}
+.headerXbox-3G-4PF {
+    @extend %userPopoutHeaderXbox !optional;
+}
 .activityUserPopout-2yItg2 {
 	@extend %userPopoutActivity !optional;
 }
-// 17.2) User Popout Body
+// 16.2) Body
 .body-3iLsc4 {
 	@extend %userPopoutBody !optional;
 }
@@ -1244,7 +1302,7 @@
 .note-3HfJZ5 {
 	@extend %userPopoutNote !optional;
 }
-// 17.3) User Popout Footer
+// 16.3) Footer
 .footer-1fjuF6 {
 	@extend %userPopoutFooter !optional;
 }
@@ -1255,7 +1313,7 @@
 	@extend %userPopoutPro !optional;
 }
 
-// 18) ACTIVITY
+// 17) ACTIVITY
 %userPopoutActivity,
 %userModalActivity {
 	@extend %activity !optional;
@@ -1276,7 +1334,7 @@
 	@extend %activityTimestamp !optional;
 }
 
-// 19) MEMBER ROLES
+// 18) MEMBER ROLES
 .role-2irmRk {
 	@extend %role !optional;
 }
@@ -1293,28 +1351,40 @@
 	@extend %roleAddButton !optional;
 }
 
-// 20) USER MODAL
+// 19) USER MODAL
 .root-SR8cQa {
 	@extend %userModal !optional;
 }
-// 20.1) Header
+// 19.1) Header
 .topSectionNormal-2-vo2m {
-	@extend %userModalTopSection !optional;
+	@extend %userModalTopSectionNormal !optional;
 }
 .topSectionPlaying-1J5E4n {
-	@extend %userModalTopSection !optional;
+	@extend %userModalTopSectionPlaying !optional;
+}
+.topSectionStreaming-1Tpf5X {
+	@extend %userModalTopSectionStreaming !optional;
+}
+.topSectionSpotify-1lI0-P {
+	@extend %userModalTopSectionSpotify !optional;
+}
+.topSectionXbox-3fWLjS {
+	@extend %userModalTopSectionXbox !optional;
 }
 %userModalTopSectionNormal,
-%userModalTopSectionPlaying {
+%userModalTopSectionPlaying,
+%userModalTopSectionStreaming,
+%userModalTopSectionSpotify,
+%userModalTopSectionXbox {
 	@extend %userModalTopSection !optional;
 }
 .headerFill-adLl4x {
 	@extend %userModalHeaderFill !optional;
 }
 .activityProfile-2bJRaP {
-	@extend %userModalActivityProfile !optional;
+	@extend %userModalActivity !optional;
 }
-// 20.1) Body
+// 19.2) Body
 .body-3ND3kc {
 	@extend %userModalBody !optional;
 }
@@ -1328,7 +1398,8 @@
 	@extend %userModalConnectedAccount !optional;
 }
 
-// 21) SETTINGS
+// 20) SETTINGS
+// 20.1) Sidebar
 .standardSidebarView-3F1I7i {
 	@extend %standardSidebarView !optional;
 }
@@ -1341,8 +1412,24 @@
 .side-8zPYf6 {
 	@extend %settingsSide !optional;
 }
+// 20.2) Content
 .contentRegion-3nDuYy {
 	@extend %settingsContentRegion !optional;
+}
+
+// 21) SCREENS
+// 21.1) Loading
+.links-3Ldd4A {
+	@extend %loadingLinks !optional;
+}
+.path-92Hmty {
+	@extend %loadingPath !optional;
+}
+.path2-1q7bG_ {
+	@extend %loadingPath2 !optional;
+}
+.path3-2l9TIX {
+	@extend %loadingPath3 !optional;
 }
 
 // 22) PLUGINS
