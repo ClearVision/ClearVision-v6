@@ -12,6 +12,9 @@
 %divider {
 	@include animation(message-fade .5s ease-in-out);
 }
+%messageGroupBlocked %messageGroup {
+	@include animation(fade-in .3s ease-in-out);
+}
 
 // KEYFRAMES
 @include keyframes(fade-in) {

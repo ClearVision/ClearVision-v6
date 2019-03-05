@@ -31,8 +31,6 @@
 	%messageGroup {
 		margin-top: -20px;
 		margin-left: 0;
-		// [FADES]
-		// @include animation(fade-in .3s ease-in-out);
 	}
 	& + %divider {
 		margin-top: 25px;
