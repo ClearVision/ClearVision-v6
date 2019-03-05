@@ -1,6 +1,8 @@
 // FRIENDS
 %friends {
 	@include clear;
+
+	// FRIENDS HEADER
 	%friendsHeaderBar {
 		background-color: rgba(0, 0, 0, .7) !important;
 		%friendsTabBar {
@@ -18,6 +20,8 @@
 			}
 		}
 	}
+
+	// FRIENDS TABLE
 	%friendsTable {
 		background-color: rgba(0, 0, 0, .6) !important;
 		margin-top: 0;
