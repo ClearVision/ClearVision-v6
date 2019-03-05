@@ -110,9 +110,9 @@
     & > %connectionContainer {
         border-color: transparent;
         %connectionContainerButton {
-            @include clear;
             opacity: .3;
             &:hover {
+                background-color: transparent;
                 opacity: .7;
             }
         }
