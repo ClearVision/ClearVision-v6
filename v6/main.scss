@@ -1,11 +1,13 @@
 ---
 ---
 // VARIABLES
-$version: "ClearVision v6-pre-2.3.6";
+$version: "ClearVision v6-pre-2.3.7";
 $green: #43b581;
 $red: #f04747;
 $dark-red: #a93d3d;
-$purple: #593695;
+$twitchPurple: #593695;
+$spotifyGreen: #1db954;
+$xboxGreen: #107c10;
 
 // MIXINS
 @import "mixins.scss";
@@ -32,7 +34,7 @@ $purple: #593695;
 	}
 }
 
-/// Create hower cutout effect
+/// Create hover cutout effect
 @mixin hover-cutout {
 	mix-blend-mode: screen;
 	background-color: transparent;
@@ -123,6 +125,7 @@ body::after,
 @import "general/badge.scss";
 @import "general/tooltip.scss";
 @import "general/checkbox.scss";
+@import "general/spinner.scss";
 
 /* CONTEXT MENU */
 @import "popouts/contextMenu.scss";
@@ -136,183 +139,28 @@ body::after,
 /* USER POPOUT */
 @import "popouts/userPopout.scss";
 
+/* MEMBER ACTIVITY */
+@import "members/activity.scss";
+
 /* MEMBER ROLES */
-@import "general/roles.scss";
+@import "members/roles.scss";
 
 /* USER PROFILE MODAL */
 @import "modals/userModal.scss";
 
-// NOTICES
-.notice {
-	border-radius: 0 0 5px 5px;
-	&.notice-danger {
-		background-color: rgba($red, .7);
-		.btn {
-			transition: all .3s ease-in-out;
-			@include hover-cutout;
-		}
-	}
-}
-
-// TOAST
-.toast {
-	background-color: rgba(0, 0, 0, .5) ;
-	@include box-shadow(0 2px 10px 0 rgba(0, 0, 0, .2));
-	color: hsla(0, 0%, 100%, .7);
-}
-
-// SPINNER
-.spinner-wandering-cubes {
-	.spinner-item {
-		background-color: var(--main-color);
-	}
-}
-
-// LOADING SCREEN
-.container-2oOGIt { // [TODO]
-	background-color: rgba(0, 0, 0, .9);
-}
-.links-3Ldd4A {
-	color: var(--main-color);
-	opacity: 1 !important;
-	@include hover-shadow;
-}
-.path-92Hmty {
-	stroke: var(--main-color) !important;
-}
-.path2-1q7bG_ {
-	opacity: .5 !important;
-}
-.path3-2l9TIX {
-	opacity: .3 !important;
-}
-
-// SETTINGS SIDEBAR
-%standardSidebarView {
-	@include clear;
-	%settingsSidebarRegion {
-		%settingsSidebar {
-			height: 100%;
-			padding: 0px 6px 0px 20px;
-		}
-	}
-}
-%settingsSidebarRegion {
-	@include clear;
-	.sidebar-region-scroller {
-		margin-right: 8px;
-		&::-webkit-scrollbar {
-			width: 0 !important;
-		}
-	}
-	.scroller-2FKFPG {
-		margin: 30px 0;
-		@include prefix(mask-image, -webkit-linear-gradient(top,transparent 0%,#000 5%, #000 95%,transparent 100%));
-	}
-	.side-8zPYf6 {
-		padding: 30px 0;
-		.header-2RyJ0Y {
-			color: var(--main-color);
-		}
-		.item-PXvHYJ {
-			color: hsla(0, 0%, 100%, .3) !important;
-			padding: 8px 0 8px 20px;
-			margin: 0;
-			cursor: pointer;
-			transition: all .15s ease-in-out;
-			@include pseudo(before) {
-				opacity: .3;
-				transition: all .15s ease-in-out;
-			}
-			&:hover {
-				background-color: hsla(0, 0%, 100%, .07) !important;
-				color: hsla(0, 0%, 100%, .7) !important;
-				@include pseudo(before) {
-					opacity: .7;
-				}
-			}
-			&.itemSelected-1qLhcL {
-				background-color: var(--main-color) !important;
-				color: #fff !important;
-				@include pseudo(before) {
-					opacity: 1;
-				}
-			}
-			&[style*="color: rgb(240, 71, 71)"] {
-				background-color: rgba($red, .5) !important;
-				color: hsla(0, 0%, 100%, .5) !important;
-				@include pseudo(before) {
-					opacity: .5;
-				}
-				&:hover {
-					background-color: rgba($red, .7) !important;
-					color: hsla(0, 0%, 100%, 1) !important;
-					@include pseudo(before) {
-						opacity: 1;
-						@include transform(rotateY(180deg));
-					}
-				}
-			}
-		}
-		.separator-gCa7yv {
-			background-color: hsla(0, 0%, 100%, .04);
-		}
-	}
-}
-
-// BD SETTINGS SIDEBAR
-#bd-settings-sidebar {
-	.ui-tab-bar-header {
-		color: var(--main-color);
-		font-weight: 700;
-	}
-	.ui-tab-bar-item {
-		color: hsla(0, 0%, 100%, .3) !important;
-		padding: 8px 0 8px 20px;
-		margin: 0;
-		cursor: pointer;
-		transition: all .15s ease-in-out;
-			@include pseudo(before) {
-				opacity: .3;
-				transition: all .15s ease-in-out;
-			}
-		&:hover {
-			background-color: hsla(0, 0%, 100%, .07) !important;
-			color: hsla(0, 0%, 100%, .7) !important;
-			@include pseudo(before) {
-				opacity: .7;
-			}
-		}
-		&.selected {
-			background-color: var(--main-color) !important;
-			color: #fff !important;
-			@include pseudo(before) {
-				opacity: 1;
-			}
-		}
-	}
-	.ui-tab-bar-separator {
-		background-color: hsla(0, 0%, 100%, .04);
-	}
-	div[style] {
-		color: hsla(0, 0%, 100%, .3) !important;
-	}
-	a {
-		color: var(--main-color);
-		@include hover-shadow;
-	}
-}
-
-// SETTINGS ICONS
+/* SETTINGS */
+@import "settings/sidebar.scss";
+@import "settings/bdSidebar.scss";
 @import "settings/icons.scss";
+@import "settings/content.scss";
 
-// SETTINGS CONTENT
-%settingsContentRegion {
-	@include clear;
-}
+/* SCREENS */
+@import "screens/loading.scss";
 
 /* PLUGINS */
 @import "plugins/messageButtons.scss";
+@import "plugins/linenumbers.scss";
+@import "plugins/copyCode.scss";
 @import "plugins/ownerTag.scss";
 
 // KEYFRAMES
