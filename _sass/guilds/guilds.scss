@@ -27,14 +27,14 @@
 			}
 		}
 		%guildInner {
-			background-color: rgba(0, 0, 0, .5) !important;
+			background-color: rgba(0, 0, 0, .5);
 			@include box-shadow(0 0 5px rgba(0, 0, 0, .5));
 			transition: transform .1s ease-in-out;
 			&:active {
 				@include transform(scale(.9));
 			}
 		}
-		&%guildAudio %guildInner {
+		%guildAudio {
 			@include pseudo(after) {
 				background-color: #000;
 				opacity: .7;
@@ -60,6 +60,7 @@
 			}
 		}
 		%guildsAdd {
+			position: relative;
 			background-color: rgba(0, 0, 0, .5);
 			opacity: .7;
 			transition: all .1s ease-in-out;
