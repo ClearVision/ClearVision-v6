@@ -1,4 +1,4 @@
-/*! Using Discord Selectors v19-03-05 by Zerthox */
+/*! Using Discord Selectors v19-03-06 by Zerthox */
 // FILE CONTENTS
 // 1) App
 // 2) Titlebar
@@ -48,8 +48,10 @@
 // 14) Context Menu
 // 15) Popouts
 //	15.1) Message Options Popout
-//	15.2) Messages Popout
-//	15.3) Autocomplete Popout
+//	15.2) Dropdown Menu
+//	15.3) Status Picker
+//	15.4) Messages Popout
+//	15.5) Autocomplete Popout
 // 16) User Popout
 //		16.1) Header
 //		16.1) Body
@@ -1200,7 +1202,36 @@
 .item-2J1YMK {
 	@extend %popoutItem !optional;
 }
-// 15.2) Messages Popout
+// 15.2) Dropdown Menu
+.menu-Sp6bN1 {
+	@extend %dropdown !optional;
+}
+.item-1GzJrl {
+	@extend %dropdownItem !optional;
+}
+.separator-2zcjq8 {
+	@extend %dropdownSeparator !optional;
+}
+.icon-2doZ3q {
+	@extend %dropdownIcon !optional;
+}
+.label-1Y-LW5 {
+	@extend %dropdownLabel !optional;
+}
+// 15.3) Status Picker
+.alt-3btY0e {
+	@extend %statusPicker !optional;
+}
+.statusIconText-3b4TkH {
+	@extend %statusPickerText !optional;
+}
+.status-3fQvEa {
+	@extend %statusPickerStatus !optional;
+}
+.helper-2c73HK {
+	@extend %statusPickerHelper !optional;
+}
+// 15.4) Messages Popout
 .messagesPopoutWrap-1MQ1bW {
 	@extend %messagesPopoutWrap !optional;
 }
@@ -1225,7 +1256,7 @@
 .statusGreen-pvYWjA {
 	@extend %statusGreen !optional;
 }
-// 15.3) Autocomplete Popout
+// 15.5) Autocomplete Popout
 .container-VSDcQc {
 	@extend %autocompletePopout !optional;
 }
