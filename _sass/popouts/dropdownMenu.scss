@@ -1,0 +1,24 @@
+// DROP DOWN MENU
+%popout > %dropdown {
+    background-color: rgba(0, 0, 0, .7);
+    & > %dropdownItem {
+        color: hsla(0, 0%, 100%, .7);
+        transition: all .15s ease-in-out;
+        & > %dropdownIcon {
+            opacity: .5;
+            @include filter(brightness(10) grayscale(1));
+            transition: all .15s ease-in-out;
+        }
+        &:hover {
+            background-color: var(--main-color);
+            color: #fff;
+            & > %dropdownIcon {
+                opacity: .7;
+            }
+        }
+    }
+    & > %dropdownSeparator {
+        margin: -1px 5px;
+        border-color: hsla(0, 0%, 100%, .04);
+    }
+}
