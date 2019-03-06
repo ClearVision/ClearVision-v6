@@ -40,55 +40,57 @@
             right: 0;
             opacity: .3;
         }
+
+        // AVATAR
         %accountContainerAvatarWrapper {
-            position: relative;
-            transition: all .15s ease-in-out;
-            @include pseudo(after) {
-                content: "Status";
-                position: absolute;
-                @include stretch;
-                vertical-align: middle;
-                color: #fff;
-                font-size: 5px;
-                text-transform: uppercase;
-                font-weight: 700;
-                text-align: center;
-                line-height: 30px;
-                border-radius: 50%;
-                @include box-shadow(inset 0 0 70px rgba(0, 0, 0, .75));
-                opacity: 0;
-                transition: all .15s ease-in-out;
-                pointer-events: none;
-            }
+            width: auto;
+            height: auto;
             &:hover {
-                @include pseudo(after) {
-                    opacity: 1;
-                }
+                opacity: 1;
             }
-            &:hover {
-                width: 45px;
-                height: 45px;
-                @include pseudo(after) {
-                    font-size: 10px;
-                    line-height: 45px;
-                }
-                %accountContainerAvatar {
-                    width: 45px;
-                    height: 45px;
-                }
-            }
-            %accountContainerAvatar {
-                @include bg($size: 100%, $repeat: no-repeat);
-                transition: all .15s ease-in-out;
-            }
-            %status {
+            & > %status {
                 top: 90%;
                 left: 90%;
                 margin-top: -6.5px;
                 margin-left: -6.5px;
-                z-index: 2;
+            }
+            & > %accountContainerAvatar {
+                position: relative;
+                width: 30px;
+                height: 30px;
+                @include bg($size: 100%, $repeat: no-repeat);
+                transition: all .15s ease-in-out;
+                @include pseudo(after) {
+                    content: "Status";
+                    position: absolute;
+                    @include stretch;
+                    vertical-align: middle;
+                    color: #fff;
+                    font-size: 5px;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    text-align: center;
+                    line-height: 30px;
+                    border-radius: 50%;
+                    @include box-shadow(inset 0 0 70px rgba(0, 0, 0, .75));
+                    opacity: 0;
+                    transition: all .15s ease-in-out;
+                    pointer-events: none;
+                }
+                &:hover,
+                &.popout-open {
+                    width: 40px;
+                    height: 40px;
+                    @include pseudo(after) {
+                        font-size: 10px;
+                        line-height: 40px;
+                        opacity: 1;
+                    }
+                }
             }
         }
+
+        // BUTTONS
         %accountContainerButton {
             opacity: 1;
             &%accountContainerIconButton,
