@@ -42,6 +42,7 @@
 		}
 		%guild:first-child {
 			%guildInner {
+				background-color: rgba(0, 0, 0, .5) !important;
 				transition: background-color .3s ease-in-out;
 			}
 			&:hover,
