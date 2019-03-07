@@ -1,16 +1,23 @@
-//META{"name":"ClearVision_v6","description":"Theme version for v6.","author":"Zerthox","version":"6"}*//{}
+/* //META {"name": "ClearVision", "description": "Theme version for v6.", "author": "Zerthox", "version": "6 BETA"} *//**/
+/* "ClearVision v6 BETA" by Zerthox */
 
+/* IMPORT CSS */
 @import url(https://clearvision.gitlab.io/v6/main.css);
 
+/* COLOR SETTINGS */
 :root {
 	--main-color: #2780e6;
 	--hover-color: #1e63b3;
-	--background-blur: 0px;
-	--background-brightness: 100%;
 	--online-color: #43b581;
 	--idle-color: #faa61a;
 	--dnd-color: #982929;
 	--offline-color: #808080;
+}
+
+/* BACKGROUND SETTINGS */
+:root {
+	--background-blur: 0px;
+	--background-brightness: 100%;
 }
 body:after,
 body::after,
