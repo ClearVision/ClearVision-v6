@@ -1,4 +1,4 @@
-/*! Using Discord Selectors v19-03-06 by Zerthox */
+/*! Using Discord Selectors v19-03-08 by Zerthox */
 // FILE CONTENTS
 // 1) App
 // 2) Titlebar
@@ -110,40 +110,40 @@
 }
 
 // 3) GUILDS
-.guildsWrapper-5TJh6A {
+.wrapper-1Rf91z {
 	@extend %guildsWrapper !optional;
 }
-.guilds-1q_RqH {
+.scroller-2TZvBN {
 	@extend %guilds !optional;
 }
-.guild-1EfMGQ {
+.container-1ETFDs {
 	@extend %guild !optional;
 }
-.unread-qLkInr {
+.unread-2OHH1w {
 	@extend %guildUnread !optional;
 }
-.selected-ML3OIq {
+.selected-nT-gM3 {
 	@extend %guildSelected !optional;
 }
 .audio-3vVhBi {
 	@extend %guildAudio !optional;
 }
-.guildInner-3DSoA4 {
+.wrapper-2lTRaf {
 	@extend %guildInner !optional;
 }
-.guildsAdd-21_IdK {
+.circleIconButton-jET_ig {
 	@extend %guildsAdd !optional;
 }
-.guildsAddInner-1KMFy- {
+.plus-3UqSQu {
 	@extend %guildsAddInner !optional;
 }
-.guildsError-3cFMtY {
+.guildsError-b7zR5H {
 	@extend %guildsError !optional;
 }
-.friendsOnline-_wi_fM {
+.friendsOnline-2JkivW {
 	@extend %friendsOnline !optional;
 }
-.guildSeparator-1X4GQ1,
+.guildSeparator-3s64Iy,
 %guild[separator] {
 	@extend %guildSeparator !optional;
 }
@@ -642,7 +642,7 @@
 .markup-2BOw-j {
 	@extend %markup !optional;
 }
-.mention {
+.wrapper-3WhCwL {
 	@extend %mention !optional;
 }
 .buttonContainer-KtQ8wc {
