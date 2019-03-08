@@ -40,16 +40,12 @@
 				opacity: .7;
 			}
 		}
-		%guild:first-child {
-			%guildInner {
-				background-color: rgba(0, 0, 0, .5) !important;
-				transition: background-color .3s ease-in-out;
-			}
+		%homeButton {
+			background-color: rgba(0, 0, 0, .5) !important;
+			transition: background-color .3s ease-in-out;
 			&:hover,
-			&%guildSelected {
-				%guildInner {
-					background-color: var(--main-color) !important;
-				}
+			&[style*="background-color: rgb(114, 137, 218);"] {
+				background-color: var(--main-color) !important;
 			}
 		}
 		%guildsError {
