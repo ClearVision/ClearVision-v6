@@ -1,4 +1,4 @@
-/*! Using Discord Selectors v19-03-08 by Zerthox */
+/*! Using Discord Selectors v19-03-09 by Zerthox */
 // FILE CONTENTS
 // 1) App
 // 2) Titlebar
@@ -116,7 +116,7 @@
 .scroller-2TZvBN {
 	@extend %guilds !optional;
 }
-.container-1ETFDs {
+.container-2td-dC {
 	@extend %guild !optional;
 }
 .unread-2OHH1w {
@@ -146,6 +146,9 @@
 .guildSeparator-3s64Iy,
 %guild[separator] {
 	@extend %guildSeparator !optional;
+}
+.container-1ETFDs {
+	@extend %homeButtonContainer !optional;
 }
 .homeButton-2Cw51C {
 	@extend %homeButton !optional;
@@ -653,6 +656,9 @@
 }
 .wrapper-3WhCwL {
 	@extend %mention !optional;
+}
+.mention {
+	@extend %roleMention !optional;
 }
 .buttonContainer-KtQ8wc {
 	@extend %messageButtonContainer !optional;
