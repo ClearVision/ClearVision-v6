@@ -1,19 +1,24 @@
 // MENTIONS
-%mention {
+%markup > %mention {
 	padding: 1px 4px;
-	background-color: rgba(115, 139, 215, .1) !important;
-	color: #ddd !important;
-	border-radius: 6px;
+	background-color: hsla(0, 0%, 100%, .04);
+	color: hsla(0, 0%, 100%, .7);
+	line-height: 22px;
+	border-radius: 5px;
 	transition: all .3s ease-in-out;
 	white-space: nowrap;
 	cursor: pointer;
 	&:hover {
-		background-color: var(--main-color) !important;
-		color: #fff !important;
+		background-color: var(--main-color);
+		color: #fff;
 	}
-	%mentioned & {
-		@include clear;
-		color: var(--main-color) !important;
-		@include hover-shadow;
+}
+%mentioned %markup > %roleMention {
+	padding: 0;
+	@include clear;
+	color: var(--main-color);
+	@include hover-shadow;
+	&:hover {
+		color: var(--main-color);
 	}
 }
