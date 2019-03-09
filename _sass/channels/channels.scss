@@ -1,6 +1,6 @@
 // CHANNELS
 %channels {
-	background-color: rgba(0, 0, 0, .35) !important;
+	background-color: rgba(0, 0, 0, .35);
 	width: 220px;
 
 	// CHANNELS CONTAINER
@@ -9,6 +9,9 @@
 	}
 
 	// CHANNEL CATEGORIES
+	%categoryWrapper {
+		transition: all .3s ease-in-out;
+	}
 	%categoryWrapperMuted { 
 		opacity: .5;
 	}
@@ -20,38 +23,41 @@
 		@include display-flex;
 		@include justify-content(center);
 		@include align-items(center);
-		color: hsla(0, 0%, 100%, .5);
+		color: var(--main-color);
 		text-align: center;
 		transition: all .3s ease-in-out;
+		opacity: .7;
 		@include pseudo(before, after) {
 			content: "";
 			display: inline-block;
 			flex-grow: 1;
 			height: 2px;
-			background-color: hsla(0, 0%, 100%, .3);
-			margin: -1px 5px 0;
+			margin-top: -1px;
 			transition: all .3s ease-in-out;
 		}
-	}
-	%categoryNameHovered,
-	%categoryNameHoveredCollapsed {
-		color: hsla(0, 0%, 100%, .7);
-		@include pseudo(before, after) {
-			background-color: hsla(0, 0%, 100%, .7);
+		@include pseudo(before) {
+			background: linear-gradient(to left, var(--main-color) 0%, var(--hover-color) 50%, transparent 100%);
+			margin-right: 5px;
 		}
+		@include pseudo(after) {
+			background: linear-gradient(to right, var(--main-color) 0%, var(--hover-color) 50%, transparent 100%);
+			margin-left: 5px;
+		}
+		
+	}
+	%categoryWrapper:hover %categoryName {
+		opacity: 1;
 	}
 	%categoryNameCollapsed,
 	%categoryNameHoveredCollapsed,
 	%categoryIconMutedCollapsed + %categoryNameMuted {
+		// color: hsla(0, 0%, 100%, .3);
 		@include pseudo(before, after) {
 			flex-grow: 0;
 		}
 	}
 	%categoryContainer {
 		padding-top: 24px;
-	}
-	.container-hidden {
-		opacity: .3;
 	}
 
 	// TEXT & VOICE CHANNELS
@@ -68,17 +74,17 @@
 		transition: all .15s ease-in-out;
 	}
 	%channelIcon {
-		opacity: .7 !important;
+		opacity: .7;
 		transition: all .15s ease-in-out;
 		path {
 			opacity: .3;
 		}
 	}
 	%channelActionIcon {
-		opacity: .3 !important;
+		opacity: .3;
 		transition: all .15s ease-in-out;
 		&:hover {
-			opacity: .7 !important;
+			opacity: .7;
 		}
 	}
 	%channelContent path {
@@ -92,22 +98,37 @@
 	}
 	%channelContentHoveredText,
 	%channelContentHoveredVoice {
-		%channelName {
+		%channelName:not(%channelNameUnread) {
 			color: hsla(0, 0%, 100%, .7);
+		}
+		%channelIcon > path {
+			opacity: .7;
 		}
 	}
 
 	// UNREAD
 	%channelNameUnread {
-		color: hsla(0, 0%, 100%, .8) !important;
+		color: var(--main-color);
+		text-shadow: 0 0 3px;
 	}
 	%channelUnreadIndicator {
 		display: none;
 		& + %channelContent %channelIcon {
 			@include filter(drop-shadow(0 0 3px var(--main-color)));
-			path {
-				fill: var(--main-color) !important;
-				opacity: 1 !important;
+			& > path {
+				fill: var(--main-color);
+				opacity: 1;
+			}
+		}
+		& + %channelContentHovered {
+			%channelNameUnread {
+				color: #fff;
+			}
+			%channelIcon {
+				@include filter(drop-shadow(0 0 3px #fff));
+				& > path {
+					fill: #fff;
+				}
 			}
 		}
 	}
@@ -117,17 +138,17 @@
 		background-color: var(--main-color);
 		%channelIcon  > path {
 			fill: #fff;
-			opacity: 1 !important;
+			opacity: 1;
 		}
 		%channelActionIcon svg {
-			opacity: .7 !important;
+			opacity: .7;
 			&:hover {
-				opacity: 1 !important;
+				opacity: 1;
 			}
 		}
 	}
 	%channelNameSelectedText {
-		color: #fff !important;
+		color: #fff;
 	}
 	%channelContentSelectedVoice {
 		%channelName {
@@ -145,7 +166,7 @@
 			color: hsla(0, 0%, 100%, .1);
 		}
 		%channelIcon > path {
-			opacity: .1 !important;
+			opacity: .1;
 		}
 	}
 
