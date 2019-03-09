@@ -4,7 +4,7 @@ body {
 		content: "";
 		position: absolute;
 		@include stretch;
-		@include bg($size: cover, $pos: center);
+		@include bg($img: var(--background-image), $size: cover, $pos: center);
 		@include filter(brightness(var(--background-brightness)) blur(var(--background-blur)));
 		z-index: -9999;
 	}

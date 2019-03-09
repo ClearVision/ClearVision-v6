@@ -9,7 +9,7 @@
 		content: "";
 		position: absolute;
 		@include pos(-5px, -5px, -5px, -5px);
-		background-position: center;
+		@include bg($img: var(--background-image), $pos: center);
 		@include filter(blur(3px));
 		z-index: -1;
 	}

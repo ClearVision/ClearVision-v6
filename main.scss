@@ -60,14 +60,7 @@ $xboxGreen: #107c10;
 	--idle-color: #faa61a;
 	--dnd-color: #982929;
 	--offline-color: #808080;
-}
-body:after,
-body::after,
-%userPopout:before,
-%userPopout::before,
-%userModal:before,
-%userModal::before {
-	background-image: url(https://zerthox.github.io/ClearVision/images/sapphire.jpg) !important;
+	--background-image: url(https://zerthox.github.io/ClearVision/images/sapphire.jpg);
 }
 
 /* APP  */
