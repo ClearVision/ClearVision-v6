@@ -17,7 +17,7 @@
             @include hover-shadow;
         }
         %embedTitleLink {
-            color: var(--main-color);
+            color: var(--main-color) !important;
         }
         %embedVideoActionsInner {
             & > %embedVideoActionsButtonWrapper {
