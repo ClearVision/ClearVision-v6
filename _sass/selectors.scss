@@ -132,10 +132,13 @@
 	@extend %guildInner !optional;
 }
 .circleIconButton-jET_ig {
-	@extend %guildsAdd !optional;
+	@extend %circleIconButton !optional;
 }
 .plus-3UqSQu {
-	@extend %guildsAddInner !optional;
+	@extend %guildsAddPlus !optional;
+}
+.container-11WMXy {
+	@extend %guildsSearch !optional;
 }
 .guildsError-b7zR5H {
 	@extend %guildsError !optional;
