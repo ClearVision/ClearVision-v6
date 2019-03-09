@@ -1,8 +1,8 @@
 // Mixin Collection by Zerthox
 
-/// Prefix an attribute with a set of prefixes
-/// @param {string} $property - attribute name
-/// @param {*} $value... - attribute value
+/// Prefix a property with a set of prefixes
+/// @param {string} $property - property name
+/// @param {*} $value... - property value
 /// @param {list} $prefixes [(webkit, moz, ms)] - list of prefixes
 @mixin prefix($property, $value...) {
 	$p: if(length(prefixes) == 0, $prefixes, (webkit, moz, ms));
@@ -35,14 +35,14 @@
 	}
 }
 
-/// Set background attributes in one mixin
-/// @param {*} $color [null] - background-color attribute value
-/// @param {*} $image [null] - background-image attribute value
-/// @param {*} $img [null] - background-image attribute value (alternative param)
-/// @param {*} $size [null] - background-size attribute value
-/// @param {*} $position [null] - background-position attribute value
-/// @param {*} $pos [null] - background-position attribute value (alternative param)
-/// @param {*} $repeat [null] - background-repeat attribute value
+/// Set background properties in one mixin
+/// @param {*} $color [null] - background-color property value
+/// @param {*} $image [null] - background-image property value
+/// @param {*} $img [null] - background-image property value (alternative param)
+/// @param {*} $size [null] - background-size property value
+/// @param {*} $position [null] - background-position property value
+/// @param {*} $pos [null] - background-position property value (alternative param)
+/// @param {*} $repeat [null] - background-repeat property value
 @mixin bg($color: null, $image: null, $img: null, $size: null, $position: null, $pos: null, $repeat: null) {
 	$image: if($image, $image, $img);
 	$position: if($position, $position, $pos);
@@ -75,11 +75,11 @@
 	}
 }
 
-/// Set position attributes in a single mixin
-/// @param {*} $top [null] - top attribute value
-/// @param {*} $right [null] - right attribute value
-/// @param {*} $bottom  [null]- bottom attribute value
-/// @param {*} $left [null] - left attribute value
+/// Set position properties in a single mixin
+/// @param {*} $top [null] - top property value
+/// @param {*} $right [null] - right property value
+/// @param {*} $bottom  [null]- bottom property value
+/// @param {*} $left [null] - left property value
 @mixin pos($top: null, $right: null, $bottom: null, $left: null) {
     @if $top {
         top: $top;
@@ -95,63 +95,63 @@
     }
 }
 
-/// Set display attribute to flex with prefixes
+/// Set display property to flex with prefixes
 @mixin display-flex {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
 }
 
-/// Set flex-direction with prefixes
-/// @param {*} $a - flex-direction attribute value
+/// Set flex-direction property with prefixes
+/// @param {*} $a - flex-direction property value
 @mixin flex-direction($a) {
     -webkit-flex-direction: $a;
     -ms-flex-direction: $a;
     flex-direction: $a;
 }
 
-/// Set flex attribute with prefixes
-/// @param {*} $a - flex attribute value
+/// Set flex property with prefixes
+/// @param {*} $a - flex property value
 @mixin flex($a) {
     -webkit-flex: $a;
     -ms-flex: $a;
     flex: $a;
 }
 
-/// Set flex-grow attribute with prefixes
-/// @param {*} $a - flex-grow attribute value
+/// Set flex-grow property with prefixes
+/// @param {*} $a - flex-grow property value
 @mixin flex-grow($a) {
     -webkit-flex-grow: $a;
     -ms-flex-grow: $a;
     flex-grow: $a;
 }
 
-/// Set flex-shrink attribute with prefixes
-/// @param {*} $a - flex-shrink attribute value
+/// Set flex-shrink property with prefixes
+/// @param {*} $a - flex-shrink property value
 @mixin flex-shrink($a) {
     -webkit-flex-shrink: $a;
     -ms-flex-shrink: $a;
     flex-shrink: $a;
 }
 
-/// Set flex-basis attribute with prefixes
-/// @param {*} $a - flex-basis attribute value
+/// Set flex-basis property with prefixes
+/// @param {*} $a - flex-basis property value
 @mixin flex-basis($a) {
     -webkit-flex-basis: $a;
     -ms-flex-basis: $a;
     flex-basis: $a;
 }
 
-/// Set flex-wrap attribute with prefixes
-/// @param {*} $a - flex-wrap attribute value
+/// Set flex-wrap property with prefixes
+/// @param {*} $a - flex-wrap property value
 @mixin flex-wrap($a) {
     -webkit-flex-wrap: $a;
     -ms-flex-wrap: $a;
     flex-wrap: $a;
 }
 
-/// Set justify-content attribute with prefixes
-/// @param {*} $a - justify-content attribute value
+/// Set justify-content property with prefixes
+/// @param {*} $a - justify-content property value
 @mixin justify-content($a) {
     -webkit-justify-content: $a;
     -ms-flex-pack: $a;
@@ -163,8 +163,8 @@
     }
 }
 
-/// Set align-items attribute with prefixes
-/// @param {*} $a - align-items attribute value
+/// Set align-items property with prefixes
+/// @param {*} $a - align-items property value
 @mixin align-items($a) {
     -webkit-box-align: $a;
     -ms-flex-align: $a;
@@ -176,45 +176,45 @@
     }
 }
 
-/// Set align-self attribute with prefixes
-/// @param {*} $a - align-self attribute value
+/// Set align-self property with prefixes
+/// @param {*} $a - align-self property value
 @mixin align-self($a) {
     -webkit-align-self: $a;
     -ms-align-self: $a;
     align-self: $a;
 }
 
-/// Set animation attribute with prefixes
-/// @param {*} $a... - animation attribute value
+/// Set animation property with prefixes
+/// @param {*} $a... - animation property value
 @mixin animation($a...) {
     -webkit-animation: $a;
     animation: $a;
 }
 
-/// Set transform attribute with prefixes
-/// @param {*} $a - transfom attribute value
+/// Set transform property with prefixes
+/// @param {*} $a - transfom property value
 @mixin transform($a) {
     -webkit-transform: $a;
     -ms-transform: $a;
     transform: $a;
 }
 
-/// Set box-shadow attribute with prefixes
-/// @param {*} $a... - box-shadow attribute value
+/// Set box-shadow property with prefixes
+/// @param {*} $a... - box-shadow property value
 @mixin box-shadow($a...) {
     -webkit-box-shadow: $a;
     box-shadow: $a;
 }
 
-/// Set filter attribute with prefixes
-/// @param {*} $a - filter attribute value
+/// Set filter property with prefixes
+/// @param {*} $a - filter property value
 @mixin filter($a) {
     -webkit-filter: $a;
     filter: $a;
 }
 
-/// Set user-select attribute with prefixes
-/// @param {*} $a - user-select attribute value
+/// Set user-select property with prefixes
+/// @param {*} $a - user-select property value
 @mixin user-select($a) {
     -webkit-user-select: $a;
     -moz-user-select: $a;
