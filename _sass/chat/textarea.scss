@@ -33,7 +33,7 @@
 		&::-webkit-input-placeholder {
 			color: hsla(0, 0%, 100%, .2);
 		}
-		& + %channelTextareaButtons {
+		+ %channelTextareaButtons {
 			@include pseudo(after) {
 				content: "";
 				position: fixed;
@@ -74,7 +74,7 @@
 		}
 		%autocompleteSelectorSelected {
 			background-color: var(--main-color);
-			& > %autocompleteContent {
+			> %autocompleteContent {
 				color: #fff;
 			}
 			%autocompleteIconForeground {

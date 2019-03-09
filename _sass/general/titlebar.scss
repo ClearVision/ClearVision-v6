@@ -5,7 +5,7 @@
 	margin: 0;
 	padding-top: 4px;
 	background-color: rgba(0, 0, 0, .6);
-	& > %titlebarWordmark {
+	> %titlebarWordmark {
 		opacity: 1;
 		pointer-events: none;
 		@include user-select(none);
@@ -18,18 +18,18 @@
 			font-weight: bold;
 			white-space: nowrap;
 		}
-		& > svg > path {
+		> svg > path {
 			fill: var(--main-color);
 		}
 	}
-	& > %titlebarWinButton {
+	> %titlebarWinButton {
 		opacity: 1 !important;
 		&:hover {
 			background-color: hsla(0, 0%, 100%, .1);
 			background-color: hsla(0, 0%, 100%, .1);
 		}
 	}
-	& > %titlebarWinButtonClose {
+	> %titlebarWinButtonClose {
 		&:hover {
 			background-color: var(--dnd-color);
 		}

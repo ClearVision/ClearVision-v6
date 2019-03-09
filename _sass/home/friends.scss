@@ -40,11 +40,11 @@
 				background-color: rgba(0, 0, 0, .3);
 				border-color: transparent;
 				@include transform(translateZ(0));
-				& > %friendsAddFriendInput {
+				> %friendsAddFriendInput {
 					&::-webkit-input-placeholder {
 						color: hsla(0, 0%, 100%, .2);
 					}
-					& + %friendsAddFriendHint {
+					+ %friendsAddFriendHint {
 						
 						@include pseudo(after) {
 							content: "";
@@ -62,7 +62,7 @@
 						}
 					}
 				}
-				& > %friendsAddFriendHint {
+				> %friendsAddFriendHint {
 					color: hsla(0, 0%, 100%, .2);
 				}
 			}
@@ -80,7 +80,7 @@
 			}
 			%friendsColumnStatus {
 				%friendActivityText {
-					& > strong {
+					> strong {
 						font-weight: 600;
 					}
 				}
@@ -97,7 +97,7 @@
 					background-color: var(--hover-color) !important
 				}
 			}
-			& + %friendsRow {
+			+ %friendsRow {
 				border-color: hsla(0, 0%, 100%, .04) !important;
 			}
 		}

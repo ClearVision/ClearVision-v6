@@ -4,7 +4,7 @@
 	width: 220px;
 
 	// CHANNELS CONTAINER
-	& > %channelsContainer {
+	> %channelsContainer {
 		@include clear;
 	}
 
@@ -113,20 +113,20 @@
 	}
 	%channelUnreadIndicator {
 		display: none;
-		& + %channelContent %channelIcon {
+		+ %channelContent %channelIcon {
 			@include filter(drop-shadow(0 0 3px var(--main-color)));
-			& > path {
+			> path {
 				fill: var(--main-color);
 				opacity: 1;
 			}
 		}
-		& + %channelContentHovered {
+		+ %channelContentHovered {
 			%channelNameUnread {
 				color: #fff;
 			}
 			%channelIcon {
 				@include filter(drop-shadow(0 0 3px #fff));
-				& > path {
+				> path {
 					fill: #fff;
 				}
 			}

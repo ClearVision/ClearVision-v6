@@ -6,7 +6,7 @@
         padding: 3.5px 7.5px;
         border-radius: 3px;
         line-height: 22px;
-        & + pre {
+        + pre {
             margin-top: -1px;
         }
     }

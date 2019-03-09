@@ -1,36 +1,36 @@
 // STATUS PICKER
 %statusPicker {
-    & > %dropdownItem {
+    > %dropdownItem {
         position: relative;
         @include display-flex;
         @include justify-content(center);
-        & > %statusPickerText {
+        > %statusPickerText {
             position: absolute;
-            & > %statusDnd,
-            & > %statusInvisible {
-                & + div {
+            > %statusDnd,
+            > %statusInvisible {
+                + div {
                     color: hsla(0, 0%, 100%, .7);
                     opacity: 1;
                     transition: all .15s ease-in-out;
                 }
             }
         }
-        & > %statusPickerHelper {
+        > %statusPickerHelper {
             min-height: 18px;
             color: hsla(0, 0%, 100%, .7);
             opacity: 0;
             transition: all .15s ease-in-out;
         }
         &:hover {
-            & > %statusPickerText {
-                & > %statusDnd,
-                & > %statusInvisible {
-                    & + div {
+            > %statusPickerText {
+                > %statusDnd,
+                > %statusInvisible {
+                    + div {
                         opacity: 0;
                     }
                 }
             }
-            & > %statusPickerHelper {
+            > %statusPickerHelper {
                 opacity: 1;
             }
         }

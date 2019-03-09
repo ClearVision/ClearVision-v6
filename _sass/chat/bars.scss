@@ -35,14 +35,14 @@
 	&:hover,
 	&:active {
 		background-color: var(--main-color) !important;
-		& > button {
+		> button {
 			color: #fff;
 		}
 	}
 	&:active {
 		@include transform(scale(.99));
 	}
-	& > button {
+	> button {
 		color: hsla(0, 0%, 100%, .6);
 		transition: inherit;
 	}
@@ -50,7 +50,7 @@
 
 // HAS MORE BAR
 %hasMore {
-	& > button {
+	> button {
 		background-color: rgba(0, 0, 0, .5) !important;
 		color: var(--main-color);
 		border: none !important;

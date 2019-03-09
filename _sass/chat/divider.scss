@@ -15,16 +15,16 @@
         @include pseudo(before) {
             background-color: var(--main-color);
         }
-        & + %divider {
+        + %divider {
             margin-top: 40px;
         }
-        & > %dividerContent {
+        > %dividerContent {
             position: relative;
             @include clear;
             color: hsla(0, 0%, 100%, .8) !important;
         }
     }
-    & > %dividerContent {
+    > %dividerContent {
         margin: 10px 0;
         padding: 5px 15px;
         display: block;

@@ -1,7 +1,7 @@
 // MEMBERS
 %members {
 	background-color: rgba(0, 0, 0, .75) !important;
-	& > %membersGroup {
+	> %membersGroup {
 		height: auto;
 		margin: 5px 15px;
 		padding: 2px 8px;
@@ -14,19 +14,19 @@
 		letter-spacing: .08em;
 		border-radius: 3px;
 	}
-	& > %member {
+	> %member {
 		@include prefix(backface-visibility, hidden);
-		& > %memberContent {
+		> %memberContent {
 			transition: all .1s ease-in-out;
 		}
 		&:hover,
 		&%memberPopoutOpen {
-			& > %memberContent {
+			> %memberContent {
 				background: linear-gradient(to right, rgba(0, 0, 0, .3) 85%, transparent) !important;
 			}
 		}
 		&:active {
-			& > %memberContent {
+			> %memberContent {
 				@include transform(scale(.9));
 			}
 		}
@@ -38,7 +38,7 @@
 			fill: hsla(0, 0%, 100%, .4);
 		}
 		%memberActivityText {
-			& > strong {
+			> strong {
 				color: var(--main-color) !important;
 				font-weight: 700;
 			}

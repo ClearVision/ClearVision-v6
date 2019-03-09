@@ -2,15 +2,15 @@
 %channels {
 
     // ACCOUNT & CONNECTION CONTAINER
-    & > %accountContainer,
-    & > %connectionContainer {
+    > %accountContainer,
+    > %connectionContainer {
         @include clear;
     }
     %accountContainerButtonWrapper,
     %connectionContainerButtonWrapper {
         background-color: rgba(0, 0, 0, .3);
         border-radius: 15px;
-        & > * + * {
+        > * + * {
             position: relative;
             @include pseudo(before) {
                 content: "";
@@ -25,7 +25,7 @@
     }
 
     // ACCOUNT CONTAINER
-    & > %accountContainer {
+    > %accountContainer {
         position: relative;
         margin-bottom: 10px;
         @include pseudo(after) {
@@ -48,13 +48,13 @@
             &:hover {
                 opacity: 1;
             }
-            & > %status {
+            > %status {
                 top: 90%;
                 left: 90%;
                 margin-top: -6.5px;
                 margin-left: -6.5px;
             }
-            & > %accountContainerAvatar {
+            > %accountContainerAvatar {
                 position: relative;
                 width: 30px;
                 height: 30px;
@@ -109,7 +109,7 @@
     }
 
     // CONNECTION CONTAINER
-    & > %connectionContainer {
+    > %connectionContainer {
         border-color: transparent;
         %connectionContainerButton {
             opacity: .3;

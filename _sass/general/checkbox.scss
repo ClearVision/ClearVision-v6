@@ -6,7 +6,7 @@
 		background: rgba(0, 0, 0, .3);
 		border-radius: 10px;
 		left: 0;
-		& > span {
+		> span {
 			width: 0;
 			background-color: transparent !important;
 			border: none !important;
@@ -29,7 +29,7 @@
 			}
 		}
 		%checkboxElement:checked {
-			& + span {
+			+ span {
 				width: 100%;
 				background-color: var(--main-color) !important;
 				@include pseudo(after) {

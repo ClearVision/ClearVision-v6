@@ -1,14 +1,14 @@
 // WELCOME MESSAGE
 .welcome-message {
-    & > h1 {
+    > h1 {
         color: var(--main-color);
     }
-    & > .item-container {
-        & > .icon {
+    > .item-container {
+        > .icon {
             @include filter(grayscale(1));
             opacity: .3;
         }
-        & > p {
+        > p {
             color: hsla(0, 0%, 100%, .5);
         }
     }
