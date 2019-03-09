@@ -1,7 +1,7 @@
 // GUILDS
 %guildsWrapper {
 	@include clear;
-	@include box-shadow(inset -10px 0 20px -10px rgba(0, 0, 0, .2));
+	box-shadow: inset -10px 0 20px -10px rgba(0, 0, 0, .2);
 
 	// GUILD LIST
 	%guilds {
@@ -28,7 +28,7 @@
 		}
 		%guildInner {
 			background-color: rgba(0, 0, 0, .5) !important;
-			@include box-shadow(0 0 5px rgba(0, 0, 0, .5));
+			box-shadow: 0 0 5px rgba(0, 0, 0, .5);
 			transition: background-color .3s ease-in-out, transform .1s ease-in-out;
 			&:active {
 				@include transform(scale(.9));

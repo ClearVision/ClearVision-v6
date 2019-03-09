@@ -1,6 +1,6 @@
 // POPOUT
 %popout {
-    @include box-shadow(none);
+    box-shadow: none;
     header {
         background-color: var(--main-color);
         border-radius: 3px 3px 0 0;

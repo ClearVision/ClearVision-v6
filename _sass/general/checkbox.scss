@@ -23,7 +23,7 @@
 				background-color: #fff !important;
 				border: none !important;
 				border-radius: 50%;
-				@include box-shadow(0 0 1px 1px rgba(0, 0, 0, .3));
+				box-shadow: 0 0 1px 1px rgba(0, 0, 0, .3);
 				transition: all .2s ease-in-out !important;
 				@include transform(none !important);
 			}

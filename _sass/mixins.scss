@@ -199,13 +199,6 @@
     transform: $a;
 }
 
-/// Set box-shadow property with prefixes
-/// @param {*} $a... - box-shadow property value
-@mixin box-shadow($a...) {
-    -webkit-box-shadow: $a;
-    box-shadow: $a;
-}
-
 /// Set filter property with prefixes
 /// @param {*} $a - filter property value
 @mixin filter($a) {

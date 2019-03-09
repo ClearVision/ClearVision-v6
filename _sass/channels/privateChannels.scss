@@ -33,7 +33,7 @@
 %privateChannelsSearchBar {
 	margin-top: 10px;
 	margin-bottom: 0;
-	@include box-shadow(none !important);
+	box-shadow: none !important;
 	%privateChannelsSearchBarComponent {
 		@include clear;
 	}

@@ -209,7 +209,7 @@
 		}
 	}
 	%voiceUserAvatarSpeaking {
-		@include box-shadow(none);
+		box-shadow: none;
 		@include pseudo(before) {
 			opacity: 1;
 		}

@@ -5,7 +5,7 @@
 	border: none;
 	border-radius: 0;
 	&:hover {
-		@include box-shadow(none !important);
+		box-shadow: none !important;
 	}
 	%messageGroupBlockedButton {
 		@include clear;

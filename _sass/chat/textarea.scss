@@ -2,7 +2,7 @@
 %chat {
 	form {
 		@include clear;
-		@include box-shadow(none !important);
+		box-shadow: none !important;
 		#charcounter {
 			top: 100%;
 			margin-top: 7.5px;
@@ -33,7 +33,7 @@
 		&::-webkit-input-placeholder {
 			color: hsla(0, 0%, 100%, .2);
 		}
-		+ %channelTextareaButtons {
+		~ %channelTextareaButtons {
 			@include pseudo(after) {
 				content: "";
 				position: fixed;
@@ -45,10 +45,10 @@
 				pointer-events: none;
 			}
 		}
-		&:focus + %channelTextareaButtons {
+		&:focus ~ %channelTextareaButtons {
 			@include pseudo(after) {
 				border-color: var(--main-color);
-				@include box-shadow(0 0 3px var(--main-color));
+				box-shadow: 0 0 3px var(--main-color);
 			}
 		}
 	}

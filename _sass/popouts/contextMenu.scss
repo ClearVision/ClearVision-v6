@@ -2,7 +2,7 @@
 %contextMenu {
 	background-color: rgba(0, 0, 0, .7) !important;
 	border-color: transparent !important;
-	@include box-shadow(0 0 1px rgba(0, 0, 0, .82), 0 1px 4px rgba(0, 0, 0, .1) !important);
+	box-shadow: 0 0 1px rgba(0, 0, 0, .82), 0 1px 4px rgba(0, 0, 0, .1) !important;
 	@include animation(menu-slide .3s cubic-bezier(.2, .6, .5, 1.1));
     @include prefix(transform-origin, 0 50%);
     &%contextMenuInvertChildX {
