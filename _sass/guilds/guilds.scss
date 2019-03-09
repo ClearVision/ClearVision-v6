@@ -27,11 +27,17 @@
 			}
 		}
 		%guildInner {
-			background-color: rgba(0, 0, 0, .5);
+			background-color: rgba(0, 0, 0, .5) !important;
 			@include box-shadow(0 0 5px rgba(0, 0, 0, .5));
-			transition: transform .1s ease-in-out;
+			transition: background-color .3s ease-in-out, transform .1s ease-in-out;
 			&:active {
 				@include transform(scale(.9));
+			}
+		}
+		%guildSelected,
+		%guild:hover {
+			%guildInner {
+				background-color: var(--main-color) !important;
 			}
 		}
 		%guildAudio {
@@ -41,8 +47,6 @@
 			}
 		}
 		%homeButton {
-			background-color: rgba(0, 0, 0, .5) !important;
-			transition: background-color .3s ease-in-out;
 			&:hover,
 			&[style*="background-color: rgb(114, 137, 218);"] {
 				background-color: var(--main-color) !important;
