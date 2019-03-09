@@ -50,7 +50,7 @@
 		background-color: #{$color};
 	}
 	@if $image {
-		background-image: url(#{$image});
+		background-image: #{$image};
 	}
 	@if $size {
 		background-size: #{$size};
