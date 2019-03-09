@@ -60,26 +60,29 @@
 				background-color: var(--main-color);
 			}
 		}
-		%guildsAdd {
-			position: relative;
+		%circleIconButton {
 			background-color: rgba(0, 0, 0, .5);
+			color: #333539;
+			border-color: hsla(0, 0%, 100%, .3);
 			opacity: .7;
 			transition: all .1s ease-in-out;
 			&:hover {
 				color: var(--main-color);
 				border-color: var(--main-color);
 				@include animation(pulsate-border 2s infinite ease-in-out);
-				@include pseudo(before, after) {
-					background-color: var(--main-color) !important;
-					@include animation(pulsate-color 2s infinite ease-in-out);
+				> svg {
+					@include animation(pulsate-svg 2s infinite ease-in-out);
 				}
 			}
 			&:active {
 				@include transform(scale(.9));
 			}
-			span {
-				display: none;
-			}
+		}
+		%guildsAddPlus {
+			position: relative;
+			font-size: 0;
+			width: 100%;
+			height: 100%;
 			@include pseudo(before, after) {
 				content: "";
 				position: absolute;
@@ -100,6 +103,11 @@
 				right: 25%;
 				left: 25%;
 				@include transform(translateY(-50%));
+			}
+			&:hover {
+				@include pseudo(before, after) {
+					@include animation(pulsate-plus 2s infinite ease-in-out);
+				}
 			}
 		}
 		%friendsOnline {

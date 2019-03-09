@@ -8,22 +8,31 @@
         margin-top: -20px;
     }
 }
-@include keyframes(pulsate-color) {
+@include keyframes(pulsate-border) {
     0%,
 	100% {
+        border-color: hsla(0, 0%, 100%, .3);
+    }
+    50% {
+        border-color: currentcolor;
+    }
+}
+@include keyframes(pulsate-plus) {
+    0%,
+    100% {
         background-color: #333539;
     }
     50% {
         background-color: currentcolor;
     }
 }
-@include keyframes(pulsate-border) {
+@include keyframes(pulsate-svg) {
     0%,
 	100% {
-        border-color: #535559;
+        color: #333539;
     }
     50% {
-        border-color: currentcolor;
+        color: currentcolor;
     }
 }
 @include keyframes(badge) {
