@@ -1,3 +1,8 @@
+// APP
+%layer > %containerMain {
+	@include animation(fade-in .3s ease-in-out);	
+}
+
 // CHANNELS
 %channels {
     %categoryContainerDefault,

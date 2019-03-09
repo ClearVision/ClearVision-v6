@@ -19,14 +19,8 @@ body {
 %layer > %containerMain {
 	@include clear;
 }
-%layer {
-	&  > %containerMain {
-		// [FADES]
-		// @include animation(fade-in .3s ease-in-out);
-		& > %base {
-			border-radius: 0;
-		}
-	}		
+%layer > %containerMain > %base {
+	border-radius: 0;	
 }
 
 // SELECTION
