@@ -77,10 +77,10 @@
 		transition: all .15s ease-in-out;
 	}
 	%channelIcon {
-		opacity: .7;
+		opacity: .3;
 		transition: all .15s ease-in-out;
-		path {
-			opacity: .3;
+		> path {
+			opacity: 1;
 		}
 	}
 	%channelActionIcon {
@@ -99,33 +99,33 @@
 	%channelContentHoveredText {
 		background-color: hsla(0, 0%, 100%, .1);
 	}
-	%channelContentHoveredText,
-	%channelContentHoveredVoice {
-		%channelName:not(%channelNameUnread) {
+	%channelContentHovered {
+		%channelName {
 			color: hsla(0, 0%, 100%, .7);
 		}
-		%channelIcon > path {
+		%channelIcon {
 			opacity: .7;
 		}
 	}
 
 	// UNREAD
-	%channelNameUnread {
+	%channelContentUnread > %channelName {
 		color: var(--main-color);
 		text-shadow: 0 0 3px;
 	}
 	%channelUnreadIndicator {
 		display: none;
-		+ %channelContent %channelIcon {
+		+ %channelContentText %channelIcon {
 			@include filter(drop-shadow(0 0 3px var(--main-color)));
+			opacity: 1;
 			> path {
 				fill: var(--main-color);
-				opacity: 1;
 			}
 		}
-		+ %channelContentHovered {
+		+ %channelContentHoveredText {
 			%channelNameUnread {
 				color: #fff;
+				text-shadow: 0 0 3px;
 			}
 			%channelIcon {
 				@include filter(drop-shadow(0 0 3px #fff));
@@ -139,8 +139,7 @@
 	// SELECTED
 	%channelContentSelectedText {
 		background-color: var(--main-color);
-		%channelIcon  > path {
-			fill: #fff;
+		%channelIcon {
 			opacity: 1;
 		}
 		%channelActionIcon svg {
@@ -163,12 +162,11 @@
 	}
 
 	// MUTED
-	%channelContentMutedText,
-	%channelContentMutedVoice {
+	%channelContentMuted {
 		%channelName {
 			color: hsla(0, 0%, 100%, .1);
 		}
-		%channelIcon > path {
+		%channelIcon {
 			opacity: .1;
 		}
 	}
