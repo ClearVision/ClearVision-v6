@@ -1,4 +1,4 @@
-/*! Using Discord Selectors v19-03-09 by Zerthox */
+/*! Using Discord Selectors v19-03-10 by Zerthox */
 // FILE CONTENTS
 // 1) App
 // 2) Titlebar
@@ -305,27 +305,21 @@
 	@extend %channelContent !optional;
 }
 .contentDefaultText-3vZplL {
-	@extend %channelContentDefault !optional;
 	@extend %channelContentDefaultText !optional;
 }
 .contentHoveredText-2D9B-x {
-	@extend %channelContentHovered !optional;
 	@extend %channelContentHoveredText !optional;
 }
 .contentSelectedText-3wUhMi {
-	@extend %channelContentSelected !optional;
 	@extend %channelContentSelectedText !optional;
 }
 .contentUnreadText-2vNnZc {
-	@extend %channelContentUnread !optional;
 	@extend %channelContentUnreadText !optional;
 }
 .contentLockedText-1aHuz8 {
-	@extend %channelContentLocked !optional;
 	@extend %channelContentLockedText !optional;
 }
 .contentMutedText-2y6aPQ {
-	@extend %channelContentMuted !optional;
 	@extend %channelContentMutedText !optional;
 }
 %channelContentDefaultText,
@@ -337,33 +331,21 @@
 	@extend %channelContentText !optional;
 }
 .contentDefaultVoice-2ko43i {
-	@extend %channelContentVoice !optional;
-	@extend %channelContentDefault !optional;
 	@extend %channelContentDefaultVoice !optional;
 }
 .contentHoveredVoice-3p_NEO {
-	@extend %channelContentVoice !optional;
-	@extend %channelContentHovered !optional;
 	@extend %channelContentHoveredVoice !optional;
 }
 .contentSelectedVoice-1WDIBM {
-	@extend %channelContentVoice !optional;
-	@extend %channelContentSelected !optional;
 	@extend %channelContentSelectedVoice !optional;
 }
 .contentUnreadVoice-1dijOt {
-	@extend %channelContentVoice !optional;
-	@extend %channelContentUnread !optional;
 	@extend %channelContentUnreadVoice !optional;
 }
 .contentLockedVoice-1gx-SP {
-	@extend %channelContentVoice !optional;
-	@extend %channelContentLocked !optional;
 	@extend %channelContentLockedVoice !optional;
 }
 .contentMutedVoice-2lJ0UD {
-	@extend %channelContentVoice !optional;
-	@extend %channelContentMuted !optional;
 	@extend %channelContentMutedVoice !optional;
 }
 %channelContentDefaultVoice,
@@ -732,6 +714,12 @@
 .wrapper-129saQ {
 	@extend %embedVideoActionsButtonWrapper !optional; 
 }
+.invite-18yqGF {
+	@extend %embedSpotifyInvite !optional;
+}
+.header-Hg_qNF {
+	@extend %embedSpotifyInviteHeader !optional;
+}
 // 5.1.3) Codeblocks
 .inline {
 	@extend %codeInline !optional;
@@ -989,6 +977,9 @@
 }
 .invisible-1kp8Z0 {
 	@extend %statusInvisible !optional;
+}
+.streaming-2_dnHe {
+	@extend %statusStreaming !optional;
 }
 
 // 11) BOT TAG
