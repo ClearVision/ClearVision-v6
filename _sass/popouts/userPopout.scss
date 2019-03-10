@@ -19,13 +19,13 @@
 		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .4));
 	}
 	%userPopoutHeaderStreaming {
-		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .4)), rgba($twitchPurple, .4);
+		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .4)), rgba($twitch-purple, .4);
 	}
 	%userPopoutHeaderSpotify {
-		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .4)), rgba($spotifyGreen, .4);
+		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .4)), rgba($spotify-green, .4);
 	}
 	%userPopoutHeaderXbox {
-		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .4)), rgba($xboxGreen, .4);
+		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .4)), rgba($xbox-green, .4);
 	}
 	%activity {
 		background-color: rgba(0, 0, 0, .04);
