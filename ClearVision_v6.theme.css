@@ -12,18 +12,12 @@
 	--idle-color: #faa61a;
 	--dnd-color: #982929;
 	--offline-color: #808080;
+	--streaming-color: #593695;
 }
 
 /* BACKGROUND SETTINGS */
 :root {
-	--background-blur: 0px;
+	--background-image: url(https://zerthox.github.io/ClearVision/images/sapphire.jpg);
 	--background-brightness: 100%;
-}
-body:after,
-body::after,
-.userPopout-3XzG_A:before,
-.userPopout-3XzG_A::before,
-.root-SR8cQa:before,
-.root-SR8cQa::before {
-	background-image: url(https://zerthox.github.io/ClearVision/images/sapphire.jpg) !important;
+	--background-blur: 0px;
 }
