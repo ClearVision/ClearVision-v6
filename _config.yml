@@ -7,8 +7,6 @@ baseurl: ""
 exclude:
     - README.md
     - Gemfile
-    - ClearVision_v6.themejs
-    - ClearVision_v6.plugin.js
 
 sass:
     style: compressed
