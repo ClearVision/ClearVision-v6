@@ -1,4 +1,4 @@
-/*! Using Discord Selectors v19-03-10 by Zerthox */
+/*! Using Discord Selectors v19-03-11 by Zerthox */
 // FILE CONTENTS
 // 1) App
 // 2) Titlebar
@@ -90,6 +90,12 @@
 }
 .flex-1O1GKY {
 	@extend %flex !optional;
+}
+.platform-win {
+	@extend %platformWin !optional;
+}
+.platform-osx {
+	@extend %platformOSX !optional;
 }
 
 // 2) TITLEBAR
@@ -834,6 +840,12 @@
 }
 .content-OzHfo4 {
 	@extend %memberContent !optional;
+}
+.memberInner-2CPc3V {
+	@extend %memberInner !optional;
+}
+.nameTag-3p0yK- {
+	@extend %memberNameTag !optional;
 }
 .username-1cB_5E {
 	@extend %memberUsername !optional;
