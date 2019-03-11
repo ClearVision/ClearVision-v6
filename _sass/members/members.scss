@@ -2,27 +2,51 @@
 %members {
 	background-color: rgba(0, 0, 0, .75) !important;
 	> %membersGroup {
-		height: auto;
-		margin: 5px 15px;
-		padding: 2px 8px;
-		background-color: rgba(0, 0, 0, .5);
-		color: var(--main-color) !important;
+		@include display-flex;
+		@include align-items(center);
+		@include justify-content(center);
+		color: var(--main-color);
 		font-size: 11px;
 		font-weight: 700;
 		text-align: center;
-		text-transform: uppercase;
-		letter-spacing: .08em;
-		border-radius: 3px;
+		transition: all .15s ease-in-out;
+		@include pseudo(before, after) {
+			content: "";
+			height: 2px;
+			flex-grow: 1;
+		}
+		@include pseudo(before) {
+			background: linear-gradient(to left, currentColor 0%, currentColor 50%, transparent 100%);
+			margin-right: 5px;
+		}
+		@include pseudo(after) {
+			background: linear-gradient(to right, currentColor 0%, currentColor 50%, transparent 100%);
+			margin-left: 5px;
+		}
 	}
 	> %member {
+		border-radius: 5px;
 		@include prefix(backface-visibility, hidden);
 		> %memberContent {
-			transition: all .1s ease-in-out;
+			position: relative;
+			@include clear;
+			transition: all .15s ease-in-out, transform .1s ease-in-out;
+			@include pseudo(before) {
+				content: "";
+				position: absolute;
+				@include stretch;
+				background: linear-gradient(to right, rgba(0, 0, 0, .3) 85%, transparent);
+				opacity: 0;
+				transition: all .15s ease-in-out;
+				z-index: -1;
+			}
 		}
 		&:hover,
 		&%memberPopoutOpen {
 			> %memberContent {
-				background: linear-gradient(to right, rgba(0, 0, 0, .3) 85%, transparent) !important;
+				@include pseudo(before) {
+					opacity: 1;
+				}
 			}
 		}
 		&:active {
