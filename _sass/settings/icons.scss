@@ -85,6 +85,10 @@ $icons: (
             background-image: url(map-get($icons, "HypeSquad"));
         }
     }
+}
+
+// USER SETTINGS WINDOWS
+%platformWin [aria-label="USER_SETTINGS"] %settingsSidebarRegion %settingsSide %tabBarItem {
     &:nth-child(12) {
         @include pseudo(before) {
             background-image: url(map-get($icons, "Voice & Video"));
@@ -146,6 +150,60 @@ $icons: (
         }
     }
     &:nth-child(27) {
+        @include pseudo(before) {
+            background-image: url(map-get($icons, "Log Out"));
+        }
+    }
+}
+
+// USER SETTINGS OSX
+%platformOSX [aria-label="USER_SETTINGS"] %settingsSidebarRegion %settingsSide %tabBarItem {
+    &:nth-child(12) {
+        @include pseudo(before) {
+            background-image: url(map-get($icons, "Voice & Video"));
+        }
+    }
+    &:nth-child(13) {
+        @include pseudo(before) {
+            background-image: url(map-get($icons, "Notifications"));
+        }
+    }
+    &:nth-child(14) {
+        @include pseudo(before) {
+            background-image: url(map-get($icons, "Keybinds"));
+        }
+    }
+    &:nth-child(15) {
+        @include pseudo(before) {
+            background-image: url(map-get($icons, "Game Activity"));
+        }
+    }
+    &:nth-child(16) {
+        @include pseudo(before) {
+            background-image: url(map-get($icons, "Text & Images"));
+        }
+    }
+    &:nth-child(17) {
+        @include pseudo(before) {
+            background-image: url(map-get($icons, "Appearance"));
+        }
+    }
+    &:nth-child(18) {
+        @include pseudo(before) {
+            background-image: url(map-get($icons, "Streamer Mode"));
+        }
+    }
+    &:nth-child(19) {
+        @include pseudo(before) {
+            background-image: url(map-get($icons, "Language"));
+        }
+    }
+    &:nth-child(21) {
+        @include pseudo(before) {
+            background-image: url(map-get($icons, "Change Log"));
+        }
+    }
+    &:nth-child(24) {
         @include pseudo(before) {
             background-image: url(map-get($icons, "Log Out"));
         }
