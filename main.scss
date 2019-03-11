@@ -10,7 +10,7 @@ $spotify-green: #1db954;
 $xbox-green: #107c10;
 
 // MIXINS
-@import "mixins.scss";
+@import "mixins";
 
 /// Force clear background
 @mixin clear {
@@ -48,7 +48,7 @@ $xbox-green: #107c10;
 /*! ClearVision #{$version} by Zerthox */
 
 // IMPORT SELECTORS
-@import "selectors.scss";
+@import "selectors";
 
 // TEST SETTINGS [REMOVE]
 :root {
@@ -65,99 +65,99 @@ $xbox-green: #107c10;
 }
 
 /* APP  */
-@import "general/app.scss";
+@import "general/app";
 
 /* TITLEBAR */
-@import "general/titlebar.scss";
+@import "general/titlebar";
 
 /* GUILDS */
-@import "guilds/guilds.scss";
+@import "guilds/guilds";
 
 /* CHANNELS */
-@import "channels/channels.scss";
-@import "channels/containers.scss";
-@import "channels/unreadIndicator.scss";
-@import "channels/privateChannels.scss";
+@import "channels/channels";
+@import "channels/containers";
+@import "channels/unreadIndicator";
+@import "channels/privateChannels";
 
 /* CHAT */
-@import "chat/chat.scss";
-@import "chat/divider.scss";
-@import "chat/bars.scss";
-@import "chat/textarea.scss";
-@import "chat/welcome.scss";
+@import "chat/chat";
+@import "chat/divider";
+@import "chat/bars";
+@import "chat/textarea";
+@import "chat/welcome";
 
 /* MESSAGES */
-@import "messages/message.scss";
-@import "messages/inviteLink.scss";
-@import "messages/embed.scss";
-@import "messages/codeblock.scss";
-@import "messages/codeLanguages.scss";
-@import "messages/mention.scss";
-@import "messages/blocked.scss";
+@import "messages/message";
+@import "messages/inviteLink";
+@import "messages/embed";
+@import "messages/codeblock";
+@import "messages/codeLanguages";
+@import "messages/mention";
+@import "messages/blocked";
 
 /* MEMBERS */
-@import "members/members.scss";
+@import "members/members";
 
 /* SEARCH */
-@import "search/search.scss";
+@import "search/search";
 
 /* HOME TAB */
-@import "home/friends.scss";
+@import "home/friends";
 
 /* AVATARS */
-@import "general/avatar.scss";
+@import "general/avatar";
 
 /* STATUS */
-@import "general/status.scss";
+@import "general/status";
 
 /* BOT TAGS */
-@import "general/botTag.scss";
+@import "general/botTag";
 
 /* GENERAL ELEMENTS */
-@import "general/button.scss";
-@import "general/scrollbar.scss";
-@import "general/badge.scss";
-@import "general/tooltip.scss";
-@import "general/checkbox.scss";
-@import "general/spinner.scss";
+@import "general/button";
+@import "general/scrollbar";
+@import "general/badge";
+@import "general/tooltip";
+@import "general/checkbox";
+@import "general/spinner";
 
 /* CONTEXT MENU */
-@import "popouts/contextMenu.scss";
+@import "popouts/contextMenu";
 
 /* POPOUTS */
-@import "popouts/popout.scss";
-@import "popouts/messageOptions.scss";
-@import "popouts/dropdownMenu.scss";
-@import "popouts/statusPicker.scss";
-@import "popouts/messagesPopout.scss";
-@import "popouts/autocompletePopout.scss";
+@import "popouts/popout";
+@import "popouts/messageOptions";
+@import "popouts/dropdownMenu";
+@import "popouts/statusPicker";
+@import "popouts/messagesPopout";
+@import "popouts/autocompletePopout";
 
 /* USER POPOUT */
-@import "popouts/userPopout.scss";
+@import "popouts/userPopout";
 
 /* MEMBER ACTIVITY */
-@import "members/activity.scss";
+@import "members/activity";
 
 /* MEMBER ROLES */
-@import "members/roles.scss";
+@import "members/roles";
 
 /* USER PROFILE MODAL */
-@import "modals/userModal.scss";
+@import "modals/userModal";
 
 /* SETTINGS */
-@import "settings/sidebar.scss";
-@import "settings/bdSidebar.scss";
-@import "settings/icons.scss";
-@import "settings/content.scss";
+@import "settings/sidebar";
+@import "settings/bdSidebar";
+@import "settings/icons";
+@import "settings/content";
 
 /* SCREENS */
-@import "screens/loading.scss";
+@import "screens/loading";
 
 /* PLUGINS */
-@import "plugins/messageButtons.scss";
-@import "plugins/linenumbers.scss";
-@import "plugins/copyCode.scss";
-@import "plugins/ownerTag.scss";
+@import "plugins/messageButtons";
+@import "plugins/linenumbers";
+@import "plugins/copyCode";
+@import "plugins/ownerTag";
 
 /* KEYFRAMES */
-@import "keyframes.scss";
+@import "keyframes";

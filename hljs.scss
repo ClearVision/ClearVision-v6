@@ -3,8 +3,8 @@
 /*! HLJS Language display by Zerthox */
 
 // IMPORTS
-@import "mixins.scss";
-@import "selectors.scss";
+@import "mixins";
+@import "selectors";
 
 // CODE LANGAUGES
-@import "messages/codeLanguages.scss";
+@import "messages/codeLanguages";
