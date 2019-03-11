@@ -121,9 +121,6 @@
 				color: #fff;
 			}
 		}
-		%badge {
-			@include animation(badge 1s ease-in-out infinite alternate);
-		}
 	}
 
 	// GUILD SEPERATORS

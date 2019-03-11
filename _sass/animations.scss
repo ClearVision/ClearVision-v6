@@ -3,6 +3,13 @@
 	@include animation(fade-in .3s ease-in-out);	
 }
 
+// GUILDS
+%guilds {
+	%badge {
+		@include animation(badge 1s ease-in-out infinite alternate);
+	}
+}
+
 // CHANNELS
 %channels {
     %categoryContainerDefault,
