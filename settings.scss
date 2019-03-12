@@ -3,13 +3,13 @@
 
 // SETTINGS
 :root {
-    --main-color: #{"$main-color"};
-    --hover-color: #{"$hover-color"};
-    --online-color: #{"$online-color"};
+	--main-color: #{"$main-color"};
+	--hover-color: #{"$hover-color"};
+	--online-color: #{"$online-color"};
 	--idle-color: #{"$idle-color"};
 	--dnd-color: #{"$dnd-color"};
 	--offline-color: #{"$offline-color"};
-    --background-image: url(#{"$background-image"});
+	--background-image: url(#{"$background-image"});
 	--background-brightness: #{"$background-blur"};
-    --background-blur: #{"$background-brightness"};
+	--background-blur: #{"$background-brightness"};
 }
