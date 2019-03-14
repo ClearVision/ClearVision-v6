@@ -16,11 +16,11 @@
 			flex-grow: 1;
 		}
 		@include pseudo(before) {
-			background: linear-gradient(to left, currentColor 0%, currentColor 50%, transparent 100%);
+			background: linear-gradient(to left, currentColor 50%, transparent 100%);
 			margin-right: 5px;
 		}
 		@include pseudo(after) {
-			background: linear-gradient(to right, currentColor 0%, currentColor 50%, transparent 100%);
+			background: linear-gradient(to right, currentColor 50%, transparent 100%);
 			margin-left: 5px;
 		}
 	}
