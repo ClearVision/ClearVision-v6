@@ -10,6 +10,7 @@
 %channelContentSelectedText {
 	%badge {
 		background-color: #fff !important;
-		color: var(--main-color) !important;
+		color: #000 !important;
+		mix-blend-mode: screen;
 	}
 }
