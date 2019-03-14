@@ -8,6 +8,11 @@
 		@include clear;
 	}
 
+	// CHANNELS HEADER
+	%channelsHeaderContainer {
+		z-index: 2;
+	}
+
 	// CHANNEL CATEGORIES
 	%categoryWrapper {
 		transition: all .3s ease-in-out;
@@ -34,11 +39,11 @@
 			transition: all .3s ease-in-out;
 		}
 		@include pseudo(before) {
-			background: linear-gradient(to left, var(--main-color) 0%, var(--hover-color) 50%, transparent 100%);
+			background: linear-gradient(to left, var(--main-color) 50%, transparent 100%);
 			margin-right: 5px;
 		}
 		@include pseudo(after) {
-			background: linear-gradient(to right, var(--main-color) 0%, var(--hover-color) 50%, transparent 100%);
+			background: linear-gradient(to right, var(--main-color) 50%, transparent 100%);
 			margin-left: 5px;
 		}
 	}
@@ -48,7 +53,6 @@
 	%categoryNameCollapsed,
 	%categoryNameHoveredCollapsed,
 	%categoryIconMutedCollapsed + %categoryNameMuted {
-		// color: hsla(0, 0%, 100%, .3);
 		@include pseudo(before, after) {
 			flex-grow: 0;
 		}
@@ -177,39 +181,28 @@
 
 	// VOICE USER LIST
 	%voiceUser {
-		position: relative;
 		z-index: 1;
 	}
 	%voiceUserAvatar {
-		z-index: 1;
-		@include pseudo(before, after) {
+		position: relative;
+		transition: all .1s ease-in-out;
+		@include pseudo(after) {
 			content: "";
 			position: absolute;
-			top: 1px;
-			left: 0;
-			bottom: 1px;
-			opacity: 0;
-			transition: all .1s ease-in-out;
+			width: 0;
+			@include pos($top: 0, $bottom: 0, $left: 50%);
+			background: linear-gradient(to right, var(--main-color) 10%, transparent 100%);
+			opacity: .5;
+			transition: all .1s ease-in-out,  width .15s ease-in-out;
 			pointer-events: none;
 			z-index: -1;
 		}
-		@include pseudo(before) {
-			width: 4px;
-			background: var(--main-color);
-		}
-		@include pseudo(after) {
-			right: 0;
-			background: linear-gradient(to right, var(--main-color) 0%, transparent 35%);
-			border-left: 4px solid var(--main-color);
-		}
 	}
 	%voiceUserAvatarSpeaking {
-		box-shadow: none;
-		@include pseudo(before) {
-			opacity: 1;
-		}
+		box-shadow: 0 0 0 2px var(--main-color), inset 0 0 3px rgba(0, 0, 0, .5);
 		@include pseudo(after) {
-			opacity: .5;
+			@include pos($top: -2px, $bottom: -2px);
+			width: 100px;
 		}
 	}
 
