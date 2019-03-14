@@ -2,7 +2,6 @@
 %chat {
 	form {
 		@include clear;
-		box-shadow: none !important;
 		#charcounter {
 			top: 100%;
 			margin-top: 7.5px;
@@ -14,8 +13,7 @@
 	}
 	%channelTextareaInner {
 		background-color: rgba(0, 0, 0, .5);
-		border: 2px solid hsla(0, 0%, 100%, .1) !important;
-		@include transform(translateZ(0));
+		border-radius: 5px;
 		%channelTextareaAttachButton {
 			@include transform(none);
 			%channelTextareaAttachButtonPlus {
@@ -36,18 +34,17 @@
 		~ %channelTextareaButtons {
 			@include pseudo(after) {
 				content: "";
-				position: fixed;
+				position: absolute;
 				@include pos(-2px, -2px, -2px, -2px);
-				border: 2px solid transparent;
-				border-radius: 3px;
-				opacity: 1;
+				border: 2px solid hsla(0, 0%, 100%, .1);
+				border-radius: 5px;
 				transition: all .15s ease-in-out;
 				pointer-events: none;
 			}
 		}
 		&:focus ~ %channelTextareaButtons {
 			@include pseudo(after) {
-				border-color: var(--main-color);
+				border: 2px solid var(--main-color);
 				box-shadow: 0 0 3px var(--main-color);
 			}
 		}
