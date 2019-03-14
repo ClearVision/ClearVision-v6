@@ -1,7 +1,7 @@
 ---
 ---
 // VARIABLES
-$version: "ClearVision v6-pre-2.5.0b";
+$version: "ClearVision v6-pre-2.5.1";
 $green: #43b581;
 $red: #f04747;
 $dark-red: #a93d3d;
@@ -36,9 +36,9 @@ $xbox-green: #107c10;
 
 /// Create hover cutout effect
 @mixin hover-cutout {
-	mix-blend-mode: screen;
 	background-color: transparent;
 	color: #fff;
+	mix-blend-mode: screen;
 	&:hover {
 		background-color: #fff;
 		color: #000;
@@ -88,9 +88,11 @@ $xbox-green: #107c10;
 
 /* MESSAGES */
 @import "messages/message";
+@import "messages/reaction";
 @import "messages/inviteLink";
 @import "messages/embed";
 @import "messages/codeblock";
+@import "messages/attachment";
 @import "messages/codeLanguages";
 @import "messages/mention";
 @import "messages/blocked";
