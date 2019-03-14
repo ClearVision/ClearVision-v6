@@ -26,10 +26,14 @@
 		&::-webkit-scrollbar-track-piece {
 			background-color: rgba(0, 0, 0, .3) !important;
 		}
-		&:not(:hover) {
+		&::-webkit-scrollbar-thumb,
+		&::-webkit-scrollbar-track-piece {
+			visibility: hidden;
+		}
+		&:hover {
 			&::-webkit-scrollbar-thumb,
 			&::-webkit-scrollbar-track-piece {
-				visibility: hidden;
+				visibility: visible;
 			}
 		}
 	}
