@@ -1,0 +1,35 @@
+// MESSAGE ATTACHMENT
+%messageGroup %attachment {
+    background: hsla(0, 0%, 100%, .04);
+    border-color: transparent;
+}
+%attachmentIcon {
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    padding-left: 30px;
+    background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/file.svg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: .5;
+    &[title=document] {
+        background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/file_document.svg);
+    }
+    &[title=webcode] {
+        background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/file_code.svg);
+    }
+    &[title=archive] {
+        background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/file_archive.svg);
+    }
+}
+%attachmentButton {
+    color: hsla(0, 0%, 100%, .3);
+    transition: all .15s ease-in-out;
+    &:hover {
+        color: hsla(0, 0%, 100%, .5);
+    }
+}
+%fileMetadata {
+    color: hsla(0, 0%, 100%, .3);
+}
