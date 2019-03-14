@@ -1,4 +1,4 @@
-/*! Using Discord Selectors v19-03-11 by Zerthox */
+/*! Using Discord Selectors v19-03-14 by Zerthox */
 // FILE CONTENTS
 // 1) App
 // 2) Titlebar
@@ -14,9 +14,11 @@
 //		5.7.1) Search Bar
 // 5) Chat
 //	5.1) Messages
-//		5.1.1) Invite Links
-//		5.1.2) Embeds
-//		5.1.3) Codeblocks
+//		5.1.1) Reactions
+//		5.1.2) Invite Links
+//		5.1.3) Embeds
+//		5.1.4) Codeblocks
+//		5.1.5) Attachments
 //	5.2) Dividers
 //	5.3) Chat Bars
 //		5.3.1) New Messages Bar
@@ -97,6 +99,12 @@
 .platform-osx {
 	@extend %platformOSX !optional;
 }
+.platform-linux {
+	@extend %platformLinux !optional;
+}
+.platform-web {
+	@extend %platformWeb !optional;
+}
 
 // 2) TITLEBAR
 .typeWindows-1za-n7 {
@@ -175,6 +183,24 @@
 }
 .container-PNkimc {
 	@extend %channelsContainer !optional;
+}
+.container-2Rl01u {
+	@extend %channelsHeaderContainer !optional;
+}
+.hasDropdown-2invhV {
+	@extend %channelsHasDropDown !optional;
+}
+.header-2o-2hj {
+	@extend %channelsHeader !optional;
+}
+.name-3YKhmS {
+	@extend %channelsHeaderName !optional;
+}
+.button-1w5pas {
+	@extend %channelsHeaderButton !optional;
+}
+.banner-1TiK82 {
+	@extend %banner !optional;
 }
 // 4.1) Categories
 .containerDefault-3GGEv_ {
@@ -503,6 +529,18 @@
 %voiceUserAvatarSpeaking {
 	@extend %voiceUserAvatar !optional;
 }
+.name-2upRM5 {
+	@extend %voiceUserName !optional;
+}
+.nameDefault-2s3kbY {
+	@extend %voiceUserNameDefault !optional;
+}
+.nameHovered-21k1eo {
+	@extend %voiceUserNameHovered !optional;
+}
+.nameSpeaking-3UhoEZ {
+	@extend %voiceUserNameSpeaking !optional;
+}
 // 4.4) Account Container
 .container-2Thooq {
 	@extend %accountContainer !optional;
@@ -664,7 +702,23 @@
 %messageOptionsButton {
 	@extend %messageButton !optional;
 }
-// 5.1.1) Invite Links
+// 5.1.2) Reactions
+.reactions-1xb2Ex {
+	@extend %reactions !optional;
+}
+.reaction-1ELvT8 {
+	@extend %reaction !optional;
+}
+.reactionMe-23mbRf {
+	@extend %reactionMe !optional;
+}
+.reactionInner-rRPZdY {
+	@extend %reactionInner !optional;
+}
+.reactionCount-2ddRoS{
+	@extend %reactionCount !optional;
+}
+// 5.1.2) Invite Links
 .wrapper-35wsBm {
 	@extend %inviteWrapper !optional;
 }
@@ -698,7 +752,7 @@
 .lookFilled-1Gx00P.colorBrand-3pXr91 {
 	@extend %inviteButtonExpired !optional;
 }
-// 5.1.2) Embeds
+// 5.1.3) Embeds
 .embed-IeVjo6 {
 	@extend %embed !optional;
 }
@@ -726,7 +780,7 @@
 .header-Hg_qNF {
 	@extend %embedSpotifyInviteHeader !optional;
 }
-// 5.1.3) Codeblocks
+// 5.1.4) Codeblocks
 .inline {
 	@extend %codeInline !optional;
 }
@@ -735,6 +789,35 @@
 }
 .hljs {
 	@extend %codeHLJS !optional;
+}
+// 5.1.5) Attachments
+.attachment-33OFj0 {
+	@extend %attachment !optional;
+}
+.icon-1kp3fr {
+	@extend %attachmentIcon !optional;
+}
+.attachmentInner-3vEpKt {
+	@extend %attachmentInner !optional;
+}
+.filenameLinkWrapper-1-14c5 {
+	@extend %fileNameLinkWrapper !optional;
+}
+.fileNameLink-9GuxCo {
+	@extend %fileNameLink !optional;
+}
+.metadata-3WGS0M {
+	@extend %fileMetadata !optional;
+}
+.downloadButton-23tKQp {
+	@extend %attachmentDownloadButton !optional;
+}
+.cancelButton-3hVEV6 {
+	@extend %attachmentCancelButton !optional;
+}
+%attachmentDownloadButton,
+%attachmentCancelButton {
+	@extend %attachmentButton !optional;
 }
 // 5.2) Dividers
 .divider-3gKybi {
@@ -1206,6 +1289,12 @@
 }
 .themedPopout-25DgLi {
 	@extend %themedPopout !optional;
+}
+.popoutTopLeft-b5Eb3O {
+	@extend %popoutTopLeft !optional;
+}
+.noArrow-3BYQ0Z {
+	@extend %popoutNoArrow !optional;
 }
 .header-ykumBX {
 	@extend %popoutHeader !optional;
