@@ -27,16 +27,19 @@
 			}
 		}
 		%guildInner {
-			background-color: rgba(0, 0, 0, .5) !important;
+			background-color: transparent;
 			box-shadow: 0 0 5px rgba(0, 0, 0, .5);
 			transition: background-color .3s ease-in-out, transform .1s ease-in-out;
 			&:active {
 				@include transform(scale(.9));
 			}
+			&[style*=background] {
+				background-color: rgba(0, 0, 0, .5) !important;
+			}
 		}
 		%guildSelected,
 		%guild:hover {
-			%guildInner {
+			%guildInner[style*=background] {
 				background-color: var(--main-color) !important;
 			}
 		}
