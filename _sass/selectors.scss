@@ -551,6 +551,9 @@
 .inner-1W0Bkn {
 	@extend %accountContainerAvatar !optional;
 }
+%accountContainerAvatar.popout-open {
+	@extend %accountContainerAvatarPopoutOpen !optional;
+}
 %accountContainer > %flex {
 	@extend %accountContainerButtonWrapper !optional;
 }
