@@ -78,6 +78,7 @@
 		transition: all .15s ease-in-out;
 	}
 	%channelIcon {
+		color: #fff;
 		opacity: .3;
 		transition: all .15s ease-in-out;
 		> path {
@@ -90,10 +91,6 @@
 		&:hover {
 			opacity: .7;
 		}
-	}
-	%channelContent path {
-		fill: #fff;
-		transition: all .15s ease-in-out;
 	}
 
 	// HOVER
@@ -117,11 +114,9 @@
 	%channelUnreadIndicator {
 		display: none;
 		+ %channelContentText %channelIcon {
+			color: var(--main-color);
 			@include filter(drop-shadow(0 0 3px var(--main-color)));
 			opacity: 1;
-			> path {
-				fill: var(--main-color);
-			}
 		}
 		+ %channelContentHoveredText {
 			%channelNameUnread {
@@ -129,10 +124,8 @@
 				text-shadow: 0 0 3px;
 			}
 			%channelIcon {
+				color: #fff;
 				@include filter(drop-shadow(0 0 3px #fff));
-				> path {
-					fill: #fff;
-				}
 			}
 		}
 	}
@@ -143,7 +136,7 @@
 		%channelIcon {
 			opacity: 1;
 		}
-		%channelActionIcon svg {
+		%channelActionIcon {
 			opacity: .7;
 			&:hover {
 				opacity: 1;
@@ -153,12 +146,22 @@
 	%channelNameSelectedText {
 		color: #fff;
 	}
-	%channelContentSelectedVoice {
+
+	// CONNECTED
+	%channelContentConnectedVoice {
+		%channelIcon {
+			opacity: .7;
+		}
 		%channelName {
 			color: hsla(0, 0%, 100%, .7);
 		}
-		&:hover %channelName {
-			color: #fff;
+		&:hover {
+			%channelIcon {
+				opacity: 1;
+			}
+			%channelName {
+				color: #fff;
+			}
 		}
 	}
 
@@ -204,6 +207,15 @@
 			@include pos($top: -2px, $bottom: -2px);
 			width: 100px;
 		}
+	}
+	%voiceUserName {
+		color: hsla(0, 0%, 100%, .7);
+		transition: all .1s ease-in-out;
+	}
+	%voiceUserName:hover,
+	%voiceUserNameSpeaking {
+		color: #fff;
+		text-shadow: 0 0 3px hsla(0, 0%, 100%, .7);
 	}
 
 	// DRAG INDICATORS
