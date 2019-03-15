@@ -1,0 +1,28 @@
+// CONNECTION INFO POPOUT
+%popout > %connectionInfo {
+    > header {
+        background-color: var(--main-color);
+        color: #fff;
+        border-radius: 3px 3px 0 0;
+    }
+    > section {
+        background-color: rgba(0, 0, 0, .7);
+        border-radius: 0 0 3px 3px;
+        > p {
+            color: hsla(0, 0%, 100%, .5);
+            > strong {
+                color: var(--main-color);
+            }
+        }
+    }
+}
+%connectionInfoSparkline > svg {
+    > line { 
+        stroke: var(--main-color) !important;
+        stroke-dasharray: 5, 3 !important;
+    }
+}
+%connectionInfo > section > %connectionInfoBottom > a {
+    color: var(--main-color);
+    @include hover-shadow;
+}
