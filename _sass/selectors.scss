@@ -619,7 +619,16 @@
 }
 // 4.3) Voice User List
 .draggable-1KoBzC {
+	@extend %voiceUserDraggable !optional;
+}
+.voiceUser-vT8g1p {
 	@extend %voiceUser !optional;
+}
+.userDefault-1qtQob {
+	@extend %voiceUserDefault !optional;
+}
+.userHovered-2_fT4Z {
+	@extend %voiceUserHovered !optional;
 }
 .avatarDefault-35WC3R {
 	@extend %voiceUserAvatarDefault !optional;
