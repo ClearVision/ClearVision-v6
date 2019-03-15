@@ -121,7 +121,6 @@
 		+ %channelContentHoveredText {
 			%channelNameUnread {
 				color: #fff;
-				text-shadow: 0 0 3px;
 			}
 			%channelIcon {
 				color: #fff;
@@ -149,19 +148,14 @@
 
 	// CONNECTED
 	%channelContentConnectedVoice {
-		%channelIcon {
-			opacity: .7;
-		}
 		%channelName {
-			color: hsla(0, 0%, 100%, .7);
+			color: var(--main-color);
+			text-shadow: 0 0 3px;
 		}
-		&:hover {
-			%channelIcon {
-				opacity: 1;
-			}
-			%channelName {
-				color: #fff;
-			}
+		%channelIcon {
+			color: var(--main-color);
+			@include filter(drop-shadow(0 0 3px var(--main-color)));
+			opacity: 1;
 		}
 	}
 
@@ -184,7 +178,12 @@
 
 	// VOICE USER LIST
 	%voiceUser {
+		border-radius: 3px;
+		transition: all .15s ease-in-out;
 		z-index: 1;
+	}
+	%voiceUserHovered:active {
+		background-color: hsla(0, 0%, 100%, .04);
 	}
 	%voiceUserAvatar {
 		position: relative;
@@ -212,10 +211,10 @@
 		color: hsla(0, 0%, 100%, .7);
 		transition: all .1s ease-in-out;
 	}
-	%voiceUserName:hover,
+	%voiceUserNameHovered,
 	%voiceUserNameSpeaking {
 		color: #fff;
-		text-shadow: 0 0 3px hsla(0, 0%, 100%, .7);
+		text-shadow: 0 0 3px;
 	}
 
 	// DRAG INDICATORS
