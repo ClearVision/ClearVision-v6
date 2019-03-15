@@ -111,6 +111,15 @@
     // CONNECTION CONTAINER
     > %connectionContainer {
         border-color: transparent;
+        %connectionContainerChannel {
+            color: hsla(0, 0%, 100%, .3);
+            opacity: 1;
+            transition: all .15s ease-in-out;
+            &:hover {
+                color: hsla(0, 0%, 100%, .5);
+                text-decoration: none;
+            }
+        }
         %connectionContainerButton {
             opacity: .3;
             &:hover {
