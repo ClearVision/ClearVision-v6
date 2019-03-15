@@ -1,4 +1,4 @@
-/*! Using Discord Selectors v19-03-14 by Zerthox */
+/*! Using Discord Selectors v19-03-15 by Zerthox */
 // FILE CONTENTS
 // 1) App
 // 2) Titlebar
@@ -26,6 +26,7 @@
 //		5.3.3) Has More Bar
 //	5.4) Channel Textarea
 //		5.4.1) Channel Textarea Autocomplete
+//	5.5) Welcome Message
 // 6) Members
 // 7) Search
 // 8) Home Tab
@@ -52,8 +53,9 @@
 //	15.1) Message Options Popout
 //	15.2) Dropdown Menu
 //	15.3) Status Picker
-//	15.4) Messages Popout
-//	15.5) Autocomplete Popout
+//	15.4) Connection Info Popout
+//	15.5) Messages Popout
+//	15.6) Autocomplete Popout
 // 16) User Popout
 //		16.1) Header
 //		16.1) Body
@@ -139,7 +141,7 @@
 .selected-nT-gM3 {
 	@extend %guildSelected !optional;
 }
-.audio-3vVhBi {
+.audio-2KA0-x {
 	@extend %guildAudio !optional;
 }
 .wrapper-2lTRaf {
@@ -348,6 +350,9 @@
 .contentUnreadText-2vNnZc {
 	@extend %channelContentUnreadText !optional;
 }
+.contentConnectedText-16O0fe {
+	@extend %channelContentConnectedText !optional;
+}
 .contentLockedText-1aHuz8 {
 	@extend %channelContentLockedText !optional;
 }
@@ -358,6 +363,7 @@
 %channelContentHoveredText,
 %channelContentSelectedText,
 %channelContentUnreadText,
+%channelContentConnectedText,
 %channelContentLockedText,
 %channelContentMutedText {
 	@extend %channelContentText !optional;
@@ -374,6 +380,9 @@
 .contentUnreadVoice-1dijOt {
 	@extend %channelContentUnreadVoice !optional;
 }
+.contentConnectedVoice-qL-YrL {
+	@extend %channelContentConnectedVoice !optional;
+}
 .contentLockedVoice-1gx-SP {
 	@extend %channelContentLockedVoice !optional;
 }
@@ -384,6 +393,7 @@
 %channelContentHoveredVoice,
 %channelContentSelectedVoice,
 %channelContentUnreadVoice,
+%channelContentConnectedVoice,
 %channelContentLockedVoice,
 %channelContentMutedVoice {
 	@extend %channelContentVoice !optional;
@@ -404,6 +414,10 @@
 %channelContentUnreadVoice {
 	@extend %channelContentUnread !optional;
 }
+%channelContentConnectedText,
+%channelContentConnectedVoice {
+	@extend %channelContentConnected !optional;
+}
 %channelContentLockedText,
 %channelContentLockedVoice {
 	@extend %channelContentLocked !optional;
@@ -411,6 +425,97 @@
 %channelContentMutedText,
 %channelContentMutedVoice {
 	@extend %channelContentMuted !optional;
+}
+.icon-sxakjD {
+	@extend %channelIcon !optional;
+}
+.colorDefaultText-oas-QM {
+	@extend %channelIconDefaultText !optional;
+}
+.colorHoveredText-OZnAgu {
+	@extend %channelIconHoveredText !optional;
+}
+.colorSelectedText-1y4Wvs {
+	@extend %channelIconSelectedText !optional;
+}
+.colorUnreadText-2t7XRb {
+	@extend %channelIconUnreadText !optional;
+}
+.colorConnectedText-1c_uzY {
+	@extend %channelIconConnectedText !optional;
+}
+.colorLockedText-1VRkPt {
+	@extend %channelIconLockedText !optional;
+}
+.colorMutedText-36M8WR {
+	@extend %channelIconMutedText !optional;
+}
+%channelIconDefaultText,
+%channelIconHoveredText,
+%channelIconSelectedText,
+%channelIconUnreadText,
+%channelIconConnectedText,
+%channelIconLockedText,
+%channelIconMutedText {
+	@extend %channelIconText !optional;
+}
+.colorDefaultVoice-3wYlhb {
+	@extend %channelIconDefaultVoice !optional;
+}
+.colorHoveredVoice-1kucsK {
+	@extend %channelIconHoveredVoice !optional;
+}
+.colorSelectedVoice-Xcb_9R {
+	@extend %channelIconSelectedVoice !optional;
+}
+.colorUnreadVoice-137o4S {
+	@extend %channelIconUnreadVoice !optional;
+}
+.colorConnectedVoice-3kyvUN {
+	@extend %channelIconConnectedVoice !optional;
+}
+.colorLockedVoice-2UlBjl {
+	@extend %channelIconLockedVoice !optional;
+}
+.colorMutedVoice-3ghIuw {
+	@extend %channelIconMutedVoice !optional;
+}
+%channelIconDefaultVoice,
+%channelIconHoveredVoice,
+%channelIconSelectedVoice,
+%channelIconUnreadVoice,
+%channelIconConnectedVoice,
+%channelIconLockedVoice,
+%channelIconMutedVoice {
+	@extend %channelIconVoice !optional;
+}
+%channelIconDefaultText,
+%channelIconDefaultVoice {
+	@extend %channelIconDefault !optional;
+}
+%channelIconHoveredText,
+%channelIconHoveredVoice {
+	@extend %channelIconHovered !optional;
+}
+%channelIconSelectedText,
+%channelIconSelectedVoice {
+	@extend %channelIconSelected !optional;
+}
+%channelIconUnreadText,
+%channelIconUnreadVoice {
+	@extend %channelIconUnread !optional;
+}
+%channelIconConnectedText,
+%channelIconConnectedVoice {
+	@extend %channelIconConnected !optional;
+}
+%channelIconLockedText,
+%channelIconLockedVoice {
+	@extend %channelIconLocked !optional;
+}
+%channelIconMutedText,
+%channelIconMutedVoice {
+	@extend %channelIconMuted !optional;
 }
 .name-3M0b8v {
 	@extend %channelName !optional;
@@ -503,9 +608,6 @@
 %channelNameMutedVoice {
 	@extend %channelNameMuted !optional;
 }
-.icon-sxakjD {
-	@extend %channelIcon !optional;
-}
 .actionIcon-2Hi9ZG {
 	@extend %channelActionIcon !optional;
 }
@@ -566,6 +668,36 @@
 // 4.5) Connection Container
 .container-1UB9sr {
 	@extend %connectionContainer !optional;
+}
+.inner-btChU7 {
+	@extend %connectionContainerInner !optional;
+}
+.rtc-connection-status {
+	@extend %rtcConnectionStatus !optional;
+}
+.rtc-connection-status-connected {
+	@extend %rtcConnectionStatusConnected !optional;
+}
+.rtc-connection-status-connecting {
+	@extend %rtcConnectionStatusConnecting !optional;
+}
+.rtc-connection-status-error {
+	@extend %rtcConnectionStatusError !optional;
+}
+.rtc-connection-quality-fine {
+	@extend %rtcConnectionQualityFine !optional;
+}
+.rtc-connection-quality-average {
+	@extend %rtcConnectionQualityAverage !optional;
+}
+.rtc-connection-quality-bad {
+	@extend %rtcConnectionQualityBad !optional;
+}
+.ping {
+	@extend %rtcConnectionPing !optional;
+}
+.channel-SEolQq {
+	@extend %connectionContainerChannel !optional;
 }
 %connectionContainer > %flex {
 	@extend %connectionContainerButtonWrapper !optional;
@@ -906,6 +1038,34 @@
 }
 .content-Qb0rXO {
 	@extend %autocompleteSelectorContent !optional;
+}
+// 5.5) Welcome Message
+.welcomeMessage-3_Mcht {
+	@extend %welcomeMessage !optional;
+}
+.h1-1IDj26 {
+	@extend %welcomeMessageH1 !optional;
+}
+.itemContainer-WiE19S {
+	@extend %welcomeMessageItemContainer !optional;
+}
+.icon-2shpbb {
+	@extend %welcomeMessageIcon !optional;
+}
+.exclamation-1mi7Vi {
+	@extend %welcomeMessageIconExclamation !optional;
+}
+.share-1EA-d2 {
+	@extend %welcomeMessageIconShare !optional;
+}
+.mobile-3_KEmF {
+	@extend %welcomeMessageIconMobile !optional;
+}
+.twitter-1TN3uJ {
+	@extend %welcomeMessageIconTwitter !optional;
+}
+.base-34jWEe {
+	@extend %welcomeMessageBase !optional;
 }
 
 // 6) MEMBERS
@@ -1293,8 +1453,29 @@
 .themedPopout-25DgLi {
 	@extend %themedPopout !optional;
 }
+.popoutTop-3uu9vG {
+	@extend %popoutTop !optional;
+}
+.popoutTopRight-3BzFIE {
+	@extend %popoutTopRight !optional;
+}
 .popoutTopLeft-b5Eb3O {
 	@extend %popoutTopLeft !optional;
+}
+.popoutRight-2ZVwL- {
+	@extend %popoutRight !optional;
+}
+.popoutLeft-30WmrD {
+	@extend %popoutLeft !optional;
+}
+.popoutBottom-1YbShG {
+	@extend %popoutBottom !optional;
+}
+.popoutBottomRight-2JrySt {
+	@extend %popoutBottomRight !optional;
+}
+.popoutBottomLeft-JehOp2 {
+	@extend %popoutBottomleft !optional;
 }
 .noArrow-3BYQ0Z {
 	@extend %popoutNoArrow !optional;
@@ -1344,7 +1525,20 @@
 .helper-2c73HK {
 	@extend %statusPickerHelper !optional;
 }
-// 15.4) Messages Popout
+// 15.4) Connection Info
+.container-2x5lvQ {
+	@extend %connectionInfo !optional;
+}
+.sparkline-3A-8OK {
+	@extend %connectionInfoSparkline !optional;
+}
+.popoutBottom-31rU82 {
+	@extend %connectionInfoBottom !optional;
+}
+.secured-1Yihly {
+	@extend %connectionInfoSecured !optional;
+}
+// 15.5) Messages Popout
 .messagesPopoutWrap-1MQ1bW {
 	@extend %messagesPopoutWrap !optional;
 }
@@ -1369,7 +1563,7 @@
 .statusGreen-pvYWjA {
 	@extend %statusGreen !optional;
 }
-// 15.5) Autocomplete Popout
+// 15.6) Autocomplete Popout
 .container-VSDcQc {
 	@extend %autocompletePopout !optional;
 }
