@@ -1,13 +1,18 @@
 // MENTIONS
+%markup {
+	> %mention,
+	> %roleMention {
+		padding: 1px 4px;
+		border-radius: 5px;
+		line-height: 22px;
+		transition: all .3s ease-in-out;
+		white-space: nowrap;
+		cursor: pointer;
+	}
+}
 %markup > %mention {
-	padding: 1px 4px;
 	background-color: hsla(0, 0%, 100%, .04);
 	color: hsla(0, 0%, 100%, .7);
-	line-height: 22px;
-	border-radius: 5px;
-	transition: all .3s ease-in-out;
-	white-space: nowrap;
-	cursor: pointer;
 	&:hover {
 		background-color: var(--main-color);
 		color: #fff;
