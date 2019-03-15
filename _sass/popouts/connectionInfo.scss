@@ -18,8 +18,19 @@
 }
 %connectionInfoSparkline > svg {
     > line { 
-        stroke: var(--main-color) !important;
+        stroke: hsla(0, 0%, 100%, .5) !important;
         stroke-dasharray: 5, 3 !important;
+    }
+    > g {
+        > circle {
+            fill: var(--main-color) !important;
+            fill-opacity: 1 !important;
+            r: 1 !important;
+        }
+        > polyline {
+            stroke: var(--main-color) !important;
+            stroke-opacity: .7 !important;
+        }
     }
 }
 %connectionInfo > section > %connectionInfoBottom > a {
