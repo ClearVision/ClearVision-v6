@@ -1,21 +1,22 @@
 // CHAT
 %chat {
 	@include clear;
+	%chatTitle,
+	%chatTitleCall {
+		background-color: rgba(0, 0, 0, .7);
+		box-shadow: none;
+	}
 	%chatContainer {
 		@include clear;
 	}
 	%chatSpacer {
-		background-color: rgba(0, 0, 0, .6) !important;
+		background-color: rgba(0, 0, 0, .6);
 	}
 	%messagesWrapper {
 		@include clear;
 	}
 	%messages {
 		@include prefix(backface-visibility, hidden);
-	}
-	%chatTitle,
-	%chatTitleCall {
-		background-color: rgba(0, 0, 0, .7) !important;
 	}
 	%messageUsername {
 		@include hover-shadow;
@@ -24,5 +25,5 @@
 
 // NO CHANNEl
 %noChannel {
-	background-color: rgba(0, 0, 0, .6) !important;
+	background-color: rgba(0, 0, 0, .6);
 }
