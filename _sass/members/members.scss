@@ -1,6 +1,8 @@
 // MEMBERS
+%membersScrollerWrap > %members {
+	background-color: rgba(0, 0, 0, .75);
+}
 %members {
-	background-color: rgba(0, 0, 0, .75) !important;
 	> %membersGroup {
 		@include display-flex;
 		@include align-items(center);
