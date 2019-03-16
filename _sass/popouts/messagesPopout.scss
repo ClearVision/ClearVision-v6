@@ -5,21 +5,53 @@
 		border: none;
 		border-radius: 5px;
 		%popoutHeader {
-			background-color: rgba(0, 0, 0, .5);
+			background-color: var(--main-color);
 			border-radius: 3px 3px 0 0;
+			%mentionFilterLabel {
+				color: hsla(0, 0%, 100%, .5);
+			}
+			%mentionFilterValue {
+				color: #fff;
+			}
 		}
 		%popoutFooter {
 			background-color: rgba(0, 0, 0, .5);
 		}
 	}
 	%messagesPopout {
+		%messagesPopoutChannelName {
+			color: var(--main-color);
+			text-shadow: 0 0 1px;
+			transition: all .15s ease-in-out;
+			&:hover {
+				text-shadow: 0 0 3px;
+				text-decoration: none;
+			}
+		}
+		%messagesPopoutGuildName {
+			color: hsla(0, 0%, 100%, .3);
+		}
 		%messageGroupWrapper {
+			margin: 0;
 			background-color: transparent;
 			border: none;
 			border-bottom: solid 1px hsla(0, 0%, 100%, .04);
-			border-radius: 0px;
+			border-radius: 0;
+			transition: all .15s ease-in-out;
 			&:last-child {
 				border-bottom: none;
+			}
+			&:hover {
+				background-color: hsla(0, 0%, 100%, .04);
+				%messageHeaderCozyMeta {
+					@include prefix(mask-image, linear-gradient(to right, #000 230px, transparent 245px));
+				}
+			}
+			+ %messageGroupWrapper {
+				margin-top: -1px;
+			}
+			%messageHeaderCozyMeta {
+				@include prefix(mask-image, linear-gradient(to right, #000 290px, transparent 305px));
 			}
 			%messagesPopoutActionButtons {
 				background-color: transparent;
@@ -61,8 +93,8 @@
 			border-color: hsla(0, 0%, 100%, .7) !important;
 		}
 		&%tabBarItemSelected {
-			border-color: var(--main-color) !important;
-			color: var(--main-color) !important;
+			border-color: #fff !important;
+			color: #fff !important;
 		}
 	}
 }
