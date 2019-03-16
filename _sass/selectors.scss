@@ -802,6 +802,9 @@
 %messageHeaderCompact {
 	@extend %messageHeader !optional;
 }
+.headerCozyMeta-rdohGq {
+	@extend %messageHeaderCozyMeta !optional;
+}
 .usernameWrapper-1S-G5O {
 	@extend %messageUsernameWrapper !optional;
 }
@@ -1078,6 +1081,12 @@
 }
 
 // 6) MEMBERS
+.membersWrap-2h-GB4 {
+	@extend %membersWrap !optional;
+}
+.scrollerWrap-otKoZo {
+	@extend %membersScrollerWrap !optional;
+}
 .members-1998pB {
 	@extend %members !optional;
 }
@@ -1335,6 +1344,9 @@
 	}
 }
 // 12.2) Scrollers
+.scrollerWrap-2lJEkd {
+	@extend %scrollerWrap !optional;
+}
 .scroller-2FKFPG {
 	@extend %scroller !optional;
 }
@@ -1553,6 +1565,24 @@
 }
 .messagesPopout-24nkyi {
 	@extend %messagesPopout !optional;
+}
+.mentionFilter-1PQ6ey {
+	@extend %mentionFilter !optional;
+}
+.label-12YslM {
+	@extend %mentionFilterLabel !optional;
+}
+.value-2k8Drt {
+	@extend %mentionFilterValue !optional;
+}
+.channelSeparator-1MxuvT {
+	@extend %messagesPopoutChannelSeparator !optional;
+}
+.channelName-3kBz6H {
+	@extend %messagesPopoutChannelName !optional;
+}
+.guildName-1Bc3Ta {
+	@extend %messagesPopoutGuildName !optional;
 }
 .messageGroupWrapper-o-Zw7G {
 	@extend %messageGroupWrapper !optional;
