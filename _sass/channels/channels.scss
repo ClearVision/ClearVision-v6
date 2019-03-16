@@ -12,6 +12,13 @@
 	%channelsHeaderContainer {
 		z-index: 2;
 	}
+	%channelsHeader {
+		background-color: rgba(0, 0, 0, .15);
+		box-shadow: 0 0 10px 0 rgba(0, 0, 0, .15);
+		&:hover {
+			background-color: rgba(0, 0, 0, .3);
+		}
+	}
 
 	// CHANNEL CATEGORIES
 	%categoryWrapper {
