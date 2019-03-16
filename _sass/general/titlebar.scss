@@ -5,6 +5,7 @@
 	margin: 0;
 	padding-top: 4px;
 	background-color: rgba(0, 0, 0, .6);
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, .6);
 	> %titlebarWordmark {
 		opacity: 1;
 		pointer-events: none;
@@ -25,7 +26,6 @@
 	> %titlebarWinButton {
 		opacity: 1 !important;
 		&:hover {
-			background-color: hsla(0, 0%, 100%, .1);
 			background-color: hsla(0, 0%, 100%, .1);
 		}
 	}
