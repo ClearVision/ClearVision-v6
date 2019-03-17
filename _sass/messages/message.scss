@@ -24,7 +24,8 @@
 			color: hsla(0, 0%, 100%, .7);
 		}
 	}
-	%markup a {
+	a,
+	%anchor {
 		color: var(--main-color);
 		@include hover-shadow;
 	}
@@ -35,5 +36,8 @@
 			border-left: 4px solid var(--main-color);
 			border-radius: 2px 0 0 2px;
 		}
+	}
+	%operations {
+		color: hsla(0, 0%, 100%, .3);
 	}
 }
