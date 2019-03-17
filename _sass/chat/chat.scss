@@ -3,8 +3,8 @@
 	@include clear;
 	%chatTitle,
 	%chatTitleCall {
-		background-color: rgba(0, 0, 0, .7);
-		box-shadow: 0 0 10px 0 rgba(0, 0, 0, .7);
+		background-color: rgba(0, 0, 0, .6);
+		box-shadow: 0 0 10px 0 rgba(0, 0, 0, .6);
 	}
 	%chatTitleChannelName {
 		color: #fff;
@@ -21,7 +21,7 @@
 		@include clear;
 	}
 	%chatSpacer {
-		background-color: rgba(0, 0, 0, .6);
+		background-color: rgba(0, 0, 0, .5);
 	}
 	%messagesWrapper {
 		@include clear;
@@ -36,5 +36,5 @@
 
 // NO CHANNEl
 %noChannel {
-	background-color: rgba(0, 0, 0, .6);
+	background-color: rgba(0, 0, 0, .5);
 }

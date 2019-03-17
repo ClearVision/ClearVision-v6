@@ -4,8 +4,8 @@
 
 	// FRIENDS HEADER
 	%friendsHeaderBar {
-		background-color: rgba(0, 0, 0, .7);
-		box-shadow: 0 0 10px 0 rgba(0, 0, 0, .7);
+		background-color: rgba(0, 0, 0, .6);
+		box-shadow: 0 0 10px 0 rgba(0, 0, 0, .6);
 		%friendsTabBar {
 			%tabBarItem {
 				@include clear;
@@ -25,7 +25,7 @@
 
 	// FRIENDS TABLE
 	%friendsTable {
-		background-color: rgba(0, 0, 0, .6);
+		background-color: rgba(0, 0, 0, .5);
 		margin-top: 0;
 		%friendsTableHeader {
 			border-bottom: 1px solid hsla(0, 0%, 100%, .04);
