@@ -71,14 +71,24 @@
 //	20.2) Content
 // 21) Screens
 //	21.1) Loading
-// 22) Plugins 
-//	22.1) Owner Tag by noodlebox
-//	22.2) Codeblock Linenumbers by noodlebox
-//	22.3) Copy Code by Finicalmist
-//	22.4) Replyer by Hammock, Natsulus, Zerebos & BetterReplyer by Zerthox
-//	22.5) Citador by Nirewen
-//	22.6) Quoter by samogot
-//	22.7) Discrypt by Zerthox
+// 22) Plugins
+//	22.1) by Zerthox
+//		22.1.1) BetterReplyer
+//		22.1.2) Discrypt
+//	22.2) by noodlebox
+//		22.2.1) Owner Tag
+//		22.2.2) Codeblock Linenumbers
+//	22.3) by Finicalmist
+//		22.3.1 ) Copy Code
+//	22.4) by Hammock
+//	2	2.4.1) Replyer by Hammock, Natsulus, Zerebos
+//	22.5) by Nirewen
+//		22.5.1) Citador
+//	22.6)by samogot
+//		22.6.1) Quoter
+//	22.7) by Devilbro
+//		22.7.2) CreationDate
+//		22.7.1) JoinedAtDate
 
 // 1) APP
 .layers-3iHuyZ {
@@ -942,6 +952,12 @@
 }
 .embedTitleLink-1Zla9e {
 	@extend %embedTitleLink !optional;
+}
+.embedProvider-3k5pfl {
+	@extend %embedProvider !optional;
+}
+.embedProviderLink-2Pq1Uw {
+	@extend %embedProviderLink !optional;
 }
 .embedVideoActionsInner-2reMo2 {
 	@extend %embedVideoActionsInner !optional;
@@ -1918,34 +1934,53 @@
 }
 
 // 22) PLUGINS
-// 22.1) Owner Tag by noodlebox
+// 22.1) by Zerthox
+// 22.1.1) BetterReplyer
+.replyer {
+	@extend %replyerButton !optional;
+}
+// 22.1.2) Discrypt
+.discrypt {
+	@extend %discryptButton !optional;
+}
+// 22.2) by noodlebox
+// 22.2.1) Owner Tag
 .kawaii-tag {
 	@extend %kawaiiTag !optional;
 }
 .kawaii-tag-invert {
 	@extend %kawaiiTagInvert !optional;
 }
-// 22.2) Codeblock Linenumbers by noodlebox
+// 22.2.2) Codeblock Linenumbers
 .kawaii-linenumbers {
 	@extend %kawaiiLinenumbers !optional;
 }
-// 22.3) Copy Code by Finicalmist
+// 22.3) by Finicalmist
+// 22.3.1 ) Copy Code
 .copybutton {
 	@extend %codeCopybutton !optional;
 }
-// 22.4) Replyer by Hammock, Natsulus, Zerebos & BetterReplyer by Zerthox
+// 22.4) by Hammock
+// 22.4.1) Replyer by Hammock, Natsulus, Zerebos
 .replyer {
 	@extend %replyerButton !optional;
 }
-// 22.5) Citador by Nirewen
+// 22.5) by Nirewen
+// 22.5.1) Citador
 .citar-btn {
 	@extend %citarButton !optional;
 }
-// 22.6) Quoter by samogot
+// 22.6)by samogot
+// 22.6.1) Quoter
 .btn-quote {
 	@extend %quoteButton !optional;
 }
-// 22.7) Discrypt by Zerthox
-.discrypt {
-	@extend %discryptButton !optional;
+// 22.7) by Devilbro
+// 22.7.2) CreationDate
+.creationDate {
+	@extend %creationDate !optional;
+}
+// 22.7.1) JoinedAtDate
+.joinedAtDate {
+	@extend %joinedAtDate !optional;
 }
