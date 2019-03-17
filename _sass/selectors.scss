@@ -30,6 +30,9 @@
 //	5.5) Welcome Message
 // 6) Members
 // 7) Search
+//	7.1) Header
+//	7.2) Results
+//	7.3) Pagination
 // 8) Home Tab
 //	8.1) Friends Table
 //		8.1.1) Header
@@ -1227,6 +1230,69 @@
 // 7) SEARCH
 .searchResultsWrap-2DKFzt {
 	@extend %searchResultsWrap !optional;
+}
+// 7.1) Header
+.searchHeader-1l-wpR {
+	@extend %searchHeader !optional;
+}
+.totalResults-gxvzgw {
+	@extend %searchTotalResults !optional;
+}
+.tab-2Ixsn0 {
+	@extend %searchTab !optional;
+}
+.selected-16te-P {
+	@extend %searchTabSelected !optional;
+}
+// 7.2) Results
+.resultsWrapper-hoiXCY {
+	@extend %searchResultsWrapper !optional;
+}
+.searchResults-2J8dju {
+	@extend %searchResults !optional;
+}
+.channelSeparator-1X1FuH {
+	@extend %searchChannelSeparator !optional;
+}
+.channelName-1QajIf {
+	@extend %searchChannelName !optional;
+}
+.searchResult-3pzFAB {
+	@extend %searchResult !optional;
+}
+.expanded-v2Szsz {
+	@extend %searchResultExpanded !optional;
+}
+.searchResultMessage-2VxO12 {
+	@extend %searchResultMessage !optional;
+}
+.hit-NLlWXA {
+	@extend %searchResultMessageHit !optional;
+}
+.sibling-3tUBeh {
+	@extend %searchResultMessageSibling !optional;
+}
+.before-1x1q5S {
+	@extend %searchResultMessageBefore !optional;
+}
+.after-2g0jjc {
+	@extend %searchResultMessageAfter !optional;
+}
+.highlight {
+	@extend %searchResultHighlight !optional;
+}
+// 7.3) Pagination
+.pagination-eQpqgk {
+	@extend %searchPagination !optional;
+}
+.paginationPrevious-4Yw0Tk {
+	@extend %searchPaginationPrevious !optional;
+}
+.paginationNext-3Tefao {
+	@extend %searchPaginationNext !optional;
+}
+.disabled-AFY2aL {
+	@extend %searchPaginationDisabled !optional;
 }
 
 // 8) HOME TAB
