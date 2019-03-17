@@ -19,6 +19,7 @@
 //		5.1.3) Embeds
 //		5.1.4) Codeblocks
 //		5.1.5) Attachments
+//		5.1.6) Spoilers
 //	5.2) Dividers
 //	5.3) Chat Bars
 //		5.3.1) New Messages Bar
@@ -785,6 +786,9 @@
 .topic-2QX7LI {
 	@extend %chatTitleTopic !optional;
 }
+.iconBadge-2dji3k {
+	@extend %chatTitleIconBadge !optional;
+}
 .content-yTz4x3 {
 	@extend %chatContainer !optional;
 }
@@ -1004,6 +1008,28 @@
 %attachmentDownloadButton,
 %attachmentCancelButton {
 	@extend %attachmentButton !optional;
+}
+// 5.1.6) Spoilers
+.spoilerText-3p6IlD {
+	@extend %spoilerText !optional;
+}
+.hidden-HHr2R9{
+	@extend %spoilerHidden !optional;
+}
+.inlineContent-3ZjPuv {
+	@extend %spoilerInlineContent !optional;
+}
+.spoilerContainer-331r0R {
+	@extend %spoilerEmbedContainer !optional;
+}
+.spoilerEmbed-1fzvzg {
+	@extend %spoilerEmbed !optional;
+}
+.hiddenSpoiler-3i0zpa {
+	@extend %spoilerEmbedHidden !optional;
+}
+.spoilerWarning-2aAZq1 {
+	@extend %spoilerEmbedWarning !optional;
 }
 // 5.2) Dividers
 .divider-3gKybi {
