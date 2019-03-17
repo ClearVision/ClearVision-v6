@@ -1,4 +1,5 @@
 // MENTIONS
+%chatTitleTopic,
 %markup {
 	> %mention,
 	> %roleMention {
@@ -9,13 +10,13 @@
 		white-space: nowrap;
 		cursor: pointer;
 	}
-}
-%markup > %mention {
-	background-color: hsla(0, 0%, 100%, .04);
-	color: hsla(0, 0%, 100%, .7);
-	&:hover {
-		background-color: var(--main-color);
-		color: #fff;
+	> %mention {
+		background-color: hsla(0, 0%, 100%, .04);
+		color: hsla(0, 0%, 100%, .7);
+		&:hover {
+			background-color: var(--main-color);
+			color: #fff;
+		}
 	}
 }
 %mentioned %markup > %roleMention {

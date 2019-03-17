@@ -16,6 +16,17 @@
 	}
 	%chatTitleTopic {
 		color: hsla(0, 0%, 100%, .5);
+		> %anchor {
+			color: var(--main-color);
+			@include hover-shadow;
+		}
+	}
+	%chatTitleIconBadge {
+		margin: 2px;
+		background-color: var(--main-color);
+		border: none;
+		color: var(--main-color);
+		box-shadow: 0 0 3px, 0 0 5px;
 	}
 	%chatContainer {
 		@include clear;
