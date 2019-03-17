@@ -117,7 +117,7 @@
 	}
 
 	// UNREAD
-	%channelContentUnread > %channelName {
+	%channelNameUnread {
 		color: var(--main-color);
 		text-shadow: 0 0 3px;
 	}
