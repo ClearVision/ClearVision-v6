@@ -802,10 +802,19 @@
 .iconBadge-2dji3k {
 	@extend %chatTitleIconBadge !optional;
 }
-.content-yTz4x3 {
-	@extend %chatContainer !optional;
+.search-2oPWTC {
+	@extend %chatSearch !optional;
 }
-%chatContainer > .spacer-1fA9zc {
+.searchBar-3dMhjb {
+	@extend %chatSearchBar !optional;
+}
+.public-DraftEditorPlaceholder-root {
+	@extend %chatSearchPlaceholder !optional;
+}
+.content-yTz4x3 {
+	@extend %chatContent !optional;
+}
+%chatContent > .spacer-1fA9zc {
 	@extend %chatSpacer !optional;
 }
 .noChannel-Z1DQK7 {
