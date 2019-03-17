@@ -21,11 +21,9 @@
 	background-color: transparent !important;
 }
 %channels,
+%membersWrap,
 %channelsPrivate {
 	%scroller {
-		&::-webkit-scrollbar-track-piece {
-			background-color: rgba(0, 0, 0, .3) !important;
-		}
 		&::-webkit-scrollbar-thumb,
 		&::-webkit-scrollbar-track-piece {
 			visibility: hidden;
@@ -38,7 +36,10 @@
 		}
 	}
 }
+%channels,
 %chat,
+%membersWrap,
+%channelsPrivate,
 %friendsTable {
 	%scroller {
 		&::-webkit-scrollbar-track-piece {
