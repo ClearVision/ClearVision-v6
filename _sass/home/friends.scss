@@ -4,18 +4,20 @@
 
 	// FRIENDS HEADER
 	%friendsHeaderBar {
-		background-color: rgba(0, 0, 0, .7) !important;
+		background-color: rgba(0, 0, 0, .7);
+		box-shadow: 0 0 10px 0 rgba(0, 0, 0, .7);
 		%friendsTabBar {
 			%tabBarItem {
 				@include clear;
-				color: hsla(0, 0%, 100%, .6) !important;
+				color: hsla(0, 0%, 100%, .5) !important;
 				transition: all .3s ease-in-out;
 				&:hover {
 					background-color: rgba(0, 0, 0, .5) !important;
+					color: hsla(0, 0%, 100%, .7) !important;
 				}
 				&%tabBarItemSelected {
 					background-color: var(--main-color) !important;
-					color: #fff !important
+					color: #fff !important;
 				}
 			}
 		}
@@ -23,82 +25,136 @@
 
 	// FRIENDS TABLE
 	%friendsTable {
-		background-color: rgba(0, 0, 0, .6) !important;
+		background-color: rgba(0, 0, 0, .6);
 		margin-top: 0;
 		%friendsTableHeader {
+			border-bottom: 1px solid hsla(0, 0%, 100%, .04);
 			%friendsColumn {
-				color: hsla(0, 0%, 100%, .5) !important;
+				color: hsla(0, 0%, 100%, .5);
 			}
 			%friendsColumnSeparator {
-				background-color: hsla(0, 0%, 100%, .04) !important;
+				background-color: hsla(0, 0%, 100%, .04);
 			}
-		}
-		%friendsTableAddHeader {
-			@include clear;
-			border-bottom: 1px solid hsla(0, 0%, 100%, .1) !important;
-			%friendsAddFriendInputWrapper {
-				background-color: rgba(0, 0, 0, .3);
-				border-color: transparent;
-				@include transform(translateZ(0));
-				> %friendsAddFriendInput {
-					&::-webkit-input-placeholder {
-						color: hsla(0, 0%, 100%, .2);
-					}
-					+ %friendsAddFriendHint {
-						
-						@include pseudo(after) {
-							content: "";
-							position: fixed;
-							@include stretch;
-							border: 1px solid transparent;
-							border-radius: 3px;
-							transition: all .3s ease-in-out;
-							pointer-events: none;
-						}
-					}
-					&:focus + %friendsAddFriendHint {
-						@include pseudo(after) {
-							border-color: var(--main-color);
-						}
-					}
-				}
-				> %friendsAddFriendHint {
-					color: hsla(0, 0%, 100%, .2);
-				}
-			}
-		}
-		%friendsTableSuggestionsHeader {
-			@include clear;
-			border-bottom: 1px solid hsla(0, 0%, 100%, .1) !important;
 		}
 		%friendsRow {
+			background-color: transparent;
+			transition: all .15s ease-in-out;
 			&:hover {
-				background-color: rgba(0, 0, 0, .3) !important;
+				background-color: rgba(0, 0, 0, .3);
+				> %friendsColumnName > %friendsColumnNameDiscordTag > %friendsColumnNameDiscriminator {
+					opacity: .6;
+				}
 			}
-			%friendsColumnName {
-				color: hsla(0, 0%, 100%, .4) !important;
-			}
-			%friendsColumnStatus {
-				%friendActivityText {
-					> strong {
-						font-weight: 600;
+			&,
+			&:hover {
+				margin: 0 20px;
+				padding: 0 10px;
+				+ %friendsRow {
+					border-top: 1px solid transparent;
+					&[style*="opacity: 1"] {
+						border-top-color: hsla(0, 0%, 100%, .04);
 					}
 				}
 			}
-			%friendsColumnGuilds {
+			+ %friendsRow {
+				margin-top: -1px;
+			}
+			> %friendsColumnName {
+				color: hsla(0, 0%, 100%, .6);
+				> %friendsColumnNameDiscordTag {
+					> %friendsColumnNameDiscriminator {
+						color: hsla(0, 0%, 100%, .3);
+						visibility: visible;
+						opacity: 0;
+						transition: all .15s ease-in-out;
+					}
+				}
+			}
+			&:hover {
+				> %friendsColumnName {
+					> %friendsColumnNameDiscordTag {
+						> %friendsColumnNameDiscriminator {
+							opacity: 1;
+						}
+					}
+				}
+			}
+			> %friendsColumnStatus {
+				color: hsla(0, 0%, 100%, .5);
+				%friendActivityText {
+					> strong {
+						color: var(--main-color);
+						font-weight: 600;
+						text-shadow: 0 0 1px;
+					}
+				}
+			}
+			> %friendsColumnGuilds {
 				%avatarSmall {
 					background-color: transparent;
 				}
 			}
-			%friendsColumnActions %friendsAction {
-				background-color: var(--main-color) !important;
+			> %friendsColumnActions {
+				padding-right: 12px;
+				visibility: visible;
+				opacity: 0;
 				transition: all .3s ease-in-out;
-				&:hover {
-					background-color: var(--hover-color) !important
+				> %friendsAction {
+					background-color: var(--main-color);
+					transition: all .15s ease-in-out;
+					&:hover {
+						background-color: var(--hover-color);
+					}
+				}
+				> %friendsActionRemove:hover {
+					background-color: $dark-red !important;
 				}
 			}
-			+ %friendsRow {
-				border-color: hsla(0, 0%, 100%, .04) !important;
+			&:hover > %friendsColumnActions {
+				padding-right: 12px;
+				opacity: 1;
+			}
+		}
+
+		// FRIEND ADD PAGE
+		%friendsTableAddWrapper {
+			%friendsTableAddHeader {
+				background: transparent;
+				border-bottom: 1px solid hsla(0, 0%, 100%, .1);
+				%friendsAddFriendInputWrapper {
+					background-color: rgba(0, 0, 0, .3);
+					border-color: transparent;
+					@include transform(translateZ(0));
+					> %friendsAddFriendInput {
+						&::-webkit-input-placeholder {
+							color: hsla(0, 0%, 100%, .2);
+						}
+						+ %friendsAddFriendHint {
+							
+							@include pseudo(after) {
+								content: "";
+								position: fixed;
+								@include stretch;
+								border: 1px solid transparent;
+								border-radius: 3px;
+								transition: all .3s ease-in-out;
+								pointer-events: none;
+							}
+						}
+						&:focus + %friendsAddFriendHint {
+							@include pseudo(after) {
+								border-color: var(--main-color);
+							}
+						}
+					}
+					> %friendsAddFriendHint {
+						color: hsla(0, 0%, 100%, .2);
+					}
+				}
+			}
+			%friendsTableSuggestionsHeader {
+				background-color: transparent;
+				border-bottom: 1px solid hsla(0, 0%, 100%, .1);
 			}
 		}
 	}
