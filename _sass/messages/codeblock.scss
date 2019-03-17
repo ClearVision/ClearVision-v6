@@ -11,18 +11,17 @@
         }
     }
 }
-%codePre {
+%messageGroup %codePre {
     max-width: 93%;
-    @include clear;
-    border-width: 2px;
-    border-color: transparent !important;
     padding: 0;
+    background: transparent;
+    border: 2px solid transparent;
 }
-%codeHLJS {
+%codePre > %codeHLJS {
     position: relative;
-    padding: 6px !important;
-    background-color: rgba(0, 0, 0, .42) !important;
-    color: hsla(0, 0%, 100%, .7) !important;
+    padding: 6px;
+    background-color: rgba(0, 0, 0, .42);
+    color: hsla(0, 0%, 100%, .7);
     border-radius: 5px;
     @include pseudo(before) {
         display: block;
