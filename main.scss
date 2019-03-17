@@ -106,9 +106,10 @@ $xbox-green: #107c10;
 @import "messages/inviteLink";
 @import "messages/embed";
 @import "messages/codeblock";
-@import "messages/attachment";
 @import "messages/codeLanguages";
 @import "messages/mention";
+@import "messages/spoiler";
+@import "messages/attachment";
 @import "messages/blocked";
 
 /* MEMBERS */
@@ -172,9 +173,10 @@ $xbox-green: #107c10;
 
 /* PLUGINS */
 @import "plugins/messageButtons";
-@import "plugins/linenumbers";
-@import "plugins/copyCode";
-@import "plugins/ownerTag";
+@import "plugins/noodlebox/linenumbers";
+@import "plugins/noodlebox/ownerTag";
+@import "plugins/Finicalmist/copyCode";
+@import "plugins/Devilbro/dateText";
 
 /* KEYFRAMES */
 @import "keyframes";
