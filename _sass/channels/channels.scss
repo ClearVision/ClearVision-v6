@@ -118,19 +118,21 @@
 	}
 
 	// UNREAD
-	%channelNameUnread {
-		color: var(--main-color);
-		text-shadow: 0 0 3px;
-	}
 	%channelUnreadIndicator {
 		display: none;
-		+ %channelContentText %channelIcon {
-			color: var(--main-color);
-			@include filter(drop-shadow(0 0 3px));
-			opacity: 1;
+		+ %channelContent {
+			%channelNameUnreadText {
+				color: var(--main-color);
+				text-shadow: 0 0 3px;
+			}
+			%channelIcon {
+				color: var(--main-color);
+				@include filter(drop-shadow(0 0 3px));
+				opacity: 1;
+			}
 		}
 		+ %channelContentHoveredText {
-			%channelNameUnread {
+			%channelNameUnreadText {
 				color: #fff;
 			}
 			%channelIcon {
