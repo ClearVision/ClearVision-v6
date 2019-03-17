@@ -23,6 +23,10 @@
         background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/file_archive.svg);
     }
 }
+%fileNameLink {
+    color: var(--main-color);
+    @include hover-shadow;
+}
 %attachmentButton {
     color: hsla(0, 0%, 100%, .3);
     transition: all .15s ease-in-out;
@@ -32,4 +36,20 @@
 }
 %fileMetadata {
     color: hsla(0, 0%, 100%, .3);
+}
+
+// UPLOADING
+%attachment {
+    %fileName {
+        color: hsla(0, 0%, 100%, .7);
+    }
+    %fileSize {
+        color: hsla(0, 0%, 100%, .3);
+    }
+}
+%fileProgress {
+    background-color: hsla(0, 0%, 100%, .04) !important;
+}
+%fileProgressBar {
+    background-color: var(--main-color) !important;
 }
