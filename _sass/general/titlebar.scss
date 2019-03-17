@@ -7,20 +7,24 @@
 	background-color: rgba(0, 0, 0, .6);
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, .6);
 	> %titlebarWordmark {
+		@include display-flex;
+		@include align-items(center);
+		@include justify-content(center);
 		opacity: 1;
 		pointer-events: none;
 		@include user-select(none);
 		@include pseudo(after) {
-			content: "#{$version}";
-			position: absolute;
-			left: 100%;
+			content: "ClearVision";
+			margin-left: 3px;
 			color: hsla(0, 0%, 100%, .7);
 			font-size: 14px;
-			font-weight: bold;
+			font-weight: 600;
 			white-space: nowrap;
 		}
-		> svg > path {
-			fill: var(--main-color);
+		> svg {
+			> path {
+				fill: var(--main-color);
+			}
 		}
 	}
 	> %titlebarWinButton {
