@@ -1,0 +1,51 @@
+// SPOILER
+%markup > %spoilerText {
+    padding: 1px 4px;
+	background-color: hsla(0, 0%, 100%, .04);
+    transition: all .15s ease-in-out;
+    > %spoilerInlineContent {
+        opacity: 1;
+        transition: inherit;
+    }
+	&%spoilerHidden {
+        background-color: rgba(0, 0, 0, .5);
+		&:hover {
+            background-color: rgba(0, 0, 0, .7);
+            > %spoilerInlineContent {
+                opacity: .3;
+                transition-duration: .3s;
+                transition-delay: .3s;
+            }
+        }
+        > %spoilerInlineContent {
+            opacity: 0;
+        }
+    }
+}
+%spoilerEmbedContainer {
+    > %spoilerEmbedWarning {
+        background-color: rgba(0, 0, 0, .5);
+        color: hsla(0, 0%, 100%, .7);
+        transition: all .15s ease-in-out;
+    }
+    %spoilerEmbed {
+        > %embedInner {
+            transition: all .15s ease-in-out;
+        }
+        &%spoilerEmbedHidden {
+            border-radius: 0;
+            > %embedInner {
+                @include filter(blur(40px));
+            }
+            &:hover > %embedInner {
+                @include filter(blur(30px));
+            }
+        }
+    }
+    &:hover {
+        > %spoilerEmbedWarning {
+            background-color: rgba(0, 0, 0, .7);
+            color: #fff;
+        }
+    }
+}
