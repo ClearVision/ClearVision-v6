@@ -1,5 +1,7 @@
 // PRIVATE CHANNELS
 %privateChannels {
+
+	// PRIVATE CHANNEL
 	%privateChannel {
 		> a,
 		%privateChannelName,
@@ -57,7 +59,7 @@
 %privateChannelsSearchBar {
 	margin-top: 10px;
 	margin-bottom: 0;
-	box-shadow: none;
+	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .3);
 	%privateChannelsSearchBarComponent {
 		@include clear;
 	}
