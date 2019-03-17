@@ -147,6 +147,9 @@
 .wrapper-2lTRaf {
 	@extend %guildInner !optional;
 }
+.guildIcon-VlWW86 {
+	@extend %guildIcon !optional;
+}
 .circleIconButton-jET_ig {
 	@extend %circleIconButton !optional;
 }
@@ -764,6 +767,18 @@
 .titleCall-_b9o8P {
 	@extend %chatTitleCall !optional;
 }
+.titleText-3X-zRE {
+	@extend %chatTitleText !optional;
+}
+.channelName-3stJzi {
+	@extend %chatTitleChannelName !optional;
+}
+.channelIcon-MsmKOO {
+	@extend %chatTitleChannelIcon !optional;
+}
+.topic-2QX7LI {
+	@extend %chatTitleTopic !optional;
+}
 .content-yTz4x3 {
 	@extend %chatContainer !optional;
 }
@@ -835,6 +850,9 @@
 }
 .mention {
 	@extend %roleMention !optional;
+}
+.anchor-3Z-8Bb {
+	@extend %anchor !optional;
 }
 .buttonContainer-KtQ8wc {
 	@extend %messageButtonContainer !optional;
@@ -1031,6 +1049,9 @@
 }
 .emojiButton-3uL3Aw {
 	@extend %channelTextareaEmojiButton !optional;
+}
+.operations-36ENbA {
+	@extend %operations !optional;
 }
 // 5.4.1) Channel Textarea Autocomplete
 .autocomplete-i9yVHs {
@@ -1260,12 +1281,10 @@
 .image-33JSyf {
 	@extend %avatarImage !optional;
 }
-.avatar-large,
 .avatar-17mtNa {
 	@extend %avatarLarge !optional;
 }
-.avatar-small,
-.wrapper-2F3Zv8 {
+.image-33JSyf {
 	@extend %avatarSmall !optional;
 }
 .avatarOffline-3GF27z {
