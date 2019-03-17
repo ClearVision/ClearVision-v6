@@ -1,11 +1,11 @@
 // BD SETTINGS SIDEBAR
-#bd-settings-sidebar {
+%settingsSide #bd-settings-sidebar {
 	.ui-tab-bar-header {
 		color: var(--main-color);
 		font-weight: 700;
 	}
 	.ui-tab-bar-item {
-		color: hsla(0, 0%, 100%, .3) !important;
+		color: hsla(0, 0%, 100%, .3);
 		padding: 8px 0 8px 20px;
 		margin: 0;
 		cursor: pointer;
@@ -15,15 +15,15 @@
 				transition: all .15s ease-in-out;
 			}
 		&:hover {
-			background-color: hsla(0, 0%, 100%, .07) !important;
-			color: hsla(0, 0%, 100%, .7) !important;
+			background-color: hsla(0, 0%, 100%, .07);
+			color: hsla(0, 0%, 100%, .7);
 			@include pseudo(before) {
 				opacity: .7;
 			}
 		}
 		&.selected {
-			background-color: var(--main-color) !important;
-			color: #fff !important;
+			background-color: var(--main-color);
+			color: #fff;
 			@include pseudo(before) {
 				opacity: 1;
 			}

@@ -36,7 +36,7 @@ $icons: (
 
 // GENERAL STUFF
 [aria-label="USER_SETTINGS"] %settingsSidebarRegion %settingsSide %tabBarItem,
-#bd-settings-sidebar .ui-tab-bar-item {
+%settingsSide #bd-settings-sidebar .ui-tab-bar-item {
     padding-left: 50px;
     @include pseudo(before) {
         content: "";
@@ -211,7 +211,7 @@ $icons: (
 }
 
 // BD USER SETTINGS
-#bd-settings-sidebar .ui-tab-bar-item {
+%settingsSide #bd-settings-sidebar .ui-tab-bar-item {
     &:nth-child(3) {
         @include pseudo(before) {
             background-image: url(map-get($icons, "Core"));
