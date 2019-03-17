@@ -16,22 +16,22 @@
 		line-height: 1em;
 	}
 	%messageTimestamp {
-		color: hsla(0, 0%, 100%, .3) !important;
+		color: hsla(0, 0%, 100%, .3);
 		transition: all .3s ease-in-out;
 	}
 	&:hover {
 		%messageTimestamp {
-			color: hsla(0, 0%, 100%, .7) !important;
+			color: hsla(0, 0%, 100%, .7);
 		}
 	}
-	a {
-		color: var(--main-color) !important;
+	%markup a {
+		color: var(--main-color);
 		@include hover-shadow;
 	}
 	%mentioned {
-		background-color: rgba(100, 100, 100, .3) !important;
+		background-color: hsla(0, 0%, 100%, .1);
 		@include pseudo(after) {
-			background: rgba(100, 100, 100, .3);
+			background: hsla(0, 0%, 100%, .1);
 			border-left: 4px solid var(--main-color);
 			border-radius: 2px 0 0 2px;
 		}
