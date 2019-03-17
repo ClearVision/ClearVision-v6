@@ -1,4 +1,4 @@
-/*! Using Discord Selectors v19-03-15 by Zerthox */
+/*! Using Discord Selectors v19-03-17 by Zerthox */
 // FILE CONTENTS
 // 1) App
 // 2) Titlebar
@@ -1176,11 +1176,20 @@
 .friendsColumnName-1zBOKm {
 	@extend %friendsColumnName !optional;
 }
+.discord-tag {
+	@extend %friendsColumnNameDiscordTag !optional;
+}
+.username {
+	@extend %friendsColumnNameUsername !optional;
+}
+.discriminator {
+	@extend %friendsColumnNameDiscriminator !optional;
+}
 .friendsColumnStatus-ZH4ho2 {
 	@extend %friendsColumnStatus !optional;
 }
 .friendActivityText-2lmziy {
-	@extend %friendsActivityText !optional;
+	@extend %friendActivityText !optional;
 }
 .friendsColumnGuilds-2we6jb {
 	@extend %friendsColumnGuilds !optional;
@@ -1191,9 +1200,27 @@
 .friendsAction-__WNE9 {
 	@extend %friendsAction !optional;
 }
+.friendsActionVideoCall-2_PKeP {
+	@extend %friendsActionVideoCall !optional;
+}
+.friendsActionVoiceCall-3EdPsR {
+	@extend %friendsActionVoiceCall !optional;
+}
+.friendsActionRemove-qu8nnl {
+	@extend %friendsActionRemove !optional;
+}
 // 8.1.3) Add Tab
+.friendTableAddWrapper-nHHZtK {
+	@extend %friendsTableAddWrapper !optional;
+}
 .friendTableAddHeader-m9bzFr {
 	@extend %friendsTableAddHeader !optional;
+}
+.friendsTableAdd-1w2_qZ {
+	@extend %friendsTableAdd !optional;
+}
+.friendTableAddDescription-19D3dl {
+	@extend %friendsTableAddDescription !optional;
 }
 .wrapper-1cBijl {
 	@extend %friendsAddFriendInputWrapper !optional;
@@ -1203,6 +1230,12 @@
 }
 .addFriendHint-3Y70FX {
 	@extend %friendsAddFriendHint !optional;
+}
+.connectAccounts-1orH6X {
+	@extend %friendsTableConnectAccounts !optional;
+}
+.connectAccountBtnGroup-3T0n3K {
+	@extend %friendsTableConnectAccountBtnGroup !optional;
 }
 .friendTableSuggestionsHeader-2zSnpD {
 	@extend %friendsTableSuggestionsHeader !optional;
@@ -1355,11 +1388,17 @@
 	@extend %badge !optional;
 }
 // 12.4) Tab Bar
+.item-PXvHYJ {
+	@extend %tabBarItem !optional;
+}
 .itemSelected-1qLhcL {
 	@extend %tabBarItemSelected !optional;
 }
-.item-PXvHYJ {
-	@extend %tabBarItem !optional;
+.primary-3j8BhM {
+	@extend %tabBarItemPrimary !optional;
+}
+.primarySelected-3uHKZn {
+	@extend %tabBarItemPrimarySelected !optional;
 }
 .header-2RyJ0Y {
 	@extend %tabBarHeader !optional;
@@ -1815,17 +1854,14 @@
 // 22) PLUGINS
 // 22.1) Owner Tag by noodlebox
 .kawaii-tag {
-	@extend %ownerTag !optional;
 	@extend %kawaiiTag !optional;
 }
 .kawaii-tag-invert {
-	@extend %ownerTagInvert !optional;
 	@extend %kawaiiTagInvert !optional;
 }
 // 22.2) Codeblock Linenumbers by noodlebox
 .kawaii-linenumbers {
-	@extend %codeLinenumbers !optional;
-	@extend %kawaiiLineNumbers !optional;
+	@extend %kawaiiLinenumbers !optional;
 }
 // 22.3) Copy Code by Finicalmist
 .copybutton {
