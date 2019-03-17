@@ -1,4 +1,158 @@
 // SEARCH
+%chatContainer %searchResultsWrap {
+	background-color: rgba(0, 0, 0, .6);
+}
 %searchResultsWrap {
-	background-color: rgba(0, 0, 0, .75) !important;
+
+	// HEADER
+	> %searchHeader {
+		background-color: rgba(0, 0, 0, .3);
+		box-shadow: 0 0 10px 0 rgba(0, 0, 0, .3);
+		> %searchTotalResults {
+			color: hsla(0, 0%, 100%, .5);
+			opacity: 1;
+		}
+		> %searchTab {
+			border-color: transparent;
+			color: hsla(0, 0%, 100%, .5);
+			opacity: 1;
+			transition: all .2s ease-in-out;
+			&:hover {
+				border-color: hsla(0, 0%, 100%, .7);
+				color: hsla(0, 0%, 100%, .7);
+			}
+			&%searchTabSelected {
+				border-color: var(--main-color);
+				color: var(--main-color);
+			}
+		}
+	}
+
+	// SEPARATOR
+	%searchChannelSeparator {
+		@include pseudo(before) {
+			display: none;
+		}
+		> %searchChannelName {
+			@include display-flex;
+			@include align-items(center);
+			@include justify-content(center);
+			background-color: transparent;
+			color: var(--main-color);
+			text-shadow: 0 0 1px;
+			transition: all .15s ease-in-out;
+			@include pseudo(before, after) {
+				content: "";
+				height: 2px;
+				border: none;
+				flex-grow: 1;
+				transition: all .15s ease-in-out;
+				opacity: .7;
+			}
+			@include pseudo(before) {
+				margin-right: 5px;
+				background: linear-gradient(to left, var(--main-color) 50%, transparent 100%);
+			}
+			@include pseudo(after) {
+				margin-left: 5px;
+				background: linear-gradient(to right, var(--main-color) 50%, transparent 100%);
+			}
+			&:hover {
+				text-shadow: 0 0 3px;
+				text-decoration: none;
+				@include pseudo(before, after) {
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	// RESULT
+	%searchResult {
+		margin-bottom: 0;
+		padding-bottom: 10px;
+		border-bottom: 1px solid hsla(0, 0%, 100%, .04);
+		@include pseudo(before, after) {
+			display: none;
+		}
+		+ %searchResult {
+			margin-top: -1px;
+		}
+		> %searchResultMessage {
+			background-color: transparent;
+			border: 2px solid transparent;
+			transition: background-color .3s ease-in-out, transform .3s ease-in-out, opacity .3s ease-in-out;
+			&%searchResultMessageHit {
+				background-color: rgba(0, 0, 0, .3);
+				border: 2px solid transparent;
+				border-radius: 5px;
+				box-shadow: none;
+			}
+			&%searchResultMessageBefore,
+			&%searchResultMessageAfter {
+				opacity: 0;
+				transition: background-color .3s ease-in-out, transform .3s ease-in-out, opacity 0s;
+			}
+			&%searchResultMessageSibling {
+				opacity: .3;
+				transition: background-color .3s ease-in-out, transform .3s ease-in-out, opacity .3s ease-in-out;
+			}
+		}
+		&:not(%searchResultExpanded) > %searchResultMessageSibling {
+			@include prefix(mask-image, linear-gradient(to bottom, transparent 10%, #000 30%, #000 70%, transparent 90%));
+		}
+		&%searchResultExpanded {
+			background-color: hsla(0, 0%, 100%, .04);
+			border: none;
+			border-bottom: 1px solid hsla(0, 0%, 100%, .04);
+			border-radius: 0;
+			> %searchResultMessage {
+				&%searchResultMessageHit {
+					background-color: hsla(0, 0%, 100%, .1);
+					border: 2px solid transparent;
+					border-radius: 5px;
+				}
+				&%searchResultMessageBefore,
+				&%searchResultMessageAfter {
+					opacity: 1;
+				}
+			}
+		}
+	}
+	%searchResultHighlight {
+		position: relative;
+		padding: 0 2px;
+		background-color: transparent;
+		color: #fff;
+		text-shadow: 0 0 3px;
+		@include pseudo(after) {
+			content: "";
+			position: absolute;
+			@include stretch;
+			border-radius: 3px;
+			background-color: var(--main-color);
+			opacity: .7;
+			z-index: -1;
+		}
+	}
+
+	// PAGINATION
+	%searchPagination {
+		color: hsla(0, 0%, 100%, .5);
+		> %searchPaginationPrevious,
+		> %searchPaginationNext {
+			background-color: hsla(0, 0%, 100%, .1);
+			border: 1px solid transparent;
+			opacity: .7;
+			transition: all .15s ease-in-out;
+			&:hover {
+				background-color: var(--main-color);
+				opacity: 1;
+			}
+		}
+		> %searchPaginationDisabled {
+			opacity: .3;
+			pointer-events: none;
+		}
+	}
 }
