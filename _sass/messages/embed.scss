@@ -16,7 +16,8 @@
             color: var(--main-color);
             @include hover-shadow;
         }
-        %embedTitleLink {
+        %embedTitleLink,
+        %embedProviderLink {
             color: var(--main-color) !important;
         }
         %embedVideoActionsInner {

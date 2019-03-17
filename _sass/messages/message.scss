@@ -24,10 +24,12 @@
 			color: hsla(0, 0%, 100%, .7);
 		}
 	}
-	a,
-	%anchor {
-		color: var(--main-color);
-		@include hover-shadow;
+	%message {
+		a,
+		%anchor {
+			color: var(--main-color);
+			@include hover-shadow;
+		}
 	}
 	%mentioned {
 		background-color: hsla(0, 0%, 100%, .1);
