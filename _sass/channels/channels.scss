@@ -15,6 +15,9 @@
 	%channelsHeader {
 		background-color: rgba(0, 0, 0, .15);
 		box-shadow: 0 0 10px 0 rgba(0, 0, 0, .15);
+		color: #fff;
+		font-weight: 600;
+		text-shadow: 0 0 3px #000;
 		&:hover {
 			background-color: rgba(0, 0, 0, .3);
 		}
@@ -122,7 +125,7 @@
 		display: none;
 		+ %channelContentText %channelIcon {
 			color: var(--main-color);
-			@include filter(drop-shadow(0 0 3px var(--main-color)));
+			@include filter(drop-shadow(0 0 3px));
 			opacity: 1;
 		}
 		+ %channelContentHoveredText {
@@ -131,7 +134,6 @@
 			}
 			%channelIcon {
 				color: #fff;
-				@include filter(drop-shadow(0 0 3px #fff));
 			}
 		}
 	}
@@ -161,7 +163,7 @@
 		}
 		%channelIcon {
 			color: var(--main-color);
-			@include filter(drop-shadow(0 0 3px var(--main-color)));
+			@include filter(drop-shadow(0 0 3px));
 			opacity: 1;
 		}
 	}
