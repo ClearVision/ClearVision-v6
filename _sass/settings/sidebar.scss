@@ -17,53 +17,54 @@
 			width: 0 !important;
 		}
 	}
-	%settingsSide {
-		padding: 30px 0;
-		%tabBarHeader {
-			color: var(--main-color);
-		}
-		%tabBarItem {
-			color: hsla(0, 0%, 100%, .3) !important;
-			padding: 8px 0 8px 20px;
-			margin: 0;
-			cursor: pointer;
+}
+%settingsSide {
+	padding: 30px 0;
+	%tabBarHeader {
+		color: var(--main-color);
+	}
+	%tabBarItem {
+		@include clear;
+		color: hsla(0, 0%, 100%, .3) !important;
+		padding: 8px 0 8px 20px;
+		margin: 0;
+		cursor: pointer;
+		transition: all .15s ease-in-out;
+		@include pseudo(before) {
+			opacity: .3;
 			transition: all .15s ease-in-out;
+		}
+		&:hover {
+			background-color: hsla(0, 0%, 100%, .07) !important;
+			color: hsla(0, 0%, 100%, .7) !important;
 			@include pseudo(before) {
-				opacity: .3;
-				transition: all .15s ease-in-out;
+				opacity: .7;
+			}
+		}
+		&%tabBarItemSelected {
+			background-color: var(--main-color) !important;
+			color: #fff !important;
+			@include pseudo(before) {
+				opacity: 1;
+			}
+		}
+		&[style*="color: rgb(240, 71, 71)"] {
+			background-color: rgba($red, .5) !important;
+			color: hsla(0, 0%, 100%, .5) !important;
+			@include pseudo(before) {
+				opacity: .5;
 			}
 			&:hover {
-				background-color: hsla(0, 0%, 100%, .07) !important;
-				color: hsla(0, 0%, 100%, .7) !important;
-				@include pseudo(before) {
-					opacity: .7;
-				}
-			}
-			&%tabBarItemSelected {
-				background-color: var(--main-color) !important;
-				color: #fff !important;
+				background-color: rgba($red, .7) !important;
+				color: hsla(0, 0%, 100%, 1) !important;
 				@include pseudo(before) {
 					opacity: 1;
-				}
-			}
-			&[style*="color: rgb(240, 71, 71)"] {
-				background-color: rgba($red, .5) !important;
-				color: hsla(0, 0%, 100%, .5) !important;
-				@include pseudo(before) {
-					opacity: .5;
-				}
-				&:hover {
-					background-color: rgba($red, .7) !important;
-					color: hsla(0, 0%, 100%, 1) !important;
-					@include pseudo(before) {
-						opacity: 1;
-						@include transform(rotateY(180deg));
-					}
+					@include transform(rotateY(180deg));
 				}
 			}
 		}
-		%tabBarSeparator {
-			background-color: hsla(0, 0%, 100%, .04);
-		}
+	}
+	%tabBarSeparator {
+		background-color: hsla(0, 0%, 100%, .04);
 	}
 }
