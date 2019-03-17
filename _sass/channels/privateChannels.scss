@@ -62,14 +62,15 @@
 		@include clear;
 	}
 	%privateChannelsSearchBarInner {
-		background-color: rgba(0, 0, 0, .3);
+		background-color: hsla(0, 0%, 100%, .1);
 		border-color: transparent;
 		padding-top: 0;
 		padding-bottom: 0;
-	}
-	input {
-		&::-webkit-input-placeholder {
-			color: hsla(0, 0%, 100%, .3);
+		> input {
+			color: #fff;
+			&::-webkit-input-placeholder {
+				color: hsla(0, 0%, 100%, .3);
+			}
 		}
 	}
 }
