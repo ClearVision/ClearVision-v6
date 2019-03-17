@@ -2,18 +2,30 @@
 %privateChannels {
 	%privateChannel {
 		> a,
-		%privateChannelClose {
+		%privateChannelName,
+		%privateChannelClose,
+		%privateChannelIcon {
 			transition: all .15s ease-in-out;
 		}
+		%privateChannelName {
+			color: hsla(0, 0%, 100%, .3);
+		}
 		%privateChannelClose {
-			@include bg($image: "https://zerthox.github.io/ClearVision/icons/close.svg", $repeat: no-repeat, $pos: center, $size: 18px);
 			display: block;
+			@include bg($image: "https://zerthox.github.io/ClearVision/icons/close.svg", $repeat: no-repeat, $pos: center, $size: 18px);
 			opacity: 0;
 		}
+		%privateChannelIcon {
+			opacity: .3;
+		}
+		
+		// HOVER
 		&:hover {
 			> a {
-				background-color: hsla(0, 0%, 100%, .1) !important;
-				color: #fff !important;
+				background-color: hsla(0, 0%, 100%, .1);
+			}
+			%privateChannelName {
+				color: hsla(0, 0%, 100%, .7);
 			}
 			%privateChannelClose {
 				opacity: .3;
@@ -21,10 +33,22 @@
 					opacity: .7;
 				}
 			}
+			%privateChannelIcon {
+				opacity: .7;
+			}
 		}
-		&%privateChannelSelected > a {
-			background-color: var(--main-color) !important;
-			color: #fff !important;
+		
+		// SELECTED
+		&%privateChannelSelected {
+			> a {
+				background-color: var(--main-color);
+			}
+			%privateChannelName {
+				color: #fff;
+			}
+			%privateChannelIcon {
+				opacity: 1;
+			}
 		}
 	}
 }
@@ -33,12 +57,13 @@
 %privateChannelsSearchBar {
 	margin-top: 10px;
 	margin-bottom: 0;
-	box-shadow: none !important;
+	box-shadow: none;
 	%privateChannelsSearchBarComponent {
 		@include clear;
 	}
 	%privateChannelsSearchBarInner {
-		background-color: rgba(0, 0, 0, .4);
+		background-color: rgba(0, 0, 0, .3);
+		border-color: transparent;
 		padding-top: 0;
 		padding-bottom: 0;
 	}
