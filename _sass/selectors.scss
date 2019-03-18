@@ -673,7 +673,7 @@
 .container-2Thooq {
 	@extend %accountContainer !optional;
 }
-.wrapper-2F3Zv8 {
+.avatar-3JE4B3 {
 	@extend %accountContainerAvatarWrapper !optional;
 }
 .inner-1W0Bkn {
@@ -1401,13 +1401,16 @@
 }
 
 // 9) AVATARS
+.wrapper-2F3Zv8 {
+	@extend %avatarWrapper !optional;
+}
 .image-33JSyf {
 	@extend %avatarImage !optional;
 }
 .avatar-17mtNa {
 	@extend %avatarLarge !optional;
 }
-.image-33JSyf {
+.small-5Os1Bb {
 	@extend %avatarSmall !optional;
 }
 .avatarOffline-3GF27z {
