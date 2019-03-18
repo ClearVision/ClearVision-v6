@@ -213,6 +213,12 @@
 	-webkit-filter: $a;
 	filter: $a;
 }
+/// Set mask property with prefixes
+/// @param {*} $a - mask property value
+@mixin mask($a) {
+	-webkit-mask: $a;
+	mask: $a;
+}
 
 /// Set user-select property with prefixes
 /// @param {*} $a - user-select property value
