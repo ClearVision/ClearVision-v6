@@ -58,7 +58,12 @@
 			margin-left: 5px;
 		}
 	}
-	%categoryWrapper:hover %categoryName {
+	%categoryWrapperDefault:hover %categoryNameDefault,
+	%categoryWrapperCollapsed:hover %categoryNameCollapsed,
+	%categoryWrapperHovered:hover %categoryNameHovered,
+	%categoryWrapperHoveredCollapsed:hover %categoryNameHoveredCollapsed,
+	%categoryWrapperMuted:hover %categoryNameMuted,
+	%categoryWrapperUnread:hover %categoryNameUnread {
 		opacity: 1;
 	}
 	%categoryNameCollapsed,
