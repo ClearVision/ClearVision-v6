@@ -1404,8 +1404,9 @@
 .wrapper-2F3Zv8 {
 	@extend %avatarWrapper !optional;
 }
-.image-33JSyf {
-	@extend %avatarImage !optional;
+.image-33JSyf,
+.inner-1W0Bkn {
+	@extend %avatar !optional;
 }
 .avatar-17mtNa {
 	@extend %avatarLarge !optional;
@@ -1418,11 +1419,6 @@
 }
 .avatar-3EQepX {
 	@extend %avatarProfile !optional;
-}
-%avatarSmall,
-%avatarLarge,
-%avatarProfile {
-	@extend %avatar !optional;
 }
 
 // 10) STATUS
