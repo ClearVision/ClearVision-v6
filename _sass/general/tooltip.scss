@@ -1,14 +1,14 @@
 // TOOLTIP
 %tooltip {
+	padding: 5px 10px;
+	font-size: 13px;
+	font-weight: 600;
+	border-radius: 3px;
+	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .2);
 	&%tooltipBlack,
 	&%tooltipRed {
-		padding: 5px 10px;
 		background-color: var(--main-color);
 		color: #fff;
-		font-size: 13px;
-		font-weight: 600;
-		border-radius: 3px;
-		box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .2);
 		@each $e in Top, Right, Bottom, Left {
 			&%tooltip#{$e} {
 				@include pseudo(after) {
@@ -16,5 +16,25 @@
 				}
 			}
 		}
+	}
+	&%tooltipTop,
+	&%tooltipBottom {
+		@include animation(menu-fold .15s cubic-bezier(.2, .6, .5, 1.1));
+	}
+	&%tooltipTop {
+		@include prefix(transform-origin, 0 100%);
+	}
+	&%tooltipBottom {
+		@include prefix(transform-origin, 0 0);
+	}
+	&%tooltipRight,
+	&%tooltipLeft {
+		@include animation(menu-slide .15s cubic-bezier(.2, .6, .5, 1.1));
+	}
+	&%tooltipRight {
+		@include prefix(transform-origin, 0 0);
+	}
+	&%tooltipLeft {
+		@include prefix(transform-origin, 100% 0);
 	}
 }
