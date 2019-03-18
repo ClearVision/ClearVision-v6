@@ -43,9 +43,12 @@
 /// @param {*} $position [null] - background-position property value
 /// @param {*} $pos [null] - background-position property value (alternative param)
 /// @param {*} $repeat [null] - background-repeat property value
-@mixin bg($color: null, $image: null, $img: null, $size: null, $position: null, $pos: null, $repeat: null) {
+/// @param {*} $attach [null] - background-attachment property value
+/// @param {*} $attachment [null] - background-attachment property value
+@mixin bg($color: null, $image: null, $img: null, $size: null, $position: null, $pos: null, $repeat: null, $attach: null, $attachment: null) {
 	$image: if($image, $image, $img);
 	$position: if($position, $position, $pos);
+	$attachment: if($attachment, $attachment, $attach);
 	@if $color {
 		background-color: #{$color};
 	}
@@ -60,6 +63,9 @@
 	}
 	@if $repeat {
 		background-repeat: #{$repeat};
+	}
+	@if $attachment {
+		background-attachment: #{$attachment};
 	}
 }
 
