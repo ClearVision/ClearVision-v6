@@ -173,10 +173,12 @@ $xbox-green: #107c10;
 
 /* PLUGINS */
 @import "plugins/messageButtons";
-@import "plugins/noodlebox/linenumbers";
+@import "plugins/noodlebox/lineNumbers";
 @import "plugins/noodlebox/ownerTag";
 @import "plugins/Finicalmist/copyCode";
-@import "plugins/Devilbro/dateText";
+@import "plugins/DevilBro/dateText";
+@import "plugins/DevilBro/repoControls";
+@import "plugins/Metalloriff/serverTooltips";
 
 /* KEYFRAMES */
 @import "keyframes";

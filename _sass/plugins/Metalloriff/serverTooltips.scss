@@ -1,0 +1,12 @@
+// DETAILED SERVER TOOLTIPS
+%tooltip {
+    &%serverTooltip {
+        background-color: var(--main-color) !important;
+        @include pseudo(after) {
+            border-right-color: var(--main-color) !important;
+        }
+        %serverTooltipLabel {
+            color: #fff;
+        }
+    }
+}
