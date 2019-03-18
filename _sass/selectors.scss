@@ -1,4 +1,4 @@
-/*! Using Discord Selectors v19-03-17 by Zerthox */
+/*! Using Discord Selectors v19-03-18 by Zerthox */
 // FILE CONTENTS
 // 1) App
 // 2) Titlebar
@@ -1957,6 +1957,27 @@
 %userModalTopSectionXbox {
 	@extend %userModalTopSection !optional;
 }
+.headerInfo-30uryT {
+	@extend %userModalHeaderInfo !optional;
+}
+.nameTag-2IFDfL {
+	@extend %userModalNameTag !optional;
+}
+.username-3gJmXY {
+	@extend %userModalUsername !optional;
+}
+.discriminator-xUhQkU {
+	@extend %userModalDiscriminator !optional;
+}
+.profileBadgeWrapper-rl_RO6 {
+	@extend %userModalProfileBadgeWrapper !optional;
+}
+.profileBadge-2BqF-Z {
+	@extend %userModalProfileBadge !optional;
+}
+.additionalActionsIcon-1FoUlE {
+	@extend %userModalAdditionalActionsIcon !optional;
+}
 .headerFill-adLl4x {
 	@extend %userModalHeaderFill !optional;
 }
@@ -1973,8 +1994,23 @@
 .connectedAccounts-repVzS {
 	@extend %userModalConnectedAccounts !optional;
 }
-.connectedAccount-36nQx7{
+.connectedAccount-36nQx7 {
 	@extend %userModalConnectedAccount !optional;
+}
+.connectedAccountIcon-3P3V6F {
+	@extend %userModalConnectedAccountIcon !optional;
+}
+.connectedAccountNameInner-1phBvE {
+	@extend %userModalConnectedAccountNameInner !optional;
+}
+.connectedAccountName-f8AEe2 {
+	@extend %userModalConnectedAccountName !optional;
+}
+.connectedAccountVerifiedIcon-3aZz_K {
+	@extend %userModalConnectedAccountVerifiedIcon !optional;
+}
+.connectedAccountOpenIcon-2cNbq5 {
+	@extend %userModalConnectedAccountOpenIcon !optional;
 }
 
 // 20) SETTINGS
