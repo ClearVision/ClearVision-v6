@@ -3,15 +3,22 @@
 	position: relative;
 	border-radius: 5px;
 	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .2);
-	@include transform(none !important);
 	@include animation(menu-pop .15s cubic-bezier(.2, .6, .5, 1.1));
 	@include pseudo(before) {
 		content: "";
 		position: absolute;
-		@include pos(-5px, -5px, -5px, -5px);
-		@include bg($img: var(--background-image), $pos: center);
+		@include stretch;
+		margin: -5px;
+		@include bg($img: var(--background-image), $pos: center, $size: cover, $attach: fixed);
 		@include filter(blur(3px));
 		z-index: -1;
+	}
+	%popoutLeft > & {
+		@include pseudo(before) {
+			left: -100%;
+			right: 100%;
+			@include transform(translateX(calc(100% - 10px)));
+		}
 	}
 
 	// USER POPOUT HEADER
