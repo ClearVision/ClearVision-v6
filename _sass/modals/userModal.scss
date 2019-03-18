@@ -24,6 +24,23 @@
 	> %userModalTopSectionXbox {
 		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)), rgba($xbox-green, .4);
 	}
+	%userModalProfileBadge {
+		opacity: .7;
+		transition: all .15s ease-in-out;
+		&:hover {
+			opacity: 1;
+		}
+	}
+}
+%userModalAdditionalActionsIcon {
+	width: 24px;
+	height: 24px;
+	@include bg($img: url(https://zerthox.github.io/ClearVision/icons/expand_more.svg), $pos: center, $size: 36px, $repeat: no-repeat);
+	opacity: .3;
+	transition: all .15s ease-in-out;
+	&:hover {
+		opacity: .7;
+	}
 }
 %userModalHeaderFill {
 	background: rgba(0, 0, 0, .04);
@@ -63,5 +80,20 @@
 	> %userModalConnectedAccount {
 		background-color: hsla(0, 0%, 100%, .04);
 		border-color: transparent;
+	}
+}
+%userModalConnectedAccountVerifiedIcon {
+	@include bg($img: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/verified.svg), $pos: center, $size: 18px, $repeat: no-repeat);
+    opacity: .5;
+	> g {
+		display: none;
+	}
+}
+%userModalConnectedAccountOpenIcon {
+	@include bg($img: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/popout.svg), $pos: center, $size: 18px, $repeat: no-repeat);
+	opacity: .3;
+	transition: all .15s ease-in-out;
+	&:hover {
+		opacity: .7;
 	}
 }
