@@ -14,7 +14,7 @@ $xbox-green: #107c10;
 
 /// Force clear background
 @mixin clear {
-	background: transparent !important;
+	background-color: transparent !important;
 }
 
 /// Stretch element
