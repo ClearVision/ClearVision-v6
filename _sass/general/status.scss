@@ -1,12 +1,18 @@
 // STATUS
 %status,
-%statusProfile {
+%avatarWrapper > %statusProfile {
 	box-shadow: 0 0 3px, 0 0 5px rgba(0, 0, 0, .5);
 	transition: all .3s ease-in-out;
 }
 %status {
 	border: none !important;
-	margin: 2px;
+	%avatarSmall > & {
+		margin-bottom: 2px;
+	}
+}
+%statusProfile {
+	margin-right: 1px;
+	margin-bottom: 1px;
 }
 %statusOnline {
 	background-color: var(--online-color);
