@@ -97,3 +97,10 @@
 		opacity: .7;
 	}
 }
+%userModalEmptyIcon {
+	@include filter(grayscale(1) brightness(2));
+	opacity: .3;
+}
+%userModalEmptyText {
+	color: hsla(0, 0%, 100%, .3);
+}
