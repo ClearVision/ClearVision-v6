@@ -1,4 +1,4 @@
-/*! Using Discord Selectors v19-03-18 by Zerthox */
+/*! Using Discord Selectors v19-03-19 by Zerthox */
 // FILE CONTENTS
 // 1) App
 // 2) Titlebar
@@ -87,8 +87,10 @@
 //	22.5) samogot
 //		22.5.1) Quoter
 //	22.6) DevilBro
-//		22.6.2) CreationDate
-//		22.6.1) JoinedAtDate
+//		22.6.1) ShowHiddenChannels
+//		22.6.2) RepoControls
+//		22.6.3) CreationDate
+//		22.6.4) JoinedAtDate
 // 22.7) Metalloriff
 // 22.7.1) DetailedServerTooltips
 
@@ -2080,11 +2082,22 @@
 .DevilBro-tooltip {
 	@extend %tooltipDevilBro !optional;
 }
-// 22.6.2) CreationDate
+// 22.6.1) ShowHiddenChannels
+.container-hidden {
+	@extend %categoryHidden !optional;
+}
+// 22.6.2) RepoControls
+.repocontrols-editicon-tooltip {
+	@extend %tooltipRepoControlsEdit !optional;
+}
+.repocontrols-trashicon-tooltip {
+	@extend %tooltipRepoControlsTrash !optional;
+}
+// 22.6.3) CreationDate
 .creationDate {
 	@extend %creationDate !optional;
 }
-// 22.6.3) JoinedAtDate
+// 22.6.4) JoinedAtDate
 .joinedAtDate {
 	@extend %joinedAtDate !optional;
 }
@@ -2094,7 +2107,7 @@
 	@extend %serverTooltip !optional;
 }
 .dst-min {
-	@extend %serverTooltipMin !optional
+	@extend %serverTooltipMin !optional;
 }
 .dst-tooltip-icon {
 	@extend %serverTooltipIcon !optional;
