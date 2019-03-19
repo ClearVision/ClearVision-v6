@@ -2009,6 +2009,21 @@
 .connectedAccountOpenIcon-2cNbq5 {
 	@extend %userModalConnectedAccountOpenIcon !optional;
 }
+.emptyIcon-pGTAhd {
+	@extend %userModalEmptyIcon !optional;
+}
+.emptyIconFriends-BrjhY9 {
+	@extend %userModalEmptyIconFriends !optional;
+}
+.emptyIconGuilds-3OViNh {
+	@extend %userModalEmptyIconGuilds !optional;
+}
+.emptyIconStreamerMode-3RfWOW {
+	@extend %userModalEmptyIconStreamerMode !optional;
+}
+.emptyText-6tYmO5 {
+	@extend %userModalEmptyText !optional;
+}
 
 // 20) SETTINGS
 // 20.1) Sidebar
@@ -2078,7 +2093,6 @@
 	@extend %quoteButton !optional;
 }
 // 22.6) DevilBro
-// 22.6.1) RepoControls
 .DevilBro-tooltip {
 	@extend %tooltipDevilBro !optional;
 }
