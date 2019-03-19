@@ -29,14 +29,6 @@
 }
 
 // KEYFRAMES
-@include keyframes(fade-in) {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
 @include keyframes(message-fade) {
 	0%,
 	50% {
