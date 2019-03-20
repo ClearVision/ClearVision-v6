@@ -1,32 +1,34 @@
 // CONTEXT MENU
-%contextMenu {
-	background-color: rgba(0, 0, 0, .7) !important;
-	border-color: transparent !important;
-	box-shadow: 0 0 1px rgba(0, 0, 0, .82), 0 1px 4px rgba(0, 0, 0, .1) !important;
+%appMount %contextMenu {
+	background-color: rgba(0, 0, 0, .7);
+	box-shadow: 0 0 3px rgba(0, 0, 0, .7);
 	@include animation(menu-slide .3s cubic-bezier(.2, .6, .5, 1.1));
-    @include prefix(transform-origin, 0 50%);
-    &%contextMenuInvertChildX {
+	@include prefix(transform-origin, 0 50%);
+}
+%contextMenu {
+    &%contextMenuInvertChildX,
+    %contextMenuInvertChildX & {
         @include prefix(transform-origin, 100% 50%);
     }
 	%contextMenuItemGroup {
 		border-top-color: hsla(0, 0%, 100%, .04) !important;
 	}
 	%contextMenuItem {
-		@include clear;
-		color: hsla(0, 0%, 100%, .6);
+		background-color: transparent;
+		color: hsla(0, 0%, 100%, .6) !important;
 		border-radius: 3px;
-		transition: all .1s ease-in-out;
+		transition: all .15s ease-in-out;
 		&:hover {
-			color: #fff;
-			background-color: rgba(0, 0, 0, .7) !important;
+			background-color: rgba(0, 0, 0, .7);
+			color: #fff !important;
 		}
 		&%contextMenuItemDanger {
-			background-color: $dark-red !important;
+			background-color: $dark-red;
 			color: hsla(0, 0%, 100%, .6) !important;
 			width: calc(100% - 4px);
 			margin: 2px;
 			&:hover {
-				background-color: $red !important;
+				background-color: $red;
 				color: #fff !important;
 
 			}
