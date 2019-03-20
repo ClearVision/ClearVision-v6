@@ -49,8 +49,9 @@
 //		12.4.1) Friends
 //		12.4.2) Messages Popout
 //		12.4.3) User Popout
-//	12.5) Checkbox
-//	12.6) Spinners
+//	12.5) Checkboxes
+//	12.6) Sliders
+//	12.7) Spinners
 // 13) Tooltips
 // 14) Context Menu
 // 15) Popouts
@@ -95,6 +96,9 @@
 // 22.7.1) DetailedServerTooltips
 
 // 1) APP
+.appMount-3lHmkl {
+	@extend %appMount !optional;
+}
 .layers-3iHuyZ {
 	@extend %layers !optional;
 }
@@ -1590,7 +1594,7 @@
 .tabBarItem-1b8RUP {
 	@extend %userModalTabBarItem !optional;
 }
-// 12.5) Checkbox
+// 12.5) Checkboxes
 .checkbox-3kaeSU {
 	@extend %checkbox !optional;
 }
@@ -1600,7 +1604,32 @@
 .checkboxElement-1qV33p {
 	@extend %checkboxElement !optional;
 }
-// 12.6) Spinners
+// 12.6) Sliders
+.slider-1PF9SW {
+	@extend %slider !optional;
+}
+.mini-dmm9yo {
+	@extend %sliderMini !optional;
+}
+.input-2_ChIk {
+	@extend %sliderInput !optional;
+}
+.track-11EASc {
+	@extend %sliderTrack !optional;
+}
+.bar-2Qqk5Z {
+	@extend %sliderBar !optional;
+}
+.barFill-23-gu- {
+	@extend %sliderBarFill !optional;
+}
+.grabber-3mFHz2 {
+	@extend %sliderGrabber !optional;
+}
+.bubble-3we2di {
+	@extend %sliderBubble !optional;
+}
+// 12.7) Spinners
 .spinner-2enMB9 {
     @extend %spinner !optional;
 }
