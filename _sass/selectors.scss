@@ -1,4 +1,4 @@
-/*! Using Discord Selectors v19-03-19 by Zerthox */
+/*! Using Discord Selectors v20-03-19 by Zerthox */
 // FILE CONTENTS
 // 1) App
 // 2) Titlebar
@@ -1049,16 +1049,22 @@
 	@extend %spoilerInlineContent !optional;
 }
 .spoilerContainer-331r0R {
-	@extend %spoilerEmbedContainer !optional;
+	@extend %spoilerContainer !optional;
+}
+.spoilerWarning-2aAZq1 {
+	@extend %spoilerWarning !optional;
+}
+.spoiler-1PPAUc {
+	@extend %spoilerImage !optional;
+}
+.hiddenSpoilers-1ksnR6 {
+	@extend %spoilerImageHidden !optional;
 }
 .spoilerEmbed-1fzvzg {
 	@extend %spoilerEmbed !optional;
 }
 .hiddenSpoiler-3i0zpa {
 	@extend %spoilerEmbedHidden !optional;
-}
-.spoilerWarning-2aAZq1 {
-	@extend %spoilerEmbedWarning !optional;
 }
 // 5.2) Dividers
 .divider-3gKybi {
