@@ -15,6 +15,7 @@ $icons: (
     "Notifications": "https://zerthox.github.io/ClearVision/icons/notifications.svg",
     "Keybinds": "https://zerthox.github.io/ClearVision/icons/keyboard.svg",
     "Game Activity": "https://zerthox.github.io/ClearVision/icons/games.svg",
+    "Activity Feed": "https://zerthox.github.io/ClearVision/icons/newspaper.svg",
     "Game Library": "https://zerthox.github.io/ClearVision/icons/view_carousel.svg",
     "Text & Images": "https://zerthox.github.io/ClearVision/icons/chat.svg",
     "Appearance": "https://zerthox.github.io/ClearVision/icons/camera.svg",
@@ -116,40 +117,45 @@ $icons: (
     }
     &:nth-child(17) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Game Library"));
+            background-image: url(map-get($icons, "Activity Feed"));
         }
     }
     &:nth-child(18) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Text & Images"));
+            background-image: url(map-get($icons, "Game Library"));
         }
     }
     &:nth-child(19) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Appearance"));
+            background-image: url(map-get($icons, "Text & Images"));
         }
     }
     &:nth-child(20) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Streamer Mode"));
+            background-image: url(map-get($icons, "Appearance"));
         }
     }
     &:nth-child(21) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Language"));
+            background-image: url(map-get($icons, "Streamer Mode"));
         }
     }
     &:nth-child(22) {
         @include pseudo(before) {
+            background-image: url(map-get($icons, "Language"));
+        }
+    }
+    &:nth-child(23) {
+        @include pseudo(before) {
             background-image: url(map-get($icons, "Windows Settings"));
         }
     }
-    &:nth-child(24) {
+    &:nth-child(25) {
         @include pseudo(before) {
             background-image: url(map-get($icons, "Change Log"));
         }
     }
-    &:nth-child(27) {
+    &:nth-child(28) {
         @include pseudo(before) {
             background-image: url(map-get($icons, "Log Out"));
         }
@@ -180,30 +186,35 @@ $icons: (
     }
     &:nth-child(16) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Text & Images"));
+            background-image: url(map-get($icons, "Activity Feed"));
         }
     }
     &:nth-child(17) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Appearance"));
+            background-image: url(map-get($icons, "Text & Images"));
         }
     }
     &:nth-child(18) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Streamer Mode"));
+            background-image: url(map-get($icons, "Appearance"));
         }
     }
     &:nth-child(19) {
         @include pseudo(before) {
+            background-image: url(map-get($icons, "Streamer Mode"));
+        }
+    }
+    &:nth-child(20) {
+        @include pseudo(before) {
             background-image: url(map-get($icons, "Language"));
         }
     }
-    &:nth-child(21) {
+    &:nth-child(22) {
         @include pseudo(before) {
             background-image: url(map-get($icons, "Change Log"));
         }
     }
-    &:nth-child(24) {
+    &:nth-child(25) {
         @include pseudo(before) {
             background-image: url(map-get($icons, "Log Out"));
         }
