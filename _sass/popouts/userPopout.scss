@@ -63,7 +63,7 @@
 		background-color: rgba(0, 0, 0, .65);
 	}
 	%userPopoutBodyTitle {
-		color: hsla(0, 0%, 100%, .6);
+		color: hsla(0, 0%, 100%, .7);
 	}
 	%userPopoutRolesList {
 		max-height: 230px;
@@ -73,9 +73,11 @@
 	}
 	%userPopoutNote {
 		textarea {
-			@include clear;
-			color: hsla(0, 0%, 100%, .8) !important;
-			transition: all .3s ease-in-out;
+			background-color: transparent;
+			color: hsla(0, 0%, 100%, .8);
+			&:focus {
+				background-color: transparent;
+			}
 			&::-webkit-input-placeholder {	
 				color: hsla(0, 0%, 100%, .5);
 			}
