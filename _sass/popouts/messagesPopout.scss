@@ -55,17 +55,18 @@
 			}
 			%messagesPopoutActionButtons {
 				background-color: transparent;
+				box-shadow: none;
 				opacity: 0;
 				transition: all .15s ease-in-out;
-				box-shadow: none;
 				%messagesPopoutJumpButton {
 					background-color: rgba(0, 0, 0, .3);
 					color: hsla(0, 0%, 100%, .5);
 					border-radius: 3px;
-					transition: all .15s ease-in-out;
+					transition: all .3s ease-in-out;
 					&:hover {
 						background-color: var(--main-color);
 						color: #fff;
+						transition-duration: .15s;
 					}
 				}
 				%messagesPopoutCloseButton {
