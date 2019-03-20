@@ -5,6 +5,16 @@
 
 	// GUILD LIST
 	%guilds {
+		%guildSelected,
+		%guildUnread {
+			@include pseudo(before) {
+				width: 13px;
+				left: -17px;
+				background-color: var(--main-color);
+				box-shadow: 0 0 20px var(--main-color);
+				transition: all .3s ease-in-out;
+			}
+		}
 		%guildUnread {
 			@include pseudo(before) {
 				margin-top: -5px;
@@ -12,18 +22,8 @@
 		}
 		%guildSelected {
 			@include pseudo(before) {
-				background: var(--main-color) !important;
 				margin-top: -20px;
 				@include animation(guild-select .5s cubic-bezier(.22, .61, .36, 1));
-			}
-		}
-		%guildSelected,
-		%guildUnread {
-			@include pseudo(before) {
-				width: 13px;
-				left: -17px;
-				background: var(--main-color) !important;
-				transition: all .3s ease-in-out;
 			}
 		}
 		%guildInner {
