@@ -24,12 +24,12 @@
 	> %userModalTopSectionXbox {
 		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)), rgba($xbox-green, .4);
 	}
-	%userModalProfileBadge {
-		opacity: .7;
-		transition: all .15s ease-in-out;
-		&:hover {
-			opacity: 1;
-		}
+}
+%userModalProfileBadge {
+	opacity: .7;
+	transition: all .15s ease-in-out;
+	&:hover {
+		opacity: 1;
 	}
 }
 %userModalAdditionalActionsIcon {
@@ -72,8 +72,25 @@
 
 // BODY
 %userModalBody {
-	%userModalInfoSection + %userModalInfoSection {
-		border-color: hsla(0, 0%, 100%, .04);
+	%userModalInfoSection {
+		+ %userModalInfoSection {
+			border-color: hsla(0, 0%, 100%, .04);
+		}
+		> %userModalInfoSectionHeader {
+			color: hsla(0, 0%, 100%, .7);
+		}
+		> %userModalNote {
+			> textarea {
+				background-color: transparent;
+				color: hsla(0, 0%, 100%, .8);
+				&:focus {
+					background-color: transparent;
+				}
+				&::-webkit-input-placeholder {	
+					color: hsla(0, 0%, 100%, .5);
+				}
+			}
+		}
 	}
 }
 %userModalConnectedAccounts {
