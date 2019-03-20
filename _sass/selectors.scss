@@ -1298,6 +1298,12 @@
 .after-2g0jjc {
 	@extend %searchResultMessageAfter !optional;
 }
+.actionButtons-14P9IC {
+	@extend %searchResultActionButtons !optional;
+}
+.jumpButton-Ia2hRJ {
+	@extend %searchResultJumpButton !optional;
+}
 .highlight {
 	@extend %searchResultHighlight !optional;
 }
