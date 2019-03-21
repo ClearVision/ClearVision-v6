@@ -1,6 +1,9 @@
 // POPOUT
 %popout {
     box-shadow: none;
+    &[style*="overflow: hidden"] {
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+    }
     header {
         background-color: var(--main-color);
         border-radius: 3px 3px 0 0;
