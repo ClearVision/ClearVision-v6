@@ -1,6 +1,8 @@
 // CODEBLOCK
-%messageGroup %markup code {
-    &%codeInline {
+%markup {
+
+    // INLINE CODE
+    %codeInline {
         background-color: hsla(0, 0%, 100%, .1);
         color: hsla(0, 0%, 100%, .7);
         padding: 3.5px 7.5px;
@@ -10,26 +12,30 @@
             margin-top: -1px;
         }
     }
+
+    // CODEBLOCK HLJS
+    %codePre > %codeHLJS {
+        position: relative;
+        padding: 6px;
+        background-color: rgba(0, 0, 0, .42);
+        color: hsla(0, 0%, 100%, .7);
+        border-radius: 5px;
+        @include pseudo(before) {
+            display: block;
+            float: right;
+            height: 10px;
+            color: hsla(0, 0%, 100%, .3);
+            text-align: right;
+            line-height: 10px;
+            pointer-events: none;
+        }
+    }
 }
-%messageGroup %codePre {
+
+// CODEBLOCK PRE
+%message %markup %codePre {
     max-width: 93%;
     padding: 0;
     background: transparent;
     border: 2px solid transparent;
-}
-%codePre > %codeHLJS {
-    position: relative;
-    padding: 6px;
-    background-color: rgba(0, 0, 0, .42);
-    color: hsla(0, 0%, 100%, .7);
-    border-radius: 5px;
-    @include pseudo(before) {
-        display: block;
-        float: right;
-        height: 10px;
-        color: hsla(0, 0%, 100%, .3);
-        text-align: right;
-        line-height: 10px;
-        pointer-events: none;
-    }
 }
