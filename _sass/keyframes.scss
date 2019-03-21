@@ -6,16 +6,6 @@
         opacity: 1;
     }
 }
-@include keyframes(guild-select) {
-    from {
-        height: 0px;
-        margin-top: 0px;
-    }
-    to {
-        height: 40px;
-        margin-top: -20px;
-    }
-}
 @include keyframes(pulsate-border) {
     0%,
 	100% {
