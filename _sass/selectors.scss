@@ -1,4 +1,4 @@
-/*! Using Discord Selectors v19-03-20 by Zerthox */
+/*! Using Discord Selectors v19-03-21 by Zerthox */
 // FILE CONTENTS
 // 1) App
 // 2) Titlebar
@@ -992,7 +992,7 @@
 .inline {
 	@extend %codeInline !optional;
 }
-%markup > pre {
+pre {
 	@extend %codePre !optional;
 }
 .hljs {
