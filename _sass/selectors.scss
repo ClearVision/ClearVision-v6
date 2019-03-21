@@ -818,6 +818,12 @@
 .public-DraftEditorPlaceholder-root {
 	@extend %chatSearchPlaceholder !optional;
 }
+.searchFilter-2ESiM3 {
+	@extend %chatSearchFilter !optional;
+}
+.searchAnswer-3Dz2-q {
+	@extend %chatSearchAnswer !optional;
+}
 .content-yTz4x3 {
 	@extend %chatContent !optional;
 }
