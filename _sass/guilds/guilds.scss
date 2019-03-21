@@ -5,25 +5,32 @@
 
 	// GUILD LIST
 	%guilds {
-		%guildSelected,
-		%guildUnread {
+		%guild {
 			@include pseudo(before) {
-				width: 13px;
+				content: "";
+				position: absolute;
+				top: 50%;
 				left: -17px;
+				width: 13px;
+				height: 0;
 				background-color: var(--main-color);
 				box-shadow: 0 0 20px var(--main-color);
-				transition: all .3s ease-in-out;
+				opacity: 0;
+				transition: all .5s cubic-bezier(.2, .1, .4, 1);
 			}
 		}
 		%guildUnread {
 			@include pseudo(before) {
+				height: 10px;
 				margin-top: -5px;
+				opacity: 1;
 			}
 		}
 		%guildSelected {
 			@include pseudo(before) {
+				height: 40px;
 				margin-top: -20px;
-				@include animation(guild-select .5s cubic-bezier(.22, .61, .36, 1));
+				opacity: 1;
 			}
 		}
 		%guildInner {
