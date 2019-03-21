@@ -61,6 +61,8 @@
 //	15.4) Connection Info Popout
 //	15.5) Messages Popout
 //	15.6) Autocomplete Popout
+//	15.7) Search Popout
+//		15.7.1) Datepicker
 // 16) User Popout
 //		16.1) Header
 //		16.1) Body
@@ -1881,6 +1883,131 @@ pre {
 }
 .selected-1pIgLL {
 	@extend %autocompletePopoutSelected !optional;
+}
+// 15.7) Search Popout
+.container-3ayLPN {
+	@extend %searchPopout !optional;
+}
+.resultsGroup-r_nuzN {
+	@extend %searchPopoutResultsGroup !optional;
+}
+.header-2N-gMV {
+	@extend %searchPopoutHeader !optional;
+}
+.option-96V44q {
+	@extend %searchPopoutOption !optional;
+}
+.selected-rZcOL- {
+	@extend %searchPopoutOptionSelected !optional;
+}
+.searchOption-zQ-1l6 {
+	@extend %searchPopoutSearchOption !optional;
+}
+.filter-3Y_im- {
+	@extend %searchPopoutFilter !optional;
+}
+.answer-1n6g43 {
+	@extend %searchPopoutAnswer !optional;
+}
+.nonText-3CRkO0 {
+	@extend %searchPopoutNonText !optional;
+}
+.plusIcon-v0BTrL {
+	@extend %searchPopoutPlusIcon !optional;
+}
+.searchLearnMore-3SQUAj {
+	@extend %searchPopoutLearnMore !optional;
+}
+.searchClearHistory-2cSSMO {
+	@extend %searchPopoutClearHistory !optional;
+}
+.datePicker--XZbmJ {
+	@extend %searchPopoutDatePicker !optional;
+}
+.calendarPicker-2yf6Ci {
+	@extend %searchPopoutCalendarPicker !optional;
+}
+.datePickerHint-3Q1Udw {
+	@extend %searchPopoutDatePickerHint !optional;
+}
+.hint-165cR4 {
+	@extend %searchPopoutHint !optional;
+}
+.hintValue-29ny8Z {
+	@extend %searchPopoutHintValue !optional;
+}
+// 15.7.1) Datepicker
+.react-datepicker {
+	@extend %datepicker !optional;
+}
+.react-datepicker__navigation {
+	@extend %datepickerNavigation !optional;
+}
+.react-datepicker__navigation--next {
+	@extend %datepickerNavigationNext !optional;
+}
+.react-datepicker__navigation--previous {
+	@extend %datepickerNavigationPrevious !optional;
+}
+.react-datepicker__month-container {
+	@extend %datepickerMonthContainer !optional;
+}
+.react-datepicker__header {
+	@extend %datepickerHeader !optional;
+}
+.react-datepicker__current-month {
+	@extend %datepickerCurrentMonth !optional;
+}
+.react-datepicker__day-names {
+	@extend %datepickerDayNames !optional;
+}
+.react-datepicker__day-name {
+	@extend %datepickerDayName !optional;
+}
+.react-datepicker__month {
+	@extend %datepickerMonth !optional;
+}
+.react-datepicker__week {
+	@extend %datepickerWeek !optional;
+}
+.react-datepicker__day {
+	@extend %datepickerDay !optional;
+}
+.react-datepicker__day--selected {
+	@extend %datepickerDaySelected !optional;
+}
+.react-datepicker__day--disabled {
+	@extend %datepickerDayDisabled !optional;
+}
+.react-datepicker__day--today {
+	@extend %datepickerDayToday !optional;
+}
+.react-datepicker__day--outside-month {
+	@extend %datepickerDayOutsideMonth !optional;
+}
+.react-datepicker__day--weekend {
+	@extend %datepickerDayWeekend !optional;
+}
+.react-datepicker__day--mon {
+	@extend %datepickerDayMon !optional;
+}
+.react-datepicker__day--tue {
+	@extend %datepickerDayTue !optional;
+}
+.react-datepicker__day--wed {
+	@extend %datepickerDayWed !optional;
+}
+.react-datepicker__day--thu {
+	@extend %datepickerDayThu !optional;
+}
+.react-datepicker__day--fri {
+	@extend %datepickerDayFri !optional;
+}
+.react-datepicker__day--sat {
+	@extend %datepickerDaySat !optional;
+}
+.react-datepicker__day--sun {
+	@extend %datepickerDaySun !optional;
 }
 
 // 16) USER POPOUT
