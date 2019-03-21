@@ -36,6 +36,18 @@
 			%chatSearchPlaceholder {
 				color: hsla(0, 0%, 100%, .3);
 			}
+			%chatSearchFilter,
+			%chatSearchAnswer {
+				background-color: rgba(0, 0, 0, .3);
+				color: #fff;
+			}
+			%chatSearchFilter {
+				padding: 0 3px;
+			}
+			%chatSearchAnswer {
+				margin: 0 2px 0 0;
+				padding: 0 3px 0 0;
+			}
 		}
 	}
 
