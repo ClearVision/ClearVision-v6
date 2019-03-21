@@ -1,0 +1,168 @@
+// SEARCH POPOUT
+%popout > %searchPopout {
+    background-color: rgba(0, 0, 0, .7);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+}
+%searchPopout {
+    > %searchPopoutResultsGroup {
+        @include pseudo(after) {
+            border-top: 1px solid transparent;
+        }
+        + %searchPopoutResultsGroup {
+            @include pseudo(after) {
+                border-top-color: hsla(0, 0%, 100%, .04);
+            }
+        }
+        > %searchPopoutHeader {
+            color: var(--main-color);
+            font-weight: 700;
+        }
+        > %searchPopoutLearnMore,
+        > %searchPopoutClearHistory {
+            opacity: .5;
+            transition: all .15s ease-in-out;
+            &:hover {
+                opacity: 1;
+            }
+            > a {
+                color: #fff;
+            }
+        }
+        %searchPopoutPlusIcon {
+            color: #fff;
+            opacity: .3;
+            transition: all .15s ease-in-out;
+            &:hover {
+                opacity: .7;
+            }
+        }
+    }
+    %searchPopoutOption {
+        background-color: transparent;
+        transition: all .15s ease-in-out;
+        @include pseudo(after) {
+            display: none;
+        }
+        &%searchPopoutOptionSelected {
+            background-color: hsla(0, 0%, 100%, .1);
+            %searchPopoutFilter {
+                color: hsla(0, 0%, 100%, .5);     
+            }
+            %searchPopoutAnswer {
+                color: hsla(0, 0%, 100%, .7);
+                font-weight: 500;
+            }
+            %searchPopoutNonText {
+                color: hsla(0, 0%, 100%, .7);
+            }
+        }
+        %searchPopoutFilter,
+        %searchPopoutAnswer,,
+        %searchPopoutNonText {
+            transition: all .15s ease-in-out;
+        }
+        %searchPopoutFilter {
+            color: hsla(0, 0%, 100%, .3);     
+        }
+        %searchPopoutAnswer {
+            color: hsla(0, 0%, 100%, .5);
+            font-weight: 500;
+        }
+        %searchPopoutNonText {
+            color: hsla(0, 0%, 100%, .5);
+        }
+    }
+    %searchPopoutSearchOption {
+        &%searchPopoutOptionSelected {
+            %searchPopoutFilter {
+                color: hsla(0, 0%, 100%, .7);
+            }
+            %searchPopoutAnswer {
+                color: hsla(0, 0%, 100%, .5);
+            }
+        }
+        %searchPopoutFilter {
+            color: hsla(0, 0%, 100%, .5);
+            font-weight: 500; 
+        }
+        %searchPopoutAnswer {
+            color: hsla(0, 0%, 100%, .3);
+        }
+    }
+    %searchPopoutDatePicker {
+        %searchPopoutDatePickerHint {
+            border-top: 1px solid hsla(0, 0%, 100%, .04);
+            %searchPopoutHint {
+                color: hsla(0, 0%, 100%, .7);
+            }
+            %searchPopoutHintValue {
+                background-color: var(--main-color);
+                color: #fff;
+            }
+        }
+    }
+}
+
+// DATEPICKER
+%searchPopoutDatePicker > %searchPopoutCalendarPicker {
+    > %datepicker,
+    %datepickerHeader {
+        background-color: transparent;
+    }
+    > %datepicker {
+        %datepickerNavigation {
+            background-color: hsla(0, 0%, 100%, .1);
+			opacity: .7;
+			transition: all .15s ease-in-out;
+			&:hover {
+				background-color: var(--main-color);
+				opacity: 1;
+			}
+        }
+    }
+    %datepickerCurrentMonth {
+        border-bottom: 1px solid hsla(0, 0%, 100%, .04);
+        color: var(--main-color);
+        font-weight: 600;
+    }
+    %datepickerDayName {
+        color: hsla(0, 0%, 100%, .7);
+    }
+    %datepickerWeek {
+        &:last-of-type {
+            > %datePickerDay {
+                border-bottom: 1px solid hsla(0, 0%, 100%, .04);
+            }
+        }
+        > %datepickerDay {
+            background-color: hsla(0, 0%, 100%, .1);
+            border-left: 1px solid hsla(0, 0%, 100%, .04);
+            border-top: 1px solid hsla(0, 0%, 100%, .04);
+            color: hsla(0, 0%, 100%, .7);
+            transition: all .15s ease-in-out;
+            &:last-of-type {
+                border-right: 1px solid hsla(0, 0%, 100%, .04);
+            }
+            &:hover {
+                background-color: var(--main-color);
+                color: #fff;
+
+            }
+        }
+        > %datepickerDaySelected {
+            box-shadow: inset 0 -3px 0 0 var(--main-color);
+            @include pseudo(after) {
+                display: none,
+            }
+        }
+        > %datepickerDayToday {
+            color: var(--main-color);
+            font-weight: 700;
+        }
+        > %datepickerDayDisabled,
+        > %datepickerDayOutsideMonth {
+            background-color: transparent;
+            color: hsla(0, 0%, 100%, .1);
+        }
+    }
+}
