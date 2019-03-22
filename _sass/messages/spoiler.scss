@@ -1,7 +1,6 @@
 // SPOILER
-%markup > %spoilerText {
-    padding: 1px 4px;
-	background-color: hsla(0, 0%, 100%, .04);
+%message %spoilerText {
+    background-color: hsla(0, 0%, 100%, .04);
     transition: all .15s ease-in-out;
     > %spoilerInlineContent {
         opacity: 1;
@@ -21,6 +20,9 @@
             opacity: 0;
         }
     }
+}
+%markup %spoilerText {
+    padding: 1px 4px;
 }
 %spoilerContainer {
     > %spoilerWarning {
