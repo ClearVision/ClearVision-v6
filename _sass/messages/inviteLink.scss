@@ -45,10 +45,10 @@
     }
     %inviteButtonAccept {
         background-color: transparent;
-        border: 1px solid $green;
+        border: 1px solid $online-color;
         transition: all .3s ease-in-out;
         &:hover {
-            background-color: $green;
+            background-color: $online-color;
         }
     }
     %inviteButtonJoined {
