@@ -28,14 +28,6 @@
                 color: #fff;
             }
         }
-        %searchPopoutPlusIcon {
-            color: #fff;
-            opacity: .3;
-            transition: all .15s ease-in-out;
-            &:hover {
-                opacity: .7;
-            }
-        }
     }
     %searchPopoutOption {
         background-color: transparent;
@@ -45,6 +37,12 @@
         }
         &%searchPopoutOptionSelected {
             background-color: hsla(0, 0%, 100%, .1);
+            %searchPopoutPlusIcon {
+                opacity: .3;
+                &:hover {
+                    opacity: .7;
+                }
+            }
             %searchPopoutFilter {
                 color: hsla(0, 0%, 100%, .5);     
             }
@@ -54,6 +52,15 @@
             }
             %searchPopoutNonText {
                 color: hsla(0, 0%, 100%, .7);
+            }
+        }
+        %searchPopoutPlusIcon {
+            display: block;
+            color: #fff;
+            opacity: 0;
+            transition: all .15s ease-in-out;
+            &:hover {
+                opacity: .7;
             }
         }
         %searchPopoutFilter,
