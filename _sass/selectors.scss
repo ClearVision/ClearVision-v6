@@ -1,4 +1,4 @@
-/*! Using Discord Selectors v19-03-21 by Zerthox */
+/*! Using Discord Selectors v19-03-22 by Zerthox */
 // FILE CONTENTS
 // 1) App
 // 2) Titlebar
@@ -1926,6 +1926,39 @@ pre {
 }
 .searchClearHistory-2cSSMO {
 	@extend %searchPopoutClearHistory !optional;
+}
+.queryContainer-RKFJW- {
+	@extend %searchPopoutQueryContainer !optional;
+}
+.focused-2bY0OD {
+	@extend %searchPopoutQueryContainerFocused !optional;
+}
+.queryText-3xoOY7 {
+	@extend %searchPopoutQueryText !optional;
+}
+.queryShortcut-hJIQMF {
+	@extend %searchPopoutQueryShortcut !optional;
+}
+.user-O3Czj0 {
+	@extend %searchPopoutOptionUser !optional;
+}
+.displayedNick-3xxvzU {
+	@extend %searchPopoutDisplayedNick !optional;
+}
+.displayUsername-Qekxml {
+	@extend %searchPopoutDisplayUsername !optional;
+}
+.resultChannel-3BYgHX {
+	@extend %searchPopoutChannel !optional;
+}
+.searchResultChannelIcon-1DnTme {
+	@extend %searchPopoutChannelIcon !optional;
+}
+.searchResultChannelIconBackground-7ncwtC {
+	@extend %searchResultChannelIconBackground !optional;
+}
+.searchResultChannelCategory-1l0lSn {
+	@extend %searchPopoutChannelCategory !optional;
 }
 .datePicker--XZbmJ {
 	@extend %searchPopoutDatePicker !optional;
