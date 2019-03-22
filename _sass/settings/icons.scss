@@ -1,5 +1,6 @@
 // ICON MAP
 $icons: (
+
     // USER SETTINGS 
     "My Account": "https://zerthox.github.io/ClearVision/icons/person.svg",
     "Privacy & Safety": "https://zerthox.github.io/ClearVision/icons/security.svg",
@@ -22,17 +23,19 @@ $icons: (
     "Streamer Mode": "https://zerthox.github.io/ClearVision/icons/videocam.svg",
     "Language": "https://zerthox.github.io/ClearVision/icons/language.svg",
     "Windows Settings": "https://zerthox.github.io/ClearVision/icons/windows.svg",
+    "Linux Settings": "https://zerthox.github.io/ClearVision/icons/linux.svg",
 
     "Change Log": "https://zerthox.github.io/ClearVision/icons/history.svg",
 
+    "Log Out": "https://zerthox.github.io/ClearVision/icons/exit.svg",
+
+    // BD USER SETTINGS
     "Core": "https://zerthox.github.io/ClearVision/icons/betterdiscord.svg",
     "Bandages": "https://omgdani.github.io/ClearVisionFixes/Icons/bandage.svg",
     "Emotes": "https://zerthox.github.io/ClearVision/icons/emote.svg",
     "Custom CSS": "https://zerthox.github.io/ClearVision/icons/code_braces.svg",
     "Plugins": "https://zerthox.github.io/ClearVision/icons/puzzle.svg",
-    "Themes": "https://zerthox.github.io/ClearVision/icons/palette.svg",
-
-    "Log Out": "https://zerthox.github.io/ClearVision/icons/exit.svg"
+    "Themes": "https://zerthox.github.io/ClearVision/icons/palette.svg"
 );
 
 // GENERAL STUFF
@@ -49,7 +52,7 @@ $icons: (
     }
 }
 
-// USER SETTINGS
+// USER SETTINGS GENERAL
 [aria-label="USER_SETTINGS"] %settingsSide %tabBarItem {
     &:nth-child(2) {
         @include pseudo(before) {
@@ -84,6 +87,11 @@ $icons: (
     &:nth-child(9) {
         @include pseudo(before) {
             background-image: url(map-get($icons, "HypeSquad"));
+        }
+    }
+    &:nth-last-child(3) {
+        @include pseudo(before) {
+            background-image: url(map-get($icons, "Log Out"));
         }
     }
 }
@@ -155,11 +163,6 @@ $icons: (
             background-image: url(map-get($icons, "Change Log"));
         }
     }
-    &:nth-child(28) {
-        @include pseudo(before) {
-            background-image: url(map-get($icons, "Log Out"));
-        }
-    }
 }
 
 // USER SETTINGS OSX
@@ -214,9 +217,63 @@ $icons: (
             background-image: url(map-get($icons, "Change Log"));
         }
     }
-    &:nth-child(25) {
+}
+
+// USER SETTINGS LINUX
+%platformLinux [aria-label="USER_SETTINGS"] %settingsSide %tabBarItem {
+    &:nth-child(12) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Log Out"));
+            background-image: url(map-get($icons, "Voice & Video"));
+        }
+    }
+    &:nth-child(13) {
+        @include pseudo(before) {
+            background-image: url(map-get($icons, "Notifications"));
+        }
+    }
+    &:nth-child(14) {
+        @include pseudo(before) {
+            background-image: url(map-get($icons, "Keybinds"));
+        }
+    }
+    &:nth-child(15) {
+        @include pseudo(before) {
+            background-image: url(map-get($icons, "Game Activity"));
+        }
+    }
+    &:nth-child(16) {
+        @include pseudo(before) {
+            background-image: url(map-get($icons, "Activity Feed"));
+        }
+    }
+    &:nth-child(17) {
+        @include pseudo(before) {
+            background-image: url(map-get($icons, "Text & Images"));
+        }
+    }
+    &:nth-child(18) {
+        @include pseudo(before) {
+            background-image: url(map-get($icons, "Appearance"));
+        }
+    }
+    &:nth-child(19) {
+        @include pseudo(before) {
+            background-image: url(map-get($icons, "Streamer Mode"));
+        }
+    }
+    &:nth-child(20) {
+        @include pseudo(before) {
+            background-image: url(map-get($icons, "Language"));
+        }
+    }
+    &:nth-child(21) {
+        @include pseudo(before) {
+            background-image: url(map-get($icons, "Linux Settings"));
+        }
+    }
+    &:nth-child(23) {
+        @include pseudo(before) {
+            background-image: url(map-get($icons, "Change Log"));
         }
     }
 }
