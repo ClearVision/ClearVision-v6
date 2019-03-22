@@ -175,6 +175,10 @@
             %searchPopoutHintValue {
                 background-color: $main-color;
                 color: #fff;
+                transition: all .15s ease-in-out;
+                &:hover {
+                    background-color: $hover-color;
+                }
             }
         }
     }
@@ -189,6 +193,7 @@
     > %datepicker {
         %datepickerNavigation {
             background-color: hsla(0, 0%, 100%, .1);
+            border: 1px solid transparent;
 			opacity: .7;
 			transition: all .15s ease-in-out;
 			&:hover {
@@ -223,7 +228,6 @@
             &:hover {
                 background-color: $main-color;
                 color: #fff;
-
             }
         }
         > %datepickerDaySelected {
@@ -238,8 +242,11 @@
         }
         > %datepickerDayDisabled,
         > %datepickerDayOutsideMonth {
-            background-color: transparent;
-            color: hsla(0, 0%, 100%, .1);
+            &,
+            &:hover {
+                background-color: transparent;
+                color: hsla(0, 0%, 100%, .1);
+            }
         }
     }
 }
