@@ -69,9 +69,11 @@
 //		16.1) Footer
 // 17) Activity
 // 18) Member Roles
-// 19) User Modal
-//	19.1) Header
-//	19.2) Body
+// 19) Modals
+// 	19.1) User Modal
+//		19.1.1) Header
+//		19.1.2) Body
+// 	19.2) Keyboard Shortcuts Modal
 // 20) Settings
 //	20.1) Sidebar
 //	20.2) Content
@@ -2134,11 +2136,12 @@ pre {
 	@extend %roleAddButton !optional;
 }
 
-// 19) USER MODAL
+// 19) MODALS
+// 19.1) User Modal
 .root-SR8cQa {
 	@extend %userModal !optional;
 }
-// 19.1) Header
+// 19.1.1) Header
 .topSectionNormal-2-vo2m {
 	@extend %userModalTopSectionNormal !optional;
 }
@@ -2188,7 +2191,7 @@ pre {
 .activityProfile-2bJRaP {
 	@extend %userModalActivity !optional;
 }
-// 19.2) Body
+// 19.1.2) Body
 .body-3ND3kc {
 	@extend %userModalBody !optional;
 }
@@ -2236,6 +2239,10 @@ pre {
 }
 .emptyText-6tYmO5 {
 	@extend %userModalEmptyText !optional;
+}
+// 19.2) Keyboard Shortcuts Modal
+.keybindShortcut-1BD6Z1 {
+	@extend %keybindShortcut !optional;
 }
 
 // 20) SETTINGS
