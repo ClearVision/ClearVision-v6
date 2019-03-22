@@ -64,9 +64,6 @@
 	%messages {
 		@include prefix(backface-visibility, hidden);
 	}
-	%messageUsername {
-		@include hover-shadow;
-	}
 }
 
 // NO CHANNEl
