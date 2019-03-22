@@ -4,6 +4,8 @@
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
 }
 %searchPopout {
+
+    // SEARCH RESULTS GROUP
     > %searchPopoutResultsGroup {
         @include pseudo(after) {
             border-top: 1px solid transparent;
@@ -29,12 +31,42 @@
             }
         }
     }
+
+    // SEARCH OPTION
     %searchPopoutOption {
         background-color: transparent;
         transition: all .15s ease-in-out;
         @include pseudo(after) {
             display: none;
         }
+        %searchPopoutPlusIcon {
+            display: block;
+            color: #fff;
+            opacity: 0;
+            transition: all .15s ease-in-out;
+            &:hover {
+                opacity: .7;
+            }
+        }
+        %searchPopoutFilter {
+            color: hsla(0, 0%, 100%, .3);     
+            transition: all .15s ease-in-out;
+        }
+        %searchPopoutAnswer {
+            color: hsla(0, 0%, 100%, .5);
+            font-weight: 500;
+            transition: all .15s ease-in-out;
+        }
+        %searchPopoutNonText {
+            color: hsla(0, 0%, 100%, .5);
+            transition: all .15s ease-in-out;
+        }
+        > strong {
+            color: hsla(0, 0%, 100%, .7);
+            transition: all .15s ease-in-out;
+        }
+        
+        // SELECTED
         &%searchPopoutOptionSelected {
             background-color: hsla(0, 0%, 100%, .1);
             %searchPopoutPlusIcon {
@@ -46,39 +78,64 @@
             %searchPopoutFilter {
                 color: hsla(0, 0%, 100%, .5);     
             }
-            %searchPopoutAnswer {
-                color: hsla(0, 0%, 100%, .7);
-                font-weight: 500;
-            }
+            %searchPopoutAnswer,
             %searchPopoutNonText {
                 color: hsla(0, 0%, 100%, .7);
             }
+            > strong {
+                color: #fff;
+            }
         }
-        %searchPopoutPlusIcon {
-            display: block;
-            color: #fff;
-            opacity: 0;
-            transition: all .15s ease-in-out;
-            &:hover {
+        
+        // OPTION USER
+        &%searchPopoutOptionUser {
+            %searchPopoutDisplayedNick {
+                color: hsla(0, 0%, 100%, .5);
+                transition: all .15s ease-in-out;
+            }
+            %searchPopoutDisplayUsername {
+                color: hsla(0, 0%, 100%, .3);     
+                transition: all .15s ease-in-out;
+            }
+            &%searchPopoutOptionSelected {
+                %searchPopoutDisplayedNick {
+                    color: hsla(0, 0%, 100%, .7);
+                }
+                %searchPopoutDisplayUsername {
+                    color: hsla(0, 0%, 100%, .5);     
+                }
+            }
+        }
+
+        // OPTION CHANNEL
+        > %searchPopoutChannel {
+            > strong {
+                color: hsla(0, 0%, 100%, .7);
+                transition: all .15s ease-in-out;
+            }
+            > %searchPopoutChannelIcon,
+            > %searchPopoutChannelCategory {
+                color: hsla(0, 0%, 100%, .3);
+                transition: all .15s ease-in-out;
+            }
+            > %searchPopoutChannelIconBackground {
                 opacity: .7;
             }
         }
-        %searchPopoutFilter,
-        %searchPopoutAnswer,,
-        %searchPopoutNonText {
-            transition: all .15s ease-in-out;
-        }
-        %searchPopoutFilter {
-            color: hsla(0, 0%, 100%, .3);     
-        }
-        %searchPopoutAnswer {
-            color: hsla(0, 0%, 100%, .5);
-            font-weight: 500;
-        }
-        %searchPopoutNonText {
-            color: hsla(0, 0%, 100%, .5);
+        &%searchPopoutOptionSelected {
+            > %searchPopoutChannel {
+                > strong {
+                    color: #fff;
+                }
+                > %searchPopoutChannelIcon,
+                > %searchPopoutChannelCategory {
+                    color: hsla(0, 0%, 100%, .5);
+                }
+            }
         }
     }
+
+    // SEARCH OPTION
     %searchPopoutSearchOption {
         &%searchPopoutOptionSelected {
             %searchPopoutFilter {
@@ -96,6 +153,19 @@
             color: hsla(0, 0%, 100%, .3);
         }
     }
+
+    // QUERY CONTAINER
+    %searchPopoutQueryContainer {
+        background-color: hsla(0, 0%, 100%, .1);
+        > %searchPopoutQueryText {
+            color: hsla(0, 0%, 100%, .7);
+            > strong {
+                color: #fff;
+            }
+        }
+    }
+
+    // SEARCH DATEPICKER
     %searchPopoutDatePicker {
         %searchPopoutDatePickerHint {
             border-top: 1px solid hsla(0, 0%, 100%, .04);
