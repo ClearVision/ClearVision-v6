@@ -168,8 +168,9 @@ $xbox-green: #107c10;
 /* MEMBER ROLES */
 @import "members/roles";
 
-/* USER PROFILE MODAL */
+/* MODALS */
 @import "modals/userModal";
+@import "modals/keyboardShortcutsModal";
 
 /* SETTINGS */
 @import "settings/sidebar";
