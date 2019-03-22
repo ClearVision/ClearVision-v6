@@ -49,17 +49,28 @@
 			}
 		}
 		&[style*="color: rgb(240, 71, 71)"] {
-			background-color: rgba($red, .5) !important;
+			@include clear;
 			color: hsla(0, 0%, 100%, .5) !important;
 			@include pseudo(before) {
 				opacity: .5;
 			}
+			@include pseudo(after) {
+				content: "";
+				position: absolute;
+				@include stretch;
+				background-color: $dnd-color;
+				opacity: .5;
+				transition: inherit;
+				z-index: -1;
+			}
 			&:hover {
-				background-color: rgba($red, .7) !important;
 				color: hsla(0, 0%, 100%, 1) !important;
 				@include pseudo(before) {
 					opacity: 1;
 					@include transform(rotateY(180deg));
+				}
+				@include pseudo(after) {
+					opacity: .7;
 				}
 			}
 		}

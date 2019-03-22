@@ -23,13 +23,25 @@
 			color: #fff !important;
 		}
 		&%contextMenuItemDanger {
-			background-color: $dnd-color;
+			position: relative;
+			background-color: transparent;
 			color: hsla(0, 0%, 100%, .6) !important;
 			width: calc(100% - 4px);
 			margin: 2px;
+			@include pseudo(after) {
+				content: "";
+				position: absolute;
+				@include stretch;
+				background-color: $dnd-color;
+				opacity: .5;
+				transition: inherit;
+				z-index: -1;
+			}
 			&:hover {
-				background-color: $red;
 				color: #fff !important;
+				@include pseudo(after) {
+					opacity: .7;
+				}
 			}
 		}
 	}
