@@ -13,7 +13,7 @@
     }
     &%dividerRed {
         @include pseudo(before) {
-            background-color: var(--main-color);
+            background-color: $main-color;
         }
         + %divider {
             margin-top: 40px;

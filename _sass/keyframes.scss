@@ -35,10 +35,10 @@
 }
 @include keyframes(badge) {
     from {
-        background-color: var(--main-color);
+        background-color: $main-color;
     }
     to {
-        background-color: var(--hover-color);
+        background-color: $hover-color;
     }
 }
 @include keyframes(menu-fold) {

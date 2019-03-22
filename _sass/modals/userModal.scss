@@ -5,7 +5,7 @@
 		position: absolute;
 		@include stretch;
 		margin: -5px;
-		@include bg($img: var(--background-image), $pos: center, $size: cover, $attach: fixed);
+		@include bg($img: $bg-img, $pos: center, $size: cover, $attach: fixed);
 		@include filter(blur(3px));
 		z-index: -1;
 	}
@@ -64,8 +64,8 @@
 			border-color: hsla(0, 0%, 100%, .7) !important;
 		}
 		&%tabBarItemSelected {
-			border-color: var(--main-color) !important;
-			color: var(--main-color) !important;
+			border-color: $main-color !important;
+			color: $main-color !important;
 		}
 	}
 }

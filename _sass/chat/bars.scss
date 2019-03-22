@@ -6,7 +6,7 @@
 		content: "";
 		position: absolute;
 		@include stretch;
-		background-color: var(--main-color);
+		background-color: $main-color;
 		border-radius: 0 0 3px 3px;
 		opacity: .8;
 		z-index: -1;
@@ -34,7 +34,7 @@
 	transition: all .15s ease-in-out;
 	&:hover,
 	&:active {
-		background-color: var(--main-color) !important;
+		background-color: $main-color !important;
 		> button {
 			color: #fff;
 		}
@@ -52,7 +52,7 @@
 %hasMore {
 	> button {
 		background-color: rgba(0, 0, 0, .5) !important;
-		color: var(--main-color);
+		color: $main-color;
 		border: none !important;
 	}
 }

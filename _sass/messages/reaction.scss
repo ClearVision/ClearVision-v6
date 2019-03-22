@@ -27,7 +27,7 @@
             content: "";
             position: absolute;
             @include stretch;
-            background: var(--main-color);
+            background: $main-color;
             border-radius: 3px;
             opacity: .5;
             z-index: -1;

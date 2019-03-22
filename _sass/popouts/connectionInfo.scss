@@ -2,7 +2,7 @@
 %popout > %connectionInfo {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
     > header {
-        background-color: var(--main-color);
+        background-color: $main-color;
         color: #fff;
         border-radius: 3px 3px 0 0;
     }
@@ -12,7 +12,7 @@
         > p {
             color: hsla(0, 0%, 100%, .5);
             > strong {
-                color: var(--main-color);
+                color: $main-color;
             }
         }
     }
@@ -24,17 +24,17 @@
     }
     > g {
         > circle {
-            fill: var(--main-color) !important;
+            fill: $main-color !important;
             fill-opacity: 1 !important;
             r: 1 !important;
         }
         > polyline {
-            stroke: var(--main-color) !important;
+            stroke: $main-color !important;
             stroke-opacity: .7 !important;
         }
     }
 }
 %connectionInfo > section > %connectionInfoBottom > a {
-    color: var(--main-color);
+    color: $main-color;
     @include hover-shadow;
 }

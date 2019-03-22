@@ -5,7 +5,7 @@
         transition: all .15s ease-in-out;
     }
     %sliderBarFill {
-        background-color: var(--main-color);
+        background-color: $main-color;
     }
     %sliderGrabber {
         background-color: #fff;

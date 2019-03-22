@@ -5,7 +5,7 @@
 	}
 	%autocompletePopoutArrow,
 	%autocompletePopoutHeaderBackground {
-		background-color: var(--main-color);
+		background-color: $main-color;
 	}
 	%autocompletePopoutHeaderText,
 	%autocompletePopoutInput {

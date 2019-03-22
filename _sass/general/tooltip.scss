@@ -7,12 +7,12 @@
 	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .2);
 	&%tooltipBlack,
 	&%tooltipRed {
-		background-color: var(--main-color);
+		background-color: $main-color;
 		color: #fff;
 		@each $e in Top, Right, Bottom, Left {
 			&%tooltip#{$e} {
 				@include pseudo(after) {
-					border-#{$e}-color: var(--main-color);
+					border-#{$e}-color: $main-color;
 				}
 			}
 		}

@@ -1,7 +1,7 @@
 // BD SETTINGS SIDEBAR
 %settingsSide #bd-settings-sidebar {
 	.ui-tab-bar-header {
-		color: var(--main-color);
+		color: $main-color;
 		font-weight: 700;
 	}
 	.ui-tab-bar-item {
@@ -22,7 +22,7 @@
 			}
 		}
 		&.selected {
-			background-color: var(--main-color);
+			background-color: $main-color;
 			color: #fff;
 			@include pseudo(before) {
 				opacity: 1;
@@ -36,7 +36,7 @@
 		color: hsla(0, 0%, 100%, .3) !important;
 	}
 	a {
-		color: var(--main-color);
+		color: $main-color;
 		@include hover-shadow;
 	}
 }

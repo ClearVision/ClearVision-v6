@@ -14,7 +14,7 @@
 		background-color: hsla(0, 0%, 100%, .04);
 		color: hsla(0, 0%, 100%, .7);
 		&:hover {
-			background-color: var(--main-color);
+			background-color: $main-color;
 			color: #fff;
 		}
 	}
@@ -22,9 +22,9 @@
 %mentioned %markup > %roleMention {
 	padding: 0;
 	@include clear;
-	color: var(--main-color);
+	color: $main-color;
 	@include hover-shadow;
 	&:hover {
-		color: var(--main-color);
+		color: $main-color;
 	}
 }

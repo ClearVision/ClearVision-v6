@@ -13,12 +13,12 @@
         background-color: transparent;
         border-color: transparent;
         %embedLink {
-            color: var(--main-color);
+            color: $main-color;
             @include hover-shadow;
         }
         %embedTitleLink,
         %embedProviderLink {
-            color: var(--main-color) !important;
+            color: $main-color !important;
         }
         %embedVideoActionsInner {
             > %embedVideoActionsButtonWrapper {
@@ -29,7 +29,7 @@
         }
         a > code {
             &%codeInline {
-                color: var(--main-color);
+                color: $main-color;
             }
         }
     }

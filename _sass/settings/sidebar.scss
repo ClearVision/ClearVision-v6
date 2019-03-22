@@ -21,7 +21,7 @@
 %settingsSide {
 	padding: 30px 0;
 	%tabBarHeader {
-		color: var(--main-color);
+		color: $main-color;
 	}
 	%tabBarItem {
 		@include clear;
@@ -42,7 +42,7 @@
 			}
 		}
 		&%tabBarItemSelected {
-			background-color: var(--main-color) !important;
+			background-color: $main-color !important;
 			color: #fff !important;
 			@include pseudo(before) {
 				opacity: 1;

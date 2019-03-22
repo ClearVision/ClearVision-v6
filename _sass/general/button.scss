@@ -1,13 +1,13 @@
 // BUTTON
 %buttonFilledGreen,
 %buttonFilledBrand {
-	background-color: var(--main-color);
+	background-color: $main-color;
 	transition: all .3s ease-in-out;
 	&:hover {
-		background-color: var(--hover-color);
+		background-color: $hover-color;
 	}
 	&:disabled {
-		background-color: var(--main-color);
+		background-color: $main-color;
 	}
 }
 %buttonInverted,

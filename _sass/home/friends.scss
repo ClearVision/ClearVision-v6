@@ -16,7 +16,7 @@
 					color: hsla(0, 0%, 100%, .7) !important;
 				}
 				&%tabBarItemSelected {
-					background-color: var(--main-color) !important;
+					background-color: $main-color !important;
 					color: #fff !important;
 				}
 			}
@@ -83,7 +83,7 @@
 				color: hsla(0, 0%, 100%, .5);
 				%friendActivityText {
 					> strong {
-						color: var(--main-color);
+						color: $main-color;
 						font-weight: 600;
 					}
 				}
@@ -99,14 +99,14 @@
 				opacity: 0;
 				transition: all .3s ease-in-out;
 				> %friendsAction {
-					background-color: var(--main-color);
+					background-color: $main-color;
 					transition: all .15s ease-in-out;
 					&:hover {
-						background-color: var(--hover-color);
+						background-color: $hover-color;
 					}
 				}
 				> %friendsActionRemove:hover {
-					background-color: $dark-red !important;
+					background-color: $dnd-color !important;
 				}
 			}
 			&:hover > %friendsColumnActions {
@@ -142,7 +142,7 @@
 						}
 						&:focus + %friendsAddFriendHint {
 							@include pseudo(after) {
-								border-color: var(--main-color);
+								border-color: $main-color;
 							}
 						}
 					}

@@ -23,7 +23,7 @@
 		}
 		> svg {
 			> path {
-				fill: var(--main-color);
+				fill: $main-color;
 			}
 		}
 	}
@@ -35,7 +35,7 @@
 	}
 	> %titlebarWinButtonClose {
 		&:hover {
-			background-color: var(--dnd-color);
+			background-color: $dnd-color;
 		}
 	}
 }

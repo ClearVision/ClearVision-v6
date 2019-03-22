@@ -31,7 +31,7 @@
 		%checkboxElement:checked {
 			+ span {
 				width: 100%;
-				background-color: var(--main-color) !important;
+				background-color: $main-color !important;
 				@include pseudo(after) {
 					margin-left: 17px !important;
 				}

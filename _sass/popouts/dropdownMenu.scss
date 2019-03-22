@@ -10,7 +10,7 @@
             transition: all .15s ease-in-out;
         }
         &:hover {
-            background-color: var(--main-color);
+            background-color: $main-color;
             color: #fff;
             > %dropdownIcon {
                 opacity: .7;

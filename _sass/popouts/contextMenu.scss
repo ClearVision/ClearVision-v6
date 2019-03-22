@@ -23,14 +23,13 @@
 			color: #fff !important;
 		}
 		&%contextMenuItemDanger {
-			background-color: $dark-red;
+			background-color: $dnd-color;
 			color: hsla(0, 0%, 100%, .6) !important;
 			width: calc(100% - 4px);
 			margin: 2px;
 			&:hover {
 				background-color: $red;
 				color: #fff !important;
-
 			}
 		}
 	}

@@ -44,8 +44,8 @@
 		}
 		&:focus ~ %channelTextareaButtons {
 			@include pseudo(after) {
-				border: 2px solid var(--main-color);
-				box-shadow: 0 0 3px var(--main-color);
+				border: 2px solid $main-color;
+				box-shadow: 0 0 3px $main-color;
 			}
 		}
 	}
@@ -70,7 +70,7 @@
 			color: hsla(0, 0%, 100%, .15);
 		}
 		%autocompleteSelectorSelected {
-			background-color: var(--main-color);
+			background-color: $main-color;
 			> %autocompleteContent {
 				color: #fff;
 			}

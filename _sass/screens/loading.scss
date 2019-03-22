@@ -3,12 +3,12 @@
 // 	background-color: rgba(0, 0, 0, .9);
 // }
 %loadingLinks {
-	color: var(--main-color);
+	color: $main-color;
 	opacity: 1 !important;
 	@include hover-shadow;
 }
 %loadingPath {
-	stroke: var(--main-color) !important;
+	stroke: $main-color !important;
 }
 %loadingPath2 {
 	opacity: .5 !important;

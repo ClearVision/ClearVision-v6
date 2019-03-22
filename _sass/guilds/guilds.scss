@@ -13,8 +13,8 @@
 				left: -17px;
 				width: 13px;
 				height: 0;
-				background-color: var(--main-color);
-				box-shadow: 0 0 20px var(--main-color);
+				background-color: $main-color;
+				box-shadow: 0 0 20px $main-color;
 				opacity: 0;
 				transition: all .5s cubic-bezier(.2, .1, .4, 1);
 			}
@@ -47,7 +47,7 @@
 		%guildSelected,
 		%guild:hover {
 			%guildInner[style*=background] {
-				background-color: var(--main-color) !important;
+				background-color: $main-color !important;
 			}
 		}
 		%guildAudio {
@@ -59,15 +59,15 @@
 		%homeButton {
 			&:hover,
 			&[style*="background-color: rgb(114, 137, 218);"] {
-				background-color: var(--main-color) !important;
+				background-color: $main-color !important;
 			}
 		}
 		%guildsError {
 			background-color: rgba(0, 0, 0, .5);
-			border-color: var(--main-color);
+			border-color: $main-color;
 			transition: all .3s ease-in-out;
 			&:hover {
-				background-color: var(--main-color);
+				background-color: $main-color;
 			}
 		}
 		%circleIconButton {
@@ -77,8 +77,8 @@
 			opacity: .7;
 			transition: all .1s ease-in-out;
 			&:hover {
-				color: var(--main-color);
-				border-color: var(--main-color);
+				color: $main-color;
+				border-color: $main-color;
 				@include animation(pulsate-border 2s infinite ease-in-out);
 				> svg {
 					@include animation(pulsate-svg 2s infinite ease-in-out);

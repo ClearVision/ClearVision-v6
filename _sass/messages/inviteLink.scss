@@ -3,13 +3,13 @@
     background-color: rgba(0, 0, 0, .4);
     border-color: transparent;
     %inviteGuildName{
-        color: var(--main-color);
+        color: $main-color;
         &:hover {
             @include hover-shadow;
         }
     }
     %inviteGuildNameExpired {
-        color: var(--dnd-color);
+        color: $dnd-color;
     }
     %inviteGuildIconExpired {
         position: relative;
@@ -22,7 +22,7 @@
             bottom: 10%;
             left: 50%;
             width: 6px;
-            background-color: var(--dnd-color);
+            background-color: $dnd-color;
             border-radius: 1px;
         }
         @include pseudo(after) {
@@ -59,10 +59,10 @@
     }
     %inviteButtonExpired {
         background-color: transparent;
-        border: 1px solid var(--dnd-color);
+        border: 1px solid $dnd-color;
         transition: all .3s ease-in-out;
         &:hover {
-            background-color: var(--dnd-color);
+            background-color: $dnd-color;
         }
     }
 }

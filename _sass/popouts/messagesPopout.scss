@@ -6,7 +6,7 @@
 		border-radius: 5px;
 		box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
 		%popoutHeader {
-			background-color: var(--main-color);
+			background-color: $main-color;
 			border-radius: 3px 3px 0 0;
 			%mentionFilterLabel {
 				color: hsla(0, 0%, 100%, .5);
@@ -21,7 +21,7 @@
 	}
 	%messagesPopout {
 		%messagesPopoutChannelName {
-			color: var(--main-color);
+			color: $main-color;
 			text-shadow: 0 0 1px;
 			transition: all .15s ease-in-out;
 			&:hover {
@@ -65,7 +65,7 @@
 					border-radius: 3px;
 					transition: all .3s ease-in-out;
 					&:hover {
-						background-color: var(--main-color);
+						background-color: $main-color;
 						color: #fff;
 						transition-duration: .15s;
 					}
@@ -105,5 +105,5 @@
 	@include prefix(transform-origin, 50% 0);
 }
 %statusGreen {
-	color: var(--online-color);
+	color: $online-color;
 }

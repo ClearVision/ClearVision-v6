@@ -43,7 +43,7 @@
 		// SELECTED
 		&%privateChannelSelected {
 			> a {
-				background-color: var(--main-color);
+				background-color: $main-color;
 			}
 			%privateChannelName {
 				color: #fff;

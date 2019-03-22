@@ -1,7 +1,7 @@
 // WELCOME MESSAGE
 %welcomeMessage {
     > h1 {
-        color: var(--main-color);
+        color: $main-color;
     }
     > %welcomeMessageItemContainer {
         > %welcomeMessageIcon {
@@ -12,7 +12,7 @@
             color: hsla(0, 0%, 100%, .5);
         }
         a {
-            color: var(--main-color);
+            color: $main-color;
             @include hover-shadow;
         }
     }

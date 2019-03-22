@@ -1,7 +1,7 @@
 // ACTIVITY
 %activity {
 	%activityNameNormal {
-		color: var(--main-color);
+		color: $main-color;
 		text-shadow: 0 0 5px rgba(0, 0, 0, .5);
 		font-weight: 600;
 		> %activityName {

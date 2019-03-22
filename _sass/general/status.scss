@@ -15,23 +15,23 @@
 	margin-bottom: 1px;
 }
 %statusOnline {
-	background-color: var(--online-color);
-	color: var(--online-color);
+	background-color: $online-color;
+	color: $online-color;
 }
 %statusIdle {
-	background-color: var(--idle-color);
-	color: var(--idle-color);
+	background-color: $idle-color;
+	color: $idle-color;
 }
 %statusDnd {
-	background-color: var(--dnd-color);
-	color: var(--dnd-color);
+	background-color: $dnd-color;
+	color: $dnd-color;
 }
 %statusOffline,
 %statusInvisible {
-	background-color: var(--offline-color);
-	color: var(--offline-color);
+	background-color: $offline-color;
+	color: $offline-color;
 }
 %statusStreaming {
-	background-color: var(--streaming-color);
-	color: var(--streaming-color);
+	background-color: $streaming-color;
+	color: $streaming-color;
 }

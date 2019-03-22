@@ -5,7 +5,7 @@
         box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
     }
     header {
-        background-color: var(--main-color);
+        background-color: $main-color;
         border-radius: 3px 3px 0 0;
     }
     section {
@@ -35,7 +35,7 @@
     > %popoutBottomLeft,
     > %popoutBottomRight {
         @include pseudo(after) {
-            border-bottom-color: var(--main-color);
+            border-bottom-color: $main-color;
         }
     }
 }

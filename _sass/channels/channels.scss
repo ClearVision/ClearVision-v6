@@ -38,7 +38,7 @@
 		@include display-flex;
 		@include align-items(center);
 		@include justify-content(center);
-		color: var(--main-color);
+		color: $main-color;
 		font-weight: 700;
 		text-align: center;
 		transition: all .3s ease-in-out;
@@ -50,11 +50,11 @@
 			transition: all .3s ease-in-out;
 		}
 		@include pseudo(before) {
-			background: linear-gradient(to left, var(--main-color) 50%, transparent 100%);
+			background: linear-gradient(to left, $main-color 50%, transparent 100%);
 			margin-right: 5px;
 		}
 		@include pseudo(after) {
-			background: linear-gradient(to right, var(--main-color) 50%, transparent 100%);
+			background: linear-gradient(to right, $main-color 50%, transparent 100%);
 			margin-left: 5px;
 		}
 	}
@@ -123,11 +123,11 @@
 		display: none;
 		+ %channelContent {
 			%channelNameUnreadText {
-				color: var(--main-color);
+				color: $main-color;
 				text-shadow: 0 0 3px;
 			}
 			%channelIcon {
-				color: var(--main-color);
+				color: $main-color;
 				@include filter(drop-shadow(0 0 3px));
 				opacity: 1;
 			}
@@ -144,7 +144,7 @@
 
 	// SELECTED
 	%channelContentSelectedText {
-		background-color: var(--main-color);
+		background-color: $main-color;
 		%channelIcon {
 			opacity: 1;
 		}
@@ -162,11 +162,11 @@
 	// CONNECTED
 	%channelContentConnectedVoice {
 		%channelName {
-			color: var(--main-color);
+			color: $main-color;
 			text-shadow: 0 0 3px;
 		}
 		%channelIcon {
-			color: var(--main-color);
+			color: $main-color;
 			@include filter(drop-shadow(0 0 3px));
 			opacity: 1;
 		}
@@ -206,7 +206,7 @@
 			position: absolute;
 			width: 0;
 			@include pos($top: 0, $bottom: 0, $left: 50%);
-			background: linear-gradient(to right, var(--main-color) 10%, transparent 100%);
+			background: linear-gradient(to right, $main-color 10%, transparent 100%);
 			opacity: .5;
 			transition: all .1s ease-in-out,  width .15s ease-in-out;
 			pointer-events: none;
@@ -214,7 +214,7 @@
 		}
 	}
 	%voiceUserAvatarSpeaking {
-		box-shadow: 0 0 0 2px var(--main-color), inset 0 0 3px rgba(0, 0, 0, .5);
+		box-shadow: 0 0 0 2px $main-color, inset 0 0 3px rgba(0, 0, 0, .5);
 		@include pseudo(after) {
 			@include pos($top: -2px, $bottom: -2px);
 			width: 100px;
@@ -234,13 +234,13 @@
 	%categoryContainerDrag,
 	%channelContainerDrag {
 		@include pseudo(before, after) {
-			background-color: var(--main-color);
+			background-color: $main-color;
 			border-radius: 0;
 		}
 	}
 	%channelContainerUserOver {
 		@include pseudo(after) {
-			background-color: var(--main-color);
+			background-color: $main-color;
 			border-color: transparent;
 			opacity: .1;
 		}

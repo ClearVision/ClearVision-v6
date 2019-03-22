@@ -24,7 +24,7 @@
     }
 }
 %fileNameLink {
-    color: var(--main-color);
+    color: $main-color;
     @include hover-shadow;
 }
 %attachmentButton {
@@ -51,5 +51,5 @@
     background-color: hsla(0, 0%, 100%, .04) !important;
 }
 %fileProgressBar {
-    background-color: var(--main-color) !important;
+    background-color: $main-color !important;
 }

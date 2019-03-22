@@ -4,8 +4,8 @@ body {
 		content: "";
 		position: absolute;
 		@include stretch;
-		@include bg($img: var(--background-image), $size: cover, $pos: center);
-		@include filter(brightness(var(--background-brightness)) blur(var(--background-blur)));
+		@include bg($img: $bg-img, $size: cover, $pos: center);
+		@include filter(brightness($bg-brightness) blur($bg-blur));
 		z-index: -9999;
 	}
 }
@@ -27,6 +27,6 @@ body {
 @each $selector in  -moz-selection, selection {
     ::#{$selector} {
         color: #fff;
-		background: var(--main-color);
+		background: $main-color;
     }
 }

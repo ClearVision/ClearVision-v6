@@ -2,6 +2,16 @@
 ---
 // VARIABLES
 $version: "ClearVision v6-pre-2.6.5b";
+$main-color: var(--main-color);
+$hover-color: var(--hover-color);
+$online-color: var(--online-color);
+$idle-color: var(--idle-color);
+$dnd-color: var(--dnd-color);
+$offline-color: var(--offline-color);
+$streaming-color: var(--streaming-color);
+$bg-img: var(--background-image);
+$bg-brightness: var(--background-blur);
+$bg-blur: var(--background-blur);
 $green: #43b581;
 $red: #f04747;
 $dark-red: #a93d3d;
