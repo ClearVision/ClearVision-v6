@@ -919,6 +919,9 @@
 .searchBar-3dMhjb {
 	@extend %chatSearchBar !optional;
 }
+.DraftEditor-root {
+	@extend %chatSearchRoot !optional;
+}
 .public-DraftEditorPlaceholder-root {
 	@extend %chatSearchPlaceholder !optional;
 }
@@ -927,6 +930,18 @@
 }
 .searchAnswer-3Dz2-q {
 	@extend %chatSearchAnswer !optional;
+}
+.icon-1R19_H {
+	@extend %chatTitleIcon !optional;
+}
+.iconInactive-g2AXfB {
+	@extend %chatTitleIconInactive !optional;
+}
+.iconActive-AKd_jq {
+	@extend %chatTitleIconActive !optional;
+}
+.divider-2PMBlV {
+	@extend %chatTitleDivider !optional;
 }
 .content-yTz4x3 {
 	@extend %chatContent !optional;
