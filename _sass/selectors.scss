@@ -82,24 +82,25 @@
 // 21) Screens
 //	21.1) Loading
 // 22) Plugins
-//	22.1) Zerthox
-//		22.1.1) BetterReplyer
-//	22.2) noodlebox
-//		22.2.1) Owner Tags
-//		22.2.2) Line Numbers
-//	22.3) Finicalmist
-//		22.3.1 ) Copy Code
-//	22.4) Nirewen
-//		22.4.1) Citador
-//	22.5) samogot
-//		22.5.1) Quoter
-//	22.6) DevilBro
-//		22.6.1) ShowHiddenChannels
-//		22.6.2) RepoControls
-//		22.6.3) CreationDate
-//		22.6.4) JoinedAtDate
-// 22.7) Metalloriff
-// 22.7.1) DetailedServerTooltips
+//	22.1) Plugin Notice
+//	22.2) Zerthox
+//		22.2.1) BetterReplyer
+//	22.3) noodlebox
+//		22.3.1) Owner Tags
+//		22.3.2) Line Numbers
+//	22.4) Finicalmist
+//		22.4.1 ) Copy Code
+//	22.5) Nirewen
+//		22.5.1) Citador
+//	22.6) samogot
+//		22.6.1) Quoter
+//	22.7) DevilBro
+//		22.7.1) ShowHiddenChannels
+//		22.7.2) RepoControls
+//		22.7.3) CreationDate
+//		22.7.4) JoinedAtDate
+// 22.8) Metalloriff
+// 22.8.1) DetailedServerTooltips
 
 // 1) APP
 .appMount-3lHmkl {
@@ -2420,63 +2421,70 @@ pre {
 }
 
 // 22) PLUGINS
-// 22.1) Zerthox
-// 22.1.1) BetterReplyer
+// 22.1) Plugin Notice
+#pluginNotice {
+	@extend %pluginNotice !optional;
+}
+#outdatedPlugins {
+	@extend %outdatedPlugins !optional;
+}
+// 22.2) Zerthox
+// 22.2.1) BetterReplyer
 .replyer {
 	@extend %replyerButton !optional;
 }
-// 22.2) noodlebox
-// 22.2.1) Owner Tags
+// 22.3) noodlebox
+// 22.3.1) Owner Tags
 .kawaii-tag {
 	@extend %kawaiiTag !optional;
 }
 .kawaii-tag-invert {
 	@extend %kawaiiTagInvert !optional;
 }
-// 22.2.2) Line Numbers
+// 22.3.2) Line Numbers
 .kawaii-linenumbers {
 	@extend %kawaiiLinenumbers !optional;
 }
-// 22.3) Finicalmist
-// 22.3.1 ) Copy Code
+// 22.4) Finicalmist
+// 22.4.1 ) Copy Code
 .copybutton {
 	@extend %codeCopybutton !optional;
 }
-// 22.4) Nirewen
-// 22.4.1) Citador
+// 22.5) Nirewen
+// 22.5.1) Citador
 .citar-btn {
 	@extend %citarButton !optional;
 }
-// 22.5) samogot
-// 22.5.1) Quoter
+// 22.6) samogot
+// 22.6.1) Quoter
 .btn-quote {
 	@extend %quoteButton !optional;
 }
-// 22.6) DevilBro
+// 22.7) DevilBro
 .DevilBro-tooltip {
 	@extend %tooltipDevilBro !optional;
 }
-// 22.6.1) ShowHiddenChannels
+// 22.7.1) ShowHiddenChannels
 .container-hidden {
 	@extend %categoryHidden !optional;
 }
-// 22.6.2) RepoControls
+// 22.7.2) RepoControls
 .repocontrols-editicon-tooltip {
 	@extend %tooltipRepoControlsEdit !optional;
 }
 .repocontrols-trashicon-tooltip {
 	@extend %tooltipRepoControlsTrash !optional;
 }
-// 22.6.3) CreationDate
+// 22.7.3) CreationDate
 .creationDate {
 	@extend %creationDate !optional;
 }
-// 22.6.4) JoinedAtDate
+// 22.7.4) JoinedAtDate
 .joinedAtDate {
 	@extend %joinedAtDate !optional;
 }
-// 22.7) Metalloriff
-// 22.7.1) DetailedServerTooltips
+// 22.8) Metalloriff
+// 22.8.1) DetailedServerTooltips
 .dst-tooltip {
 	@extend %serverTooltip !optional;
 }
