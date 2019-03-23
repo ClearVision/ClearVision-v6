@@ -114,6 +114,14 @@
 				opacity: 1;
 			}
 		}
+		%friendsTableBodyImage {
+			@include filter(grayscale(1) brightness(2));
+			opacity: .3;
+		}
+		%friendsTableBodyText,
+		%friendsTableBodyTitle {
+			color: hsla(0, 0%, 100%, .5);
+		}
 
 		// FRIEND ADD PAGE
 		%friendsTableAddWrapper {
@@ -149,6 +157,14 @@
 					> %friendsAddFriendHint {
 						color: hsla(0, 0%, 100%, .2);
 					}
+				}
+			}
+			%friendsTableConnectAccountButton {
+				background-color: hsla(0, 0%, 100%, .04);
+				border-color: transparent;
+				transition: all .15s ease-in-out;
+				&:hover {
+					background-color: hsla(0, 0%, 100%, .1);
 				}
 			}
 			%friendsTableSuggestionsHeader {
