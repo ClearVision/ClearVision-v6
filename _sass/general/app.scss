@@ -9,8 +9,8 @@ body {
 		z-index: -9999;
 	}
 }
-#app-mount {
-	background: rgba(0, 0, 0, .6) !important;
+%appMount {
+	background: rgba(0, 0, 0, .6);
 }
 
 // LAYERS
@@ -29,4 +29,10 @@ body {
         color: #fff;
 		background: $main-color;
     }
+}
+
+// ANCHORS
+%anchor {
+	color: $main-color;
+	@include hover-shadow;
 }
