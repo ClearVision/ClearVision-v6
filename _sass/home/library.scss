@@ -1,0 +1,152 @@
+// GAME LIBRARY
+%base {
+    %gameLibrary,
+    %libraryRoot {
+        background-color: transparent;
+    }
+}
+%base {
+
+    // HEADER
+    %libraryHeader {
+        background-color: rgba(0, 0, 0, .6);
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, .6);
+    }
+    %libraryHeaderPill {
+        %libraryHeaderItem {
+            background-color: transparent;
+            color: hsla(0, 0%, 100%, .5);
+            transition: all .3s ease-in-out;
+            &:hover {
+                &:not(%libraryHeaderItemSelected) {
+                    background-color: rgba(0, 0, 0, .5);
+                    color: hsla(0, 0%, 100%, .7);
+                }
+            }
+            &%libraryHeaderItemSelected {
+                background-color: $main-color;
+                color: #fff;
+            }
+        }
+    }
+    %libraryFilterInput {
+        background-color: hsla(0, 0%, 100%, .1);
+        color: #fff;
+        &::-webkit-input-placeholder {
+            color: hsla(0, 0%, 100%, .3);
+        }
+    }
+
+    // BODY
+    %libraryScroller {
+        background-color: rgba(0, 0, 0, .5);
+    }
+    %libraryTableHeader {
+        background-color: transparent;
+        border-bottom: 1px solid hsla(0, 0%, 100%, .07);
+        > %libraryTableHeaderCell {
+            border-left-color: hsla(0, 0%, 100%, .07);
+            color: hsla(0, 0%, 100%, .3);
+            transition: all .3s ease-in-out;
+            &:hover {
+                &:not(%libraryTableHeaderCellSorted) {
+                    color: hsla(0, 0%, 100%, .5);
+                }
+            }
+        }
+        > %libraryTableHeaderCellSorted {
+            color: hsla(0, 0%, 100%, .7);
+        }
+    }
+    %libraryTableRowWrapper {
+        background-color: transparent;
+        border-radius: 0;
+        transition: all .15s ease-in-out;
+        &,
+        &:hover {
+            margin: 0 20px;
+            padding: 0;
+            + %libraryTableRowWrapper {
+                > %libraryTableRow {
+                    margin-top: -1px;
+                    border-top: 1px solid hsla(0, 0%, 100%, .04);
+                }
+            }
+        }
+        &:hover {
+            background-color: rgba(0, 0, 0, .3);
+        }
+    }
+    %libraryTableRow {
+        margin: 0;
+        color: hsla(0, 0%, 100%, .7);
+        %libraryPlayButton {
+            background-color: hsla(0, 0%, 100%, .07);
+            color: hsla(0, 0%, 100%, .7);
+            transition: all .15s ease-in-out;
+        }
+        &:hover {
+            %libraryPlayButton:hover {
+                background-color: var(--main-color);
+                color: #fff;
+            }
+        }
+    }
+    %libraryPlayButtonShine {
+        margin-left: -4px;
+    }
+    %libraryTableRowBackground {
+        border-radius: 0;
+        @include animation(fade-in 1s ease-in-out);
+    }
+    %libraryTableTextCell {
+        color: hsla(0, 0%, 100%, .5);
+    }
+    %libraryTableSettingIcon {
+        color: #fff;
+        opacity: .5;
+        transition: all .15s ease-in-out;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+// GIFT INVENTORY
+%giftInventoryBody {
+    %giftInventoryCodeRedemptionHeader,
+    %giftInventoryRootHeader {
+        color: hsla(0, 0%, 100%, .7);
+    }
+    %giftInventoryDivider {
+        background-color: hsla(0, 0%, 100%, .07);
+    }
+    %giftInventoryInputPrompt {
+        color: hsla(0, 0%, 100%, .5);
+    }
+    %giftInventoryInput {
+        background-color: rgba(0, 0, 0, .3);
+        border: 1px solid transparent;
+        color: #fff;
+        transition: all .15s ease-in-out;
+        &:hover {
+            border-color: transparent;
+        }
+        &:focus {
+            border-color: $main-color;
+        }
+        &::-webkit-input-placeholder {
+            color: hsla(0, 0%, 100%, .2);
+        }
+    }
+    %giftInventoryEmptyImage {
+        @include filter(grayscale(1) brightness(2));
+        opacity: .3;
+    }
+    %giftInventoryEmptyHeader {
+        color: hsla(0, 0%, 100%, .7);
+    }
+    %giftInventoryEmptySubtext {
+        color: hsla(0, 0%, 100%, .5);
+    }
+}
