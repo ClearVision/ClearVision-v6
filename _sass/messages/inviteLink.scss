@@ -2,6 +2,9 @@
 %messageGroup %inviteWrapper {
     background-color: rgba(0, 0, 0, .4);
     border-color: transparent;
+    %inviteTitle {
+        color: hsla(0, 0%, 100%, .5);
+    }
     %inviteGuildName{
         color: $main-color;
         &:hover {
@@ -35,10 +38,13 @@
     %inviteGuildDetail {
         padding-left: 1px;
         margin-left: -1px;
+        color: hsla(0, 0%, 100%, .3);
     }
-    %inviteTitle,
-    %inviteGuildDetail {
-        color: hsla(0, 0%, 100%, .5);
+    %inviteStatusOnline {
+        background-color: $online-color;
+    }
+    %inviteStatusOffline {
+        background-color: $offline-color;
     }
     %inviteButton{
         border-color: transparent;

@@ -1,6 +1,7 @@
 // STATUS
 %status,
-%avatarWrapper > %statusProfile {
+%avatarWrapper > %statusProfile,
+%inviteStatus {
 	box-shadow: 0 0 3px, 0 0 5px rgba(0, 0, 0, .5);
 	transition: all .3s ease-in-out;
 }
