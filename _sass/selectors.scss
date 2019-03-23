@@ -829,6 +829,18 @@
 .name-2WpE7M {
 	@extend %privateChannelName !optional;
 }
+.nameWithActivity-1ceSyU {
+	@extend %privateChannelNameWithActivity !optional;
+}
+.activity-525YDR {
+	@extend %privateChannelActivity !optional;
+}
+.activityIcon-1mtTk4 {
+	@extend %privateChannelActivityIcon !optional;
+}
+.activityIconForeground-3VIgI8 {
+	@extend %privateChannelActivityIconForeground !optional;
+}
 .close-3hZ5Ni {
 	@extend %privateChannelClose !optional;
 }
