@@ -5,12 +5,23 @@
 	%privateChannel {
 		> a,
 		%privateChannelName,
+		%privateChannelNameWithActivity,
+		%privateChannelActivity,
+		%privateChannelActivityIconForeground,
 		%privateChannelClose,
 		%privateChannelIcon {
 			transition: all .15s ease-in-out;
 		}
-		%privateChannelName {
+		%privateChannelName,
+		%privateChannelNameWithActivity {
 			color: hsla(0, 0%, 100%, .3);
+		}
+		%privateChannelActivity {
+			color: hsla(0, 0%, 100%, .2);
+			opacity: 1;
+		}
+		%privateChannelActivityIconForeground {
+			fill: hsla(0, 0%, 100%, .2);
 		}
 		%privateChannelClose {
 			display: block;
@@ -26,8 +37,15 @@
 			> a {
 				background-color: hsla(0, 0%, 100%, .1);
 			}
-			%privateChannelName {
+			%privateChannelName,
+			%privateChannelNameWithActivity {
 				color: hsla(0, 0%, 100%, .7);
+			}
+			%privateChannelActivity {
+				color: hsla(0, 0%, 100%, .5);
+			}
+			%privateChannelActivityIconForeground {
+				fill: hsla(0, 0%, 100%, .5);
 			}
 			%privateChannelClose {
 				opacity: .3;
@@ -45,8 +63,15 @@
 			> a {
 				background-color: $main-color;
 			}
-			%privateChannelName {
+			%privateChannelName,
+			%privateChannelNameWithActivity {
 				color: #fff;
+			}
+			%privateChannelActivity {
+				color: hsla(0, 0%, 100%, .7);
+			}
+			%privateChannelActivityIconForeground {
+				fill: hsla(0, 0%, 100%, .7);
 			}
 			%privateChannelIcon {
 				opacity: 1;
