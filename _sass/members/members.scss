@@ -28,7 +28,7 @@
 	}
 	> %member {
 		border-radius: 5px;
-		@include prefix(backface-visibility, hidden);
+		@include backface-visibility(hidden);
 		> %memberContent {
 			position: relative;
 			@include clear;

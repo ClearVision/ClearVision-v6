@@ -62,7 +62,7 @@
 		@include clear;
 	}
 	%messages {
-		@include prefix(backface-visibility, hidden);
+		@include backface-visibility(hidden);
 	}
 }
 

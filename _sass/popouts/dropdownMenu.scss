@@ -4,6 +4,7 @@
     > %dropdownItem {
         color: hsla(0, 0%, 100%, .7);
         transition: all .15s ease-in-out;
+        @include backface-visibility(hidden);
         > %dropdownIcon {
             opacity: .5;
             @include filter(brightness(10) grayscale(1));
