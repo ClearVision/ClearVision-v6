@@ -1,0 +1,30 @@
+// CHANNEL NOTICE
+%channels %channelsNotices {
+    %channelNotice {
+        background-color: transparent;
+    }
+}
+%channelsNotices {
+    %channelNotice {
+        %channelNoticeClose {
+            opacity: .3;
+            transition: all .15s ease-in-out;
+            &:hover {
+                opacity: .7;
+            }
+        }
+        %channelNoticeMessage {
+            color: hsla(0, 0%, 100%, .7);
+            %channelNoticeMessageButton {
+                background-color: hsla(0, 0%, 100%, .1);
+                border: 1px solid transparent;
+                color: hsla(0, 0%, 100%, .7);
+                transition: all .15s ease-in-out;
+                &:hover {
+                    background-color: hsla(0, 0%, 100%, .2);
+                    color: #fff;
+                }
+            }     
+        }
+    }
+}
