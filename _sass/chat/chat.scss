@@ -1,6 +1,8 @@
 // CHAT
+%base %chat {
+	background-color: transparent;
+}
 %chat {
-	@include clear;
 
 	// TITLEBAR
 	%chatTitle,
@@ -33,6 +35,9 @@
 	%chatSearch {
 		> %chatSearchBar {
 			background-color: hsla(0, 0%, 100%, .1);
+			> %chatSearchRoot {
+				color: #fff;
+			}
 			%chatSearchPlaceholder {
 				color: hsla(0, 0%, 100%, .3);
 			}
@@ -69,4 +74,19 @@
 // NO CHANNEl
 %noChannel {
 	background-color: rgba(0, 0, 0, .5);
+}
+
+// TITLE ICONS & DIVIDERS
+%chatTitleIcon {
+	opacity: .5;
+	transition: all .15s ease-in-out;
+	&%chatTitleIconActive {
+		opacity: .7;
+	}
+	&:hover {
+		opacity: 1;
+	}
+}
+%appMount %chatTitleDivider {
+	background-color: hsla(0, 0%, 100%, .1);
 }
