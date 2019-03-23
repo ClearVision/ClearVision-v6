@@ -18,34 +18,55 @@
 		}
 	}
 }
-%settingsSide {
+%standardSidebarView %settingsSide {
 	padding: 30px 0;
 	%tabBarHeader {
 		color: $main-color;
 	}
 	%tabBarItem {
-		@include clear;
-		color: hsla(0, 0%, 100%, .3) !important;
+		height: unset;
 		padding: 8px 0 8px 20px;
 		margin: 0;
-		cursor: pointer;
+		background-color: transparent;
+		color: hsla(0, 0%, 100%, .3);
 		transition: all .15s ease-in-out;
-		@include pseudo(before) {
-			opacity: .3;
-			transition: all .15s ease-in-out;
-		}
+		cursor: pointer;
+		@include backface-visibility(hidden);
 		&:hover {
-			background-color: hsla(0, 0%, 100%, .07) !important;
-			color: hsla(0, 0%, 100%, .7) !important;
+			background-color: hsla(0, 0%, 100%, .07);
+			color: hsla(0, 0%, 100%, .7);
 			@include pseudo(before) {
 				opacity: .7;
 			}
 		}
 		&%tabBarItemSelected {
-			background-color: $main-color !important;
-			color: #fff !important;
+			background-color: $main-color;
+			color: #fff;
 			@include pseudo(before) {
 				opacity: 1;
+			}
+		}
+	}
+	%tabBarSeparator {
+		background-color: hsla(0, 0%, 100%, .04);
+	}
+}
+%settingsSidebar {
+	%tabBarItem {
+		@include pseudo(before) {
+			opacity: .3;
+			transition: inherit;
+		}
+		&[style*="color: rgb(114, 137, 218)"] {
+			@include clear;
+			color: hsla(0, 0%, 100%, .3) !important;
+			&:hover {
+				background-color: hsla(0, 0%, 100%, .07) !important;
+				color: hsla(0, 0%, 100%, .7) !important;
+			}
+			&%tabBarItemSelected {
+				background-color: $main-color !important;
+				color: #fff !important;
 			}
 		}
 		&[style*="color: rgb(240, 71, 71)"] {
@@ -64,7 +85,7 @@
 				z-index: -1;
 			}
 			&:hover {
-				color: hsla(0, 0%, 100%, 1) !important;
+				color: #fff !important;
 				@include pseudo(before) {
 					opacity: 1;
 					@include transform(rotateY(180deg));
@@ -74,8 +95,5 @@
 				}
 			}
 		}
-	}
-	%tabBarSeparator {
-		background-color: hsla(0, 0%, 100%, .04);
 	}
 }
