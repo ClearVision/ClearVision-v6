@@ -1032,6 +1032,9 @@
 .wrapper-35wsBm {
 	@extend %inviteWrapper !optional;
 }
+.h5-18_1nd {
+	@extend %inviteTitle !optional;
+}
 .guildName-2hvnt_ {
 	@extend %inviteGuildName !optional;
 }
@@ -1047,8 +1050,17 @@
 .guildDetail-1nRKNE {
 	@extend %inviteGuildDetail !optional;
 }
-.h5-18_1nd {
-	@extend %inviteTitle !optional;
+.status-2L8Zc7 {
+	@extend %inviteStatus !optional;
+}
+.statusOnline-8PnF5L {
+	@extend %inviteStatusOnline !optional;
+}
+.statusOffline-37RKt7 {
+	@extend %inviteStatusOffline !optional;
+}
+.onlineCount-w6_WmG {
+	@extend %inviteOnlineCount !optional;
 }
 .button-3To2tQ {
 	@extend %inviteButton !optional;
