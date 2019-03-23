@@ -1453,6 +1453,9 @@ pre {
 .headerBar-UHpsPw {
 	@extend %friendsHeaderBar !optional;
 }
+.separator-gCa7yv {
+	@extend %friendsHeaderSeparator !optional;
+}
 .friendsTable-133bsv {
 	@extend %friendsTable !optional;
 }
@@ -1527,6 +1530,9 @@ pre {
 }
 .friendsTableAdd-1w2_qZ {
 	@extend %friendsTableAdd !optional;
+}
+.oldH2-2In-bl {
+	@extend %friendsTableAddH2 !optional;
 }
 .friendTableAddDescription-19D3dl {
 	@extend %friendsTableAddDescription !optional;
