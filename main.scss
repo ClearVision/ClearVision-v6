@@ -89,6 +89,7 @@ $discord-blurple: #7289da;
 
 /* APP  */
 @import "general/app";
+@import "general/notice";
 
 /* TITLEBAR */
 @import "general/titlebar";
@@ -101,6 +102,7 @@ $discord-blurple: #7289da;
 @import "channels/containers";
 @import "channels/unreadIndicator";
 @import "channels/privateChannels";
+@import "channels/channelNotice";
 
 /* CHAT */
 @import "chat/chat";
