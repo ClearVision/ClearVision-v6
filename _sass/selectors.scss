@@ -39,6 +39,10 @@
 //		8.1.1) Header
 //	 	8.1.2) Body
 //	 	8.1.3) Add Tab
+// 	8.2) Game Library
+//		8.2.1) Header
+//	 	8.2.2) Body
+//	 	8.2.3) Gift Inventory
 // 9) Avatars
 // 10) Status
 // 11) Bot Tags
@@ -1547,6 +1551,142 @@ pre {
 }
 .friendTableSuggestionsHeader-2zSnpD {
 	@extend %friendsTableSuggestionsHeader !optional;
+}
+// 8.2) Game Library
+.gameLibrary-TTDw4Y {
+	@extend %gameLibrary !optional;
+}
+.root-1BQpZw {
+	@extend %libraryRoot !optional;
+}
+// 8.2.1) Header
+.libraryHeader-3g95kE {
+	@extend %libraryHeader !optional;
+}
+.topPill-30KHOu {
+	@extend %libraryHeaderPill !optional;
+}
+.item-PXvHYJ {
+	@extend %libraryHeaderItem !optional;
+}
+.itemSelected-1qLhcL {
+	@extend %libraryHeaderItemSelected !optional;
+}
+.libraryFilter-31ZUa2 {
+	@extend %libraryFilter !optional;
+}
+.libraryFilterInput-3JzqZD {
+	@extend %libraryFilterInput !optional;
+}
+// 8.2.2) Body
+.scrollerStore-390omS {
+	@extend %libraryScroller !optional;
+}
+.table-1tDS6w {
+	@extend %libraryTable !optional;
+}
+.header-39GIC8 {
+	@extend %libraryTableHeader !optional;
+}
+.headerCell-3L6rFG {
+	@extend %libraryTableHeaderCell !optional;
+}
+.headerCellSorted-3a5AzJ {
+	@extend %libraryTableHeaderCellSorted !optional;
+}
+.headerCellContent-1pLtOr {
+	@extend %libraryTableHeaderCellContent !optional;
+}
+.rowWrapper-2fB6P0 {
+	@extend %libraryTableRowWrapper !optional;
+}
+.rowWrapperActive-2L7i9f {
+	@extend %libraryTableRowWrapperActive !optional;
+}
+.rowBackground-3MeNoN {
+	@extend %libraryTableRowBackground !optional;
+}
+.row-ZLfFhY {
+	@extend %libraryTableRow !optional;
+}
+.bodyCell-9xKjWE {
+	@extend %libraryTableBodyCell !optional;
+}
+.nameBodyCell-3JOlnK {
+	@extend %libraryTableNameCell !optional;
+}
+.gameIcon-3XJ9fu {
+	@extend %libraryTableGameIcon !optional;
+}
+.nameCellInfo-11WjkQ {
+	@extend %libraryTableNameCellInfo !optional;
+}
+.nameCellText-1mpqtF {
+	@extend %libraryTableNameCellText !optional;
+}
+.textCell-1aBIUP {
+	@extend %libraryTableTextCell !optional;
+}
+.actionsCell-1awtNi {
+	@extend %libraryTableActionsCell !optional;
+}
+.settingIcons-3QYa5E {
+	@extend %libraryTableSettingsIcons !optional;
+}
+.settingIcon-1nXguX {
+	@extend %libraryTableSettingIcon !optional;
+}
+.hidden-QHDCKo {
+	@extend %libraryTableSettingIconHidden !optional;
+}
+.playButton-1fMNjH {
+	@extend %libraryPlayButton !optional;
+}
+.playButtonContents-1Ww4h5 {
+	@extend %libraryPlayButtonContents !optional;
+}
+.buttonShine-1CSUM8 {
+	@extend %libraryPlayButtonShine !optional;
+}
+// 8.2.3) Gift Inventory
+.body-2xXalD {
+	@extend %giftInventoryBody !optional;
+}
+.divider-3573oO {
+	@extend %giftInventoryDivider !optional;
+}
+.codeRedemption-2CtsK6 {
+	@extend %giftInventoryCodeRedemption !optional;
+}
+.header-3YT7-d {
+	@extend %giftInventoryCodeRedemptionHeader !optional;
+}
+.inputPrompt-1vnYnD {
+	@extend %giftInventoryInputPrompt !optional;
+}
+.codeRedemptionInput-2ewYLZ {
+	@extend %giftInventoryCodeRedemptionInput !optional;
+}
+.input-cIJ7To {
+	@extend %giftInventoryInput !optional;
+}
+.root-3iawo2 {
+	@extend %giftInventoryRoot !optional;
+}
+.header-2HrZI4 {
+	@extend %giftInventoryRootHeader !optional;
+}
+.emptyState-20gB_x {
+	@extend %giftInventoryEmpty !optional;
+}
+.emptyStateImage-2eMp68 {
+	@extend %giftInventoryEmptyImage !optional;
+}
+.emptyStateHeader-1ADtcL {
+	@extend %giftInventoryEmptyHeader !optional;
+}
+.emptyStateSubtext-2njjqg {
+	@extend %giftInventoryEmptySubtext !optional;
 }
 
 // 9) AVATARS
