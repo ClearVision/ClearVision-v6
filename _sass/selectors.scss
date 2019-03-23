@@ -1,4 +1,4 @@
-/*! Using Discord Selectors v19-03-22 by Zerthox */
+/*! Using Discord Selectors v19-03-23 by Zerthox */
 // FILE CONTENTS
 // 1) App
 // 	1.1) App Notices
@@ -1479,6 +1479,15 @@ pre {
 .friendsActionRemove-qu8nnl {
 	@extend %friendsActionRemove !optional;
 }
+.text-GwUZgS {
+	@extend %friendsTableBodyText !optional;
+}
+.title-2BxgL2 {
+	@extend %friendsTableBodyTitle !optional;
+}
+.image-1GzsFd {
+	@extend %friendsTableBodyImage !optional;
+}
 // 8.1.3) Add Tab
 .friendTableAddWrapper-nHHZtK {
 	@extend %friendsTableAddWrapper !optional;
@@ -1505,7 +1514,10 @@ pre {
 	@extend %friendsTableConnectAccounts !optional;
 }
 .connectAccountBtnGroup-3T0n3K {
-	@extend %friendsTableConnectAccountBtnGroup !optional;
+	@extend %friendsTableConnectAccountButtonGroup !optional;
+}
+.inner-2Y6JuD {
+	@extend %friendsTableConnectAccountButton !optional;
 }
 .friendTableSuggestionsHeader-2zSnpD {
 	@extend %friendsTableSuggestionsHeader !optional;
