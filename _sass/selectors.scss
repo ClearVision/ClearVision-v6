@@ -73,7 +73,8 @@
 // 19) Modals
 // 	19.1) User Modal
 //		19.1.1) Header
-//		19.1.2) Body
+//		19.1.2) Profile Badges
+//		19.1.3) Body
 // 	19.2) Keyboard Shortcuts Modal
 // 20) Settings
 //	20.1) Sidebar
@@ -2272,12 +2273,6 @@ pre {
 .discriminator-xUhQkU {
 	@extend %userModalDiscriminator !optional;
 }
-.profileBadgeWrapper-rl_RO6 {
-	@extend %userModalProfileBadgeWrapper !optional;
-}
-.profileBadge-2BqF-Z {
-	@extend %userModalProfileBadge !optional;
-}
 .additionalActionsIcon-1FoUlE {
 	@extend %userModalAdditionalActionsIcon !optional;
 }
@@ -2287,7 +2282,44 @@ pre {
 .activityProfile-2bJRaP {
 	@extend %userModalActivity !optional;
 }
-// 19.1.2) Body
+// 19.1.2) Profile Badges
+.profileBadgeWrapper-rl_RO6 {
+	@extend %profileBadgeWrapper !optional;
+}
+.profileBadge-2BqF-Z {
+	@extend %profileBadge !optional;
+}
+.profileBadgeStaff-13GO7z {
+	@extend %profileBadgeStaff !optional;
+}
+.profileBadgePartner-SjK6L2 {
+	@extend %profileBadgePartner !optional;
+}
+.profileBadgeHypesquad-1YIe7Z {
+	@extend %profileBadgeHypeSquad !optional;
+}
+.profileBadgeHypeSquadOnlineHouse1-xN6tES {
+	@extend %profileBadgeHypeSquadHouse1 !optional;
+}
+.profileBadgeHypeSquadOnlineHouse2-3jBpXR {
+	@extend %profileBadgeHypeSquadHouse2 !optional;
+}
+.profileBadgeHypeSquadOnlineHouse3-1YbjMX {
+	@extend %profileBadgeHypeSquadHouse3 !optional;
+}
+.profileBadgeHypeSquadOnlineHouse3KOH-s5aYpz {
+	@extend %profileBadgeHypeSquadHouse3KOH !optional;
+}
+.profileBadgeEarlySupporter-PQB_0a {
+	@extend %profileBadgeEarlySupporter !optional;
+}
+.profileBadgePremium-3kZ9Qj {
+	@extend %profileBadgePremium !optional;
+}
+.profileBadgeBugHunter-IV0vLE {
+	@extend %profileBadgeBugHunter !optional;
+}
+// 19.1.3) Body
 .body-3ND3kc {
 	@extend %userModalBody !optional;
 }
