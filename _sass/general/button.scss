@@ -1,6 +1,7 @@
 // BUTTON
 %buttonFilledGreen,
-%buttonFilledBrand {
+%buttonFilledBrand,
+%buttonFilledPrimary {
 	background-color: $main-color;
 	transition: all .3s ease-in-out;
 	&:hover {
