@@ -186,6 +186,7 @@ $discord-blurple: #7289da;
 @import "screens/loading";
 
 /* PLUGINS */
+@import "plugins/pluginNotice";
 @import "plugins/messageButtons";
 @import "plugins/noodlebox/lineNumbers";
 @import "plugins/noodlebox/ownerTag";
