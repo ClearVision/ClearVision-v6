@@ -1,7 +1,7 @@
 // MEMBER ROLES
 %role {
 	position: relative;
-	@include display-flex;
+	@include display(flex);
 	@include flex-direction(row-reverse);
 	border-radius: 3px;
 	transition: all .1s ease-in-out;

@@ -7,7 +7,7 @@
 	background-color: rgba(0, 0, 0, .6);
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, .6);
 	> %titlebarWordmark {
-		@include display-flex;
+		@include display(flex);
 		@include align-items(center);
 		@include justify-content(center);
 		opacity: 1;

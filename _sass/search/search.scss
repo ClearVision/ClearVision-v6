@@ -34,7 +34,7 @@
 			display: none;
 		}
 		> %searchChannelName {
-			@include display-flex;
+			@include display(flex);
 			@include align-items(center);
 			@include justify-content(center);
 			background-color: transparent;

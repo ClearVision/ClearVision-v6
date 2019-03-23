@@ -2,7 +2,7 @@
 %statusPicker {
     > %dropdownItem {
         position: relative;
-        @include display-flex;
+        @include display(flex);
         @include justify-content(center);
         > %statusPickerText {
             position: absolute;

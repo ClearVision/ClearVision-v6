@@ -4,7 +4,7 @@
 }
 %members {
 	> %membersGroup {
-		@include display-flex;
+		@include display(flex);
 		@include align-items(center);
 		@include justify-content(center);
 		color: $main-color;
