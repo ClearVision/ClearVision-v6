@@ -103,11 +103,17 @@
 	}
 }
 
-/// Set display property to flex with prefixes
-@mixin display-flex {
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
+/// Set display property with prefixes
+/// @param {*} $a - display property value
+@mixin display($a) {
+	@if $a == flex or $a == inline-flex {
+		display: -webkit-#{$a};
+		display: -ms-#{$a}box;
+		display: $a;
+	}
+	@else {
+		display: $a;
+	}
 }
 
 /// Set flex-direction property with prefixes
