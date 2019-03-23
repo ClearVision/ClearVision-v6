@@ -235,6 +235,13 @@
 	user-select: $a;
 }
 
+/// Set backface-visibility property with prefixes
+/// @param {*} $a - backface-visibility property value
+@mixin backface-visibility($a) {
+	-webkit-backface-visibility: $a;
+	backface-visibility: $a;
+}
+
 /// Specify a new web-hosted font via @font-face
 /// @param {*} $name - font name
 /// @param {*} $url [null] - font source (as url)
