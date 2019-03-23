@@ -21,6 +21,9 @@
 				}
 			}
 		}
+		%friendsHeaderSeparator {
+			background-color: hsla(0, 0%, 100%, .1);
+		}
 	}
 
 	// FRIENDS TABLE
@@ -28,23 +31,17 @@
 		background-color: rgba(0, 0, 0, .5);
 		margin-top: 0;
 		%friendsTableHeader {
-			border-bottom: 1px solid hsla(0, 0%, 100%, .04);
+			border-bottom: 1px solid hsla(0, 0%, 100%, .07);
 			%friendsColumn {
-				color: hsla(0, 0%, 100%, .5);
+				color: hsla(0, 0%, 100%, .3);
 			}
 			%friendsColumnSeparator {
-				background-color: hsla(0, 0%, 100%, .04);
+				background-color: hsla(0, 0%, 100%, .07);
 			}
 		}
 		%friendsRow {
 			background-color: transparent;
 			transition: all .15s ease-in-out;
-			&:hover {
-				background-color: rgba(0, 0, 0, .3);
-				> %friendsColumnName > %friendsColumnNameDiscordTag > %friendsColumnNameDiscriminator {
-					opacity: .6;
-				}
-			}
 			&,
 			&:hover {
 				margin: 0 20px;
@@ -54,6 +51,13 @@
 					&[style*="opacity: 1"] {
 						border-top-color: hsla(0, 0%, 100%, .04);
 					}
+				}
+			}
+			&:hover {
+				background-color: rgba(0, 0, 0, .3);
+				border-radius: 0;
+				> %friendsColumnName > %friendsColumnNameDiscordTag > %friendsColumnNameDiscriminator {
+					opacity: .6;
 				}
 			}
 			+ %friendsRow {
@@ -127,7 +131,7 @@
 		%friendsTableAddWrapper {
 			%friendsTableAddHeader {
 				background: transparent;
-				border-bottom: 1px solid hsla(0, 0%, 100%, .1);
+				border-bottom: 1px solid hsla(0, 0%, 100%, .07);
 				%friendsAddFriendInputWrapper {
 					background-color: rgba(0, 0, 0, .3);
 					border-color: transparent;
@@ -137,7 +141,6 @@
 							color: hsla(0, 0%, 100%, .2);
 						}
 						+ %friendsAddFriendHint {
-							
 							@include pseudo(after) {
 								content: "";
 								position: fixed;
@@ -169,7 +172,14 @@
 			}
 			%friendsTableSuggestionsHeader {
 				background-color: transparent;
-				border-bottom: 1px solid hsla(0, 0%, 100%, .1);
+				border-bottom: 1px solid hsla(0, 0%, 100%, .07);
+			}
+			%friendsTableAddH2 {
+				color: hsla(0, 0%, 100%, .7);
+			}
+			%friendsTableAddDescription,
+			%friendsTableConnectAccounts h3 {
+				color: hsla(0, 0%, 100%, .5);
 			}
 		}
 	}
