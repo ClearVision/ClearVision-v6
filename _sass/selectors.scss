@@ -1776,11 +1776,14 @@ pre {
 .lookOutlined-3sRXeN {
 	@extend %buttonOutlined !optional;
 }
-.colorWhite-rEQuAQ {
-	@extend %buttonWhite !optional;
-}
 .colorBrand-3pXr91 {
 	@extend %buttonBrand !optional;
+}
+.colorPrimary-3b3xI6 {
+	@extend %buttonPrimary !optional;
+}
+.colorWhite-rEQuAQ {
+	@extend %buttonWhite !optional;
 }
 .colorGreen-29iAKY {
 	@extend %buttonGreen !optional;
@@ -1792,11 +1795,14 @@ pre {
 	@extend %buttonGrey !optional;
 }
 %buttonOutlined {
-	&%buttonWhite {
-		@extend %buttonOutlinedWhite !optional;
-	}
 	&%buttonBrand {
 		@extend %buttonOutlinedBrand !optional;
+	}
+	&%buttonPrimary {
+		@extend %buttonOutlinedPrimary !optional;
+	}
+	&%buttonWhite {
+		@extend %buttonOutlinedWhite !optional;
 	}
 	&%buttonGreen {
 		@extend %buttonOutlinedGreen !optional;
@@ -1809,11 +1815,14 @@ pre {
 	}
 }
 %buttonFilled {
-	&%buttonWhite {
-		@extend %buttonFilledWhite !optional;
-	}
 	&%buttonBrand {
 		@extend %buttonFilledBrand !optional;
+	}
+	&%buttonPrimary {
+		@extend %buttonFilledPrimary !optional;
+	}
+	&%buttonWhite {
+		@extend %buttonFilledWhite !optional;
 	}
 	&%buttonGreen {
 		@extend %buttonFilledGreen !optional;
@@ -1826,11 +1835,14 @@ pre {
 	}
 }
 %buttonInverted {
-	&%buttonWhite {
-		@extend %buttonInvertedWhite !optional;
-	}
 	&%buttonBrand {
 		@extend %buttonInvertedBrand !optional;
+	}
+	&%buttonPrimary {
+		@extend %buttonInvertedPrimary !optional;
+	}
+	&%buttonWhite {
+		@extend %buttonInvertedWhite !optional;
 	}
 	&%buttonGreen {
 		@extend %buttonInvertedGreen !optional;
