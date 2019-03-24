@@ -173,6 +173,10 @@
 			@include filter(drop-shadow(0 0 3px));
 			opacity: 1;
 		}
+		%channelUserLimit {
+			background-color: hsla(0, 0%, 100%, .1);
+			color: hsla(0, 0%, 100%, .7);
+		}
 	}
 
 	// MUTED
@@ -188,8 +192,10 @@
 	// USER LIMIT
 	%channelUserLimit {
 		background-color: hsla(0, 0%, 100%, .04);
+		border-radius: 3px;
 		color: hsla(0, 0%, 100%, .3);
 		font-weight: 600;
+		transition: all .15s ease-in-out;
 	}
 
 	// VOICE USER LIST
@@ -230,6 +236,9 @@
 	%voiceUserNameHovered,
 	%voiceUserNameSpeaking {
 		color: #fff;
+	}
+	%voiceUserName:hover,
+	%voiceUserNameHovered {
 		text-shadow: 0 0 3px;
 	}
 
