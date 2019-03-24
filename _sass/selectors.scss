@@ -1,4 +1,4 @@
-/*! Using Discord Selectors v19-03-23 by Zerthox */
+/*! Using Discord Selectors v19-03-24 by Zerthox */
 // FILE CONTENTS
 // 1) App
 // 	1.1) App Notices
@@ -397,21 +397,15 @@
 }
 // 4.2) Voice & Text Channels
 .containerDefault-1ZnADq {
-	@extend %channelContainer !optional;
 	@extend %channelContainerDefault !optional;
 }
 .containerDragAfter-1F4fgZ {
-	@extend %channelContainer !optional;
-	@extend %channelContainerDrag !optional;
 	@extend %channelContainerDragAfter !optional;
 }
 .containerDragBefore-31UGCO {
-	@extend %channelContainer !optional;
-	@extend %channelContainerDrag !optional;
 	@extend %channelContainerDragBefore !optional;
 }
 .containerUserOver-1U5YnL {
-	@extend %channelContainer !optional;
 	@extend %channelContainerUserOver !optional;
 }
 %channelContainerDragBefore,
@@ -422,6 +416,97 @@
 %channelContainerDrag,
 %channelContainerUserOver {
 	@extend %channelContainer !optional;
+}
+.wrapper-KpKNwI {
+	@extend %channelWrapper !optional;
+}
+.wrapperDefaultText-2IWcE8 {
+	@extend %channelWrapperDefaultText !optional;
+}
+.wrapperHoveredText-2geN_M {
+	@extend %channelWrapperHoveredText !optional;
+}
+.wrapperSelectedText-3dSUjC {
+	@extend %channelWrapperSelectedText !optional;
+}
+.wrapperUnreadText-2zuiuD {
+	@extend %channelWrapperUnreadText !optional;
+}
+.wrapperConnectedText-3NUF2g {
+	@extend %channelWrapperConnectedText !optional;
+}
+.wrapperLockedText-wfOnM5 {
+	@extend %channelWrapperLockedText !optional;
+}
+.wrapperMutedText-1YBpvv {
+	@extend %channelWrapperMutedText !optional;
+}
+%channelWrapperDefaultText,
+%channelWrapperHoveredText,
+%channelWrapperSelectedText,
+%channelWrapperUnreadText,
+%channelWrapperConnectedText,
+%channelWrapperLockedText,
+%channelWrapperMutedText {
+	@extend %channelWrapperText !optional;
+}
+.wrapperDefaultVoice-1yvceo {
+	@extend %channelWrapperDefaultVoice !optional;
+}
+.wrapperHoveredVoice-3ItgyI {
+	@extend %channelWrapperHoveredVoice !optional;
+}
+.wrapperSelectedVoice-xzxa2u {
+	@extend %channelWrapperSelectedVoice !optional;
+}
+.wrapperUnreadVoice-23GIYe {
+	@extend %channelWrapperUnreadVoice !optional;
+}
+.wrapperConnectedVoice-2mvQJY {
+	@extend %channelWrapperConnectedVoice !optional;
+}
+.wrapperLockedVoice-3QrBs- {
+	@extend %channelWrapperLockedVoice !optional;
+}
+.wrapperMutedVoice-10gPcW {
+	@extend %channelWrapperMutedVoice !optional;
+}
+%channelWrapperDefaultVoice,
+%channelWrapperHoveredVoice,
+%channelWrapperSelectedVoice,
+%channelWrapperUnreadVoice,
+%channelWrapperConnectedVoice,
+%channelWrapperLockedVoice,
+%channelWrapperMutedVoice {
+	@extend %channelWrapperVoice !optional;
+}
+%channelWrapperDefaultText,
+%channelWrapperDefaultVoice {
+	@extend %channelWrapperDefault !optional;
+}
+%channelWrapperHoveredText,
+%channelWrapperHoveredVoice {
+	@extend %channelWrapperHovered !optional;
+}
+%channelWrapperSelectedText,
+%channelWrapperSelectedVoice {
+	@extend %channelWrapperSelected !optional;
+}
+%channelWrapperUnreadText,
+%channelWrapperUnreadVoice {
+	@extend %channelWrapperUnread !optional;
+}
+%channelWrapperConnectedText,
+%channelWrapperConnectedVoice {
+	@extend %channelWrapperConnected !optional;
+}
+%channelWrapperLockedText,
+%channelWrapperLockedVoice {
+	@extend %channelWrapperLocked !optional;
+}
+%channelWrapperMutedText,
+%channelWrapperMutedVoice {
+	@extend %channelWrapperMuted !optional;
 }
 .content-20Aix8 {
 	@extend %channelContent !optional;
