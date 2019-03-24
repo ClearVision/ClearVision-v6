@@ -1,5 +1,5 @@
 {
-    "version": "6.0.0-pre-2.7.0",
+    "version": "6.0.0-pre-2.7.1",
     "css": {
         "main": "https://clearvision.gitlab.io/v6/main.css",
         "settings": "https://clearvision.gitlab.io/v6/settings.css"
@@ -18,7 +18,8 @@
             "streaming-color": "#593695",
             "background-image": "https://zerthox.github.io/ClearVision/images/sapphire.jpg",
             "background-brightness": "100%",
-            "background-blur": "0px"
+            "background-blur": "0px",
+            "background-color": "rgba(0, 0, 0, 0.6)"
         }
     }
 }

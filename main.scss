@@ -1,7 +1,7 @@
 ---
 ---
 // VARIABLES
-$version: "ClearVision v6-pre-2.7.0";
+$version: "ClearVision v6-pre-2.7.1";
 $main-color: var(--main-color);
 $hover-color: var(--hover-color);
 $online-color: var(--online-color);
@@ -60,7 +60,7 @@ $discord-blurple: #7289da;
 // IMPORT SELECTORS
 @import "selectors";
 
-// TEST SETTINGS [REMOVE]
+/* DEFAULT SETTINGS */
 :root {
 	--main-color: #2780e6;
 	--hover-color: #1e63b3;
@@ -74,20 +74,6 @@ $discord-blurple: #7289da;
 	--background-blur: 0px;
 	--background-color: rgba(0, 0, 0, .6);
 }
-
-// RUBY
-// :root {
-// 	--main-color: #e62727;
-// 	--hover-color: #b31e1e;
-// 	--background-image: url(https://zerthox.github.io/ClearVision/images/ruby.jpg);
-// }
-
-// EMERALD
-// :root {
-// 	--main-color: #33e627;
-// 	--hover-color: #2ab31e;
-// 	--background-image: url(https://zerthox.github.io/ClearVision/images/emerald.jpg);
-// }
 
 /* APP  */
 @import "general/app";
