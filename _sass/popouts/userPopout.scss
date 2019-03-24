@@ -8,16 +8,16 @@
 		content: "";
 		position: absolute;
 		@include stretch;
-		margin: -5px;
+		margin: calc(100% - 100vh) calc(100% - 100vw);
 		@include bg($img: $bg-img, $pos: center, $size: cover, $attach: fixed);
-		@include filter(blur(3px));
+		@include filter(blur(calc(#{$bg-blur} + 3px)));
 		z-index: -1;
 	}
 	%popoutLeft > & {
 		@include pseudo(before) {
 			left: -100%;
 			right: 100%;
-			@include transform(translateX(calc(100% - 10px)));
+			@include transform(translateX(calc(200vw - 100%)));
 		}
 	}
 
