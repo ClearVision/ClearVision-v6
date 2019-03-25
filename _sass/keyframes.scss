@@ -1,45 +1,42 @@
 @keyframes fade-in {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 @keyframes pulsate-border {
-    0%,
-	100% {
-        border-color: hsla(0, 0%, 100%, .3);
-    }
-    50% {
-        border-color: currentcolor;
-    }
+	0%, 100% {
+		border-color: hsla(0, 0%, 100%, .3);
+	}
+	50% {
+		border-color: currentcolor;
+	}
 }
 @keyframes pulsate-plus {
-    0%,
-    100% {
-        background-color: #333539;
-    }
-    50% {
-        background-color: currentcolor;
-    }
+	0%, 100% {
+		background-color: #333539;
+	}
+	50% {
+		background-color: currentcolor;
+	}
 }
 @keyframes pulsate-svg {
-    0%,
-	100% {
-        color: #333539;
-    }
-    50% {
-        color: currentcolor;
-    }
+	0%, 100% {
+		color: #333539;
+	}
+	50% {
+		color: currentcolor;
+	}
 }
 @keyframes badge {
-    from {
-        background-color: $main-color;
-    }
-    to {
-        background-color: $hover-color;
-    }
+	from {
+		background-color: $main-color;
+	}
+	to {
+		background-color: $hover-color;
+	}
 }
 @keyframes menu-fold {
 	from {
@@ -62,12 +59,12 @@
 	}
 }
 @keyframes menu-pop {
-    from {
+	from {
 		transform: scale(0);
-        opacity: 0;
-    }
-    to {
+		opacity: 0;
+	}
+	to {
 		transform: none;
-        opacity: 1;
-    }
+		opacity: 1;
+	}
 }
