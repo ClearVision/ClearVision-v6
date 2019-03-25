@@ -156,11 +156,25 @@
 
     // QUERY CONTAINER
     %searchPopoutQueryContainer {
-        background-color: hsla(0, 0%, 100%, .1);
+        background-color: $main-color;
         > %searchPopoutQueryText {
             color: hsla(0, 0%, 100%, .7);
             > strong {
                 color: #fff;
+            }
+        }
+        %searchPopoutKeybindShortcut {
+            > span {
+                border-color: hsla(0, 0%, 100%, .5);
+                box-shadow: inset 0 -4px 0 hsla(0, 0%, 100%, .7);
+                &:hover {
+                    background-color: transparent;
+                }
+                &:active {
+                    border-color: hsla(0, 0%, 100%, .5);
+                    box-shadow: inset 0 -2px 0 hsla(0, 0%, 100%, .7);
+                    color: #fff;
+                }
             }
         }
     }
