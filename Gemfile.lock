@@ -68,7 +68,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll
   jekyll-autoprefixer
-  therubyracer
+  mini_racer
   tzinfo-data
 
 RUBY VERSION

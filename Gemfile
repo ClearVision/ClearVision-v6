@@ -13,4 +13,4 @@ group :jekyll_plugins do
 end
 
 # autoprefixer dependency
-gem "therubyracer", :platforms => :ruby
+gem "mini_racer", :platforms => :ruby
