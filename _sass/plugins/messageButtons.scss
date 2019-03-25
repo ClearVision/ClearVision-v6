@@ -5,7 +5,7 @@
 %discryptButton {
 	border-radius: 3px;
 	transition: all .3s ease-in-out;
-	@include animation(fade-in .3s ease-in-out);
+	animation: fade-in .3s ease-in-out;
 	&:hover {
 		background-color: $main-color !important;
 	}

@@ -6,7 +6,7 @@
 		@include stretch;
 		margin: calc(100% - 100vh) calc(100% - 100vw);
 		@include bg($img: $bg-img, $pos: center, $size: cover, $attach: fixed);
-		@include filter(blur(calc(#{$bg-blur} + 3px)));
+		filter: blur(calc(#{$bg-blur} + 3px));
 		z-index: -1;
 	}
 	> %userModalBody {
@@ -147,7 +147,7 @@
 	}
 }
 %userModalEmptyIcon {
-	@include filter(grayscale(1) brightness(2));
+	filter: grayscale(1) brightness(2);
 	opacity: .3;
 }
 %userModalEmptyText {

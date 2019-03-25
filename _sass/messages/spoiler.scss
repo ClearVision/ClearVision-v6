@@ -36,7 +36,7 @@
     }
     %spoilerImageHidden,
     %spoilerEmbedHidden > %embedInner {
-        @include filter(blur(40px));
+        filter: blur(40px);
     }
     %spoilerEmbedHidden {
         border-radius: 0;
@@ -47,11 +47,11 @@
             color: #fff;
         }
         %spoilerImageHidden {
-             @include filter(blur(30px));
+             filter: blur(30px);
         }
         %spoilerEmbedHidden {
             > %embedInner {
-                @include filter(blur(30px));
+                filter: blur(30px);
             }
         }
     }

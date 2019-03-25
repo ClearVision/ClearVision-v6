@@ -4,9 +4,9 @@
 }
 %members {
 	> %membersGroup {
-		@include display(flex);
-		@include align-items(center);
-		@include justify-content(center);
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		color: $main-color;
 		font-size: 11px;
 		font-weight: 700;
@@ -28,7 +28,7 @@
 	}
 	> %member {
 		border-radius: 5px;
-		@include backface-visibility(hidden);
+		backface-visibility: hidden;
 		> %memberContent {
 			position: relative;
 			@include clear;
@@ -53,7 +53,7 @@
 		}
 		&:active {
 			> %memberContent {
-				@include transform(scale(.9));
+				transform: scale(.9);
 			}
 		}
 		%memberUsername {
@@ -70,12 +70,12 @@
 			}
 		}
 		%avatarOffline {
-			@include filter(grayscale(100%) blur(1px));
+			filter: grayscale(100%) blur(1px);
 			transition: all .5s ease-in-out;
 		}
 		&:hover {
 			%avatarOffline {
-				@include filter(none);
+				filter: none;
 			}
 		}
 	}

@@ -45,14 +45,14 @@
 			&:hover {
 				background-color: hsla(0, 0%, 100%, .04);
 				%messageHeaderCozyMeta {
-					@include prefix(mask-image, linear-gradient(to right, #000 230px, transparent 245px));
+					mask-image: linear-gradient(to right, #000 230px, transparent 245px);
 				}
 			}
 			+ %messageGroupWrapper {
 				margin-top: -1px;
 			}
 			%messageHeaderCozyMeta {
-				@include prefix(mask-image, linear-gradient(to right, #000 290px, transparent 305px));
+				mask-image: linear-gradient(to right, #000 290px, transparent 305px);
 			}
 			%messagesPopoutActionButtons {
 				background-color: transparent;
@@ -101,8 +101,8 @@
 	}
 }
 %recentMentionsFilterPopout {
-	@include animation(menu-fold .3s cubic-bezier(.2, .6, .5, 1.1));
-	@include prefix(transform-origin, 50% 0);
+	animation: menu-fold .3s cubic-bezier(.2, .6, .5, 1.1);
+	transform-origin: 50% 0;
 }
 %statusGreen {
 	color: $online-color;

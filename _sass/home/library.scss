@@ -97,7 +97,7 @@
     }
     %libraryTableRowBackground {
         border-radius: 0;
-        @include animation(fade-in 1s ease-in-out);
+        animation: fade-in 1s ease-in-out;
     }
     %libraryTableTextCell {
         color: hsla(0, 0%, 100%, .5);
@@ -140,7 +140,7 @@
         }
     }
     %giftInventoryEmptyImage {
-        @include filter(grayscale(1) brightness(2));
+        filter: grayscale(1) brightness(2);
         opacity: .3;
     }
     %giftInventoryEmptyHeader {

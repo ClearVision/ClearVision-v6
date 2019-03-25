@@ -1,40 +1,5 @@
 // Mixin Collection by Zerthox
 
-/// Prefix a property with a set of prefixes
-/// @param {string} $property - property name
-/// @param {*} $value... - property value
-/// @param {list} $prefixes [(webkit, moz, ms)] - list of prefixes
-@mixin prefix($property, $value...) {
-	$p: if(length(prefixes) == 0, $prefixes, (webkit, moz, ms));
-	@if type-of($property) == map {
-		$prefixes: if($value, $value, $prefixes);
-		@each $k in map-keys($property) {
-			@each $e in $p {
-				#{'-' + $e + '-' + $k}: map-get($property, $k);
-			}
-			#{$k}: map-get($property, $k);
-		}
-	}
-	@else {
-		@each $e in $p {
-			#{'-' + $e + '-' + $property}: $value;
-		}
-		#{$property}: $value;
-	}
-}
-
-/// Set prefixed keyframes in one mixin
-/// @param {*} $a - animation name
-/// @content [keyframe content]
-@mixin keyframes($a) {
-	@-webkit-keyframes #{$a} {
-		@content;
-	}
-	@keyframes #{$a} {
-		@content;
-	}
-}
-
 /// Set background properties in one mixin
 /// @param {*} $color [null] - background-color property value
 /// @param {*} $image [null] - background-image property value
@@ -76,7 +41,6 @@
 	$l: ();
 	@each $p in $a {
 		$l: append($l, "&:#{$p}", comma);
-		$l: append($l, "&::#{$p}", comma);
 	}
 	#{$l} {
 		@content;
@@ -101,145 +65,6 @@
 	@if $left {
 		left: $left;
 	}
-}
-
-/// Set display property with prefixes
-/// @param {*} $a - display property value
-@mixin display($a) {
-	@if $a == flex or $a == inline-flex {
-		display: -webkit-#{$a};
-		display: -ms-#{$a}box;
-		display: $a;
-	}
-	@else {
-		display: $a;
-	}
-}
-
-/// Set flex-direction property with prefixes
-/// @param {*} $a - flex-direction property value
-@mixin flex-direction($a) {
-	-webkit-flex-direction: $a;
-	-ms-flex-direction: $a;
-	flex-direction: $a;
-}
-
-/// Set flex property with prefixes
-/// @param {*} $a - flex property value
-@mixin flex($a) {
-	-webkit-flex: $a;
-	-ms-flex: $a;
-	flex: $a;
-}
-
-/// Set flex-grow property with prefixes
-/// @param {*} $a - flex-grow property value
-@mixin flex-grow($a) {
-	-webkit-flex-grow: $a;
-	-ms-flex-grow: $a;
-	flex-grow: $a;
-}
-
-/// Set flex-shrink property with prefixes
-/// @param {*} $a - flex-shrink property value
-@mixin flex-shrink($a) {
-	-webkit-flex-shrink: $a;
-	-ms-flex-shrink: $a;
-	flex-shrink: $a;
-}
-
-/// Set flex-basis property with prefixes
-/// @param {*} $a - flex-basis property value
-@mixin flex-basis($a) {
-	-webkit-flex-basis: $a;
-	-ms-flex-basis: $a;
-	flex-basis: $a;
-}
-
-/// Set flex-wrap property with prefixes
-/// @param {*} $a - flex-wrap property value
-@mixin flex-wrap($a) {
-	-webkit-flex-wrap: $a;
-	-ms-flex-wrap: $a;
-	flex-wrap: $a;
-}
-
-/// Set justify-content property with prefixes
-/// @param {*} $a - justify-content property value
-@mixin justify-content($a) {
-	-webkit-justify-content: $a;
-	-ms-flex-pack: $a;
-	@if $a == start or $a == end {
-		justify-content: flex- + $a;
-	}
-	@else {
-		justify-content: $a;
-	}
-}
-
-/// Set align-items property with prefixes
-/// @param {*} $a - align-items property value
-@mixin align-items($a) {
-	-webkit-box-align: $a;
-	-ms-flex-align: $a;
-	@if $a == start or $a == end {
-		align-items: flex- + $a;
-	}
-	@else {
-		align-items: $a;
-	}
-}
-
-/// Set align-self property with prefixes
-/// @param {*} $a - align-self property value
-@mixin align-self($a) {
-	-webkit-align-self: $a;
-	-ms-align-self: $a;
-	align-self: $a;
-}
-
-/// Set animation property with prefixes
-/// @param {*} $a... - animation property value
-@mixin animation($a...) {
-	-webkit-animation: $a;
-	animation: $a;
-}
-
-/// Set transform property with prefixes
-/// @param {*} $a - transfom property value
-@mixin transform($a) {
-	-webkit-transform: $a;
-	-ms-transform: $a;
-	transform: $a;
-}
-
-/// Set filter property with prefixes
-/// @param {*} $a - filter property value
-@mixin filter($a) {
-	-webkit-filter: $a;
-	filter: $a;
-}
-/// Set mask property with prefixes
-/// @param {*} $a - mask property value
-@mixin mask($a) {
-	-webkit-mask: $a;
-	mask: $a;
-}
-
-/// Set user-select property with prefixes
-/// @param {*} $a - user-select property value
-@mixin user-select($a) {
-	-webkit-user-select: $a;
-	-moz-user-select: $a;
-	-ms-user-select: $a;
-	user-select: $a;
-}
-
-/// Set backface-visibility property with prefixes
-/// @param {*} $a - backface-visibility property value
-@mixin backface-visibility($a) {
-	-webkit-backface-visibility: $a;
-	backface-visibility: $a;
 }
 
 /// Specify a new web-hosted font via @font-face

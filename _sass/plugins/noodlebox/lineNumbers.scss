@@ -21,7 +21,7 @@
             text-align: right;
             overflow: hidden;
             vertical-align: top;
-            @include user-select(none);
+            user-select: none;
         }
     }
 }

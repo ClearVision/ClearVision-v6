@@ -35,9 +35,9 @@
 		display: none;
 	}
 	%categoryName {
-		@include display(flex);
-		@include align-items(center);
-		@include justify-content(center);
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		color: $main-color;
 		font-weight: 700;
 		text-align: center;
@@ -131,7 +131,7 @@
 			}
 			%channelIcon {
 				color: $main-color;
-				@include filter(drop-shadow(0 0 3px));
+				filter: drop-shadow(0 0 3px);
 				opacity: 1;
 			}
 		}
@@ -170,7 +170,7 @@
 		}
 		%channelIcon {
 			color: $main-color;
-			@include filter(drop-shadow(0 0 3px));
+			filter: drop-shadow(0 0 3px);
 			opacity: 1;
 		}
 		%channelUserLimit {

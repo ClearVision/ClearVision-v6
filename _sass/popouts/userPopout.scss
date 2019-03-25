@@ -3,21 +3,21 @@
 	position: relative;
 	border-radius: 5px;
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
-	@include animation(menu-pop .15s cubic-bezier(.2, .6, .5, 1.1));
+	animation: menu-pop .15s cubic-bezier(.2, .6, .5, 1.1);
 	@include pseudo(before) {
 		content: "";
 		position: absolute;
 		@include stretch;
 		margin: calc(100% - 100vh) calc(100% - 100vw);
 		@include bg($img: $bg-img, $pos: center, $size: cover, $attach: fixed);
-		@include filter(blur(calc(#{$bg-blur} + 3px)));
+		filter: blur(calc(#{$bg-blur} + 3px));
 		z-index: -1;
 	}
 	%popoutLeft > & {
 		@include pseudo(before) {
 			left: -100%;
 			right: 100%;
-			@include transform(translateX(calc(200vw - 100%)));
+			transform: translateX(calc(200vw - 100%));
 		}
 	}
 

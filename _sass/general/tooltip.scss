@@ -19,22 +19,22 @@
 	}
 	&%tooltipTop,
 	&%tooltipBottom {
-		@include animation(menu-fold .15s cubic-bezier(.2, .6, .5, 1.1));
+		animation: menu-fold .15s cubic-bezier(.2, .6, .5, 1.1);
 	}
 	&%tooltipTop {
-		@include prefix(transform-origin, 0 100%);
+		transform-origin: 0 100%;
 	}
 	&%tooltipBottom {
-		@include prefix(transform-origin, 0 0);
+		transform-origin: 0 0;
 	}
 	&%tooltipRight,
 	&%tooltipLeft {
-		@include animation(menu-slide .15s cubic-bezier(.2, .6, .5, 1.1));
+		animation: menu-slide .15s cubic-bezier(.2, .6, .5, 1.1);
 	}
 	&%tooltipRight {
-		@include prefix(transform-origin, 0 0);
+		transform-origin: 0 0;
 	}
 	&%tooltipLeft {
-		@include prefix(transform-origin, 100% 0);
+		transform-origin: 100% 0;
 	}
 }

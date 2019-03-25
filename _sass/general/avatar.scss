@@ -4,5 +4,5 @@
 	box-shadow: 0 0 5px rgba(0, 0, 0, .5);
 }
 %avatarSmall {
-	@include mask(none);
+	mask: none;
 }

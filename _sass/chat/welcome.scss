@@ -5,7 +5,7 @@
     }
     > %welcomeMessageItemContainer {
         > %welcomeMessageIcon {
-            @include filter(grayscale(1));
+            filter: grayscale(1);
             opacity: .3;
         }
         > p {

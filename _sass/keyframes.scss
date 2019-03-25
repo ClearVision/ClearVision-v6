@@ -1,4 +1,4 @@
-@include keyframes(fade-in) {
+@keyframes fade-in {
     from {
         opacity: 0;
     }
@@ -6,7 +6,7 @@
         opacity: 1;
     }
 }
-@include keyframes(pulsate-border) {
+@keyframes pulsate-border {
     0%,
 	100% {
         border-color: hsla(0, 0%, 100%, .3);
@@ -15,7 +15,7 @@
         border-color: currentcolor;
     }
 }
-@include keyframes(pulsate-plus) {
+@keyframes pulsate-plus {
     0%,
     100% {
         background-color: #333539;
@@ -24,7 +24,7 @@
         background-color: currentcolor;
     }
 }
-@include keyframes(pulsate-svg) {
+@keyframes pulsate-svg {
     0%,
 	100% {
         color: #333539;
@@ -33,7 +33,7 @@
         color: currentcolor;
     }
 }
-@include keyframes(badge) {
+@keyframes badge {
     from {
         background-color: $main-color;
     }
@@ -41,33 +41,33 @@
         background-color: $hover-color;
     }
 }
-@include keyframes(menu-fold) {
+@keyframes menu-fold {
 	from {
-		@include transform(rotateX(-90deg));
+		transform: rotateX(-90deg);
 		opacity: 0;
 	}
 	to {
-		@include transform(none);
+		transform: none;
 		opacity: 1;
 	}
 }
-@include keyframes(menu-slide) {
+@keyframes menu-slide {
 	from {
-		@include transform(rotateY(-90deg));
+		transform: rotateY(-90deg);
 		opacity: 0;
 	}
 	to {
-		@include transform(none);
+		transform: none;
 		opacity: 1;
 	}
 }
-@include keyframes(menu-pop) {
+@keyframes menu-pop {
     from {
-		@include transform(scale(0));
+		transform: scale(0);
         opacity: 0;
     }
     to {
-		@include transform(none);
+		transform: none;
         opacity: 1;
     }
 }

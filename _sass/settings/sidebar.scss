@@ -12,7 +12,7 @@
 	@include clear;
 	%scroller {
 		margin: 30px 8px 30px 0;
-		@include prefix(mask-image, linear-gradient(to bottom, transparent 0%, #000 5%, #000 95%, transparent 100%));
+		mask-image: linear-gradient(to bottom, transparent 0%, #000 5%, #000 95%, transparent 100%);
 		&::-webkit-scrollbar {
 			width: 0 !important;
 		}
@@ -31,7 +31,7 @@
 		color: hsla(0, 0%, 100%, .3);
 		transition: all .15s ease-in-out;
 		cursor: pointer;
-		@include backface-visibility(hidden);
+		backface-visibility: hidden;
 		&:hover {
 			background-color: hsla(0, 0%, 100%, .07);
 			color: hsla(0, 0%, 100%, .7);
@@ -88,7 +88,7 @@
 				color: #fff !important;
 				@include pseudo(before) {
 					opacity: 1;
-					@include transform(rotateY(180deg));
+					transform: rotateY(180deg);
 				}
 				@include pseudo(after) {
 					opacity: .7;

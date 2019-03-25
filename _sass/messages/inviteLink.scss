@@ -29,10 +29,10 @@
             border-radius: 1px;
         }
         @include pseudo(after) {
-            @include transform(translateX(-50%) rotate(45deg));
+            transform: translateX(-50%) rotate(45deg);
         }
         @include pseudo(before) {
-            @include transform(translateX(-50%) rotate(-45deg));
+            transform: translateX(-50%) rotate(-45deg);
         }
     }
     %inviteGuildDetail {

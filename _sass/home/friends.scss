@@ -119,7 +119,7 @@
 			}
 		}
 		%friendsTableBodyImage {
-			@include filter(grayscale(1) brightness(2));
+			filter: grayscale(1) brightness(2);
 			opacity: .3;
 		}
 		%friendsTableBodyText,
@@ -135,7 +135,7 @@
 				%friendsAddFriendInputWrapper {
 					background-color: rgba(0, 0, 0, .3);
 					border-color: transparent;
-					@include transform(translateZ(0));
+					transform: translateZ(0);
 					> %friendsAddFriendInput {
 						&::-webkit-input-placeholder {
 							color: hsla(0, 0%, 100%, .2);

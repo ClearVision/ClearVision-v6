@@ -38,7 +38,7 @@
 			box-shadow: 0 0 5px rgba(0, 0, 0, .5);
 			transition: background-color .3s ease-in-out, transform .1s ease-in-out;
 			&:active {
-				@include transform(scale(.9));
+				transform: scale(.9);
 			}
 			&[style*=background] {
 				background-color: rgba(0, 0, 0, .5) !important;
@@ -79,13 +79,13 @@
 			&:hover {
 				color: $main-color;
 				border-color: $main-color;
-				@include animation(pulsate-border 2s infinite ease-in-out);
+				animation: pulsate-border 2s infinite ease-in-out;
 				> svg {
-					@include animation(pulsate-svg 2s infinite ease-in-out);
+					animation: pulsate-svg 2s infinite ease-in-out;
 				}
 			}
 			&:active {
-				@include transform(scale(.9));
+				transform: scale(.9);
 			}
 		}
 		%guildsAddPlus {
@@ -105,18 +105,18 @@
 				top: 25%;
 				bottom: 25%;
 				left: 50%;
-				@include transform(translateX(-50%));
+				transform: translateX(-50%);
 			}
 			@include pseudo(after) {
 				height: 2px;
 				top: 50%;
 				right: 25%;
 				left: 25%;
-				@include transform(translateY(-50%));
+				transform: translateY(-50%);
 			}
 			&:hover {
 				@include pseudo(before, after) {
-					@include animation(pulsate-plus 2s infinite ease-in-out);
+					animation: pulsate-plus 2s infinite ease-in-out;
 				}
 			}
 		}

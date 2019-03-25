@@ -34,9 +34,9 @@
 			display: none;
 		}
 		> %searchChannelName {
-			@include display(flex);
-			@include align-items(center);
-			@include justify-content(center);
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			background-color: transparent;
 			color: $main-color;
 			text-shadow: 0 0 1px;
@@ -99,7 +99,7 @@
 			}
 		}
 		&:not(%searchResultExpanded) > %searchResultMessageSibling {
-			@include prefix(mask-image, linear-gradient(to bottom, transparent 10%, #000 30%, #000 70%, transparent 90%));
+			mask-image: linear-gradient(to bottom, transparent 10%, #000 30%, #000 70%, transparent 90%);
 		}
 		&%searchResultExpanded {
 			background-color: hsla(0, 0%, 100%, .04);
@@ -121,7 +121,7 @@
 	}
 	%searchResultMessage {
 		%messageHeaderCozyMeta {
-			@include prefix(mask-image, linear-gradient(to right, #000 290px, transparent 305px));
+			mask-image: linear-gradient(to right, #000 290px, transparent 305px);
 		}
 	}
 	%searchResultActionButtons {
@@ -133,7 +133,7 @@
 	%searchResultMessageHit {
 		&:hover {
 			%messageHeaderCozyMeta {
-				@include prefix(mask-image, linear-gradient(to right, #000 245px, transparent 260px));
+				mask-image: linear-gradient(to right, #000 245px, transparent 260px);
 			}
 			> %searchResultActionButtons {
 				opacity: 1;

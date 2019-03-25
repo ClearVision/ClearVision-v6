@@ -15,7 +15,7 @@
 		background-color: rgba(0, 0, 0, .4);
 		border-radius: 5px;
 		%channelTextareaAttachButton {
-			@include transform(none);
+			transform: none;
 			%channelTextareaAttachButtonPlus {
 				opacity: .3;
 				transition: all .15s ease-in-out;

@@ -1,12 +1,12 @@
 // APP
 %layer > %containerMain {
-	@include animation(fade-in .3s ease-in-out);	
+	animation: fade-in .3s ease-in-out;	
 }
 
 // GUILDS
 %guilds {
 	%badge {
-		@include animation(badge 1s ease-in-out infinite alternate);
+		animation: badge 1s ease-in-out infinite alternate;
 	}
 }
 
@@ -14,7 +14,7 @@
 %channels {
     %categoryContainerDefault,
 	%channelContainerDefault {
-		@include animation(fade-in .3s ease-in-out);
+		animation: fade-in .3s ease-in-out;
 	}
 }
 
@@ -22,14 +22,14 @@
 %message,
 %messageGroup,
 %divider {
-	@include animation(message-fade .5s ease-in-out);
+	animation: message-fade .5s ease-in-out;
 }
 %messageGroupBlocked %messageGroup {
-	@include animation(fade-in .3s ease-in-out);
+	animation: fade-in .3s ease-in-out;
 }
 
 // KEYFRAMES
-@include keyframes(message-fade) {
+@keyframes message-fade {
 	0%,
 	50% {
 		opacity: 0;

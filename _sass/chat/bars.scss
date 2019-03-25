@@ -20,7 +20,7 @@
 	}
 	&:active {
 		padding-top: 0;
-		@include transform(scale(.99));
+		transform: scale(.99);
 	}
 	button,
 	button:last-child {
@@ -40,7 +40,7 @@
 		}
 	}
 	&:active {
-		@include transform(scale(.99));
+		transform:scale(.99);
 	}
 	> button {
 		color: hsla(0, 0%, 100%, .6);

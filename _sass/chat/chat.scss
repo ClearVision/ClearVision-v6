@@ -16,7 +16,7 @@
 	}
 	%chatTitleChannelIcon {
 		color: $main-color;
-		@include filter(drop-shadow(0 0 3px));
+		filter: drop-shadow(0 0 3px);
 	}
 	%chatTitleTopic {
 		color: hsla(0, 0%, 100%, .5);
@@ -67,7 +67,7 @@
 		@include clear;
 	}
 	%messages {
-		@include backface-visibility(hidden);
+		backface-visibility: hidden;
 	}
 }
 

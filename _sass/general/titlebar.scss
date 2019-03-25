@@ -7,12 +7,12 @@
 	background-color: rgba(0, 0, 0, .6);
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, .6);
 	> %titlebarWordmark {
-		@include display(flex);
-		@include align-items(center);
-		@include justify-content(center);
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		opacity: 1;
 		pointer-events: none;
-		@include user-select(none);
+		user-select: none;
 		@include pseudo(after) {
 			content: "ClearVision";
 			margin-left: 3px;
