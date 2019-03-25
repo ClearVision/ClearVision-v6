@@ -8,9 +8,15 @@
             box-shadow: inset 0 -4px 0 var(--main-color);
             color: hsla(0, 0%, 100%, .7);
             transition: all .15s ease-in-out;
-        }
-        &:hover > span {
-            background-color: var(--hover-color);
+            &:hover {
+                background-color: var(--hover-color);
+                color: #fff;
+            }
+            &:active {
+                border: 1px solid var(--hover-color);
+                box-shadow: inset 0 -2px 0 var(--main-color);
+                color: #fff;
+            }
         }
     }
 }
