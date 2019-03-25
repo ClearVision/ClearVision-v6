@@ -1,4 +1,4 @@
-/*! Using Discord Selectors v19-03-24 by Zerthox */
+/*! Using Discord Selectors v19-03-25 by Zerthox */
 // FILE CONTENTS
 // 1) App
 // 	1.1) App Notices
@@ -110,6 +110,21 @@
 .appMount-3lHmkl {
 	@extend %appMount !optional;
 }
+.platform-win {
+	@extend %platformWin !optional;
+}
+.platform-osx {
+	@extend %platformOSX !optional;
+}
+.platform-linux {
+	@extend %platformLinux !optional;
+}
+.platform-web {
+	@extend %platformWeb !optional;
+}
+.colorblind-mode {
+	@extend %colorblindMode !optional;
+}
 .layers-3iHuyZ {
 	@extend %layers !optional;
 }
@@ -124,18 +139,6 @@
 }
 .flex-1O1GKY {
 	@extend %flex !optional;
-}
-.platform-win {
-	@extend %platformWin !optional;
-}
-.platform-osx {
-	@extend %platformOSX !optional;
-}
-.platform-linux {
-	@extend %platformLinux !optional;
-}
-.platform-web {
-	@extend %platformWeb !optional;
 }
 // 1.1) App Notices
 .notice-2FJMB4 {
@@ -2320,6 +2323,9 @@ pre {
 }
 .queryShortcut-hJIQMF {
 	@extend %searchPopoutQueryShortcut !optional;
+}
+.keybindShortcutSearchPopout-1MAfqq {
+	@extend %searchPopoutKeybindShortcut !optional;
 }
 .user-O3Czj0 {
 	@extend %searchPopoutOptionUser !optional;
