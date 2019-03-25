@@ -3,7 +3,10 @@ GEM
   specs:
     addressable (2.5.0)
       public_suffix (~> 2.0, >= 2.0.2)
+    autoprefixer-rails (9.5.0)
+      execjs
     colorator (1.1.0)
+    execjs (2.7.0)
     ffi (1.9.17)
     ffi (1.9.17-x64-mingw32)
     forwardable-extended (2.6.0)
@@ -18,6 +21,8 @@ GEM
       pathutil (~> 0.9)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
+    jekyll-autoprefixer (1.0.2)
+      autoprefixer-rails (~> 9.3)
     jekyll-sass-converter (1.5.0)
       sass (~> 3.4)
     jekyll-watch (1.5.0)
@@ -48,7 +53,8 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
-  jekyll (= 3.4.0)
+  jekyll
+  jekyll-autoprefixer
   tzinfo-data
 
 RUBY VERSION

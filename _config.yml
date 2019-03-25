@@ -2,7 +2,8 @@ name: ClearVision
 author: Zerthox
 description: ClearVision is an automatically updating, easily customizable theme for Discord.
 
-baseurl: ""
+baseurl: "/v6"
+url: "/"
 
 exclude:
     - README.md
@@ -10,5 +11,13 @@ exclude:
     - ClearVision_v6.theme.css
     - ClearVision_v6.plugin.js
 
+plugins:
+    - jekyll-autoprefixer
+
 sass:
     style: compressed
+
+autoprefixer:
+    browsers:
+        - "last 2 versions"
+        - "IE > 9"
