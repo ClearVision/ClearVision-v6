@@ -8,7 +8,7 @@
 		content: "";
 		position: absolute;
 		@include stretch;
-		margin: calc(100% - 100vh) calc(100% - 100vw);
+		margin: calc(-2 * (#{$bg-blur} + 3px));
 		@include bg($img: $bg-img, $pos: center, $size: cover, $attach: fixed);
 		filter: blur(calc(#{$bg-blur} + 3px));
 		z-index: -1;
@@ -17,7 +17,7 @@
 		@include pseudo(before) {
 			left: -100%;
 			right: 100%;
-			transform: translateX(calc(200vw - 100%));
+			transform: translateX(calc(100% - 4 * (#{$bg-blur} + 3px)));
 		}
 	}
 
