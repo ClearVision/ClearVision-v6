@@ -12,7 +12,7 @@ $streaming-color: var(--streaming-color);
 $bg-img: var(--background-image);
 $bg-brightness: var(--background-brightness);
 $bg-blur: var(--background-blur);
-$bg-color: var(--background-color);
+$bg-overlay: var(--background-overlay);
 $twitch-purple: #593695;
 $spotify-green: #1db954;
 $xbox-green: #107c10;
@@ -72,7 +72,7 @@ $discord-blurple: #7289da;
 	--background-image: url(https://zerthox.github.io/ClearVision/images/sapphire.jpg);
 	--background-brightness: 100%;
 	--background-blur: 0px;
-	--background-color: rgba(0, 0, 0, .6);
+	--background-overlay: #{rgba(0, 0, 0, .6)};
 }
 
 /* APP  */
