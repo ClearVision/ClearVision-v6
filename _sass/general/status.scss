@@ -22,6 +22,7 @@
 %statusIdle {
 	background-color: $idle-color;
 	color: $idle-color;
+	
 }
 %statusDnd {
 	background-color: $dnd-color;
@@ -35,4 +36,18 @@
 %statusStreaming {
 	background-color: $streaming-color;
 	color: $streaming-color;
+}
+%appMount %colorblindMode {
+	%status {
+		@include bg($pos: -24px, $repeat: no-repeat);
+		@include pseudo(after) {
+			content: "";
+			display: block;
+			width: 100%;
+			height: 100%;
+			@include bg($img: inherit, $pos: center, $size: inherit, $repeat: no-repeat);
+			filter: brightness(0);
+			opacity: .7;
+		}
+	}
 }
