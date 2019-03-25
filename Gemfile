@@ -13,4 +13,4 @@ group :jekyll_plugins do
 end
 
 # autoprefixer dependency
-gem "therubyrhino"
+gem "therubyracer", :platforms => :ruby

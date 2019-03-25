@@ -57,9 +57,6 @@ GEM
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
-    therubyrhino (2.0.4)
-      therubyrhino_jar (>= 1.7.3)
-    therubyrhino_jar (1.7.6)
     tzinfo (2.0.0)
       concurrent-ruby (~> 1.0)
     tzinfo-data (1.2018.9)
@@ -71,7 +68,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll
   jekyll-autoprefixer
-  therubyrhino
+  therubyracer
   tzinfo-data
 
 RUBY VERSION
