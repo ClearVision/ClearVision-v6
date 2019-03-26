@@ -41,7 +41,7 @@
         }
     }
     %noticeDismiss {
-        @include bg($img: url(https://zerthox.github.io/ClearVision/icons/close.svg), $size: 18px, $pos: center);
+        @include bg($img: url(https://clearvision.gitlab.io/icons/close.svg), $size: 18px, $pos: center);
         opacity: .5;
         transition: all .15s ease-in-out;
         &:hover {

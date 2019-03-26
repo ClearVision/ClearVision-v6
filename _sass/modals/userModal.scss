@@ -28,7 +28,7 @@
 %userModalAdditionalActionsIcon {
 	width: 24px;
 	height: 24px;
-	@include bg($img: url(https://zerthox.github.io/ClearVision/icons/expand_more.svg), $pos: center, $size: 36px, $repeat: no-repeat);
+	@include bg($img: url(https://clearvision.gitlab.io/icons/expand_more.svg), $pos: center, $size: 36px, $repeat: no-repeat);
 	opacity: .3;
 	transition: all .15s ease-in-out;
 	&:hover {

@@ -1,4 +1,4 @@
-/* //META {"name": "ClearVision", "description": "Theme version for v6.", "author": "Zerthox", "version": "6 BETA", "website": "https://zerthox.github.io/ClearVision", "source": "https://gitlab.com/ClearVision/v6"} *//**/
+/* //META {"name": "ClearVision", "description": "Theme version for v6.", "author": "Zerthox", "version": "6 BETA", "website": "https://clearvision.gitlab.io", "source": "https://gitlab.com/ClearVision/v6"} *//**/
 /* "ClearVision v6 BETA" by Zerthox */
 
 /* IMPORT CSS */
@@ -17,7 +17,7 @@
 
 /* BACKGROUND SETTINGS */
 :root {
-	--background-image: url(https://zerthox.github.io/ClearVision/images/sapphire.jpg);
+	--background-image: url(https://clearvision.gitlab.io/images/sapphire.jpg);
 	--background-brightness: 100%;
 	--background-blur: 0px;
 	--background-overlay: rgba(0, 0, 0, 0.6);
