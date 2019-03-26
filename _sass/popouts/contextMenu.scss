@@ -11,16 +11,16 @@
         transform-origin: 100% 50%;
     }
 	%contextMenuItemGroup {
-		border-top-color: hsla(0, 0%, 100%, .04) !important;
+		border-top-color: hsla(0, 0%, 100%, .04);
 	}
 	%contextMenuItem {
 		background-color: transparent;
-		color: hsla(0, 0%, 100%, .6) !important;
+		color: hsla(0, 0%, 100%, .6);
 		border-radius: 3px;
 		transition: all .15s ease-in-out;
 		&:hover {
 			background-color: rgba(0, 0, 0, .7);
-			color: #fff !important;
+			color: #fff;
 		}
 		&%contextMenuItemDanger {
 			position: relative;
@@ -41,6 +41,13 @@
 				color: #fff !important;
 				@include pseudo(after) {
 					opacity: .7;
+				}
+			}
+		}
+		&[style*="color:"] {
+			%checkboxElement:checked {
+				+ span {
+					background-color: currentColor;
 				}
 			}
 		}
