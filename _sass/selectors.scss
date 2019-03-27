@@ -1,4 +1,4 @@
-/*! Using Discord Selectors v19-03-25 by Zerthox */
+/*! Using Discord Selectors v19-03-26 by Zerthox */
 // FILE CONTENTS
 // 1) App
 // 	1.1) App Notices
@@ -13,98 +13,101 @@
 //	4.6) Unread & Mention Indicators
 //	4.7) Private Channels
 //		5.7.1) Search Bar
-// 5) Chat
-//	5.1) Messages
-//		5.1.1) Reactions
-//		5.1.2) Invite Links
-//		5.1.3) Embeds
-//		5.1.4) Codeblocks
-//		5.1.5) Attachments
-//		5.1.6) Spoilers
-//	5.2) Dividers
-//	5.3) Chat Bars
-//		5.3.1) New Messages Bar
-//		5.3.2) Jump To Present Bar
-//		5.3.3) Has More Bar
-//	5.4) Channel Textarea
-//		5.4.1) Channel Textarea Autocomplete
-//	5.5) Welcome Message
-// 6) Members
-// 7) Search
-//	7.1) Header
-//	7.2) Results
-//	7.3) Pagination
-// 8) Home Tab
-//	8.1) Friends Table
-//		8.1.1) Header
-//	 	8.1.2) Body
-//	 	8.1.3) Add Tab
-// 	8.2) Game Library
-//		8.2.1) Header
-//	 	8.2.2) Body
-//	 	8.2.3) Gift Inventory
-// 9) Avatars
-// 10) Status
-// 11) Bot Tags
-// 12) General Elements
-//	12.1) Buttons
-//	12.2) Scrollers
-//	12.3) Badges
-//	12.4) Tab Bar
-//		12.4.1) Friends
-//		12.4.2) Messages Popout
-//		12.4.3) User Popout
-//	12.5) Checkboxes
-//	12.6) Sliders
-//	12.7) Spinners
-// 13) Tooltips
-// 14) Context Menu
-// 15) Popouts
-//	15.1) Message Options Popout
-//	15.2) Dropdown Menu
-//	15.3) Status Picker
-//	15.4) Connection Info Popout
-//	15.5) Messages Popout
-//	15.6) Autocomplete Popout
-//	15.7) Search Popout
-//		15.7.1) Datepicker
-// 16) User Popout
-//	16.1) Header
-//	16.2) Body
-//	16.3) Footer
-// 17) Activity
-// 18) Member Roles
-// 19) Modals
-// 	19.1) User Modal
-//		19.1.1) Header
-//		19.1.2) Profile Badges
-//		19.1.3) Body
-// 	19.2) Keyboard Shortcuts Modal
-// 20) Settings
-//	20.1) Sidebar
-//	20.2) Content
-// 21) Screens
-//	21.1) Loading
-// 22) Plugins
-//	22.1) Plugin Notice
-//	22.2) Zerthox
-//		22.2.1) BetterReplyer
-//	22.3) noodlebox
-//		22.3.1) Owner Tags
-//		22.3.2) Line Numbers
-//	22.4) Finicalmist
-//		22.4.1 ) Copy Code
-//	22.5) Nirewen
-//		22.5.1) Citador
-//	22.6) samogot
-//		22.6.1) Quoter
-//	22.7) DevilBro
-//		22.7.1) ShowHiddenChannels
-//		22.7.2) RepoControls
-//		22.7.3) CreationDate
-//		22.7.4) JoinedAtDate
-// 22.8) Metalloriff
-// 22.8.1) DetailedServerTooltips
+// 5) Header Bar
+// 	5.1) Toolbar
+// 6) Chat
+//	6.1) Messages
+//		6.1.1) Reactions
+//		6.1.2) Invite Links
+//		6.1.3) Embeds
+//		6.1.4) Codeblocks
+//		6.1.5) Attachments
+//		6.1.6) Spoilers
+//	6.2) Dividers
+//	6.3) Chat Bars
+//		6.3.1) New Messages Bar
+//		6.3.2) Jump To Present Bar
+//		6.3.3) Has More Bar
+//	6.4) Channel Textarea
+//		6.4.1) Channel Textarea Autocomplete
+//	6.5) Welcome Message
+// 7) Members
+// 8) Search
+//	8.1) Header
+//	8.2) Results
+//	8.3) Pagination
+// 9) Home Tab
+//	9.1) Friends Table
+//		9.1.1) Header
+//	 	9.1.2) Body
+//	 	9.1.3) Add Tab
+// 	9.2) Game Library
+//		9.2.1) Header
+//	 	9.2.2) Body
+//	 	9.2.3) Gift Inventory
+// 10) Avatars
+// 11) Status
+// 12) Bot Tags
+// 13) General Elements
+//	13.1) Buttons
+//	13.2) Scrollers
+//	13.3) Badges
+//	13.4) Tab Bar
+//		13.4.1) Friends
+//		13.4.2) Messages Popout
+//		13.4.3) User Popout
+//	13.5) Checkboxes
+//	13.6) Sliders
+//	13.7) Spinners
+// 14) Tooltips
+// 15) Context Menu
+// 16) Popouts
+//	16.1) Message Options Popout
+//	16.2) Dropdown Menu
+//	16.3) Status Picker
+//	16.4) Connection Info Popout
+//	16.5) Messages Popout
+//	16.6) Autocomplete Popout
+//	16.7) Search Popout
+//		16.7.1) Datepicker
+// 17) User Popout
+//	17.1) Header
+//	17.2) Body
+//	17.3) Footer
+// 18) Activity
+// 19) Member Roles
+// 20) Modals
+// 	20.1) User Modal
+//		20.1.1) Header
+//		20.1.2) Profile Badges
+//		20.1.3) Body
+// 	20.2) Keyboard Shortcuts Modal
+// 21) Settings
+//	21.1) Sidebar
+//	21.2) Content
+// 22) Screens
+//	22.1) Loading
+// 23) Plugins
+//	23.1) Plugin Notice
+//	23.2) Zerthox
+//		23.2.1) BetterReplyer
+//	23.3) noodlebox
+//		23.3.1) Owner Tags
+//		23.3.2) Line Numbers
+//	23.4) Finicalmist
+//		23.4.1 ) Copy Code
+//	23.5) Nirewen
+//		23.5.1) Citador
+//	23.6) samogot
+//		23.6.1) Quoter
+//	23.7) DevilBro
+//		23.7.1) ShowHiddenChannels
+//		23.7.2) RepoControls
+//		23.7.3) CreationDate
+//		23.7.4) JoinedAtDate
+//		23.7.5) LastMessageDate
+// 23.8) Metalloriff
+// 23.8.1) DetailedServerTooltips
 
 // 1) APP
 .appMount-3lHmkl {
@@ -973,7 +976,37 @@
 	@extend %channelNoticeMessageButton !optional;
 }
 
-// 5) CHAT
+// 5) HEADER BAR
+.headerBar-UHpsPw {
+	@extend %headerBar !optional;
+}
+.title-1aVOXw {
+	@extend %headerBarTitle !optional;
+}
+// 5.1) Toolbar
+.toolbar-94eLIm {
+	@extend %toolbar !optional;
+}
+.iconMargin-2YXk4F {
+	@extend %toolbarIconMargin !optional;
+}
+.icon-1R19_H {
+	@extend %toolbarIcon !optional;
+}
+.iconInactive-g2AXfB {
+	@extend %toolbarIconInactive !optional;
+}
+.iconActive-AKd_jq {
+	@extend %toolbarIconActive !optional;
+}
+.iconForeground-3y9f0B {
+	@extend %toolbarIconForeground !optional;
+}
+.divider-2PMBlV {
+	@extend %toolbarDivider !optional;
+}
+
+// 6) CHAT
 .chat-3bRxxu {
 	@extend %chat !optional;
 }
@@ -1018,18 +1051,6 @@
 }
 .searchAnswer-3Dz2-q {
 	@extend %chatSearchAnswer !optional;
-}
-.icon-1R19_H {
-	@extend %chatTitleIcon !optional;
-}
-.iconInactive-g2AXfB {
-	@extend %chatTitleIconInactive !optional;
-}
-.iconActive-AKd_jq {
-	@extend %chatTitleIconActive !optional;
-}
-.divider-2PMBlV {
-	@extend %chatTitleDivider !optional;
 }
 .content-yTz4x3 {
 	@extend %chatContent !optional;
@@ -1119,7 +1140,7 @@
 %messageOptionsButton {
 	@extend %messageButton !optional;
 }
-// 5.1.1) Reactions
+// 6.1.1) Reactions
 .reactions-1xb2Ex {
 	@extend %reactions !optional;
 }
@@ -1135,7 +1156,7 @@
 .reactionCount-2ddRoS{
 	@extend %reactionCount !optional;
 }
-// 5.1.2) Invite Links
+// 6.1.2) Invite Links
 .wrapper-35wsBm {
 	@extend %inviteWrapper !optional;
 }
@@ -1181,7 +1202,7 @@
 .lookFilled-1Gx00P.colorBrand-3pXr91 {
 	@extend %inviteButtonExpired !optional;
 }
-// 5.1.3) Embeds
+// 6.1.3) Embeds
 .embed-IeVjo6 {
 	@extend %embed !optional;
 }
@@ -1215,7 +1236,7 @@
 .header-Hg_qNF {
 	@extend %embedSpotifyInviteHeader !optional;
 }
-// 5.1.4) Codeblocks
+// 6.1.4) Codeblocks
 .inline {
 	@extend %codeInline !optional;
 }
@@ -1225,7 +1246,7 @@ pre {
 .hljs {
 	@extend %codeHLJS !optional;
 }
-// 5.1.5) Attachments
+// 6.1.5) Attachments
 .attachment-33OFj0 {
 	@extend %attachment !optional;
 }
@@ -1269,7 +1290,7 @@ pre {
 %attachmentCancelButton {
 	@extend %attachmentButton !optional;
 }
-// 5.1.6) Spoilers
+// 6.1.6) Spoilers
 .spoilerText-3p6IlD {
 	@extend %spoilerText !optional;
 }
@@ -1297,7 +1318,7 @@ pre {
 .hiddenSpoiler-3i0zpa {
 	@extend %spoilerEmbedHidden !optional;
 }
-// 5.2) Dividers
+// 6.2) Dividers
 .divider-3gKybi {
 	@extend %divider !optional;
 }
@@ -1313,20 +1334,20 @@ pre {
 .dividerEnabled-2TTlcf {
 	@extend %dividerEnabled !optional;
 }
-// 5.3) Chat Bars
-// 5.3.1) New Messages Bar
+// 6.3) Chat Bars
+// 6.3.1) New Messages Bar
 .newMessagesBar-mujexs {
 	@extend %newMessagesBar !optional;
 }
-// 5.3.2) Jump To Present Bar
+// 6.3.2) Jump To Present Bar
 .jumpToPresentBar-9P20AM {
 	@extend %jumpToPresentBar !optional;
 }
-// 5.3.3) Has More Bar {
+// 6.3.3) Has More Bar {
 .hasMore-3e72_v {
 	@extend %hasMore !optional;
 }
-// 5.4) Channel Textarea
+// 6.4) Channel Textarea
 .channelTextArea-rNsIhG {
 	@extend %channelTextarea !optional;
 }
@@ -1351,7 +1372,7 @@ pre {
 .operations-36ENbA {
 	@extend %operations !optional;
 }
-// 5.4.1) Channel Textarea Autocomplete
+// 6.4.1) Channel Textarea Autocomplete
 .autocomplete-i9yVHs {
 	@extend %autocomplete !optional;
 }
@@ -1385,7 +1406,7 @@ pre {
 .content-Qb0rXO {
 	@extend %autocompleteSelectorContent !optional;
 }
-// 5.5) Welcome Message
+// 6.5) Welcome Message
 .welcomeMessage-3_Mcht {
 	@extend %welcomeMessage !optional;
 }
@@ -1414,7 +1435,7 @@ pre {
 	@extend %welcomeMessageBase !optional;
 }
 
-// 6) MEMBERS
+// 7) MEMBERS
 .membersWrap-2h-GB4 {
 	@extend %membersWrap !optional;
 }
@@ -1474,11 +1495,11 @@ pre {
 	@extend %memberPlaceholder !optional;
 }
 
-// 7) SEARCH
+// 8) SEARCH
 .searchResultsWrap-2DKFzt {
 	@extend %searchResultsWrap !optional;
 }
-// 7.1) Header
+// 8.1) Header
 .searchHeader-1l-wpR {
 	@extend %searchHeader !optional;
 }
@@ -1491,7 +1512,7 @@ pre {
 .selected-16te-P {
 	@extend %searchTabSelected !optional;
 }
-// 7.2) Results
+// 8.2) Results
 .resultsWrapper-hoiXCY {
 	@extend %searchResultsWrapper !optional;
 }
@@ -1534,7 +1555,7 @@ pre {
 .highlight {
 	@extend %searchResultHighlight !optional;
 }
-// 7.3) Pagination
+// 8.3) Pagination
 .pagination-eQpqgk {
 	@extend %searchPagination !optional;
 }
@@ -1548,8 +1569,8 @@ pre {
 	@extend %searchPaginationDisabled !optional;
 }
 
-// 8) HOME TAB
-// 8.1) Friends Table
+// 9) HOME TAB
+// 9.1) Friends Table
 .container-3gCOGc {
 	@extend %friends !optional;
 }
@@ -1562,7 +1583,7 @@ pre {
 .friendsTable-133bsv {
 	@extend %friendsTable !optional;
 }
-// 8.1.1) Header
+// 9.1.1) Header
 .friendsTableHeader-32yE7d {
 	@extend %friendsTableHeader !optional;
 }
@@ -1572,7 +1593,7 @@ pre {
 .friendsColumnSeparator-3MqtMA {
 	@extend %friendsColumnSeparator !optional;
 }
-// 8.1.2) Body
+// 9.1.2) Body
 .friendsTableBody-1ZhKif {
 	@extend %friendsTableBody !optional;
 }
@@ -1624,7 +1645,7 @@ pre {
 .image-1GzsFd {
 	@extend %friendsTableBodyImage !optional;
 }
-// 8.1.3) Add Tab
+// 9.1.3) Add Tab
 .friendTableAddWrapper-nHHZtK {
 	@extend %friendsTableAddWrapper !optional;
 }
@@ -1661,14 +1682,14 @@ pre {
 .friendTableSuggestionsHeader-2zSnpD {
 	@extend %friendsTableSuggestionsHeader !optional;
 }
-// 8.2) Game Library
+// 9.2) Game Library
 .gameLibrary-TTDw4Y {
 	@extend %gameLibrary !optional;
 }
 .root-1BQpZw {
 	@extend %libraryRoot !optional;
 }
-// 8.2.1) Header
+// 9.2.1) Header
 .libraryHeader-3g95kE {
 	@extend %libraryHeader !optional;
 }
@@ -1687,7 +1708,7 @@ pre {
 .libraryFilterInput-3JzqZD {
 	@extend %libraryFilterInput !optional;
 }
-// 8.2.2) Body
+// 9.2.2) Body
 .scrollerStore-390omS {
 	@extend %libraryScroller !optional;
 }
@@ -1757,7 +1778,7 @@ pre {
 .buttonShine-1CSUM8 {
 	@extend %libraryPlayButtonShine !optional;
 }
-// 8.2.3) Gift Inventory
+// 9.2.3) Gift Inventory
 .body-2xXalD {
 	@extend %giftInventoryBody !optional;
 }
@@ -1798,7 +1819,7 @@ pre {
 	@extend %giftInventoryEmptySubtext !optional;
 }
 
-// 9) AVATARS
+// 10) AVATARS
 .wrapper-2F3Zv8 {
 	@extend %avatarWrapper !optional;
 }
@@ -1819,7 +1840,7 @@ pre {
 	@extend %avatarProfile !optional;
 }
 
-// 10) STATUS
+// 11) STATUS
 .status-oxiHuE {
 	@extend %status !optional;
 }
@@ -1845,7 +1866,7 @@ pre {
 	@extend %statusStreaming !optional;
 }
 
-// 11) BOT TAG
+// 12) BOT TAG
 .botTag-2WPJ74 {
 	@extend %botTag !optional;
 }
@@ -1853,8 +1874,8 @@ pre {
 	@extend %botTagInvert !optional;
 }
 
-// 12) GENERAL ELEMENTS
-// 12.1) Buttons
+// 13) GENERAL ELEMENTS
+// 13.1) Buttons
 .lookFilled-1Gx00P{
 	@extend %buttonFilled !optional;
 }
@@ -1942,18 +1963,21 @@ pre {
 		@extend %buttonInvertedGrey !optional;
 	}
 }
-// 12.2) Scrollers
+.contents-18-Yxp {
+	@extend %buttonContents !optional;
+}
+// 13.2) Scrollers
 .scrollerWrap-2lJEkd {
 	@extend %scrollerWrap !optional;
 }
 .scroller-2FKFPG {
 	@extend %scroller !optional;
 }
-// 12.3) Badges
+// 13.3) Badges
 .wrapper-232cHJ {
 	@extend %badge !optional;
 }
-// 12.4) Tab Bar
+// 13.4) Tab Bar
 .item-PXvHYJ {
 	@extend %tabBarItem !optional;
 }
@@ -1972,18 +1996,18 @@ pre {
 .separator-gCa7yv {
 	@extend %tabBarSeparator !optional;
 }
-// 12.4.1) Friends
+// 13.4.1) Friends
 .tabBar-1E2ExX {
 	@extend %friendsTabBar !optional;
 }
-// 12.4.2) Messages Popout
+// 13.4.2) Messages Popout
 .tabBar-2UKwcE {
 	@extend %messagesPopoutTabBar !optional;
 }
 .tabBarItem-1Cg-MI {
 	@extend %messagesPopoutTabBarItem !optional;
 }
-// 12.4.3) User Modal
+// 13.4.3) User Modal
 .tabBarContainer-1s1u-z {
 	@extend %userModalTabBarContainer !optional;
 }
@@ -1993,7 +2017,7 @@ pre {
 .tabBarItem-1b8RUP {
 	@extend %userModalTabBarItem !optional;
 }
-// 12.5) Checkboxes
+// 13.5) Checkboxes
 .checkbox-3kaeSU {
 	@extend %checkbox !optional;
 }
@@ -2003,7 +2027,7 @@ pre {
 .checkboxElement-1qV33p {
 	@extend %checkboxElement !optional;
 }
-// 12.6) Sliders
+// 13.6) Sliders
 .slider-1PF9SW {
 	@extend %slider !optional;
 }
@@ -2028,7 +2052,7 @@ pre {
 .bubble-3we2di {
 	@extend %sliderBubble !optional;
 }
-// 12.7) Spinners
+// 13.7) Spinners
 .spinner-2enMB9 {
     @extend %spinner !optional;
 }
@@ -2039,7 +2063,7 @@ pre {
     @extend %spinnerWanderingCubesItem !optional;
 }
 
-// 13) TOOLTIPS
+// 14) TOOLTIPS
 .tooltips-FhwIyl {
 	@extend %tooltips !optional;
 }
@@ -2074,7 +2098,7 @@ pre {
 	@extend %tooltipYellow !optional;
 }
 
-// 14) CONTEXT MENU
+// 15) CONTEXT MENU
 .contextMenu-HLZMGh {
 	@extend %contextMenu !optional;
 }
@@ -2094,7 +2118,7 @@ pre {
 	@extend %contextMenuItemSubMenu !optional;
 }
 
-// 15) POPOUTS
+// 16) POPOUTS
 .popouts-3dRSmE {
 	@extend %popouts !optional;
 }
@@ -2140,14 +2164,14 @@ pre {
 .footer-1kmXd4 {
 	@extend %popoutFooter !optional;
 }
-// 15.1) Message Options Popout
+// 16.1) Message Options Popout
 .container-3cGP6G {
 	@extend %messageOptions !optional;
 }
 .item-2J1YMK {
 	@extend %popoutItem !optional;
 }
-// 15.2) Dropdown Menu
+// 16.2) Dropdown Menu
 .menu-Sp6bN1 {
 	@extend %dropdown !optional;
 }
@@ -2163,7 +2187,7 @@ pre {
 .label-1Y-LW5 {
 	@extend %dropdownLabel !optional;
 }
-// 15.3) Status Picker
+// 16.3) Status Picker
 .alt-3btY0e {
 	@extend %statusPicker !optional;
 }
@@ -2176,7 +2200,7 @@ pre {
 .helper-2c73HK {
 	@extend %statusPickerHelper !optional;
 }
-// 15.4) Connection Info
+// 16.4) Connection Info
 .container-2x5lvQ {
 	@extend %connectionInfo !optional;
 }
@@ -2189,7 +2213,7 @@ pre {
 .secured-1Yihly {
 	@extend %connectionInfoSecured !optional;
 }
-// 15.5) Messages Popout
+// 16.5) Messages Popout
 .messagesPopoutWrap-1MQ1bW {
 	@extend %messagesPopoutWrap !optional;
 }
@@ -2232,7 +2256,7 @@ pre {
 .statusGreen-pvYWjA {
 	@extend %statusGreen !optional;
 }
-// 15.6) Autocomplete Popout
+// 16.6) Autocomplete Popout
 .container-VSDcQc {
 	@extend %autocompletePopout !optional;
 }
@@ -2275,7 +2299,7 @@ pre {
 .selected-1pIgLL {
 	@extend %autocompletePopoutSelected !optional;
 }
-// 15.7) Search Popout
+// 16.7) Search Popout
 .container-3ayLPN {
 	@extend %searchPopout !optional;
 }
@@ -2363,7 +2387,7 @@ pre {
 .hintValue-29ny8Z {
 	@extend %searchPopoutHintValue !optional;
 }
-// 15.7.1) Datepicker
+// 16.7.1) Datepicker
 .react-datepicker {
 	@extend %datepicker !optional;
 }
@@ -2437,11 +2461,11 @@ pre {
 	@extend %datepickerDaySun !optional;
 }
 
-// 16) USER POPOUT
+// 17) USER POPOUT
 .userPopout-3XzG_A {
 	@extend %userPopout !optional;
 }
-// 16.1) Header
+// 7.1) Header
 .header-2BwW8b {
 	@extend %userPopoutHeader !optional;
 }
@@ -2460,7 +2484,7 @@ pre {
 .activityUserPopout-2yItg2 {
 	@extend %userPopoutActivity !optional;
 }
-// 16.2) Body
+// 17.2) Body
 .body-3iLsc4 {
 	@extend %userPopoutBody !optional;
 }
@@ -2473,7 +2497,7 @@ pre {
 .note-3HfJZ5 {
 	@extend %userPopoutNote !optional;
 }
-// 16.3) Footer
+// 17.3) Footer
 .footer-1fjuF6 {
 	@extend %userPopoutFooter !optional;
 }
@@ -2484,7 +2508,7 @@ pre {
 	@extend %userPopoutPro !optional;
 }
 
-// 17) ACTIVITY
+// 18) ACTIVITY
 %userPopoutActivity,
 %userModalActivity {
 	@extend %activity !optional;
@@ -2505,7 +2529,7 @@ pre {
 	@extend %activityTimestamp !optional;
 }
 
-// 18) MEMBER ROLES
+// 19) MEMBER ROLES
 .role-2irmRk {
 	@extend %role !optional;
 }
@@ -2522,12 +2546,12 @@ pre {
 	@extend %roleAddButton !optional;
 }
 
-// 19) MODALS
-// 19.1) User Modal
+// 20) MODALS
+// 20.1) User Modal
 .root-SR8cQa {
 	@extend %userModal !optional;
 }
-// 19.1.1) Header
+// 20.1.1) Header
 .topSectionNormal-2-vo2m {
 	@extend %userModalTopSectionNormal !optional;
 }
@@ -2571,7 +2595,7 @@ pre {
 .activityProfile-2bJRaP {
 	@extend %userModalActivity !optional;
 }
-// 19.1.2) Profile Badges
+// 20.1.2) Profile Badges
 .profileBadgeWrapper-rl_RO6 {
 	@extend %profileBadgeWrapper !optional;
 }
@@ -2608,7 +2632,7 @@ pre {
 .profileBadgeBugHunter-IV0vLE {
 	@extend %profileBadgeBugHunter !optional;
 }
-// 19.1.3) Body
+// 20.1.3) Body
 .body-3ND3kc {
 	@extend %userModalBody !optional;
 }
@@ -2657,13 +2681,13 @@ pre {
 .emptyText-6tYmO5 {
 	@extend %userModalEmptyText !optional;
 }
-// 19.2) Keyboard Shortcuts Modal
+// 20.2) Keyboard Shortcuts Modal
 .keybindShortcut-1BD6Z1 {
 	@extend %keybindShortcut !optional;
 }
 
-// 20) SETTINGS
-// 20.1) Sidebar
+// 21) SETTINGS
+// 21.1) Sidebar
 .standardSidebarView-3F1I7i {
 	@extend %standardSidebarView !optional;
 }
@@ -2676,13 +2700,13 @@ pre {
 .side-8zPYf6 {
 	@extend %settingsSide !optional;
 }
-// 20.2) Content
+// 21.2) Content
 .contentRegion-3nDuYy {
 	@extend %settingsContentRegion !optional;
 }
 
-// 21) SCREENS
-// 21.1) Loading
+// 22) SCREENS
+// 22.1) Loading
 .links-3Ldd4A {
 	@extend %loadingLinks !optional;
 }
@@ -2696,71 +2720,75 @@ pre {
 	@extend %loadingPath3 !optional;
 }
 
-// 22) PLUGINS
-// 22.1) Plugin Notice
+// 23) PLUGINS
+// 23.1) Plugin Notice
 #pluginNotice {
 	@extend %pluginNotice !optional;
 }
 #outdatedPlugins {
 	@extend %outdatedPlugins !optional;
 }
-// 22.2) Zerthox
-// 22.2.1) BetterReplyer
+// 23.2) Zerthox
+// 23.2.1) BetterReplyer
 .replyer {
 	@extend %replyerButton !optional;
 }
-// 22.3) noodlebox
-// 22.3.1) Owner Tags
+// 23.3) noodlebox
+// 23.3.1) Owner Tags
 .kawaii-tag {
 	@extend %kawaiiTag !optional;
 }
 .kawaii-tag-invert {
 	@extend %kawaiiTagInvert !optional;
 }
-// 22.3.2) Line Numbers
+// 23.3.2) Line Numbers
 .kawaii-linenumbers {
 	@extend %kawaiiLinenumbers !optional;
 }
-// 22.4) Finicalmist
-// 22.4.1 ) Copy Code
+// 23.4) Finicalmist
+// 23.4.1 ) Copy Code
 .copybutton {
 	@extend %codeCopybutton !optional;
 }
-// 22.5) Nirewen
-// 22.5.1) Citador
+// 23.5) Nirewen
+// 23.5.1) Citador
 .citar-btn {
 	@extend %citarButton !optional;
 }
-// 22.6) samogot
-// 22.6.1) Quoter
+// 23.6) samogot
+// 23.6.1) Quoter
 .btn-quote {
 	@extend %quoteButton !optional;
 }
-// 22.7) DevilBro
+// 23.7) DevilBro
 .DevilBro-tooltip {
 	@extend %tooltipDevilBro !optional;
 }
-// 22.7.1) ShowHiddenChannels
+// 23.7.1) ShowHiddenChannels
 .container-hidden {
 	@extend %categoryHidden !optional;
 }
-// 22.7.2) RepoControls
+// 23.7.2) RepoControls
 .repocontrols-editicon-tooltip {
 	@extend %tooltipRepoControlsEdit !optional;
 }
 .repocontrols-trashicon-tooltip {
 	@extend %tooltipRepoControlsTrash !optional;
 }
-// 22.7.3) CreationDate
+// 23.7.3) CreationDate
 .creationDate {
 	@extend %creationDate !optional;
 }
-// 22.7.4) JoinedAtDate
+// 23.7.4) JoinedAtDate
 .joinedAtDate {
 	@extend %joinedAtDate !optional;
 }
-// 22.8) Metalloriff
-// 22.8.1) DetailedServerTooltips
+// 23.7.5) LastMessageDate
+.lastMessageDate {
+	@extend %lastMessageDate !optional;
+}
+// 23.8) Metalloriff
+// 23.8.1) DetailedServerTooltips
 .dst-tooltip {
 	@extend %serverTooltip !optional;
 }
