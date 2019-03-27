@@ -1,0 +1,157 @@
+// EMOJI PICKER
+%emojiPicker {
+    background-color: rgba(0, 0, 0, .7);
+    border: none;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+
+    // SEARCH BAR
+    %emojiPickerSearchBar {
+        background-color: transparent;
+        %emojiPickerSearchBarInner {
+            position: relative;
+            background-color: hsla(0, 0%, 100%, .07);
+        }
+    }
+    %emojiPickerSearchBarInner {
+        > input {
+            color: #fff;
+            &::-webkit-input-placeholder {
+                color: hsla(0, 0%, 100%, .3);
+            }
+        }
+    }
+
+    // DIVERSITY SELECTOR
+    %emojiPickerDiversitySelector {
+        margin: -2px 10px -2px -2px;
+        padding: 2px;
+        > %emojiPickerCategoriesItem {
+            border-radius: 3px;
+        }
+        %emojiPickerCategoriesItem {
+            transition: all .15s ease-in-out;
+            &:hover {
+                background-color: hsla(0, 0%, 100%, .07);
+            }
+        }
+    }
+    %emojiPickerDiversitySelectorPopout {
+        margin: 0;
+        background-color: hsla(0, 0%, 100%, .07);
+        border: none;
+    }
+
+    // SCROLLER
+    %emojiPickerStickyHeader {
+        background-color: transparent;
+        > %emojiPickerCategory {
+            background-color: $main-color;
+            border-radius: 0 0 5px 5px;
+            color: #fff;
+            + %emojiPickerCategory {
+                display: none;
+            }
+        }
+    }
+    %emojiPickerCategory {
+        background-color: hsla(0, 0%, 100%, .07);
+        border-radius: 5px;
+        color: hsla(0, 0%, 100%, .7);
+        text-align: center;
+    }
+    %emojiPickerScroller {
+        %emojiPickerEmojiItem {
+            border-radius: 3px;
+            transition: all .15s ease-in-out, filter 0s;
+            &%emojiPickerEmojiItemSelected  {
+                background-color: hsla(0, 0%, 100%, .07);
+            }
+            &%emojiPickerEmojiItemDisabled  {
+                filter: grayscale(1) blur(1px)  ;
+                &%emojiPickerEmojiItemSelected  {
+                    filter: grayscale(1);
+                }
+            }
+        }
+    }
+
+    // CATEGORIES
+    %emojiPickerCategories {
+        %emojiPickerCategoriesItem {
+            border-bottom: 2px solid transparent;
+            transition: all .15s ease-in-out;
+            &:hover {
+                background-color: $main-color;
+                opacity: 1;
+            }
+            &%emojiPickerCategoriesItemSelected {
+                border-bottom-color: $main-color;
+            }
+            &%emojiPickerCategoriesItemRecent {
+                background-image: url(https://discordapp.com/assets/0f1f2dff98b5e2099086e303d9be0dad.svg)
+            }
+            &%emojiPickerCategoriesItemPeople {
+                background-image: url(https://discordapp.com/assets/0509bf058793ef8ddd770a977e63614c.svg)
+            }
+            &%emojiPickerCategoriesItemNature {
+                background-image: url(https://discordapp.com/assets/aafe899a4d7ad7717acc64f5b8f36342.svg)
+            }
+            &%emojiPickerCategoriesItemFood {
+                background-image: url(https://discordapp.com/assets/0eb5a2b715ff649e9757a232996817ab.svg)
+            }
+            &%emojiPickerCategoriesItemActivity {
+                background-image: url(https://discordapp.com/assets/8674c1028a63d29fb605be53eeedf1bf.svg)
+            }
+            &%emojiPickerCategoriesItemTravel {
+                background-image: url(https://discordapp.com/assets/13e86ddf4302f697243425b2f954d00b.svg)
+            }
+            &%emojiPickerCategoriesItemObjects {
+                background-image: url(https://discordapp.com/assets/6d9a5b47dc3bf7adf54f19b1e3f6c5ad.svg)
+            }
+            &%emojiPickerCategoriesItemSymbols {
+                background-image: url(https://discordapp.com/assets/83095e6af6c7cf33669e3ab169296867.svg)
+            }
+            &%emojiPickerCategoriesItemFlags {
+                background-image: url(https://discordapp.com/assets/ccda5cf0a64abbd18fdb9f914b55292e.svg)
+            }   
+            &%emojiPickerCategoriesItemCustom {
+                background-image: url(https://discordapp.com/assets/bbabd25029321a8260849de01e8c13fc.svg)
+            }
+        }
+    }
+}
+
+// BD EMOTE PICKER
+%bdEmoteMenu {
+    background-color: rgba(0, 0, 0, .5);
+    border: none !important;
+    > button {
+        border-color: transparent;
+        box-shadow: none;
+        color: hsla(0, 0%, 100%, .7);
+        transition: all .15s ease-in-out;
+        &:hover {
+            background-color: hsla(0, 0%, 100%, .07);
+        }
+    }
+    > %bdEmoteMenuActive {
+        background-color: $main-color;
+        color: #fff;
+    }
+}
+%bdEmoteMenuTwitchContainer,
+%bdEmoteMenuFavouriteContainer {
+    height: 326px;
+    width: 344px;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+}
+%bdEmoteContainer {
+    border-radius: 3px;
+    transition: all .15s ease-in-out;
+    &:hover  {
+        background-color: hsla(0, 0%, 100%, .07);
+    }
+}
