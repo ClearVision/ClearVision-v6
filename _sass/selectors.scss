@@ -87,6 +87,7 @@
 //	21.2) Content
 // 22) Screens
 //	22.1) Loading
+//	22.2) Crash
 // 23) Plugins
 //	23.1) Plugin Notice
 //	23.2) Zerthox
@@ -2718,6 +2719,19 @@ pre {
 }
 .path3-2l9TIX {
 	@extend %loadingPath3 !optional;
+}
+// 22.2) Crash
+.errorPage-u8SYh4 {
+	@extend %errorPage !optional;
+}
+.image-3zK3Wt {
+	@extend %errorPageImage !optional;
+}
+.text-NLHgOm {
+	@extend %errorPageText !optional;
+}
+.note-450gs3 {
+	@extend %errorPageNote !optional;
 }
 
 // 23) PLUGINS
