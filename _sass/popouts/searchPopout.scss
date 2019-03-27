@@ -1,7 +1,7 @@
 // SEARCH POPOUT
 %popout > %searchPopout {
     background-color: rgba(0, 0, 0, .7);
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 }
 %searchPopout {
 
@@ -166,13 +166,13 @@
         %searchPopoutKeybindShortcut {
             > span {
                 border-color: hsla(0, 0%, 100%, .5);
-                box-shadow: inset 0 -4px 0 hsla(0, 0%, 100%, .7);
+                box-shadow: inset 0 -4px hsla(0, 0%, 100%, .7);
                 &:hover {
                     background-color: transparent;
                 }
                 &:active {
                     border-color: hsla(0, 0%, 100%, .5);
-                    box-shadow: inset 0 -2px 0 hsla(0, 0%, 100%, .7);
+                    box-shadow: inset 0 -2px hsla(0, 0%, 100%, .7);
                     color: #fff;
                 }
             }
@@ -245,7 +245,7 @@
             }
         }
         > %datepickerDaySelected {
-            box-shadow: inset 0 -3px 0 0 $main-color;
+            box-shadow: inset 0 -3px $main-color;
             @include pseudo(after) {
                 display: none,
             }

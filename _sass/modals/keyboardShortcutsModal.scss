@@ -5,7 +5,7 @@
             background-color: transparent;
             border: 1px solid var(--hover-color);
             border-radius: 3px;
-            box-shadow: inset 0 -4px 0 var(--main-color);
+            box-shadow: inset 0 -4px var(--main-color);
             color: hsla(0, 0%, 100%, .7);
             transition: all .15s ease-in-out;
             &:hover {
@@ -14,7 +14,7 @@
             }
             &:active {
                 border: 1px solid var(--hover-color);
-                box-shadow: inset 0 -2px 0 var(--main-color);
+                box-shadow: inset 0 -2px var(--main-color);
                 color: #fff;
             }
         }
