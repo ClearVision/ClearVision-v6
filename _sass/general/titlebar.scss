@@ -20,8 +20,10 @@
 			font-size: 14px;
 			font-weight: 600;
 			white-space: nowrap;
+			filter: drop-shadow(0 0 5px);
 		}
 		> svg {
+			filter: drop-shadow(0 0 5px $main-color);
 			> path {
 				fill: $main-color;
 			}
