@@ -1,0 +1,106 @@
+// TENOR GIF AUTOCOMPLETE
+%autocomplete %gifAutocompleteHeader {
+    box-shadow: 0 1px hsla(0, 0%, 100%, .04);
+}
+%gifAutocompleteHeader {
+
+    // SEARCH
+    %gifAutocompleteSearchBar {
+        background-color: hsla(0, 0%, 100%, .07);
+        > %gifAutocompleteSearchInput {
+            color: #fff;
+            &::-webkit-input-placeholder {
+                color: hsla(0, 0%, 100%, .3);
+            }
+        }
+    }
+    %gifAutocompleteSearchBackButton {
+        color: hsla(0, 0%, 100%, .7);
+        transition: all .15s ease-in-out;
+    }
+    %gifAutocompleteSearchHeader {
+        color: hsla(0, 0%, 100%, .7);
+    }
+    %gifAutocompleteSearchBackButton:hover {
+        color: #fff;
+    }
+}
+%gifAutocompleteContent {
+    %scroller {
+        &::-webkit-scrollbar {
+            width: 8px !important;
+        }
+    }
+
+    // CATEGORIES
+    %gifAutocompleteCategoryFade,
+    %gifAutocompleteCategoryFadeBlurple {
+        transition: all .15s ease-in-out;
+    }
+    %gifAutocompleteCategoryFade {
+        &:hover {
+            background-color: rgba(0, 0, 0, .7);
+        }
+    }
+    %gifAutocompleteCategoryFadeBlurple {
+        &,
+        &:hover {
+            background-color: transparent;
+        }
+        @include pseudo(after) {
+            content: "";
+            width: 100%;
+            height: 100%;
+            display: block;
+            background-color: $main-color;
+            border-radius: 4px;
+            opacity: .7;
+        }
+    }
+    %gifAutocompleteCategoryText {
+        color: #fff;
+        filter: drop-shadow(0 1px 1px rgba(0, 0, 0, .7));
+    }
+
+    // RESULTS
+    %gifAutocompleteResult {
+        @include pseudo(after) {
+            transition: all .15s ease-in-out;
+        }
+        &[style*="background-color:"] {
+            background-color: $main-color !important;
+        }
+        &[style*="background-color: rgb(179, 174, 255)"] {
+            filter: brightness(1.3);
+        }
+        &[style*="background-color: rgb(115, 142, 245)"] {
+            filter: grayscale(.3)
+        }
+        &[style*="background-color: rgb(146, 154, 250)"] {
+            filter: brightness(.7);
+        }
+    }
+    %gifAutocompleteResult:hover,
+    %gifAutocompleteResultFocused {
+        @include pseudo(after) {
+            box-shadow: inset 0 0 0 2px $main-color, inset 0 0 0 3px rgba(0, 0, 0, .3);
+        }
+    }
+    %gifAutocompletePlaceholder {
+        background-color: hsla(0, 0%, 100%, .07);
+    }
+
+    // HINT CARD
+    %gifAutocompleteEmptyHintCard {
+        background-color: hsla(0, 0%, 100%, .04);
+        color: hsla(0, 0%, 100%, .5);
+    }
+
+    // END CONTAINER
+    %gifAutocompleteEndContainer {
+        @include pseudo(after) {
+            filter: grayscale(1) brightness(.7);
+            opacity: .3;
+        }
+    }
+}
