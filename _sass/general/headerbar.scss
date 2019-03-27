@@ -1,0 +1,40 @@
+// HEADER BAR
+%base %headerBar {
+	background-color: rgba(0, 0, 0, .6);
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, .6);
+}
+%headerBar {
+	%headerBarTitle {
+		color: #fff;
+	}
+}
+
+// TOOLBAR
+%toolbarIconMargin {
+	height: 28px;
+	margin: 0 1px;
+}
+%toolbarIcon {
+	padding: 2px 3px;
+	border-radius: 3px;
+	opacity: 1 !important;
+	transition: all .3s ease-in-out;
+	%toolbarIconForeground {
+		opacity: .5;
+		transition: all .15s ease-in-out;
+	}
+	&%toolbarIconActive {
+		background-color: hsla(0, 0%, 100%, .1);
+		%toolbarIconForeground {
+			opacity: .7;
+		}
+	}
+	&:hover {
+		%toolbarIconForeground {
+			opacity: 1;
+		}
+	}
+}
+%toolbar %toolbarDivider {
+	background-color: hsla(0, 0%, 100%, .1);
+}
