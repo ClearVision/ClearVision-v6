@@ -5,11 +5,6 @@
 %chat {
 
 	// TITLEBAR
-	%chatTitle,
-	%chatTitleCall {
-		background-color: rgba(0, 0, 0, .6);
-		box-shadow: 0 0 10px 0 rgba(0, 0, 0, .6);
-	}
 	%chatTitleChannelName {
 		color: #fff;
 		text-shadow: 0 0 3px #000;
@@ -74,19 +69,4 @@
 // NO CHANNEl
 %noChannel {
 	background-color: rgba(0, 0, 0, .5);
-}
-
-// TITLE ICONS & DIVIDERS
-%chatTitleIcon {
-	opacity: .5;
-	transition: all .15s ease-in-out;
-	&%chatTitleIconActive {
-		opacity: .7;
-	}
-	&:hover {
-		opacity: 1;
-	}
-}
-%appMount %chatTitleDivider {
-	background-color: hsla(0, 0%, 100%, .1);
 }
