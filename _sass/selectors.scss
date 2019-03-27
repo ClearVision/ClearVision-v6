@@ -71,6 +71,8 @@
 //	16.6) Autocomplete Popout
 //	16.7) Search Popout
 //		16.7.1) Datepicker
+//	16.8) Emoji Picker
+//		16.8.1) BD Emote Picker
 // 17) User Popout
 //	17.1) Header
 //	17.2) Body
@@ -2555,6 +2557,138 @@ pre {
 }
 .react-datepicker__day--sun {
 	@extend %datepickerDaySun !optional;
+}
+// 16.8) Emoji Picker
+.emojiPicker-3m1S-j {
+	@extend %emojiPicker !optional;
+}
+.header-1nkwgG {
+	@extend %emojiPickerHeader !optional;
+}
+.searchBar-2pWH0_ {
+	@extend %emojiPickerSearchBar !optional;
+}
+.searchBarInner-1_Tg2R {
+	@extend %emojiPickerSearchBarInner !optional;
+}
+.searchBarIcon-1J6sKG {
+	@extend %emojiPickerSearchBarIcon !optional;
+}
+.icon-3cZ1F_ {
+	@extend %emojiPickerSearchIcon !optional;
+}
+.visible-3V0mGj {
+	@extend %emojiPickerSearchIconVisible !optional;
+}
+.iconSearchBarClear-2DW-Kr {
+	@extend %emojiPickerSearchIconClear !optional;
+}
+.iconSearchBarEyeGlass-2n38zb {
+	@extend %emojiPickerSearchIconEyeGlass !optional;
+}
+.diversitySelector-tmmMv0 {
+	@extend %emojiPickerDiversitySelector !optional;
+}
+.popout-2nUePc {
+	@extend %emojiPickerDiversitySelectorPopout !optional;
+}
+.scroller-3vODG7 {
+	@extend %emojiPickerScroller !optional;
+}
+.stickyHeader-1SS0JU {
+	@extend %emojiPickerStickyHeader !optional;
+}
+.category-2U57w6 {
+	@extend %emojiPickerCategory !optional;
+}
+.row-3j9Kuo {
+	@extend %emojiPickerRow !optional;
+}
+.emojiItem-109bjA {
+	@extend %emojiPickerEmojiItem !optional;
+}
+.selected-39BZ4S {
+	@extend %emojiPickerEmojiItemSelected !optional;
+}
+.disabled-1H1CfW {
+	@extend %emojiPickerEmojiItemDisabled !optional;
+}
+.spriteItem-2AFL7r {
+	@extend %emojiPickerSpriteItem !optional;
+}
+.categories-1feg4n {
+	@extend %emojiPickerCategories !optional;
+}
+.item-16cXuq {
+	@extend %emojiPickerCategoriesItem !optional;
+}
+.selected-39BZ4S {
+	@extend %emojiPickerCategoriesItemSelected !optional;
+}
+.recent-rdY7_c {
+	@extend %emojiPickerCategoriesItemRecent !optional;
+}
+.custom-2TY7UZ {
+	@extend %emojiPickerCategoriesItemCustom !optional;
+}
+.people-2y6eof {
+	@extend %emojiPickerCategoriesItemPeople !optional;
+}
+.nature-WkggKK {
+	@extend %emojiPickerCategoriesItemNature !optional;
+}
+.food-3vb4RY {
+	@extend %emojiPickerCategoriesItemFood !optional;
+}
+.activity-2oLAbd {
+    @extend %emojiPickerCategoriesItemActivity !optional;
+}
+.travel-2FeozN {
+    @extend %emojiPickerCategoriesItemTravel !optional;
+}
+.objects-ktZjG4 {
+    @extend %emojiPickerCategoriesItemObjects !optional;
+}
+.symbols-3xtDtJ {
+    @extend %emojiPickerCategoriesItemSymbols !optional;
+}
+.flags-3peqg9 {
+    @extend %emojiPickerCategoriesItemFlags !optional;
+}
+// 16.8.1) BD Emote Picker
+#bda-qem {
+	@extend %bdEmoteMenu !optional;
+}
+#bda-qem-twitch {
+	@extend %bdEmoteMenuTwitch !optional;
+}
+#bda-qem-favourite {
+	@extend %bdEmoteMenuFavourite !optional;
+}
+#bda-qem-emojis {
+	@extend %bdEmoteMenuEmojis !optional;
+}
+%bdEmoteMenuTwitch,
+%bdEmoteMenuFavourite,
+%bdEmoteMenuEmojis {
+	&.active {
+		@extend %bdEmoteMenuActive !optional;
+	}
+}
+#bda-qem-twitch-container {
+	@extend %bdEmoteMenuTwitchContainer !optional;
+}
+#bda-qem-favourite-container {
+	@extend %bdEmoteMenuFavouriteContainer !optional;
+}
+.emote-menu-inner {
+	@extend %bdEmoteMenuInner !optional;
+}
+.emote-container {
+	@extend %bdEmoteContainer !optional;
+}
+.emote-icon {
+	@extend %bdEmoteIcon !optional;
 }
 
 // 17) USER POPOUT
