@@ -49,41 +49,4 @@
 			}
 		}
 	}
-	
-	// CHANNEL TEXTAREA AUTOCOMPLETE
-	%autocomplete {
-		background-color: rgba(0, 0, 0, .8);
-		%autocompleteTitle {
-			color: hsla(0, 0%, 100%, .5);
-		}
-		%autocompleteContent {
-			color: hsla(0, 0%, 100%, .6);
-		}
-		%autocompleteIconForeground {
-			fill: hsla(0, 0%, 100%, .3);
-		}
-		%autocompleteDescription,
-		%autocompleteDescriptionUsername {
-			color: hsla(0, 0%, 100%, .3);
-		}
-		%autocompleteDescriptionDiscriminator {
-			color: hsla(0, 0%, 100%, .15);
-		}
-		%autocompleteSelectorSelected {
-			background-color: $main-color;
-			> %autocompleteContent {
-				color: #fff;
-			}
-			%autocompleteIconForeground {
-				fill: hsla(0, 0%, 100%, .5);
-			}
-			%autocompleteDescription,
-			%autocompleteDescriptionUsername {
-				color: hsla(0, 0%, 100%, .5);
-			}
-			%autocompleteDescriptionDiscriminator {
-				color: hsla(0, 0%, 100%, .25);
-			}
-		}
-	}
 }
