@@ -82,6 +82,9 @@ $discord-blurple: #7289da;
 /* TITLEBAR */
 @import "general/titlebar";
 
+/* HEADER BAR */
+@import "general/headerbar";
+
 /* GUILDS */
 @import "guilds/guilds";
 
@@ -173,6 +176,7 @@ $discord-blurple: #7289da;
 
 /* SCREENS */
 @import "screens/loading";
+@import "screens/crash";
 
 /* PLUGINS */
 @import "plugins/pluginNotice";
