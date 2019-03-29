@@ -2,9 +2,9 @@
 body {
 	@include pseudo(after) {
 		content: "";
-		position: absolute;
+		position: fixed;
 		@include stretch;
-		@include bg($img: $bg-img, $size: cover, $pos: center);
+		@include bg($img: $bg-img, $pos: center, $size: cover);
 		filter: brightness($bg-brightness) blur($bg-blur);
 		z-index: -9999;
 	}

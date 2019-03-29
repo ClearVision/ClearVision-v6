@@ -79,9 +79,9 @@
 			&:hover {
 				color: $main-color;
 				border-color: $main-color;
-				animation: pulsate-border 2s infinite ease-in-out;
+				animation: cv-pulsate-border 2s infinite ease-in-out;
 				> svg {
-					animation: pulsate-svg 2s infinite ease-in-out;
+					animation: cv-pulsate-svg 2s infinite ease-in-out;
 				}
 			}
 			&:active {
@@ -116,7 +116,7 @@
 			}
 			&:hover {
 				@include pseudo(before, after) {
-					animation: pulsate-plus 2s infinite ease-in-out;
+					animation: cv-pulsate-plus 2s infinite ease-in-out;
 				}
 			}
 		}

@@ -19,7 +19,7 @@
 	}
 	&%tooltipTop,
 	&%tooltipBottom {
-		animation: menu-fold .15s cubic-bezier(.2, .6, .5, 1.1);
+		animation: cv-menu-fold .15s cubic-bezier(.2, .6, .5, 1.1);
 	}
 	&%tooltipTop {
 		transform-origin: 0 100%;
@@ -29,7 +29,7 @@
 	}
 	&%tooltipRight,
 	&%tooltipLeft {
-		animation: menu-slide .15s cubic-bezier(.2, .6, .5, 1.1);
+		animation: cv-menu-slide .15s cubic-bezier(.2, .6, .5, 1.1);
 	}
 	&%tooltipRight {
 		transform-origin: 0 0;

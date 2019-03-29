@@ -3,7 +3,7 @@
 	position: relative;
 	border-radius: 5px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, .5);
-	animation: menu-pop .15s cubic-bezier(.2, .6, .5, 1.1);
+	animation: cv-menu-pop .15s cubic-bezier(.2, .6, .5, 1.1);
 	@include pseudo(before) {
 		content: "";
 		position: absolute;

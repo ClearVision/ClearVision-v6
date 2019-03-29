@@ -1,4 +1,4 @@
-@keyframes fade-in {
+@keyframes cv-fade-in {
 	from {
 		opacity: 0;
 	}
@@ -6,7 +6,7 @@
 		opacity: 1;
 	}
 }
-@keyframes pulsate-border {
+@keyframes cv-pulsate-border {
 	0%, 100% {
 		border-color: hsla(0, 0%, 100%, .3);
 	}
@@ -14,7 +14,7 @@
 		border-color: currentcolor;
 	}
 }
-@keyframes pulsate-plus {
+@keyframes cv-pulsate-plus {
 	0%, 100% {
 		background-color: #333539;
 	}
@@ -22,7 +22,7 @@
 		background-color: currentcolor;
 	}
 }
-@keyframes pulsate-svg {
+@keyframes cv-pulsate-svg {
 	0%, 100% {
 		color: #333539;
 	}
@@ -30,7 +30,7 @@
 		color: currentcolor;
 	}
 }
-@keyframes badge {
+@keyframes cv-badge {
 	from {
 		background-color: $main-color;
 	}
@@ -38,7 +38,7 @@
 		background-color: $hover-color;
 	}
 }
-@keyframes menu-fold {
+@keyframes cv-menu-fold {
 	from {
 		transform: rotateX(-90deg);
 		opacity: 0;
@@ -48,7 +48,7 @@
 		opacity: 1;
 	}
 }
-@keyframes menu-slide {
+@keyframes cv-menu-slide {
 	from {
 		transform: rotateY(-90deg);
 		opacity: 0;
@@ -58,7 +58,7 @@
 		opacity: 1;
 	}
 }
-@keyframes menu-pop {
+@keyframes cv-menu-pop {
 	from {
 		transform: scale(0);
 		opacity: 0;
