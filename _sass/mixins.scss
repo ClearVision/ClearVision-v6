@@ -2,6 +2,7 @@
 
 /// Set background properties in one mixin
 /// @param {*} $color [null] - background-color property value
+/// @param {*} $clr [null] - background-color property value (alternative param)
 /// @param {*} $image [null] - background-image property value
 /// @param {*} $img [null] - background-image property value (alternative param)
 /// @param {*} $position [null] - background-position property value
@@ -11,50 +12,51 @@
 /// @param {*} $rep [null] - background-repeat property value (alternative param)
 /// @param {*} $attachment [null] - background-attachment property value
 /// @param {*} $attach [null] - background-attachment property value (alternative param)
-@mixin bg($image: null, $color: null, $repeat: null, $position: null, $size: null, $attachment: null, $img: null, $rep: null, $pos: null, $attach: null) {
-	$image: if($image, $image, $img);
-	$repeat: if($repeat, $repeat, $rep);
-	$position: if($position, $position, $pos);
-	$attachment: if($attachment, $attachment, $attach);
-	@if $image {
-		$bg: ();
-		$bg: append($bg, $image, space);
-		@if $color {
-			$bg: append($bg, $color, space);
+@mixin bg($color: null, $image: null, $repeat: null, $position: null, $size: null, $attachment: null, $clr: null, $img: null, $rep: null, $pos: null, $attach: null) {
+	$img: $image or $img;
+	$clr: $color or $clr;
+	$rep: $repeat or $rep;
+	$pos: $position or $pos;
+	$attach: $attachment or $attach;
+	$bg: ();
+	@if $img and $img != inherit {
+		$bg: append($bg, $img, space);
+		@if $clr and $clr != inherit {
+			$bg: append($bg, $clr, space);
 		}
-		@if $repeat {
-			$bg: append($bg, $repeat, space);
+		@if $rep and $rep != inherit {
+			$bg: append($bg, $rep, space);
 		}
-		@if $position and $size {
-			$bg: append($bg, #{$position}/#{$size}, space);
+		@if $pos and $pos != inherit {
+			@if $size and $size != inherit {
+				$bg: append($bg, #{$pos}/#{$size}, space);
+			}
+			@else {
+				$bg: append($bg, $pos, space);
+			}
 		}
-		@else if $position {
-			$bg: append($bg, $position, space);
-		}
-		@else if $size {
-			$bg: append($bg, $size, space);
-		}
-		@if $attachment {
-			$bg: append($bg, $attachment, space);
+		@if $attach and $attach != inherit {
+			$bg: append($bg, $attach, space);
 		}
 		background: #{$bg};
 	}
-	@else {
-		@if $color {
-			background-color: #{$color};
-		}
-		@if $repeat {
-			background-repeat: #{$repeat};
-		}
-		@if $position {
-			background-position: #{$position};
-		}
-		@if $size {
-			background-size: #{$size};
-		}
-		@if $attachment {
-			background-attachment: #{$attachment};
-		}
+	@else if $img {
+		background-image: #{$img};
+	}
+	@if $clr and not index($bg, $clr) {
+		background-color: #{$clr};
+	}
+	@if $rep and not index($bg, $rep) {
+		background-repeat: #{$rep};
+	}
+	@if $pos and not (index($bg, $pos) or index($bg, #{$pos}/#{$size})) {
+		background-position: #{$pos};
+	}
+	@if $size and not index($bg, #{$pos}/#{$size}) {
+		background-size: #{$size};
+	}
+	@if $attach and not index($bg, $attach) {
+		background-attachment: #{$attach};
 	}
 }
 
