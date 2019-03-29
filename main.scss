@@ -22,7 +22,7 @@ $discord-blurple: #7289da;
 // MIXINS
 @import "mixins";
 
-/// Force clear background
+/// Force clear background color
 @mixin clear {
 	background-color: transparent !important;
 }
