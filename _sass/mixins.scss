@@ -4,33 +4,57 @@
 /// @param {*} $color [null] - background-color property value
 /// @param {*} $image [null] - background-image property value
 /// @param {*} $img [null] - background-image property value (alternative param)
-/// @param {*} $size [null] - background-size property value
 /// @param {*} $position [null] - background-position property value
 /// @param {*} $pos [null] - background-position property value (alternative param)
+/// @param {*} $size [null] - background-size property value
 /// @param {*} $repeat [null] - background-repeat property value
-/// @param {*} $attach [null] - background-attachment property value
+/// @param {*} $rep [null] - background-repeat property value (alternative param)
 /// @param {*} $attachment [null] - background-attachment property value
-@mixin bg($color: null, $image: null, $img: null, $size: null, $position: null, $pos: null, $repeat: null, $attach: null, $attachment: null) {
+/// @param {*} $attach [null] - background-attachment property value (alternative param)
+@mixin bg($image: null, $color: null, $repeat: null, $position: null, $size: null, $attachment: null, $img: null, $rep: null, $pos: null, $attach: null) {
 	$image: if($image, $image, $img);
+	$repeat: if($repeat, $repeat, $rep);
 	$position: if($position, $position, $pos);
 	$attachment: if($attachment, $attachment, $attach);
-	@if $color {
-		background-color: #{$color};
-	}
 	@if $image {
-		background-image: #{$image};
+		$bg: ();
+		$bg: append($bg, $image, space);
+		@if $color {
+			$bg: append($bg, $color, space);
+		}
+		@if $repeat {
+			$bg: append($bg, $repeat, space);
+		}
+		@if $position and $size {
+			$bg: append($bg, #{$position}/#{$size}, space);
+		}
+		@else if $position {
+			$bg: append($bg, $position, space);
+		}
+		@else if $size {
+			$bg: append($bg, $size, space);
+		}
+		@if $attachment {
+			$bg: append($bg, $attachment, space);
+		}
+		background: #{$bg};
 	}
-	@if $size {
-		background-size: #{$size};
-	}
-	@if $position {
-		background-position: #{$position};
-	}
-	@if $repeat {
-		background-repeat: #{$repeat};
-	}
-	@if $attachment {
-		background-attachment: #{$attachment};
+	@else {
+		@if $color {
+			background-color: #{$color};
+		}
+		@if $repeat {
+			background-repeat: #{$repeat};
+		}
+		@if $position {
+			background-position: #{$position};
+		}
+		@if $size {
+			background-size: #{$size};
+		}
+		@if $attachment {
+			background-attachment: #{$attachment};
+		}
 	}
 }
 
