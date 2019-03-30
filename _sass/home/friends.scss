@@ -1,6 +1,10 @@
 // FRIENDS
+%base {
+	%friends {
+		background-color: transparent;
+	}
+}
 %friends {
-	@include clear;
 
 	// FRIENDS HEADER
 	%friendsHeaderBar {
