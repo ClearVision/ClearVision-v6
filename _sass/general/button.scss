@@ -47,3 +47,13 @@
 		color: #fff;
 	}
 }
+%buttonLinkWhite {
+	color: #fff;
+	transition: all .3s ease-in-out;
+	&:hover {
+		text-shadow: 0 0 3px;
+		> %buttonContents {
+			background-image: none;
+		}
+	}
+}
