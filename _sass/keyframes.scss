@@ -11,7 +11,7 @@
 		border-color: hsla(0, 0%, 100%, .3);
 	}
 	50% {
-		border-color: currentcolor;
+		border-color: currentColor;
 	}
 }
 @keyframes cv-pulsate-plus {
@@ -19,7 +19,7 @@
 		background-color: #333539;
 	}
 	50% {
-		background-color: currentcolor;
+		background-color: currentColor;
 	}
 }
 @keyframes cv-pulsate-svg {
@@ -27,7 +27,7 @@
 		color: #333539;
 	}
 	50% {
-		color: currentcolor;
+		color: currentColor;
 	}
 }
 @keyframes cv-badge {
