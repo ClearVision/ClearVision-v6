@@ -2128,7 +2128,10 @@ pre {
 
 // 13) GENERAL ELEMENTS
 // 13.1) Buttons
-.lookFilled-1Gx00P{
+.button-38aScr {
+	@extend %button !optional;
+}
+.lookFilled-1Gx00P {
 	@extend %buttonFilled !optional;
 }
 .lookInverted-2D7oAl {
@@ -2136,6 +2139,9 @@ pre {
 }
 .lookOutlined-3sRXeN {
 	@extend %buttonOutlined !optional;
+}
+.lookLink-9FtZy- {
+	@extend %buttonLink !optional;
 }
 .colorBrand-3pXr91 {
 	@extend %buttonBrand !optional;
@@ -2213,6 +2219,26 @@ pre {
 	}
 	&%buttonGrey {
 		@extend %buttonInvertedGrey !optional;
+	}
+}
+%buttonLink {
+	&%buttonBrand {
+		@extend %buttonLinkBrand !optional;
+	}
+	&%buttonPrimary {
+		@extend %buttonLinkPrimary !optional;
+	}
+	&%buttonWhite {
+		@extend %buttonLinkWhite !optional;
+	}
+	&%buttonGreen {
+		@extend %buttonLinkGreen !optional;
+	}
+	&%buttonRed {
+		@extend %buttonLinkRed !optional;
+	}
+	&%buttonGrey {
+		@extend %buttonLinkGrey !optional;
 	}
 }
 .contents-18-Yxp {
