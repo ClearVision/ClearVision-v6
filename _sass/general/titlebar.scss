@@ -3,24 +3,37 @@
 	height: 18px;
 	width: 100vw;
 	margin: 0;
-	padding-top: 4px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 	background-color: rgba(0, 0, 0, .6);
 	box-shadow: 0 0 20px rgba(0, 0, 0, .6);
 	> %titlebarWordmark {
+		position: static;
+		margin-right: auto;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		opacity: 1;
 		pointer-events: none;
 		user-select: none;
-		@include pseudo(after) {
-			content: "ClearVision";
+		order: 1;
+		@include pseudo(before, after) {
 			margin-left: 3px;
-			color: hsla(0, 0%, 100%, .7);
-			font-size: 14px;
 			font-weight: 600;
 			white-space: nowrap;
-			filter: drop-shadow(0 0 5px);
+			order: 1;
+		}
+		@include pseudo(before) {
+			content: "#{$titlebar-text}";
+			color: hsla(0, 0%, 100%, .7);
+			font-size: 14px;
+			text-shadow: 0 0 3px #000;
+		}
+		@include pseudo(after) {
+			content: "#{$titlebar-version}";
+			color: hsla(0, 0%, 100%, .3);
+			font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+			font-size: 10px;
 		}
 		> svg {
 			filter: drop-shadow(0 0 5px $main-color);
@@ -30,6 +43,7 @@
 		}
 	}
 	> %titlebarWinButton {
+		top: -2px;
 		opacity: 1 !important;
 		&:hover {
 			background-color: hsla(0, 0%, 100%, .1);
