@@ -1,0 +1,138 @@
+// ACTIVITY FEED
+%base {
+    %activityFeed {
+        background-color: transparent;
+    }
+}
+%activityFeed {
+    %activityFeedLayout {
+        background-color: rgba(0, 0, 0, .5);
+    }
+    %activityFeedH5 {
+        color: hsla(0, 0%, 100%, .7);
+    }
+    %activityFeedColoredText,
+    %activityFeedNoticeBody {
+        color: hsla(0, 0%, 100%, .7);
+    }
+    %activityFeedCardTitle,
+    %activityFeedNoticeHeader {
+        color: #fff;
+    }
+    %activityFeedColorStandard {
+        color: hsla(0, 0%, 100%, .7);
+    }
+    %activityFeedColorMuted {
+        color: hsla(0, 0%, 100%, .3);
+    }
+
+    // CARD
+    %activityFeedOuter {
+        background-color: rgba(0, 0, 0, .3);
+        &%activityFeedOuterInteractive {
+            &:hover {
+                background-color: rgba(0, 0, 0, .5);
+            }
+        }
+    }
+    %activityFeedCard {
+        border-radius: 5px;
+        transition: all .15s ease-in-out;
+        &:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
+        }
+    }
+    %activityFeedColoredBackground {
+        background: $main-color;
+    }
+    %activityFeedCardFooter {
+        box-shadow: inset 0 1px hsla(0, 0%, 100%, .04);
+    }
+    %activityFeedCardIconWrapperInteractive {
+        transition: all .15s ease-in-out;
+        &:hover {
+            background-color: hsla(0, 0%, 100%, .04);
+        }
+    }
+
+    // GRID
+    %activityFeedUnwrapped {
+        background-color: hsla(0, 0%, 100%, .07);
+        border-radius: 4px;
+        &%activityFeedUnwrappedClickable {
+            transition: all .15s ease-in-out;
+            &:hover {
+                background-color: $main-color;
+            }
+        }
+    }
+
+    // NOW PLAYING & RECENTLY PLAYED CONTAINERS
+    %activityFeedNowPlayingContainer,
+    %activityFeedRecentlyPlayedContainer {
+        background-color: rgba(0, 0, 0, .3);
+    }
+    %activityFeedPopoutContainer {
+        transition: all .15s ease-in-out;
+        &:hover {
+            background-color: $main-color;
+            background-color: hsla(0, 0%, 100%, .07);
+        }
+    }
+    %activityFeedPopoutContainerBody {
+        background-color: hsla(0, 0%, 100%, .04);
+        border-radius: 5px;
+    }
+    %activityFeedPopoutContainerSection {
+        background-color: transparent;
+        border-radius: 5px;
+    }
+    %activityFeedSeparator {
+        background-color: hsla(0, 0%, 100%, .04);
+    }
+    %activityFeedPopoutContainerAvatarMask {
+        mask: none;
+    }
+
+    // POPOUT
+    %activityFeedPopout {
+        background-color: rgba(0, 0, 0, .8);
+        %activityFeedColorStandard {
+            color: inherit;
+        }
+    }
+    %activityFeedPopoutEnabled,
+    %activityFeedPopoutMemberListItem {
+        color: hsla(0, 0%, 100%, .7);
+        transition: all .15s ease-in-out;
+        &:hover {
+            background-color: $main-color;
+            color: #fff;
+        }
+    }
+    %activityFeedPopoutAvatarMask {
+        mask: none;
+    }
+
+    // NOTICE
+    %activityFeedNoticeWrapper {
+        background-color: rgba(0, 0, 0, .3);
+        border-radius: 5px;
+    }
+    %activityFeedGdprWrapper {
+        background-color: hsla(0, 0%, 100%, .07);
+    }
+    %activityFeedNoticeClose {
+        color: #fff;
+        opacity: .5;
+        transition: all .15s ease-in-out;
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    // PLACEHOLDER
+    %activityFeedPlaceholderWrapper {
+        background-color: rgba(0, 0, 0, .1);
+    }
+}
