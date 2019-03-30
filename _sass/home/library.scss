@@ -76,15 +76,17 @@
     %libraryTableRow {
         margin: 0;
         color: hsla(0, 0%, 100%, .7);
-        %libraryPlayButton {
-            background-color: hsla(0, 0%, 100%, .07);
-            color: hsla(0, 0%, 100%, .7);
-            transition: all .15s ease-in-out;
-        }
-        &:hover {
-            %libraryPlayButton:hover {
-                background-color: var(--main-color);
-                color: #fff;
+        %libraryTableActionsCell {
+            %button {
+                background-color: hsla(0, 0%, 100%, .07);
+                color: hsla(0, 0%, 100%, .7);
+                transition: all .15s ease-in-out;
+            }
+            &:hover {
+                %button:hover {
+                    background-color: $main-color;
+                    color: #fff;
+                }
             }
         }
     }
@@ -98,12 +100,22 @@
     %libraryTableTextCell {
         color: hsla(0, 0%, 100%, .5);
     }
+    %libraryTableLastPlayedCellNew {
+        color: $main-color;
+    }
     %libraryTableSettingIcon {
         color: #fff;
         opacity: .5;
         transition: all .15s ease-in-out;
         &:hover {
             opacity: 1;
+        }
+    }
+    %libraryTableRowWrapperDim {
+        %libraryTableNameCell,
+        %libraryTableTextCell,
+        %libraryTableSettingIcon {
+            transition: all .15s ease-in-out;
         }
     }
 }
