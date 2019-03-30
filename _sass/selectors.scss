@@ -1836,6 +1836,9 @@ pre {
 .rowWrapperActive-2L7i9f {
 	@extend %libraryTableRowWrapperActive !optional;
 }
+.rowWrapperDim-2Y1SDG  {
+	@extend %libraryTableRowWrapperDim !optional;
+}
 .rowBackground-3MeNoN {
 	@extend %libraryTableRowBackground !optional;
 }
@@ -1859,6 +1862,9 @@ pre {
 }
 .textCell-1aBIUP {
 	@extend %libraryTableTextCell !optional;
+}
+.lastPlayedCellNew-3twqHQ {
+	@extend %libraryTableLastPlayedCellNew !optional;
 }
 .actionsCell-1awtNi {
 	@extend %libraryTableActionsCell !optional;
