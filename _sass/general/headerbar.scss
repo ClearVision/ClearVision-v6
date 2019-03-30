@@ -16,6 +16,7 @@
 }
 %toolbarIcon {
 	padding: 2px 3px;
+	box-sizing: content-box;
 	border-radius: 3px;
 	opacity: 1 !important;
 	transition: all .3s ease-in-out;
