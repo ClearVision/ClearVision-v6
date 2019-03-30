@@ -22,6 +22,20 @@
 		color: #fff;
 	}
 }
+%buttonFilledWhite {
+	background-color: hsla(0, 0%, 100%, .1);
+	transition: all .3s ease-in-out;
+	> %buttonContents {
+		color: hsla(0, 0%, 100%, .7);
+		transition: all .3s ease-in-out;
+	}
+	&:hover {
+		background-color: hsla(0, 0%, 100%, .2) !important;
+		> %buttonContents {
+			color: #fff;
+		}
+	}
+}
 %buttonOutlinedWhite {
 	background-color: hsla(0, 0%, 100%, .05);
 	border-color: transparent;
