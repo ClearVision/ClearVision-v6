@@ -1,7 +1,11 @@
 ---
 ---
 // VARIABLES
-$version: "ClearVision v6-pre-3.1.1b";
+$version: "pre-3.1.1b";
+$titlebar-text: "ClearVision v6 BETA";
+$titlebar-version: "#{$version}";
+$account-text: "ClearVision";
+$account-version: "v6 #{$version}";
 $main-color: var(--main-color);
 $hover-color: var(--hover-color);
 $online-color: var(--online-color);
@@ -55,7 +59,7 @@ $discord-blurple: #7289da;
 	}
 }
 
-/*! ClearVision #{$version} by Zerthox */
+/*! ClearVision v6 BETA #{$version} by Zerthox */
 
 // IMPORT SELECTORS
 @import "selectors";
