@@ -161,18 +161,10 @@
 	%searchResultHighlight {
 		position: relative;
 		padding: 0 2px;
-		background-color: transparent;
+		background-color: $hover-color;
+		border-radius: 3px;
 		color: #fff;
 		text-shadow: 0 0 3px;
-		@include pseudo(after) {
-			content: "";
-			position: absolute;
-			@include stretch;
-			border-radius: 3px;
-			background-color: $main-color;
-			opacity: .7;
-			z-index: -1;
-		}
 	}
 
 	// PAGINATION
