@@ -5,6 +5,8 @@
 
 	// GUILD LIST
 	%guilds {
+
+		// GUILD
 		%guild {
 			@include pseudo(before) {
 				content: "";
@@ -14,7 +16,7 @@
 				width: 13px;
 				height: 0;
 				background-color: $main-color;
-				box-shadow: 0 0 20px $main-color;
+				box-shadow: 0 0 20px -1px $main-color;
 				opacity: 0;
 				transition: all .5s cubic-bezier(.2, .1, .4, 1);
 			}
@@ -56,12 +58,6 @@
 				opacity: .7;
 			}
 		}
-		%homeButton {
-			&:hover,
-			&[style*="background-color: rgb(114, 137, 218);"] {
-				background-color: $main-color !important;
-			}
-		}
 		%guildsError {
 			background-color: rgba(0, 0, 0, .5);
 			border-color: $main-color;
@@ -70,6 +66,29 @@
 				background-color: $main-color;
 			}
 		}
+
+		// HOME BUTTON
+		%homeButton {
+			&:hover,
+			&[style*="background-color: rgb(114, 137, 218);"] {
+				background-color: $main-color !important;
+			}
+		}
+
+		// FRIENDS COUNT
+		%friendsOnline {
+			@include clear;
+			color: hsla(0, 0%, 100%, .7);
+			text-transform: uppercase;
+			border-radius: 25px;
+			transition: all .3s ease-in-out;
+			cursor: default;
+			&:hover {
+				color: #fff;
+			}
+		}
+
+		// ICON BUTTON
 		%circleIconButton {
 			background-color: rgba(0, 0, 0, .5);
 			color: #333539;
@@ -120,20 +139,9 @@
 				}
 			}
 		}
-		%friendsOnline {
-			@include clear;
-			color: hsla(0, 0%, 100%, .7);
-			text-transform: uppercase;
-			border-radius: 25px;
-			transition: all .3s ease-in-out;
-			cursor: default;
-			&:hover {
-				color: #fff;
-			}
-		}
 	}
 
-	// GUILD SEPERATORS
+	// SEPARATOR
 	%guildSeparator {
 		@include pseudo(after) {
 			background-color: hsla(0, 0%, 100%, .2);
