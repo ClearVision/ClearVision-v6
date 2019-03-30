@@ -46,6 +46,11 @@
 //		9.2.1) Header
 //	 	9.2.2) Body
 //	 	9.2.3) Gift Inventory
+// 	9.3) Activity Feed
+//	 	9.3.1) Card
+//	 	9.3.2) Grid
+//	 	9.3.3) Now Playing & Recently Played Containers
+//	 	9.3.4) Placeholders & Notice
 // 10) Avatars
 // 11) Status
 // 12) Bot Tags
@@ -1915,6 +1920,155 @@ pre {
 }
 .emptyStateSubtext-2njjqg {
 	@extend %giftInventoryEmptySubtext !optional;
+}
+// 9.3) Activity Feed
+.activityFeed-1C0EmJ {
+	@extend %activityFeed !optional;
+}
+.layout-1cQCv2 {
+	@extend %activityFeedLayout !optional;
+}
+.h5-18_1nd {
+	@extend %activityFeedH5 !optional;
+}
+.column-E5Tpw7 {
+	@extend %activityFeedColumn !optional;
+}
+// 9.3.1) Card
+.card-GqTca8 {
+	@extend %activityFeedCard !optional;
+}
+.outer-2IVh5n {
+	@extend %activityFeedOuter !optional;
+}
+.interactive-1BeKSi {
+	@extend %activityFeedOuterInteractive !optional;
+}
+.wrapper-Qvfyci {
+	@extend %activityFeedMediaWrapper !optional;
+}
+.image-3g0L65 {
+	@extend %activityFeedImage !optional;
+}
+.video-TNzRgt {
+	@extend %activityFeedVideo !optional;
+}
+.coloredBackground-37Z6Gv {
+	@extend %activityFeedColoredBackground !optional;
+}
+.title-3mg8_z {
+	@extend %activityFeedCardTitle !optional;
+}
+.coloredText-1kAd0O {
+	@extend %activityFeedColoredText !optional;
+}
+.ctaButtons-3Aw3iT {
+	@extend %activityFeedCtaButtons !optional;
+}
+.wrapper-9ppXpy {
+	@extend %activityFeedCardFooter !optional;
+}
+.iconWrapper-3-slmh {
+	@extend %activityFeedCardIconWrapper !optional;
+}
+.interactive-1FxC7B {
+	@extend %activityFeedCardIconWrapperInteractive !optional;
+}
+.colorStandard-2KCXvj {
+	@extend %activityFeedColorStandard !optional;
+}
+.colorMuted-HdFt4q {
+	@extend %activityFeedColorMuted !optional;
+}
+// 9.3.2) Grid
+.grid-1rkoVH {
+	@extend %activityFeedGrid !optional;
+}
+.unwrapped-37iUtM {
+	@extend %activityFeedUnwrapped !optional;
+}
+.clickable-nnkAZy {
+	@extend %activityFeedUnwrappedClickable !optional;
+}
+.icon-2hm0JA {
+	@extend %activityFeedUnwrappedIcon !optional;
+}
+// 9.3.3) Now Playing & Recently Played Containers
+.wrapper-2ULRsd {
+	@extend %activityFeedNowPlayingContainer !optional;
+}
+.recentlyPlayedContainer-2F3MqS {
+	@extend %activityFeedRecentlyPlayedContainer !optional;
+}
+.popoutContainer-3WC9HR {
+	@extend %activityFeedPopoutContainer !optional;
+}
+.header-2UBPnS {
+	@extend %activityFeedPopoutContainerHeader !optional;
+}
+.headerAvatar-2T31G3 {
+	@extend %activityFeedPopoutContainerAvatar !optional;
+}
+.headerAvatarMask-2-HEb- {
+	@extend %activityFeedPopoutContainerAvatarMask !optional;
+}
+.headerIcon-1xLMqh {
+	@extend %activityFeedPopoutContainerHeaderIcon !optional;
+}
+.multipleIconWrapper-2TXVB4 {
+	@extend %activityFeedPopoutContainerHeaderIconWrapper !optional;
+}
+.body-3YPTZ5 {
+	@extend %activityFeedPopoutContainerBody !optional;
+}
+.section-3TvauS {
+	@extend %activityFeedPopoutContainerSection !optional;
+}
+.popout-3G62UL {
+	@extend %activityFeedPopout !optional;
+}
+.enabled-5QKLzu {
+	@extend %activityFeedPopoutEnabled !optional;
+}
+.memberListContainer-3u8_0h {
+	@extend %activityFeedPopoutMemberListContainer !optional;
+}
+.memberListItem-vHCzSI {
+	@extend %activityFeedPopoutMemberListItem !optional;
+}
+.avatar-261BSX {
+	@extend %activityFeedPopoutAvatar !optional;
+}
+.avatarMask-1BPAVl {
+	@extend %activityFeedPopoutAvatarMask !optional;
+}
+.separator-1N1EBC {
+	@extend %activityFeedSeparator !optional;
+}
+// 9.3.4) Placeholders & Notice
+.placeholderWrapper-3FaLtZ {
+	@extend %activityFeedPlaceholderWrapper !optional;
+}
+.wrapper-3UweLa {
+	@extend %activityFeedNoticeWrapper !optional;
+}
+.gdprWrapper-33M2Mg {
+	@extend %activityFeedGdprWrapper !optional;
+}
+.image-2prtMm {
+	@extend %activityFeedNoticeImage !optional;
+}
+.header-3uLGFv {
+	@extend %activityFeedNoticeHeader !optional;
+}
+.body-2d4vNQ {
+	@extend %activityFeedNoticeBody !optional;
+}
+.buttons-1T0m8S {
+	@extend %activityFeedNoticeButtons !optional;
+}
+.close-C7sU74 {
+	@extend %activityFeedNoticeClose !optional;
 }
 
 // 10) AVATARS
