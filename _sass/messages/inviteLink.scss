@@ -7,9 +7,7 @@
     }
     %inviteGuildName{
         color: $main-color;
-        &:hover {
-            @include hover-shadow;
-        }
+        @include hover-shadow;
     }
     %inviteGuildNameExpired {
         color: $dnd-color;
