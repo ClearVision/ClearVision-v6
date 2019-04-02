@@ -35,6 +35,9 @@
 			color: #fff;
 		}
 	}
+	&:disabled {
+		background-color: hsla(0, 0%, 100%, .1);
+	}
 }
 %buttonOutlinedWhite {
 	background-color: hsla(0, 0%, 100%, .05);
