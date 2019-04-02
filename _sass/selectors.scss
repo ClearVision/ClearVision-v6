@@ -1418,6 +1418,15 @@ pre {
 .operations-36ENbA {
 	@extend %operations !optional;
 }
+.wrapper-39oAo3 {
+	@extend %channelInfo !optional;
+}
+.content-c_0cLD {
+	@extend %channelInfoContent !optional;
+}
+.buttonContainer-3AU1Ij {
+	@extend %channelInfoButtonContainer !optional;
+}
 // 6.4.1) Channel Textarea Autocomplete
 .autocomplete-1vrmpx {
 	@extend %autocomplete !optional;
