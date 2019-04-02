@@ -1065,13 +1065,13 @@
 .content-yTz4x3 {
 	@extend %chatContent !optional;
 }
-%chatContent > .spacer-1fA9zc {
-	@extend %chatSpacer !optional;
+.base-34jWEe {
+	@extend %chatBase !optional;
 }
 .noChannel-Z1DQK7 {
 	@extend %noChannel !optional;
 }
-// 5.1) Messages
+// 6.1) Messages
 .messagesWrapper-3lZDfY {
 	@extend %messagesWrapper !optional;
 }
