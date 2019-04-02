@@ -51,6 +51,7 @@
 //	 	9.3.2) Grid
 //	 	9.3.3) Now Playing & Recently Played Containers
 //	 	9.3.4) Placeholders & Notice
+// 	9.3) Store
 // 10) Avatars
 // 11) Status
 // 12) Bot Tags
@@ -2111,6 +2112,10 @@ pre {
 }
 .close-C7sU74 {
 	@extend %activityFeedNoticeClose !optional;
+}
+// 9.4) Store
+.applicationStore-1pNvnv {
+    @extend %applicationStore !optional;
 }
 
 // 10) AVATARS
