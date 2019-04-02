@@ -1212,6 +1212,9 @@
 	@extend %inviteButtonExpired !optional;
 }
 // 6.1.3) Embeds
+.container-1e22Ot {
+	@extend %embedContainer !optional;
+}
 .embed-IeVjo6 {
 	@extend %embed !optional;
 }
@@ -1227,17 +1230,50 @@
 .embedTitleLink-1Zla9e {
 	@extend %embedTitleLink !optional;
 }
+.embedDescription-1Cuq9a {
+	@extend %embedDescription !optional;
+}
 .embedProvider-3k5pfl {
 	@extend %embedProvider !optional;
 }
 .embedProviderLink-2Pq1Uw {
 	@extend %embedProviderLink !optional;
 }
+.embedImage-2W1cML {
+	@extend %embedImage !optional;
+}
+.embedThumbnail-2Y84-K {
+	@extend %embedThumbnail !optional;
+}
+.embedVideo-3nf0O9 {
+	@extend %embedVideo !optional;
+}
+.embedIframe-2hcNY5 {
+	@extend %embedIframe !optional;
+}
+.embedGIFV-3_ebID {
+	@extend %embedGIFV !optional;
+}
+.embedGIFTag-n_mDqR {
+	@extend %embedGIFTag !optional;
+}
 .embedVideoActionsInner-2reMo2 {
 	@extend %embedVideoActionsInner !optional;
 }
 .wrapper-129saQ {
 	@extend %embedVideoActionsButtonWrapper !optional; 
+}
+.embedFooter-3yVop- {
+	@extend %embedFooter !optional;
+}
+.embedFooterText-28V_Wb {
+	@extend %embedFooterText !optional;
+}
+.embedFooterSeparator-3klTIQ {
+	@extend %embedFooterSeparator !optional;
+}
+.embedFooterIcon-239O1f {
+	@extend %embedFooterIcon !optional;
 }
 .invite-18yqGF {
 	@extend %embedSpotifyInvite !optional;
