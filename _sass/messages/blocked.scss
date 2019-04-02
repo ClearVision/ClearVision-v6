@@ -1,16 +1,17 @@
-// BLOCKED MESSAGES
+// BLOCKED MESSAGE
 %messageGroupBlocked {
 	position: relative;
-	background-color: rgba(0, 0, 0, .2) !important;
+	background-color: rgba(0, 0, 0, .1) !important;
 	border: none;
 	border-radius: 0;
+	transition: all .15s ease-in-out;
 	&:hover {
 		box-shadow: none !important;
 	}
 	%messageGroupBlockedButton {
 		@include clear;
 		color: hsla(0, 0%, 100%, .3) !important;
-		transition: all .3s ease-in-out;
+		transition: all .15s ease-in-out;
 		@include pseudo(after) {
 			content: "";
 			position: absolute;
@@ -18,13 +19,13 @@
 			border-top: 1px solid;
 			border-bottom: 1px solid;
 			border-color: hsla(0, 0%, 100%, .04);
-			transition: all .3s ease-in-out;
+			transition: all .15s ease-in-out;
 			pointer-events: none;
 		}
 		&:hover {
-			color: hsla(0, 0%, 100%, .7) !important;
+			color: hsla(0, 0%, 100%, .5) !important;
 			@include pseudo(after) {
-				border-color: hsla(0, 0%, 100%, .1);
+				border-color: hsla(0, 0%, 100%, .07);
 			}
 		}
 	}
