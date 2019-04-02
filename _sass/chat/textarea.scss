@@ -8,8 +8,8 @@
 			color: hsla(0, 0%, 100%, .7);
 		}
 	}
-	%channelTextareaTyping {
-		@include clear;
+	%channelTextarea {
+		border-top: 1px solid hsla(0, 0%, 100%, .07);
 	}
 	%channelTextareaInner {
 		background-color: rgba(0, 0, 0, .4);
@@ -48,5 +48,17 @@
 				box-shadow: 0 0 3px $main-color;
 			}
 		}
+	}
+
+	// TYPING
+	%channelTextareaTyping {
+		@include clear;
+	}
+
+	// CHANNEL INFO DISPLAY
+	%channelInfo {
+		background-color: hsla(0, 0%, 100%, .07);
+		border-radius: 5px;
+		color: hsla(0, 0%, 100%, .7);
 	}
 }
