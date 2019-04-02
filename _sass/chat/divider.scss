@@ -6,29 +6,14 @@
         content: "";
         position: absolute;
         @include stretch;
-        background-color: hsla(0, 0%, 100%, .2);
+        background-color: hsla(0, 0%, 100%, .07);
         border-radius: 3px;
-        opacity: .8;
         z-index: -1;
-    }
-    &%dividerRed {
-        @include pseudo(before) {
-            background-color: $main-color;
-        }
-        + %divider {
-            margin-top: 40px;
-        }
-        > %dividerContent {
-            position: relative;
-            @include clear;
-            color: hsla(0, 0%, 100%, .8) !important;
-        }
     }
     > %dividerContent {
         margin: 10px 0;
         padding: 5px 15px;
         display: block;
-        color: hsla(0, 0%, 100%, 1) !important;
         font-size: 12px;
         text-transform: uppercase;
         text-align: center;
@@ -36,6 +21,25 @@
         opacity: .9;
         @include pseudo(before, after) {
             display: none;
+        }
+    }
+    &:not(%dividerRed) { 
+        > %dividerContent {
+            color: hsla(0, 0%, 100%, .7);
+        }
+    }
+    &%dividerRed {
+        @include pseudo(before) {
+            background-color: $main-color;
+            opacity: .8;
+        }
+        + %divider {
+            margin-top: 40px;
+        }
+        > %dividerContent {
+            position: relative;
+            @include clear;
+            color: hsla(0, 0%, 100%, .8);
         }
     }
 }
