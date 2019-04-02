@@ -6,26 +6,25 @@
     > %connectionContainer {
         @include clear;
         box-shadow: 0 -2px 10px rgba(0, 0, 0, .3);
+        > %flex {
+            background-color: rgba(0, 0, 0, .3);
+            border-radius: 15px;
+            > * + * {
+                position: relative;
+                @include pseudo(before) {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 2px;
+                    bottom: 2px;
+                    width: 1px;
+                    background: hsla(0, 0%, 100%, .2);
+                }
+            }
+        }
     }
     > %connectionContainer + %accountContainer {
         box-shadow: none;
-    }
-    %accountContainerButtonWrapper,
-    %connectionContainerButtonWrapper {
-        background-color: rgba(0, 0, 0, .3);
-        border-radius: 15px;
-        > * + * {
-            position: relative;
-            @include pseudo(before) {
-                content: "";
-                position: absolute;
-                left: 0;
-                top: 2px;
-                bottom: 2px;
-                width: 1px;
-                background: hsla(0, 0%, 100%, .2);
-            }
-        }
     }
 
     // ACCOUNT CONTAINER
