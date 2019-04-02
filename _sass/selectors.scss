@@ -854,9 +854,6 @@
 %accountContainerAvatar.popout-open {
 	@extend %accountContainerAvatarPopoutOpen !optional;
 }
-%accountContainer > %flex {
-	@extend %accountContainerButtonWrapper !optional;
-}
 .button-2b6hmh {
 	@extend %accountContainerButton !optional;
 }
@@ -896,9 +893,6 @@
 }
 .channel-SEolQq {
 	@extend %connectionContainerChannel !optional;
-}
-%connectionContainer > %flex {
-	@extend %connectionContainerButtonWrapper !optional;
 }
 .button-2KyEfG {
 	@extend %connectionContainerButton !optional;
