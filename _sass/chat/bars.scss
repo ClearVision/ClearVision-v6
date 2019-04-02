@@ -29,30 +29,44 @@
 }
 
 // JUMP TO PRESENT BAR
-%jumpToPresentBar {
-	background-color: rgba(0, 0, 0, .7) !important;
-	transition: all .15s ease-in-out;
-	&:hover,
-	&:active {
-		background-color: $main-color !important;
+%messagesWrapper {
+	%jumpToPresentBar {
+		margin-bottom: 5px;
+		background-color: rgba(0, 0, 0, .7);
+		border-radius: 3px;
+		transition: all .15s ease-in-out;
 		> button {
-			color: #fff;
+			color: hsla(0, 0%, 100%, .7);
+			transition: inherit;
 		}
-	}
-	&:active {
-		transform:scale(.99);
-	}
-	> button {
-		color: hsla(0, 0%, 100%, .6);
-		transition: inherit;
+		&:hover {
+			background-color: $main-color;
+			> button {
+				color: #fff;
+			}
+		}
+		&:active {
+			transform:scale(.99);
+		}
 	}
 }
 
 // HAS MORE BAR
-%hasMore {
-	> button {
-		background-color: rgba(0, 0, 0, .5) !important;
-		color: $main-color;
-		border: none !important;
+%messages {
+	%hasMore {
+		> button {
+			background-color: hsla(0, 0%, 100%, .07);
+			border: none;
+			border-radius: 3px;
+			color: hsla(0, 0%, 100%, .7);
+			transition: all .15s ease-in-out;
+			&:hover {
+				background-color: $main-color;
+				color: #fff;
+			}
+			&:active {
+				transform:scale(.99);
+			}
+		}
 	}
 }
