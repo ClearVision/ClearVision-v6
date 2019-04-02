@@ -1,4 +1,55 @@
 // SPINNER
 %spinnerWanderingCubesItem {
-	background-color: $main-color;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	animation: cv-spinner-glow 3s ease-in-out infinite alternate;
+	filter: drop-shadow(0 0 3px $main-color);
+	@include pseudo(before, after) {
+		content: "";
+		position: absolute;
+		@include stretch;
+		border: 3px solid transparent;
+		border-radius: 50%;
+	}
+	@include pseudo(before) {
+		animation: cv-spinner 1s ease-in-out infinite;
+	}
+	@include pseudo(after) {
+		border-color: $main-color;
+		opacity: .1;
+	}
+	&:first-child {
+		@include pseudo(before) {
+			border-left-color: $main-color;
+			border-right-color: $main-color;
+		}
+		
+	}
+	&:last-child {
+		width: calc(100% - 10px);
+		height: calc(100% - 10px);
+		margin: 5px;
+		@include pseudo(before) {
+			border-top-color: $main-color;
+			border-bottom-color: $main-color;
+			animation-direction: reverse;
+		}
+	}
+}
+@keyframes cv-spinner-glow {
+	from {
+		filter: drop-shadow(0 0 3px $main-color);
+	}
+	to {
+		filter: drop-shadow(0 0 3px $main-color) drop-shadow(0 0 15px $main-color);
+	}
+}
+@keyframes cv-spinner {
+	from {
+		transform: rotateZ(0);
+	}
+	to {
+		transform: rotateZ(360deg);
+	}
 }
