@@ -2,7 +2,7 @@
 %emojiPicker {
     background-color: rgba(0, 0, 0, .7);
     border: none;
-    border-radius: 0 0 5px 5px;
+    border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 
     // SEARCH BAR
@@ -126,6 +126,9 @@
 %bdEmoteMenu {
     background-color: rgba(0, 0, 0, .5);
     border: none !important;
+    ~ %emojiPicker {
+        border-radius: 0 0 5px 5px;
+    }
     > button {
         border-color: transparent;
         box-shadow: none;
