@@ -863,6 +863,9 @@
 .iconButton-3V4WS5 {
 	@extend %accountContainerIconButton !optional;
 }
+.buttonInner-LmnaN_ {
+	@extend %accountContainerButtonInner !optional;
+}
 // 4.5) Connection Container
 .container-1UB9sr {
 	@extend %connectionContainer !optional;
@@ -899,6 +902,12 @@
 }
 .button-2KyEfG {
 	@extend %connectionContainerButton !optional;
+}
+%connectionContainerButton.popout-open {
+	@extend %connectionContainerButtonPopoutOpen !optional;
+}
+.buttonInfo-3nkbOt {
+	@extend %connectionContainerButtonInfo !optional;
 }
 .buttonDisconnect-3W_SJc {
 	@extend %connectionContainerButtonDisconnect !optional;
