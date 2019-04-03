@@ -1,4 +1,4 @@
-/*! Using Discord Selectors v19-04-02 by Zerthox */
+/*! Using Discord Selectors v19-04-03 by Zerthox */
 // FILE CONTENTS
 // 1) App
 // 	1.1) App Notices
@@ -1158,6 +1158,9 @@
 %messageReactionButton,
 %messageOptionsButton {
 	@extend %messageButton !optional;
+}
+%messageButton.popout-open {
+	@extend %messageButtonPopoutOpen !optional;
 }
 // 6.1.1) Reactions
 .reactions-1xb2Ex {
