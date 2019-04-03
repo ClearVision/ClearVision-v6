@@ -9,7 +9,7 @@
         > %flex {
             background-color: rgba(0, 0, 0, .3);
             border-radius: 15px;
-            > * + * {
+            > :nth-child(n+2) {
                 position: relative;
                 @include pseudo(before) {
                     content: "";
@@ -115,17 +115,49 @@
 
         // BUTTONS
         %accountContainerButton {
+            width: 32px;
+            height: 32px;
             opacity: 1;
+            > %accountContainerButtonInner {
+                width: 32px;
+                height: 32px;
+            }
             &%accountContainerIconButton,
-            svg {
+            > %accountContainerButtonInner {
+                @include bg($rep: no-repeat, $pos: center, $size: 18px);
                 opacity: .3;
                 transition: all .1s ease-in-out;
             }
             &:hover {
                 background-color: transparent;
                 &%accountContainerIconButton,
-                svg {
+                > %accountContainerButtonInner {
                     opacity: .7;
+                }
+            }
+            &[aria-label=Mute] {
+                background-image: url(https://clearvision.gitlab.io/icons/mic.svg) !important;
+            }
+            &[aria-label=Unmute] {
+                background-image: url(https://clearvision.gitlab.io/icons/mic_off.svg) !important;
+            }
+            &[aria-label=Deafen] {
+                background-image: url(https://clearvision.gitlab.io/icons/volume_up.svg) !important;
+            }
+            &[aria-label=Undeafen] {
+                background-image: url(https://clearvision.gitlab.io/icons/volume_off.svg) !important;
+            }
+            &[aria-label="User Settings"] {
+                > %accountContainerButtonInner {
+                    background-image: url(https://clearvision.gitlab.io/icons/settings.svg);
+                    > svg {
+                        display: none;
+                    }
+                }
+                &:hover {
+                    > %accountContainerButtonInner {
+                        animation: cv-spin 2.5s linear infinite;
+                    }
                 }
             }
         }
@@ -143,31 +175,21 @@
                 text-decoration: none;
             }
         }
+
+        // BUTTONS
         %connectionContainerButton {
             opacity: .3;
-            &:hover {
+            &:hover,
+            &%connectionContainerButtonPopoutOpen {
                 background-color: transparent;
                 opacity: .7;
             }
         }
+        %connectionContainerButtonInfo {
+            @include bg($img: url(https://clearvision.gitlab.io/icons/info.svg), $rep: no-repeat, $pos: center, $size: 18px);
+        }
         %connectionContainerButtonDisconnect {
-            position: relative;
-            opacity: 1 !important;
-            background-size: 0;
-            @include pseudo(after) {
-                content: "";
-                position: absolute;
-                @include stretch;
-                background: inherit;
-                background-size: 18px;
-                opacity: .3;
-                transition: all .15s ease-in-out;
-            }
-            &:hover {
-                @include pseudo(after) {
-                    opacity: .7;
-                }
-            }
+            @include bg($img: url(https://clearvision.gitlab.io/icons/call_end.svg), $rep: no-repeat, $pos: center, $size: 18px);
         }
     }
 }
