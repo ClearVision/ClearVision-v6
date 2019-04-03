@@ -189,6 +189,25 @@
 		}
 	}
 
+	// ICONS
+	%channelActionIcon {
+		&[name=Gear] {
+			@include bg($img: url(https://clearvision.gitlab.io/icons/settings.svg), $rep: no-repeat, $pos: center, $size: 18px);
+			&:hover {
+				animation: cv-spin 2.5s linear infinite;
+			}
+			> path {
+				display: none;
+			}
+		}
+		> svg[name=Invite] {
+			@include bg($img: url(https://clearvision.gitlab.io/icons/person_add.svg), $rep: no-repeat, $pos: center, $size: 18px);
+			> path {
+				display: none;
+			}
+		}
+	}
+
 	// USER LIMIT
 	%channelUserLimit {
 		background-color: hsla(0, 0%, 100%, .04);
