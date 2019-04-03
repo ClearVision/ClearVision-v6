@@ -24,7 +24,8 @@
 		opacity: .5;
 		transition: all .15s ease-in-out;
 	}
-	&%toolbarIconActive {
+	&%toolbarIconActive,
+	&%toolbarIconPopoutOpen {
 		background-color: hsla(0, 0%, 100%, .1);
 		%toolbarIconForeground {
 			opacity: .7;
