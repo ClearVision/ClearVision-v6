@@ -209,6 +209,14 @@ $languages: (
 
 // OUTPUT
 %messageGroup .hljs {
+    @include pseudo(before) {
+        display: block;
+        float: right;
+        text-align: right;
+        line-height: 100%;
+        opacity: .5;
+        pointer-events: none;
+    }
     @each $l in map-keys($languages) {
         &%t#{str-classify($l)} {
             @include pseudo(before) {
