@@ -29,13 +29,10 @@
         color: hsla(0, 0%, 100%, .7);
         border-radius: 5px;
         @include pseudo(before) {
-            display: block;
-            float: right;
             height: 10px;
             color: hsla(0, 0%, 100%, .3);
-            text-align: right;
             line-height: 10px;
-            pointer-events: none;
+            opacity: 1;
         }
     }
 }
