@@ -25,7 +25,7 @@
 		}
 		%privateChannelClose {
 			display: block;
-			@include bg($img: url("https://clearvision.gitlab.io/icons/close.svg"), $repeat: no-repeat, $pos: center, $size: 18px);
+			@include bg($img: url(https://clearvision.gitlab.io/icons/close.svg), $repeat: no-repeat, $pos: center, $size: 18px);
 			opacity: 0;
 		}
 		%privateChannelIcon {
