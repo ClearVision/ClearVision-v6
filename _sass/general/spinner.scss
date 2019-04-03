@@ -13,7 +13,7 @@
 		border-radius: 50%;
 	}
 	@include pseudo(before) {
-		animation: cv-spinner 1s ease-in-out infinite;
+		animation: cv-spin 1s ease-in-out infinite;
 	}
 	@include pseudo(after) {
 		border-color: $main-color;
@@ -37,19 +37,16 @@
 		}
 	}
 }
-@keyframes cv-spinner-glow {
-	from {
-		filter: drop-shadow(0 0 3px $main-color);
+%spinnerPulsingEllipsisItem {
+	background-color: #fff;
+	border-radius: 50%;
+	transform: scale(.7);
+	animation: cv-spinner-pulse 1s ease-in-out infinite alternate;
+	opacity: .3;
+	&:nth-child(2) {
+		animation-delay: .2s;
 	}
-	to {
-		filter: drop-shadow(0 0 3px $main-color) drop-shadow(0 0 15px $main-color);
-	}
-}
-@keyframes cv-spinner {
-	from {
-		transform: rotateZ(0);
-	}
-	to {
-		transform: rotateZ(360deg);
+	&:nth-child(3) {
+		animation-delay: .4s;
 	}
 }
