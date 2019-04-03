@@ -38,6 +38,32 @@
 		background-color: $hover-color;
 	}
 }
+@keyframes cv-spin {
+	from {
+		transform: rotateZ(0);
+	}
+	to {
+		transform: rotateZ(360deg);
+	}
+}
+@keyframes cv-spinner-glow {
+	from {
+		filter: drop-shadow(0 0 3px $main-color);
+	}
+	to {
+		filter: drop-shadow(0 0 3px $main-color) drop-shadow(0 0 15px $main-color);
+	}
+}
+@keyframes cv-spinner-pulse {
+	from {
+		transform: scale(.7);
+		opacity: .3;
+	}
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
 @keyframes cv-menu-fold {
 	from {
 		transform: rotateX(-90deg);
