@@ -52,7 +52,14 @@
 
 	// TYPING
 	%channelTextareaTyping {
-		@include clear;
+		background-color: transparent;
+		%channelTextareaTypingText {
+			color: hsla(0, 0%, 100%, .5);
+			> strong {
+				color: hsla(0, 0%, 100%, .7);
+				font-weight: 700;
+			}
+		}
 	}
 
 	// CHANNEL INFO DISPLAY
