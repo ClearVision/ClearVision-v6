@@ -1415,6 +1415,12 @@ pre {
 .emojiButton-3uL3Aw {
 	@extend %channelTextareaEmojiButton !optional;
 }
+.typing-2GQL18 {
+	@extend %channelTextareaTyping !optional;
+}
+.text-1y-e8- {
+	@extend %channelTextareaTypingText !optional;
+}
 .operations-36ENbA {
 	@extend %operations !optional;
 }
