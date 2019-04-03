@@ -53,13 +53,13 @@
 
 	// CONTENT
 	%chatContent {
-		@include clear;
+		background-color: transparent;
 		> %spacer {
 			background-color: rgba(0, 0, 0, .5);
 		}
 	}
 	%messagesWrapper {
-		@include clear;
+		background-color: transparent;
 	}
 	%messages {
 		backface-visibility: hidden;
@@ -67,11 +67,12 @@
 
 	// BASE
 	%chatBase {
-		border-bottom: 1px solid hsla(0, 0%, 100%, .07);
+		border-bottom: 1px solid hsla(0, 0%, 100%, .02);
 		> h1 {
-			color: hsla(0, 0%, 100%, .5);
+			color: hsla(0, 0%, 100%, .3);
 			> strong {
-				color: hsla(0, 0%, 100%, .7);
+				color: hsla(0, 0%, 100%, .5);
+				font-weight: 700;
 			}
 		}
 	}
