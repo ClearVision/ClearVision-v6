@@ -56,42 +56,42 @@ $icons: (
 [aria-label="USER_SETTINGS"] %settingsSide %tabBarItem {
     &:nth-child(2) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "My Account"));
+            background-image: url(#{map-get($icons, "My Account")});
         }
     }
     &:nth-child(3) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Privacy & Safety"));
+            background-image: url(#{map-get($icons, "Privacy & Safety")});
         }
     }
     &:nth-child(4) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Authorized Apps"));
+            background-image: url(#{map-get($icons, "Authorized Apps")});
         }
     }
     &:nth-child(5) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Connections"));
+            background-image: url(#{map-get($icons, "Connections")});
         }
     }
     &:nth-child(6) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Billing"));
+            background-image: url(#{map-get($icons, "Billing")});
         }
     }
     &:nth-child(8) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Discord Nitro"));
+            background-image: url(#{map-get($icons, "Discord Nitro")});
         }
     }
     &:nth-child(9) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "HypeSquad"));
+            background-image: url(#{map-get($icons, "HypeSquad")});
         }
     }
     &:nth-last-child(3) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Log Out"));
+            background-image: url(#{map-get($icons, "Log Out")});
         }
     }
 }
@@ -100,67 +100,67 @@ $icons: (
 %platformWin [aria-label="USER_SETTINGS"] %settingsSide %tabBarItem {
     &:nth-child(12) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Voice & Video"));
+            background-image: url(#{map-get($icons, "Voice & Video")});
         }
     }
     &:nth-child(13) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Overlay"));
+            background-image: url(#{map-get($icons, "Overlay")});
         }
     }
     &:nth-child(14) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Notifications"));
+            background-image: url(#{map-get($icons, "Notifications")});
         }
     }
     &:nth-child(15) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Keybinds"));
+            background-image: url(#{map-get($icons, "Keybinds")});
         }
     }
     &:nth-child(16) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Game Activity"));
+            background-image: url(#{map-get($icons, "Game Activity")});
         }
     }
     &:nth-child(17) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Activity Feed"));
+            background-image: url(#{map-get($icons, "Activity Feed")});
         }
     }
     &:nth-child(18) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Game Library"));
+            background-image: url(#{map-get($icons, "Game Library")});
         }
     }
     &:nth-child(19) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Text & Images"));
+            background-image: url(#{map-get($icons, "Text & Images")});
         }
     }
     &:nth-child(20) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Appearance"));
+            background-image: url(#{map-get($icons, "Appearance")});
         }
     }
     &:nth-child(21) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Streamer Mode"));
+            background-image: url(#{map-get($icons, "Streamer Mode")});
         }
     }
     &:nth-child(22) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Language"));
+            background-image: url(#{map-get($icons, "Language")});
         }
     }
     &:nth-child(23) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Windows Settings"));
+            background-image: url(#{map-get($icons, "Windows Settings")});
         }
     }
     &:nth-child(25) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Change Log"));
+            background-image: url(#{map-get($icons, "Change Log")});
         }
     }
 }
@@ -169,52 +169,52 @@ $icons: (
 %platformOSX [aria-label="USER_SETTINGS"] %settingsSide %tabBarItem {
     &:nth-child(12) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Voice & Video"));
+            background-image: url(#{map-get($icons, "Voice & Video")});
         }
     }
     &:nth-child(13) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Notifications"));
+            background-image: url(#{map-get($icons, "Notifications")});
         }
     }
     &:nth-child(14) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Keybinds"));
+            background-image: url(#{map-get($icons, "Keybinds")});
         }
     }
     &:nth-child(15) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Game Activity"));
+            background-image: url(#{map-get($icons, "Game Activity")});
         }
     }
     &:nth-child(16) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Activity Feed"));
+            background-image: url(#{map-get($icons, "Activity Feed")});
         }
     }
     &:nth-child(17) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Text & Images"));
+            background-image: url(#{map-get($icons, "Text & Images")});
         }
     }
     &:nth-child(18) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Appearance"));
+            background-image: url(#{map-get($icons, "Appearance")});
         }
     }
     &:nth-child(19) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Streamer Mode"));
+            background-image: url(#{map-get($icons, "Streamer Mode")});
         }
     }
     &:nth-child(20) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Language"));
+            background-image: url(#{map-get($icons, "Language")});
         }
     }
     &:nth-child(22) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Change Log"));
+            background-image: url(#{map-get($icons, "Change Log")});
         }
     }
 }
@@ -223,57 +223,57 @@ $icons: (
 %platformLinux [aria-label="USER_SETTINGS"] %settingsSide %tabBarItem {
     &:nth-child(12) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Voice & Video"));
+            background-image: url(#{map-get($icons, "Voice & Video")});
         }
     }
     &:nth-child(13) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Notifications"));
+            background-image: url(#{map-get($icons, "Notifications")});
         }
     }
     &:nth-child(14) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Keybinds"));
+            background-image: url(#{map-get($icons, "Keybinds")});
         }
     }
     &:nth-child(15) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Game Activity"));
+            background-image: url(#{map-get($icons, "Game Activity")});
         }
     }
     &:nth-child(16) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Activity Feed"));
+            background-image: url(#{map-get($icons, "Activity Feed")});
         }
     }
     &:nth-child(17) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Text & Images"));
+            background-image: url(#{map-get($icons, "Text & Images")});
         }
     }
     &:nth-child(18) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Appearance"));
+            background-image: url(#{map-get($icons, "Appearance")});
         }
     }
     &:nth-child(19) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Streamer Mode"));
+            background-image: url(#{map-get($icons, "Streamer Mode")});
         }
     }
     &:nth-child(20) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Language"));
+            background-image: url(#{map-get($icons, "Language")});
         }
     }
     &:nth-child(21) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Linux Settings"));
+            background-image: url(#{map-get($icons, "Linux Settings")});
         }
     }
     &:nth-child(23) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Change Log"));
+            background-image: url(#{map-get($icons, "Change Log")});
         }
     }
 }
@@ -282,32 +282,32 @@ $icons: (
 %settingsSide #bd-settings-sidebar .ui-tab-bar-item {
     &:nth-child(3) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Core"));
+            background-image: url(#{map-get($icons, "Core")});
         }
     }
     &:nth-child(4) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Bandages"));
+            background-image: url(#{map-get($icons, "Bandages")});
         }
     }
     &:nth-child(5) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Emotes"));
+            background-image: url(#{map-get($icons, "Emotes")});
         }
     }
     &:nth-child(6) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Custom CSS"));
+            background-image: url(#{map-get($icons, "Custom CSS")});
         }
     }
     &:nth-child(7) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Plugins"));
+            background-image: url(#{map-get($icons, "Plugins")});
         }
     }
     &:nth-child(8) {
         @include pseudo(before) {
-            background-image: url(map-get($icons, "Themes"));
+            background-image: url(#{map-get($icons, "Themes")});
         }
     }
 }
