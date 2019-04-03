@@ -2447,11 +2447,23 @@ pre {
 .inner-1gJC7_ {
     @extend %spinnerInner !optional;
 }
+.spinnerItem-2HfQC8 {
+	@extend %spinnerItem !optional;
+}
 .wanderingCubesItem-WPXqao {
     @extend %spinnerWanderingCubesItem !optional;
 }
 .loadingMore-sPqUXZ {
 	@extend %loadingMore !optional;
+}
+.ellipsis-19qdx6 {
+	@extend %spinnerEllipsis !optional;
+}
+.pulsingEllipsis-3YiXRF {
+	@extend %spinnerPulsingEllipsis !optional;
+}
+.pulsingEllipsisItem-32hhWL {
+	@extend %spinnerPulsingEllipsisItem !optional;
 }
 
 // 14) TOOLTIPS
