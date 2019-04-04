@@ -78,6 +78,49 @@
 	}
 }
 
+// GATED CHANNEL
+%chatContent > %scrollerWrap {
+	background-color: rgba(0, 0, 0, .5);
+}
+%chatGatedContent {
+	%chatGatedImage {
+		filter: hue-rotate(-47deg) saturate(2);
+		opacity: .3;
+	}
+	%chatGatedTitle {
+		color: $dnd-color;
+		font-weight: 600;
+		text-shadow: 0 0 3px #000;
+	}
+	%chatGatedDescription {
+		color: hsla(0, 0%, 100%, .7);
+	}
+	%chatGatedSeparator {
+		background-color: hsla(0, 0%, 100%, .07);
+	}
+	%chatGatedActionRed {
+		position: relative;
+		background-color: transparent;
+		color: hsla(0, 0%, 100%, .7);
+		z-index: 1;
+		@include pseudo(after) {
+			content: "";
+			position: absolute;
+			@include stretch;
+			background-color: $dnd-color;
+			border-radius: 3px;
+			opacity: .5;
+			transition: inherit;
+			z-index: -1;
+		}
+		&:hover {
+			color: #fff;
+			@include pseudo(after) {
+				opacity: .7;
+			}
+		}
+	}
+}
 
 // NO CHANNEl
 %noChannel {
