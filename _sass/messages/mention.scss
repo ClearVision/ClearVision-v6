@@ -1,16 +1,17 @@
 // MENTIONS
 %chatTitleTopic,
 %markup {
-	> %mention,
-	> %roleMention {
+	%mention,
+	%roleMention {
 		padding: 1px 4px;
 		border-radius: 5px;
 		line-height: 22px;
-		transition: all .15s ease-in-out;
+		font-weight: 500;
 		white-space: nowrap;
+		transition: all .15s ease-in-out;
 		cursor: pointer;
 	}
-	> %mention {
+	%mention {
 		background-color: hsla(0, 0%, 100%, .04);
 		color: hsla(0, 0%, 100%, .7);
 		&:hover {
@@ -18,8 +19,14 @@
 			color: #fff;
 		}
 	}
+	strong {
+		> %mention,
+		> %roleMention {
+			font-weight: 600;
+		}
+	}
 }
-%mentioned %markup > %roleMention {
+%mentioned %markup %roleMention {
 	padding: 0;
 	@include clear;
 	color: $main-color;
