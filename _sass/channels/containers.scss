@@ -118,13 +118,13 @@
             width: 32px;
             height: 32px;
             opacity: 1;
-            > %accountContainerButtonInner {
-                width: 32px;
-                height: 32px;
+            &%accountContainerIconButton {
+                @include bg($rep: no-repeat, $pos: center, $size: 18px);
+                opacity: .3;
+                transition: all .1s ease-in-out;
             }
             &%accountContainerIconButton,
             > %accountContainerButtonInner {
-                @include bg($rep: no-repeat, $pos: center, $size: 18px);
                 opacity: .3;
                 transition: all .1s ease-in-out;
             }
@@ -135,27 +135,29 @@
                     opacity: .7;
                 }
             }
-            &[aria-label=Mute] {
+            &[style*="/assets/4bc527c257233fc69b94342d77bcb9ee.svg"] {
                 background-image: url(https://clearvision.gitlab.io/icons/mic.svg) !important;
             }
-            &[aria-label=Unmute] {
+            &[style*="/assets/896770bf2d6ed0358ed0adefdbe96a24.svg"] {
                 background-image: url(https://clearvision.gitlab.io/icons/mic_off.svg) !important;
             }
-            &[aria-label=Deafen] {
+            &[style*="/assets/c7c47afdf35d5a3e06233319d3aa7674.svg"] {
                 background-image: url(https://clearvision.gitlab.io/icons/volume_up.svg) !important;
             }
-            &[aria-label=Undeafen] {
+            &[style*="/assets/c8845c514bbf3f1e5bea064c1e40b08d.svg"] {
                 background-image: url(https://clearvision.gitlab.io/icons/volume_off.svg) !important;
             }
-            &[aria-label="User Settings"] {
-                > %accountContainerButtonInner {
-                    background-image: url(https://clearvision.gitlab.io/icons/settings.svg);
-                    > svg {
+            > %accountContainerButtonInner {
+                > svg[name=Gear] {
+                    @include bg($img: url(https://clearvision.gitlab.io/icons/settings.svg), $rep: no-repeat, $pos: center, $size: 18px);
+                    > path {
                         display: none;
                     }
                 }
-                &:hover {
-                    > %accountContainerButtonInner {
+            }
+            &:hover {
+                > %accountContainerButtonInner {
+                    > svg[name=Gear] {
                         animation: cv-spin 2.5s linear infinite;
                     }
                 }
