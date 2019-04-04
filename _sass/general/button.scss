@@ -1,9 +1,14 @@
 // BUTTON
+%button {
+	border-radius: 3px;
+	transition: all .3s ease-in-out;
+}
+
+// BUTTON FILLED
 %buttonFilledGreen,
 %buttonFilledBrand,
 %buttonFilledPrimary {
 	background-color: $main-color;
-	transition: all .3s ease-in-out;
 	&:hover {
 		background-color: $hover-color;
 	}
@@ -11,23 +16,11 @@
 		background-color: $main-color;
 	}
 }
-%buttonInverted,
-%buttonInvertedBrand,
-%buttonInvertedGreen {
-	background-color: hsla(0, 0%, 100%, .1);
-	color: hsla(0, 0%, 100%, .7);
-	transition: all .3s ease-in-out;
-	&:hover {
-		background-color: hsla(0, 0%, 100%, .2);
-		color: #fff;
-	}
-}
 %buttonFilledWhite {
 	background-color: hsla(0, 0%, 100%, .1);
-	transition: all .3s ease-in-out;
 	> %buttonContents {
 		color: hsla(0, 0%, 100%, .7);
-		transition: all .3s ease-in-out;
+		transition: inherit;
 	}
 	&:hover {
 		background-color: hsla(0, 0%, 100%, .2) !important;
@@ -39,20 +32,37 @@
 		background-color: hsla(0, 0%, 100%, .1);
 	}
 }
-%buttonOutlinedWhite {
-	background-color: hsla(0, 0%, 100%, .05);
-	border-color: transparent;
+
+// BUTTON INVERTED
+%buttonInverted,
+%buttonInvertedBrand,
+%buttonInvertedGreen {
+	background-color: hsla(0, 0%, 100%, .1);
 	color: hsla(0, 0%, 100%, .7);
-	transition: all .3s ease-in-out;
 	&:hover {
-		background-color: hsla(0, 0%, 100%, .1);
-		border-color: transparent;
+		background-color: hsla(0, 0%, 100%, .2);
 		color: #fff;
 	}
 }
+
+// BUTTON OUTLINED
+%appMount {
+	%buttonOutlinedWhite,
+	%buttonOutlinedPrimary {
+		background-color: hsla(0, 0%, 100%, .05);
+		border-color: transparent;
+		color: hsla(0, 0%, 100%, .7);
+		&:hover {
+			background-color: hsla(0, 0%, 100%, .1);
+			border-color: transparent;
+			color: #fff;
+		}
+	}
+}
+
+// BUTTON LINK
 %buttonLinkWhite {
 	color: #fff;
-	transition: all .3s ease-in-out;
 	&:hover {
 		text-shadow: 0 0 3px;
 		> %buttonContents {
