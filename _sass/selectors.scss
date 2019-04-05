@@ -2999,6 +2999,21 @@ pre {
 .flags-3peqg9 {
     @extend %emojiPickerCategoriesItemFlags !optional;
 }
+.premiumPromo-yVfLiA {
+	@extend %emojiPickerPremiumPromo !optional;
+}
+.premiumPromoClose-2sqoIR {
+	@extend %emojiPickerPremiumPromoClose !optional;
+}
+.premiumPromoImage-tGTlKV {
+	@extend %emojiPickerPremiumPromoImage !optional;
+}
+.premiumPromoTitle-1SQQfF {
+	@extend %emojiPickerPremiumPromoTitle !optional;
+}
+.premiumPromoDescription-2Mn515 {
+	@extend %emojiPickerPremiumPromoDescription !optional;
+}
 // 16.8.1) BD Emote Picker
 #bda-qem {
 	@extend %bdEmoteMenu !optional;
