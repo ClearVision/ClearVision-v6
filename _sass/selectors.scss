@@ -1,4 +1,4 @@
-/*! Using Discord Selectors v19-04-04 by Zerthox */
+/*! Using Discord Selectors v19-04-05 by Zerthox */
 // FILE CONTENTS
 // 1) App
 // 	1.1) App Notices
@@ -51,7 +51,7 @@
 //	 	9.3.2) Grid
 //	 	9.3.3) Now Playing & Recently Played Containers
 //	 	9.3.4) Placeholders & Notice
-// 	9.3) Store
+// 	9.4) Store
 // 10) Avatars
 // 11) Status
 // 12) Bot Tags
@@ -94,30 +94,32 @@
 // 21) Settings
 //	21.1) Sidebar
 //	21.2) Content
-// 22) Screens
-//	22.1) Loading
-//	22.2) Crash
-// 23) Plugins
-//	23.1) Plugin Notice
-//	23.2) Zerthox
-//		23.2.1) BetterReplyer
-//	23.3) noodlebox
-//		23.3.1) Owner Tags
-//		23.3.2) Line Numbers
-//	23.4) Finicalmist
-//		23.4.1 ) Copy Code
-//	23.5) Nirewen
-//		23.5.1) Citador
-//	23.6) samogot
-//		23.6.1) Quoter
-//	23.7) DevilBro
-//		23.7.1) ShowHiddenChannels
-//		23.7.2) RepoControls
-//		23.7.3) CreationDate
-//		23.7.4) JoinedAtDate
-//		23.7.5) LastMessageDate
-// 23.8) Metalloriff
-// 23.8.1) DetailedServerTooltips
+// 22) Pages
+//	22.1) Server Discovery
+// 23) Screens
+//	23.1) Loading
+//	23.2) Crash
+// 24) Plugins
+//	24.1) Plugin Notice
+//	24.2) Zerthox
+//		24.2.1) BetterReplyer
+//	24.3) noodlebox
+//		24.3.1) Owner Tags
+//		24.3.2) Line Numbers
+//	24.4) Finicalmist
+//		24.4.1 ) Copy Code
+//	24.5) Nirewen
+//		24.5.1) Citador
+//	24.6) samogot
+//		24.6.1) Quoter
+//	24.7) DevilBro
+//		24.7.1) ShowHiddenChannels
+//		24.7.2) RepoControls
+//		24.7.3) CreationDate
+//		24.7.4) JoinedAtDate
+//		24.7.5) LastMessageDate
+//	24.8) Metalloriff
+//		24.8.1) DetailedServerTooltips
 
 // 1) APP
 .appMount-3lHmkl {
@@ -3303,8 +3305,15 @@ pre {
 	@extend %settingsContentRegion !optional;
 }
 
-// 22) SCREENS
-// 22.1) Loading
+
+// 22) PAGES
+// 22.1) Server Discovery
+.pageWrapper-1PgVDX {
+	@extend %pageWrapper !optional;
+}
+
+// 23) SCREENS
+// 23.1) Loading
 .links-3Ldd4A {
 	@extend %loadingLinks !optional;
 }
@@ -3317,7 +3326,7 @@ pre {
 .path3-2l9TIX {
 	@extend %loadingPath3 !optional;
 }
-// 22.2) Crash
+// 23.2) Crash
 .errorPage-u8SYh4 {
 	@extend %errorPage !optional;
 }
@@ -3331,75 +3340,75 @@ pre {
 	@extend %errorPageNote !optional;
 }
 
-// 23) PLUGINS
-// 23.1) Plugin Notice
+// 24) PLUGINS
+// 24.1) Plugin Notice
 #pluginNotice {
 	@extend %pluginNotice !optional;
 }
 #outdatedPlugins {
 	@extend %outdatedPlugins !optional;
 }
-// 23.2) Zerthox
-// 23.2.1) BetterReplyer
+// 24.2) Zerthox
+// 24.2.1) BetterReplyer
 .replyer {
 	@extend %replyerButton !optional;
 }
-// 23.3) noodlebox
-// 23.3.1) Owner Tags
+// 24.3) noodlebox
+// 24.3.1) Owner Tags
 .kawaii-tag {
 	@extend %kawaiiTag !optional;
 }
 .kawaii-tag-invert {
 	@extend %kawaiiTagInvert !optional;
 }
-// 23.3.2) Line Numbers
+// 24.3.2) Line Numbers
 .kawaii-linenumbers {
 	@extend %kawaiiLinenumbers !optional;
 }
-// 23.4) Finicalmist
-// 23.4.1 ) Copy Code
+// 24.4) Finicalmist
+// 24.4.1 ) Copy Code
 .copybutton {
 	@extend %codeCopybutton !optional;
 }
-// 23.5) Nirewen
-// 23.5.1) Citador
+// 24.5) Nirewen
+// 24.5.1) Citador
 .citar-btn {
 	@extend %citarButton !optional;
 }
-// 23.6) samogot
-// 23.6.1) Quoter
+// 24.6) samogot
+// 24.6.1) Quoter
 .btn-quote {
 	@extend %quoteButton !optional;
 }
-// 23.7) DevilBro
+// 24.7) DevilBro
 .DevilBro-tooltip {
 	@extend %tooltipDevilBro !optional;
 }
-// 23.7.1) ShowHiddenChannels
+// 24.7.1) ShowHiddenChannels
 .container-hidden {
 	@extend %categoryHidden !optional;
 }
-// 23.7.2) RepoControls
+// 24.7.2) RepoControls
 .repocontrols-editicon-tooltip {
 	@extend %tooltipRepoControlsEdit !optional;
 }
 .repocontrols-trashicon-tooltip {
 	@extend %tooltipRepoControlsTrash !optional;
 }
-// 23.7.3) CreationDate
+// 24.7.3) CreationDate
 .creationDate {
 	@extend %creationDate !optional;
 }
-// 23.7.4) JoinedAtDate
+// 24.7.4) JoinedAtDate
 .joinedAtDate {
 	@extend %joinedAtDate !optional;
 }
-// 23.7.5) LastMessageDate
+// 24.7.5) LastMessageDate
 .lastMessageDate {
 	@extend %lastMessageDate !optional;
 }
-// 23.8) Metalloriff
-// 23.8.1) DetailedServerTooltips
+// 24.8) Metalloriff
+// 24.8.1) DetailedServerTooltips
 .dst-tooltip {
 	@extend %serverTooltip !optional;
 }
