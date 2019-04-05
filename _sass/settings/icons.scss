@@ -26,6 +26,8 @@ $icons: (
     "Linux Settings": "https://clearvision.gitlab.io/icons/linux.svg",
 
     "Change Log": "https://clearvision.gitlab.io/icons/history.svg",
+    "Experiments": "https://clearvision.gitlab.io/icons/flask.svg",
+    "Developer Options": "https://clearvision.gitlab.io/icons/bug.svg",
 
     "Log Out": "https://clearvision.gitlab.io/icons/exit.svg",
 
@@ -163,6 +165,16 @@ $icons: (
             background-image: url(#{map-get($icons, "Change Log")});
         }
     }
+    &:nth-child(26) {
+        @include pseudo(before) {
+            background-image: url(#{map-get($icons, "Experiments")});
+        }
+    }
+    &:nth-child(27) {
+        @include pseudo(before) {
+            background-image: url(#{map-get($icons, "Developer Options")});
+        }
+    }
 }
 
 // USER SETTINGS OSX
@@ -215,6 +227,16 @@ $icons: (
     &:nth-child(22) {
         @include pseudo(before) {
             background-image: url(#{map-get($icons, "Change Log")});
+        }
+    }
+    &:nth-child(23) {
+        @include pseudo(before) {
+            background-image: url(#{map-get($icons, "Experiments")});
+        }
+    }
+    &:nth-child(24) {
+        @include pseudo(before) {
+            background-image: url(#{map-get($icons, "Developer Options")});
         }
     }
 }
@@ -274,6 +296,16 @@ $icons: (
     &:nth-child(23) {
         @include pseudo(before) {
             background-image: url(#{map-get($icons, "Change Log")});
+        }
+    }
+    &:nth-child(24) {
+        @include pseudo(before) {
+            background-image: url(#{map-get($icons, "Experiments")});
+        }
+    }
+    &:nth-child(25) {
+        @include pseudo(before) {
+            background-image: url(#{map-get($icons, "Developer Options")});
         }
     }
 }
