@@ -30,7 +30,7 @@
 
 	// SEPARATOR
 	%searchChannelSeparator {
-		@include pseudo(before) {
+		&:before {
 			display: none;
 		}
 		> %searchChannelName {
@@ -41,7 +41,8 @@
 			color: $main-color;
 			text-shadow: 0 0 1px;
 			transition: all .15s ease-in-out;
-			@include pseudo(before, after) {
+			&:before,
+			&:after {
 				content: "";
 				height: 2px;
 				border: none;
@@ -49,18 +50,19 @@
 				transition: all .15s ease-in-out;
 				opacity: .7;
 			}
-			@include pseudo(before) {
+			&:before {
 				margin-right: 5px;
 				background: linear-gradient(to left, $main-color 50%, transparent 100%);
 			}
-			@include pseudo(after) {
+			&:after {
 				margin-left: 5px;
 				background: linear-gradient(to right, $main-color 50%, transparent 100%);
 			}
 			&:hover {
 				text-shadow: 0 0 3px;
 				text-decoration: none;
-				@include pseudo(before, after) {
+				&:before,
+				&:after {
 					opacity: 1;
 				}
 			}
@@ -72,7 +74,8 @@
 		margin-bottom: 0;
 		padding-bottom: 10px;
 		border-bottom: 1px solid hsla(0, 0%, 100%, .04);
-		@include pseudo(before, after) {
+		&:before,
+		&:after {
 			display: none;
 		}
 		+ %searchResult {

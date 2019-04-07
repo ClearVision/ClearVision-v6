@@ -17,19 +17,20 @@
 		pointer-events: none;
 		user-select: none;
 		order: 1;
-		@include pseudo(before, after) {
+		&:before,
+		&:after {
 			margin-left: 3px;
 			font-weight: 600;
 			white-space: nowrap;
 			order: 1;
 		}
-		@include pseudo(before) {
+		&:before {
 			content: "#{$titlebar-text}";
 			color: hsla(0, 0%, 100%, .7);
 			font-size: 14px;
 			text-shadow: 0 0 3px #000;
 		}
-		@include pseudo(after) {
+		&:after {
 			content: "#{$titlebar-version}";
 			color: hsla(0, 0%, 100%, .3);
 			font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;

@@ -4,7 +4,7 @@
 	border-radius: 5px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 	animation: cv-menu-pop .15s cubic-bezier(.2, .6, .5, 1.1);
-	@include pseudo(before) {
+	&:before {
 		content: "";
 		position: absolute;
 		@include stretch;
@@ -14,7 +14,7 @@
 		z-index: -1;
 	}
 	%popoutLeft > & {
-		@include pseudo(before) {
+		&:before {
 			left: -100%;
 			right: 100%;
 			transform: translateX(calc(100% - 4 * (#{$bg-blur} + 3px)));

@@ -40,7 +40,7 @@
 %appMount %colorblindMode {
 	%status {
 		@include bg($pos: -24px, $repeat: no-repeat);
-		@include pseudo(after) {
+		&:after {
 			content: "";
 			display: block;
 			width: 100%;

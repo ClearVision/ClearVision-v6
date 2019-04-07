@@ -103,7 +103,7 @@
 		background-color: transparent;
 		color: hsla(0, 0%, 100%, .7);
 		z-index: 1;
-		@include pseudo(after) {
+		&:after {
 			content: "";
 			position: absolute;
 			@include stretch;
@@ -115,7 +115,7 @@
 		}
 		&:hover {
 			color: #fff;
-			@include pseudo(after) {
+			&:after {
 				opacity: .7;
 			}
 		}

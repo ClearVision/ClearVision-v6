@@ -1,6 +1,6 @@
 // APP
 body {
-	@include pseudo(after) {
+	&:after {
 		content: "";
 		position: fixed;
 		@include stretch;

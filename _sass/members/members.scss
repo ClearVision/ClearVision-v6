@@ -12,16 +12,17 @@
 		font-weight: 700;
 		text-align: center;
 		transition: all .15s ease-in-out;
-		@include pseudo(before, after) {
+		&:before,
+		&:after {
 			content: "";
 			height: 2px;
 			flex-grow: 1;
 		}
-		@include pseudo(before) {
+		&:before {
 			background: linear-gradient(to left, currentColor 50%, transparent 100%);
 			margin-right: 5px;
 		}
-		@include pseudo(after) {
+		&:after {
 			background: linear-gradient(to right, currentColor 50%, transparent 100%);
 			margin-left: 5px;
 		}
@@ -33,7 +34,7 @@
 			@include clear;
 			border-radius: 5px;
 			transition: all .15s ease-in-out, transform .1s ease-in-out;
-			@include pseudo(before) {
+			&:before {
 				content: "";
 				position: absolute;
 				@include stretch;
@@ -46,7 +47,7 @@
 		&:hover,
 		&%memberPopoutOpen {
 			> %memberContent {
-				@include pseudo(before) {
+				&:before {
 					opacity: 1;
 				}
 			}

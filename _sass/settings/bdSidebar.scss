@@ -10,21 +10,21 @@
 		margin: 0;
 		cursor: pointer;
 		transition: all .15s ease-in-out;
-			@include pseudo(before) {
+			&:before {
 				opacity: .3;
 				transition: all .15s ease-in-out;
 			}
 		&:hover {
 			background-color: hsla(0, 0%, 100%, .07);
 			color: hsla(0, 0%, 100%, .7);
-			@include pseudo(before) {
+			&:before {
 				opacity: .7;
 			}
 		}
 		&%bdSettingsSidebarItemSelected {
 			background-color: $main-color;
 			color: #fff;
-			@include pseudo(before) {
+			&:before {
 				opacity: 1;
 			}
 		}

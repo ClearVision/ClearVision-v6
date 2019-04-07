@@ -11,7 +11,7 @@
             border-radius: 15px;
             > :nth-child(n+2) {
                 position: relative;
-                @include pseudo(before) {
+                &:before {
                     content: "";
                     position: absolute;
                     left: 0;
@@ -31,7 +31,8 @@
     > %accountContainer {
         position: relative;
         margin-bottom: 10px;
-        @include pseudo(before, after) {
+        &:before,
+        &:after {
             bottom: -8px;
             position: absolute;
             color: hsla(0, 0%, 100%, .3);
@@ -39,13 +40,13 @@
             font-weight: 700;
             transition: all .5s ease-in-out;
         }
-        @include pseudo(before) {
+        &:before {
             content: "#{$account-text}";
             right: 50%;
             text-align: right;
             transform: translateX(50%);
         }
-        @include pseudo(after) {
+        &:after {
             content: "#{$account-version}";
             left: 50%;
             text-align: left;
@@ -53,11 +54,11 @@
             transform: translateX(50%) rotateX(90deg);
         }
         &:hover {
-            @include pseudo(before) {
+            &:before {
                 margin-right: 1px;
                 transform: none;
             }
-            @include pseudo(after) {
+            &:after {
                 margin-left: 1px;
                 opacity: 1;
                 transform: none;
@@ -83,7 +84,7 @@
                 height: 30px;
                 @include bg($size: 100%, $repeat: no-repeat);
                 transition: all .15s ease-in-out;
-                @include pseudo(after) {
+                &:after {
                     content: "Status";
                     position: absolute;
                     @include stretch;
@@ -104,7 +105,7 @@
                 &.popout-open {
                     width: 40px;
                     height: 40px;
-                    @include pseudo(after) {
+                    &:after {
                         font-size: 10px;
                         line-height: 40px;
                         opacity: 1;

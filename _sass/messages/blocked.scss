@@ -12,7 +12,7 @@
 		@include clear;
 		color: hsla(0, 0%, 100%, .3) !important;
 		transition: all .15s ease-in-out;
-		@include pseudo(after) {
+		&:after {
 			content: "";
 			position: absolute;
 			@include stretch; 
@@ -24,7 +24,7 @@
 		}
 		&:hover {
 			color: hsla(0, 0%, 100%, .5) !important;
-			@include pseudo(after) {
+			&:after {
 				border-color: hsla(0, 0%, 100%, .07);
 			}
 		}

@@ -23,7 +23,7 @@
     }
     &%reactionMe {
         background: transparent;
-        @include pseudo(after) {
+        &:after {
             content: "";
             position: absolute;
             @include stretch;
@@ -34,7 +34,7 @@
             transition: all .15s ease-in-out;
         }
         &:hover {
-            @include pseudo(after) {
+            &:after {
                 opacity: .7;
             }
             %reactionCount {

@@ -5,7 +5,7 @@
     %buttonContents {
         height: 16px;
         font-size: 0;
-        @include pseudo(after) {
+        &:after {
             content: "Respawn at last Checkpoint";
             font-size: 14px;
         }
@@ -27,7 +27,7 @@
         font-size: 0;
         font-weight: normal;
         line-height: 150px;
-        @include pseudo(after) {
+        &:after {
             content: "YOU DIED";
             font-size: 150px;
         }
@@ -41,22 +41,23 @@
     > div {
         > p {
             margin: 0;
-            @include pseudo(before, after) {
+            &:before,
+            &:after {
                 margin-bottom: 14px;
                 display: block;
                 font-size: 16px;
             }
         }
         > p:first-child {
-            @include pseudo(before) {
+            &:before {
                 content: "Looks like you got slaughtered by an Error Level 9000.";
             }
-            @include pseudo(after) {
+            &:after {
                 content: "Might have been one of your plugins?";
             }
         }
         > p:last-child {
-            @include pseudo(after) {
+            &:after {
                 content: "Press Ctrl + Shift + I or Cmd + Alt + I to check Console for errors.";
             }
         }

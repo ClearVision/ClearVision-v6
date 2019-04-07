@@ -28,7 +28,7 @@
         background-color: rgba(0, 0, 0, .42);
         color: hsla(0, 0%, 100%, .7);
         border-radius: 5px;
-        @include pseudo(before) {
+        &:before {
             height: 10px;
             color: hsla(0, 0%, 100%, .3);
             line-height: 10px;

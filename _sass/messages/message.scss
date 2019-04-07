@@ -54,7 +54,7 @@
 	// MENTIONED
 	%mentioned {
 		background-color: hsla(0, 0%, 100%, .1);
-		@include pseudo(after) {
+		&:after {
 			background: hsla(0, 0%, 100%, .1);
 			border-left: 4px solid $main-color;
 			border-radius: 2px 0 0 2px;

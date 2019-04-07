@@ -34,7 +34,7 @@
 			color: hsla(0, 0%, 100%, .6) !important;
 			width: calc(100% - 4px);
 			margin: 2px;
-			@include pseudo(after) {
+			&:after {
 				content: "";
 				position: absolute;
 				@include stretch;
@@ -45,7 +45,7 @@
 			}
 			&:hover {
 				color: #fff !important;
-				@include pseudo(after) {
+				&:after {
 					opacity: .7;
 				}
 			}

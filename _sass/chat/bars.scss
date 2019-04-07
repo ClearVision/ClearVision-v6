@@ -2,7 +2,7 @@
 %newMessagesBar {
 	@include clear;
 	transition: all .15s ease-in-out;
-	@include pseudo(before) {
+	&:before {
 		content: "";
 		position: absolute;
 		@include stretch;
@@ -14,7 +14,7 @@
 	}
 	&:hover,
 	&:active {
-		@include pseudo(before) {
+		&:before {
 			opacity: 1;
 		}
 	}

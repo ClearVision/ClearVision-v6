@@ -1,6 +1,6 @@
 // USER PROFILE MODAl
 %userModal {
-	@include pseudo(before) {
+	&:before {
 		content: "";
 		position: absolute;
 		@include stretch;

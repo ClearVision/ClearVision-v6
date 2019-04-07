@@ -47,7 +47,7 @@
         &:hover {
             background-color: transparent;
         }
-        @include pseudo(after) {
+        &:after {
             content: "";
             width: 100%;
             height: 100%;
@@ -64,7 +64,7 @@
 
     // RESULTS
     %gifAutocompleteResult {
-        @include pseudo(after) {
+        &:after {
             transition: all .15s ease-in-out;
         }
         &[style*="background-color:"] {
@@ -82,7 +82,7 @@
     }
     %gifAutocompleteResult:hover,
     %gifAutocompleteResultFocused {
-        @include pseudo(after) {
+        &:after {
             box-shadow: inset 0 0 0 2px $main-color, inset 0 0 0 3px rgba(0, 0, 0, .3);
         }
     }
@@ -98,7 +98,7 @@
 
     // END CONTAINER
     %gifAutocompleteEndContainer {
-        @include pseudo(after) {
+        &:after {
             filter: grayscale(1) brightness(.7);
             opacity: .3;
         }

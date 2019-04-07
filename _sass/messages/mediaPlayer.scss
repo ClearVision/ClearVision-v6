@@ -39,7 +39,8 @@
     transition: background-color .15s ease-in-out;
 }
 %playerMediaBarProgress {
-    @include pseudo(before, after) {
+    &:before,
+    &:after {
         background-color: $main-color;
     }
 }

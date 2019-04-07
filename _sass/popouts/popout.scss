@@ -17,24 +17,24 @@
     > %popoutTop,
     > %popoutTopLeft,
     > %popoutTopRight {
-        @include pseudo(after) {
+        &:after {
             border-top-color: rgba(0, 0, 0, .7);
         }
     }
     > %popoutRight {
-        @include pseudo(after) {
+        &:after {
             border-right-color: rgba(0, 0, 0, .7);
         }
     }
     > %popoutLeft {
-        @include pseudo(after) {
+        &:after {
             border-left-color: rgba(0, 0, 0, .7);
         }
     }
     > %popoutBottom,
     > %popoutBottomLeft,
     > %popoutBottomRight {
-        @include pseudo(after) {
+        &:after {
             border-bottom-color: $main-color;
         }
     }

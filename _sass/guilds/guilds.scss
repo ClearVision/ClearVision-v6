@@ -8,7 +8,7 @@
 
 		// GUILD
 		%guild {
-			@include pseudo(before) {
+			&:before {
 				content: "";
 				position: absolute;
 				top: 50%;
@@ -22,14 +22,14 @@
 			}
 		}
 		%guildUnread {
-			@include pseudo(before) {
+			&:before {
 				height: 10px;
 				margin-top: -5px;
 				opacity: 1;
 			}
 		}
 		%guildSelected {
-			@include pseudo(before) {
+			&:before {
 				height: 40px;
 				margin-top: -20px;
 				opacity: 1;
@@ -53,7 +53,7 @@
 			}
 		}
 		%guildAudio {
-			@include pseudo(after) {
+			&:after {
 				background-color: #000;
 				opacity: .7;
 			}
@@ -112,21 +112,22 @@
 			font-size: 0;
 			width: 100%;
 			height: 100%;
-			@include pseudo(before, after) {
+			&:before,
+			&:after {
 				content: "";
 				position: absolute;
 				background-color: #333539;
 				border-radius: 3px;
 				transition: all .1s ease-in-out;
 			}
-			@include pseudo(before) {		
+			&:before {		
 				width: 2px;
 				top: 25%;
 				bottom: 25%;
 				left: 50%;
 				transform: translateX(-50%);
 			}
-			@include pseudo(after) {
+			&:after {
 				height: 2px;
 				top: 50%;
 				right: 25%;
@@ -134,7 +135,8 @@
 				transform: translateY(-50%);
 			}
 			&:hover {
-				@include pseudo(before, after) {
+				&:before,
+				&:after {
 					animation: cv-pulsate-plus 2s infinite ease-in-out;
 				}
 			}
@@ -143,7 +145,7 @@
 
 	// SEPARATOR
 	%guildSeparator {
-		@include pseudo(after) {
+		&:after {
 			background-color: hsla(0, 0%, 100%, .2);
 		}
 	}

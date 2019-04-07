@@ -5,22 +5,23 @@
 	background-color: transparent;
 	animation: cv-spinner-glow 3s ease-in-out infinite alternate;
 	filter: drop-shadow(0 0 3px $main-color);
-	@include pseudo(before, after) {
+	&:before,
+	&:after {
 		content: "";
 		position: absolute;
 		@include stretch;
 		border: 3px solid transparent;
 		border-radius: 50%;
 	}
-	@include pseudo(before) {
+	&:before {
 		animation: cv-spin 1s ease-in-out infinite;
 	}
-	@include pseudo(after) {
+	&:after {
 		border-color: $main-color;
 		opacity: .1;
 	}
 	&:first-child {
-		@include pseudo(before) {
+		&:before {
 			border-left-color: $main-color;
 			border-right-color: $main-color;
 		}
@@ -30,7 +31,7 @@
 		width: calc(100% - 10px);
 		height: calc(100% - 10px);
 		margin: 5px;
-		@include pseudo(before) {
+		&:before {
 			border-top-color: $main-color;
 			border-bottom-color: $main-color;
 			animation-direction: reverse;

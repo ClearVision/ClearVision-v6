@@ -16,7 +16,8 @@
         position: relative;
         background-size: 0;
         background-color: hsla(0, 0%, 100%, .04);
-        @include pseudo(before, after) {
+        &:before,
+        &:after {
             content: "";
             position: absolute;
             top: 10%;
@@ -26,10 +27,10 @@
             background-color: $dnd-color;
             border-radius: 1px;
         }
-        @include pseudo(after) {
+        &:after {
             transform: translateX(-50%) rotate(45deg);
         }
-        @include pseudo(before) {
+        &:before {
             transform: translateX(-50%) rotate(-45deg);
         }
     }

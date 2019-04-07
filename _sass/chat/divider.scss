@@ -2,7 +2,7 @@
 %chat %divider {
     position: relative;
     margin: 10px 6px 10px 20px;
-    @include pseudo(before) {
+    &:before {
         content: "";
         position: absolute;
         @include stretch;
@@ -19,7 +19,8 @@
         text-align: center;
         border-radius: 3px;
         opacity: .9;
-        @include pseudo(before, after) {
+        &:before,
+        &:after {
             display: none;
         }
     }
@@ -29,7 +30,7 @@
         }
     }
     &%dividerRed {
-        @include pseudo(before) {
+        &:before {
             background-color: $main-color;
             opacity: .8;
         }

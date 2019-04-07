@@ -194,7 +194,7 @@ $languages: (
 
 // OUTPUT
 %messageGroup .hljs {
-    @include pseudo(before) {
+    &:before {
         display: block;
         float: right;
         text-align: right;
@@ -205,7 +205,7 @@ $languages: (
     @each $k, $v in $languages {
         $id: unique-id();
         &%#{$id} {
-            @include pseudo(before) {
+            &:before {
                 content: "#{$k}";
             }
         }

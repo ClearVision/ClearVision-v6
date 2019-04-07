@@ -10,7 +10,7 @@
         margin-left: 0;
         padding: 0;
         border: none;
-        @include pseudo(before) {
+        &:before {
             content: counter(linenumbers);
             counter-increment: linenumbers;
             color: hsla(0, 0%, 100%, .3);

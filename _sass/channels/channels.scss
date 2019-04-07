@@ -43,17 +43,18 @@
 		text-align: center;
 		transition: all .3s ease-in-out;
 		opacity: .7;
-		@include pseudo(before, after) {
+		&:before,
+		&:after {
 			content: "";
 			height: 2px;
 			flex-grow: 1;
 			transition: all .3s ease-in-out;
 		}
-		@include pseudo(before) {
+		&:before {
 			background: linear-gradient(to left, $main-color 50%, transparent 100%);
 			margin-right: 5px;
 		}
-		@include pseudo(after) {
+		&:after {
 			background: linear-gradient(to right, $main-color 50%, transparent 100%);
 			margin-left: 5px;
 		}
@@ -68,7 +69,8 @@
 	%categoryNameCollapsed,
 	%categoryNameHoveredCollapsed,
 	%categoryIconMutedCollapsed + %categoryNameMuted {
-		@include pseudo(before, after) {
+		&:before,
+		&:after {
 			flex-grow: 0;
 		}
 	}
@@ -229,7 +231,7 @@
 	%voiceUserAvatar {
 		position: relative;
 		transition: all .1s ease-in-out;
-		@include pseudo(after) {
+		&:after {
 			content: "";
 			position: absolute;
 			width: 0;
@@ -243,7 +245,7 @@
 	}
 	%voiceUserAvatarSpeaking {
 		box-shadow: 0 0 0 2px $main-color, inset 0 0 3px rgba(0, 0, 0, .5);
-		@include pseudo(after) {
+		&:after {
 			@include pos($top: -2px, $bottom: -2px);
 			width: 100px;
 		}
@@ -264,13 +266,14 @@
 	// DRAG INDICATORS
 	%categoryContainerDrag,
 	%channelContainerDrag {
-		@include pseudo(before, after) {
+		&:before,
+		&:after {
 			background-color: $main-color;
 			border-radius: 0;
 		}
 	}
 	%channelContainerUserOver {
-		@include pseudo(after) {
+		&:after {
 			background-color: $main-color;
 			border-color: transparent;
 			opacity: .1;
