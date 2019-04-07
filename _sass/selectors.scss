@@ -1149,18 +1149,28 @@
 .timestampCompact-MHgFLv {
 	@extend %messageTimestampCompact !optional;
 }
+.timestamp-1E3uAL {
+	@extend %messageSystemTimestamp !optional;
+}
 %messageTimestampCozy,
-%messageTimestampCompact {
+%messageTimestampCompact,
+%messageSystemTimestamp {
 	@extend %messageTimestamp !optional;
 }
 .content-3dzVd8 {
 	@extend %messageContent !optional;
+}
+.container-3-pyIM {
+	@extend %messageSystemContainer !optional;
 }
 .isMentioned-N-h9aa {
 	@extend %mentioned !optional;
 }
 .markup-2BOw-j {
 	@extend %markup !optional;
+}
+.icon-2Po-VO {
+	@extend %messageSystemIcon !optional;
 }
 .wrapper-3WhCwL {
 	@extend %mention !optional;
@@ -1570,7 +1580,7 @@ pre {
 %attachmentCancelButton {
 	@extend %attachmentButton !optional;
 }
-// 6.1.7) Spoilers
+// 6.1.8) Spoilers
 .spoilerText-3p6IlD {
 	@extend %spoilerText !optional;
 }
