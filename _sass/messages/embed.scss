@@ -11,6 +11,18 @@
     %embedInner {
         background-color: transparent;
         border-color: transparent;
+        %embedAuthorName,
+        %embedFieldName,
+        %embedTitle {
+            color: #fff !important;
+        }
+        %embedProvider {
+            color: hsla(0, 0%, 100%, .7) !important;
+        }
+        %embedDescription,
+        %embedFieldValue {
+            color: hsla(0, 0%, 100%, .7);
+        }
         %embedLink {
             color: $main-color;
             @include hover-shadow;
@@ -19,6 +31,8 @@
         %embedProviderLink {
             color: $main-color !important;
         }
+        
+        // VIDEO ACTIONS
         %embedVideoActionsInner {
             > %embedVideoActionsButtonWrapper {
                 background: rgba(0, 0, 0, .5);
@@ -31,5 +45,19 @@
                 color: $main-color;
             }
         }
+        
+        // FOOTER
+        %embedFooterText {
+            color: hsla(0, 0%, 100%, .5);
+        }
+        %embedFooterSeparator {
+            color: hsla(0, 0%, 100%, .07);
+        }
     }
+}
+
+// IMAGE ERROR
+%imageError {
+    filter: grayscale(1) brightness(2);
+    opacity: .3;
 }
