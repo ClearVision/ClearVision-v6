@@ -38,14 +38,16 @@
 				@include pos(-2px, -2px, -2px, -2px);
 				border: 2px solid hsla(0, 0%, 100%, .1);
 				border-radius: 5px;
+				box-shadow: 0 0 3px;
+				color: transparent;
 				transition: all .15s ease-in-out;
 				pointer-events: none;
 			}
 		}
 		&:focus ~ %channelTextareaButtons {
 			@include pseudo(after) {
-				border: 2px solid $main-color;
-				box-shadow: 0 0 3px $main-color;
+				border-color: $main-color;
+				color: $main-color;
 			}
 		}
 	}
