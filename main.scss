@@ -23,9 +23,12 @@ $xbox-green: #107c10;
 $facebook-blue: #355089;
 $discord-blurple: #7289da;
 
-// MIXINS
+/*! ClearVision v6 BETA #{$version} by Zerthox */
+
+// IMPORT MIXINS
 @import "mixins";
 
+// LOCAL MIXINS
 /// Force clear background color
 @mixin clear {
 	background-color: transparent !important;
@@ -59,8 +62,6 @@ $discord-blurple: #7289da;
 	}
 }
 
-/*! ClearVision v6 BETA #{$version} by Zerthox */
-
 // IMPORT SELECTORS
 @import "selectors";
 
@@ -79,7 +80,7 @@ $discord-blurple: #7289da;
 	--background-overlay: #{rgba(0, 0, 0, .6)};
 }
 
-/* APP  */
+/* APP */
 @import "general/app";
 @import "general/notice";
 
@@ -184,6 +185,9 @@ $discord-blurple: #7289da;
 @import "settings/bdSidebar";
 @import "settings/icons";
 @import "settings/content";
+
+/* PAGES */
+@import "pages/discovery";
 
 /* SCREENS */
 @import "screens/loading";
