@@ -1,4 +1,4 @@
-/*! Using Discord Selectors v19-04-05 by Zerthox */
+/*! Using Discord Selectors v19-04-07 by Zerthox */
 // FILE CONTENTS
 // 1) App
 // 	1.1) App Notices
@@ -3299,6 +3299,22 @@ pre {
 }
 .link-1IoFq- {
 	@extend %settingsSocialLink !optional;
+}
+// 21.1.1) BD Sidebar
+#bd-settings-sidebar {
+	@extend %bdSettingsSidebar !optional;
+}
+.ui-tab-bar-header {
+	@extend %bdSettingsSidebarHeader !optional;
+}
+.ui-tab-bar-item {
+	@extend %bdSettingsSidebarItem !optional;
+}
+%bdSettingsSidebarItem.selected {
+	@extend %bdSettingsSidebarItemSelected !optional;
+}
+.ui-tab-bar-separator {
+	@extend %bdSettingsSidebarSeparator !optional;
 }
 // 21.2) Content
 .contentRegion-3nDuYy {

@@ -1,10 +1,10 @@
 // BD SETTINGS SIDEBAR
-%settingsSide #bd-settings-sidebar {
-	.ui-tab-bar-header {
+%settingsSide %bdSettingsSidebar {
+	%bdSettingsSidebarHeader {
 		color: $main-color;
 		font-weight: 700;
 	}
-	.ui-tab-bar-item {
+	%bdSettingsSidebarItem {
 		color: hsla(0, 0%, 100%, .3);
 		padding: 8px 0 8px 20px;
 		margin: 0;
@@ -21,7 +21,7 @@
 				opacity: .7;
 			}
 		}
-		&.selected {
+		&%bdSettingsSidebarItemSelected {
 			background-color: $main-color;
 			color: #fff;
 			@include pseudo(before) {
@@ -29,8 +29,8 @@
 			}
 		}
 	}
-	.ui-tab-bar-separator {
-		background-color: hsla(0, 0%, 100%, .04);
+	%bdSettingsSidebarSeparator {
+		background-color: hsla(0, 0%, 100%, .07);
 	}
 	div[style] {
 		color: hsla(0, 0%, 100%, .3) !important;
