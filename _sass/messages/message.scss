@@ -34,6 +34,33 @@
 		}
 	}
 
+	// CONTENT
+	%messageSystemContainer {
+		color: hsla(0, 0%, 100%, .5);
+	}
+	%markup {
+		color: hsla(0, 0%, 100%, .8);
+	}
+
+	// LINKS
+	%message {
+		a,
+		%anchor {
+			color: $main-color;
+			@include hover-shadow;
+		}
+	}
+
+	// MENTIONED
+	%mentioned {
+		background-color: hsla(0, 0%, 100%, .1);
+		@include pseudo(after) {
+			background: hsla(0, 0%, 100%, .1);
+			border-left: 4px solid $main-color;
+			border-radius: 2px 0 0 2px;
+		}
+	}
+
 	// BUTTONS
 	%messageButton {
 		visibility: visible;
@@ -55,31 +82,15 @@
 	}
 	%messageReactionButton {
 		@include bg($img: url(https://clearvision.gitlab.io/icons/emote.svg), $rep: no-repeat, $pos: center, $size: 18px);
+		&:hover {
+			opacity: .7 !important;
+		}
 	}
 	%messageOptionsButton {
 		@include bg($img: url(https://clearvision.gitlab.io/icons/settings.svg), $rep: no-repeat, $pos: center, $size: 18px);
 		&:hover,
 		&%messageButtonPopoutOpen {
 			animation: cv-spin 2.5s linear infinite;
-		}
-	}
-
-	// LINKS
-	%message {
-		a,
-		%anchor {
-			color: $main-color;
-			@include hover-shadow;
-		}
-	}
-
-	// MENTIONED
-	%mentioned {
-		background-color: hsla(0, 0%, 100%, .1);
-		@include pseudo(after) {
-			background: hsla(0, 0%, 100%, .1);
-			border-left: 4px solid $main-color;
-			border-radius: 2px 0 0 2px;
 		}
 	}
 
