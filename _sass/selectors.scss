@@ -20,9 +20,10 @@
 //		6.1.1) Reactions
 //		6.1.2) Invite Links
 //		6.1.3) Embeds
-//		6.1.4) Codeblocks
-//		6.1.5) Attachments
-//		6.1.6) Spoilers
+//		6.1.4) Spotify Invites
+//		6.1.5) Codeblocks
+//		6.1.6) Attachments
+//		6.1.7) Spoilers
 //	6.2) Dividers
 //	6.3) Chat Bars
 //		6.3.1) New Messages Bar
@@ -1362,13 +1363,86 @@
 .embedFooterIcon-239O1f {
 	@extend %embedFooterIcon !optional;
 }
+// 6.1.4) Spotify Invites
 .invite-18yqGF {
-	@extend %embedSpotifyInvite !optional;
+	@extend %spotifyInvite !optional;
+}
+.coverImageWrapper-22d5LB {
+	@extend %spotifyCoverImageWrapper !optional;
+}
+.coverImage-3cjWkd {
+	@extend %spotifyCoverImage !optional;
+}
+.coverImageActionable-1TMryE {
+	@extend %spotifyCoverImageActionable !optional;
+}
+.coverImageNotActionable-1MP2Mx {
+	@extend %spotifyCoverImageNotActionable !optional;
+}
+.blurred-UUeCTs {
+	@extend %spotifyCoverImageBlurred !optional;
+}
+.artwork-1vrmJ_ {
+	@extend %spotifyArtwork !optional;
+}
+.artworkActionable-10hKry {
+	@extend %spotifyArtworkActionable !optional;
+}
+.artworkNotActionable-3519Nv {
+	@extend %spotifyArtworkNotActionable !optional;
+}
+.artworkSpotifySessionEnded-11d_If {
+	@extend %spotifyArtworkSessionEnded !optional;
 }
 .header-Hg_qNF {
-	@extend %embedSpotifyInviteHeader !optional;
+	@extend %spotifyInviteHeader !optional;
 }
-// 6.1.4) Codeblocks
+.partyStatus-6AjDud {
+	@extend %spotifyInvitePartyStatus !optional;
+}
+.actionAndParty-3DXneA {
+	@extend %spotifyInviteActionAndParty !optional;
+}
+.actionButton-1Vu3oO {
+	@extend %spotifyInviteActionButton !optional;
+}
+.name-GG2Mcs {
+	@extend %spotifyInviteName !optional;
+}
+.partyMembers-fGLW2R {
+	@extend %spotifyInvitePartyMembers !optional;
+}
+.partyMember-2WUkBE {
+	@extend %spotifyInvitePartyMember !optional;
+}
+.partyMemberKnown-2QGebq {
+	@extend %spotifyInvitePartyMemberKnown !optional;
+}
+.partyAvatar-34PPpo {
+	@extend %spotifyInvitePartyAvatar !optional;
+}
+.partyMemberEmpty-2iyh5g {
+	@extend %spotifyInvitePartyMemberEmber !optional;
+}
+.moreUsers-1sZP3U {
+	@extend %spotifyInviteMoreUsers !optional;
+}
+.helpIcon-2EyVTp {
+	@extend %spotifyInviteHelpIcon !optional;
+}
+.details-3NqflA {
+	@extend %spotifyInviteDetails !optional;
+}
+.state-2dqgON {
+	@extend %spotifyInviteState !optional;
+}
+.textLink-3aPthL {
+	@extend %spotifyInviteTextLink !optional;
+}
+.artworkSpotifySessionEnded-11d_If {
+	@extend %spotifyInviteArtworkSessionEnded !optional;
+}
+// 6.1.5) Codeblocks
 .inline {
 	@extend %codeInline !optional;
 }
@@ -1378,7 +1452,7 @@ pre {
 .hljs {
 	@extend %codeHLJS !optional;
 }
-// 6.1.5) Attachments
+// 6.1.6) Attachments
 .attachment-33OFj0 {
 	@extend %attachment !optional;
 }
@@ -1422,7 +1496,7 @@ pre {
 %attachmentCancelButton {
 	@extend %attachmentButton !optional;
 }
-// 6.1.6) Spoilers
+// 6.1.7) Spoilers
 .spoilerText-3p6IlD {
 	@extend %spoilerText !optional;
 }
