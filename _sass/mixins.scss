@@ -60,19 +60,6 @@
 	}
 }
 
-/// Set one or multiple pseudo elements in one mixin
-/// @param {string} $a... - list of pseudo element selectors
-/// @content [pseudo element content]
-@mixin pseudo($a...) {
-	$l: ();
-	@each $p in $a {
-		$l: append($l, "&:#{$p}", comma);
-	}
-	#{$l} {
-		@content;
-	}
-}
-
 /// Set position properties in a single mixin
 /// @param {*} $top [null] - top property value
 /// @param {*} $right [null] - right property value
