@@ -1,0 +1,73 @@
+---
+---
+/*! April Fools Gnome by Zerthox */
+
+// IMPORT MIXINS
+@import "mixins";
+
+// GNOME
+body {
+    &:before,
+    &:after {
+        content: "";
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        @include bg($img: url(https://vignette.wikia.nocookie.net/surrealmemes/images/f/ff/Noggin.png), $rep: no-repeat, $pos: center, $size: contain);
+        z-index: 9999;
+        pointer-events: none;
+        opacity: 0;
+    }
+    &:before {
+        animation: g-in 3s 1s;
+    }
+    &:after {
+        animation: g-move 4s 4s infinite;
+    }
+}
+
+// KEYFRAMES
+@keyframes g-in {
+	0% {
+		transform: translateY(100%);
+		opacity: .7;
+	}
+	40%, 70% {
+		transform: translateY(75%);
+	}
+	100% {
+		transform: translateY(0);
+		opacity: .7;
+	}
+}
+@keyframes g-move {
+	0% {
+		transform: scale(1) translateX(0) rotate(0);
+		opacity: .7;
+	}
+	12.5% {
+		transform: scale(.85) translateX(10%) rotate(0);
+	}
+	25% {
+		transform: scale(.7) translateX(0) rotate(0);
+	}
+	37.5% {
+		transform: scale(.85) translateX(-10%) rotate(0);
+	}
+	50% {
+		transform: scale(1) translateX(0) rotate(360deg);
+	}
+	62.5% {
+		transform: scale(.85) translateX(-10%) rotate(360deg);
+	}
+	75% {
+		transform: scale(.7) translateX(0) rotate(360deg);
+	}
+	87.5% {
+		transform: scale(.85) translateX(10%) rotate(360deg);
+	}
+	100% {
+		transform: scale(1) translateX(0) rotate(360deg);
+		opacity: .7;
+	}
+}
