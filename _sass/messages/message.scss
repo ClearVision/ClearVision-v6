@@ -98,4 +98,13 @@
 	%operations {
 		color: hsla(0, 0%, 100%, .3);
 	}
+
+	// MESSAGE JUMP
+	> div[style^="border-radius: 2px;"] {
+		&[style$="0);"] {
+			animation: none;
+		}
+		border-radius: 3px !important;
+		animation: cv-message-jump 2s ease-in-out;
+	}
 }

@@ -39,6 +39,14 @@
 		background-color: $hover-color;
 	}
 }
+@keyframes cv-message-jump {
+	from {
+		background-color: hsla(0, 0%, 100%, .3);
+	}
+	to {
+		background-color: transparent;
+	}
+}
 @keyframes cv-spin {
 	from {
 		transform: rotateZ(0);
