@@ -1,29 +1,79 @@
 ---
 ---
-// VARIABLES
 $version: "pre-3.1.5b";
+
+/*! ClearVision v6 BETA #{$version} by Zerthox */
+
+// STRING CONSTANTS
 $titlebar-text: "ClearVision v6 BETA";
 $titlebar-version: "#{$version}";
+$titlebar-short: "CV v6";
 $account-text: "ClearVision";
 $account-version: "v6 #{$version}";
+
+// COLOR SETTINGS
 $main-color: var(--main-color);
 $hover-color: var(--hover-color);
+$success-color: var(--success-color);
+$danger-color: var(--danger-color);
 $online-color: var(--online-color);
 $idle-color: var(--idle-color);
 $dnd-color: var(--dnd-color);
 $offline-color: var(--offline-color);
 $streaming-color: var(--streaming-color);
-$bg-img: var(--background-image);
-$bg-brightness: var(--background-brightness);
-$bg-blur: var(--background-blur);
-$bg-overlay: var(--background-overlay);
+
+// GENERAL SETTINGS
+$avatar-roundness: var(--avatar-roundness);
+
+// BACKGROUND SETTINGS
+$bg: (
+	overlay: var(--background-overlay),
+	img: var(--background-image),
+	pos: var(--background-position),
+	size: var(--background-size),
+	brightness: var(--background-brightness),
+	contrast: var(--background-contrast),
+	saturate: var(--background-saturation),
+	invert: var(--background-invert),
+	grayscale: var(--background-grayscale),
+	sepia: var(--background-sepia),
+	blur: var(--background-blur)
+);
+
+// POPOUT SETTINGS
+$popout: (
+	img: var(--user-popout-image),
+	pos: var(--user-popout-position),
+	size: var(--user-popout-size),
+	brightness: var(--user-popout-brightness),
+	contrast: var(--user-popout-contrast),
+	saturate: var(--user-popout-saturation),
+	invert: var(--user-popout-invert),
+	grayscale: var(--user-popout-grayscale),
+	sepia: var(--user-popout-sepia),
+	blur: var(--user-popout-blur)
+);
+
+// MODAL SETTINGS
+$modal: (
+	img: var(--user-modal-image),
+	pos: var(--user-modal-position),
+	size: var(--user-modal-size),
+	brightness: var(--user-modal-brightness),
+	contrast: var(--user-modal-contrast),
+	saturate: var(--user-modal-saturation),
+	invert: var(--user-modal-invert),
+	grayscale: var(--user-modal-grayscale),
+	sepia: var(--user-modal-sepia),
+	blur: var(--user-modal-blur)
+);
+
+// COLOR CONSTANTS
 $twitch-purple: #593695;
 $spotify-green: #1db954;
 $xbox-green: #107c10;
 $facebook-blue: #355089;
 $discord-blurple: #7289da;
-
-/*! ClearVision v6 BETA #{$version} by Zerthox */
 
 // IMPORT MIXINS
 @import "mixins";
@@ -40,6 +90,12 @@ $discord-blurple: #7289da;
 	right: 0;
 	bottom: 0;
 	left: 0;
+}
+
+/// Include background filters
+/// @param {map} $source source map with filter settings
+@mixin filters($source) {
+	filter: #{"grayscale("map-get($source, grayscale)")"} sepia(map-get($source, sepia)) #{"invert("map-get($source, invert)")"} brightness(map-get($source, brightness)) contrast(map-get($source, contrast)) saturate(map-get($source, saturate)) blur(map-get($source, blur));	
 }
 
 /// Create hover shadow effect
@@ -69,15 +125,45 @@ $discord-blurple: #7289da;
 :root {
 	--main-color: #2780e6;
 	--hover-color: #1e63b3;
+	--success-color: #43b581;
+	--danger-color: #982929;
 	--online-color: #43b581;
 	--idle-color: #faa61a;
 	--dnd-color: #982929;
 	--offline-color: #808080;
 	--streaming-color: #593695;
-	--background-image: url(https://clearvision.gitlab.io/images/sapphire.jpg);
-	--background-brightness: 100%;
-	--background-blur: 0px;
+	--avatar-roundness: 50%;
 	--background-overlay: #{rgba(0, 0, 0, .6)};
+	--background-image: url(https://clearvision.gitlab.io/images/sapphire.jpg);
+	--background-position: center;
+	--background-size: cover;
+	--background-brightness: 100%;
+	--background-contrast: 100%;
+	--background-saturation: 100%;
+	--background-invert: 0%;
+	--background-grayscale: 0%;
+	--background-sepia: 0%;
+	--background-blur: 0px;
+	--user-popout-image: var(--background-image);
+	--user-popout-position: var(--background-position);
+	--user-popout-size: var(--background-size);
+	--user-popout-brightness: var(--background-brightness);
+	--user-popout-contrast: var(--background-contrast);
+	--user-popout-saturation: var(--background-saturation);
+	--user-popout-invert: var(--background-invert);
+	--user-popout-grayscale: var(--background-grayscale);
+	--user-popout-sepia: var(--background-sepia);
+	--user-popout-blur: calc(var(--background-blur) + 3px);
+	--user-modal-image: var(--background-image);
+	--user-modal-position: var(--background-position);
+	--user-modal-size: var(--background-size);
+	--user-modal-brightness: var(--background-brightness);
+	--user-modal-contrast: var(--background-contrast);
+	--user-modal-saturation: var(--background-saturation);
+	--user-modal-invert: var(--background-invert);
+	--user-modal-grayscale: var(--background-grayscale);
+	--user-modal-sepia: var(--background-sepia);
+	--user-modal-blur: calc(var(--background-blur) + 3px);
 }
 
 /* APP */
