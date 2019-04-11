@@ -1393,6 +1393,9 @@
 .metadata-13NcHb {
 	@extend %playerMetadata !optional;
 }
+.audioMetadata-3zOuGv {
+	@extend %playerAudioMetadata !optional;
+}
 .metadataContent-3c_ZXw {
 	@extend %playerMetadataContent !optional;
 }
@@ -1404,6 +1407,9 @@
 }
 .metadataDownload-1fk90V {
 	@extend %playerMetadataDownload !optional;
+}
+.metadataIcon-2FyCKU {
+	@extend %playerMetadataIcon !optional;
 }
 .audioControls-2HsaU6 {
 	@extend %playerAudioControls !optional;
@@ -1539,6 +1545,9 @@ pre {
 // 6.1.7) Attachments
 .attachment-33OFj0 {
 	@extend %attachment !optional;
+}
+.embedWrapper-3AbfJJ {
+	@extend %attachmentEmbedWrapper !optional;
 }
 .icon-1kp3fr {
 	@extend %attachmentIcon !optional;
