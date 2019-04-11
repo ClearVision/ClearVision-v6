@@ -9,6 +9,10 @@
     > %flex:last-child {
         background-color: rgba(0, 0, 0, .5);
     }
+    %activityFeedLayout {
+        margin-left: -1px;
+        padding-left: 17px;
+    }
     %activityFeedH5 {
         color: hsla(0, 0%, 100%, .7);
     }
