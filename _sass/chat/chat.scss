@@ -1,6 +1,8 @@
 // CHAT
-%base %chat {
-	background-color: transparent;
+%base {
+	%chat {
+		background-color: transparent;
+	}
 }
 %chat {
 
@@ -122,7 +124,21 @@
 	}
 }
 
-// NO CHANNEl
+// NO CHANNEL
+%base {
+	%noChannel {
+		background-color: rgba(0, 0, 0, .5);
+	}
+}
 %noChannel {
-	background-color: rgba(0, 0, 0, .5);
+	%noChannelImage {
+		filter: grayscale(1) brightness(2);
+		opacity: .3;
+	}
+	%noChannelTitle {
+		color: hsla(0, 0%, 100%, .5);
+	}
+	%noChannelText {
+		color: hsla(0, 0%, 100%, .3);
+	}
 }
