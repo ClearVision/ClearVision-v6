@@ -3,6 +3,8 @@
 // 1) App
 // 	1.1) App Notices
 // 2) Titlebar
+// 	2.1) Windows
+// 	2.2) Mac
 // 3) Guilds
 // 4) Channels
 //	4.1) Channel Categories
@@ -211,6 +213,13 @@
 }
 
 // 2) TITLEBAR
+.titleBar-AC4pGV {
+	@extend %titlebar !optional;
+}
+.unfocused-1QsMU3 {
+	@extend %titlebarUnfocused !optional;
+}
+// 2.1) Windows
 .typeWindows-1za-n7 {
 	@extend %titlebarWin !optional;
 }
@@ -225,6 +234,28 @@
 }
 .winButtonClose-1HsbF- {
 	@extend %titlebarWinButtonClose !optional;
+}
+// 2.2) Mac
+.typeMacOS-3EmCyP {
+	@extend %titlebarMac !optional;
+}
+.typeMacOSWithFrame-3R_i5S {
+	@extend %titlebarMacWithFrame !optional;
+}
+.macButtons-2MuSAC {
+	@extend %titlebarMacButtons !optional;
+}
+.macButton-c_Adir {
+	@extend %titlebarMacButton !optional;
+}
+.macButtonClose-MwZ2nf {
+	@extend %titlebarMacButtonClose !optional;
+}
+.macButtonMaximize-2FMHAO {
+	@extend %titlebarMacButtonMaximize !optional;
+}
+.macButtonMinimize-3EJ6wo {
+	@extend %titlebarMacButtonMinimize !optional;
 }
 
 // 3) GUILDS
