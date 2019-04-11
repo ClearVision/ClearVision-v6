@@ -1,23 +1,44 @@
 // EMBED MEDIA PLAYER
 %message %player {
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(0, 0, 0, .2);
+    border-color: transparent;
 }
-%playerAudioControls,
+%playerAudioControls {
+    background-color: transparent;
+}
 %playerVideoControls {
     background-color: rgba(0, 0, 0, .6);
 }
-%playerMetadataDownload,
-%playerControlIcon {
-    opacity: .5;
-    transition: all .15s ease-in-out;
-    &:hover {
-        opacity: 1;
+%player {
+    %playerMetadataDownload,
+    %playerControlIcon {
+        opacity: .5;
+        transition: all .15s ease-in-out;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    %playerMetadataIcon {
+        &,
+        &:hover {
+            color: #fff;
+        }
     }
 }
-%playerDurationTimeDisplay,
-%playerDurationTimeSeparator {
-    font-family: inherit;
+%playerAudioMetadata {
+    &:before {
+        content: "";
+        width: 36px;
+        height: 36px;
+        @include bg($img: url(https://clearvision.gitlab.io/icons/file_music.svg), $rep: no-repeat, $size: 100%, $pos: center);
+        opacity: .5;
+    }
+    %playerMetadataSize {
+        color: hsla(0, 0%, 100%, .3);
+    }
 }
+
+// MEDIA BAR
 %playerMediaBarWrapper {
     &,
     &:before,
@@ -86,6 +107,10 @@
 }
 %playerMediaBarInteraction:hover,
 %playerMediaBarInteractionDragging {
+    %playerMediaBarWrapper {
+        box-shadow: none;
+        filter: drop-shadow(0 0 1px rgba(0, 0, 0, .3));
+    }
     %playerMediaBarBubble {
         transform: translateX(-50%);
     }
