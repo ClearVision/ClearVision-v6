@@ -1,16 +1,14 @@
 // BOT TAG
 %botTag {
 	padding: 1px 2px;
-	background: rgba(100, 100, 100, .3) !important;
-	color: hsla(0, 0%, 100%, .6) !important;
+	background: hsla(0, 0%, 100%, .1);
+	color: hsla(0, 0%, 100%, .6);
 	font-weight: 700;
 	text-shadow: 0 0 1px rgba(0, 0, 0, .3);
 	border-radius: 3px;
 }
 %botTagInvert {
 	padding: 2px 3px;
-    background-color: rgba(0, 0, 0, .2) !important;
-	color: hsla(0, 0%, 100%, .8) !important;
-	font-size: 11px;
-    border-radius: 5px;
+    background-color: rgba(0, 0, 0, .3);
+	color: hsla(0, 0%, 100%, .8);
 }

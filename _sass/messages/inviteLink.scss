@@ -10,7 +10,7 @@
         @include hover-shadow;
     }
     %inviteGuildNameExpired {
-        color: $dnd-color;
+        color: $danger-color;
     }
     %inviteGuildIconExpired {
         position: relative;
@@ -24,7 +24,7 @@
             bottom: 10%;
             left: 50%;
             width: 6px;
-            background-color: $dnd-color;
+            background-color: $danger-color;
             border-radius: 1px;
         }
         &:after {
@@ -50,10 +50,10 @@
     }
     %inviteButtonAccept {
         background-color: transparent;
-        border: 1px solid $online-color;
+        border: 1px solid $success-color;
         transition: all .3s ease-in-out;
         &:hover {
-            background-color: $online-color;
+            background-color: $success-color;
         }
     }
     %inviteButtonJoined {
@@ -64,10 +64,10 @@
     }
     %inviteButtonExpired {
         background-color: transparent;
-        border: 1px solid $dnd-color;
+        border: 1px solid $danger-color;
         transition: all .3s ease-in-out;
         &:hover {
-            background-color: $dnd-color;
+            background-color: $danger-color;
         }
     }
 }

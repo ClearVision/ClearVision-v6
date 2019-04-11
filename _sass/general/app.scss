@@ -4,22 +4,26 @@ body {
 		content: "";
 		position: fixed;
 		@include stretch;
-		@include bg($img: $bg-img, $pos: center, $size: cover);
-		filter: brightness($bg-brightness) blur($bg-blur);
+		@include bg($img: map-get($bg, img), $pos: map-get($bg, pos), $size: map-get($bg, size));
+		@include filters($bg);
 		z-index: -9999;
 	}
 }
 %appMount {
-	background: $bg-overlay;
+	background: map-get($bg, overlay);
 }
 
 // LAYERS
-%layers,
-%layer,
-%layer > %containerMain {
-	@include clear;
+%appMount {
+	%layers,
+	%layer {
+		background-color: transparent;
+	}
 }
-%layer > %containerMain > %base {
+%layer > %containerMain {
+	background-color: transparent;
+}
+%base {
 	border-radius: 0;	
 }
 

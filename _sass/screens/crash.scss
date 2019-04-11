@@ -1,7 +1,7 @@
 // CRASH SCREEN
 %errorPage {
     background-color: transparent;
-    box-shadow: inset 0 0 50vmin 10px $dnd-color;
+    box-shadow: inset 0 0 50vmin 10px $danger-color;
     %buttonContents {
         height: 16px;
         font-size: 0;
@@ -22,7 +22,7 @@
         width: 100vw;
         background-color: rgba(0, 0, 0, .5);
         box-shadow: 0 0 30px 15px rgba(0, 0, 0, .5);
-        color: $dnd-color;
+        color: $danger-color;
         font-family: Georgia, "Times New Roman", Times, serif;
         font-size: 0;
         font-weight: normal;

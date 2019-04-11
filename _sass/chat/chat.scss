@@ -90,7 +90,7 @@
 		opacity: .3;
 	}
 	%chatGatedTitle {
-		color: $dnd-color;
+		color: $danger-color;
 		font-weight: 600;
 		text-shadow: 0 0 3px #000;
 	}
@@ -109,7 +109,7 @@
 			content: "";
 			position: absolute;
 			@include stretch;
-			background-color: $dnd-color;
+			background-color: $danger-color;
 			border-radius: 3px;
 			opacity: .5;
 			transition: inherit;

@@ -79,7 +79,7 @@
 				content: "";
 				position: absolute;
 				@include stretch;
-				background-color: $dnd-color;
+				background-color: $danger-color;
 				opacity: .5;
 				transition: inherit;
 				z-index: -1;
