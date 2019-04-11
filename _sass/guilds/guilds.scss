@@ -1,6 +1,23 @@
 // GUILDS
+%layer {
+	%guildsWrapper {
+		background-color: transparent;
+	}
+}
+%platformOSX {
+	%guildsWrapper {
+		margin-top: 0;
+		padding-top: 48px;
+		&:before {
+			content: "";
+			height: 48px;
+			margin-top: -48px;
+			background-color: rgba(0, 0, 0, .3);
+		}
+	}
+}
 %guildsWrapper {
-	@include clear;
+	width: 70px;
 	box-shadow: inset 0 0 20px rgba(0, 0, 0, .2);
 
 	// GUILD LIST

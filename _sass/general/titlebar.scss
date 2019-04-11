@@ -1,4 +1,4 @@
-// TITLEBAR
+// TITLEBAR WINDOWS
 %titlebarWin {
 	height: 18px;
 	width: 100vw;
@@ -52,7 +52,41 @@
 	}
 	> %titlebarWinButtonClose {
 		&:hover {
-			background-color: $dnd-color;
+			background-color: $danger-color;
 		}
+	}
+}
+
+// TITLEBAR OSX
+%titlebarMac {
+	width: 70px;
+	height: 48px;
+	&%titlebarUnfocused {
+		%titlebarMacButton {
+			background-color: hsla(0, 0%, 100%, .7);
+		}
+	}
+	> %titlebarMacButtons {
+		padding: 0 10px;
+	}
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	&:before,
+	&:after {
+		margin: 0 2px;
+		font-size: 10px;
+		order: 1;
+	}
+	&:before {
+		content: "#{$titlebar-short}";
+		color: $main-color;
+		font-weight: 700;
+		text-shadow: 0 0 3px;
+	}
+	&:after {
+		content: "#{$version}";
+		color: hsla(0, 0%, 100%, .3);
 	}
 }
