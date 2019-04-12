@@ -52,11 +52,11 @@
 			transition: all .3s ease-in-out;
 		}
 		&:before {
-			background: linear-gradient(to left, $main-color 50%, transparent 100%);
+			background: linear-gradient(to left, $main-color 50%, transparent);
 			margin-right: 5px;
 		}
 		&:after {
-			background: linear-gradient(to right, $main-color 50%, transparent 100%);
+			background: linear-gradient(to right, $main-color 50%, transparent);
 			margin-left: 5px;
 		}
 	}
@@ -75,6 +75,12 @@
 			flex-grow: 0;
 		}
 	}
+	%categoryIconMutedCollapsed + %categoryNameMuted {
+		&:before,
+		&:after {
+			animation: cv-category-fix .3s;
+		}
+	}
 	%categoryContainer {
 		padding-top: 24px;
 	}
@@ -83,9 +89,28 @@
 	%channelContent {
 		transition: all .15s ease-in-out;
 	}
+	%channelContentText {
+		position: relative;
+		&:before {
+			content: "";
+			position: absolute;
+			background: transparent;
+			@include stretch;
+			transition: all .15s ease-in-out;
+			z-index: -1;
+		}
+		&:after {
+			content: "";
+			position: absolute;
+			@include pos(0, 100%, 0, 0);
+			background: $main-color;
+			transition: all .3s ease-in-out;
+			z-index: -1;
+		}
+	}
 	%channelContentVoice {
 		&:active {
-			background-color: hsla(0, 0%, 100%, .1);
+			background: hsla(0, 0%, 100%, .1);
 		}
 	}
 	%channelName {
@@ -93,8 +118,8 @@
 		transition: all .15s ease-in-out;
 	}
 	%channelIcon {
-		color: #fff;
-		opacity: .3;
+		color: hsla(0, 0%, 100%, .3);
+		opacity: 1;
 		transition: all .15s ease-in-out;
 		> path {
 			opacity: 1;
@@ -106,21 +131,27 @@
 	%channelActionIcon {
 		opacity: .3;
 		transition: all .15s ease-in-out;
+		animation: cv-fade-to-3 .15s ease-in-out;
 		&:hover {
 			opacity: .7;
 		}
 	}
 
 	// HOVER
-	%channelContentHoveredText {
-		background-color: hsla(0, 0%, 100%, .1);
-	}
-	%channelContentHovered {
-		%channelName {
-			color: hsla(0, 0%, 100%, .7);
+	%channelContentText {
+		&:hover {
+			background: transparent;
+			&:before {
+				background: hsla(0, 0%, 100%, .1);
+			}
 		}
-		%channelIcon {
-			opacity: .7;
+	}
+	%channelContent {
+		&:hover {
+			%channelIcon,
+			%channelName {
+				color: hsla(0, 0%, 100%, .7);
+			}
 		}
 	}
 
@@ -149,20 +180,27 @@
 	}
 
 	// SELECTED
-	%channelContentSelectedText {
-		background-color: $main-color;
-		%channelIcon {
-			opacity: 1;
-		}
-		%channelActionIcon {
-			opacity: .7;
-			&:hover {
-				opacity: 1;
+	%channelContent {
+		&%channelContentSelectedText {
+			background: transparent;
+			&:before {
+				background: hsla(0, 0%, 100%, .1);
+			}
+			&:after {
+				right: 0;
+				animation: cv-slide-right .3s ease-in-out;
+			}
+			%channelIcon,
+			%channelNameSelectedText {
+				color: #fff;
+			}
+			%channelActionIcon {
+				opacity: .7;
+				&:hover {
+					opacity: 1;
+				}
 			}
 		}
-	}
-	%channelNameSelectedText {
-		color: #fff;
 	}
 
 	// CONNECTED
@@ -174,7 +212,6 @@
 		%channelIcon {
 			color: $main-color;
 			filter: drop-shadow(0 0 3px);
-			opacity: 1;
 		}
 		%channelUserLimit {
 			background-color: hsla(0, 0%, 100%, .1);
@@ -184,11 +221,9 @@
 
 	// MUTED
 	%channelContentMuted {
+		%channelIcon,
 		%channelName {
 			color: hsla(0, 0%, 100%, .1);
-		}
-		%channelIcon {
-			opacity: .1;
 		}
 	}
 
@@ -237,7 +272,7 @@
 			position: absolute;
 			width: 0;
 			@include pos($top: 0, $bottom: 0, $left: 50%);
-			background: linear-gradient(to right, $main-color 10%, transparent 100%);
+			background: linear-gradient(to right, $main-color 10%, transparent);
 			opacity: .5;
 			transition: all .1s ease-in-out,  width .15s ease-in-out;
 			pointer-events: none;

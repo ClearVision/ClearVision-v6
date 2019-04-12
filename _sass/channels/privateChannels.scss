@@ -3,45 +3,68 @@
 
 	// PRIVATE CHANNEL
 	%privateChannel {
-		> a,
-		%privateChannelName,
-		%privateChannelNameWithActivity,
-		%privateChannelActivity,
-		%privateChannelActivityIconForeground,
-		%privateChannelClose,
-		%privateChannelIcon {
-			transition: all .15s ease-in-out;
+		> a {
+			position: relative;
+			z-index: 1;
+			&:before {
+				content: "";
+				position: absolute;
+				@include stretch;
+				background-color: transparent;
+				border-radius: 3px;
+				transition: all .15s ease-in-out;
+				z-index: -1;
+			}
+			&:after {
+				content: "";
+				position: absolute;
+				@include pos(0, 100%, 0, 0);
+				background-color: $main-color;
+				border-radius: 3px;
+				transition: all .3s ease-in-out;
+				z-index: -1;
+			}
 		}
 		%privateChannelName,
 		%privateChannelNameWithActivity {
 			color: hsla(0, 0%, 100%, .3);
+			transition: all .15s ease-in-out;
 		}
-		%privateChannelActivity {
+		%privateChannelActivity,
+		%privateChannelMobileIndicator {
 			color: hsla(0, 0%, 100%, .2);
 			opacity: 1;
+			transition: all .15s ease-in-out;
 		}
 		%privateChannelActivityIconForeground {
 			fill: hsla(0, 0%, 100%, .2);
+			transition: all .15s ease-in-out;
 		}
 		%privateChannelClose {
 			display: block;
 			@include bg($img: url(https://clearvision.gitlab.io/icons/close.svg), $repeat: no-repeat, $pos: center, $size: 18px);
 			opacity: 0;
+			transition: all .15s ease-in-out;
 		}
 		%privateChannelIcon {
 			opacity: .3;
+			transition: all .15s ease-in-out;
 		}
 		
 		// HOVER
 		&:hover {
 			> a {
-				background-color: hsla(0, 0%, 100%, .1);
+				background-color: transparent;
+				&:before {
+					background-color: hsla(0, 0%, 100%, .1);
+				}
 			}
 			%privateChannelName,
 			%privateChannelNameWithActivity {
 				color: hsla(0, 0%, 100%, .7);
 			}
-			%privateChannelActivity {
+			%privateChannelActivity,
+			%privateChannelMobileIndicator {
 				color: hsla(0, 0%, 100%, .5);
 			}
 			%privateChannelActivityIconForeground {
@@ -61,7 +84,14 @@
 		// SELECTED
 		&%privateChannelSelected {
 			> a {
-				background-color: $main-color;
+				background-color: transparent;
+				&:before {
+					background-color: hsla(0, 0%, 100%, .1);
+				}
+				&:after {
+					right: 0;
+					animation: cv-slide-right .3s ease-in-out;
+				}
 			}
 			%privateChannelName,
 			%privateChannelNameWithActivity {
