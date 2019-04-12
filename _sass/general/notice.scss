@@ -35,6 +35,7 @@
         color: #fff;
         transition: all .15s ease-in-out;
         mix-blend-mode: screen;
+        transform: translateZ(0);
         &:hover {
             background-color: #fff;
             color: #000;
