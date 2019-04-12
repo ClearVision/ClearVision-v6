@@ -1059,8 +1059,14 @@
 %toolbarIcon.popout-open {
 	@extend %toolbarIconPopoutOpen !optional;
 }
+.updateAvailable-qNqOs7 {
+	@extend %toolbarIconUpdateAvailable !optional;
+}
 .iconForeground-3y9f0B {
 	@extend %toolbarIconForeground !optional;
+}
+.updateIconForeground-2jeItf {
+	@extend %toolbarIconUpdateForeground !optional;
 }
 .iconBadge-2dji3k {
 	@extend %toolbarIconBadge !optional;
