@@ -150,6 +150,12 @@
 .layer-3QrUeG {
 	@extend %layer !optional;
 }
+.animating-rRxada {
+	@extend %layerAnimating !optional;
+}
+.stop-animations {
+	@extend %layerStopAnimations !optional;
+}
 .container-2lgZY8 {
 	@extend %containerMain !optional;
 }
