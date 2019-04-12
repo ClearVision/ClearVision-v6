@@ -1062,6 +1062,9 @@
 .iconForeground-3y9f0B {
 	@extend %toolbarIconForeground !optional;
 }
+.iconBadge-2dji3k {
+	@extend %toolbarIconBadge !optional;
+}
 .divider-2PMBlV {
 	@extend %toolbarDivider !optional;
 }
@@ -1090,9 +1093,6 @@
 }
 .topic-2QX7LI {
 	@extend %chatTitleTopic !optional;
-}
-.iconBadge-2dji3k {
-	@extend %chatTitleIconBadge !optional;
 }
 .search-2oPWTC {
 	@extend %chatSearch !optional;

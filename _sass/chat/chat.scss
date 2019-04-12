@@ -22,13 +22,6 @@
 			@include hover-shadow;
 		}
 	}
-	%chatTitleIconBadge {
-		margin: 2px;
-		background-color: $main-color;
-		border: none;
-		color: $main-color;
-		box-shadow: 0 0 3px, 0 0 5px;
-	}
 	%chatSearch {
 		> %chatSearchBar {
 			background-color: hsla(0, 0%, 100%, .1);
