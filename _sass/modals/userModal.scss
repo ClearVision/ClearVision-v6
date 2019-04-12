@@ -103,6 +103,12 @@
 }
 
 // BODY
+%userModal {
+	> %userModalBody {
+		height: 306px;
+		background-color: rgba(0, 0, 0, .7);
+	}
+}
 %userModalBody {
 	%userModalInfoSection {
 		+ %userModalInfoSection {
@@ -127,13 +133,26 @@
 }
 %userModalConnectedAccounts {
 	> %userModalConnectedAccount {
+		position: relative;
 		background-color: hsla(0, 0%, 100%, .04);
 		border-color: transparent;
+		border-radius: 5px;
+		transition: all .15s ease-in-out;
+		&:hover {
+			background-color: hsla(0, 0%, 100%, .07);
+			%userModalConnectedAccountOpenIcon {
+				opacity: .7;
+			}
+		}
+		&:active {
+			transform: scale(.95);
+		}
 	}
 }
 %userModalConnectedAccountVerifiedIcon {
 	@include bg($img: url(https://clearvision.gitlab.io/icons/verified.svg), $pos: center, $size: 18px, $repeat: no-repeat);
-    opacity: .5;
+	opacity: .5;
+	z-index: 1;
 	> g {
 		display: none;
 	}
@@ -142,8 +161,10 @@
 	@include bg($img: url(https://clearvision.gitlab.io/icons/popout.svg), $pos: center, $size: 18px, $repeat: no-repeat);
 	opacity: .3;
 	transition: all .15s ease-in-out;
-	&:hover {
-		opacity: .7;
+	&:after {
+		content: "";
+		position: absolute;
+		@include stretch;
 	}
 }
 %userModalEmptyIcon {
@@ -152,4 +173,33 @@
 }
 %userModalEmptyText {
 	color: hsla(0, 0%, 100%, .3);
+}
+
+// LIST
+%userModalListScroller {
+	%userModalListRow {
+		position: relative;
+		color: hsla(0, 0%, 100%, .5);
+		transition: all .15s ease-in-out;
+		z-index: 1;
+		&:after {
+			content: "";
+			position: absolute;
+			@include stretch;
+			background: linear-gradient(to right, transparent ,hsla(0, 0%, 100%, .04) 10%, hsla(0, 0%, 100%, .04) 90%, transparent);
+			opacity: 0;
+			transition: inherit;
+			z-index: -1;
+		}
+		&:hover {
+			background: transparent;
+			color: hsla(0, 0%, 100%, .7);
+			&:after {
+				opacity: 1;
+			}
+		}
+		&:active {
+			transform: scale(.97);
+		}
+	}
 }
