@@ -991,6 +991,9 @@
 .activityIconForeground-3VIgI8 {
 	@extend %privateChannelActivityIconForeground !optional;
 }
+.mobileIndicator-3gyhuE {
+	@extend %privateChannelMobileIndicator !optional;
+}
 .close-3hZ5Ni {
 	@extend %privateChannelClose !optional;
 }
@@ -1934,6 +1937,9 @@ pre {
 }
 .activityIconForeground-qYIPPg {
 	@extend %memberActivityIconForeground !optional;
+}
+.mobileIndicator-329Gd6 {
+	@extend %memberMobileIndicator !optional;
 }
 .placeholderAvatar-uzH8f6 {
 	@extend %memberPlaceholderAvatar !optional;
@@ -3339,6 +3345,9 @@ pre {
 .activityUserPopout-2yItg2 {
 	@extend %userPopoutActivity !optional;
 }
+.mobileIndicator-29f8Xh {
+	@extend %userPopoutMobileIndicator !optional;
+}
 // 17.2) Body
 .body-3iLsc4 {
 	@extend %userPopoutBody !optional;
@@ -3361,6 +3370,9 @@ pre {
 }
 .pro-1T8RK7 {
 	@extend %userPopoutPro !optional;
+}
+.tip-2ab612 {
+	@extend %userPopoutTip !optional;
 }
 
 // 18) ACTIVITY
