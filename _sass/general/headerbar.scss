@@ -11,6 +11,18 @@
 }
 
 // TOOLBAR
+%toolbar {
+	%toolbarDivider {
+		background-color: hsla(0, 0%, 100%, .1);
+	}
+	%toolbarIconBadge {
+		margin: 2px;
+		background-color: $main-color;
+		border: none;
+		color: $main-color;
+		box-shadow: 0 0 3px, 0 0 5px;
+	}
+}
 %toolbarIconMargin {
 	height: 28px;
 	margin: 0 1px;
@@ -19,25 +31,79 @@
 	padding: 2px 3px;
 	box-sizing: content-box;
 	border-radius: 3px;
-	opacity: 1 !important;
-	transition: all .3s ease-in-out;
+	opacity: .5;
+	transition: all .15s ease-in-out, background-color .3s ease-in-out;
 	%toolbarIconForeground {
-		opacity: .5;
-		transition: all .15s ease-in-out;
+		opacity: 1 !important;
 	}
 	&%toolbarIconActive,
 	&%toolbarIconPopoutOpen {
-		background-color: hsla(0, 0%, 100%, .1);
-		%toolbarIconForeground {
-			opacity: .7;
-		}
+		background-color: hsla(0, 0%, 100%, .1) !important;
+		opacity: .7;
 	}
 	&:hover {
-		%toolbarIconForeground {
-			opacity: 1;
+		opacity: 1;
+	}
+	&[name=NotificationBell],
+	&[name=NotificationBellOff],
+	&[name=Pin],
+	&[name=People],
+	&[name=Mention],
+	&[name=QuestionMark],
+	&[name=Downloading],
+	&[name=Update] {
+		> g,
+		> path {
+			display: none;
 		}
 	}
-}
-%toolbar %toolbarDivider {
-	background-color: hsla(0, 0%, 100%, .1);
+	&[name=NotificationBell] {
+		@include bg($img: url(https://clearvision.gitlab.io/icons/notifications.svg), $rep: no-repeat, $pos: center, $size: 24px);
+	}
+	&[name=NotificationBellOff] {
+		@include bg($img: url(https://clearvision.gitlab.io/icons/notifications_off.svg), $rep: no-repeat, $pos: center, $size: 24px);
+	}
+	&[name=Pin] {
+		@include bg($img: url(https://clearvision.gitlab.io/icons/pin.svg), $rep: no-repeat, $pos: center, $size: 24px);
+		+ %toolbarIconBadge {
+			&:after {
+				content: "";
+				position: absolute;
+				@include stretch;
+				background-color: $main-color;
+				-webkit-mask-image: url(https://clearvision.gitlab.io/icons/pin.svg);
+				-webkit-mask-repeat: no-repeat;
+				-webkit-mask-position: center;
+				-webkit-mask-size: 24px;
+				mask-image: url(https://clearvision.gitlab.io/icons/pin.svg);
+				mask-repeat: no-repeat;
+				mask-position: center;
+				mask-size: 24px;
+			}
+			top: 0;
+			left: 0;
+			width: 30px;
+			height: 28px;
+			margin: 0;
+			background-color: transparent;
+			box-shadow: none;
+			transform: translateZ(0);
+			filter: drop-shadow(0 0 5px);
+		}
+	}
+	&[name=People] {
+		@include bg($img: url(https://clearvision.gitlab.io/icons/people.svg), $rep: no-repeat, $pos: center, $size: 24px);
+	}
+	&[name=Mention] {
+		@include bg($img: url(https://clearvision.gitlab.io/icons/mail.svg), $rep: no-repeat, $pos: center, $size: 24px);
+	}
+	&[name=QuestionMark] {
+		@include bg($img: url(https://clearvision.gitlab.io/icons/help.svg), $rep: no-repeat, $pos: center, $size: 24px);
+	}
+	&[name=Downloading] {
+		@include bg($img: url(https://clearvision.gitlab.io/icons/cloud_download.svg), $rep: no-repeat, $pos: center, $size: 24px);	
+	}
+	&[name=Update] {
+		@include bg($img: url(https://clearvision.gitlab.io/icons/cloud_sync.svg), $rep: no-repeat, $pos: center, $size: 24px);
+	}
 }
