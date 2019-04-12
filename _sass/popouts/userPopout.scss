@@ -3,7 +3,8 @@
 	position: relative;
 	border-radius: 5px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, .5);
-	animation: cv-menu-pop .15s cubic-bezier(.2, .6, .5, 1.1);
+	animation: cv-menu-slide .2s cubic-bezier(.2, .6, .5, 1.1);
+	transform-origin: 0 50%;
 	&:before {
 		content: "";
 		position: absolute;
@@ -14,6 +15,7 @@
 		z-index: -1;
 	}
 	%popoutLeft > & {
+		transform-origin: 100% 50%;
 		&:before {
 			left: -100%;
 			right: 100%;
@@ -36,6 +38,9 @@
 	}
 	%userPopoutActivity {
 		background-color: rgba(0, 0, 0, .04);
+	}
+	%userPopoutMobileIndicator {
+		color: hsla(0, 0%, 100%, .4);
 	}
 
 	// USER POPOUT BODY
@@ -81,5 +86,9 @@
 			background: rgba(0, 0, 0, .5);
 			border-color: $main-color;
 		}
+	}
+	%userPopoutTip {
+		color: hsla(0, 0%, 100%, .5);
+		opacity: 1;
 	}
 }
