@@ -1,6 +1,11 @@
 // MEMBERS
+%membersWrap {
+	min-width: auto;
+	flex-basis: $members-width;
+}
 %membersScrollerWrap > %members {
 	background: rgba(0, 0, 0, .6);
+	max-width: $members-width;
 }
 %members {
 	> %membersGroup {

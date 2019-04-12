@@ -23,6 +23,8 @@ $offline-color: var(--offline-color);
 $streaming-color: var(--streaming-color);
 
 // GENERAL SETTINGS
+$channels-width: var(--channels-width);
+$members-width: var(--members-width);
 $avatar-roundness: var(--avatar-roundness);
 
 // BACKGROUND SETTINGS
@@ -128,6 +130,8 @@ $discord-blurple: #7289da;
 	--dnd-color: #982929;
 	--offline-color: #808080;
 	--streaming-color: #593695;
+	--channels-width: 220px;
+	--members-width: 240px;
 	--avatar-roundness: 50%;
 	--background-overlay: #{rgba(0, 0, 0, .6)};
 	--background-image: url(https://clearvision.gitlab.io/images/sapphire.jpg);
