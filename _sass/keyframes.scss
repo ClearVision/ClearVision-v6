@@ -72,6 +72,27 @@
 		background-color: transparent;
 	}
 }
+@keyframes cv-update-spin {
+	from {
+		transform: rotateZ(0) scaleX(-1);
+	}
+	to {
+		transform: rotateZ(360deg) scaleX(-1);
+	}
+}
+@keyframes cv-update-downloading {
+	0% {
+		background-size: 24px, 10px 0;
+	}
+	50% {
+		background-position: center, 50% 10px;
+		background-size: 24px, 10px 10px;
+	}
+	100% {
+		background-position: center, 50% 20px;
+		background-size: 24px, 10px 0;
+	}
+}
 @keyframes cv-spin {
 	from {
 		transform: rotateZ(0);
