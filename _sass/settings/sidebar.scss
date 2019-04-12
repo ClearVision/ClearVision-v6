@@ -1,7 +1,7 @@
 // SETTINGS SIDEBAR
 %standardSidebarView {
-	@include clear;
 	%settingsSidebarRegion {
+		background: transparent;
 		%settingsSidebar {
 			height: 100%;
 			padding: 0px 6px 0px 20px;
@@ -9,7 +9,6 @@
 	}
 }
 %settingsSidebarRegion {
-	@include clear;
 	%scroller {
 		margin: 30px 8px 30px 0;
 		mask-image: linear-gradient(to bottom, transparent, #000 5%, #000 95%, transparent);
@@ -27,20 +26,20 @@
 		height: unset;
 		padding: 8px 0 8px 20px;
 		margin: 0;
-		background-color: transparent;
+		background: transparent;
 		color: hsla(0, 0%, 100%, .3);
 		transition: all .15s ease-in-out;
 		cursor: pointer;
 		backface-visibility: hidden;
 		&:hover {
-			background-color: hsla(0, 0%, 100%, .07);
+			background: hsla(0, 0%, 100%, .07);
 			color: hsla(0, 0%, 100%, .7);
 			&:before {
 				opacity: .7;
 			}
 		}
 		&%tabBarItemSelected {
-			background-color: $main-color;
+			background: $main-color;
 			color: #fff;
 			&:before {
 				opacity: 1;
@@ -48,7 +47,7 @@
 		}
 	}
 	%tabBarSeparator {
-		background-color: hsla(0, 0%, 100%, .07);
+		background: hsla(0, 0%, 100%, .07);
 	}
 }
 %settingsSidebar {
@@ -58,19 +57,19 @@
 			transition: inherit;
 		}
 		&[style*="color: rgb(114, 137, 218)"] {
-			@include clear;
+			background: transparent !important;
 			color: hsla(0, 0%, 100%, .3) !important;
 			&:hover {
-				background-color: hsla(0, 0%, 100%, .07) !important;
+				background: hsla(0, 0%, 100%, .07) !important;
 				color: hsla(0, 0%, 100%, .7) !important;
 			}
 			&%tabBarItemSelected {
-				background-color: $main-color !important;
+				background: $main-color !important;
 				color: #fff !important;
 			}
 		}
 		&[style*="color: rgb(240, 71, 71)"] {
-			@include clear;
+			background: transparent !important;
 			color: hsla(0, 0%, 100%, .5) !important;
 			&:before {
 				opacity: .5;
@@ -79,7 +78,7 @@
 				content: "";
 				position: absolute;
 				@include stretch;
-				background-color: $danger-color;
+				background: $danger-color;
 				opacity: .5;
 				transition: inherit;
 				z-index: -1;

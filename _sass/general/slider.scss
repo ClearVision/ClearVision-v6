@@ -1,14 +1,14 @@
 // SLIDER
 %slider {
     %sliderBar {
-        background-color: hsla(0, 0%, 100%, .04);
+        background: hsla(0, 0%, 100%, .04);
         transition: all .15s ease-in-out;
     }
     %sliderBarFill {
-        background-color: $main-color;
+        background: $main-color;
     }
     %sliderGrabber {
-        background-color: #fff;
+        background: #fff;
         border: none;
         border-radius: 5px;
         box-shadow: 0 0 1px 1px rgba(0, 0, 0, .3);

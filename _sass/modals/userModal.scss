@@ -117,7 +117,7 @@
 			content: "";
 			position: absolute;
 			@include pos(100%, 0, 0, 0);
-			background-color: rgba(0, 0, 0, .25);
+			background: rgba(0, 0, 0, .25);
 			border-radius: 3px 3px 0 0;
 			transition: all .3s ease-in-out;
 			z-index: -1;
@@ -149,7 +149,7 @@
 %userModal {
 	> %userModalBody {
 		height: 306px;
-		background-color: rgba(0, 0, 0, .7);
+		background: rgba(0, 0, 0, .7);
 	}
 }
 %userModalBody {
@@ -162,10 +162,10 @@
 		}
 		> %userModalNote {
 			> textarea {
-				background-color: transparent;
+				background: transparent;
 				color: hsla(0, 0%, 100%, .8);
 				&:focus {
-					background-color: transparent;
+					background: transparent;
 				}
 				&::-webkit-input-placeholder {	
 					color: hsla(0, 0%, 100%, .5);
@@ -177,12 +177,12 @@
 %userModalConnectedAccounts {
 	> %userModalConnectedAccount {
 		position: relative;
-		background-color: hsla(0, 0%, 100%, .04);
+		background: hsla(0, 0%, 100%, .04);
 		border-color: transparent;
 		border-radius: 5px;
 		transition: all .15s ease-in-out;
 		&:hover {
-			background-color: hsla(0, 0%, 100%, .07);
+			background: hsla(0, 0%, 100%, .07);
 			%userModalConnectedAccountOpenIcon {
 				opacity: .7;
 			}

@@ -1,6 +1,6 @@
 // DROP DOWN MENU
 %popout > %dropdown {
-    background-color: rgba(0, 0, 0, .7);
+    background: rgba(0, 0, 0, .7);
     > %dropdownItem {
         color: hsla(0, 0%, 100%, .7);
         transition: all .15s ease-in-out;
@@ -10,7 +10,7 @@
             transition: all .15s ease-in-out;
         }
         &:hover {
-            background-color: $main-color;
+            background: $main-color;
             color: #fff;
             > %dropdownIcon {
                 opacity: .7;

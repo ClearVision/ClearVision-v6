@@ -5,7 +5,7 @@
 	margin: 0;
 	padding-top: 2px;
 	padding-bottom: 2px;
-	background-color: rgba(0, 0, 0, .6);
+	background: rgba(0, 0, 0, .6);
 	box-shadow: 0 0 20px rgba(0, 0, 0, .6);
 	> %titlebarWordmark {
 		position: static;
@@ -47,12 +47,12 @@
 		top: -2px;
 		opacity: 1 !important;
 		&:hover {
-			background-color: hsla(0, 0%, 100%, .1);
+			background: hsla(0, 0%, 100%, .1);
 		}
 	}
 	> %titlebarWinButtonClose {
 		&:hover {
-			background-color: $danger-color;
+			background: $danger-color;
 		}
 	}
 }
@@ -63,7 +63,7 @@
 	height: 48px;
 	&%titlebarUnfocused {
 		%titlebarMacButton {
-			background-color: hsla(0, 0%, 100%, .7);
+			background: hsla(0, 0%, 100%, .7);
 		}
 	}
 	> %titlebarMacButtons {

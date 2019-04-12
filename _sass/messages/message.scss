@@ -1,8 +1,8 @@
 // MESSAGE
 %messages %messageGroup {
-	transition: background-color .3s ease-in-out;
+	transition: background .3s ease-in-out;
 	&:active {
-		background-color: hsla(0, 0%, 100%, .1);
+		background: hsla(0, 0%, 100%, .1);
 		transition-delay: .3s;
 	}
 }
@@ -53,7 +53,7 @@
 
 	// MENTIONED
 	%mentioned {
-		background-color: hsla(0, 0%, 100%, .1);
+		background: hsla(0, 0%, 100%, .1);
 		&:after {
 			background: hsla(0, 0%, 100%, .1);
 			border-left: 4px solid $main-color;

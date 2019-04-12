@@ -10,7 +10,7 @@
 				content: "";
 				position: absolute;
 				@include stretch;
-				background-color: transparent;
+				background: transparent;
 				border-radius: 3px;
 				transition: all .15s ease-in-out;
 				z-index: -1;
@@ -19,7 +19,7 @@
 				content: "";
 				position: absolute;
 				@include pos(0, 100%, 0, 0);
-				background-color: $main-color;
+				background: $main-color;
 				border-radius: 3px;
 				transition: all .3s ease-in-out;
 				z-index: -1;
@@ -54,9 +54,9 @@
 		// HOVER
 		&:hover {
 			> a {
-				background-color: transparent;
+				background: transparent;
 				&:before {
-					background-color: hsla(0, 0%, 100%, .1);
+					background: hsla(0, 0%, 100%, .1);
 				}
 			}
 			%privateChannelName,
@@ -84,9 +84,9 @@
 		// SELECTED
 		&%privateChannelSelected {
 			> a {
-				background-color: transparent;
+				background: transparent;
 				&:before {
-					background-color: hsla(0, 0%, 100%, .1);
+					background: hsla(0, 0%, 100%, .1);
 				}
 				&:after {
 					right: 0;
@@ -116,10 +116,10 @@
 	margin-bottom: 0;
 	box-shadow: 0 2px 10px rgba(0, 0, 0, .3);
 	%privateChannelsSearchBarComponent {
-		@include clear;
+		background: transparent;
 	}
 	%privateChannelsSearchBarInner {
-		background-color: hsla(0, 0%, 100%, .1);
+		background: hsla(0, 0%, 100%, .1);
 		border-color: transparent;
 		padding-top: 0;
 		padding-bottom: 0;

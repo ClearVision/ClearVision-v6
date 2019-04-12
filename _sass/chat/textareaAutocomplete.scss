@@ -1,7 +1,7 @@
 // CHANNEL TEXTAREA AUTOCOMPLETE
 %chat {
 	%autocomplete {
-		background-color: rgba(0, 0, 0, .8);
+		background: rgba(0, 0, 0, .8);
 		%autocompleteTitle {
 			color: hsla(0, 0%, 100%, .5);
 		}
@@ -19,7 +19,7 @@
 			color: hsla(0, 0%, 100%, .15);
 		}
 		%autocompleteSelectorSelected {
-			background-color: $main-color;
+			background: $main-color;
 			> %autocompleteContent {
 				color: #fff;
 			}
@@ -34,5 +34,5 @@
 				color: hsla(0, 0%, 100%, .25);
 			}
 		}
-    }
+	}
 }

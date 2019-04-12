@@ -1,6 +1,6 @@
 // INVITE LINK
 %messageGroup %inviteWrapper {
-    background-color: rgba(0, 0, 0, .4);
+    background: rgba(0, 0, 0, .4);
     border-color: transparent;
     %inviteTitle {
         color: hsla(0, 0%, 100%, .5);
@@ -15,7 +15,7 @@
     %inviteGuildIconExpired {
         position: relative;
         background-size: 0;
-        background-color: hsla(0, 0%, 100%, .04);
+        background: hsla(0, 0%, 100%, .04);
         &:before,
         &:after {
             content: "";
@@ -24,7 +24,7 @@
             bottom: 10%;
             left: 50%;
             width: 6px;
-            background-color: $danger-color;
+            background: $danger-color;
             border-radius: 1px;
         }
         &:after {
@@ -40,34 +40,34 @@
         color: hsla(0, 0%, 100%, .3);
     }
     %inviteStatusOnline {
-        background-color: $online-color;
+        background: $online-color;
     }
     %inviteStatusOffline {
-        background-color: $offline-color;
+        background: $offline-color;
     }
     %inviteButton{
         border-color: transparent;
     }
     %inviteButtonAccept {
-        background-color: transparent;
+        background: transparent;
         border: 1px solid $success-color;
         transition: all .3s ease-in-out;
         &:hover {
-            background-color: $success-color;
+            background: $success-color;
         }
     }
     %inviteButtonJoined {
-        background-color: hsla(0, 0%, 100%, .1);
+        background: hsla(0, 0%, 100%, .1);
         border-color: transparent;
         opacity: .3;
         cursor: default;
     }
     %inviteButtonExpired {
-        background-color: transparent;
+        background: transparent;
         border: 1px solid $danger-color;
         transition: all .3s ease-in-out;
         &:hover {
-            background-color: $danger-color;
+            background: $danger-color;
         }
     }
 }

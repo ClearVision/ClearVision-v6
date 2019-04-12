@@ -1,6 +1,6 @@
 // SPOTIFY INVITE
 %message %spotifyInvite {
-    background-color: rgba(0, 0, 0, .3);
+    background: rgba(0, 0, 0, .3);
     border: none;
 }
 %spotifyInvite {
@@ -12,7 +12,7 @@
     }
     %spotifyInviteHelpIcon {
         display: flex;
-        background-color: hsla(0, 0%, 100%, .07);
+        background: hsla(0, 0%, 100%, .07);
         transition: all .15s ease-in-out;
         opacity: 0;
     }

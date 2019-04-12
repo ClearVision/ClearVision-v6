@@ -3,7 +3,7 @@
     
     // INLINE CODE
     code%codeInline {
-        background-color: hsla(0, 0%, 100%, .1);
+        background: hsla(0, 0%, 100%, .1);
         color: hsla(0, 0%, 100%, .7);
         padding: 3.5px 7.5px;
         border-radius: 3px;
@@ -25,7 +25,7 @@
     %codePre > %codeHLJS {
         position: relative;
         padding: 6px;
-        background-color: rgba(0, 0, 0, .42);
+        background: rgba(0, 0, 0, .42);
         color: hsla(0, 0%, 100%, .7);
         border-radius: 5px;
         &:before {

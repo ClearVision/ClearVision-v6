@@ -16,15 +16,15 @@
         %channelNoticeMessage {
             color: hsla(0, 0%, 100%, .7);
             %channelNoticeMessageButton {
-                background-color: hsla(0, 0%, 100%, .1);
+                background: hsla(0, 0%, 100%, .1);
                 border: 1px solid transparent;
                 color: hsla(0, 0%, 100%, .7);
                 transition: all .15s ease-in-out;
                 &:hover {
-                    background-color: hsla(0, 0%, 100%, .2);
+                    background: hsla(0, 0%, 100%, .2);
                     color: #fff;
                 }
-            }     
+            }
         }
     }
 }

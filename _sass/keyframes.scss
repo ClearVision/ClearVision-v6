@@ -27,10 +27,10 @@
 }
 @keyframes cv-pulsate-plus {
 	0%, 100% {
-		background-color: #333539;
+		background: #333539;
 	}
 	50% {
-		background-color: currentColor;
+		background: currentColor;
 	}
 }
 @keyframes cv-pulsate-svg {
@@ -43,10 +43,10 @@
 }
 @keyframes cv-badge {
 	from {
-		background-color: $main-color;
+		background: $main-color;
 	}
 	to {
-		background-color: $hover-color;
+		background: $hover-color;
 	}
 }
 @keyframes cv-category-fix {
@@ -66,10 +66,10 @@
 }
 @keyframes cv-message-jump {
 	from {
-		background-color: hsla(0, 0%, 100%, .3);
+		background: hsla(0, 0%, 100%, .3);
 	}
 	to {
-		background-color: transparent;
+		background: transparent;
 	}
 }
 @keyframes cv-update-spin {

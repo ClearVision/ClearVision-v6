@@ -3,41 +3,41 @@
     border-radius: 3px;
     color: hsla(0, 0%, 100%, .7);
     &%noticeDefault {
-        background-color: rgba(#f26522, .6);
+        background: rgba(#f26522, .6);
     }
     &%noticePremium {
-        background-color: rgba(#202225, .6);
+        background: rgba(#202225, .6);
     }
     &%noticeInfo {
-        background-color: rgba(#4a90e2, .6);
+        background: rgba(#4a90e2, .6);
     }
     &%noticeSuccess {
-        background-color: rgba(#43b581, .6);
+        background: rgba(#43b581, .6);
     }
     &%noticeDanger {
-        background-color: rgba(#f04747, .6);
+        background: rgba(#f04747, .6);
     }
     &%noticeStreamerMode {
-        background-color: rgba($twitch-purple, .6);
+        background: rgba($twitch-purple, .6);
     }
     &%noticeFacebook {
-        background-color: rgba($facebook-blue, .6);
+        background: rgba($facebook-blue, .6);
     }
     &%noticeSpotify {
-        background-color: rgba($spotify-green, .6);
+        background: rgba($spotify-green, .6);
     }
     &%noticeBrand {
-        background-color: rgba($discord-blurple, .6);
+        background: rgba($discord-blurple, .6);
     }
     %noticeButton {
-        background-color: hsla(0, 0%, 100%, .1);
+        background: hsla(0, 0%, 100%, .1);
         border: 1px solid transparent;
         color: #fff;
         transition: all .15s ease-in-out;
         mix-blend-mode: screen;
         transform: translateZ(0);
         &:hover {
-            background-color: #fff;
+            background: #fff;
             color: #000;
         }
     }

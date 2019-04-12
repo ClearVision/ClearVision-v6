@@ -14,9 +14,7 @@
 		background-color: $hover-color !important;
 	}
 }
-::-webkit-scrollbar-track {
-	@include clear;
-}
+::-webkit-scrollbar-track,
 ::-webkit-scrollbar-track-piece {
 	background-color: transparent !important;
 }

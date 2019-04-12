@@ -1,4 +1,6 @@
 // SETTINGS CONTENT
-%settingsContentRegion {
-	@include clear;
+%standardSidebarView {
+	> %settingsContentRegion {
+		background: transparent;
+	}
 }

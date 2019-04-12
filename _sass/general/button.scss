@@ -8,29 +8,29 @@
 %buttonFilledGreen,
 %buttonFilledBrand,
 %buttonFilledPrimary {
-	background-color: $main-color;
+	background: $main-color;
 	&:hover {
-		background-color: $hover-color;
+		background: $hover-color;
 	}
 	&:disabled {
-		background-color: $main-color;
+		background: $main-color;
 	}
 }
 %buttonFilledWhite,
 %buttonFilledGrey {
-	background-color: hsla(0, 0%, 100%, .1);
+	background: hsla(0, 0%, 100%, .1);
 	> %buttonContents {
 		color: hsla(0, 0%, 100%, .7);
 		transition: inherit;
 	}
 	&:hover {
-		background-color: hsla(0, 0%, 100%, .2) !important;
+		background: hsla(0, 0%, 100%, .2) !important;
 		> %buttonContents {
 			color: #fff;
 		}
 	}
 	&:disabled {
-		background-color: hsla(0, 0%, 100%, .1) !important;
+		background: hsla(0, 0%, 100%, .1) !important;
 		> %buttonContents {
 			color: hsla(0, 0%, 100%, .5);
 		}
@@ -41,10 +41,10 @@
 %buttonInverted,
 %buttonInvertedBrand,
 %buttonInvertedGreen {
-	background-color: hsla(0, 0%, 100%, .1);
+	background: hsla(0, 0%, 100%, .1);
 	color: hsla(0, 0%, 100%, .7);
 	&:hover {
-		background-color: hsla(0, 0%, 100%, .2);
+		background: hsla(0, 0%, 100%, .2);
 		color: #fff;
 	}
 }
@@ -53,11 +53,11 @@
 %appMount {
 	%buttonOutlinedWhite,
 	%buttonOutlinedPrimary {
-		background-color: hsla(0, 0%, 100%, .05);
+		background: hsla(0, 0%, 100%, .05);
 		border-color: transparent;
 		color: hsla(0, 0%, 100%, .7);
 		&:hover {
-			background-color: hsla(0, 0%, 100%, .1);
+			background: hsla(0, 0%, 100%, .1);
 			border-color: transparent;
 			color: #fff;
 		}

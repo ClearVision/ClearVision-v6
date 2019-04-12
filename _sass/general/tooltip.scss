@@ -8,7 +8,7 @@
 	z-index: 3002;
 	&%tooltipBlack,
 	&%tooltipRed {
-		background-color: $main-color;
+		background: $main-color;
 		color: #fff;
 		@each $e in Top, Right, Bottom, Left {
 			&%tooltip#{$e} {

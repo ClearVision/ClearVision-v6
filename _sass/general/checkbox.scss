@@ -3,12 +3,12 @@
 	%checkboxInner {
 		width: 35px;
 		height: 18px;
-		background-color: hsla(0, 0%, 100%, .04);
+		background: hsla(0, 0%, 100%, .04);
 		border-radius: 10px;
 		left: 0;
 		> span {
 			width: 0;
-			background-color: transparent;
+			background: transparent;
 			border: none;
 			border-radius: 10px;
 			transition: all .2s ease-in-out;
@@ -20,7 +20,7 @@
 				width: 18px !important;
 				height: 18px !important;
 				margin: 0;
-				background-color: #fff;
+				background: #fff;
 				border: none !important;
 				border-radius: 50%;
 				box-shadow: 0 0 1px 1px rgba(0, 0, 0, .3);
@@ -31,7 +31,7 @@
 		%checkboxElement:checked {
 			+ span {
 				width: 100%;
-				background-color: $main-color;
+				background: $main-color;
 				&:after {
 					margin-left: 17px;
 				}

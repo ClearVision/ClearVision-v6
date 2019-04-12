@@ -69,8 +69,8 @@
     }
 }
 %fileProgress {
-    background-color: hsla(0, 0%, 100%, .04) !important;
+    background: hsla(0, 0%, 100%, .04) !important;
 }
 %fileProgressBar {
-    background-color: $main-color !important;
+    background: $main-color !important;
 }

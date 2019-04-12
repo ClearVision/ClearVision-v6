@@ -1,7 +1,7 @@
 // HEADER BAR
 %base %headerBar {
 	height: 48px;
-	background-color: rgba(0, 0, 0, .6);
+	background: rgba(0, 0, 0, .6);
 	box-shadow: 0 0 10px rgba(0, 0, 0, .6);
 }
 %headerBar {
@@ -13,11 +13,11 @@
 // TOOLBAR
 %toolbar {
 	%toolbarDivider {
-		background-color: hsla(0, 0%, 100%, .1);
+		background: hsla(0, 0%, 100%, .1);
 	}
 	%toolbarIconBadge {
 		margin: 2px;
-		background-color: $main-color;
+		background: $main-color;
 		border: none;
 		color: $main-color;
 		box-shadow: 0 0 3px, 0 0 5px;
@@ -70,7 +70,7 @@
 				content: "";
 				position: absolute;
 				@include stretch;
-				background-color: $main-color;
+				background: $main-color;
 				-webkit-mask-image: url(https://clearvision.gitlab.io/icons/pin.svg);
 				-webkit-mask-repeat: no-repeat;
 				-webkit-mask-position: center;
@@ -85,7 +85,7 @@
 			width: 30px;
 			height: 28px;
 			margin: 0;
-			background-color: transparent;
+			background: transparent;
 			box-shadow: none;
 			transform: translateZ(0);
 			filter: drop-shadow(0 0 5px);

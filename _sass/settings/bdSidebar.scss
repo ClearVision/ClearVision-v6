@@ -15,14 +15,14 @@
 				transition: all .15s ease-in-out;
 			}
 		&:hover {
-			background-color: hsla(0, 0%, 100%, .07);
+			background: hsla(0, 0%, 100%, .07);
 			color: hsla(0, 0%, 100%, .7);
 			&:before {
 				opacity: .7;
 			}
 		}
 		&%bdSettingsSidebarItemSelected {
-			background-color: $main-color;
+			background: $main-color;
 			color: #fff;
 			&:before {
 				opacity: 1;
@@ -30,7 +30,7 @@
 		}
 	}
 	%bdSettingsSidebarSeparator {
-		background-color: hsla(0, 0%, 100%, .07);
+		background: hsla(0, 0%, 100%, .07);
 	}
 	div[style] {
 		color: hsla(0, 0%, 100%, .3) !important;

@@ -94,7 +94,7 @@
 
 		// FRIENDS COUNT
 		%friendsOnline {
-			@include clear;
+			background: transparent;
 			color: hsla(0, 0%, 100%, .7);
 			text-transform: uppercase;
 			border-radius: 25px;

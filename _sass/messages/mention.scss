@@ -12,10 +12,10 @@
 		cursor: pointer;
 	}
 	%mention {
-		background-color: hsla(0, 0%, 100%, .04);
+		background: hsla(0, 0%, 100%, .04);
 		color: hsla(0, 0%, 100%, .7);
 		&:hover {
-			background-color: $main-color;
+			background: $main-color;
 			color: #fff;
 		}
 	}
@@ -28,7 +28,7 @@
 }
 %mentioned %markup %roleMention {
 	padding: 0;
-	@include clear;
+	background: transparent !important;
 	color: $main-color;
 	@include hover-shadow;
 	&:hover {

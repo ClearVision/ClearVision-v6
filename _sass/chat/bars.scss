@@ -1,12 +1,12 @@
 // NEW MESSAGES BAR 
 %newMessagesBar {
-	@include clear;
+	background: transparent;
 	transition: all .15s ease-in-out;
 	&:before {
 		content: "";
 		position: absolute;
 		@include stretch;
-		background-color: $main-color;
+		background: $main-color;
 		border-radius: 0 0 3px 3px;
 		opacity: .8;
 		z-index: -1;
@@ -32,7 +32,7 @@
 %messagesWrapper {
 	%jumpToPresentBar {
 		margin-bottom: 5px;
-		background-color: rgba(0, 0, 0, .7);
+		background: rgba(0, 0, 0, .7);
 		border-radius: 3px;
 		transition: all .15s ease-in-out;
 		> button {
@@ -40,7 +40,7 @@
 			transition: inherit;
 		}
 		&:hover {
-			background-color: $main-color;
+			background: $main-color;
 			> button {
 				color: #fff;
 			}
@@ -55,13 +55,13 @@
 %messages {
 	%hasMore {
 		> button {
-			background-color: hsla(0, 0%, 100%, .07);
+			background: hsla(0, 0%, 100%, .07);
 			border: none;
 			border-radius: 3px;
 			color: hsla(0, 0%, 100%, .7);
 			transition: all .15s ease-in-out;
 			&:hover {
-				background-color: $main-color;
+				background: $main-color;
 				color: #fff;
 			}
 			&:active {

@@ -2,12 +2,12 @@
 %channelsUnreadIndicator,
 %channelsMentionIndicator {
 	position: relative;
-	@include clear;
+	background: transparent;
 	&:after {
 		content: "";
 		position: absolute;
 		@include stretch;
-		background-color: $main-color;
+		background: $main-color;
 		border-radius: 3px;
 		opacity: .9;
 		z-index: -1;

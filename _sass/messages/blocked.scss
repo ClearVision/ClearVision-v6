@@ -1,7 +1,7 @@
 // BLOCKED MESSAGE
 %messageGroupBlocked {
 	position: relative;
-	background-color: rgba(0, 0, 0, .1) !important;
+	background: rgba(0, 0, 0, .1) !important;
 	border: none;
 	border-radius: 0;
 	transition: all .15s ease-in-out;
@@ -9,7 +9,7 @@
 		box-shadow: none !important;
 	}
 	%messageGroupBlockedButton {
-		@include clear;
+		background: transparent !important;
 		color: hsla(0, 0%, 100%, .3) !important;
 		transition: all .15s ease-in-out;
 		&:after {

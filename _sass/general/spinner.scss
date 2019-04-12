@@ -2,7 +2,7 @@
 %spinnerWanderingCubesItem {
 	width: 100%;
 	height: 100%;
-	background-color: transparent;
+	background: transparent;
 	animation: cv-spinner-glow 3s ease-in-out infinite alternate;
 	filter: drop-shadow(0 0 3px $main-color);
 	&:before,
@@ -39,7 +39,7 @@
 	}
 }
 %spinnerPulsingEllipsisItem {
-	background-color: #fff;
+	background: #fff;
 	border-radius: 50%;
 	transform: scale(.7);
 	animation: cv-spinner-pulse 1s ease-in-out infinite alternate;

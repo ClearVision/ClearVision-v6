@@ -6,7 +6,7 @@
         content: "";
         position: absolute;
         @include stretch;
-        background-color: hsla(0, 0%, 100%, .07);
+        background: hsla(0, 0%, 100%, .07);
         border-radius: 3px;
         z-index: -1;
     }
@@ -31,7 +31,7 @@
     }
     &%dividerRed {
         &:before {
-            background-color: $main-color;
+            background: $main-color;
             opacity: .8;
         }
         + %divider {
@@ -39,7 +39,6 @@
         }
         > %dividerContent {
             position: relative;
-            @include clear;
             color: hsla(0, 0%, 100%, .8);
         }
     }

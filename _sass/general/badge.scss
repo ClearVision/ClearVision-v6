@@ -1,6 +1,6 @@
 // BADGE
 %badge {
-	background-color: $main-color;
+	background: $main-color;
 	color: #fff;
 	padding: 3px 5px;
     font-weight: 600;
@@ -10,7 +10,7 @@
 %channelContentSelectedText,
 %tabBarItemSelected {
 	%badge {
-		background-color: #fff;
+		background: #fff;
 		color: #000;
 		box-shadow: none;
 		mix-blend-mode: screen;

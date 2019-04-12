@@ -12,7 +12,7 @@
 		}
 	}
 	&:not([style]) {
-		background-color: hsla(0, 0%, 100%, .1);
+		background: hsla(0, 0%, 100%, .1);
 		border-color: transparent;
 	}
 	> %roleCircle {
@@ -27,7 +27,7 @@
 			position: absolute;
 			@include pos(-1px, -1px, -1px, -1px);
 			border-radius: 3px;
-			background-color: inherit;
+			background: inherit;
 			opacity: .15;
 			transition: all .1s ease-in-out;
 			pointer-events: none;
@@ -63,11 +63,11 @@
 	}
 }
 %roleAddButton {
-	background-color: hsla(0, 0%, 100%, .1);
+	background: hsla(0, 0%, 100%, .1);
 	transition: all .1s ease-in-out;
 	cursor: pointer;
 	&:hover {
-		background-color: hsla(0, 0%, 100%, .2);
+		background: hsla(0, 0%, 100%, .2);
 	}
 	> svg {
 		width: 7px;

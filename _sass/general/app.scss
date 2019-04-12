@@ -17,11 +17,16 @@ body {
 %appMount {
 	%layers,
 	%layer {
-		background-color: transparent;
+		background: transparent;
 	}
 }
-%layer > %containerMain {
-	background-color: transparent;
+%layer {
+	> %containerMain {
+		background: transparent;
+	}
+	%standardSidebarView {
+		background: transparent;
+	}
 }
 %base {
 	border-radius: 0;	

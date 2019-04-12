@@ -10,7 +10,7 @@
 	%friendsHeaderBar {
 		%friendsTabBar {
 			%tabBarItem {
-				@include clear;
+				background: transparent !important;
 				color: hsla(0, 0%, 100%, .5) !important;
 				transition: all .3s ease-in-out;
 				&:hover {

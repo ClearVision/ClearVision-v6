@@ -1,18 +1,22 @@
 // TEXTAREA
-%chat {
-	form {
-		@include clear;
-		#charcounter {
-			top: 100%;
-			margin-top: 7.5px;
-			color: hsla(0, 0%, 100%, .7);
+%base {
+	%chat {
+		form {
+			background: transparent;
+			#charcounter {
+				top: 100%;
+				margin-top: 7.5px;
+				color: hsla(0, 0%, 100%, .7);
+			}
 		}
 	}
+}
+%chat {
 	%channelTextarea {
 		border-top: 1px solid hsla(0, 0%, 100%, .07);
 	}
 	%channelTextareaInner {
-		background-color: rgba(0, 0, 0, .4);
+		background: rgba(0, 0, 0, .4);
 		border-radius: 5px;
 		%channelTextareaAttachButton {
 			transform: none;
@@ -54,7 +58,7 @@
 
 	// TYPING
 	%channelTextareaTyping {
-		background-color: transparent;
+		background: transparent;
 		%channelTextareaTypingText {
 			color: hsla(0, 0%, 100%, .5);
 			> strong {
@@ -66,7 +70,7 @@
 
 	// CHANNEL INFO DISPLAY
 	%channelInfo {
-		background-color: hsla(0, 0%, 100%, .07);
+		background: hsla(0, 0%, 100%, .07);
 		border-radius: 5px;
 		color: hsla(0, 0%, 100%, .7);
 	}
