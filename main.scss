@@ -79,11 +79,6 @@ $discord-blurple: #7289da;
 @import "mixins";
 
 // LOCAL MIXINS
-/// Force clear background color
-@mixin clear {
-	background-color: transparent !important;
-}
-
 /// Stretch element
 @mixin stretch {
 	top: 0;
