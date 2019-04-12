@@ -3429,6 +3429,12 @@ pre {
 }
 
 // 20) MODALS
+.modal-3HD5ck {
+	@extend %modal !optional;
+}
+.footer-2yfCgX {
+	@extend %modalFooter !optional;
+}
 // 20.1) User Modal
 .root-SR8cQa {
 	@extend %userModal !optional;

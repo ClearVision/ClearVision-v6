@@ -1,0 +1,13 @@
+// MODAL
+%appMount {
+    %modal {
+        background: rgba(0, 0, 0, .5);
+        box-shadow: none;
+    }
+}
+%modal {
+    %modalFooter {
+        background: transparent;
+        box-shadow: none;
+    }
+}

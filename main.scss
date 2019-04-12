@@ -104,12 +104,12 @@ $discord-blurple: #7289da;
 
 /// Create hover cutout effect
 @mixin hover-cutout {
-	background-color: transparent;
+	background: transparent;
 	color: #fff;
 	mix-blend-mode: screen;
 	transform: translateZ(0);
 	&:hover {
-		background-color: #fff;
+		background: #fff;
 		color: #000;
 	}
 }
@@ -259,6 +259,7 @@ $discord-blurple: #7289da;
 @import "members/roles";
 
 /* MODALS */
+@import "modals/modal";
 @import "modals/userModal";
 @import "modals/keyboardShortcutsModal";
 
