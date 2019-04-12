@@ -18,6 +18,7 @@ sass:
     style: compressed
 
 autoprefixer:
+    only_production: true
     browsers:
         - "last 2 versions"
         - "IE > 9"
