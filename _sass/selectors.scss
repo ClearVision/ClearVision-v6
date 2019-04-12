@@ -3551,6 +3551,27 @@ pre {
 .emptyText-6tYmO5 {
 	@extend %userModalEmptyText !optional;
 }
+.listScroller-2_vlfo {
+	@extend %userModalListScroller !optional;
+}
+.listRow-hutiT_ {
+	@extend %userModalListRow !optional;
+}
+.listAvatar-1NlAhb {
+	@extend %userModalListAvatar !optional;
+}
+.listRowContent-3Kih4Q {
+	@extend %userModalListRowConent !optional;
+}
+.listName-3w10cx {
+	@extend %userModalListName !optional;
+}
+.guildNick-3uAm3i {
+	@extend %userModalListGuildNick !optional;
+}
+.listDiscriminator-253zfw {
+	@extend %userModalListDiscriminator !optional;
+}
 // 20.2) Keyboard Shortcuts Modal
 .keybindShortcut-1BD6Z1 {
 	@extend %keybindShortcut !optional;
