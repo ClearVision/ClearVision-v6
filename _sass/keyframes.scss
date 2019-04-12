@@ -7,6 +7,16 @@
 		opacity: 1;
 	}
 }
+@for $i from 1 to 10 {
+	@keyframes cv-fade-to-#{$i} {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: #{$i / 10};
+		}
+	}
+}
 @keyframes cv-pulsate-border {
 	0%, 100% {
 		border-color: hsla(0, 0%, 100%, .3);
@@ -37,6 +47,21 @@
 	}
 	to {
 		background-color: $hover-color;
+	}
+}
+@keyframes cv-category-fix {
+	from, to {
+		visibility: hidden;
+	}
+}
+@each $d in top, right, bottom, left {
+	@keyframes cv-slide-#{$d} {
+		from {
+			#{$d}: 100%;
+		}
+		to {
+			#{$d}: 0;
+		}
 	}
 }
 @keyframes cv-message-jump {
