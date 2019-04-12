@@ -50,8 +50,8 @@
 	&[name=People],
 	&[name=Mention],
 	&[name=QuestionMark],
-	&[name=Downloading],
-	&[name=Update] {
+	&%toolbarIconUpdateAvailable,
+	&[name=Downloading] {
 		> g,
 		> path {
 			display: none;
@@ -100,10 +100,28 @@
 	&[name=QuestionMark] {
 		@include bg($img: url(https://clearvision.gitlab.io/icons/help.svg), $rep: no-repeat, $pos: center, $size: 24px);
 	}
+	&%toolbarIconUpdateAvailable {
+		@include bg($img: url(https://clearvision.gitlab.io/icons/sync.svg), $rep: no-repeat, $pos: center, $size: 24px);
+		animation: cv-update-spin 2s linear infinite;
+	}
 	&[name=Downloading] {
-		@include bg($img: url(https://clearvision.gitlab.io/icons/cloud_download.svg), $rep: no-repeat, $pos: center, $size: 24px);	
+		position: relative;
+		background: url(https://clearvision.gitlab.io/icons/cloud_download.svg) no-repeat center/24px,
+			linear-gradient(to bottom, $main-color, $main-color) no-repeat 50% 10px/10px 10px;
+		animation: cv-update-downloading 2.5s ease-in-out infinite;
 	}
 	&[name=Update] {
-		@include bg($img: url(https://clearvision.gitlab.io/icons/cloud_sync.svg), $rep: no-repeat, $pos: center, $size: 24px);
+		opacity: 1;
+		filter: drop-shadow(0 0 5px $main-color);
+		> g {	
+			> path {
+				display: none;
+			}
+		}
+		%toolbarIconUpdateForeground {
+			display: inline;
+			fill: $main-color;
+			d: path("M10,17L6.5,13.5L7.91,12.08L10,14.17L15.18,9L16.59,10.41M19.35,10.03C18.67,6.59 15.64,4 12,4C9.11,4 6.6,5.64 5.35,8.03C2.34,8.36 0,10.9 0,14A6,6 0 0,0 6,20H19A5,5 0 0,0 24,15C24,12.36 21.95,10.22 19.35,10.03Z");
+		}
 	}
 }
