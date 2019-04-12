@@ -86,24 +86,86 @@
 		}
 	}
 }
+%statusGreen {
+	color: $main-color;
+}
+
+// TAB BAR
 %messagesPopoutTabBar {
 	> %messagesPopoutTabBarItem {
+		position: relative;
+		margin: 0;
+		padding: 5px 10px 15px;
+		border: none !important;
 		color: hsla(0, 0%, 100%, .5) !important;
-		transition: all .2s ease-in-out;
+		transition: all .15s ease-in-out;
+		+ %messagesPopoutTabBarItem {
+			margin-left: 3px;
+		}
+		&:before {
+			content: "";
+			position: absolute;
+			@include stretch;
+			background: linear-gradient(to top, transparent, rgba(0, 0, 0, .2) 50%);
+			border-radius: 3px 3px 0 0;
+			opacity: 0;
+			transition: all .15s ease-in-out, bottom .3s ease-in-out;
+			z-index: -1;
+		}
+		&:after {
+			content: "";
+			position: absolute;
+			@include pos(100%, 0, 0, 0);
+			background-color: #fff;
+			border-radius: 3px 3px 0 0;
+			transition: top .3s ease-in-out;
+			z-index: -1;
+		}
+		&:hover,
+		&%tabBarItemSelected {
+			&:before {
+				opacity: 1;
+			}
+		}
 		&:hover {
 			color: hsla(0, 0%, 100%, .7) !important;
-			border-color: hsla(0, 0%, 100%, .7) !important;
 		}
 		&%tabBarItemSelected {
-			border-color: #fff !important;
-			color: #fff !important;
+			color: #000 !important;
+			mix-blend-mode: screen;
+			transform: translateZ(0);
+			&:before {
+				bottom: 100%;
+				animation: cv-slide-bottom .3s ease-in-out reverse;
+			}
+			&:after {
+				top: 0;
+				animation: cv-slide-top .3s ease-in-out;
+			}
 		}
 	}
 }
+
+// FILTER
 %recentMentionsFilterPopout {
 	animation: cv-menu-fold .3s cubic-bezier(.2, .6, .5, 1.1);
 	transform-origin: 50% 0;
 }
-%statusGreen {
-	color: $main-color;
+
+// HAS MORE
+%messagesPopoutHasMore {
+	> %messagesPopoutHasMoreButton {
+		background-color: hsla(0, 0%, 100%, .07);
+		border: none;
+		border-radius: 3px;
+		color: hsla(0, 0%, 100%, .7);
+		transition: all .15s ease-in-out;
+		&:hover {
+			background-color: $main-color;
+			color: #fff;
+		}
+		&:active {
+			transform:scale(.99);
+		}
+	}
 }

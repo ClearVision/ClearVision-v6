@@ -1,5 +1,6 @@
 // USER PROFILE MODAl
 %userModal {
+	max-height: 100vh;
 	&:before {
 		content: "";
 		position: absolute;
@@ -8,9 +9,6 @@
 		@include bg($img: map-get($modal, img), $pos: map-get($modal, pos), $size: map-get($modal, size), $attach: fixed);
 		@include filters($modal);
 		z-index: -1;
-	}
-	> %userModalBody {
-		background: rgba(0, 0, 0, .7);
 	}
 	> %userModalTopSection {
 		@include bg($img: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)), $pos: center, $size: cover);
@@ -42,6 +40,11 @@
 			color: hsla(0, 0%, 100%, .7);
 		}
 	}
+}
+%userModalNameTag {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
 }
 
 // PROFILE BADGES
@@ -85,19 +88,59 @@
 
 // TAB BAR
 %userModalTabBarContainer {
+	padding: 0 20px;
 	border-color: hsla(0, 0%, 100%, .04);
 }
 %userModalTabBar {
 	> %tabBarItem {
+		position: relative;
+		margin: 10px 0 0;
+		padding: 0 10px;
+		border: none !important;
 		color: hsla(0, 0%, 100%, .5) !important;
-		transition: all .2s ease-in-out;
+		transition: color .15s ease-in-out;
+		z-index: 1;
+		+ %tabBarItem {
+			margin-left: 20px;
+		}
+		&:before {
+			content: "";
+			position: absolute;
+			@include stretch;
+			background: linear-gradient(to top, transparent, hsla(0, 0%, 100%, .07) 50%);
+			border-radius: 3px 3px 0 0;
+			opacity: 0;
+			transition: all .15s ease-in-out, bottom .3s ease-in-out;
+			z-index: -1;
+		}
+		&:after {
+			content: "";
+			position: absolute;
+			@include pos(100%, 0, 0, 0);
+			background-color: rgba(0, 0, 0, .25);
+			border-radius: 3px 3px 0 0;
+			transition: all .3s ease-in-out;
+			z-index: -1;
+		}
+		&:hover,
+		&%tabBarItemSelected {
+			&:before {
+				opacity: 1;
+			}
+		}
 		&:hover {
 			color: hsla(0, 0%, 100%, .7) !important;
-			border-color: hsla(0, 0%, 100%, .7) !important;
 		}
 		&%tabBarItemSelected {
-			border-color: $main-color !important;
-			color: $main-color !important;
+			color: #fff !important;
+			&:after {
+				top: 0;
+				animation: cv-slide-top .3s ease-in-out;
+			}
+			&:before {
+				bottom: 100%;
+				animation: cv-slide-bottom .3s ease-in-out reverse;
+			}
 		}
 	}
 }
