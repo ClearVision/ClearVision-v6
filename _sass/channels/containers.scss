@@ -130,7 +130,7 @@
                 transition: all .1s ease-in-out;
             }
             &:hover {
-                background: transparent;
+                background-color: transparent;
                 &%accountContainerIconButton,
                 > %accountContainerButtonInner {
                     opacity: .7;
@@ -184,7 +184,7 @@
             opacity: .3;
             &:hover,
             &%connectionContainerButtonPopoutOpen {
-                background: transparent;
+                background-color: transparent;
                 opacity: .7;
             }
         }
