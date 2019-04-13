@@ -150,7 +150,7 @@
             }
             > %accountContainerButtonInner {
                 > svg[name=Gear] {
-                    @include bg($img: url(https://clearvision.gitlab.io/icons/settings.svg), $rep: no-repeat, $pos: center, $size: 18px);
+                    background: url(https://clearvision.gitlab.io/icons/settings.svg) no-repeat center/18px;
                     > path {
                         display: none;
                     }
@@ -189,10 +189,10 @@
             }
         }
         %connectionContainerButtonInfo {
-            @include bg($img: url(https://clearvision.gitlab.io/icons/info.svg), $rep: no-repeat, $pos: center, $size: 18px);
+            background: url(https://clearvision.gitlab.io/icons/info.svg) no-repeat center/18px;
         }
         %connectionContainerButtonDisconnect {
-            @include bg($img: url(https://clearvision.gitlab.io/icons/call_end.svg), $rep: no-repeat, $pos: center, $size: 18px);
+            background: url(https://clearvision.gitlab.io/icons/call_end.svg) no-repeat center/18px;
         }
     }
 }

@@ -4,7 +4,7 @@ body {
 		content: "";
 		position: fixed;
 		@include stretch;
-		@include bg($img: map-get($bg, img), $pos: map-get($bg, pos), $size: map-get($bg, size));
+		background: map-get($bg, img) map-get($bg, pos)/map-get($bg, size);
 		@include filters($bg);
 		z-index: -9999;
 	}

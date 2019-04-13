@@ -6,27 +6,27 @@
 		position: absolute;
 		@include stretch;
 		margin: calc(-2 * #{map-get($modal, blur)});
-		@include bg($img: map-get($modal, img), $pos: map-get($modal, pos), $size: map-get($modal, size), $attach: fixed);
+		background: map-get($modal, img) map-get($modal, pos)/map-get($modal, size) fixed;
 		@include filters($modal);
 		z-index: -1;
 	}
 	> %userModalTopSection {
-		@include bg($img: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)), $pos: center, $size: cover);
+		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)) center/cover;
 	}
 	> %userModalTopSectionStreaming {
-		@include bg($img: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)), $clr: rgba($twitch-purple, .4), $pos: center, $size: cover);
+		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6))center/cover, rgba($twitch-purple, .4);
 	}
 	> %userModalTopSectionSpotify {
-		@include bg($img: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)), $clr: rgba($spotify-green, .4), $pos: center, $size: cover);
+		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)) center/cover, rgba($spotify-green, .4);
 	}
 	> %userModalTopSectionXbox {
-		@include bg($img: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)), $clr: rgba($xbox-green, .4), $pos: center, $size: cover);
+		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)) center/cover, rgba($xbox-green, .4);
 	}
 }
 %userModalAdditionalActionsIcon {
 	width: 24px;
 	height: 24px;
-	@include bg($img: url(https://clearvision.gitlab.io/icons/expand_more.svg), $pos: center, $size: 36px, $repeat: no-repeat);
+	background: url(https://clearvision.gitlab.io/icons/expand_more.svg) center/36px no-repeat;
 	opacity: .3;
 	transition: all .15s ease-in-out;
 	&:hover {
@@ -193,7 +193,7 @@
 	}
 }
 %userModalConnectedAccountVerifiedIcon {
-	@include bg($img: url(https://clearvision.gitlab.io/icons/verified.svg), $pos: center, $size: 18px, $repeat: no-repeat);
+	background: url(https://clearvision.gitlab.io/icons/verified.svg) center/18px no-repeat;
 	opacity: .5;
 	z-index: 1;
 	> g {
@@ -201,7 +201,7 @@
 	}
 }
 %userModalConnectedAccountOpenIcon {
-	@include bg($img: url(https://clearvision.gitlab.io/icons/popout.svg), $pos: center, $size: 18px, $repeat: no-repeat);
+	background: url(https://clearvision.gitlab.io/icons/popout.svg) center/18px no-repeat;
 	opacity: .3;
 	transition: all .15s ease-in-out;
 	&:after {

@@ -81,13 +81,13 @@
 		}
 	}
 	%messageReactionButton {
-		@include bg($img: url(https://clearvision.gitlab.io/icons/emote.svg), $rep: no-repeat, $pos: center, $size: 18px);
+		background: url(https://clearvision.gitlab.io/icons/emote.svg) center/18px no-repeat;
 		&:hover {
 			opacity: .7 !important;
 		}
 	}
 	%messageOptionsButton {
-		@include bg($img: url(https://clearvision.gitlab.io/icons/settings.svg), $rep: no-repeat, $pos: center, $size: 18px);
+		background: url(https://clearvision.gitlab.io/icons/settings.svg) center/18px no-repeat;
 		&:hover,
 		&%messageButtonPopoutOpen {
 			animation: cv-spin 2.5s linear infinite;

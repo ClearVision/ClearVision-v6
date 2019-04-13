@@ -42,7 +42,7 @@
 		}
 		%privateChannelClose {
 			display: block;
-			@include bg($img: url(https://clearvision.gitlab.io/icons/close.svg), $repeat: no-repeat, $pos: center, $size: 18px);
+			background: url(https://clearvision.gitlab.io/icons/close.svg) center/18px no-repeat;
 			opacity: 0;
 			transition: all .15s ease-in-out;
 		}

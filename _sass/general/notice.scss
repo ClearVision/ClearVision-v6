@@ -42,7 +42,7 @@
         }
     }
     %noticeDismiss {
-        @include bg($img: url(https://clearvision.gitlab.io/icons/close.svg), $rep: no-repeat, $size: 18px, $pos: center);
+        background: url(https://clearvision.gitlab.io/icons/close.svg) center/18px no-repeat;
         opacity: .5;
         transition: all .15s ease-in-out;
         &:hover {

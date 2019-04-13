@@ -30,7 +30,7 @@
         content: "";
         width: 36px;
         height: 36px;
-        @include bg($img: url(https://clearvision.gitlab.io/icons/file_music.svg), $rep: no-repeat, $size: 100%, $pos: center);
+        background: url(https://clearvision.gitlab.io/icons/file_music.svg) center/100% no-repeat;
         opacity: .5;
     }
     %playerMetadataSize {

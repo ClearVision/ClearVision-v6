@@ -13,7 +13,7 @@ body {
         position: fixed;
         width: 100vw;
         height: 100vh;
-        @include bg($img: url(https://vignette.wikia.nocookie.net/surrealmemes/images/f/ff/Noggin.png), $rep: no-repeat, $pos: center, $size: contain);
+        background: url(https://vignette.wikia.nocookie.net/surrealmemes/images/f/ff/Noggin.png) center/contain no-repeat;
         z-index: 9999;
         pointer-events: none;
         opacity: 0;

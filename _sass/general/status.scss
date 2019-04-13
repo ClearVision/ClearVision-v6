@@ -45,7 +45,7 @@
 			display: block;
 			width: 100%;
 			height: 100%;
-			@include bg($img: inherit, $rep: no-repeat, $pos: center, $size: inherit);
+			@include bg($img: inherit, $pos: center, $size: inherit, $rep: no-repeat);
 			filter: brightness(0);
 			opacity: .7;
 		}

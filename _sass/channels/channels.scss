@@ -230,7 +230,7 @@
 	// ICONS
 	%channelActionIcon {
 		&[name=Gear] {
-			@include bg($img: url(https://clearvision.gitlab.io/icons/settings.svg), $rep: no-repeat, $pos: center, $size: 18px);
+			background: url(https://clearvision.gitlab.io/icons/settings.svg) no-repeat center/18px;
 			&:hover {
 				animation: cv-spin 2.5s linear infinite;
 			}
@@ -239,7 +239,7 @@
 			}
 		}
 		> svg[name=Invite] {
-			@include bg($img: url(https://clearvision.gitlab.io/icons/person_add.svg), $rep: no-repeat, $pos: center, $size: 18px);
+			background: url(https://clearvision.gitlab.io/icons/person_add.svg) no-repeat center/18px;
 			> path {
 				display: none;
 			}

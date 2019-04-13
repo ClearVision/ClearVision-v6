@@ -10,7 +10,7 @@
 		position: absolute;
 		@include stretch;
 		margin: calc(-2 * #{map-get($popout, blur)});
-		@include bg($img: map-get($popout, img), $pos: map-get($popout, pos), $size: map-get($popout, size), $attach: fixed);
+		background: map-get($popout, img) map-get($popout, pos)/map-get($popout, size) fixed;
 		@include filters($popout);
 		z-index: -1;
 	}
@@ -25,16 +25,16 @@
 
 	// USER POPOUT HEADER
 	%userPopoutHeader {
-		@include bg($img: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .4)), $pos: center, $size: cover);
+		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .4)) center/cover;
 	}
 	%userPopoutHeaderStreaming {
-		@include bg($img: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .4)), $clr: rgba($twitch-purple, .4), $pos: center, $size: cover);
+		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .4)) center/cover, rgba($twitch-purple, .4);
 	}
 	%userPopoutHeaderSpotify {
-		@include bg($img: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .4)), $clr: rgba($spotify-green, .4), $pos: center, $size: cover);
+		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .4)) center/cover, rgba($spotify-green, .4);
 	}
 	%userPopoutHeaderXbox {
-		@include bg($img: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .4)), $clr: rgba($xbox-green, .4), $pos: center, $size: cover);
+		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .4)) center/cover, rgba($xbox-green, .4);
 	}
 	%userPopoutActivity {
 		background: rgba(0, 0, 0, .04);

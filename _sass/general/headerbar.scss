@@ -58,13 +58,13 @@
 		}
 	}
 	&[name=NotificationBell] {
-		@include bg($img: url(https://clearvision.gitlab.io/icons/notifications.svg), $rep: no-repeat, $pos: center, $size: 24px);
+		background: url(https://clearvision.gitlab.io/icons/notifications.svg) center/24px no-repeat;
 	}
 	&[name=NotificationBellOff] {
-		@include bg($img: url(https://clearvision.gitlab.io/icons/notifications_off.svg), $rep: no-repeat, $pos: center, $size: 24px);
+		background: url(https://clearvision.gitlab.io/icons/notifications_off.svg) center/24px no-repeat;
 	}
 	&[name=Pin] {
-		@include bg($img: url(https://clearvision.gitlab.io/icons/pin.svg), $rep: no-repeat, $pos: center, $size: 24px);
+		background: url(https://clearvision.gitlab.io/icons/pin.svg) center/24px no-repeat;
 		+ %toolbarIconBadge {
 			&:after {
 				content: "";
@@ -92,22 +92,22 @@
 		}
 	}
 	&[name=People] {
-		@include bg($img: url(https://clearvision.gitlab.io/icons/people.svg), $rep: no-repeat, $pos: center, $size: 24px);
+		background: url(https://clearvision.gitlab.io/icons/people.svg) center/24px no-repeat;
 	}
 	&[name=Mention] {
-		@include bg($img: url(https://clearvision.gitlab.io/icons/mail.svg), $rep: no-repeat, $pos: center, $size: 24px);
+		background: url(https://clearvision.gitlab.io/icons/mail.svg) center/24px no-repeat;
 	}
 	&[name=QuestionMark] {
-		@include bg($img: url(https://clearvision.gitlab.io/icons/help.svg), $rep: no-repeat, $pos: center, $size: 24px);
+		background: url(https://clearvision.gitlab.io/icons/help.svg) center/24px no-repeat;
 	}
 	&%toolbarIconUpdateAvailable {
-		@include bg($img: url(https://clearvision.gitlab.io/icons/sync.svg), $rep: no-repeat, $pos: center, $size: 24px);
+		background: url(https://clearvision.gitlab.io/icons/sync.svg) center/24px no-repeat;
 		animation: cv-update-spin 2s linear infinite;
 	}
 	&[name=Downloading] {
 		position: relative;
-		background: url(https://clearvision.gitlab.io/icons/cloud_download.svg) no-repeat center/24px,
-			linear-gradient(to bottom, $main-color, $main-color) no-repeat 50% 10px/10px 10px;
+		background: url(https://clearvision.gitlab.io/icons/cloud_download.svg) center/24px no-repeat,
+			linear-gradient(to bottom, $main-color, $main-color) 50% 10px/10px 10px no-repeat;
 		animation: cv-update-downloading 2.5s ease-in-out infinite;
 	}
 	&[name=Update] {

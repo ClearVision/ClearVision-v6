@@ -125,7 +125,7 @@
     %emojiPickerPremiumPromo {
         background-color: rgba(0, 0, 0, .85);
         %emojiPickerPremiumPromoClose {
-            @include bg($img: url(https://clearvision.gitlab.io/icons/close.svg), $rep: no-repeat, $pos: center, $size: 18px);
+            background: url(https://clearvision.gitlab.io/icons/close.svg) center/18px no-repeat;
             opacity: .3;
             transition: all .15s ease-in-out;
             &:hover {
