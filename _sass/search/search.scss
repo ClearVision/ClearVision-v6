@@ -30,7 +30,7 @@
 				background: linear-gradient(to top, transparent, hsla(0, 0%, 100%, .07) 50%);
 				border-radius: 3px 3px 0 0;
 				opacity: 0;
-				transition: all .15s ease-in-out, bottom .3s ease-in-out;
+				transition: all .15s ease-in-out, bottom .2s ease-in-out;
 				z-index: -1;
 			}
 			&:after {
@@ -40,7 +40,7 @@
 				background: $main-color;
 				box-shadow: inset 0 -2px rgba(0, 0, 0, .3);
 				border-radius: 3px 3px 0 0;
-				transition: all .3s ease-in-out;
+				transition: all .2s ease-in-out;
 				z-index: -1;
 			}
 			&:hover {
@@ -53,12 +53,12 @@
 				color: #fff;
 				&:after {
 					top: 0;
-					animation: cv-slide-top .3s ease-in-out;
+					animation: cv-slide-top .2s ease-in-out;
 				}
 				&:before {
 					bottom: 100%;
 					opacity: 1;
-					animation: cv-slide-bottom .3s ease-in-out reverse;
+					animation: cv-slide-bottom .2s ease-in-out reverse;
 				}
 			}
 		}

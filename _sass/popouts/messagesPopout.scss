@@ -113,7 +113,7 @@
 			background: linear-gradient(to top, transparent, rgba(0, 0, 0, .2) 50%);
 			border-radius: 3px 3px 0 0;
 			opacity: 0;
-			transition: all .15s ease-in-out, bottom .3s ease-in-out;
+			transition: all .15s ease-in-out, bottom .2s ease-in-out;
 			z-index: -1;
 		}
 		&:after {
@@ -122,7 +122,7 @@
 			@include pos(100%, 0, 0, 0);
 			background-color: #fff;
 			border-radius: 3px 3px 0 0;
-			transition: top .3s ease-in-out;
+			transition: top .2s ease-in-out;
 			z-index: -1;
 		}
 		&:hover,
@@ -140,11 +140,11 @@
 			transform: translateZ(0);
 			&:before {
 				bottom: 100%;
-				animation: cv-slide-bottom .3s ease-in-out reverse;
+				animation: cv-slide-bottom .2s ease-in-out reverse;
 			}
 			&:after {
 				top: 0;
-				animation: cv-slide-top .3s ease-in-out;
+				animation: cv-slide-top .2s ease-in-out;
 			}
 		}
 	}
