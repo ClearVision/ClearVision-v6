@@ -1,8 +1,6 @@
 // Mixin Collection by Zerthox
 
-/// Set background properties in one mixin
-/// @param {*} $color [null] - background-color property value
-/// @param {*} $clr [null] - background-color property value (alternative param)
+/// Set background properties separately in one mixin
 /// @param {*} $image [null] - background-image property value
 /// @param {*} $img [null] - background-image property value (alternative param)
 /// @param {*} $position [null] - background-position property value
@@ -12,50 +10,31 @@
 /// @param {*} $rep [null] - background-repeat property value (alternative param)
 /// @param {*} $attachment [null] - background-attachment property value
 /// @param {*} $attach [null] - background-attachment property value (alternative param)
-@mixin bg($color: null, $image: null, $repeat: null, $position: null, $size: null, $attachment: null, $clr: null, $img: null, $rep: null, $pos: null, $attach: null) {
+/// @param {*} $color [null] - background-color property value
+/// @param {*} $clr [null] - background-color property value (alternative param)
+@mixin bg($image: null, $position: null, $size: null, $repeat: null, $attachment: null, $color: null, $img: null, $pos: null, $rep: null, $attach: null, $clr: null,) {
 	$img: $image or $img;
 	$clr: $color or $clr;
 	$rep: $repeat or $rep;
 	$pos: $position or $pos;
 	$attach: $attachment or $attach;
 	$bg: ();
-	@if $img and $img != inherit {
-		$bg: append($bg, $img, space);
-		@if $clr and $clr != inherit {
-			$bg: append($bg, $clr, space);
-		}
-		@if $rep and $rep != inherit {
-			$bg: append($bg, $rep, space);
-		}
-		@if $pos and $pos != inherit {
-			@if $size and $size != inherit {
-				$bg: append($bg, #{$pos}/#{$size}, space);
-			}
-			@else {
-				$bg: append($bg, $pos, space);
-			}
-		}
-		@if $attach and $attach != inherit {
-			$bg: append($bg, $attach, space);
-		}
-		background: #{$bg};
-	}
-	@else if $img {
+	@if $img {
 		background-image: #{$img};
 	}
-	@if $clr and not index($bg, $clr) {
+	@if $clr {
 		background-color: #{$clr};
 	}
-	@if $rep and not index($bg, $rep) {
-		background-repeat: #{$rep};
-	}
-	@if $pos and not (index($bg, $pos) or index($bg, #{$pos}/#{$size})) {
+	@if $pos {
 		background-position: #{$pos};
 	}
-	@if $size and not index($bg, #{$pos}/#{$size}) {
+	@if $size {
 		background-size: #{$size};
 	}
-	@if $attach and not index($bg, $attach) {
+	@if $rep {
+		background-repeat: #{$rep};
+	}
+	@if $attach {
 		background-attachment: #{$attach};
 	}
 }
