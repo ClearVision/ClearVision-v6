@@ -88,8 +88,14 @@
 		%homeButton {
 			&:hover,
 			&[style*="background-color: rgb(114, 137, 218);"] {
-				background-color: $main-color !important;
+				background: $main-color !important;
 			}
+		}
+		%homeLink {
+			background: map-get($home, icon) map-get($home, pos)/map-get($home, size) no-repeat;
+		}
+		%homeIcon {
+			display: none;
 		}
 
 		// FRIENDS COUNT

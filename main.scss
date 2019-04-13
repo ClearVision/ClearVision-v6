@@ -70,6 +70,13 @@ $modal: (
 	blur: var(--user-modal-blur)
 );
 
+// HOME SETTINGS
+$home: (
+	icon: var(--home-icon),
+	pos: var(--home-position),
+	size: var(--home-size)
+);
+
 // COLOR CONSTANTS
 $twitch-purple: #593695;
 $spotify-green: #1db954;
@@ -164,6 +171,9 @@ $discord-blurple: #7289da;
 	--user-modal-grayscale: var(--background-grayscale);
 	--user-modal-sepia: var(--background-sepia);
 	--user-modal-blur: calc(var(--background-blur) + 3px);
+	--home-icon: url(https://clearvision.gitlab.io/icons/discord.svg);
+	--home-position: center;
+	--home-size: 40px;
 }
 
 /* APP */
