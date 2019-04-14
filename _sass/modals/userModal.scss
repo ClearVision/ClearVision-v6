@@ -55,35 +55,38 @@
 		opacity: 1;
 	}
 }
-%profileBadgeStaff {
-    background-image: url(https://discordapp.com/assets/4358ad1fb423b346324516453750f569.svg);
-}
-%profileBadgePartner {
-    background-image: url(https://discordapp.com/assets/33fedf082addb91d88abc272b4b18daa.svg);
-}
-%profileBadgeHypeSquad {
-    background-image: url(https://discordapp.com/assets/6c73f47daf179ffade99f501bfc5101b.svg);
-}
-%profileBadgeHypeSquadHouse1 {
-    background-image: url(https://discordapp.com/assets/64ae1208b6aefc0a0c3681e6be36f0ff.svg);
-}
-%profileBadgeHypeSquadHouse2 {
-    background-image: url(https://discordapp.com/assets/48cf0556d93901c8cb16317be2436523.svg);
-}
-%profileBadgeHypeSquadHouse3 {
-    background-image: url(https://discordapp.com/assets/9fdc63ef8a3cc1617c7586286c34e4f1.svg);
-}
-%profileBadgeHypeSquadHouse3KOH {
-    background-image: url(https://discordapp.com/assets/6481784048fd484e77e63dcc9c2c34cb.svg);
-}
-%profileBadgeEarlySupporter {
-    background-image: url(https://discordapp.com/assets/23e59d799436a73c024819f84ea0b627.svg);
-}
-%profileBadgePremium {
-    background-image: url(https://discordapp.com/assets/386884eecd36164487505ddfbac35a9d.svg);
-}
-%profileBadgeBugHunter {
-    background-image: url(https://discordapp.com/assets/f61b8981e92feead854f52e5a1ba14f0.svg);
+*,
+%userModalTopSectionNormal * {
+	&%profileBadgeStaff {
+		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeStaff.svg);
+	}
+	&%profileBadgePartner {
+		background-image: url(https://clearvision.gitlab.io/icons/discord/badgePartner.svg);
+	}
+	&%profileBadgeHypeSquad {
+		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeHypeSquad.svg);
+	}
+	&%profileBadgeHypeSquadHouse1 {
+		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeHypeSquadBravery.svg);
+	}
+	&%profileBadgeHypeSquadHouse2 {
+		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeHypeSquadBrilliance.svg);
+	}
+	&%profileBadgeHypeSquadHouse3 {
+		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeHypeSquadBalance.svg);
+	}
+	&%profileBadgeHypeSquadHouse3KOH {
+		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeHypeSquadBalanceKOH.svg);
+	}
+	&%profileBadgeEarlySupporter {
+		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeEarlySupporter.svg);
+	}
+	&%profileBadgePremium {
+		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeNitro.svg);
+	}
+	&%profileBadgeBugHunter {
+		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeBugHunter.svg);
+	}
 }
 
 // TAB BAR
