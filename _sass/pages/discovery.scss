@@ -1,6 +1,90 @@
 // SERVER DISCOVERY
 %base {
-    %pageWrapper {
-        background: rgba(0, 0, 0, .5);
-    }
+	%pageWrapper {
+		background: rgba(0, 0, 0, .5);
+	}
+}
+%discoveryBG {
+	-webkit-mask: linear-gradient(to bottom, #000, transparent);
+	mask: linear-gradient(to bottom, #000, transparent);
+}
+%discoveryMainHeader {
+	color: #fff;
+	text-shadow: 0 0 3px #000;
+	font-weight: 600;
+	&:before {
+		content: "Discovery: ";
+		color: $main-color;
+		text-shadow: 0 0 3px;
+	}
+	&:after {
+		content: "!";
+	}
+}
+
+// SEARCH BOX
+%appMount {
+	%searchBox {
+		background: hsla(0, 0%, 100%, .1);
+		box-shadow: none;
+	}
+}
+%searchBox {
+	%searchBoxInput {
+		color: hsla(0, 0%, 100%, .7);
+		&::placeholder {
+			color: hsla(0, 0%, 100%, .3);
+		}
+	}
+	%searchBoxIconSearch {
+		color: hsla(0, 0%, 100%, .3);
+	}
+	%searchBoxIconClear {
+		color: hsla(0, 0%, 100%, .3);
+		transition: all .15s ease-in-out;
+		&:hover {
+			color: hsla(0, 0%, 100%, .7);
+		}
+	}
+}
+
+// GUILD LIST
+%discoverySectionHeader {
+	color: hsla(0, 0%, 100%, .7);
+}
+%discoveryGuildCard {
+	%discoveryGuildVerifiedIcon {
+		background: url(https://clearvision.gitlab.io/icons/verified.svg) center/16px no-repeat;
+		opacity: .7;
+		filter: drop-shadow(0 0 3px #000);
+		> g {
+			display: none;
+		}
+	}
+	%discoveryGuildStatusOnline {
+		background-color: $online-color;
+		box-shadow: 0 0 3px, 0 0 5px rgba(0, 0, 0, .5);
+		color: $online-color;
+	}
+}
+
+// EMPTY
+%pageBody {
+	%discoveryEmptyResults {
+		padding: 10px 20px;
+		background: linear-gradient(to bottom, transparent, hsla(0, 0%, 100%, .1));
+	}
+}
+%discoveryEmptyResults {
+	%discoveryEmptyImage {
+		filter: grayscale(1) brightness(1.5);
+		opacity: .3;
+	}
+	%discoveryEmptyTitle {
+		color: hsla(0, 0%, 100%, .7);
+		font-weight: 600;
+	}
+	%discoveryEmptyDescription {
+		color: hsla(0, 0%, 100%, .5);
+	}
 }
