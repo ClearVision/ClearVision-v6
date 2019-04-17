@@ -24,6 +24,16 @@
 			background: rgba(0, 0, 0, .3);
 		}
 	}
+	%guildVerified {
+		background: url(https://clearvision.gitlab.io/icons/verified.svg) center/18px no-repeat;
+		filter: drop-shadow(0 0 5px);
+		> g {
+			display: none;
+		}
+	}
+	%bannerImage {
+		-webkit-mask: linear-gradient(to bottom, #000, transparent);
+	}
 
 	// CHANNEL CATEGORIES
 	%categoryWrapper {
