@@ -139,7 +139,7 @@
 					border: none;
 					transform: translateZ(0);
 					> %friendsAddFriendInput {
-						&::-webkit-input-placeholder {
+						&::placeholder {
 							color: hsla(0, 0%, 100%, .2);
 						}
 						+ %friendsAddFriendHint {

@@ -28,7 +28,7 @@
     %libraryFilterInput {
         background-color: hsla(0, 0%, 100%, .1);
         color: #fff;
-        &::-webkit-input-placeholder {
+        &::placeholder {
             color: hsla(0, 0%, 100%, .3);
         }
     }
@@ -143,7 +143,7 @@
         &:focus {
             border-color: $main-color;
         }
-        &::-webkit-input-placeholder {
+        &::placeholder {
             color: hsla(0, 0%, 100%, .2);
         }
     }

@@ -12,7 +12,7 @@
 		color: hsla(0, 0%, 100%, .7);
 	}
 	%autocompletePopoutInput {
-		&::-webkit-input-placeholder {
+		&::placeholder {
 			color: hsla(0, 0%, 100%, .3);
 		}
 	}

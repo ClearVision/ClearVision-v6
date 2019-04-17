@@ -32,7 +32,7 @@
 		}
 	}
 	textarea {
-		&::-webkit-input-placeholder {
+		&::placeholder {
 			color: hsla(0, 0%, 100%, .2);
 		}
 		~ %channelTextareaButtons {

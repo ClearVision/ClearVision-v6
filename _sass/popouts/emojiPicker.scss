@@ -16,7 +16,7 @@
     %emojiPickerSearchBarInner {
         > input {
             color: #fff;
-            &::-webkit-input-placeholder {
+            &::placeholder {
                 color: hsla(0, 0%, 100%, .3);
             }
         }

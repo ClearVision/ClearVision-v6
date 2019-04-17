@@ -9,7 +9,7 @@
         background: hsla(0, 0%, 100%, .07);
         > %gifAutocompleteSearchInput {
             color: #fff;
-            &::-webkit-input-placeholder {
+            &::placeholder {
                 color: hsla(0, 0%, 100%, .3);
             }
         }

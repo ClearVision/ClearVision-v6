@@ -67,7 +67,7 @@
 			&:focus {
 				background: transparent;
 			}
-			&::-webkit-input-placeholder {	
+			&::placeholder {	
 				color: hsla(0, 0%, 100%, .5);
 			}
 		}
@@ -83,7 +83,7 @@
 		border-color: transparent;
 		color: #fff;
 		transition: all .3s ease-in-out;
-		&::-webkit-input-placeholder {	
+		&::placeholder {	
 			color: hsla(0, 0%, 100%, .5);
 		}
 		&:focus {
