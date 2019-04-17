@@ -150,20 +150,16 @@
 	}
 
 	// HOVER
-	%channelContentText {
-		&:hover {
-			background: transparent;
-			&:before {
-				background: hsla(0, 0%, 100%, .1);
-			}
+	%channelContentHoveredText {
+		background: transparent;
+		&:before {
+			background: hsla(0, 0%, 100%, .1);
 		}
 	}
-	%channelContent {
-		&:hover {
-			%channelIcon,
-			%channelName {
-				color: hsla(0, 0%, 100%, .7);
-			}
+	%channelContentHovered {
+		%channelIcon,
+		%channelName {
+			color: hsla(0, 0%, 100%, .7);
 		}
 	}
 
