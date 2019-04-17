@@ -1964,15 +1964,24 @@ pre {
 .mobileIndicator-329Gd6 {
 	@extend %memberMobileIndicator !optional;
 }
-.placeholderAvatar-uzH8f6 {
+// 7.1) Placeholders
+.memberGroupsPlaceholder-3mwPub {
+	@extend %memberGroupPlaceholder !optional;
+}
+.placeholder-3KRNN9 {
+	@extend %memberPlaceholder !optional;
+}
+.multiplePlaceholder-M9zbu6 {
+	@extend %memberPlaceholder !optional;
+}
+.placeholderAvatar-damqh6 {
 	@extend %memberPlaceholderAvatar !optional;
 }
-.placeholderUsername-236yYU  {
+.placeholderUsername-2B_OA9  {
 	@extend %memberPlaceholderUsername !optional;
 }
-%memberPlaceholderAvatar,
-%memberPlacceholderUsername {
-	@extend %memberPlaceholder !optional;
+.mulitplePlaceholderUsername-pogq9I {
+	@extend %memberPlaceholderUsernameMultiple !optional;
 }
 
 // 8) SEARCH
