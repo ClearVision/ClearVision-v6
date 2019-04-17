@@ -52,12 +52,41 @@
 			&:after {
 				content: "";
 				position: absolute;
-				@include stretch;
-				right: 100%;
+				@include pos(0, 100%, 0, 0);
 				background: linear-gradient(to right, $main-color 90%, transparent);
 				opacity: .8;
 				transition: all .3s ease-in-out;
 				z-index: -1;
+			}
+		}
+		%memberUsername {
+			font-size: 14px;
+			transition: all .15s ease-in-out;
+		}
+		%memberOwnerIcon > g > path,
+		%memberActivityIconForeground {
+			fill: hsla(0, 0%, 100%, .4);
+			transition: all .15s ease-in-out;
+		}
+		%memberActivity,
+		%memberMobileIndicator {
+			color: hsla(0, 0%, 100%, .4);
+			transition: all .15s ease-in-out;
+		}
+		%memberActivityText {
+			> strong {
+				color: $main-color;
+				font-weight: 700;
+				transition: all .15s ease-in-out;
+			}
+		}
+		%avatarOffline {
+			filter: grayscale(100%) blur(1px);
+			transition: all .5s ease-in-out;
+		}
+		&:hover {
+			%avatarOffline {
+				filter: none;
 			}
 		}
 		&:hover,
@@ -74,39 +103,56 @@
 					right: 0;
 				}
 			}
+			%memberUsername {
+				color: #fff !important;
+			}
+			%memberActivity {
+				color: hsla(0, 0%, 100%, .7);
+			}
+			%memberActivityText {
+				> strong {
+					color: #fff;
+				}
+			}
+			%memberOwnerIcon > g > path,
+			%memberActivityIconForeground {
+				fill: hsla(0, 0%, 100%, .7);
+			}
 		}
 		&:active {
 			> %memberContent {
 				transform: scale(.9);
 			}
 		}
-		%memberUsername {
-			font-size: 14px;
+	}
+	%memberGroupPlaceholder {
+		margin: 0 25%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-basis: 50%;
+		color: hsla(0, 0%, 100%, .3);
+		&:before,
+		&:after {
+			content: "";
+			height: 2px;
+			flex-grow: 1;
 		}
-		%memberOwnerIcon > g > path,
-		%memberActivityIconForeground {
-			fill: hsla(0, 0%, 100%, .4);
+		&:before {
+			background: linear-gradient(to left, currentColor 50%, transparent);
+			margin-right: calc(50% + 5px);
+			margin-left: -50%;
 		}
-		%memberActivityText {
-			> strong {
-				color: $main-color !important;
-				font-weight: 700;
-			}
-		}
-		%memberMobileIndicator {
-			color: hsla(0, 0%, 100%, .4);
-		}
-		%avatarOffline {
-			filter: grayscale(100%) blur(1px);
-			transition: all .5s ease-in-out;
-		}
-		&:hover {
-			%avatarOffline {
-				filter: none;
-			}
+		&:after {
+			background: linear-gradient(to right, currentColor 50%, transparent);
+			margin-right: -50%;
+			margin-left: calc(50% + 5px);
 		}
 	}
-	%memberPlaceholder {
+	%memberGroupPlaceholder,
+	%memberPlaceholderAvatar,
+	%memberPlaceholderUsername,
+	%memberPlaceholderUsernameMultiple {
 		background: hsla(0, 0%, 100%, .3);
 	}
 }
