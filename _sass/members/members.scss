@@ -8,6 +8,8 @@
 	max-width: $members-width;
 }
 %members {
+
+	// GROUP
 	> %membersGroup {
 		display: flex;
 		align-items: center;
@@ -32,6 +34,8 @@
 			margin-left: 5px;
 		}
 	}
+
+	// MEMBER
 	> %member {
 		backface-visibility: hidden;
 		> %memberContent {
@@ -125,6 +129,8 @@
 			}
 		}
 	}
+
+	// PLACEHOLDERS
 	%memberGroupPlaceholder {
 		margin: 0 25%;
 		display: flex;
