@@ -32,7 +32,9 @@
 		}
 	}
 	%bannerImage {
+		background-size: 0, cover;
 		-webkit-mask: linear-gradient(to bottom, #000, transparent);
+		mask: linear-gradient(to bottom, #000, transparent);
 	}
 
 	// CHANNEL CATEGORIES
