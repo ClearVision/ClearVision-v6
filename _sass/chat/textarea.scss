@@ -73,5 +73,9 @@
 		background: hsla(0, 0%, 100%, .07);
 		border-radius: 5px;
 		color: hsla(0, 0%, 100%, .7);
+		%channelInfoImage {
+			filter: grayscale(1);
+			opacity: .5;
+		}
 	}
 }
