@@ -100,6 +100,9 @@
 //	21.2) Content
 // 22) Pages
 //	22.1) Server Discovery
+//		22.1.1) Search
+//		22.1.2) Guild List
+//		22.1.3) Empty
 // 23) Screens
 //	23.1) Loading
 //	23.2) Crash
@@ -3667,6 +3670,105 @@ pre {
 // 22.1) Server Discovery
 .pageWrapper-1PgVDX {
 	@extend %pageWrapper !optional;
+}
+.bg-AYqtMd {
+	@extend %discoveryBG !optional;
+}
+.pageHeader-3615mp {
+	@extend %pageHeader !optional;
+}
+.body-2lagau {
+	@extend %pageBody !optional;
+}
+// 22.1.1) Search
+.search-JQJ-3r {
+	@extend %discoverySearch !optional;
+}
+.mainHeader-1i17pL {
+	@extend %discoveryMainHeader !optional;
+}
+.searchBox-26HYGw {
+	@extend %discoverySearchBox !optional;
+}
+.searchBox-3Y2Vi7 {
+	@extend %searchBox !optional;
+}
+.searchBoxInput-uJtBcv {
+	@extend %searchBoxInput !optional;
+}
+.searchIcon-1a1-yA {
+	@extend %searchBoxIconSearch !optional;
+}
+.clearIcon-2N9YIn {
+	@extend %searchBoxIconClear !optional;
+}
+// 22.1.2) Guild List
+.sectionHeader-1Hee-5 {
+	@extend %discoverySectionHeader !optional;
+}
+.guildList-1ItbxP {
+	@extend %discoveryGuildList !optional;
+}
+.guildCard-2arfcG {
+	@extend %discoveryGuildCard !optional;
+}
+.loading-17PYl_ {
+	@extend %discoveryGuildCardLoading !optional;
+}
+.loaded-1eBnjq {
+	@extend %discoveryGuildCardLoaded !optional;
+}
+.card-3DjzTQ {
+	@extend %discoveryCard !optional;
+}
+.cardHovered-15wbb- {
+	@extend %discoveryCardHovered !optional;
+}
+.splash-3N0nhD {
+	@extend %discoveryCardSplash !optional;
+}
+.fade-rdt5qH {
+	@extend %discoveryCardFade !optional;
+}
+.guildInfo-2wGKIg {
+	@extend %discoveryGuildInfo !optional;
+}
+.guildIcon-3W0pfo {
+	@extend %discoveryGuildIcon !optional;
+}
+.avatar-22otdK {
+	@extend %discoveryGuildAvatar !optional;
+}
+.verifiedIcon-1vpk3S {
+	@extend %discoveryGuildVerifiedIcon !optional;
+}
+.title-OqQvkN {
+	@extend %discoveryGuildTitle !optional;
+}
+.memberInfo-3r4FKx {
+	@extend %discoveryGuildMemberInfo !optional;
+}
+.dotOnline-8Ag7EB {
+	@extend %discoveryGuildStatusOnline !optional;
+}
+.viewButton-3jDZqV {
+	@extend %discoveryViewButton !optional;
+}
+.viewButtonVisible-2AtUPc {
+	@extend %discoveryViewButtonVisible !optional;
+}
+// 22.1.3) Empty
+.emptySearchResults-1ba__I {
+	@extend %discoveryEmptyResults !optional;
+}
+.emptySearchImage-1qOMLW {
+	@extend %discoveryEmptyImage !optional;
+}
+.emptySearchTitle-2zDhhZ {
+	@extend %discoveryEmptyTitle !optional;
+}
+.emptySearchDescription-2AmfE4 {
+	@extend %discoveryEmptyDescription !optional;
 }
 
 // 23) SCREENS
