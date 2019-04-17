@@ -1,4 +1,4 @@
-/*! Using Discord Selectors v19-04-12 by Zerthox */
+/*! Using Discord Selectors v19-04-16 by Zerthox */
 // FILE CONTENTS
 // 1) App
 // 	1.1) App Notices
@@ -124,6 +124,8 @@
 //		24.7.5) LastMessageDate
 //	24.8) Metalloriff
 //		24.8.1) DetailedServerTooltips
+//	24.9) Arashiryuu
+//		24.9.1) MemberCount
 
 // 1) APP
 .appMount-3lHmkl {
@@ -3757,4 +3759,9 @@ pre {
 }
 #dst-tooltip-member-count-label {
 	@extend %serverTooltipLabelMemberCount !optional;
+}
+// 24.9) Arashiryuu
+// 24.9.1) MemberCount
+#MemberCount {
+	@extend %memberCount !optional;
 }
