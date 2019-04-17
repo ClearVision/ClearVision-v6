@@ -14,13 +14,16 @@
 		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)) center/cover;
 	}
 	> %userModalTopSectionStreaming {
-		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6))center/cover, rgba($twitch-purple, .4);
+		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)) center/cover,
+			linear-gradient(to bottom, rgba($twitch-purple, .4) calc(95% - 55px), transparent calc(110% - 55px));
 	}
 	> %userModalTopSectionSpotify {
-		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)) center/cover, rgba($spotify-green, .4);
+		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)) center/cover,
+		linear-gradient(to bottom, rgba($spotify-green, .4) calc(95% - 55px), transparent calc(110% - 55px));
 	}
 	> %userModalTopSectionXbox {
-		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)) center/cover, rgba($xbox-green, .4);
+		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)) center/cover,
+			linear-gradient(to bottom, rgba($xbox-green, .4) calc(95% - 55px), transparent calc(110% - 55px));
 	}
 }
 %userModalAdditionalActionsIcon {
@@ -35,7 +38,7 @@
 }
 %userModalHeaderFill {
 	background: rgba(0, 0, 0, .04);
-	> %activity{
+	> %userModalActivity {
 		%activityHeaderText {
 			color: hsla(0, 0%, 100%, .7);
 		}
