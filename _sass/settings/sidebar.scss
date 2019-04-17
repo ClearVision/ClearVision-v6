@@ -18,54 +18,52 @@
 		}
 	}
 }
-%standardSidebarView %settingsSide {
+%settingsSide {
 	padding: 30px 0;
 	%tabBarHeader {
 		color: $main-color;
+	}
+	%tabBarSeparator {
+		background: hsla(0, 0%, 100%, .07);
 	}
 	%tabBarItem {
 		height: unset;
 		padding: 8px 0 8px 20px;
 		margin: 0;
-		background: transparent;
+		background: linear-gradient($main-color, $main-color) left/0 no-repeat;
 		color: hsla(0, 0%, 100%, .3);
-		transition: all .15s ease-in-out;
-		cursor: pointer;
+		transition: all .15s ease-in-out, background-size .3s ease-in-out;
 		backface-visibility: hidden;
+		cursor: pointer;
+		&:before {
+			opacity: .3;
+			transition: inherit;
+		}
 		&:hover {
-			background: hsla(0, 0%, 100%, .07);
+			background-color: hsla(0, 0%, 100%, .07);
 			color: hsla(0, 0%, 100%, .7);
 			&:before {
 				opacity: .7;
 			}
 		}
 		&%tabBarItemSelected {
-			background: $main-color;
+			background-color: hsla(0, 0%, 100%, .07);
+			background-size: 100%;
 			color: #fff;
+			animation: cv-slide-bg .3s ease-in-out;
 			&:before {
 				opacity: 1;
 			}
 		}
-	}
-	%tabBarSeparator {
-		background: hsla(0, 0%, 100%, .07);
-	}
-}
-%settingsSidebar {
-	%tabBarItem {
-		&:before {
-			opacity: .3;
-			transition: inherit;
-		}
 		&[style*="color: rgb(114, 137, 218)"] {
-			background: transparent !important;
+			background-color: transparent !important;
 			color: hsla(0, 0%, 100%, .3) !important;
 			&:hover {
-				background: hsla(0, 0%, 100%, .07) !important;
+				background-color: hsla(0, 0%, 100%, .07) !important;
 				color: hsla(0, 0%, 100%, .7) !important;
 			}
 			&%tabBarItemSelected {
-				background: $main-color !important;
+				background-color: hsla(0, 0%, 100%, .07) !important;
 				color: #fff !important;
 			}
 		}

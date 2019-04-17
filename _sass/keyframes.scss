@@ -64,6 +64,14 @@
 		}
 	}
 }
+@keyframes cv-slide-bg {
+	from {
+		background-size: 0;
+	}
+	to {
+		background-size: 100%;
+	}
+}
 @keyframes cv-message-jump {
 	from {
 		background: hsla(0, 0%, 100%, .3);

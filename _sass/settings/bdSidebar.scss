@@ -5,25 +5,28 @@
 		font-weight: 700;
 	}
 	%bdSettingsSidebarItem {
+		background: linear-gradient($main-color, $main-color) left/0 no-repeat;
 		color: hsla(0, 0%, 100%, .3);
 		padding: 8px 0 8px 20px;
 		margin: 0;
 		cursor: pointer;
-		transition: all .15s ease-in-out;
-			&:before {
-				opacity: .3;
-				transition: all .15s ease-in-out;
-			}
+		transition: all .15s ease-in-out, background-size .3s ease-in-out;
+		&:before {
+			opacity: .3;
+			transition: all .15s ease-in-out;
+		}
 		&:hover {
-			background: hsla(0, 0%, 100%, .07);
+			background-color: hsla(0, 0%, 100%, .07);
 			color: hsla(0, 0%, 100%, .7);
 			&:before {
 				opacity: .7;
 			}
 		}
 		&%bdSettingsSidebarItemSelected {
-			background: $main-color;
+			background-color: hsla(0, 0%, 100%, .07);
+			background-size: 100%;
 			color: #fff;
+			animation: cv-slide-bg .3s ease-in-out;
 			&:before {
 				opacity: 1;
 			}
