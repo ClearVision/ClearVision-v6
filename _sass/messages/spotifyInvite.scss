@@ -1,31 +1,31 @@
 // SPOTIFY INVITE
 %message %spotifyInvite {
-    background: rgba(0, 0, 0, .3);
-    border: none;
+	background: rgba(0, 0, 0, .3);
+	border: none;
 }
 %spotifyInvite {
-    %spotifyInviteHeader {
-        color: hsla(0, 0%, 100%, .5);
-    }
-    %spotifyInvitePartyStatus {
-        color: #fff;
-    }
-    %spotifyInviteHelpIcon {
-        display: flex;
-        background: hsla(0, 0%, 100%, .07);
-        transition: all .15s ease-in-out;
-        opacity: 0;
-    }
-    &:hover {
-        %spotifyInviteHelpIcon {
-            opacity: .7;
-            &:hover {
-                opacity: 1;
-            }
-        }
-    }
-    %spotifyInviteArtworkSessionEnded {
-        filter: grayscale(1) brightness(2);
-        opacity: .3;
-    }
+	%spotifyInviteHeader {
+		color: hsla(0, 0%, 100%, .5);
+	}
+	%spotifyInvitePartyStatus {
+		color: #fff;
+	}
+	%spotifyInviteHelpIcon {
+		display: flex;
+		background: hsla(0, 0%, 100%, .07);
+		transition: all .15s ease-in-out;
+		opacity: 0;
+	}
+	&:hover {
+		%spotifyInviteHelpIcon {
+			opacity: .7;
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+	%spotifyInviteArtworkSessionEnded {
+		filter: grayscale(1) brightness(2);
+		opacity: .3;
+	}
 }

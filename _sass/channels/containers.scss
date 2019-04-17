@@ -1,198 +1,198 @@
 // CONTAINERS
 %channels {
 
-    // ACCOUNT & CONNECTION CONTAINER
-    > %accountContainer,
-    > %connectionContainer {
-        background: transparent;
-        box-shadow: 0 -2px 10px rgba(0, 0, 0, .3);
-        > %flex {
-            background: rgba(0, 0, 0, .3);
-            border-radius: 15px;
-            > :nth-child(n+2) {
-                position: relative;
-                &:before {
-                    content: "";
-                    position: absolute;
-                    left: 0;
-                    top: 2px;
-                    bottom: 2px;
-                    width: 1px;
-                    background: hsla(0, 0%, 100%, .2);
-                }
-            }
-        }
-    }
-    > %connectionContainer + %accountContainer {
-        box-shadow: none;
-    }
+	// ACCOUNT & CONNECTION CONTAINER
+	> %accountContainer,
+	> %connectionContainer {
+		background: transparent;
+		box-shadow: 0 -2px 10px rgba(0, 0, 0, .3);
+		> %flex {
+			background: rgba(0, 0, 0, .3);
+			border-radius: 15px;
+			> :nth-child(n+2) {
+				position: relative;
+				&:before {
+					content: "";
+					position: absolute;
+					left: 0;
+					top: 2px;
+					bottom: 2px;
+					width: 1px;
+					background: hsla(0, 0%, 100%, .2);
+				}
+			}
+		}
+	}
+	> %connectionContainer + %accountContainer {
+		box-shadow: none;
+	}
 
-    // ACCOUNT CONTAINER
-    > %accountContainer {
-        position: relative;
-        margin-bottom: 10px;
-        &:before,
-        &:after {
-            bottom: -8px;
-            position: absolute;
-            color: hsla(0, 0%, 100%, .3);
-            font-size: 11px;
-            font-weight: 700;
-            transition: all .5s ease-in-out;
-        }
-        &:before {
-            content: "#{$account-text}";
-            right: 50%;
-            text-align: right;
-            transform: translateX(50%);
-        }
-        &:after {
-            content: "#{$account-version}";
-            left: 50%;
-            text-align: left;
-            opacity: 0;
-            transform: translateX(50%) rotateX(90deg);
-        }
-        &:hover {
-            &:before {
-                margin-right: 1px;
-                transform: none;
-            }
-            &:after {
-                margin-left: 1px;
-                opacity: 1;
-                transform: none;
-            }
-        }
+	// ACCOUNT CONTAINER
+	> %accountContainer {
+		position: relative;
+		margin-bottom: 10px;
+		&:before,
+		&:after {
+			bottom: -8px;
+			position: absolute;
+			color: hsla(0, 0%, 100%, .3);
+			font-size: 11px;
+			font-weight: 700;
+			transition: all .5s ease-in-out;
+		}
+		&:before {
+			content: "#{$account-text}";
+			right: 50%;
+			text-align: right;
+			transform: translateX(50%);
+		}
+		&:after {
+			content: "#{$account-version}";
+			left: 50%;
+			text-align: left;
+			opacity: 0;
+			transform: translateX(50%) rotateX(90deg);
+		}
+		&:hover {
+			&:before {
+				margin-right: 1px;
+				transform: none;
+			}
+			&:after {
+				margin-left: 1px;
+				opacity: 1;
+				transform: none;
+			}
+		}
 
-        // AVATAR
-        %accountContainerAvatarWrapper {
-            width: auto;
-            height: auto;
-            &:hover {
-                opacity: 1;
-            }
-            > %status {
-                top: 90%;
-                left: 90%;
-                margin-top: -6.5px;
-                margin-left: -6.5px;
-            }
-            > %accountContainerAvatar {
-                position: relative;
-                width: 30px;
-                height: 30px;
-                @include bg($size: 100%, $repeat: no-repeat);
-                transition: all .15s ease-in-out;
-                &:after {
-                    content: "Status";
-                    position: absolute;
-                    @include stretch;
-                    vertical-align: middle;
-                    color: #fff;
-                    font-size: 5px;
-                    text-transform: uppercase;
-                    font-weight: 700;
-                    text-align: center;
-                    line-height: 30px;
-                    border-radius: 50%;
-                    box-shadow: inset 0 0 70px rgba(0, 0, 0, .75);
-                    opacity: 0;
-                    transition: all .15s ease-in-out;
-                    pointer-events: none;
-                }
-                &:hover,
-                &.popout-open {
-                    width: 40px;
-                    height: 40px;
-                    &:after {
-                        font-size: 10px;
-                        line-height: 40px;
-                        opacity: 1;
-                    }
-                }
-            }
-        }
+		// AVATAR
+		%accountContainerAvatarWrapper {
+			width: auto;
+			height: auto;
+			&:hover {
+				opacity: 1;
+			}
+			> %status {
+				top: 90%;
+				left: 90%;
+				margin-top: -6.5px;
+				margin-left: -6.5px;
+			}
+			> %accountContainerAvatar {
+				position: relative;
+				width: 30px;
+				height: 30px;
+				@include bg($size: 100%, $repeat: no-repeat);
+				transition: all .15s ease-in-out;
+				&:after {
+					content: "Status";
+					position: absolute;
+					@include stretch;
+					vertical-align: middle;
+					color: #fff;
+					font-size: 5px;
+					text-transform: uppercase;
+					font-weight: 700;
+					text-align: center;
+					line-height: 30px;
+					border-radius: 50%;
+					box-shadow: inset 0 0 70px rgba(0, 0, 0, .75);
+					opacity: 0;
+					transition: all .15s ease-in-out;
+					pointer-events: none;
+				}
+				&:hover,
+				&.popout-open {
+					width: 40px;
+					height: 40px;
+					&:after {
+						font-size: 10px;
+						line-height: 40px;
+						opacity: 1;
+					}
+				}
+			}
+		}
 
-        // BUTTONS
-        %accountContainerButton {
-            width: 32px;
-            height: 32px;
-            opacity: 1;
-            &%accountContainerIconButton {
-                @include bg($rep: no-repeat, $pos: center, $size: 18px);
-                opacity: .3;
-                transition: all .1s ease-in-out;
-            }
-            &%accountContainerIconButton,
-            > %accountContainerButtonInner {
-                opacity: .3;
-                transition: all .1s ease-in-out;
-            }
-            &:hover {
-                background-color: transparent;
-                &%accountContainerIconButton,
-                > %accountContainerButtonInner {
-                    opacity: .7;
-                }
-            }
-            &[style*="/assets/4bc527c257233fc69b94342d77bcb9ee.svg"] {
-                background-image: url(https://clearvision.gitlab.io/icons/mic.svg) !important;
-            }
-            &[style*="/assets/896770bf2d6ed0358ed0adefdbe96a24.svg"] {
-                background-image: url(https://clearvision.gitlab.io/icons/mic_off.svg) !important;
-            }
-            &[style*="/assets/c7c47afdf35d5a3e06233319d3aa7674.svg"] {
-                background-image: url(https://clearvision.gitlab.io/icons/volume_up.svg) !important;
-            }
-            &[style*="/assets/c8845c514bbf3f1e5bea064c1e40b08d.svg"] {
-                background-image: url(https://clearvision.gitlab.io/icons/volume_off.svg) !important;
-            }
-            > %accountContainerButtonInner {
-                > svg[name=Gear] {
-                    background: url(https://clearvision.gitlab.io/icons/settings.svg) no-repeat center/18px;
-                    > path {
-                        display: none;
-                    }
-                }
-            }
-            &:hover {
-                > %accountContainerButtonInner {
-                    > svg[name=Gear] {
-                        animation: cv-spin 2.5s linear infinite;
-                    }
-                }
-            }
-        }
-    }
+		// BUTTONS
+		%accountContainerButton {
+			width: 32px;
+			height: 32px;
+			opacity: 1;
+			&%accountContainerIconButton {
+				@include bg($rep: no-repeat, $pos: center, $size: 18px);
+				opacity: .3;
+				transition: all .1s ease-in-out;
+			}
+			&%accountContainerIconButton,
+			> %accountContainerButtonInner {
+				opacity: .3;
+				transition: all .1s ease-in-out;
+			}
+			&:hover {
+				background-color: transparent;
+				&%accountContainerIconButton,
+				> %accountContainerButtonInner {
+					opacity: .7;
+				}
+			}
+			&[style*="/assets/4bc527c257233fc69b94342d77bcb9ee.svg"] {
+				background-image: url(https://clearvision.gitlab.io/icons/mic.svg) !important;
+			}
+			&[style*="/assets/896770bf2d6ed0358ed0adefdbe96a24.svg"] {
+				background-image: url(https://clearvision.gitlab.io/icons/mic_off.svg) !important;
+			}
+			&[style*="/assets/c7c47afdf35d5a3e06233319d3aa7674.svg"] {
+				background-image: url(https://clearvision.gitlab.io/icons/volume_up.svg) !important;
+			}
+			&[style*="/assets/c8845c514bbf3f1e5bea064c1e40b08d.svg"] {
+				background-image: url(https://clearvision.gitlab.io/icons/volume_off.svg) !important;
+			}
+			> %accountContainerButtonInner {
+				> svg[name=Gear] {
+					background: url(https://clearvision.gitlab.io/icons/settings.svg) no-repeat center/18px;
+					> path {
+						display: none;
+					}
+				}
+			}
+			&:hover {
+				> %accountContainerButtonInner {
+					> svg[name=Gear] {
+						animation: cv-spin 2.5s linear infinite;
+					}
+				}
+			}
+		}
+	}
 
-    // CONNECTION CONTAINER
-    > %connectionContainer {
-        border-color: transparent;
-        %connectionContainerChannel {
-            color: hsla(0, 0%, 100%, .3);
-            opacity: 1;
-            transition: all .15s ease-in-out;
-            &:hover {
-                color: hsla(0, 0%, 100%, .5);
-                text-decoration: none;
-            }
-        }
+	// CONNECTION CONTAINER
+	> %connectionContainer {
+		border-color: transparent;
+		%connectionContainerChannel {
+			color: hsla(0, 0%, 100%, .3);
+			opacity: 1;
+			transition: all .15s ease-in-out;
+			&:hover {
+				color: hsla(0, 0%, 100%, .5);
+				text-decoration: none;
+			}
+		}
 
-        // BUTTONS
-        %connectionContainerButton {
-            opacity: .3;
-            &:hover,
-            &%connectionContainerButtonPopoutOpen {
-                background-color: transparent;
-                opacity: .7;
-            }
-        }
-        %connectionContainerButtonInfo {
-            background: url(https://clearvision.gitlab.io/icons/info.svg) no-repeat center/18px;
-        }
-        %connectionContainerButtonDisconnect {
-            background: url(https://clearvision.gitlab.io/icons/call_end.svg) no-repeat center/18px;
-        }
-    }
+		// BUTTONS
+		%connectionContainerButton {
+			opacity: .3;
+			&:hover,
+			&%connectionContainerButtonPopoutOpen {
+				background-color: transparent;
+				opacity: .7;
+			}
+		}
+		%connectionContainerButtonInfo {
+			background: url(https://clearvision.gitlab.io/icons/info.svg) no-repeat center/18px;
+		}
+		%connectionContainerButtonDisconnect {
+			background: url(https://clearvision.gitlab.io/icons/call_end.svg) no-repeat center/18px;
+		}
+	}
 }

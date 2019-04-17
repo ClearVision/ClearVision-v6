@@ -1,19 +1,19 @@
 // WELCOME MESSAGE
 %welcomeMessage {
-    > h1 {
-        color: $main-color;
-    }
-    > %welcomeMessageItemContainer {
-        > %welcomeMessageIcon {
-            filter: grayscale(1);
-            opacity: .3;
-        }
-        > p {
-            color: hsla(0, 0%, 100%, .5);
-        }
-        a {
-            color: $main-color;
-            @include hover-shadow;
-        }
-    }
+	> h1 {
+		color: $main-color;
+	}
+	> %welcomeMessageItemContainer {
+		> %welcomeMessageIcon {
+			filter: grayscale(1);
+			opacity: .3;
+		}
+		> p {
+			color: hsla(0, 0%, 100%, .5);
+		}
+		a {
+			color: $main-color;
+			@include hover-shadow;
+		}
+	}
 }

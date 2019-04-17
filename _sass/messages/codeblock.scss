@@ -1,38 +1,38 @@
 // CODEBLOCK
 %message %markup {
-    
-    // INLINE CODE
-    code%codeInline {
-        background: hsla(0, 0%, 100%, .1);
-        color: hsla(0, 0%, 100%, .7);
-        padding: 3.5px 7.5px;
-        border-radius: 3px;
-        line-height: 22px;
-        + pre {
-            margin-top: -1px;
-        }
-    }
+	
+	// INLINE CODE
+	code%codeInline {
+		background: hsla(0, 0%, 100%, .1);
+		color: hsla(0, 0%, 100%, .7);
+		padding: 3.5px 7.5px;
+		border-radius: 3px;
+		line-height: 22px;
+		+ pre {
+			margin-top: -1px;
+		}
+	}
 
-    // CODEBLOCK PRE
-    %codePre {
-        max-width: 93%;
-        padding: 0;
-        background: transparent;
-        border: 2px solid transparent;
-    }
+	// CODEBLOCK PRE
+	%codePre {
+		max-width: 93%;
+		padding: 0;
+		background: transparent;
+		border: 2px solid transparent;
+	}
 
-    // CODEBLOCK HLJS
-    %codePre > %codeHLJS {
-        position: relative;
-        padding: 6px;
-        background: rgba(0, 0, 0, .42);
-        color: hsla(0, 0%, 100%, .7);
-        border-radius: 5px;
-        &:before {
-            height: 10px;
-            color: hsla(0, 0%, 100%, .3);
-            line-height: 10px;
-            opacity: 1;
-        }
-    }
+	// CODEBLOCK HLJS
+	%codePre > %codeHLJS {
+		position: relative;
+		padding: 6px;
+		background: rgba(0, 0, 0, .42);
+		color: hsla(0, 0%, 100%, .7);
+		border-radius: 5px;
+		&:before {
+			height: 10px;
+			color: hsla(0, 0%, 100%, .3);
+			line-height: 10px;
+			opacity: 1;
+		}
+	}
 }

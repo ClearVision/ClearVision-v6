@@ -1,58 +1,58 @@
 // SPOILER
 %message %spoilerText {
-    background: hsla(0, 0%, 100%, .04);
-    transition: all .15s ease-in-out;
-    > %spoilerInlineContent {
-        opacity: 1;
-        transition: inherit;
-    }
+	background: hsla(0, 0%, 100%, .04);
+	transition: all .15s ease-in-out;
+	> %spoilerInlineContent {
+		opacity: 1;
+		transition: inherit;
+	}
 	&%spoilerHidden {
-        background: rgba(0, 0, 0, .5);
+		background: rgba(0, 0, 0, .5);
 		&:hover {
-            background: rgba(0, 0, 0, .7);
-            > %spoilerInlineContent {
-                opacity: .3;
-                transition-duration: .3s;
-                transition-delay: .3s;
-            }
-        }
-        > %spoilerInlineContent {
-            opacity: 0;
-        }
-    }
+			background: rgba(0, 0, 0, .7);
+			> %spoilerInlineContent {
+				opacity: .3;
+				transition-duration: .3s;
+				transition-delay: .3s;
+			}
+		}
+		> %spoilerInlineContent {
+			opacity: 0;
+		}
+	}
 }
 %markup %spoilerText {
-    padding: 1px 4px;
+	padding: 1px 4px;
 }
 %spoilerContainer {
-    > %spoilerWarning {
-        background: rgba(0, 0, 0, .5);
-        color: hsla(0, 0%, 100%, .7);
-        transition: all .15s ease-in-out;
-    }
-    %spoilerImage,
-    %spoilerEmbed > %embedInner {
-        transition: all .15s ease-in-out;
-    }
-    %spoilerImageHidden,
-    %spoilerEmbedHidden > %embedInner {
-        filter: blur(40px);
-    }
-    %spoilerEmbedHidden {
-        border-radius: 0;
-    }
-    &:hover {
-        > %spoilerWarning {
-            background: rgba(0, 0, 0, .7);
-            color: #fff;
-        }
-        %spoilerImageHidden {
-             filter: blur(30px);
-        }
-        %spoilerEmbedHidden {
-            > %embedInner {
-                filter: blur(30px);
-            }
-        }
-    }
+	> %spoilerWarning {
+		background: rgba(0, 0, 0, .5);
+		color: hsla(0, 0%, 100%, .7);
+		transition: all .15s ease-in-out;
+	}
+	%spoilerImage,
+	%spoilerEmbed > %embedInner {
+		transition: all .15s ease-in-out;
+	}
+	%spoilerImageHidden,
+	%spoilerEmbedHidden > %embedInner {
+		filter: blur(40px);
+	}
+	%spoilerEmbedHidden {
+		border-radius: 0;
+	}
+	&:hover {
+		> %spoilerWarning {
+			background: rgba(0, 0, 0, .7);
+			color: #fff;
+		}
+		%spoilerImageHidden {
+			 filter: blur(30px);
+		}
+		%spoilerEmbedHidden {
+			> %embedInner {
+				filter: blur(30px);
+			}
+		}
+	}
 }

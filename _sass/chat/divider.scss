@@ -1,45 +1,45 @@
 // DIVIDER
 %chat %divider {
-    position: relative;
-    margin: 10px 6px 10px 20px;
-    &:before {
-        content: "";
-        position: absolute;
-        @include stretch;
-        background: hsla(0, 0%, 100%, .07);
-        border-radius: 3px;
-        z-index: -1;
-    }
-    > %dividerContent {
-        margin: 10px 0;
-        padding: 5px 15px;
-        display: block;
-        font-size: 12px;
-        text-transform: uppercase;
-        text-align: center;
-        border-radius: 3px;
-        opacity: .9;
-        &:before,
-        &:after {
-            display: none;
-        }
-    }
-    &:not(%dividerRed) { 
-        > %dividerContent {
-            color: hsla(0, 0%, 100%, .7);
-        }
-    }
-    &%dividerRed {
-        &:before {
-            background: $main-color;
-            opacity: .8;
-        }
-        + %divider {
-            margin-top: 40px;
-        }
-        > %dividerContent {
-            position: relative;
-            color: hsla(0, 0%, 100%, .8);
-        }
-    }
+	position: relative;
+	margin: 10px 6px 10px 20px;
+	&:before {
+		content: "";
+		position: absolute;
+		@include stretch;
+		background: hsla(0, 0%, 100%, .07);
+		border-radius: 3px;
+		z-index: -1;
+	}
+	> %dividerContent {
+		margin: 10px 0;
+		padding: 5px 15px;
+		display: block;
+		font-size: 12px;
+		text-transform: uppercase;
+		text-align: center;
+		border-radius: 3px;
+		opacity: .9;
+		&:before,
+		&:after {
+			display: none;
+		}
+	}
+	&:not(%dividerRed) { 
+		> %dividerContent {
+			color: hsla(0, 0%, 100%, .7);
+		}
+	}
+	&%dividerRed {
+		&:before {
+			background: $main-color;
+			opacity: .8;
+		}
+		+ %divider {
+			margin-top: 40px;
+		}
+		> %dividerContent {
+			position: relative;
+			color: hsla(0, 0%, 100%, .8);
+		}
+	}
 }

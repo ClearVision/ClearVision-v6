@@ -1,45 +1,45 @@
 // REACTION
 %reactions > %reaction {
-    position: relative;
-    background: hsla(0, 0%, 100%, .04);
-    border-radius: 3px;
-    transition: all .15s ease-in-out;
-    &:hover {
-        background: hsla(0, 0%, 100%, .1);
-    }
-    > %reactionInner {
-        padding: 0 5px;
-    }
-    %reactionCount {
-        margin-left: 5px;
-        color: hsla(0, 0%, 100%, .3);
-        transition: all .15s ease-in-out;
-    }
-    &:hover,
-    &%reactionMe {
-        %reactionCount {
-            color: hsla(0, 0%, 100%, .5);
-        }
-    }
-    &%reactionMe {
-        background: transparent;
-        &:after {
-            content: "";
-            position: absolute;
-            @include stretch;
-            background: $main-color;
-            border-radius: 3px;
-            opacity: .5;
-            z-index: -1;
-            transition: all .15s ease-in-out;
-        }
-        &:hover {
-            &:after {
-                opacity: .7;
-            }
-            %reactionCount {
-                color: hsla(0, 0%, 100%, .7);
-            }
-        }
-    }
+	position: relative;
+	background: hsla(0, 0%, 100%, .04);
+	border-radius: 3px;
+	transition: all .15s ease-in-out;
+	&:hover {
+		background: hsla(0, 0%, 100%, .1);
+	}
+	> %reactionInner {
+		padding: 0 5px;
+	}
+	%reactionCount {
+		margin-left: 5px;
+		color: hsla(0, 0%, 100%, .3);
+		transition: all .15s ease-in-out;
+	}
+	&:hover,
+	&%reactionMe {
+		%reactionCount {
+			color: hsla(0, 0%, 100%, .5);
+		}
+	}
+	&%reactionMe {
+		background: transparent;
+		&:after {
+			content: "";
+			position: absolute;
+			@include stretch;
+			background: $main-color;
+			border-radius: 3px;
+			opacity: .5;
+			z-index: -1;
+			transition: all .15s ease-in-out;
+		}
+		&:hover {
+			&:after {
+				opacity: .7;
+			}
+			%reactionCount {
+				color: hsla(0, 0%, 100%, .7);
+			}
+		}
+	}
 }

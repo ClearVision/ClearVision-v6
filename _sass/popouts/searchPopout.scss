@@ -1,268 +1,268 @@
 // SEARCH POPOUT
 %popout > %searchPopout {
-    background-color: rgba(0, 0, 0, .7);
-    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
-    animation: cv-menu-fold .2s cubic-bezier(.2, .6, .5, 1.1);
+	background-color: rgba(0, 0, 0, .7);
+	box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+	animation: cv-menu-fold .2s cubic-bezier(.2, .6, .5, 1.1);
 	transform-origin: 50% 0;
 }
 %searchPopout {
 
-    // SEARCH RESULTS GROUP
-    > %searchPopoutResultsGroup {
-        &:after {
-            border-top: 1px solid transparent;
-        }
-        + %searchPopoutResultsGroup {
-            &:after {
-                border-top-color: hsla(0, 0%, 100%, .04);
-            }
-        }
-        > %searchPopoutHeader {
-            color: $main-color;
-            font-weight: 700;
-        }
-        > %searchPopoutLearnMore,
-        > %searchPopoutClearHistory {
-            opacity: .5;
-            transition: all .15s ease-in-out;
-            &:hover {
-                opacity: 1;
-            }
-            > a {
-                color: #fff;
-            }
-        }
-    }
+	// SEARCH RESULTS GROUP
+	> %searchPopoutResultsGroup {
+		&:after {
+			border-top: 1px solid transparent;
+		}
+		+ %searchPopoutResultsGroup {
+			&:after {
+				border-top-color: hsla(0, 0%, 100%, .04);
+			}
+		}
+		> %searchPopoutHeader {
+			color: $main-color;
+			font-weight: 700;
+		}
+		> %searchPopoutLearnMore,
+		> %searchPopoutClearHistory {
+			opacity: .5;
+			transition: all .15s ease-in-out;
+			&:hover {
+				opacity: 1;
+			}
+			> a {
+				color: #fff;
+			}
+		}
+	}
 
-    // SEARCH OPTION
-    %searchPopoutOption {
-        background-color: transparent;
-        transition: all .15s ease-in-out;
-        &:after {
-            display: none;
-        }
-        %searchPopoutPlusIcon {
-            display: block;
-            color: #fff;
-            opacity: 0;
-            transition: all .15s ease-in-out;
-            &:hover {
-                opacity: .7;
-            }
-        }
-        %searchPopoutFilter {
-            color: hsla(0, 0%, 100%, .3);     
-            transition: all .15s ease-in-out;
-        }
-        %searchPopoutAnswer {
-            color: hsla(0, 0%, 100%, .5);
-            font-weight: 500;
-            transition: all .15s ease-in-out;
-        }
-        %searchPopoutNonText {
-            color: hsla(0, 0%, 100%, .5);
-            transition: all .15s ease-in-out;
-        }
-        > strong {
-            color: hsla(0, 0%, 100%, .7);
-            transition: all .15s ease-in-out;
-        }
-        
-        // SELECTED
-        &%searchPopoutOptionSelected {
-            background-color: hsla(0, 0%, 100%, .1);
-            %searchPopoutPlusIcon {
-                opacity: .3;
-                &:hover {
-                    opacity: .7;
-                }
-            }
-            %searchPopoutFilter {
-                color: hsla(0, 0%, 100%, .5);     
-            }
-            %searchPopoutAnswer,
-            %searchPopoutNonText {
-                color: hsla(0, 0%, 100%, .7);
-            }
-            > strong {
-                color: #fff;
-            }
-        }
-        
-        // OPTION USER
-        &%searchPopoutOptionUser {
-            %searchPopoutDisplayedNick {
-                color: hsla(0, 0%, 100%, .5);
-                transition: all .15s ease-in-out;
-            }
-            %searchPopoutDisplayUsername {
-                color: hsla(0, 0%, 100%, .3);     
-                transition: all .15s ease-in-out;
-            }
-            &%searchPopoutOptionSelected {
-                %searchPopoutDisplayedNick {
-                    color: hsla(0, 0%, 100%, .7);
-                }
-                %searchPopoutDisplayUsername {
-                    color: hsla(0, 0%, 100%, .5);     
-                }
-            }
-        }
+	// SEARCH OPTION
+	%searchPopoutOption {
+		background-color: transparent;
+		transition: all .15s ease-in-out;
+		&:after {
+			display: none;
+		}
+		%searchPopoutPlusIcon {
+			display: block;
+			color: #fff;
+			opacity: 0;
+			transition: all .15s ease-in-out;
+			&:hover {
+				opacity: .7;
+			}
+		}
+		%searchPopoutFilter {
+			color: hsla(0, 0%, 100%, .3);     
+			transition: all .15s ease-in-out;
+		}
+		%searchPopoutAnswer {
+			color: hsla(0, 0%, 100%, .5);
+			font-weight: 500;
+			transition: all .15s ease-in-out;
+		}
+		%searchPopoutNonText {
+			color: hsla(0, 0%, 100%, .5);
+			transition: all .15s ease-in-out;
+		}
+		> strong {
+			color: hsla(0, 0%, 100%, .7);
+			transition: all .15s ease-in-out;
+		}
+		
+		// SELECTED
+		&%searchPopoutOptionSelected {
+			background-color: hsla(0, 0%, 100%, .1);
+			%searchPopoutPlusIcon {
+				opacity: .3;
+				&:hover {
+					opacity: .7;
+				}
+			}
+			%searchPopoutFilter {
+				color: hsla(0, 0%, 100%, .5);     
+			}
+			%searchPopoutAnswer,
+			%searchPopoutNonText {
+				color: hsla(0, 0%, 100%, .7);
+			}
+			> strong {
+				color: #fff;
+			}
+		}
+		
+		// OPTION USER
+		&%searchPopoutOptionUser {
+			%searchPopoutDisplayedNick {
+				color: hsla(0, 0%, 100%, .5);
+				transition: all .15s ease-in-out;
+			}
+			%searchPopoutDisplayUsername {
+				color: hsla(0, 0%, 100%, .3);     
+				transition: all .15s ease-in-out;
+			}
+			&%searchPopoutOptionSelected {
+				%searchPopoutDisplayedNick {
+					color: hsla(0, 0%, 100%, .7);
+				}
+				%searchPopoutDisplayUsername {
+					color: hsla(0, 0%, 100%, .5);     
+				}
+			}
+		}
 
-        // OPTION CHANNEL
-        > %searchPopoutChannel {
-            > strong {
-                color: hsla(0, 0%, 100%, .7);
-                transition: all .15s ease-in-out;
-            }
-            > %searchPopoutChannelIcon,
-            > %searchPopoutChannelCategory {
-                color: hsla(0, 0%, 100%, .3);
-                transition: all .15s ease-in-out;
-            }
-            > %searchPopoutChannelIconBackground {
-                opacity: .7;
-            }
-        }
-        &%searchPopoutOptionSelected {
-            > %searchPopoutChannel {
-                > strong {
-                    color: #fff;
-                }
-                > %searchPopoutChannelIcon,
-                > %searchPopoutChannelCategory {
-                    color: hsla(0, 0%, 100%, .5);
-                }
-            }
-        }
-    }
+		// OPTION CHANNEL
+		> %searchPopoutChannel {
+			> strong {
+				color: hsla(0, 0%, 100%, .7);
+				transition: all .15s ease-in-out;
+			}
+			> %searchPopoutChannelIcon,
+			> %searchPopoutChannelCategory {
+				color: hsla(0, 0%, 100%, .3);
+				transition: all .15s ease-in-out;
+			}
+			> %searchPopoutChannelIconBackground {
+				opacity: .7;
+			}
+		}
+		&%searchPopoutOptionSelected {
+			> %searchPopoutChannel {
+				> strong {
+					color: #fff;
+				}
+				> %searchPopoutChannelIcon,
+				> %searchPopoutChannelCategory {
+					color: hsla(0, 0%, 100%, .5);
+				}
+			}
+		}
+	}
 
-    // SEARCH OPTION
-    %searchPopoutSearchOption {
-        &%searchPopoutOptionSelected {
-            %searchPopoutFilter {
-                color: hsla(0, 0%, 100%, .7);
-            }
-            %searchPopoutAnswer {
-                color: hsla(0, 0%, 100%, .5);
-            }
-        }
-        %searchPopoutFilter {
-            color: hsla(0, 0%, 100%, .5);
-            font-weight: 500; 
-        }
-        %searchPopoutAnswer {
-            color: hsla(0, 0%, 100%, .3);
-        }
-    }
+	// SEARCH OPTION
+	%searchPopoutSearchOption {
+		&%searchPopoutOptionSelected {
+			%searchPopoutFilter {
+				color: hsla(0, 0%, 100%, .7);
+			}
+			%searchPopoutAnswer {
+				color: hsla(0, 0%, 100%, .5);
+			}
+		}
+		%searchPopoutFilter {
+			color: hsla(0, 0%, 100%, .5);
+			font-weight: 500; 
+		}
+		%searchPopoutAnswer {
+			color: hsla(0, 0%, 100%, .3);
+		}
+	}
 
-    // QUERY CONTAINER
-    %searchPopoutQueryContainer {
-        background-color: $main-color;
-        > %searchPopoutQueryText {
-            color: hsla(0, 0%, 100%, .7);
-            > strong {
-                color: #fff;
-            }
-        }
-        %searchPopoutKeybindShortcut {
-            > span {
-                border-color: hsla(0, 0%, 100%, .5);
-                box-shadow: inset 0 -4px hsla(0, 0%, 100%, .7);
-                &:hover {
-                    background-color: transparent;
-                }
-                &:active {
-                    border-color: hsla(0, 0%, 100%, .5);
-                    box-shadow: inset 0 -2px hsla(0, 0%, 100%, .7);
-                    color: #fff;
-                }
-            }
-        }
-    }
+	// QUERY CONTAINER
+	%searchPopoutQueryContainer {
+		background-color: $main-color;
+		> %searchPopoutQueryText {
+			color: hsla(0, 0%, 100%, .7);
+			> strong {
+				color: #fff;
+			}
+		}
+		%searchPopoutKeybindShortcut {
+			> span {
+				border-color: hsla(0, 0%, 100%, .5);
+				box-shadow: inset 0 -4px hsla(0, 0%, 100%, .7);
+				&:hover {
+					background-color: transparent;
+				}
+				&:active {
+					border-color: hsla(0, 0%, 100%, .5);
+					box-shadow: inset 0 -2px hsla(0, 0%, 100%, .7);
+					color: #fff;
+				}
+			}
+		}
+	}
 
-    // SEARCH DATEPICKER
-    %searchPopoutDatePicker {
-        %searchPopoutDatePickerHint {
-            border-top: 1px solid hsla(0, 0%, 100%, .04);
-            %searchPopoutHint {
-                color: hsla(0, 0%, 100%, .7);
-            }
-            %searchPopoutHintValue {
-                background-color: $main-color;
-                color: #fff;
-                transition: all .15s ease-in-out;
-                &:hover {
-                    background-color: $hover-color;
-                }
-            }
-        }
-    }
+	// SEARCH DATEPICKER
+	%searchPopoutDatePicker {
+		%searchPopoutDatePickerHint {
+			border-top: 1px solid hsla(0, 0%, 100%, .04);
+			%searchPopoutHint {
+				color: hsla(0, 0%, 100%, .7);
+			}
+			%searchPopoutHintValue {
+				background-color: $main-color;
+				color: #fff;
+				transition: all .15s ease-in-out;
+				&:hover {
+					background-color: $hover-color;
+				}
+			}
+		}
+	}
 }
 
 // DATEPICKER
 %searchPopoutDatePicker > %searchPopoutCalendarPicker {
-    > %datepicker,
-    %datepickerHeader {
-        background-color: transparent;
-    }
-    > %datepicker {
-        %datepickerNavigation {
-            background-color: hsla(0, 0%, 100%, .1);
-            border: 1px solid transparent;
+	> %datepicker,
+	%datepickerHeader {
+		background-color: transparent;
+	}
+	> %datepicker {
+		%datepickerNavigation {
+			background-color: hsla(0, 0%, 100%, .1);
+			border: 1px solid transparent;
 			opacity: .7;
 			transition: all .15s ease-in-out;
 			&:hover {
 				background-color: $main-color;
 				opacity: 1;
 			}
-        }
-    }
-    %datepickerCurrentMonth {
-        border-bottom: 1px solid hsla(0, 0%, 100%, .04);
-        color: $main-color;
-        font-weight: 600;
-    }
-    %datepickerDayName {
-        color: hsla(0, 0%, 100%, .7);
-    }
-    %datepickerWeek {
-        &:last-of-type {
-            > %datePickerDay {
-                border-bottom: 1px solid hsla(0, 0%, 100%, .04);
-            }
-        }
-        > %datepickerDay {
-            background-color: hsla(0, 0%, 100%, .1);
-            border-left: 1px solid hsla(0, 0%, 100%, .04);
-            border-top: 1px solid hsla(0, 0%, 100%, .04);
-            color: hsla(0, 0%, 100%, .7);
-            transition: all .15s ease-in-out;
-            &:last-of-type {
-                border-right: 1px solid hsla(0, 0%, 100%, .04);
-            }
-            &:hover {
-                background-color: $main-color;
-                color: #fff;
-            }
-        }
-        > %datepickerDaySelected {
-            box-shadow: inset 0 -3px $main-color;
-            &:after {
-                display: none,
-            }
-        }
-        > %datepickerDayToday {
-            color: $main-color;
-            font-weight: 700;
-        }
-        > %datepickerDayDisabled,
-        > %datepickerDayOutsideMonth {
-            &,
-            &:hover {
-                background-color: transparent;
-                color: hsla(0, 0%, 100%, .1);
-            }
-        }
-    }
+		}
+	}
+	%datepickerCurrentMonth {
+		border-bottom: 1px solid hsla(0, 0%, 100%, .04);
+		color: $main-color;
+		font-weight: 600;
+	}
+	%datepickerDayName {
+		color: hsla(0, 0%, 100%, .7);
+	}
+	%datepickerWeek {
+		&:last-of-type {
+			> %datePickerDay {
+				border-bottom: 1px solid hsla(0, 0%, 100%, .04);
+			}
+		}
+		> %datepickerDay {
+			background-color: hsla(0, 0%, 100%, .1);
+			border-left: 1px solid hsla(0, 0%, 100%, .04);
+			border-top: 1px solid hsla(0, 0%, 100%, .04);
+			color: hsla(0, 0%, 100%, .7);
+			transition: all .15s ease-in-out;
+			&:last-of-type {
+				border-right: 1px solid hsla(0, 0%, 100%, .04);
+			}
+			&:hover {
+				background-color: $main-color;
+				color: #fff;
+			}
+		}
+		> %datepickerDaySelected {
+			box-shadow: inset 0 -3px $main-color;
+			&:after {
+				display: none,
+			}
+		}
+		> %datepickerDayToday {
+			color: $main-color;
+			font-weight: 700;
+		}
+		> %datepickerDayDisabled,
+		> %datepickerDayOutsideMonth {
+			&,
+			&:hover {
+				background-color: transparent;
+				color: hsla(0, 0%, 100%, .1);
+			}
+		}
+	}
 }
