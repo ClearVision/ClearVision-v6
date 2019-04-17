@@ -351,8 +351,17 @@
 .button-1w5pas {
 	@extend %channelsHeaderButton !optional;
 }
+.verified-3uJH7V {
+	@extend %guildVerified !optional;
+}
+.verifiedInner-DViLz0 {
+	@extend %guildVerifiedInner !optional;
+}
 .banner-1TiK82 {
 	@extend %banner !optional;
+}
+.bannerImage-1jOskm {
+	@extend %bannerImage !optional;
 }
 // 4.1) Categories
 .containerDefault-3GGEv_ {
