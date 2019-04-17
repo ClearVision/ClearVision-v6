@@ -1,6 +1,6 @@
 // COPYBUTTON
 %codeHLJS {
-    %codeCopybutton {
+    %copyCodeButton {
         background: hsla(0, 0%, 100%, .1) !important;
         color: hsla(0, 0%, 100%, .7) !important;
         border: none !important;
@@ -16,7 +16,7 @@
         }
     }
     &:hover {
-        %codeCopybutton {
+        %copyCodeButton {
             opacity: 1;
         }
     }
