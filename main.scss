@@ -177,14 +177,14 @@ $discord-blurple: #7289da;
 }
 
 /* APP */
-@import "general/app";
-@import "general/notice";
+@import "app/app";
+@import "app/notice";
 
 /* TITLEBAR */
-@import "general/titlebar";
+@import "app/titlebar";
 
 /* HEADER BAR */
-@import "general/headerbar";
+@import "app/headerbar";
 
 /* GUILDS */
 @import "guilds/guilds";
