@@ -49,6 +49,7 @@
 			&:hover {
 				background-color: hsla(0, 0%, 100%, .04);
 				%messageHeaderCozyMeta {
+					-webkit-mask-image: linear-gradient(to right, #000 230px, transparent 245px);
 					mask-image: linear-gradient(to right, #000 230px, transparent 245px);
 				}
 			}
@@ -56,6 +57,7 @@
 				margin-top: -1px;
 			}
 			%messageHeaderCozyMeta {
+				-webkit-mask-image: linear-gradient(to right, #000 290px, transparent 305px);
 				mask-image: linear-gradient(to right, #000 290px, transparent 305px);
 			}
 			%messagesPopoutActionButtons {
