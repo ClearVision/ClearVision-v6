@@ -1,4 +1,4 @@
-/*! Using Discord Selectors v19-04-17 by Zerthox */
+/*! Using Discord Selectors v19-04-22 by Zerthox */
 // FILE CONTENTS
 // 1) App
 // 	1.1) App Notices
@@ -2810,37 +2810,43 @@ pre {
 }
 
 // 14) TOOLTIPS
-.tooltips-FhwIyl {
-	@extend %tooltips !optional;
+.layerContainer-yqaFcK {
+	@extend %tooltipContainer !optional;
 }
-.tooltip-1OS-Ti {
+.layer-v9HyYc {
+	@extend %tooltipLayer !optional;
+}
+.tooltip-2QfLtc {
 	@extend %tooltip !optional;
 }
-.top-1pTh1F {
+.tooltipPointer-3ZfirK {
+	@extend %tooltipPointer !optional;
+}
+.tooltipTop-XDDSxx {
 	@extend %tooltipTop !optional;
 }
-.bottom-19kp6S {
+.tooltipBottom-3ARrEK {
 	@extend %tooltipBottom !optional;
 }
-.left-1wV7VO {
+.tooltipLeft-3EDOk1 {
 	@extend %tooltipLeft !optional;
 }
-.right-KM_vfY {
+.tooltipRight-2JM5PQ {
 	@extend %tooltipRight !optional;
 }
-.black-2bmmnj {
+.tooltipBlack-PPG47z {
 	@extend %tooltipBlack !optional;
 }
-.brand-3tBTjG {
+.tooltipBrand-g03Nz8 {
 	@extend %tooltipBrand !optional;
 }
-.red-m6f4-H {
+.tooltipRed-8-9NeP {
 	@extend %tooltipRed !optional;
 }
-.green-hbUqD5 {
+.tooltipGreen-WdeQwd {
 	@extend %tooltipGreen !optional;
 }
-.yellow-1oq44m {
+.tooltipYellow-E7eIBE {
 	@extend %tooltipYellow !optional;
 }
 
