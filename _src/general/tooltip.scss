@@ -6,36 +6,47 @@
 	font-size: 13px;
 	font-weight: 600;
 	z-index: 3002;
-	&%tooltipBlack,
-	&%tooltipRed {
-		background: $main-color;
+	%tooltipContainer & {
 		color: #fff;
-		@each $e in Top, Right, Bottom, Left {
-			&%tooltip#{$e} {
-				&:after {
-					border-#{$e}-color: $main-color;
-				}
-			}
+	}
+	&%tooltipBlack {
+		background: rgba(0, 0, 0, .9);
+		> %tooltipPointer {
+			border-top-color: rgba(0, 0, 0, .9);
 		}
 	}
-	&%tooltipTop,
-	&%tooltipBottom {
-		animation: cv-menu-fold .15s cubic-bezier(.2, .6, .5, 1.1);
+	&%tooltipBrand {
+		background: $main-color;
+		> %tooltipPointer {
+			border-top-color: $main-color;
+		}
+	}
+	&%tooltipRed {
+		background: $danger-color;
+		> %tooltipPointer {
+			border-top-color: $danger-color;
+		}
+	}
+	&%tooltipGreen {
+		background: $success-color;
+		> %tooltipPointer {
+			border-top-color: $success-color;
+		}
 	}
 	&%tooltipTop {
+		animation: cv-menu-fold .15s cubic-bezier(.2, .6, .5, 1.1);
 		transform-origin: 50% 100%;
 	}
 	&%tooltipBottom {
+		animation: cv-menu-fold .15s cubic-bezier(.2, .6, .5, 1.1);
 		transform-origin: 50% 0;
 	}
-	&%tooltipRight,
-	&%tooltipLeft {
-		animation: cv-menu-slide .15s cubic-bezier(.2, .6, .5, 1.1);
-	}
 	&%tooltipRight {
+		animation: cv-menu-slide .15s cubic-bezier(.2, .6, .5, 1.1);
 		transform-origin: 0 50%;
 	}
 	&%tooltipLeft {
+		animation: cv-menu-slide .15s cubic-bezier(.2, .6, .5, 1.1);
 		transform-origin: 100% 50%;
 	}
 }
