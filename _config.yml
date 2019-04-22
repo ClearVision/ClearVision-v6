@@ -8,7 +8,6 @@ url: "/"
 exclude:
     - README.md
     - Gemfile
-    - src
     - ClearVision_v6.theme.css
     - ClearVision_v6.plugin.js
 
@@ -16,7 +15,7 @@ plugins:
     - jekyll-autoprefixer
 
 sass:
-    sass_dir: src
+    sass_dir: _src
     style: compressed
 
 autoprefixer:
