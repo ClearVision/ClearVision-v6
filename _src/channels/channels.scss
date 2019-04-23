@@ -106,7 +106,6 @@
 		&:before {
 			content: "";
 			position: absolute;
-			background: transparent;
 			@include stretch;
 			transition: all .15s ease-in-out;
 			z-index: -1;
