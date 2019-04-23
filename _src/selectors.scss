@@ -1,4 +1,4 @@
-/*! Using Discord Selectors v19-04-22 by Zerthox */
+/*! Using Discord Selectors v19-04-23 by Zerthox */
 // FILE CONTENTS
 // 1) App
 // 	1.1) App Notices
@@ -3670,7 +3670,9 @@ pre {
 .contentRegion-3nDuYy {
 	@extend %settingsContentRegion !optional;
 }
-
+.role-3wi9Tf {
+	@extend %settingsRoleItem !optional;
+}
 
 // 22) PAGES
 // 22.1) Server Discovery
