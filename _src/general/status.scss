@@ -38,13 +38,13 @@
 }
 %appMount %colorblindMode {
 	%status {
-		@include bg($size: 0);
+		@include bg($pos: -24px, $repeat: no-repeat);
 		&:after {
 			content: "";
 			display: block;
 			width: 100%;
 			height: 100%;
-			@include bg($img: inherit, $pos: inherit, $size: auto, $rep: no-repeat);
+			@include bg($img: inherit, $pos: center, $size: inherit, $rep: no-repeat);
 			filter: brightness(0);
 			opacity: .7;
 		}
