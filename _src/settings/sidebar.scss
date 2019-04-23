@@ -27,6 +27,7 @@
 		background: hsla(0, 0%, 100%, .07);
 	}
 	%tabBarItem {
+		position: relative;
 		height: unset;
 		padding: 8px 0 8px 20px;
 		margin: 0;
@@ -55,6 +56,8 @@
 				opacity: 1;
 			}
 		}
+
+		// BRAND
 		&[style*="color: rgb(114, 137, 218)"] {
 			background-color: transparent !important;
 			color: hsla(0, 0%, 100%, .3) !important;
@@ -67,6 +70,8 @@
 				color: #fff !important;
 			}
 		}
+
+		// DANGER
 		&[style*="color: rgb(240, 71, 71)"] {
 			background: transparent !important;
 			color: hsla(0, 0%, 100%, .5) !important;
@@ -92,6 +97,12 @@
 					opacity: .7;
 				}
 			}
+		}
+
+		// ROLE ITEM
+		&%settingsRoleItem {
+			background-size: 0;
+			animation: none;
 		}
 	}
 }
