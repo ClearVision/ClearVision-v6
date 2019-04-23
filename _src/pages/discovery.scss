@@ -67,6 +67,11 @@
 		color: $online-color;
 	}
 }
+%discoveryGuildList {
+	%discoveryGuildCardLoading {
+		background: hsla(0, 0%, 100%, .1);
+	}
+}
 
 // EMPTY
 %pageBody {
