@@ -45,9 +45,11 @@
 	}
 	> %titlebarWinButton {
 		top: -2px;
-		opacity: 1 !important;
+		opacity: .7;
+		transition: all .15s ease-in-out;
 		&:hover {
 			background: hsla(0, 0%, 100%, .1);
+			opacity: 1;
 		}
 	}
 	> %titlebarWinButtonClose {
