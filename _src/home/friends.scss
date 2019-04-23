@@ -156,6 +156,7 @@
 						&:focus + %friendsAddFriendHint {
 							&:after {
 								border-color: $main-color;
+								box-shadow: 0 0 1px $main-color;
 							}
 						}
 					}
