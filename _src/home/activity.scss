@@ -43,6 +43,7 @@
 	%activityFeedCard {
 		border-radius: 5px;
 		transition: all .15s ease-in-out;
+		backface-visibility: hidden;
 		&:hover {
 			box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
 		}
