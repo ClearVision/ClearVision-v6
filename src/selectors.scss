@@ -16,7 +16,8 @@
 //	4.7) Private Channels
 //		5.7.1) Search Bar
 // 5) Header Bar
-// 	5.1) Toolbar
+// 	5.1) Search
+// 	5.2) Top Pill
 // 6) Chat
 //	6.1) Messages
 //		6.1.1) Reactions
@@ -1051,89 +1052,99 @@
 }
 
 // 5) HEADER BAR
-.headerBar-UHpsPw {
+.container-1r6BKw {
 	@extend %headerBar !optional;
 }
-.title-1aVOXw {
-	@extend %headerBarTitle !optional;
+.children-19S4PO {
+	@extend %headerBarChildren !optional;
 }
-// 5.1) Toolbar
-.toolbar-94eLIm {
+.toolbar-1t6TWx {
 	@extend %toolbar !optional;
 }
-.iconMargin-2YXk4F {
-	@extend %toolbarIconMargin !optional;
+.base-1x0h_U {
+	@extend %headerBarTitle !optional;
 }
-.icon-1R19_H {
-	@extend %toolbarIcon !optional;
+.topic-TCb_qw {
+	@extend %headerBarTopic !optional;
 }
-.iconInactive-g2AXfB {
-	@extend %toolbarIconInactive !optional;
+.iconWrapper-2OrFZ1 {
+	@extend %headerBarIconWrapper !optional;
 }
-.iconActive-AKd_jq {
-	@extend %toolbarIconActive !optional;
+.icon-22AiRD {
+	@extend %headerBarIcon !optional;
 }
-%toolbarIcon.popout-open {
-	@extend %toolbarIconPopoutOpen !optional;
+.clickable-3rdHwn {
+	@extend %headerBarIconClickable !optional;
+}
+.selected-1GqIat {
+	@extend %headerBarIconSelected !optional;
+}
+%headerBarIcon.popout-open {
+	@extend %headerBarIconPopoutOpen !optional;
+}
+.cloud-31LAb8 {
+	@extend %headerBarIconUpdateCloud !optional;
+}
+.downloadArrow-BfJJjn {
+	@extend %headerBarIconUpdateDownloadArrow !optional;
+}
+.iconBadge-qZ4Ksk {
+	@extend %headerBarIconBadge !optional;
+}
+.divider-3FBTu8 {
+	@extend %headerBarDivider !optional;
 }
 .updateAvailable-qNqOs7 {
-	@extend %toolbarIconUpdateAvailable !optional;
+	@extend %headerBarIconUpdateAvailable !optional;
 }
 .iconForeground-3y9f0B {
-	@extend %toolbarIconForeground !optional;
+	@extend %headerBarIconForeground !optional;
 }
 .updateIconForeground-2jeItf {
-	@extend %toolbarIconUpdateForeground !optional;
+	@extend %headerBarIconUpdateForeground !optional;
 }
-.iconBadge-2dji3k {
-	@extend %toolbarIconBadge !optional;
+// 5.1) Search
+.search-2oPWTC {
+	@extend %headerBarSearch !optional;
 }
-.divider-2PMBlV {
-	@extend %toolbarDivider !optional;
+.open-6_Y_aH {
+	@extend %headerBarSearchOpen !optional;
+}
+.focused-31_ccS {
+	@extend %headerBarSearchFocused !optional;
+}
+.searchBar-3dMhjb {
+	@extend %headerBarSearchBar !optional;
+}
+.DraftEditor-root {
+	@extend %headerBarSearchRoot !optional;
+}
+.public-DraftEditorPlaceholder-root {
+	@extend %headerBarSearchPlaceholder !optional;
+}
+.searchFilter-2ESiM3 {
+	@extend %headerBarSearchFilter !optional;
+}
+.searchAnswer-3Dz2-q {
+	@extend %headerBarSearchAnswer !optional;
+}
+// 5.2) Top Pill
+.topPill-30KHOu {
+	@extend %topPill !optional;
+}
+.item-PXvHYJ {
+	@extend %topPillItem !optional;
+}
+.selected-3s45Ha {
+	@extend %topPillItemSelected !optional;
+}
+.themed-OHr7kt {
+	@extend %topPillItemThemed !optional;
 }
 
 // 6) CHAT
 .chat-3bRxxu {
 	@extend %chat !optional;
-}
-.titleWrapper-1l0xT9 {
-	@extend %chatTitleWrapper !optional;
-}
-.title-3qD0b- {
-	@extend %chatTitle !optional;
-}
-.titleCall-_b9o8P {
-	@extend %chatTitleCall !optional;
-}
-.titleText-3X-zRE {
-	@extend %chatTitleText !optional;
-}
-.channelName-3stJzi {
-	@extend %chatTitleChannelName !optional;
-}
-.channelIcon-MsmKOO {
-	@extend %chatTitleChannelIcon !optional;
-}
-.topic-2QX7LI {
-	@extend %chatTitleTopic !optional;
-}
-.search-2oPWTC {
-	@extend %chatSearch !optional;
-}
-.searchBar-3dMhjb {
-	@extend %chatSearchBar !optional;
-}
-.DraftEditor-root {
-	@extend %chatSearchRoot !optional;
-}
-.public-DraftEditorPlaceholder-root {
-	@extend %chatSearchPlaceholder !optional;
-}
-.searchFilter-2ESiM3 {
-	@extend %chatSearchFilter !optional;
-}
-.searchAnswer-3Dz2-q {
-	@extend %chatSearchAnswer !optional;
 }
 .content-yTz4x3 {
 	@extend %chatContent !optional;
@@ -2727,9 +2738,9 @@ pre {
 .separator-gCa7yv {
 	@extend %tabBarSeparator !optional;
 }
-// 13.4.1) Friends
+// 13.4.1) Header Bar
 .tabBar-1E2ExX {
-	@extend %friendsTabBar !optional;
+	@extend %headerBarTabBar !optional;
 }
 // 13.4.2) Messages Popout
 .tabBar-2UKwcE {
