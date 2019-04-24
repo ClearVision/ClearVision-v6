@@ -17,28 +17,12 @@
 		}
 	}
 }
-@keyframes cv-pulsate-border {
-	0%, 100% {
-		border-color: hsla(0, 0%, 100%, .3);
-	}
-	50% {
-		border-color: currentColor;
-	}
-}
-@keyframes cv-pulsate-plus {
-	0%, 100% {
-		background: #333539;
-	}
-	50% {
-		background: currentColor;
-	}
-}
-@keyframes cv-pulsate-svg {
+@keyframes cv-pulsate-color {
 	0%, 100% {
 		color: #333539;
 	}
 	50% {
-		color: currentColor;
+		color: $main-color;
 	}
 }
 @keyframes cv-badge {

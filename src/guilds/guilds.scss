@@ -19,157 +19,117 @@
 %guildsWrapper {
 	width: 70px;
 	box-shadow: inset 0 0 20px rgba(0, 0, 0, .2);
+}
 
-	// GUILD LIST
-	%guilds {
+// GUILD LIST
+%guilds {
+	%guildPlaceholder {
+		background: hsla(0, 0%, 100%, .07);
+	}
 
-		// GUILD
-		%guild {
-			&:before {
-				content: "";
-				position: absolute;
-				top: 50%;
-				left: -17px;
-				width: 13px;
-				height: 0;
-				background-color: $main-color;
-				box-shadow: 0 0 20px -1px $main-color;
-				opacity: 0;
-				transition: all .5s cubic-bezier(.2, .1, .4, 1);
-			}
+	// PILL
+	%guildPill {
+		overflow: visible;
+	}
+	%guildPillItem {
+		width: 12px;
+		margin-left: -6px;
+		border-radius: 20px;
+		background: $main-color;
+		box-shadow: 0 0 20px -1px $main-color;
+		&[style*="height: 8px"] {
+			height: 10px !important;
 		}
-		%guildUnread {
-			&:before {
-				height: 10px;
-				margin-top: -5px;
-				opacity: 1;
-			}
-		}
-		%guildSelected {
-			&:before {
-				height: 40px;
-				margin-top: -20px;
-				opacity: 1;
-			}
-		}
-		%guildInner {
-			background-color: rgba(0, 0, 0, .3);
-			box-shadow: 0 0 5px rgba(0, 0, 0, .5);
-			transition: background-color .3s ease-in-out, transform .1s ease-in-out;
-			&:active {
-				transform: scale(.9);
-			}
-			&[style*=background] {
-				background-color: rgba(0, 0, 0, .5) !important;
-			}
-		}
-		%guildSelected,
-		%guild:hover {
-			%guildInner[style*=background] {
-				background-color: $main-color !important;
-			}
-		}
-		%guildAudio {
-			&:after {
-				background-color: #000;
-				opacity: .7;
-			}
-		}
-		%guildsError {
-			background-color: rgba(0, 0, 0, .5);
-			border-color: $main-color;
-			transition: all .3s ease-in-out;
-			&:hover {
-				background-color: $main-color;
-			}
-		}
-
-		// HOME BUTTON
-		%homeButton {
-			&:hover,
-			&[style*="background-color: rgb(114, 137, 218);"] {
-				background: $main-color !important;
-			}
-		}
-		%homeLink {
-			background: map-get($home, icon) map-get($home, pos)/map-get($home, size) no-repeat;
-		}
-		%homeIcon {
-			display: none;
-		}
-
-		// FRIENDS COUNT
-		%friendsOnline {
-			background: transparent;
-			color: hsla(0, 0%, 100%, .7);
-			text-transform: uppercase;
-			border-radius: 25px;
-			transition: all .3s ease-in-out;
-			cursor: default;
-			&:hover {
-				color: #fff;
-			}
-		}
-
-		// ICON BUTTON
-		%circleIconButton {
-			background-color: rgba(0, 0, 0, .5);
-			color: #333539;
-			border-color: hsla(0, 0%, 100%, .3);
-			opacity: .7;
-			transition: all .1s ease-in-out;
-			&:hover {
-				color: $main-color;
-				border-color: $main-color;
-				animation: cv-pulsate-border 2s infinite ease-in-out;
-				> svg {
-					animation: cv-pulsate-svg 2s infinite ease-in-out;
-				}
-			}
-			&:active {
-				transform: scale(.9);
-			}
-		}
-		%guildsAddPlus {
-			position: relative;
-			font-size: 0;
-			width: 100%;
-			height: 100%;
-			&:before,
-			&:after {
-				content: "";
-				position: absolute;
-				background-color: #333539;
-				border-radius: 3px;
-				transition: all .1s ease-in-out;
-			}
-			&:before {		
-				width: 2px;
-				top: 25%;
-				bottom: 25%;
-				left: 50%;
-				transform: translateX(-50%);
-			}
-			&:after {
-				height: 2px;
-				top: 50%;
-				right: 25%;
-				left: 25%;
-				transform: translateY(-50%);
-			}
-			&:hover {
-				&:before,
-				&:after {
-					animation: cv-pulsate-plus 2s infinite ease-in-out;
-				}
-			}
+		&[style*="opacity: 0.7"] {
+			opacity: 1 !important;
 		}
 	}
 
-	// SEPARATOR
-	%guildSeparator {
-		&:after {
-			background-color: hsla(0, 0%, 100%, .2);
+	// ACRONYM
+	%guildAcronym {
+		background: rgba(0, 0, 0, .5);
+		color: hsla(0, 0%, 100%, .7);
+		transition: all .3s ease-in-out;
+		&:hover,
+		&%guildAcronymSelected {
+			background: $main-color;
+			color: #fff;
 		}
 	}
+
+	// BADGE
+	%guildBadgeNumber {
+		background: $main-color !important;
+		box-shadow: 0 0 0 1px $main-color, 0 0 20px -3px $main-color;
+		color: #fff;
+		text-shadow: 0 0 3px;
+		font-weight: 600;
+		transition: all .3s ease-in-out;
+	}
+	%guildBadgeIcon {
+		background: hsla(0, 0%, 100%, .04);
+		box-shadow: 0 0 0 1px hsla(0, 0%, 100%, .04);
+	}
+	%guildBadgeIconSVG {
+		padding: 1px;
+		color: $main-color;
+		filter: drop-shadow(0 0 3px $main-color);
+	}
+
+	// GUILDS ERROR
+	%guildsError {
+		background-color: rgba(0, 0, 0, .5);
+		border-color: $danger-color;
+		color: #fff;
+		transition: all .3s ease-in-out;
+		&:hover {
+			background-color: $danger-color;
+		}
+	}
+
+	// HOME BUTTON
+	%homeButton {
+		background: map-get($home, icon) map-get($home, pos)/map-get($home, size) no-repeat;
+		&:hover,
+		&%homeButtonSelected {
+			background-color: $main-color;
+		}
+	}
+	%homeIcon {
+		display: none;
+	}
+
+	// FRIENDS COUNT
+	%friendsOnline {
+		background: transparent;
+		color: hsla(0, 0%, 100%, .7);
+		text-transform: uppercase;
+		border-radius: 25px;
+		transition: all .3s ease-in-out;
+		cursor: default;
+		&:hover {
+			color: #fff;
+		}
+	}
+
+	// ICON BUTTON
+	%circleIconButton {
+		background-color: rgba(0, 0, 0, .5);
+		color: #333539;
+		border: 1px solid currentColor;
+		border-radius: 50%;
+		opacity: .7;
+		transition: all .1s ease-in-out;
+		&:hover {
+			animation: cv-pulsate-color 2s infinite ease-in-out;
+		}
+		&:active {
+			transform: scale(.9);
+		}
+	}
+}
+
+// SEPARATOR
+%guildSeparator {
+	background-color: hsla(0, 0%, 100%, .1);
 }
