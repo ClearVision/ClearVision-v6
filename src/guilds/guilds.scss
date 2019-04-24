@@ -23,6 +23,9 @@
 
 // GUILD LIST
 %guilds {
+	%guildIcon {
+		background-color: rgba(0, 0, 0, .3);
+	}
 	%guildPlaceholder {
 		background: hsla(0, 0%, 100%, .07);
 	}
@@ -40,14 +43,11 @@
 		&[style*="height: 8px"] {
 			height: 10px !important;
 		}
-		&[style*="opacity: 0.7"] {
-			opacity: 1 !important;
-		}
 	}
 
 	// ACRONYM
 	%guildAcronym {
-		background: rgba(0, 0, 0, .5);
+		background: rgba(0, 0, 0, .3);
 		color: hsla(0, 0%, 100%, .7);
 		transition: all .3s ease-in-out;
 		&:hover,
