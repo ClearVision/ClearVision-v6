@@ -20,6 +20,7 @@
 		}
 	}
 	%headerBarTitle {
+		margin-left: 5px;
 		color: #fff;
 		text-shadow: 0 0 3px #000;
 	}
@@ -38,6 +39,11 @@
 	margin: 0 1px;
 	padding: 2px 3px;
 	box-sizing: content-box;
+}
+%chat {
+	%headerBarTitle {
+		margin-left: 0;
+	}
 }
 
 // TOOLBAR
