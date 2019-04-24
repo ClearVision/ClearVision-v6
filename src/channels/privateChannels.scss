@@ -47,7 +47,7 @@
 			transition: all .15s ease-in-out;
 		}
 		%privateChannelIcon {
-			opacity: .3;
+			color: hsla(0, 0%, 100%, .3);
 			transition: all .15s ease-in-out;
 		}
 		
@@ -77,7 +77,7 @@
 				}
 			}
 			%privateChannelIcon {
-				opacity: .7;
+				color: hsla(0, 0%, 100%, .7);
 			}
 		}
 		
@@ -104,7 +104,7 @@
 				fill: hsla(0, 0%, 100%, .7);
 			}
 			%privateChannelIcon {
-				opacity: 1;
+				color: #fff;
 			}
 		}
 	}
