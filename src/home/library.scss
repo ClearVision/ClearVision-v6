@@ -8,23 +8,6 @@
 %base {
 
 	// HEADER
-	%libraryHeaderPill {
-		%libraryHeaderItem {
-			background-color: transparent;
-			color: hsla(0, 0%, 100%, .5);
-			transition: all .3s ease-in-out;
-			&:hover {
-				&:not(%libraryHeaderItemSelected) {
-					background-color: rgba(0, 0, 0, .5);
-					color: hsla(0, 0%, 100%, .7);
-				}
-			}
-			&%libraryHeaderItemSelected {
-				background-color: $main-color;
-				color: #fff;
-			}
-		}
-	}
 	%libraryFilterInput {
 		background-color: hsla(0, 0%, 100%, .1);
 		color: #fff;

@@ -6,46 +6,6 @@
 }
 %chat {
 
-	// TITLEBAR
-	%chatTitleChannelName {
-		color: #fff;
-		text-shadow: 0 0 3px #000;
-	}
-	%chatTitleChannelIcon {
-		color: $main-color;
-		filter: drop-shadow(0 0 3px);
-	}
-	%chatTitleTopic {
-		color: hsla(0, 0%, 100%, .5);
-		> %anchor {
-			color: $main-color;
-			@include hover-shadow;
-		}
-	}
-	%chatSearch {
-		> %chatSearchBar {
-			background: hsla(0, 0%, 100%, .1);
-			> %chatSearchRoot {
-				color: #fff;
-			}
-			%chatSearchPlaceholder {
-				color: hsla(0, 0%, 100%, .3);
-			}
-			%chatSearchFilter,
-			%chatSearchAnswer {
-				background: rgba(0, 0, 0, .3);
-				color: #fff;
-			}
-			%chatSearchFilter {
-				padding: 0 3px;
-			}
-			%chatSearchAnswer {
-				margin: 0 2px 0 0;
-				padding: 0 3px 0 0;
-			}
-		}
-	}
-
 	// CONTENT
 	%chatContent {
 		background: transparent;
