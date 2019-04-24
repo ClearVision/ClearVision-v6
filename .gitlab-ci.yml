@@ -1,29 +1,21 @@
-image: ruby:2.3
+image: node:latest
 
-variables:
-  JEKYLL_ENV: production
-  LANG: C.UTF-8
+cache:
+  paths:
+    - node_modules/
 
 before_script:
-- bundle install
-
-test:
-  stage: test
-  script:
-  - bundle exec jekyll build -d test
-  artifacts:
-    paths:
-    - test
-  except:
-  - master
-
+  - npm install -g sass
+  - npm install -g postcss-cli autoprefixer
+    
 pages:
-  stage: deploy
   script:
-  - bundle exec jekyll build -d public
+    - sass main.scss:public/main.css --load-path=src --style=compressed --no-source-map
+    - postcss -u autoprefixer -b "> 5%" --no-map public/*.css -d public/
   artifacts:
     paths:
-    - public
+      - public
   only:
-  - master
-
+    - tags
+  except:
+    - branches

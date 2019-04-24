@@ -210,7 +210,7 @@ $languages: (
 			}
 		}
 		@each $e in $v {
-			&[class~="#{$e}" i] {
+			&[class~="#{$e}"] {
 				@extend %#{$id};
 			}
 		}

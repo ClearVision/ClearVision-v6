@@ -1,5 +1,3 @@
----
----
 $version: "pre-4.1.0b";
 
 /*! ClearVision v6 BETA #{$version} by Zerthox */
@@ -99,7 +97,7 @@ $discord-blurple: #7289da;
 /// Include background filters
 /// @param {map} $source source map with filter settings
 @mixin filters($source) {
-	filter: #{"grayscale("map-get($source, grayscale)")"} sepia(map-get($source, sepia)) #{"invert("map-get($source, invert)")"} brightness(map-get($source, brightness)) contrast(map-get($source, contrast)) saturate(map-get($source, saturate)) blur(map-get($source, blur));	
+	filter: #{"grayscale("map-get($source, grayscale)")"} sepia(map-get($source, sepia)) #{"invert("map-get($source, invert)")"} brightness(map-get($source, brightness)) contrast(map-get($source, contrast)) #{"saturate("map-get($source, saturate)")"} blur(map-get($source, blur));	
 }
 
 /// Create hover shadow effect
