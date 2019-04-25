@@ -507,103 +507,29 @@
 .total-3tKGEB {
 	@extend %channelUserLimitTotal !optional;
 }
-.nameHoveredVoice-YJ1Vfd {
-	@extend %channelNameHoveredVoice !optional;
-}
-.nameSelectedVoice-1qSph5 {
-	@extend %channelNameSelectedVoice !optional;
-}
-.nameUnreadVoice-EVo-wI {
-	@extend %channelNameUnreadVoice !optional;
-}
-.nameConnectedVoice-MHUX5F {
-	@extend %channelNameConnectedVoice !optional;
-}
-.nameLockedVoice-26MhB1 {
-	@extend %channelNameLockedVoice !optional;
-}
-.nameMutedVoice-3oxyQZ {
-	@extend %channelNameMutedVoice !optional;
-}
-%channelNameDefaultVoice,
-%channelNameHoveredVoice,
-%channelNameSelectedVoice,
-%channelNameUnreadVoice,
-%channelNameConnectedVoice,
-%channelNameLockedVoice,
-%channelNameMutedVoice {
-	@extend %channelNameVoice !optional;
-}
-%channelNameDefaultText,
-%channelNameDefaultVoice {
-	@extend %channelNameDefault !optional;
-}
-%channelNameHoveredText,
-%channelNameHoveredVoice {
-	@extend %channelNameHovered !optional;
-}
-%channelNameSelectedText,
-%channelNameSelectedVoice {
-	@extend %channelNameSelected !optional;
-}
-%channelNameUnreadText,
-%channelNameUnreadVoice {
-	@extend %channelNameUnread !optional;
-}
-%channelNameConnectedText,
-%channelNameConnectedVoice {
-	@extend %channelNameConnected !optional;
-}
-%channelNameLockedText,
-%channelNameLockedVoice {
-	@extend %channelNameLocked !optional;
-}
-%channelNameMutedText,
-%channelNameMutedVoice {
-	@extend %channelNameMuted !optional;
-}
-.actionIcon-2Hi9ZG {
-	@extend %channelActionIcon !optional;
-}
-.unread-1Dp-OI {
-	@extend %channelUnreadIndicator !optional;
-}
-.wrapper-2NJDcI {
-	@extend %channelUserLimit !optional;
-}
 // 4.3) Voice User List
+.listDefault-2y5Z9D {
+	@extend %voiceUserList !optional;
+}
 .draggable-1KoBzC {
 	@extend %voiceUserDraggable !optional;
 }
-.voiceUser-vT8g1p {
+.voiceUser-14U_Ns {
 	@extend %voiceUser !optional;
 }
-.userDefault-1qtQob {
-	@extend %voiceUserDefault !optional;
+.content-3xS9Lh {
+	@extend %voiceUserContent !optional;
 }
-.userHovered-2_fT4Z {
-	@extend %voiceUserHovered !optional;
-}
-.avatarDefault-35WC3R {
-	@extend %voiceUserAvatarDefault !optional;
-}
-.avatarSpeaking-1wJCNq {
-	@extend %voiceUserAvatarSpeaking !optional;
-}
-%voiceUserAvatarDefault,
-%voiceUserAvatarSpeaking {
+.avatarContainer-2inGBK {
 	@extend %voiceUserAvatar !optional;
 }
-.name-2upRM5 {
+.avatarSpeaking-3MqCHL {
+	@extend %voiceUserAvatarSpeaking !optional;
+}
+.username-lm8y6T {
 	@extend %voiceUserName !optional;
 }
-.nameDefault-2s3kbY {
-	@extend %voiceUserNameDefault !optional;
-}
-.nameHovered-21k1eo {
-	@extend %voiceUserNameHovered !optional;
-}
-.nameSpeaking-3UhoEZ {
+.usernameSpeaking-2xbKKh {
 	@extend %voiceUserNameSpeaking !optional;
 }
 // 4.4) Account Container
