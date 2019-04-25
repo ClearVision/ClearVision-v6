@@ -456,317 +456,56 @@
 %channelContainerUserOver {
 	@extend %channelContainer !optional;
 }
-.wrapper-KpKNwI {
+.wrapper-1ucjTd {
 	@extend %channelWrapper !optional;
 }
-.wrapperDefaultText-2IWcE8 {
-	@extend %channelWrapperDefaultText !optional;
-}
-.wrapperHoveredText-2geN_M {
-	@extend %channelWrapperHoveredText !optional;
-}
-.wrapperSelectedText-3dSUjC {
-	@extend %channelWrapperSelectedText !optional;
-}
-.wrapperUnreadText-2zuiuD {
-	@extend %channelWrapperUnreadText !optional;
-}
-.wrapperConnectedText-3NUF2g {
-	@extend %channelWrapperConnectedText !optional;
-}
-.wrapperLockedText-wfOnM5 {
-	@extend %channelWrapperLockedText !optional;
-}
-.wrapperMutedText-1YBpvv {
-	@extend %channelWrapperMutedText !optional;
-}
-%channelWrapperDefaultText,
-%channelWrapperHoveredText,
-%channelWrapperSelectedText,
-%channelWrapperUnreadText,
-%channelWrapperConnectedText,
-%channelWrapperLockedText,
-%channelWrapperMutedText {
-	@extend %channelWrapperText !optional;
-}
-.wrapperDefaultVoice-1yvceo {
-	@extend %channelWrapperDefaultVoice !optional;
-}
-.wrapperHoveredVoice-3ItgyI {
-	@extend %channelWrapperHoveredVoice !optional;
-}
-.wrapperSelectedVoice-xzxa2u {
-	@extend %channelWrapperSelectedVoice !optional;
-}
-.wrapperUnreadVoice-23GIYe {
-	@extend %channelWrapperUnreadVoice !optional;
-}
-.wrapperConnectedVoice-2mvQJY {
-	@extend %channelWrapperConnectedVoice !optional;
-}
-.wrapperLockedVoice-3QrBs- {
-	@extend %channelWrapperLockedVoice !optional;
-}
-.wrapperMutedVoice-10gPcW {
-	@extend %channelWrapperMutedVoice !optional;
-}
-%channelWrapperDefaultVoice,
-%channelWrapperHoveredVoice,
-%channelWrapperSelectedVoice,
-%channelWrapperUnreadVoice,
-%channelWrapperConnectedVoice,
-%channelWrapperLockedVoice,
-%channelWrapperMutedVoice {
-	@extend %channelWrapperVoice !optional;
-}
-%channelWrapperDefaultText,
-%channelWrapperDefaultVoice {
-	@extend %channelWrapperDefault !optional;
-}
-%channelWrapperHoveredText,
-%channelWrapperHoveredVoice {
-	@extend %channelWrapperHovered !optional;
-}
-%channelWrapperSelectedText,
-%channelWrapperSelectedVoice {
-	@extend %channelWrapperSelected !optional;
-}
-%channelWrapperUnreadText,
-%channelWrapperUnreadVoice {
+.modeUnread-1zpFdA {
 	@extend %channelWrapperUnread !optional;
 }
-%channelWrapperConnectedText,
-%channelWrapperConnectedVoice {
+.modeSelected-1zApJ_ {
+	@extend %channelWrapperSelected !optional;
+}
+.modeConnected-2IEL4z {
 	@extend %channelWrapperConnected !optional;
 }
-%channelWrapperLockedText,
-%channelWrapperLockedVoice {
-	@extend %channelWrapperLocked !optional;
-}
-%channelWrapperMutedText,
-%channelWrapperMutedVoice {
+.modeMuted-3osy7j {
 	@extend %channelWrapperMuted !optional;
 }
-.content-20Aix8 {
+.content-3at_AU {
 	@extend %channelContent !optional;
 }
-.contentDefaultText-3vZplL {
-	@extend %channelContentDefaultText !optional;
-}
-.contentHoveredText-2D9B-x {
-	@extend %channelContentHoveredText !optional;
-}
-.contentSelectedText-3wUhMi {
-	@extend %channelContentSelectedText !optional;
-}
-.contentUnreadText-2vNnZc {
-	@extend %channelContentUnreadText !optional;
-}
-.contentConnectedText-16O0fe {
-	@extend %channelContentConnectedText !optional;
-}
-.contentLockedText-1aHuz8 {
-	@extend %channelContentLockedText !optional;
-}
-.contentMutedText-2y6aPQ {
-	@extend %channelContentMutedText !optional;
-}
-%channelContentDefaultText,
-%channelContentHoveredText,
-%channelContentSelectedText,
-%channelContentUnreadText,
-%channelContentConnectedText,
-%channelContentLockedText,
-%channelContentMutedText {
-	@extend %channelContentText !optional;
-}
-.contentDefaultVoice-2ko43i {
-	@extend %channelContentDefaultVoice !optional;
-}
-.contentHoveredVoice-3p_NEO {
-	@extend %channelContentHoveredVoice !optional;
-}
-.contentSelectedVoice-1WDIBM {
-	@extend %channelContentSelectedVoice !optional;
-}
-.contentUnreadVoice-1dijOt {
-	@extend %channelContentUnreadVoice !optional;
-}
-.contentConnectedVoice-qL-YrL {
-	@extend %channelContentConnectedVoice !optional;
-}
-.contentLockedVoice-1gx-SP {
-	@extend %channelContentLockedVoice !optional;
-}
-.contentMutedVoice-2lJ0UD {
-	@extend %channelContentMutedVoice !optional;
-}
-%channelContentDefaultVoice,
-%channelContentHoveredVoice,
-%channelContentSelectedVoice,
-%channelContentUnreadVoice,
-%channelContentConnectedVoice,
-%channelContentLockedVoice,
-%channelContentMutedVoice {
-	@extend %channelContentVoice !optional;
-}
-%channelContentDefaultText,
-%channelContentDefaultVoice {
-	@extend %channelContentDefault !optional;
-}
-%channelContentHoveredText,
-%channelContentHoveredVoice {
-	@extend %channelContentHovered !optional;
-}
-%channelContentSelectedText,
-%channelContentSelectedVoice {
-	@extend %channelContentSelected !optional;
-}
-%channelContentUnreadText,
-%channelContentUnreadVoice {
-	@extend %channelContentUnread !optional;
-}
-%channelContentConnectedText,
-%channelContentConnectedVoice {
-	@extend %channelContentConnected !optional;
-}
-%channelContentLockedText,
-%channelContentLockedVoice {
-	@extend %channelContentLocked !optional;
-}
-%channelContentMutedText,
-%channelContentMutedVoice {
-	@extend %channelContentMuted !optional;
-}
-.icon-sxakjD {
+.icon-1_QxNX {
 	@extend %channelIcon !optional;
 }
-.background-2OVjk_ {
-	@extend %channelIconBackground !optional;
-}
-.colorDefaultText-oas-QM {
-	@extend %channelIconDefaultText !optional;
-}
-.colorHoveredText-OZnAgu {
-	@extend %channelIconHoveredText !optional;
-}
-.colorSelectedText-1y4Wvs {
-	@extend %channelIconSelectedText !optional;
-}
-.colorUnreadText-2t7XRb {
-	@extend %channelIconUnreadText !optional;
-}
-.colorConnectedText-1c_uzY {
-	@extend %channelIconConnectedText !optional;
-}
-.colorLockedText-1VRkPt {
-	@extend %channelIconLockedText !optional;
-}
-.colorMutedText-36M8WR {
-	@extend %channelIconMutedText !optional;
-}
-%channelIconDefaultText,
-%channelIconHoveredText,
-%channelIconSelectedText,
-%channelIconUnreadText,
-%channelIconConnectedText,
-%channelIconLockedText,
-%channelIconMutedText {
-	@extend %channelIconText !optional;
-}
-.colorDefaultVoice-3wYlhb {
-	@extend %channelIconDefaultVoice !optional;
-}
-.colorHoveredVoice-1kucsK {
-	@extend %channelIconHoveredVoice !optional;
-}
-.colorSelectedVoice-Xcb_9R {
-	@extend %channelIconSelectedVoice !optional;
-}
-.colorUnreadVoice-137o4S {
-	@extend %channelIconUnreadVoice !optional;
-}
-.colorConnectedVoice-3kyvUN {
-	@extend %channelIconConnectedVoice !optional;
-}
-.colorLockedVoice-2UlBjl {
-	@extend %channelIconLockedVoice !optional;
-}
-.colorMutedVoice-3ghIuw {
-	@extend %channelIconMutedVoice !optional;
-}
-%channelIconDefaultVoice,
-%channelIconHoveredVoice,
-%channelIconSelectedVoice,
-%channelIconUnreadVoice,
-%channelIconConnectedVoice,
-%channelIconLockedVoice,
-%channelIconMutedVoice {
-	@extend %channelIconVoice !optional;
-}
-%channelIconDefaultText,
-%channelIconDefaultVoice {
-	@extend %channelIconDefault !optional;
-}
-%channelIconHoveredText,
-%channelIconHoveredVoice {
-	@extend %channelIconHovered !optional;
-}
-%channelIconSelectedText,
-%channelIconSelectedVoice {
-	@extend %channelIconSelected !optional;
-}
-%channelIconUnreadText,
-%channelIconUnreadVoice {
-	@extend %channelIconUnread !optional;
-}
-%channelIconConnectedText,
-%channelIconConnectedVoice {
-	@extend %channelIconConnected !optional;
-}
-%channelIconLockedText,
-%channelIconLockedVoice {
-	@extend %channelIconLocked !optional;
-}
-%channelIconMutedText,
-%channelIconMutedVoice {
-	@extend %channelIconMuted !optional;
-}
-.name-3M0b8v {
+.name-3_Dsmg {
 	@extend %channelName !optional;
 }
-.nameDefaultText-24KCy5 {
-	@extend %channelNameDefaultText !optional;
+.children-Bmpf2Q {
+	@extend %channelButtons !optional;
 }
-.nameHoveredText-1uO31y {
-	@extend %channelNameHoveredText !optional;
+.iconItem-1-bXkn {
+	@extend %channelButton !optional;
 }
-.nameSelectedText-sp_EUw {
-	@extend %channelNameSelectedText !optional;
+.actionIcon-2Hi9ZG {
+	@extend %channelActionIcon !optional;
 }
-.nameUnreadText-DfkrI4 {
-	@extend %channelNameUnreadText !optional;
+.unread-3zKkbm {
+	@extend %channelUnreadIndicator !optional;
 }
-.nameConnectedText-3CzNQn {
-	@extend %channelNameConnectedText !optional;
+.mentionsBadge-7f5lud {
+	@extend %channelBadge !optional;
 }
-.nameLockedText-3pqQcL {
-	@extend %channelNameLockedText !optional;
+.userLimit-64AFxe {
+	@extend %channelUserLimit !optional;
 }
-.nameMutedText-3Vj4bM {
-	@extend %channelNameMutedText !optional;
+.wrapper-pZmgj4 {
+	@extend %channelUserLimitWrapper !optional;
 }
-%channelNameDefaultText,
-%channelNameHoveredText,
-%channelNameSelectedText,
-%channelNameUnreadText,
-%channelNameConnectedText,
-%channelNameLockedText,
-%channelNameMutedText {
-	@extend %channelNameText !optional;
+.users-i_3-kL {
+	@extend %channelUserLimitUsers !optional;
 }
-.nameDefaultVoice-3WUH7s {
-	@extend %channelNameDefaultVoice !optional;
+.total-3tKGEB {
+	@extend %channelUserLimitTotal !optional;
 }
 .nameHoveredVoice-YJ1Vfd {
 	@extend %channelNameHoveredVoice !optional;
