@@ -33,11 +33,6 @@
 		background: $hover-color;
 	}
 }
-@keyframes cv-category-fix {
-	from, to {
-		visibility: hidden;
-	}
-}
 @each $d in top, right, bottom, left {
 	@keyframes cv-slide-#{$d} {
 		from {
