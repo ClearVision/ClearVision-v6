@@ -130,7 +130,7 @@
 			z-index: -1;
 		}
 		&:hover,
-		&%tabBarItemSelected {
+		&[style*="color: rgb(255, 255, 255)"] {
 			&:before {
 				opacity: 1;
 			}
@@ -138,7 +138,7 @@
 		&:hover {
 			color: hsla(0, 0%, 100%, .7) !important;
 		}
-		&%tabBarItemSelected {
+		&[style*="color: rgb(255, 255, 255)"] {
 			color: #fff !important;
 			&:after {
 				top: 0;
