@@ -58,11 +58,10 @@
 	}
 
 	// BADGE
-	%guildBadgeNumber {
+	%numberBadge {
 		background: $main-color !important;
 		box-shadow: 0 0 0 1px $main-color, 0 0 20px -3px $main-color;
 		color: #fff;
-		text-shadow: 0 0 3px;
 		font-weight: 600;
 		transition: all .3s ease-in-out;
 	}
