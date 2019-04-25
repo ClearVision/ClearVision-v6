@@ -1,0 +1,265 @@
+// CHANNEL
+%channelContent {
+	transition: all .15s ease-in-out;
+}
+%channelContent {
+	position: relative;
+	background: transparent !important;
+	&:before {
+		content: "";
+		position: absolute;
+		@include stretch;
+		transition: all .15s ease-in-out;
+		z-index: -1;
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		@include pos(0, 100%, 0, 0);
+		background: $main-color;
+		transition: all .3s ease-in-out;
+		z-index: -1;
+	}
+	%channelIcon {
+		color: hsla(0, 0%, 100%, .3);
+		opacity: 1;
+		transition: all .15s ease-in-out;
+		> path {
+			opacity: .7;
+		}
+		> path:last-of-type {	
+			opacity: 1;
+		}
+	}
+	%channelName {
+		color: hsla(0, 0%, 100%, .3);
+		transition: all .15s ease-in-out;
+	}
+}
+%channelButtons {
+	margin-left: 1px;
+}
+%channelActionIcon {
+	color: #fff;
+	opacity: .3;
+	transition: all .15s ease-in-out;
+	animation: cv-fade-to-3 .15s ease-in-out;
+	&:hover {
+		opacity: .7;
+	}
+}
+%channelUnreadIndicator {
+	display: none;
+}
+%channelWrapper {
+
+	// HOVER
+	&:hover {
+		%channelContent {
+			&:before {
+				background: hsla(0, 0%, 100%, .1);
+			}
+			%channelContainerDefault & {
+				%channelIcon,
+				%channelName {
+					color: hsla(0, 0%, 100%, .7);
+				}
+			}
+		}
+	}
+
+	// UNREAD
+	&%channelWrapperUnread {
+		%channelContent {
+			%channelName {
+				color: $main-color;
+				text-shadow: 0 0 3px;
+			}
+			%channelIcon {
+				color: $main-color;
+				filter: drop-shadow(0 0 3px);
+				opacity: 1;
+			}
+		}
+		&:hover {
+			%channelContent {
+				%channelName {
+					color: #fff;
+				}
+				%channelIcon {
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	// SELECTED
+	&%channelWrapperSelected {
+		%channelContent {
+			&:before {
+				background: hsla(0, 0%, 100%, .1);
+			}
+			&:after {
+				right: 0;
+				animation: cv-slide-right .3s ease-in-out;
+			}
+			%channelContainerDefault & {
+				%channelIcon,
+				%channelName {
+					color: #fff;
+				}
+			}
+			%channelActionIcon {
+				opacity: .7;
+				&:hover {
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	
+	// CONNECTED
+	&%channelWrapperConnected {
+		%channelContent {
+			%channelName {
+				color: $main-color;
+				text-shadow: 0 0 3px;
+			}
+			%channelIcon {
+				color: $main-color;
+				filter: drop-shadow(0 0 3px);
+			}
+		}
+	}
+
+	// MUTED
+	&%channelWrapperMuted {
+		%channelContent {
+			%channelIcon,
+			%channelName {
+				color: hsla(0, 0%, 100%, .1);
+			}
+		}
+	}
+}
+
+// ICONS
+%channelActionIcon {
+	&[name=Gear] {
+		background: url(https://clearvision.gitlab.io/icons/settings.svg) no-repeat center/18px;
+		&:hover {
+			animation: cv-spin 2.5s linear infinite;
+		}
+		> path {
+			display: none;
+		}
+	}
+	&[name=Invite] {
+		background: url(https://clearvision.gitlab.io/icons/person_add.svg) no-repeat center/18px;
+		> path {
+			display: none;
+		}
+	}
+}
+
+// USER LIMIT
+%channelUserLimitUsers {
+	padding-right: 4px;
+	background: rgba(0, 0, 0, .15);
+	color: hsla(0, 0%, 100%, .3);
+	font-weight: 600;
+	transition: all .15s ease-in-out;
+}
+%channelUserLimitTotal {
+	display: flex;
+	flex-direction: row;
+	color: hsla(0, 0%, 100%, .3);
+	background: hsla(0, 0%, 100%, .04);
+	font-weight: 600;
+	transition: all .15s ease-in-out;
+	&:before {
+		content: "";
+		margin-right: 4px;
+		width: 1px;
+		background: hsla(0, 0%, 100%, .07);
+	}
+	&:after {
+		display: none;
+	}
+}
+%channelWrapperConnected {
+	%channelUserLimitUsers {
+		color: $main-color;
+		text-shadow: 0 0 1px;
+	}
+}
+
+// VOICE USER LIST
+%voiceUserList {
+	padding-left: 24px;
+}
+%voiceUser {
+	z-index: 1;
+	%voiceUserContent {
+		border-radius: 3px;
+		transition: all .15s ease-in-out;
+	}
+	&:hover,
+	&:active {
+		%channels %voiceUserList & {
+			%voiceUserContent {
+				background: hsla(0, 0%, 100%, .04);
+			}
+			%voiceUserName {
+				color: hsla(0, 0%, 100%, .7);
+			}
+		}
+	}
+	%voiceUserAvatar {
+		position: relative;
+		transition: all .1s ease-in-out;
+		&:after {
+			content: "";
+			position: absolute;
+			width: 0;
+			@include pos($top: 0, $bottom: 0, $left: 50%);
+			background: linear-gradient(to right, $main-color 10%, transparent);
+			opacity: .5;
+			transition: all .1s ease-in-out,  width .15s ease-in-out;
+			pointer-events: none;
+			z-index: -1;
+		}
+	}
+	%voiceUserAvatarSpeaking {
+		box-shadow: 0 0 0 2px $main-color, inset 0 0 3px rgba(0, 0, 0, .5);
+		&:after {
+			@include pos($top: -2px, $bottom: -2px);
+			width: 100px;
+		}
+	}
+	%voiceUserName {
+		color: hsla(0, 0%, 100%, .5);
+		transition: all .1s ease-in-out;
+	}
+	%voiceUserNameSpeaking {
+		color: #fff !important;
+	}
+}
+
+// DRAG INDICATORS
+%categoryContainerDrag,
+%channelContainerDrag {
+	&:before,
+	&:after {
+		background: $main-color;
+		border-radius: 0;
+	}
+}
+%channelContainerUserOver {
+	&:after {
+		background: $main-color;
+		border-color: transparent;
+		opacity: .1;
+	}
+}
