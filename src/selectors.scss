@@ -313,9 +313,6 @@
 .upperBadge-2XnnGB {
 	@extend %guildBadgeUpper !optional;
 }
-.numberBadge-2s8kKX {
-	@extend %guildBadgeNumber !optional;
-}
 .iconBadge-2wi9r4 {
 	@extend %guildBadgeIcon !optional;
 }
@@ -490,7 +487,7 @@
 	@extend %channelActionIcon !optional;
 }
 .unread-3zKkbm {
-	@extend %channelUnreadIndicator !optional;
+	@extend %channelUnreadPill !optional;
 }
 .mentionsBadge-7f5lud {
 	@extend %channelBadge !optional;
@@ -2350,6 +2347,9 @@ pre {
 // 13.3) Badges
 .wrapper-232cHJ {
 	@extend %badge !optional;
+}
+.numberBadge-2s8kKX {
+	@extend %numberBadge !optional;
 }
 // 13.4) Tab Bar
 .item-PXvHYJ {
