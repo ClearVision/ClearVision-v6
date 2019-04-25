@@ -1,4 +1,4 @@
-/*! Using Discord Selectors v19-04-24 by Zerthox */
+/*! Using Discord Selectors v19-04-25 by Zerthox */
 // FILE CONTENTS
 // 1) App
 // 	1.1) App Notices
@@ -413,86 +413,26 @@
 %categoryContainerUserOver {
 	@extend %categoryContainer !optional;
 }
-.wrapperDefault-10Jfvz {
-	@extend %categoryWrapperDefault !optional;
-}
-.wrapperHovered-28fu1D {
-	@extend %categoryWrapperHovered !optional;
-}
-.wrapperUnread-1JPWj3 {
-	@extend %categoryWrapperUnread !optional;
-}
-.wrapperCollapsed-3Fbxl6 {
-	@extend %categoryWrapperCollapsed !optional;
-}
-.wrapperHoveredCollapsed-1PADEo {
-	@extend %categoryWrapperHoveredCollapsed !optional;
-}
-.wrapperMuted-3KeA2M {
-	@extend %categoryWrapperMuted !optional;
-}
-%categoryWrapperDefault,
-%categoryWrapperHovered,
-%categoryWrapperUnread,
-%categoryWrapperCollapsed,
-%categoryWrapperHoveredCollapsed,
-%categoryWrapperMuted {
+.wrapper-CU3qI5 {
 	@extend %categoryWrapper !optional;
 }
-.iconDefault-3Gr8d2 {
-	@extend %categoryIconDefault !optional;
+.clickable-18m--O {
+	@extend %categoryWrapperClickable !optional;
 }
-.iconUnread-2eGkvX {
-	@extend %categoryIconUnread !optional;
+.collapsed-4WdoJ7 {
+	@extend %categoryWrapperCollapsed !optional;
 }
-.iconHovered-2L3-fB {
-	@extend %categoryIconHovered !optional;
+.muted-1NRuDm {
+	@extend %categoryWrapperMuted !optional;
 }
-.iconCollapsed-3hFp_8 {
-	@extend %categoryIconCollapsed !optional;
-}
-.iconHoveredCollapsed-3caIIZ {
-	@extend %categoryIconHoveredCollapsed !optional;
-}
-.iconMuted-1HVBGH {
-	@extend %categoryIconMuted !optional;
-}
-.directionRight-O8AY4M {
-	@extend %categoryIconMutedCollapsed !optional;
-}
-%categoryIconDefault,
-%categoryIconHovered,
-%categoryIconUnread,
-%categoryIconCollapsed,
-%categoryIconHoveredCollapsed,
-%categoryIconMuted {
+.icon-WnO6o2 {
 	@extend %categoryIcon !optional;
 }
-.nameDefault-2DI02H {
-	@extend %categoryNameDefault !optional;
-}
-.nameCollapsed-34uFWo {
-	@extend %categoryNameCollapsed !optional;
-}
-.nameHovered-1gxhWH {
-	@extend %categoryNameHovered !optional;
-}
-.nameHoveredCollapsed-2orEWB {
-	@extend %categoryNameHoveredCollapsed !optional;
-}
-.nameMuted-1MCOt4 {
-	@extend %categoryNameMuted !optional;
-}
-.nameUnread-njOjIS {
-	@extend %categoryNameUnread !optional;
-}
-%categoryNameDefault,
-%categoryNameUnread,
-%categoryNameHovered,
-%categoryNameCollapsed,
-%categoryNameHoveredCollapsed,
-%categoryNameMuted {
+.name-IbjUBS {
 	@extend %categoryName !optional;
+}
+.children-13TY0l {
+	@extend %categoryButtons !optional;
 }
 // 4.2) Voice & Text Channels
 .containerDefault-1ZnADq {
