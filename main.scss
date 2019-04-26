@@ -279,7 +279,6 @@ $discord-blurple: #7289da;
 
 /* SETTINGS */
 @import "settings/sidebar";
-@import "settings/bdSidebar";
 @import "settings/icons";
 @import "settings/content";
 
@@ -289,6 +288,9 @@ $discord-blurple: #7289da;
 /* SCREENS */
 @import "screens/loading";
 @import "screens/crash";
+
+/* BETTERDISCORD */
+@import "bd/sidebar";
 
 /* PLUGINS */
 @import "plugins/pluginNotice";
