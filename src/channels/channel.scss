@@ -21,6 +21,9 @@
 		z-index: -1;
 	}
 	%channelIcon {
+		width: 18px;
+		height: 18px;
+		margin-right: 3px;
 		color: hsla(0, 0%, 100%, .3);
 		opacity: 1;
 		transition: all .15s ease-in-out;
