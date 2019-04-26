@@ -62,40 +62,63 @@
 		%settingsSide {
 			%tabBarItem {
 				position: relative;
-				background: linear-gradient($main-color, $main-color) left/0 no-repeat;
-				transition: all .15s ease-in-out, background-size .3s ease-in-out;
+				background: transparent;
+				transition: all .15s ease-in-out;
 				&:before {
 					opacity: .3;
 					transition: inherit;
 				}
-				&:hover {
-					background-color: hsla(0, 0%, 100%, .07);
-					color: hsla(0, 0%, 100%, .7);
-					&:before {
-						opacity: .7;
-					}
+				&:after {
+					content: "";
+					position: absolute;
+					@include pos(0, 100%, 0, 0);
+					opacity: .9;
+					transition: all .3s ease-in-out;
+					z-index: -1;
 				}
-				&%tabBarItemSelected {
-					background-color: hsla(0, 0%, 100%, .07) !important;
-					background-size: 100% !important;
-					color: #fff;
-					animation: cv-slide-bg .3s ease-in-out;
-					&:before {
-						opacity: 1;
-					}
-				}
-				
+
 				// BRAND
 				&[style*="color: rgb(114, 137, 218)"] {
 					background-color: transparent !important;
 					color: hsla(0, 0%, 100%, .3) !important;
 					&:hover {
-						background-color: hsla(0, 0%, 100%, .07) !important;
+						background: hsla(0, 0%, 100%, .07) !important;
 						color: hsla(0, 0%, 100%, .7) !important;
 					}
-					&%tabBarItemSelected {
-						background-color: hsla(0, 0%, 100%, .07) !important;
+				}
+
+				// HOVER
+				&:hover {
+					background: hsla(0, 0%, 100%, .07);
+					color: hsla(0, 0%, 100%, .7);
+					&:before {
+						opacity: .7;
+					}
+				}
+
+				// SELECTED
+				&%tabBarItemSelected,
+				&[style*="color: rgb(255, 255, 255)"] {
+					&:before {
+						opacity: 1;
+					}
+					&:after {
+						right: 0;
+						background: $main-color;
+						animation: cv-channel-select .3s ease-in-out;
+					}
+				}
+				&%tabBarItemSelected {
+					background: transparent !important;
+					color: #fff !important;
+					transition: all .15s ease-in-out, background .3s .2s;
+				}
+				&[style*="color: rgb(255, 255, 255)"] {
+					&,
+					&:hover {
+						background: transparent !important;
 						color: #fff !important;
+						transition: all .15s ease-in-out, background .3s .2s;
 					}
 				}
 				
