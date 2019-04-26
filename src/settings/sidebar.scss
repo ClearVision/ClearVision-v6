@@ -57,71 +57,73 @@
 		}
 	}
 }
-%settingsSidebar {
-	%settingsSide {
-		%tabBarItem {
-			position: relative;
-			background: linear-gradient($main-color, $main-color) left/0 no-repeat;
-			transition: all .15s ease-in-out, background-size .3s ease-in-out;
-			&:before {
-				opacity: .3;
-				transition: inherit;
-			}
-			&:hover {
-				background-color: hsla(0, 0%, 100%, .07);
-				color: hsla(0, 0%, 100%, .7);
+%standardSidebarView {
+	%settingsSidebar {
+		%settingsSide {
+			%tabBarItem {
+				position: relative;
+				background: linear-gradient($main-color, $main-color) left/0 no-repeat;
+				transition: all .15s ease-in-out, background-size .3s ease-in-out;
 				&:before {
-					opacity: .7;
+					opacity: .3;
+					transition: inherit;
 				}
-			}
-			&%tabBarItemSelected {
-				background-color: hsla(0, 0%, 100%, .07) !important;
-				background-size: 100% !important;
-				color: #fff;
-				animation: cv-slide-bg .3s ease-in-out;
-				&:before {
-					opacity: 1;
-				}
-			}
-	
-			// BRAND
-			&[style*="color: rgb(114, 137, 218)"] {
-				background-color: transparent !important;
-				color: hsla(0, 0%, 100%, .3) !important;
 				&:hover {
-					background-color: hsla(0, 0%, 100%, .07) !important;
-					color: hsla(0, 0%, 100%, .7) !important;
+					background-color: hsla(0, 0%, 100%, .07);
+					color: hsla(0, 0%, 100%, .7);
+					&:before {
+						opacity: .7;
+					}
 				}
 				&%tabBarItemSelected {
 					background-color: hsla(0, 0%, 100%, .07) !important;
-					color: #fff !important;
-				}
-			}
-	
-			// DANGER
-			&[style*="color: rgb(240, 71, 71)"] {
-				background: transparent !important;
-				color: hsla(0, 0%, 100%, .5) !important;
-				&:before {
-					opacity: .5;
-				}
-				&:after {
-					content: "";
-					position: absolute;
-					@include stretch;
-					background: $danger-color;
-					opacity: .5;
-					transition: inherit;
-					z-index: -1;
-				}
-				&:hover {
-					color: #fff !important;
+					background-size: 100% !important;
+					color: #fff;
+					animation: cv-slide-bg .3s ease-in-out;
 					&:before {
 						opacity: 1;
-						transform: rotateY(180deg);
+					}
+				}
+				
+				// BRAND
+				&[style*="color: rgb(114, 137, 218)"] {
+					background-color: transparent !important;
+					color: hsla(0, 0%, 100%, .3) !important;
+					&:hover {
+						background-color: hsla(0, 0%, 100%, .07) !important;
+						color: hsla(0, 0%, 100%, .7) !important;
+					}
+					&%tabBarItemSelected {
+						background-color: hsla(0, 0%, 100%, .07) !important;
+						color: #fff !important;
+					}
+				}
+				
+				// DANGER
+				&[style*="color: rgb(240, 71, 71)"] {
+					background: transparent !important;
+					color: hsla(0, 0%, 100%, .5) !important;
+					&:before {
+						opacity: .5;
 					}
 					&:after {
-						opacity: .7;
+						content: "";
+						position: absolute;
+						@include stretch;
+						background: $danger-color;
+						opacity: .5;
+						transition: inherit;
+						z-index: -1;
+					}
+					&:hover {
+						color: #fff !important;
+						&:before {
+							opacity: 1;
+							transform: rotateY(180deg);
+						}
+						&:after {
+							opacity: .7;
+						}
 					}
 				}
 			}
