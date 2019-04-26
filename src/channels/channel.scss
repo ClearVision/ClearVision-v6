@@ -41,12 +41,12 @@
 }
 %channelButtons {
 	margin-left: 1px;
+	animation: cv-fade-to-3 .15s ease-in-out;
 }
 %channelActionIcon {
 	color: #fff;
 	opacity: .3;
 	transition: all .15s ease-in-out;
-	animation: cv-fade-to-3 .15s ease-in-out;
 	&:hover {
 		opacity: .7;
 	}
