@@ -51,6 +51,16 @@
 		background-size: 100%;
 	}
 }
+@keyframes cv-channel-select {
+	from {
+		right: 100%;
+		background-color: transparent;
+	}
+	to {
+		right: 0;
+		background-color: $main-color;
+	}
+}
 @keyframes cv-message-jump {
 	from {
 		background: hsla(0, 0%, 100%, .3);

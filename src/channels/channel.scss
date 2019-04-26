@@ -16,7 +16,7 @@
 		content: "";
 		position: absolute;
 		@include pos(0, 100%, 0, 0);
-		background: $main-color;
+		opacity: .9;
 		transition: all .3s ease-in-out;
 		z-index: -1;
 	}
@@ -101,7 +101,8 @@
 			}
 			&:after {
 				right: 0;
-				animation: cv-slide-right .3s ease-in-out;
+				background: $main-color;
+				animation: cv-channel-select .3s ease-in-out;
 			}
 			%channelContainerDefault & {
 				%channelIcon,
