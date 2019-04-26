@@ -24,6 +24,8 @@
 		transform-origin: 50% 0;
 	}
 	%messagesPopout {
+
+		// CHANNEL NAME
 		%messagesPopoutChannelName {
 			color: $main-color;
 			text-shadow: 0 0 1px;
@@ -33,9 +35,13 @@
 				text-decoration: none;
 			}
 		}
+
+		// GUILD NAME
 		%messagesPopoutGuildName {
 			color: hsla(0, 0%, 100%, .3);
 		}
+
+		// MESSAGE GROUP
 		%messageGroupWrapper {
 			margin: 0;
 			background-color: transparent;
@@ -128,7 +134,7 @@
 			z-index: -1;
 		}
 		&:hover,
-		&%tabBarItemSelected {
+		&[style*="color: rgb(255, 255, 255)"] {
 			&:before {
 				opacity: 1;
 			}
@@ -136,7 +142,7 @@
 		&:hover {
 			color: hsla(0, 0%, 100%, .7) !important;
 		}
-		&%tabBarItemSelected {
+		&[style*="color: rgb(255, 255, 255)"] {
 			color: #000 !important;
 			mix-blend-mode: screen;
 			transform: translateZ(0);
