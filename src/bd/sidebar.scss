@@ -4,37 +4,58 @@
 		color: $main-color;
 		font-weight: 700;
 	}
+
+	// ITEM
 	%bdSettingsSidebarItem {
-		background: linear-gradient($main-color, $main-color) left/0 no-repeat;
 		color: hsla(0, 0%, 100%, .3);
 		padding: 8px 0 8px 20px;
 		margin: 0;
-		cursor: pointer;
 		transition: all .15s ease-in-out, background-size .3s ease-in-out;
+		cursor: pointer;
 		&:before {
 			opacity: .3;
 			transition: all .15s ease-in-out;
 		}
+		&:after {
+			content: "";
+			position: absolute;
+			@include pos(0, 100%, 0, 0);
+			opacity: .9;
+			transition: all .3s ease-in-out;
+			z-index: -1;
+		}
+
+		// HOVER
 		&:hover {
-			background-color: hsla(0, 0%, 100%, .07);
+			background: hsla(0, 0%, 100%, .07);
 			color: hsla(0, 0%, 100%, .7);
 			&:before {
 				opacity: .7;
 			}
 		}
+
+		// SELECTED
 		&%bdSettingsSidebarItemSelected {
-			background-color: hsla(0, 0%, 100%, .07);
-			background-size: 100%;
+			background: transparent;
 			color: #fff;
-			animation: cv-slide-bg .3s ease-in-out;
+			transition: all .15s ease-in-out, background .3s .2s;
 			&:before {
 				opacity: 1;
 			}
+			&:after {
+				right: 0;
+				background: $main-color;
+				animation: cv-channel-select .3s ease-in-out;
+			}
 		}
 	}
+
+	// SEPARATOR
 	%bdSettingsSidebarSeparator {
 		background: hsla(0, 0%, 100%, .07);
 	}
+
+	// CREDITS
 	div[style] {
 		color: hsla(0, 0%, 100%, .3) !important;
 	}
