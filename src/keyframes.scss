@@ -19,7 +19,7 @@
 }
 @keyframes cv-pulsate-color {
 	0%, 100% {
-		color: #333539;
+		color: hsla(0, 0%, 100%, .15);
 	}
 	50% {
 		color: $main-color;
