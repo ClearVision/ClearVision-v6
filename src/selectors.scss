@@ -280,10 +280,32 @@
 .listItem-2P_4kh {
 	@extend %guild !optional;
 }
+.blob-1PX1Gp {
+	@extend %homeContainer !optional;
+}
+.button-OhfaWu {
+	@extend %homeButton !optional;
+}
+.selected-wSa2KV {
+	@extend %homeButtonSelected !optional;
+}
+.homeIcon-tEMBK1 {
+	@extend %homeIcon !optional;
+}
+.pill-2uzAFe {
+	@extend %homePill !optional;
+}
+.friendsOnline-2JkivW {
+	@extend %friendsOnline !optional;
+}
+.guildSeparator-3s64Iy,
+%guild[separator]:after {
+	@extend %guildSeparator !optional;
+}
 .blobContainer-239gwq {
 	@extend %guildContainer !optional;
 }
-.pill-31IEus {
+.wrapper-sa6paO {
 	@extend %guildPill !optional;
 }
 .item-2hkk8m {
@@ -333,25 +355,6 @@
 }
 .guildsError-b7zR5H {
 	@extend %guildsError !optional;
-}
-.friendsOnline-2JkivW {
-	@extend %friendsOnline !optional;
-}
-.guildSeparator-3s64Iy,
-%guild[separator]:after {
-	@extend %guildSeparator !optional;
-}
-.blob-1PX1Gp {
-	@extend %homeContainer !optional;
-}
-.button-OhfaWu {
-	@extend %homeButton !optional;
-}
-.selected-wSa2KV {
-	@extend %homeButtonSelected !optional;
-}
-.homeIcon-tEMBK1 {
-	@extend %homeIcon !optional;
 }
 
 // 4) CHANNELS
