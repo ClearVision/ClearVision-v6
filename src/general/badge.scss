@@ -1,8 +1,7 @@
 // BADGE
 %badge {
-	padding: 3px 5px;
 	background: $main-color;
-	box-shadow: 0 0 20px -3px $main-color;
+	box-shadow: 0 0 10px -3px $main-color, 0 0 0 1px $main-color;
 	color: #fff;
 	font-size: 12px;
 	font-weight: 600;
@@ -10,13 +9,33 @@
 	line-height: 12px;
 	transition: all .3s ease-in-out;
 }
-%tabBarItemSelected,
-%topPillItemSelected {
+
+// NUMBER BADGE
+%numberBadge {
+	background: $main-color !important;
+	box-shadow: 0 0 10px -3px $main-color, 0 0 0 1px $main-color;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 600;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, .25);
+	line-height: 12px;
+	transition: all .3s ease-in-out;
+}
+
+// INVERTED
+%tabBarItemSelected {
 	%badge {
 		background: #fff;
 		box-shadow: none;
 		color: #000;
 		mix-blend-mode: screen;
-		transform: translateZ(0);
+	}
+}
+%topPillItemSelected {
+	%numberBadge {
+		background: #fff !important;
+		box-shadow: none;
+		color: #000;
+		mix-blend-mode: screen;
 	}
 }
