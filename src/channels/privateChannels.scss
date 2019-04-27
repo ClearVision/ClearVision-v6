@@ -19,6 +19,7 @@
 				position: absolute;
 				@include pos(0, 100%, 0, 0);
 				border-radius: 3px;
+				opacity: .9;
 				transition: all .3s ease-in-out;
 				z-index: -1;
 			}
