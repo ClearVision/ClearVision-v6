@@ -1,0 +1,23 @@
+%badge,
+%numberBadge {
+	padding-top: 3px;
+	padding-bottom: 3px;
+	border-radius: 3px;
+	box-shadow: 0 0 10px -3px $main-color;
+}
+%guildSVG {
+	> mask {
+		> rect {
+			&:nth-child(3) {
+				rx: 3;
+				ry: 3;
+				&[transform*="translate(0"],
+				&[transform*="translate(-"],
+				&[transform*="translate(1."],
+				&[transform*="translate(2."] {
+					transform: translateX(2px);
+				}
+			}
+		}
+	}
+}
