@@ -21,15 +21,17 @@ body {
 	}
 }
 %layer {
-	> %containerMain {
+	%containerMain {
 		background: transparent;
 	}
 	%standardSidebarView {
 		background: transparent;
 	}
 }
-%base {
-	border-radius: 0;	
+%containerMain {
+	%base {
+		border-radius: 0;
+	}
 }
 
 // SELECTION
