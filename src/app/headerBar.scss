@@ -50,26 +50,53 @@
 %toolbar {
 	%headerBarIconWrapper {
 		border-radius: 3px;
-		opacity: .5;
-		transition: all .15s ease-in-out, background-color .3s ease-in-out;
+		transition: all .3s ease-in-out;
+		%headerBarIcon {
+			opacity: .5;
+			transition: all .15s ease-in-out;
+		}
+
+		// SELECTED & POPOUT OPEN
 		&%headerBarIconSelected,
 		&%headerBarIconPopoutOpen {
-			background-color: hsla(0, 0%, 100%, .1) !important;
-			opacity: .7;
+			background: hsla(0, 0%, 100%, .1);
+			%headerBarIcon {
+				opacity: .7;
+			}
 		}
+
+		// HOVER
 		&%headerBarIconClickable:hover {
-			opacity: 1;
+			%headerBarIcon {
+				opacity: 1;
+			}
+		}
+
+		// UNREAD
+		> svg:not(%headerBarIcon) {
+			color: $main-color;
+			filter: drop-shadow(0 0 5px);
+			transition: filter .3s ease-in-out;
+		}
+		[mask] {
+			-webkit-mask: url(https://clearvision.gitlab.io/icons/pin.svg);
+			mask: url(https://clearvision.gitlab.io/icons/pin.svg);
+			> %headerBarIcon {
+				background: $main-color;
+				opacity: 1;
+			}
+		}
+		&:hover {
+			> svg:not(%headerBarIcon) {
+				filter: drop-shadow(0 0 5px) drop-shadow(0 0 10px);
+			}
 		}
 	}
 	%headerBarIconBadge {
-		margin: 2px;
-		background: $main-color;
-		border: none;
-		color: $main-color;
-		box-shadow: 0 0 3px, 0 0 5px;
+		display: none;
 	}
-}
-%toolbar {
+
+	// ICONS
 	%headerBarIcon {
 		&[name=Nova_Bell],
 		&[name=Nova_BellOff],
@@ -91,31 +118,6 @@
 		}
 		&[name=Nova_Pin] {
 			background: url(https://clearvision.gitlab.io/icons/pin.svg) center/24px no-repeat;
-			+ %headerBarIconBadge {
-				&:after {
-					content: "";
-					position: absolute;
-					@include stretch;
-					background: $main-color;
-					-webkit-mask-image: url(https://clearvision.gitlab.io/icons/pin.svg);
-					-webkit-mask-repeat: no-repeat;
-					-webkit-mask-position: center;
-					-webkit-mask-size: 24px;
-					mask-image: url(https://clearvision.gitlab.io/icons/pin.svg);
-					mask-repeat: no-repeat;
-					mask-position: center;
-					mask-size: 24px;
-				}
-				top: 0;
-				left: 0;
-				width: 30px;
-				height: 28px;
-				margin: 0;
-				background: transparent;
-				box-shadow: none;
-				transform: translateZ(0);
-				filter: drop-shadow(0 0 5px);
-			}
 		}
 		&[name=Nova_People] {
 			background: url(https://clearvision.gitlab.io/icons/people.svg) center/24px no-repeat;
@@ -136,20 +138,24 @@
 				linear-gradient(to bottom, $main-color, $main-color) 50% 10px/10px 10px no-repeat;
 			animation: cv-update-downloading 2.5s ease-in-out infinite;
 		}
-		// &[name=Update] {
-		// 	opacity: 1;
-		// 	filter: drop-shadow(0 0 5px $main-color);
-		// 	> g {	
-		// 		> path {
-		// 			display: none;
-		// 		}
-		// 	}
-		// 	%headerBarIconUpdateForeground {
-		// 		display: inline;
-		// 		fill: $main-color;
-		// 		d: path("M10,17L6.5,13.5L7.91,12.08L10,14.17L15.18,9L16.59,10.41M19.35,10.03C18.67,6.59 15.64,4 12,4C9.11,4 6.6,5.64 5.35,8.03C2.34,8.36 0,10.9 0,14A6,6 0 0,0 6,20H19A5,5 0 0,0 24,15C24,12.36 21.95,10.22 19.35,10.03Z");
-		// 	}
-		// }
+	}
+	%headerBarIconWrapper {
+		%headerBarIcon[name=Nova_Download] {
+			color: $main-color;
+			opacity: 1;
+			filter: drop-shadow(0 0 5px);
+			transition: filter .3s ease-in-out;
+			%headerBarIconUpdateForeground {
+				display: inline;
+				fill: $main-color;
+				d: path("M10,17L6.5,13.5L7.91,12.08L10,14.17L15.18,9L16.59,10.41M19.35,10.03C18.67,6.59 15.64,4 12,4C9.11,4 6.6,5.64 5.35,8.03C2.34,8.36 0,10.9 0,14A6,6 0 0,0 6,20H19A5,5 0 0,0 24,15C24,12.36 21.95,10.22 19.35,10.03Z");
+			}
+		}
+		&:hover {
+			%headerBarIcon[name=Nova_Download] {
+				filter: drop-shadow(0 0 5px) drop-shadow(0 0 10px);
+			}
+		}
 	}
 }
 
