@@ -149,29 +149,6 @@
 %channelUnreadPill {
 	display: none;
 }
-%numberBadge {
-	%channelWrapper & {
-		width: auto !important;
-		height: auto;
-		padding: 3px 5px !important;
-		background: $main-color !important;
-		border-radius: 3px;
-		box-shadow: 0 0 20px -3px $main-color;
-		color: #fff;
-		font-size: 12px;
-		font-weight: 600;
-		text-shadow: 0 1px 0 rgba(0, 0, 0, .25);
-		line-height: 12px;
-		transition: all .3s ease-in-out;
-	}
-	%channelWrapperSelected & {
-		background: #fff !important;
-		box-shadow: none;
-		color: #000;
-		mix-blend-mode: screen;
-		transform: translateZ(0);
-	}
-}
 
 // ICONS
 %channelActionIcon {
