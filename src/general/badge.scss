@@ -9,6 +9,14 @@
 	line-height: 12px;
 	transition: all .3s ease-in-out;
 }
+%tabBarItemSelected {
+	%badge {
+		background: #fff;
+		box-shadow: none;
+		color: #000;
+		mix-blend-mode: screen;
+	}
+}
 
 // NUMBER BADGE
 %numberBadge {
@@ -21,16 +29,7 @@
 	line-height: 12px;
 	transition: all .3s ease-in-out;
 }
-
-// INVERTED
-%tabBarItemSelected {
-	%badge {
-		background: #fff;
-		box-shadow: none;
-		color: #000;
-		mix-blend-mode: screen;
-	}
-}
+%channelWrapperSelected,
 %topPillItemSelected {
 	%numberBadge {
 		background: #fff !important;
