@@ -28,8 +28,8 @@
 	--avatar-roundness: 50%; /* avatar roundness (0% for squares, 50% for circles) [default: 50%] */
 
 	/* APP BACKGROUND */
-	--background-overlay: rgba(0, 0, 0, 0.6); /* app background overlay color/gradient [default: rgba(0, 0, 0, 0.6)] */
 	--background-shading: 100%; /* app background shading (0 for complete smoothness) [default: 100%] */
+	--background-overlay: rgba(0, 0, 0, 0.6); /* app background overlay color/gradient [default: rgba(0, 0, 0, 0.6)] */
 	--background-image: url(https://clearvision.gitlab.io/images/sapphire.jpg); /* app background image (link must be HTTPS) [default:  url(https://clearvision.gitlab.io/images/sapphire.jpg)]*/
 	--background-position: center; /* app background position [default: center] */
 	--background-size: cover; /* app background size [default: cover] */
@@ -40,6 +40,19 @@
 	--background-grayscale: 0%; /* app background grayscale ( 0 - 100%) [default: 0%] */
 	--background-sepia: 0%; /* app background sepia (0 - 100%) [default: 0%] */
 	--background-blur: 0px; /* app background blur [default: 0px] */
+
+	/* MODAL BACKDROP */
+	--backdrop-overlay: rgba(0, 0, 0, 0.8); /* modal backdrop overlay color/gradient [default: rgba(0, 0, 0, 0.6)] */
+	--backdrop-image: url(https://clearvision.gitlab.io/images/sapphire.jpg); /* modal backdrop background image (link must be HTTPS) [default:  url(https://clearvision.gitlab.io/images/sapphire.jpg)]*/
+	--backdrop-position: center; /* modal backdrop position [default: center] */
+	--backdrop-size: cover; /* modal backdrop size [default: cover] */
+	--backdrop-brightness: 100%; /* modal backdrop brightness (< 100% for darken, > 100% for lighten) [default: 100%] */
+	--backdrop-contrast: 100%; /* modal backdrop contrast [default: 100%] */
+	--backdrop-saturation: 100%; /* modal backdrop saturation [default: 100%] */
+	--backdrop-invert: 0%; /* modal backdrop invert (0 - 100%)  [default: 0%] */
+	--backdrop-grayscale: 0%; /* modal backdrop grayscale ( 0 - 100%) [default: 0%] */
+	--backdrop-sepia: 0%; /* modal backdrop sepia (0 - 100%) [default: 0%] */
+	--backdrop-blur: 0px; /* modal backdrop blur [default: 0px] */
 
 	/* USER POPOUT BACKGROUND */
 	--user-popout-image: url(https://clearvision.gitlab.io/images/sapphire.jpg); /* app background image (link must be HTTPS) [default: url(https://clearvision.gitlab.io/images/sapphire.jpg)]*/

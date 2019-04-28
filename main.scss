@@ -29,8 +29,8 @@ $avatar-roundness: var(--avatar-roundness);
 
 // BACKGROUND SETTINGS
 $bg: (
-	overlay: var(--background-overlay),
 	shading: var(--background-shading),
+	overlay: var(--background-overlay),
 	img: var(--background-image),
 	pos: var(--background-position),
 	size: var(--background-size),
@@ -41,6 +41,21 @@ $bg: (
 	grayscale: var(--background-grayscale),
 	sepia: var(--background-sepia),
 	blur: var(--background-blur)
+);
+
+// BACKDROP SETTINGS
+$backdrop: (
+	overlay: var(--backdrop-overlay),
+	img: var(--backdrop-image),
+	pos: var(--backdrop-position),
+	size: var(--backdrop-size),
+	brightness: var(--backdrop-brightness),
+	contrast: var(--backdrop-contrast),
+	saturate: var(--backdrop-saturation),
+	invert: var(--backdrop-invert),
+	grayscale: var(--backdrop-grayscale),
+	sepia: var(--backdrop-sepia),
+	blur: var(--backdrop-blur)
 );
 
 // POPOUT SETTINGS
@@ -143,8 +158,8 @@ $discord-blurple: #7289da;
 	--channels-width: 220px;
 	--members-width: 240px;
 	--avatar-roundness: 50%;
-	--background-overlay: rgba(0, 0, 0, .6);
 	--background-shading: 100%;
+	--background-overlay: rgba(0, 0, 0, .6);
 	--background-image: url(https://clearvision.gitlab.io/images/sapphire.jpg);
 	--background-position: center;
 	--background-size: cover;
@@ -155,6 +170,17 @@ $discord-blurple: #7289da;
 	--background-grayscale: 0%;
 	--background-sepia: 0%;
 	--background-blur: 0px;
+	--backdrop-overlay: rgba(0, 0, 0, .8);
+	--backdrop-image: var(--background-image);
+	--backdrop-position: var(--background-position);
+	--backdrop-size: var(--background-size);
+	--backdrop-brightness: var(--background-brightness);
+	--backdrop-contrast: var(--background-contrast);
+	--backdrop-saturation: var(--background-saturation);
+	--backdrop-invert: var(--background-invert);
+	--backdrop-grayscale: var(--background-grayscale);
+	--backdrop-sepia: var(--background-sepia);
+	--backdrop-blur: var(--background-blur);
 	--user-popout-image: var(--background-image);
 	--user-popout-position: var(--background-position);
 	--user-popout-size: var(--background-size);
