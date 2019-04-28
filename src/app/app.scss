@@ -1,6 +1,6 @@
 // APP
 body {
-	&:after {
+	&:before {
 		content: "";
 		position: fixed;
 		@include stretch;
