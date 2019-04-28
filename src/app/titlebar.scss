@@ -33,7 +33,7 @@
 		&:after {
 			content: "#{$titlebar-version}";
 			color: hsla(0, 0%, 100%, .3);
-			font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+			font-family: $code-font;
 			font-size: 10px;
 		}
 		> svg {

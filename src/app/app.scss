@@ -12,8 +12,6 @@ body {
 %appMount {
 	background: map-get($bg, overlay);
 }
-
-// LAYERS
 %appMount {
 	%layers,
 	%layer {
@@ -32,6 +30,16 @@ body {
 	%base {
 		border-radius: 0;
 	}
+}
+
+// FONT
+body,
+button,
+input,
+select,
+textarea,
+::placeholder {
+    font-family: $main-font;
 }
 
 // SELECTION

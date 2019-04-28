@@ -21,6 +21,8 @@
 	--offline-color: #808080; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
 
 	/* GENERAL */
+	--main-font: Whitney, Helvetica Neue, Helvetica, Arial, sans-serifWhitney, Helvetica Neue, Helvetica, Arial, sans-serif; /* main font for app (font must be installed) [default: Whitney, Helvetica Neue, Helvetica, Arial, sans-serifWhitney, Helvetica Neue, Helvetica, Arial, sans-serif] */
+	--code-font: Consolas, Liberation Mono, Menlo, Courier, monospace; /* font for codeblocks (font must be installed) [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
 	--channels-width: 220px; /* channel list width (240px for Discord default) [default: 220px] */
 	--members-width: 240px; /* member list width [default: 240px] */
 	--avatar-roundness: 50%; /* avatar roundness (0% for squares, 50% for circles) [default: 50%] */
