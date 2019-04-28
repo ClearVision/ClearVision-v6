@@ -252,6 +252,28 @@
 		color: #fff !important;
 	}
 }
+%voiceUserIconSpacing {
+	&:first-child,
+	&:nth-child(2) {
+		> %voiceUserIcon {
+			> path {
+				display: none;
+			}
+		}
+	}
+	&:first-child {
+		> %voiceUserIcon {
+			background: url(https://clearvision.gitlab.io/icons/mic_off.svg) center/16px no-repeat;
+			opacity: .5;
+		}
+	}
+	&:nth-child(2) {
+		> %voiceUserIcon {
+			background: url(https://clearvision.gitlab.io/icons/volume_off.svg) center/16px no-repeat;
+			opacity: .5;
+		}
+	}
+}
 
 // DRAG INDICATORS
 %categoryContainerDrag,
