@@ -535,6 +535,15 @@
 .usernameSpeaking-2xbKKh {
 	@extend %voiceUserNameSpeaking !optional;
 }
+.icons-3q-_6z {
+	@extend %voiceUserIcons !optional;
+}
+.iconSpacing-3LzVxF {
+	@extend %voiceUserIconSpacing !optional;
+}
+.icon-3BcwQu {
+	@extend %voiceUserIcon !optional;
+}
 // 4.4) Account Container
 .container-2Thooq {
 	@extend %accountContainer !optional;
