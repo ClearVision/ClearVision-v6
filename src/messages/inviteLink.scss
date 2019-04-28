@@ -12,6 +12,9 @@
 	%inviteGuildNameExpired {
 		color: $danger-color;
 	}
+	%inviteGuildIcon {
+		background-color: hsla(0, 0%, 100%, .04);
+	}
 	%inviteGuildIconExpired {
 		position: relative;
 		background-size: 0;
