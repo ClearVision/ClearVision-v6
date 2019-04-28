@@ -1,5 +1,3 @@
-// Mixin Collection by Zerthox
-
 /// Set background properties separately in one mixin
 /// @param {*} $image [null] - background-image property value
 /// @param {*} $img [null] - background-image property value (alternative param)
@@ -87,5 +85,40 @@
 		@if variable-exists(decoration) {
 			font-decoration: $decoration;
 		}
+	}
+}
+
+/// Stretch element
+@mixin stretch {
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+/// Include background filters
+/// @param {map} $source source map with filter settings
+@mixin filters($source) {
+	filter: #{"grayscale("map-get($source, grayscale)")"} sepia(map-get($source, sepia)) #{"invert("map-get($source, invert)")"} brightness(map-get($source, brightness)) contrast(map-get($source, contrast)) #{"saturate("map-get($source, saturate)")"} blur(map-get($source, blur));	
+}
+
+/// Create hover shadow effect
+@mixin hover-shadow {
+	transition: all .1s ease-in-out;
+	&:hover {
+		text-shadow: 0 0 1px;
+		text-decoration: none !important;
+	}
+}
+
+/// Create hover cutout effect
+@mixin hover-cutout {
+	background: transparent;
+	color: #fff;
+	mix-blend-mode: screen;
+	transform: translateZ(0);
+	&:hover {
+		background: #fff;
+		color: #000;
 	}
 }
