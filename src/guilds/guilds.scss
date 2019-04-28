@@ -18,7 +18,7 @@
 }
 %guildsWrapper {
 	width: 70px;
-	box-shadow: inset 0 0 20px rgba(0, 0, 0, .2);
+	box-shadow: inset 0 0 20px rgba(0, 0, 0, calc(#{map-get($bg, shading)} * .3));
 }
 
 // GUILD LIST

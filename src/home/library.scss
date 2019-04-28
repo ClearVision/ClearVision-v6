@@ -18,7 +18,7 @@
 
 	// BODY
 	%libraryScroller {
-		background-color: rgba(0, 0, 0, .5);
+		background-color: rgba(0, 0, 0, calc(#{map-get($bg, shading)} * .5));
 	}
 	%libraryTableHeader {
 		background-color: transparent;

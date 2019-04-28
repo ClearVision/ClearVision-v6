@@ -28,6 +28,7 @@ $avatar-roundness: var(--avatar-roundness);
 // BACKGROUND SETTINGS
 $bg: (
 	overlay: var(--background-overlay),
+	shading: var(--background-shading),
 	img: var(--background-image),
 	pos: var(--background-position),
 	size: var(--background-size),
@@ -138,7 +139,8 @@ $discord-blurple: #7289da;
 	--channels-width: 220px;
 	--members-width: 240px;
 	--avatar-roundness: 50%;
-	--background-overlay: #{rgba(0, 0, 0, .6)};
+	--background-overlay: rgba(0, 0, 0, .6);
+	--background-shading: 100%;
 	--background-image: url(https://clearvision.gitlab.io/images/sapphire.jpg);
 	--background-position: center;
 	--background-size: cover;

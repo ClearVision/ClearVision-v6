@@ -30,7 +30,7 @@
 
 	// FRIENDS TABLE
 	%friendsTable {
-		background-color: rgba(0, 0, 0, .5);
+		background-color: rgba(0, 0, 0, calc(#{map-get($bg, shading)} * .5));
 		margin-top: 0;
 		%friendsTableHeader {
 			border-bottom: 1px solid hsla(0, 0%, 100%, .07);

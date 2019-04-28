@@ -1,7 +1,7 @@
 // SERVER DISCOVERY
 %base {
 	%pageWrapper {
-		background: rgba(0, 0, 0, .5);
+		background: rgba(0, 0, 0, calc(#{map-get($bg, shading)} * .5));
 	}
 }
 %discoveryBG {

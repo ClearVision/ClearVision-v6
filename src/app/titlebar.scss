@@ -5,8 +5,8 @@
 	margin: 0;
 	padding-top: 2px;
 	padding-bottom: 2px;
-	background: rgba(0, 0, 0, .6);
-	box-shadow: 0 0 20px rgba(0, 0, 0, .6);
+	background: rgba(0, 0, 0, calc(#{map-get($bg, shading)} * .6));
+	box-shadow: 0 0 20px rgba(0, 0, 0, calc(#{map-get($bg, shading)} * .3 + .3));
 	> %titlebarWordmark {
 		position: static;
 		margin-right: auto;
