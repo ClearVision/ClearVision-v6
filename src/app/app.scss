@@ -36,14 +36,16 @@ body {
 		content: "";
 		position: fixed;
 		@include stretch;
-		background: map-get($bg, img) map-get($bg, pos)/map-get($bg, size);
-		@include filters($bg);
+		background: map-get($backdrop, img) map-get($backdrop, pos)/map-get($backdrop, size);
+		@include filters($backdrop);
+		pointer-events: none;
 	}
 	&:after {
 		content: "";
 		position: fixed;
 		@include stretch;
-		background: map-get($bg, overlay);
+		background: map-get($backdrop, overlay);
+		pointer-events: none;
 	}
 }
 
