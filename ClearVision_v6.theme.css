@@ -43,7 +43,7 @@
 
 	/* MODAL BACKDROP */
 	--backdrop-overlay: rgba(0, 0, 0, 0.8); /* modal backdrop overlay color/gradient [default: rgba(0, 0, 0, 0.6)] */
-	--backdrop-image: url(https://clearvision.gitlab.io/images/sapphire.jpg); /* modal backdrop background image (link must be HTTPS) [default:  url(https://clearvision.gitlab.io/images/sapphire.jpg)]*/
+	--backdrop-image: url(https://clearvision.gitlab.io/images/sapphire.jpg); /* modal backdrop image (link must be HTTPS) [default:  url(https://clearvision.gitlab.io/images/sapphire.jpg)]*/
 	--backdrop-position: center; /* modal backdrop position [default: center] */
 	--backdrop-size: cover; /* modal backdrop size [default: cover] */
 	--backdrop-brightness: 100%; /* modal backdrop brightness (< 100% for darken, > 100% for lighten) [default: 100%] */
