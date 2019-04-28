@@ -31,6 +31,21 @@ body {
 		border-radius: 0;
 	}
 }
+%backdrop {
+	&:before {
+		content: "";
+		position: fixed;
+		@include stretch;
+		background: map-get($bg, img) map-get($bg, pos)/map-get($bg, size);
+		@include filters($bg);
+	}
+	&:after {
+		content: "";
+		position: fixed;
+		@include stretch;
+		background: map-get($bg, overlay);
+	}
+}
 
 // FONT
 body,
