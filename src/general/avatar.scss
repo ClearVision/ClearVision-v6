@@ -8,3 +8,9 @@
 	-webkit-mask: none;
 	mask: none;
 }
+%avatarWrapper {
+	&%avatarPopout,
+	&%avatarProfile {
+		box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+	}
+}
