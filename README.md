@@ -3,7 +3,7 @@
 ## Installing
 Download the theme file and move it into your BetterDiscord themes folder:
 
->[ClearVision_v6.theme.css](https://gitlab.com/ClearVision/v6/uploads/993c47d7442b7e6088a98d5d9568268e/ClearVision_v6.theme.css)
+>[ClearVision_v6.theme.css](https://clearvision.gitlab.io/download/v6/latest)
 
 ## Building from source
 In order build the theme from source, you have to install [Sass](https://sass-lang.com) & [PostCSS Autoprefixer](https://github.com/postcss/autoprefixer).  
