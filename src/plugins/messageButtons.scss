@@ -18,3 +18,17 @@
 		animation: cv-fade-in .3s ease-in-out;
 	}
 }
+%replyerButton,
+%quoteButton,
+%discryptButton {
+	%messageGroup:hover & {
+		opacity: 1;
+		animation: cv-fade-in .3s ease-in-out;
+	}
+}
+%citarButton {
+	%messageGroup:hover & {
+		opacity: .8;
+		animation: cv-fade-to-8 .3s ease-in-out;
+	}
+}
