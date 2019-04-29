@@ -42,7 +42,7 @@
 	--background-blur: 0px; /* app background blur [default: 0px] */
 
 	/* MODAL BACKDROP */
-	--backdrop-overlay: rgba(0, 0, 0, 0.8); /* modal backdrop overlay color/gradient [default: rgba(0, 0, 0, 0.6)] */
+	--backdrop-overlay: rgba(0, 0, 0, 0.8); /* modal backdrop overlay color/gradient [default: rgba(0, 0, 0, 0.8)] */
 	--backdrop-image: url(https://clearvision.gitlab.io/images/sapphire.jpg); /* modal backdrop image (link must be HTTPS) [default:  url(https://clearvision.gitlab.io/images/sapphire.jpg)]*/
 	--backdrop-position: center; /* modal backdrop position [default: center] */
 	--backdrop-size: cover; /* modal backdrop size [default: cover] */
