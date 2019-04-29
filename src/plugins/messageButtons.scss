@@ -13,10 +13,6 @@
 		visibility: visible;
 		opacity: 0;
 	}
-	%messageGroup:hover & {
-		opacity: 1;
-		animation: cv-fade-in .3s ease-in-out;
-	}
 }
 %replyerButton,
 %quoteButton,
