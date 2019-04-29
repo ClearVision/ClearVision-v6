@@ -1,4 +1,4 @@
-/*! Using Discord Selectors v19-04-28 by Zerthox */
+/*! Using Discord Selectors v19-04-29 by Zerthox */
 // FILE CONTENTS
 // 1) App
 // 	1.1) App Notices
@@ -1767,6 +1767,9 @@ pre {
 }
 .friendsColumnGuilds-2we6jb {
 	@extend %friendsColumnGuilds !optional;
+}
+.icon-3o6xvg {
+	@extend %friendsGuildIcon !optional;
 }
 .friendsColumnActions-1LT3_M {
 	@extend %friendsColumnActions !optional;
