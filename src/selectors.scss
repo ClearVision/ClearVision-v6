@@ -71,6 +71,7 @@
 //	13.5) Checkboxes
 //	13.6) Sliders
 //	13.7) Spinners
+//	13.8) Indicators
 // 14) Tooltips
 // 15) Context Menu
 // 16) Popouts
@@ -2480,6 +2481,42 @@ pre {
 }
 .pulsingEllipsisItem-32hhWL {
 	@extend %spinnerPulsingEllipsisItem !optional;
+}
+// 13.8) Indicators
+.indicator-1afSc8 {
+	@extend %indicator !optional;
+}
+.indicator-1afSc8 {
+	@extend %indicator !optional;
+}
+.animationContainer-C1kDfz {
+	@extend %indicatorContainer !optional;
+}
+.animating-1Fb05y {
+	@extend %indicatorAnimating !optional;
+}
+.notAnimating-2EIRej {
+	@extend %indicatorNotAnimating !optional;
+}
+.innerCircle-2Tsscg {
+	@extend %indicatorCircleInner !optional;
+}
+.outerCircle-2K0c82 {
+	@extend %indicatorCircleOuter !optional;
+}
+%indicatorCircleInner,
+%indicatorCircleOuter {
+	@extend %indicatorCircle !optional;
+}
+.top-3fo3zT {
+	@extend %indicatorExclamationTop !optional;
+}
+.bottom-UE1eOv {
+	@extend %indicatorExclamationBottom !optional;
+}
+%indicatorExclamationTop,
+%indicatorExclamationBottom {
+	@extend %indicatorExclamation !optional;
 }
 
 // 14) TOOLTIPS
