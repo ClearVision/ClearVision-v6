@@ -1,6 +1,9 @@
 // USER POPOUT
 %userPopout {
 	position: relative;
+	max-height: calc(100vh - 40px);
+	display: flex;
+	flex-direction: column;
 	border-radius: 5px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 	animation: cv-menu-slide .2s cubic-bezier(.2, .6, .5, 1.1);
@@ -46,22 +49,38 @@
 	%userPopoutMobileIndicator {
 		color: hsla(0, 0%, 100%, .4);
 	}
+	%userPopoutNameTag {
+		overflow: visible;
+	}
 
 	// USER POPOUT BODY
 	%userPopoutBody {
+		display: flex;
+		flex-direction: column;
+		flex-shrink: 1;
 		background: rgba(0, 0, 0, .65);
 	}
 	%userPopoutBodyTitle {
 		color: hsla(0, 0%, 100%, .7);
+		flex-shrink: 0;
 	}
 	%userPopoutRolesList {
-		max-height: 230px;
 		padding-right: 5px;
+		margin-top: 0;
 		margin-right: -5px;
+		flex-shrink: 1;
 		overflow-y: auto;
 	}
+	#permissions-popout {
+		display: flex;
+		flex-direction: column;
+		flex-shrink: 1;
+		> %userPopoutRolesList {
+			max-height: unset;
+		}
+	}
 	%userPopoutNote {
-		textarea {
+		> textarea {
 			background: transparent;
 			color: hsla(0, 0%, 100%, .8);
 			&:focus {
