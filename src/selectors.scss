@@ -3147,6 +3147,9 @@ pre {
 .addButton-pcyyf6 {
 	@extend %roleAddButton !optional;
 }
+%roleAddButton.popout-open {
+	@extend %roleAddButtonPopoutOpen !optional;
+}
 
 // 20) MODALS
 .modal-3HD5ck {
