@@ -1,12 +1,15 @@
 // MEMBER COUNT
-%membersWrap {
-	%members {
-		> %memberCount {
-			background: transparent;
-			color: hsla(0, 0%, 100%, .3);
-			font-size: 11px;
-			font-weight: 600;
-			text-align: center;
+%members {
+	> %memberCount {
+		position: static;
+		height: 40px;
+		background: transparent;
+		color: hsla(0, 0%, 100%, .3);
+		font-size: 11px;
+		font-weight: 600;
+		text-align: center;
+		+ %membersGroup {
+			margin-top: -20px;
 		}
 	}
 }
