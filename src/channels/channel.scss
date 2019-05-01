@@ -212,7 +212,8 @@
 		transition: all .15s ease-in-out;
 	}
 	&:hover,
-	&:active {
+	&:active,
+	&%voiceUserSelected {
 		%channels %voiceUserList & {
 			%voiceUserContent {
 				background: hsla(0, 0%, 100%, .04);
