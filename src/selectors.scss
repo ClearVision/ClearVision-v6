@@ -1,4 +1,4 @@
-/*! Using Discord Selectors v19-04-29 by Zerthox */
+/*! Using Discord Selectors v19-05-01 by Zerthox */
 // FILE CONTENTS
 // 1) App
 // 	1.1) App Notices
@@ -519,6 +519,9 @@
 }
 .voiceUser-14U_Ns {
 	@extend %voiceUser !optional;
+}
+.selected-3TGCSZ {
+	@extend %voiceUserSelected !optional;
 }
 .content-3xS9Lh {
 	@extend %voiceUserContent !optional;
