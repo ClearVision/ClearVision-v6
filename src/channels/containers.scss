@@ -169,6 +169,14 @@
 	// CONNECTION CONTAINER
 	> %connectionContainer {
 		border-color: transparent;
+		%rtcConnectionStatus {
+			%rtcConnectionPing {
+				width: 16px;
+				height: 16px;
+				margin-right: 3px;
+				background-size: 16px;
+			}
+		}
 		%connectionContainerChannel {
 			color: hsla(0, 0%, 100%, .3);
 			opacity: 1;
