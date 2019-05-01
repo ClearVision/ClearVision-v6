@@ -66,16 +66,23 @@
 	background: hsla(0, 0%, 100%, .1);
 	transition: all .1s ease-in-out;
 	cursor: pointer;
-	&:hover {
-		background: hsla(0, 0%, 100%, .2);
-	}
 	> svg {
 		width: 7px;
 		height: 7px;
 		color: hsla(0, 0%, 100%, .5);
 		transition: inherit;
 	}
-	&:hover > svg {
-		color: #fff;
+	&:hover,
+	&%roleAddButtonPopoutOpen {
+		background: hsla(0, 0%, 100%, .2);
+		> svg {
+			color: #fff;
+		}
+	}
+	&:hover {
+		background: hsla(0, 0%, 100%, .2);
+	}
+	&%roleAddButtonPopoutOpen {
+		background: $main-color;
 	}
 }
