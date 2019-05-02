@@ -1,6 +1,6 @@
 // WELCOME MESSAGE
 %welcomeMessage {
-	> h1 {
+	> %welcomeMessageH1 {
 		color: $main-color;
 	}
 	> %welcomeMessageItemContainer {
@@ -9,7 +9,7 @@
 			opacity: .3;
 		}
 		> p {
-			color: hsla(0, 0%, 100%, .5);
+			color: hsla(0, 0%, 100%, .7);
 		}
 		a {
 			color: $main-color;
