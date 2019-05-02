@@ -170,26 +170,22 @@
 }
 
 // USER LIMIT
-%channelUserLimitUsers {
-	padding-right: 4px;
-	background: rgba(0, 0, 0, .15);
+%channelUserLimitUsers,
+%channelUserLimitTotal {
+	width: 24px;
 	color: hsla(0, 0%, 100%, .3);
 	font-weight: 600;
+	text-align: right;
 	transition: all .15s ease-in-out;
 }
+%channelUserLimitUsers {
+	padding: 0 4px 0 6px;
+	background: rgba(0, 0, 0, .15);
+}
 %channelUserLimitTotal {
-	display: flex;
-	flex-direction: row;
-	color: hsla(0, 0%, 100%, .3);
+	padding: 0 6px 0 4px;
 	background: hsla(0, 0%, 100%, .04);
-	font-weight: 600;
-	transition: all .15s ease-in-out;
-	&:before {
-		content: "";
-		margin-right: 4px;
-		width: 1px;
-		background: hsla(0, 0%, 100%, .07);
-	}
+	box-shadow: inset 1px 0 hsla(0, 0%, 100%, .07);
 	&:after {
 		display: none;
 	}
