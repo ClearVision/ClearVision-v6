@@ -1,14 +1,17 @@
 // WELCOME MESSAGE
 %welcomeMessage {
-	> %welcomeMessageH1 {
+	%welcomeMessageH1 {
 		color: $main-color;
 	}
-	> %welcomeMessageItemContainer {
-		> %welcomeMessageIcon {
+	%welcomeMessageItemContainer {
+		%welcomeMessageIcon {
 			filter: grayscale(1);
 			opacity: .3;
 		}
-		> p {
+		p {
+			color: hsla(0, 0%, 100%, .5);
+		}
+		strong {
 			color: hsla(0, 0%, 100%, .7);
 		}
 		a {
