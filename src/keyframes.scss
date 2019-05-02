@@ -108,11 +108,11 @@
 }
 @keyframes cv-spinner-pulse {
 	from {
-		transform: scale(.7);
+		transform: none;
 		opacity: .3;
 	}
     to {
-        transform: scale(1);
+		transform: scale(1.4);
         opacity: 1;
     }
 }
