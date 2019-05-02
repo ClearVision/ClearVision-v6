@@ -3117,6 +3117,12 @@ pre {
 .nameTag-m8r81H {
 	@extend %userPopoutNameTag !optional;
 }
+.actionsUserPopout-2MrzCa {
+	@extend %userPopoutActions !optional;
+}
+.listeningActionsUserPopout-Ga2V_N {
+	@extend %userPopoutActionsListening !optional;
+}
 // 17.2) Body
 .body-3iLsc4 {
 	@extend %userPopoutBody !optional;
