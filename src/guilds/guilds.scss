@@ -97,33 +97,29 @@
 
 	// ICON BUTTON
 	%circleIconButton {
-		background-color: rgba(0, 0, 0, .5);
-		color: hsla(0, 0%, 100%, .15);
-		border: 1px solid currentColor;
+		background: rgba(0, 0, 0, .3);
+		color: hsla(0, 0%, 100%, .3);
 		border-radius: 50%;
-		opacity: .7;
-		transition: all .1s ease-in-out;
+		transition: all .3s ease-in-out;
 		&:hover {
-			animation: cv-pulsate-color 2s infinite ease-in-out;
-		}
-		&:active {
-			transform: scale(.9);
+			background: $main-color;
+			color: #fff;
 		}
 	}
 
 	// GUILDS ERROR
 	%guildsError {
-		background-color: rgba(0, 0, 0, .5);
-		border-color: $danger-color;
+		background: rgba(0, 0, 0, .5);
+		border: 2px solid $danger-color;
 		color: #fff;
 		transition: all .3s ease-in-out;
 		&:hover {
-			background-color: $danger-color;
+			background: $danger-color;
 		}
 	}
 }
 
 // SEPARATOR
 %guildSeparator {
-	background-color: hsla(0, 0%, 100%, .1);
+	background: hsla(0, 0%, 100%, .1);
 }
