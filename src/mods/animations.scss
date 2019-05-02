@@ -33,3 +33,11 @@
 		opacity: 1;
 	}
 }
+@keyframes cv-badge {
+	from {
+		background: $main-color;
+	}
+	to {
+		background: $hover-color;
+	}
+}
