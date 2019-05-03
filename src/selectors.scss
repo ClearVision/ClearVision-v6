@@ -1,4 +1,4 @@
-/*! Using Discord Selectors v19-05-01 by Zerthox */
+/*! Using Discord Selectors v19-05-03 by Zerthox */
 // FILE CONTENTS
 // 1) App
 // 	1.1) App Notices
@@ -57,6 +57,9 @@
 //	 	9.3.3) Now Playing & Recently Played Containers
 //	 	9.3.4) Placeholders & Notice
 // 	9.4) Store
+//	 	9.4.1) Carousel
+//	 	9.4.2) Categories
+//	 	9.4.3) Tiles
 // 10) Avatars
 // 11) Status
 // 12) Bot Tags
@@ -1863,9 +1866,6 @@ pre {
 	@extend %libraryFilterInput !optional;
 }
 // 9.2.2) Body
-.scrollerStore-390omS {
-	@extend %libraryScroller !optional;
-}
 .table-1tDS6w {
 	@extend %libraryTable !optional;
 }
@@ -2130,6 +2130,165 @@ pre {
 // 9.4) Store
 .applicationStore-1pNvnv {
     @extend %applicationStore !optional;
+}
+.scrollerStore-390omS {
+	@extend %storeScroller !optional;
+}
+.homeBody-3SD9SR {
+	@extend %storeHomeBody !optional;
+}
+.matureListing-3tyHbV {
+	@extend %storeMatureListing !optional;
+}
+// 9.4.1) Carousel
+.heroCarousel-usH_dd {
+	@extend %carousel !optional;
+}
+.carouselContainer-1cw6QH {
+	@extend %carouselContainer !optional;
+}
+.carouselItem-1qFCGP {
+	@extend %carouselItem !optional;
+}
+.itemBackground-1YUOje {
+	@extend %carouselItemBackgroundWrapper !optional;
+}
+.itemBackground-2vEldQ {
+	@extend %carouselItemBackground !optional;
+}
+.itemBody-3zm4Cl {
+	@extend %carouselItemBody !optional;
+}
+.itemDescriptionContainer-3e_aXd {
+	@extend %carouselItemDescriptionContainer !optional;
+}
+.itemDescription-234GLf {
+	@extend %carouselItemDescription !optional;
+}
+.header-2Qd56c {
+	@extend %carouselItemHeader !optional;
+}
+.title-1Qzsze {
+	@extend %carouselItemTitle !optional;
+}
+.tagline-1hvypA {
+	@extend %carouselItemTagline !optional;
+}
+.paginationContainer-2T3a2b {
+	@extend %carouselPaginationContainer !optional;
+}
+.pagination-1omm9k {
+	@extend %carouselPagination !optional;
+}
+.nextArrow-V_4mvH {
+	@extend %carouselPaginationNext !optional;
+}
+.prevArrow-11tqRS {
+	@extend %carouselPaginationPrev !optional;
+}
+.paginationItemContainer-3VCxU- {
+	@extend %carouselPaginationItemContainer !optional;
+}
+.paginationSelected-19h9Kq {
+	@extend %carouselPaginationItemContainerSelected !optional;
+}
+.paginationItem-1B6gk4 {
+	@extend %carouselPaginationItem !optional;
+}
+.overlappingBorder-3aFng4 {
+	@extend %carouselPaginationItemBorder !optional;
+}
+// 9.4.2) Categories
+.categoryHeader-1D7Tqy {
+	@extend %storeCategoryHeader !optional;
+}
+.container-hXbkd3 {
+	@extend %storeCategoryContainer !optional;
+}
+.scrollerButton-1Vm5_P {
+	@extend %storeCategoryScrollerButton !optional;
+}
+.scrollerButtonArrow-2zKj8D {
+	@extend %storeCategoryScrollerArrow !optional;
+}
+.arrowLeft-1wVpg5 {
+	@extend %storeCategoryScrollerArrowLeft !optional;
+}
+.arrowRight-aDMq0h {
+	@extend %storeCategoryScrollerArrowRight !optional;
+}
+.arrowDisabled-2F05Id {
+	@extend %storeCategoryScrollerArrowDisabled !optional;
+}
+.arrowHidden-1jg6O9 {
+	@extend %storeCategoryScrollerArrowHidden !optional;
+}
+.gradientOverlayLeft-3w159C {
+	@extend %storeCategoryGradientOverlayLeft !optional;
+}
+.gradientOverlayRight-3vMuS8 {
+	@extend %storeCategoryGradientOverlayRight !optional;
+}
+// 9.4.3) Tiles
+.homeTile-3qVuGa {
+	@extend %storeHomeTile !optional;
+}
+.tile-QA_yMc {
+	@extend %storePerkTile !optional;
+}
+.description-2oYgWO {
+	@extend %storePerkTileDescription !optional;
+}
+.title-2XwaXv {
+	@extend %storePerkTileTitle !optional;
+}
+.tagline-EIH5-W {
+	@extend %storePerkTileTagline !optional;
+}
+.tags-3pDljb {
+	@extend %storePerkTileTags !optional;
+}
+.perkTag-2O4dx4 {
+	@extend %storePerkTilePerkTag !optional;
+}
+.tile-2H4MQG {
+	@extend %storeTile !optional;
+}
+.tileMedia-1q3guD {
+	@extend %storeTileMedia !optional;
+}
+.splashContainer-2t8Fci {
+	@extend %storeTileSplashContianer !optional;
+}
+.splash-3K76bN {
+	@extend %storeSplash !optional;
+}
+.splashPlaceholder-1ev-9c {
+	@extend %storeSplashPlaceholder !optional;
+}
+.muteContainer-dXWpxM {
+	@extend %storeSplashMuteContainer !optional;
+}
+.muteContainerPlaying-YRMEea {
+	@extend %storeSplashMuteContainerPlaying !optional;
+}
+.muteContainerMediaOverlay-DKYQOo {
+	@extend %storeSplashMuteContainerMediaOverlay !optional;
+}
+.mute-3sDXC3 {
+	@extend %storeSplashMute !optional;
+}
+.details-1DqjXP {
+	@extend %storeTileDetails !optional;
+}
+.gameTitle-8njhLq {
+	@extend %storeTileGameTitle !optional;
+}
+.genres-3s_2iT {
+	@extend %storeTileGenres !optional;
+}
+.genreTag-3QLRUJ {
+	@extend %storeTileGenreTag !optional;
 }
 
 // 10) AVATARS
