@@ -129,6 +129,8 @@
 //		24.7.3) CreationDate
 //		24.7.4) JoinedAtDate
 //		24.7.5) LastMessageDate
+//		24.7.6) BadgesEverywhere
+//		24.7.7) OwnerTag
 //	24.8) Metalloriff
 //		24.8.1) DetailedServerTooltips
 //	24.9) Arashiryuu
@@ -3755,6 +3757,17 @@ pre {
 // 24.7.5) LastMessageDate
 .lastMessageDate {
 	@extend %lastMessageDate !optional;
+}
+// 24.7.6) BadgesEverywhere
+.BE-badges {
+	@extend %badgesEverywhereWrapper !optional;
+}
+.BE-badge {
+	@extend %badgesEverywhereBadge !optional;
+}
+// 24.7.6) OwnerTag
+.owner-tag {
+	@extend %ownerTag !optional;
 }
 // 24.8) Metalloriff
 // 24.8.1) DetailedServerTooltips

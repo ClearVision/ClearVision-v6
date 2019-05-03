@@ -1,0 +1,10 @@
+// OWNER TAG
+%ownerTag {
+	color: hsla(0, 0%, 100%, .6);
+	&[style*=background] {
+		color: #fff;
+	}
+	%badgesEverywhereWrapper + & {
+		margin-left: 0;
+	}
+}

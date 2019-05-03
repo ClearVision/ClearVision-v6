@@ -67,11 +67,6 @@
 			font-size: 14px;
 			transition: all .15s ease-in-out;
 		}
-		%memberOwnerIcon > g > path,
-		%memberActivityIconForeground {
-			fill: hsla(0, 0%, 100%, .4);
-			transition: all .15s ease-in-out;
-		}
 		%memberActivity,
 		%memberMobileIndicator {
 			color: hsla(0, 0%, 100%, .4);
@@ -161,4 +156,9 @@
 	%memberPlaceholderUsernameMultiple {
 		background: hsla(0, 0%, 100%, .3);
 	}
+}
+%memberOwnerIcon > g > path,
+%memberActivityIconForeground {
+	fill: hsla(0, 0%, 100%, .4);
+	transition: all .15s ease-in-out;
 }
