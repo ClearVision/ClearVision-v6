@@ -54,3 +54,56 @@
 		display: none;
 	}
 }
+
+// BODY
+%applicationStore {
+
+	// CATEGORY
+	%storeCategoryHeader {
+		border-color: hsla(0, 0%, 100%, .07);
+		color: #fff;
+		text-shadow: 0 0 3px #000;
+	}
+	%storeCategoryContainer {
+		-webkit-mask: linear-gradient(to right, transparent, #000 5%, #000 95%, transparent);
+		mask: linear-gradient(to right, transparent, #000 5%, #000 95%, transparent);
+	}
+	%storeCategoryScrollerButton {
+		background: rgba(0, 0, 0, .3);
+		transition: all .15s ease-in-out;
+		&:hover {
+			background: rgba(0, 0, 0, .5);
+		}
+	}
+	%storeCategoryGradientOverlayLeft,
+	%storeCategoryGradientOverlayRight {
+		display: none;
+	}
+
+	// TILES
+	%storePerkTile,
+	%storeTileMedia {
+		background: hsla(0, 0%, 100%, .07);
+		background: rgba(0, 0, 0, .3);
+		transition: all .3s ease-in-out;
+		&:hover {
+			background: rgba(0, 0, 0, .5);
+		}
+	}
+	%storePerkTileTitle {
+		color: $main-color;
+	}
+	%storePerkTileTagline {
+		color: hsla(0, 0%, 100%, .5);
+	}
+	%storePerkTilePerkTag {
+		background: $main-color;
+	}
+	%storeTileTitle {
+		color: #fff;
+	}
+	%storeTileGenreTag {
+		background: hsla(0, 0%, 100%, .07);
+		color: hsla(0, 0%, 100%, .7);
+	}
+}
