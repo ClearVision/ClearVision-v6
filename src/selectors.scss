@@ -116,8 +116,7 @@
 //	24.2) Zerthox
 //		24.2.1) BetterReplyer
 //	24.3) noodlebox
-//		24.3.1) Owner Tags
-//		24.3.2) Line Numbers
+//		24.3.1) Line Numbers
 //	24.4) Finicalmist
 //		24.4.1 ) Copy Code
 //	24.5) Nirewen
@@ -3711,14 +3710,7 @@ pre {
 	@extend %replyerButton !optional;
 }
 // 24.3) noodlebox
-// 24.3.1) Owner Tags
-.kawaii-tag {
-	@extend %kawaiiTag !optional;
-}
-.kawaii-tag-invert {
-	@extend %kawaiiTagInvert !optional;
-}
-// 24.3.2) Line Numbers
+// 24.3.1) Line Numbers
 .kawaii-linenumbers {
 	@extend %kawaiiLinenumbers !optional;
 }
