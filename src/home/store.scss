@@ -3,4 +3,54 @@
 	%applicationStore {
 		background: transparent;
 	}
+	%storeScroller,
+	%storeMatureListing {
+		background-color: rgba(0, 0, 0, calc(#{map-get($bg, shading)} * .5));
+	}
+}
+
+// CAROUSEL
+%carousel {
+	%carouselItemBackground {
+		background-color: transparent;
+		-webkit-mask: radial-gradient(ellipse at 50% 10%, #000, transparent 70%);
+		mask: radial-gradient(ellipse at 50% 10%, #000, transparent 70%);
+		&:before {
+			display: none;
+		}
+	}
+	%carouselItemDescription {
+		color: hsla(0, 0%, 100%, .7);
+	}
+	%carouselItemHeader {
+		color: hsla(0, 0%, 100%, .5);
+	}
+	%carouselItemTitle {
+		color: #fff;
+	}
+	%carouselPaginationItemContainer {
+		opacity: .5;
+		transition: all .3s ease-in-out;
+		&:after {
+			content: "";
+			position: absolute;
+			@include stretch;
+			border: 2px solid transparent;
+			border-radius: 3px;
+			transition: all .3s ease-in-out;
+		}
+		&:hover {
+			opacity: 1;
+		}
+		&%carouselPaginationItemContainerSelected {
+			box-shadow: 0 0 3px $main-color, inset 0 0 3px rgba(0, 0, 0, .3);
+			opacity: 1;
+			&:after {
+				border-color: $main-color;
+			}
+		}
+	}
+	%carouselPaginationItemBorder {
+		display: none;
+	}
 }
