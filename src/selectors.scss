@@ -88,7 +88,8 @@
 //	16.5) Messages Popout
 //	16.6) Autocomplete Popout
 //	16.7) Search Popout
-//		16.7.1) Datepicker
+//		16.7.1) Store
+//		16.7.2) Datepicker
 //	16.8) Emoji Picker
 //		16.8.1) BD Emote Picker
 // 17) User Popout
@@ -3078,7 +3079,26 @@ pre {
 .hintValue-29ny8Z {
 	@extend %searchPopoutHintValue !optional;
 }
-// 16.7.1) Datepicker
+// 16.7.1) Store
+.result-2S5Awv {
+	@extend %searchPopoutGame !optional;
+}
+.focused-1Yu0L3 {
+	@extend %searchPopoutGameFocused !optional;
+}
+.resultAssetContainer-Iffozm {
+	@extend %searchPopoutGameAssetContainer !optional;
+}
+.resultContent-1b6_y4 {
+	@extend %searchPopoutGameContent !optional;
+}
+.resultName-raPnaf {
+	@extend %searchPopoutGameName !optional;
+}
+.directorySearchPrice-2Spatv {
+	@extend %searchPopoutGamePrice !optional;
+}
+// 16.7.2) Datepicker
 .react-datepicker {
 	@extend %datepicker !optional;
 }
