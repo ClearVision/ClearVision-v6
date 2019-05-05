@@ -5,7 +5,12 @@
 		background-color: transparent;
 	}
 }
-%base {
+%gameLibrary {
+	> %scrollerWrap {
+		background-color: rgba(0, 0, 0, calc(#{map-get($bg, shading)} * .5));
+	}
+}
+%gameLibrary {
 
 	// HEADER
 	%libraryFilterInput {
