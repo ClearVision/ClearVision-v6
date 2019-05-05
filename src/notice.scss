@@ -2,7 +2,7 @@
     position: relative;
     margin-top: 26px;
     overflow: visible;
-    @include pseudo(before) {
+    &:before {
         content: "There is a new Version of ClearVision v6 available! Join clearvision.gitlab.io/join for more info.";
         position: absolute;
         top: -26px;
