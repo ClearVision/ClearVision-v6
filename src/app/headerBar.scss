@@ -160,34 +160,83 @@
 }
 
 // SEARCH
-%headerBarSearch {
-	> %headerBarSearchBar {
+%chatSearch {
+	> %chatSearchBar {
 		height: 28px;
 		padding: 2px;
 		background: hsla(0, 0%, 100%, .1);
 		border-radius: 3px;
 		transition: width .2s ease-in-out .1s;
-		> %headerBarSearchRoot {
+		> %chatSearchRoot {
 			color: #fff;
 		}
-		%headerBarSearchPlaceholder {
+		%chatSearchPlaceholder {
 			color: hsla(0, 0%, 100%, .3);
 		}
-		%headerBarSearchFilter,
-		%headerBarSearchAnswer {
+		%chatSearchFilter,
+		%chatSearchAnswer {
 			background: rgba(0, 0, 0, .3);
 			color: #fff;
 		}
-		%headerBarSearchFilter {
+		%chatSearchFilter {
 			padding: 0 3px;
 		}
-		%headerBarSearchAnswer {
+		%chatSearchAnswer {
 			margin: 0 2px 0 0;
 			padding: 0 3px 0 0;
 		}
 	}
 }
-
+%librarySearch {
+	height: 28px;
+	padding: 2px;
+	background: hsla(0, 0%, 100%, .1);
+	border-radius: 3px;
+	transition: width .2s ease-in-out .1s;
+	%librarySearchBar {
+		background: transparent;
+	}
+	%librarySearchInput {
+		color: #fff;
+		&::placeholder {
+			color: hsla(0, 0%, 100%, .3);
+		}
+	}
+	%librarySearchIcon {
+		color: hsla(0, 0%, 100%, .5);
+		transition: all .15s ease-in-out;
+	}
+	%librarySearchIconLayout:hover {
+		%librarySearchIconClear {
+			color: #fff;
+		}
+	}
+}
+%storeSearch {
+	height: 28px;
+	padding: 2px;
+	background: hsla(0, 0%, 100%, .1);
+	border-radius: 3px;
+	transition: width .2s ease-in-out .1s;
+	%storeSearchBar {
+		background: transparent;
+	}
+	%librarySearchInput {
+		color: #fff;
+		&::placeholder {
+			color: hsla(0, 0%, 100%, .3);
+		}
+	}
+	%storeSearchIcon {
+		color: hsla(0, 0%, 100%, .5);
+		transition: all .15s ease-in-out;
+	}
+	%storeSearchIconLayout:hover {
+		%storeSearchIconClear {
+			color: #fff;
+		}
+	}
+}
 
 // TOP PILL
 %headerBar {
