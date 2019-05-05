@@ -11,6 +11,7 @@
 			border-radius: 15px;
 			> :nth-child(n+2) {
 				position: relative;
+				margin-left: -1px;
 				&:before {
 					content: "";
 					position: absolute;
