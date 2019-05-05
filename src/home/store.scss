@@ -3,15 +3,25 @@
 	%applicationStore {
 		background: transparent;
 	}
-	%storeScroller,
-	%storeMatureListing {
+}
+%storeHomeWrapper,
+%storeListingWrapper {
+	> %scrollerWrap {
+		> %storeScroller {
+			background-color: rgba(0, 0, 0, calc(#{map-get($bg, shading)} * .5));
+		}
+	}
+}
+%applicationStore {
+	%storeMatureListing,
+	> %flex:last-child {
 		background-color: rgba(0, 0, 0, calc(#{map-get($bg, shading)} * .5));
 	}
 }
 
-// CAROUSEL
-%carousel {
-	%carouselItemBackground {
+// HERO CAROUSEL
+%heroCarousel {
+	%heroCarouselItemBackground {
 		background-color: transparent;
 		-webkit-mask: radial-gradient(ellipse at 50% 10%, #000, transparent 70%);
 		mask: radial-gradient(ellipse at 50% 10%, #000, transparent 70%);
@@ -19,39 +29,14 @@
 			display: none;
 		}
 	}
-	%carouselItemDescription {
+	%heroCarouselItemDescription {
 		color: hsla(0, 0%, 100%, .7);
 	}
-	%carouselItemHeader {
+	%heroCarouselItemHeader {
 		color: hsla(0, 0%, 100%, .5);
 	}
-	%carouselItemTitle {
+	%heroCarouselItemTitle {
 		color: #fff;
-	}
-	%carouselPaginationItemContainer {
-		opacity: .5;
-		transition: all .3s ease-in-out;
-		&:after {
-			content: "";
-			position: absolute;
-			@include stretch;
-			border: 2px solid transparent;
-			border-radius: 3px;
-			transition: all .3s ease-in-out;
-		}
-		&:hover {
-			opacity: 1;
-		}
-		&%carouselPaginationItemContainerSelected {
-			box-shadow: 0 0 3px $main-color, inset 0 0 3px rgba(0, 0, 0, .3);
-			opacity: 1;
-			&:after {
-				border-color: $main-color;
-			}
-		}
-	}
-	%carouselPaginationItemBorder {
-		display: none;
 	}
 }
 
@@ -106,4 +91,51 @@
 		background: hsla(0, 0%, 100%, .07);
 		color: hsla(0, 0%, 100%, .7);
 	}
+}
+
+// MEDIA CAROUSEL
+%mediaCarouselButtonsContainer {
+	%mediaCarouselItem {
+		background: rgba(0, 0, 0, .3);
+	}
+	%mediaCarouselArrowButton {
+		background: rgba(0, 0, 0, .2);
+		border-radius: 50%;
+		color: hsla(0, 0%, 100%, .3);
+		opacity: 1;
+		transition: all .15s ease-in-out;
+		&:hover {
+			background: rgba(0, 0, 0, .5);
+			color: hsla(0, 0%, 100%, .7);
+		}
+	}
+}
+%mediaCarouselPaginationContainerHorizontal {
+	-webkit-mask: linear-gradient(to right, transparent, #000 5%, #000 95%, transparent);
+	mask: linear-gradient(to right, transparent, #000 5%, #000 95%, transparent);
+}
+%mediaCarouselPaginationItem {
+	opacity: .5;
+	transition: all .3s ease-in-out;
+	&:after {
+		content: "";
+		position: absolute;
+		@include stretch;
+		border: 2px solid transparent;
+		border-radius: 3px;
+		transition: all .3s ease-in-out;
+	}
+	&:hover {
+		opacity: 1;
+	}
+	&%mediaCarouselPaginationItemSelected {
+		box-shadow: 0 0 3px $main-color, inset 0 0 3px rgba(0, 0, 0, .3);
+		opacity: 1;
+		&:after {
+			border-color: $main-color;
+		}
+	}
+}
+%mediaCarouselPaginationItemBorder {
+	display: none;
 }
