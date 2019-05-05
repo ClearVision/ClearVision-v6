@@ -7,9 +7,7 @@
 %storeHomeWrapper,
 %storeListingWrapper {
 	> %scrollerWrap {
-		> %storeScroller {
-			background-color: rgba(0, 0, 0, calc(#{map-get($bg, shading)} * .5));
-		}
+		background-color: rgba(0, 0, 0, calc(#{map-get($bg, shading)} * .5));
 	}
 }
 %applicationStore {
@@ -160,4 +158,133 @@
 }
 %mediaCarouselPaginationItemBorder {
 	display: none;
+}
+
+// LISTING
+%storeListing {
+	%storeListingDivider {
+		background: hsla(0, 0%, 100%, .07);
+	}
+	%storeListingRecommendation {
+		background: hsla(0, 0%, 100%, .07);
+	}
+}
+%storeListingRecommendation {
+	%storeListingRecommendationActivityDescription,
+	%storeListingRecommendationReasonText {
+		color: hsla(0, 0%, 100%, .7);
+		strong {
+			color: #fff;
+		}
+	}
+	%storeListingRecommendationActivityUsername {
+		color: $main-color;
+		@include hover-shadow;
+	}
+	%storeListingRecommendationIconCircle {
+		background: rgba(0, 0, 0, .2);
+		color: hsla(0, 0%, 100%, .7);
+	}
+	%storeListingRecommendationPremiumCircle {
+		background: rgba(0, 0, 0, .2);
+		color: $main-color;
+		> svg {
+			filter: drop-shadow(0 0 1px);
+		}
+	}
+}
+%storeListingNews {
+	%storeListingNewsItem {
+		background: rgba(0, 0, 0, .3);
+		transition: all .15s ease-in-out;
+		&:hover {
+			background: rgba(0, 0, 0, .5);
+			text-shadow: none;
+		}
+	}
+}
+%storeListingRequirements {
+	%storeListingRequirementKey {
+		color: hsla(0, 0%, 100%, .7);
+		font-weight: 600;
+	}
+	%storeListingRequirement {
+		color: hsla(0, 0%, 100%, .5);
+	}
+}
+%storeListingPurchase {
+	%storeListingPurchaseHeader {
+		background: $main-color;
+		color: #fff;
+	}
+	%storeListingPurchaseSection {
+		background: rgba(0, 0, 0, .3);
+		border-top-color: hsla(0, 0%, 100%, .07);
+	}
+	%storeListingPurchaseSkuNormal {
+		border-bottom-color: hsla(0, 0%, 100%, .04);
+	}
+	%storeListingPurchaseLabel {
+		color: hsla(0, 0%, 100%, .7);
+		font-weight: 600;
+	}
+	%storeListingPurchaseInfo {
+		color: hsla(0, 0%, 100%, .5);
+	}
+	%storeListingPurchaseGenre {
+		color: $main-color;
+		@include hover-shadow;
+	}
+}
+%storeListingPurchaseSku {
+	%storeListingPurchaseSkuName {
+		color: hsla(0, 0%, 100%, .7);
+		transition: all .15s ease-in-out;
+	}
+	%storeListingPurchaseSkuPrice {
+		background: hsla(0, 0%, 100%, .04);
+		color: hsla(0, 0%, 100%, .7);
+		transition: all .15s ease-in-out;
+	}
+	&:hover {
+		%storeListingPurchaseSkuName {
+			color: #fff;
+		}
+		%storeListingPurchaseSkuPrice {
+			background: hsla(0, 0%, 100%, .1);
+			color: #fff;
+		}
+	}
+}
+%storeListingInvite {
+	%storeListingInviteContent {
+		background: hsla(0, 0%, 100%, .04);
+	}
+	%storeListingInviteGuildIcon {
+		background-color: rgba(0, 0, 0, .1);
+	}
+	%storeListingInviteGuildName {
+		color: hsla(0, 0%, 100%, .7);
+	}
+	%storeListingInviteMemberInfo {
+		color: hsla(0, 0%, 100%, .3);
+	}
+	%storeListingInviteStatusOnline {
+		color: $online-color;
+	}
+	%storeListingInviteStatusOffline {
+		color: $offline-color;
+	}
+}
+%storeListingFeatures {
+	%storeListingFeature {
+		background: hsla(0, 0%, 100%, .04);
+		color: hsla(0, 0%, 100%, .5);
+	}
+	%storeListingFeatureIcon {
+		color: hsla(0, 0%, 100%, .5);
+	}
+	%storeListingFeatureCheckmark {
+		color: $success-color;
+	}
 }
