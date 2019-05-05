@@ -160,39 +160,42 @@
 }
 
 // SEARCH
-%chatSearch {
-	> %chatSearchBar {
-		height: 28px;
-		padding: 2px;
-		background: hsla(0, 0%, 100%, .1);
-		border-radius: 3px;
-		transition: width .2s ease-in-out .1s;
-		> %chatSearchRoot {
-			color: #fff;
-		}
-		%chatSearchPlaceholder {
-			color: hsla(0, 0%, 100%, .3);
-		}
-		%chatSearchFilter,
-		%chatSearchAnswer {
-			background: rgba(0, 0, 0, .3);
-			color: #fff;
-		}
-		%chatSearchFilter {
-			padding: 0 3px;
-		}
-		%chatSearchAnswer {
-			margin: 0 2px 0 0;
-			padding: 0 3px 0 0;
-		}
-	}
-}
-%librarySearch {
+%chatSearch %chatSearchBar,
+%librarySearch,
+%storeSearch {
+	width: 140px;
 	height: 28px;
 	padding: 2px;
 	background: hsla(0, 0%, 100%, .1);
 	border-radius: 3px;
 	transition: width .2s ease-in-out .1s;
+}
+%chatSearchFocused %chatSearchBar,
+%librarySearchFocused,
+%storeSearchFocused {
+	width: 240px;
+}
+%chatSearch {
+	> %chatSearchRoot {
+		color: #fff;
+	}
+	%chatSearchPlaceholder {
+		color: hsla(0, 0%, 100%, .3);
+	}
+	%chatSearchFilter,
+	%chatSearchAnswer {
+		background: rgba(0, 0, 0, .3);
+		color: #fff;
+	}
+	%chatSearchFilter {
+		padding: 0 3px;
+	}
+	%chatSearchAnswer {
+		margin: 0 2px 0 0;
+		padding: 0 3px 0 0;
+	}
+}
+%librarySearch {
 	%librarySearchBar {
 		background: transparent;
 	}
@@ -213,11 +216,6 @@
 	}
 }
 %storeSearch {
-	height: 28px;
-	padding: 2px;
-	background: hsla(0, 0%, 100%, .1);
-	border-radius: 3px;
-	transition: width .2s ease-in-out .1s;
 	%storeSearchBar {
 		background: transparent;
 	}

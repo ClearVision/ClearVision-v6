@@ -788,6 +788,9 @@
 .libraryFilter-31ZUa2 {
 	@extend %librarySearch !optional;
 }
+.focused-2eiV0o {
+	@extend %librarySearchFocused !optional;
+}
 .container-cMG81i {
 	@extend %librarySearchBar !optional;
 }
@@ -809,6 +812,9 @@
 // 5.1.3) Store Search
 .browseSearch-e9jF-f {
 	@extend %storeSearch !optional;
+}
+.focused-20l6Zp {
+	@extend %storeSearchFocused !optional;
 }
 .container-cMG81i {
 	@extend %storeSearchBar !optional;
