@@ -64,6 +64,8 @@
 //	 	9.4.2) Categories
 //	 	9.4.3) Tiles
 //	 	9.4.4) Media Carousel
+//	 	9.4.5) Listing
+//	 	9.4.6) Footer
 // 10) Avatars
 // 11) Status
 // 12) Bot Tags
@@ -2428,6 +2430,23 @@ pre {
 }
 .overlappingBorder-1-XPGl {
 	@extend %mediaCarouselPaginationItemBorder !optional;
+}
+// 9.4.5) Listing
+.listingWrapper-329f74 {
+	@extend %storeListingWrapper !optional;
+}
+.listing-2nUQ4d {
+	@extend %storeListing !optional;
+}
+// 9.4.6) Footer
+.footer-3oZnEF {
+	@extend %storeFooter !optional;
+}
+.footerMain-Z8i6ST {
+	@extend %storeFooterMain !optional;
+}
+.footerSub-1Jedbi {
+	@extend %storeFooterSub !optional;
 }
 
 // 10) AVATARS
