@@ -17,22 +17,13 @@
 %message,
 %messageGroup,
 %divider {
-	animation: cv-message-fade .5s ease-in-out;
+	animation: cv-fade-in .15s ease-in-out .25s backwards;
 }
 %messageGroupBlocked %messageGroup {
 	animation: cv-fade-in .3s ease-in-out;
 }
 
 // KEYFRAMES
-@keyframes cv-message-fade {
-	0%,
-	50% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
 @keyframes cv-badge {
 	from {
 		background: $main-color;
