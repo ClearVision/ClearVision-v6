@@ -182,6 +182,22 @@
 		}
 	}
 
+	// STORE
+	%searchPopoutGame {
+		&:after {
+			background: hsla(0, 0%, 100%, .07);
+		}
+		&%searchPopoutGameFocused {
+			background: hsla(0, 0%, 100%, .1);
+		}
+	}
+	%searchPopoutGameName {
+		color: #fff;
+	}
+	%searchPopoutGamePrice {
+		color: hsla(0, 0%, 100%, .5);
+	}
+
 	// SEARCH DATEPICKER
 	%searchPopoutDatePicker {
 		%searchPopoutDatePickerHint {
