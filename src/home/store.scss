@@ -91,6 +91,28 @@
 		background: hsla(0, 0%, 100%, .07);
 		color: hsla(0, 0%, 100%, .7);
 	}
+
+	// FOOTER
+	%storeFooter {
+		position: relative;
+		background-size: 0, 0;
+		&:after {
+			content: "";
+			position: absolute;
+			@include stretch;
+			background: inherit;
+			background-size: auto, 100%;
+			opacity: .3;
+			filter: grayscale(1) brightness(1.5);
+			pointer-events: none;
+		}
+	}
+	%storeFooterMain {
+		color: hsla(0, 0%, 100%, .7);
+	}
+	%storeFooterSub {
+		color: hsla(0, 0%, 100%, .3);
+	}
 }
 
 // MEDIA CAROUSEL
