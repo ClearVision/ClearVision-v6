@@ -19,6 +19,10 @@
 		font-weight: 700;
 		text-align: center;
 		transition: all .15s ease-in-out;
+		opacity: .85;
+		&[style*="color:"] {
+			opacity: 1;
+		}
 		&:before,
 		&:after {
 			content: "";
