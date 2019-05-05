@@ -3,11 +3,11 @@ $version: "pre-4.3.1";
 /*! ClearVision v6 BETA #{$version} by Zerthox */
 
 // STRING CONSTANTS
-$titlebar-text: "ClearVision v6 BETA";
-$titlebar-version: "#{$version}";
+$titlebar-text: "ClearVision";
+$titlebar-version: "v6-#{$version}";
 $titlebar-short: "CV v6";
 $account-text: "ClearVision";
-$account-version: "v6 #{$version}";
+$account-version: "v6-#{$version}";
 
 // IMPORT VARIABLES
 @import "variables";
