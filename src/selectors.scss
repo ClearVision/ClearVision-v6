@@ -724,6 +724,9 @@
 .base-1x0h_U {
 	@extend %headerBarTitle !optional;
 }
+.muted-3-7c5L {
+	@extend %headerBarTitleMuted !optional;
+}
 .topic-TCb_qw {
 	@extend %headerBarTopic !optional;
 }
@@ -762,6 +765,24 @@
 }
 .updateIconForeground-3tnNZn {
 	@extend %headerBarIconUpdateForeground !optional;
+}
+.link-2T7oYD {
+	@extend %headerBarLinkButton !optional;
+}
+.linkIcon-PzfbqY {
+	@extend %headerBarLinkIcon !optional;
+}
+.headerBarListing-3DL3sL {
+	@extend %headerBarListing !optional;
+}
+.headerSection-VnaiAo {
+	@extend %headerBarListingSection !optional;
+}
+.headerPurchase-2z_nch {
+	@extend %headerBarPurchase !optional;
+}
+.active-MpmWDn {
+	@extend %headerBarPurchaseActive !optional;
 }
 // 5.1) Search
 // 5.1.1) Chat Search
@@ -2752,6 +2773,18 @@ pre {
 }
 .spacer-1fA9zc {
 	@extend %spacer !optional;
+}
+.directionUp-ZEk-_J {
+	@extend %directionUp !optional;
+}
+.directionRight-O8AY4M {
+	@extend %directionRight !optional;
+}
+.directionDown-26e7eE {
+	@extend %directionDown !optional;
+}
+.directionLeft-O8iqia {
+	@extend %directionLeft !optional;
 }
 // 13.1) Buttons
 .button-38aScr {
