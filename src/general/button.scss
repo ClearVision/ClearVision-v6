@@ -10,6 +10,7 @@
 	%buttonFilledBrand,
 	%buttonFilledPrimary {
 		background: $main-color;
+		&:hover,
 		&%buttonHasHover:hover {
 			background: $hover-color;
 		}

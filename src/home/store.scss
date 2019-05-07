@@ -286,17 +286,17 @@
 	%storeListingInviteStatusOffline {
 		color: $offline-color;
 	}
-	%buttonFilledPrimary {
-		background: $success-color;
-		color: #fff;
-		opacity: .8;
-		&:hover {
+		%buttonFilledPrimary {
 			background: $success-color;
 			color: #fff;
-			opacity: 1;
+			opacity: .8;
+			&:hover {
+				background: $success-color;
+				color: #fff;
+				opacity: 1;
+			}
 		}
 	}
-}
 %storeListingFeatures {
 	%storeListingFeature {
 		background: hsla(0, 0%, 100%, .04);
