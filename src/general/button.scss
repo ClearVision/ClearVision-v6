@@ -5,15 +5,17 @@
 }
 
 // BUTTON FILLED
-%buttonFilledGreen,
-%buttonFilledBrand,
-%buttonFilledPrimary {
-	background: $main-color;
-	&:hover {
-		background: $hover-color;
-	}
-	&:disabled {
+%appMount {
+	%buttonFilledGreen,
+	%buttonFilledBrand,
+	%buttonFilledPrimary {
 		background: $main-color;
+		&%buttonHasHover:hover {
+			background: $hover-color;
+		}
+		&:disabled {
+			background: $main-color !important;
+		}
 	}
 }
 %buttonFilledWhite,
