@@ -228,6 +228,41 @@
 		background: $main-color;
 		color: #fff;
 	}
+	%storeListingPurchaseHeaderFancy {
+		position: relative;
+		background-size: 0;
+		overflow: hidden;
+		z-index: 1;
+		&:before {
+			content: "";
+			position: absolute;
+			@include stretch;
+			background: linear-gradient(to right, $main-color, $hover-color);
+			z-index: -1;
+		}
+		&:after {
+			content: "";
+			position: absolute;
+			@include stretch;
+			background-image: inherit;
+			background-size: auto, 0;
+			opacity: .1;
+			filter: grayscale(1) brightness(1.5);
+			z-index: -1;
+		}
+	}
+	%storeListingPurchasePremiumHeaderPrice {
+		background: #fff;
+		color: #000;
+		mix-blend-mode: screen;
+	}
+	%storeListingPurchaseOS {
+		color: hsla(0, 0%, 100%, .4);
+		transition: all .15s ease-in-out;
+		&:hover {
+			color: hsla(0, 0%, 100%, .7);
+		}
+	}
 	%storeListingPurchaseSection {
 		background: rgba(0, 0, 0, .3);
 		border-top-color: hsla(0, 0%, 100%, .07);
@@ -286,6 +321,9 @@
 	%storeListingInviteStatusOffline {
 		color: $offline-color;
 	}
+}
+%storeListing {
+	%storeListingInvite {
 		%buttonFilledPrimary {
 			background: $success-color;
 			color: #fff;
@@ -297,6 +335,7 @@
 			}
 		}
 	}
+}
 %storeListingFeatures {
 	%storeListingFeature {
 		background: hsla(0, 0%, 100%, .04);
