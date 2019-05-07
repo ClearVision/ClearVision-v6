@@ -21,6 +21,7 @@
 //		5.1.2) Library Search
 //		5.1.2) Store Search
 // 	5.2) Top Pill
+// 	5.3) Breadcrumbs
 // 6) Chat
 //	6.1) Messages
 //		6.1.1) Reactions
@@ -856,6 +857,25 @@
 }
 .themed-OHr7kt {
 	@extend %topPillItemThemed !optional;
+}
+// 5.3) Breadcrumbs
+.breadcrumbs-SOzMJD {
+	@extend %breadcrumbs !optional;
+}
+.breadcrumbWrapper-WmDjgG {
+	@extend %breadcrumbWrapper !optional;
+}
+.breadcrumbClickWrapper-TpEb92 {
+	@extend %breadcrumbClickWrapper !optional;
+}
+.breadcrumbFinalWrapper-3WqsGi {
+	@extend %breadcrumbFinalWrapper !optional;
+}
+.breadcrumb-22XhB5 {
+	@extend %breadcrumb !optional;
+}
+.breadcrumbArrow-1bJVKv {
+	@extend %breadcrumbArrow !optional;
 }
 
 // 6) CHAT
