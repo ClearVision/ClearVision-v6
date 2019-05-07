@@ -4,6 +4,7 @@
 		height: 48px;
 		background: rgba(0, 0, 0, calc(#{map-get($bg, shading)} * .6));
 		box-shadow: 0 0 10px rgba(0, 0, 0, calc(#{map-get($bg, shading)} * .6));
+		color: hsla(0, 0%, 100%, .5);
 	}
 }
 %headerBar {
@@ -23,6 +24,10 @@
 		margin-left: 5px;
 		color: #fff;
 		text-shadow: 0 0 3px #000;
+		&%headerBarTitleMuted {
+			color: hsla(0, 0%, 100%, .3);
+			text-shadow: none;
+		}
 	}
 	%headerBarTopic {
 		color: hsla(0, 0%, 100%, .5);
