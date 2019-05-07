@@ -2790,6 +2790,9 @@ pre {
 .button-38aScr {
 	@extend %button !optional;
 }
+.hasHover-3X1-zV {
+	@extend %buttonHasHover !optional;
+}
 .lookFilled-1Gx00P {
 	@extend %buttonFilled !optional;
 }
