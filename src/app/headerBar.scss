@@ -157,6 +157,19 @@
 			}
 		}
 	}
+	%headerBarLinkButton {
+		opacity: .5;
+		transition: all .15s ease-in-out;
+		&:hover {
+			opacity: 1;
+		}
+	}
+	%headerBarLinkIcon {
+		background: url(https://clearvision.gitlab.io/icons/share.svg) center/24px no-repeat;
+		> g {
+			display: none;
+		}
+	}
 }
 
 // SEARCH
