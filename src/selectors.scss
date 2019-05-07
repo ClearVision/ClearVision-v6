@@ -2557,6 +2557,21 @@ pre {
 .entitledHeader-3LRNDT {
 	@extend %storeListingPurchaseHeader !optional;
 }
+.headerFancy-1AcCLF {
+	@extend %storeListingPurchaseHeaderFancy !optional;
+}
+.premiumHeaderIcon-bTc_nQ {
+	@extend %storeListingPurchasePremiumHeaderIcon !optional;
+}
+.premiumHeaderPrice-1F1CMD {
+	@extend %storeListingPurchasePremiumHeaderPrice !optional;
+}
+.OSSection-27GaV2 {
+	@extend %storeListingPurchaseOSSection !optional;
+}
+.purchaseUnitOperatingSystem-cnbJPz {
+	@extend %storeListingPurchaseOS !optional;
+}
 .bodySection-jqkkIP {
 	@extend %storeListingPurchaseSection !optional;
 }
