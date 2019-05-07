@@ -114,6 +114,22 @@
 	}
 }
 
+// BROWSE
+%storeBrowseWrapper {
+	%storeBrowseFilterBar {
+		border-color: hsla(0, 0%, 100%, .07);
+	}
+	%storeBrowseFilterAndSort,
+	%storeBrowseHideGames {
+		color: hsla(0, 0%, 100%, .5);
+	}
+}
+%popouts {
+	%selectPopout {
+		background: rgba(0, 0, 0, .7);
+	}
+}
+
 // MEDIA CAROUSEL
 %mediaCarouselButtonsContainer {
 	%mediaCarouselItem {
