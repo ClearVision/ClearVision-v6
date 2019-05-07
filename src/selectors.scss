@@ -97,6 +97,7 @@
 //		16.7.2) Datepicker
 //	16.8) Emoji Picker
 //		16.8.1) BD Emote Picker
+//	16.9) Select Popout
 // 17) User Popout
 //	17.1) Header
 //	17.2) Body
@@ -3693,6 +3694,25 @@ pre {
 }
 .emote-icon {
 	@extend %bdEmoteIcon !optional;
+}
+// 16.9) Select Popout
+.popout-2sKjHu {
+	@extend %selectPopout !optional;
+}
+.filterBrowsingSelectPopout-2kjxuc {
+	@extend %selectPopoutFilterBrowsing !optional;
+}
+.option-1mJRMP {
+	@extend %selectPopoutOption !optional;
+}
+.optionActive-KkAdqq {
+	@extend %selectPopoutOptionActive !optional;
+}
+.optionFocused-8MflSE {
+	@extend %selectPopoutOptionFocused !optional;
+}
+.optionNormal-12VR9V {
+	@extend %selectPopoutOptionNormal !optional;
 }
 
 // 17) USER POPOUT
