@@ -168,6 +168,21 @@
 		background: rgba(0, 0, 0, .7);
 	}
 }
+%selectPopout {
+	%selectPopoutOption {
+		border-radius: 3px;
+		color: hsla(0, 0%, 100%, .5);
+		transition: all .15s ease-in-out;
+		&:hover {
+			background: rgba(0, 0, 0, .5);
+			color: #fff;
+		}
+		&%selectPopoutOptionActive {
+			background: $main-color;
+			color: #fff;
+		}
+	}
+}
 
 // MEDIA CAROUSEL
 %mediaCarouselButtonsContainer {
