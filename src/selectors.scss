@@ -2446,7 +2446,13 @@ pre {
 	@extend %storeBrowseHideGames !optional;
 }
 .checkboxWrapper-SkhIWG {
+	@extend %storeBrowseCheckboxWrapper !optional;
+}
+.checkbox-1ix_J3 {
 	@extend %storeBrowseCheckbox !optional;
+}
+.checked-3_4uQ9 {
+	@extend %storeBrowseCheckboxChecked !optional;
 }
 .reverseLabel-3ANTBK {
 	@extend %storeBrowseReverseLabel !optional;
