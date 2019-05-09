@@ -1566,26 +1566,26 @@ pre {
 .header-1TOWci {
 	@extend %gifAutocompleteHeader !optional;
 }
-.searchBar-1MOL6S {
+.searchBar--fTZYa {
 	@extend %gifAutocompleteSearchBar !optional;
+}
+.inner-2P4tQO {
+	@extend %gifAutocompleteSearchBarInner !optional;
 }
 .input-3Xdcic {
 	@extend %gifAutocompleteSearchInput !optional;
 }
-.searchBarIcon-18QaPq {
-	@extend %gifAutocompleteSearchBarIcon !optional;
+.iconLayout-3OgqU3 {
+	@extend %gifAutocompleteSearchIconLayout !optional;
 }
-.controls-3xBdO0 {
-	@extend %gifAutocompleteSearchControls !optional;
+.iconContainer-2wXvy1 {
+	@extend %gifAutocompleteSearchIconContainer !optional;
 }
 .icon-1S6UIr {
 	@extend %gifAutocompleteSearchIcon !optional;
 }
 .visible-3bFCH- {
 	@extend %gifAutocompleteSearchIconVisible !optional;
-}
-.eyeGlass-2cMHx7 {
-	@extend %gifAutocompleteSearchIconEyeGlass !optional;
 }
 .clear--Eywng {
 	@extend %gifAutocompleteSearchIconClear !optional;
