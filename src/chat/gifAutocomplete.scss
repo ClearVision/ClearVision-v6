@@ -1,28 +1,31 @@
 // TENOR GIF AUTOCOMPLETE
-%autocomplete %gifAutocompleteHeader {
-	box-shadow: 0 1px hsla(0, 0%, 100%, .04);
+%autocomplete{
+	%gifAutocompleteHeader {
+		box-shadow: 0 1px hsla(0, 0%, 100%, .04);
+	}
 }
 %gifAutocompleteHeader {
 
 	// SEARCH
 	%gifAutocompleteSearchBar {
 		background: hsla(0, 0%, 100%, .07);
-		> %gifAutocompleteSearchInput {
+		%gifAutocompleteSearchInput {
 			color: #fff;
 			&::placeholder {
 				color: hsla(0, 0%, 100%, .3);
 			}
 		}
 	}
+	%gifAutocompleteSearchIcon,
 	%gifAutocompleteSearchBackButton {
 		color: hsla(0, 0%, 100%, .7);
 		transition: all .15s ease-in-out;
+		&:hover {
+			color: #fff;
+		}
 	}
 	%gifAutocompleteSearchHeader {
 		color: hsla(0, 0%, 100%, .7);
-	}
-	%gifAutocompleteSearchBackButton:hover {
-		color: #fff;
 	}
 }
 %gifAutocompleteContent {
