@@ -52,7 +52,7 @@
 		}
 		&[style*="color:"] {
 			%checkboxElement:checked {
-				+ span {
+				+ span:before {
 					background: currentColor;
 				}
 			}
