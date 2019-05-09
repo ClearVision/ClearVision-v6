@@ -5,7 +5,8 @@
 		background-color: transparent;
 	}
 }
-%gameLibrary {
+%gameLibrary,
+%libraryRoot {
 	> %scrollerWrap {
 		background-color: rgba(0, 0, 0, calc(#{map-get($bg, shading)} * .5));
 	}
