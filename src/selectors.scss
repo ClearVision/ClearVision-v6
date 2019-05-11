@@ -1,4 +1,4 @@
-/*! Using Discord Selectors v19-05-09 by Zerthox */
+/*! Using Discord Selectors v19-05-22 by Zerthox */
 // FILE CONTENTS
 // 1) App
 // 	1.1) App Notices
@@ -3223,6 +3223,9 @@ pre {
 }
 .noArrow-3BYQ0Z {
 	@extend %popoutNoArrow !optional;
+}
+.noShadow-321ZPm {
+	@extend %popoutNoShadow !optional;
 }
 .header-ykumBX {
 	@extend %popoutHeader !optional;
