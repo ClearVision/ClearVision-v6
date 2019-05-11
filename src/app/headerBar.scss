@@ -189,6 +189,7 @@
 	transition: width .2s ease-in-out .1s;
 }
 %chatSearchFocused %chatSearchBar,
+%chatSearchOpen %chatSearchBar,
 %librarySearchFocused,
 %storeSearchFocused {
 	width: 240px;
