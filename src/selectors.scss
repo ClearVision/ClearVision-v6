@@ -28,7 +28,7 @@
 //		6.1.2) Invite Links
 //		6.1.3) Embeds
 //		6.1.4) Embed Media Player
-//		6.1.5) Spotify Invites
+//		6.1.5) Activity Invites
 //		6.1.6) Codeblocks
 //		6.1.7) Attachments
 //		6.1.8) Spoilers
@@ -1295,84 +1295,84 @@
 .bubble-3qRl2J {
 	@extend %playerMediaBarBubble !optional;
 }
-// 6.1.5) Spotify Invites
+// 6.1.5) Activity Invites
 .invite-18yqGF {
-	@extend %spotifyInvite !optional;
+	@extend %activityInvite !optional;
 }
 .coverImageWrapper-22d5LB {
-	@extend %spotifyCoverImageWrapper !optional;
+	@extend %activityInviteCoverImageWrapper !optional;
 }
 .coverImage-3cjWkd {
-	@extend %spotifyCoverImage !optional;
+	@extend %activityInviteCoverImage !optional;
 }
 .coverImageActionable-1TMryE {
-	@extend %spotifyCoverImageActionable !optional;
+	@extend %activityInviteCoverImageActionable !optional;
 }
 .coverImageNotActionable-1MP2Mx {
-	@extend %spotifyCoverImageNotActionable !optional;
+	@extend %activityInviteCoverImageNotActionable !optional;
 }
 .blurred-UUeCTs {
-	@extend %spotifyCoverImageBlurred !optional;
+	@extend %activityInviteCoverImageBlurred !optional;
 }
 .artwork-1vrmJ_ {
-	@extend %spotifyArtwork !optional;
+	@extend %activityInviteArtwork !optional;
 }
 .artworkActionable-10hKry {
-	@extend %spotifyArtworkActionable !optional;
+	@extend %activityInviteArtworkActionable !optional;
 }
 .artworkNotActionable-3519Nv {
-	@extend %spotifyArtworkNotActionable !optional;
+	@extend %activityInviteArtworkNotActionable !optional;
 }
 .artworkSpotifySessionEnded-11d_If {
-	@extend %spotifyArtworkSessionEnded !optional;
+	@extend %activityInviteArtworkSessionEnded !optional;
 }
 .header-Hg_qNF {
-	@extend %spotifyInviteHeader !optional;
+	@extend %activityInviteHeader !optional;
 }
 .partyStatus-6AjDud {
-	@extend %spotifyInvitePartyStatus !optional;
+	@extend %activityInvitePartyStatus !optional;
 }
 .actionAndParty-3DXneA {
-	@extend %spotifyInviteActionAndParty !optional;
+	@extend %activityInviteActionAndParty !optional;
 }
 .actionButton-1Vu3oO {
-	@extend %spotifyInviteActionButton !optional;
+	@extend %activityInviteActionButton !optional;
 }
 .name-GG2Mcs {
-	@extend %spotifyInviteName !optional;
+	@extend %activityInviteName !optional;
 }
 .partyMembers-fGLW2R {
-	@extend %spotifyInvitePartyMembers !optional;
+	@extend %activityInvitePartyMembers !optional;
 }
 .partyMember-2WUkBE {
-	@extend %spotifyInvitePartyMember !optional;
+	@extend %activityInvitePartyMember !optional;
 }
 .partyMemberKnown-2QGebq {
-	@extend %spotifyInvitePartyMemberKnown !optional;
+	@extend %activityInvitePartyMemberKnown !optional;
 }
 .partyAvatar-34PPpo {
-	@extend %spotifyInvitePartyAvatar !optional;
+	@extend %activityInvitePartyAvatar !optional;
 }
 .partyMemberEmpty-2iyh5g {
-	@extend %spotifyInvitePartyMemberEmber !optional;
+	@extend %activityInvitePartyMemberEmpty !optional;
 }
 .moreUsers-1sZP3U {
-	@extend %spotifyInviteMoreUsers !optional;
+	@extend %activityInviteMoreUsers !optional;
 }
 .helpIcon-2EyVTp {
-	@extend %spotifyInviteHelpIcon !optional;
+	@extend %activityInviteHelpIcon !optional;
 }
 .details-3NqflA {
-	@extend %spotifyInviteDetails !optional;
+	@extend %activityInviteDetails !optional;
 }
 .state-2dqgON {
-	@extend %spotifyInviteState !optional;
+	@extend %activityInviteState !optional;
 }
 .textLink-3aPthL {
-	@extend %spotifyInviteTextLink !optional;
+	@extend %activityInviteTextLink !optional;
 }
 .artworkSpotifySessionEnded-11d_If {
-	@extend %spotifyInviteArtworkSessionEnded !optional;
+	@extend %activityInviteArtworkSessionEnded !optional;
 }
 // 6.1.6) Codeblocks
 .inline {
