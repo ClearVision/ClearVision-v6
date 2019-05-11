@@ -30,4 +30,7 @@
 		filter: grayscale(1) brightness(2);
 		opacity: .3;
 	}
+	%activityInvitePartyMemberEmpty {
+		background: hsla(0, 0%, 100%, .07);
+	}
 }
