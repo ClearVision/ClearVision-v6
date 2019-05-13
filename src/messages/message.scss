@@ -1,12 +1,19 @@
 // MESSAGE
-%messages %messageGroup {
-	transition: background .3s ease-in-out;
-	&:active {
-		background: hsla(0, 0%, 100%, .1);
-		transition-delay: .3s;
+%messages {
+	%messageGroup {
+		transition: background .3s ease-in-out;
+		&:active {
+			background: hsla(0, 0%, 100%, .1);
+			transition-delay: .3s;
+		}
 	}
 }
 %messageGroup {
+	&%messageGroupLocalBot {
+		background: linear-gradient(to right, transparent, hsla(0, 0%, 100%, .04) 10%, hsla(0, 0%, 100%, .04) 90%, transparent);
+		box-shadow: none;
+		color: hsla(0, 0%, 100%, .3);
+	}
 	+ %messageGroup {
 		margin-top: -1px;
 	}
