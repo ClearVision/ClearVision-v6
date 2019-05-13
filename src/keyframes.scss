@@ -112,3 +112,13 @@
 		opacity: 1;
 	}
 }
+@keyframes cv-menu-scroll {
+	from {
+		transform: translateY(100%);
+		opacity: 0;
+	}
+	to {
+		transform: none;
+		opacity: 1;
+	}
+}

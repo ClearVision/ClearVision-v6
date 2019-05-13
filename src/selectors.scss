@@ -1541,6 +1541,9 @@ pre {
 .autocomplete-1vrmpx {
 	@extend %autocomplete !optional;
 }
+.autocompleteInner-zh20B_ {
+	@extend %autocompleteInner !optional;
+}
 .contentTitle-2tG_sM {
 	@extend %autocompleteTitle !optional;
 }
@@ -1572,6 +1575,9 @@ pre {
 	@extend %autocompleteSelectorContent !optional;
 }
 // 6.4.2) GIF Autocomplete
+.container-3ISnnM {
+	@extend %gifAutocompleteInner !optional;
+}
 .header-1TOWci {
 	@extend %gifAutocompleteHeader !optional;
 }

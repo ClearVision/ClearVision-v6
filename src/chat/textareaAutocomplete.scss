@@ -1,40 +1,47 @@
 // CHANNEL TEXTAREA AUTOCOMPLETE
 %chat {
 	%autocomplete {
+		background: transparent;
+		overflow: hidden;
+	}
+}
+%autocomplete {
+	%autocompleteInner,
+	%gifAutocompleteInner {
 		background: rgba(0, 0, 0, .8);
-		animation: cv-menu-fold .2s cubic-bezier(.2, .6, .5, 1.1);
+		animation: cv-menu-scroll .3s ease-in-out;		
 		transform-origin: 50% 100%;
-		%autocompleteTitle {
-			color: hsla(0, 0%, 100%, .5);
-		}
-		%autocompleteContent {
-			color: hsla(0, 0%, 100%, .6);
+	}
+	%autocompleteTitle {
+		color: hsla(0, 0%, 100%, .5);
+	}
+	%autocompleteContent {
+		color: hsla(0, 0%, 100%, .6);
+	}
+	%autocompleteIconForeground {
+		fill: hsla(0, 0%, 100%, .3);
+	}
+	%autocompleteDescription,
+	%autocompleteDescriptionUsername {
+		color: hsla(0, 0%, 100%, .3);
+	}
+	%autocompleteDescriptionDiscriminator {
+		color: hsla(0, 0%, 100%, .15);
+	}
+	%autocompleteSelectorSelected {
+		background: $main-color;
+		> %autocompleteContent {
+			color: #fff;
 		}
 		%autocompleteIconForeground {
-			fill: hsla(0, 0%, 100%, .3);
+			fill: hsla(0, 0%, 100%, .5);
 		}
 		%autocompleteDescription,
 		%autocompleteDescriptionUsername {
-			color: hsla(0, 0%, 100%, .3);
+			color: hsla(0, 0%, 100%, .5);
 		}
 		%autocompleteDescriptionDiscriminator {
-			color: hsla(0, 0%, 100%, .15);
-		}
-		%autocompleteSelectorSelected {
-			background: $main-color;
-			> %autocompleteContent {
-				color: #fff;
-			}
-			%autocompleteIconForeground {
-				fill: hsla(0, 0%, 100%, .5);
-			}
-			%autocompleteDescription,
-			%autocompleteDescriptionUsername {
-				color: hsla(0, 0%, 100%, .5);
-			}
-			%autocompleteDescriptionDiscriminator {
-				color: hsla(0, 0%, 100%, .25);
-			}
+			color: hsla(0, 0%, 100%, .25);
 		}
 	}
 }
