@@ -87,7 +87,7 @@
 // 15) Context Menu
 // 16) Popouts
 //	16.1) Message Options Popout
-//	16.2) Dropdown Menu
+//	16.2) Guild Header Popout
 //	16.3) Status Picker
 //	16.4) Connection Info Popout
 //	16.5) Messages Popout
@@ -3258,21 +3258,21 @@ pre {
 .item-2J1YMK {
 	@extend %popoutItem !optional;
 }
-// 16.2) Dropdown Menu
+// 16.2) Guild Header Popout
 .menu-Sp6bN1 {
-	@extend %dropdown !optional;
+	@extend %guildHeaderPopout !optional;
 }
 .item-1GzJrl {
-	@extend %dropdownItem !optional;
+	@extend %guildHeaderPopoutItem !optional;
 }
 .separator-2zcjq8 {
-	@extend %dropdownSeparator !optional;
+	@extend %guildHeaderPopoutSeparator !optional;
 }
 .icon-2doZ3q {
-	@extend %dropdownIcon !optional;
+	@extend %guildHeaderPopoutIcon !optional;
 }
 .label-1Y-LW5 {
-	@extend %dropdownLabel !optional;
+	@extend %guildHeaderPopoutLabel !optional;
 }
 // 16.3) Status Picker
 .alt-3btY0e {

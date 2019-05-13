@@ -18,23 +18,23 @@ $account-version: "v6-#{$version}";
 // IMPORT SELECTORS
 @import "selectors";
 
-/* DEFAULT SETTINGS */
+// DEFAULT SETTINGS
 @import "settingsDefault";
 
-/* APP */
+// APP
 @import "app/app";
 @import "app/notice";
 
-/* TITLEBAR */
+// TITLEBAR
 @import "app/titlebar";
 
-/* HEADER BAR */
+// HEADER BAR
 @import "app/headerBar";
 
-/* GUILDS */
+// GUILDS
 @import "guilds/guilds";
 
-/* CHANNELS */
+// CHANNELS
 @import "channels/channels";
 @import "channels/category";
 @import "channels/channel";
@@ -43,7 +43,7 @@ $account-version: "v6-#{$version}";
 @import "channels/privateChannels";
 @import "channels/channelNotice";
 
-/* CHAT */
+// CHAT
 @import "chat/chat";
 @import "chat/divider";
 @import "chat/bars";
@@ -52,7 +52,7 @@ $account-version: "v6-#{$version}";
 @import "chat/gifAutocomplete";
 @import "chat/welcome";
 
-/* MESSAGES */
+// MESSAGES
 @import "messages/message";
 @import "messages/reaction";
 @import "messages/inviteLink";
@@ -66,28 +66,28 @@ $account-version: "v6-#{$version}";
 @import "messages/attachment";
 @import "messages/blocked";
 
-/* MEMBERS */
+// MEMBERS
 @import "members/members";
 
-/* SEARCH */
+// SEARCH
 @import "search/search";
 
-/* HOME TAB */
+// HOME TAB
 @import "home/friends";
 @import "home/library";
 @import "home/activity";
 @import "home/store";
 
-/* AVATARS */
+// AVATARS
 @import "general/avatar";
 
-/* STATUS */
+// STATUS
 @import "general/status";
 
-/* BOT TAGS */
+// BOT TAGS
 @import "general/botTag";
 
-/* GENERAL ELEMENTS */
+// GENERAL ELEMENTS
 @import "general/button";
 @import "general/scrollbar";
 @import "general/badge";
@@ -96,10 +96,10 @@ $account-version: "v6-#{$version}";
 @import "general/slider";
 @import "general/spinner";
 
-/* CONTEXT MENU */
+// CONTEXT MENU
 @import "popouts/contextMenu";
 
-/* POPOUTS */
+// POPOUTS
 @import "popouts/popout";
 @import "popouts/messageOptions";
 @import "popouts/dropdownMenu";
@@ -110,33 +110,33 @@ $account-version: "v6-#{$version}";
 @import "popouts/searchPopout";
 @import "popouts/emojiPicker";
 
-/* USER POPOUT */
+// USER POPOUT
 @import "popouts/userPopout";
 
-/* MEMBER ACTIVITY */
+// MEMBER ACTIVITY
 @import "members/activity";
 
-/* MEMBER ROLES */
+// MEMBER ROLES
 @import "members/roles";
 
-/* MODALS */
+// MODALS
 @import "modals/modal";
 @import "modals/userModal";
 @import "modals/keyboardShortcutsModal";
 
-/* SETTINGS */
+// SETTINGS
 @import "settings/sidebar";
 @import "settings/icons";
 @import "settings/content";
 
-/* PAGES */
+// PAGES
 @import "pages/discovery";
 
-/* SCREENS */
+// SCREENS
 @import "screens/loading";
 @import "screens/crash";
 
-/* BETTERDISCORD */
+// BETTERDISCORD
 @import "bd/sidebar";
 
 /* PLUGINS */
@@ -150,5 +150,5 @@ $account-version: "v6-#{$version}";
 @import "plugins/DevilBro/ownerTag";
 @import "plugins/Arashiryuu/memberCount";
 
-/* KEYFRAMES */
+// KEYFRAMES
 @import "keyframes";
