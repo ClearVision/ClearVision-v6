@@ -1,4 +1,4 @@
-/*! Using Discord Selectors v19-05-22 by Zerthox */
+/*! Using Discord Selectors v19-05-13 by Zerthox */
 // FILE CONTENTS
 // 1) App
 // 	1.1) App Notices
@@ -953,6 +953,12 @@
 }
 .container-1YxwTf {
 	@extend %messageGroup !optional;
+}
+.isLocalBot-38G0P0 {
+	@extend %messageGroupLocalBot !optional;
+}
+.localBotMessage-1cGMdw {
+	@extend %messageGroupLocalBotMessage !optional;
 }
 .messageGroupBlocked-3wrQQX {
 	@extend %messageGroupBlocked !optional;
