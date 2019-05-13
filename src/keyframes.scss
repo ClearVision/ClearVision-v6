@@ -92,7 +92,7 @@
         opacity: 1;
     }
 }
-@keyframes cv-menu-fold {
+@keyframes cv-menu-fold-y {
 	from {
 		transform: rotateX(-90deg);
 		opacity: 0;
@@ -102,7 +102,7 @@
 		opacity: 1;
 	}
 }
-@keyframes cv-menu-slide {
+@keyframes cv-menu-fold-x {
 	from {
 		transform: rotateY(-90deg);
 		opacity: 0;
@@ -112,9 +112,39 @@
 		opacity: 1;
 	}
 }
-@keyframes cv-menu-scroll {
+@keyframes cv-menu-slide-top {
+	from {
+		transform: translateY(-100%);
+		opacity: 0;
+	}
+	to {
+		transform: none;
+		opacity: 1;
+	}
+}
+@keyframes cv-menu-slide-bottom {
 	from {
 		transform: translateY(100%);
+		opacity: 0;
+	}
+	to {
+		transform: none;
+		opacity: 1;
+	}
+}
+@keyframes cv-menu-slide-left {
+	from {
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+	to {
+		transform: none;
+		opacity: 1;
+	}
+}
+@keyframes cv-menu-slide-right {
+	from {
+		transform: translateX(100%);
 		opacity: 0;
 	}
 	to {
