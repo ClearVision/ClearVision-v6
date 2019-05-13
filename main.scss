@@ -102,7 +102,7 @@ $account-version: "v6-#{$version}";
 // POPOUTS
 @import "popouts/popout";
 @import "popouts/messageOptions";
-@import "popouts/dropdownMenu";
+@import "popouts/guildHeaderPopout";
 @import "popouts/statusPicker";
 @import "popouts/connectionInfo";
 @import "popouts/messagesPopout";

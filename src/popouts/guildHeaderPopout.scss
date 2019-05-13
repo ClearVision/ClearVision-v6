@@ -1,0 +1,26 @@
+/* GUILD HEADER POPOUT */
+%popout {
+	%guildHeaderPopout {
+		background: rgba(0, 0, 0, .7);
+		%guildHeaderPopoutItem {
+			color: hsla(0, 0%, 100%, .7);
+			transition: all .15s ease-in-out;
+			%guildHeaderPopoutIcon {
+				opacity: .5;
+				filter: brightness(10) grayscale(1);
+				transition: all .15s ease-in-out;
+			}
+			&:hover {
+				background: $main-color;
+				color: #fff;
+				> %guildHeaderPopoutIcon {
+					opacity: .7;
+				}
+			}
+		}
+		%guildHeaderPopoutSeparator {
+			margin: -1px 5px;
+			border-color: hsla(0, 0%, 100%, .04);
+		}
+	}
+}
