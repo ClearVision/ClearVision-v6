@@ -57,15 +57,6 @@
 				transition: all .15s ease-in-out;
 				z-index: -1;
 			}
-			&:after {
-				content: "";
-				position: absolute;
-				@include pos(0, 100%, 0, 0);
-				background: linear-gradient(to right, $main-color 90%, transparent);
-				opacity: .8;
-				transition: all .3s ease-in-out;
-				z-index: -1;
-			}
 		}
 		%memberNameTag {
 			color: hsla(0, 0%, 100%, .6);
