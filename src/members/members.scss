@@ -42,7 +42,7 @@
 	// MEMBER
 	> %member {
 		backface-visibility: hidden;
-		> %memberContent {
+		%memberContent {
 			position: relative;
 			background: transparent !important;
 			border-radius: 5px;
@@ -65,6 +65,21 @@
 				opacity: .8;
 				transition: all .3s ease-in-out;
 				z-index: -1;
+			}
+		}
+		%memberNameTag {
+			color: hsla(0, 0%, 100%, .6);
+			&:after {
+				content: "";
+				position: absolute;
+				@include pos(0, 100%, 0, 0);
+				background: linear-gradient(to right, $main-color 90%, transparent);
+				opacity: .8;
+				transition: all .3s ease-in-out;
+				z-index: -1;
+			}	
+			&[style]:after {
+				background: linear-gradient(to right, currentColor 90%, transparent);
 			}
 		}
 		%memberUsername {
@@ -94,14 +109,14 @@
 		}
 		&:hover,
 		&%memberPopoutOpen {
-			> %memberContent {
+			%memberContent {
 				&:before {
 					opacity: 1;
 				}
 			}
 		}
 		&%memberPopoutOpen {
-			> %memberContent {
+			%memberNameTag {
 				&:after {
 					right: 0;
 				}
@@ -127,6 +142,11 @@
 				transform: scale(.9);
 			}
 		}
+	}
+	%memberOwnerIcon > g > path,
+	%memberActivityIconForeground {
+		fill: hsla(0, 0%, 100%, .4);
+		transition: all .15s ease-in-out;
 	}
 
 	// PLACEHOLDERS
@@ -160,9 +180,4 @@
 	%memberPlaceholderUsernameMultiple {
 		background: hsla(0, 0%, 100%, .3);
 	}
-}
-%memberOwnerIcon > g > path,
-%memberActivityIconForeground {
-	fill: hsla(0, 0%, 100%, .4);
-	transition: all .15s ease-in-out;
 }
