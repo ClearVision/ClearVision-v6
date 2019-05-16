@@ -143,11 +143,6 @@
 			}
 		}
 	}
-	%memberOwnerIcon > g > path,
-	%memberActivityIconForeground {
-		fill: hsla(0, 0%, 100%, .4);
-		transition: all .15s ease-in-out;
-	}
 
 	// PLACEHOLDERS
 	%memberGroupPlaceholder {
@@ -180,4 +175,9 @@
 	%memberPlaceholderUsernameMultiple {
 		background: hsla(0, 0%, 100%, .3);
 	}
+}
+%memberOwnerIcon > g > path,
+%memberActivityIconForeground {
+	fill: hsla(0, 0%, 100%, .4);
+	transition: all .15s ease-in-out;
 }
