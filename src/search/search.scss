@@ -77,7 +77,16 @@
 			color: $main-color;
 			text-shadow: 0 0 1px;
 			transition: all .15s ease-in-out;
-			&:before,
+			&:before {
+				content: "";
+				height: 2px;
+				border: none;
+				flex-grow: 1;
+				transition: all .15s ease-in-out;
+				opacity: .7;
+				margin-right: 5px;
+				background: linear-gradient(to left, $main-color 50%, transparent);
+			}
 			&:after {
 				content: "";
 				height: 2px;
@@ -85,12 +94,6 @@
 				flex-grow: 1;
 				transition: all .15s ease-in-out;
 				opacity: .7;
-			}
-			&:before {
-				margin-right: 5px;
-				background: linear-gradient(to left, $main-color 50%, transparent);
-			}
-			&:after {
 				margin-left: 5px;
 				background: linear-gradient(to right, $main-color 50%, transparent);
 			}

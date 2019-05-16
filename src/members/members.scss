@@ -23,17 +23,17 @@
 		&[style*="color:"] {
 			opacity: 1;
 		}
-		&:before,
-		&:after {
+		&:before {
 			content: "";
 			height: 2px;
 			flex-grow: 1;
-		}
-		&:before {
 			background: linear-gradient(to left, currentColor 50%, transparent);
 			margin-right: 5px;
 		}
 		&:after {
+			content: "";
+			height: 2px;
+			flex-grow: 1;
 			background: linear-gradient(to right, currentColor 50%, transparent);
 			margin-left: 5px;
 		}
