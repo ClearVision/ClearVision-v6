@@ -1,4 +1,4 @@
-/*! Using Discord Selectors v19-05-13 by Zerthox */
+/*! Using Discord Selectors v19-05-16 by Zerthox */
 // FILE CONTENTS
 // 1) App
 // 	1.1) App Notices
@@ -1907,6 +1907,9 @@ pre {
 .friendsAction-__WNE9 {
 	@extend %friendsAction !optional;
 }
+.friendsActionAdd-3Hu_65 {
+	@extend %friendsActionAdd !optional;
+}
 .friendsActionVideoCall-2_PKeP {
 	@extend %friendsActionVideoCall !optional;
 }
@@ -1915,6 +1918,15 @@ pre {
 }
 .friendsActionRemove-qu8nnl {
 	@extend %friendsActionRemove !optional;
+}
+.friendsActionAccept-3mkemT {
+	@extend %friendsActionAccept !optional;
+}
+.friendsActionCancel-3AP4ex {
+	@extend %friendsActionCancel !optional;
+}
+.friendsActionIgnore-1-RPlq {
+	@extend %friendsActionIgnore !optional;
 }
 .text-GwUZgS {
 	@extend %friendsTableBodyText !optional;

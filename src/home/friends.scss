@@ -114,8 +114,18 @@
 						background-color: $hover-color;
 					}
 				}
-				> %friendsActionRemove:hover {
-					background-color: $danger-color !important;
+				> %friendsActionAdd,
+				> %friendsActionAccept {
+					&:hover {
+						background-color: $success-color !important;
+					}
+				}
+				> %friendsActionRemove,
+				> %friendsActionCancel,
+				> %friendsActionIgnore {
+					&:hover {
+						background-color: $danger-color !important;
+					}
 				}
 			}
 			&:hover > %friendsColumnActions {
