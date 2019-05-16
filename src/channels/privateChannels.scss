@@ -40,6 +40,7 @@
 				border-radius: 3px;
 				transition: all .15s ease-in-out;
 				z-index: -1;
+				pointer-events: none;
 			}
 			&:after {
 				content: "";
@@ -49,6 +50,7 @@
 				opacity: .9;
 				transition: all .3s ease-in-out;
 				z-index: -1;
+				pointer-events: none;
 			}
 		}
 		%privateChannelName,
