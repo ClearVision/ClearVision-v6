@@ -12,3 +12,15 @@
     background: rgba(0, 0, 0, .3);
 	color: hsla(0, 0%, 100%, .8);
 }
+%member {
+	%botTag {
+		transition: all .15s ease-in-out;
+	}
+	&%memberPopoutOpen {
+		%botTag {
+			background: hsla(0, 0%, 100%, .3);
+			color: #fff;
+			text-shadow: 0 0 3px rgba(0, 0, 0, .7);
+		}
+	}
+}
