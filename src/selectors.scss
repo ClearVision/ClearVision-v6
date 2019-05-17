@@ -4244,8 +4244,8 @@ pre {
 	@extend %quoteButton !optional;
 }
 // 24.7) DevilBro
-.DevilBro-tooltip {
-	@extend %tooltipDevilBro !optional;
+.BDFDB-tooltip {
+	@extend %tooltipBDFDB !optional;
 }
 // 24.7.1) ShowHiddenChannels
 .container-hidden {
