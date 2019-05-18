@@ -10,7 +10,7 @@ before_script:
     
 pages:
   script:
-    - node-sass ./ --output=public --recursive=false --include-path=src --output-style=compressed
+    - node-sass ./ --output=public --recursive=false --output-style=compressed
     - postcss public/*.css --dir=public --use=autoprefixer -b "> 5%" --no-map
   artifacts:
     paths:
