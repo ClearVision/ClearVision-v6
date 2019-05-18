@@ -1,9 +1,14 @@
 /* SEARCH POPOUT */
 %popout {
-	&%popoutBottom%popoutNoArrow%popoutNoShadow[style*="z-index: 1001"] {
-		left: auto !important;
-		right: 40px;
-		transform: none !important;
+	&%popoutBottom%popoutNoArrow%popoutNoShadow {
+		%platformWin &[style*="top: 60px"],
+		%platformOSX &[style*="top: 38px"],
+		%platformLinux &[style*="top: 38px"],
+		%platformWeb &[style*="top: 38px"] {
+			left: auto !important;
+			right: 40px;
+			transform: none !important;
+		}
 	}
 	> %searchPopout {
 		background-color: rgba(0, 0, 0, .7);
