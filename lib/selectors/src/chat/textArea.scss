@@ -1,27 +1,27 @@
 /// CHAT CHANNEL TEXT AREA
 .channelTextArea-rNsIhG {
-	@extend %channelTextarea !optional;
+	@extend %channelTextArea !optional;
 }
 .inner-zqa7da {
-	@extend %channelTextareaInner !optional;
+	@extend %channelTextAreaInner !optional;
 }
 .attachButton-1UjEWA {
-	@extend %channelTextareaAttachButton !optional;
+	@extend %channelTextAreaAttachButton !optional;
 }
 .attachButtonPlus-rUdX-B {
-	@extend %channelTextareaAttachButtonPlus !optional;
+	@extend %channelTextAreaAttachButtonPlus !optional;
 }
 .buttons-205you {
-	@extend %channelTextareaButtons !optional;
+	@extend %channelTextAreaButtons !optional;
 }
 .emojiButton-3uL3Aw {
-	@extend %channelTextareaEmojiButton !optional;
+	@extend %channelTextAreaEmojiButton !optional;
 }
 .typing-2GQL18 {
-	@extend %channelTextareaTyping !optional;
+	@extend %channelTextAreaTyping !optional;
 }
 .text-1y-e8- {
-	@extend %channelTextareaTypingText !optional;
+	@extend %channelTextAreaTypingText !optional;
 }
 .operations-36ENbA {
 	@extend %operations !optional;
@@ -37,138 +37,4 @@
 }
 .buttonContainer-3AU1Ij {
 	@extend %channelInfoButtonContainer !optional;
-}
-// Channel Textarea Autocomplete
-.autocomplete-1vrmpx {
-	@extend %autocomplete !optional;
-}
-.autocompleteInner-zh20B_ {
-	@extend %autocompleteInner !optional;
-}
-.contentTitle-2tG_sM {
-	@extend %autocompleteTitle !optional;
-}
-.content-Qb0rXO {
-	@extend %autocompleteContent !optional;
-}
-.icon-3ZzoN7 {
-	@extend %autocompleteIcon !optional;
-}
-.iconForeground-1w5n7R {
-	@extend %autocompleteIconForeground !optional;
-}
-.description-11DmNu {
-	@extend %autocompleteDescription !optional;
-}
-.descriptionUsername-J_75O8 {
-	@extend %autocompleteDescriptionUsername !optional;
-}
-.descriptionDiscriminator-3vUOCc {
-	@extend %autocompleteDiscriminator !optional;
-}
-.selector-2IcQBU {
-	@extend %autocompleteSelector !optional;
-}
-.selectorSelected-1_M1WV {
-	@extend %autocompleteSelectorSelected !optional;
-}
-.content-Qb0rXO {
-	@extend %autocompleteSelectorContent !optional;
-}
-// GIF Autocomplete
-.container-3ISnnM {
-	@extend %gifAutocompleteInner !optional;
-}
-.header-1TOWci {
-	@extend %gifAutocompleteHeader !optional;
-}
-.searchBar--fTZYa {
-	@extend %gifAutocompleteSearchBar !optional;
-}
-.inner-2P4tQO {
-	@extend %gifAutocompleteSearchBarInner !optional;
-}
-.input-3Xdcic {
-	@extend %gifAutocompleteSearchInput !optional;
-}
-.iconLayout-3OgqU3 {
-	@extend %gifAutocompleteSearchIconLayout !optional;
-}
-.iconContainer-2wXvy1 {
-	@extend %gifAutocompleteSearchIconContainer !optional;
-}
-.icon-1S6UIr {
-	@extend %gifAutocompleteSearchIcon !optional;
-}
-.visible-3bFCH- {
-	@extend %gifAutocompleteSearchIconVisible !optional;
-}
-.clear--Eywng {
-	@extend %gifAutocompleteSearchIconClear !optional;
-}
-.backButton-JyKGC1 {
-	@extend %gifAutocompleteSearchBackButton !optional;
-}
-.searchHeader-2r8VVk  {
-	@extend %gifAutocompleteSearchHeader !optional;
-}
-.content-ySCtCx {
-	@extend %gifAutocompleteContent !optional;
-}
-.container-2jxBbw {
-	@extend %gifAutocompleteContainer !optional;
-}
-.categoryFade-2ybR1J {
-	@extend %gifAutocompleteCategoryFade !optional;
-}
-.categoryFadeBlurple-1j72_A {
-	@extend %gifAutocompleteCategoryFadeBlurple !optional;
-}
-.categoryText-2-8pri {
-	@extend %gifAutocompleteCategoryText !optional;
-}
-.categoryIcon-21RREB {
-	@extend %gifAutocompleteCategoryIcon !optional;
-}
-.categoryName-UvMsNp {
-	@extend %gifAutocompleteCategoryName !optional;
-}
-.results-3i9FaE {
-	@extend %gifAutocompleteResults !optional;
-}
-.result-3w1ZcL {
-	@extend %gifAutocompleteResult !optional;
-}
-.focused-1En8bG {
-	@extend %gifAutocompleteResultFocused !optional;
-}
-.favButton-_fxLew {
-	@extend %gifAutocompleteFavButton !optional;
-}
-.icon-3wcw1B {
-	@extend %gifAutocompleteFavButtonIcon !optional;
-}
-.gif-1TcNIB {
-	@extend %gifAutocompleteGif !optional;
-}
-.emptyHints-1EYR-5 {
-	@extend %gifAutocompleteEmptyHints !optional;
-}
-.placeholder-1kJjXI {
-	@extend %gifAutocompletePlaceholder !optional;
-}
-.emptyHint-2ZHXNQ {
-	@extend %gifAutocompleteEmptyHint !optional;
-}
-.emptyHintCard-2mUdMe {
-	@extend %gifAutocompleteEmptyHintCard !optional;
-}
-.emptyHintFavorite-3Bf6b2 {
-	@extend %gifAutocompleteEmptyHintFavorite !optional;
-}
-.emptyHintText-1QDF9N {
-	@extend %gifAutocompleteEmptyHintText !optional;
-}
-.endContainer-1ZDW8j {
-	@extend %gifAutocompleteEndContainer !optional;
 }
