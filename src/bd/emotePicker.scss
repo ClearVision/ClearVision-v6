@@ -1,0 +1,36 @@
+// BD EMOTE PICKER
+%bdEmoteMenu {
+	background-color: rgba(0, 0, 0, .5);
+	border: none !important;
+	~ %emojiPicker {
+		border-radius: 0 0 5px 5px;
+	}
+	> button {
+		border-color: transparent;
+		box-shadow: none;
+		color: hsla(0, 0%, 100%, .7);
+		transition: all .15s ease-in-out;
+		&:hover {
+			background-color: hsla(0, 0%, 100%, .07);
+		}
+	}
+	> %bdEmoteMenuActive {
+		background-color: $main-color;
+		color: #fff;
+	}
+}
+%bdEmoteMenuTwitchContainer,
+%bdEmoteMenuFavouriteContainer {
+	height: 326px;
+	width: 344px;
+	background-color: rgba(0, 0, 0, .5);
+	border-radius: 0 0 5px 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+%bdEmoteContainer {
+	border-radius: 3px;
+	transition: all .15s ease-in-out;
+	&:hover  {
+		background-color: hsla(0, 0%, 100%, .07);
+	}
+}

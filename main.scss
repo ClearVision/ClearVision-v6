@@ -24,12 +24,10 @@ $account-version: "v6-#{$version}";
 // APP
 @import "src/app/app";
 @import "src/app/notice";
-
-// TITLEBAR
 @import "src/app/titlebar";
 
 // HEADER BAR
-@import "src/app/headerBar";
+@import "src/headerBar/headerBar";
 
 // GUILDS
 @import "src/guilds/guilds";
@@ -47,8 +45,8 @@ $account-version: "v6-#{$version}";
 @import "src/chat/chat";
 @import "src/chat/divider";
 @import "src/chat/bars";
-@import "src/chat/textarea";
-@import "src/chat/textareaAutocomplete";
+@import "src/chat/textArea";
+@import "src/chat/textAreaAutocomplete";
 @import "src/chat/gifAutocomplete";
 @import "src/chat/welcome";
 
@@ -68,6 +66,13 @@ $account-version: "v6-#{$version}";
 
 // MEMBERS
 @import "src/members/members";
+
+// USERS
+@import "src/users/avatar";
+@import "src/users/status";
+@import "src/users/botTag";
+@import "src/users/role";
+@import "src/users/activity";
 
 // SEARCH
 @import "src/search/search";
@@ -96,13 +101,12 @@ $account-version: "v6-#{$version}";
 @import "src/general/slider";
 @import "src/general/spinner";
 
-// CONTEXT MENU
-@import "src/popouts/contextMenu";
-
 // POPOUTS
 @import "src/popouts/popout";
+@import "src/popouts/userPopout";
+@import "src/popouts/contextMenu";
 @import "src/popouts/messageOptions";
-@import "src/popouts/guildHeaderPopout";
+@import "src/popouts/guildPopout";
 @import "src/popouts/statusPicker";
 @import "src/popouts/connectionInfo";
 @import "src/popouts/messagesPopout";
@@ -110,19 +114,10 @@ $account-version: "v6-#{$version}";
 @import "src/popouts/searchPopout";
 @import "src/popouts/emojiPicker";
 
-// USER POPOUT
-@import "src/popouts/userPopout";
-
-// MEMBER ACTIVITY
-@import "src/members/activity";
-
-// MEMBER ROLES
-@import "src/members/roles";
-
 // MODALS
 @import "src/modals/modal";
 @import "src/modals/userModal";
-@import "src/modals/keyboardShortcutsModal";
+@import "src/modals/keyboardShortcuts";
 
 // SETTINGS
 @import "src/settings/sidebar";
@@ -138,6 +133,7 @@ $account-version: "v6-#{$version}";
 
 // BETTERDISCORD
 @import "src/bd/sidebar";
+@import "src/bd/emotePicker";
 
 /* PLUGINS */
 @import "src/plugins/pluginNotice";
