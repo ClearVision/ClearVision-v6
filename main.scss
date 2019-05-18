@@ -83,15 +83,6 @@ $account-version: "v6-#{$version}";
 @import "src/home/activity";
 @import "src/home/store";
 
-// AVATARS
-@import "src/general/avatar";
-
-// STATUS
-@import "src/general/status";
-
-// BOT TAGS
-@import "src/general/botTag";
-
 // GENERAL ELEMENTS
 @import "src/general/button";
 @import "src/general/scrollbar";
