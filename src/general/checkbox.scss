@@ -7,6 +7,7 @@
 			background: hsla(0, 0%, 100%, .04);
 			border: none;
 			border-radius: 10px;
+			box-shadow: 0 0 5px rgba(0, 0, 0, .5);
 			transition: all .2s ease-in-out;
 			&:before {
 				content: "";

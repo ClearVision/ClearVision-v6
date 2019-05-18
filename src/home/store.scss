@@ -130,6 +130,7 @@
 		background: hsla(0, 0%, 100%, .04) !important;
 		border: none !important;
 		border-radius: 10px;
+		box-shadow: 0 0 5px rgba(0, 0, 0, .5);
 		&:before {
 			content: "";
 			position: absolute;
