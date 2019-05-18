@@ -1,0 +1,77 @@
+/* HEADER BAR SEARCH BARS */
+%chatSearch %chatSearchBar,
+%librarySearch,
+%storeSearch {
+	width: 140px;
+	height: 28px;
+	padding: 2px;
+	background: hsla(0, 0%, 100%, .1);
+	border-radius: 3px;
+	transition: width .2s ease-in-out .1s;
+}
+%chatSearchFocused %chatSearchBar,
+%chatSearchOpen %chatSearchBar,
+%librarySearchFocused,
+%storeSearchFocused {
+	width: 240px;
+}
+%chatSearch {
+	> %chatSearchRoot {
+		color: #fff;
+	}
+	%chatSearchPlaceholder {
+		color: hsla(0, 0%, 100%, .3);
+	}
+	%chatSearchFilter,
+	%chatSearchAnswer {
+		background: $main-color;
+		color: #fff;
+	}
+	%chatSearchFilter {
+		padding: 0 3px;
+	}
+	%chatSearchAnswer {
+		margin: 0 2px 0 0;
+		padding: 0 3px 0 0;
+	}
+}
+%librarySearch {
+	%librarySearchBar {
+		background: transparent;
+	}
+	%librarySearchInput {
+		color: #fff;
+		&::placeholder {
+			color: hsla(0, 0%, 100%, .3);
+		}
+	}
+	%librarySearchIcon {
+		color: hsla(0, 0%, 100%, .5);
+		transition: all .15s ease-in-out;
+	}
+	%librarySearchIconLayout:hover {
+		%librarySearchIconClear {
+			color: #fff;
+		}
+	}
+}
+%storeSearch {
+	%storeSearchBar {
+		background: transparent;
+	}
+	%librarySearchInput {
+		color: #fff;
+		&::placeholder {
+			color: hsla(0, 0%, 100%, .3);
+		}
+	}
+	%storeSearchIcon {
+		color: hsla(0, 0%, 100%, .5);
+		transition: all .15s ease-in-out;
+	}
+	%storeSearchIconLayout:hover {
+		%storeSearchIconClear {
+			color: #fff;
+		}
+	}
+}

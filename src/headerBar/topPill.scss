@@ -1,0 +1,21 @@
+/* HEADER BAR TOP PILL */
+%headerBar {
+	%topPill {
+		%topPillItem {
+			font-size: 14px;
+			&%topPillItemThemed {
+				background: transparent !important;
+				color: hsla(0, 0%, 100%, .5) !important;
+				transition: all .3s ease-in-out;
+				&:hover {
+					background-color: rgba(0, 0, 0, .5) !important;
+					color: hsla(0, 0%, 100%, .7) !important;
+				}
+				&%topPillItemSelected {
+					background-color: $main-color !important;
+					color: #fff !important;
+				}
+			}
+		}
+	}
+}

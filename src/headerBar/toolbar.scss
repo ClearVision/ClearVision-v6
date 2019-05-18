@@ -1,0 +1,141 @@
+/* HEADER BAR TOOLBAR */
+%toolbar {
+	%headerBarIconWrapper {
+		border-radius: 3px;
+		transition: all .3s ease-in-out;
+		%headerBarIcon {
+			opacity: .5;
+			transition: all .15s ease-in-out;
+		}
+
+		// SELECTED & POPOUT OPEN
+		&%headerBarIconSelected,
+		&%headerBarIconPopoutOpen {
+			background: hsla(0, 0%, 100%, .1);
+			%headerBarIcon {
+				opacity: .7;
+			}
+		}
+
+		// HOVER
+		&%headerBarIconClickable:hover {
+			%headerBarIcon {
+				opacity: 1;
+			}
+		}
+
+		// UNREAD
+		> svg:not(%headerBarIcon) {
+			color: $main-color;
+			filter: drop-shadow(0 0 5px);
+			transition: filter .3s ease-in-out;
+		}
+		[mask] {
+			-webkit-mask: url(https://clearvision.gitlab.io/icons/pin.svg);
+			mask: url(https://clearvision.gitlab.io/icons/pin.svg);
+			> %headerBarIcon {
+				background: $main-color;
+				opacity: 1;
+			}
+		}
+		&:hover {
+			> svg:not(%headerBarIcon) {
+				filter: drop-shadow(0 0 5px) drop-shadow(0 0 10px);
+			}
+		}
+	}
+	%headerBarIconBadge {
+		display: none;
+	}
+
+	// ICONS
+	%headerBarIcon {
+		&[name=Nova_Bell],
+		&[name=Nova_BellOff],
+		&[name=Nova_Pin],
+		&[name=Nova_People],
+		&[name=Nova_At],
+		&[name=Nova_Help],
+		&[name=Nova_ChatNew],
+		&[name=Nova_CallJoin],
+		&[name=Nova_CallVideo],
+		&[name=Nova_UserAdd],
+		&[name=Nova_Downloading] {
+			> g,
+			> path {
+				display: none;
+			}
+		}
+		&[name=Nova_Bell] {
+			background: url(https://clearvision.gitlab.io/icons/notifications.svg) center/24px no-repeat;
+		}
+		&[name=Nova_BellOff] {
+			background: url(https://clearvision.gitlab.io/icons/notifications_off.svg) center/24px no-repeat;
+		}
+		&[name=Nova_Pin] {
+			background: url(https://clearvision.gitlab.io/icons/pin.svg) center/24px no-repeat;
+		}
+		&[name=Nova_People] {
+			background: url(https://clearvision.gitlab.io/icons/people.svg) center/24px no-repeat;
+		}
+		&[name=Nova_At] {
+			background: url(https://clearvision.gitlab.io/icons/mail.svg) center/24px no-repeat;
+		}
+		&[name=Nova_Help] {
+			background: url(https://clearvision.gitlab.io/icons/help.svg) center/24px no-repeat;
+		}
+		&[name=Nova_ChatNew] {
+			background: url(https://clearvision.gitlab.io/icons/group_add.svg) center/24px no-repeat;
+		}
+		&[name=Nova_CallJoin] {
+			background: url(https://clearvision.gitlab.io/icons/call.svg) center/24px no-repeat;
+		}
+		&[name=Nova_CallVideo] {
+			background: url(https://clearvision.gitlab.io/icons/videocam.svg) center/24px no-repeat;
+		}
+		&[name=Nova_UserAdd] {
+			background: url(https://clearvision.gitlab.io/icons/person_add.svg) center/24px no-repeat;
+		}
+		&%headerBarIconUpdateAvailable {
+			background: url(https://clearvision.gitlab.io/icons/sync.svg) center/24px no-repeat;
+			animation: cv-update-spin 2s linear infinite;
+		}
+		&[name=Nova_Downloading] {
+			position: relative;
+			background: url(https://clearvision.gitlab.io/icons/cloud_download.svg) center/24px no-repeat,
+				linear-gradient(to bottom, $main-color, $main-color) 50% 10px/10px 10px no-repeat;
+			animation: cv-update-downloading 2.5s ease-in-out infinite;
+		}
+	}
+	%headerBarIconWrapper {
+		%headerBarIcon[name=Nova_Download] {
+			color: $main-color;
+			opacity: 1;
+			filter: drop-shadow(0 0 5px);
+			transition: filter .3s ease-in-out;
+			%headerBarIconUpdateForeground {
+				display: inline;
+				fill: $main-color;
+				d: path("M10,17L6.5,13.5L7.91,12.08L10,14.17L15.18,9L16.59,10.41M19.35,10.03C18.67,6.59 15.64,4 12,4C9.11,4 6.6,5.64 5.35,8.03C2.34,8.36 0,10.9 0,14A6,6 0 0,0 6,20H19A5,5 0 0,0 24,15C24,12.36 21.95,10.22 19.35,10.03Z");
+			}
+		}
+		&:hover {
+			%headerBarIcon[name=Nova_Download] {
+				filter: drop-shadow(0 0 5px) drop-shadow(0 0 10px);
+			}
+		}
+	}
+	%headerBarLinkButton {
+		opacity: .5;
+		transition: all .15s ease-in-out;
+		&:hover {
+			opacity: 1;
+		}
+	}
+	%headerBarLinkIcon {
+		background: url(https://clearvision.gitlab.io/icons/share.svg) center/24px no-repeat;
+		> g {
+			display: none;
+		}
+	}
+}

@@ -28,6 +28,10 @@ $account-version: "v6-#{$version}";
 
 // HEADER BAR
 @import "src/headerBar/headerBar";
+@import "src/headerBar/toolbar";
+@import "src/headerBar/searchBars";
+@import "src/headerBar/topPill";
+@import "src/headerBar/breadcrumbs";
 
 // GUILDS
 @import "src/guilds/guilds";

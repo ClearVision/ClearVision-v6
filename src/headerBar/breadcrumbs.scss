@@ -1,0 +1,26 @@
+/* HEADER BAR BREADCRUMBS */
+%breadcrumbs {
+	margin-left: 2px;
+	%breadcrumb {
+		margin: 0 3px;
+		transition: all .15s ease-in-out;
+	}
+	%breadcrumbArrow {
+		transition: all .15s ease-in-out;
+	}
+	%breadcrumbWrapper {
+		color: hsla(0, 0%, 100%, .3);
+		&:hover {
+			%breadcrumb {
+				color: hsla(0, 0%, 100%, .7);
+				text-decoration: none;
+			}
+			%breadcrumbArrow {
+				&%directionRight {		
+					color: hsla(0, 0%, 100%, .7);
+					transform: rotateY(180deg) rotateZ(-90deg) translateY(3px);
+				}
+			}
+		}
+	}
+}
