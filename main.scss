@@ -126,17 +126,17 @@ $account-version: "v6-#{$version}";
 @import "src/bd/sidebar";
 @import "src/bd/emotePicker";
 
-/* PLUGINS */
-@import "src/plugins/pluginNotice";
-@import "src/plugins/messageButtons";
-@import "src/plugins/noodlebox/lineNumbers";
-@import "src/plugins/Finicalmist/copyCode";
-@import "src/plugins/DevilBro/tooltips";
-@import "src/plugins/DevilBro/showHiddenChannels";
-@import "src/plugins/DevilBro/dateText";
-@import "src/plugins/DevilBro/badgesEverywhere";
-@import "src/plugins/DevilBro/ownerTag";
-@import "src/plugins/Arashiryuu/memberCount";
+/* BETTERDISCORD PLUGINS */
+@import "src/bd/plugins/pluginNotice";
+@import "src/bd/plugins/messageButtons";
+@import "src/bd/plugins/noodlebox/lineNumbers";
+@import "src/bd/plugins/Finicalmist/copyCode";
+@import "src/bd/plugins/DevilBro/tooltips";
+@import "src/bd/plugins/DevilBro/showHiddenChannels";
+@import "src/bd/plugins/DevilBro/dateText";
+@import "src/bd/plugins/DevilBro/badgesEverywhere";
+@import "src/bd/plugins/DevilBro/ownerTag";
+@import "src/bd/plugins/Arashiryuu/memberCount";
 
 // KEYFRAMES
 @import "src/keyframes";
