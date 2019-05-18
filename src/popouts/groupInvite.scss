@@ -1,0 +1,106 @@
+/* NEW GROUP INVITE POPOUT */
+%groupInvitePopout {
+
+	// HEADER
+	%groupInvitePopoutTitle {
+		color: #fff;
+		text-shadow: 0 0 1px #000;
+	}
+	%groupInvitePopoutSubtitle {
+		color: hsla(0, 0%, 100%, .7);
+	}
+
+	// SEARCH
+	%groupInvitePopoutSearchContainer {
+		background: hsla(0, 0%, 100%, .1);
+	}
+	%groupInvitePopoutSearchTag {
+		background: $main-color;
+		color: #fff;
+	}
+
+	// FRIEND
+	%groupInvitePopoutFriend {
+		transition: all .15s ease-in-out;
+		&%groupInvitePopoutFriendSelected {
+			background: hsla(0, 0%, 100%, .1);
+			%groupInvitePopoutNickname {
+				color: #fff;
+			}
+			%groupInvitePopoutDiscordTag {
+				color: hsla(0, 0%, 100%, .5);
+			}
+			%groupInvitePopoutCheckbox {
+				background: hsla(0, 0%, 100%, .1);
+			}
+		}
+	}
+	%groupInvitePopoutNickname {
+		color: hsla(0, 0%, 100%, .7);
+		transition: all .15s ease-in-out;
+	}
+	%groupInvitePopoutDiscordTag {
+		color: hsla(0, 0%, 100%, .3);
+		opacity: 1;
+		transition: all .15s ease-in-out;
+	}
+	%groupInvitePopoutCheckboxWrapper {
+		height: 18px !important;
+	}
+	%groupInvitePopoutInput {
+		width: 35px;
+		height: 18px !important;
+		border-radius: 10px;
+		&:checked {
+			+ %groupInvitePopoutCheckbox {
+				&:before {
+					right: 0;
+					background: $main-color;
+				}
+				&:after {
+					left: 100%;
+					width: 18px;
+					height: 18px;
+					margin-left: -18px;
+					border: none;
+					transform: none;
+				}
+			}
+		}
+	}
+	%groupInvitePopoutCheckbox {
+		width: 35px !important;
+		height: 18px !important;
+		background: hsla(0, 0%, 100%, .04);
+		border: none;
+		border-radius: 10px;
+		box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+		transition: all .15s ease-in-out;
+		&:before {
+			content: "";
+			position: absolute;
+			@include pos(0, 100%, 0, 0);
+			border-radius: 10px;
+			transition: all .2s ease-in-out;
+		}
+		&:after {
+			content: "";
+			position: absolute;
+			left: 0;
+			width: 18px;
+			height: 18px;
+			background: #fff;
+			border-radius: 50%;
+			box-shadow: 0 0 1px 1px rgba(0, 0, 0, .3);
+			transition: all .2s ease-in-out;
+		}
+		> svg {
+			display: none;
+		}
+	}
+
+	// FOOTER
+	%groupInvitePopoutFooterSeparator {
+		box-shadow: 0 -1px 0 hsla(0, 0%, 100%, .04);
+	}
+}

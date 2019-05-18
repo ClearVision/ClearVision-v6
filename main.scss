@@ -1,4 +1,4 @@
-$version: "pre-4.4.0";
+$version: "pre-4.5.0";
 
 /*! ClearVision v6 BETA #{$version} by Zerthox */
 
@@ -104,6 +104,7 @@ $account-version: "v6-#{$version}";
 @import "src/popouts/autocompletePopout";
 @import "src/popouts/searchPopout";
 @import "src/popouts/emojiPicker";
+@import "src/popouts/groupInvite";
 
 // MODALS
 @import "src/modals/modal";
