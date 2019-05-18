@@ -1,8 +1,8 @@
 /*! HLJS Language Display by Zerthox */
 
 // IMPORTS
-@import "mixins";
-@import "selectors";
+@import "src/mixins";
+@import "src/selectors";
 
 // IMPORT CODE LANGUAGES
-@import "messages/codeLanguages";
+@import "src/messages/codeLanguages";
