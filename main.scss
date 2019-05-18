@@ -10,146 +10,146 @@ $account-text: "ClearVision";
 $account-version: "v6-#{$version}";
 
 // IMPORT VARIABLES
-@import "variables";
+@import "src/variables";
 
 // IMPORT MIXINS
-@import "mixins";
+@import "src/mixins";
 
 // IMPORT SELECTORS
-@import "selectors";
+@import "lib/selectors/bd";
 
 // DEFAULT SETTINGS
-@import "settingsDefault";
+@import "src/settingsDefault";
 
 // APP
-@import "app/app";
-@import "app/notice";
+@import "src/app/app";
+@import "src/app/notice";
 
 // TITLEBAR
-@import "app/titlebar";
+@import "src/app/titlebar";
 
 // HEADER BAR
-@import "app/headerBar";
+@import "src/app/headerBar";
 
 // GUILDS
-@import "guilds/guilds";
+@import "src/guilds/guilds";
 
 // CHANNELS
-@import "channels/channels";
-@import "channels/category";
-@import "channels/channel";
-@import "channels/containers";
-@import "channels/indicators";
-@import "channels/privateChannels";
-@import "channels/channelNotice";
+@import "src/channels/channels";
+@import "src/channels/category";
+@import "src/channels/channel";
+@import "src/channels/containers";
+@import "src/channels/indicators";
+@import "src/channels/privateChannels";
+@import "src/channels/channelNotice";
 
 // CHAT
-@import "chat/chat";
-@import "chat/divider";
-@import "chat/bars";
-@import "chat/textarea";
-@import "chat/textareaAutocomplete";
-@import "chat/gifAutocomplete";
-@import "chat/welcome";
+@import "src/chat/chat";
+@import "src/chat/divider";
+@import "src/chat/bars";
+@import "src/chat/textarea";
+@import "src/chat/textareaAutocomplete";
+@import "src/chat/gifAutocomplete";
+@import "src/chat/welcome";
 
 // MESSAGES
-@import "messages/message";
-@import "messages/reaction";
-@import "messages/inviteLink";
-@import "messages/embed";
-@import "messages/mediaPlayer";
-@import "messages/activityInvite";
-@import "messages/codeblock";
-@import "messages/codeLanguages";
-@import "messages/mention";
-@import "messages/spoiler";
-@import "messages/attachment";
-@import "messages/blocked";
+@import "src/messages/message";
+@import "src/messages/reaction";
+@import "src/messages/inviteLink";
+@import "src/messages/embed";
+@import "src/messages/mediaPlayer";
+@import "src/messages/activityInvite";
+@import "src/messages/codeblock";
+@import "src/messages/codeLanguages";
+@import "src/messages/mention";
+@import "src/messages/spoiler";
+@import "src/messages/attachment";
+@import "src/messages/blocked";
 
 // MEMBERS
-@import "members/members";
+@import "src/members/members";
 
 // SEARCH
-@import "search/search";
+@import "src/search/search";
 
 // HOME TAB
-@import "home/friends";
-@import "home/library";
-@import "home/activity";
-@import "home/store";
+@import "src/home/friends";
+@import "src/home/library";
+@import "src/home/activity";
+@import "src/home/store";
 
 // AVATARS
-@import "general/avatar";
+@import "src/general/avatar";
 
 // STATUS
-@import "general/status";
+@import "src/general/status";
 
 // BOT TAGS
-@import "general/botTag";
+@import "src/general/botTag";
 
 // GENERAL ELEMENTS
-@import "general/button";
-@import "general/scrollbar";
-@import "general/badge";
-@import "general/tooltip";
-@import "general/checkbox";
-@import "general/slider";
-@import "general/spinner";
+@import "src/general/button";
+@import "src/general/scrollbar";
+@import "src/general/badge";
+@import "src/general/tooltip";
+@import "src/general/checkbox";
+@import "src/general/slider";
+@import "src/general/spinner";
 
 // CONTEXT MENU
-@import "popouts/contextMenu";
+@import "src/popouts/contextMenu";
 
 // POPOUTS
-@import "popouts/popout";
-@import "popouts/messageOptions";
-@import "popouts/guildHeaderPopout";
-@import "popouts/statusPicker";
-@import "popouts/connectionInfo";
-@import "popouts/messagesPopout";
-@import "popouts/autocompletePopout";
-@import "popouts/searchPopout";
-@import "popouts/emojiPicker";
+@import "src/popouts/popout";
+@import "src/popouts/messageOptions";
+@import "src/popouts/guildHeaderPopout";
+@import "src/popouts/statusPicker";
+@import "src/popouts/connectionInfo";
+@import "src/popouts/messagesPopout";
+@import "src/popouts/autocompletePopout";
+@import "src/popouts/searchPopout";
+@import "src/popouts/emojiPicker";
 
 // USER POPOUT
-@import "popouts/userPopout";
+@import "src/popouts/userPopout";
 
 // MEMBER ACTIVITY
-@import "members/activity";
+@import "src/members/activity";
 
 // MEMBER ROLES
-@import "members/roles";
+@import "src/members/roles";
 
 // MODALS
-@import "modals/modal";
-@import "modals/userModal";
-@import "modals/keyboardShortcutsModal";
+@import "src/modals/modal";
+@import "src/modals/userModal";
+@import "src/modals/keyboardShortcutsModal";
 
 // SETTINGS
-@import "settings/sidebar";
-@import "settings/icons";
-@import "settings/content";
+@import "src/settings/sidebar";
+@import "src/settings/icons";
+@import "src/settings/content";
 
 // PAGES
-@import "pages/discovery";
+@import "src/pages/discovery";
 
 // SCREENS
-@import "screens/loading";
-@import "screens/crash";
+@import "src/screens/loading";
+@import "src/screens/crash";
 
 // BETTERDISCORD
-@import "bd/sidebar";
+@import "src/bd/sidebar";
 
 /* PLUGINS */
-@import "plugins/pluginNotice";
-@import "plugins/messageButtons";
-@import "plugins/noodlebox/lineNumbers";
-@import "plugins/Finicalmist/copyCode";
-@import "plugins/DevilBro/tooltips";
-@import "plugins/DevilBro/showHiddenChannels";
-@import "plugins/DevilBro/dateText";
-@import "plugins/DevilBro/badgesEverywhere";
-@import "plugins/DevilBro/ownerTag";
-@import "plugins/Arashiryuu/memberCount";
+@import "src/plugins/pluginNotice";
+@import "src/plugins/messageButtons";
+@import "src/plugins/noodlebox/lineNumbers";
+@import "src/plugins/Finicalmist/copyCode";
+@import "src/plugins/DevilBro/tooltips";
+@import "src/plugins/DevilBro/showHiddenChannels";
+@import "src/plugins/DevilBro/dateText";
+@import "src/plugins/DevilBro/badgesEverywhere";
+@import "src/plugins/DevilBro/ownerTag";
+@import "src/plugins/Arashiryuu/memberCount";
 
 // KEYFRAMES
-@import "keyframes";
+@import "src/keyframes";
