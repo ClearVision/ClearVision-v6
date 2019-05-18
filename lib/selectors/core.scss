@@ -73,6 +73,8 @@
 @import "src/general/indicator";
 
 // POPOUTS
+@import "src/popouts/popout";
+@import "src/popouts/userPopout";
 @import "src/popouts/contextMenu";
 @import "src/popouts/messageOptions";
 @import "src/popouts/guildPopout";
@@ -81,7 +83,6 @@
 @import "src/popouts/messagesPopout";
 @import "src/popouts/searchPopout";
 @import "src/popouts/emojiPicker";
-@import "src/popouts/userPopout";
 @import "src/popouts/autocompletePopout";
 @import "src/popouts/selectPopout";
 
