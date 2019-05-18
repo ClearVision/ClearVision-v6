@@ -1,0 +1,43 @@
+// CATEGORY
+.containerDefault-3GGEv_ {
+	@extend %categoryContainerDefault !optional;
+}
+.containerUserOver-1Tcb7l {
+	@extend %categoryContainerUserOver !optional;
+}
+.containerDragBefore-3Dzc5x {
+	@extend %categoryContainerDragBefore !optional;
+}
+.containerDragAfter-3TEhpe {
+	@extend %categoryContainerDragAfter !optional;
+}
+%categoryContainerDragBefore,
+%categoryContainerDragAfter {
+	@extend %categoryContainerDrag !optional;
+}
+%categoryContainerDefault,
+%categoryContainerDrag,
+%categoryContainerUserOver {
+	@extend %categoryContainer !optional;
+}
+.wrapper-CU3qI5 {
+	@extend %categoryWrapper !optional;
+}
+.clickable-18m--O {
+	@extend %categoryWrapperClickable !optional;
+}
+.collapsed-4WdoJ7 {
+	@extend %categoryWrapperCollapsed !optional;
+}
+.muted-1NRuDm {
+	@extend %categoryWrapperMuted !optional;
+}
+.icon-WnO6o2 {
+	@extend %categoryIcon !optional;
+}
+.name-IbjUBS {
+	@extend %categoryName !optional;
+}
+.children-13TY0l {
+	@extend %categoryButtons !optional;
+}

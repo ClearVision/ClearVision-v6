@@ -1,0 +1,105 @@
+/// HEADER BAR
+.container-1r6BKw {
+	@extend %headerBar !optional;
+}
+.children-19S4PO {
+	@extend %headerBarChildren !optional;
+}
+.toolbar-1t6TWx {
+	@extend %toolbar !optional;
+}
+.base-1x0h_U {
+	@extend %headerBarTitle !optional;
+}
+.muted-3-7c5L {
+	@extend %headerBarTitleMuted !optional;
+}
+.topic-TCb_qw {
+	@extend %headerBarTopic !optional;
+}
+.iconWrapper-2OrFZ1 {
+	@extend %headerBarIconWrapper !optional;
+}
+.icon-22AiRD {
+	@extend %headerBarIcon !optional;
+}
+.clickable-3rdHwn {
+	@extend %headerBarIconClickable !optional;
+}
+.selected-1GqIat {
+	@extend %headerBarIconSelected !optional;
+}
+%headerBarIcon.popout-open {
+	@extend %headerBarIconPopoutOpen !optional;
+}
+.cloud-31LAb8 {
+	@extend %headerBarIconUpdateCloud !optional;
+}
+.downloadArrow-BfJJjn {
+	@extend %headerBarIconUpdateDownloadArrow !optional;
+}
+.iconBadge-qZ4Ksk {
+	@extend %headerBarIconBadge !optional;
+}
+.divider-3FBTu8 {
+	@extend %headerBarDivider !optional;
+}
+.updateAvailable-qNqOs7 {
+	@extend %headerBarIconUpdateAvailable !optional;
+}
+.iconForeground-3y9f0B {
+	@extend %headerBarIconForeground !optional;
+}
+.updateIconForeground-3tnNZn {
+	@extend %headerBarIconUpdateForeground !optional;
+}
+.link-2T7oYD {
+	@extend %headerBarLinkButton !optional;
+}
+.linkIcon-PzfbqY {
+	@extend %headerBarLinkIcon !optional;
+}
+.headerBarListing-3DL3sL {
+	@extend %headerBarListing !optional;
+}
+.headerSection-VnaiAo {
+	@extend %headerBarListingSection !optional;
+}
+.headerPurchase-2z_nch {
+	@extend %headerBarPurchase !optional;
+}
+.active-MpmWDn {
+	@extend %headerBarPurchaseActive !optional;
+}
+// Top Pill
+.topPill-30KHOu {
+	@extend %topPill !optional;
+}
+.item-PXvHYJ {
+	@extend %topPillItem !optional;
+}
+.selected-3s45Ha {
+	@extend %topPillItemSelected !optional;
+}
+.themed-OHr7kt {
+	@extend %topPillItemThemed !optional;
+}
+// Breadcrumbs
+.breadcrumbs-SOzMJD {
+	@extend %breadcrumbs !optional;
+}
+.breadcrumbWrapper-WmDjgG {
+	@extend %breadcrumbWrapper !optional;
+}
+.breadcrumbClickWrapper-TpEb92 {
+	@extend %breadcrumbClickWrapper !optional;
+}
+.breadcrumbFinalWrapper-3WqsGi {
+	@extend %breadcrumbFinalWrapper !optional;
+}
+.breadcrumb-22XhB5 {
+	@extend %breadcrumb !optional;
+}
+.breadcrumbArrow-1bJVKv {
+	@extend %breadcrumbArrow !optional;
+}

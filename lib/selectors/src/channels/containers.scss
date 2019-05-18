@@ -1,0 +1,69 @@
+/// CHANNEL CONTAINERS
+// Account Container
+.container-2Thooq {
+	@extend %accountContainer !optional;
+}
+.avatar-3JE4B3 {
+	@extend %accountContainerAvatarWrapper !optional;
+}
+.inner-1W0Bkn {
+	@extend %accountContainerAvatar !optional;
+}
+%accountContainerAvatar.popout-open {
+	@extend %accountContainerAvatarPopoutOpen !optional;
+}
+.button-2b6hmh {
+	@extend %accountContainerButton !optional;
+}
+.iconButton-3V4WS5 {
+	@extend %accountContainerIconButton !optional;
+}
+.buttonInner-LmnaN_ {
+	@extend %accountContainerButtonInner !optional;
+}
+// Connection Container
+.container-1UB9sr {
+	@extend %connectionContainer !optional;
+}
+.inner-btChU7 {
+	@extend %connectionContainerInner !optional;
+}
+.rtc-connection-status {
+	@extend %rtcConnectionStatus !optional;
+}
+.rtc-connection-status-connected {
+	@extend %rtcConnectionStatusConnected !optional;
+}
+.rtc-connection-status-connecting {
+	@extend %rtcConnectionStatusConnecting !optional;
+}
+.rtc-connection-status-error {
+	@extend %rtcConnectionStatusError !optional;
+}
+.rtc-connection-quality-fine {
+	@extend %rtcConnectionQualityFine !optional;
+}
+.rtc-connection-quality-average {
+	@extend %rtcConnectionQualityAverage !optional;
+}
+.rtc-connection-quality-bad {
+	@extend %rtcConnectionQualityBad !optional;
+}
+.ping {
+	@extend %rtcConnectionPing !optional;
+}
+.channel-SEolQq {
+	@extend %connectionContainerChannel !optional;
+}
+.button-2KyEfG {
+	@extend %connectionContainerButton !optional;
+}
+%connectionContainerButton.popout-open {
+	@extend %connectionContainerButtonPopoutOpen !optional;
+}
+.buttonInfo-3nkbOt {
+	@extend %connectionContainerButtonInfo !optional;
+}
+.buttonDisconnect-3W_SJc {
+	@extend %connectionContainerButtonDisconnect !optional;
+}

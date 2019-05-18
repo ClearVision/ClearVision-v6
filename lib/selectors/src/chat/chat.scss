@@ -1,0 +1,45 @@
+/// CHAT
+.chat-3bRxxu {
+	@extend %chat !optional;
+}
+.content-yTz4x3 {
+	@extend %chatContent !optional;
+}
+.base-34jWEe {
+	@extend %chatBase !optional;
+}
+// Gated Chat
+.gatedContent-3-B7qB {
+	@extend %chatGatedContent !optional;
+}
+.image-2LqJex {
+	@extend %chatGatedImage !optional;
+}
+.title-1VcOOr {
+	@extend %chatGatedTitle !optional;
+}
+.description-2ydcYn {
+	@extend %chatGatedDescription !optional;
+}
+.separator-2IZ9ro {
+	@extend %chatGatedSeparator !optional;
+}
+.action-yrVND8 {
+	@extend %chatGatedAction !optional;
+}
+.actionRed-gYn8D3 {
+	@extend %chatGatedActionRed !optional;
+}
+// No Channel
+.noChannel-Z1DQK7 {
+	@extend %noChannel !optional;
+}
+.image-1GzsFd {
+	@extend %noChannelImage !optional;
+}
+.title-2BxgL2 {
+	@extend %noChannelTitle !optional;
+}
+.text-GwUZgS {
+	@extend %noChannelText !optional;
+}

@@ -1,0 +1,120 @@
+/// BUTTON
+.button-38aScr {
+	@extend %button !optional;
+}
+.hasHover-3X1-zV {
+	@extend %buttonHasHover !optional;
+}
+.lookFilled-1Gx00P {
+	@extend %buttonFilled !optional;
+}
+.lookInverted-2D7oAl {
+	@extend %buttonInverted !optional;
+}
+.lookOutlined-3sRXeN {
+	@extend %buttonOutlined !optional;
+}
+.lookLink-9FtZy- {
+	@extend %buttonLink !optional;
+}
+.colorBrand-3pXr91 {
+	@extend %buttonBrand !optional;
+}
+.colorPrimary-3b3xI6 {
+	@extend %buttonPrimary !optional;
+}
+.colorWhite-rEQuAQ {
+	@extend %buttonWhite !optional;
+}
+.colorGreen-29iAKY {
+	@extend %buttonGreen !optional;
+}
+.colorRed-1TFJan {
+	@extend %buttonRed !optional;
+}
+.colorGrey-2DXtkV {
+	@extend %buttonGrey !optional;
+}
+%buttonOutlined {
+	&%buttonBrand {
+		@extend %buttonOutlinedBrand !optional;
+	}
+	&%buttonPrimary {
+		@extend %buttonOutlinedPrimary !optional;
+	}
+	&%buttonWhite {
+		@extend %buttonOutlinedWhite !optional;
+	}
+	&%buttonGreen {
+		@extend %buttonOutlinedGreen !optional;
+	}
+	&%buttonRed {
+		@extend %buttonOutlinedRed !optional;
+	}
+	&%buttonGrey {
+		@extend %buttonOutlinedGrey !optional;
+	}
+}
+%buttonFilled {
+	&%buttonBrand {
+		@extend %buttonFilledBrand !optional;
+	}
+	&%buttonPrimary {
+		@extend %buttonFilledPrimary !optional;
+	}
+	&%buttonWhite {
+		@extend %buttonFilledWhite !optional;
+	}
+	&%buttonGreen {
+		@extend %buttonFilledGreen !optional;
+	}
+	&%buttonRed {
+		@extend %buttonFilledRed !optional;
+	}
+	&%buttonGrey {
+		@extend %buttonFilledGrey !optional;
+	}
+}
+%buttonInverted {
+	&%buttonBrand {
+		@extend %buttonInvertedBrand !optional;
+	}
+	&%buttonPrimary {
+		@extend %buttonInvertedPrimary !optional;
+	}
+	&%buttonWhite {
+		@extend %buttonInvertedWhite !optional;
+	}
+	&%buttonGreen {
+		@extend %buttonInvertedGreen !optional;
+	}
+	&%buttonRed {
+		@extend %buttonInvertedRed !optional;
+	}
+	&%buttonGrey {
+		@extend %buttonInvertedGrey !optional;
+	}
+}
+%buttonLink {
+	&%buttonBrand {
+		@extend %buttonLinkBrand !optional;
+	}
+	&%buttonPrimary {
+		@extend %buttonLinkPrimary !optional;
+	}
+	&%buttonWhite {
+		@extend %buttonLinkWhite !optional;
+	}
+	&%buttonGreen {
+		@extend %buttonLinkGreen !optional;
+	}
+	&%buttonRed {
+		@extend %buttonLinkRed !optional;
+	}
+	&%buttonGrey {
+		@extend %buttonLinkGrey !optional;
+	}
+}
+.contents-18-Yxp {
+	@extend %buttonContents !optional;
+}

@@ -1,0 +1,89 @@
+/// GUILDS
+.wrapper-1Rf91z {
+	@extend %guildsWrapper !optional;
+}
+.scrollerWrap-1IAIlv{
+	@extend %guildsScrollerWrap !optional;
+}
+.scroller-2TZvBN {
+	@extend %guilds !optional;
+}
+.listItem-2P_4kh {
+	@extend %guild !optional;
+}
+.blob-1PX1Gp {
+	@extend %homeContainer !optional;
+}
+.button-OhfaWu {
+	@extend %homeButton !optional;
+}
+.selected-wSa2KV {
+	@extend %homeButtonSelected !optional;
+}
+.homeIcon-tEMBK1 {
+	@extend %homeIcon !optional;
+}
+.pill-2uzAFe {
+	@extend %homePill !optional;
+}
+.friendsOnline-2JkivW {
+	@extend %friendsOnline !optional;
+}
+.guildSeparator-3s64Iy,
+%guild[separator]:after {
+	@extend %guildSeparator !optional;
+}
+.blobContainer-239gwq {
+	@extend %guildContainer !optional;
+}
+.wrapper-sa6paO {
+	@extend %guildPill !optional;
+}
+.item-2hkk8m {
+	@extend %guildPillItem !optional;
+}
+.svg-1X37T1 {
+	@extend %guildSVG !optional;
+}
+.wrapper-1BJsBx {
+	@extend %guildLink !optional;
+}
+.icon-27yU2q {
+	@extend %guildIcon !optional;
+}
+.acronym-2mOFsV {
+	@extend %guildAcronym !optional;
+}
+.selected-bZ3Lue {
+	@extend %guildAcronymSelected !optional;
+}
+.badgeWrapper-3e8pMZ {
+	@extend %guildBadgeWrapper !optional;
+}
+.lowerBadge-29hYVK {
+	@extend %guildBadgeLower !optional;
+}
+.upperBadge-2XnnGB {
+	@extend %guildBadgeUpper !optional;
+}
+.iconBadge-2wi9r4 {
+	@extend %guildBadgeIcon !optional;
+}
+.icon-3s6X1M {
+	@extend %guildBadgeIconSVG !optional;
+}
+.dragPlaceholder-D9-haY {
+	@extend %guildPlaceholder !optional;
+}
+.lurkingGuild-3ZJ1gi {
+	@extend %guildLurking !optional;
+}
+.circleIconButton-jET_ig {
+	@extend %circleIconButton !optional;
+}
+.guildsErrorContainer-2uWYsE {
+	@extend %guildsErrorContainer !optional;
+}
+.guildsError-b7zR5H {
+	@extend %guildsError !optional;
+}

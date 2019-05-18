@@ -1,0 +1,100 @@
+/*! Using Discord Selectors Core v19-05-18 by Zerthox */
+
+// APP
+@import "src/app/app";
+@import "src/app/appNotices";
+@import "src/app/titlebar";
+
+// HEADER BAR
+@import "src/headerBar/headerBar";
+@import "src/headerBar/searchBars";
+
+// GUILDS
+@import "src/guilds/guilds";
+
+// CHANNELS
+@import "src/channels/channels";
+@import "src/channels/category";
+@import "src/channels/channel";
+@import "src/channels/containers";
+@import "src/channels/privateChannels";
+@import "src/channels/indicators";
+@import "src/channels/channelNotice";
+
+// CHAT
+@import "src/chat/chat";
+@import "src/chat/divider";
+@import "src/chat/textArea";
+@import "src/chat/bars";
+@import "src/chat/welcomeMessage";
+
+// MESSAGES
+@import "src/messages/message";
+@import "src/messages/codeblock";
+@import "src/messages/spoiler";
+@import "src/messages/attachment";
+@import "src/messages/reaction";
+@import "src/messages/mediaPlayer";
+@import "src/messages/inviteLink";
+@import "src/messages/activityInvite";
+@import "src/messages/embed";
+
+// MEMBERS
+@import "src/members/members";
+
+// USERS
+@import "src/users/avatar";
+@import "src/users/status";
+@import "src/users/botTag";
+@import "src/users/role";
+@import "src/users/activity";
+
+// SEARCH
+@import "src/search/search";
+
+// HOME TAB
+@import "src/home/activity";
+@import "src/home/library";
+@import "src/home/store";
+@import "src/home/friends";
+
+// GENERAL ELEMENTS
+@import "src/general/general";
+@import "src/general/tooltip";
+@import "src/general/button";
+@import "src/general/scroller";
+@import "src/general/badge";
+@import "src/general/tabBar";
+@import "src/general/checkbox";
+@import "src/general/slider";
+@import "src/general/spinner";
+@import "src/general/indicator";
+
+// POPOUTS
+@import "src/popouts/contextMenu";
+@import "src/popouts/messageOptions";
+@import "src/popouts/guildPopout";
+@import "src/popouts/statusPicker";
+@import "src/popouts/connectionInfo";
+@import "src/popouts/messagesPopout";
+@import "src/popouts/searchPopout";
+@import "src/popouts/emojiPicker";
+@import "src/popouts/userPopout";
+@import "src/popouts/autocompletePopout";
+@import "src/popouts/selectPopout";
+
+// MODALS
+@import "src/modals/modal";
+@import "src/modals/userModal";
+@import "src/modals/keyboardShortcuts";
+
+// SETTINGS
+@import "src/settings/sidebar";
+@import "src/settings/content";
+
+// PAGES
+@import "src/pages/discovery";
+
+// SCREENS
+@import "src/screens/loading";
+@import "src/screens/crash";

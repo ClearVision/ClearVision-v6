@@ -1,0 +1,10 @@
+/// CODEBLOCK
+.inline {
+	@extend %codeInline !optional;
+}
+pre {
+	@extend %codePre !optional;
+}
+.hljs {
+	@extend %codeHLJS !optional;
+}

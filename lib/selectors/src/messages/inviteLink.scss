@@ -1,0 +1,46 @@
+/// INVITE LINK
+.wrapper-35wsBm {
+	@extend %inviteWrapper !optional;
+}
+.h5-18_1nd {
+	@extend %inviteTitle !optional;
+}
+.guildName-2hvnt_ {
+	@extend %inviteGuildName !optional;
+}
+.guildNameExpired-2Hp80V {
+	@extend %inviteGuildNameExpired !optional;
+}
+.guildIcon-lQ0uiM {
+	@extend %inviteGuildIcon !optional;
+}
+.guildIconExpired-2Qcq05 {
+	@extend %inviteGuildIconExpired !optional;
+}
+.guildDetail-1nRKNE {
+	@extend %inviteGuildDetail !optional;
+}
+.status-2L8Zc7 {
+	@extend %inviteStatus !optional;
+}
+.statusOnline-8PnF5L {
+	@extend %inviteStatusOnline !optional;
+}
+.statusOffline-37RKt7 {
+	@extend %inviteStatusOffline !optional;
+}
+.onlineCount-w6_WmG {
+	@extend %inviteOnlineCount !optional;
+}
+.button-3To2tQ {
+	@extend %inviteButton !optional;
+}
+.lookFilled-1Gx00P.colorGreen-29iAKY{
+	@extend %inviteButtonAccept !optional;
+}
+.lookOutlined-3sRXeN.colorPrimary-3b3xI6 {
+	@extend %inviteButtonJoined !optional;
+}
+.lookFilled-1Gx00P.colorBrand-3pXr91 {
+	@extend %inviteButtonExpired !optional;
+}

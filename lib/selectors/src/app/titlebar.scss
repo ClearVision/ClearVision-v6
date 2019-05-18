@@ -1,0 +1,45 @@
+/// TITLEBAR
+.titleBar-AC4pGV {
+	@extend %titlebar !optional;
+}
+.unfocused-1QsMU3 {
+	@extend %titlebarUnfocused !optional;
+}
+// Windows
+.typeWindows-1za-n7 {
+	@extend %titlebarWin !optional;
+}
+.wordmark-2iDDfm {
+	@extend %titlebarWordmark !optional;
+}
+.winButton-iRh8-Z {
+	@extend %titlebarWinButton !optional;
+}
+.winButtonMinMax-PBQ2gm {
+	@extend %titlebarWinButtonMinMax !optional;
+}
+.winButtonClose-1HsbF- {
+	@extend %titlebarWinButtonClose !optional;
+}
+// Mac
+.typeMacOS-3EmCyP {
+	@extend %titlebarMac !optional;
+}
+.typeMacOSWithFrame-3R_i5S {
+	@extend %titlebarMacWithFrame !optional;
+}
+.macButtons-2MuSAC {
+	@extend %titlebarMacButtons !optional;
+}
+.macButton-c_Adir {
+	@extend %titlebarMacButton !optional;
+}
+.macButtonClose-MwZ2nf {
+	@extend %titlebarMacButtonClose !optional;
+}
+.macButtonMaximize-2FMHAO {
+	@extend %titlebarMacButtonMaximize !optional;
+}
+.macButtonMinimize-3EJ6wo {
+	@extend %titlebarMacButtonMinimize !optional;
+}

@@ -1,0 +1,180 @@
+/// SEARCH POPOUT
+.container-3ayLPN {
+	@extend %searchPopout !optional;
+}
+.resultsGroup-r_nuzN {
+	@extend %searchPopoutResultsGroup !optional;
+}
+.header-2N-gMV {
+	@extend %searchPopoutHeader !optional;
+}
+.option-96V44q {
+	@extend %searchPopoutOption !optional;
+}
+.selected-rZcOL- {
+	@extend %searchPopoutOptionSelected !optional;
+}
+.searchOption-zQ-1l6 {
+	@extend %searchPopoutSearchOption !optional;
+}
+.filter-3Y_im- {
+	@extend %searchPopoutFilter !optional;
+}
+.answer-1n6g43 {
+	@extend %searchPopoutAnswer !optional;
+}
+.nonText-3CRkO0 {
+	@extend %searchPopoutNonText !optional;
+}
+.plusIcon-v0BTrL {
+	@extend %searchPopoutPlusIcon !optional;
+}
+.searchLearnMore-3SQUAj {
+	@extend %searchPopoutLearnMore !optional;
+}
+.searchClearHistory-2cSSMO {
+	@extend %searchPopoutClearHistory !optional;
+}
+.queryContainer-RKFJW- {
+	@extend %searchPopoutQueryContainer !optional;
+}
+.focused-2bY0OD {
+	@extend %searchPopoutQueryContainerFocused !optional;
+}
+.queryText-3xoOY7 {
+	@extend %searchPopoutQueryText !optional;
+}
+.queryShortcut-hJIQMF {
+	@extend %searchPopoutQueryShortcut !optional;
+}
+.keybindShortcutSearchPopout-1MAfqq {
+	@extend %searchPopoutKeybindShortcut !optional;
+}
+.user-O3Czj0 {
+	@extend %searchPopoutOptionUser !optional;
+}
+.displayedNick-3xxvzU {
+	@extend %searchPopoutDisplayedNick !optional;
+}
+.displayUsername-Qekxml {
+	@extend %searchPopoutDisplayUsername !optional;
+}
+.resultChannel-3BYgHX {
+	@extend %searchPopoutChannel !optional;
+}
+.searchResultChannelIcon-1DnTme {
+	@extend %searchPopoutChannelIcon !optional;
+}
+.searchResultChannelIconBackground-7ncwtC {
+	@extend %searchResultChannelIconBackground !optional;
+}
+.searchResultChannelCategory-1l0lSn {
+	@extend %searchPopoutChannelCategory !optional;
+}
+.datePicker--XZbmJ {
+	@extend %searchPopoutDatePicker !optional;
+}
+.calendarPicker-2yf6Ci {
+	@extend %searchPopoutCalendarPicker !optional;
+}
+.datePickerHint-3Q1Udw {
+	@extend %searchPopoutDatePickerHint !optional;
+}
+.hint-165cR4 {
+	@extend %searchPopoutHint !optional;
+}
+.hintValue-29ny8Z {
+	@extend %searchPopoutHintValue !optional;
+}
+// Store
+.result-2S5Awv {
+	@extend %searchPopoutGame !optional;
+}
+.focused-1Yu0L3 {
+	@extend %searchPopoutGameFocused !optional;
+}
+.resultAssetContainer-Iffozm {
+	@extend %searchPopoutGameAssetContainer !optional;
+}
+.resultContent-1b6_y4 {
+	@extend %searchPopoutGameContent !optional;
+}
+.resultName-raPnaf {
+	@extend %searchPopoutGameName !optional;
+}
+.directorySearchPrice-2Spatv {
+	@extend %searchPopoutGamePrice !optional;
+}
+// Datepicker
+.react-datepicker {
+	@extend %datepicker !optional;
+}
+.react-datepicker__navigation {
+	@extend %datepickerNavigation !optional;
+}
+.react-datepicker__navigation--next {
+	@extend %datepickerNavigationNext !optional;
+}
+.react-datepicker__navigation--previous {
+	@extend %datepickerNavigationPrevious !optional;
+}
+.react-datepicker__month-container {
+	@extend %datepickerMonthContainer !optional;
+}
+.react-datepicker__header {
+	@extend %datepickerHeader !optional;
+}
+.react-datepicker__current-month {
+	@extend %datepickerCurrentMonth !optional;
+}
+.react-datepicker__day-names {
+	@extend %datepickerDayNames !optional;
+}
+.react-datepicker__day-name {
+	@extend %datepickerDayName !optional;
+}
+.react-datepicker__month {
+	@extend %datepickerMonth !optional;
+}
+.react-datepicker__week {
+	@extend %datepickerWeek !optional;
+}
+.react-datepicker__day {
+	@extend %datepickerDay !optional;
+}
+.react-datepicker__day--selected {
+	@extend %datepickerDaySelected !optional;
+}
+.react-datepicker__day--disabled {
+	@extend %datepickerDayDisabled !optional;
+}
+.react-datepicker__day--today {
+	@extend %datepickerDayToday !optional;
+}
+.react-datepicker__day--outside-month {
+	@extend %datepickerDayOutsideMonth !optional;
+}
+.react-datepicker__day--weekend {
+	@extend %datepickerDayWeekend !optional;
+}
+.react-datepicker__day--mon {
+	@extend %datepickerDayMon !optional;
+}
+.react-datepicker__day--tue {
+	@extend %datepickerDayTue !optional;
+}
+.react-datepicker__day--wed {
+	@extend %datepickerDayWed !optional;
+}
+.react-datepicker__day--thu {
+	@extend %datepickerDayThu !optional;
+}
+.react-datepicker__day--fri {
+	@extend %datepickerDayFri !optional;
+}
+.react-datepicker__day--sat {
+	@extend %datepickerDaySat !optional;
+}
+.react-datepicker__day--sun {
+	@extend %datepickerDaySun !optional;
+}

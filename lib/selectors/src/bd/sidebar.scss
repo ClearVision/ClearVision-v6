@@ -1,0 +1,16 @@
+/// BD SIDEBAR
+#bd-settings-sidebar {
+	@extend %bdSettingsSidebar !optional;
+}
+.ui-tab-bar-header {
+	@extend %bdSettingsSidebarHeader !optional;
+}
+.ui-tab-bar-item {
+	@extend %bdSettingsSidebarItem !optional;
+}
+%bdSettingsSidebarItem.selected {
+	@extend %bdSettingsSidebarItemSelected !optional;
+}
+.ui-tab-bar-separator {
+	@extend %bdSettingsSidebarSeparator !optional;
+}

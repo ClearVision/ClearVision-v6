@@ -1,0 +1,82 @@
+/// HEADER BAR SEARCH BARS
+// Chat Search
+.search-2oPWTC {
+	@extend %chatSearch !optional;
+}
+.open-6_Y_aH {
+	@extend %chatSearchOpen !optional;
+}
+.focused-31_ccS {
+	@extend %chatSearchFocused !optional;
+}
+.searchBar-3dMhjb {
+	@extend %chatSearchBar !optional;
+}
+.DraftEditor-root {
+	@extend %chatSearchRoot !optional;
+}
+.public-DraftEditorPlaceholder-root {
+	@extend %chatSearchPlaceholder !optional;
+}
+.searchFilter-2ESiM3 {
+	@extend %chatSearchFilter !optional;
+}
+.searchAnswer-3Dz2-q {
+	@extend %chatSearchAnswer !optional;
+}
+// Library Search
+.libraryFilter-31ZUa2 {
+	@extend %librarySearch !optional;
+}
+.focused-2eiV0o {
+	@extend %librarySearchFocused !optional;
+}
+.container-cMG81i {
+	@extend %librarySearchBar !optional;
+}
+.inner-2P4tQO {
+	@extend %librarySearchBarInner !optional;
+}
+.input-3Xdcic {
+	@extend %librarySearchInput !optional;
+}
+.iconLayout-3OgqU3 {
+	@extend %librarySearchIconLayout !optional;
+}
+.icon-1S6UIr {
+	@extend %librarySearchIcon !optional;
+}
+.clear--Eywng {
+	@extend %librarySearchIconClear !optional;
+}
+// Store Search
+.browseSearch-e9jF-f {
+	@extend %storeSearch !optional;
+}
+.focused-20l6Zp {
+	@extend %storeSearchFocused !optional;
+}
+.container-cMG81i {
+	@extend %storeSearchBar !optional;
+}
+.inner-2P4tQO {
+	@extend %storeSearchBarInner !optional;
+}
+.input-3Xdcic {
+	@extend %storeSearchInput !optional;
+}
+.iconLayout-3OgqU3 {
+	@extend %storeSearchIconLayout !optional;
+}
+.iconContainer-2wXvy1 {
+	@extend %storeSearchIconContainer !optional;
+}
+.icon-1S6UIr {
+	@extend %storeSearchIcon !optional;
+}
+.visible-3bFCH- {
+	@extend %storeSearchIconVisible !optional;
+}
+.clear--Eywng {
+	@extend %storeSearchIconClear !optional;
+}

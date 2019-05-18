@@ -1,0 +1,485 @@
+/// STORE
+.applicationStore-1pNvnv {
+    @extend %applicationStore !optional;
+}
+.homeWrapper-3-Wh5T {
+	@extend %storeHomeWrapper !optional;
+}
+.scrollerStore-390omS {
+	@extend %storeScroller !optional;
+}
+.homeBody-3SD9SR {
+	@extend %storeHomeBody !optional;
+}
+.matureListing-3tyHbV {
+	@extend %storeMatureListing !optional;
+}
+// Hero Carousel
+.heroCarousel-usH_dd {
+	@extend %heroCarousel !optional;
+}
+.carouselContainer-1cw6QH {
+	@extend %heroCarouselContainer !optional;
+}
+.carouselItem-1qFCGP {
+	@extend %heroCarouselItem !optional;
+}
+.itemBackground-1YUOje {
+	@extend %heroCarouselItemBackgroundWrapper !optional;
+}
+.itemBackground-2vEldQ {
+	@extend %heroCarouselItemBackground !optional;
+}
+.itemBody-3zm4Cl {
+	@extend %heroCarouselItemBody !optional;
+}
+.itemDescriptionContainer-3e_aXd {
+	@extend %heroCarouselItemDescriptionContainer !optional;
+}
+.itemDescription-234GLf {
+	@extend %heroCarouselItemDescription !optional;
+}
+.header-2Qd56c {
+	@extend %heroCarouselItemHeader !optional;
+}
+.title-1Qzsze {
+	@extend %heroCarouselItemTitle !optional;
+}
+.tagline-1hvypA {
+	@extend %heroCarouselItemTagline !optional;
+}
+.paginationContainer-2T3a2b {
+	@extend %heroCarouselPaginationContainer !optional;
+}
+.pagination-1omm9k {
+	@extend %heroCarouselPagination !optional;
+}
+.nextArrow-V_4mvH {
+	@extend %heroCarouselPaginationNext !optional;
+}
+.prevArrow-11tqRS {
+	@extend %heroCarouselPaginationPrev !optional;
+}
+.paginationItemContainer-3VCxU- {
+	@extend %heroCarouselPaginationItemContainer !optional;
+}
+.paginationSelected-19h9Kq {
+	@extend %heroCarouselPaginationItemContainerSelected !optional;
+}
+.paginationItem-1B6gk4 {
+	@extend %heroCarouselPaginationItem !optional;
+}
+.overlappingBorder-3aFng4 {
+	@extend %heroCarouselPaginationItemBorder !optional;
+}
+// Categories
+.categoryHeader-1D7Tqy {
+	@extend %storeCategoryHeader !optional;
+}
+.container-hXbkd3 {
+	@extend %storeCategoryContainer !optional;
+}
+.scrollerButton-1Vm5_P {
+	@extend %storeCategoryScrollerButton !optional;
+}
+.scrollerButtonArrow-2zKj8D {
+	@extend %storeCategoryScrollerArrow !optional;
+}
+.arrowLeft-1wVpg5 {
+	@extend %storeCategoryScrollerArrowLeft !optional;
+}
+.arrowRight-aDMq0h {
+	@extend %storeCategoryScrollerArrowRight !optional;
+}
+.arrowDisabled-2F05Id {
+	@extend %storeCategoryScrollerArrowDisabled !optional;
+}
+.arrowHidden-1jg6O9 {
+	@extend %storeCategoryScrollerArrowHidden !optional;
+}
+.gradientOverlayLeft-3w159C {
+	@extend %storeCategoryGradientOverlayLeft !optional;
+}
+.gradientOverlayRight-3vMuS8 {
+	@extend %storeCategoryGradientOverlayRight !optional;
+}
+// Tiles
+.homeTile-3qVuGa {
+	@extend %storeHomeTile !optional;
+}
+.tile-QA_yMc {
+	@extend %storePerkTile !optional;
+}
+.description-2oYgWO {
+	@extend %storePerkTileDescription !optional;
+}
+.title-2XwaXv {
+	@extend %storePerkTileTitle !optional;
+}
+.tagline-EIH5-W {
+	@extend %storePerkTileTagline !optional;
+}
+.tags-3pDljb {
+	@extend %storePerkTileTags !optional;
+}
+.perkTag-2O4dx4 {
+	@extend %storePerkTilePerkTag !optional;
+}
+.tile-2H4MQG {
+	@extend %storeTile !optional;
+}
+.tileMedia-1q3guD {
+	@extend %storeTileMedia !optional;
+}
+.splashContainer-2t8Fci {
+	@extend %storeTileSplashContianer !optional;
+}
+.splash-3K76bN {
+	@extend %storeSplash !optional;
+}
+.splashPlaceholder-1ev-9c {
+	@extend %storeSplashPlaceholder !optional;
+}
+.muteContainer-dXWpxM {
+	@extend %storeSplashMuteContainer !optional;
+}
+.muteContainerPlaying-YRMEea {
+	@extend %storeSplashMuteContainerPlaying !optional;
+}
+.muteContainerMediaOverlay-DKYQOo {
+	@extend %storeSplashMuteContainerMediaOverlay !optional;
+}
+.mute-3sDXC3 {
+	@extend %storeSplashMute !optional;
+}
+.details-1DqjXP {
+	@extend %storeTileDetails !optional;
+}
+.gameTitle-8njhLq {
+	@extend %storeTileGameTitle !optional;
+}
+.genres-3s_2iT {
+	@extend %storeTileGenres !optional;
+}
+.genreTag-3QLRUJ {
+	@extend %storeTileGenreTag !optional;
+}
+// Footer
+.footer-3oZnEF {
+	@extend %storeFooter !optional;
+}
+.footerMain-Z8i6ST {
+	@extend %storeFooterMain !optional;
+}
+.footerSub-1Jedbi {
+	@extend %storeFooterSub !optional;
+}
+// Browse
+.browseWrapper-2Qy6vG {
+	@extend %storeBrowseWrapper !optional;
+}
+.filterBackground-QanGTJ {
+	@extend %storeBrowseHeaderBackground !optional;
+}
+.browseTitle-wA9SMk {
+	@extend %storeBrowseTitle !optional;
+}
+.filters--5q7-h {
+	@extend %storeBrowseFilters !optional;
+}
+.filterBrowsingHeaderWrapper-3I9RkU {
+	@extend %storeBrowseFilterHeaderWrapper !optional;
+}
+.sortFilterBar-3hePOV {
+	@extend %storeBrowseFilterBar !optional;
+}
+.filterAndSort-gLX1Ym {
+	@extend %storeBrowseFilterAndSort !optional;
+}
+.filterBrowsing-20BUwa {
+	@extend %storeBrowseFilter !optional;
+}
+.filterBrowsingSelectValue-2QrN9m {
+	@extend %storeBrowseFilterValue !optional;
+}
+.select-1Pkeg4 {
+	@extend %storeBrowseFilterSelect !optional;
+}
+.hideGames-zMTyGl {
+	@extend %storeBrowseHideGames !optional;
+}
+.checkboxWrapper-SkhIWG {
+	@extend %storeBrowseCheckboxWrapper !optional;
+}
+.checkbox-1ix_J3 {
+	@extend %storeBrowseCheckbox !optional;
+}
+.checked-3_4uQ9 {
+	@extend %storeBrowseCheckboxChecked !optional;
+}
+.reverseLabel-3ANTBK {
+	@extend %storeBrowseReverseLabel !optional;
+}
+.checkbox-1ix_J3 {
+	@extend %storeBrowseCheckbox !optional;
+}
+.browse-3H33-E {
+	@extend %storeBrowse !optional;
+}
+// Media Carousel
+.carouselButtonsContainer-Rba2-D {
+	@extend %mediaCarouselButtonsContainer !optional;
+}
+.viewport-W8LvWa {
+	@extend %mediaCarouselViewport !optional;
+}
+.carousel-18mXWH {
+	@extend %mediaCarousel !optional;
+}
+.item-287JPa {
+	@extend %mediaCarouselItemContainer !optional;
+}
+.item-3V15ea {
+	@extend %mediaCarouselItem !optional;
+}
+.currentItem-UAeoVQ {
+	@extend %mediaCarouselItemCurrent !optional;
+}
+.arrow-3jRqK8 {
+	@extend %mediaCarouselArrowButton !optional;
+}
+.prevButtonContainer-Rc83MJ {
+	@extend %mediaCarouselPrevButton !optional;
+}
+.nextButtonContainer-30eXDb {
+	@extend %mediaCarouselNextButton !optional;
+}
+.arrowContainer-10m4Cy {
+	@extend %mediaCarouselArrowContainer !optional;
+}
+.arrow-2ZP1wS {
+	@extend %mediaCarouselArrow !optional;
+}
+.right-3LuawF {
+	@extend %mediaCarouselArrowRight !optional;
+}
+.left-1sNJYj {
+	@extend %mediaCarouselArrowLeft !optional;
+}
+.pagination-1iCa-F {
+	@extend %mediaCarouselPagination !optional;
+}
+.horizontalPaginationItemContainer-26FwrR {
+	@extend %mediaCarouselPaginationContainerHorizontal !optional;
+}
+.paginationItem-3-iI7C {
+	@extend %mediaCarouselPaginationItem !optional;
+}
+.selectedStorePaginationItem-2t23h9 {
+	@extend %mediaCarouselPaginationItemSelected !optional;
+}
+.storePaginationImg-2P8SMo {
+	@extend %mediaCarouselPaginationImg !optional;
+}
+.paginationVideoOverlay-2gIa1v {
+	@extend %mediaCarouselPaginationVideoOverlay !optional;
+}
+.paginationVideoPlayPill-2lM3nS {
+	@extend %mediaCarouselPaginationVideoPill !optional;
+}
+.iconWrapper-21idzA {
+	@extend %mediaCarouselPaginationIconWrapper !optional;
+}
+.icon-3ZFEtL {
+	@extend %mediaCarouselPaginationIcon !optional;
+}
+.iconPlay-2kgvwV {
+	@extend %mediaCarouselPaginationIconPlay !optional;
+}
+.overlappingBorder-1-XPGl {
+	@extend %mediaCarouselPaginationItemBorder !optional;
+}
+// Listing
+.listingWrapper-329f74 {
+	@extend %storeListingWrapper !optional;
+}
+.listing-2nUQ4d {
+	@extend %storeListing !optional;
+}
+.listingLarge-3Rix7u {
+	@extend %storeListingLarge !optional;
+}
+.body-1HEBKj {
+	@extend %storeListingBody !optional;
+}
+.leftColumn-1scUu2 {
+	@extend %storeListingLeftColumn !optional;
+}
+.rightColumn-2YXQ85 {
+	@extend %storeListingRightColumn !optional;
+}
+.title-3KTIjF {
+	@extend %storeListingTitle !optional;
+}
+.divider-21LyPb {
+	@extend %storeListingDivider !optional;
+}
+.whyYouMightLikeIt-2zZIIj {
+	@extend %storeListingRecommendation !optional;
+}
+.header-3HFF3R {
+	@extend %storeListingRecommendationHeader !optional;
+}
+.unit-2r571b {
+	@extend %storeListingRecommendationUnit !optional;
+}
+.recommendationActivity-EJN6Ps {
+	@extend %storeListingRecommendationActivity !optional;
+}
+.description-2Ifi6N {
+	@extend %storeListingRecommendationActivityDescription !optional;
+}
+.username-2gp_Xw {
+	@extend %storeListingRecommendationActivityUsername !optional;
+}
+.recommendationReason-21q3aC {
+	@extend %storeListingRecommendationReason !optional;
+}
+.description-2jnn3p {
+	@extend %storeListingRecommendationReasonDescription !optional;
+}
+.text-1Z3P6i {
+	@extend %storeListingRecommendationReasonText !optional;
+}
+.iconCircle-1dlYo0 {
+	@extend %storeListingRecommendationIconCircle !optional;
+}
+.premiumCircle-3jgziV {
+	@extend %storeListingRecommendationPremiumCircle !optional;
+}
+.news-27xNIP {
+	@extend %storeListingNews !optional;
+}
+.item-2yFVoY {
+	@extend %storeListingNewsItem !optional;
+}
+.systemRequirements-1L5nPd {
+	@extend %storeListingSystemRequirements !optional;
+}
+.requirements-dEriwm {
+	@extend %storeListingRequirements !optional;
+}
+.requirement-2guSgu {
+	@extend %storeListingRequirement !optional;
+}
+.requirementKey-14DT2D {
+	@extend %storeListingRequirementKey !optional;
+}
+.purchaseUnit-2lxci3 {
+	@extend %storeListingPurchase !optional;
+}
+.entitledHeader-3LRNDT {
+	@extend %storeListingPurchaseHeader !optional;
+}
+.headerFancy-1AcCLF {
+	@extend %storeListingPurchaseHeaderFancy !optional;
+}
+.premiumHeaderIcon-bTc_nQ {
+	@extend %storeListingPurchasePremiumHeaderIcon !optional;
+}
+.premiumHeaderPrice-1F1CMD {
+	@extend %storeListingPurchasePremiumHeaderPrice !optional;
+}
+.OSSection-27GaV2 {
+	@extend %storeListingPurchaseOSSection !optional;
+}
+.purchaseUnitOperatingSystem-cnbJPz {
+	@extend %storeListingPurchaseOS !optional;
+}
+.bodySection-jqkkIP {
+	@extend %storeListingPurchaseSection !optional;
+}
+.sku-epQEb_ {
+	@extend %storeListingPurchaseSku !optional;
+}
+.skuNormal-3h1es- {
+	@extend %storeListingPurchaseSkuNormal !optional;
+}
+.name-u2zgy7 {
+	@extend %storeListingPurchaseSkuName !optional;
+}
+.price-NUANu6 {
+	@extend %storeListingPurchaseSkuPrice !optional;
+}
+.label-13UUcd {
+	@extend %storeListingPurchaseLabel !optional;
+}
+.info-1Emy1X {
+	@extend %storeListingPurchaseInfo !optional;
+}
+.genre-1Fi2SE {
+	@extend %storeListingPurchaseGenre !optional;
+}
+.guildInvite-3fvAbr {
+	@extend %storeListingInvite !optional;
+}
+.content-35aVm0 {
+	@extend %storeListingInviteContent !optional;
+}
+.info-3hEr5J {
+	@extend %storeListingInviteInfo !optional;
+}
+.guildIcon-3du51s {
+	@extend %storeListingInviteGuildIcon !optional;
+}
+.infoText-2DvX0j {
+	@extend %storeListingInviteInfoText !optional;
+}
+.name-3TBxUq {
+	@extend %storeListingInviteGuildName !optional;
+}
+.memberInfo-1TAaKC {
+	@extend %storeListingInviteMemberInfo !optional;
+}
+.dot-33s_8n {
+	@extend %storeListingInviteStatus !optional;
+}
+.dotOnline-3qrf96 {
+	@extend %storeListingInviteStatusOnline !optional;
+}
+.dotOffline-1PVTuj {
+	@extend %storeListingInviteStatusOffline !optional;
+}
+.memberText-14Qowr {
+	@extend %storeListingInviteMemberText !optional;
+}
+.features-_IOqVv {
+	@extend %storeListingFeatures !optional;
+}
+.row-1bU71H {
+	@extend %storeListingFeature !optional;
+}
+.featureIcon-1f78KU {
+	@extend %storeListingFeatureIcon !optional;
+}
+.featureText-2crhND {
+	@extend %storeListingFeatureText !optional;
+}
+.checkmarkIcon-2EnYwn {
+	@extend %storeListingFeatureCheckmark !optional;
+}
+// .contentRating-W0e7H- {
+// 	@extend %storeListingContentRating !optional;
+// }
+// .description-3z5Lb3 {
+// 	@extend %storeListingDescription !optional;
+// }
+// .legalInfo-lVTrbD {
+// 	@extend %storeListingLegalInfo !optional;
+// }
+// .premiumPerks-zFst3i {
+// 	@extend %storeListingPremiumPerks !optional;
+// }
+// .reviewAggregator-2x_LPK {
+// 	@extend %storeListingReviewAggregator !optional;
+// }
