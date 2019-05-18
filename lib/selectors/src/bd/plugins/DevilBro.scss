@@ -1,0 +1,38 @@
+/// DEVILBRO
+.BDFDB-tooltip {
+	@extend %tooltipBDFDB !optional;
+}
+// ShowHiddenChannels
+.container-hidden {
+	@extend %categoryHidden !optional;
+}
+// RepoControls
+.repocontrols-editicon-tooltip {
+	@extend %tooltipRepoControlsEdit !optional;
+}
+.repocontrols-trashicon-tooltip {
+	@extend %tooltipRepoControlsTrash !optional;
+}
+// CreationDate
+.creationDate {
+	@extend %creationDate !optional;
+}
+// JoinedAtDate
+.joinedAtDate {
+	@extend %joinedAtDate !optional;
+}
+// LastMessageDate
+.lastMessageDate {
+	@extend %lastMessageDate !optional;
+}
+// BadgesEverywhere
+.BE-badges {
+	@extend %badgesEverywhereWrapper !optional;
+}
+.BE-badge {
+	@extend %badgesEverywhereBadge !optional;
+}
+// OwnerTag
+.owner-tag {
+	@extend %ownerTag !optional;
+}
