@@ -3,9 +3,11 @@
 	min-width: auto;
 	flex-basis: $members-width;
 }
-%membersScrollerWrap > %members {
-	max-width: $members-width;
-	background: rgba(0, 0, 0, calc(#{map-get($bg, shading)} * .6));
+%membersScrollerWrap {
+	> %members {
+		max-width: $members-width;
+		background: rgba(0, 0, 0, calc(#{map-get($bg, shading)} * .6));
+	}
 }
 %members {
 
@@ -73,7 +75,7 @@
 				z-index: -1;
 				pointer-events: none;
 			}	
-			&[style]{
+			&[style*="color:"]{
 				&:before,
 				&:after {
 					background: linear-gradient(to right, currentColor 90%, transparent);
@@ -112,7 +114,7 @@
 				&:before {
 					opacity: 1;
 				}
-				&[style]:before {
+				&[style*="color:"]:before {
 					opacity: .07;
 				}
 			}
