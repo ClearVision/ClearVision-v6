@@ -114,6 +114,12 @@
 .connectedAccountVerifiedIcon-3aZz_K {
 	@extend %userModalConnectedAccountVerifiedIcon !optional;
 }
+.flowerStar-1GeTsn {
+	@extend %userModalConnectedAccountVerifiedIconStar !optional;
+}
+.childContainer-1wxZNh {
+	@extend %userModalConnectedAccountVerifiedIconCheck !optional;
+}
 .connectedAccountOpenIcon-2cNbq5 {
 	@extend %userModalConnectedAccountOpenIcon !optional;
 }
