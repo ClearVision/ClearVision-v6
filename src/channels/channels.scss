@@ -23,6 +23,15 @@
 		&:hover {
 			background: rgba(0, 0, 0, calc(#{map-get($bg, shading)} * .3));
 		}
+		%guildPartnered {
+			background: url(https://clearvision.gitlab.io/icons/discord/badgePartner.svg) center/12px no-repeat hsla(0, 0%, 100%, .07);
+			border-radius: 50%;
+			filter: drop-shadow(0 0 3px);
+			%flowerStar,
+			%flowerStarChild {
+				display: none;
+			}
+		}
 	}
 	%guildVerified {
 		background: url(https://clearvision.gitlab.io/icons/verified.svg) center/18px no-repeat;
