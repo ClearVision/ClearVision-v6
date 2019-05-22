@@ -30,20 +30,87 @@ $icons: (
 	"Experiments": "https://clearvision.gitlab.io/icons/flask.svg",
 	"Developer Options": "https://clearvision.gitlab.io/icons/bug.svg",
 
-	"Log Out": "https://clearvision.gitlab.io/icons/exit.svg",
-
-	// BD USER SETTINGS
-	"Core": "https://clearvision.gitlab.io/icons/betterdiscord.svg",
-	"Bandages": "https://clearvision.gitlab.io/icons/bandage.svg",
-	"Emotes": "https://clearvision.gitlab.io/icons/emote.svg",
-	"Custom CSS": "https://clearvision.gitlab.io/icons/code_braces.svg",
-	"Plugins": "https://clearvision.gitlab.io/icons/puzzle.svg",
-	"Themes": "https://clearvision.gitlab.io/icons/palette.svg"
+	"Log Out": "https://clearvision.gitlab.io/icons/exit.svg"
 );
 
-// GENERAL STUFF
-[aria-label="USER_SETTINGS"] %settingsSide %tabBarItem,
-%settingsSide %bdSettingsSidebar %bdSettingsSidebarItem {
+// SETTINGS LISTS
+$general: (
+	"My Account",
+	"Privacy & Safety",
+	"Authorized Apps",
+	"Connections",
+	"Billing",
+	null,
+	"Discord Nitro",
+	"HypeSquad",
+	null,
+	null,
+	"Voice & Video",
+);
+$windows: (
+	"Overlay",
+	"Notifications",
+	"Keybinds",
+	"Game Activity",
+	"Activity Feed",
+	"Game Library",
+	"Text & Images",
+	"Appearance",
+	"Streamer Mode",
+	"Language",
+	"Windows Settings",
+	null,
+	"Change Log",
+	"Experiments",
+	"Developer Options"
+);
+$osx: (
+	"Notifications",
+	"Keybinds",
+	"Game Activity",
+	"Activity Feed",
+	"Text & Images",
+	"Appearance",
+	"Streamer Mode",
+	"Language",
+	null,
+	"Change Log",
+	"Experiments",
+	"Developer Options"
+);
+$linux: (
+	"Notifications",
+	"Keybinds",
+	"Game Activity",
+	"Activity Feed",
+	"Text & Images",
+	"Appearance",
+	"Streamer Mode",
+	"Language",
+	"Linux Settings",
+	null,
+	"Change Log",
+	"Experiments",
+	"Developer Options"
+);
+$web: (
+	"Notifications",
+	"Keybinds",
+	"Game Activity",
+	"Activity Feed",
+	"Text & Images",
+	"Appearance",
+	"Streamer Mode",
+	"Language",
+	null,
+	"Change Log",
+	"Experiments",
+	"Developer Options"
+);
+
+// GENERAL STYLES
+[aria-label="USER_SETTINGS"] %settingsSidebar %tabBarItem,
+%settingsSidebar %bdSettingsSidebar %bdSettingsSidebarItem {
 	padding-left: 50px !important;
 	&:before {
 		content: "";
@@ -55,292 +122,35 @@ $icons: (
 	}
 }
 
-// USER SETTINGS GENERAL
-[aria-label="USER_SETTINGS"] %settingsSide %tabBarItem {
-	&:nth-child(2) {
-		&:before {
-			background-image: url(#{map-get($icons, "My Account")});
+// ICON STYLES
+@each $i, $u in $icons {
+	$id: unique-id();
+	[aria-label="USER_SETTINGS"] %settingsSidebar %tabBarItem%#{$id}:before {
+		background-image: url(#{$u});
+	}
+	@if (index($general, $i)) {
+		&:nth-child(#{index($general, $i) + 1}) {
+			@extend %#{$id};
 		}
 	}
-	&:nth-child(3) {
-		&:before {
-			background-image: url(#{map-get($icons, "Privacy & Safety")});
+	@if (index($windows, $i)) {
+		%platformWin &:nth-child(#{index($windows, $i) + length($general) + 1}) {
+			@extend %#{$id};
 		}
 	}
-	&:nth-child(4) {
-		&:before {
-			background-image: url(#{map-get($icons, "Authorized Apps")});
+	@if (index($osx, $i)) {
+		%platformOSX &:nth-child(#{index($osx, $i) + length($general) + 1}) {
+			@extend %#{$id};
 		}
 	}
-	&:nth-child(5) {
-		&:before {
-			background-image: url(#{map-get($icons, "Connections")});
+	@if (index($linux, $i)) {
+		%platformLinux &:nth-child(#{index($linux, $i) + length($general) + 1}) {
+			@extend %#{$id};
 		}
 	}
-	&:nth-child(6) {
-		&:before {
-			background-image: url(#{map-get($icons, "Billing")});
-		}
-	}
-	&:nth-child(8) {
-		&:before {
-			background-image: url(#{map-get($icons, "Discord Nitro")});
-		}
-	}
-	&:nth-child(9) {
-		&:before {
-			background-image: url(#{map-get($icons, "HypeSquad")});
-		}
-	}
-	&:nth-last-child(3) {
-		&:before {
-			background-image: url(#{map-get($icons, "Log Out")});
-		}
-	}
-}
-
-// USER SETTINGS WINDOWS
-%platformWin [aria-label="USER_SETTINGS"] %settingsSide %tabBarItem {
-	&:nth-child(12) {
-		&:before {
-			background-image: url(#{map-get($icons, "Voice & Video")});
-		}
-	}
-	&:nth-child(13) {
-		&:before {
-			background-image: url(#{map-get($icons, "Overlay")});
-		}
-	}
-	&:nth-child(14) {
-		&:before {
-			background-image: url(#{map-get($icons, "Notifications")});
-		}
-	}
-	&:nth-child(15) {
-		&:before {
-			background-image: url(#{map-get($icons, "Keybinds")});
-		}
-	}
-	&:nth-child(16) {
-		&:before {
-			background-image: url(#{map-get($icons, "Game Activity")});
-		}
-	}
-	&:nth-child(17) {
-		&:before {
-			background-image: url(#{map-get($icons, "Activity Feed")});
-		}
-	}
-	&:nth-child(18) {
-		&:before {
-			background-image: url(#{map-get($icons, "Game Library")});
-		}
-	}
-	&:nth-child(19) {
-		&:before {
-			background-image: url(#{map-get($icons, "Text & Images")});
-		}
-	}
-	&:nth-child(20) {
-		&:before {
-			background-image: url(#{map-get($icons, "Appearance")});
-		}
-	}
-	&:nth-child(21) {
-		&:before {
-			background-image: url(#{map-get($icons, "Streamer Mode")});
-		}
-	}
-	&:nth-child(22) {
-		&:before {
-			background-image: url(#{map-get($icons, "Language")});
-		}
-	}
-	&:nth-child(23) {
-		&:before {
-			background-image: url(#{map-get($icons, "Windows Settings")});
-		}
-	}
-	&:nth-child(25) {
-		&:before {
-			background-image: url(#{map-get($icons, "Change Log")});
-		}
-	}
-	&:nth-child(26) {
-		&:before {
-			background-image: url(#{map-get($icons, "Experiments")});
-		}
-	}
-	&:nth-child(27) {
-		&:before {
-			background-image: url(#{map-get($icons, "Developer Options")});
-		}
-	}
-}
-
-// USER SETTINGS OSX
-%platformOSX [aria-label="USER_SETTINGS"] %settingsSide %tabBarItem {
-	&:nth-child(12) {
-		&:before {
-			background-image: url(#{map-get($icons, "Voice & Video")});
-		}
-	}
-	&:nth-child(13) {
-		&:before {
-			background-image: url(#{map-get($icons, "Notifications")});
-		}
-	}
-	&:nth-child(14) {
-		&:before {
-			background-image: url(#{map-get($icons, "Keybinds")});
-		}
-	}
-	&:nth-child(15) {
-		&:before {
-			background-image: url(#{map-get($icons, "Game Activity")});
-		}
-	}
-	&:nth-child(16) {
-		&:before {
-			background-image: url(#{map-get($icons, "Activity Feed")});
-		}
-	}
-	&:nth-child(17) {
-		&:before {
-			background-image: url(#{map-get($icons, "Text & Images")});
-		}
-	}
-	&:nth-child(18) {
-		&:before {
-			background-image: url(#{map-get($icons, "Appearance")});
-		}
-	}
-	&:nth-child(19) {
-		&:before {
-			background-image: url(#{map-get($icons, "Streamer Mode")});
-		}
-	}
-	&:nth-child(20) {
-		&:before {
-			background-image: url(#{map-get($icons, "Language")});
-		}
-	}
-	&:nth-child(22) {
-		&:before {
-			background-image: url(#{map-get($icons, "Change Log")});
-		}
-	}
-	&:nth-child(23) {
-		&:before {
-			background-image: url(#{map-get($icons, "Experiments")});
-		}
-	}
-	&:nth-child(24) {
-		&:before {
-			background-image: url(#{map-get($icons, "Developer Options")});
-		}
-	}
-}
-
-// USER SETTINGS LINUX
-%platformLinux [aria-label="USER_SETTINGS"] %settingsSide %tabBarItem {
-	&:nth-child(12) {
-		&:before {
-			background-image: url(#{map-get($icons, "Voice & Video")});
-		}
-	}
-	&:nth-child(13) {
-		&:before {
-			background-image: url(#{map-get($icons, "Notifications")});
-		}
-	}
-	&:nth-child(14) {
-		&:before {
-			background-image: url(#{map-get($icons, "Keybinds")});
-		}
-	}
-	&:nth-child(15) {
-		&:before {
-			background-image: url(#{map-get($icons, "Game Activity")});
-		}
-	}
-	&:nth-child(16) {
-		&:before {
-			background-image: url(#{map-get($icons, "Activity Feed")});
-		}
-	}
-	&:nth-child(17) {
-		&:before {
-			background-image: url(#{map-get($icons, "Text & Images")});
-		}
-	}
-	&:nth-child(18) {
-		&:before {
-			background-image: url(#{map-get($icons, "Appearance")});
-		}
-	}
-	&:nth-child(19) {
-		&:before {
-			background-image: url(#{map-get($icons, "Streamer Mode")});
-		}
-	}
-	&:nth-child(20) {
-		&:before {
-			background-image: url(#{map-get($icons, "Language")});
-		}
-	}
-	&:nth-child(21) {
-		&:before {
-			background-image: url(#{map-get($icons, "Linux Settings")});
-		}
-	}
-	&:nth-child(23) {
-		&:before {
-			background-image: url(#{map-get($icons, "Change Log")});
-		}
-	}
-	&:nth-child(24) {
-		&:before {
-			background-image: url(#{map-get($icons, "Experiments")});
-		}
-	}
-	&:nth-child(25) {
-		&:before {
-			background-image: url(#{map-get($icons, "Developer Options")});
-		}
-	}
-}
-
-// BD USER SETTINGS
-%settingsSide %bdSettingsSidebar %bdSettingsSidebarItem {
-	&:nth-child(3) {
-		&:before {
-			background-image: url(#{map-get($icons, "Core")});
-		}
-	}
-	&:nth-child(4) {
-		&:before {
-			background-image: url(#{map-get($icons, "Bandages")});
-		}
-	}
-	&:nth-child(5) {
-		&:before {
-			background-image: url(#{map-get($icons, "Emotes")});
-		}
-	}
-	&:nth-child(6) {
-		&:before {
-			background-image: url(#{map-get($icons, "Custom CSS")});
-		}
-	}
-	&:nth-child(7) {
-		&:before {
-			background-image: url(#{map-get($icons, "Plugins")});
-		}
-	}
-	&:nth-child(8) {
-		&:before {
-			background-image: url(#{map-get($icons, "Themes")});
+	@if (index($web, $i)) {
+		%platformWeb &:nth-child(#{index($web, $i) + length($general) + 1}) {
+			@extend %#{$id};
 		}
 	}
 }

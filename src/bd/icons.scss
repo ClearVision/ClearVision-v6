@@ -1,0 +1,20 @@
+
+/* BD SETTINGS SIDEBAR ICONS */
+// BD ICON MAP
+$bd: (
+	"Core": "https://clearvision.gitlab.io/icons/betterdiscord.svg",
+	"Bandages": "https://clearvision.gitlab.io/icons/bandage.svg",
+	"Emotes": "https://clearvision.gitlab.io/icons/emote.svg",
+	"Custom CSS": "https://clearvision.gitlab.io/icons/code_braces.svg",
+	"Plugins": "https://clearvision.gitlab.io/icons/puzzle.svg",
+	"Themes": "https://clearvision.gitlab.io/icons/palette.svg"
+);
+
+// BD ICON STYLES
+%settingsSidebar %bdSettingsSidebar %bdSettingsSidebarItem {
+	@each $i, $u in $bd {
+		&:nth-child(#{index(map-keys($bd), $i) + 2}):before {
+			background-image: url(#{$u});
+		}
+	}
+}
