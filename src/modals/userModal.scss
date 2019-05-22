@@ -211,10 +211,10 @@
 	background: url(https://clearvision.gitlab.io/icons/verified.svg) center/18px no-repeat;
 	opacity: .5;
 	z-index: 1;
-	%userModalConnectedAccountVerifiedIconStar {
+	%flowerStar {
 		opacity: 0;
 	}
-	%userModalConnectedAccountVerifiedIconCheck {
+	%flowerStarChild {
 		display: none;
 	}
 }
