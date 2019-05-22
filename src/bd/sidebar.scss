@@ -72,6 +72,9 @@
 	// SEPARATOR
 	%bdSettingsSidebarSeparator {
 		background: hsla(0, 0%, 100%, .07);
+		&:first-child {
+			display: none;
+		}
 	}
 
 	// CREDITS

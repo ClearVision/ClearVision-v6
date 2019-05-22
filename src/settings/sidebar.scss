@@ -54,6 +54,11 @@
 			text-overflow: ellipsis;
 		}
 	}
+	%tabBarItem {
+		&:nth-child(9) + %tabBarSeparator {
+			display: none;
+		}
+	}
 }
 %layer {
 	%standardSidebarView {
