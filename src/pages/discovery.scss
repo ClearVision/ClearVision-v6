@@ -53,11 +53,16 @@
 	color: hsla(0, 0%, 100%, .7);
 }
 %discoveryGuildCard {
+	%discoveryCard {
+		background: rgba(0, 0, 0, .3);
+		background: hsla(0, 0%, 100%, .07);
+	}
 	%discoveryGuildVerifiedIcon {
 		background: url(https://clearvision.gitlab.io/icons/verified.svg) center/16px no-repeat;
 		opacity: .7;
 		filter: drop-shadow(0 0 3px #000);
-		> g {
+		%flowerStar,
+		%flowerStarChild {
 			display: none;
 		}
 	}
@@ -70,6 +75,11 @@
 %discoveryGuildList {
 	%discoveryGuildCardLoading {
 		background: hsla(0, 0%, 100%, .1);
+	}
+}
+%pageWrapper {
+	%discoverySectionSeparator {
+		background: hsla(0, 0%, 100%, .07);
 	}
 }
 
