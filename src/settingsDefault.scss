@@ -20,6 +20,7 @@
 	--background-image: url(https://clearvision.gitlab.io/images/sapphire.jpg);
 	--background-position: center;
 	--background-size: cover;
+	--background-attachment: fixed;
 	--background-brightness: 100%;
 	--background-contrast: 100%;
 	--background-saturation: 100%;
@@ -31,6 +32,7 @@
 	--backdrop-image: var(--background-image);
 	--backdrop-position: var(--background-position);
 	--backdrop-size: var(--background-size);
+	--backdrop-attachment: var(--background-attachment);
 	--backdrop-brightness: var(--background-brightness);
 	--backdrop-contrast: var(--background-contrast);
 	--backdrop-saturation: var(--background-saturation);
@@ -41,6 +43,7 @@
 	--user-popout-image: var(--background-image);
 	--user-popout-position: var(--background-position);
 	--user-popout-size: var(--background-size);
+	--user-popout-attachment: var(--background-attachment);
 	--user-popout-brightness: var(--background-brightness);
 	--user-popout-contrast: var(--background-contrast);
 	--user-popout-saturation: var(--background-saturation);
@@ -51,6 +54,7 @@
 	--user-modal-image: var(--background-image);
 	--user-modal-position: var(--background-position);
 	--user-modal-size: var(--background-size);
+	--user-modal-attachment: var(--background-attachment);
 	--user-modal-brightness: var(--background-brightness);
 	--user-modal-contrast: var(--background-contrast);
 	--user-modal-saturation: var(--background-saturation);

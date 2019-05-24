@@ -7,7 +7,7 @@
 		position: absolute;
 		@include stretch;
 		margin: calc(-2 * #{map-get($modal, blur)});
-		background: map-get($modal, img) map-get($modal, pos)/map-get($modal, size) fixed;
+		background: map-get($modal, img) map-get($modal, pos)/map-get($modal, size) map-get($modal, attach);
 		@include filters($modal);
 		z-index: -1;
 	}

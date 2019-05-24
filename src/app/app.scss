@@ -4,7 +4,7 @@ body {
 		content: "";
 		position: fixed;
 		@include stretch;
-		background: map-get($bg, img) map-get($bg, pos)/map-get($bg, size);
+		background: map-get($bg, img) map-get($bg, pos)/map-get($bg, size) map-get($bg, attach);
 		@include filters($bg);
 		z-index: -9999;
 	}
@@ -36,7 +36,7 @@ body {
 		content: "";
 		position: fixed;
 		@include stretch;
-		background: map-get($backdrop, img) map-get($backdrop, pos)/map-get($backdrop, size);
+		background: map-get($backdrop, img) map-get($backdrop, pos)/map-get($backdrop, size) map-get($backdrop, attach);
 		@include filters($backdrop);
 		pointer-events: none;
 	}

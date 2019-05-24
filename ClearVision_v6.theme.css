@@ -34,6 +34,7 @@
 	--background-image: url(https://clearvision.gitlab.io/images/sapphire.jpg); /* app background image (link must be HTTPS) [default: url(https://clearvision.gitlab.io/images/sapphire.jpg)]*/
 	--background-position: center; /* app background position [default: center] */
 	--background-size: cover; /* app background size [default: cover] */
+	--background-attachment: fixed; /* app background attachment [default: fixed] */
 	--background-brightness: 100%; /* app background brightness (< 100% for darken, > 100% for lighten) [default: 100%] */
 	--background-contrast: 100%; /* app background contrast [default: 100%] */
 	--background-saturation: 100%; /* app background saturation [default: 100%] */
@@ -52,6 +53,7 @@
 	--backdrop-image: var(--background-image); /* modal backdrop image (link must be HTTPS) [default: var(---background-image)] */
 	--backdrop-position: var(--background-position); /* modal backdrop position [default: var(---background-position)] */
 	--backdrop-size: var(--background-size); /* modal backdrop size [default: var(---background-size)] */
+	--backdrop-attachment: var(--background-attachment); /* modal backdrop attachment [default: var(--background-attachment)] */
 	--backdrop-brightness: var(--background-brightness); /* modal backdrop brightness (< 100% for darken, > 100% for lighten) [default: var(---background-brightness)] */
 	--backdrop-contrast: var(--background-contrast); /* modal backdrop contrast [default: var(---background-contrast)] */
 	--backdrop-saturation: var(--background-saturation); /* modal backdrop saturation [default: var(---background-saturation)] */
@@ -64,6 +66,7 @@
 	--user-popout-image: var(--background-image); /* app background image (link must be HTTPS) [default: var(---background-image)] */
 	--user-popout-position: var(--background-position); /* user popout background position [default: var(---background-position)] */
 	--user-popout-size: var(--background-size); /* user popout background size [default: var(---background-size)] */
+	--user-popout-attachment: var(--background-attachment); /* user popout background attachment [default: var(--background-attachment)] */
 	--user-popout-brightness: var(--background-brightness); /* user popout background brightness (< 100% for darken, > 100% for lighten) [default: var(---background-brightness)] */
 	--user-popout-contrast: var(--background-contrast); /* user popout background contrast [default: var(---background-contrast)] */
 	--user-popout-saturation: var(--background-saturation); /* user popout background saturation [default: var(---background-saturation)] */
@@ -76,6 +79,7 @@
 	--user-modal-image: var(--background-image); /* app background image (link must be HTTPS) [default: var(---background-image)] */
 	--user-modal-position: var(--background-position); /* user modal background position [default: var(---background-position)] */
 	--user-modal-size: var(--background-size); /* user modal background size [default: var(---background-size)] */
+	--user-modal-attachment: var(--background-attachment); /* user modal background attachment [default: var(--background-attachment)] */
 	--user-modal-brightness: var(--background-brightness); /* user modal background brightness (< 100% for darken, > 100% for lighten) [default: var(---background-brightness)] */
 	--user-modal-contrast: var(--background-contrast); /* user modal background contrast [default: var(---background-contrast)] */
 	--user-modal-saturation: var(--background-saturation); /* user modal background saturation [default: var(---background-saturation)] */

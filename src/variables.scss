@@ -31,6 +31,7 @@ $bg: (
 	img: var(--background-image),
 	pos: var(--background-position),
 	size: var(--background-size),
+	attach: var(--background-attachment),
 	brightness: var(--background-brightness),
 	contrast: var(--background-contrast),
 	saturate: var(--background-saturation),
@@ -39,13 +40,14 @@ $bg: (
 	sepia: var(--background-sepia),
 	blur: var(--background-blur)
 );
-
+	
 // BACKDROP SETTINGS
 $backdrop: (
 	overlay: var(--backdrop-overlay),
 	img: var(--backdrop-image),
 	pos: var(--backdrop-position),
 	size: var(--backdrop-size),
+	attach: var(--backdrop-attachment),
 	brightness: var(--backdrop-brightness),
 	contrast: var(--backdrop-contrast),
 	saturate: var(--backdrop-saturation),
@@ -60,6 +62,7 @@ $popout: (
 	img: var(--user-popout-image),
 	pos: var(--user-popout-position),
 	size: var(--user-popout-size),
+	attach: var(--user-popout-attachment),
 	brightness: var(--user-popout-brightness),
 	contrast: var(--user-popout-contrast),
 	saturate: var(--user-popout-saturation),
@@ -74,6 +77,7 @@ $modal: (
 	img: var(--user-modal-image),
 	pos: var(--user-modal-position),
 	size: var(--user-modal-size),
+	attach: var(--user-modal-attachment),
 	brightness: var(--user-modal-brightness),
 	contrast: var(--user-modal-contrast),
 	saturate: var(--user-modal-saturation),
