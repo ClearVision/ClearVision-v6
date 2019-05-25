@@ -60,6 +60,15 @@
 			background-color: hsla(0, 0%, 100%, .04);
 		}
 	}
+	%activityFeedShareButton {
+		background: rgba(0, 0, 0, .5);
+		box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+		color: #fff;
+		transition: all .15s ease-in-out;
+		&:hover {
+			background: $main-color;
+		}
+	}
 
 	// GRID
 	%activityFeedQuickLauncherLaunchable {

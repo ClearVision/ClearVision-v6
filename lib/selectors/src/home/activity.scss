@@ -57,6 +57,9 @@
 .colorMuted-HdFt4q {
 	@extend %activityFeedColorMuted !optional;
 }
+.shareButton-3w0M74 {
+	@extend %activityFeedShareButton !optional;
+}
 // Quick Launcher (Grid)
 .wrappedCard-30FR_0 {
 	@extend %activityFeedQuickLauncher !optional;
