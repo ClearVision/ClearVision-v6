@@ -62,15 +62,19 @@
 	}
 
 	// GRID
-	%activityFeedUnwrapped {
+	%activityFeedQuickLauncherLaunchable {
 		background-color: hsla(0, 0%, 100%, .07);
 		border-radius: 4px;
-		&%activityFeedUnwrappedClickable {
+		&%activityFeedQuickLauncherClickable {
 			transition: all .15s ease-in-out;
 			&:hover {
 				background-color: $main-color;
 			}
 		}
+	}
+	%activityFeedQuickLauncherLaunchableEmpty {
+		background-color: hsla(0, 0%, 100%, .04);
+		border-radius: 4px;
 	}
 
 	// NOW PLAYING & RECENTLY PLAYED CONTAINERS
@@ -78,10 +82,16 @@
 	%activityFeedRecentlyPlayedContainer {
 		background-color: rgba(0, 0, 0, .3);
 	}
+	%activityFeedContainerHeaderIcon {
+		&[src="/assets/b09888a1a6c74c8bb9af76ee61eb70e7.svg"] {
+			opacity: .7;
+			filter: contrast(5);
+			mix-blend-mode: screen;
+		}
+	}
 	%activityFeedPopoutContainer {
 		transition: all .15s ease-in-out;
 		&:hover {
-			background-color: $main-color;
 			background-color: hsla(0, 0%, 100%, .07);
 		}
 	}

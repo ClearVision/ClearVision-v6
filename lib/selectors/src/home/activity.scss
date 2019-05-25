@@ -57,18 +57,30 @@
 .colorMuted-HdFt4q {
 	@extend %activityFeedColorMuted !optional;
 }
-// Grid
-.grid-1rkoVH {
-	@extend %activityFeedGrid !optional;
+// Quick Launcher (Grid)
+.wrappedCard-30FR_0 {
+	@extend %activityFeedQuickLauncher !optional;
 }
-.unwrapped-37iUtM {
-	@extend %activityFeedUnwrapped !optional;
+.grid-1rkoVH {
+	@extend %activityFeedQuickLauncherGrid !optional;
+}
+.wrapped-15rg6t {
+	@extend %activityFeedQuickLauncherLaunchable !optional;
 }
 .clickable-nnkAZy {
-	@extend %activityFeedUnwrappedClickable !optional;
+	@extend %activityFeedQuickLauncherClickable !optional;
 }
+.empty-hejAOj {
+	@extend %activityFeedQuickLauncherLaunchableEmpty !optional;
+}
+// .unwrapped-37iUtM {
+// 	@extend %activityFeedUnwrapped !optional;
+// }
+// .clickable-nnkAZy {
+// 	@extend %activityFeedUnwrappedClickable !optional;
+// }
 .icon-2hm0JA {
-	@extend %activityFeedUnwrappedIcon !optional;
+	@extend %activityFeedQuickLauncherIcon !optional;
 }
 // Now Playing & Recently Played Containers
 .wrapper-2ULRsd {
@@ -80,25 +92,16 @@
 .popoutContainer-3WC9HR {
 	@extend %activityFeedPopoutContainer !optional;
 }
-.header-2UBPnS {
-	@extend %activityFeedPopoutContainerHeader !optional;
+.headerIcon-2AzihC {
+	@extend %activityFeedContainerHeaderIcon !optional;
 }
-.headerAvatar-2T31G3 {
-	@extend %activityFeedPopoutContainerAvatar !optional;
+.multipleIconWrapper-1PjkRO {
+	@extend %activityFeedContainerMultipleIconWrapper !optional;
 }
-.headerAvatarMask-2-HEb- {
-	@extend %activityFeedPopoutContainerAvatarMask !optional;
-}
-.headerIcon-1xLMqh {
-	@extend %activityFeedPopoutContainerHeaderIcon !optional;
-}
-.multipleIconWrapper-2TXVB4 {
-	@extend %activityFeedPopoutContainerHeaderIconWrapper !optional;
-}
-.body-3YPTZ5 {
+.body-1BpgWG {
 	@extend %activityFeedPopoutContainerBody !optional;
 }
-.section-3TvauS {
+.section-2VKIPC {
 	@extend %activityFeedPopoutContainerSection !optional;
 }
 .popout-3G62UL {
@@ -107,19 +110,19 @@
 .enabled-5QKLzu {
 	@extend %activityFeedPopoutEnabled !optional;
 }
-.memberListContainer-3u8_0h {
+.memberListContainer-1AKCDy {
 	@extend %activityFeedPopoutMemberListContainer !optional;
 }
-.memberListItem-vHCzSI {
+.memberListItem-2ZX2pl {
 	@extend %activityFeedPopoutMemberListItem !optional;
 }
-.avatar-261BSX {
+.avatar-_-TGPX {
 	@extend %activityFeedPopoutAvatar !optional;
 }
-.avatarMask-1BPAVl {
+.avatarMask-2Mo_pM {
 	@extend %activityFeedPopoutAvatarMask !optional;
 }
-.separator-1N1EBC {
+.separator-2c4hi3 {
 	@extend %activityFeedSeparator !optional;
 }
 // Placeholders & Notice
