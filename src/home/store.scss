@@ -38,6 +38,33 @@
 		color: #fff;
 	}
 }
+%heroCarouselPagination {
+	%heroCarouselPaginationItemContainer {
+		opacity: .5;
+		transition: all .3s ease-in-out;
+		&:after {
+			content: "";
+			position: absolute;
+			@include stretch;
+			border: 2px solid transparent;
+			border-radius: 3px;
+			transition: all .3s ease-in-out;
+		}
+		&:hover {
+			opacity: 1;
+		}
+		&%heroCarouselPaginationItemContainerSelected {
+			box-shadow: 0 0 3px $main-color, inset 0 0 3px rgba(0, 0, 0, .3);
+			opacity: 1;
+			&:after {
+				border-color: $main-color;
+			}
+		}
+	}
+	%heroCarouselPaginationItemBorder {
+		display: none;
+	}
+}
 
 // BODY
 %applicationStore {
