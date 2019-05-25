@@ -61,27 +61,21 @@
 	@extend %activityFeedShareButton !optional;
 }
 // Quick Launcher (Grid)
-.wrappedCard-30FR_0 {
+.grid-1rkoVH {
 	@extend %activityFeedQuickLauncher !optional;
 }
-.grid-1rkoVH {
-	@extend %activityFeedQuickLauncherGrid !optional;
-}
 .wrapped-15rg6t {
-	@extend %activityFeedQuickLauncherLaunchable !optional;
+	@extend %activityFeedQuickLauncherWrapped !optional;
+}
+.unwrapped-37iUtM {
+	@extend %activityFeedQuickLauncherUnwrapped !optional;
 }
 .clickable-nnkAZy {
 	@extend %activityFeedQuickLauncherClickable !optional;
 }
 .empty-hejAOj {
-	@extend %activityFeedQuickLauncherLaunchableEmpty !optional;
+	@extend %activityFeedQuickLauncherEmpty !optional;
 }
-// .unwrapped-37iUtM {
-// 	@extend %activityFeedUnwrapped !optional;
-// }
-// .clickable-nnkAZy {
-// 	@extend %activityFeedUnwrappedClickable !optional;
-// }
 .icon-2hm0JA {
 	@extend %activityFeedQuickLauncherIcon !optional;
 }

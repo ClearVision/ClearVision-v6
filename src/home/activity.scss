@@ -32,20 +32,18 @@
 	}
 
 	// CARD
-	%activityFeedOuter {
-		background-color: rgba(0, 0, 0, .3);
-		&%activityFeedOuterInteractive {
-			&:hover {
-				background-color: rgba(0, 0, 0, .5);
-			}
-		}
-	}
 	%activityFeedCard {
 		border-radius: 5px;
-		transition: all .15s ease-in-out;
 		backface-visibility: hidden;
-		&:hover {
-			box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
+	}
+	%activityFeedOuter {
+		background-color: rgba(0, 0, 0, .3);
+		transition: all .15s ease-in-out;
+		&%activityFeedOuterInteractive {
+			&:hover {
+				box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
+				background-color: rgba(0, 0, 0, .5);
+			}
 		}
 	}
 	%activityFeedColoredBackground {
@@ -71,7 +69,8 @@
 	}
 
 	// GRID
-	%activityFeedQuickLauncherLaunchable {
+	%activityFeedQuickLauncherWrapped,
+	%activityFeedQuickLauncherUnwrapped {
 		background-color: hsla(0, 0%, 100%, .07);
 		border-radius: 4px;
 		&%activityFeedQuickLauncherClickable {
@@ -81,8 +80,8 @@
 			}
 		}
 	}
-	%activityFeedQuickLauncherLaunchableEmpty {
-		background-color: hsla(0, 0%, 100%, .04);
+	%activityFeedQuickLauncherEmpty {
+		background-color: hsla(0, 0%, 100%, .01);
 		border-radius: 4px;
 	}
 
