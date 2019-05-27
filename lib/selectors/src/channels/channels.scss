@@ -21,14 +21,32 @@
 .button-1w5pas {
 	@extend %channelsHeaderButton !optional;
 }
+.guildIcon-2Y8fb4 {
+	@extend %guildBadge !optional;
+}
+.icon-1ihkOt {
+	@extend %guildBadgeIcon !optional;
+}
 .partnered-3nJayh {
 	@extend %guildPartnered !optional;
 }
-.verified-3uJH7V {
+.verified-1eC5dy {
 	@extend %guildVerified !optional;
 }
-.verifiedInner-DViLz0 {
-	@extend %guildVerifiedInner !optional;
+.premiumGuildIconGem-C4yUDR {
+	@extend %guildBoostedIcon !optional;
+}
+.iconBackgroundTierOne-2LhaMB {
+	@extend %guildBoostedIconTier1 !optional;
+}
+.iconBackgroundTierTwo-3bCmdc {
+	@extend %guildBoostedIconTier2 !optional;
+}
+.iconBackgroundTierThree-3qw3JX {
+	@extend %guildBoostedIconTier3 !optional;
+}
+.withBanner-3j8ruM {
+	@extend %guildBoostedIconWithBanner !optional;
 }
 .banner-1TiK82 {
 	@extend %banner !optional;

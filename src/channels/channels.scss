@@ -23,23 +23,39 @@
 		&:hover {
 			background: rgba(0, 0, 0, calc(#{map-get($bg, shading)} * .3));
 		}
-		%guildPartnered {
-			background: url(https://clearvision.gitlab.io/icons/discord/badgePartner.svg) center/12px no-repeat hsla(0, 0%, 100%, .07);
-			border-radius: 50%;
-			filter: drop-shadow(0 0 5px);
-			%flowerStar,
-			%flowerStarChild {
-				display: none;
-			}
+	}
+	
+	// GUILD BADGE
+	%guildBadge {
+		%flowerStar {
+			display: none;
 		}
+		%flowerStarChild {
+			background: hsla(0, 0%, 100%, .07);
+			border-radius: 50%;
+		}
+	}
+	%guildPartnered,
+	%guildVerified {
+		%flowerStarChild {
+			display: none;
+		}
+	}
+	%guildPartnered {
+		background: url(https://clearvision.gitlab.io/icons/discord/badgePartner.svg) center/12px no-repeat hsla(0, 0%, 100%, .07);
+		border-radius: 50%;
+		filter: drop-shadow(0 0 3px);
 	}
 	%guildVerified {
 		background: url(https://clearvision.gitlab.io/icons/verified.svg) center/18px no-repeat;
 		filter: drop-shadow(0 0 5px);
-		> g {
-			display: none;
-		}
 	}
+	%guildBoostedIcon {
+		color: $main-color;
+		filter: drop-shadow(0 0 3px);
+	}
+
+	// GUILD BANNER
 	%bannerImage {
 		background-size: 0, cover;
 		-webkit-mask: linear-gradient(to bottom, #000, transparent);
