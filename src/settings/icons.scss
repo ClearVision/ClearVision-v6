@@ -1,8 +1,6 @@
 /* SETTINGS SIDEBAR ICONS */
 // ICON MAP
 $icons: (
-
-	// USER SETTINGS 
 	"My Account": "https://clearvision.gitlab.io/icons/person.svg",
 	"Privacy & Safety": "https://clearvision.gitlab.io/icons/security.svg",
 	"Authorized Apps": "https://clearvision.gitlab.io/icons/apps.svg",
@@ -153,4 +151,7 @@ $web: (
 			@extend %#{$id};
 		}
 	}
+}
+[aria-label="USER_SETTINGS"] %settingsSidebar %tabBarItem:nth-last-child(3):before {
+	background-image: url(#{map-get($icons, "Log Out")});
 }
