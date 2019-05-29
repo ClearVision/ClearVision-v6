@@ -1,0 +1,112 @@
+/* UNOFFICIAL SOURCES INDICATOR */
+// UNOFFICIAL SOURCES LIST
+$unofficial: (
+	"betterdocs.us",
+	"discordsource.com"
+);
+
+html[lang][style] body #app-mount[id] %layers %layer %messageGroup %message {
+
+	// LINKS
+	%markup %anchor,
+	%embed %embedLink {
+		&[href] {
+			height: auto !important;
+			color: $main-color !important;
+			pointer-events: auto !important;
+			cursor: default !important;
+			&:before,
+			&:after {
+				display: none !important;
+			}
+		}
+	}
+	%markup %anchor,
+	%embed %embedLink {
+		@each $e in $unofficial {
+			&[href*="#{$e}"] {
+				position: relative;
+				color: transparent !important;
+				cursor: not-allowed !important;
+				&:before {
+					content: "\26A0  Unofficial source" !important;
+					position: absolute;
+					@include stretch;
+					padding: 0 !important;
+					margin: 0 !important;
+					display: block !important;
+					background: $danger-color !important;
+					border: none !important;
+					border-radius: 3px !important;
+					color: #fff !important;
+					text-align: center !important;
+					text-shadow: none;
+					transition: all .3s ease-in-out;
+					z-index: 1;
+					opacity: .7;
+				}
+				&:hover {
+					color: $danger-color !important;
+					&:before {
+						opacity: 0;
+					}
+				}
+			}
+		}
+	}
+	%markup %anchor {
+		@each $e in $unofficial {
+			&[href*="#{$e}"] {
+				&:before {
+					content: "\26A0  Unofficial source" !important;
+				}
+			}
+		}
+	}
+	%embed %embedLink {
+		@each $e in $unofficial {
+			&[href*="#{$e}"] {
+				&:before {
+					content: "\26A0  Unofficial theme/plugin source" !important;
+				}
+			}
+		}
+	}
+
+	// EMBED THUMBNAIL
+	%embed %embedThumbnail {
+		display: block !important;
+		@each $e in $unofficial {
+			&[href*="#{$e}"] {
+				position: relative;
+				cursor: not-allowed;
+				> img {
+					opacity: 0;
+					transition: all .3s ease-in-out;
+				}
+				&:before {
+					content: "\26A0";
+					position: absolute;
+					@include stretch;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					background: $danger-color;
+					border-radius: inherit;
+					color: #fff;
+					transition: all .3s ease-in-out;
+					z-index: 1;
+					opacity: .7;
+				}
+				&:hover {
+					> img {
+						opacity: 1;
+					}
+					&:before {
+						opacity: 0;
+					}
+				}
+			}
+		}
+	}
+}
