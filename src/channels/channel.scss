@@ -144,6 +144,19 @@
 				color: hsla(0, 0%, 100%, .1);
 			}
 		}
+		&:hover {
+			%channelContent {
+				&:before {
+					background: hsla(0, 0%, 100%, .07);
+				}
+				%channelContainerDefault & {
+					%channelIcon,
+					%channelName {
+						color: hsla(0, 0%, 100%, .3);
+					}
+				}
+			}
+		}
 	}
 }
 
