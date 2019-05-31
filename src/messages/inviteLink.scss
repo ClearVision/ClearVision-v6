@@ -44,9 +44,11 @@
 	}
 	%inviteStatusOnline {
 		background: $online-color;
+		color: $online-color;
 	}
 	%inviteStatusOffline {
 		background: $offline-color;
+		color: $offline-color;
 	}
 	%inviteButton{
 		border-color: transparent;

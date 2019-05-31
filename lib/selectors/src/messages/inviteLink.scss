@@ -5,17 +5,23 @@
 .h5-18_1nd {
 	@extend %inviteTitle !optional;
 }
-.guildName-2hvnt_ {
-	@extend %inviteGuildName !optional;
-}
-.guildNameExpired-2Hp80V {
-	@extend %inviteGuildNameExpired !optional;
-}
 .guildIcon-lQ0uiM {
 	@extend %inviteGuildIcon !optional;
 }
 .guildIconExpired-2Qcq05 {
 	@extend %inviteGuildIconExpired !optional;
+}
+.guildInfo-1STtYi {
+	@extend %inviteGuildInfo !optional;
+}
+.guildName-2hvnt_ {
+	@extend %inviteGuildName !optional;
+}
+.guildNameJoined-H7D9uF {
+	@extend %inviteGuildNameJoined !optional;
+}
+.guildNameExpired-2Hp80V {
+	@extend %inviteGuildNameExpired !optional;
 }
 .guildDetail-1nRKNE {
 	@extend %inviteGuildDetail !optional;
