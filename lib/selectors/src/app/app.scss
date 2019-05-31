@@ -17,6 +17,18 @@
 .colorblind-mode {
 	@extend %colorblindMode !optional;
 }
+.theme-dark {
+	@extend %themeDark !optional;
+}
+.theme-light {
+	@extend %themeLight !optional;
+}
+.app-19_DXt {
+	@extend %app !optional;
+}
+.app-2rEoOp {
+	@extend %shakeable !optional;
+}
 .layers-3iHuyZ {
 	@extend %layers !optional;
 }
