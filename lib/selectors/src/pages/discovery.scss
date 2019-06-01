@@ -91,6 +91,25 @@
 .sectionSeparator-2OWiNT {
 	@extend %discoverySectionSeparator !optional;
 }
+// Page Control
+.pageControlContainer-3czZwE {
+	@extend %discoveryPageControlContainer !optional;
+}
+.pageControl-1aUwvK {
+	@extend %discoveryPageControl !optional;
+}
+.pageButton-MknE-_ {
+	@extend %discoveryPageButton !optional;
+}
+.endButton-3wGL3C {
+	@extend %discoveryPageButtonEnd !optional;
+}
+.roundButton-2CW1Hh {
+	@extend %discoveryPageButtonRound !optional;
+}
+.activeButton-1BJAiN {
+	@extend %discoveryPageButtonActive !optional;
+}
 // Empty
 .emptySearchResults-1ba__I {
 	@extend %discoveryEmptyResults !optional;

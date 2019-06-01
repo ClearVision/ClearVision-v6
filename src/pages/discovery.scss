@@ -82,6 +82,38 @@
 	}
 }
 
+// PAGE CONTROl
+%discoveryPageControlContainer {
+	%discoveryPageControl {
+		%discoveryPageButtonEnd{
+			background: hsla(0, 0%, 100%, .04);
+			color: hsla(0, 0%, 100%, .5);
+			transition: all .15s ease-in-out;
+			&:hover {
+				background: hsla(0, 0%, 100%, .1);
+				color: hsla(0, 0%, 100%, .7);
+			}
+			&:disabled {
+				background: hsla(0, 0%, 100%, .04);
+				color: hsla(0, 0%, 100%, .5);
+				opacity: .5;
+			}
+		}
+		%discoveryPageButtonRound {
+			color: hsla(0, 0%, 100%, .5);
+			transition: all .15s ease-in-out;
+			&:hover {
+				background: hsla(0, 0%, 100%, .07);
+				color: hsla(0, 0%, 100%, .7);
+			}
+			&%discoveryPageButtonActive {
+				background: $main-color;
+				color: #fff;
+			}
+		}
+	}
+}
+
 // EMPTY
 %pageBody {
 	%discoveryEmptyResults {
