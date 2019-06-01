@@ -21,11 +21,11 @@
 .button-1w5pas {
 	@extend %channelsHeaderButton !optional;
 }
-.guildIcon-2Y8fb4 {
-	@extend %guildBadge !optional;
+.guildIconContainer-E1JUVt {
+	@extend %channelsHeaderGuildBadge !optional;
 }
 .icon-1ihkOt {
-	@extend %guildBadgeIcon !optional;
+	@extend %channelsHeaderGuildBadgeIcon !optional;
 }
 .partnered-3nJayh {
 	@extend %guildPartnered !optional;
