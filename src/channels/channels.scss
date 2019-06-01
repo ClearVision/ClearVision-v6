@@ -26,7 +26,7 @@
 	}
 	
 	// GUILD BADGE
-	%guildBadge {
+	%channelsHeaderGuildBadge {
 		%flowerStar {
 			display: none;
 		}
@@ -35,20 +35,20 @@
 			border-radius: 50%;
 		}
 	}
-	%guildPartnered,
-	%guildVerified {
-		%flowerStarChild {
-			display: none;
-		}
-	}
 	%guildPartnered {
-		background: url(https://clearvision.gitlab.io/icons/discord/badgePartner.svg) center/12px no-repeat hsla(0, 0%, 100%, .07);
+		background: hsla(0, 0%, 100%, .07);
 		border-radius: 50%;
-		filter: drop-shadow(0 0 3px);
+		%channelsHeaderGuildBadgeIcon {
+			color: $main-color;
+			filter: drop-shadow(0 0 3px);
+		}
 	}
 	%guildVerified {
 		background: url(https://clearvision.gitlab.io/icons/verified.svg) center/18px no-repeat;
 		filter: drop-shadow(0 0 5px);
+		%flowerStarChild {
+			display: none;
+		}
 	}
 	%guildBoostedIcon {
 		color: $main-color;
