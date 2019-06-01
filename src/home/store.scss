@@ -414,9 +414,13 @@
 		color: hsla(0, 0%, 100%, .3);
 	}
 	%storeListingInviteStatusOnline {
+		background: $online-color;
+		box-shadow: 0 0 3px, 0 0 5px rgba(0, 0, 0, .5);
 		color: $online-color;
 	}
 	%storeListingInviteStatusOffline {
+		background: $offline-color;
+		box-shadow: 0 0 3px, 0 0 5px rgba(0, 0, 0, .5);
 		color: $offline-color;
 	}
 }
@@ -425,7 +429,7 @@
 		%buttonFilledPrimary {
 			background: $success-color;
 			color: #fff;
-			opacity: .8;
+			opacity: .7;
 			&:hover {
 				background: $success-color;
 				color: #fff;
