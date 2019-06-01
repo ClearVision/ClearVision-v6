@@ -75,6 +75,11 @@
 		box-shadow: 0 0 3px, 0 0 5px rgba(0, 0, 0, .5);
 		color: $online-color;
 	}
+	%discoveryGuildStatusOffline{
+		background-color: $offline-color;
+		box-shadow: 0 0 3px, 0 0 5px rgba(0, 0, 0, .5);
+		color: $offline-color;
+	}
 }
 %discoveryGuildList {
 	%discoveryGuildCardLoading {
