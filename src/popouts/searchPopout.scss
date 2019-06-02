@@ -1,10 +1,10 @@
 /* SEARCH POPOUT */
 %popout {
 	&%popoutBottom%popoutNoArrow%popoutNoShadow {
-		%platformWin &[style*="top: 60px"],
+		%platformWin + div &[style*="top: 60px"],
 		%platformOSX &[style*="top: 38px"],
-		%platformLinux &[style*="top: 38px"],
-		%platformWeb &[style*="top: 38px"] {
+		%platformLinux + div &[style*="top: 38px"],
+		%platformWeb + div &[style*="top: 38px"] {
 			left: auto !important;
 			right: 40px;
 			transform: none !important;
