@@ -3,9 +3,19 @@
 	%autocompletePopoutShadow {
 		box-shadow: 0 0 1px rgba(0, 0, 0, .82), 0 1px 4px rgba(0, 0, 0, .1);
 	}
-	%autocompletePopoutArrow,
+	%autocompletePopoutArrow {
+		background: rgba(0, 0, 0, .7);
+	}
+	&%autocompletePopoutBottom {
+		%autocompletePopoutArrow {
+			background: $main-color;
+		}
+	}
+
+	// HEADER
 	%autocompletePopoutHeaderBackground {
-		background-color: $main-color;
+		background: $main-color;
+		border-radius: 5px;
 	}
 	%autocompletePopoutHeaderText,
 	%autocompletePopoutInput {
@@ -16,6 +26,8 @@
 			color: hsla(0, 0%, 100%, .5);
 		}
 	}
+
+	// BODY
 	%autocompletePopoutSection {
 		background: rgba(0, 0, 0, .7);
 	}

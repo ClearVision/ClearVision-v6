@@ -2,6 +2,12 @@
 .container-VSDcQc {
 	@extend %autocompletePopout !optional;
 }
+.positionTop-3e-X1p {
+	@extend %autocompletePopoutTop !optional;
+}
+.positionBottom-3oo9L9 {
+	@extend %autocompletePopoutBottom !optional;
+}
 .autocompleteShadow-iiGWFU {
 	@extend %autocompletePopoutShadow !optional;
 }
@@ -11,12 +17,8 @@
 .autocompleteArrow-Zxoy9H {
 	@extend %autocompletePopoutArrow !optional;
 }
-.positionBottom-3oo9L9 {
-	@extend %autocompletePopoutBottom !optional;
-}
-.positionTop-3e-X1p {
-	@extend %autocompletePopoutTop !optional;
-}
+
+// HEADER
 .header-2bNvm4 {
 	@extend %autocompletePopoutHeader !optional;
 }
@@ -29,6 +31,8 @@
 .input-1ppKdn {
 	@extend %autocompletePopoutInput !optional;
 }
+
+// BODY
 .sectionTag-pXyto9 {
 	@extend %autocompletePopoutSection !optional;
 }
