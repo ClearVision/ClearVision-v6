@@ -15,7 +15,7 @@
 	// HEADER
 	%autocompletePopoutHeaderBackground {
 		background: $main-color;
-		border-radius: 5px;
+		border-radius: 5px 5px 0 0;
 	}
 	%autocompletePopoutHeaderText,
 	%autocompletePopoutInput {
