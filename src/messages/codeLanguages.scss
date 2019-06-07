@@ -1,8 +1,8 @@
 /* CODEBLOCK LANGUAGES */
 // LANGUAGE MAP
 $languages: (
-	"1c": "1c",
-	"ABNF": "abnf",
+	"1C:Enterprise": "1c",
+	"ABNF": "abnf", // Augmented Backus-Naur Form
 	"Access Log": "accesslog",
 	"ActionScript": ("actionscript", "as"),
 	"Ada": "ada",
@@ -13,19 +13,19 @@ $languages: (
 	"AsciiDoc": ("asciidoc", "adoc"),
 	"AspectJ": "aspectj",
 	"Atom Feed (XML)": "atom",
-	"AutoHotkey": ("autohotkey", "ahk"),
+	"AutoHotkey": "autohotkey",
 	"AutoIt": "autoit",
 	"AVR Assembler": "avrasm",
-	"Awk": "awk",
+	"awk": "awk",
 	"Axapta": "axapta",
 	"Bash": ("bash", "sh", "zsh"),
 	"Basic": "basic",
 	"Batch": ("dos", "bat", "cmd"),
-	"BNF": "bnf",
+	"BNF": ("bnf", "bf"), // Backus-Naur Form
 	"Brainfuck": "brainfuck",
 	"C/C++": ("c", "cc", "cpp", "h", "hpp"),
 	"C#": ("cs", "csharp"),
-	"CAL": "cal",
+	"C/AL": "cal", // Client/server Application Language
 	"Cap'n Proto": ("capnproto", "capnp"),
 	"Ceylon": "ceylon",
 	"Clean": ("clean", "icl", "dcl"),
@@ -38,22 +38,22 @@ $languages: (
 	"CocoaPod": "podspec",
 	"crmsh": ("crmsh", "crm", "pcmk"),
 	"Crystal": ("crystal", "cr"),
-	"CSP": "csp",
-	"CSS": "css",
+	"CSP": "csp", // Communicating sequential processes
+	"CSS": "css", // Cascading Style Sheets
 	"D": "d",
 	"Dart": "dart",
 	"Delphi (Object Pascal)": ("delphi", "dfm", "dpr"),
 	"Diff": ("diff", "patch"),
-	"Django": ("django", "jinja"),
-	"DNS Zone File": "dns",
+	"Django": "django",
+	"DNS Zone File": ("dns", "bind", "zone"),
 	"Dockerfile": ("dockerfile", "docker"),
 	"dsconfig": "dsconfig",
 	"Device Tree": "dts",
 	"Dust": ("dust", "dst"),
-	"EBNF": "ebnf",
+	"EBNF": "ebnf", // Extended Backus-Naur Form
 	"Elixir": "elixir",
 	"Elm": "elm",
-	"ERB": "erb",
+	"eRuby": "erb", // Embedded Ruby
 	"Erlang": ("erlang", "erl"),
 	"Erlang REPL": "erlang-repl",
 	"Excel": ("excel", "xls", "xlsx"),
@@ -62,10 +62,10 @@ $languages: (
 	"Flix": "flix",
 	"Fortran": ("fortran", "f90", "f95"),
 	"GAMS": ("gams", "gms"),
-	"Gauss": ("gauss", "gss"),
+	"GAUSS": ("gauss", "gss"),
 	"G-code": ("gcode", "nc"),
 	"Gherkin": ("gherkin", "feature"),
-	"GLSL": "glsl",
+	"GLSL": "glsl", // OpenGL Shading Language
 	"Go": ("go", "golang"),
 	"Golo": "golo",
 	"Gradle": "gradle",
@@ -74,32 +74,34 @@ $languages: (
 	"Handlebars": ("handlebars", "hbs"),
 	"Haskell": ("haskell", "hs"),
 	"Haxe": ("haxe", "hx"),
-	"HSP": "hsp",
-	"HTML": "html",
+	"HSP": "hsp", // Hot Soup Processor
+	"HTML": "html", // Hypertext Markup Language
 	"HTMLBars": "htmlbars",
-	"HTTP": "http",
-	"HTTPS": "https",
+	"HTTP": "http", // Hyptertext Transfer Protocol
+	"HTTPS": "https", // Hyptertext Transfer Protocol Secure
 	"Hy": ("hy", "hylang"),
 	"Inform7": ("inform7", "i7"),
-	"Ini": ("ini", "toml"),
+	"INI": "ini", // Initialization
+	"IRB": "irb", // Interactive Ruby Shell
 	"IRPF90": "irpf90",
 	"Java": ("java", "jsp"),
 	"JavaScript/JSX": ("javascript", "js", "jsx"),
 	"JAXB (XML)": "xjb",
 	"JBoss CLI": ("jboss-cli", "wildfly-cli"),
-	"JSON": "json",
+	"Jinja": "jinja",
+	"JSON": "json", // JavaScript Object Notation
 	"Julia": "julia",
 	"Julia REPL": "julia-repl",
 	"Kotlin": "kotlin",
 	"Lasso": ("lasso", "lassoscript", "ls"),
-	"LDIF": "ldif",
+	"LDIF": "ldif", // LDAP Data Interchange Format
 	"Leaf": "leaf",
 	"Less": "less",
 	"Lisp": "lisp",
 	"LiveCode Server": "livecodeserver",
 	"LiveScript": ("livescript", "ls"),
 	"LLVM IR": "llvm",
-	"LSL": "lsl",
+	"LSL": "lsl", // Linden Scripting Language
 	"Lua": "lua",
 	"Makefile": ("makefile", "mk", "mak"),
 	"Markdown": ("markdown", "md", "mkd", "mkdown"),
@@ -108,7 +110,7 @@ $languages: (
 	"Maxima": "maxima",
 	"MEL": "mel",
 	"Mercury": ("mercury", "m", "moo"),
-	"MISP Assembly": ("mipsasm", "mips"),
+	"MIPS Assembly": ("mipsasm", "mips"),
 	"Mikrotik RouterOS": ("routeros", "mikrotik"),
 	"Mizar": "mizar",
 	"Mojolicious": "mojolicious",
@@ -127,8 +129,8 @@ $languages: (
 	"Parser3": "parser3",
 	"Pascal/Object Pascal": ("pascal", "pas", "freepascal", "lazarus", "lfm", "lpr"),
 	"Perl": ("perl", "pl", "pm"),
-	"PF": "pf",
-	"PHP": ("php", "php3", "php4", "php5", "php6"),
+	"OpenBSD PF": "pf", // OpenBSD Packet Filter
+	"PHP": ("php", "php3", "php4", "php5", "php6"), // PHP: Hypertext Preprocessor
 	"Pony": "pony",
 	"PowerShell": ("powershell", "ps"),
 	"Processing": "processing",
@@ -140,15 +142,14 @@ $languages: (
 	"Python": ("python", "py", "gyp"),
 	"Python profile": "profile",
 	"Q": ("q", "k", "kdb"),
-	"QML": ("qml", "qt"),
+	"QML": ("qml", "qt"), // Qt Meta-object Language
 	"R": "r",
 	"RenderMan RIB": "rib",
 	"RenderMan RSL": "rsl",
 	"Roboconf": ("roboconf", "graph", "instances"),
 	"RSS Feed (XML)": "rss",
 	"Ruby": ("ruby", "rb"),
-	"Thor": "thor",
-	"IRB": "irb",
+	"Thor (Ruby)": "thor",
 	"Ruby Gem": "gemspec",
 	"Rust": ("rust", "rs"),
 	"Scala": "scala",
@@ -158,9 +159,9 @@ $languages: (
 	"Shell": ("shell", "console"),
 	"Smali": "smali",
 	"Smalltalk": ("smalltalk", "st"),
-	"SML": ("sml", "ml"),
-	"SQF": "sqf",
-	"SQL": "sql",
+	"SML": ("sml", "ml"), // Standard ML
+	"SQF": "sqf", // Status Quo Function (Arma)
+	"SQL": "sql", // Structured Query Language
 	"Stan": "stan",
 	"Stata": ("stata", "do", "ado"),
 	"STEP Part 21": ("step21", "step", "stp", "p21"),
@@ -168,17 +169,18 @@ $languages: (
 	"SubUnit": "subunit",
 	"Swift": "swift",
 	"Tagger Script": "taggerscript",
-	"TAP": "tap",
-	"Tcl": ("tcl", "tk"),
+	"TAP": "tap", // Test Anything Protocol
+	"Tcl": ("tcl", "tk"), // Tool Command Language
 	"TeX": "tex",
 	"Thrift": "thrift",
-	"TP": "tp",
+	"TOML": "toml", // Tom's Obvious, Minimal Language
+	"TP": "tp", // Fanuc TP
 	"Twig": ("twig", "craftcms"),
 	"TypeScript": ("typescript", "ts"),
 	"Vala": "vala",
-	"VB.NET": ("vbnet", "vb"),
-	"VBScript": ("vbscript", "vbs"),
-	"VBScript HTML": "vbscript-html",
+	"VB.NET": ("vbnet", "vb"), // Visual Basic .NET
+	"VBScript": ("vbscript", "vbs"), // Visual Basic Script
+	"VBScript HTML": "vbscript-html", // Visual Basic Script HTML
 	"Verilog": ("verilog", "v", "sv", "svh"),
 	"VHDL": "vhdl",
 	"Vim Script": "vim",
@@ -186,10 +188,10 @@ $languages: (
 	"XL": ("xl", "tao"),
 	"XQuery": ("xquery", "xq", "xpath"),
 	"YAML": ("yaml", "yml"),
-	"XHTML": "xhtml",
-	"XML": "xml",
+	"XHTML": "xhtml", // Extensible Hypertext Markup Language
+	"XML": "xml", // Extensible Markup Language
 	"XML Schema": "xsd",
-	"XSL": "xsl",
+	"XSL": "xsl", // Extensible Stylesheet Language
 	"Zephir": ("zephir", "zep")
 );
 
