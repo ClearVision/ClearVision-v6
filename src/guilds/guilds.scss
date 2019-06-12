@@ -129,9 +129,10 @@
 	%circleIconButton {
 		background: rgba(0, 0, 0, .3);
 		color: hsla(0, 0%, 100%, .3);
-		border-radius: 50%;
+		// border-radius: 50%;
 		transition: all .3s ease-in-out;
-		&:hover {
+		&:hover,
+		&%circleIconButtonSelected {
 			background: $main-color;
 			color: #fff;
 		}
