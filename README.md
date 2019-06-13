@@ -1,4 +1,16 @@
+<div align="center">
+
 # ClearVision v6
+
+[![Releases](https://img.shields.io/github/release-pre/ClearVision/v6.svg?style=flat-square)](https://github.com/ClearVision/v6/releases)
+[![License](https://img.shields.io/github/license/ClearVision/v6.svg?style=flat-square)](https://github.com/ClearVision/v6/blob/master/LICENSE)
+[![Discord Server](https://img.shields.io/discord/212324635356692500.svg?style=flat-square)](https://clearvision.gitlab.io/join)
+[![Issues](https://img.shields.io/github/issues/ClearVision/v6.svg?style=flat-square)](https://github.com/ClearVision/v6/issues)
+[![Pull Requests](https://img.shields.io/github/issues-pr/ClearVision/v6.svg?style=flat-square)](https://github.com/ClearVision/v6/pulls)
+
+![v6 Sapphire](https://github.com/Zerthox/ClearVision/raw/master/screenshots/v6.png)
+
+</div>
 
 ## Installing
 Download the theme file and move it into your BetterDiscord themes folder:
