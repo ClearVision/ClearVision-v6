@@ -1,0 +1,22 @@
+/* PRIVATE CALL */
+%chat {
+	%privateCall {
+		background: rgba(0, 0, 0, calc(var(--background-shading) * .6));
+		box-shadow: 0 0 10px rgba(0, 0, 0, calc(var(--background-shading) * .6));
+		margin-bottom: -48px;
+		%privateCallActions {
+			%privateCallActionsCenter {
+				background: rgba(0, 0, 0, .3);
+			}
+		}
+		%privateCallVideo {
+			background: transparent;
+			%privateCallActions {
+				%privateCallActionsCenter {
+					background: rgba(0, 0, 0, .3);
+					border-color: transparent;
+				}
+			}
+		}
+	}
+}
