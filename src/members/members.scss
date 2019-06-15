@@ -139,11 +139,13 @@
 					color: #fff;
 				}
 			}
-			%memberOwnerIcon,
+			%memberOwnerIcon {
+				filter: drop-shadow(0 0 3px rgba(0, 0, 0, .7));
+				opacity: .7;
+			}
 			%memberActivityIcon {
 				filter: drop-shadow(0 0 3px rgba(0, 0, 0, .7));
 			}
-			%memberOwnerIcon > g > path,
 			%memberActivityIconForeground {
 				fill: hsla(0, 0%, 100%, .7);
 			}
@@ -187,7 +189,15 @@
 		background: hsla(0, 0%, 100%, .3);
 	}
 }
-%memberOwnerIcon > g > path,
+%memberOwnerIcon {
+	background: url(https://clearvision.gitlab.io/icons/crown.svg) center/contain no-repeat;
+	opacity: .4;
+	transition: all .15s ease-in-out;
+	> path,
+	> g {
+		display: none;
+	}
+}
 %memberActivityIconForeground {
 	fill: hsla(0, 0%, 100%, .4);
 	transition: all .15s ease-in-out;
