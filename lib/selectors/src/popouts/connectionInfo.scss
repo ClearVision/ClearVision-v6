@@ -1,6 +1,9 @@
-/// CONNECTION INFO
+/// CONNECTION INFO POPOUT
 .container-2x5lvQ {
 	@extend %connectionInfo !optional;
+}
+.header-2C89wJ {
+	@extend %connectionInfoHeader !optional;
 }
 .sparkline-3A-8OK {
 	@extend %connectionInfoSparkline !optional;
