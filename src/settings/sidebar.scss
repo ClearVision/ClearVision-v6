@@ -54,7 +54,7 @@
 			text-overflow: ellipsis;
 		}
 	}
-	%tabBarItem {
+	[aria-label="USER_SETTINGS"] & %tabBarItem {
 		&:nth-child(9) + %tabBarSeparator {
 			display: none;
 		}
