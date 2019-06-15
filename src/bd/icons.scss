@@ -1,18 +1,30 @@
 /* BD SETTINGS SIDEBAR ICONS */
-// BD ICON MAP
-$bd: (
-	"Settings": "https://clearvision.gitlab.io/icons/betterdiscord.svg",
-	"Emotes": "https://clearvision.gitlab.io/icons/emote.svg",
-	"Plugins": "https://clearvision.gitlab.io/icons/puzzle.svg",
-	"Themes": "https://clearvision.gitlab.io/icons/palette.svg",
-	"Custom CSS": "https://clearvision.gitlab.io/icons/code_braces.svg"
-);
+%settingsSidebar {
 
-// BD ICON STYLES
-%settingsSidebar %bdSettingsSidebar %bdSettingsSidebarItem {
-	@each $i, $u in $bd {
-		&:nth-child(#{index(map-keys($bd), $i) + 2}):before {
-			background-image: url(#{$u});
+	// BD ICON MAP
+	$bd: (
+		"Settings": "https://clearvision.gitlab.io/icons/betterdiscord.svg",
+		"Emotes": "https://clearvision.gitlab.io/icons/emote.svg",
+		"Plugins": "https://clearvision.gitlab.io/icons/puzzle.svg",
+		"Themes": "https://clearvision.gitlab.io/icons/palette.svg",
+		"Custom CSS": "https://clearvision.gitlab.io/icons/code_braces.svg"
+	);
+	
+	// BD ICON STYLES
+	%bdSettingsSidebar %bdSettingsSidebarItem {
+		padding-left: 50px !important;
+		&:before {
+			content: "";
+			position: absolute;
+			width: 24px;
+			height: 24px;
+			left: 15px;
+			margin-top: -2px;
+		}
+		@each $i, $u in $bd {
+			&:nth-child(#{index(map-keys($bd), $i) + 2}):before {
+				background-image: url(#{$u});
+			}
 		}
 	}
 }
