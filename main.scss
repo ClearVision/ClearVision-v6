@@ -40,7 +40,7 @@ $account-version: "v6-#{$version}";
 @import "src/channels/channels";
 @import "src/channels/category";
 @import "src/channels/channel";
-@import "src/channels/containers";
+@import "src/channels/panels";
 @import "src/channels/indicators";
 @import "src/channels/privateChannels";
 @import "src/channels/channelNotice";
