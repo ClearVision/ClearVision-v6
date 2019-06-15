@@ -52,7 +52,7 @@ $account-version: "v6-#{$version}";
 @import "src/chat/textArea";
 @import "src/chat/textAreaAutocomplete";
 @import "src/chat/gifAutocomplete";
-@import "src/chat/welcome";
+@import "src/chat/welcomeMessage";
 
 // MESSAGES
 @import "src/messages/message";
