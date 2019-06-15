@@ -7,18 +7,20 @@
 			color: #fff;
 			border-radius: 3px 3px 0 0;
 		}
+		> section {
+			background: rgba(0, 0, 0, .7);
+			border-radius: 0 0 3px 3px;
+			> p {
+				color: hsla(0, 0%, 100%, .5);
+				> strong {
+					color: $main-color;
+				}
+			}
+		}
 	}
 }
 %connectionInfo {
 	> section {
-		background: rgba(0, 0, 0, .7);
-		border-radius: 0 0 3px 3px;
-		> p {
-			color: hsla(0, 0%, 100%, .5);
-			> strong {
-				color: $main-color;
-			}
-		}
 		%connectionInfoBottom {
 			> a {
 				color: $main-color;
@@ -27,20 +29,22 @@
 		}
 	}
 }
-%connectionInfoSparkline > svg {
-	> line { 
-		stroke: hsla(0, 0%, 100%, .5) !important;
-		stroke-dasharray: 5, 3 !important;
-	}
-	> g {
-		> circle {
-			fill: $main-color !important;
-			fill-opacity: 1 !important;
-			r: 1 !important;
+%connectionInfoSparkline {
+	> svg {
+		> line { 
+			stroke: hsla(0, 0%, 100%, .5) !important;
+			stroke-dasharray: 5, 3 !important;
 		}
-		> polyline {
-			stroke: $main-color !important;
-			stroke-opacity: .7 !important;
+		> g {
+			> circle {
+				fill: $main-color !important;
+				fill-opacity: 1 !important;
+				r: 1 !important;
+			}
+			> polyline {
+				stroke: $main-color !important;
+				stroke-opacity: .7 !important;
+			}
 		}
 	}
 }
