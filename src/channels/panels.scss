@@ -92,8 +92,8 @@
 			opacity: .1;
 		}
 	}
-	&:not(%panelButtonDisabled):hover {
-		background-color: transparent;
+	%channels &:not(%panelButtonDisabled):hover {
+		background: transparent;
 		%panelButtonIcon {
 			opacity: .7;
 			&[name=Gear] {
