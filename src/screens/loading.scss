@@ -1,7 +1,7 @@
 /* LOADING SCREEN */
-// outdated selector {
-// 	background: rgba(0, 0, 0, .9);
-// }
+%loadingScreen {
+	background: rgba(0, 0, 0, .9);
+}
 %loadingLinks {
 	color: $main-color;
 	opacity: 1 !important;
