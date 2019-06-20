@@ -29,8 +29,14 @@
 .username-1cB_5E {
 	@extend %memberUsername !optional;
 }
+.icon-1mmpLU {
+	@extend %memberIcon !optional;
+}
 .ownerIcon-uZ6mE7 {
 	@extend %memberOwnerIcon !optional;
+}
+.premiumIcon-2IFPOX {
+	@extend %memberPremiumIcon !optional;
 }
 .activity-1IYsbk {
 	@extend %memberActivity !optional;
