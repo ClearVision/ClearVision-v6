@@ -13,7 +13,7 @@
 		position: absolute;
 		@include stretch;
 		margin: calc(-2 * #{map-get($popout, blur)});
-		background: map-get($popout, img) map-get($popout, pos)/map-get($popout, size) map-get($popout, attach);
+		background: map-get($popout, img) map-get($popout, pos)/map-get($popout, size) map-get($popout, attach) no-repeat;
 		@include filters($popout);
 		z-index: -1;
 	}
