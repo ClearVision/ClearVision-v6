@@ -34,7 +34,8 @@
 	padding-right: 18px;
 	> %guild {
 		&:first-child,
-		&:nth-child(2) {
+		&:nth-child(2),
+		&.bd-guild-separator {
 			margin-right: auto;
 			margin-left: auto;
 			grid-column: 1 / span $server-columns;
@@ -129,7 +130,6 @@
 	%circleIconButton {
 		background: rgba(0, 0, 0, .3);
 		color: hsla(0, 0%, 100%, .3);
-		// border-radius: 50%;
 		transition: all .3s ease-in-out;
 		&:hover,
 		&%circleIconButtonSelected {
