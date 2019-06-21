@@ -33,6 +33,12 @@
 .clearIcon-2N9YIn {
 	@extend %searchBoxIconClear !optional;
 }
+.searchHelpText-19imBp {
+	@extend %searchHelpText !optional;
+}
+.searchHelpTextVisible-1mRnNd {
+	@extend %searchHelpTextVisible !optional;
+}
 // Guild List
 .sectionHeader-1Hee-5 {
 	@extend %discoverySectionHeader !optional;

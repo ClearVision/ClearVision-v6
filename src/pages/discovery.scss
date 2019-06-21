@@ -28,6 +28,14 @@
 		background: hsla(0, 0%, 100%, .1);
 		box-shadow: none;
 	}
+	%searchHelpText {
+		color: transparent;
+		transition: all 0s .3s, color .3s ease-in-out;
+		&%searchHelpTextVisible {
+			color: hsla(0, 0%, 100%, .3);
+			transition-delay: 0s;
+		}
+	}
 }
 %searchBox {
 	%searchBoxInput {
