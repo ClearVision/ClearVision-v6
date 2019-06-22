@@ -1,5 +1,10 @@
-/* //META {"name": "ClearVision", "description": "Public BETA for ClearVision v6.", "author": "Zerthox", "version": "6 BETA", "website": "https://clearvision.gitlab.io"} *//**/
-/* "ClearVision v6 BETA" by Zerthox */
+/**
+ * @name ClearVision
+ * @author Zerthox
+ * @version 6 BETA
+ * @description Public BETA for ClearVision v6.
+ * @website https://clearvision.gitlab.io/join
+ */
 
 /* IMPORT CSS */
 @import url(https://clearvision.gitlab.io/v6/main.css);
