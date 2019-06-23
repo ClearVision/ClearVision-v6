@@ -16,25 +16,25 @@
 	margin-bottom: 1px;
 }
 %statusOnline {
-	background-color: $online-color;
-	color: $online-color;
+	background-color: cv("colors.online");
+	color: cv("colors.online");
 }
 %statusIdle {
-	background-color: $idle-color;
-	color: $idle-color;
+	background-color: cv("colors.idle");
+	color: cv("colors.idle");
 }
 %statusDnd {
-	background-color: $dnd-color;
-	color: $dnd-color;
+	background-color: cv("colors.dnd");
+	color: cv("colors.dnd");
 }
 %statusOffline,
 %statusInvisible {
-	background-color: $offline-color;
-	color: $offline-color;
+	background-color: cv("colors.offline");
+	color: cv("colors.offline");
 }
 %statusStreaming {
-	background-color: $streaming-color;
-	color: $streaming-color;
+	background-color: cv("colors.streaming");
+	color: cv("colors.streaming");
 }
 %appMount %colorblindMode {
 	%status {

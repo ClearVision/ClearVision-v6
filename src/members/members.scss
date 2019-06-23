@@ -1,10 +1,10 @@
 /* MEMBERS */
 %membersWrap {
 	min-width: auto;
-	flex-basis: $members-width;
+	flex-basis: cv("members-width");
 	%members {
-		max-width: $members-width;
-		background: rgba(0, 0, 0, calc(#{map-get($bg, shading)} * .6));
+		max-width: cv("members-width");
+		background: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .6));
 	}
 }
 %members {

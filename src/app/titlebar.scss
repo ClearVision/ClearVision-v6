@@ -6,8 +6,8 @@
 	margin: 0;
 	padding-top: 2px;
 	padding-bottom: 2px;
-	background: rgba(0, 0, 0, calc(#{map-get($bg, shading)} * .6));
-	box-shadow: 0 0 20px rgba(0, 0, 0, calc(#{map-get($bg, shading)} * .6));
+	background: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .6));
+	box-shadow: 0 0 20px rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .6));
 	> %titlebarWordmark {
 		position: static;
 		margin-right: auto;
@@ -26,15 +26,15 @@
 			order: 1;
 		}
 		&:before {
-			content: "#{$titlebar-text}";
+			content: cv("const:text.titlebar.main");
 			color: hsla(0, 0%, 100%, .7);
 			font-size: 14px;
 			text-shadow: 0 0 3px #000;
 		}
 		&:after {
-			content: "#{$titlebar-version}";
+			content: cv("const:text.titlebar.version");
 			color: hsla(0, 0%, 100%, .3);
-			font-family: $code-font;
+			font-family: cv("font.code");
 			font-size: 10px;
 		}
 		> svg {
@@ -55,7 +55,7 @@
 	}
 	> %titlebarWinButtonClose {
 		&:hover {
-			background: $danger-color;
+			background: cv("colors.danger");
 		}
 	}
 }
@@ -83,7 +83,7 @@
 		order: 1;
 	}
 	&:before {
-		content: "#{$titlebar-short}";
+		content: cv("const:text.titlebar.short");
 		color: $main-color;
 		font-weight: 700;
 		text-shadow: 0 0 3px;

@@ -1,7 +1,7 @@
 /* AVATAR */
 %avatar {
 	background-color: transparent;
-	border-radius: $avatar-roundness;
+	border-radius: cv("avatars.roundness");
 	box-shadow: 0 0 5px rgba(0, 0, 0, .5);
 }
 %avatarMask:not(%avatarMaskProfile) {

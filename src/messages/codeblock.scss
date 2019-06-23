@@ -7,7 +7,7 @@
 		background: hsla(0, 0%, 100%, .1);
 		border-radius: 3px;
 		color: hsla(0, 0%, 100%, .7);
-		font-family: $code-font;
+		font-family: cv("font.code");
 		line-height: 22px;
 		+ pre {
 			margin-top: -1px;
@@ -20,7 +20,7 @@
 		padding: 0;
 		background: transparent;
 		border: 2px solid transparent;
-		font-family: $code-font;
+		font-family: cv("font.code");
 	}
 
 	// CODEBLOCK HLJS
@@ -39,5 +39,5 @@
 	}
 }
 code {
-	font-family: $code-font;
+	font-family: cv("font.code");
 }

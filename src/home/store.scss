@@ -8,13 +8,13 @@
 %storeBrowseWrapper,
 %storeListingWrapper {
 	> %scrollerWrap {
-		background-color: rgba(0, 0, 0, calc(#{map-get($bg, shading)} * .5));
+		background-color: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .5));
 	}
 }
 %applicationStore {
 	%storeMatureListing,
 	> %flex:last-child {
-		background-color: rgba(0, 0, 0, calc(#{map-get($bg, shading)} * .5));
+		background-color: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .5));
 	}
 }
 
@@ -414,24 +414,24 @@
 		color: hsla(0, 0%, 100%, .3);
 	}
 	%storeListingInviteStatusOnline {
-		background: $online-color;
+		background: cv("colors.online");
 		box-shadow: 0 0 3px, 0 0 5px rgba(0, 0, 0, .5);
-		color: $online-color;
+		color: cv("colors.online");
 	}
 	%storeListingInviteStatusOffline {
-		background: $offline-color;
+		background: cv("colors.offline");
 		box-shadow: 0 0 3px, 0 0 5px rgba(0, 0, 0, .5);
-		color: $offline-color;
+		color: cv("colors.offline");
 	}
 }
 %storeListing {
 	%storeListingInvite {
 		%buttonFilledPrimary {
-			background: $success-color;
+			background: cv("colors.success");
 			color: #fff;
 			opacity: .7;
 			&:hover {
-				background: $success-color;
+				background: cv("colors.success");
 				color: #fff;
 				opacity: 1;
 			}
@@ -447,6 +447,6 @@
 		color: hsla(0, 0%, 100%, .5);
 	}
 	%storeListingFeatureCheckmark {
-		color: $success-color;
+		color: cv("colors.success");
 	}
 }

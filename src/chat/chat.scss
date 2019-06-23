@@ -10,7 +10,7 @@
 	%chatContent {
 		background: transparent;
 		> %spacer {
-			background: rgba(0, 0, 0, calc(#{map-get($bg, shading)} * .5));
+			background: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .5));
 		}
 	}
 	%messagesWrapper {
@@ -43,7 +43,7 @@
 		opacity: .3;
 	}
 	%chatGatedTitle {
-		color: $danger-color;
+		color: cv("colors.danger");
 		font-weight: 600;
 		text-shadow: 0 0 3px #000;
 	}
@@ -62,7 +62,7 @@
 			content: "";
 			position: absolute;
 			@include stretch;
-			background: $danger-color;
+			background: cv("colors.danger");
 			border-radius: 3px;
 			opacity: .5;
 			transition: inherit;

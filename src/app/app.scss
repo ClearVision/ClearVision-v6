@@ -4,13 +4,13 @@ body {
 		content: "";
 		position: fixed;
 		@include stretch;
-		background: map-get($bg, img) map-get($bg, pos)/map-get($bg, size) map-get($bg, attach) no-repeat;
-		@include filters($bg);
+		background: cv("bg.app.img") cv("bg.app.pos")/cv("bg.app.size") cv("bg.app.repeat") cv("bg.app.attach");
+		@include filters(cv("bg.app"));
 		z-index: -9999;
 	}
 }
 %appMount {
-	background: map-get($bg, overlay);
+	background: cv("bg.app.overlay");
 }
 %appMount {
 	%layers,
@@ -36,15 +36,15 @@ body {
 		content: "";
 		position: fixed;
 		@include stretch;
-		background: map-get($backdrop, img) map-get($backdrop, pos)/map-get($backdrop, size) map-get($backdrop, attach) no-repeat;
-		@include filters($backdrop);
+		background: cv("bg.backdrop.img") cv("bg.backdrop.pos")/cv("bg.backdrop.size") cv("bg.backdrop.repeat") cv("bg.backdrop.attach");
+		@include filters(cv("bg.backdrop"));
 		pointer-events: none;
 	}
 	&:after {
 		content: "";
 		position: fixed;
 		@include stretch;
-		background: map-get($backdrop, overlay);
+		background: cv("bg.backdrop.overlay");
 		pointer-events: none;
 	}
 }
@@ -56,7 +56,7 @@ input,
 select,
 textarea,
 ::placeholder {
-    font-family: $main-font;
+    font-family: cv("font.main");
 }
 
 // SELECTION

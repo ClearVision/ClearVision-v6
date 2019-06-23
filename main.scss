@@ -9,6 +9,9 @@ $titlebar-short: "CV v6";
 $account-text: "ClearVision";
 $account-version: "v6-#{$version}";
 
+// IMPORT FUNCTIONS
+@import "src/functions";
+
 // IMPORT VARIABLES
 @import "src/variables";
 

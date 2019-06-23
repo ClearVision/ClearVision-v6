@@ -1,95 +1,138 @@
-// COLOR CONSTANTS
-$discord-blurple: #7289da;
-$twitch-purple: #593695;
-$spotify-green: #1db954;
-$xbox-green: #107c10;
-$facebook-blue: #355089;
+// CLEARVISION VARIABLES
+$cv: (
 
-// COLOR SETTINGS
-$main-color: var(--main-color);
-$hover-color: var(--hover-color);
-$success-color: var(--success-color);
-$danger-color: var(--danger-color);
-$online-color: var(--online-color);
-$idle-color: var(--idle-color);
-$dnd-color: var(--dnd-color);
-$offline-color: var(--offline-color);
-$streaming-color: var(--streaming-color);
+	// CONSTANTS
+	constants: (
+		colors: (
+			discord-blurple: #7289da,
+			twitch-purple: #593695,
+			spotify-green: #1db954,
+			xbox-green: #107c10,
+			facebook-blue: #355089
+		),
+		text: (
+			titlebar: (
+				main: "ClearVision",
+				version: "v6-#{$version}",
+				short: "CV v6"
+			),
+			account: (
+				main: "ClearVision",
+				version: "v6-#{$version}"
+			)
+		)
+	),
 
-// GENERAL SETTINGS
-$main-font: var(--main-font);
-$code-font: var(--code-font);
-$server-columns: var(--server-columns);
-$channels-width: var(--channels-width);
-$members-width: var(--members-width);
-$avatar-roundness: var(--avatar-roundness);
+	// SETTINGS
+	settings: (
 
-// BACKGROUND SETTINGS
-$bg: (
-	shading: var(--background-shading),
-	overlay: var(--background-overlay),
-	img: var(--background-image),
-	pos: var(--background-position),
-	size: var(--background-size),
-	attach: var(--background-attachment),
-	brightness: var(--background-brightness),
-	contrast: var(--background-contrast),
-	saturate: var(--background-saturation),
-	invert: var(--background-invert),
-	grayscale: var(--background-grayscale),
-	sepia: var(--background-sepia),
-	blur: var(--background-blur)
+		// COLORS
+		colors: (
+			main: var(--main-color),
+			hover: var(--hover-color),
+			success: var(--success-color),
+			danger: var(--danger-color),
+			online: var(--online-color),
+			idle: var(--idle-color),
+			dnd: var(--dnd-color),
+			offline: var(--offline-color),
+			streaming: var(--streaming-color)
+		),
+
+		// FONT
+		font: (
+			main: var(--main-font),
+			code: var(--code-font)
+		),
+
+		// GENERAL
+		server-columns: var(--server-columns),
+		channels-width: var(--channels-width),
+		members-width: var(--members-width),
+		avatars: (
+			roundness: var(--avatar-roundness)
+		),
+
+		// BACKGROUNDS
+		bg: (
+
+			// APP BACKGROUND
+			app: (
+				shading: var(--background-shading),
+				overlay: var(--background-overlay),
+				img: var(--background-image),
+				pos: var(--background-position),
+				size: var(--background-size),
+				repeat: var(--background-repeat),
+				attach: var(--background-attachment),
+				brightness: var(--background-brightness),
+				contrast: var(--background-contrast),
+				saturate: var(--background-saturation),
+				invert: var(--background-invert),
+				grayscale: var(--background-grayscale),
+				sepia: var(--background-sepia),
+				blur: var(--background-blur)
+			),
+
+			// BACKDROP BACKGROUND
+			backdrop: (
+				overlay: var(--backdrop-overlay),
+				img: var(--backdrop-image),
+				pos: var(--backdrop-position),
+				size: var(--backdrop-size),
+				repeat: var(--backdrop-repeat),
+				attach: var(--backdrop-attachment),
+				brightness: var(--backdrop-brightness),
+				contrast: var(--backdrop-contrast),
+				saturate: var(--backdrop-saturation),
+				invert: var(--backdrop-invert),
+				grayscale: var(--backdrop-grayscale),
+				sepia: var(--backdrop-sepia),
+				blur: var(--backdrop-blur)
+			),
+
+			// USER POPOUT BACKGROUND
+			popout: (
+				img: var(--user-popout-image),
+				pos: var(--user-popout-position),
+				size: var(--user-popout-size),
+				repeat: var(--user-popout-repeat),
+				attach: var(--user-popout-attachment),
+				brightness: var(--user-popout-brightness),
+				contrast: var(--user-popout-contrast),
+				saturate: var(--user-popout-saturation),
+				invert: var(--user-popout-invert),
+				grayscale: var(--user-popout-grayscale),
+				sepia: var(--user-popout-sepia),
+				blur: var(--user-popout-blur)
+			),
+			
+			// USER MODAL BACKGROUND
+			modal: (
+				img: var(--user-modal-image),
+				pos: var(--user-modal-position),
+				size: var(--user-modal-size),
+				repeat: var(--user-modal-repeat),
+				attach: var(--user-modal-attachment),
+				brightness: var(--user-modal-brightness),
+				contrast: var(--user-modal-contrast),
+				saturate: var(--user-modal-saturation),
+				invert: var(--user-modal-invert),
+				grayscale: var(--user-modal-grayscale),
+				sepia: var(--user-modal-sepia),
+				blur: var(--user-modal-blur)
+			),
+			
+			// HOME BUTTON BACKGROUND
+			home: (
+				icon: var(--home-icon),
+				pos: var(--home-position),
+				size: var(--home-size)
+			)
+		)
+	)
 );
-	
-// BACKDROP SETTINGS
-$backdrop: (
-	overlay: var(--backdrop-overlay),
-	img: var(--backdrop-image),
-	pos: var(--backdrop-position),
-	size: var(--backdrop-size),
-	attach: var(--backdrop-attachment),
-	brightness: var(--backdrop-brightness),
-	contrast: var(--backdrop-contrast),
-	saturate: var(--backdrop-saturation),
-	invert: var(--backdrop-invert),
-	grayscale: var(--backdrop-grayscale),
-	sepia: var(--backdrop-sepia),
-	blur: var(--backdrop-blur)
-);
 
-// POPOUT SETTINGS
-$popout: (
-	img: var(--user-popout-image),
-	pos: var(--user-popout-position),
-	size: var(--user-popout-size),
-	attach: var(--user-popout-attachment),
-	brightness: var(--user-popout-brightness),
-	contrast: var(--user-popout-contrast),
-	saturate: var(--user-popout-saturation),
-	invert: var(--user-popout-invert),
-	grayscale: var(--user-popout-grayscale),
-	sepia: var(--user-popout-sepia),
-	blur: var(--user-popout-blur)
-);
-
-// MODAL SETTINGS
-$modal: (
-	img: var(--user-modal-image),
-	pos: var(--user-modal-position),
-	size: var(--user-modal-size),
-	attach: var(--user-modal-attachment),
-	brightness: var(--user-modal-brightness),
-	contrast: var(--user-modal-contrast),
-	saturate: var(--user-modal-saturation),
-	invert: var(--user-modal-invert),
-	grayscale: var(--user-modal-grayscale),
-	sepia: var(--user-modal-sepia),
-	blur: var(--user-modal-blur)
-);
-
-// HOME SETTINGS
-$home: (
-	icon: var(--home-icon),
-	pos: var(--home-position),
-	size: var(--home-size)
-);
+// FALLBACK
+$main-color: cv("colors.main");
+$hover-color: cv("colors.hover");

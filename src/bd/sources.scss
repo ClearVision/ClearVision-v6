@@ -38,7 +38,7 @@ html[lang] body #app-mount%appMount {
 							padding: 0 !important;
 							margin: 0 !important;
 							display: block !important;
-							background: $danger-color !important;
+							background: cv("colors.danger") !important;
 							border: none !important;
 							border-radius: 3px !important;
 							color: #fff !important;
@@ -49,7 +49,7 @@ html[lang] body #app-mount%appMount {
 							z-index: 1;
 						}
 						&:hover {
-							color: $danger-color !important;
+							color: cv("colors.danger") !important;
 							&:before {
 								opacity: 0;
 							}
@@ -94,7 +94,7 @@ html[lang] body #app-mount%appMount {
 							display: flex;
 							align-items: center;
 							justify-content: center;
-							background: $danger-color;
+							background: cv("colors.danger");
 							border-radius: inherit;
 							color: #fff;
 							opacity: .7;
@@ -144,11 +144,11 @@ html[lang] body #app-mount%appMount {
 						display: flex !important;
 						align-items: center;
 						justify-content: center;
-						background: $danger-color !important;
+						background: cv("colors.danger") !important;
 						border: none !important;
 						border-radius: inherit !important;
 						color: #fff !important;
-						background: $danger-color;
+						background: cv("colors.danger");
 						opacity: .7;
 						transition: all .3s ease-in-out;
 						z-index: 1;
@@ -171,7 +171,7 @@ html[lang] body #app-mount%appMount {
 								content: "\26A0  Unofficial source";
 								position: absolute;
 								@include stretch;
-								background: $danger-color;
+								background: cv("colors.danger");
 								border-radius: 3px;
 								color: #fff;
 								text-align: center;
@@ -181,23 +181,23 @@ html[lang] body #app-mount%appMount {
 								z-index: 1;
 							}
 							&:hover {
-								color: $danger-color;
+								color: cv("colors.danger");
 								&:before {
 									opacity: 0;
 								}
 							}
 						}
 						%inviteStatusOnline {
-							background: $danger-color;
-							color: $danger-color;
+							background: cv("colors.danger");
+							color: cv("colors.danger");
 						}
 					}
 					~ %inviteButton {
 						cursor: not-allowed;
 						&%inviteButtonAccept {
-							border-color: $danger-color;
+							border-color: cv("colors.danger");
 							&:hover {
-								background: $danger-color;
+								background: cv("colors.danger");
 							}
 							%buttonContents {
 								&:before {
@@ -207,7 +207,7 @@ html[lang] body #app-mount%appMount {
 							}
 						}
 						&%inviteButtonJoined {
-							background: $danger-color;
+							background: cv("colors.danger");
 						}
 					}
 				}

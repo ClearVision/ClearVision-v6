@@ -1,7 +1,7 @@
 /* SERVER DISCOVERY */
 %base {
 	%pageWrapper {
-		background: rgba(0, 0, 0, calc(#{map-get($bg, shading)} * .5));
+		background: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .5));
 	}
 }
 %discoveryBG {
@@ -79,14 +79,14 @@
 		}
 	}
 	%discoveryGuildStatusOnline {
-		background-color: $online-color;
+		background-color: cv("colors.online");
 		box-shadow: 0 0 3px, 0 0 5px rgba(0, 0, 0, .5);
-		color: $online-color;
+		color: cv("colors.online");
 	}
 	%discoveryGuildStatusOffline{
-		background-color: $offline-color;
+		background-color: cv("colors.offline");
 		box-shadow: 0 0 3px, 0 0 5px rgba(0, 0, 0, .5);
-		color: $offline-color;
+		color: cv("colors.offline");
 	}
 }
 %discoveryGuildList {

@@ -21,15 +21,15 @@
 		}
 	}
 	&%tooltipRed {
-		background: $danger-color;
+		background: cv("colors.danger");
 		> %tooltipPointer {
-			border-top-color: $danger-color;
+			border-top-color: cv("colors.danger");
 		}
 	}
 	&%tooltipGreen {
-		background: $success-color;
+		background: cv("colors.success");
 		> %tooltipPointer {
-			border-top-color: $success-color;
+			border-top-color: cv("colors.success");
 		}
 	}
 	&%tooltipTop {

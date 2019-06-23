@@ -167,7 +167,7 @@
 						content: "";
 						position: absolute;
 						@include stretch;
-						background: $danger-color;
+						background: cv("colors.danger");
 						opacity: .5;
 						transition: inherit;
 						z-index: -1;

@@ -5,7 +5,7 @@
 	> %accountPanel,
 	> %connectionPanel {
 		background: transparent;
-		box-shadow: 0 -2px 10px rgba(0, 0, 0, calc(#{map-get($bg, shading)} * .3));
+		box-shadow: 0 -2px 10px rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .3));
 	}
 	> %connectionPanel ~ %accountPanel {
 		box-shadow: none;
@@ -117,13 +117,13 @@
 		transition: all .5s ease-in-out;
 	}
 	&:before {
-		content: "#{$account-text}";
+		content: cv("const:text.account.main");
 		right: 50%;
 		text-align: right;
 		transform: translateX(50%);
 	}
 	&:after {
-		content: "#{$account-version}";
+		content: cv("const:text.account.version");
 		left: 50%;
 		text-align: left;
 		opacity: 0;
@@ -171,7 +171,7 @@
 				font-weight: 700;
 				text-align: center;
 				line-height: 30px;
-				border-radius: $avatar-roundness;
+				border-radius: cv("avatars.roundness");
 				box-shadow: inset 0 0 70px rgba(0, 0, 0, .75);
 				opacity: 0;
 				transition: all .15s ease-in-out;

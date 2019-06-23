@@ -25,16 +25,16 @@
         background: rgba(#f04747, .6);
     }
     &%noticeStreamerMode {
-        background: rgba($twitch-purple, .6);
+        background: rgba(cv("const:colors.twitch-purple"), .6);
     }
     &%noticeFacebook {
-        background: rgba($facebook-blue, .6);
+        background: rgba(cv("const:colors.facebook-blue"), .6);
     }
     &%noticeSpotify {
-        background: rgba($spotify-green, .6);
+        background: rgba(cv("const:colors.spotify-green"), .6);
     }
     &%noticeBrand {
-        background: rgba($discord-blurple, .6);
+        background: rgba(cv("const:colors.discord-blurple"), .6);
     }
     %noticeButton {
         background: hsla(0, 0%, 100%, .1);

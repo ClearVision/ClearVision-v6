@@ -12,9 +12,9 @@
 		content: "";
 		position: absolute;
 		@include stretch;
-		margin: calc(-2 * #{map-get($popout, blur)});
-		background: map-get($popout, img) map-get($popout, pos)/map-get($popout, size) map-get($popout, attach) no-repeat;
-		@include filters($popout);
+		margin: calc(-2 * #{cv("bg.popout.blur")});
+		background: cv("bg.popout.img") cv("bg.popout.pos")/cv("bg.popout.size") cv("bg.popout.repeat") cv("bg.popout.attach");
+		@include filters(cv("bg.popout"));
 		z-index: -1;
 	}
 	%popoutLeft > & {
@@ -23,7 +23,7 @@
 		&:before {
 			left: calc(-100% - 15px);
 			right: calc(100% + 15px);
-			transform: translateX(calc(100% + 15px - 4 * #{map-get($popout, blur)}));
+			transform: translateX(calc(100% + 15px - 4 * #{cv("bg.popout.blur")}));
 		}
 	}
 
@@ -33,20 +33,20 @@
 	}
 	%userPopoutHeaderStreaming {
 		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .4)) center/cover,
-			linear-gradient(to bottom, rgba($twitch-purple, .4) 93%, transparent 100%);
+			linear-gradient(to bottom, rgba(cv("const:colors.twitch-purple"), .4) 93%, transparent 100%);
 	}
 	%userPopoutHeaderSpotify {
 		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .4)) center/cover,
-			linear-gradient(to bottom, rgba($spotify-green, .4) 93%, transparent 100%);
+			linear-gradient(to bottom, rgba(cv("const:colors.spotify-green"), .4) 93%, transparent 100%);
 	}
 	%userPopoutHeaderXbox {
 		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .4)) center/cover,
-			linear-gradient(to bottom, rgba($xbox-green, .4) 93%, transparent 100%);
+			linear-gradient(to bottom, rgba(cv("const:colors.xbox-green"), .4) 93%, transparent 100%);
 		%userPopoutActions {
 			> %button {
-				background: rgba($xbox-green, .3);
+				background: rgba(cv("const:colors.xbox-green"), .3);
 				&:hover {
-					background: rgba($xbox-green, .5);
+					background: rgba(cv("const:colors.xbox-green"), .5);
 				}
 			}
 		}

@@ -30,7 +30,7 @@
 
 	// FRIENDS TABLE
 	%friendsTable {
-		background-color: rgba(0, 0, 0, calc(#{map-get($bg, shading)} * .5));
+		background-color: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .5));
 		margin-top: 0;
 		%friendsTableHeader {
 			border-bottom: 1px solid hsla(0, 0%, 100%, .07);
@@ -117,14 +117,14 @@
 				> %friendsActionAdd,
 				> %friendsActionAccept {
 					&:hover {
-						background-color: $success-color !important;
+						background-color: cv("colors.success") !important;
 					}
 				}
 				> %friendsActionRemove,
 				> %friendsActionCancel,
 				> %friendsActionIgnore {
 					&:hover {
-						background-color: $danger-color !important;
+						background-color: cv("colors.danger") !important;
 					}
 				}
 			}

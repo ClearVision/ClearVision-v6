@@ -10,7 +10,7 @@
 		@include hover-shadow;
 	}
 	%inviteGuildNameExpired {
-		color: $danger-color;
+		color: cv("colors.danger");
 	}
 	%inviteGuildIcon {
 		background-color: hsla(0, 0%, 100%, .04);
@@ -27,7 +27,7 @@
 			bottom: 10%;
 			left: 50%;
 			width: 6px;
-			background: $danger-color;
+			background: cv("colors.danger");
 			border-radius: 1px;
 		}
 		&:after {
@@ -43,22 +43,22 @@
 		color: hsla(0, 0%, 100%, .3);
 	}
 	%inviteStatusOnline {
-		background: $online-color;
-		color: $online-color;
+		background: cv("colors.online");
+		color: cv("colors.online");
 	}
 	%inviteStatusOffline {
-		background: $offline-color;
-		color: $offline-color;
+		background: cv("colors.offline");
+		color: cv("colors.offline");
 	}
 	%inviteButton{
 		border-color: transparent;
 	}
 	%inviteButtonAccept {
 		background: transparent;
-		border: 1px solid $success-color;
+		border: 1px solid cv("colors.success");
 		transition: all .3s ease-in-out;
 		&:hover {
-			background: $success-color;
+			background: cv("colors.success");
 		}
 	}
 	%inviteButtonJoined {
@@ -69,10 +69,10 @@
 	}
 	%inviteButtonExpired {
 		background: transparent;
-		border: 1px solid $danger-color;
+		border: 1px solid cv("colors.danger");
 		transition: all .3s ease-in-out;
 		&:hover {
-			background: $danger-color;
+			background: cv("colors.danger");
 		}
 	}
 }
