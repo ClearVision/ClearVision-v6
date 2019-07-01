@@ -23,7 +23,8 @@ $languages: (
 	"Batch": ("dos", "bat", "cmd"),
 	"BNF": ("bnf", "bf"), // Backus-Naur Form
 	"Brainfuck": "brainfuck",
-	"C/C++": ("c", "cc", "cpp", "h", "hpp"),
+	"C/C++": ("c","h"),
+	"C++": ("cc", "cpp", "hpp"),
 	"C#": ("cs", "csharp"),
 	"C/AL": "cal", // Client/server Application Language
 	"Cap'n Proto": ("capnproto", "capnp"),
