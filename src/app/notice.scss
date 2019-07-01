@@ -1,59 +1,59 @@
 /* APP NOTICE */
 %appMount {
-    %notice {
-        border-radius: 3px !important;
-        color: hsla(0, 0%, 100%, .7);
-    }
+	%notice {
+		border-radius: 3px !important;
+		color: hsla(0, 0%, 100%, .7);
+	}
 }
 %notice {
-    &%noticeDefault {
-        background: rgba(#f26522, .6);
-    }
-    &%noticePremium {
-        background: rgba(#202225, .6);
-    }
-    &%noticePremiumGrandfathered {
-        background: linear-gradient(270deg, rgba(#b3aeff, .6), rgba(#738ef5 , .6));
-    }
-    &%noticeInfo {
-        background: rgba(#4a90e2, .6);
-    }
-    &%noticeSuccess {
-        background: rgba(#43b581, .6);
-    }
-    &%noticeDanger {
-        background: rgba(#f04747, .6);
-    }
-    &%noticeStreamerMode {
-        background: rgba(cv("const:colors.twitch-purple"), .6);
-    }
-    &%noticeFacebook {
-        background: rgba(cv("const:colors.facebook-blue"), .6);
-    }
-    &%noticeSpotify {
-        background: rgba(cv("const:colors.spotify-green"), .6);
-    }
-    &%noticeBrand {
-        background: rgba(cv("const:colors.discord-blurple"), .6);
-    }
-    %noticeButton {
-        background: hsla(0, 0%, 100%, .1);
-        border: 1px solid transparent;
-        color: #fff;
-        transition: all .15s ease-in-out;
-        mix-blend-mode: screen;
-        transform: translateZ(0);
-        &:hover {
-            background: #fff;
-            color: #000;
-        }
-    }
-    %noticeDismiss {
-        background: url(https://clearvision.gitlab.io/icons/close.svg) center/18px no-repeat;
-        opacity: .5;
-        transition: all .15s ease-in-out;
-        &:hover {
-            opacity: 1;
-        }
-    }
+	&%noticeDefault {
+		background: rgba(#f26522, .6);
+	}
+	&%noticePremium {
+		background: rgba(#202225, .6);
+	}
+	&%noticePremiumGrandfathered {
+		background: linear-gradient(270deg, rgba(#b3aeff, .6), rgba(#738ef5 , .6));
+	}
+	&%noticeInfo {
+		background: rgba(#4a90e2, .6);
+	}
+	&%noticeSuccess {
+		background: rgba(#43b581, .6);
+	}
+	&%noticeDanger {
+		background: rgba(#f04747, .6);
+	}
+	&%noticeStreamerMode {
+		background: rgba(cv("const:colors.twitch-purple"), .6);
+	}
+	&%noticeFacebook {
+		background: rgba(cv("const:colors.facebook-blue"), .6);
+	}
+	&%noticeSpotify {
+		background: rgba(cv("const:colors.spotify-green"), .6);
+	}
+	&%noticeBrand {
+		background: rgba(cv("const:colors.discord-blurple"), .6);
+	}
+	%noticeButton {
+		background: hsla(0, 0%, 100%, .1);
+		border: 1px solid transparent;
+		color: #fff;
+		transition: all .15s ease-in-out;
+		mix-blend-mode: screen;
+		transform: translateZ(0);
+		&:hover {
+			background: #fff;
+			color: #000;
+		}
+	}
+	%noticeDismiss {
+		background: url(https://clearvision.gitlab.io/icons/close.svg) center/18px no-repeat;
+		opacity: .5;
+		transition: all .15s ease-in-out;
+		&:hover {
+			opacity: 1;
+		}
+	}
 }

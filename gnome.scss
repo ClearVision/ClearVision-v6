@@ -2,23 +2,23 @@
 
 // GNOME
 body {
-    &:before,
-    &:after {
-        content: "";
-        position: fixed;
-        width: 100vw;
-        height: 100vh;
-        background: url(https://vignette.wikia.nocookie.net/surrealmemes/images/f/ff/Noggin.png) center/contain no-repeat;
-        z-index: 9999;
-        pointer-events: none;
-        opacity: 0;
-    }
-    &:before {
-        animation: g-in 3s 1s;
-    }
-    &:after {
-        animation: g-move 4s 4s infinite;
-    }
+	&:before,
+	&:after {
+		content: "";
+		position: fixed;
+		width: 100vw;
+		height: 100vh;
+		background: url(https://vignette.wikia.nocookie.net/surrealmemes/images/f/ff/Noggin.png) center/contain no-repeat;
+		z-index: 9999;
+		pointer-events: none;
+		opacity: 0;
+	}
+	&:before {
+		animation: g-in 3s 1s;
+	}
+	&:after {
+		animation: g-move 4s 4s infinite;
+	}
 }
 
 // KEYFRAMES

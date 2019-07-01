@@ -63,7 +63,7 @@
 			}
 		}
 		%searchPopoutFilter {
-			color: hsla(0, 0%, 100%, .3);     
+			color: hsla(0, 0%, 100%, .3);
 			transition: all .15s ease-in-out;
 		}
 		%searchPopoutAnswer {
@@ -90,7 +90,7 @@
 				}
 			}
 			%searchPopoutFilter {
-				color: hsla(0, 0%, 100%, .5);     
+				color: hsla(0, 0%, 100%, .5);
 			}
 			%searchPopoutAnswer,
 			%searchPopoutNonText {
@@ -108,7 +108,7 @@
 				transition: all .15s ease-in-out;
 			}
 			%searchPopoutDisplayUsername {
-				color: hsla(0, 0%, 100%, .3);     
+				color: hsla(0, 0%, 100%, .3);
 				transition: all .15s ease-in-out;
 			}
 			&%searchPopoutOptionSelected {
@@ -116,7 +116,7 @@
 					color: hsla(0, 0%, 100%, .7);
 				}
 				%searchPopoutDisplayUsername {
-					color: hsla(0, 0%, 100%, .5);     
+					color: hsla(0, 0%, 100%, .5);
 				}
 			}
 		}

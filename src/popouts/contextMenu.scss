@@ -9,10 +9,10 @@
 	}
 }
 %contextMenu {
-    &%contextMenuInvertChildX,
-    %contextMenuInvertChildX & {
-        transform-origin: 100% 50%;
-    }
+	&%contextMenuInvertChildX,
+	%contextMenuInvertChildX & {
+		transform-origin: 100% 50%;
+	}
 	%contextMenuItemGroup {
 		border-top-color: hsla(0, 0%, 100%, .04);
 	}
