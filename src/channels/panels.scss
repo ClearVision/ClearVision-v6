@@ -142,7 +142,7 @@
 	}
 
 	// AVATAR
-	%accountPanelAvatarWrapper {
+	%accountPanelAvatar {
 		width: auto;
 		height: auto;
 		&:hover {
@@ -154,7 +154,7 @@
 			margin-top: -6.5px;
 			margin-left: -6.5px;
 		}
-		> %accountPanelAvatar {
+		> %avatarInner {
 			position: relative;
 			width: 30px;
 			height: 30px;
@@ -189,16 +189,16 @@
 			opacity: 1;
 		}
 	}
-	%accountPanelAvatarWrapper {
-		%accountPanelAvatar {
+	%accountPanelAvatar {
+		%avatarInner {
 			&:hover {
 				@extend %#{$accountPanelAvatarPopoutOpen};
 			}
 		}
 	}
 	.popout-open {
-		> %accountPanelAvatarWrapper {
-			%accountPanelAvatar {
+		> %accountPanelAvatar {
+			%avatarInner {
 				@extend %#{$accountPanelAvatarPopoutOpen};
 			}
 		}
