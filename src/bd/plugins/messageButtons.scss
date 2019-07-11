@@ -1,8 +1,7 @@
 // MESSAGE BUTTONS
-%replyerButton,
-%quoteButton,
-%citarButton,
-%discryptButton {
+.replyer,
+.btn-quote,
+.citar-btn {
 	background-color: rgba(0, 0, 0, .4) !important;
 	border-radius: 3px;
 	transition: all .3s ease-in-out;
@@ -14,15 +13,14 @@
 		opacity: 0;
 	}
 }
-%replyerButton,
-%quoteButton,
-%discryptButton {
+.replyer,
+.btn-quote {
 	%messageGroup:hover & {
 		opacity: 1;
 		animation: cv-fade-in .3s ease-in-out;
 	}
 }
-%citarButton {
+.citar-btn {
 	%messageGroup:hover & {
 		opacity: .8;
 		animation: cv-fade-to-8 .3s ease-in-out;

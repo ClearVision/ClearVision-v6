@@ -1,10 +1,10 @@
 // OWNER TAG
-%ownerTag {
+.owner-tag {
 	color: hsla(0, 0%, 100%, .6);
 	&[style*=background] {
 		color: #fff;
 	}
-	%badgesEverywhereWrapper + & {
+	.BE-badges + & {
 		margin-left: 0;
 	}
 }
