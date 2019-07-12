@@ -1,4 +1,10 @@
 /* STATUS PICKER */
+%popoutLayer {
+	%statusPicker {
+		margin-left: -8px;
+		background: rgba(0, 0, 0, .7);
+	}
+}
 %statusPicker {
 	> %guildHeaderPopoutItem {
 		position: relative;
@@ -35,7 +41,4 @@
 			}
 		}
 	}
-}
-%popoutTopLeft%popoutNoArrow {
-	margin-left: -8px;
 }

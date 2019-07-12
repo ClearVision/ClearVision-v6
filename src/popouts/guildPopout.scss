@@ -2,6 +2,11 @@
 %popout {
 	%guildHeaderPopout {
 		background: rgba(0, 0, 0, .7);
+	}
+}
+%appMount {
+	%guildHeaderPopout {
+		background: rgba(0, 0, 0, .7);
 		%guildHeaderPopoutItem {
 			color: hsla(0, 0%, 100%, .7);
 			transition: all .15s ease-in-out;
