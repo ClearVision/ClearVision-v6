@@ -20,7 +20,8 @@
 		color: #fff;
 		font-weight: 600;
 		text-shadow: 0 0 3px #000;
-		&:hover {
+		&:hover,
+		&.popout-open {
 			background: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .3));
 		}
 	}
