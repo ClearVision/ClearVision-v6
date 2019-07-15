@@ -1,19 +1,30 @@
+[release-badge]: https://img.shields.io/github/release-pre/ClearVision/v6.svg?style=flat-square
+[release-link]: https://github.com/ClearVision/v6/releases
+[license-badge]: https://img.shields.io/github/license/ClearVision/v6.svg?style=flat-square
+[license-link]: https://github.com/ClearVision/v6/blob/master/LICENSE
+[discord-badge]: https://img.shields.io/discord/212324635356692500.svg?style=flat-square
+[discord-link]: https://clearvision.gitlab.io/join
+[issues-badge]: https://img.shields.io/github/issues/ClearVision/v6.svg?style=flat-square
+[issues-link]: https://github.com/ClearVision/v6/issues
+[prs-badge]: https://img.shields.io/github/issues-pr/ClearVision/v6.svg?style=flat-square
+[prs-link]: https://github.com/ClearVision/v6/pulls
+
 <div align="center">
 
 # ClearVision v6
 
-[![Releases](https://img.shields.io/github/release-pre/ClearVision/v6.svg?style=flat-square)](https://github.com/ClearVision/v6/releases)
-[![License](https://img.shields.io/github/license/ClearVision/v6.svg?style=flat-square)](https://github.com/ClearVision/v6/blob/master/LICENSE)
-[![Discord Server](https://img.shields.io/discord/212324635356692500.svg?style=flat-square)](https://clearvision.gitlab.io/join)
-[![Issues](https://img.shields.io/github/issues/ClearVision/v6.svg?style=flat-square)](https://github.com/ClearVision/v6/issues)
-[![Pull Requests](https://img.shields.io/github/issues-pr/ClearVision/v6.svg?style=flat-square)](https://github.com/ClearVision/v6/pulls)
+[![Releases][release-badge]][release-link]
+[![License][license-badge]][license-link]
+[![Discord Server][discord-badge]][discord-link]
+[![Issues][issues-badge]][issues-link]
+[![Pull Requests][prs-badge]][prs-link]
 
 ![v6 Sapphire](https://github.com/Zerthox/ClearVision/raw/master/screenshots/v6.png)
 
 </div>
 
 ## Installing
-Download the theme file and move it into your BetterDiscord themes folder:
+Download the theme file and move it into your [BetterDiscord](https://betterdiscord.net) themes folder:
 
 >[ClearVision_v6.theme.css](https://clearvision.gitlab.io/download/v6/latest)
 
