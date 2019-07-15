@@ -1,0 +1,29 @@
+{
+  "name": "clearvision",
+  "version": "6.0.0-pre.4.7.0",
+  "description": "Public Beta for ClearVision v6.",
+  "private": true,
+  "scripts": {
+    "clean": "rimraf {test,public}",
+    "test": "node-sass ./ --output=test --recursive=false --output-style=expanded",
+    "build": "npm run build.sass && npm run build.prefix",
+    "build.sass": "node-sass ./ --output=public --recursive=false --output-style=compressed",
+    "build.prefix": "postcss public/*.css --dir=public --use=autoprefixer  -b=\"> 5%\" --no-map"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClearVision/v6.git"
+  },
+  "author": "Zerthox",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ClearVision/v6/issues"
+  },
+  "homepage": "https://github.com/ClearVision/v6#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "node-sass": "^4.12.0",
+    "postcss-cli": "^6.1.3",
+    "rimraf": "^2.6.3"
+  }
+}
