@@ -29,8 +29,15 @@ Download the theme file and move it into your [BetterDiscord](https://betterdisc
 >[ClearVision_v6.theme.css](https://clearvision.gitlab.io/download/v6/latest)
 
 ## Building from source
-In order build the theme from source you have to install [Sass](https://sass-lang.com) & [PostCSS Autoprefixer](https://github.com/postcss/autoprefixer).  
-The CI of this repository uses [Node Sass](https://github.com/sass/node-sass) & [PostCSS CLI](https://github.com/postcss/postcss-cli) to build the theme.
+In order build the theme from source you'll need [Sass](https://sass-lang.com) & [PostCSS Autoprefixer](https://github.com/postcss/autoprefixer).  
+With [npm](https://npmjs.org/get-npm) installed you can simply run `npm install` to install all missing dependencies and then to compile the theme into the `/public` folder via `npm run build`.
+
+**Dependencies:**
+- [node-sass](https://github.com/sass/node-sass)
+- [PostCSS Autoprefixer](https://github.com/postcss/autoprefixer)
+- [PostCSS CLI](https://github.com/postcss/postcss-cli)
+- *[DiscordSelectors](https://github.com/zerthox/discordselectors) (included in the `/lib` folder)*
+- *[rimraf](https://github.com/isaacs/rimraf) (for cleanup)*
 
 ## Contributing
 In order to contribute you need to be able to compile [Sass](https://sass-lang.com).
