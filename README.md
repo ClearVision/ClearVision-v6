@@ -30,7 +30,7 @@ Download the theme file and move it into your [BetterDiscord](https://betterdisc
 
 ## Building from source
 In order build the theme from source you'll need [Sass](https://sass-lang.com) & [PostCSS Autoprefixer](https://github.com/postcss/autoprefixer).  
-With [npm](https://npmjs.org/get-npm) installed you can simply run `npm install` to install all missing dependencies and then to compile the theme into the `/public` folder via `npm run build`.
+With [npm](https://npmjs.org/get-npm) installed you can simply run `npm install` to install all missing dependencies and compile the theme into the `/public` folder via `npm run build`.
 
 **Dependencies:**
 - [node-sass](https://github.com/sass/node-sass)
