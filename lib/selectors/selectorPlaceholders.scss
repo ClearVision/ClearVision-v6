@@ -1,4 +1,4 @@
-/*! Powered by DiscordSelectors v0.1.1 */
+/*! Powered by DiscordSelectors v0.1.2 */
 .appMount-3lHmkl {
 	@extend %appMount !optional;
 }
@@ -13,9 +13,6 @@
 }
 .platform-web {
 	@extend %platformWeb !optional;
-}
-.colorblind-mode {
-	@extend %colorblindMode !optional;
 }
 .theme-dark {
 	@extend %themeDark !optional;
@@ -1115,6 +1112,51 @@
 .pulsingEllipsisItem-32hhWL {
 	@extend %spinnerPulsingEllipsisItem !optional;
 }
+.switch-3wwwcV {
+	@extend %switch !optional;
+}
+.switchEnabled-V2WDBB {
+	@extend %switchEnabled !optional;
+}
+.switchDisabled-3HsXAJ {
+	@extend %switchDisabled !optional;
+}
+.value-2hFrkk {
+	@extend %switchValue !optional;
+}
+.valueChecked-m-4IJZ {
+	@extend %switchValueChecked !optional;
+}
+.valueUnchecked-2lU_20 {
+	@extend %switchValueUnckecked !optional;
+}
+.size-3rFEHg {
+	@extend %switchSize !optional;
+}
+.sizeDefault-2YlOZr {
+	@extend %switchSizeDefault !optional;
+}
+.sizeMini-1ii40f {
+	@extend %switchSizeMini !optional;
+}
+.themeDefault-24hCdX {
+	@extend %switchThemeDefault !optional;
+}
+.themeClear-1EjkE4 {
+	@extend %switchThemeClear !optional;
+}
+.switchItem-2hKKKK {
+	@extend %switchItem !optional;
+}
+.checkbox-2tyjJg {
+	@extend %switchCheckbox !optional;
+}
+.checkboxEnabled-CtinEn {
+	@extend %switchCheckboxEnabled !optional;
+}
+.checkboxDisabled-1MA81A {
+	@extend %switchCheckboxDisabled !optional;
+}
 .item-PXvHYJ {
 	@extend %tabBarItem !optional;
 }
@@ -1645,6 +1687,9 @@
 }
 .friendsColumnStatus-ZH4ho2 {
 	@extend %friendsColumnStatus !optional;
+}
+.status-mz5rqq {
+	@extend %friendsTableStatus !optional;
 }
 .friendActivityText-2lmziy {
 	@extend %friendActivityText !optional;
@@ -2339,11 +2384,11 @@
 .member-3W1lQa.popout-open {
 	@extend %memberPopoutOpen !optional;
 }
-.content-OzHfo4 {
-	@extend %memberContent !optional;
-}
 .memberInner-2CPc3V {
 	@extend %memberInner !optional;
+}
+.memberContent-1MK6T5 {
+	@extend %memberContent !optional;
 }
 .nameTag-3p0yK- {
 	@extend %memberNameTag !optional;
@@ -3473,6 +3518,9 @@ pre {
 .item-1GzJrl {
 	@extend %guildHeaderPopoutItem !optional;
 }
+.invite-271nFU {
+	@extend %guildHeaderPopoutItemInvite !optional;
+}
 .separator-2zcjq8 {
 	@extend %guildHeaderPopoutSeparator !optional;
 }
@@ -3788,8 +3836,11 @@ pre {
 .statusIconText-3b4TkH {
 	@extend %statusPickerText !optional;
 }
-.status-3fQvEa {
+.status-3Kz6VS {
 	@extend %statusPickerStatus !optional;
+}
+.status-1AY8sU {
+	@extend %statusPickerStatusInner !optional;
 }
 .helper-2c73HK {
 	@extend %statusPickerHelper !optional;
@@ -4001,38 +4052,23 @@ pre {
 .timestamp-VjAZmo {
 	@extend %activityTimestamp !optional;
 }
-.wrapper-2F3Zv8 {
+.wrapper-3t9DeA {
 	@extend %avatarWrapper !optional;
 }
-.image-33JSyf {
+.mask-1l8v16 {
+	@extend %avatarMask !optional;
+}
+.avatar-VxgULZ {
 	@extend %avatarImage !optional;
-}
-.inner-1W0Bkn {
-	@extend %avatarInner !optional;
-}
-.image-33JSyf, .inner-1W0Bkn {
-	@extend %avatar !optional;
 }
 .avatar-17mtNa {
 	@extend %avatarLarge !optional;
 }
-.small-5Os1Bb {
-	@extend %avatarSmall !optional;
-}
 .avatarOffline-3GF27z {
 	@extend %avatarOffline !optional;
 }
-.popout-2fzvxG {
-	@extend %avatarPopout !optional;
-}
-.profile-ZOdGIb {
+.avatar-3EQepX {
 	@extend %avatarProfile !optional;
-}
-.mask-3OgeRz {
-	@extend %avatarMask !optional;
-}
-.maskProfile-1ObLFT {
-	@extend %avatarMaskProfile !optional;
 }
 .botTag-2WPJ74 {
 	@extend %botTag !optional;
@@ -4055,27 +4091,12 @@ pre {
 .addButton-pcyyf6 {
 	@extend %roleAddButton !optional;
 }
-.status-oxiHuE {
-	@extend %status !optional;
+.mask-1qbNWk {
+	@extend %statusMask !optional;
 }
-.statusProfile-3ynqtt {
-	@extend %statusProfile !optional;
+.pointerEvents-2zdfdO {
+	@extend %statusPointerEvents !optional;
 }
-.online-2S838R {
-	@extend %statusOnline !optional;
-}
-.idle-3DEnRT {
-	@extend %statusIdle !optional;
-}
-.dnd-1_xrcq {
-	@extend %statusDnd !optional;
-}
-.offline-3qoTek {
-	@extend %statusOffline !optional;
-}
-.invisible-1kp8Z0 {
-	@extend %statusInvisible !optional;
-}
-.streaming-2_dnHe {
-	@extend %statusStreaming !optional;
+.cursorDefault-dsQJ1n {
+	@extend %statusCursorDefault !optional;
 }
