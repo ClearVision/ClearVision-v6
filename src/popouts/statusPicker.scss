@@ -21,6 +21,20 @@
 				}
 			}
 		}
+		%statusPickerStatusInner {
+			&[style*="rgb(67, 181, 129)"] {
+				background: cv("colors.online") !important;
+			}
+			&[style*="rgb(250, 166, 26)"] {
+				background: cv("colors.idle") !important;
+			}
+			&[style*="rgb(240, 71, 71)"] {
+				background: cv("colors.dnd") !important;
+			}
+			&[style*="rgb(116, 127, 141)"] {
+				background: cv("colors.offline") !important;
+			}
+		}
 		%statusPickerHelper {
 			min-height: 18px;
 			color: hsla(0, 0%, 100%, .7);
@@ -28,12 +42,10 @@
 			transition: all .15s ease-in-out;
 		}
 		&:hover {
-			%statusPickerText {
-				%statusDnd,
-				%statusInvisible {
-					+ div {
-						opacity: 0;
-					}
+			&:nth-child(4),
+			&:nth-last-child(2) {
+				%statusPickerText > div {
+					opacity: 0;
 				}
 			}
 			%statusPickerHelper {
