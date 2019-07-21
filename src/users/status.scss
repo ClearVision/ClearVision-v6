@@ -1,52 +1,36 @@
 /* STATUS */
-%status,
-%avatarWrapper > %statusProfile,
-%inviteStatus {
-	box-shadow: 0 0 3px, 0 0 5px rgba(0, 0, 0, .5);
-	transition: all .3s ease-in-out;
-}
-%status {
-	border: none !important;
-	%avatarSmall > & {
-		margin-bottom: 2px;
+@each $status in online, idle, dnd, streaming, offline {
+	%status-#{$status} {
+		fill: cv("colors.#{$status}");
 	}
 }
-%statusProfile {
-	margin-right: 1px;
-	margin-bottom: 1px;
+%statusPointerEvents {
+	$statuses: (
+		online: "#43b581",
+		idle: "#faa61a",
+		dnd: "#f04747",
+		streaming: "#593695",
+		offline: "#747f8d"
+	);
+	@each $status, $color in $statuses {
+		&[fill="#{$color}"],
+		&[fill="#ffffff"][mask*=#{$status}] {
+			@extend %status-#{$status};
+		}
+	}
 }
-%statusOnline {
-	background-color: cv("colors.online");
-	color: cv("colors.online");
-}
-%statusIdle {
-	background-color: cv("colors.idle");
-	color: cv("colors.idle");
-}
-%statusDnd {
-	background-color: cv("colors.dnd");
-	color: cv("colors.dnd");
-}
-%statusOffline,
-%statusInvisible {
-	background-color: cv("colors.offline");
-	color: cv("colors.offline");
-}
-%statusStreaming {
-	background-color: cv("colors.streaming");
-	color: cv("colors.streaming");
-}
-%appMount %colorblindMode {
-	%status {
-		@include bg($pos: -24px, $repeat: no-repeat);
-		&:after {
-			content: "";
-			display: block;
-			width: 100%;
-			height: 100%;
-			@include bg($img: inherit, $pos: center, $size: inherit, $rep: no-repeat);
-			filter: brightness(0);
-			opacity: .7;
+%statusMask,
+%statusCursorDefault {
+	$statuses: (
+		online: "rgba(67, 181, 129, 1)",
+		idle: "rgba(250, 166, 26, 1)",
+		dnd: "rgba(240, 71, 71, 1)",
+		streaming: "rgba(89, 54, 149, 1)",
+		offline: "rgba(116, 127, 141, 1)"
+	);
+	@each $status, $color in $statuses {
+		> rect[fill="#{$color}"] {
+			@extend %status-#{$status};
 		}
 	}
 }
