@@ -70,6 +70,13 @@
 		}
 	}
 
+	// BLOCKQUOTE
+	%markup {
+		blockquote {
+			border-color: hsla(0, 0%, 100%, .1);
+		}
+	}
+
 	// BUTTONS
 	%messageButton {
 		visibility: visible;
