@@ -1,4 +1,4 @@
-/*! Powered by DiscordSelectors v0.1.2 */
+/*! Powered by DiscordSelectors v0.1.3 */
 .appMount-3lHmkl {
 	@extend %appMount !optional;
 }
@@ -1238,6 +1238,12 @@
 .listItem-2P_4kh {
 	@extend %guild !optional;
 }
+.friendsOnline-2JkivW {
+	@extend %friendsOnline !optional;
+}
+.guildSeparator-3s64I {
+	@extend %guildSeparator !optional;
+}
 .blob-1PX1Gp {
 	@extend %homeContainer !optional;
 }
@@ -1252,12 +1258,6 @@
 }
 .pill-2uzAFe {
 	@extend %homePill !optional;
-}
-.friendsOnline-2JkivW {
-	@extend %friendsOnline !optional;
-}
-.guildSeparator-3s64I {
-	@extend %guildSeparator !optional;
 }
 .blobContainer-239gwq {
 	@extend %guildContainer !optional;
@@ -1298,11 +1298,62 @@
 .icon-3s6X1M {
 	@extend %guildBadgeIconSVG !optional;
 }
-.dragPlaceholder-D9-haY {
-	@extend %guildPlaceholder !optional;
+.placeholderMask-3K9THS {
+	@extend %guildPlaceholderMask !optional;
+}
+.dragInner-_SHftW {
+	@extend %guildDragInner !optional;
 }
 .lurkingGuild-3ZJ1gi {
 	@extend %guildLurking !optional;
+}
+.wrapper-21YSNc {
+	@extend %guildFolderWrapper !optional;
+}
+.expandedFolderBackground-2sPsd- {
+	@extend %guildFolderBackground !optional;
+}
+.collapsed-1GMuSb {
+	@extend %guildFolderBackgroundCollapsed !optional;
+}
+.selected-2vZ0oV {
+	@extend %guildFolderBackgroundSelected !optional;
+}
+.folder-21wGz3 {
+	@extend %guildFolder !optional;
+}
+.mouseHover-bMC8x3 {
+	@extend %guildFolderMouseHover !optional;
+}
+.selected-2vZ0oV {
+	@extend %guildFolderSelected !optional;
+}
+.expanded-F1XDEF {
+	@extend %guildFolderExpanded !optional;
+}
+.folderIconWrapper-226oVY {
+	@extend %guildFolderIconWrapper !optional;
+}
+.closedFolderIconWrapper-15K9MK {
+	@extend %guildFolderClosedIconWrapper !optional;
+}
+.expandedFolderIconWrapper-1xLaU- {
+	@extend %guildFolderExpandedIconWrapper !optional;
+}
+.icon-3o6xvg {
+	@extend %guildFolderIcon !optional;
+}
+.iconSizeSmol-2Dw61G {
+	@extend %guildFolderIconSizeSmol !optional;
+}
+.guildIcon-GuAC7C {
+	@extend %guildFolderGuildIcon !optional;
+}
+.noIcon-1a_FrS {
+	@extend %guildFolderNoIcon !optional;
+}
+.expandedGuilds-1JMD4M {
+	@extend %guildFolderExpandedGuilds !optional;
 }
 .circleIconButton-jET_ig {
 	@extend %circleIconButton !optional;
