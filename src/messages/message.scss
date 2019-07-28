@@ -37,10 +37,9 @@
 		color: hsla(0, 0%, 100%, .3);
 		transition: all .3s ease-in-out;
 	}
-	&:hover {
-		%messageTimestamp {
-			color: hsla(0, 0%, 100%, .7);
-		}
+	&:hover %messageTimestampCozy,
+	%message:hover %messageTimestampCompact {
+		color: hsla(0, 0%, 100%, .7);
 	}
 
 	// CONTENT
