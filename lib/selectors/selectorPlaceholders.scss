@@ -1,4 +1,4 @@
-/*! Powered by DiscordSelectors v0.1.3 */
+/*! Powered by DiscordSelectors v0.1.4 */
 .appMount-3lHmkl {
 	@extend %appMount !optional;
 }
@@ -1316,20 +1316,11 @@
 .collapsed-1GMuSb {
 	@extend %guildFolderBackgroundCollapsed !optional;
 }
-.selected-2vZ0oV {
-	@extend %guildFolderBackgroundSelected !optional;
-}
 .folder-21wGz3 {
 	@extend %guildFolder !optional;
 }
-.mouseHover-bMC8x3 {
-	@extend %guildFolderMouseHover !optional;
-}
-.selected-2vZ0oV {
-	@extend %guildFolderSelected !optional;
-}
-.expanded-F1XDEF {
-	@extend %guildFolderExpanded !optional;
+.hover-2ji_A7 {
+	@extend %guildFolderHover !optional;
 }
 .folderIconWrapper-226oVY {
 	@extend %guildFolderIconWrapper !optional;
@@ -2887,6 +2878,12 @@ pre {
 }
 .message-1PNnaP {
 	@extend %message !optional;
+}
+.messageCompact-kQa7ES {
+	@extend %messageCompact !optional;
+}
+.messageCozy-2JPAPA {
+	@extend %messageCozy !optional;
 }
 .headerCozy-2N9HOL {
 	@extend %messageHeaderCozy !optional;
