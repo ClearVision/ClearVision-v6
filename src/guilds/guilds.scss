@@ -140,20 +140,13 @@
 			&%guildFolderBackgroundCollapsed {
 				background: transparent;
 			}
-			&%guildFolderBackgroundSelected {
-				background: hsla(0, 0%, 100%, .07);
-			}
 		}
 	}
 	%guildFolder {
 		background: hsla(0, 0%, 100%, .07);
 		transition: all .3s ease-in-out;
-		&%guildFolderMouseHover,
-		&%guildFolderSelected {
+		&%guildFolderHover {
 			background: hsla(0, 0%, 100%, .1);
-		}
-		&%guildFolderMouseHover%guildFolderSelected {
-			background: hsla(0, 0%, 100%, .15);
 		}
 	}
 	%guildFolderNoIcon {
