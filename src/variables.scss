@@ -130,6 +130,32 @@ $cv: (
 				size: var(--home-size)
 			)
 		)
+	),
+
+	// DISCORD
+	discord: (
+		status: (
+			online: (
+				hex: #43b581,
+				rgba: "rgba(67, 181, 129, 1)"
+			),
+			idle: (
+				hex: #faa61a,
+				rgba: "rgba(250, 166, 26, 1)"
+			),
+			dnd: (
+				hex: #f04747,
+				rgba: "rgba(240, 71, 71, 1)"
+			),
+			streaming: (
+				hex: #593695,
+				rgba: "rgba(89, 54, 149, 1)"
+			),
+			offline: (
+				hex: #747f8d,
+				rgba: "rgba(116, 127, 141, 1)"
+			)
+		)
 	)
 );
 

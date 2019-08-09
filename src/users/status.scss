@@ -1,36 +1,18 @@
 /* STATUS */
-@each $status in online, idle, dnd, streaming, offline {
-	%status-#{$status} {
+@each $status, $color in cv("disc:status") {
+	$id: unique-id();
+	%#{$id} {
 		fill: cv("colors.#{$status}");
 	}
-}
-%statusPointerEvents {
-	$statuses: (
-		online: "#43b581",
-		idle: "#faa61a",
-		dnd: "#f04747",
-		streaming: "#593695",
-		offline: "#747f8d"
-	);
-	@each $status, $color in $statuses {
-		&[fill="#{$color}"],
-		&[fill="#ffffff"][mask*=#{$status}] {
-			@extend %status-#{$status};
+	%statusPointerEvents {
+		&[mask="url(#svg-mask-status-#{$status})"] {
+			@extend %#{$id};
 		}
 	}
-}
-%statusMask,
-%statusCursorDefault {
-	$statuses: (
-		online: "rgba(67, 181, 129, 1)",
-		idle: "rgba(250, 166, 26, 1)",
-		dnd: "rgba(240, 71, 71, 1)",
-		streaming: "rgba(89, 54, 149, 1)",
-		offline: "rgba(116, 127, 141, 1)"
-	);
-	@each $status, $color in $statuses {
-		> rect[fill="#{$color}"] {
-			@extend %status-#{$status};
+	%statusMask,
+	%avatarMask > svg {
+		> rect[fill="#{map-get($color, rgba)}"] {
+			@extend %#{$id};
 		}
 	}
 }
