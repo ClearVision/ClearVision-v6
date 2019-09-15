@@ -1,13 +1,10 @@
 /* CHANNEL LIST */
-%channels {
+%channelsSidebar {
 	width: cv("channels-width");
 	background: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .3));
-	overflow: hidden;
-
-	// CHANNELS CONTAINER
-	> %channelsContainer {
-		background: transparent;
-	}
+}
+%channelsContainer {
+	background: transparent;
 
 	// CHANNELS HEADER
 	%channelsHeaderContainer {
@@ -57,8 +54,11 @@
 	}
 
 	// GUILD BANNER
+	%bannerAnimatedContainer {
+		background: transparent;
+		box-shadow: none;
+	}
 	%bannerImage {
-		background-size: 0, cover;
 		-webkit-mask: linear-gradient(to bottom, #000, transparent);
 		mask: linear-gradient(to bottom, #000, transparent);
 	}
