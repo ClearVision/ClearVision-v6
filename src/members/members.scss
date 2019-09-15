@@ -10,7 +10,7 @@
 %members {
 
 	// GROUP
-	> %membersGroup {
+	%membersGroup {
 		padding-top: 20px;
 		display: flex;
 		align-items: center;
@@ -41,14 +41,18 @@
 	}
 
 	// MEMBER
-	> %member {
+	%member {
 		position: relative;
 		background: transparent !important;
-		border-radius: 5px;
+		border-radius: 3px;
 		backface-visibility: hidden;
 		transition: all .15s ease-in-out, transform .1s ease-in-out;
+		overflow: hidden;
 		z-index: 1;
-		%memberNameTag {
+		%listItemLayout {
+			background: transparent;
+		}
+		%listItemRoleColor {
 			max-width: 100%;
 			overflow: visible;
 			color: hsla(0, 0%, 100%, .6);
@@ -79,18 +83,17 @@
 				}
 			}
 		}
-		%memberUsername {
+		%listItemName {
 			overflow: hidden;
 			font-size: 14px;
 			transition: all .15s ease-in-out;
 		}
-		%memberActivity,
-		%memberActivityText,
-		%memberMobileIndicator {
+		%listItemActivity,
+		%listItemActivityText {
 			color: hsla(0, 0%, 100%, .4);
 			transition: all .15s ease-in-out;
 		}
-		%memberActivityText {
+		%listItemActivityText {
 			> strong {
 				color: $main-color;
 				font-weight: 700;
@@ -107,8 +110,8 @@
 			}
 		}
 		&:hover,
-		&%memberPopoutOpen {
-			%memberNameTag {
+		&%listItemSelected {
+			%listItemRoleColor {
 				&:before {
 					opacity: 1;
 				}
@@ -117,22 +120,20 @@
 				}
 			}
 		}
-		&%memberPopoutOpen {
-			%memberNameTag {
+		&%listItemSelected {
+			%listItemRoleColor {
+				-webkit-text-fill-color: #fff;
+				text-shadow: 0 0 3px rgba(0, 0, 0, .7);
 				&:after {
 					right: 0;
 				}
 			}
-			%memberUsername {
-				text-shadow: 0 0 3px rgba(0, 0, 0, .7);
-				color: #fff !important;
-			}
-			%memberActivity,
-			%memberActivityText {
+			%listItemActivity,
+			%listItemActivityText {
 				text-shadow: 0 0 3px rgba(0, 0, 0, .7);
 				color: hsla(0, 0%, 100%, .7);
 			}
-			%memberActivityText {
+			%listItemActivityText {
 				> strong {
 					color: #fff;
 				}
@@ -141,10 +142,10 @@
 				filter: drop-shadow(0 0 3px rgba(0, 0, 0, .7));
 				opacity: .7;
 			}
-			%memberActivityIcon {
+			%listItemActivityIcon {
 				filter: drop-shadow(0 0 3px rgba(0, 0, 0, .7));
 			}
-			%memberActivityIconForeground {
+			%listItemActivityIconForeground {
 				fill: hsla(0, 0%, 100%, .7);
 			}
 		}
@@ -194,7 +195,7 @@
 		display: none;
 	}
 }
-%memberActivityIconForeground {
+%listItemActivityIconForeground {
 	fill: hsla(0, 0%, 100%, .4);
 	transition: all .15s ease-in-out;
 }
