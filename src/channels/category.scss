@@ -35,7 +35,8 @@
 		background: linear-gradient(to right, $main-color 50%, transparent);
 		margin-left: 5px;
 	}
-	&:hover {
+	%categoryWrapper &:hover {
+		color: $main-color;
 		opacity: 1;
 	}
 }
