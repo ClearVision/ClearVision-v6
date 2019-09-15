@@ -55,19 +55,18 @@
 // HAS MORE BAR
 %messages {
 	%hasMore {
-		> button {
-			background: hsla(0, 0%, 100%, .07);
-			border: none;
-			border-radius: 3px;
-			color: hsla(0, 0%, 100%, .7);
-			transition: all .15s ease-in-out;
-			&:hover {
-				background: $main-color;
-				color: #fff;
-			}
-			&:active {
-				transform:scale(.99);
-			}
+		background: hsla(0, 0%, 100%, .07);
+		border: none;
+		border-radius: 3px;
+		box-shadow: none;
+		color: hsla(0, 0%, 100%, .7);
+		transition: all .15s ease-in-out;
+		&:hover {
+			background: $main-color;
+			color: #fff;
+		}
+		&:active {
+			transform:scale(.99);
 		}
 	}
 }
