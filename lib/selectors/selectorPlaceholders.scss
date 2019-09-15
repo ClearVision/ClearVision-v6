@@ -1,4 +1,4 @@
-/*! Powered by DiscordSelectors v0.1.4 */
+/*! Powered by DiscordSelectors v0.2.0 */
 .appMount-3lHmkl {
 	@extend %appMount !optional;
 }
@@ -359,8 +359,8 @@
 .btn-11C5_u {
 	@extend %channelNoticeMessageButton !optional;
 }
-.channels-Ie2l6A {
-	@extend %channels !optional;
+.sidebar-2K8pFh {
+	@extend %channelsSidebar !optional;
 }
 .container-PNkimc {
 	@extend %channelsContainer !optional;
@@ -407,6 +407,9 @@
 .withBanner-3j8ruM {
 	@extend %guildBoostedIconWithBanner !optional;
 }
+.animatedContainer-1pJv5C {
+	@extend %bannerAnimatedContainer !optional;
+}
 .banner-1TiK82 {
 	@extend %banner !optional;
 }
@@ -419,14 +422,17 @@
 .mention-1f5kbO {
 	@extend %channelsMentionIndicator !optional;
 }
-.button-2JbWXs {
+.panels-j1Uci_ {
+	@extend %panels !optional;
+}
+.button-14-BFJ {
 	@extend %panelButton !optional;
 }
-.disabled-v9-Ysw {
-	@extend %panelButtonDisabled !optional;
+.enabled-2cQ-u7 {
+	@extend %panelButtonEnabled !optional;
 }
-.buttonIcon-onTTxP {
-	@extend %panelButtonIcon !optional;
+.disabled-2iW-fm {
+	@extend %panelButtonDisabled !optional;
 }
 .container-3baos1 {
 	@extend %accountPanel !optional;
@@ -491,35 +497,11 @@
 .channel-2QD9_O {
 	@extend %privateChannel !optional;
 }
-.selected-1HYmZZ {
-	@extend %privateChannelSelected !optional;
-}
 .linkButtonIcon-Mlm5d6 {
 	@extend %privateChannelIcon !optional;
 }
-.nameWrapper-10v56U {
-	@extend %privateChannelNameWrapper !optional;
-}
-.name-2WpE7M {
-	@extend %privateChannelName !optional;
-}
-.nameWithActivity-1ceSyU {
-	@extend %privateChannelNameWithActivity !optional;
-}
-.activity-525YDR {
-	@extend %privateChannelActivity !optional;
-}
-.activityIcon-1mtTk4 {
-	@extend %privateChannelActivityIcon !optional;
-}
-.activityIconForeground-3VIgI8 {
-	@extend %privateChannelActivityIconForeground !optional;
-}
-.mobileIndicator-3gyhuE {
-	@extend %privateChannelMobileIndicator !optional;
-}
-.close-3hZ5Ni {
-	@extend %privateChannelClose !optional;
+.header-zu8eWb {
+	@extend %privateChannelsHeader !optional;
 }
 .searchBar-6Kv8R2 {
 	@extend %privateChannelsSearchBar !optional;
@@ -733,6 +715,9 @@
 }
 .buttons-205you {
 	@extend %channelTextAreaButtons !optional;
+}
+.button-2vd_v_ {
+	@extend %channelTextAreaButton !optional;
 }
 .emojiButton-3uL3Aw {
 	@extend %channelTextAreaEmojiButton !optional;
@@ -1058,6 +1043,48 @@
 .top-3fo3zT, .bottom-UE1eOv {
 	@extend %indicatorExclamation !optional;
 }
+.container-2Pjhx- {
+	@extend %listItem !optional;
+}
+.selected-aXhQR6 {
+	@extend %listItemSelected !optional;
+}
+.layout-2DM8Md {
+	@extend %listItemLayout !optional;
+}
+.avatar-3uk_u9 {
+	@extend %listItemAvatar !optional;
+}
+.content-3QAtGj {
+	@extend %listItemContent !optional;
+}
+.nameAndDecorators-5FJ2dg {
+	@extend %listItemNameAndDecorators !optional;
+}
+.name-uJV0GL {
+	@extend %listItemName !optional;
+}
+.roleColor-36x_Mz {
+	@extend %listItemRoleColor !optional;
+}
+.children-gzQq2t {
+	@extend %listItemChildren !optional;
+}
+.subText-1KtqkB {
+	@extend %listItemSubText !optional;
+}
+.activity-E-0FeD {
+	@extend %listItemActivity !optional;
+}
+.text-zpzAjW {
+	@extend %listItemActivityText !optional;
+}
+.icon-2dCXDL {
+	@extend %listItemActivityIcon !optional;
+}
+.closeButton-2GCmT5 {
+	@extend %listItemClose !optional;
+}
 .scrollerWrap-2lJEkd {
 	@extend %scrollerWrap !optional;
 }
@@ -1241,17 +1268,8 @@
 .friendsOnline-2JkivW {
 	@extend %friendsOnline !optional;
 }
-.guildSeparator-3s64I {
+.guildSeparator-3s64Iy {
 	@extend %guildSeparator !optional;
-}
-.blob-1PX1Gp {
-	@extend %homeContainer !optional;
-}
-.button-OhfaWu {
-	@extend %homeButton !optional;
-}
-.selected-wSa2KV {
-	@extend %homeButtonSelected !optional;
 }
 .homeIcon-tEMBK1 {
 	@extend %homeIcon !optional;
@@ -1274,14 +1292,17 @@
 .wrapper-1BJsBx {
 	@extend %guildLink !optional;
 }
+.selected-bZ3Lue {
+	@extend %guildLinkSelected !optional;
+}
 .icon-27yU2q {
 	@extend %guildIcon !optional;
 }
+.childWrapper-anI2G9 {
+	@extend %guildChildWrapper !optional;
+}
 .acronym-2mOFsV {
 	@extend %guildAcronym !optional;
-}
-.selected-bZ3Lue {
-	@extend %guildAcronymSelected !optional;
 }
 .badgeWrapper-3e8pMZ {
 	@extend %guildBadgeWrapper !optional;
@@ -1718,13 +1739,13 @@
 .friendsColumnName-1zBOKm {
 	@extend %friendsColumnName !optional;
 }
-.discord-tag {
+.discordTag-1Hozyw {
 	@extend %friendsColumnNameDiscordTag !optional;
 }
-.username {
+.username-1r0gCl {
 	@extend %friendsColumnNameUsername !optional;
 }
-.discriminator {
+.discriminator-1Ro5o1 {
 	@extend %friendsColumnNameDiscriminator !optional;
 }
 .friendsColumnStatus-ZH4ho2 {
@@ -2420,23 +2441,8 @@
 .member-3W1lQa {
 	@extend %member !optional;
 }
-.memberOffline-2lN7gt {
+.offline-34J64g {
 	@extend %memberOffline !optional;
-}
-.member-3W1lQa.popout-open {
-	@extend %memberPopoutOpen !optional;
-}
-.memberInner-2CPc3V {
-	@extend %memberInner !optional;
-}
-.memberContent-1MK6T5 {
-	@extend %memberContent !optional;
-}
-.nameTag-3p0yK- {
-	@extend %memberNameTag !optional;
-}
-.username-1cB_5E {
-	@extend %memberUsername !optional;
 }
 .icon-1mmpLU {
 	@extend %memberIcon !optional;
@@ -2446,21 +2452,6 @@
 }
 .premiumIcon-2IFPOX {
 	@extend %memberPremiumIcon !optional;
-}
-.activity-1IYsbk {
-	@extend %memberActivity !optional;
-}
-.activityText-sLG0UL {
-	@extend %memberActivityText !optional;
-}
-.activityIcon-S3CciC {
-	@extend %memberActivityIcon !optional;
-}
-.activityIconForeground-qYIPPg {
-	@extend %memberActivityIconForeground !optional;
-}
-.mobileIndicator-329Gd6 {
-	@extend %memberMobileIndicator !optional;
 }
 .memberGroupsPlaceholder-3mwPub {
 	@extend %memberGroupPlaceholder !optional;
@@ -2876,14 +2867,8 @@ pre {
 .messageGroupBlockedBtn-1PBBh- {
 	@extend %messageGroupBlockedButton !optional;
 }
-.message-1PNnaP {
-	@extend %message !optional;
-}
 .messageCompact-kQa7ES {
 	@extend %messageCompact !optional;
-}
-.messageCozy-2JPAPA {
-	@extend %messageCozy !optional;
 }
 .headerCozy-2N9HOL {
 	@extend %messageHeaderCozy !optional;
@@ -2956,6 +2941,12 @@ pre {
 }
 .reactionBtn-2na4rd.popout-open, .button-3Jq0g9.popout-open {
 	@extend %messageButtonPopoutOpen !optional;
+}
+.blockquoteContainer-U5TVEi {
+	@extend %blockquoteContainer !optional;
+}
+.blockquoteDivider-2hH8H6 {
+	@extend %blockquoteDivider !optional;
 }
 .reactions-1xb2Ex {
 	@extend %reactions !optional;
@@ -3365,8 +3356,8 @@ pre {
 .contextMenu-HLZMGh {
 	@extend %contextMenu !optional;
 }
-.invertChildX-2fq7sY {
-	@extend %contextMenuInvertChildX !optional;
+.subMenuContext-2n_9YM {
+	@extend %subContextMenu !optional;
 }
 .itemGroup-1tL0uz {
 	@extend %contextMenuItemGroup !optional;
@@ -3566,11 +3557,20 @@ pre {
 .item-1GzJrl {
 	@extend %guildHeaderPopoutItem !optional;
 }
+.itemBase-1Qj4z6 {
+	@extend %guildHeaderPopoutItemBase !optional;
+}
 .invite-271nFU {
 	@extend %guildHeaderPopoutItemInvite !optional;
 }
+.leave-1DRJfn {
+	@extend %guildHeaderPopoutItemLeave !optional;
+}
 .separator-2zcjq8 {
 	@extend %guildHeaderPopoutSeparator !optional;
+}
+.iconContainer-2ZxvJk {
+	@extend %guildHeaderPopoutIconContainer !optional;
 }
 .icon-2doZ3q {
 	@extend %guildHeaderPopoutIcon !optional;
@@ -3682,6 +3682,24 @@ pre {
 }
 .layer-v9HyYc {
 	@extend %popoutLayer !optional;
+}
+.translate-2dAEQ6 {
+	@extend %popoutTranslate !optional;
+}
+.animatorTop-2Y7x2r {
+	@extend %popoutAnimatorTop !optional;
+}
+.animatorBottom-fS5rNO {
+	@extend %popoutAnimatorBottom !optional;
+}
+.animatorLeft-1EQxU0 {
+	@extend %popoutAnimatorLeft !optional;
+}
+.animatorRight-3i_YPs {
+	@extend %popoutAnimatorRight !optional;
+}
+.didRender-33z1u8 {
+	@extend %popoutAnimatorDidRender !optional;
 }
 .container-3ayLPN {
 	@extend %searchPopout !optional;
@@ -3878,8 +3896,8 @@ pre {
 .optionNormal-12VR9V {
 	@extend %selectPopoutOptionNormal !optional;
 }
-.alt-3btY0e {
-	@extend %statusPicker !optional;
+.statusItem-2uzPIV {
+	@extend %statusPickerItem !optional;
 }
 .statusIconText-3b4TkH {
 	@extend %statusPickerText !optional;
@@ -4060,6 +4078,27 @@ pre {
 }
 .role-3wi9Tf {
 	@extend %settingsRoleItem !optional;
+}
+.toolsContainer-1edPuj {
+	@extend %settingsToolsContainer !optional;
+}
+.tools-3-3s-N {
+	@extend %settingsTools !optional;
+}
+.container-1sFeqf {
+	@extend %settingsCloseButtonContainer !optional;
+}
+.closeButton-1tv5uR {
+	@extend %settingsCloseButton !optional;
+}
+.keybind-KpFkfr {
+	@extend %settingsCloseButtonKeybind !optional;
+}
+.userSettingsAccount-2eMFVR {
+	@extend %settingsUserAccount !optional;
+}
+.userSettingsSecurity-3IYeMF {
+	@extend %settingsUserAccountSecurity !optional;
 }
 .standardSidebarView-3F1I7i {
 	@extend %standardSidebarView !optional;
