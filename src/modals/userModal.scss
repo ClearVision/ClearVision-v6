@@ -1,6 +1,7 @@
 /* USER PROFILE MODAl */
 %userModal {
 	max-height: 100vh;
+	background: transparent;
 	box-shadow: 0 0 30px 5px rgba(0, 0, 0, .3);
 	&:before {
 		content: "";
@@ -35,6 +36,9 @@
 	transition: all .15s ease-in-out;
 	&:hover {
 		opacity: .7;
+	}
+	> g {
+		display: none;
 	}
 }
 %userModalHeaderFill {
@@ -118,9 +122,11 @@
 }
 
 // TAB BAR
-%userModalTabBarContainer {
-	padding: 0 20px;
-	border-color: hsla(0, 0%, 100%, .04);
+%userModal {
+	%userModalTabBarContainer {
+		padding: 0 20px;
+		border-color: hsla(0, 0%, 100%, .04);
+	}
 }
 %userModalTabBar {
 	> %tabBarItem {
@@ -162,6 +168,7 @@
 		&:hover {
 			color: hsla(0, 0%, 100%, .7) !important;
 		}
+		&%tabBarItemSelected,
 		&[style*="color: rgb(255, 255, 255)"] {
 			color: #fff !important;
 			&:after {
