@@ -17,14 +17,9 @@
 		@include filters(cv("bg.popout"));
 		z-index: -1;
 	}
-	%popoutLeft > & {
-		margin-right: 15px;
+	%popoutAnimatorLeft > & {
+		margin-right: -10px;
 		transform-origin: 100% 50%;
-		&:before {
-			left: calc(-100% - 15px);
-			right: calc(100% + 15px);
-			transform: translateX(calc(100% + 15px - 4 * #{cv("bg.popout.blur")}));
-		}
 	}
 
 	// HEADER
