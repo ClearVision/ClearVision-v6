@@ -12,6 +12,9 @@ body {
 %appMount {
 	background: cv("bg.app.overlay");
 }
+%shakeable {
+	background: transparent;
+}
 %appMount {
 	%layers,
 	%layer {
@@ -19,9 +22,7 @@ body {
 	}
 }
 %layer {
-	%containerMain {
-		background: transparent;
-	}
+	%containerMain,
 	%standardSidebarView {
 		background: transparent;
 	}
