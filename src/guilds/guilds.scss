@@ -54,132 +54,136 @@
 			grid-column: 1 / span cv("server-columns");
 		}
 	}
+}
 
-	// HOME BUTTON
-	%homeButton {
-		background: cv("bg.home.icon") cv("bg.home.pos")/cv("bg.home.size") no-repeat rgba(0, 0, 0, .3);
-		&:hover,
-		&%homeButtonSelected {
-			background-color: $main-color;
-		}
-	}
-	%homeIcon {
+// HOME BUTTON
+%homeButton {
+}
+%homeIcon {
+	width: 100%;
+	height: 100%;
+	background: cv("bg.home.icon") cv("bg.home.pos")/cv("bg.home.size") no-repeat;
+	> path {
 		display: none;
 	}
+}
 
-	// FRIENDS COUNT
-	%friendsOnline {
-		background: transparent;
-		color: hsla(0, 0%, 100%, .7);
-		text-transform: uppercase;
-		border-radius: 25px;
-		transition: all .3s ease-in-out;
-		cursor: default;
-		&:hover {
-			color: #fff;
-		}
+// FRIENDS COUNT
+%friendsOnline {
+	background: transparent;
+	color: hsla(0, 0%, 100%, .7);
+	text-transform: uppercase;
+	border-radius: 25px;
+	transition: all .3s ease-in-out;
+	cursor: default;
+	&:hover {
+		color: #fff;
 	}
+}
 
-	// GUILD
-	%guildIcon {
-		background-color: rgba(0, 0, 0, .3);
-	}
-	%guildPlaceholder {
-		background: hsla(0, 0%, 100%, .07);
-	}
+// GUILD
+%guildIcon {
+	background-color: rgba(0, 0, 0, .3);
+}
+%guildPlaceholder {
+	background: hsla(0, 0%, 100%, .07);
+}
 
-	// PILL
-	%guildPill {
-		overflow: visible;
+// PILL
+%guildPill {
+	overflow: visible;
+}
+%guildPillItem {
+	width: 12px;
+	margin-left: -6px;
+	border-radius: 20px;
+	background: $main-color;
+	box-shadow: 0 0 20px -1px $main-color;
+	&[style*="height: 8px"] {
+		height: 10px !important;
 	}
-	%guildPillItem {
-		width: 12px;
-		margin-left: -6px;
-		border-radius: 20px;
-		background: $main-color;
-		box-shadow: 0 0 20px -1px $main-color;
-		&[style*="height: 8px"] {
-			height: 10px !important;
-		}
-	}
+}
 
-	// ACRONYM
-	%guildAcronym {
-		background: rgba(0, 0, 0, .3);
-		color: hsla(0, 0%, 100%, .7);
-		transition: all .3s ease-in-out;
-		&:hover,
-		&%guildAcronymSelected {
+// ACRONYM
+%guildChildWrapper {
+	background: rgba(0, 0, 0, .3);
+	color: hsla(0, 0%, 100%, .7);
+	transition: all .3s ease-in-out;
+}
+%guildLink{
+	&:hover,
+	&%guildLinkSelected {
+		%guildChildWrapper {
 			background: $main-color;
 			color: #fff;
 		}
 	}
+}
 
-	// PLACEHOLDER
-	%guildDragInner {
+// PLACEHOLDER
+%guildDragInner {
+	background: hsla(0, 0%, 100%, .1);
+}
+
+// BADGE
+%guildBadgeIcon {
+	background: hsla(0, 0%, 100%, .07);
+	box-shadow: 0 0 0 1px hsla(0, 0%, 100%, .07);
+}
+%guildBadgeIconSVG {
+	padding: 1px;
+	color: $main-color;
+	filter: drop-shadow(0 0 3px $main-color);
+}
+
+// FOLDER
+%guildFolderWrapper {
+	%guildFolderBackground {
+		background: hsla(0, 0%, 100%, .04);
+		border-radius: 16px 16px 24px 24px;
+		transition: background-color .3s ease-in-out;
+		&%guildFolderBackgroundCollapsed {
+			background: transparent;
+		}
+	}
+}
+%guildFolder {
+	background: hsla(0, 0%, 100%, .07);
+	transition: all .3s ease-in-out;
+	&%guildFolderHover {
 		background: hsla(0, 0%, 100%, .1);
 	}
+}
+%guildFolderNoIcon {
+	background: rgba(0, 0, 0, .3) !important;
+	color: hsla(0, 0%, 100%, .7);
+}
+%guildFolderExpandedGuilds {
+	> %guild {
+		animation: cv-fade-in .3s ease-in-out;
+	}
+}
 
-	// BADGE
-	%guildBadgeIcon {
-		background: hsla(0, 0%, 100%, .07);
-		box-shadow: 0 0 0 1px hsla(0, 0%, 100%, .07);
-	}
-	%guildBadgeIconSVG {
-		padding: 1px;
-		color: $main-color;
-		filter: drop-shadow(0 0 3px $main-color);
-	}
-
-	// FOLDER
-	%guildFolderWrapper {
-		%guildFolderBackground {
-			background: hsla(0, 0%, 100%, .04);
-			border-radius: 16px 16px 24px 24px;
-			transition: background-color .3s ease-in-out;
-			&%guildFolderBackgroundCollapsed {
-				background: transparent;
-			}
-		}
-	}
-	%guildFolder {
-		background: hsla(0, 0%, 100%, .07);
-		transition: all .3s ease-in-out;
-		&%guildFolderHover {
-			background: hsla(0, 0%, 100%, .1);
-		}
-	}
-	%guildFolderNoIcon {
-		background: rgba(0, 0, 0, .3) !important;
-		color: hsla(0, 0%, 100%, .7);
-	}
-	%guildFolderExpandedGuilds {
-		> %guild {
-			animation: cv-fade-in .3s ease-in-out;
-		}
-	}
-
-	// ICON BUTTON
-	%circleIconButton {
-		background: rgba(0, 0, 0, .3);
-		color: hsla(0, 0%, 100%, .3);
-		transition: all .3s ease-in-out;
-		&:hover,
-		&%circleIconButtonSelected {
-			background: $main-color;
-			color: #fff;
-		}
-	}
-
-	// GUILDS ERROR
-	%guildsError {
-		background: rgba(0, 0, 0, .5);
-		border: 2px solid cv("colors.danger");
+// ICON BUTTON
+%circleIconButton {
+	background: rgba(0, 0, 0, .3);
+	color: hsla(0, 0%, 100%, .3);
+	transition: all .3s ease-in-out;
+	&:hover,
+	&%circleIconButtonSelected {
+		background: $main-color;
 		color: #fff;
-		transition: all .3s ease-in-out;
-		&:hover {
-			background: cv("colors.danger");
-		}
+	}
+}
+
+// GUILDS ERROR
+%guildsError {
+	background: rgba(0, 0, 0, .5);
+	border: 2px solid cv("colors.danger");
+	color: #fff;
+	transition: all .3s ease-in-out;
+	&:hover {
+		background: cv("colors.danger");
 	}
 }
 
