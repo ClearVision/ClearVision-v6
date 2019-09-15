@@ -1,8 +1,9 @@
 /* PRIVATE CHANNELS */
 %privateChannels {
+	background: transparent;
 
 	// HEADER
-	header {
+	%privateChannelsHeader {
 		margin-top: 11px;
 		display: flex;
 		align-items: center;
@@ -31,7 +32,7 @@
 
 	// PRIVATE CHANNEL
 	%privateChannel {
-		> a {
+		%listItemLayout {
 			position: relative;
 			z-index: 1;
 			&:before {
@@ -54,22 +55,16 @@
 				pointer-events: none;
 			}
 		}
-		%privateChannelName,
-		%privateChannelNameWithActivity {
+		%listItemName {
 			color: hsla(0, 0%, 100%, .3);
 			transition: all .15s ease-in-out;
 		}
-		%privateChannelActivity,
-		%privateChannelMobileIndicator {
+		%listItemActivity {
 			color: hsla(0, 0%, 100%, .2);
 			opacity: 1;
 			transition: all .15s ease-in-out;
 		}
-		%privateChannelActivityIconForeground {
-			fill: hsla(0, 0%, 100%, .2);
-			transition: all .15s ease-in-out;
-		}
-		%privateChannelClose {
+		%listItemClose {
 			display: block;
 			background: url(https://clearvision.gitlab.io/icons/close.svg) center/18px no-repeat;
 			opacity: 0;
@@ -82,24 +77,19 @@
 		
 		// HOVER
 		&:hover {
-			> a {
+			%listItemLayout {
 				background: transparent;
 				&:before {
 					background: hsla(0, 0%, 100%, .1);
 				}
 			}
-			%privateChannelName,
-			%privateChannelNameWithActivity {
+			%listItemName {
 				color: hsla(0, 0%, 100%, .7);
 			}
-			%privateChannelActivity,
-			%privateChannelMobileIndicator {
+			%listItemActivity {
 				color: hsla(0, 0%, 100%, .5);
 			}
-			%privateChannelActivityIconForeground {
-				fill: hsla(0, 0%, 100%, .5);
-			}
-			%privateChannelClose {
+			%listItemClose {
 				opacity: .3;
 				&:hover {
 					opacity: .7;
@@ -111,8 +101,8 @@
 		}
 		
 		// SELECTED
-		&%privateChannelSelected {
-			> a {
+		&%listItemSelected {
+			%listItemLayout {
 				background: transparent;
 				&:before {
 					background: hsla(0, 0%, 100%, .1);
@@ -123,15 +113,11 @@
 					animation: cv-channel-select .3s ease-in-out;
 				}
 			}
-			%privateChannelName,
-			%privateChannelNameWithActivity {
+			%listItemName{
 				color: #fff;
 			}
-			%privateChannelActivity {
+			%listItemActivity {
 				color: hsla(0, 0%, 100%, .7);
-			}
-			%privateChannelActivityIconForeground {
-				fill: hsla(0, 0%, 100%, .7);
 			}
 			%privateChannelIcon {
 				color: #fff;
