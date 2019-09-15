@@ -58,34 +58,28 @@
 			&:hover {
 				background-color: rgba(0, 0, 0, .3);
 				border-radius: 0;
-				> %friendsColumnName > %friendsColumnNameDiscordTag > %friendsColumnNameDiscriminator {
+				%friendsColumnName %friendsColumnNameDiscordTag %friendsColumnNameDiscriminator {
 					opacity: .6;
 				}
 			}
 			+ %friendsRow {
 				margin-top: -1px;
 			}
-			> %friendsColumnName {
+			%friendsColumnNameUsername {
 				color: hsla(0, 0%, 100%, .6);
-				> %friendsColumnNameDiscordTag {
-					> %friendsColumnNameDiscriminator {
-						color: hsla(0, 0%, 100%, .3);
-						visibility: visible;
-						opacity: 0;
-						transition: all .15s ease-in-out;
-					}
-				}
+			}
+			%friendsColumnNameDiscriminator {
+				color: hsla(0, 0%, 100%, .3);
+				visibility: visible;
+				opacity: 0;
+				transition: all .15s ease-in-out;
 			}
 			&:hover {
-				> %friendsColumnName {
-					> %friendsColumnNameDiscordTag {
-						> %friendsColumnNameDiscriminator {
-							opacity: 1;
-						}
-					}
+				%friendsColumnNameDiscriminator {
+					opacity: 1;
 				}
 			}
-			> %friendsColumnStatus {
+			%friendsColumnStatus {
 				color: hsla(0, 0%, 100%, .5);
 				%friendActivityText {
 					> strong {
@@ -94,7 +88,7 @@
 					}
 				}
 			}
-			> %friendsColumnGuilds {
+			%friendsColumnGuilds {
 				%avatarSmall {
 					background-color: transparent;
 				}
@@ -102,33 +96,36 @@
 					background-color: rgba(0, 0, 0, .3);
 				}
 			}
-			> %friendsColumnActions {
+			%friendsColumnActions {
 				padding-right: 12px;
-				visibility: visible;
 				opacity: 0;
+				visibility: visible;
 				transition: all .3s ease-in-out;
-				> %friendsAction {
+				%friendsAction {
 					background-color: $main-color;
+					border-radius: 3px;
+					color: hsla(0, 0%, 100%, .9);
 					transition: all .15s ease-in-out;
 					&:hover {
 						background-color: $hover-color;
+						color: #fff;
 					}
 				}
-				> %friendsActionAdd,
-				> %friendsActionAccept {
+				%friendsActionAdd,
+				%friendsActionAccept {
 					&:hover {
 						background-color: cv("colors.success") !important;
 					}
 				}
-				> %friendsActionRemove,
-				> %friendsActionCancel,
-				> %friendsActionIgnore {
+				%friendsActionRemove,
+				%friendsActionCancel,
+				%friendsActionIgnore {
 					&:hover {
 						background-color: cv("colors.danger") !important;
 					}
 				}
 			}
-			&:hover > %friendsColumnActions {
+			&:hover %friendsColumnActions {
 				padding-right: 12px;
 				opacity: 1;
 			}
