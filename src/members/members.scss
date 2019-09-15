@@ -54,8 +54,9 @@
 		}
 		%listItemRoleColor {
 			max-width: 100%;
-			overflow: visible;
 			color: hsla(0, 0%, 100%, .6);
+			overflow: visible;
+			transition: all .15s ease-in-out;
 			&:before {
 				content: "";
 				position: absolute;
