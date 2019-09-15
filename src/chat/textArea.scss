@@ -57,6 +57,15 @@
 		}
 	}
 
+	// BUTTONS
+	%channelTextAreaButton {
+		opacity: .3;
+		transition: all .15s ease-in-out;
+		&:hover {
+			opacity: .7;
+		}
+	}
+
 	// TYPING
 	%channelTextAreaTyping {
 		background: transparent;
