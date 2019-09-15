@@ -7,19 +7,51 @@
 %appMount {
 	%guildHeaderPopout {
 		background: rgba(0, 0, 0, .7);
-		%guildHeaderPopoutItem {
+		%guildHeaderPopoutItemBase {
 			color: hsla(0, 0%, 100%, .7);
 			transition: all .15s ease-in-out;
 			%guildHeaderPopoutIcon {
-				opacity: .5;
-				filter: brightness(10) grayscale(1);
+				color: hsla(0, 0%, 100%, .5);
 				transition: all .15s ease-in-out;
+				&[name=EyeHidden] {
+					> rect {
+						fill: cv("colors.danger");
+					}
+				}
 			}
 			&:hover {
 				background: $main-color;
 				color: #fff;
-				> %guildHeaderPopoutIcon {
-					opacity: .7;
+				%guildHeaderPopoutIcon {
+					color: hsla(0, 0%, 100%, .7);
+				}
+			}
+			&%guildHeaderPopoutItemLeave {
+				position: relative;
+				margin: 2px;
+				background-color: transparent;
+				color: hsla(0, 0%, 100%, .6);
+				width: calc(100% - 4px);
+				z-index: 1;
+				&:after {
+					content: "";
+					position: absolute;
+					@include stretch;
+					margin: 0 2px;
+					background: cv("colors.danger");
+					border-radius: 3px;
+					opacity: .5;
+					transition: inherit;
+					z-index: -1;
+				}
+				&:hover {
+					color: #fff;
+					&:after {
+						opacity: .7;
+					}
+					%guildHeaderPopoutIcon {
+						transform: rotateY(180deg);
+					}
 				}
 			}
 		}
