@@ -51,7 +51,7 @@
 	}
 
 	// LINKS
-	%message {
+	%messageContent {
 		a,
 		%anchor {
 			color: $main-color;
@@ -71,8 +71,9 @@
 
 	// BLOCKQUOTE
 	%markup {
-		blockquote {
-			border-color: hsla(0, 0%, 100%, .1);
+		%blockquoteDivider {
+			background: hsla(0, 0%, 100%, .1);
+			border-radius: 0;
 		}
 	}
 
@@ -96,16 +97,22 @@
 		}
 	}
 	%messageReactionButton {
-		background: url(https://clearvision.gitlab.io/icons/emote.svg) center/18px no-repeat;
+		background: url(https://clearvision.gitlab.io/icons/emote.svg) center/100% no-repeat;
 		&:hover {
 			opacity: .7 !important;
 		}
 	}
 	%messageOptionsButton {
-		background: url(https://clearvision.gitlab.io/icons/settings.svg) center/18px no-repeat;
+		background: url(https://clearvision.gitlab.io/icons/settings.svg) center/100% no-repeat;
 		&:hover,
 		&%messageButtonPopoutOpen {
 			animation: cv-spin 2.5s linear infinite;
+		}
+	}
+	%messageReactionButton,
+	%messageOptionsButton {
+		> svg {
+			display: none;
 		}
 	}
 
