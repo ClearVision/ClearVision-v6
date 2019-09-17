@@ -32,6 +32,7 @@
 
 	// PRIVATE CHANNEL
 	%privateChannel {
+		max-width: none;
 		%listItemLayout {
 			position: relative;
 			z-index: 1;
