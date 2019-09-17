@@ -8,6 +8,11 @@
 		&[mask="url(#svg-mask-status-#{$status})"] {
 			@extend %#{$id};
 		}
+		@if $status == "online" {
+			&[mask="url(#svg-mask-status-#{$status}-mobile)"] {
+				@extend %#{$id};
+			}
+		}
 	}
 	%statusMask,
 	%avatarMask > svg {
