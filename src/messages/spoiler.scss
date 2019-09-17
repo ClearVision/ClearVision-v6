@@ -1,5 +1,5 @@
 /* MESSAGE SPOILER */
-%message %spoilerText {
+%messageContent %spoilerText {
 	background: hsla(0, 0%, 100%, .04);
 	transition: all .15s ease-in-out;
 	> %spoilerInlineContent {
