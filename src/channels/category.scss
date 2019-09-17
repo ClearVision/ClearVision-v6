@@ -36,8 +36,16 @@
 		margin-left: 5px;
 	}
 	%categoryWrapper &:hover {
-		color: $main-color;
 		opacity: 1;
+	}
+}
+%channelsSidebar {
+	%categoryContainer {
+		%categoryWrapper {
+			%categoryName {
+				color: $main-color;
+			}
+		}
 	}
 }
 %categoryButtons {
