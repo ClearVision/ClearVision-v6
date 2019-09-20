@@ -1,4 +1,4 @@
-/*! Powered by DiscordSelectors v0.2.0 */
+/*! Powered by DiscordSelectors v0.2.1 */
 .appMount-3lHmkl {
 	@extend %appMount !optional;
 }
@@ -493,6 +493,9 @@
 }
 .privateChannels-1nO12o {
 	@extend %privateChannels !optional;
+}
+.scroller-1JbKMe {
+	@extend %privateChannelsScroller !optional;
 }
 .channel-2QD9_O {
 	@extend %privateChannel !optional;
@@ -1859,6 +1862,9 @@
 .libraryFilterInput-3JzqZD {
 	@extend %libraryFilterInput !optional;
 }
+.scroller-1IIF0A {
+	@extend %libraryScroller !optional;
+}
 .table-1tDS6w {
 	@extend %libraryTable !optional;
 }
@@ -1975,6 +1981,9 @@
 }
 .homeWrapper-3-Wh5T {
 	@extend %storeHomeWrapper !optional;
+}
+.scroller-9moviB {
+	@extend %storeHomeScroller !optional;
 }
 .scrollerStore-390omS {
 	@extend %storeScroller !optional;
@@ -2263,6 +2272,9 @@
 }
 .listingWrapper-329f74 {
 	@extend %storeListingWrapper !optional;
+}
+.scroller-1JpcIc {
+	@extend %storeListingScroller !optional;
 }
 .listing-2nUQ4d {
 	@extend %storeListing !optional;
@@ -4076,8 +4088,17 @@ pre {
 .contentRegion-3nDuYy {
 	@extend %settingsContentRegion !optional;
 }
+.contentRegionScroller-26nc1e {
+	@extend %settingsContentScroller !optional;
+}
 .role-3wi9Tf {
 	@extend %settingsRoleItem !optional;
+}
+.sidebarScrollable-1qPI87 {
+	@extend %settingsContentSidebarScrollable !optional;
+}
+.scroller-305q3I {
+	@extend %settingsContentSidebarScroller !optional;
 }
 .toolsContainer-1edPuj {
 	@extend %settingsToolsContainer !optional;
@@ -4105,6 +4126,9 @@ pre {
 }
 .sidebarRegion-VFTUkN {
 	@extend %settingsSidebarRegion !optional;
+}
+.sidebarRegionScroller-3MXcoP {
+	@extend %settingsSidebarScroller !optional;
 }
 .sidebar-CFHs9e {
 	@extend %settingsSidebar !optional;
