@@ -42,15 +42,16 @@
 
 	// MEMBER
 	%member {
-		position: relative;
 		background: transparent !important;
-		border-radius: 3px;
 		backface-visibility: hidden;
-		transition: all .15s ease-in-out, transform .1s ease-in-out;
-		overflow: hidden;
-		z-index: 1;
 		%listItemLayout {
+			position: relative;
 			background: transparent;
+			transition: all .15s ease-in-out, transform .1s ease-in-out;
+			z-index: 1;	
+			&:active {
+				transform: scale(.9);
+			}
 		}
 		%listItemRoleColor {
 			max-width: 100%;
@@ -62,6 +63,7 @@
 				position: absolute;
 				@include stretch;
 				background: linear-gradient(to right, hsla(0, 0%, 100%, .07) 90%, transparent);
+				border-radius: 3px;
 				opacity: 0;
 				transition: all .15s ease-in-out;
 				z-index: -1;
@@ -72,11 +74,12 @@
 				position: absolute;
 				@include pos(0, 100%, 0, 0);
 				background: linear-gradient(to right, $main-color 90%, transparent);
+				border-radius: 3px;
 				opacity: .8;
 				transition: all .3s ease-in-out;
 				z-index: -1;
 				pointer-events: none;
-			}	
+			}
 			&[style*="color:"]{
 				&:before,
 				&:after {
@@ -149,9 +152,6 @@
 			%listItemActivityIconForeground {
 				fill: hsla(0, 0%, 100%, .7);
 			}
-		}
-		&:active {
-			transform: scale(.9);
 		}
 	}
 
