@@ -1,6 +1,9 @@
 /* PRIVATE CHANNELS */
 %privateChannels {
 	background: transparent;
+	%privateChannelsScroller {
+		background: transparent;
+	}
 
 	// HEADER
 	%privateChannelsHeader {
