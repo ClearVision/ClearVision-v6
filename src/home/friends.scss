@@ -41,6 +41,9 @@
 				background-color: hsla(0, 0%, 100%, .07);
 			}
 		}
+		%friendsTableBody {
+			background: transparent;
+		}
 		%friendsRow {
 			background-color: transparent;
 			transition: all .15s ease-in-out;
