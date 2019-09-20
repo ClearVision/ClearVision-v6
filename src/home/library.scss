@@ -23,6 +23,9 @@
 	}
 
 	// BODY
+	%libraryScroller {
+		background: transparent;
+	}
 	%libraryTableHeader {
 		background-color: transparent;
 		border-bottom: 1px solid hsla(0, 0%, 100%, .07);
