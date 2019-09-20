@@ -16,6 +16,9 @@
 	> %flex:last-child {
 		background-color: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .5));
 	}
+	%scroller {
+		background-color: transparent;
+	}
 }
 
 // HERO CAROUSEL
