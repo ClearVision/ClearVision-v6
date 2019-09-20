@@ -13,10 +13,8 @@
 			background: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .5));
 		}
 	}
-	%messagesWrapper {
-		background: transparent;
-	}
 	%messages {
+		background: transparent;
 		backface-visibility: hidden;
 	}
 
