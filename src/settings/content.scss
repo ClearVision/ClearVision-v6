@@ -4,3 +4,9 @@
 		background: transparent;
 	}
 }
+%settingsContentRegion {
+	%settingsContentScroller,
+	%settingsContentSidebarScroller {
+		background: transparent;
+	}
+}
