@@ -19,18 +19,20 @@
 	%channelTextAreaInner {
 		background: rgba(0, 0, 0, .4);
 		border-radius: 5px;
-		%channelTextAreaAttachButton {
-			transform: none;
-			%channelTextAreaAttachButtonPlus {
-				opacity: .3;
-				transition: all .15s ease-in-out;
-			}
-			&:hover {
-				%channelTextAreaAttachButtonPlus {
-					opacity: .7;
-				}
-			}
+	}
+	%channelTextAreaAttachButton {
+		%channelTextAreaAttachButtonPlus {
+			opacity: .3;
+			transition: all .15s ease-in-out;
 		}
+		&:hover {
+			%channelTextAreaAttachButtonPlus {
+				opacity: .7;
+			}
+		}	
+	}
+	%channelTextAreaAttachButtonDivider {
+		background: hsla(0, 0%, 100%, .07);
 	}
 	textarea {
 		&::placeholder {
