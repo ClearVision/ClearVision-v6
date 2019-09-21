@@ -114,18 +114,11 @@
 						color: #fff;
 					}
 				}
-				%friendsActionAdd,
-				%friendsActionAccept {
-					&:hover {
-						background-color: cv("colors.success") !important;
-					}
+				%friendsActionAccept:hover {
+					background-color: cv("colors.success") !important;
 				}
-				%friendsActionRemove,
-				%friendsActionCancel,
-				%friendsActionIgnore {
-					&:hover {
-						background-color: cv("colors.danger") !important;
-					}
+				%friendsActionDeny:hover {
+					background-color: cv("colors.danger") !important;
 				}
 			}
 			&:hover %friendsColumnActions {
