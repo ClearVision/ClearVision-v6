@@ -1,4 +1,4 @@
-/*! Powered by DiscordSelectors v0.2.1 */
+/*! Powered by DiscordSelectors v0.2.2 */
 .appMount-3lHmkl {
 	@extend %appMount !optional;
 }
@@ -491,6 +491,27 @@
 .channel-1TmDQ6 {
 	@extend %connectionPanelChannel !optional;
 }
+.activityPanel-28dQGo {
+	@extend %activityPanel !optional;
+}
+.body-GmmuPm {
+	@extend %activityPanelBody !optional;
+}
+.gameWrapper-1jIQAX {
+	@extend %activityPanelGameWrapper !optional;
+}
+.clickableGameWrapper-2fpjdx {
+	@extend %activityPanelGameWrapperClickable !optional;
+}
+.gameIcon-gg34Dz {
+	@extend %activityPanelGameIcon !optional;
+}
+.gameName-13va7o {
+	@extend %activityPanelGameName !optional;
+}
+.actions-aUdUfC {
+	@extend %activityPanelActions !optional;
+}
 .privateChannels-1nO12o {
 	@extend %privateChannels !optional;
 }
@@ -715,6 +736,9 @@
 }
 .attachButtonPlus-rUdX-B {
 	@extend %channelTextAreaAttachButtonPlus !optional;
+}
+.attachButtonDivider-3Glu60 {
+	@extend %channelTextAreaAttachButtonDivider !optional;
 }
 .buttons-205you {
 	@extend %channelTextAreaButtons !optional;
@@ -1772,26 +1796,14 @@
 .friendsAction-__WNE9 {
 	@extend %friendsAction !optional;
 }
-.friendsActionAdd-3Hu_65 {
-	@extend %friendsActionAdd !optional;
+.disabled-XO9U5M {
+	@extend %friendsActionDisabled !optional;
 }
-.friendsActionVideoCall-2_PKeP {
-	@extend %friendsActionVideoCall !optional;
-}
-.friendsActionVoiceCall-3EdPsR {
-	@extend %friendsActionVoiceCall !optional;
-}
-.friendsActionRemove-qu8nnl {
-	@extend %friendsActionRemove !optional;
-}
-.friendsActionAccept-3mkemT {
+.actionAccept-zzNNTu {
 	@extend %friendsActionAccept !optional;
 }
-.friendsActionCancel-3AP4ex {
-	@extend %friendsActionCancel !optional;
-}
-.friendsActionIgnore-1-RPlq {
-	@extend %friendsActionIgnore !optional;
+.actionDeny-18IZiW {
+	@extend %friendsActionDeny !optional;
 }
 .text-GwUZgS {
 	@extend %friendsTableBodyText !optional;
@@ -3967,6 +3979,9 @@ pre {
 }
 .body-3iLsc4 {
 	@extend %userPopoutBody !optional;
+}
+.bodyInner-245q0L {
+	@extend %userPopoutBodyInner !optional;
 }
 .bodyTitle-Y0qMQz {
 	@extend %userPopoutBodyTitle !optional;
