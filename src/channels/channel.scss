@@ -284,6 +284,19 @@
 	}
 }
 
+// USER SUMMARY
+%userSummaryIcon {
+	width: 18px;
+	height: 18px;
+	margin-right: 3px;
+	color: hsla(0, 0%, 100%, .3);
+}
+%userSummaryMoreUsers {
+	padding: 0 4px;
+	background: rgba(0, 0, 0, .3);
+	border-radius: 10px;
+}
+
 // DRAG INDICATORS
 %categoryContainerDrag,
 %channelContainerDrag {
