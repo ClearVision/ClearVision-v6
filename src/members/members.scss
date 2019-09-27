@@ -3,7 +3,7 @@
 	min-width: auto;
 	flex-basis: cv("members-width");
 	%members {
-		max-width: cv("members-width");
+		width: cv("members-width");
 		background: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .6));
 	}
 }
