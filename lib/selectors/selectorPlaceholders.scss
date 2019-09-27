@@ -1,4 +1,4 @@
-/*! Powered by DiscordSelectors v0.2.2 */
+/*! Powered by DiscordSelectors v0.2.3 */
 .appMount-3lHmkl {
 	@extend %appMount !optional;
 }
@@ -335,6 +335,30 @@
 .icon-3BcwQu {
 	@extend %voiceUserIcon !optional;
 }
+.container-23E4rK {
+	@extend %userSummaryContainer !optional;
+}
+.icon-1tDorc {
+	@extend %userSummaryIcon !optional;
+}
+.avatarContainer-3CQrif {
+	@extend %userSummaryAvatarContainer !optional;
+}
+.avatarContainerMasked-PIJ-3L {
+	@extend %userSummaryAvatarContainerMasked !optional;
+}
+.avatar-3bWpYy {
+	@extend %userSummaryAvatar !optional;
+}
+.clickableAvatar-1wQpeh {
+	@extend %userSummaryAvatarClickable !optional;
+}
+.emptyUser-7txhlW {
+	@extend %userSummaryEmptyUser !optional;
+}
+.moreUsers-7v8yWY {
+	@extend %userSummaryMoreUsers !optional;
+}
 .channelNotices-41mJbj {
 	@extend %channelNotices !optional;
 }
@@ -576,6 +600,9 @@
 	@extend %chat !optional;
 }
 .content-yTz4x3 {
+	@extend %chatContentWrapper !optional;
+}
+.chatContent-a9vAAp {
 	@extend %chatContent !optional;
 }
 .base-34jWEe {
