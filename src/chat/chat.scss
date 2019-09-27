@@ -7,11 +7,14 @@
 %chat {
 
 	// CONTENT
-	%chatContent {
+	%chatContentWrapper {
 		background: transparent;
-		> %spacer {
-			background: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .5));
+		&:before {
+			display: none;
 		}
+	}
+	%chatContent {
+		background: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .5));
 	}
 	%messages {
 		background: transparent;
@@ -32,7 +35,7 @@
 }
 
 // GATED CHANNEL
-%chatContent > %scrollerWrap {
+%chatContentWrapper > %scrollerWrap {
 	background: rgba(0, 0, 0, .5);
 }
 %chatGatedContent {
