@@ -1,19 +1,14 @@
 /* APP */
-body {
-	&:before {
-		content: "";
-		position: fixed;
-		@include stretch;
-		background: cv("bg.app.img") cv("bg.app.pos")/cv("bg.app.size") cv("bg.app.repeat") cv("bg.app.attach");
-		@include filters(cv("bg.app"));
-		z-index: -9999;
-	}
-}
 %appMount {
 	background: cv("bg.app.overlay");
 }
 %shakeable {
 	background: transparent;
+}
+%bg {
+	background: cv("bg.app.img") cv("bg.app.pos")/cv("bg.app.size") cv("bg.app.repeat") cv("bg.app.attach");
+	@include filters(cv("bg.app"));
+	z-index: -9999;
 }
 %appMount {
 	%layers,
