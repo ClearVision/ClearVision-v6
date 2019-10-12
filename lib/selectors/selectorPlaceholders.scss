@@ -1,4 +1,4 @@
-/*! Powered by DiscordSelectors v0.2.3 */
+/*! Powered by DiscordSelectors v0.2.4 */
 .appMount-3lHmkl {
 	@extend %appMount !optional;
 }
@@ -25,6 +25,9 @@
 }
 .app-2rEoOp {
 	@extend %shakeable !optional;
+}
+.bg-h5JY_x {
+	@extend %bg !optional;
 }
 .layers-3iHuyZ {
 	@extend %layers !optional;
@@ -1118,7 +1121,7 @@
 .name-uJV0GL {
 	@extend %listItemName !optional;
 }
-.roleColor-36x_Mz {
+.roleColor-rz2vM0 {
 	@extend %listItemRoleColor !optional;
 }
 .children-gzQq2t {
@@ -1127,13 +1130,13 @@
 .subText-1KtqkB {
 	@extend %listItemSubText !optional;
 }
-.activity-E-0FeD {
+.activity-3mKQ-i {
 	@extend %listItemActivity !optional;
 }
-.text-zpzAjW {
+.text-16xCj0 {
 	@extend %listItemActivityText !optional;
 }
-.icon-2dCXDL {
+.icon-15YQ1T {
 	@extend %listItemActivityIcon !optional;
 }
 .closeButton-2GCmT5 {
@@ -2489,7 +2492,7 @@
 .membersGroup-v9BXpm {
 	@extend %membersGroup !optional;
 }
-.member-3W1lQa {
+.member-3-YXUe {
 	@extend %member !optional;
 }
 .offline-34J64g {
