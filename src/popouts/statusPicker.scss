@@ -30,11 +30,11 @@
 			&:nth-child(4) {
 				background: cv("colors.dnd");
 			}
-			&:last-child {
+			&:nth-child(5) {
 				background: cv("colors.offline");
 			}
 			&:nth-child(4),
-			&:last-child {
+			&:nth-child(5) {
 				%statusPickerText > div {
 					opacity: 0;
 				}
