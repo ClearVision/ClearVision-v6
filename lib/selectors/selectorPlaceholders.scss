@@ -1,4 +1,4 @@
-/*! Powered by DiscordSelectors v0.2.4 */
+/*! Powered by DiscordSelectors v0.2.5 */
 .appMount-3lHmkl {
 	@extend %appMount !optional;
 }
@@ -2654,7 +2654,7 @@ pre {
 .hljs {
 	@extend %codeHLJS !optional;
 }
-.container-1e22Ot {
+.container-206Blv {
 	@extend %embedContainer !optional;
 }
 .embed-IeVjo6 {
@@ -2666,12 +2666,6 @@ pre {
 .embedInner-1-fpTo {
 	@extend %embedInner !optional;
 }
-.embedContent-3fnYWm {
-	@extend %embedContent !optional;
-}
-.embedContentInner-FBnk7v {
-	@extend %embedContentInner !optional;
-}
 .embedMargin-UO5XwE {
 	@extend %embedMargin !optional;
 }
@@ -2680,9 +2674,6 @@ pre {
 }
 .embedProvider-3k5pfl {
 	@extend %embedProvider !optional;
-}
-.embedProviderLink-2Pq1Uw {
-	@extend %embedProviderLink !optional;
 }
 .embedAuthor-3l5luH {
 	@extend %embedAuthor !optional;
@@ -2710,9 +2701,6 @@ pre {
 }
 .embedField-1v-Pnh {
 	@extend %embedField !optional;
-}
-.embedFieldInline-3-e-XX {
-	@extend %embedFieldInline !optional;
 }
 .embedFieldName-NFrena {
 	@extend %embedFieldName !optional;
@@ -2744,14 +2732,14 @@ pre {
 .embedIframe-2hcNY5 {
 	@extend %embedIframe !optional;
 }
-.embedGIFV-3_ebID {
-	@extend %embedGIFV !optional;
-}
 .embedGIFTag-n_mDqR {
 	@extend %embedGIFTag !optional;
 }
-.embedVideoActionsInner-2reMo2 {
-	@extend %embedVideoActionsInner !optional;
+.embedVideoActions-O6vR7W {
+	@extend %embedVideoActions !optional;
+}
+.embedVideoAction-2BIhKO {
+	@extend %embedVideoAction !optional;
 }
 .wrapper-129saQ {
 	@extend %embedVideoActionsButtonWrapper !optional;
