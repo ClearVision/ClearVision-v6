@@ -8,19 +8,7 @@ before_script:
   - npm install
 
 stages:
-  - test
   - deploy
-
-test:
-  stage: test
-  script: npm run test
-  artifacts:
-    name: "$CI_JOB_STAGE-$CI_COMMIT_SHORT_SHA"
-    paths:
-      - test
-    when: always
-  only:
-    - master
 
 pages:
   stage: deploy
