@@ -14,27 +14,26 @@
 		}
 	}
 	
-	// CODEBLOCK PRE
+	// CODEBLOCK
 	%codePre {
 		max-width: 93%;
 		padding: 0;
 		background: transparent;
 		border: 2px solid transparent;
 		font-family: cv("font.code");
-	}
-
-	// CODEBLOCK HLJS
-	%codePre > %codeHLJS {
-		position: relative;
-		padding: 6px;
-		background: rgba(0, 0, 0, .42);
-		color: hsla(0, 0%, 100%, .7);
-		border-radius: 5px;
-		&:before {
-			height: 10px;
-			color: hsla(0, 0%, 100%, .3);
-			line-height: 10px;
-			opacity: 1;
+		& > %codeHLJS {
+			position: relative;
+			padding: 6px;
+			background: rgba(0, 0, 0, .42);
+			border: none;
+			border-radius: 5px;
+			color: hsla(0, 0%, 100%, .7);
+			&:before {
+				height: 10px;
+				color: hsla(0, 0%, 100%, .3);
+				line-height: 10px;
+				opacity: 1;
+			}
 		}
 	}
 }
