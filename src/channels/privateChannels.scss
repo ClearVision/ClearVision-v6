@@ -59,15 +59,6 @@
 				pointer-events: none;
 			}
 		}
-		%listItemName {
-			color: hsla(0, 0%, 100%, .3);
-			transition: all .15s ease-in-out;
-		}
-		%listItemActivity {
-			color: hsla(0, 0%, 100%, .2);
-			opacity: 1;
-			transition: all .15s ease-in-out;
-		}
 		%listItemClose {
 			display: block;
 			background: url(https://clearvision.gitlab.io/icons/close.svg) center/18px no-repeat;
@@ -86,12 +77,6 @@
 				&:before {
 					background: hsla(0, 0%, 100%, .1);
 				}
-			}
-			%listItemName {
-				color: hsla(0, 0%, 100%, .7);
-			}
-			%listItemActivity {
-				color: hsla(0, 0%, 100%, .5);
 			}
 			%listItemClose {
 				opacity: .3;
@@ -116,12 +101,6 @@
 					background: $main-color;
 					animation: cv-channel-select .3s ease-in-out;
 				}
-			}
-			%listItemName{
-				color: #fff;
-			}
-			%listItemActivity {
-				color: hsla(0, 0%, 100%, .7);
 			}
 			%privateChannelIcon {
 				color: #fff;
