@@ -1,10 +1,10 @@
 /* MESSAGE REACTION */
-%reactions > %reaction {
+%reactions %reaction {
 	position: relative;
 	background: hsla(0, 0%, 100%, .04);
 	border-radius: 3px;
 	transition: all .15s ease-in-out;
-	> %reactionInner {
+	%reactionInner {
 		padding: 0 5px;
 	}
 	%reactionCount {
