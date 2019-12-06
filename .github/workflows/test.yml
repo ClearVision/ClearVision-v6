@@ -19,5 +19,5 @@ jobs:
         run: npm test
       - uses: actions/upload-artifact@v1
         with:
-          name: test-${GITHUB_SHA::8}
+          name: test-${{github.sha}}
           path: test
