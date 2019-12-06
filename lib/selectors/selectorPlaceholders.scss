@@ -1,4 +1,4 @@
-/*! Powered by DiscordSelectors v0.2.5 */
+/*! Powered by DiscordSelectors v0.2.6 */
 .appMount-3lHmkl {
 	@extend %appMount !optional;
 }
@@ -769,6 +769,15 @@
 }
 .attachButtonDivider-3Glu60 {
 	@extend %channelTextAreaAttachButtonDivider !optional;
+}
+.textArea-2Spzkt {
+	@extend %textArea !optional;
+}
+.placeholder-P6ptfj {
+	@extend %textAreaPlaceholder !optional;
+}
+.slateTextArea-1bp44y {
+	@extend %slateTextArea !optional;
 }
 .buttons-205you {
 	@extend %channelTextAreaButtons !optional;

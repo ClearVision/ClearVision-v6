@@ -59,6 +59,33 @@
 		}
 	}
 
+	// fix for slate textarea
+	%textArea {
+		position: static;
+	}
+	%textAreaPlaceholder {
+		color: hsla(0, 0%, 100%, .2);
+	}
+	%slateTextArea {
+		&:after {
+			content: "";
+			position: absolute;
+			@include pos(-2px, -2px, -2px, -2px);
+			border: 2px solid hsla(0, 0%, 100%, .1);
+			border-radius: 5px;
+			box-shadow: 0 0 3px;
+			color: transparent;
+			transition: all .15s ease-in-out;
+			pointer-events: none;
+		}
+		&:focus {
+			&:after {
+				border-color: $main-color;
+				color: $main-color;
+			}
+		}
+	}
+
 	// BUTTONS
 	%channelTextAreaButton {
 		opacity: .3;
