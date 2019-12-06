@@ -1137,13 +1137,28 @@
 	@extend %listItemChildren !optional;
 }
 .subText-1KtqkB {
-	@extend %listItemSubText !optional;
+	@extend %listItemActivityText !optional;
 }
-.activity-3mKQ-i {
+.subText-1KtqkB {
+	@extend %memberListItemSubText !optional;
+}
+.activity-525YDR {
 	@extend %listItemActivity !optional;
 }
-.text-16xCj0 {
+.activity-2Gy-9S {
+	@extend %memberListItemActivity !optional;
+}
+.activityText-OW8WYb {
 	@extend %listItemActivityText !optional;
+}
+.activityText-yGKsKm {
+	@extend %memberListItemActivityText !optional;
+}
+.activityEmoji-1AR8K6 {
+	@extend %listItemActivityEmoji !optional;
+}
+.activityEmoji-2GDGtF {
+	@extend %memberListItemActivityEmoji !optional;
 }
 .icon-15YQ1T {
 	@extend %listItemActivityIcon !optional;
@@ -2504,7 +2519,7 @@
 .member-3-YXUe {
 	@extend %member !optional;
 }
-.offline-34J64g {
+.offline-3nJYBR {
 	@extend %memberOffline !optional;
 }
 .icon-1mmpLU {
