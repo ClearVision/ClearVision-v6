@@ -4,6 +4,11 @@
 }
 %shakeable {
 	background: transparent;
+	&:not(:last-child) {
+		%layers {
+			filter: blur(10px);
+		}
+	}
 }
 %bg {
 	background: cv("bg.app.img") cv("bg.app.pos")/cv("bg.app.size") cv("bg.app.repeat") cv("bg.app.attach");
@@ -11,7 +16,10 @@
 	z-index: -9999;
 }
 %appMount {
-	%layers,
+	%layers {
+		background: transparent;
+		transition: filter 1s ease-in-out;
+	}
 	%layer {
 		background: transparent;
 	}
