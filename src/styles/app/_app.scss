@@ -2,35 +2,30 @@
 @import "lib/legacy-selectors";
 
 /* APP */
-%appMount {
+#app-mount {
 	background: cv("bg.app.overlay");
 }
-%shakeable {
+#{cn(ApplicationStoreStandalone app)} {
 	background: transparent;
 }
-%bg {
+#{cn(ConnectedLayers bg)} {
 	background: cv("bg.app.img") cv("bg.app.pos")/cv("bg.app.size") cv("bg.app.repeat") cv("bg.app.attach");
 	@include filters(cv("bg.app"));
 	z-index: -9999;
 }
-%appMount {
-	%layers,
-	%layer {
+#app-mount {
+	#{cn(ConnectedLayers layers)},
+	#{cn(ConnectedLayers layer)} {
 		background: transparent;
 	}
 }
-%layer {
-	%containerMain,
-	%standardSidebarView {
-		background: transparent;
-	}
+#{cn(StandardSidebarView standardSidebarView)} {
+	background: transparent;
 }
-%containerMain {
-	%base {
-		border-radius: 0;
-	}
+#{cn("FluxContainer(AppView)" base)} {
+	border-radius: 0;
 }
-%backdrop {
+#{cn(Backdrop backdrop)} {
 	&:before {
 		content: "";
 		position: fixed;
@@ -65,7 +60,7 @@ textarea,
 }
 
 // ANCHORS
-%anchor {
+#{cn(Anchor anchor)} {
 	color: $main-color;
 	@include hover-shadow;
 }
