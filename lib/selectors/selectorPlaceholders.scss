@@ -1,4 +1,4 @@
-/*! Powered by DiscordSelectors v0.2.6 */
+/*! Powered by DiscordSelectors v0.2.7 */
 .appMount-3lHmkl {
 	@extend %appMount !optional;
 }
@@ -755,11 +755,20 @@
 .endContainer-1ZDW8j {
 	@extend %gifAutocompleteEndContainer !optional;
 }
-.channelTextArea-rNsIhG {
+.form-2fGMdU {
+	@extend %chatForm !optional;
+}
+.channelTextArea-1LDbYG {
 	@extend %channelTextArea !optional;
+}
+.scrollableContainer-38zsVD {
+	@extend %channelTextAreaScrollable !optional;
 }
 .inner-zqa7da {
 	@extend %channelTextAreaInner !optional;
+}
+.attachWrapper-1_D-pj {
+	@extend %channelTextAreaAttachWrapper !optional;
 }
 .attachButton-1UjEWA {
 	@extend %channelTextAreaAttachButton !optional;
