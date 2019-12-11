@@ -1,6 +1,7 @@
-@use "../lib/discordselectors/";
+@use "lib/discordselectors";
+@use "variables";
 
-@function c($query) {
+@function cn($query) {
 	@return discordselectors.class($query);
 }
 
@@ -8,32 +9,32 @@
 /// @param {string} $id identification for a variable
 /// @return {*} variable
 @function cv($id) {
-	$p: "settings";
-	$s: $id;
+	$type: "settings";
+	$query: $id;
 	@if str-index($id, ":") {
-		$p: str-slice($id, 0, str-index($id, ":") - 1);
-		$s: str-slice($id, str-index($id, ":") + 1);
+		$type: str-slice($id, 0, str-index($id, ":") - 1);
+		$query: str-slice($id, str-index($id, ":") + 1);
 	}
-	@if $p == "const" {
-		$p: "constants";
+	$result: variables.$settings;
+	@if $type == "const" or $type == "constants" {
+		$result: variables.$constants;
 	}
-	@if $p == "dc" or $p == "disc" {
-		$p: "discord";
+	@if $type == "dc" or $type == "disc" or $type == "discord" {
+		$result: variables.$constants;
 	}
-	$r: map-get($cv, $p);
-	@if not $r {
-		@error "#{$p} is not a valid ClearVision set";
+	@if not $result {
+		@error "#{$type} is not a valid ClearVision variable set";
 	}
-	@while str-index($s, ".") {
-		$r: map-get($r, str-slice($s, 0, str-index($s, ".") - 1));
-		@if not $r {
-			@error "Property #{$id} not found in ClearVision #{$p} set";
+	@while str-index($query, ".") {
+		$result: map-get($result, str-slice($query, 0, str-index($query, ".") - 1));
+		@if not $result {
+			@error "Property #{$id} not found in ClearVision #{$result} set";
 		}
-		$s: str-slice($s, str-index($s, ".") + 1);
+		$query: str-slice($query, str-index($query, ".") + 1);
 	}
-	$r: map-get($r, $s);
-	@if not $r {
-		@error "Property #{$id} not found in ClearVision #{$p} set";
+	$result: map-get($result, $query);
+	@if not $result {
+		@error "Property #{$query} not found in ClearVision #{$type} set";
 	}
-	@return $r;
+	@return $result;
 }
