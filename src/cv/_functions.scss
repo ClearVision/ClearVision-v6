@@ -20,7 +20,7 @@
 		$result: variables.$constants;
 	}
 	@if $type == "dc" or $type == "disc" or $type == "discord" {
-		$result: variables.$constants;
+		$result: variables.$discord;
 	}
 	@if not $result {
 		@error "#{$type} is not a valid ClearVision variable set";
