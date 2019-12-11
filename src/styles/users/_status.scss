@@ -1,3 +1,5 @@
+@use "cv" as *;
+
 /* STATUS */
 @each $status, $color in cv("disc:status") {
 	$id: unique-id();

@@ -1,3 +1,5 @@
+@use "cv" as *;
+
 /* MESSAGE ATTACHMENT */
 %messageGroup %attachment {
 	background: hsla(0, 0%, 100%, .04);

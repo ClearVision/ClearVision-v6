@@ -1,3 +1,5 @@
+@use "cv" as *;
+
 /* MESSAGE SPOILER */
 %messageContent %spoilerText {
 	background: hsla(0, 0%, 100%, .04);
