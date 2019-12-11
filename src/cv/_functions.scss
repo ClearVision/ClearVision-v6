@@ -1,3 +1,5 @@
+@use "sass:string";
+@use "sass:map";
 @use "lib/discordselectors";
 @use "variables";
 
@@ -11,9 +13,9 @@
 @function cv($id) {
 	$type: "settings";
 	$query: $id;
-	@if str-index($id, ":") {
-		$type: str-slice($id, 0, str-index($id, ":") - 1);
-		$query: str-slice($id, str-index($id, ":") + 1);
+	@if string.index($id, ":") {
+		$type: string.slice($id, 0, string.index($id, ":") - 1);
+		$query: string.slice($id, string.index($id, ":") + 1);
 	}
 	$result: variables.$settings;
 	@if $type == "const" or $type == "constants" {
@@ -25,14 +27,14 @@
 	@if not $result {
 		@error "#{$type} is not a valid ClearVision variable set";
 	}
-	@while str-index($query, ".") {
-		$result: map-get($result, str-slice($query, 0, str-index($query, ".") - 1));
+	@while string.index($query, ".") {
+		$result: map.get($result, string.slice($query, 0, string.index($query, ".") - 1));
 		@if not $result {
 			@error "Property #{$id} not found in ClearVision #{$result} set";
 		}
-		$query: str-slice($query, str-index($query, ".") + 1);
+		$query: string.slice($query, string.index($query, ".") + 1);
 	}
-	$result: map-get($result, $query);
+	$result: map.get($result, $query);
 	@if not $result {
 		@error "Property #{$query} not found in ClearVision #{$type} set";
 	}
