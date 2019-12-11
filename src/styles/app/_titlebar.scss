@@ -65,34 +65,9 @@
 
 // TITLEBAR OSX
 %titlebarMac {
-	width: 70px;
-	height: 48px;
 	&%titlebarUnfocused {
 		%titlebarMacButton {
 			background: hsla(0, 0%, 100%, .7);
 		}
-	}
-	> %titlebarMacButtons {
-		padding: 0 10px;
-	}
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-evenly;
-	&:before,
-	&:after {
-		margin: 0 2px;
-		font-size: 10px;
-		order: 1;
-	}
-	&:before {
-		content: cv("const:text.titlebar.short");
-		color: $main-color;
-		font-weight: 700;
-		text-shadow: 0 0 3px;
-	}
-	&:after {
-		content: "#{$version}";
-		color: hsla(0, 0%, 100%, .3);
 	}
 }
