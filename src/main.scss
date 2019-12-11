@@ -1,9 +1,5 @@
-$version: "6-beta.2.0";
+// DEFAULT SETTINGS
+@use "defaults";
 
-/*! ClearVision v#{$version} by Zerthox */
-
-// CLEARVISION GLOBALS
-@use "cv";
-
-// STyLES
+// STYLES
 @use "styles";
