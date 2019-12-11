@@ -58,7 +58,7 @@
 			&:after {
 				content: "";
 				position: fixed;
-				@include pos(0, 0, 0, 0);
+				@include stretch;
 				border: 2px solid hsla(0, 0%, 100%, .1);
 				border-radius: 5px;
 				box-shadow: 0 0 3px;
