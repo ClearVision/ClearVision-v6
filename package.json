@@ -5,10 +5,11 @@
   "private": true,
   "scripts": {
     "clean": "rimraf {test,public}",
-    "test": "sass src:test --style=expanded --load-path=src --no-source-map",
-    "build": "npm run build.sass && npm run build.prefix",
-    "build.sass": "sass src:public --style=compressed --load-path=src --no-source-map",
-    "build.prefix": "postcss public/*.css --dir=public --use=autoprefixer  -b=\"> 5%\" --no-map"
+    "test": "sass src:test --load-path=src --no-source-map",
+    "build": "npm run build-sass && npm run build-prefix",
+    "build-sass": "sass src:public --style=compressed --load-path=src --no-source-map",
+    "build-prefix": "postcss public/*.css --dir=public --use=autoprefixer  -b=\"> 5%\" --no-map",
+    "dev": "sass src/main.scss:public/main.css --watch --load-path=src --no-source-map"
   },
   "repository": {
     "type": "git",
