@@ -1,8 +1,7 @@
 /*! HLJS Language Display by Zerthox */
 
-// IMPORTS
-@import "mixins";
-@import "../lib/selectors/selectorPlaceholders";
+// CLEARVISION GLOBALS
+@use "cv";
 
 // IMPORT CODE LANGUAGES
-@import "messages/codeLanguages";
+@use "styles/messages/codeLanguages";
