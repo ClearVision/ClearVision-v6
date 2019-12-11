@@ -1,3 +1,9 @@
+@use "../lib/discordselectors/";
+
+@function c($query) {
+	@return discordselectors.class($query);
+}
+
 /// Get a variable from the ClearVision variables map
 /// @param {string} $id identification for a variable
 /// @return {*} variable
