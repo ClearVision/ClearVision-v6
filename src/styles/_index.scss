@@ -1,128 +1,18 @@
-// APP
-@forward "app/app";
-@forward "app/notice";
-@forward "app/titlebar";
-
-// HEADER BAR
-@forward "headerBar/headerBar";
-@forward "headerBar/toolbar";
-@forward "headerBar/searchBars";
-@forward "headerBar/topPill";
-@forward "headerBar/breadcrumbs";
-
-// GUILDS
-@forward "guilds/guilds";
-
-// CHANNELS
-@forward "channels/channels";
-@forward "channels/category";
-@forward "channels/channel";
-@forward "channels/panels";
-@forward "channels/indicators";
-@forward "channels/privateChannels";
-@forward "channels/channelNotice";
-
-// CHAT
-@forward "chat/chat";
-@forward "chat/divider";
-@forward "chat/bars";
-@forward "chat/textArea";
-@forward "chat/textAreaAutocomplete";
-@forward "chat/gifAutocomplete";
-@forward "chat/call";
-@forward "chat/welcomeMessage";
-
-// MESSAGES
-@forward "messages/message";
-@forward "messages/reaction";
-@forward "messages/inviteLink";
-@forward "messages/embed";
-@forward "messages/mediaPlayer";
-@forward "messages/activityInvite";
-@forward "messages/codeblock";
-@forward "messages/codeLanguages";
-@forward "messages/mention";
-@forward "messages/spoiler";
-@forward "messages/attachment";
-@forward "messages/blocked";
-
-// MEMBERS
-@forward "members/members";
-
-// forwardRS
-@forward "forwardrs/avatar";
-@forward "forwardrs/status";
-@forward "forwardrs/botTag";
-@forward "forwardrs/role";
-@forward "forwardrs/activity";
-
-// SEARCH
-@forward "search/search";
-
-// HOME TAB
-@forward "home/friends";
-@forward "home/library";
-@forward "home/activity";
-@forward "home/store";
-
-// GENERAL ELEMENTS
-@forward "general/button";
-@forward "general/scrollbar";
-@forward "general/badge";
-@forward "general/tooltip";
-@forward "general/checkbox";
-@forward "general/slider";
-@forward "general/spinner";
-@forward "general/listItem";
-
-// POPOUTS
-@forward "popouts/popout";
-@forward "popouts/forwardrPopout";
-@forward "popouts/contextMenu";
-@forward "popouts/messageOptions";
-@forward "popouts/guildPopout";
-@forward "popouts/statusPicker";
-@forward "popouts/connectionInfo";
-@forward "popouts/messagesPopout";
-@forward "popouts/autocompletePopout";
-@forward "popouts/searchPopout";
-@forward "popouts/emojiPicker";
-@forward "popouts/groupInvite";
-
-// MODALS
-@forward "modals/modal";
-@forward "modals/forwardrModal";
-@forward "modals/keyboardShortcuts";
-
-// SETTINGS
-@forward "settings/sidebar";
-@forward "settings/icons";
-@forward "settings/content";
-
-// PAGES
-@forward "pages/discovery";
-
-// SCREENS
-@forward "screens/loading";
-@forward "screens/crash";
-
-// BETTERDISCORD
-@forward "bd/sidebar";
-@forward "bd/icons";
-@forward "bd/emotePicker";
-@forward "bd/sources";
-
-/* BETTERDISCORD PLUGINS */
-@forward "bd/plugins/pluginNotice";
-@forward "bd/plugins/messageButtons";
-@forward "bd/plugins/noodlebox/lineNumbers";
-@forward "bd/plugins/Finicalmist/copyCode";
-@forward "bd/plugins/DevilBro/tooltips";
-@forward "bd/plugins/DevilBro/showHiddenChannels";
-@forward "bd/plugins/DevilBro/dateText";
-@forward "bd/plugins/DevilBro/badgesEverywhere";
-@forward "bd/plugins/DevilBro/ownerTag";
-@forward "bd/plugins/Arashiryuu/memberCount";
-
-// KEYFRAMES
-@forward "keyframes";
+@use "app";
+@use "headerBar";
+@use "guilds";
+@use "channels";
+@use "chat";
+@use "messages";
+@use "members";
+@use "users";
+@use "search";
+@use "home";
+@use "general";
+@use "popouts";
+@use "modals";
+@use "settings";
+@use "pages";
+@use "screens";
+@use "bd";
+@use "keyframes";
