@@ -1,11 +1,3 @@
-@use "functions" as *;
-
+@forward "variables" show $version, $main-color, $hover-color;
 @forward "functions";
-@forward "variables" show $version;
 @forward "mixins";
-
-@forward "lib/old-selectors/selectorPlaceholders.scss";
-
-// SHORTHAND VARIABLES
-$main-color: cv("colors.main");
-$hover-color: cv("colors.hover");

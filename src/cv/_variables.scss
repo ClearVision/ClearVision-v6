@@ -1,5 +1,9 @@
+@use "sass:map";
+
 // VERSION
 $version: "6-beta.2.0";
+
+/*! ClearVision v#{$version} by Zerthox */
 
 // CONSTANTS
 $constants: (
@@ -233,3 +237,8 @@ $discord: (
 		)
 	)
 );
+
+
+// SHORTHAND VARIABLES
+$main-color: map.get(map.get($settings, "colors"), "main");
+$hover-color: map.get(map.get($settings, "colors"), "hover");
