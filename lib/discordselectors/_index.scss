@@ -1,0 +1,24 @@
+$_version: "0.3.0";
+
+@use "sass:string";
+@use "sass:list";
+@use "sass:map";
+@use "map" as *;
+
+/*! Powered by DiscordSelectors v#{$_version} */
+
+@function class($query) {
+	$class: $map;
+	@each $el in $query {
+		$class: map.get($class, "#{$el}");
+		@if not $class {
+			@error "Unknown element \"#{$el}\" in query: #{$query}";
+		}
+	}
+	$index: string.index($class, " ");
+	@while $index {
+		$class: string.slice($class, 0, $index - 1) + "." + string.slice($class, $index + 1);
+		$index: string.index($class, " ");
+	}
+	@return ".#{$class}";
+}
