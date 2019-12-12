@@ -1,4 +1,4 @@
-$_version: "0.3.0";
+$_version: "0.3.1";
 
 @use "sass:string";
 @use "sass:list";
@@ -15,10 +15,5 @@ $_version: "0.3.0";
 			@error "Unknown element \"#{$el}\" in query: #{$query}";
 		}
 	}
-	$index: string.index($class, " ");
-	@while $index {
-		$class: string.slice($class, 0, $index - 1) + "." + string.slice($class, $index + 1);
-		$index: string.index($class, " ");
-	}
-	@return ".#{$class}";
+	@return $class;
 }
