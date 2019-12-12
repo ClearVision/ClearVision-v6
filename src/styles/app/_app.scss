@@ -1,11 +1,10 @@
 @use "cv" as *;
-@import "lib/legacy-selectors";
 
 /* APP */
 #app-mount {
 	background: cv("bg.app.overlay");
 }
-#{cn(ApplicationStoreStandalone app)} {
+#{cn(Chat app)} {
 	background: transparent;
 }
 #{cn(ConnectedLayers bg)} {
