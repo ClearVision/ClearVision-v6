@@ -1,9 +1,8 @@
 @use "cv" as *;
-@import "lib/legacy-selectors";
 
 /* CHANNEL INDICATORS */
-%channelsUnreadIndicator,
-%channelsMentionIndicator {
+#{cn(UnreadBar unread)},
+#{cn(UnreadBar mention)} {
 	position: relative;
 	background: transparent;
 	&:after {

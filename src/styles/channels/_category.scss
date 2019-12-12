@@ -1,19 +1,21 @@
 @use "cv" as *;
-@import "lib/legacy-selectors";
 
 /* CHANNEL CATEGORY */
-%categoryContainer {
+#{cn("FluxContainer(DropTarget(DragSource(Category)))" containerDefault)},
+#{cn("FluxContainer(DropTarget(DragSource(Category)))" containerUserOver)},
+#{cn("FluxContainer(DropTarget(DragSource(Category)))" containerDragBefore)},
+#{cn("FluxContainer(DropTarget(DragSource(Category)))" containerDragAfter)} {
 	padding-top: 20px;
 }
-%categoryWrapper {
+#{cn(ChannelCategoryItem wrapper)} {
 	padding-left: 10px;
 	padding-right: 0;
 	transition: all .3s ease-in-out;
 }
-%categoryIcon {
+#{cn(ChannelCategoryItem icon)} {
 	display: none;
 }
-%categoryName {
+#{cn(ChannelCategoryItem name)} {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -38,26 +40,29 @@
 		background: linear-gradient(to right, $main-color 50%, transparent);
 		margin-left: 5px;
 	}
-	%categoryWrapper &:hover {
+	#{cn(ChannelCategoryItem wrapper)} &:hover {
 		opacity: 1;
 	}
 }
-%channelsSidebar {
-	%categoryContainer {
-		%categoryWrapper {
-			%categoryName {
-				color: $main-color;
-			}
+#{cn("FluxContainer(DropTarget(DragSource(Category)))" containerDefault)},
+#{cn("FluxContainer(DropTarget(DragSource(Category)))" containerUserOver)},
+#{cn("FluxContainer(DropTarget(DragSource(Category)))" containerDragBefore)},
+#{cn("FluxContainer(DropTarget(DragSource(Category)))" containerDragAfter)} {
+	#{cn(ChannelCategoryItem wrapper)} {
+		#{cn(ChannelCategoryItem name)} {
+			color: $main-color;
 		}
 	}
 }
-%categoryButtons {
+
+// BUTTONS
+#{cn(ChannelCategoryItem children)} {
 	margin-left: 3px;
 }
 
 // COLLAPSED
-%categoryWrapperCollapsed {
-	%categoryName {
+#{cn(ChannelCategoryItem collapsed)} {
+	#{cn(ChannelCategoryItem name)} {
 		&:before,
 		&:after {
 			flex-grow: 0;
@@ -66,6 +71,6 @@
 }
 
 // MUTED
-%categoryWrapperMuted { 
+#{cn(ChannelCategoryItem muted)} { 
 	opacity: .5;
 }

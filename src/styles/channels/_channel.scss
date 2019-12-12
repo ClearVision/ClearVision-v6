@@ -2,12 +2,10 @@
 @import "lib/legacy-selectors";
 
 /* CHANNEL */
-%channelContent {
-	transition: all .15s ease-in-out;
-}
-%channelContent {
+#{cn(ChannelItem content)} {
 	position: relative;
 	background: transparent !important;
+	transition: all .15s ease-in-out;
 	&:before {
 		content: "";
 		position: absolute;
@@ -25,7 +23,7 @@
 		z-index: -1;
 		pointer-events: none;
 	}
-	%channelIcon {
+	#{cn(ChannelItem icon)} {
 		width: 18px;
 		height: 18px;
 		margin-right: 3px;
@@ -39,16 +37,16 @@
 			opacity: 1;
 		}
 	}
-	%channelName {
+	#{cn(ChannelItem name)} {
 		color: hsla(0, 0%, 100%, .3);
 		transition: all .15s ease-in-out;
 	}
 }
-%channelButtons {
+#{cn(ChannelItem children)} {
 	margin-left: 1px;
 	animation: cv-fade-to-3 .15s ease-in-out;
 }
-%channelActionIcon {
+#{cn("FluxContainer(DropTarget(DragSource(TextChannel)))" actionIcon)} {
 	color: #fff;
 	opacity: .3;
 	transition: all .15s ease-in-out;
@@ -56,17 +54,17 @@
 		opacity: .7;
 	}
 }
-%channelWrapper {
+#{cn(ChannelItem wrapper)} {
 
 	// HOVER
 	&:hover {
-		%channelContent {
+		#{cn(ChannelItem content)} {
 			&:before {
 				background: hsla(0, 0%, 100%, .1);
 			}
-			%channelContainerDefault & {
-				%channelIcon,
-				%channelName {
+			#{cn("FluxContainer(DropTarget(DragSource(TextChannel)))" containerDefault)} & {
+				#{cn(ChannelItem icon)},
+				#{cn(ChannelItem name)} {
 					color: hsla(0, 0%, 100%, .7);
 				}
 			}
@@ -74,24 +72,24 @@
 	}
 
 	// UNREAD
-	&%channelWrapperUnread {
-		%channelContent {
-			%channelName {
+	&#{cn(ChannelItem modeUnread)} {
+		#{cn(ChannelItem content)} {
+			#{cn(ChannelItem name)} {
 				color: $main-color;
 				text-shadow: 0 0 3px;
 			}
-			%channelIcon {
+			#{cn(ChannelItem icon)} {
 				color: $main-color;
 				filter: drop-shadow(0 0 3px);
 				opacity: 1;
 			}
 		}
 		&:hover {
-			%channelContent {
-				%channelName {
+			#{cn(ChannelItem content)} {
+				#{cn(ChannelItem name)} {
 					color: #fff;
 				}
-				%channelIcon {
+				#{cn(ChannelItem icon)} {
 					color: #fff;
 				}
 			}
@@ -99,8 +97,8 @@
 	}
 
 	// SELECTED
-	&%channelWrapperSelected {
-		%channelContent {
+	&#{cn(ChannelItem modeSelected)} {
+		#{cn(ChannelItem content)} {
 			&:before {
 				background: hsla(0, 0%, 100%, .1);
 			}
@@ -109,13 +107,13 @@
 				background: $main-color;
 				animation: cv-channel-select .3s ease-in-out;
 			}
-			%channelContainerDefault & {
-				%channelIcon,
-				%channelName {
+			#{cn("FluxContainer(DropTarget(DragSource(TextChannel)))" containerDefault)} & {
+				#{cn(ChannelItem icon)},
+				#{cn(ChannelItem name)} {
 					color: #fff;
 				}
 			}
-			%channelActionIcon {
+			#{cn("FluxContainer(DropTarget(DragSource(TextChannel)))" actionIcon)} {
 				opacity: .7;
 				&:hover {
 					opacity: 1;
@@ -126,13 +124,13 @@
 
 	
 	// CONNECTED
-	&%channelWrapperConnected {
-		%channelContent {
-			%channelName {
+	&#{cn(ChannelItem modeConnected)} {
+		#{cn(ChannelItem content)} {
+			#{cn(ChannelItem name)} {
 				color: $main-color;
 				text-shadow: 0 0 3px;
 			}
-			%channelIcon {
+			#{cn(ChannelItem icon)} {
 				color: $main-color;
 				filter: drop-shadow(0 0 3px);
 			}
@@ -140,21 +138,21 @@
 	}
 
 	// MUTED
-	&%channelWrapperMuted {
-		%channelContent {
-			%channelIcon,
-			%channelName {
+	&#{cn(ChannelItem modeMuted)} {
+		#{cn(ChannelItem content)} {
+			#{cn(ChannelItem icon)},
+			#{cn(ChannelItem name)} {
 				color: hsla(0, 0%, 100%, .1);
 			}
 		}
 		&:hover {
-			%channelContent {
+			#{cn(ChannelItem content)} {
 				&:before {
 					background: hsla(0, 0%, 100%, .07);
 				}
-				%channelContainerDefault & {
-					%channelIcon,
-					%channelName {
+				#{cn("FluxContainer(DropTarget(DragSource(TextChannel)))" containerDefault)} & {
+					#{cn(ChannelItem icon)},
+					#{cn(ChannelItem name)} {
 						color: hsla(0, 0%, 100%, .3);
 					}
 				}
@@ -164,12 +162,12 @@
 }
 
 // UNREAD & MENTIONS INDICATION
-%channelUnreadPill {
+#{cn(ChannelItem unread)} {
 	display: none;
 }
 
 // ICONS
-%channelActionIcon {
+#{cn("FluxContainer(DropTarget(DragSource(TextChannel)))" actionIcon)} {
 	&[name=Gear] {
 		background: url(https://clearvision.gitlab.io/icons/settings.svg) no-repeat center/18px;
 		&:hover {
@@ -208,7 +206,7 @@
 		display: none;
 	}
 }
-%channelWrapperConnected {
+#{cn(ChannelItem modeConnected)} {
 	%channelUserLimitUsers {
 		color: $main-color;
 		text-shadow: 0 0 1px;
@@ -216,28 +214,16 @@
 }
 
 // VOICE USER LIST
-%voiceUserList {
+#{cn(VoiceUser listDefault)} {
 	padding-left: 24px;
 }
-%voiceUser {
+#{cn(VoiceUser voiceUser)} {
 	z-index: 1;
-	%voiceUserContent {
+	#{cn(VoiceUser content)} {
 		border-radius: 3px;
 		transition: all .15s ease-in-out;
 	}
-	&:hover,
-	&:active,
-	&%voiceUserSelected {
-		%channels %voiceUserList & {
-			%voiceUserContent {
-				background: hsla(0, 0%, 100%, .04);
-			}
-			%voiceUserName {
-				color: hsla(0, 0%, 100%, .7);
-			}
-		}
-	}
-	%voiceUserAvatar {
+	#{cn(VoiceUser avatarContainer)} {
 		position: relative;
 		transition: all .1s ease-in-out;
 		&:after {
@@ -252,24 +238,38 @@
 			z-index: -1;
 		}
 	}
-	%voiceUserAvatarSpeaking {
+	#{cn(VoiceUser username)} {
+		color: hsla(0, 0%, 100%, .5);
+		transition: all .1s ease-in-out;
+	}
+	&:hover,
+	&:active,
+	&#{cn(VoiceUser selected)} {
+		#{cn("FluxContainer(componentDispatchSubscriber(GuildSidebar))" container)} {
+			#{cn(VoiceUser listDefault)} & {
+				#{cn(VoiceUser content)} {
+					background: hsla(0, 0%, 100%, .04);
+				}
+				#{cn(VoiceUser username)} {
+					color: hsla(0, 0%, 100%, .7);
+				}
+			}
+		}
+	}
+	#{cn(VoiceUser avatarSpeaking)} {
 		box-shadow: 0 0 0 2px $main-color, inset 0 0 3px rgba(0, 0, 0, .5);
 		&:after {
 			@include pos($top: -2px, $bottom: -2px);
 			width: 100px;
 		}
 	}
-	%voiceUserName {
-		color: hsla(0, 0%, 100%, .5);
-		transition: all .1s ease-in-out;
-	}
-	%voiceUserNameSpeaking {
+	#{cn(VoiceUser usernameSpeaking)} {
 		color: #fff !important;
 	}
 }
 
 // ICONS
-%voiceUserIcon {
+#{cn(VoiceUser icon)} {
 	> path {
 		display: none;
 	}
@@ -288,28 +288,30 @@
 }
 
 // USER SUMMARY
-%userSummaryIcon {
+#{cn(UserSummaryItem icon)} {
 	width: 18px;
 	height: 18px;
 	margin-right: 3px;
 	color: hsla(0, 0%, 100%, .3);
 }
-%userSummaryMoreUsers {
+#{cn(UserSummaryItem moreUsers)} {
 	padding: 0 4px;
 	background: rgba(0, 0, 0, .3);
 	border-radius: 10px;
 }
 
 // DRAG INDICATORS
-%categoryContainerDrag,
-%channelContainerDrag {
+#{cn("FluxContainer(DropTarget(DragSource(Category)))" containerDragBefore)},
+#{cn("FluxContainer(DropTarget(DragSource(Category)))" containerDragAfter)}
+#{#{cn("FluxContainer(DropTarget(DragSource(TextChannel)))" containerDragBefore)}},
+#{#{cn("FluxContainer(DropTarget(DragSource(TextChannel)))" containerDragAfter)}} {
 	&:before,
 	&:after {
 		background: $main-color;
 		border-radius: 0;
 	}
 }
-%channelContainerUserOver {
+#{cn("FluxContainer(DropTarget(DragSource(TextChannel)))" containerUserOver)} {
 	&:after {
 		background: $main-color;
 		border-color: transparent;

@@ -2,32 +2,32 @@
 @import "lib/legacy-selectors";
 
 /* CHANNEL LIST */
-%channelsSidebar {
+#{cn("FluxContainer(AppView)" sidebar)} {
 	width: cv("channels-width");
 	background: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .3));
 }
-%channelsContainer {
+#{cn("FluxContainer(componentDispatchSubscriber(GuildSidebar))" container)} {
 	background: transparent;
 
 	// CHANNELS HEADER
-	%channelsHeaderContainer {
+	#{cn(GuildHeader container)} {
 		z-index: 2;
 	}
-	%channelsHeader {
+	#{cn(GuildHeader header)} {
 		height: 48px;
 		background: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .15));
 		box-shadow: 0 2px 10px rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .3));
 		color: #fff;
 		font-weight: 600;
 		text-shadow: 0 0 3px #000;
-		&:hover,
-		&.popout-open {
-			background: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .3));
-		}
+	}
+	#{cn(GuildHeader header)}:hover,
+	#{cn(GuildHeader selected)} #{cn(GuildHeader header)} {
+		background: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .3));
 	}
 	
 	// GUILD BADGE
-	%channelsHeaderGuildBadge {
+	#{cn(GuildHeader guildIconContainer)} {
 		%flowerStar {
 			display: none;
 		}
@@ -36,32 +36,32 @@
 			border-radius: 50%;
 		}
 	}
-	%guildPartnered {
+	#{cn(GuildBadge partnered)} {
 		background: hsla(0, 0%, 100%, .07);
 		border-radius: 50%;
-		%channelsHeaderGuildBadgeIcon {
+		#{cn(GuildBadge icon)} {
 			color: $main-color;
 			filter: drop-shadow(0 0 3px);
 		}
 	}
-	%guildVerified {
+	#{cn(GuildBadge verified)} {
 		background: url(https://clearvision.gitlab.io/icons/verified.svg) center/18px no-repeat;
 		filter: drop-shadow(0 0 5px);
 		%flowerStarChild {
 			display: none;
 		}
 	}
-	%guildBoostedIcon {
+	#{cn(GuildHeader premiumGuildIconGem)} {
 		color: $main-color;
 		filter: drop-shadow(0 0 3px);
 	}
 
 	// GUILD BANNER
-	%bannerAnimatedContainer {
+	#{cn(GuildHeader animatedContainer)} {
 		background: transparent;
 		box-shadow: none;
 	}
-	%bannerImage {
+	#{cn(GuildHeader bannerImage)} {
 		-webkit-mask: linear-gradient(to bottom, #000, transparent);
 		mask: linear-gradient(to bottom, #000, transparent);
 	}

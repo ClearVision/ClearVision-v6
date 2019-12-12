@@ -2,11 +2,13 @@
 @import "lib/legacy-selectors";
 
 /* CHANNEL NOTICE */
-%channels %channelNotices {
-	%channelNotice {
-		position: relative;
-		background-color: rgba(0, 0, 0, .1);
-		background-size: 0;
+#{cn("FluxContainer(componentDispatchSubscriber(GuildSidebar))" container)} {
+	%channelNotices {
+		%channelNotice {
+			position: relative;
+			background-color: rgba(0, 0, 0, .1);
+			background-size: 0;
+		}
 	}
 }
 %channelNotices {

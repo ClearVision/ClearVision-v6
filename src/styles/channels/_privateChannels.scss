@@ -1,15 +1,14 @@
 @use "cv" as *;
-@import "lib/legacy-selectors";
 
 /* PRIVATE CHANNELS */
-%privateChannels {
+#{cn("FluxContainer(PrivateChannels)" privateChannels)} {
 	background: transparent;
-	%privateChannelsScroller {
+	#{cn("FluxContainer(PrivateChannelsList)" scroller)} {
 		background: transparent;
 	}
 
 	// HEADER
-	%privateChannelsHeader {
+	#{cn("FluxContainer(PrivateChannels)" header)} {
 		margin-top: 11px;
 		display: flex;
 		align-items: center;
@@ -37,9 +36,9 @@
 	}
 
 	// PRIVATE CHANNEL
-	%privateChannel {
+	#{cn(PrivateChannel channel)} {
 		max-width: none;
-		%listItemLayout {
+		#{cn(ListItem layout)} {
 			position: relative;
 			z-index: 1;
 			&:before {
@@ -62,39 +61,39 @@
 				pointer-events: none;
 			}
 		}
-		%listItemClose {
+		#{cn(PrivateChannel closeButton)} {
 			display: block;
 			background: url(https://clearvision.gitlab.io/icons/close.svg) center/18px no-repeat;
 			opacity: 0;
 			transition: all .15s ease-in-out;
 		}
-		%privateChannelIcon {
+		#{cn(PrivateChannel linkButtonIcon)} {
 			color: hsla(0, 0%, 100%, .3);
 			transition: all .15s ease-in-out;
 		}
 		
 		// HOVER
 		&:hover {
-			%listItemLayout {
+			#{cn(ListItem layout)} {
 				background: transparent;
 				&:before {
 					background: hsla(0, 0%, 100%, .1);
 				}
 			}
-			%listItemClose {
+			#{cn(PrivateChannel closeButton)} {
 				opacity: .3;
 				&:hover {
 					opacity: .7;
 				}
 			}
-			%privateChannelIcon {
+			#{cn(PrivateChannel linkButtonIcon)} {
 				color: hsla(0, 0%, 100%, .7);
 			}
 		}
 		
 		// SELECTED
-		&%listItemSelected {
-			%listItemLayout {
+		&#{cn(ListItem selected)} {
+			#{cn(ListItem layout)} {
 				background: transparent;
 				&:before {
 					background: hsla(0, 0%, 100%, .1);
@@ -105,7 +104,7 @@
 					animation: cv-channel-select .3s ease-in-out;
 				}
 			}
-			%privateChannelIcon {
+			#{cn(PrivateChannel linkButtonIcon)} {
 				color: #fff;
 			}
 		}
@@ -113,18 +112,11 @@
 }
 
 // PRIVATE CHANNELS SEARCH BAR
-%privateChannelsSearchBar {
+#{cn("FluxContainer(PrivateChannels)" searchBar)} {
 	background: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .3));
 	box-shadow: 0 2px 10px rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .3));
-	%privateChannelsSearchBarComponent {
+	#{cn("FluxContainer(PrivateChannels)" searchBarComponent)} {
 		background: hsla(0, 0%, 100%, .1);
-	}
-	%privateChannelsSearchBarInner {
-		padding: 0 1px;
-		> %privateChannelsSearchBarInput {
-			&::placeholder{
-				color: hsla(0, 0%, 100%, .3);
-			}
-		}
+		color: hsla(0, 0%, 100%, .3);
 	}
 }
