@@ -1,45 +1,41 @@
 @use "cv" as *;
-@import "lib/legacy-selectors";
 
 /* APP NOTICE */
-%appMount {
-	%notice {
+#app-mount {
+	#{cn(ActivityJoinRequestNotice notice)} {
 		border-radius: 3px !important;
 		color: hsla(0, 0%, 100%, .7);
 	}
 }
-%notice {
-	&%noticeDefault {
+#{cn(ActivityJoinRequestNotice notice)} {
+	&#{cn(ActivityJoinRequestNotice noticeDefault)} {
 		background: rgba(#f26522, .6);
 	}
-	&%noticePremium {
+	&#{cn(ActivityJoinRequestNotice noticePremium)} {
 		background: rgba(#202225, .6);
 	}
-	&%noticePremiumGrandfathered {
-		background: linear-gradient(270deg, rgba(#b3aeff, .6), rgba(#738ef5 , .6));
-	}
-	&%noticeInfo {
+	&#{cn(ActivityJoinRequestNotice noticeInfo)} {
 		background: rgba(#4a90e2, .6);
 	}
-	&%noticeSuccess {
+	&#{cn(ActivityJoinRequestNotice noticeSuccess)} {
 		background: rgba(#43b581, .6);
 	}
-	&%noticeDanger {
+	&#{cn(ActivityJoinRequestNotice noticeDanger)} {
 		background: rgba(#f04747, .6);
 	}
-	&%noticeStreamerMode {
+	&#{cn(ActivityJoinRequestNotice noticeStreamerMode)} {
 		background: rgba(cv("const:colors.twitch-purple"), .6);
 	}
-	&%noticeFacebook {
+	&#{cn(ActivityJoinRequestNotice noticeFacebook)} {
 		background: rgba(cv("const:colors.facebook-blue"), .6);
 	}
-	&%noticeSpotify {
+	&#{cn(ActivityJoinRequestNotice noticeSpotify)} {
 		background: rgba(cv("const:colors.spotify-green"), .6);
 	}
-	&%noticeBrand {
+	&#{cn(ActivityJoinRequestNotice noticeBrand)} {
 		background: rgba(cv("const:colors.discord-blurple"), .6);
 	}
-	%noticeButton {
+	#{cn(ActivityJoinRequestNotice button)} {
 		background: hsla(0, 0%, 100%, .1);
 		border: 1px solid transparent;
 		color: #fff;
@@ -51,7 +47,7 @@
 			color: #000;
 		}
 	}
-	%noticeDismiss {
+	#{cn(ActivityJoinRequestNotice dismiss)} {
 		background: url(https://clearvision.gitlab.io/icons/close.svg) center/18px no-repeat;
 		opacity: .5;
 		transition: all .15s ease-in-out;
