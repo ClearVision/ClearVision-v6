@@ -1,82 +1,92 @@
 @use "cv" as *;
-@import "lib/legacy-selectors";
+// @import "lib/legacy-selectors";
 
 /* BUTTON */
-%button {
+#{cn(ButtonWithSpinningBorder button)} {
 	border-radius: 3px;
 	transition: all .3s ease-in-out;
 }
 
 // BUTTON FILLED
-%appMount {
-	%buttonFilledGreen,
-	%buttonFilledBrand,
-	%buttonFilledPrimary {
-		background: $main-color;
-		&:hover,
-		&%buttonHasHover:hover {
-			background: $hover-color;
-		}
-		&:disabled {
-			background: $main-color !important;
+#app-mount {
+	#{cn(ButtonWithSpinningBorder lookFilled)} {
+		&#{cn(ButtonWithSpinningBorder colorPrimary)},
+		&#{cn(ButtonWithSpinningBorder colorBrand)},
+		&#{cn(ButtonWithSpinningBorder colorGreen)} {
+			background: $main-color;
+			&:hover,
+			&#{cn(ButtonWithSpinningBorder hasHover)}:hover {
+				background: $hover-color;
+			}
+			&:disabled {
+				background: $main-color !important;
+			}
 		}
 	}
 }
-%buttonFilledWhite,
-%buttonFilledGrey {
-	background: hsla(0, 0%, 100%, .1);
-	> %buttonContents {
-		color: hsla(0, 0%, 100%, .7);
-		transition: inherit;
-	}
-	&:hover {
-		background: hsla(0, 0%, 100%, .2) !important;
-		> %buttonContents {
-			color: #fff;
+#{cn(ButtonWithSpinningBorder lookFilled)} {
+	&#{cn(ButtonWithSpinningBorder colorWhite)},
+	&#{cn(ButtonWithSpinningBorder colorGrey)} {
+		background: hsla(0, 0%, 100%, .1);
+		#{cn(ButtonWithSpinningBorder contents)} {
+			color: hsla(0, 0%, 100%, .7);
+			transition: inherit;
 		}
-	}
-	&:disabled {
-		background: hsla(0, 0%, 100%, .1) !important;
-		> %buttonContents {
-			color: hsla(0, 0%, 100%, .5);
+		&:hover {
+			background: hsla(0, 0%, 100%, .2) !important;
+			#{cn(ButtonWithSpinningBorder contents)} {
+				color: #fff;
+			}
+		}
+		&:disabled {
+			background: hsla(0, 0%, 100%, .1) !important;
+			#{cn(ButtonWithSpinningBorder contents)} {
+				color: hsla(0, 0%, 100%, .5);
+			}
 		}
 	}
 }
 
 // BUTTON INVERTED
-%buttonInverted,
-%buttonInvertedBrand,
-%buttonInvertedGreen {
-	background: hsla(0, 0%, 100%, .1);
-	color: hsla(0, 0%, 100%, .7);
-	&:hover {
-		background: hsla(0, 0%, 100%, .2);
-		color: #fff;
-	}
-}
-
-// BUTTON OUTLINED
-%appMount {
-	%buttonOutlinedWhite,
-	%buttonOutlinedPrimary {
-		background: hsla(0, 0%, 100%, .05);
-		border-color: transparent;
+#{cn(ButtonWithSpinningBorder lookInverted)} {
+	&,
+	&#{cn(ButtonWithSpinningBorder colorBrand)},
+	&#{cn(ButtonWithSpinningBorder colorGreen)} {
+		background: hsla(0, 0%, 100%, .1);
 		color: hsla(0, 0%, 100%, .7);
 		&:hover {
-			background: hsla(0, 0%, 100%, .1);
-			border-color: transparent;
+			background: hsla(0, 0%, 100%, .2);
 			color: #fff;
 		}
 	}
 }
 
+// BUTTON OUTLINED
+#app-mount {
+	#{cn(ButtonWithSpinningBorder lookOutlined)} {
+		&#{cn(ButtonWithSpinningBorder colorPrimary)},
+		&#{cn(ButtonWithSpinningBorder colorWhite)} {
+			background: hsla(0, 0%, 100%, .05);
+			border-color: transparent;
+			color: hsla(0, 0%, 100%, .7);
+			&:hover {
+				background: hsla(0, 0%, 100%, .1);
+				border-color: transparent;
+				color: #fff;
+			}
+		}
+	}
+}
+
 // BUTTON LINK
-%buttonLinkWhite {
-	color: #fff;
-	&:hover {
-		text-shadow: 0 0 3px;
-		> %buttonContents {
-			background-image: none;
+#{cn(ButtonWithSpinningBorder lookLink)} {
+	&#{cn(ButtonWithSpinningBorder colorWhite)} {
+		color: #fff;
+		&:hover {
+			text-shadow: 0 0 3px;
+			> #{cn(ButtonWithSpinningBorder contents)} {
+				background-image: none;
+			}
 		}
 	}
 }
