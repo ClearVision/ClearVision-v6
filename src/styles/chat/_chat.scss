@@ -2,12 +2,8 @@
 @import "lib/legacy-selectors";
 
 /* CHAT */
-%base {
-	%chat {
-		background: transparent;
-	}
-}
 %chat {
+	background: transparent;
 
 	// CONTENT
 	%chatContentWrapper {
