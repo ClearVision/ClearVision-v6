@@ -36,7 +36,7 @@
 			background: hsla(0, 0%, 100%, .2);
 		}
 	}
-	> #{cn(ButtonWithSpinningBorder contents)} > svg {
+	> #{cn(ButtonLink contents)} > svg {
 		@include bg($rep: no-repeat, $pos: center, $size: 18px);
 		color: #fff;
 		opacity: .3;
@@ -85,7 +85,7 @@
 		}
 	}
 	&:hover {
-		> #{cn(ButtonWithSpinningBorder contents)} > svg {
+		> #{cn(ButtonLink contents)} > svg {
 			opacity: .7;
 			&[name=Gear] {
 				animation: cv-spin 2.5s linear infinite;
@@ -93,7 +93,7 @@
 		}
 	}
 	&#{cn(PanelButton disabled)} {
-		> #{cn(ButtonWithSpinningBorder contents)} > svg {
+		> #{cn(ButtonLink contents)} > svg {
 			opacity: .1;
 		}
 	}
