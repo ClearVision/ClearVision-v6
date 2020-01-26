@@ -1,16 +1,15 @@
 @use "cv" as *;
-@import "lib/legacy-selectors";
 
 /* SLIDER */
-%slider {
-	%sliderBar {
+#{cn(Slider slider)} {
+	#{cn(Slider bar)} {
 		background: hsla(0, 0%, 100%, .04);
 		transition: all .15s ease-in-out;
 	}
-	%sliderBarFill {
+	#{cn(Slider barFill)} {
 		background: $main-color;
 	}
-	%sliderGrabber {
+	#{cn(Slider grabber)} {
 		background: #fff;
 		border: none;
 		border-radius: 5px;

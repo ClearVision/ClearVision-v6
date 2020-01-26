@@ -1,9 +1,8 @@
 @use "cv" as *;
-@import "lib/legacy-selectors";
 
 /* CHECKBOX */
-%checkbox {
-	%checkboxInner {
+#{cn("Checkbox@6527" checkbox)} {
+	#{cn("Checkbox@6527" checkboxInner)} {
 		width: 35px;
 		height: 18px;
 		> span {
@@ -31,7 +30,7 @@
 				transition: all .2s ease-in-out;
 			}
 		}
-		%checkboxElement:checked {
+		#{cn("Checkbox@6527" checkboxElement)}:checked {
 			+ span {
 				background: hsla(0, 0%, 100%, .04);
 				&:before {
