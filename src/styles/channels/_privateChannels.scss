@@ -1,14 +1,14 @@
 @use "cv" as *;
 
 /* PRIVATE CHANNELS */
-#{cn("FluxContainer(PrivateChannels)" privateChannels)} {
+#{cn(PrivateChannelsConnected privateChannels)} {
 	background: transparent;
 	#{cn("FluxContainer(PrivateChannelsList)" scroller)} {
 		background: transparent;
 	}
 
 	// HEADER
-	#{cn("FluxContainer(PrivateChannels)" header)} {
+	#{cn(PrivateChannelsConnected header)} {
 		margin-top: 11px;
 		display: flex;
 		align-items: center;
@@ -71,7 +71,7 @@
 			color: hsla(0, 0%, 100%, .3);
 			transition: all .15s ease-in-out;
 		}
-		
+
 		// HOVER
 		&:hover {
 			#{cn(ListItem layout)} {
@@ -90,7 +90,7 @@
 				color: hsla(0, 0%, 100%, .7);
 			}
 		}
-		
+
 		// SELECTED
 		&#{cn(ListItem selected)} {
 			#{cn(ListItem layout)} {
@@ -112,10 +112,10 @@
 }
 
 // PRIVATE CHANNELS SEARCH BAR
-#{cn("FluxContainer(PrivateChannels)" searchBar)} {
+#{cn(PrivateChannelsConnected searchBar)} {
 	background: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .3));
 	box-shadow: 0 2px 10px rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .3));
-	#{cn("FluxContainer(PrivateChannels)" searchBarComponent)} {
+	#{cn(PrivateChannelsConnected searchBarComponent)} {
 		background: hsla(0, 0%, 100%, .1);
 		color: hsla(0, 0%, 100%, .3);
 	}

@@ -184,9 +184,9 @@
 }
 
 // CONNECTION PANEL
-#{cn("withAnalyticsContext(FluxContainer(RTCConnectionWithScreenshareExperiment))" container)} {
+#{cn("withAnalyticsContext(FluxContainer(RTCConnection))" container)} {
 	border-color: transparent;
-	#{cn("withAnalyticsContext(FluxContainer(RTCConnectionWithScreenshareExperiment))" inner)} {
+	#{cn("withAnalyticsContext(FluxContainer(RTCConnection))" inner)} {
 		#{cn(RTCConnectionStatus rtcConnectionStatus)} {
 			#{cn(RTCConnectionStatus ping)} {
 				width: 16px;
@@ -196,7 +196,7 @@
 			}
 		}
 	}
-	#{cn("withAnalyticsContext(FluxContainer(RTCConnectionWithScreenshareExperiment))" channel)} {
+	#{cn("withAnalyticsContext(FluxContainer(RTCConnection))" channel)} {
 		color: hsla(0, 0%, 100%, .3);
 		opacity: 1;
 		transition: all .15s ease-in-out;
@@ -210,7 +210,7 @@
 // ACTIVITY PANEL
 #{cn("FluxContainer(AppView)" activityPanel)} {
 	border-color: transparent;
-	#{cn("ActivityPanelGameCardWithExperiments" actions)} {
+	#{cn("withAnalyticsContext(FluxContainer(ActivityPanelGameCard))" actions)} {
 		background: rgba(0, 0, 0, .3);
 		border-radius: 15px;
 		> :nth-child(n+2) {
