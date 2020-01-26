@@ -5,11 +5,12 @@
 
 @use "plugins/pluginNotice";
 @use "plugins/messageButtons";
-@use "plugins/noodlebox/lineNumbers";
-@use "plugins/Finicalmist/copyCode";
-@use "plugins/DevilBro/tooltips";
-@use "plugins/DevilBro/showHiddenChannels";
-@use "plugins/DevilBro/dateText";
-@use "plugins/DevilBro/badgesEverywhere";
-@use "plugins/DevilBro/ownerTag";
 @use "plugins/Arashiryuu/memberCount";
+@use "plugins/DevilBro/badgesEverywhere";
+@use "plugins/DevilBro/charCounter";
+@use "plugins/DevilBro/dateText";
+@use "plugins/DevilBro/ownerTag";
+@use "plugins/DevilBro/showHiddenChannels";
+@use "plugins/DevilBro/tooltips";
+@use "plugins/Finicalmist/copyCode";
+@use "plugins/noodlebox/lineNumbers";
