@@ -1,9 +1,8 @@
 @use "cv" as *;
-@import "lib/legacy-selectors";
 
 /* CHAT BARS */
 // NEW MESSAGES BAR
-%newMessagesBar {
+#{cn(NewMessagesBar newMessagesBar)} {
 	background: transparent;
 	transition: all .15s ease-in-out;
 	&:before {
@@ -33,43 +32,39 @@
 }
 
 // JUMP TO PRESENT BAR
-%messagesWrapper {
-	%jumpToPresentBar {
-		margin-bottom: 5px;
-		background: rgba(0, 0, 0, .7);
-		border-radius: 3px;
-		transition: all .15s ease-in-out;
+#{cn(JumpToPresentBar jumpToPresentBar)} {
+	margin-bottom: 5px;
+	background: rgba(0, 0, 0, .7);
+	border-radius: 3px;
+	transition: all .15s ease-in-out;
+	> button {
+		color: hsla(0, 0%, 100%, .7);
+		transition: inherit;
+	}
+	&:hover {
+		background: $main-color;
 		> button {
-			color: hsla(0, 0%, 100%, .7);
-			transition: inherit;
+			color: #fff;
 		}
-		&:hover {
-			background: $main-color;
-			> button {
-				color: #fff;
-			}
-		}
-		&:active {
-			transform:scale(.99);
-		}
+	}
+	&:active {
+		transform:scale(.99);
 	}
 }
 
 // HAS MORE BAR
-%messages {
-	%hasMore {
-		background: hsla(0, 0%, 100%, .07);
-		border: none;
-		border-radius: 3px;
-		box-shadow: none;
-		color: hsla(0, 0%, 100%, .7);
-		transition: all .15s ease-in-out;
-		&:hover {
-			background: $main-color;
-			color: #fff;
-		}
-		&:active {
-			transform:scale(.99);
-		}
+#{cn(HasMore hasMore)} {
+	background: hsla(0, 0%, 100%, .07);
+	border: none;
+	border-radius: 3px;
+	box-shadow: none;
+	color: hsla(0, 0%, 100%, .7);
+	transition: all .15s ease-in-out;
+	&:hover {
+		background: $main-color;
+		color: #fff;
+	}
+	&:active {
+		transform:scale(.99);
 	}
 }
