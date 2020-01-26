@@ -1,8 +1,7 @@
 @use "cv" as *;
-@import "lib/legacy-selectors";
 
 /* CHAT DIVIDER */
-%chat %divider {
+#{cn("Divider@7732" divider)} {
 	position: relative;
 	margin: 10px 6px 10px 20px;
 	&:before {
@@ -13,7 +12,7 @@
 		border-radius: 3px;
 		z-index: -1;
 	}
-	> %dividerContent {
+	#{cn("Divider@7732" dividerContent)} {
 		padding: 5px 15px;
 		display: block;
 		font-size: 12px;
@@ -26,20 +25,20 @@
 			display: none;
 		}
 	}
-	&:not(%dividerRed) { 
-		> %dividerContent {
+	&:not(#{cn("Divider@7732" dividerRed)}) {
+		#{cn("Divider@7732" dividerContent)} {
 			color: hsla(0, 0%, 100%, .7);
 		}
 	}
-	&%dividerRed {
+	&#{cn("Divider@7732" dividerRed)} {
 		&:before {
 			background: $main-color;
 			opacity: .8;
 		}
-		+ %divider {
+		+ #{cn("Divider@7732" divider)} {
 			margin-top: 40px;
 		}
-		> %dividerContent {
+		#{cn("Divider@7732" dividerContent)} {
 			position: relative;
 			color: hsla(0, 0%, 100%, .8);
 		}
