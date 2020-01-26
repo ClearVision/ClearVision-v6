@@ -35,6 +35,11 @@
 	font-size: 12px;
 	line-height: 12px;
 }
+#{cn(IconBadge icon)} {
+	padding: 1px;
+	color: $main-color;
+	filter: drop-shadow(0 0 3px $main-color);
+}
 %channelWrapperSelected,
 %listItemSelected,
 %topPillItemSelected {

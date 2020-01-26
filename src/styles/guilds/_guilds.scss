@@ -1,22 +1,17 @@
 @use "cv" as *;
-@import "lib/legacy-selectors";
 
 /* GUILDS */
-%layer {
-	%guildsWrapper {
-		background-color: transparent;
-	}
-}
-%guildsWrapper {
+#{cn(Guilds wrapper)} {
+	background-color: transparent;
 	width: calc(#{cv("server-columns")} * 72px);
 	box-shadow: inset 0 0 20px rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .3));
 }
-%guildsScrollerWrap {
+#{cn(Guilds scrollerWrap)} {
 	width: auto;
 }
 
 // GUILD LIST
-%guilds {
+#{cn(Guilds scroller)} {
 	display: grid;
 	grid-template-columns: repeat(cv("server-columns"), 1fr);
 	grid-auto-columns: fit-content(72px);
@@ -33,14 +28,14 @@
 			grid-column: 1 / span cv("server-columns");
 		}
 	}
-	> :not(%guild):nth-child(2) {
+	> :not(#{cn(CircleIconButton listItem)}):nth-child(2) {
 		height: auto !important;
 		display: flex;
 		flex-flow: row wrap;
 		grid-column: 1 / span cv("server-columns");
 		align-items: center;
 		justify-content: center;
-		+ %guild {
+		+ #{cn(CircleIconButton listItem)} {
 			margin-right: auto;
 			margin-left: auto;
 			grid-column: 1 / span cv("server-columns");
@@ -49,7 +44,7 @@
 }
 
 // HOME BUTTON
-%homeIcon {
+#{cn(DefaultHomeButton homeIcon)} {
 	width: 100%;
 	height: 100%;
 	background: cv("bg.home.icon") cv("bg.home.pos")/cv("bg.home.size") no-repeat;
@@ -59,7 +54,7 @@
 }
 
 // FRIENDS COUNT
-%friendsOnline {
+.friendsOnline-2JkivW {
 	background: transparent;
 	color: hsla(0, 0%, 100%, .7);
 	text-transform: uppercase;
@@ -71,19 +66,37 @@
 	}
 }
 
-// GUILD
-%guildIcon {
+// NAVITEM
+#{cn(NavItem icon)} {
 	background-color: rgba(0, 0, 0, .3);
 }
-%guildPlaceholder {
-	background: hsla(0, 0%, 100%, .07);
+#{cn(NavItem wrapper)} {
+	#{cn(NavItem childWrapper)} {
+		background: rgba(0, 0, 0, .3);
+		color: hsla(0, 0%, 100%, .7);
+		transition: all .3s ease-in-out;
+	}
+	&:hover,
+	&#{cn(NavItem selected)} {
+		#{cn(NavItem childWrapper)} {
+			background: $main-color;
+			color: #fff;
+		}
+	}
+}
+
+// GUILD ICON
+#{cn(GuildIconWrapper noIcon)} {
+	background: rgba(0, 0, 0, .3) !important;
+	color: hsla(0, 0%, 100%, .7);
 }
 
 // PILL
-%guildPill {
+// TODO: anonymous ref...
+.wrapper-sa6paO {
 	overflow: visible;
 }
-%guildPillItem {
+.item-2hkk8m {
 	width: 12px;
 	margin-left: -6px;
 	border-radius: 20px;
@@ -94,80 +107,55 @@
 	}
 }
 
-// ACRONYM
-%guildChildWrapper {
-	background: rgba(0, 0, 0, .3);
-	color: hsla(0, 0%, 100%, .7);
-	transition: all .3s ease-in-out;
-}
-%guildLink{
-	&:hover,
-	&%guildLinkSelected {
-		%guildChildWrapper {
-			background: $main-color;
-			color: #fff;
-		}
-	}
-}
-
-// PLACEHOLDER
-%guildDragInner {
-	background: hsla(0, 0%, 100%, .1);
-}
-
-// BADGE
-%guildBadgeIcon {
-	background: hsla(0, 0%, 100%, .07);
-	box-shadow: 0 0 0 1px hsla(0, 0%, 100%, .07);
-}
-%guildBadgeIconSVG {
-	padding: 1px;
-	color: $main-color;
-	filter: drop-shadow(0 0 3px $main-color);
-}
-
 // FOLDER
-%guildFolderWrapper {
-	%guildFolderBackground {
+#{cn(GuildFolder wrapper)} {
+	#{cn(GuildFolder expandedFolderBackground)} {
 		background: hsla(0, 0%, 100%, .04);
 		border-radius: 16px 16px 24px 24px;
 		transition: background-color .3s ease-in-out;
-		&%guildFolderBackgroundCollapsed {
+		&#{cn(GuildFolder collapsed)} {
 			background: transparent;
 		}
 	}
 }
-%guildFolder {
+#{cn(GuildFolder folder)} {
 	background: hsla(0, 0%, 100%, .07);
 	transition: all .3s ease-in-out;
-	&%guildFolderHover {
+	&#{cn(GuildFolder hover)} {
 		background: hsla(0, 0%, 100%, .1);
 	}
 }
-%guildFolderNoIcon {
-	background: rgba(0, 0, 0, .3) !important;
-	color: hsla(0, 0%, 100%, .7);
-}
-%guildFolderExpandedGuilds {
-	> %guild {
+#{cn(GuildFolder expandedGuilds)} {
+	> #{cn(CircleIconButton listItem)} {
 		animation: cv-fade-in .3s ease-in-out;
 	}
 }
 
+// PLACEHOLDER
+#{cn(CircleIconButton dragInner)} {
+	background: hsla(0, 0%, 100%, .1);
+}
+
+// BADGE
+#{cn(CircleIconButton iconBadge)} {
+	background: hsla(0, 0%, 100%, .07);
+	box-shadow: 0 0 0 1px hsla(0, 0%, 100%, .07);
+}
+
 // ICON BUTTON
-%circleIconButton {
+#{cn(CircleIconButton circleIconButton)} {
 	background: rgba(0, 0, 0, .3);
 	color: hsla(0, 0%, 100%, .3);
 	transition: all .3s ease-in-out;
 	&:hover,
-	&%circleIconButtonSelected {
+	&#{cn(CircleIconButton selected)} {
 		background: $main-color;
 		color: #fff;
 	}
 }
 
 // GUILDS ERROR
-%guildsError {
+#{cn(CircleIconButton guildsError)} {
 	background: rgba(0, 0, 0, .5);
 	border: 2px solid cv("colors.danger");
 	color: #fff;
@@ -179,6 +167,6 @@
 }
 
 // SEPARATOR
-%guildSeparator {
+#{cn(CircleIconButton guildSeparator)} {
 	background: hsla(0, 0%, 100%, .1);
 }
