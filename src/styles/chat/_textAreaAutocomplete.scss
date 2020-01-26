@@ -1,49 +1,43 @@
 @use "cv" as *;
-@import "lib/legacy-selectors";
 
 /* CHAT CHANNEL TEXT AREA AUTOCOMPLETE */
-%chat {
-	%autocomplete {
-		background: transparent;
-		overflow: hidden;
-	}
-}
-%autocomplete {
-	%autocompleteInner,
-	%gifAutocompleteInner {
+#app-mount {
+	#{cn(Autocomplete autocomplete)} {
 		background: rgba(0, 0, 0, .8);
-		animation: cv-menu-slide-bottom .2s ease-in-out;		
+		animation: cv-menu-fold-y .2s ease-in-out;
 		transform-origin: 50% 100%;
 	}
-	%autocompleteTitle {
+}
+#{cn(Autocomplete autocomplete)} {
+	#{cn(Autocomplete contentTitle)} {
 		color: hsla(0, 0%, 100%, .5);
 	}
-	%autocompleteContent {
+	#{cn(Autocomplete content)} {
 		color: hsla(0, 0%, 100%, .6);
 	}
-	%autocompleteIconForeground {
+	#{cn(Autocomplete iconForeground)} {
 		fill: hsla(0, 0%, 100%, .3);
 	}
-	%autocompleteDescription,
-	%autocompleteDescriptionUsername {
+	#{cn(Autocomplete description)},
+	#{cn(Autocomplete descriptionUsername)} {
 		color: hsla(0, 0%, 100%, .3);
 	}
-	%autocompleteDescriptionDiscriminator {
+	#{cn(Autocomplete descriptionDiscriminator)} {
 		color: hsla(0, 0%, 100%, .15);
 	}
-	%autocompleteSelectorSelected {
+	#{cn(Autocomplete selectorSelected)} {
 		background: $main-color;
-		> %autocompleteContent {
+		#{cn(Autocomplete content)} {
 			color: #fff;
 		}
-		%autocompleteIconForeground {
+		#{cn(Autocomplete iconForeground)} {
 			fill: hsla(0, 0%, 100%, .5);
 		}
-		%autocompleteDescription,
-		%autocompleteDescriptionUsername {
+		#{cn(Autocomplete description)},
+		#{cn(Autocomplete descriptionUsername)} {
 			color: hsla(0, 0%, 100%, .5);
 		}
-		%autocompleteDescriptionDiscriminator {
+		#{cn(Autocomplete descriptionDiscriminator)} {
 			color: hsla(0, 0%, 100%, .25);
 		}
 	}
