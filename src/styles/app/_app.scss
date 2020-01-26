@@ -21,7 +21,12 @@
 #{cn(StandardSidebarView standardSidebarView)} {
 	background: transparent;
 }
+#{cn("FluxContainer(AppView)" container)} {
+	display: flex;
+}
 #{cn("FluxContainer(AppView)" base)} {
+	position: static;
+	flex-grow: 1;
 	border-radius: 0;
 }
 #{cn(Backdrop backdrop)} {
