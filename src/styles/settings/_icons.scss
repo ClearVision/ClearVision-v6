@@ -50,7 +50,7 @@
 		// GENERAL STYLES
 		%tabBarItem {
 			padding-left: 50px !important;
-			&:before {
+			&::before {
 				content: "";
 				position: absolute;
 				width: 24px;
@@ -92,7 +92,7 @@
 				}
 			}
 		}
-		%tabBarItem:nth-last-child(3):before {
+		%tabBarItem:nth-last-child(4)::before {
 			background-image: url(#{map-get($icons, "Log Out")});
 		}
 	}
