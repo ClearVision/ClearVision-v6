@@ -25,6 +25,6 @@
     "autoprefixer": "^9.6.1",
     "postcss-cli": "^6.1.3",
     "rimraf": "^2.6.3",
-    "sass": "^1.23.7"
+    "sass": "^1.25.0"
   }
 }
