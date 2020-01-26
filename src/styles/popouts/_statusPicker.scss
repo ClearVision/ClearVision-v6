@@ -8,22 +8,34 @@
 	}
 }
 %guildHeaderPopout {
-	%statusPickerItem {
+	#{cn(PopoutMenuItemLabel statusItem)} {
 		position: relative;
 		display: flex;
 		align-items: center;
-		%statusPickerText {
-			position: absolute;		
+		#{cn(PopoutMenuItemLabel statusIconText)} {
+			position: absolute;
 		}
 		&:nth-child(4),
 		&:last-child {
-			%statusPickerText > div {
+			#{cn(PopoutMenuItemLabel statusIconText)} > div {
 				color: hsla(0, 0%, 100%, .7);
 				opacity: 1;
 				transition: all .15s ease-in-out;
 			}
 		}
 		&:hover {
+			&:nth-child(4),
+			&:nth-child(5) {
+				#{cn(PopoutMenuItemLabel statusIconText)} > div {
+					opacity: 0;
+				}
+			}
+			#{cn(PopoutMenuItemLabel helper)} {
+				opacity: 1;
+			}
+		}
+		&:hover,
+		&#{cn(PopoutMenuItemLabel itemActive)} {
 			&:first-child {
 				background: cv("colors.online");
 			}
@@ -36,21 +48,12 @@
 			&:nth-child(5) {
 				background: cv("colors.offline");
 			}
-			&:nth-child(4),
-			&:nth-child(5) {
-				%statusPickerText > div {
-					opacity: 0;
-				}
-			}
-			%statusPickerStatusInner {
+			#{cn(Status status)} {
 				background: #fff !important;
-			}
-			%statusPickerHelper {
-				opacity: 1;
 			}
 		}
 	}
-	%statusPickerStatusInner {
+	#{cn(Status status)} {
 		transition: background .15s ease-in-out;
 		&[style*="rgb(67, 181, 129)"] {
 			background: cv("colors.online") !important;
@@ -65,7 +68,7 @@
 			background: cv("colors.offline") !important;
 		}
 	}
-	%statusPickerHelper {
+	#{cn(PopoutMenuItemLabel helper)} {
 		margin-top: 4px;
 		margin-bottom: 4px;
 		color: hsla(0, 0%, 100%, .7);
