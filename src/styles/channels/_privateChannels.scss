@@ -5,6 +5,7 @@
 	background: transparent;
 	#{cn("FluxContainer(PrivateChannelsList)" scroller)} {
 		background: transparent;
+		overflow-x: hidden;
 	}
 
 	// HEADER
