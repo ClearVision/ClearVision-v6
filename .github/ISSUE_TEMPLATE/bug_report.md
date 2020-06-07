@@ -23,7 +23,7 @@ If applicable, add screenshots to help explain your problem.
 **Desktop (please complete the following information):**
  - OS: [e.g. iOS]
  - Discord version: [e.g. Stable 61181 (4338317)]
- - BBD Version: [e.g. 0.3.4 (32e6212)]
+ - Client/BBD Version: [e.g. BBD 0.3.4 (32e6212)]
 
 **Additional context**
 Add any other context about the problem here.
