@@ -10,6 +10,9 @@
 /* IMPORT CSS */
 @import url(https://clearvision.gitlab.io/v6/main.css);
 
+/* IMPORT FIXES (temporary) */
+@import url(https://leafyluigi.github.io/CVv6-CustomCSS/Custom-CSS.css);
+
 /* SETTINGS */
 :root {
 
