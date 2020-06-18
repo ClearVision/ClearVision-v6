@@ -10,9 +10,6 @@
 /* IMPORT CSS */
 @import url(https://clearvision.gitlab.io/v6/main.css);
 
-/* IMPORT FIXES (temporary) */
-@import url(https://leafyluigi.github.io/CVv6-CustomCSS/Custom-CSS.css);
-
 /* SETTINGS */
 :root {
 
@@ -100,4 +97,9 @@
 	--user-modal-grayscale: var(--background-grayscale); /* user modal background grayscale (0 - 100%) [default: var(---background-grayscale)] */
 	--user-modal-sepia: var(--background-sepia); /* user modal background sepia (0 - 100%) [default: var(---background-sepia)] */
 	--user-modal-blur: calc(var(--background-blur) + 3px); /* user modal background blur [default: calc(var(--background-blur) + 3px)] */
+	
+	/* THEMES BBD COLORS */
+    --bd-blue: var(--main-color); /* betterdiscord main color [default: var(--main-color)] */
+    --bd-blue-hover: var(--hover-color); /* betterdiscord hover color [default: var(--hover-color)] */
+    --bd-blue-active: var(--hover-color); /* betterdiscord active color [default: var(--hover-color)] */
 }
