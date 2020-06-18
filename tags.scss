@@ -1,0 +1,125 @@
+/* USERNAME TAGS */
+// DEFINE USERS
+$cv_admin: (
+		"194151269399527425",    // untuned
+		"144881947557101568",    // Zerthox
+);
+$cv_mod: (
+);
+$cv_team: (
+		"332394843743584256",    // cruxie
+		"213067580531933196",    // KitKat
+		"206088651493343232",    // LeafyLuigi
+		"240437190339854337",    // Leozard
+		"126652966265421824",    // Scars
+		"195270435015884800",    // Daemonicdeveloper
+);
+$cv_contributor: (
+		"335677038830682112",    // Snow (keeps changing name)
+		"236579127090610176",    // Danielle
+		"97797564866236416",     // Heebeejeebees
+		"150750980097441792",    // Orangutan
+);
+$cv_donator: (
+		// "393883440333979649", // Unknown user
+		"262989909411758080",    // coldarchie
+		"168551219135119361",    // Auroatic
+		"241500427105992704",    // Ghost_Recon131
+		"151995147150819328",    // It
+		"157699533134888961",    // Jayzer
+		"157492606752784384",    // Kazumi
+		"174525242939670528",    // lts
+		"78890013378486272",     // Macpot
+		"213263668312408066",    // Nikolas
+		"152431535914614785",    // Paco
+		"112619227466182656",    // PieterVMB
+		"297873043265552384",    // PureFallen
+		"258031697646321666",    // Rich246™
+		"109933711142719488",    // Samboy Chips
+		"251260900252712962",    // viwalon
+		"199184208319610880",    // xImGaming
+		"122731339890950145",    // Lilith
+		// "436228721033216009", // Unknown user
+		// "66214870705516544",  // Unknown user
+		// "172426681800196096", // Unknown user
+		// "158311402677731328", // Unknown user
+		// "284122164582416385", // Unknown user
+		// "107965218868457472", // Unknown user
+		"393900343135830016",    // Nyx
+		"183795147236966412",    // blamecoopa
+);
+$cv_tester: (
+		"266991742216175616",    // Alpha$★☆
+		"97549189629636608",     // Baked
+		"128948605263413248",    // Dingus
+		"168481642309091328",    // Jen
+		"165581066524950530",    // MoXAriApph
+		"102621249892544512",    // Shiniyami ߷
+		"94553281296084992",     // Squibbus
+		"85410928408924160",     // †电离龙†
+		"143476079267414016",    // Reĝino Kastilo
+		"131917628800237570",		 // FunkoChan
+		"155379920242081793", 	 // Dimii04
+		"135130130942132224",	 	 // MTPyronaut
+		"123340872333918215",		 // Purvesh9211
+		"250721335305568258",    // Valcreed
+		"297041315852713984",    // Zou_Yongqi
+		"128006451053592577",    // Rawrcolond
+		"102009847792291840",    // SirSuperDeath
+);
+
+// OUTPUT
+%messageContent > img {
+	& ~ %messageHeadder > %messageUsername::after {
+		content: none;
+		color: $main-color;
+		border: 1px solid;
+		border-radius: 6px;
+		margin-left: 8px;
+		background-color: rgba(255,255,255,0.07);
+		font-size: 10px;
+		padding: 0 5px;
+	}
+	@each $user_id in $cv_admin {
+		&[src*="#{$user_id}"] ~ %messageHeadder > %messageUsername::after {
+		content: "CV Admin";
+		color: #28a0dc;
+		text-shadow: 0px 0px 2px #28a0dc, 0px 0px 4px #02a2f2;
+		}
+	}
+	@each $user_id in $cv_mod {
+		&[src*="#{$user_id}"] ~ %messageHeadder > %messageUsername::after {
+		content: "CV Mod";
+		color: #e74c3c;
+		text-shadow: 0px 0px 2px #e74c3c, 0px 0px 4px #dd6c5f;
+		}
+	}
+	@each $user_id in $cv_team {
+		&[src*="#{$user_id}"] ~ %messageHeadder > %messageUsername::after {
+		content: "CV Team";
+		color: #c71453;
+		text-shadow: 0px 0px 2px #c71453, 0px 0px 4px #e0477d;
+		}
+	}
+	@each $user_id in $cv_contributor {
+		&[src*="#{$user_id}"] ~ %messageHeadder > %messageUsername::after {
+		content: "CV Contributor";
+		color: #2ecc71;
+		text-shadow: 0px 0px 2px #2ecc71, 0px 0px 4px #28ef7b;
+		}
+	}
+	@each $user_id in $cv_donator {
+		&[src*="#{$user_id}"] ~ %messageHeadder > %messageUsername::after {
+		content: "CV Donator";
+		color: #f1c40f;
+		text-shadow: 0px 0px 2px #f1c40f, 0px 0px 4px #fcde67;
+		}
+	}
+	@each $user_id in $cv_tester {
+		&[src*="#{$user_id}"] ~ %messageHeadder > %messageUsername::after {
+		content: "CV Tester";
+		color: #11806a;
+		text-shadow: 0px 0px 2px #11806a, 0px 0px 4px #0bbc99;
+		}
+	}
+}
