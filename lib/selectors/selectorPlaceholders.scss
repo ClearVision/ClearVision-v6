@@ -2975,8 +2975,14 @@ pre {
 .timestampCozy-2hLAPV, .timestampCompact-MHgFLv, .timestamp-1E3uAL {
 	@extend %messageTimestamp !optional;
 }
-.content-3dzVd8 {
+.contents-2mQqc9 {
 	@extend %messageContent !optional;
+}
+.header-23xsNx {
+	@extend %messageHeadder !optional;
+}
+username-1A8OIy {
+	@extend %messageUsername !optional;
 }
 .container-3-pyIM {
 	@extend %messageSystemContainer !optional;
