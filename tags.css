@@ -1,0 +1,136 @@
+
+.contents-2mQqc9 > img ~ .header-23xsNx > span.username-1A8OIy:after
+{
+    content: none;
+    color: var(--main-color);
+    border: 1px solid;
+    border-radius: 6px;
+    margin-left: 8px;
+    text-shadow: 0px 0px 2px var(--main-color), 0px 0px 4px var(--hover-color);
+    background-color: rgba(255,255,255,0.05);
+    font-size: 10px;
+}
+
+.contents-2mQqc9 > img ~ .header-23xsNx > span.username-1A8OIy:hover::after
+{
+    color: var(--hover-color);
+    text-shadow: 0px 0px 10px var(--hover-color);
+}
+
+/*
+********
+* DEVS *
+********
+*/
+
+/* Leozard */
+.contents-2mQqc9 > img[src*="240437190339854337"] ~ .header-23xsNx > span.username-1A8OIy:after
+{
+    content: ' CV TEAM ';
+}
+
+/* LeafyLuigi */
+.contents-2mQqc9 > img[src*="206088651493343232"] ~ .header-23xsNx > span.username-1A8OIy:after
+{
+    content: ' CV TEAM  ';
+}
+
+/* KitKat */
+.contents-2mQqc9 > img[src*="213067580531933196"] ~ .header-23xsNx > span.username-1A8OIy:after
+{
+    content: ' CV TEAM  ';
+}
+
+/* Scars */
+.contents-2mQqc9 > img[src*="126652966265421824"] ~ .header-23xsNx > span.username-1A8OIy:after
+{
+    content: ' CV TEAM  ';
+}
+
+/* soda (cruxie) - Also made the base for this file. */
+.contents-2mQqc9 > img[src*="332394843743584256"] ~ .header-23xsNx > span.username-1A8OIy:after
+{
+    content: ' CV TEAM ';
+}
+
+/* DAE */
+.contents-2mQqc9 > img[src*="195270435015884800"] ~ .header-23xsNx > span.username-1A8OIy:after
+{
+    content: ' CV TEAM ';
+}
+/*
+***************
+* ClearVision *
+***************
+requested by one of the mods there. no hover.
+*/
+
+/* Zerthox - For making CV. */
+.contents-2mQqc9 > img[src*="144881947557101568"] ~ .header-23xsNx > span.username-1A8OIy:after
+{
+    content: ' CV Dev ';
+    color: rgb(40, 160, 220);
+    text-shadow: 0px 0px 2px rgb(40, 160, 220), 0px 0px 4px #09a8f7;
+}
+.contents-2mQqc9 > img[src*="144881947557101568"] ~ .header-23xsNx > span.username-1A8OIy:after:hover
+{
+    color: #e74c3c;
+    text-shadow: 0px 0px 10px #09a8f7;
+}
+
+.contents-2mQqc9 > img[src*="194151269399527425"] ~ .header-23xsNx > span.username-1A8OIy:after
+{
+  content: ' CV Admin ';
+  color: rgb(40, 160, 220);
+  text-shadow: 0px 0px 2px rgb(40, 160, 220), 0px 0px 4px var(--hover-color);
+}
+
+
+.contents-2mQqc9 > img[src*="66043140208857088"] ~ .header-23xsNx > span.username-1A8OIy:after,
+{
+  content: ' CV Mod ';
+  color: #e74c3c;
+  text-shadow: 0px 0px 2px #e74c3c, 0px 0px 4px var(--hover-color);
+}
+
+.contents-2mQqc9 > img[src*="335677038830682112"] ~ .header-23xsNx > span.username-1A8OIy:after,
+.contents-2mQqc9 > img[src*="236579127090610176"] ~ .header-23xsNx > span.username-1A8OIy:after,
+.contents-2mQqc9 > img[src*="97797564866236416"] ~ .header-23xsNx > span.username-1A8OIy:after,
+.contents-2mQqc9 > img[src*="150750980097441792"] ~ .header-23xsNx > span.username-1A8OIy:after
+{
+  content: ' CV Contributor ';
+  color: #3ee414;
+  text-shadow: 0px 0px 2px #3ee414, 0px 0px 4px var(--hover-color);
+}
+
+.contents-2mQqc9 > img[src*="393883440333979649"] ~ .header-23xsNx > span.username-1A8OIy:after,
+.contents-2mQqc9 > img[src*="262989909411758080"] ~ .header-23xsNx > span.username-1A8OIy:after,
+.contents-2mQqc9 > img[src*="168551219135119361"] ~ .header-23xsNx > span.username-1A8OIy:after,
+.contents-2mQqc9 > img[src*="241500427105992704"] ~ .header-23xsNx > span.username-1A8OIy:after,
+.contents-2mQqc9 > img[src*="151995147150819328"] ~ .header-23xsNx > span.username-1A8OIy:after,
+.contents-2mQqc9 > img[src*="157699533134888961"] ~ .header-23xsNx > span.username-1A8OIy:after,
+.contents-2mQqc9 > img[src*="157492606752784384"] ~ .header-23xsNx > span.username-1A8OIy:after,
+.contents-2mQqc9 > img[src*="174525242939670528"] ~ .header-23xsNx > span.username-1A8OIy:after,
+.contents-2mQqc9 > img[src*="78890013378486272"] ~ .header-23xsNx > span.username-1A8OIy:after,
+.contents-2mQqc9 > img[src*="213263668312408066"] ~ .header-23xsNx > span.username-1A8OIy:after,
+.contents-2mQqc9 > img[src*="152431535914614785"] ~ .header-23xsNx > span.username-1A8OIy:after,
+.contents-2mQqc9 > img[src*="112619227466182656"] ~ .header-23xsNx > span.username-1A8OIy:after,
+.contents-2mQqc9 > img[src*="297873043265552384"] ~ .header-23xsNx > span.username-1A8OIy:after,
+.contents-2mQqc9 > img[src*="258031697646321666"] ~ .header-23xsNx > span.username-1A8OIy:after,
+.contents-2mQqc9 > img[src*="109933711142719488"] ~ .header-23xsNx > span.username-1A8OIy:after,
+.contents-2mQqc9 > img[src*="251260900252712962"] ~ .header-23xsNx > span.username-1A8OIy:after,
+.contents-2mQqc9 > img[src*="199184208319610880"] ~ .header-23xsNx > span.username-1A8OIy:after,
+.contents-2mQqc9 > img[src*="122731339890950145"] ~ .header-23xsNx > span.username-1A8OIy:after,
+.contents-2mQqc9 > img[src*="436228721033216009"] ~ .header-23xsNx > span.username-1A8OIy:after,
+.contents-2mQqc9 > img[src*="66214870705516544"] ~ .header-23xsNx > span.username-1A8OIy:after,
+.contents-2mQqc9 > img[src*="172426681800196096"] ~ .header-23xsNx > span.username-1A8OIy:after,
+.contents-2mQqc9 > img[src*="158311402677731328"] ~ .header-23xsNx > span.username-1A8OIy:after,
+.contents-2mQqc9 > img[src*="284122164582416385"] ~ .header-23xsNx > span.username-1A8OIy:after,
+.contents-2mQqc9 > img[src*="107965218868457472"] ~ .header-23xsNx > span.username-1A8OIy:after,
+.contents-2mQqc9 > img[src*="393900343135830016"] ~ .header-23xsNx > span.username-1A8OIy:after,
+.contents-2mQqc9 > img[src*="183795147236966412"] ~ .header-23xsNx > span.username-1A8OIy:after
+{
+  content: ' CV Donator ';
+  color: #f1c40f;
+  text-shadow: 0px 0px 2px #f1c40f, 0px 0px 4px var(--hover-color);
+}
