@@ -1,27 +1,5 @@
 /* The following CSS was made in part by Leozard, LeafyLuigi, KitKat, Scars and Cruxie */
 
-/*
-TODO:
-Pop-out Live modal; might not be supported by anything yet
-sort this file
-learn original cvv6's code and attempt to improve it OR make own theme based around CV's concept(s)
-
-fix up anything else that's broken
-broken things:
-  light theme; still exists.
-  blur email (aesthetics file)
-  webhooks might be broken
-
-potential addons:
-- disable tags/credits
-- addon fixer (gives things that addons have a theme)
-
-*/
-
-/*
-To use this, put the following line at the top of your custom CSS:
-@import url(https://leafyluigi.github.io/CVv6-CustomCSS/Custom-CSS.css);
-*/
 .hljs[class~="1c" i]:before{content:"1C:Enterprise"}
 .hljs[class~="abnf" i]:before{content:"ABNF"}
 .hljs[class~="accesslog" i]:before{content:"Access Log"}
