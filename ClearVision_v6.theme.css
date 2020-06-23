@@ -1,10 +1,12 @@
-/**
+/*
  * @name ClearVision
- * @author Zerthox
+ * @author untuned
+ * @authorId 144881947557101568
  * @version 6
  * @description Highly customizable theme for BetterDiscord.
- * @source https://github.com/ClearVision/v6
- * @website https://clearvision.gitlab.io/join
+ * @source https://github.com/ClearVision/ClearVision-v6
+ * @website https://clearvision.gitlab.io
+ * @invite 2fKpjAR
  */
 
 /* IMPORT CSS */
@@ -98,8 +100,8 @@
 	--user-modal-sepia: var(--background-sepia); /* user modal background sepia (0 - 100%) [default: var(---background-sepia)] */
 	--user-modal-blur: calc(var(--background-blur) + 3px); /* user modal background blur [default: calc(var(--background-blur) + 3px)] */
 	
-	/* THEMES BBD COLORS */
-    --bd-blue: var(--main-color); /* betterdiscord main color [default: var(--main-color)] */
-    --bd-blue-hover: var(--hover-color); /* betterdiscord hover color [default: var(--hover-color)] */
-    --bd-blue-active: var(--hover-color); /* betterdiscord active color [default: var(--hover-color)] */
+	/* THEME BD COLORS */
+	--bd-blue: var(--main-color); /* betterdiscord main color [default: var(--main-color)] */
+	--bd-blue-hover: var(--hover-color); /* betterdiscord hover color [default: var(--hover-color)] */
+	--bd-blue-active: var(--hover-color); /* betterdiscord active color [default: var(--hover-color)] */
 }
