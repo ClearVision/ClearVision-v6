@@ -886,6 +886,6 @@
 .theme-dark .overflowRolesPopout-140n9i, .theme-dark .overflowRolesPopoutArrow-2O66oH {background-color: var(--backdrop-overlay);}
 
 /* CANARY - Member List */
-.members-1998pB>.listContent-2_qb-y {background-color: transparent;}
+.listContent-2_qb-y {background-color: transparent !important;}
 
 
