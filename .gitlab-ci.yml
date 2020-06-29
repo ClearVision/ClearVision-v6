@@ -18,7 +18,7 @@ pages:
     paths:
       - public
   only:
-    - tags
+    - master
     - triggers
     - schedules
     - web
