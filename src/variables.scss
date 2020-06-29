@@ -13,12 +13,12 @@ $cv: (
 		text: (
 			titlebar: (
 				main: "ClearVision",
-				version: "v6-#{$version}",
+				version: "v#{$version}",
 				short: "CV v6"
 			),
 			account: (
 				main: "ClearVision",
-				version: "v6-#{$version}"
+				version: "v#{$version}"
 			)
 		)
 	),
@@ -106,7 +106,7 @@ $cv: (
 				sepia: var(--user-popout-sepia),
 				blur: var(--user-popout-blur)
 			),
-			
+
 			// USER MODAL BACKGROUND
 			modal: (
 				img: var(--user-modal-image),
@@ -122,7 +122,7 @@ $cv: (
 				sepia: var(--user-modal-sepia),
 				blur: var(--user-modal-blur)
 			),
-			
+
 			// HOME BUTTON BACKGROUND
 			home: (
 				icon: var(--home-icon),
