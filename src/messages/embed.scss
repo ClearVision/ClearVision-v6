@@ -3,7 +3,7 @@
 	position: relative;
 	background: transparent;
 	border-width: 0;
-	border-color: hsla(0, 0%, 100%, .1);
+	border-color: #fff;
 	&:before {
 		content: "";
 		position: absolute;
@@ -11,8 +11,6 @@
 		left: 0;
 		height: 100%;
 		border-left: 4px solid;
-		border-color: inherit;
-		opacity: .3;
 	}
 	%embedAuthorName,
 	%embedFieldName,
