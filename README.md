@@ -19,7 +19,7 @@
 [![Issues][issues-badge]][issues-link]
 [![Pull Requests][prs-badge]][prs-link]
 
-![v6 Sapphire](https://github.com/ClearVision/ClearVision-v6/raw/master/6-release.4.7.9.png)
+![v6 Sapphire](https://github.com/ClearVision/ClearVision-v6/raw/master/screenshots/6-stable.4.7.9.png)
 
 </div>
 
@@ -29,7 +29,7 @@ Download the theme file and move it into your [BetterDiscord](https://betterdisc
 >[ClearVision_v6.theme.css](https://clearvision.gitlab.io/download/v6/latest)
 
 ## Building from source
-In order build the theme from source you'll need [Sass](https://sass-lang.com) & [PostCSS Autoprefixer](https://github.com/postcss/autoprefixer).  
+In order build the theme from source you will need [Sass](https://sass-lang.com) & [PostCSS Autoprefixer](https://github.com/postcss/autoprefixer).  
 With [npm](https://npmjs.org/get-npm) installed you can simply run `npm install` to install all missing dependencies and compile the theme into the `/public` folder via `npm run build`.
 
 **Dependencies:**
