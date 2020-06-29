@@ -2,16 +2,7 @@
 %embed {
 	position: relative;
 	background: transparent;
-	border-width: 0;
-	border-color:  hsla(0, 0%, 100%, .1);
-	&:before {
-		content: "";
-		position: absolute;
-		top: 0;
-		left: 0;
-		height: 100%;
-		border-left: 4px solid;
-	}
+	border-color: #fff;
 	%embedAuthorName,
 	%embedFieldName,
 	%embedTitle {
