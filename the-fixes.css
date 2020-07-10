@@ -888,4 +888,12 @@
 /* CANARY - Member List */
 .listContent-2_qb-y {background-color: transparent !important;}
 
-
+/* Search results */
+.channelName-1JRO3C {background: transparent;}
+.searchResult-9tQ1uo:after {background-image:none;}
+.searchResult-9tQ1uo:before {background-image:none;}
+.searchResultMessage-1fxgXh.hit-1fVM9e {background-color: transparent; border: none; box-shadow: none;}
+.searchResult-9tQ1uo.expanded-w_LCGl  {background-color: var(--background-overlay); border:none;}
+.searchResult-9tQ1uo .hit-1fVM9e .messageGroupCozy-2-Q370 {background-color: var(--background-overlay);}
+.searchResult-9tQ1uo:focus-within .jumpButton-JkYoYK, .searchResult-9tQ1uo:hover .jumpButton-JkYoYK {background-color: var(--backdrop-overlay);}
+.expanded-w_LCGl .searchResultMessage-1fxgXh.hit-1fVM9e{background-color: transparent;}
