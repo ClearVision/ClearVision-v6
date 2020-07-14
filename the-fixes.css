@@ -901,3 +901,5 @@
 
 /* Home -> Nitro (Under Library) */
 .scroller-9moviB {background: transparent}
+/* Switch Plans button (needs to be !important since discord used !important) */
+.button-G2dHuB:hover, .button-G2dHuB:active {background-color: var(--hover-color)!important;}
