@@ -869,6 +869,8 @@
 
 /*inbox badge*/
 .badge-2qGa_k:after{background-color: var(--main-color);}
+/* inbox Jump to button */
+.messageContainer-gbhlwo:hover .jumpButton-2F6EMx {background-color: var(--backdrop-overlay);}
 
 /* You're all caught up*/
 .icon-1Itzco{background-color: var(--background-overlay); color: #fff;}
@@ -909,3 +911,24 @@
 
 /* Emote Picker's Guild List Scroller */
 .none-2Eo-qx::-webkit-scrollbar {width: 0px !important;}
+
+/* EMOJI POPOUT */
+.container-ZRw2kD {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid var(--main-color);
+    padding:4px;
+  }
+  
+  .container-ZRw2kD .emojiSection-3Fb9ix {
+    background-color: transparent;
+    padding:4px;
+  }
+  
+  .container-ZRw2kD .guildSection-1EoFKd {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding:4px;
+  }
+  
+  .container-ZRw2kD .loadingBackground-1p5N1j .loading-1lSwpg {
+    background: var(--main-color);
+  }
