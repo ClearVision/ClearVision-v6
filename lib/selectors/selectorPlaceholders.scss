@@ -2948,23 +2948,11 @@ pre {
 .messageCompact-kQa7ES {
 	@extend %messageCompact !optional;
 }
-.headerCozy-2N9HOL {
-	@extend %messageHeaderCozy !optional;
-}
-.headerCompact-3wRt2W {
-	@extend %messageHeaderCompact !optional;
-}
-.headerCozy-2N9HOL, .headerCompact-3wRt2W {
-	@extend %messageHeader !optional;
-}
-.headerCozyMeta-rdohGq {
-	@extend %messageHeaderCozyMeta !optional;
+.header-23xsNx {
+    @extend %messageHeader !optional;
 }
 .usernameWrapper-1S-G5O {
 	@extend %messageUsernameWrapper !optional;
-}
-.username-_4ZSMR {
-	@extend %messageUsername !optional;
 }
 .timestampCozy-2hLAPV {
 	@extend %messageTimestampCozy !optional;
@@ -2984,7 +2972,7 @@ pre {
 .header-23xsNx {
 	@extend %messageHeader !optional;
 }
-username-1A8OIy {
+.username-1A8OIy {
 	@extend %messageUsername !optional;
 }
 .container-3-pyIM {
