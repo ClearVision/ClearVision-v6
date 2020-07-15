@@ -7,7 +7,6 @@ $cv_admin: (
 $cv_mod: (
 );
 $cv_team: (
-		"332394843743584256",    // cruxie
 		"213067580531933196",    // KitKat
 		"206088651493343232",    // LeafyLuigi
 		"240437190339854337",    // Leozard
@@ -68,11 +67,16 @@ $cv_tester: (
 		"102009847792291840",    // SirSuperDeath
 );
 
+$cv_cruxie: (
+		"332394843743584256",    // cruxie
+);
+
 // OUTPUT
 %messageContent > img {
-	& ~ %messageHeadder > %messageUsername::after {
+	& ~ %messageHeader > %messageUsername::after {
 		content: none;
-		color: $main-color;
+		color: currentcolor;
+		text-shadow: 0 0 2px currentcolor;
 		border: 1px solid;
 		border-radius: 6px;
 		margin-left: 8px;
@@ -81,45 +85,33 @@ $cv_tester: (
 		padding: 0 5px;
 	}
 	@each $user_id in $cv_admin {
-		&[src*="#{$user_id}"] ~ %messageHeadder > %messageUsername::after {
+		&[src*="#{$user_id}"] ~ %messageHeader > %messageUsername::after {
 		content: "CV Admin";
-		color: #28a0dc;
-		text-shadow: 0px 0px 2px #28a0dc, 0px 0px 4px #02a2f2;
-		}
-	}
-	@each $user_id in $cv_mod {
-		&[src*="#{$user_id}"] ~ %messageHeadder > %messageUsername::after {
-		content: "CV Mod";
-		color: #e74c3c;
-		text-shadow: 0px 0px 2px #e74c3c, 0px 0px 4px #dd6c5f;
 		}
 	}
 	@each $user_id in $cv_team {
-		&[src*="#{$user_id}"] ~ %messageHeadder > %messageUsername::after {
+		&[src*="#{$user_id}"] ~ %messageHeader > %messageUsername::after {
 		content: "CV Team";
-		color: #c71453;
-		text-shadow: 0px 0px 2px #c71453, 0px 0px 4px #e0477d;
 		}
 	}
 	@each $user_id in $cv_contributor {
-		&[src*="#{$user_id}"] ~ %messageHeadder > %messageUsername::after {
+		&[src*="#{$user_id}"] ~ %messageHeader > %messageUsername::after {
 		content: "CV Contributor";
-		color: #2ecc71;
-		text-shadow: 0px 0px 2px #2ecc71, 0px 0px 4px #28ef7b;
 		}
 	}
 	@each $user_id in $cv_donator {
-		&[src*="#{$user_id}"] ~ %messageHeadder > %messageUsername::after {
+		&[src*="#{$user_id}"] ~ %messageHeader > %messageUsername::after {
 		content: "CV Donator";
-		color: #f1c40f;
-		text-shadow: 0px 0px 2px #f1c40f, 0px 0px 4px #fcde67;
 		}
 	}
 	@each $user_id in $cv_tester {
-		&[src*="#{$user_id}"] ~ %messageHeadder > %messageUsername::after {
+		&[src*="#{$user_id}"] ~ %messageHeader > %messageUsername::after {
 		content: "CV Tester";
-		color: #11806a;
-		text-shadow: 0px 0px 2px #11806a, 0px 0px 4px #0bbc99;
+		}
+	}
+	@each $user_id in $cv_cruxie {
+		&[src*="#{$user_id}"] ~ %messageHeader > %messageUsername::after {
+		content: "Tag Originator";
 		}
 	}
 }
