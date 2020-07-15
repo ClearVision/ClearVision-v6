@@ -906,3 +906,6 @@
 
 /* Changes the outline on a focused image to main color */
 .imageWrapper-2p5ogY:focus {outline-color:var(--main-color);}
+
+/* Emote Picker's Guild List Scroller */
+.none-2Eo-qx::-webkit-scrollbar {width: 0px !important;}
