@@ -4,14 +4,12 @@ $cv_admin: (
 		"194151269399527425",    // untuned
 		"144881947557101568",    // Zerthox
 );
-$cv_mod: (
-);
 $cv_team: (
+		"195270435015884800",    // Daemonicdeveloper
 		"213067580531933196",    // KitKat
 		"206088651493343232",    // LeafyLuigi
 		"240437190339854337",    // Leozard
 		"126652966265421824",    // Scars
-		"195270435015884800",    // Daemonicdeveloper
 );
 $cv_contributor: (
 		"335677038830682112",    // Snow (keeps changing name)
@@ -65,9 +63,12 @@ $cv_tester: (
 		"297041315852713984",    // Zou_Yongqi
 		"128006451053592577",    // Rawrcolond
 		"102009847792291840",    // SirSuperDeath
-		"580867069621567488"	 // Primrose
+		"513423192484872223",		 // O...O (yes that's a real username)
+		"580867069621567488"		 // skyspell413 / Primrose
 );
-
+$cv_translator : (
+		"538745942493495298"	   // Kuroikitten
+);
 $cv_cruxie: (
 		"332394843743584256",    // cruxie
 );
@@ -108,6 +109,11 @@ $cv_cruxie: (
 	@each $user_id in $cv_tester {
 		&[src*="#{$user_id}"] ~ %messageHeader > %messageUsername::after {
 		content: "CV Tester";
+		}
+	}
+	@each $user_id in $cv_translator {
+		&[src*="#{$user_id}"] ~ %messageHeader > %messageUsername::after {
+		content: "CV Translator";
 		}
 	}
 	@each $user_id in $cv_cruxie {
