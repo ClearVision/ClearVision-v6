@@ -213,8 +213,8 @@
 .theme-dark .lookFilled-1h1y05.select-1Pkeg4:focus {border-color: transparent;}
 
 /* Create DM button color */
-.privateChannelRecipientsInviteButtonIcon-cXLJ7f {color: var(--main-color) !important;transition: all .1s ease-in-out;}
-.privateChannelRecipientsInviteButtonIcon-cXLJ7f:hover {color: var(--hover-color) !important;transition: all .1s ease-in-out;}
+.privateChannelRecipientsInviteButtonIcon-3A3uTc {color: var(--main-color) !important;transition: all .1s ease-in-out;}
+.privateChannelRecipientsInviteButtonIcon-3A3uTc:hover {color: var(--hover-color) !important;transition: all .1s ease-in-out;}
 
 /* Emoji Box UPDATED ON 18/06/2020*/
 .contentWrapper-SvZHNd {background-color: var(--background-overlay);}
@@ -934,3 +934,6 @@
   .container-ZRw2kD .loadingBackground-1p5N1j .loading-1lSwpg {
     background: var(--main-color);
   }
+
+/* Discord Store transparency */
+.scroller-1JpcIc {background-color:transparent;}
