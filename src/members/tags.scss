@@ -75,7 +75,7 @@ $cv_cruxie: (
 );
 
 // OUTPUT
-%messageContents > img {
+%messageContent > img {
 	& ~ %messageHeader > %messageUsername::after {
 		content: none;
 		color: currentcolor;
