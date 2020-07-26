@@ -12,7 +12,7 @@ $cv_team: (
 		"126652966265421824",    // Scars
 );
 $cv_contributor: (
-		"335677038830682112",    // Snow (keeps changing name)
+		"335677038830682112",    // Snow
 		"236579127090610176",    // Danielle
 		"97797564866236416",     // Heebeejeebees
 		"150750980097441792",    // Orangutan
@@ -36,12 +36,12 @@ $cv_donator: (
 		"251260900252712962",    // viwalon
 		"199184208319610880",    // xImGaming
 		"122731339890950145",    // Lilith
-		// "436228721033216009", // Unknown user
-		// "66214870705516544",  // Unknown user
-		// "172426681800196096", // Unknown user
-		// "158311402677731328", // Unknown user
-		// "284122164582416385", // Unknown user
-		// "107965218868457472", // Unknown user
+		"436228721033216009",    // Hattyot
+		"66214870705516544",     // Lordmau5
+		"172426681800196096", 	 // Luan San
+		"158311402677731328",    // theLMGN
+		"284122164582416385",    // Aetheryx
+		"107965218868457472",    // Mudock Yatho
 		"393900343135830016",    // Nyx
 		"183795147236966412",    // blamecoopa
 );
@@ -55,16 +55,17 @@ $cv_tester: (
 		"94553281296084992",     // Squibbus
 		"85410928408924160",     // †电离龙†
 		"143476079267414016",    // Reĝino Kastilo
-		"131917628800237570",	 // FunkoChan
+		"131917628800237570",    // FunkoChan
 		"155379920242081793", 	 // Dimii04
-		"135130130942132224",	 // MTPyronaut
-		"123340872333918215",	 // Purvesh9211
+		"135130130942132224",    // MTPyronaut
+		"123340872333918215",    // Purvesh9211
 		"250721335305568258",    // Valcreed
 		"297041315852713984",    // Zou_Yongqi
 		"128006451053592577",    // Rawrcolond
 		"102009847792291840",    // SirSuperDeath
-		"513423192484872223",	 // O...O (yes that's a real username)
-		"580867069621567488"	 // skyspell413 / Primrose
+		"513423192484872223",    // O...O (yes that's a real username)
+		"580867069621567488",    // skyspell413 / Primrose
+		"143992174084751360"     // schr0d1nger
 );
 $cv_translator : (
 		"538745942493495298"	 // Kuroikitten
@@ -74,7 +75,7 @@ $cv_cruxie: (
 );
 
 // OUTPUT
-%messageContent > img {
+%messageContents > img {
 	& ~ %messageHeader > %messageUsername::after {
 		content: none;
 		color: currentcolor;
