@@ -941,7 +941,7 @@
 /* Footer in changelog */
 .footer-1lnhms {background-color: var(--background-overlay);}
 /* Links in changelog */
-.content-RXzE-X a {color: var(--main-color);}
+.content-RXzE-X a {color: var(--url-color);}
 /* Changelog close button */
 .closeButton-3sommQ {
 width: 24px;
