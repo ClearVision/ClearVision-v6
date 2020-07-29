@@ -937,3 +937,14 @@
 
 /* Discord Store transparency */
 .scroller-1JpcIc {background-color:transparent;}
+
+/* Footer in changelog */
+.footer-1lnhms {background-color: var(--background-overlay);}
+/* Links in changelog */
+.content-RXzE-X a {color: var(--main-color);}
+/* Changelog close button */
+.closeButton-3sommQ {
+width: 24px;
+height: 24px;
+right: 13px;
+}
