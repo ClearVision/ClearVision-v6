@@ -948,3 +948,12 @@ width: 24px;
 height: 24px;
 right: 13px;
 }
+
+/* Enable community footer pictures */
+.featureCard-1RR4Tl, .featureIcon-3p1TC_ {background-color: var(--background-overlay);}
+
+/* Enable community words, e.g. learn latin, python */
+.guildDetails-2p1NmK {background-color: transparent;}
+
+/* Fixed menu selection color when dragging server drop-down */
+.colorDefault-2K3EoJ:active:not(.hideInteraction-1iHO1O) {background-color: var(--hover-color);}
