@@ -984,3 +984,18 @@ right: 13px;
 
 /* New channel "edit channel link" */
 .button-2OOM0p {color: var(--url-color);}
+
+/* Creating Welcome screen chatbox (needs to be !important)*/
+.scrollbarDefault-3COgCQ {
+    background-color: var(--background-overlay)!important;
+	border-radius: 4px !important;
+}
+
+/* Creating Welcome screen pencil icon */
+.editCircle-ityklj {
+    background-color: var(--main-color);
+    color: white;
+}
+
+/* Fixes Add another channel button drag color */
+.theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:active, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:hover {background-color: var(--hover-color);}
