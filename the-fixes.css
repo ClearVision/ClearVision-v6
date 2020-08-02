@@ -999,3 +999,6 @@ right: 13px;
 
 /* Fixes Add another channel button drag color */
 .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:active, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:hover {background-color: var(--hover-color);}
+
+/* New feature badge */
+.badge-_BgAUQ {background-color: var(--main-color);}
