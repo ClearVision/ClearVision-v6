@@ -20,3 +20,24 @@
 		}
 	}
 }
+/* themes call and no one is here buttons, makes end call a circle */
+.button-3HqqDX {
+	background-color: var(--main-color);
+	&:hover {
+		background-color: var(--hover-color);
+	}
+}
+.tile-2naSqK {
+	background-color: var(--backdrop-overlay);
+}
+.colorable-1bkp8v {
+	&.primaryDark-3mSFDl {
+		background-color: var(--background-overlay);
+		&:hover {
+			background-color: var(--hover-color);
+		}
+	}
+}
+.centerButton-3CaNcJ {
+	border-radius: 50% !important;
+}

@@ -1002,3 +1002,6 @@ right: 13px;
 
 /* New feature badge */
 .badge-_BgAUQ {background-color: var(--main-color);}
+
+/* Fixed media volume bar */
+.mediaBarProgress-1xaPtl:before, .mediaBarProgress-1xaPtl:after {background-color: inherit;}
