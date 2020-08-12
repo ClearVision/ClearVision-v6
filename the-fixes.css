@@ -624,12 +624,7 @@
 /* Chat Bar */
 .scrollableContainer-2NUZem {background-color: var(--background-overlay);border: 2px solid rgba(255, 255, 255, 0.07);transition: all .15s ease-in-out;}
 .scrollableContainer-2NUZem:focus-within {border: 2px solid var(--main-color);transition: all .15s ease-in-out;}
-.attachButton-2WznTc {
-    padding-right:10px;
-    padding-left:28px;
-    padding-top:10px;
-    padding-bottom:10px;
-}
+.attachButton-2WznTc {padding: 10px 10px 10px 28px;}
 .placeholder-37qJjk, .slateTextArea-1Mkdgw {padding-left: 10px;}
 .sansAttachButton-td2irx {padding-left: 0px;}
 
