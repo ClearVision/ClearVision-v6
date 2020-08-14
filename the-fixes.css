@@ -1008,3 +1008,7 @@ right: 13px;
 
 /* Member List again */
 .members-1998pB>div {background-color:transparent;}
+
+/* fixes DM's being displaced in bbd */
+.scroller-2TZvBN>:not(.listItem-2P_4kh):nth-child(2){justify-content: left;}
+.scroller-2TZvBN>:not(.listItem-2P_4kh):nth-child(2)+.listItem-2P_4kh{margin-left: 0px;}
