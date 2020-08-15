@@ -30,26 +30,24 @@
 }
 
 // JUMP TO PRESENT BAR
-%messagesWrapper {
-	%jumpToPresentBar {
-		bottom: -10px;
-		margin-bottom: 5px;
-		background: rgba(0, 0, 0, .7);
-		border-radius: 3px;
-		transition: all .15s ease-in-out;
+%jumpToPresentBar {
+	margin-bottom: 5px;
+	background: rgba(0, 0, 0, .7);
+	border-radius: 3px;
+	transition: all .15s ease-in-out;
+	padding-bottom: 0px;
+	> button {
+		color: hsla(0, 0%, 100%, .7);
+		transition: inherit;
+	}
+	&:hover {
+		background: $main-color;
 		> button {
-			color: hsla(0, 0%, 100%, .7);
-			transition: inherit;
+			color: #fff;
 		}
-		&:hover {
-			background: $main-color;
-			> button {
-				color: #fff;
-			}
-		}
-		&:active {
-			transform:scale(.99);
-		}
+	}
+	&:active {
+		transform:scale(.99);
 	}
 }
 
