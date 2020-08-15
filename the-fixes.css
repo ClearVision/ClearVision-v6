@@ -583,6 +583,64 @@
 /* Spotify Popup */
 .attachPopout-36hjtN {background-color: var(--backdrop-overlay);}
 
+/* Cv spin All Langs - ONLY HITS USER SETTINGS */
+/* Danish */
+.container-3baos1 .button-14-BFJ[aria-label="Brugerindstillinger"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
+/* Deutsch */
+.container-3baos1 .button-14-BFJ[aria-label="Benutzereinstellungen"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
+/* English */
+.container-3baos1 .button-14-BFJ[aria-label="User Settings"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
+/* Spanish */
+.container-3baos1 .button-14-BFJ[aria-label="Ajustes de usuario"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
+/* French */
+.container-3baos1 .button-14-BFJ[aria-label="Paramètres utilisateur"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
+/* Croatian */
+.container-3baos1 .button-14-BFJ[aria-label="Korisničke postavke"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
+/* Italian */
+.container-3baos1 .button-14-BFJ[aria-label="Impostazioni utente"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
+/* Lithuanian */
+.container-3baos1 .button-14-BFJ[aria-label="Naudotojo Nustatymai"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
+/* Hungarian */
+.container-3baos1 .button-14-BFJ[aria-label="Felhasználói beállítások"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
+/* Dutch */
+.container-3baos1 .button-14-BFJ[aria-label="Gebruikersinstellingen"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
+/* Norwegian */
+.container-3baos1 .button-14-BFJ[aria-label="Brukerinnstillinger"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
+/* Polish */
+.container-3baos1 .button-14-BFJ[aria-label="Ustawienia użytkownika"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
+/* Portuguese, Brazilian */
+.container-3baos1 .button-14-BFJ[aria-label="Configurações de Usuário"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
+/* Romanian */
+.container-3baos1 .button-14-BFJ[aria-label="Setări utilizator"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
+/* Finnisch */
+.container-3baos1 .button-14-BFJ[aria-label="Käyttäjäasetukset"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
+/* Swedish */
+.container-3baos1 .button-14-BFJ[aria-label="Användarinställningar"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
+/* Vietnamese */
+.container-3baos1 .button-14-BFJ[aria-label="Cài đặt người dùng"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
+/* Turkish */
+.container-3baos1 .button-14-BFJ[aria-label="Kullanıcı Ayarları"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
+/* Czech */
+.container-3baos1 .button-14-BFJ[aria-label="Uživatelská nastavení"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
+/* Greek */
+.container-3baos1 .button-14-BFJ[aria-label="Ρυθμίσεις χρήστη"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
+/* Bulgarian */
+.container-3baos1 .button-14-BFJ[aria-label="Потребителски настройки"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
+/* Russian */
+.container-3baos1 .button-14-BFJ[aria-label="Настройки пользователя"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
+/* Ukrainian */
+.container-3baos1 .button-14-BFJ[aria-label="Користувацькі налаштування"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
+/* Thai */
+.container-3baos1 .button-14-BFJ[aria-label="ตั้งค่าผู้ใช้"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
+/* Chinese - China */
+.container-3baos1 .button-14-BFJ[aria-label="用户设置"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
+/* Japanese */
+.container-3baos1 .button-14-BFJ[aria-label="ユーザー設定"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
+/* Chinese Taiwan */
+.container-3baos1 .button-14-BFJ[aria-label="使用者設定"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
+/* Korean */
+.container-3baos1 .button-14-BFJ[aria-label="사용자 설정"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
+
 /* Role Menu popout */
 .submenu-2-ysNh {background-color: var(--background-overlay);}
 
