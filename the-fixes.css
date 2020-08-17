@@ -872,3 +872,14 @@ right: 13px;
 /* fixes DM's being displaced in bbd */
 .scroller-2TZvBN>:not(.listItem-2P_4kh):nth-child(2){justify-content: left;}
 .scroller-2TZvBN>:not(.listItem-2P_4kh):nth-child(2)+.listItem-2P_4kh{margin-left: 0px;}
+
+/* Themes Request all data button and terms of service and privacy policy links */
+.card-3Qj_Yx a {color: var(--main-color);}
+
+.lookOutlined-3sRXeN.colorBrand-3pXr91 {
+    color: var(--main-color);
+    border-color: var(--main-color);} 
+	
+.lookOutlined-3sRXeN.colorBrand-3pXr91:hover{
+ color: var(--hover-color);
+ border-color: var(--hover-color);} 
