@@ -882,4 +882,8 @@ right: 13px;
 	
 .lookOutlined-3sRXeN.colorBrand-3pXr91:hover{
  color: var(--hover-color);
- border-color: var(--hover-color);} 
+ border-color: var(--hover-color);}
+
+/* Server is going to lose a level popout */
+.message-39hdqk {width: 110%;}
+.close-jnIfru:hover {color:var(--danger-color);}
