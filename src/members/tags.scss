@@ -7,7 +7,6 @@ $cv_admin: (
 $cv_team: (
 		"195270435015884800",    // Daemonicdeveloper
 		"213067580531933196",    // KitKat
-		"309976820109803520",    // LeafyLuigi
 		"240437190339854337",    // Leozard
 		"126652966265421824",    // Scars
 );
@@ -73,6 +72,9 @@ $cv_translator : (
 $cv_cruxie: (
 		"332394843743584256",    // cruxie
 );
+$cv_leafy: (
+		"309976820109803520"     // Leafy former CV Team
+);
 
 // OUTPUT
 %messageContent > img {
@@ -119,7 +121,12 @@ $cv_cruxie: (
 	}
 	@each $user_id in $cv_cruxie {
 		&[src*="#{$user_id}"] ~ %messageHeader > %messageUsername::after {
-		content: "Tag Originator";
+		content: "CV Team | Tag Originator";
+		}
+	}
+	@each $user_id in $cv_leafy {
+		&[src*="#{$user_id}"] ~ %messageHeader > %messageUsername::after {
+		content: "Former CV Team";
 		}
 	}
 }
