@@ -66,3 +66,14 @@
 %categoryWrapperMuted { 
 	opacity: .5;
 }
+
+// Add channel
+.addButtonIcon-3u-3Hu {
+	color: var(--main-color);
+	opacity: .7;
+	transition: all .3s ease-in-out;
+	&:hover {
+		color: var(--main-color);
+		opacity: 1;
+	}
+}
