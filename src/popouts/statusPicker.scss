@@ -4,69 +4,9 @@
 		margin-left: -10px;
 	}
 }
-%guildHeaderPopout {
-	%statusPickerItem {
-		position: relative;
-		display: flex;
-		align-items: center;
-		%statusPickerText {
-			position: absolute;		
-		}
-		&:nth-child(4),
-		&:last-child {
-			%statusPickerText > div {
-				color: hsla(0, 0%, 100%, .7);
-				opacity: 1;
-				transition: all .15s ease-in-out;
-			}
-		}
-		&:hover {
-			&:first-child {
-				background: cv("colors.online");
-			}
-			&:nth-child(3) {
-				background: cv("colors.idle");
-			}
-			&:nth-child(4) {
-				background: cv("colors.dnd");
-			}
-			&:nth-child(5) {
-				background: cv("colors.offline");
-			}
-			&:nth-child(4),
-			&:nth-child(5) {
-				%statusPickerText > div {
-					opacity: 0;
-				}
-			}
-			%statusPickerStatusInner {
-				background: #fff !important;
-			}
-			%statusPickerHelper {
-				opacity: 1;
-			}
-		}
-	}
-	%statusPickerStatusInner {
-		transition: background .15s ease-in-out;
-		&[style*="rgb(67, 181, 129)"] {
-			background: cv("colors.online") !important;
-		}
-		&[style*="rgb(250, 166, 26)"] {
-			background: cv("colors.idle") !important;
-		}
-		&[style*="rgb(240, 71, 71)"] {
-			background: cv("colors.dnd") !important;
-		}
-		&[style*="rgb(116, 127, 141)"] {
-			background: cv("colors.offline") !important;
-		}
-	}
-	%statusPickerHelper {
-		margin-top: 4px;
-		margin-bottom: 4px;
-		color: hsla(0, 0%, 100%, .7);
-		opacity: 0;
-		transition: all .15s ease-in-out;
-	}
-}
+
+.colorDefault-2K3EoJ.focused-3afm-j#status-picker-online {background: var(--online-color);}
+.colorDefault-2K3EoJ.focused-3afm-j#status-picker-idle {background: var(--idle-color);}
+.colorDefault-2K3EoJ.focused-3afm-j#status-picker-dnd {background: var(--dnd-color);}
+.colorDefault-2K3EoJ.focused-3afm-j#status-picker-invisible {background: var(--offline-color);}
+.colorDefault-2K3EoJ.focused-3afm-j {transition: all .15s ease-in-out;}
