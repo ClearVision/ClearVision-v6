@@ -497,14 +497,6 @@
 /* a few dropdowns somewhere idk */
 .css-n57xjs-menu {background-color: var(--backdrop-overlay);}
 
-/* Server Name Dropdown */
-.styleFixed-sX-yHV {background-color: var(--backdrop-overlay);}
-.colorBrand-ROmMP1{color: var(--main-color);}
-.colorDefault-2K3EoJ.focused-3afm-j, .colorDefault-2K3EoJ:hover:not(.hideInteraction-1iHO1O){background-color: var(--main-color);}
-    /* last line of dropdown */
-.colorDanger-2qLCe1, .colorDanger-2qLCe1 .checkbox-3s5GYZ {color: rgb(240, 71, 71);}
-.colorDanger-2qLCe1.focused-3afm-j, .colorDanger-2qLCe1:hover:not(.hideInteraction-1iHO1O) {background-color: var(--danger-color);}
-
 /* Discover/Explore Public Servers */
     /* search bars + icons */
 .searchPage-3GKAdT .search-1iTphC .searchBox-2_mAlO {background-color: var(--background-overlay);}
