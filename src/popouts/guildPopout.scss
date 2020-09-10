@@ -1,63 +1,27 @@
 /* GUILD HEADER POPOUT */
-%popout {
-	%guildHeaderPopout {
-		background: rgba(0, 0, 0, .7);
-	}
-}
-%appMount {
-	%guildHeaderPopout {
-		background: rgba(0, 0, 0, .7);
-		%guildHeaderPopoutItemBase {
-			color: hsla(0, 0%, 100%, .7);
-			transition: all .15s ease-in-out;
-			%guildHeaderPopoutIcon {
-				color: hsla(0, 0%, 100%, .5);
-				transition: all .15s ease-in-out;
-				&[name=EyeHidden] {
-					> rect {
-						fill: cv("colors.danger");
-					}
-				}
-			}
-			&:hover {
-				background: $main-color;
-				color: #fff;
-				%guildHeaderPopoutIcon {
-					color: hsla(0, 0%, 100%, .7);
-				}
-			}
-			&%guildHeaderPopoutItemLeave {
-				position: relative;
-				margin: 2px;
-				background-color: transparent;
-				color: hsla(0, 0%, 100%, .6);
-				width: calc(100% - 4px);
-				z-index: 1;
-				&:after {
-					content: "";
-					position: absolute;
-					@include stretch;
-					margin: 0 2px;
-					background: cv("colors.danger");
-					border-radius: 3px;
-					opacity: .5;
-					transition: inherit;
-					z-index: -1;
-				}
-				&:hover {
-					color: #fff;
-					&:after {
-						opacity: .7;
-					}
-					%guildHeaderPopoutIcon {
-						transform: rotateY(180deg);
-					}
-				}
-			}
+
+%guildHeaderPopout {
+	background: rgba(0, 0, 0, .7);
+	%guildHeaderPopoutItem {
+		color: hsla(0, 0%, 100%, .7);
+		transition: all .15s ease-in-out;		
+		&.focused-3afm-j {
+			background: var(--main-color);
+			color: #fff;
 		}
-		%guildHeaderPopoutSeparator {
-			margin: -1px 5px;
-			border-color: hsla(0, 0%, 100%, .04);
+	}
+	 %guildHeaderPopoutItemInvite {
+	    color: var(--main-color);
+	}
+	%guildHeaderPopoutItemLeave {
+	    color: rgb(240, 71, 71);
+		&%guildHeaderPopoutItemHover {
+		    background-color: var(--danger-color);
+			color: #fff;
+			%guildHeaderPopoutIcon {
+				transform: rotateY(180deg);
+				transition: all .15s ease-in-out;
+			}
 		}
 	}
 }
