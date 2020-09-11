@@ -81,12 +81,6 @@
 /* Nitro Gift box thing */
 .table-39R0Oe {background-color: var(--background-overlay);}
 
-/* Upload Modal*/
-.theme-dark .uploadModal-2ifh8j, .theme-dark .footer-3mqk7D {background-color: var(--background-overlay);}
-.theme-dark .override-2YgiXd .checked-3_4uQ9[style*="border-color"] {background-color: transparent !important;}
-.theme-dark .checked-3_4uQ9[style*="border-color"] svg g polyline {stroke: var(--main-color);}
-.theme-dark .uploadModal-2ifh8j .checked-3_4uQ9[style*="border-color"] {background-color: transparent;}
-
 /* Server Boost in Server Settings*/
 .theme-dark .tierHeaderLocked-1a2opw, .theme-dark .background-3xPPFc {background-color: var(--background-overlay);}
 .theme-dark .tierBody-x9kBBp {background-color: var(--background-overlay);}
@@ -162,17 +156,6 @@
 
 /* Voice badge */
 .iconBadge-2wi9r4.participating-NBGDkr {background-color: var(--backdrop-overlay);}
-
-/* Upload Drop Modal */
-.uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {background-color: var(--main-color);}
-.attachWrapper-1_D-pj {z-index: 1;}
-
-/* Upload Modal - KitKat */
-.theme-dark .uploadModal-2ifh8j, .uploadModal-2ifh8j .footer-3mqk7D {background-color: var(--background-overlay);}
-.uploadModal-2ifh8j .inner-3nWsbo {border: 2px dashed var(--main-color);border-radius: 3px 3px 0px 0px;}
-.uploadModal-2ifh8j .inner-3nWsbo .file-34mY5K .icon-kyxXVr.image-2yrs5j {border: 2px solid var(--main-color);}
-.lookInverted-2D7oAl, .lookInverted-2D7oAl.colorBrand-3pXr91, .lookInverted-2D7oAl.colorGreen-29iAKY {background: var(--main-color);color: white;}
-.lookInverted-2D7oAl:hover, .lookInverted-2D7oAl.colorBrand-3pXr91:hover, .lookInverted-2D7oAl.colorGreen-29iAKY:hover{background: var(--hover-color);}
 
 /* Links in chatbar */
 .fakeLink-26oLcc {color: var(--main-color);}
@@ -562,9 +545,6 @@
 /* Watch Stream button */
 .content-2Sfaij:hover .cta-2DQ2ez {background-color: var(--background-overlay);}
 .content-2Sfaij .cta-2DQ2ez {background-color: var(--backdrop-overlay);}
-
-/* upload modal - makes image background transparent */
-.uploadModal-2ifh8j .inner-3nWsbo .file-34mY5K .icon-kyxXVr.image-2yrs5j {background-color: transparent;}
 
 /*colour inner icon of mentions buttons to be more readable*/
 .secondary-dIudih, .tertiary-aMXF0g {color:#fff;}

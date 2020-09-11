@@ -1,0 +1,36 @@
+.theme-dark {
+    .uploadModal-2ifh8j {
+        background-color: rgba(0,0,0,0.5);
+        .footer-3mqk7D {
+            background-color: transparent;
+        }
+    }
+}
+
+.uploadModal-2ifh8j {
+    .inner-3nWsbo {
+        border: 2px dashed var(--main-color);
+        border-radius: 3px 3px 0px 0px;
+        
+		//file preview
+        .file-34mY5K {
+            .icon-kyxXVr.image-2yrs5j {
+                background-color: transparent;
+                border: 2px solid var(--main-color);
+            }
+        }
+        
+		//add comment
+        .scrollableContainer-2NUZem {
+            background-color: rgba(255,255,255,0.05);
+            &:focus-within {
+                border: 2px solid var(--main-color);
+                transition: all .15s ease-in-out;
+            }
+        }
+    }
+}
+
+
+//Drop image to chat
+.uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {background-color: var(--main-color);}
