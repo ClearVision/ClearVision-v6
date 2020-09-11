@@ -10,4 +10,22 @@
 		background: transparent;
 		box-shadow: none;
 	}
+	
+	%modalInput {
+        background-color: rgba(255, 255, 255, 0.05);
+        %modalInputInner {
+            color: #fff;
+            background-color: transparent;
+            border: 2px solid rgba(255,255,255,0.07);
+    		&::placeholder {
+    			color: hsla(0, 0%, 100%, .3);
+    		}
+    		&:hover {
+    		    border-color: none;
+    		}
+    		&:focus {
+    		    border-color: var(--main-color);
+    		}
+        }
+    }
 }

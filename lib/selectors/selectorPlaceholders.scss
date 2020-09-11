@@ -1004,14 +1004,14 @@
 .lookLink-9FtZy-.colorGrey-2DXtkV {
 	@extend %buttonLinkGrey !optional;
 }
-.checkbox-3kaeSU {
+.checkbox-1ix_J3 {
 	@extend %checkbox !optional;
 }
-.checkboxInner-3yjcPe {
-	@extend %checkboxInner !optional;
+.checked-3_4uQ9 {
+	@extend %checkboxChecked !optional;
 }
-.checkboxElement-1qV33p {
-	@extend %checkboxElement !optional;
+.checkboxWrapper-SkhIWG {
+	@extend %checkboxWrapper !optional;
 }
 .flex-1O1GKY {
 	@extend %flex !optional;
@@ -3065,14 +3065,20 @@ pre {
 .keybindShortcut-1BD6Z1 {
 	@extend %keybindShortcut !optional;
 }
-.modal-yWgWj- {
+.root-1gCeng {
 	@extend %modal !optional;
 }
 .header-2tA9Os {
 	@extend %modalHeader !optional;
 }
-.footer-3rDWdC {
+ .footer-2gL1pp {
 	@extend %modalFooter !optional;
+}
+.inputWrapper-31_8H8 {
+	@extend %modalInput !optional;
+}
+.input-cIJ7To {
+	@extend %modalInputInner !optional;
 }
 .root-SR8cQa {
 	@extend %userModal !optional;

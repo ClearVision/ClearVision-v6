@@ -126,10 +126,6 @@
 .themeDefault-24hCdX {background-color: rgba(255,255,255,0.3);}
 .themeDefault-24hCdX.valueChecked-m-4IJZ {background-color: var(--main-color) !important;}
 
-/* Checkboxes */
-.item-26Dhrx[style*="background-color"] {background-color: var(--main-color) !important;border-color: var(--main-color) !important;}
-.theme-dark .checked-3_4uQ9[style*="border-color"] {border-color: var(--main-color) !important;}
-
 /* Overlay */
 .selected-mKYnfr.option-n0icdO {background-color: var(--main-color);border-color: var(--main-color);}
 .option-n0icdO:hover {background-color: var(--hover-color);}
@@ -671,15 +667,10 @@
 .theme-dark .allowSelected-25S_i5{background-color: #43b581;}
 .theme-dark .passthroughSelected-1Eq0Kl{background-color: rgba(0, 0, 0, 0.5);}
 
-/*Appearance animations checkbox*/
-.theme-dark .checked-3_4uQ9[style*="background-color"] {
-    background-color: transparent !important;}
-
 /* Reduce CV padding on Channel list to discord default, down from cv 20*/
 .containerDefault-3GGEv_, .containerDefault-3GGEv_ {padding-top:16px;}
 
 /* birthday confirmation modal */
-.theme-dark .root-1gCeng {background-color: var(--background-overlay); box-shadow: none;}
 .theme-dark .footer-3rDWdC {background-color: var(--backdrop-overlay); box-shadow: none;}
 .required-7sPBq3 {color: var(--danger-color);}
 
