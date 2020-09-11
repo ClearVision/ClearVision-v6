@@ -1,17 +1,9 @@
 .theme-dark{
     .root-1gCeng {
         background-color: rgba(0,0,0,.5);
-        .colorHeaderPrimary-26Jzh-,.colorHeaderSecondary-3Sp3Ft {
-            color: #fff;
-        }
-		.iconContainer-2B0ixr>svg>circle {
-			fill: var(--main-color);
-		}
-		.sampleLink-2NLvZg {
-			color: var(--main-color);
-		}
     }
-    .footer-2gL1pp {
+	
+	.footer-2gL1pp {
         background-color: transparent;
         .footerTitle-2CYZch {
             color: #fff;
@@ -23,7 +15,21 @@
             }
         }
     }
-    .inputWrapper-31_8H8 {
+}
+
+.root-1gCeng {
+	background-color: rgba(0,0,0,.5);
+	.colorHeaderPrimary-26Jzh-,.colorHeaderSecondary-3Sp3Ft {
+		color: #fff;
+	}
+	.iconContainer-2B0ixr>svg>circle {
+		fill: var(--main-color);
+	}
+	.sampleLink-2NLvZg {
+		color: var(--main-color);
+	}
+	
+	.inputWrapper-31_8H8 {
         background-color: rgba(255, 255, 255, 0.05);
         .input-cIJ7To {
             color: #fff;
@@ -41,6 +47,9 @@
         }
     }
 }
+    
+	
+    
 
 
 // Server template categories

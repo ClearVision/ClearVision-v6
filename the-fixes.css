@@ -693,9 +693,6 @@
 .messageContainer-1ei2zM:hover .jumpButton-3vBz5U{background-color: transparent;}
 .tutorialIcon-3f1miQ {background-color: var(--main-color); color: #fff;}
 
-/* Discord is gay for gags and reset footers >:( */
-.theme-dark .footer-2gL1pp{background-color: var(--background-overlay);}
-
 /*inbox badge*/
 .badge-2qGa_k:after{background-color: var(--main-color);}
 /* inbox Jump to button */
