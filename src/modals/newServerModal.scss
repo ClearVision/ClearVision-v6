@@ -1,0 +1,58 @@
+.theme-dark{
+    .root-1gCeng {
+        background-color: rgba(0,0,0,.5);
+        .colorHeaderPrimary-26Jzh-,.colorHeaderSecondary-3Sp3Ft {
+            color: #fff;
+        }
+		.iconContainer-2B0ixr>svg>circle {
+			fill: var(--main-color);
+		}
+		.sampleLink-2NLvZg {
+			color: var(--main-color);
+		}
+    }
+    .footer-2gL1pp {
+        background-color: transparent;
+        .footerTitle-2CYZch {
+            color: #fff;
+        }
+        .button-38aScr {
+            color: #fff;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    .inputWrapper-31_8H8 {
+        background-color: rgba(255, 255, 255, 0.05);
+        .input-cIJ7To {
+            color: #fff;
+            background-color: transparent;
+            border: 2px solid rgba(255,255,255,0.07);
+    		&::placeholder {
+    			color: hsla(0, 0%, 100%, .3);
+    		}
+    		&:hover {
+    		    border-color: none;
+    		}
+    		&:focus {
+    		    border-color: var(--main-color);
+    		}
+        }
+    }
+}
+
+
+// Server template categories
+.itemContainer-1LSFks {
+    background-color: var(--main-color);
+    &:hover {
+        background-color: var(--hover-color);
+    }
+    .itemText-sYKDFz {
+        color: #fff;
+    }
+    .itemArrow-lhAqIR {
+        display: none;
+    }
+}
