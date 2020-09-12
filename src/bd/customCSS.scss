@@ -1,0 +1,56 @@
+/* Custom CSS Editor */
+.ace-monokai {
+	background-color: var(--background-overlay)!important;
+	.ace_gutter {
+		background-color: rgba(0, 0, 0, 0.5)!important;
+	}
+	.ace_gutter-active-line {
+		background-color: transparent;
+	}
+	.ace_marker-layer {
+		.ace_selection {
+			background-color: rgba(255, 255, 255, 0.1)!important;
+		}
+	}
+}
+.ace-monokai .ace_gutter-active-line, .ace-monokai .ace_marker-layer .ace_active-line {
+	background-color: rgba(0, 0, 0, 0.8)!important;
+}
+.contentRegion-3nDuYy #bd-customcss-attach-controls, #bd-customcss-detach-container #bd-customcss-attach-controls {
+	background-color: rgba(0, 0, 0, 0.65);
+	box-shadow: none;
+}
+.standardSidebarView-3F1I7i #bd-customcss-attach-controls button, .bd-detached-css-editor #bd-customcss-attach-controls button {
+	background: rgba(0, 0, 0, 0.3);
+	border-color: rgba(0, 0, 0, 0.0) !important;
+}
+.standardSidebarView-3F1I7i #bd-customcss-attach-controls button:hover, .bd-detached-css-editor #bd-customcss-attach-controls button:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+	border: 2px solid var(--hover-color) !important;
+}
+#bd-customcss-attach-controls {
+	.help-text {
+		.inline {
+			background: var(--background-overlay);
+		}
+	}
+}
+.ace_scrollbar-h {
+	background-color: rgba(0, 0, 0, 0.3);
+	height: 14px !important;
+}
+#bd-customcss-detach-container {
+	background-color: transparent;
+}
+.checkbox-3kaeSU {
+	.checkboxInner-3yjcPe {
+		.checkboxElement-1qV33p {
+			&:checked {
+				& + span {
+					background-color: var(--main-color);
+					border-color: var(--main-color);
+				}
+			}
+		}
+	}
+}
