@@ -5,8 +5,14 @@
 	}
 }
 
-.colorDefault-2K3EoJ.focused-3afm-j#status-picker-online {background: var(--online-color);}
-.colorDefault-2K3EoJ.focused-3afm-j#status-picker-idle {background: var(--idle-color);}
-.colorDefault-2K3EoJ.focused-3afm-j#status-picker-dnd {background: var(--dnd-color);}
-.colorDefault-2K3EoJ.focused-3afm-j#status-picker-invisible {background: var(--offline-color);}
-.colorDefault-2K3EoJ.focused-3afm-j {transition: all .15s ease-in-out;}
+.item-1tOPte#status-picker-online:not(.focused-3afm-j) .status-1AY8sU {background-color: var(--online-color) !important;}
+.item-1tOPte#status-picker-idle:not(.focused-3afm-j) .status-1AY8sU {background-color: var(--idle-color) !important;}
+.item-1tOPte#status-picker-dnd:not(.focused-3afm-j) .status-1AY8sU {background-color: var(--dnd-color) !important;}
+.item-1tOPte#status-picker-invisible:not(.focused-3afm-j) .status-1AY8sU {background-color: var(--offline-color) !important;}
+
+
+.item-1tOPte.focused-3afm-j#status-picker-online {background-color: var(--online-color);}
+.item-1tOPte.focused-3afm-j#status-picker-idle {background-color: var(--idle-color);}
+.item-1tOPte.focused-3afm-j#status-picker-dnd {background-color: var(--dnd-color);}
+.item-1tOPte.focused-3afm-j#status-picker-invisible {background-color: var(--offline-color);}
+.item-1tOPte.focused-3afm-j {transition: all .15s ease-in-out;}

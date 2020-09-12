@@ -1,12 +1,12 @@
 /* GUILD HEADER POPOUT */
 
 %guildHeaderPopout {
-	background: rgba(0, 0, 0, .7);
+	background-color: rgba(0, 0, 0, .7);
 	%guildHeaderPopoutItem {
 		color: hsla(0, 0%, 100%, .7);
 		transition: all .15s ease-in-out;		
 		&.focused-3afm-j {
-			background: var(--main-color);
+			background-color: var(--hover-color);
 			color: #fff;
 		}
 	}

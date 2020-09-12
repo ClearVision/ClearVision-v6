@@ -28,6 +28,9 @@
 .scrollerThemed-2oenus.themeHidden-2yP93k .scroller-2FKFPG {background-color:transparent;}
 .wrapper-2Gsate{background-color:transparent;}
 
+/* Emoji picker hot fix 12 sept 20*/
+.theme-dark .wrapper-1-Fsb8, .inspector-S2gM3e {background-color: transparent;}
+
 /* Reaction Color fix */
 /* .reaction-1ELvT8.reactionMe-23mbRf {background-color: var(--main-color);}
 .reactionMe-23mbRf .reactionCount-2ddRoS {color: rgba(255,255,255,0.5);}
@@ -519,21 +522,6 @@
 
 /* something at the begining of any channel */
 .emptyChannelIcon-3IXV5M {display: none;}
-
-/* Status Changer. It got hit by a different line. I'm sorry. */
-    /* bar itself */
-.styleFixed-sX-yHV[aria-activedescendant*="status"]>div>div>.focused-3afm-j[id*="online"] {background-color: var(--online-color);}
-.styleFixed-sX-yHV[aria-activedescendant*="status"]>div>div>.focused-3afm-j[id*="idle"] {background-color: var(--idle-color);}
-.styleFixed-sX-yHV[aria-activedescendant*="status"]>div>div>.focused-3afm-j[id*="dnd"] {background-color: var(--dnd-color);}
-.styleFixed-sX-yHV[aria-activedescendant*="status"]>div>div>.focused-3afm-j[id*="invisible"] {background-color: var(--offline-color);}
-    /* icons */
-.scroller-3BxosC>div:not(.focused-3afm-j)>.statusItem-33LqPf>svg>foreignObject[mask*="online"]>.status-1AY8sU {background-color: var(--online-color) !important;}
-.scroller-3BxosC>div:not(.focused-3afm-j)>.statusItem-33LqPf>svg>foreignObject[mask*="idle"]>.status-1AY8sU {background-color: var(--idle-color) !important;}
-.scroller-3BxosC>div:not(.focused-3afm-j)>.statusItem-33LqPf>svg>foreignObject[mask*="dnd"]>.status-1AY8sU {background-color: var(--dnd-color) !important;}
-.scroller-3BxosC>div:not(.focused-3afm-j)>.statusItem-33LqPf>svg>foreignObject[mask*="offline"]>.status-1AY8sU {background-color: var(--offline-color) !important;}
-
-/*Set a custom Status colour*/
-.colorDefault-2K3EoJ.focused-3afm-j, .colorDefault-2K3EoJ:hover:not(.hideInteraction-1iHO1O) {background-color: var(--hover-color);}
 
 /* Why Discord fucked with the tooltips, I'll never know. */
 .tooltipContent-bqVLWK {padding: 0px;}
