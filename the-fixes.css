@@ -72,14 +72,9 @@
 /* Custom Color Picker */
 .theme-dark .colorPickerCustom-2CWBn2 {background-color: var(--background-overlay);}
 
-/* Region Selector */
+/* Region Selector button */
 .lookGhost-2Fn_0-.colorGrey-2DXtkV {color: white; background-color: var(--main-color); opacity: 0.1;}
 .lookGhost-2Fn_0-.colorBrand-3pXr91 {color: white; background-color: var(--hover-color); opacity:0.7;} /* button */
-.theme-dark .regionSelectModal-12e-57, .theme-dark .regionSelectModal-12e-57 .regionSelectModalOption-2DSIZ3 {background-color: var(--background-overlay) !important;}
-.regionSelectModal-12e-57 {width: 704px;}
-.regionSelectModal-12e-57 .regionSelectModalHeader-21khC1 {color: var(--main-color);}
-.regionSelectModal-12e-57 .regionSelectModalOption-2DSIZ3 {border: 2px solid rgba(255,255,255,0.3);}
-.regionSelectModal-12e-57 .regionSelectModalOption-2DSIZ3:hover {border: 2px solid var(--main-color);}
 
 /* Nitro Gift box thing */
 .table-39R0Oe {background-color: var(--background-overlay);}
@@ -284,24 +279,14 @@
 /* whatever that weird gradient is */
 .form-2fGMdU:before {display: none;}
 
-/* code blocks */
-.markup-2BOw-j code {background-color: rgba(0, 0, 0, 0.5); border: 1px solid rgba(0, 0, 0, 0.8);}
-
 /* link color */
 .markup-2BOw-j a {color: var(--main-color);}
 
 /* uploaded music file player */
 .theme-dark .wrapperAudio-1jDe0Q {background-color: var(--backdrop-overlay); border-color: var(--background-overlay);}
 
-/* spoiler tags */
-.theme-dark .spoilerText-3p6IlD.hidden-HHr2R9 {background-color: rgba(0, 0, 0, 0.8);}
-.theme-dark .spoilerText-3p6IlD.hidden-HHr2R9:hover {background-color: rgba(0, 0, 0, 0.5);}
-
 /* the quote bar thingy */
 .blockquoteDivider-2hH8H6 {background-color: rgba(255, 255, 255, 0.2);}
-
-/* code boxes, inline. (` <code> `) */
-.inlineCode-2ngu6Y, .after_inlineCode-1KfVgj, .markup-2BOw-j code.inline {padding: 3.5px 7.5px; background-color: rgba(255,255,255,0.1); border-radius: 3px; color: rgba(255,255,255,0.7); font-family: var(--code-font); line-height: 22px;}
 
 /* code boxes, block, type ( ```<class> n/ <code> ``` ) */
 .markup-2BOw-j pre>.hljs:before {height: 10px;color: rgba(255,255,255,0.3);line-height: 10px;opacity: 1;}
