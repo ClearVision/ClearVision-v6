@@ -12,11 +12,11 @@
 	}
 	
 	%modalInput {
-        background-color: rgba(255, 255, 255, 0.05);
         %modalInputInner {
             color: #fff;
-            background-color: transparent;
-            border: 2px solid rgba(255,255,255,0.07);
+            background-color: rgba(255, 255, 255, 0.05);
+            border: none;
+			box-shadow: 0 0 0 2px rgba(255,255,255,0.07);
     		&::placeholder {
     			color: hsla(0, 0%, 100%, .3);
     		}
@@ -24,7 +24,7 @@
     		    border-color: none;
     		}
     		&:focus {
-    		    border-color: var(--main-color);
+    		    box-shadow: 0 0 2px 2px var(--main-color);
     		}
         }
     }

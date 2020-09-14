@@ -12,11 +12,6 @@
 .cardWrapper-2Min21 {background: var(--background-overlay);}
 .subscribeTooltipWrapper-32-Ce8:after {border-bottom-color: var(--background-overlay);}
 
-/* Custom Status */
-.focusLock-Ns3yie {background: transparent;}
-.input-cIJ7To:focus, .theme-dark .lookFilled-1h1y05.select-1Pkeg4:hover.selectOpen-hQuR6b, .theme-dark .lookFilled-1h1y05.selectOpen-hQuR6b {border-color: var(--main-color);}
-.theme-dark .lookFilled-1h1y05.select-1Pkeg4:focus {border-color: transparent;}
-
 /* Create DM button color */
 .privateChannelRecipientsInviteButtonIcon-3A3uTc {color: var(--main-color) !important;transition: all .1s ease-in-out;}
 .privateChannelRecipientsInviteButtonIcon-3A3uTc:hover {color: var(--hover-color) !important;transition: all .1s ease-in-out;}
@@ -63,8 +58,6 @@
 /* Verified game tick */
 .flowerStarContainer-3zDVtj > svg > path {fill: var(--main-color);}
 
-/* Message Deletion */
-.theme-dark .message-2qRu38 {background-color: var(--background-overlay);}
 
 /* Apperance tab */
 .cardPrimaryOutline-29Ujqw {background-color: transparent;}
@@ -76,8 +69,6 @@
 .lookGhost-2Fn_0-.colorGrey-2DXtkV {color: white; background-color: var(--main-color); opacity: 0.1;}
 .lookGhost-2Fn_0-.colorBrand-3pXr91 {color: white; background-color: var(--hover-color); opacity:0.7;} /* button */
 
-/* Nitro Gift box thing */
-.table-39R0Oe {background-color: var(--background-overlay);}
 
 /* Server Boost in Server Settings*/
 .theme-dark .tierHeaderLocked-1a2opw, .theme-dark .background-3xPPFc {background-color: var(--background-overlay);}
@@ -115,11 +106,6 @@
 .body-3AJVSA, .theme-light .input-UJ9Tr3, .theme-light .input-1mgnkM{color: rgba(255, 255, 255, 0.9); font-weight: 200;}
 
 
-/* Quickswitcher */
-.quickswitcher-3JagVE{background-color: var(--background-overlay);}
-.input-2VB9rf {background-color: rgba(255,255,255,0.08);}
-.scroller-zPkAnE {background-color: transparent;}
-
 /* Switches */
 .themeDefault-24hCdX {background-color: rgba(255,255,255,0.3);}
 .themeDefault-24hCdX.valueChecked-m-4IJZ {background-color: var(--main-color) !important;}
@@ -132,10 +118,6 @@
 
 /* Notifications Settings */
 .theme-dark .override-2YgiXd:hover {border-color: var(--main-color);}
-
-/* Screenshare Modal */
-.theme-dark .tiles-2aXG_k {background-color: var(--background-overlay);}
-.selectorButtonSelected-1j4DmC {background-color: var(--main-color);}
 
 /* Invite Modal */
 .container-2XeR5Z {background-color: var(--background-overlay);}

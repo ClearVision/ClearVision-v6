@@ -1,8 +1,8 @@
 /* CHECKBOX */
 .theme-dark {
 	%checkbox {
-		&%checkboxChecked {
-			background-color: transparent;
+		&%checkboxChecked[style*="background-color"] {
+			background-color: transparent !important;
 			border-color: var(--main-color) !important;
 			
 			>svg {
@@ -14,6 +14,11 @@
 	}
 }
 
+//item card checkbox
+.item-26Dhrx[style*="background-color"] {
+	background-color: var(--main-color) !important;
+	border-color: var(--main-color) !important;
+}
 
 %checkboxWrapper {
 	%checkbox {
@@ -21,11 +26,4 @@
 			background-color: #fff;
 		}
 	}
-}
-
-
-//item card checkbox
-.item-26Dhrx[style*="background-color"] {
-	background-color: var(--main-color) !important;
-	border-color: var(--main-color) !important;
 }
