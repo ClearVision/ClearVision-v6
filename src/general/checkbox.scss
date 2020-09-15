@@ -18,12 +18,12 @@
 .item-26Dhrx[style*="border-color"] {
 	background-color: var(--main-color) !important;
 	border-color: var(--main-color) !important;
-}
-
-%checkboxWrapper {
-	%checkbox {
-		&%checkboxChecked {
-			background-color: #fff !important;
+	
+	%checkboxWrapper {
+		%checkbox {
+			&%checkboxChecked {
+				background-color: #fff !important;
+			}
 		}
 	}
 }
