@@ -1,18 +1,18 @@
 /* CHECKBOX */
-.theme-dark {
-	%checkbox {
-		&%checkboxChecked[style*="border-color"] {
-			background-color: transparent !important;
-			border-color: var(--main-color) !important;
-			
-			>svg {
-				>path {
-					fill: var(--main-color);
-				}
+
+%checkbox {
+	&%checkboxChecked[style*="border-color"] {
+		background-color: transparent !important;
+		border-color: var(--main-color) !important;
+		
+		>svg {
+			>path {
+				fill: var(--main-color);
 			}
 		}
 	}
 }
+
 
 //item card checkbox
 .item-26Dhrx[style*="border-color"] {
@@ -23,7 +23,7 @@
 %checkboxWrapper {
 	%checkbox {
 		&%checkboxChecked {
-			background-color: #fff;
+			background-color: #fff !important;
 		}
 	}
 }

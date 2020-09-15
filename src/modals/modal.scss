@@ -23,7 +23,13 @@
 	&:hover {
 		border: none;
 	}
-	&:focus, &.focused-1mmYsC{
+	&:focus, &.focused-1mmYsC {
 		box-shadow: 0 0 2px 2px var(--main-color);
 	}
+	&.noBorder-CTIBpT {
+		border: none;
+		box-shadow: none;
+		background: none;
+	}
+	
 }
