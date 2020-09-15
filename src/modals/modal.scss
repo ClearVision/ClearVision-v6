@@ -9,23 +9,21 @@
 	%modalFooter {
 		background: transparent;
 		box-shadow: none;
+	}    
+}
+
+%modalInput {
+	color: #fff;
+	background-color: rgba(255, 255, 255, 0.05);
+	border: none;
+	box-shadow: 0 0 0 2px rgba(255,255,255,0.07);
+	&::placeholder {
+		color: hsla(0, 0%, 100%, .3);
 	}
-	
-	%modalInput {
-        %modalInputInner {
-            color: #fff;
-            background-color: rgba(255, 255, 255, 0.05);
-            border: none;
-			box-shadow: 0 0 0 2px rgba(255,255,255,0.07);
-    		&::placeholder {
-    			color: hsla(0, 0%, 100%, .3);
-    		}
-    		&:hover {
-    		    border-color: none;
-    		}
-    		&:focus {
-    		    box-shadow: 0 0 2px 2px var(--main-color);
-    		}
-        }
-    }
+	&:hover {
+		border: none;
+	}
+	&:focus {
+		box-shadow: 0 0 2px 2px var(--main-color);
+	}
 }
