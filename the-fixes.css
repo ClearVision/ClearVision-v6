@@ -120,7 +120,6 @@
 .theme-dark .override-2YgiXd:hover {border-color: var(--main-color);}
 
 /* Invite Modal */
-.container-2XeR5Z {background-color: var(--background-overlay);}
 .inviteRow-2L02ae:hover {background-color: rgba(255,255,255,0.4);}
 .theme-dark .header-3ZP1MY, .theme-light .header-3ZP1MY {color: var(--main-color);}
 
@@ -786,6 +785,3 @@ right: 13px;
 /* Server is going to lose a level popout */
 .message-39hdqk {width: 110%;}
 .close-jnIfru:hover {color:var(--danger-color);}
-
-/* Create your discord server */
-.title-2Dc-Cb {color: var(--main-color);}

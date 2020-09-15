@@ -4,16 +4,16 @@
 	background-color: rgba(0,0,0,0.5) !important;
 	
 	.regionSelectModalHeader-21khC1 {
-	    color: red;
+	    color: var(--header-primary);
 	}
 	
 	.regionSelectModalOption-2DSIZ3 {
         background-color: transparent;
         border: none;
-        box-shadow: 0 0 0 2px rgba(255,255,255,0.1);
+        box-shadow: 0 0 0 2px rgba(255,255,255,0.07);
         
         &:hover {
-            box-shadow: 0 0 3px 2px var(--main-color);
+            box-shadow: 0 0 2px 2px var(--main-color);
         }
         
         .regionSelectName-2-2FWh {
