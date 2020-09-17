@@ -32,7 +32,7 @@
 		
 		%messagesPopoutHeaderTab {
 			&%messagesHeaderTabActive {
-				background-color: $main-color;
+				background-color: $main-color !important;
 			}
 		}
 	}

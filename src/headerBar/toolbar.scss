@@ -30,22 +30,11 @@
 			filter: drop-shadow(0 0 5px);
 			transition: filter .3s ease-in-out;
 		}
-		[mask] {
-			-webkit-mask: url(https://clearvision.gitlab.io/icons/pin.svg);
-			mask: url(https://clearvision.gitlab.io/icons/pin.svg);
-			> %headerBarIcon {
-				background: $main-color;
-				opacity: 1;
-			}
-		}
 		&:hover {
 			> svg:not(%headerBarIcon) {
 				filter: drop-shadow(0 0 5px) drop-shadow(0 0 10px);
 			}
 		}
-	}
-	%headerBarIconBadge {
-		display: none;
 	}
 
 	// ICONS

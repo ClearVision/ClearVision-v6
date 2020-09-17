@@ -256,10 +256,6 @@
 /* the quote bar thingy */
 .blockquoteDivider-2hH8H6 {background-color: rgba(255, 255, 255, 0.2);}
 
-/* code boxes, block, type ( ```<class> n/ <code> ``` ) */
-.markup-2BOw-j pre>.hljs:before {height: 10px;color: rgba(255,255,255,0.3);line-height: 10px;opacity: 1;}
-.hljs:before {display: block;float: right;text-align: right;line-height: 100%;opacity: .5;}
-
 /* mention */
 .mentioned-xhSam7:before {background-color: var(--main-color);}
 .mentioned-xhSam7 {background-color: rgba(255,255,255,0.05);}
@@ -333,16 +329,10 @@
 .privateChannelsHeaderContainer-3NB1K1:before {content: ""; height: 2px; flex-grow: 1; transition: all .3s ease-in-out; background: linear-gradient(to left, var(--main-color) 50%, transparent); margin-right: 5px; margin-top: 7px;}
 .privateChannelsHeaderContainer-3NB1K1:after {content: ""; height: 2px; flex-grow: 1; transition: all .3s ease-in-out; background: linear-gradient(to right, var(--main-color) 50%, transparent); margin-left: 5px; margin-top: 7px;}
 
-/* pinned icon fix */
-.toolbar-1t6TWx .iconWrapper-2OrFZ1 [mask] {mask: none; -webkit-mask: none;}
-.toolbar-1t6TWx .iconWrapper-2OrFZ1 [mask]>.icon-22AiRD {background: transparent;}
-.iconBadge-qZ4Ksk {display: block !important; background-color: var(--main-color);}
-
 /* mentions */
 .messageContainer-gbhlwo {background-color: var(--background-overlay);}
 .tertiary-aMXF0g:hover, .secondary-dIudih:hover {background-color: var(--hover-color);}
 .tertiary-aMXF0g, .secondary-dIudih {background-color: var(--main-color);}
-.channelHeader-3Gd2xq {background-color: var(--backdrop-overlay);}
 .jumpIcon-2diCoP, .tertiary-aMXF0g, .secondary-dIudih {color: #fff;} 
 .guildIcon-3Co6k- {background-color: transparent;}
 
@@ -560,11 +550,6 @@
 /*Fixes attachments*/
 .theme-dark .attachment-33OFj0 {border-color: rgba(47,49,54,.6); background-color: rgba(47,49,54,.3);}
 
-/* Inline Code Blocks */
-.after_inlineCode-1KfVgj{border-radius: 0px 3px 3px 0px;}
-.inlineCode-2ngu6Y{border-radius: 0px;}
-.before_inlineCode-1G9rTK{border-radius: 3px 0px 0px 3px;background: rgba(255,255,255,0.1);}
-.before_inlineCode-1G9rTK,.inlineCode-2ngu6Y, .after_inlineCode-1KfVgj{padding: 3.5px 0.5px;}
 
 /* Role Permission Options */	
 .theme-dark .item-3T2z1R{background-color: var(--background-overlay); border-color: var(--background-overlay);}
@@ -580,7 +565,7 @@
 .card-1yV8cG {background-color: rgba(0,0,0,0.4);}
 
 /* Unread Popout p.s. hecc u discord */
-.tutorial-3w5I9h, .container-enaOkj, .messages-3G3erD, .channelHeader-3Gd2xq{background-color: var(--background-overlay);}
+.tutorial-3w5I9h, .container-enaOkj, .messages-3G3erD {background-color: var(--background-overlay);}
 .messages-3G3erD, .channelHeader-3Gd2xq{padding-right: 10px;padding-left: 20px;}
 .collapseButton-2ZsEjz{padding-left: 10px;}
 .messageContainer-1ei2zM:hover .jumpButton-3vBz5U{background-color: transparent;}
