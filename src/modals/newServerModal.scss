@@ -17,24 +17,24 @@
 		color: #fff;
 	}
 	.iconContainer-2B0ixr>svg>circle {
-		fill: var(--main-color);
+		fill: $main-color;
 	}
 	.sampleLink-2NLvZg {
-		color: var(--main-color);
+		color: $main-color;
 		font-weight: 500;
 	}
 }
 
 // Server template categories
 .itemContainer-1LSFks {
-    background-color: var(--main-color);
+    background-color: $main-color;
     &:hover {
-        background-color: var(--hover-color);
+        background-color: $hover-color;
     }
     .itemText-sYKDFz {
         color: #fff;
     }
     .itemArrow-lhAqIR {
-        display: none;
+        visibility: hidden;
     }
 }

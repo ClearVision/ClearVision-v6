@@ -22,6 +22,10 @@
 	%messagesPopoutWrap {
 		animation: cv-menu-fold-y .2s cubic-bezier(.2, .6, .5, 1.1);
 		transform-origin: 50% 0;
+		background-color: rgba(0, 0, 0, .7);
+		border: none;
+		border-radius: 5px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 	}
 	%messagesPopout {
 		background: transparent;

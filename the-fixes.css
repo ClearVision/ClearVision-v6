@@ -41,13 +41,6 @@
 .theme-dark .reactionSelected-1pqISm {background-color: var(--main-color);}
 .theme-dark .scroller-1-nKid {background:transparent;}
 
-/* Pinned Messages */
-.theme-dark .messagesPopoutWrap-1MQ1bW {background-color: var(--background-overlay); border-color: var(--main-color);}
-.theme-dark .header-ykumBX, .theme-dark .messagesPopout-24nkyi, .theme-dark .messageGroupWrapper-o-Zw7G {background-color: var(--background-overlay); border-color: rgba(255,255,255,0.1);}
-.theme-dark .messageGroupWrapper-o-Zw7G:hover {border-color: var(--main-color);}
-.theme-dark .messageGroupWrapper-o-Zw7G:hover .actionButtons-1sUUug {box-shadow: none; background-color: transparent;}
-.theme-dark .jumpButton-3DTcS_ {background-color: var(--main-color);}
-
 /* Game activity */
 .lookLink-9FtZy-.colorLink-35jkBc {color: var(--main-color);}
 .lookLink-9FtZy-.colorLink-35jkBc:hover .contents-18-Yxp {background-image: linear-gradient(0deg,transparent,transparent 1px,var(--main-color) 0,var(--main-color) 2px,transparent 0);}
@@ -121,7 +114,6 @@
 
 /* Invite Modal */
 .inviteRow-2L02ae:hover {background-color: rgba(255,255,255,0.4);}
-.theme-dark .header-3ZP1MY, .theme-light .header-3ZP1MY {color: var(--main-color);}
 
 /* Invite from web browser modal */
 .theme-dark .contentWrapper-3WC1ID {background: var(--background-overlay)}
@@ -188,8 +180,6 @@
 .theme-dark .bubble-3we2di {background-color: var(--main-color);}
 .theme-dark .bubble-3we2di:before {border-top-color: var(--main-color);}
 
-/* upload modal popup background */
-.theme-dark .autocomplete-1vrmpx {background-color: transparent;}
 /* quick react modal */
 .wrapper-2aW0bm {background-color: transparent;}
 /* chat bar - has the nifty side effect of being broken in 2 weeks. */
@@ -260,9 +250,6 @@
 /* whatever that weird gradient is */
 .form-2fGMdU:before {display: none;}
 
-/* link color */
-.markup-2BOw-j a {color: var(--main-color);}
-
 /* uploaded music file player */
 .theme-dark .wrapperAudio-1jDe0Q {background-color: var(--backdrop-overlay); border-color: var(--background-overlay);}
 
@@ -321,8 +308,6 @@
 .content-1o0f9g {background: rgba(255,255,255,0.07);color: var(--main-color);text-transform: uppercase;opacity: 0.9;}
 .isUnread-3Ef-o9 .content-1o0f9g {color: var(--main-color);}
 
-/* jump to present bar */
-.messagesWrapper-3lZDfY .jumpToPresentBar-9P20AM { padding-bottom: 0px; }
 
 /*no tips*/
 .protip-YaFfgO,.footer-1kmXd4 {display: none;}
@@ -336,9 +321,6 @@
 /* Search dropdown */
 .theme-dark .container-3ayLPN {background-color: var(--backdrop-overlay);}
 
-/* remove that fucking underline */
-.username-1A8OIy.clickable-1bVtEA:hover {text-decoration: none;}
-
 /* "Quick" Reactions */
 .button-1I8KM5 {background-color: var(--backdrop-overlay);}
 .button-1I8KM5:hover {background-color: var(--hover-color);}
@@ -350,10 +332,6 @@
 .headerText-2F0828 {overflow: visible; color: var(--main-color);}
 .privateChannelsHeaderContainer-3NB1K1:before {content: ""; height: 2px; flex-grow: 1; transition: all .3s ease-in-out; background: linear-gradient(to left, var(--main-color) 50%, transparent); margin-right: 5px; margin-top: 7px;}
 .privateChannelsHeaderContainer-3NB1K1:after {content: ""; height: 2px; flex-grow: 1; transition: all .3s ease-in-out; background: linear-gradient(to right, var(--main-color) 50%, transparent); margin-left: 5px; margin-top: 7px;}
-
-/* selected channel fix */
-.content-3at_AU:after { border-radius: 4px;}
-.content-3at_AU:before { border-radius: 4px;}
 
 /* pinned icon fix */
 .toolbar-1t6TWx .iconWrapper-2OrFZ1 [mask] {mask: none; -webkit-mask: none;}
@@ -374,10 +352,6 @@
 .attachButton-2WznTc {padding: 10px 10px 10px 28px !important;}
 .placeholder-37qJjk, .slateTextArea-1Mkdgw {padding-left: 10px;}
 .sansAttachButton-td2irx {padding-left: 0px;}
-
-/* change stream quality */
-.selectorButtonSelected-336oUc {background-color: var(--main-color);}
-.theme-dark .selectorButton-wjWyGe:not(.selectorButtonSelected-336oUc):hover {background-color: var(--hover-color);}
 
 /* hover tooltips */
 .theme-dark .tooltipGrey-1hnvTt .tooltipPointer-3ZfirK {border-top-color: rgba(0,0,0,0.9);}
@@ -425,14 +399,7 @@
 /* Ha fcking no nitro nerds */
 .premiumSubscriptionAccountCredit-25i0tQ{background-color: var(--background-overlay);}
 
-/* status color - dms */
-.status-1XNdyw>svg>foreignObject[mask*="online"]> .status-1AY8sU {background-color: var(--online-color) !important;}
-.status-1XNdyw>svg>foreignObject[mask*="idle"]> .status-1AY8sU {background-color: var(--idle-color) !important;}
-.status-1XNdyw>svg>foreignObject[mask*="dnd"]> .status-1AY8sU {background-color: var(--dnd-color) !important;}
-.status-1XNdyw>svg>foreignObject[mask*="streaming"]> .status-1AY8sU {background-color: var(--streaming-color) !important;}
-.status-1XNdyw>svg>foreignObject[mask*="offline"]> .status-1AY8sU {background-color: var(--offline-color) !important;}
-
-/* status color - typing */
+/* status color */
 .mask-1l8v16>rect[fill='#43b581'] {fill: var(--online-color) !important;}
 .mask-1l8v16>rect[fill='#faa61a'] {fill: var(--idle-color) !important;}
 .mask-1l8v16>rect[fill='#f04747'] {fill: var(--dnd-color) !important;}
@@ -577,9 +544,6 @@
     /*clicked result*/
 .expanded-ovgtuV .searchResultMessage-30QnSN.hit-1CXhXT {background-color: var(--background-overlay);}
 
-/* jump button pinned messages. if this gets deleted, hover for search's jump should be set to var(--main-color) */
-.layer-v9HyYc .messagesPopout-24nkyi .messageGroupWrapper-o-Zw7G .actionButtons-1sUUug .jumpButton-3DTcS_:hover {background-color: var(--backdrop-overlay);}
-
 /* quick reactions */
 .button-F9qN4n.focused-3ZzkKr {box-shadow: 0 0 2px 2px var(--hover-color);}
 .button-F9qN4n, .button-F9qN4n.focused-3ZzkKr, .button-F9qN4n:hover {background-color: var(--backdrop-overlay);}
@@ -607,9 +571,6 @@
 .theme-dark .denySelected-1mh2mZ{background-color: #f04747;}
 .theme-dark .allowSelected-25S_i5{background-color: #43b581;}
 .theme-dark .passthroughSelected-1Eq0Kl{background-color: rgba(0, 0, 0, 0.5);}
-
-/* Reduce CV padding on Channel list to discord default, down from cv 20*/
-.containerDefault-3GGEv_, .containerDefault-3GGEv_ {padding-top:16px;}
 
 /* birthday confirmation modal */
 .theme-dark .footer-3rDWdC {background-color: var(--backdrop-overlay); box-shadow: none;}
