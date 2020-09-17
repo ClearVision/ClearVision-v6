@@ -17,14 +17,14 @@
 .privateChannelRecipientsInviteButtonIcon-3A3uTc:hover {color: var(--hover-color) !important;transition: all .1s ease-in-out;}
 
 /* Emoji Box UPDATED ON 18/06/2020*/
-.contentWrapper-SvZHNd {background-color: var(--background-overlay);}
-.header-ywPcAE, .navButtonActive-1MkytQ {background-color: transparent;}
-.unicodeShortcut-15J8Ck {height:24px; Background-color:var(--background-overlay);}
 .scrollerThemed-2oenus.themeHidden-2yP93k .scroller-2FKFPG {background-color:transparent;}
 .wrapper-2Gsate{background-color:transparent;}
 
-/* Emoji picker hot fix 12 sept 20*/
-.theme-dark .wrapper-1-Fsb8, .inspector-S2gM3e {background-color: transparent;}
+
+/* Combined Emote-Gif Menu - Early May 2020 */
+.scrollerThemed-2oenus.themeHidden-2yP93k .scroller-2FKFPG::-webkit-scrollbar {display: none;}
+.category-3Xkx2x, .guildName-10c_vS {color: white;}
+
 
 /* Reaction Color fix */
 /* .reaction-1ELvT8.reactionMe-23mbRf {background-color: var(--main-color);}
@@ -367,17 +367,7 @@
 .participantsButton-KYW-IW:hover {background-color: var(--backdrop-overlay);}
 /* TODO: Attempt to make speaking border over one's avatar */
 
-/* Combined Emote-Gif Menu - Early May 2020 */
-.contentWrapper-2txmjs {background-color: var(--background-overlay)}
-.wrapper-2N7X54, .categoryWrapper-UZ5YNj, .inspector-sdLnLS, .navButtonActive-3RPAJy, .categoryItemDefaultCategorySelected-_HCKoz, .header-1TOWci .searchBar--fTZYa {background-color: transparent;}
-.theme-dark .emojiItemImageLoading-1yEIxx {background-image: url();}
-.emojiPicker-3PwZFl {background-color: var(--backdrop-overlay);}
-.guildIcon-3h-1IH {background-color: transparent;}
-.scrollerThemed-2oenus.themeHidden-2yP93k .scroller-2FKFPG::-webkit-scrollbar {display: none;}
-.category-3Xkx2x, .guildName-10c_vS {color: white;}
-.emojiItem-14v6tW.emojiItemSelected-1aLkfV, .categoryItemDefaultCategorySelected-_HCKoz:hover {background:var(--background-modifier-hover);}
-.diversitySelectorPopout-3FiGaM {background-color: var(--background-overlay); border-color: var(--background-overlay);}
-.diversityEmojiItem-L6_IXw:hover, .guildIcon-3h-1IH:hover {background-color: var(--background-modifier-hover);}
+
 
 /* Add role popout */
 .container-VSDcQc .header-2bNvm4{background-color: rgba(0,0,0,0.7);}
@@ -615,29 +605,7 @@
 /* Changes the outline on a focused image to main color */
 .imageWrapper-2p5ogY:focus {outline-color:var(--main-color);}
 
-/* Emote Picker's Guild List Scroller */
-.none-2Eo-qx::-webkit-scrollbar {width: 0px !important;}
 
-/* EMOJI POPOUT */
-.container-ZRw2kD {
-    background-color: rgba(0, 0, 0, 0.7);
-    border: 1px solid var(--main-color);
-    padding:4px;
-  }
-  
-  .container-ZRw2kD .emojiSection-3Fb9ix {
-    background-color: transparent;
-    padding:4px;
-  }
-  
-  .container-ZRw2kD .guildSection-1EoFKd {
-    background-color: rgba(0, 0, 0, 0.1);
-    padding:4px;
-  }
-  
-  .container-ZRw2kD .loadingBackground-1p5N1j .loading-1lSwpg {
-    background: var(--main-color);
-  }
 
 /* Discord Store transparency */
 .scroller-1JpcIc {background-color:transparent;}
