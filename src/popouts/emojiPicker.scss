@@ -224,7 +224,7 @@
 			opacity: 0.7;
 		}
 		&:hover {
-			$hover-color;
+			background-color: $hover-color;
 			svg {
 				opacity: 1;
 			}
