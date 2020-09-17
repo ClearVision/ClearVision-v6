@@ -339,7 +339,7 @@
 .iconBadge-qZ4Ksk {display: block !important; background-color: var(--main-color);}
 
 /* mentions */
-.theme-dark .header-2-Imhb .tabBar-1kuXvJ .tab-ck0077.active-1MbGPa, .messageContainer-gbhlwo {background-color: var(--background-overlay);}
+.messageContainer-gbhlwo {background-color: var(--background-overlay);}
 .tertiary-aMXF0g:hover, .secondary-dIudih:hover {background-color: var(--hover-color);}
 .tertiary-aMXF0g, .secondary-dIudih {background-color: var(--main-color);}
 .channelHeader-3Gd2xq {background-color: var(--backdrop-overlay);}

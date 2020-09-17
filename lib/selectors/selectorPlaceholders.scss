@@ -3665,6 +3665,15 @@ pre {
 .messagesPopoutWrap-1MQ1bW {
 	@extend %messagesPopoutWrap !optional;
 }
+.header-ykumBX {
+	@extend %messagesHeader !optional;
+}
+.tab-ck0077 {
+	@extend %messagesHeaderTab !optional;
+}
+.active-1MbGPa {
+	@extend %messagesHeaderTabActive !optional;
+}
 .messagesPopout-24nkyi {
 	@extend %messagesPopout !optional;
 }
