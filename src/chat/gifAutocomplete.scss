@@ -8,9 +8,15 @@
 
 	// SEARCH
 	%gifAutocompleteSearchBar {
-		background: hsla(0, 0%, 100%, .07);
+		background-color: hsla(0, 0%, 100%, .05);
+		border: none;
+		box-shadow: 0 0 0 2px rgba(0,0,0,.07);
+		&:focus-within {
+			box-shadow: 0 0 2px 2px $main-color;
+			transition: all .15s ease-in-out;
+		}
 		%gifAutocompleteSearchInput {
-			color: #fff;
+			color: #fff;	
 			&::placeholder {
 				color: hsla(0, 0%, 100%, .3);
 			}
@@ -31,7 +37,7 @@
 %gifAutocompleteContent {
 	%scroller {
 		&::-webkit-scrollbar {
-			width: 8px !important;
+			width: 10px !important;
 		}
 	}
 

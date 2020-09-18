@@ -4,7 +4,11 @@
 	box-shadow: 0 0 2px 2px var(--main-color);
 }
 
-/* Custom Status Clear After */
+/* Notifications Settings Overrides */
+.theme-dark .override-2YgiXd:hover {border-color: $main-color;}
+
+
+/* Custom Status Clear After Duration */
 .lookFilled-1h1y05.select-1Pkeg4 {
 	box-shadow: 0 0 0 2px rgba(255,255,255,0.07);
 	border: none;
@@ -33,7 +37,7 @@
 	background-color: rgba(255,255,255,0.05);
 	border: 1px solid rgba(255,255,255,0.07);
 }
-.selectorButton-EEUWed {
+.theme-dark .item-3T2z1R.selectorButton-EEUWed {
 	background-color: rgba(255,255,255,0.05);
 	border: 1px solid rgba(255,255,255,0.07);
 	&.selectorButtonSelected-t5V9On {

@@ -16,15 +16,6 @@
 .privateChannelRecipientsInviteButtonIcon-3A3uTc {color: var(--main-color) !important;transition: all .1s ease-in-out;}
 .privateChannelRecipientsInviteButtonIcon-3A3uTc:hover {color: var(--hover-color) !important;transition: all .1s ease-in-out;}
 
-/* Emoji Box UPDATED ON 18/06/2020*/
-.scrollerThemed-2oenus.themeHidden-2yP93k .scroller-2FKFPG {background-color:transparent;}
-.wrapper-2Gsate{background-color:transparent;}
-
-
-/* Combined Emote-Gif Menu - Early May 2020 */
-.scrollerThemed-2oenus.themeHidden-2yP93k .scroller-2FKFPG::-webkit-scrollbar {display: none;}
-.category-3Xkx2x, .guildName-10c_vS {color: white;}
-
 
 /* Reaction Color fix */
 /* .reaction-1ELvT8.reactionMe-23mbRf {background-color: var(--main-color);}
@@ -60,7 +51,7 @@
 
 /* Region Selector button */
 .lookGhost-2Fn_0-.colorGrey-2DXtkV {color: white; background-color: var(--main-color); opacity: 0.1;}
-.lookGhost-2Fn_0-.colorBrand-3pXr91 {color: white; background-color: var(--hover-color); opacity:0.7;} /* button */
+.lookGhost-2Fn_0-.colorBrand-3pXr91 {color: white; background-color: var(--hover-color); opacity:0.7;}
 
 
 /* Server Boost in Server Settings*/
@@ -109,8 +100,6 @@
 .userPopout-3XzG_A .headerSpotify-zpWxgT .content-3JfFJh a {color: hsla(0,0%,100%,.8);}
 .wrapper-3jrx9n {border-color: var(--main-color);}
 
-/* Notifications Settings */
-.theme-dark .override-2YgiXd:hover {border-color: var(--main-color);}
 
 /* Invite Modal */
 .inviteRow-2L02ae:hover {background-color: rgba(255,255,255,0.4);}
@@ -247,7 +236,7 @@
  ==/ END NEW FRIENDS LIST /==
 */
 
-/* whatever that weird gradient is */
+/* gradient at textarea */
 .form-2fGMdU:before {display: none;}
 
 /* the quote bar thingy */
@@ -539,7 +528,7 @@
 
 
 /* Role Permission Options */	
-.theme-dark .item-3T2z1R{background-color: var(--background-overlay); border-color: var(--background-overlay);}
+.theme-dark .item-3T2z1R.box-gRofIO {background-color: var(--background-overlay); border-color: var(--background-overlay);}
 .theme-dark .denySelected-1mh2mZ{background-color: #f04747;}
 .theme-dark .allowSelected-25S_i5{background-color: #43b581;}
 .theme-dark .passthroughSelected-1Eq0Kl{background-color: rgba(0, 0, 0, 0.5);}
