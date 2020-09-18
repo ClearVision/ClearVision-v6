@@ -583,14 +583,15 @@
 
 /* Home -> Nitro (Under Library) */
 .scroller-9moviB {background: transparent}
+.banner-WELp4M {background-color: var(--background-overlay);}
 /* Switch Plans button (needs to be !important since discord used !important) */
 .button-G2dHuB:hover, .button-G2dHuB:active {background-color: var(--hover-color)!important;}
+
 /* Server boost bar */
 .barSecondary-3B1aP2 {background-color: var(--main-color);}
 
 /* Changes the outline on a focused image to main color */
 .imageWrapper-2p5ogY:focus {outline-color:var(--main-color);}
-
 
 
 /* Discord Store transparency */
