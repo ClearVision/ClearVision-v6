@@ -1,0 +1,69 @@
+/* USER SETTINGS */
+
+// My Account
+.userSettingsAccount-2eMFVR {
+    .userInfoViewing-16kqK3,
+    .userInfoEditing-1CEzdT {
+        background-color: rgba(0, 0, 0, .4);
+        border-color: hsla(0, 0%, 100%, .07);
+    }
+}
+
+// Privacy & Safety
+.card-3Qj_Yx  {
+	background-color: rgba(0, 0, 0, .4);
+    border-color: hsla(0, 0%, 100%, .07);
+    a {
+        color: $url-color;
+    }
+}
+
+// Authorized Apps
+.authedApp-mj2Hmd {
+    background-color: rgba(0, 0, 0, .4);
+    border-color: hsla(0, 0%, 100%, .07);
+}
+
+// Connections
+.accountList-33MS45 {
+    background-color: rgba(0, 0, 0, .4);
+    border-color: hsla(0, 0%, 100%, .07);
+    .accountBtn-2Nozo3 .accountBtnInner-sj5jLs {
+        background-color: hsla(0, 0%,100%,.05);
+        &:hover {
+            background-color: hsla(0, 0%,100%,.07);
+        }
+    }
+}
+
+// Billing
+.theme-dark {
+    .paymentPane-3bwJ6A,
+    .paginator-166-09 {
+        background-color: transparent;
+    }
+    .hoverablePayment-Yc6mK7 {
+        &:hover {
+            background-color: rgba(255,255,255,.05);
+        }
+    }
+    .payment-xT17Mq {
+        &:not(.hoverablePayment-Yc6mK7) {
+            background-color: hsla(0, 0%, 0%, .4);
+        }
+    }
+    .expandedInfo-3kfShd {
+        background-color: transparent;
+        box-shadow: 0 0 2px 2px $main-color;
+    }
+    .codeRedemptionRedirect-1wVR4b {
+        background-color: rgba(0, 0, 0, .4);
+        border-color: hsla(0, 0%, 100%, .07);
+    }
+}
+
+// Subscriptions
+.detailsBlock-FoDTGA,
+.banner-WELp4M {
+    background-color: rgba(0, 0, 0, .4);
+}

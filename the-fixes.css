@@ -42,10 +42,6 @@
 /* Verified game tick */
 .flowerStarContainer-3zDVtj > svg > path {fill: var(--main-color);}
 
-
-/* Apperance tab */
-.cardPrimaryOutline-29Ujqw {background-color: transparent;}
-
 /* Custom Color Picker */
 .theme-dark .colorPickerCustom-2CWBn2 {background-color: var(--background-overlay);}
 
@@ -69,18 +65,10 @@
 .theme-dark .progress-1IcQ3A {background-color: var(--background-overlay);}
 .notches-1sAcEM {display: none;}
 
-/* Billing page */
-.theme-dark .paymentPane-3bwJ6A, .theme-dark .paginator-166-09, .theme-dark .hoverablePayment-Yc6mK7.payment-xT17Mq {background-color: transparent !important;border: none}
-.theme-dark .bottomDivider-1K9Gao {border-bottom: 0.05em solid var(--main-color) !important;}
-.theme-dark .hoverablePayment-Yc6mK7:hover, .theme-dark .expandedInfo-3kfShd, .theme-dark .payment-xT17Mq, .theme-dark .codeRedemptionRedirect-1wVR4b {background-color: var(--background-overlay) !important;border: 0.1em solid var(--main-color);}
-
 /* Gift Inventory */
 .scroller-5bBood, .theme-dark .card-7JP0BX{background: transparent;}
 .theme-dark .header-1RC2Wb {background-color: var(--background-overlay);}
 
-/* Subscriptions page*/
-.detailsBlock-FoDTGA {background-color: var(--background-overlay);}
-.theme-dark .tier1Banner-1BTgv0 {background-image: none;background-color: var(--background-overlay);}
 
 /* Keybinds menu */
 .theme-dark .keyboardShortcutsModal-3piNz7 {background-color: var(--background-overlay);}
@@ -671,9 +659,6 @@ right: 13px;
 /* fixes DM's being displaced in bbd */
 .scroller-2TZvBN>:not(.listItem-2P_4kh):nth-child(2){justify-content: left;}
 .scroller-2TZvBN>:not(.listItem-2P_4kh):nth-child(2)+.listItem-2P_4kh{margin-left: 0px;}
-
-/* Themes Request all data button and terms of service and privacy policy links */
-.card-3Qj_Yx a {color: var(--main-color);}
 
 .lookOutlined-3sRXeN.colorBrand-3pXr91 {
     color: var(--main-color);
