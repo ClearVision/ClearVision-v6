@@ -545,12 +545,9 @@
 .searchResult-9tQ1uo:focus-within .jumpButton-JkYoYK, .searchResult-9tQ1uo:hover .jumpButton-JkYoYK {background-color: var(--backdrop-overlay);}
 .expanded-w_LCGl .searchResultMessage-1fxgXh.hit-1fVM9e{background-color: transparent;}
 
-
-<<<<<<< Updated upstream
 /* Home -> Nitro (Under Library) */
 .scroller-9moviB {background: transparent}
-=======
->>>>>>> Stashed changes
+
 /* Switch Plans button (needs to be !important since discord used !important) */
 .button-G2dHuB:hover, .button-G2dHuB:active {background-color: var(--hover-color)!important;}
 
