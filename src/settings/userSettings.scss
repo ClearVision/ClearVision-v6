@@ -40,7 +40,10 @@
 .theme-dark {
     .paymentPane-3bwJ6A,
     .paginator-166-09 {
-        background-color: transparent;
+        background-color: transparent;        
+    }
+    .bottomDivider-1K9Gao {
+        border-color: rgba(0,0,0,.07);
     }
     .hoverablePayment-Yc6mK7 {
         &:hover {
@@ -48,6 +51,7 @@
         }
     }
     .payment-xT17Mq {
+        background-color: transparent;
         &:not(.hoverablePayment-Yc6mK7) {
             background-color: hsla(0, 0%, 0%, .4);
         }
@@ -63,7 +67,54 @@
 }
 
 // Subscriptions
+.scroller-9moviB {
+    background-color: transparent;
+}
 .detailsBlock-FoDTGA,
 .banner-WELp4M {
     background-color: rgba(0, 0, 0, .4);
+}
+
+
+// Gift Inventory
+
+
+// Server Boost 
+.cardWrapper-2Min21 {
+    background-color: rgba(0, 0, 0, .4);
+}
+.theme-dark {
+    .gemIndicatorContainer-2jdECl {
+        background-color: transparent;
+    }
+}
+
+// HypeSquad
+
+// Voice & Video
+
+.userSettingsVoice-iwdUCU .media-engine-video {
+    background-color: rgba(0, 0, 0, .4);
+}
+.theme-dark .userSettingsVoice-iwdUCU .previewOverlay-2O7_KC {
+    background-color: rgba(0, 0, 0, .7);
+    border-color: 
+}
+
+
+// Overlay
+.wrapper-3jrx9n {
+    border-color: $main-color;
+}
+.option-n0icdO {
+    background-color: hsla(0, 0%,100%,.05);
+    opacity: 1;
+    &hover {
+        background-color: hsla(0, 0%,100%,.07);
+        opacity: 1;
+    }
+    &.selected-mKYnfr {
+        background-color: $main-color;
+        border-color: $main-color;
+    }
 }

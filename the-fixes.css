@@ -6,12 +6,6 @@
 .tierMarker-5HkGJ_[style*="linear-gradient(to right, rgb(32, 34, 37), rgb(32, 34, 37));"] {background: var(--backdrop-overlay) !important;}
 .theme-dark .barForeground-3KglC8 {background-color: rgba(244,127,255,0.9);}
 
-/* Server Boost in User Settings*/
-.guildHeader-3nh5RK, .subscribeTooltipWrapper-32-Ce8, .container-1gR2ZK {background-color: var(--background-overlay);}
-.guildSubscriptionSlots-JPXXvN {background-color: var(--background-overlay);}
-.cardWrapper-2Min21 {background: var(--background-overlay);}
-.subscribeTooltipWrapper-32-Ce8:after {border-bottom-color: var(--background-overlay);}
-
 /* Create DM button color */
 .privateChannelRecipientsInviteButtonIcon-3A3uTc {color: var(--main-color) !important;transition: all .1s ease-in-out;}
 .privateChannelRecipientsInviteButtonIcon-3A3uTc:hover {color: var(--hover-color) !important;transition: all .1s ease-in-out;}
@@ -56,18 +50,11 @@
 .theme-dark .foreground-2EIns2 {color: rgba(244,127,255,0.9);}
 .theme-dark .tierInProgress-3mBoXq {background-color: var(--background-overlay);border: 0.1em solid rgb(244,127,255);}
 
-/* Test video */
-.theme-dark .userSettingsVoice-iwdUCU .previewOverlay-2O7_KC {background-color: rgba(255,255,255,0.01);}
-.userSettingsVoice-iwdUCU .media-engine-video {background-color: transparent;}
-
 /* Test Audio */
 .container-3PXSwK, .userSettingsVoice-iwdUCU .sliderBar-3DezvM.speaking-2bFhO4 {background: var(--main-color) !important;}
 .theme-dark .progress-1IcQ3A {background-color: var(--background-overlay);}
 .notches-1sAcEM {display: none;}
 
-/* Gift Inventory */
-.scroller-5bBood, .theme-dark .card-7JP0BX{background: transparent;}
-.theme-dark .header-1RC2Wb {background-color: var(--background-overlay);}
 
 
 /* Keybinds menu */
@@ -82,13 +69,6 @@
 .themeDefault-24hCdX {background-color: rgba(255,255,255,0.3);}
 .themeDefault-24hCdX.valueChecked-m-4IJZ {background-color: var(--main-color) !important;}
 
-/* Overlay */
-.selected-mKYnfr.option-n0icdO {background-color: var(--main-color);border-color: var(--main-color);}
-.option-n0icdO:hover {background-color: var(--hover-color);}
-.userPopout-3XzG_A .headerSpotify-zpWxgT .content-3JfFJh a {color: hsla(0,0%,100%,.8);}
-.wrapper-3jrx9n {border-color: var(--main-color);}
-
-
 /* Invite Modal */
 .inviteRow-2L02ae:hover {background-color: rgba(255,255,255,0.4);}
 
@@ -100,9 +80,6 @@
 
 /* Voice badge */
 .iconBadge-2wi9r4.participating-NBGDkr {background-color: var(--backdrop-overlay);}
-
-/* Links in chatbar */
-.fakeLink-26oLcc {color: var(--main-color);}
 
 /* Blocked user chatbar */
 .wrapper-39oAo3 {background-color: var(--background-overlay);}
@@ -569,8 +546,11 @@
 .expanded-w_LCGl .searchResultMessage-1fxgXh.hit-1fVM9e{background-color: transparent;}
 
 
+<<<<<<< Updated upstream
 /* Home -> Nitro (Under Library) */
 .scroller-9moviB {background: transparent}
+=======
+>>>>>>> Stashed changes
 /* Switch Plans button (needs to be !important since discord used !important) */
 .button-G2dHuB:hover, .button-G2dHuB:active {background-color: var(--hover-color)!important;}
 
@@ -671,4 +651,25 @@ right: 13px;
 .message-39hdqk {width: 110%;}
 .close-jnIfru:hover {color:var(--danger-color);}
 
-.channelHeader-3Gd2xq {background-color: var(--backdrop-overlay);}
+.channelHeader-3Gd2xq {background-color: var(--backdrop-overlay);} /*message popout stuff */
+
+
+/* EMOJI Info POPOUT */
+.container-ZRw2kD {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding:4px;
+  }
+  
+  .container-ZRw2kD .emojiSection-3Fb9ix {
+    background-color: transparent;
+    padding:4px;
+  }
+  
+  .container-ZRw2kD .guildSection-1EoFKd {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding:4px;
+  }
+  
+  .container-ZRw2kD .loadingBackground-1p5N1j .loading-1lSwpg {
+    background: var(--main-color);
+  }
