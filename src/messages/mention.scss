@@ -35,3 +35,10 @@
 		color: $main-color;
 	}
 }
+//New server channel welcome message #link to another channel
+%mention {
+	color: var(--main-color);
+	&:hover {
+		background-color: var(--main-color);
+	}
+}
