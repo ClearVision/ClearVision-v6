@@ -98,7 +98,7 @@
 }
 .theme-dark .userSettingsVoice-iwdUCU .previewOverlay-2O7_KC {
     background-color: rgba(0, 0, 0, .7);
-    border-color: hsla(0, 0%,100%,.04);
+    border-color: hsla(0, 0%,100%,.07);
 }
 
 
@@ -116,5 +116,51 @@
     &.selected-mKYnfr {
         background-color: $main-color;
         border-color: $main-color;
+    }
+}
+
+// Keybinds
+%theme-dark {
+    .card-FDVird.keybindGroup-JQs9x_:before {
+        background-color: hsla(0, 0%, 0%, .4);
+        border: hsla(0, 0%, 100%, .07);
+    }
+    .container-1nZlH6 {
+        background-color: hsla(0, 0%, 100%, .05);
+        box-shadow: 0 0 0 2px hsla(0, 0%, 100%, .07);
+        border-color: transparent;
+        &:not(.disabled-29eJ21):hover {
+            border-color: transparent;
+	        box-shadow: 0 0 2px 2px var(--main-color);
+        }
+        &.recording-1H2dS7 {
+            animation: cv-shadow-pulse 1s ease-in infinite;
+            box-shadow: 0 0 2px 2px var(--main-color);
+        }
+    }
+}
+
+
+// Game Activity 
+%theme-dark {
+    .notDetected-33MY4s,
+    .card-FDVird.game-1ipmAa:before,
+    .button-2CgfFz {
+        background-color: hsla(0, 0%, 0%, .4);
+        border: hsla(0, 0%, 100%, .07);
+    }
+    .lookLink-9FtZy-.colorLink-35jkBc {
+        color: $main-color;
+        &:hover .contents-18-Yxp {
+            background-image: none;
+            text-decoration: underline;
+        }
+    }
+    .gameNameInput-385LoS {
+        &:hover,
+        &:focus {
+            background-color: hsla(0, 0%,100%,.05);
+            border: hsla(0, 0%, 100%, .07);
+        }
     }
 }

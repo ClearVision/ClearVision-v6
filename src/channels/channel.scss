@@ -28,7 +28,7 @@
 		width: 18px;
 		height: 18px;
 		margin-right: 3px;
-		color: hsla(0, 0%, 100%, .3);
+		color: var(--channel-color);
 		opacity: 1;
 		transition: all .15s ease-in-out;
 		> path {
@@ -39,7 +39,7 @@
 		}
 	}
 	%channelName {
-		color: hsla(0, 0%, 100%, .3);
+		color: var(--channel-color);
 		transition: all .15s ease-in-out;
 	}
 }
@@ -76,11 +76,11 @@
 	&%channelWrapperUnread {
 		%channelContent {
 			%channelName {
-				color: $main-color;
+				color: var(--channel-unread);
 				text-shadow: 0 0 3px;
 			}
 			%channelIcon {
-				color: $main-color;
+				color: var(--channel-unread);
 				filter: drop-shadow(0 0 3px);
 				opacity: 1;
 			}
@@ -143,7 +143,7 @@
 		%channelContent {
 			%channelIcon,
 			%channelName {
-				color: hsla(0, 0%, 100%, .1);
+				color: var(--muted-color);
 			}
 		}
 		&:hover {
@@ -154,7 +154,7 @@
 				%channelContainerDefault & {
 					%channelIcon,
 					%channelName {
-						color: hsla(0, 0%, 100%, .3);
+						color: var(--channel-color);
 					}
 				}
 			}

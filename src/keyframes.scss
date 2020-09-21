@@ -152,3 +152,14 @@
 		opacity: 1;
 	}
 }
+@keyframes cv-shadow-pulse {
+	0% {
+		box-shadow: 0 0 6px 2px var(--main-color);
+	}
+	50% {
+		box-shadow: 0 0 10px 2px var(--main-color);
+	}
+	100% {
+		box-shadow: 0 0 6px 2px var(--main-color);
+	}
+}

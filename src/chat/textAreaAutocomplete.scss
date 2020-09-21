@@ -37,11 +37,9 @@
 			fill: hsla(0, 0%, 100%, .5);
 		}
 		%autocompleteDescription,
-		%autocompleteDescriptionUsername {
-			color: hsla(0, 0%, 100%, .5);
-		}
+		%autocompleteDescriptionUsername,
 		%autocompleteDescriptionDiscriminator {
-			color: hsla(0, 0%, 100%, .25);
+			color: hsla(0, 0%, 100%, .5);
 		}
 	}
 }
