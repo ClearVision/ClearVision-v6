@@ -30,9 +30,6 @@
 .theme-dark .addGamePopout-2RY8Ju, .css-181m2lf-menu {background-color: var(--backdrop-overlay);}
 .theme-dark .css-181m2lf-menu > div > div:hover {background-color: var(--hover-color);}
 
-/* Verified game tick */
-.flowerStarContainer-3zDVtj > svg > path {fill: var(--main-color);}
-
 /* Custom Color Picker */
 .theme-dark .colorPickerCustom-2CWBn2 {background-color: var(--background-overlay);}
 

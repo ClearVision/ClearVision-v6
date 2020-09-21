@@ -120,7 +120,7 @@
 }
 
 // Keybinds
-%theme-dark {
+.theme-dark {
     .card-FDVird.keybindGroup-JQs9x_:before {
         background-color: hsla(0, 0%, 0%, .4);
         border: hsla(0, 0%, 100%, .07);
@@ -142,7 +142,7 @@
 
 
 // Game Activity 
-%theme-dark {
+.theme-dark {
     .notDetected-33MY4s,
     .card-FDVird.game-1ipmAa:before,
     .button-2CgfFz {
@@ -163,4 +163,8 @@
             border: hsla(0, 0%, 100%, .07);
         }
     }
+}
+
+.flowerStarContainer-3zDVtj > svg > path {
+    fill: var(--main-color);
 }

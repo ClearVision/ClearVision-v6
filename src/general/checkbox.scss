@@ -1,7 +1,7 @@
 /* CHECKBOX */
 
 %checkbox {
-	&%checkboxChecked[style*="border-color"] {
+	&%checkboxChecked[style*="border-color: rgb(114, 137, 218)"] {
 		background-color: transparent !important;
 		border-color: var(--main-color) !important;
 		
