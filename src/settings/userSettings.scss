@@ -109,7 +109,7 @@
 .option-n0icdO {
     background-color: hsla(0, 0%,100%,.05);
     opacity: 1;
-    &hover {
+    &:hover {
         background-color: hsla(0, 0%,100%,.07);
         opacity: 1;
     }
@@ -121,10 +121,6 @@
 
 // Keybinds
 .theme-dark {
-    .card-FDVird.keybindGroup-JQs9x_:before {
-        background-color: hsla(0, 0%, 0%, .4);
-        border: hsla(0, 0%, 100%, .07);
-    }
     .container-1nZlH6 {
         background-color: hsla(0, 0%, 100%, .05);
         box-shadow: 0 0 0 2px hsla(0, 0%, 100%, .07);
@@ -144,7 +140,6 @@
 // Game Activity 
 .theme-dark {
     .notDetected-33MY4s,
-    .card-FDVird.game-1ipmAa:before,
     .button-2CgfFz {
         background-color: hsla(0, 0%, 0%, .4);
         border: hsla(0, 0%, 100%, .07);

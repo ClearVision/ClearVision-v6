@@ -52,11 +52,6 @@
 /* So this was gay */
 .body-3AJVSA, .theme-light .input-UJ9Tr3, .theme-light .input-1mgnkM{color: rgba(255, 255, 255, 0.9); font-weight: 200;}
 
-
-/* Switches */
-.themeDefault-24hCdX {background-color: rgba(255,255,255,0.3);}
-.themeDefault-24hCdX.valueChecked-m-4IJZ {background-color: var(--main-color) !important;}
-
 /* Invite Modal */
 .inviteRow-2L02ae:hover {background-color: rgba(255,255,255,0.4);}
 
@@ -249,9 +244,6 @@
 
 /* default text */
 .defaultValue-3gC7yw .markValue-2DwdXI {color: var(--success-color);}
-
-/* Connections - Account Button */
-.accountBtn-2Nozo3 .accountBtnInner-sj5jLs {background-color: var(--background-overlay);}
 
 /* Search dropdown */
 .theme-dark .container-3ayLPN {background-color: var(--backdrop-overlay);}

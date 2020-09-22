@@ -1,0 +1,11 @@
+/* SWITCH */
+%switch {
+    background-color: hsla(0, 0%, 100%, .2);
+    &%switchValueChecked {
+        background-color: $main-color;
+    }
+    :after {
+        background-color: #fff;
+        border-radius: 50%;
+    }
+}
