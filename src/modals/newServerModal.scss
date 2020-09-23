@@ -26,15 +26,19 @@
 }
 
 // Server template categories
-.itemContainer-1LSFks {
+.container-UC8Ug1 {
     background-color: $main-color;
     &:hover {
         background-color: $hover-color;
     }
-    .itemText-sYKDFz {
+    .text-1FOLJS {
         color: #fff;
     }
-    .itemArrow-lhAqIR {
+    .arrow-hynWUl {
         visibility: hidden;
     }
+}
+/* create a server input wrapper - temp cause idk where else it affects */
+.input--jS-j2 {
+    background-color: transparent;
 }
