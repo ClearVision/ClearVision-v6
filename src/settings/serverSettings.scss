@@ -1,0 +1,77 @@
+/* SERVER SETTINGS */
+
+// Save Changes
+.theme-dark .elevationHigh-1PneE4 {
+    background-color: hsla(0, 0%, 0%, .7) !important;
+}
+
+// Overview
+
+
+// Roles
+.theme-dark .colorPickerCustom-2CWBn2 {
+    background-color: hsla(0, 0%, 0%, .7)
+}
+
+// Emoji
+.theme-dark .emojiAliasInput-1y-NBz .emojiInput-1aLNse {
+    background-color: hsla(0, 0%, 100%, .05);
+    padding-bottom: 2.5px;
+    padding-left: 8px;
+}
+
+// Audit Log
+%themeDark {
+    .auditLog-3jNbM6 {
+        .headerClickable-2IVFo9,
+        .headerDefault-1wrJcN {
+            background-color: hsla(0, 0%, 0%, .4);
+            border-color: hsla(0, 0%, 100%, .07);
+        }
+    }
+} 
+
+// Server Template
+.descriptionBox-1EKQKL {
+    background-color: hsla(0, 0%, 0%, .4);
+}
+
+// Enable community footer pictures
+.featureCard-1RR4Tl,
+.featureIcon-3p1TC_ {
+    background-color: hsla(0, 0%, 0%, .4);
+}
+
+
+
+// Server Boost Status
+%themeDark {
+    .background-3xPPFc {
+        color: hsla(0, 0%, 0%, .4)
+    }
+    .tierInProgress-3mBoXq {
+        background-color: hsla(0, 0%, 0%, .4);
+        border: 3px solid #f47fff;
+    }
+    .tierHeaderLocked-1a2opw,
+    .tierBody-x9kBBp {
+        background-color: hsla(0, 0%, 0%, .4);
+    }
+}
+
+// Members
+.searchBar-1YE5UV {
+    background-color: hsla(0,0%,0%,.4);
+}
+.theme-dark {
+    .popoutList-T9CKZQ {
+        background-color: hsla(0, 0%, 0%, .4);
+        box-shadow: 0 0 0 1px hsla(0, 0%, 100%, .07);
+        .selectableItem-1MP3MQ.selected-31soGA[style*="background: rgb(114, 137, 218)"] {
+            background-color: $main-color;
+        }
+    }
+    .popoutListInput-1l9TUI {
+        background-color: hsla(0, 0%, 100%, .05);
+    }
+}

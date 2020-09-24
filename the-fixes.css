@@ -37,13 +37,6 @@
 .lookGhost-2Fn_0-.colorGrey-2DXtkV {color: white; background-color: var(--main-color);}
 .lookGhost-2Fn_0-.colorBrand-3pXr91 {color: white; background-color: var(--hover-color);}
 
-
-/* Server Boost in Server Settings*/
-.theme-dark .tierHeaderLocked-1a2opw, .theme-dark .background-3xPPFc {background-color: var(--background-overlay);}
-.theme-dark .tierBody-x9kBBp {background-color: var(--background-overlay);}
-.theme-dark .foreground-2EIns2 {color: rgba(244,127,255,0.9);}
-.theme-dark .tierInProgress-3mBoXq {background-color: var(--background-overlay);border: 0.1em solid rgb(244,127,255);}
-
 /* Test Audio */
 .container-3PXSwK, .userSettingsVoice-iwdUCU .sliderBar-3DezvM.speaking-2bFhO4 {background: var(--main-color) !important;}
 .theme-dark .progress-1IcQ3A {background-color: var(--background-overlay);}
@@ -208,7 +201,7 @@
 #bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch.checked {background-color: var(--main-color);}
 #bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch {background-color: rgba(255,255,255,0.3);}
 
-/* Unread thing */
+/* Unread divider */
 .isUnread-3Ef-o9 { border-color: var(--main-color); }
 .unreadPill-2HyYtt { background-color: var(--main-color);}
 .unreadPillCapStroke-7rkHbg { fill: var(--main-color); color: var(--main-color);}
@@ -223,16 +216,10 @@
 .tabBar-2UKwcE .tabBarItem-1Cg-MI:after {background: var(--main-color); border-radius: 3px;}
 .tabBar-2UKwcE .tabBarItem-1Cg-MI[style*="color: rgb(255, 255, 255)"] {color: #fff !important;}
 
-/* search member */
-.container-cMG81i,
-/* emote rename */
-.theme-dark .emojiAliasInput-1y-NBz .emojiInput-1aLNse,
+
 /* rename group */
 .input-2A_zIr:focus {background-color: var(--background-overlay);}
-/* search members by role dropdown */
-.theme-dark .popoutList-T9CKZQ {background-color: var(--backdrop-overlay);}
-/* selected role to search by */
-.selectableItem-1MP3MQ.selected-31soGA {background-color: var(--main-color) !important;}
+
 
 /* Date */
 .content-1o0f9g {background: rgba(255,255,255,0.07);color: var(--main-color);text-transform: uppercase;opacity: 0.9;}
@@ -251,9 +238,6 @@
 /* "Quick" Reactions */
 .button-1I8KM5 {background-color: var(--backdrop-overlay);}
 .button-1I8KM5:hover {background-color: var(--hover-color);}
-
-/* Templates */
-.descriptionBox-1EKQKL {background-color: var(--background-overlay);}
 
 /* dm list header broke, leafy fixed it */
 .headerText-2F0828 {overflow: visible; color: var(--main-color);}
@@ -360,9 +344,6 @@
 
 /* Message Popout Selection thing idk */
 .styleFlexible-wGDiIL {background-color: var(--background-overlay);}
-
-/* Save Changes? */
-.theme-dark .elevationHigh-1PneE4 {background-color: var(--background-overlay) !important;}
 
 /* something at the begining of any channel */
 .emptyChannelIcon-3IXV5M {display: none;}
@@ -551,9 +532,6 @@ width: 24px;
 height: 24px;
 right: 13px;
 }
-
-/* Enable community footer pictures */
-.featureCard-1RR4Tl, .featureIcon-3p1TC_ {background-color: var(--background-overlay);}
 
 /* Enable community words, e.g. learn latin, python */
 .guildDetails-2p1NmK {background-color: transparent;}

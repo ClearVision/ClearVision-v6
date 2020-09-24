@@ -10,13 +10,6 @@
 }
 
 // Privacy & Safety
-.card-3Qj_Yx  {
-	background-color: rgba(0, 0, 0, .4);
-    border-color: hsla(0, 0%, 100%, .07);
-    a {
-        color: var(--url-color);
-    }
-}
 
 // Authorized Apps
 .authedApp-mj2Hmd {
@@ -139,8 +132,7 @@
 
 // Game Activity 
 .theme-dark {
-    .notDetected-33MY4s,
-    .button-2CgfFz {
+    .notDetected-33MY4s {
         background-color: hsla(0, 0%, 0%, .4);
         border: hsla(0, 0%, 100%, .07);
     }
@@ -150,6 +142,9 @@
             background-image: none;
             text-decoration: underline;
         }
+    }
+    .game-1ipmAa {
+        box-shadow: 0 1px 0 0 hsla(0,0%,100%,.04);
     }
     .gameNameInput-385LoS {
         &:hover,

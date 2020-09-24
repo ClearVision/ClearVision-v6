@@ -18,4 +18,19 @@
 		background-color: hsla(0, 0%, 0%, .4);
 		border: hsla(0, 0%, 100%, .07);
 	}
+    .button-2CgfFz {
+		background-color: hsla(0, 0%, 0%, .4);
+		border: hsla(0, 0%, 100%, .07);
+		&:hover {
+			background-color: hsla(0, 0%, 0%, .7);
+			border: hsla(0, 0%, 100%, .07);
+		}
+	}
+	.card-3Qj_Yx  {
+		background-color: rgba(0, 0, 0, .4);
+		border-color: hsla(0, 0%, 100%, .07);
+		a {
+			color: var(--url-color);
+		}
+	}
 }
