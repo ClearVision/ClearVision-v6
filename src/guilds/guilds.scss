@@ -17,7 +17,6 @@
 	}
 }
 %guildsWrapper {
-	width: calc(#{cv("server-columns")} * 72px);
 	box-shadow: inset 0 0 20px rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .3));
 }
 %guildsScrollerWrap {
@@ -26,35 +25,7 @@
 
 // GUILD LIST
 %guilds {
-	display: grid;
-	grid-template-columns: repeat(cv("server-columns"), 1fr);
-	grid-auto-columns: fit-content(72px);
-	grid-auto-rows: fit-content(72px);
-	margin-right: -18px;
-	padding-right: 18px;
 	background: transparent;
-	> %guild {
-		&:first-child,
-		&:nth-child(2),
-		&.bd-guild-separator {
-			margin-right: auto;
-			margin-left: auto;
-			grid-column: 1 / span cv("server-columns");
-		}
-	}
-	> :not(%guild):nth-child(2) {
-		height: auto !important;
-		display: flex;
-		flex-flow: row wrap;
-		grid-column: 1 / span cv("server-columns");
-		align-items: center;
-		justify-content: center;
-		+ %guild {
-			margin-right: auto;
-			margin-left: auto;
-			grid-column: 1 / span cv("server-columns");
-		}
-	}
 }
 
 // HOME BUTTON

@@ -6,11 +6,6 @@
 .tierMarker-5HkGJ_[style*="linear-gradient(to right, rgb(32, 34, 37), rgb(32, 34, 37));"] {background: var(--backdrop-overlay) !important;}
 .theme-dark .barForeground-3KglC8 {background-color: rgba(244,127,255,0.9);}
 
-/* Create DM button color */
-.privateChannelRecipientsInviteButtonIcon-3A3uTc {color: var(--main-color) !important;transition: all .1s ease-in-out;}
-.privateChannelRecipientsInviteButtonIcon-3A3uTc:hover {color: var(--hover-color) !important;transition: all .1s ease-in-out;}
-
-
 /* Reaction Color fix */
 /* .reaction-1ELvT8.reactionMe-23mbRf {background-color: var(--main-color);}
 .reactionMe-23mbRf .reactionCount-2ddRoS {color: rgba(255,255,255,0.5);}
@@ -59,9 +54,6 @@
 
 /* Blocked user chatbar */
 .wrapper-39oAo3 {background-color: var(--background-overlay);}
-
-/* Direct Messages label */
-.headerText-1-AnT0 {overflow: visible;}
 
 /* Dropdown voice call region changer */
 .theme-dark .quickSelectPopout-X1hvgV {background: var(--backdrop-overlay);}
@@ -239,11 +231,6 @@
 .button-1I8KM5 {background-color: var(--backdrop-overlay);}
 .button-1I8KM5:hover {background-color: var(--hover-color);}
 
-/* dm list header broke, leafy fixed it */
-.headerText-2F0828 {overflow: visible; color: var(--main-color);}
-.privateChannelsHeaderContainer-3NB1K1:before {content: ""; height: 2px; flex-grow: 1; transition: all .3s ease-in-out; background: linear-gradient(to left, var(--main-color) 50%, transparent); margin-right: 5px; margin-top: 7px;}
-.privateChannelsHeaderContainer-3NB1K1:after {content: ""; height: 2px; flex-grow: 1; transition: all .3s ease-in-out; background: linear-gradient(to right, var(--main-color) 50%, transparent); margin-left: 5px; margin-top: 7px;}
-
 /* mentions */
 .messageContainer-gbhlwo {background-color: var(--background-overlay);}
 .tertiary-aMXF0g:hover, .secondary-dIudih:hover {background-color: var(--hover-color);}
@@ -342,12 +329,6 @@
 .channelContainer-1x3D6I .channel-2PJTLY {background-color: var(--background-overlay);}
 .channelContainer-1x3D6I {background-color: transparent;}
 
-/* Message Popout Selection thing idk */
-.styleFlexible-wGDiIL {background-color: var(--background-overlay);}
-
-/* something at the begining of any channel */
-.emptyChannelIcon-3IXV5M {display: none;}
-
 /* Why Discord fucked with the tooltips, I'll never know. */
 .tooltipContent-bqVLWK {padding: 0px;}
 
@@ -440,9 +421,6 @@
 .button-F9qN4n.focused-3ZzkKr {box-shadow: 0 0 2px 2px var(--hover-color);}
 .button-F9qN4n, .button-F9qN4n.focused-3ZzkKr, .button-F9qN4n:hover {background-color: var(--backdrop-overlay);}
 
-/* right click server icon - was hit by a different line */
-.menu-3sdvDG.styleFlexible-wGDiIL {background-color: var(--backdrop-overlay);}
-
 /* volume slider hover */
 .slider-1PF9SW:focus .grabber-3mFHz2 {box-shadow: 0 0 3px 3px var(--hover-color);}
 
@@ -486,9 +464,6 @@
 /* View Roles - Members Settings */
 .theme-dark .overflowRolesPopout-140n9i, .theme-dark .overflowRolesPopoutArrow-2O66oH {background-color: var(--backdrop-overlay);}
 
-/* CANARY - Member List */
-.listContent-2_qb-y {background-color: transparent !important;}
-
 /* Search results */
 .channelName-1JRO3C {background: transparent;}
 .searchResult-9tQ1uo:after {background-image:none;}
@@ -514,17 +489,6 @@
 
 /* Discord Store transparency */
 .scroller-1JpcIc {background-color:transparent;}
-
-/* Footer in changelog */
-.footer-1lnhms {background-color: var(--background-overlay);}
-/* Links in changelog */
-.content-RXzE-X a {color: var(--url-color);}
-/* Changelog close button */
-.closeButton-3sommQ {
-width: 24px;
-height: 24px;
-right: 13px;
-}
 
 /* Enable community words, e.g. learn latin, python */
 .guildDetails-2p1NmK {background-color: transparent;}
@@ -582,10 +546,6 @@ right: 13px;
 
 /* Member List again */
 .members-1998pB>div {background-color:transparent;}
-
-/* fixes DM's being displaced in bbd */
-.scroller-2TZvBN>:not(.listItem-2P_4kh):nth-child(2){justify-content: left;}
-.scroller-2TZvBN>:not(.listItem-2P_4kh):nth-child(2)+.listItem-2P_4kh{margin-left: 0px;}
 
 .lookOutlined-3sRXeN.colorBrand-3pXr91 {
     color: var(--main-color);

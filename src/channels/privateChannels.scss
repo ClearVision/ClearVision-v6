@@ -7,14 +7,12 @@
 
 	// HEADER
 	%privateChannelsHeader {
-		margin-top: 11px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		color: $main-color;
 		font-weight: 700;
 		text-align: center;
-		opacity: .85;
 		&:before {
 			content: "";
 			height: 2px;
@@ -22,6 +20,7 @@
 			transition: all .3s ease-in-out;
 			background: linear-gradient(to left, $main-color 50%, transparent);
 			margin-right: 5px;
+			margin-top: 7px;
 		}
 		&:after {
 			content: "";
@@ -30,6 +29,17 @@
 			transition: all .3s ease-in-out;
 			background: linear-gradient(to right, $main-color 50%, transparent);
 			margin-left: 5px;
+			margin-top: 7px;
+		}
+		%privateChannelsHeaderText {
+			overflow: visible;
+		}
+		%privateChannelsInviteButton {
+			color: $main-color;
+			transition: all .1s ease-in-out;
+			&:hover {
+				color: $hover-color;
+			}
 		}
 	}
 

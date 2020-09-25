@@ -554,8 +554,14 @@
 .linkButtonIcon-Mlm5d6 {
 	@extend %privateChannelIcon !optional;
 }
-.header-zu8eWb {
+.privateChannelsHeaderContainer-3NB1K1 {
 	@extend %privateChannelsHeader !optional;
+}
+.headerText-2F0828 {
+	@extend %privateChannelsHeaderText !optional;
+}
+.privateChannelRecipientsInviteButtonIcon-3A3uTc {
+	@extend %privateChannelsInviteButton !optional;
 }
 .searchBar-6Kv8R2 {
 	@extend %privateChannelsSearchBar !optional;

@@ -1,0 +1,19 @@
+/* Plugin & Theme Content Error */
+.bd-modal-wrapper {
+    .header {
+        background-color: var(--backdrop-overlay);
+    }
+    .bd-modal-body {
+        background-color: var(--backdrop-overlay);
+    }
+    .footer {
+        button {
+            &:hover {
+                background-color: var(--hover-color);
+            }
+        }
+    }
+    .bd-modal-inner {
+        border: transparent;
+    }
+}
