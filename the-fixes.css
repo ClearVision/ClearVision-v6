@@ -452,13 +452,6 @@
 /*Fixes attachments*/
 .theme-dark .attachment-33OFj0 {border-color: rgba(47,49,54,.6); background-color: rgba(47,49,54,.3);}
 
-
-/* Role Permission Options */	
-.theme-dark .item-3T2z1R.box-gRofIO {background-color: var(--background-overlay); border-color: var(--background-overlay);}
-.theme-dark .denySelected-1mh2mZ{background-color: #f04747;}
-.theme-dark .allowSelected-25S_i5{background-color: #43b581;}
-.theme-dark .passthroughSelected-1Eq0Kl{background-color: rgba(0, 0, 0, 0.5);}
-
 /* birthday confirmation modal */
 .theme-dark .footer-3rDWdC {background-color: var(--backdrop-overlay); box-shadow: none;}
 .required-7sPBq3 {color: var(--danger-color);}
