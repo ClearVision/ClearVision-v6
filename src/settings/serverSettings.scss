@@ -23,10 +23,10 @@
 // Audit Log
 %themeDark {
     .auditLog-3jNbM6 {
+        border-color: hsla(0, 0%, 100%, .07);
         .headerClickable-2IVFo9,
         .headerDefault-1wrJcN {
-            background-color: hsla(0, 0%, 0%, .4);
-            border-color: hsla(0, 0%, 100%, .07);
+            background-color: hsla(0, 0%, 0%, .4);            
         }
     }
 } 
@@ -68,7 +68,7 @@
         background-color: hsla(0, 0%, 0%, .4);
         box-shadow: 0 0 0 1px hsla(0, 0%, 100%, .07);
         .selectableItem-1MP3MQ.selected-31soGA[style*="background: rgb(114, 137, 218)"] {
-            background-color: $main-color;
+            background-color: $main-color !important;
         }
     }
     .popoutListInput-1l9TUI {
