@@ -2,12 +2,12 @@
 
 %checkbox {
 	&%checkboxChecked[style*="border-color: rgb(114, 137, 218)"] {
-		background-color: transparent !important;
+		background-color: var(--background-overlay) !important;
 		border-color: var(--main-color) !important;
 		
 		>svg {
 			>path {
-				fill: var(--main-color);
+				fill: #fff;
 			}
 		}
 	}
@@ -25,7 +25,7 @@
 	%checkboxWrapper {
 		%checkbox {
 			&%checkboxChecked {
-				background-color: #fff !important;
+				background-color: var(--background-overlay) !important;
 			}
 		}
 	}
