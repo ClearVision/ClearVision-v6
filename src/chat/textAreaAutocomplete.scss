@@ -29,7 +29,7 @@
 		color: hsla(0, 0%, 100%, .15);
 	}
 	%autocompleteSelectorSelected {
-		background: $main-color;
+		background: $main-color !important;
 		> %autocompleteContent {
 			color: #fff;
 		}
