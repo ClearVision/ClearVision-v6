@@ -75,3 +75,20 @@
         background-color: hsla(0, 0%, 100%, .05);
     }
 }
+
+// View server as x role selection bar
+.notice-1tZwqv {
+	background-color: var(--main-color);
+}
+.container-3LUQwT {
+	background-color: var(--backdrop-overlay);
+}
+.role-3ulsK-:hover {
+	background-color: rgba(255,255,255,0.1);
+}
+.iconContainer-1zobSR {
+	&.checked-1Fij_T {
+		background-color: var(--main-color);
+		border-color: var(--main-color);
+	}
+}
