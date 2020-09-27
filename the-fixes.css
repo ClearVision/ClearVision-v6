@@ -496,23 +496,14 @@
 /* Fixed menu selection color when dragging server drop-down */
 .colorDefault-2K3EoJ:active:not(.hideInteraction-1iHO1O) {background-color: var(--hover-color);}
 
-/* Welcome to new server buttons */
-.card-3RzMcx, .emptyChannelIcon-cc932w  {background-color: var(--background-overlay);}
-
 /* Not enough server members warning */
 .notEnoughMembersError-1KwJkE {background-color: var(--background-help-warning);}
 
 /* Community overview->settings box */
 .upsellContent-1JlpHe, .upsellFooter-ZYsio_, .upsellContainer-L9xv7w {background-color: transparent;}
 
-/* Welcome screen example */
-.exampleModal-2X2Vf8, .optionContainer-1FtykV  {background-color: var(--background-overlay);}
-
 /* Enable Discovery icons and cards */
 .theme-dark .card-3_CqkU, .theme-dark .iconMask-30Tvqs, .perkArt-1SGWbA {background-color: var(--background-overlay);}
-
-/* Enable Discovery checklist */
-.header-2Y0-A-, .analyticsCard-qckucw, .enableContainer-6E-puu, .checklistItem-37OOck, .previewContainer-1SS3uO, .exampleContainer-25sB-A  {background-color: var(--backdrop-overlay);}
 
 /* Webhooks, channels followed icons */
 .iconWrapper-lS1uig {background-color: var(--background-overlay);}
@@ -522,18 +513,6 @@
 
 /* New channel "edit channel link" */
 .button-2OOM0p {color: var(--url-color);}
-
-/* Creating Welcome screen chatbox (needs to be !important)*/
-.scrollbarDefault-3COgCQ {
-    background-color: var(--background-overlay)!important;
-	border-radius: 4px !important;
-}
-
-/* Creating Welcome screen pencil icon */
-.editCircle-ityklj {
-    background-color: var(--main-color);
-    color: white;
-}
 
 /* Fixes Add another channel button drag color */
 .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:active, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:hover {background-color: var(--hover-color);}

@@ -20,7 +20,6 @@
 			transition: all .3s ease-in-out;
 			background: linear-gradient(to left, $main-color 50%, transparent);
 			margin-right: 5px;
-			margin-top: 7px;
 		}
 		&:after {
 			content: "";
@@ -29,7 +28,6 @@
 			transition: all .3s ease-in-out;
 			background: linear-gradient(to right, $main-color 50%, transparent);
 			margin-left: 5px;
-			margin-top: 7px;
 		}
 		%privateChannelsHeaderText {
 			overflow: visible;

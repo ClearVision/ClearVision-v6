@@ -26,7 +26,12 @@
         border-color: hsla(0, 0%, 100%, .07);
         .headerClickable-2IVFo9,
         .headerDefault-1wrJcN {
-            background-color: hsla(0, 0%, 0%, .4);            
+            background-color: hsla(0, 0%, 0%, .4);
+        }
+        .headerExpanded-CUEwZ5,
+        .divider-1pnAR2,
+        .changeDetails-bk98pu {
+            background-color: hsla(0, 0%, 0%, .7);
         }
     }
 } 
@@ -42,6 +47,37 @@
     background-color: hsla(0, 0%, 0%, .4);
 }
 
+// Partner Program 
+// Enable Discovery
+.checklistContainer-mFJZEJ {
+    background-color: hsla(0, 0%, 0%, .4);
+    .checklistHeader-1KWcEY,
+    .header-2Y0-A- {
+        background-color: hsla(0, 0%, 0%, .4);
+    }
+    .checklistItem-37OOck {
+        background-color: transparent;
+    }
+    .separator-Hx_3SF {
+        background-color: hsla(0, 0%, 100%, .4);
+    }
+}
+
+// Welcome Screen
+.enableContainer-6E-puu,
+.previewContainer-1SS3uO {
+    background-color: hsla(0, 0%, 0%, .4);
+}
+.editCircle-ityklj {
+    background-color: $main-color;
+    color: white;
+}
+.welcomeChannel-1rFrIO {
+    background-color: hsla(0, 0%, 100%, .05);
+    .channelIcon-1eKmlw {
+        background-color: transparent;
+    }
+}
 
 
 // Server Boost Status
