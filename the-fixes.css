@@ -400,9 +400,6 @@
 /* Korean */
 .container-3baos1 .button-14-BFJ[aria-label="사용자 설정"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
 
-/* Role Menu popout */
-.submenu-2-ysNh {background-color: var(--background-overlay);}
-
 /* tickbox in role menu popout */
 .colorDefault-2K3EoJ .checkbox-3s5GYZ, .colorDefault-2K3EoJ .radioSelection-1HmrQS, .colorDefault-2K3EoJ.focused-3afm-j .check-1JyqgN {color: var(--main-color);}
 
