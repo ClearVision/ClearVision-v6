@@ -10,19 +10,19 @@
 
 // Plugins/Themes Searchbar & dropdown filter
 .bd-search-wrapper {
-	background-color: hsla(0,0%,0%,.4);
+	background-color: hsla(0,0%,0%,.4) !important;
 }
 .bd-select {
 	.bd-select-options {
-		background-color: hsla(0,0%,0%,.4);
-		border: hidden;
+		background-color: hsla(0,0%,0%,.4) !important;
+		border: hidden !important;
 	}
 	.bd-select-option {
 		&:hover {
-			background-color: rgba(255,255,255,0.1);
+			background-color: rgba(255,255,255,0.1) !important;
 		}
 		&.selected {
-			background-color: var(--main-color);
+			background-color: var(--main-color) !important;
 		}
 	}
 }
