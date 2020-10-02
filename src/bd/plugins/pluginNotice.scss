@@ -7,3 +7,22 @@
 		}
 	}
 }
+
+// Plugins/Themes Searchbar & dropdown filter
+.bd-search-wrapper {
+	background-color: hsla(0,0%,0%,.4);
+}
+.bd-select {
+	.bd-select-options {
+		background-color: hsla(0,0%,0%,.4);
+		border: hidden;
+	}
+	.bd-select-option {
+		&:hover {
+			background-color: rgba(255,255,255,0.1);
+		}
+		&.selected {
+			background-color: var(--main-color);
+		}
+	}
+}
