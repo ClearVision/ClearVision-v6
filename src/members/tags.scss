@@ -67,6 +67,7 @@ $cv_tester: (
 );
 $cv_translator : (
 		"538745942493495298"	 // Kuroikitten
+		"265627010733178892"	 // Big Steve
 );
 $cv_cruxie: (
 		"332394843743584256",    // cruxie
@@ -115,7 +116,7 @@ $cv_leafy: (
 	}
 	@each $user_id in $cv_translator {
 		&[src*="#{$user_id}"] ~ %messageHeader > %messageUsername::after {
-		content: "CV Translator";
+		content: "CV Guide Creator";
 		}
 	}
 	@each $user_id in $cv_cruxie {
