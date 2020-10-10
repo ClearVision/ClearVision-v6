@@ -78,7 +78,7 @@ $cv_leafy: (
 
 // OUTPUT
 %messageContent > img {
-	& ~ %messageHeader > %messageHeaderText > %messageHeaderText > %messageUsername::after {
+	& ~ %messageHeader > %messageUsername::after {
 		content: none;
 		color: currentcolor;
 		text-shadow: 0 0 2px currentcolor;
@@ -90,42 +90,42 @@ $cv_leafy: (
 		padding: 0 5px;
 	}
 	@each $user_id in $cv_admin {
-		&[src*="#{$user_id}"] ~ %messageHeader > %messageHeaderText > %messageHeaderText > %messageUsername::after {
+		&[src*="#{$user_id}"] ~ %messageHeader > %messageUsername::after {
 		content: "CV Admin";
 		}
 	}
 	@each $user_id in $cv_team {
-		&[src*="#{$user_id}"] ~ %messageHeader > %messageHeaderText > %messageUsername::after {
+		&[src*="#{$user_id}"] ~ %messageHeader > %messageUsername::after {
 		content: "CV Team";
 		}
 	}
 	@each $user_id in $cv_contributor {
-		&[src*="#{$user_id}"] ~ %messageHeader > %messageHeaderText > %messageUsername::after {
+		&[src*="#{$user_id}"] ~ %messageHeader > %messageUsername::after {
 		content: "CV Contributor";
 		}
 	}
 	@each $user_id in $cv_donator {
-		&[src*="#{$user_id}"] ~ %messageHeader > %messageHeaderText > %messageUsername::after {
+		&[src*="#{$user_id}"] ~ %messageHeader > %messageUsername::after {
 		content: "CV Donator";
 		}
 	}
 	@each $user_id in $cv_tester {
-		&[src*="#{$user_id}"] ~ %messageHeader > %messageHeaderText > %messageUsername::after {
+		&[src*="#{$user_id}"] ~ %messageHeader > %messageUsername::after {
 		content: "CV Tester";
 		}
 	}
 	@each $user_id in $cv_translator {
-		&[src*="#{$user_id}"] ~ %messageHeader > %messageHeaderText > %messageUsername::after {
+		&[src*="#{$user_id}"] ~ %messageHeader > %messageUsername::after {
 		content: "CV Guide Creator";
 		}
 	}
 	@each $user_id in $cv_cruxie {
-		&[src*="#{$user_id}"] ~ %messageHeader > %messageHeaderText > %messageUsername::after {
+		&[src*="#{$user_id}"] ~ %messageHeader > %messageUsername::after {
 		content: "CV Team | Tag Originator";
 		}
 	}
 	@each $user_id in $cv_leafy {
-		&[src*="#{$user_id}"] ~ %messageHeader > %messageHeaderText > %messageUsername::after {
+		&[src*="#{$user_id}"] ~ %messageHeader > %messageUsername::after {
 		content: "Former CV Team";
 		}
 	}
