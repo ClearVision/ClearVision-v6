@@ -88,10 +88,10 @@
 		&:hover {
 			%channelContent {
 				%channelName {
-					color: #fff;
+					color: var(--channel-text-selected);
 				}
 				%channelIcon {
-					color: #fff;
+					color: var(--channel-text-selected);
 				}
 			}
 		}
@@ -111,7 +111,7 @@
 			%channelContainerDefault & {
 				%channelIcon,
 				%channelName {
-					color: #fff;
+					color: var(--channel-text-selected);
 				}
 			}
 			%channelActionIcon {
