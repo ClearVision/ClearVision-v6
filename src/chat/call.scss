@@ -37,7 +37,24 @@
 			background-color: var(--hover-color);
 		}
 	}
+	&.white-3GPOIp {
+		background-color: var(--backdrop-overlay);
+		&:hover {
+		background-color: var(--hover-color);
+		}
+	}
 }
 .centerButton-3CaNcJ {
 	border-radius: 50% !important;
+}
+
+.colorable-1bkp8v {
+	&.white-3GPOIp {
+		.centerIcon-2G6o-T {
+			color: #fff;
+		}
+	}
+}
+.contextMenuCaret-3tjo32 {
+	color: #fff;
 }
