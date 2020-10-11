@@ -89,7 +89,7 @@
 			}
 		}
 		%tabBarItem:nth-last-child(4):before {
-			background-image: url(#{map-get($icons, "Log Out")});
+			background-image: url(#{map-get($icons, "Log Out")}) !important;
 		}
 	}
 }
