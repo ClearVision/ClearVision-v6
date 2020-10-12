@@ -89,7 +89,7 @@
     }
 }
 .exampleModal-2X2Vf8, .exampleContainer-25sB-A, .optionContainer-1FtykV {
-	background-color: var(--background-overlay);
+	background-color: hsla(0, 0%, 0%, .5);
 }
 
 // Welcome Screen - settings
@@ -123,6 +123,8 @@
         background-color: hsla(0, 0%, 0%, .4);
     }
 }
+// Server icon in server boost page
+.guildIcon-3raYf3 {background-color: transparent;}
 
 // Members
 .searchBar-1YE5UV {

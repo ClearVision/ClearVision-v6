@@ -128,3 +128,8 @@
 		}
 	}
 }
+
+// temporary ping color fix for pin
+%headerBarIconBadge {
+	background-color: var(--main-color);
+}

@@ -42,3 +42,13 @@
 .input--jS-j2 {
     background-color: transparent;
 }
+
+// Welcome to #moderator-only! edit channel, add a role or member
+.button-18p_f6 {
+	color: var(--url-color);
+	&:hover {
+		color: var(--hover-color);
+		text-decoration: underline;
+		background-color: transparent;
+	}
+}

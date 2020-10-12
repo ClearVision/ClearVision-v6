@@ -127,7 +127,7 @@
 
 	// CHANNEL INFO DISPLAY
 	%channelInfo {
-		background:var(--background-overlay);
+		background-color: var(--background-overlay);
 		border-radius: 5px;
 		color: hsla(0, 0%, 100%, .7);
 		%channelInfoImage {
