@@ -85,3 +85,16 @@
 		background: $main-color;
 	}
 }
+
+%autocompletePopoutRow {
+	&%autocompletePopoutSelected {
+		.rowInner-1vvRiF {
+			background-color: transparent;
+		}
+	}
+	&:hover {
+		.rowInner-1vvRiF {
+			background-color: transparent;
+		}
+	}
+}
