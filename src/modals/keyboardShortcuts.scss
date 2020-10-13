@@ -1,7 +1,8 @@
 /* KEYBOARD SHORTCUTS MODAL */
-#app-mount {
+%themeDark {
 	%keybindShortcut {
-		> span {
+		background-color: hsla(0, 0%, 0%, .5);
+		span {
 			background: transparent;
 			border: 1px solid $hover-color;
 			border-radius: 3px;
