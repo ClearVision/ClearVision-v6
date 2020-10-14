@@ -9,6 +9,15 @@
     }
 }
 
+.theme-dark {
+	.questionMark-CWEQZn {
+		background-color: var(--main-color);
+		&:hover {
+			background-color: var(--hover-color);
+		}
+	}
+}
+
 // Privacy & Safety
 
 // Authorized Apps
