@@ -1,11 +1,19 @@
 /* SWITCH */
-%switch {
-    background-color: hsla(0, 0%, 100%, .2);
-    &%switchValueChecked {
-        background-color: $main-color !important;
+%switchContainer {
+    background-color: transparent !important;
+    &:before {
+        background-color: hsla(0, 0%, 100%, .15);
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border-radius: inherit;
+        transition: all .1s ease-in-out;
     }
-    &:after {
-        background-color: #fff;
-        border-radius: 50%;
+    &:not([style*="background-color: rgb(114, 118, 125)"]):before {
+        background-color: $main-color;
+    }
+    path {
+        fill: $main-color;
     }
 }

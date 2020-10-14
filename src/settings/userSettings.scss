@@ -121,7 +121,7 @@
 }
 
 // Keybinds
-.theme-dark {
+%themeDark {
     .container-1nZlH6 {
         background-color: hsla(0, 0%, 100%, .05);
         box-shadow: 0 0 0 2px hsla(0, 0%, 100%, .07);
@@ -139,7 +139,7 @@
 
 
 // Game Activity 
-.theme-dark {
+%themeDark {
     .notDetected-33MY4s {
         background-color: hsla(0, 0%, 0%, .4);
         border: hsla(0, 0%, 100%, .07);
@@ -165,4 +165,10 @@
 
 .flowerStarContainer-3zDVtj > svg > path {
     fill: var(--main-color);
+}
+
+// langauge
+%themeDark %checkboxChecked {
+    background-color: $main-color !important;
+    border-color: $main-color !important;
 }
