@@ -126,6 +126,28 @@
 // Server icon in server boost page
 .guildIcon-3raYf3 {background-color: transparent;}
 
+// Server Boost
+.upsellFooter-3coAfO {
+	background-color: transparent;
+}
+.theme-dark {
+	.iconWrapper-3LVgIo {
+		background: var(--main-color);
+	}
+}
+.icon-TYbVk4 {
+	color: #fff;
+	&.disabled-24YXy- {
+		color: #fff;
+	}
+	&:hover {
+		background: var(--hover-color);
+	}
+}
+.icon-TYbVk4.disabled-24YXy-, .icon-TYbVk4.disabled-24YXy-:hover {
+	color: var(--hover-color);
+}
+
 // Members
 .searchBar-1YE5UV {
     background-color: hsla(0,0%,0%,.4);
