@@ -163,3 +163,15 @@
 		box-shadow: 0 0 6px 2px var(--main-color);
 	}
 }
+@keyframes cv-shake {
+	0%, 100% {
+		transform: none;
+	}
+	15%, 45%, 75%  {
+	  transform: translate3d(-13px, -8px, 0px);
+	}
+	
+	30%, 60%, 90% {
+	  transform: translate3d(13px, 8px, 0px);
+	}
+}

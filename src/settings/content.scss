@@ -10,9 +10,13 @@
 		background: transparent;
 	}
 }
+
+// Avatar uploader
 .avatarUploaderInner-3UNxY3 {
 	background-color: hsla(0, 0%, 100%, .05);
 }
+
+// Item cards
 %themeDark {
 	.card-FDVird:before {
 		background-color: hsla(0, 0%, 0%, .4);
@@ -37,4 +41,12 @@
 // New webkit pulse
 .pulse-3KGsIm {
 	animation:none;
+}
+
+// Unsaved changes warning shake
+%shakeable[style*="transform"] {
+	transform:none !important;
+	%bg{
+		animation: cv-shake .5s ease-in;
+	}
 }
