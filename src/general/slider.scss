@@ -1,16 +1,10 @@
 /* SLIDER */
-%slider {
-	%sliderBar {
-		background: hsla(0, 0%, 100%, .04);
-		transition: all .15s ease-in-out;
+%sliderContainer {
+	background-color: hsla(0, 0%, 100%, .1) !important;	
+	&[style*="background-color: rgb(67, 181, 129);"] {
+		background-color: $main-color !important;
 	}
-	%sliderBarFill {
-		background: $main-color;
-	}
-	%sliderGrabber {
-		background: #fff;
-		border: none;
-		border-radius: 5px;
-		box-shadow: 0 0 1px 1px rgba(0, 0, 0, .3);
+	path {
+		fill: $main-color
 	}
 }
