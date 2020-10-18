@@ -44,6 +44,33 @@
 		pointer-events: none;
 	}
 }
+%loading {
+	background-color: transparent;
+	&:before,
+	&:after {
+		content: "";
+		position: absolute;
+		@include stretch;
+		border: 3px solid transparent;
+		border-radius: 50%;
+		margin: auto;
+		filter: drop-shadow(0 0 3px $main-color);
+		animation: cv-spin 1s ease-in-out infinite;
+	}
+	&:before {
+		height: 26px;
+		width: 26px;
+		border-left-color: var(--main-color);
+		border-right-color: var(--main-color);		
+	}
+	&:after {
+		height: 16px;
+		width: 16px;
+		border-top-color: $main-color;
+		border-bottom-color: $main-color;
+		animation-direction: reverse;			
+	}	
+}
 
 // FONT
 body,
