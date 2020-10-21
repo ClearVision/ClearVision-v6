@@ -31,11 +31,10 @@
 			border-color: var(--main-color);
 			box-shadow: 0 0 0 1px var(--main-color);
 		}
-		%searchBoxInputfocused {
-			%giftInventoryInput {
+		%searchBoxInputfocused, %giftInventoryInput {
 				border: none;
 				box-shadow: none;
-				&:focus {
+				&:focus-within {
 					border: none;
 					box-shadow: none;
 				}
