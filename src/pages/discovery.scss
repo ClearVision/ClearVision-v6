@@ -31,13 +31,13 @@
 			border-color: var(--main-color);
 			box-shadow: 0 0 0 1px var(--main-color);
 		}
-		%searchBoxInputfocused, %giftInventoryInput {
+		&:focus-within {
+			border-color: var(--main-color);
+			box-shadow: 0 0 0 1px var(--main-color);
+		}
+		.input-cIJ7To:focus, .focused-1mmYsC.input-cIJ7To, .input-cIJ7To, .focused-1mmYsC.input-cIJ7To {
 				border: none;
 				box-shadow: none;
-				&:focus-within {
-					border: none;
-					box-shadow: none;
-				}
 			}
 		}
 	}
