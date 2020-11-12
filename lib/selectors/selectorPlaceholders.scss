@@ -227,6 +227,9 @@
 .muted-2JBAyG {
 	@extend %categoryWrapperMuted !optional;
 }
+.mainContent-2h-GEV {
+	@extend %categoryMain !optional;
+}
 .icon-2yIBmh {
 	@extend %categoryIcon !optional;
 }
@@ -235,6 +238,9 @@
 }
 .children-L002ao {
 	@extend %categoryButtons !optional;
+}
+.addButtonIcon-2CbG1X {
+	@extend %categoryAddIcon !optional;
 }
 .containerDefault--pIXnN {
 	@extend %channelContainerDefault !optional;

@@ -35,7 +35,7 @@
 		background: linear-gradient(to right, $main-color 50%, transparent);
 		margin-left: 5px;
 	}
-	%categoryWrapper &:hover {
+	%categoryMain:hover & {
 		opacity: 1;
 	}
 }
@@ -68,7 +68,7 @@
 }
 
 // Add channel
-.addButtonIcon-3u-3Hu {
+%categoryAddIcon {
 	color: var(--main-color);
 	opacity: .7;
 	transition: all .3s ease-in-out;
