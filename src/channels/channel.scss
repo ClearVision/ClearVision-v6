@@ -63,40 +63,44 @@
 			&:before {
 				background: hsla(0, 0%, 100%, .1);
 			}
-			%channelContainerDefault & {
-				%channelIcon,
-				%channelName {
+			%channelMain {
+				%channelContainerDefault & {
+					%channelIcon,
+					%channelName {
 					color: hsla(0, 0%, 100%, .7);
+					}
 				}
 			}
 		}
 	}
-
 	// UNREAD
 	&%channelWrapperUnread {
 		%channelContent {
-			%channelName {
-				color: var(--channel-unread);
-				text-shadow: 0 0 3px;
-			}
-			%channelIcon {
-				color: var(--channel-unread);
-				filter: drop-shadow(0 0 3px);
-				opacity: 1;
+			%channelMain {
+				%channelName {
+					color: var(--channel-unread);
+					text-shadow: 0 0 3px;
+				}
+				%channelIcon {
+					color: var(--channel-unread);
+					filter: drop-shadow(0 0 3px);
+					opacity: 1;
+				}
 			}
 		}
 		&:hover {
 			%channelContent {
-				%channelName {
-					color: var(--channel-text-selected);
-				}
-				%channelIcon {
-					color: var(--channel-text-selected);
+				%channelMain {
+					%channelName {
+						color: var(--channel-text-selected);
+					}
+					%channelIcon {
+						color: var(--channel-text-selected);
+					}
 				}
 			}
 		}
 	}
-
 	// SELECTED
 	&%channelWrapperSelected {
 		%channelContent {
@@ -127,34 +131,39 @@
 	// CONNECTED
 	&%channelWrapperConnected {
 		%channelContent {
-			%channelName {
-				color: $main-color;
-				text-shadow: 0 0 3px;
-			}
-			%channelIcon {
-				color: $main-color;
-				filter: drop-shadow(0 0 3px);
+			%channelMain {
+				%channelName {
+					color: $main-color;
+					text-shadow: 0 0 3px;
+				}
+				%channelIcon {
+					color: $main-color;
+					filter: drop-shadow(0 0 3px);
+				}
 			}
 		}
 	}
-
 	// MUTED
 	&%channelWrapperMuted {
 		%channelContent {
-			%channelIcon,
-			%channelName {
-				color: var(--muted-color);
+			%channelMain {
+				%channelIcon,
+				%channelName {
+					color: var(--muted-color);
+				}
 			}
 		}
 		&:hover {
 			%channelContent {
-				&:before {
-					background: hsla(0, 0%, 100%, .07);
-				}
-				%channelContainerDefault & {
-					%channelIcon,
-					%channelName {
-						color: var(--channel-color);
+				%channelMain {
+					&:before {
+						background: hsla(0, 0%, 100%, .07);
+					}
+					%channelContainerDefault & {
+						%channelIcon,
+						%channelName {
+							color: var(--channel-color);
+						}
 					}
 				}
 			}
