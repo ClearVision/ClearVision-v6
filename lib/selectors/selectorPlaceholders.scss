@@ -245,19 +245,19 @@
 .containerDefault--pIXnN {
 	@extend %channelContainerDefault !optional;
 }
-.containerDragBefore-31UGCO {
+.containerDragBefore-3iTCc7 {
 	@extend %channelContainerDragBefore !optional;
 }
-.containerDragAfter-1F4fgZ {
+.containerDragAfter-3Fp7LC {
 	@extend %channelContainerDragAfter !optional;
 }
-.containerUserOver-1U5YnL {
+.containerUserOver-2mv1jO {
 	@extend %channelContainerUserOver !optional;
 }
-.containerDragBefore-31UGCO, .containerDragAfter-1F4fgZ {
+.containerDragBefore-3iTCc7, .containerDragAfter-3Fp7LC {
 	@extend %channelContainerDrag !optional;
 }
-.containerDefault-1ZnADq, .containerDragBefore-31UGCO, .containerDragAfter-1F4fgZ, .containerUserOver-1U5YnL {
+.containerDefault--pIXnN, .containerDragAfter-3Fp7LC, .containerDragBefore-3iTCc7, .containerUserOver-2mv1jO {
 	@extend %channelContainer !optional;
 }
 .wrapper-2jXpOf {
@@ -314,10 +314,10 @@
 .total-i6us2n {
 	@extend %channelUserLimitTotal !optional;
 }
-.listDefault-2y5Z9D {
+.listDefault-3ir5aS {
 	@extend %voiceUserList !optional;
 }
-.draggable-1KoBzC {
+.draggable-2E_4tJ {
 	@extend %voiceUserDraggable !optional;
 }
 .voiceUser-14U_Ns {
@@ -329,16 +329,16 @@
 .content-3xS9Lh {
 	@extend %voiceUserContent !optional;
 }
-.avatarContainer-2inGBK {
+.avatarContainer-28iYmV {
 	@extend %voiceUserAvatar !optional;
 }
-.avatarSpeaking-3MqCHL {
+.avatarSpeaking-2IGMRN {
 	@extend %voiceUserAvatarSpeaking !optional;
 }
-.username-lm8y6T {
+.username-3KYl0N {
 	@extend %voiceUserName !optional;
 }
-.usernameSpeaking-2xbKKh {
+.usernameSpeaking-RmltQx {
 	@extend %voiceUserNameSpeaking !optional;
 }
 .icons-3q-_6z {
