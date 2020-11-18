@@ -222,13 +222,12 @@
 .unicodeShortcut-15J8Ck {
 	background-color: $main-color;
 	svg {
-		color: #fff;
-		opacity: 0.7;
+		color: hsla(0, 0%, 100%, .7)
 	}
 	&:hover {
 		background-color: $hover-color;
 		svg {
-			opacity: 1;
+			color: hsla(0, 0%, 100%, .9);
 		}
 	}
 }
@@ -239,9 +238,11 @@
 }
 
 // Missed code for emote reaction menu
+.drawerSizingWrapper-17Mss4 {
+	min-width: 430px;
+}
 .emojiPicker-3PwZFl {
-	background-color: var(--backdrop-overlay);
-	width: 430px !important;
+	min-width: 430px;
 }
 .guildIcon-3h-1IH {
 	background-color: transparent;

@@ -101,10 +101,6 @@
 
 /* quick react modal */
 .wrapper-2aW0bm {background-color: transparent;}
-/* chat bar - has the nifty side effect of being broken in 2 weeks. */
-.channelTextArea-rNsIhG {background-color: transparent;}
-/* this is ONLY to fix a slight clipping from chat*/
-.form-2fGMdU {margin-top: 1px;}
 /* invite */
 .theme-dark .guildIconImage-3qTk45 {background-color: transparent;}
 .wrapper-35wsBm {background-color: rgba(0,0,0,0.4);}
@@ -165,9 +161,6 @@
 /*
  ==/ END NEW FRIENDS LIST /==
 */
-
-/* gradient at textarea */
-.form-2fGMdU:before {display: none;}
 
 /* the quote bar thingy */
 .blockquoteDivider-2hH8H6 {background-color: rgba(255, 255, 255, 0.2);}
@@ -234,12 +227,6 @@
 .tertiary-aMXF0g, .secondary-dIudih {background-color: var(--main-color);}
 .jumpIcon-2diCoP, .tertiary-aMXF0g, .secondary-dIudih {color: #fff;} 
 .guildIcon-3Co6k- {background-color: transparent;}
-
-/* Chat Bar */
-.scrollableContainer-2NUZem {background-color: var(--background-overlay);border: 2px solid rgba(255, 255, 255, 0.07);transition: all .15s ease-in-out;}
-.scrollableContainer-2NUZem:focus-within {border: 2px solid var(--main-color);transition: all .15s ease-in-out;}
-.attachButton-2WznTc {padding: 10px 10px 10px 12px !important;}
-.placeholder-37qJjk, .slateTextArea-1Mkdgw {padding-left: 10px;}
 
 /* hover tooltips */
 .theme-dark .tooltipGrey-1hnvTt .tooltipPointer-3ZfirK {border-top-color: rgba(0,0,0,0.9);}

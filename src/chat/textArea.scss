@@ -1,115 +1,54 @@
 /* CHAT CHANNEL TEXT AREA */
 %chatForm {
-	border-color: hsla(0, 0%, 100%, .07);
-	%textArea {
-		padding-left: 54px;
-		padding-right: 128px;
+	margin-top: 1px;
+	&:before {
+		display: none;
 	}
 	.charcounter {
 		color: hsla(0, 0%, 100%, .3);
 	}
 }
 %channelTextArea {
+	background: transparent;
+
 	%channelTextAreaScrollable {
-		background: transparent;
-		overflow: visible;
-	}
-	%channelTextAreaInner {
-		background: rgba(0, 0, 0, .4);
-		border-radius: 5px;
-		transform: translateZ(0);
+		background: rgba(0, 0, 0, .6);
+		border: 2px solid rgba(255, 255, 255, 0.07);
+		transition: all .15s ease-in-out;
+		&:focus-within {
+			border-color: transparent;
+			box-shadow: 0 0 2px 2px $main-color;
+		}
 	}
 	%channelTextAreaAttachButton {
+		padding: 10px 10px 10px 12px;
+
 		%channelTextAreaAttachButtonPlus {
-			opacity: .3;
+			color: hsla(0, 0%, 100%, .7);
 			transition: all .15s ease-in-out;
 		}
 		&:hover {
 			%channelTextAreaAttachButtonPlus {
-				opacity: .7;
+				color: hsla(0, 0%, 100%, .9);
 			}
 		}	
 	}
-	%channelTextAreaAttachWrapper {
-		position: absolute;
-		top: 0;
-		left: 0;
-		border: none;
-		&:after {
-			content: "";
-			position: fixed;
-			top: 2px;
-			bottom: 2px;
-			left: 44px;
-			border-right: 1px solid hsla(0, 0%, 100%, .07);
-		}
-	}
 	%textArea {
-		max-height: 122px;
-		overflow-x: hidden;
-		overflow-y: scroll;
-		&::placeholder {
-			color: hsla(0, 0%, 100%, .2);
+		%textAreaPlaceholder {
+			color: hsla(0, 0%, 100%, .4);
+			padding-left: 10px;
 		}
-		~ %channelTextAreaButtons {
-			position: absolute;
-			top: 0;
-			right: 8px;
-			&:after {
-				content: "";
-				position: fixed;
-				@include stretch;
-				border: 2px solid hsla(0, 0%, 100%, .1);
-				border-radius: 5px;
-				box-shadow: 0 0 3px;
-				color: transparent;
-				transition: all .15s ease-in-out;
-				pointer-events: none;
-			}
-		}
-		&:focus ~ %channelTextAreaButtons {
-			&:after {
-				border-color: $main-color;
-				color: $main-color;
-			}
+		%slateTextArea {
+			padding-left: 10px;
 		}
 	}
-
-
-
-	// fix for slate textarea
-	// %textArea {
-	// 	position: static;
-	// }
-	// %textAreaPlaceholder {
-	// 	color: hsla(0, 0%, 100%, .2);
-	// }
-	// %slateTextArea {
-	// 	&:after {
-	// 		content: "";
-	// 		position: absolute;
-	// 		@include pos(-2px, -2px, -2px, -2px);
-	// 		border: 2px solid hsla(0, 0%, 100%, .1);
-	// 		border-radius: 5px;
-	// 		box-shadow: 0 0 3px;
-	// 		color: transparent;
-	// 		transition: all .15s ease-in-out;
-	// 		pointer-events: none;
-	// 	}
-	// 	&:focus {
-	// 		&:after {
-	// 			border-color: $main-color;
-	// 			color: $main-color;
-	// 		}
-	// 	}
-	// }
 
 	// BUTTONS
 	%channelTextAreaButton {
-		opacity: .3;
+		color: hsla(0, 0%, 100%, .7);
 		transition: all .15s ease-in-out;
 		&:hover {
-			opacity: .7;
+			color: hsla(0, 0%, 100%, .9);
 		}
 	}
 
