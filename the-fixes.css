@@ -265,11 +265,6 @@
 .participantsButton-KYW-IW:hover {background-color: var(--backdrop-overlay);}
 /* TODO: Attempt to make speaking border over one's avatar */
 
-
-
-/* Add role popout */
-.container-VSDcQc .header-2bNvm4{background-color: rgba(0,0,0,0.7);}
-
 /* Server Discovery Language Drop down + Search bar */
 .css-1wqqa50-container, .css-1rckt42-menu,  .appMount-3lHmkl .searchBox-3Y2Vi7 {background-color: var(--background-overlay);}
 .css-12o7ek3-option, .css-1gnr91b-option:hover {background-color: var(--background-modifier-hover);}
