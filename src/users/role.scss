@@ -98,3 +98,8 @@
 		}
 	}
 }
+
+// x on role for user popout, fixes default discord bug
+.role-2irmRk:hover .roleRemoveIcon-2-TeGW, .roleRemoveIconFocused-2ynLxl {
+	display: flex;
+  }
