@@ -80,3 +80,27 @@
 %channelInfo {
 	background-color: var(--background-overlay);
 }
+
+// Reply
+%replyContainer {
+	background: rgba(0,0,0,0.7);
+}
+%replyMentionButton {
+	color: var(--main-color);
+	padding: 4px;
+	margin-right: 3px;
+}
+%replyCancelButton {
+	padding: 8px 16px 8px 4px;
+	margin-left: 4px;
+}
+%replySeperator {
+	visibility: hidden;
+	height: 0px;
+	width: 0px;
+}
+%replyingToIndicator {
+	&:before {
+		background-color: var(--main-color);
+	}
+}
