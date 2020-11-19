@@ -1,45 +1,31 @@
 /* MESSAGE REACTION */
-%reactions %reaction {
-	position: relative;
-	background: hsla(0, 0%, 100%, .04);
+
+%reaction {
+	background-color: hsla(0, 0%, 100%, .05);
 	border-radius: 3px;
 	transition: all .15s ease-in-out;
+	&:hover {
+		background-color: hsla(0, 0%, 100%, .2);
+		%reactionCount {
+			color: hsla(0, 0%, 100%, .9);
+		}
+	}
 	%reactionInner {
 		padding: 0 5px;
-	}
+	}	
 	%reactionCount {
-		margin-left: 5px;
-		color: hsla(0, 0%, 100%, .3);
-		transition: all .15s ease-in-out;
-	}
-	&:hover {
-		background: hsla(0, 0%, 100%, .1);
-		%reactionCount {
-			color: hsla(0, 0%, 100%, .5);
-		}
+		color: hsla(0, 0%, 100%, .4);
 	}
 	&%reactionMe {
-		background: transparent;
-		&:after {
-			content: "";
-			position: absolute;
-			@include stretch;
-			background: $main-color;
-			border-radius: 3px;
-			opacity: .5;
-			z-index: -1;
-			transition: all .15s ease-in-out;
-		}
+		background-color:hsla(0, 0%, 100%, .1);
 		%reactionCount {
-			color: hsla(0, 0%, 100%, .7);
+			color: $main-color;
 		}
-		&:hover {
-			&:after {
-				opacity: .7;
-			}
+		&:hover{
+			background-color: hsla(0, 0%, 100%, .2);
 			%reactionCount {
-				color: #fff;
+				color: $hover-color;
 			}
 		}
-	}
+	}	
 }

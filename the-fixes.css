@@ -6,16 +6,6 @@
 .tierMarker-5HkGJ_[style*="linear-gradient(to right, rgb(32, 34, 37), rgb(32, 34, 37));"] {background: var(--backdrop-overlay) !important;}
 .theme-dark .barForeground-3KglC8 {background-color: rgba(244,127,255,0.9);}
 
-/* Reaction Color fix */
-/* .reaction-1ELvT8.reactionMe-23mbRf {background-color: var(--main-color);}
-.reactionMe-23mbRf .reactionCount-2ddRoS {color: rgba(255,255,255,0.5);}
-.reactionMe-23mbRf:hover .reactionCount-2ddRoS {color: rgb(255,255,255);} */
-.reaction-1hd86g {background-color: rgba(255,255,255,0.05);}
-.reaction-1hd86g.reactionMe-wv5HKu {background-color: rgba(255,255,255,0.1);}
-.reactionMe-wv5HKu .reactionCount-2mvXRV {color: var(--main-color);}
-.reactionMe-wv5HKu:hover .reactionCount-2mvXRV {color: var(--hover-color);}
-.reactionMe-wv5HKu:hover, .reaction-1hd86g:hover {background-color: rgba(255,255,255,0.2);}
-
 /* Reactions List  */
 .theme-dark .reactors-Blmlhw , .theme-dark .sidebar-1-SQro {background-color: transparent;}
 .theme-dark .reactionSelected-1pqISm {background-color: var(--main-color);}

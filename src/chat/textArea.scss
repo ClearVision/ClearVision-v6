@@ -13,7 +13,7 @@
 
 	%channelTextAreaScrollable {
 		background: rgba(0, 0, 0, .6);
-		border: 2px solid rgba(255, 255, 255, 0.07);
+		border: 2px solid transparent;
 		transition: all .15s ease-in-out;
 		&:focus-within {
 			border-color: transparent;
@@ -86,9 +86,14 @@
 	background: rgba(0,0,0,0.7);
 }
 %replyMentionButton {
-	color: var(--main-color);
 	padding: 4px;
 	margin-right: 3px;
+	&.colorMuted-HdFt4q {
+		color: rgb(240, 71, 71);
+	}
+	&.colorBrand-2tjs5J {
+		color: rgb(67, 181, 129);
+	}
 }
 %replyCancelButton {
 	padding: 8px 16px 8px 4px;

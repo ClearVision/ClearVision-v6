@@ -9,12 +9,7 @@
 	&%spoilerHidden {
 		background: rgba(0, 0, 0, 0.8);
 		&:hover {
-			background: rgba(0, 0, 0, 0.5);
-			> %spoilerInlineContent {
-				opacity: .3;
-				transition-duration: .3s;
-				transition-delay: .3s;
-			}
+			background: rgba(0, 0, 0, 0.6);
 		}
 		> %spoilerInlineContent {
 			opacity: 0;
