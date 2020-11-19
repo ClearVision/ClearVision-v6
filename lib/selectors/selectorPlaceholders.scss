@@ -4283,3 +4283,21 @@ pre {
 .loading-Ags1CY {
 	@extend %loading !optional;
 }
+.container-2fRDfG {
+	@extend %replyContainer !optional;
+}
+.mentionButton-3710-W {
+	@extend %replyMentionButton !optional;
+}
+.closeButton-37O8QC {
+	@extend %replyCancelButton !optional;
+}
+.separator-ju-9xl {
+	@extend %replySeperator !optional;
+}
+.hasReply-16cIUP {
+	@extend %replyBorder !optional;
+}
+.replying-1x3H0T {
+	@extend %replyingToIndicator !optional;
+}
