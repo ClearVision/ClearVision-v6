@@ -1,22 +1,27 @@
 /* CHANNEL SETTINGS */
 
 // Permissions
-.theme-dark .item-3T2z1R {
-    background-color: hsla(0, 0%, 0%, .4);
-    border-color: hsla(0, 0%, 100%, .07);
-
-    &.denySelected-1mh2mZ {
-        background-color: rgb(240, 71, 71);
-        border-color: rgb(240, 71, 71);
-    }
-    &.passthroughSelected-1Eq0Kl {
-        background-color: rgb(250, 166, 26);
-        border-color: rgb(250, 166, 26);        
-    }
-    &.allowSelected-25S_i5 {
-        background-color: rgb(67, 181, 129);
-        border-color: rgb(67, 181, 129);
-    }
+.item-1yAxl1 {
+	background-color: hsla(0, 0%, 0%, .4);
+	border-color: hsla(0, 0%, 100%, .07);
+}
+.allow-1PzSY3 {
+	&.selected-2YhbGh {
+		background-color: rgb(67, 181, 129);
+		border-color: rgb(67, 181, 129);
+	}
+}
+.deny-3nAuT6 {
+	&.selected-2YhbGh {
+		background-color: rgb(240, 71, 71);
+		border-color: rgb(240, 71, 71);
+	}
+}
+.passthrough-1c2ewQ {
+	&.selected-2YhbGh {
+		background-color: rgb(250, 166, 26);
+		border-color: rgb(250, 166, 26);
+	}
 }
 
 .settingCard-3w2mVL {
