@@ -12,21 +12,3 @@
 		}
 	}
 }
-
-
-//item card checkbox
-.cardPrimaryEditable-3KtE4g {
-	background-color: rgba(0, 0, 0, .4);
-	border-color: hsla(0, 0%, 100%, .07);
-		&[style*="border-color: rgb(114, 137, 218)"] {
-			background-color: var(--main-color) !important;
-			border-color: var(--main-color) !important;
-		}
-	%checkboxWrapper {
-		%checkbox {
-			&%checkboxChecked {
-				background-color: var(--background-overlay) !important;
-			}
-		}
-	}
-}

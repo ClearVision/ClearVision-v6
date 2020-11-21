@@ -1,0 +1,20 @@
+%radioItem {
+    background-color: transparent;
+    color: #fff;
+    &:hover {
+        background-color: transparent;
+        color: #fff;
+    }
+    %radioBar {
+        background-color: rgba(0, 0, 0, .4);
+        border-left: 3px solid var(--radio-bar-accent-color);
+    }
+    &[aria-checked=true]{
+        %radioBar {
+            background-color: var(--radio-bar-accent-color ,var(--main-color));
+        }
+    }
+    %radioIconChecked {
+        color: #fff;
+    }
+}
