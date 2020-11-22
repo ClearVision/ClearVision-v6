@@ -82,9 +82,6 @@
 }
 
 // Reply
-%replyContainer {
-	background: rgba(0,0,0,0.7);
-}
 %replyMentionButton {
 	padding: 4px;
 	margin-right: 3px;
@@ -108,4 +105,18 @@
 	&:before {
 		background-color: var(--main-color);
 	}
+}
+
+// Partial credit to Leafy
+%replyContainer {
+    background: rgba(0,0,0,0.6);
+    border: 2px solid transparent;
+}
+
+%channelTextArea %channelTextAreaScrollable:focus-within {
+    box-shadow: none;
+}
+
+%channelTextArea:focus-within {
+    box-shadow: 0 0 2px 2px var(--main-color);
 }
