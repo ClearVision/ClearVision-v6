@@ -9,12 +9,26 @@
 
 
 /* Custom Status Clear After Duration */
-.lookFilled-1h1y05.select-1Pkeg4 {
-	box-shadow: 0 0 0 2px rgba(255,255,255,0.07);
-	border: none;
+.option-3KoAJB:focus, .option-3KoAJB:hover {
+	background-color: var(--hover-color);
 }
-.lookFilled-1h1y05.select-1Pkeg4:hover.selectOpen-hQuR6b, .lookFilled-1h1y05.selectOpen-hQuR6b {
-	box-shadow: 0px 0px 2px 2px var(--main-color);
+.selectedIcon-3uS11H {
+	color: var(--interactive-active);
+}
+.lookFilled-22uAsw {
+	&.select-2fjwPw {
+		background-color: rgba(255,255,255,0.07);
+		border: none;
+		box-shadow: 0px 0px 2px 2px var(--main-color);
+	}
+}
+.popout-VcNcHB {
+	background-color: rgba(0, 0, 0, 0.5);
+	border: none;
+	border-radius: 4px;
+}
+.option-3KoAJB[aria-selected=true] {
+	background-color: var(--main-color);
 }
 
 /* Quickswitcher */
