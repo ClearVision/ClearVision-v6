@@ -50,15 +50,6 @@
 		color: hsla(0, 0%, 100%, .8);
 	}
 
-	// LINKS
-	%messageContent {
-		a,
-		%anchor {
-			color: $main-color;
-			@include hover-shadow;
-		}
-	}
-
 	// MENTIONED
 	%mentioned {
 		background: hsla(0, 0%, 100%, .1);
@@ -77,50 +68,6 @@
 		}
 	}
 
-	// BUTTONS
-	%messageButton {
-		visibility: visible;
-		opacity: 0;
-		transition: all .15s ease-in-out;
-	}
-	%messageContent {
-		&:hover {
-			%messageButton {
-				opacity: .3;
-			}
-		}
-		%messageButton {
-			&:hover,
-			&%messageButtonPopoutOpen {
-				opacity: .7;
-			}
-		}
-	}
-	%messageReactionButton {
-		background: url(https://clearvision.gitlab.io/icons/emote.svg) center/100% no-repeat;
-		&:hover {
-			opacity: .7 !important;
-		}
-	}
-	%messageOptionsButton {
-		background: url(https://clearvision.gitlab.io/icons/settings.svg) center/100% no-repeat;
-		&:hover,
-		&%messageButtonPopoutOpen {
-			animation: cv-spin 2.5s linear infinite;
-		}
-	}
-	%messageReactionButton,
-	%messageOptionsButton {
-		> svg {
-			display: none;
-		}
-	}
-
-	// EDITING
-	%operations {
-		color: hsla(0, 0%, 100%, .3);
-	}
-
 	// MESSAGE JUMP
 	> div[style^="border-radius: 2px;"] {
 		&[style$="0);"] {
@@ -131,10 +78,56 @@
 	}
 }
 
-//links
+// LINKS
 %fakeLink,
 %embed > %embedTitleLink,
 %markup a,
 .content-2M3n_H a  {
 	color: var(--url-color) !important;
-  }
+}
+
+// REPLY
+%messageReplied {
+	&:before {
+		border-color: $main-color;
+	}
+	%messageRepliedTextPreview {
+		opacity: .7;
+		&%messageRepliedTextPreviewClickable:hover {
+			opacity: 1;
+		}
+		%messageRepliedTextContent {
+			color: #fff;
+		}
+		%messageRepliedTextPlaceholder {
+			color: $main-color;
+		}
+	}
+	%messageRepliedTextContentIcon {
+		opacity: .7;
+		%messageRepliedTextPreview:hover + & {
+			opacity: 1;
+		}
+	}
+}
+
+// BUTTONS
+%messageButtonWrapper {
+	background-color: transparent;
+	%messageButton {
+		color: hsla(0, 0%, 100%, .7);
+		&:hover,
+		&%messageButtonSelected {
+			background-color: hsla(0, 0%, 100%, .1);
+			color: #fff;
+		}
+	}
+}
+
+// EDITING
+%themeDark %operations {
+	color: hsla(0, 0%, 100%, .5);
+	>a {
+		color: var(--main-color);
+	}
+}

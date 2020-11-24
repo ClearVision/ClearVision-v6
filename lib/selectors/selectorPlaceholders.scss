@@ -100,7 +100,7 @@
 }
 .iconWindows-1KG_XN {
 	@extend %noticeIconWindows !optional;
-}
+}rgba(0, 0, 0, 0.1)
 .iconApple-1hp9Sq {
 	@extend %noticeIconApple !optional;
 }
@@ -2903,17 +2903,20 @@ pre {
 .bubble-3qRl2J {
 	@extend %playerMediaBarBubble !optional;
 }
-.messagesWrapper-3lZDfY {
+.message-2qnXI6 {
+	@extend %message !optional;
+}
+.wrapper-2a6GCs {
 	@extend %messagesWrapper !optional;
 }
-.messages-3amgkR {
-	@extend %messages !optional;
+.groupStart-23k01U {
+	@extend %messageGroupStart !optional;
 }
-.container-1ov-mD {
-	@extend %messageGroup !optional;
+.cozyMessage-3V1Y8y {
+	@extend %messageCozy !optional;
 }
-.isLocalBot-38G0P0 {
-	@extend %messageGroupLocalBot !optional;
+.contents-2mQqc9 {
+	@extend %messageContent !optional;
 }
 .localBotMessage-1cGMdw {
 	@extend %messageGroupLocalBotMessage !optional;
@@ -2936,8 +2939,8 @@ pre {
 .headerText-3Uvj1Y {
     @extend %messageHeaderText !optional;
 }
-.usernameWrapper-1S-G5O {
-	@extend %messageUsernameWrapper !optional;
+.username-1A8OIy {
+	@extend %messageUsername !optional;
 }
 .timestampCozy-2hLAPV {
 	@extend %messageTimestampCozy !optional;
@@ -2951,17 +2954,26 @@ pre {
 .timestampCozy-2hLAPV, .timestampCompact-MHgFLv, .timestamp-1E3uAL {
 	@extend %messageTimestamp !optional;
 }
-.contents-2mQqc9 {
-	@extend %messageContent !optional;
-}
-.header-23xsNx {
-	@extend %messageHeader !optional;
-}
-.username-1A8OIy {
-	@extend %messageUsername !optional;
-}
 .container-3-pyIM {
 	@extend %messageSystemContainer !optional;
+}
+.repliedMessage-VokQwo {
+	@extend %messageReplied !optional;
+}
+.repliedTextPreview-2NBljf {
+	@extend %messageRepliedTextPreview !optional;
+}
+.clickable-1bVtEA {
+	@extend %messageRepliedTextPreviewClickable !optional;
+}
+.repliedTextContent-1R3vnK {
+	@extend %messageRepliedTextContent !optional;
+}
+.repliedTextContentIcon-1ivTae {
+	@extend %messageRepliedTextContentIcon !optional;
+}
+.repliedTextPlaceholder-dmN7D1 {
+	@extend %messageRepliedTextPlaceholder !optional;
 }
 .isMentioned-N-h9aa {
 	@extend %mentioned !optional;
@@ -2984,20 +2996,20 @@ pre {
 .anchorUnderlineOnHover-2ESHQB {
 	@extend %anchorUnderlineOnHover !optional;
 }
-.buttonContainer-KtQ8wc {
+.buttonContainer-DHceWr {
 	@extend %messageButtonContainer !optional;
 }
-.reactionBtn-2na4rd {
-	@extend %messageReactionButton !optional;
+.buttons-cl5qTG {
+	@extend %messageButtons !optional;
 }
-.button-3Jq0g9 {
-	@extend %messageOptionsButton !optional;
+.wrapper-2aW0bm{
+	@extend %messageButtonWrapper !optional;
 }
-.reactionBtn-2na4rd, .button-3Jq0g9 {
+.button-1ZiXG9 {
 	@extend %messageButton !optional;
 }
-.reactionBtn-2na4rd.popout-open, .button-3Jq0g9.popout-open {
-	@extend %messageButtonPopoutOpen !optional;
+.selected-LCBEAU {
+	@extend %messageButtonSelected !optional;
 }
 .blockquoteContainer-U5TVEi {
 	@extend %blockquoteContainer !optional;

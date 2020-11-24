@@ -89,8 +89,6 @@
 .theme-dark .bubble-3we2di {background-color: var(--main-color);}
 .theme-dark .bubble-3we2di:before {border-top-color: var(--main-color);}
 
-/* quick react modal */
-.wrapper-2aW0bm {background-color: transparent;}
 /* invite */
 .theme-dark .guildIconImage-3qTk45 {background-color: transparent;}
 .wrapper-35wsBm {background-color: rgba(0,0,0,0.4);}
@@ -160,9 +158,6 @@
 .mentioned-xhSam7 {background-color: rgba(255,255,255,0.05);}
 .message-2qnXI6.mentioned-xhSam7.selected-2P5D_Z, .mouse-mode.full-motion .mentioned-xhSam7:hover {background-color: rgba(255,255,255,0.08);}
 .theme-dark .mentioned-xhSam7 .mention.interactive:hover {color: var(--hover-color); text-decoration: none;}
-
-/* edit message selectable options */
-.operations-36ENbA>a {color: var(--main-color);}
 
 /* New TimeStamps - Cruxie */
 .timestampCozyAlt-1Hs08c {width: 2.9rem !important;}
