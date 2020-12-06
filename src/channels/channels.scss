@@ -52,6 +52,9 @@
 		color: $main-color;
 		filter: drop-shadow(0 0 3px);
 	}
+	%guildBoostedIcon {
+		color: #fff !important;
+	}
 
 	// GUILD BANNER
 	%bannerAnimatedContainer {
