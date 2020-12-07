@@ -188,9 +188,8 @@
 .input-2A_zIr:focus {background-color: var(--background-overlay);}
 
 
-/* Date Divider */
-.content-1o0f9g {background: rgba(0,0,0,0.6);color: var(--main-color);text-transform: uppercase;}
-.isUnread-3Ef-o9 .content-1o0f9g {color: var(--main-color);}
+/* Date */
+.content-1o0f9g {background: rgba(255,255,255,0.07);color: var(--main-color);text-transform: uppercase;opacity: 0.9;}
 
 
 /*no tips*/
