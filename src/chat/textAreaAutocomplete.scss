@@ -43,3 +43,29 @@
 		}
 	}
 }
+
+// SLASH COMMANDS AUTOCOMPLETE
+.list-A0BHjR {
+	background-color: transparent;
+}
+.selected-3xBBKs, .selected-3xBBKs:hover {
+	background-color: $main-color;
+}
+.categoryHeader-O1zU94 {
+	color: $main-color;
+	border-radius: 3px;
+}
+%autocompleteSelectorSelected {
+	.source-3DBj4z,
+	.description-QP9Ktn {
+		color: hsla(0, 0%, 100%, .5);
+	}
+}
+.optionalHeader-mLQoIx {
+	color: hsla(0, 0%, 100%, .5);
+	border-color: transparent;
+}
+.option-1B5ZV8 {
+	background-color: hsla(0,0%,0%,.5);
+}
+
