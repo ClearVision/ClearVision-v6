@@ -1,7 +1,9 @@
 /* KEYBOARD SHORTCUTS MODAL */
 %themeDark {
-	%keybindShortcut {
+	%keyboardShortcutsModal {
 		background-color: hsla(0, 0%, 0%, .5);
+	}
+	%keybindShortcut {
 		span {
 			background: transparent;
 			border: 1px solid $hover-color;

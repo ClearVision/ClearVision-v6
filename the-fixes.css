@@ -23,9 +23,7 @@
 .lookGhost-2Fn_0-.colorBrand-3pXr91 {color: white; background-color: var(--hover-color);}
 
 /* Test Audio */
-.container-3PXSwK, .userSettingsVoice-iwdUCU .sliderBar-3DezvM.speaking-2bFhO4 {background: var(--main-color) !important;}
-.theme-dark .progress-1IcQ3A {background-color: var(--background-overlay);}
-.notches-1sAcEM {display: none;}
+.userSettingsVoice-iwdUCU .sliderBar-3DezvM.speaking-2bFhO4 {background: var(--main-color) !important;}
 
 /* So this was gay */
 .body-3AJVSA, .theme-light .input-UJ9Tr3, .theme-light .input-1mgnkM{color: rgba(255, 255, 255, 0.9); font-weight: 200;}

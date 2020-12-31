@@ -3060,6 +3060,9 @@ pre {
 	@extend %spoilerEmbedHidden !optional;
 }
 .keyboardShortcutsModal-3piNz7 {
+	@extend %keyboardShortcutsModal !optional;
+}
+.keybindShortcut-1BD6Z1 {
 	@extend %keybindShortcut !optional;
 }
 .modal-yWgWj- {
@@ -4324,4 +4327,16 @@ pre {
 }
 .info-3LOr12 {
 	@extend %radioInfo !optional;
+}
+.userSettingsVoice-iwdUCU {
+	@extend %userSettingsVoice !optional;
+}
+.container-3PXSwK {
+	@extend %micTestContainer !optional;
+}
+.progress-1IcQ3A {
+	@extend %micTestProgress !optional;
+}
+.notches-1sAcEM {
+	@extend %micTestNotches !optional;
 }
