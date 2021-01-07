@@ -1,0 +1,161 @@
+.connectionHeader-2MDqhu > img[alt*="Spotify"] + div:before {
+    background: #1aa84d;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    content: "";
+    z-index: -1;
+    opacity: 1;
+    border-radius: 8px 8px 0 0;
+    pointer-events: none;
+  }
+  
+  .connectionHeader-2MDqhu > img[alt*="Spotify"] + div:after {
+    background: #1DB954;
+    top: 72px;
+    right: 0;
+    left: 0;
+    bottom: -108px;
+    position: absolute;
+    content: "";
+    z-index: -1;
+    opacity: 1;
+    border-radius: 0 0 8px 8px;
+    pointer-events: none;
+  }
+  
+  .connectionHeader-2MDqhu > *,
+  .connectionOptions-YE9FAM > *{
+    z-index: 1;
+  }
+  
+  .connectionHeader-2MDqhu > img {
+    filter: grayscale(1) brightness(1.5);
+    z-index: 2;
+  }
+  
+  .connectionHeader-2MDqhu > img[alt*="Battle.net"] + div:before {
+    background: #0566b0;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    content: "";
+    z-index: -1;
+    opacity: 1;
+    border-radius: 8px 8px 0 0;
+    pointer-events: none;
+  }
+  
+  .connectionHeader-2MDqhu > img[alt*="Battle.net"] + div:after {
+    background: #0566b0;
+    top: 72px;
+    right: 0;
+    left: 0;
+    bottom: -64px;
+    position: absolute;
+    content: "";
+    z-index: -1;
+    opacity: 1;
+    border-radius: 0 0 8px 8px;
+    pointer-events: none;
+  }
+  
+  .connectionHeader-2MDqhu > img[alt*="Steam"] + div:before {
+    background: #171a21;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    content: "";
+    z-index: -1;
+    opacity: 1;
+    border-radius: 8px 8px 0 0;
+    pointer-events: none;
+  }
+  
+  .connectionHeader-2MDqhu > img[alt*="Steam"] + div:after {
+    background: #171a21;
+    top: 72px;
+    right: 0;
+    left: 0;
+    bottom: -64px;
+    position: absolute;
+    content: "";
+    z-index: -1;
+    opacity: 1;
+    border-radius: 0 0 8px 8px;
+    pointer-events: none;
+  }  
+  
+  .connectionHeader-2MDqhu > img[alt*="Twitch"] + div:before {
+    background: #6441a5;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    content: "";
+    z-index: -1;
+    opacity: 1;
+    border-radius: 8px 8px 0 0;
+    pointer-events: none;
+  }
+  
+  .connectionHeader-2MDqhu > img[alt*="Twitch"] + div:after {
+    background: #6441a5;
+    top: 72px;
+    right: 0;
+    left: 0;
+    bottom: -64px;
+    position: absolute;
+    content: "";
+    z-index: -1;
+    opacity: 1;
+    pointer-events: none;
+  }
+  
+  .connectedAccountSeparator-2EgLhW {
+      display:none;
+  }
+  
+  .integrationsWrapper-VkM_zO {
+    background: #6441a5;
+      border-radius: 0 0 8px 8px;
+  }
+  .integration-3kMeY4  {
+      background: #6441a5;
+  }
+  
+  .connectionHeader-2MDqhu > img[alt*="GitHub"] + div:before {
+    background: #333;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    content: "";
+    z-index: -1;
+    opacity: 1;
+    border-radius: 8px 8px 0 0;
+    pointer-events: none;
+  }
+  
+  .connectionHeader-2MDqhu > img[alt*="GitHub"] + div:after {
+    background: #333;
+    top: 72px;
+    right: 0;
+    left: 0;
+    bottom: -64px;
+    position: absolute;
+    content: "";
+    z-index: -1;
+    opacity: 1;
+    border-radius: 0 0 8px 8px;
+    pointer-events: none;
+  }
+  
