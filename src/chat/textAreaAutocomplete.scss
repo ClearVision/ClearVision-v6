@@ -68,3 +68,21 @@
 	background-color: hsla(0,0%,0%,.7);
 }
 
+// SLASH COMMANDS AUTOCOMPLETE TAB
+.bar-AokMp3 {
+	background-color: transparent;
+}
+.pill-2pQByF {
+	background-color: $main-color;
+	color: #fff;
+}
+.tabButton-1n4gNP {
+	opacity: 1;
+	border: 1px solid $hover-color;
+	border-radius: 3px;
+	box-shadow: inset 0 -4px $main-color;
+	path:first-child,
+	rect {
+		fill: transparent;
+	}
+}
