@@ -8,6 +8,9 @@
 	%layerContainer & {
 		color: #fff;
 	}
+	%tooltipContent {
+		padding: 0;
+	}
 	&%tooltipPrimary {
 		background: rgba(0, 0, 0, .9);
 		> %tooltipPointer {
