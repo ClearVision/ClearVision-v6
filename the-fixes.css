@@ -210,9 +210,6 @@
 .jumpIcon-2diCoP, .tertiary-aMXF0g, .secondary-dIudih {color: #fff;} 
 .guildIcon-3Co6k- {background-color: transparent;}
 
-/* hover tooltips */
-.theme-dark .tooltipGrey-1hnvTt .tooltipPointer-3ZfirK {border-top-color: rgba(0,0,0,0.9);}
-.theme-dark .tooltipGrey-1hnvTt {background-color: rgba(0,0,0,0.9);}
 
 /* Calls apparently broke */
 .wrapper-2qzCYF.minimum-28Z35l, .wrapper-2qzCYF{background-color: rgba(0,0,0,calc(var(--background-shading)*0.6));}
@@ -289,9 +286,6 @@
 .theme-dark .header-1pGpFt {background-image: none; background-color: var(--backdrop-overlay);}
 .channelContainer-1x3D6I .channel-2PJTLY {background-color: var(--background-overlay);}
 .channelContainer-1x3D6I {background-color: transparent;}
-
-/* Why Discord fucked with the tooltips, I'll never know. */
-.tooltipContent-bqVLWK {padding: 0px;}
 
 /* Watch Stream button */
 .content-2Sfaij:hover .cta-2DQ2ez {background-color: var(--background-overlay);}
