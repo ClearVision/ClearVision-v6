@@ -113,6 +113,7 @@
 		margin-bottom: 0;
 		padding-bottom: 10px;
 		border-bottom: 1px solid hsla(0, 0%, 100%, .04);
+		background-color: var(--background-overlay);
 		&:before,
 		&:after {
 			display: none;
@@ -185,7 +186,6 @@
 			}
 		}
 	}
-	%searchResult {
 		%searchResultJumpButton {
 			background-color: hsla(0, 0%, 100%, .04);
 			color: hsla(0, 0%, 100%, .5);
@@ -197,7 +197,6 @@
 				transition-duration: .15s;
 			}
 		}
-	}
 	%searchResultExpanded {
 		%searchResultJumpButton {
 			background-color: rgba(0, 0, 0, .3);
@@ -238,3 +237,8 @@
 	background-color: transparent;
 	border: none;
 }
+
+// Color of active page indicator in search results
+.theme-dark .activeButton-rvKcqq {background-color: var(--main-color);}
+.theme-dark .activeButton-rvKcqq:hover {background-color: var(--hover-color);}
+.pageButton-2ruNwd:hover {background-color: var(--hover-color);}
