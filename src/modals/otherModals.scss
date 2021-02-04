@@ -4,7 +4,8 @@
 	box-shadow: 0 0 2px 2px var(--main-color);
 }
 
-/* Notifications Settings Overrides */
+/* Notifications Settings */
+.searchInput-5YMkDH {background-color: transparent;}
 .theme-dark .override-2YgiXd:hover {border-color: $main-color;}
 .option-3KoAJB.focused-1T6PE5 {background: var(--hover-color);}
 
@@ -17,13 +18,11 @@
 }
 .lookFilled-22uAsw {
 	&.select-2fjwPw {
-		background-color: rgba(255,255,255,0.07);
-		border: none;
-		box-shadow: 0px 0px 2px 2px var(--main-color);
+		background-color: rgba(255,255,255,0.05);
 	}
 }
 .popout-VcNcHB {
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.8);
 	border: none;
 	border-radius: 4px;
 }
