@@ -185,6 +185,11 @@
 
 // CONNECTION PANEL
 %connectionPanel {
+	> %flex {
+		background: rgba(0, 0, 0, .3);
+		border-radius: 5px;
+		padding: 5px;
+	}
 	border-color: transparent;
 	%connectionPanelInner {
 		%rtcConnectionStatus {
