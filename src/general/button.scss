@@ -77,3 +77,13 @@
 		}
 	}
 }
+
+//BUTTON CIRCLE
+.button-1-5Aqk {
+	background-color: $main-color;
+	&:hover {
+		&:not(.disabled-3Njyym) {
+			background-color: $hover-color;
+		}
+	}
+}

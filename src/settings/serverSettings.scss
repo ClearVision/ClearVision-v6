@@ -12,6 +12,33 @@
 .theme-dark .colorPickerCustom-2CWBn2 {
     background-color: hsla(0, 0%, 0%, .7)
 }
+.container-_phMUq {
+    background-color: $main-color;
+    color: #fff;
+    &:hover {
+        background-color: $hover-color;
+    }
+}
+.roleRow-30TwGe:hover:not(.roleRowDisableHover-1HiqqT) .circleButton-3RB01i {
+    background-color: $main-color;
+	&:hover {
+        background-color: $hover-color;
+	}
+}
+
+.header-2mZ9Ov {
+    background-color: transparent;
+}
+.topPill-30KHOu .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ {
+    background-color: $main-color;
+    color: #fff;
+}
+.themed-OHr7kt.item-PXvHYJ {
+    color: #fff;
+}
+.disabled-1Hwwfb.item-PXvHYJ, .disabled-1Hwwfb.item-PXvHYJ:hover {
+    color: hsla(0, 0%, 100%, .3);
+}
 
 // Emoji
 .theme-dark .emojiAliasInput-1y-NBz .emojiInput-1aLNse {

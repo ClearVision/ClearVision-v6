@@ -15,9 +15,6 @@
 .theme-dark .addGamePopout-2RY8Ju, .css-181m2lf-menu {background-color: var(--backdrop-overlay);}
 .theme-dark .css-181m2lf-menu > div > div:hover {background-color: var(--hover-color);}
 
-/* Custom Color Picker */
-.theme-dark .colorPickerCustom-2CWBn2 {background-color: var(--background-overlay);}
-
 /* Region Selector button */
 .lookGhost-2Fn_0-.colorGrey-2DXtkV {color: white; background-color: var(--main-color);}
 .lookGhost-2Fn_0-.colorBrand-3pXr91 {color: white; background-color: var(--hover-color);}
@@ -205,8 +202,6 @@
 
 /* mentions */
 .messageContainer-gbhlwo {background-color: var(--background-overlay);}
-.tertiary-aMXF0g:hover, .secondary-dIudih:hover {background-color: var(--hover-color);}
-.tertiary-aMXF0g, .secondary-dIudih {background-color: var(--main-color);}
 .jumpIcon-2diCoP, .tertiary-aMXF0g, .secondary-dIudih {color: #fff;} 
 .guildIcon-3Co6k- {background-color: transparent;}
 
@@ -411,9 +406,6 @@
 
 /* Boost level unlock loading */
 .theme-dark .tierHeaderUnlocked-2RhWqn {background-color: var(--background-overlay);}
-
-/* View Roles - Members Settings */
-.theme-dark .overflowRolesPopout-140n9i, .theme-dark .overflowRolesPopoutArrow-2O66oH {background-color: var(--backdrop-overlay);}
 
 /* Search results */
 .channelName-1JRO3C {background: transparent;}
