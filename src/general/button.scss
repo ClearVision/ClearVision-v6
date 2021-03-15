@@ -79,10 +79,10 @@
 }
 
 //BUTTON CIRCLE
-.button-1-5Aqk {
+%buttonCircle {
 	background-color: $main-color;
 	&:hover {
-		&:not(.disabled-3Njyym) {
+		&:not(%buttonCircleDisabled) {
 			background-color: $hover-color;
 		}
 	}

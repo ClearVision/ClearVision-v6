@@ -19,7 +19,7 @@
         background-color: $hover-color;
     }
 }
-.roleRow-30TwGe:hover:not(.roleRowDisableHover-1HiqqT) .circleButton-3RB01i {
+%roleRow:hover:not(%roleRowDisabledHover) %buttonCircle {
     background-color: $main-color;
 	&:hover {
         background-color: $hover-color;

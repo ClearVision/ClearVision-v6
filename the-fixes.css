@@ -163,11 +163,6 @@
 #bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch.checked {background-color: var(--main-color);}
 #bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch {background-color: rgba(255,255,255,0.3);}
 
-/* Unread divider */
-.isUnread-3Ef-o9 { border-color: var(--main-color); }
-.unreadPill-2HyYtt { background-color: var(--main-color);}
-.unreadPillCapStroke-7rkHbg { fill: var(--main-color); color: var(--main-color);}
-
 /* Emoji Picker Nitro Ending Soon Notification - Cruxie */
 .premiumRetentionNotice-1MsjHe {background-color: var(--background-overlay);}
 
@@ -183,8 +178,7 @@
 .input-2A_zIr:focus {background-color: var(--background-overlay);}
 
 
-/* Date */
-.content-1o0f9g {background: rgba(255,255,255,0.07);color: var(--main-color);text-transform: uppercase;opacity: 0.9;}
+
 
 
 /*no tips*/
