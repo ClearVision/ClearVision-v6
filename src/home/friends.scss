@@ -27,13 +27,82 @@
 // ACTION BUTTON 
 %friendActionBtn,
 %friendActionBtn.highlight-Lf97TE {
-	background-color: $main-color;
-	color: hsla(0, 0%, 100%, .9);
+	background-color: hsla(0, 0, 0, 0.6);
+	color: #fff;
 	&:hover {
 		background-color: $hover-color;
 		color: #fff;
 	}
 }
+
+%friendActionBtn {
+	&.actionAccept-LV-szU {
+		color: cv("colors.success");
+		&:hover {
+			background-color: cv("colors.success");
+			color: #fff !important;
+		}
+	}
+	&.actionDeny-de_uKj {
+		color: cv("colors.danger");
+		&:hover {
+			background-color: cv("colors.danger");
+			color: #fff !important;
+		}
+	}
+}
+
+
+// ADD FRIENDS BUTTON
+.item-PXvHYJ[style*="background-color: rgb(67, 181, 129)"] {
+	background-color: cv("colors.success") !important;
+	color: #fff !important;
+}
+.item-PXvHYJ[style*="background-color: rgba(67, 181, 129, 0.2)"] {
+	background-color: transparent !important;
+	color: cv("colors.success") !important;
+}
+.item-PXvHYJ[style*="background-color: rgba(67, 181, 129, 0.2)"]:before {
+	content: "";
+	position: absolute;
+	background-color: var(--success-color);
+	opacity: 0.2;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+// ADD FRIENDS PAGE
+%friendsAddFriendInputWrapper {
+	background-color: hsla(0, 0%, 100%, .1);
+	border: none;
+	transform: translateZ(0);
+	> %friendsAddFriendInput {
+		&::placeholder {
+			color: hsla(0, 0%, 100%, .2);
+		}
+		+ %friendsAddFriendHint {
+			&:after {
+				content: "";
+				position: fixed;
+				@include stretch;
+				border-radius: 8px;
+				transition: all .15s ease-in-out;
+				pointer-events: none;
+			}
+		}
+		> %friendsAddFriendHint {
+			color: hsla(0, 0%, 100%, .2);
+		}
+		&:focus + %friendsAddFriendHint {
+			&:after {
+				box-shadow: 0 0 2px 2px $main-color;
+			}
+		}
+	}	
+}
+
+
 
 %friends {
 
@@ -114,12 +183,7 @@
 						color: #fff;
 					}
 				}
-				%friendsActionAccept:hover {
-					background-color: cv("colors.success") !important;
-				}
-				%friendsActionDeny:hover {
-					background-color: cv("colors.danger") !important;
-				}
+				
 			}
 			&:hover %friendsColumnActions {
 				padding-right: 12px;
@@ -140,36 +204,7 @@
 			%friendsTableAddHeader {
 				background: transparent;
 				border-bottom: 1px solid hsla(0, 0%, 100%, .07);
-				%friendsAddFriendInputWrapper {
-					background-color: rgba(0, 0, 0, .3);
-					border: none;
-					transform: translateZ(0);
-					> %friendsAddFriendInput {
-						&::placeholder {
-							color: hsla(0, 0%, 100%, .2);
-						}
-						+ %friendsAddFriendHint {
-							&:after {
-								content: "";
-								position: fixed;
-								@include stretch;
-								border: 1px solid transparent;
-								border-radius: 3px;
-								transition: all .3s ease-in-out;
-								pointer-events: none;
-							}
-						}
-						&:focus + %friendsAddFriendHint {
-							&:after {
-								border-color: $main-color;
-								box-shadow: 0 0 1px $main-color;
-							}
-						}
-					}
-					> %friendsAddFriendHint {
-						color: hsla(0, 0%, 100%, .2);
-					}
-				}
+				
 			}
 			%friendsTableConnectAccountButton {
 				background-color: hsla(0, 0%, 100%, .04);
