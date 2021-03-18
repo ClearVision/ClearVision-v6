@@ -12,7 +12,7 @@
 .peopleListItem-2nzedh {
 	&:hover,
 	&.active-rhSpJJ {
-		background-color: rgba(255, 255, 255, .05);
+		background-color: hsla(0, 0%, 100%, .05);
 	}	
 }
 
@@ -25,8 +25,8 @@
 }
 
 // ACTION BUTTON 
-%friendActionBtn,
-%friendActionBtn.highlight-Lf97TE {
+%friendActionButton,
+%friendActionButton.highlight-Lf97TE {
 	background-color: hsla(0, 0, 0, 0.6);
 	color: #fff;
 	&:hover {
@@ -35,15 +35,15 @@
 	}
 }
 
-%friendActionBtn {
-	&.actionAccept-LV-szU {
+%friendActionButton {
+	&%friendActionAcceptButton {
 		color: cv("colors.success");
 		&:hover {
 			background-color: cv("colors.success");
 			color: #fff !important;
 		}
 	}
-	&.actionDeny-de_uKj {
+	&%friendActionDenyButton {
 		color: cv("colors.danger");
 		&:hover {
 			background-color: cv("colors.danger");
@@ -54,15 +54,16 @@
 
 
 // ADD FRIENDS BUTTON
-.item-PXvHYJ[style*="background-color: rgb(67, 181, 129)"] {
+%tabBarItem[style*="background-color: rgb(67, 181, 129)"] {
 	background-color: cv("colors.success") !important;
 	color: #fff !important;
 }
-.item-PXvHYJ[style*="background-color: rgba(67, 181, 129, 0.2)"] {
+%tabBarItem[style*="background-color: rgba(67, 181, 129, 0.2)"] {
 	background-color: transparent !important;
 	color: cv("colors.success") !important;
+	box-shadow: 0 0 0 1px var(--success-color) inset;
 }
-.item-PXvHYJ[style*="background-color: rgba(67, 181, 129, 0.2)"]:before {
+%tabBarItem[style*="background-color: rgba(67, 181, 129, 0.2)"]:before {
 	content: "";
 	position: absolute;
 	background-color: var(--success-color);
@@ -75,162 +76,68 @@
 // ADD FRIENDS PAGE
 %friendsAddFriendInputWrapper {
 	background-color: hsla(0, 0%, 100%, .1);
+	box-shadow: 0 0 2px 2px rgba(255,255,255,0.12);
 	border: none;
-	transform: translateZ(0);
-	> %friendsAddFriendInput {
-		&::placeholder {
-			color: hsla(0, 0%, 100%, .2);
-		}
-		+ %friendsAddFriendHint {
-			&:after {
-				content: "";
-				position: fixed;
-				@include stretch;
-				border-radius: 8px;
-				transition: all .15s ease-in-out;
-				pointer-events: none;
-			}
-		}
-		> %friendsAddFriendHint {
-			color: hsla(0, 0%, 100%, .2);
-		}
-		&:focus + %friendsAddFriendHint {
-			&:after {
-				box-shadow: 0 0 2px 2px $main-color;
-			}
+}
+%friendsAddFriendInput {
+	&::placeholder {
+		color: hsla(0, 0%, 100%, .3);
+	}
+	+ %friendsAddFriendHint {
+		&:after {
+			content: "";
+			position: fixed;
+			@include stretch;
+			border-radius: 8px;
+			transition: all .15s ease-in-out;
+			pointer-events: none;
 		}
 	}	
-}
-
-
-
-%friends {
-
-	// FRIENDS TABLE
-	%friendsTable {
-		background-color: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .5));
-		margin-top: 0;
-		%friendsTableHeader {
-			border-bottom: 1px solid hsla(0, 0%, 100%, .07);
-			%friendsColumn {
-				color: hsla(0, 0%, 100%, .3);
-			}
-			%friendsColumnSeparator {
-				background-color: hsla(0, 0%, 100%, .07);
-			}
-		}
-		%friendsTableBody {
-			background: transparent;
-		}
-		%friendsRow {
-			background-color: transparent;
-			transition: all .15s ease-in-out;
-			&,
-			&:hover {
-				margin: 0 20px;
-				padding: 0 10px;
-				+ %friendsRow {
-					border-top: 1px solid transparent;
-					&[style*="opacity: 1"] {
-						border-top-color: hsla(0, 0%, 100%, .04);
-					}
-				}
-			}
-			&:hover {
-				background-color: rgba(0, 0, 0, .3);
-				border-radius: 0;
-				%friendsColumnName %friendsColumnNameDiscordTag %friendsColumnNameDiscriminator {
-					opacity: .6;
-				}
-			}
-			+ %friendsRow {
-				margin-top: -1px;
-			}
-			%friendsColumnNameUsername {
-				color: hsla(0, 0%, 100%, .6);
-			}
-			%friendsColumnNameDiscriminator {
-				color: hsla(0, 0%, 100%, .3);
-				visibility: visible;
-				opacity: 0;
-				transition: all .15s ease-in-out;
-			}
-			&:hover {
-				%friendsColumnNameDiscriminator {
-					opacity: 1;
-				}
-			}
-			%friendsColumnGuilds {
-				%avatarSmall {
-					background-color: transparent;
-				}
-				%friendsGuildIcon {
-					background-color: rgba(0, 0, 0, .3);
-				}
-			}
-			%friendsColumnActions {
-				padding-right: 12px;
-				opacity: 0;
-				visibility: visible;
-				transition: all .3s ease-in-out;
-				%friendsAction {
-					background-color: $main-color;
-					border-radius: 3px;
-					color: hsla(0, 0%, 100%, .9);
-					transition: all .15s ease-in-out;
-					&:hover {
-						background-color: $hover-color;
-						color: #fff;
-					}
-				}
-				
-			}
-			&:hover %friendsColumnActions {
-				padding-right: 12px;
-				opacity: 1;
-			}
-		}
-		%friendsTableBodyImage {
-			filter: grayscale(1) brightness(2);
-			opacity: .3;
-		}
-		%friendsTableBodyText,
-		%friendsTableBodyTitle {
-			color: hsla(0, 0%, 100%, .5);
-		}
-
-		// FRIEND ADD PAGE
-		%friendsTableAddWrapper {
-			%friendsTableAddHeader {
-				background: transparent;
-				border-bottom: 1px solid hsla(0, 0%, 100%, .07);
-				
-			}
-			%friendsTableConnectAccountButton {
-				background-color: hsla(0, 0%, 100%, .04);
-				border-color: transparent;
-				transition: all .15s ease-in-out;
-				&:hover {
-					background-color: hsla(0, 0%, 100%, .1);
-				}
-			}
-			%friendsTableSuggestionsHeader {
-				background-color: transparent;
-				border-bottom: 1px solid hsla(0, 0%, 100%, .07);
-			}
-			%friendsTableAddH2 {
-				color: hsla(0, 0%, 100%, .7);
-			}
-			%friendsTableAddDescription,
-			%friendsTableConnectAccounts h3 {
-				color: hsla(0, 0%, 100%, .5);
-			}
+	&:focus + %friendsAddFriendHint {
+		&:after {
+			box-shadow: 0 0 2px 2px $main-color;
 		}
 	}
 }
-
+%friendsAddFriendHint {
+	color: hsla(0, 0%, 100%, .3);
+}
 
 // Active Now voice channel overflow count
 .theme-dark .partyMemberOverflow-lXnzvu {
 	background-color: var(--background-overlay);
+}
+
+
+.nowPlayingColumn-2sl4cE {
+	background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.6))
+}
+
+.consentCard-1iSxB_ {
+	background-color: hsla(0, 0%, 0%, .4);
+}
+
+// ACTIVE NOW
+%themeDark {
+	.outer-1AjyKL {
+		background-color: hsla(0, 0%, 0%, .4);
+		&.interactive-3B9GmY:hover,
+		&.active-1xchHY {
+			background-color: hsla(0, 0%, 0%, .6);
+		}
+	}
+	.inset-3sAvek {
+		background-color: hsla(0, 0%, 0%, .4);
+	}
+}
+
+
+.theme-dark {	
+	.popout-38lTFE {
+		background-color: hsla(0, 0%, 0%, .8);
+	}
+	.enabled-1t_Gxm:hover,
+	.memberListItem-31QoHj:not(.popoutDisabled-2RK7MF):hover {
+		background-color: hsla(0, 0%, 100%, .05);
+	}
 }

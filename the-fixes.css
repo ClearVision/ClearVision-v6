@@ -92,43 +92,11 @@
 /*
   ==/ NEW FRIENDS LIST because discord keeps changing shit /==
 */
-/* Allow background - "Playing" list */
-.outer-2IVh5n {background-color: transparent;}
-/* Active Now inner box */
-.theme-dark .inset-3sAvek {background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));}
-/* Thin and shade left side */
-.nowPlayingColumn-2sl4cE {background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.6)); max-width: var(--members-width);}
-/* "Now Playing" user background */
-.wrapper-Lii66c{border: none !important;}
-/* "Now Playing" user background */
-.wrapper-3D2qGf {background-color: calc(var(--background-shading) * 0.5);}
-.theme-dark .outer-1AjyKL.interactive-3B9GmY:hover,
 /* No friends playing games */
 .theme-dark .wrapper-3UweLa,
-/* "This section could be better" box. Disable something in the privacy settings to see it. */
-.consentCard-1iSxB_,
 /* No friends playing games? Not sure. */
 .emptyCard-1RJw8n {background-color: var(--background-overlay);}
-/*Active Now -Scars*/
-.theme-dark .popout-38lTFE {background: var(--background-overlay);}
-.theme-dark .outer-1AjyKL.active-1xchHY, .theme-dark .outer-1AjyKL.interactive-3B9GmY:hover { background:var(--background-modifier-hover); transition: all .3s ease-in-out;}
- /*Active now submenu hover -Scars*/
-.theme-dark .enabled-1t_Gxm:hover,
-.theme-dark .memberListItem-31QoHj:not(.popoutDisabled-2RK7MF):hover{ transition: all .3s ease-in-out; background:var(--background-modifier-hover);}
 
-/* Popout on "Active Now" hover */
-.theme-dark .popout-13LQ_3,
-/* User in Popout */
-.theme-dark .memberListItem-2ZX2pl:not(.popoutDisabled-xucru2):hover,
-/* "Message" in popout */
-.theme-dark .enabled-5QKLzu:hover,
-/* Popout background */
-.theme-dark .popout-38lTFE,
-/* "Now Playing" user background, hover */
-.theme-dark .popoutContainer-3WC9HR:hover {background-color: var(--backdrop-overlay);}
-/*
- ==/ END NEW FRIENDS LIST /==
-*/
 
 /* the quote bar thingy */
 .blockquoteDivider-2hH8H6 {background-color: rgba(255, 255, 255, 0.2);}

@@ -1800,7 +1800,13 @@
 	@extend %friendActivity !optional;
 }
 .actionButton-uPB8Fs {
-	@extend %friendActionBtn !optional;
+	@extend %friendActionButton !optional;
+}
+.actionAccept-LV-szU {
+	@extend %friendActionAcceptButton !optional;
+}
+.actionDeny-de_uKj {
+	@extend %friendActionDenyButton !optional;
 }
 .wrapper-1cBijl {
 	@extend %friendsAddFriendInputWrapper !optional;
@@ -1811,7 +1817,6 @@
 .addFriendHint-3Y70FX {
 	@extend %friendsAddFriendHint !optional;
 }
-
 .gameLibrary-TTDw4Y {
 	@extend %gameLibrary !optional;
 }
