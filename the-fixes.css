@@ -50,9 +50,6 @@
 /* Stream Ended background */
 .theme-dark .container-2oTpPc, .root-25RxKh {background: transparent;}
 
-/* Remove scroll for DMs */
-.privateChannels-1nO12o .scroller-1JbKMe{overflow-x: hidden;}
-
 /* Format Bar */
 .toolbar-2bjZV7 {background-color: var(--background-overlay);}
 .divider-24xeUg {display: none;}
@@ -95,16 +92,10 @@
 /*
   ==/ NEW FRIENDS LIST because discord keeps changing shit /==
 */
-/* Remove shadow */
-.mask-1l8v16 {filter: none;}
-/* Allow background */
-.theme-dark .container-1D34oG,
 /* Allow background - "Playing" list */
 .outer-2IVh5n {background-color: transparent;}
 /* Active Now inner box */
-.theme-dark .inset-3sAvek,
-/* Shading of left side */
-.peopleList-3c4jOR {background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));}
+.theme-dark .inset-3sAvek {background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));}
 /* Thin and shade left side */
 .nowPlayingColumn-2sl4cE {background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.6)); max-width: var(--members-width);}
 /* "Now Playing" user background */
@@ -114,23 +105,17 @@
 .theme-dark .outer-1AjyKL.interactive-3B9GmY:hover,
 /* No friends playing games */
 .theme-dark .wrapper-3UweLa,
-/* Action Button */
-.actionButton-uPB8Fs.highlight-Lf97TE,
 /* "This section could be better" box. Disable something in the privacy settings to see it. */
 .consentCard-1iSxB_,
 /* No friends playing games? Not sure. */
 .emptyCard-1RJw8n {background-color: var(--background-overlay);}
-.actionButton-uPB8Fs {background-color: var(--background-overlay) !important;}
 /*Active Now -Scars*/
 .theme-dark .popout-38lTFE {background: var(--background-overlay);}
 .theme-dark .outer-1AjyKL.active-1xchHY, .theme-dark .outer-1AjyKL.interactive-3B9GmY:hover { background:var(--background-modifier-hover); transition: all .3s ease-in-out;}
  /*Active now submenu hover -Scars*/
 .theme-dark .enabled-1t_Gxm:hover,
 .theme-dark .memberListItem-31QoHj:not(.popoutDisabled-2RK7MF):hover{ transition: all .3s ease-in-out; background:var(--background-modifier-hover);}
-/* Action Button, hover */
-.actionButton-uPB8Fs:hover {background-color: var(--main-color);}
-/* Remove separator from popout */
-.theme-dark .separator-2c4hi3 {display: none;}
+
 /* Popout on "Active Now" hover */
 .theme-dark .popout-13LQ_3,
 /* User in Popout */

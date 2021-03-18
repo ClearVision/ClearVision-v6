@@ -1,32 +1,41 @@
 /* FRIENDS */
-%base {
+%themeDark {
 	%friends {
 		background-color: transparent;
 	}
 }
-%friends {
 
-	// FRIENDS HEADER
-	%friendsHeaderBar {
-		%friendsTabBar {
-			%tabBarItem {
-				background: transparent !important;
-				color: hsla(0, 0%, 100%, .5) !important;
-				transition: all .3s ease-in-out;
-				&:hover {
-					background-color: rgba(0, 0, 0, .5) !important;
-					color: hsla(0, 0%, 100%, .7) !important;
-				}
-				&%tabBarItemSelected {
-					background-color: $main-color !important;
-					color: #fff !important;
-				}
-			}
-		}
-		%friendsHeaderSeparator {
-			background-color: hsla(0, 0%, 100%, .1);
-		}
+// FRIENDS COLUMN
+.peopleColumn-29fq28 {
+	background: rgba(0, 0, 0, calc(var(--background-shading) * .4));
+}
+.peopleListItem-2nzedh {
+	&:hover,
+	&.active-rhSpJJ {
+		background-color: rgba(255, 255, 255, .05);
+	}	
+}
+
+
+%friendActivity {
+	color: hsla(0, 0%, 100%, .5);
+	strong {
+		color: $main-color;
 	}
+}
+
+// ACTION BUTTON 
+%friendActionBtn,
+%friendActionBtn.highlight-Lf97TE {
+	background-color: $main-color;
+	color: hsla(0, 0%, 100%, .9);
+	&:hover {
+		background-color: $hover-color;
+		color: #fff;
+	}
+}
+
+%friends {
 
 	// FRIENDS TABLE
 	%friendsTable {
@@ -80,15 +89,6 @@
 			&:hover {
 				%friendsColumnNameDiscriminator {
 					opacity: 1;
-				}
-			}
-			%friendsColumnStatus {
-				color: hsla(0, 0%, 100%, .5);
-				%friendActivityText {
-					> strong {
-						color: $main-color;
-						font-weight: 600;
-					}
 				}
 			}
 			%friendsColumnGuilds {
@@ -193,10 +193,7 @@
 		}
 	}
 }
-// Friends list middle background
-.peopleColumn-29fq28 {
-	background: rgba(0, 0, 0, calc(var(--background-shading) * .4));
-}
+
 
 // Active Now voice channel overflow count
 .theme-dark .partyMemberOverflow-lXnzvu {

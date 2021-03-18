@@ -1793,20 +1793,11 @@
 .close-C7sU74 {
 	@extend %activityFeedNoticeClose !optional;
 }
-.container-3gCOGc {
+.container-1D34oG {
 	@extend %friends !optional;
 }
-.headerBar-UHpsPw {
-	@extend %friendsHeaderBar !optional;
-}
-.separator-gCa7yv {
-	@extend %friendsHeaderSeparator !optional;
-}
-.friendsTable-133bsv {
-	@extend %friendsTable !optional;
-}
-.friendsTableHeader-32yE7d {
-	@extend %friendsTableHeader !optional;
+.actionButton-uPB8Fs {
+	@extend %friendActionBtn !optional;
 }
 .friendsColumn-eVHFqJ {
 	@extend %friendsColumn !optional;
@@ -1832,14 +1823,8 @@
 .discriminator-1Ro5o1 {
 	@extend %friendsColumnNameDiscriminator !optional;
 }
-.friendsColumnStatus-ZH4ho2 {
-	@extend %friendsColumnStatus !optional;
-}
-.status-mz5rqq {
-	@extend %friendsTableStatus !optional;
-}
-.friendActivityText-2lmziy {
-	@extend %friendActivityText !optional;
+.activity-2myFBH {
+	@extend %friendActivity !optional;
 }
 .friendsColumnGuilds-2we6jb {
 	@extend %friendsColumnGuilds !optional;

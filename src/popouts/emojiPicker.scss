@@ -222,12 +222,12 @@
 .unicodeShortcut-15J8Ck {
 	background-color: $main-color;
 	svg {
-		color: hsla(0, 0%, 100%, .7)
+		color: hsla(0, 0%, 100%, .9)
 	}
 	&:hover {
 		background-color: $hover-color;
 		svg {
-			color: hsla(0, 0%, 100%, .9);
+			color: #fff;
 		}
 	}
 }
