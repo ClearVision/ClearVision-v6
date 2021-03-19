@@ -119,9 +119,6 @@
 /* Emoji Picker Nitro Ending Soon Notification - Cruxie */
 .premiumRetentionNotice-1MsjHe {background-color: var(--background-overlay);}
 
-/* "sticky" emoji thing */
-.emojiPicker-3m1S-j .stickyHeader-1SS0JU { display: none; }
-
 /* styles Mention Button */
 .tabBar-2UKwcE .tabBarItem-1Cg-MI:after {background: var(--main-color); border-radius: 3px;}
 .tabBar-2UKwcE .tabBarItem-1Cg-MI[style*="color: rgb(255, 255, 255)"] {color: #fff !important;}

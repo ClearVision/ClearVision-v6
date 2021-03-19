@@ -1,7 +1,7 @@
 /* GUILD HEADER POPOUT */
 
 %guildHeaderPopout {
-	background-color: rgba(0, 0, 0, .7);
+	background-color: rgba(0, 0, 0, .8);
 	%guildHeaderPopoutItem {
 		color: hsla(0, 0%, 100%, .7);
 		transition: all .15s ease-in-out;		
@@ -14,7 +14,7 @@
 	    color: var(--main-color);
 	}
 	%guildHeaderPopoutItemLeave {
-	    color: rgb(240, 71, 71);
+	    color: var(--danger-color);
 		&%guildHeaderPopoutItemHover {
 		    background-color: var(--danger-color);
 			color: #fff;
