@@ -50,3 +50,8 @@ textarea {
 		display: none;
 	}
 }
+
+// NO SCROLLBAR
+%scrollbarNone::-webkit-scrollbar {
+	width: 0px !important;
+}

@@ -77,9 +77,6 @@
 %emojiCategoryList {
 	background-color: transparent;
 }
-%emojiCategoryScroller::-webkit-scrollbar {
-	width: 0px !important;
-}
 %emojiCategoryItem {
 	&:hover {
 		background-color: hsla(0, 0%, 100%, .07);
