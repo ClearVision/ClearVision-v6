@@ -1,70 +1,3 @@
-/* 
-
-
-//  OLD CATEGORIES
-%emojiPickerCategories {
-	%emojiPickerCategoriesItem {
-		border-bottom: 2px solid transparent;
-		transition: all .15s ease-in-out;
-		&:hover {
-			background-color: $main-color;
-			opacity: 1;
-		}
-		&%emojiPickerCategoriesItemSelected {
-			border-bottom-color: $main-color;
-		}
-		&%emojiPickerCategoriesItemPeople {
-			background-image: url(https://clearvision.gitlab.io/icons/discord/emojiSmileys.svg);
-		}
-		&%emojiPickerCategoriesItemNature {
-			background-image: url(https://clearvision.gitlab.io/icons/discord/emojiNature.svg);
-		}
-		&%emojiPickerCategoriesItemFood {
-			background-image: url(https://clearvision.gitlab.io/icons/discord/emojiFood.svg);
-		}
-		&%emojiPickerCategoriesItemActivity {
-			background-image: url(https://clearvision.gitlab.io/icons/discord/emojiActivity.svg);
-		}
-		&%emojiPickerCategoriesItemTravel {
-			background-image: url(https://clearvision.gitlab.io/icons/discord/emojiTravel.svg);
-		}
-		&%emojiPickerCategoriesItemObjects {
-			background-image: url(https://clearvision.gitlab.io/icons/discord/emojiObject.svg);
-		}
-		&%emojiPickerCategoriesItemSymbols {
-			background-image: url(https://clearvision.gitlab.io/icons/discord/emojiSymbol.svg);
-		}
-		&%emojiPickerCategoriesItemFlags {
-			background-image: url(https://clearvision.gitlab.io/icons/discord/emojiFlags.svg);
-		}   
-		&%emojiPickerCategoriesItemCustom {
-			background-image: url(https://clearvision.gitlab.io/icons/discord/emojiCustom.svg);
-		}
-	}
-}
-
-// PREMIUM PROMO
-%emojiPickerPremiumPromo {
-	background-color: rgba(0, 0, 0, .85);
-	%emojiPickerPremiumPromoClose {
-		background: url(https://clearvision.gitlab.io/icons/close.svg) center/18px no-repeat;
-		opacity: .3;
-		transition: all .15s ease-in-out;
-		&:hover {
-			opacity: .7;
-		}
-	}
-	%emojiPickerPremiumPromoImage {
-		opacity: .7;
-	}
-	%emojiPickerPremiumPromoTitle {
-		color: hsla(0, 0%, 100%, .7);
-	}
-	%emojiPickerPremiumPromoDescription {
-		color: hsla(0, 0%, 100%, .5);
-	}
-}*/
-
 /* EMOJI PICKER */
 
 .drawerSizingWrapper-17Mss4 {
@@ -76,7 +9,7 @@
 	border-radius: 5px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 }
-.emojiPicker-3PwZFl {
+%emojiPicker {
 	background-color: rgba(0, 0, 0, .8);
 	min-width: 430px;
 }
@@ -87,14 +20,14 @@
 }
 
 // SEARCH BAR
-.searchBar-5di9mG {
+%emojiPickerSearchBar {
 	background-color: rgba(255, 255, 255, 0.1);
 	box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.12);
 	margin-top: 2px;
 	&:focus-within {
 		box-shadow: 0 0 2px 2px $main-color;
 		transition: all .15s ease-in-out;
-		.input-1Rv96N {
+		%emojiPickerSearchInput {
 		color: #fff;
 			&::placeholder {
 			color: hsla(0, 0%, 100%, .3);
@@ -104,11 +37,11 @@
 }
 
 // DIVERSITY SELECTOR	
-.diversitySelectorPopout-3FiGaM {
+%emojiPickerDiversitySelectorPopout {
 	border: none;
 	padding: 2px;
 	background-color: hsla(0, 0%, 0%, .8);
-	.diversityEmojiItem-L6_IXw {
+	%emojiPickerDiversityItem {
 		border-radius: 3px;
 		transition: all .15s ease-in-out;
 		&:hover {
@@ -117,46 +50,56 @@
 	}
 }
 
-// SCROLLER
-.emojiItem-14v6tW {
+// EMOJI ITEM
+%emojiPickerItem {
 	border-radius: 3px;
 	transition: all .15s ease-in-out, filter 0s;
-	&.emojiItemSelected-1aLkfV  {
+	&%emojiPickerItemSelected  {
 		background-color: hsla(0, 0%, 100%, .07);
 	}
-	&.emojiItemDisabled-1FvFuF  {
-		filter: grayscale(1) blur(1px);
-		&.emojiItemSelected-1aLkfV  {
-			filter: grayscale(1);
-		}
+	&%emojiPickerItemDisabled {
+		filter: grayscale(1); 
 	}
 	&:focus {
 		outline: var(--main-color) auto 1px;
 	}
 }
-.theme-dark .imageLoading-bpSr0M {
+%themeDark {
+	%emojiPickerItemLoading {
 	background-image: none;
+	}
+}
+%emojiPickerInspector {
+	background-color: transparent;
 }
 
-// Categories
-.none-2Eo-qx::-webkit-scrollbar {
+// CATEGORIES
+%emojiCategoryList {
+	background-color: transparent;
+}
+%emojiCategoryScroller::-webkit-scrollbar {
 	width: 0px !important;
 }
-.categoryList-2Kzf65 {
-	background-color: transparent;
-}
-.guildIcon-3h-1IH {
-	background-color: transparent;
-}
-.categoryItem-1D0nxC {
+%emojiCategoryItem {
 	&:hover {
 		background-color: hsla(0, 0%, 100%, .07);
+		border-radius: 4px;		
 	}
-	&.categoryItemDefaultCategorySelected-_HCKoz {
-		background-color: hsla(0, 0%, 100%, .1);		
+	&%emojiCategoryItemSelected {
+		background-color: hsla(0, 0%, 100%, .1);
+		border-radius: 4px;
 	}
 }
-.unicodeShortcut-15J8Ck {
+%emojiCategoryItemIcon {
+	color: hsla(0, 0%, 100%, .7);
+	%emojiCategoryItemSelected & {
+		color: #fff;
+	}
+}
+%emojiCategoryGuildIcon {
+	background-color: transparent;
+}
+%emojiCategoryUnicodeShortcut	 {
 	background-color: $main-color;
 	svg {
 		color: hsla(0, 0%, 100%, .9)
@@ -169,8 +112,32 @@
 	}
 }
 
-// Inspector
-.inspector-S2gM3e {
-	background-color: transparent;
+/*  OLD CATEGORIES
+%emojiPickerCategoriesItemPeople {
+	background-image: url(https://clearvision.gitlab.io/icons/discord/emojiSmileys.svg);
 }
-
+%emojiPickerCategoriesItemNature {
+	background-image: url(https://clearvision.gitlab.io/icons/discord/emojiNature.svg);
+}
+%emojiPickerCategoriesItemFood {
+	background-image: url(https://clearvision.gitlab.io/icons/discord/emojiFood.svg);
+}
+%emojiPickerCategoriesItemActivity {
+	background-image: url(https://clearvision.gitlab.io/icons/discord/emojiActivity.svg);
+}
+%emojiPickerCategoriesItemTravel {
+	background-image: url(https://clearvision.gitlab.io/icons/discord/emojiTravel.svg);
+}
+%emojiPickerCategoriesItemObjects {
+	background-image: url(https://clearvision.gitlab.io/icons/discord/emojiObject.svg);
+}
+%emojiPickerCategoriesItemSymbols {
+	background-image: url(https://clearvision.gitlab.io/icons/discord/emojiSymbol.svg);
+}
+%emojiPickerCategoriesItemFlags {
+	background-image: url(https://clearvision.gitlab.io/icons/discord/emojiFlags.svg);
+}   
+%emojiPickerCategoriesItemCustom {
+	background-image: url(https://clearvision.gitlab.io/icons/discord/emojiCustom.svg);
+}
+*/

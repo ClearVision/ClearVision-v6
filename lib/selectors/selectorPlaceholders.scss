@@ -3374,7 +3374,63 @@ pre {
 .itemSubMenu-1vN_Yn {
 	@extend %contextMenuItemSubMenu !optional;
 }
-
+.emojiPicker-3PwZFl {
+	@extend %emojiPicker !optional;
+}
+.searchBar-5di9mG {
+	@extend %emojiPickerSearchBar !optional;
+}
+.input-1Rv96N {
+	@extend %emojiPickerSearchInput !optional;
+}
+.diversitySelector-1v4_1A {
+	@extend %emojiPickerDiversitySelector !optional;
+}
+.diversitySelectorPopout-3FiGaM {
+	@extend %emojiPickerDiversitySelectorPopout !optional;
+}
+.diversityEmojiItem-L6_IXw {
+	@extend %emojiPickerDiversityItem !optional;
+}
+.emojiItem-14v6tW {
+	@extend %emojiPickerItem !optional;
+}
+.emojiItemSelected-1aLkfV {
+	@extend %emojiPickerItemSelected !optional;
+}
+.emojiItemDisabled-1FvFuF {
+	@extend %emojiPickerItemDisabled !optional;
+}
+.imageLoading-bpSr0M {
+	@extend %emojiPickerItemLoading !optional;
+}
+.inspector-S2gM3e {
+	@extend %emojiPickerInspector !optional;
+}
+.categoryList-2Kzf65 {
+	@extend %emojiCategoryList !optional;
+}
+.scroller-3gAZLs {
+	@extend %emojiCategoryScroller !optional;
+}
+.categoryItem-1D0nxC {
+	@extend %emojiCategoryItem !optional;
+}
+.categoryIcon-1SvUHG {
+	@extend %emojiCategoryItemIcon !optional;
+}
+.categoryItemDefaultCategorySelected-_HCKozC {
+	@extend %emojiCategoryItemSelected !optional;
+}
+.categoryItemGuildCategory-3MisqI {
+	@extend %emojiCategoryGuildItem !optional;
+}
+.guildIcon-3h-1IH {
+	@extend %emojiCategoryGuildIcon !optional;
+}
+.unicodeShortcut-15J8Ck {
+	@extend %emojiCategoryUnicodeShortcut !optional;
+}
 .popout-103y-5 {
 	@extend %groupInvitePopout !optional;
 }
