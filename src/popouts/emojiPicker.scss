@@ -51,6 +51,12 @@
 }
 
 // EMOJI ITEM
+%emojiPickerCategoryHeaderWrapper {
+	background-color: transparent;
+	%emojiPickerCategoryHeader {
+		color: #fff;
+	}
+}
 %emojiPickerItem {
 	border-radius: 3px;
 	transition: all .15s ease-in-out, filter 0s;

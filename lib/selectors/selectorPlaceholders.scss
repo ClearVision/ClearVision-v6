@@ -3392,6 +3392,15 @@ pre {
 .diversityEmojiItem-L6_IXw {
 	@extend %emojiPickerDiversityItem !optional;
 }
+.categorySection-2sgp74 {
+	@extend %emojiPickerCategorySection !optional;
+}
+.wrapper-1-Fsb8 {
+	@extend %emojiPickerCategoryHeaderWrapper !optional;
+}
+.header-19cWci {
+	@extend %emojiPickerCategoryHeader !optional;
+}
 .emojiItem-14v6tW {
 	@extend %emojiPickerItem !optional;
 }
@@ -3419,7 +3428,7 @@ pre {
 .categoryIcon-1SvUHG {
 	@extend %emojiCategoryItemIcon !optional;
 }
-.categoryItemDefaultCategorySelected-_HCKozC {
+.categoryItemDefaultCategorySelected-_HCKoz {
 	@extend %emojiCategoryItemSelected !optional;
 }
 .categoryItemGuildCategory-3MisqI {
