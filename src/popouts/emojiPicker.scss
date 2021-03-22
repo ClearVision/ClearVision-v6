@@ -9,16 +9,16 @@
 	border-radius: 5px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 }
-%emojiPicker {
-	background-color: rgba(0, 0, 0, .8);
-	min-width: 430px;
-}
-
 // NAV BAR
 .navButtonActive-1MkytQ {
 	background-color: $main-color;
 }
 
+
+%emojiPicker {
+	background-color: rgba(0, 0, 0, .8);
+	min-width: 430px;
+}
 // SEARCH BAR
 %emojiPickerSearchBar {
 	background-color: rgba(255, 255, 255, 0.1);

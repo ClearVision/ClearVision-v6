@@ -107,11 +107,6 @@
 .message-2qnXI6.mentioned-xhSam7.selected-2P5D_Z, .mouse-mode.full-motion .mentioned-xhSam7:hover {background-color: rgba(255,255,255,0.08);}
 .theme-dark .mentioned-xhSam7 .mention.interactive:hover {color: var(--hover-color); text-decoration: none;}
 
-/* New TimeStamps - Cruxie */
-.timestampCozyAlt-1Hs08c {width: 2.9rem !important;}
-/* FIXES TINY LITTLE SHITTY GREY AREA BY HOME ICON - Cruxie*/
-.platform-win .sidebar-2K8pFh {border-radius: 0;}
-
 /* BD sliders were forgotten about in CV, apparently. */
 #bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch.checked {background-color: var(--main-color);}
 #bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch {background-color: rgba(255,255,255,0.3);}
@@ -122,17 +117,6 @@
 /* styles Mention Button */
 .tabBar-2UKwcE .tabBarItem-1Cg-MI:after {background: var(--main-color); border-radius: 3px;}
 .tabBar-2UKwcE .tabBarItem-1Cg-MI[style*="color: rgb(255, 255, 255)"] {color: #fff !important;}
-
-
-/* rename group */
-.input-2A_zIr:focus {background-color: var(--background-overlay);}
-
-
-
-
-
-/*no tips*/
-.protip-YaFfgO,.footer-1kmXd4 {display: none;}
 
 /* default text */
 .defaultValue-3gC7yw .markValue-2DwdXI {color: var(--success-color);}
@@ -395,9 +379,6 @@
 /* Webhooks, channels followed icons */
 .iconWrapper-lS1uig {background-color: var(--background-overlay);}
 
-/* Server Insights image */
-.developerPortalCtaWrapper-2XNafh {background-color: transparent;}
-
 /* New channel "edit channel link" */
 .button-2OOM0p {color: var(--url-color);}
 
@@ -409,9 +390,6 @@
 
 /* Fixed media volume bar */
 .mediaBarProgress-1xaPtl:before, .mediaBarProgress-1xaPtl:after {background-color: inherit;}
-
-/* Member List again */
-.members-1998pB>div {background-color:transparent;}
 
 .lookOutlined-3sRXeN.colorBrand-3pXr91 {
     color: var(--main-color);

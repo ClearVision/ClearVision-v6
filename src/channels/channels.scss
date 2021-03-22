@@ -2,6 +2,9 @@
 %channelsSidebar {
 	width: cv("channels-width");
 	background: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .3));
+	%platformWin & {
+		border-radius: 0;
+	}	
 }
 %channelsContainer {
 	background: transparent;

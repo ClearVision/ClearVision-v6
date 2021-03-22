@@ -6,8 +6,7 @@
 	}
 }
 %autocomplete {
-	%autocompleteInner,
-	%gifAutocompleteInner {
+	%autocompleteInner {
 		background: rgba(0, 0, 0, .8);
 		animation: cv-menu-slide-bottom .2s ease-in-out;		
 		transform-origin: 50% 100%;

@@ -47,7 +47,6 @@ $version: "6.0.3";
 @import "src/chat/bars";
 @import "src/chat/textArea";
 @import "src/chat/textAreaAutocomplete";
-@import "src/chat/gifAutocomplete";
 @import "src/chat/call";
 @import "src/chat/welcomeMessage";
 
@@ -112,7 +111,8 @@ $version: "6.0.3";
 @import "src/popouts/groupInvite";
 @import "src/popouts/VoiceChannelListenigTo";
 @import "src/popouts/emojiInfoPopout";
-@import "src/popouts/mentionEveryone.scss";
+@import "src/popouts/mentionEveryone";
+@import "src/popouts/gifPicker.scss";
 
 // MODALS
 @import "src/modals/modal";

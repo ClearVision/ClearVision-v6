@@ -8,20 +8,7 @@
 		}
 	}
 }
-%messageGroup {
-	&%messageGroupLocalBot {
-		background: linear-gradient(to right, transparent, hsla(0, 0%, 100%, .04) 10%, hsla(0, 0%, 100%, .04) 90%, transparent);
-		box-shadow: none;
-		color: hsla(0, 0%, 100%, .3);
-	}
-	+ %messageGroup {
-		margin-top: -1px;
-	}
-	%dividerEnabled {
-		margin-top: 0;
-		padding-top: 18px;
-		border-bottom: 1px solid hsla(0, 0%, 100%, .04);
-	}
+%messageGroupStart {
 
 	// HEADER
 	%avatarLarge {
@@ -30,16 +17,14 @@
 			transform: scale(.9);
 		}	
 	}
-	%messageUsername {
-		@include hover-shadow;
-	}
 	%messageTimestamp {
 		color: hsla(0, 0%, 100%, .3);
 		transition: all .3s ease-in-out;
 	}
-	&:hover %messageTimestampCozy,
-	%message:hover %messageTimestampCompact {
-		color: hsla(0, 0%, 100%, .7);
+	%messageTimestamp,
+	%messageTimestampAlt {
+		text-align: center;
+		color: hsla(0, 0%, 100%, .5);
 	}
 
 	// CONTENT

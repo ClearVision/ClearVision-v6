@@ -678,100 +678,100 @@
 	@extend %dividerDate !optional;
 }
 .container-3ISnnM {
-	@extend %gifAutocompleteInner !optional;
+	@extend %gifPicker !optional;
 }
 .header-1TOWci {
-	@extend %gifAutocompleteHeader !optional;
+	@extend %gifPickerHeader !optional;
 }
 .searchBar--fTZYa {
-	@extend %gifAutocompleteSearchBar !optional;
+	@extend %gifPickerSearchBar !optional;
 }
 .inner-2P4tQO {
-	@extend %gifAutocompleteSearchBarInner !optional;
+	@extend %gifPickerSearchBarInner !optional;
 }
 .input-3Xdcic {
-	@extend %gifAutocompleteSearchInput !optional;
+	@extend %gifPickerSearchInput !optional;
 }
 .iconLayout-3OgqU3 {
-	@extend %gifAutocompleteSearchIconLayout !optional;
+	@extend %gifPickerSearchIconLayout !optional;
 }
 .iconContainer-2wXvy1 {
-	@extend %gifAutocompleteSearchIconContainer !optional;
+	@extend %gifPickerSearchIconContainer !optional;
 }
 .icon-1S6UIr {
-	@extend %gifAutocompleteSearchIcon !optional;
+	@extend %gifPickerSearchIcon !optional;
 }
 .visible-3bFCH- {
-	@extend %gifAutocompleteSearchIconVisible !optional;
+	@extend %gifPickerSearchIconVisible !optional;
 }
 .clear--Eywng {
-	@extend %gifAutocompleteSearchIconClear !optional;
+	@extend %gifPickerSearchIconClear !optional;
 }
 .backButton-JyKGC1 {
-	@extend %gifAutocompleteSearchBackButton !optional;
+	@extend %gifPickerSearchBackButton !optional;
 }
 .searchHeader-2r8VVk {
-	@extend %gifAutocompleteSearchHeader !optional;
+	@extend %gifPickerSearchHeader !optional;
 }
 .content-ySCtCx {
-	@extend %gifAutocompleteContent !optional;
+	@extend %gifPickerContent !optional;
 }
 .container-2jxBbw {
-	@extend %gifAutocompleteContainer !optional;
+	@extend %gifPickerContainer !optional;
 }
 .categoryFade-2ybR1J {
-	@extend %gifAutocompleteCategoryFade !optional;
+	@extend %gifPickerCategoryFade !optional;
 }
 .categoryFadeBlurple-1j72_A {
-	@extend %gifAutocompleteCategoryFadeBlurple !optional;
+	@extend %gifPickerCategoryFadeBlurple !optional;
 }
 .categoryText-2-8pri {
-	@extend %gifAutocompleteCategoryText !optional;
+	@extend %gifPickerCategoryText !optional;
 }
 .categoryIcon-21RREB {
-	@extend %gifAutocompleteCategoryIcon !optional;
+	@extend %gifPickerCategoryIcon !optional;
 }
 .categoryName-UvMsNp {
-	@extend %gifAutocompleteCategoryName !optional;
+	@extend %gifPickerCategoryName !optional;
 }
 .results-3i9FaE {
-	@extend %gifAutocompleteResults !optional;
+	@extend %gifPickerResults !optional;
 }
 .result-3w1ZcL {
-	@extend %gifAutocompleteResult !optional;
+	@extend %gifPickerResult !optional;
 }
 .focused-1En8bG {
-	@extend %gifAutocompleteResultFocused !optional;
+	@extend %gifPickerResultFocused !optional;
 }
 .favButton-_fxLew {
-	@extend %gifAutocompleteFavButton !optional;
+	@extend %gifPickerFavButton !optional;
 }
 .icon-3wcw1B {
-	@extend %gifAutocompleteFavButtonIcon !optional;
+	@extend %gifPickerFavButtonIcon !optional;
 }
 .gif-1TcNIB {
-	@extend %gifAutocompleteGif !optional;
+	@extend %gifPickerGif !optional;
 }
 .emptyHints-1EYR-5 {
-	@extend %gifAutocompleteEmptyHints !optional;
+	@extend %gifPickerEmptyHints !optional;
 }
 .placeholder-1kJjXI {
-	@extend %gifAutocompletePlaceholder !optional;
+	@extend %gifPickerPlaceholder !optional;
 }
 .emptyHint-2ZHXNQ {
-	@extend %gifAutocompleteEmptyHint !optional;
+	@extend %gifPickerEmptyHint !optional;
 }
 .emptyHintCard-2mUdMe {
-	@extend %gifAutocompleteEmptyHintCard !optional;
+	@extend %gifPickerEmptyHintCard !optional;
 }
 .emptyHintFavorite-3Bf6b2 {
-	@extend %gifAutocompleteEmptyHintFavorite !optional;
+	@extend %gifPickerEmptyHintFavorite !optional;
 }
 .emptyHintText-1QDF9N {
-	@extend %gifAutocompleteEmptyHintText !optional;
+	@extend %gifPickerEmptyHintText !optional;
 }
 .endContainer-1ZDW8j {
-	@extend %gifAutocompleteEndContainer !optional;
+	@extend %gifPickerEndContainer !optional;
 }
 .form-2fGMdU {
 	@extend %chatForm !optional;
@@ -1558,6 +1558,9 @@
 }
 .active-MpmWDn {
 	@extend %headerBarPurchaseActive !optional;
+}
+.input-2A_zIr {
+	@extend %headerBarInput !optional;
 }
 .search-2oPWTC {
 	@extend %chatSearch !optional;
@@ -2861,17 +2864,11 @@ pre {
 .username-1A8OIy {
 	@extend %messageUsername !optional;
 }
-.timestampCozy-2hLAPV {
-	@extend %messageTimestampCozy !optional;
-}
-.timestampCompact-MHgFLv {
-	@extend %messageTimestampCompact !optional;
-}
-.timestamp-1E3uAL {
-	@extend %messageSystemTimestamp !optional;
-}
-.timestampCozy-2hLAPV, .timestampCompact-MHgFLv, .timestamp-1E3uAL {
+.timestamp-3ZCmNB {
 	@extend %messageTimestamp !optional;
+}
+.timestamp-3ZCmNB.alt-1uNpEt {
+	@extend %messageTimestampAlt !optional;
 }
 .container-3-pyIM {
 	@extend %messageSystemContainer !optional;
@@ -4130,7 +4127,7 @@ pre {
 .avatar-VxgULZ {
 	@extend %avatarImage !optional;
 }
-.avatar-17mtNa {
+.avatar-1BDn8e {
 	@extend %avatarLarge !optional;
 }
 .avatarOffline-3GF27z {

@@ -5,6 +5,9 @@
 	%members {
 		width: cv("members-width");
 		background: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .6));
+		>div {
+			background-color: transparent;
+		}
 	}
 }
 %members {

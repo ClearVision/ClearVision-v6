@@ -1,13 +1,9 @@
-/* TENOR GIF AUTOCOMPLETE */
-%autocomplete{
-	%gifAutocompleteHeader {
-		box-shadow: 0 1px hsla(0, 0%, 100%, .04);
-	}
-}
-%gifAutocompleteHeader {
+/* GIF PICKER */
+
+%gifPickerHeader {
 
 	// SEARCH
-	%gifAutocompleteSearchBar {
+	%gifPickerSearchBar {
 		background-color: hsla(0, 0%, 100%, .1);
 		border: none;
 		box-shadow: 0 0 0 2px hsla(0, 0%, 100%, .12);
@@ -16,26 +12,26 @@
 			box-shadow: 0 0 2px 2px $main-color;
 			transition: all .15s ease-in-out;
 		}
-		%gifAutocompleteSearchInput {
+		%gifPickerSearchInput {
 			color: #fff;	
 			&::placeholder {
 				color: hsla(0, 0%, 100%, .3);
 			}
 		}
 	}
-	%gifAutocompleteSearchIcon,
-	%gifAutocompleteSearchBackButton {
+	%gifPickerSearchIcon,
+	%gifPickerSearchBackButton {
 		color: hsla(0, 0%, 100%, .7);
 		transition: all .15s ease-in-out;
 		&:hover {
 			color: #fff;
 		}
 	}
-	%gifAutocompleteSearchHeader {
+	%gifPickerSearchHeader {
 		color: hsla(0, 0%, 100%, .7);
 	}
 }
-%gifAutocompleteContent {
+%gifPickerContent {
 	%scroller {
 		&::-webkit-scrollbar {
 			width: 10px !important;
@@ -43,16 +39,16 @@
 	}
 
 	// CATEGORIES
-	%gifAutocompleteCategoryFade,
-	%gifAutocompleteCategoryFadeBlurple {
+	%gifPickerCategoryFade,
+	%gifPickerCategoryFadeBlurple {
 		transition: all .15s ease-in-out;
 	}
-	%gifAutocompleteCategoryFade {
+	%gifPickerCategoryFade {
 		&:hover {
 			background: rgba(0, 0, 0, .7);
 		}
 	}
-	%gifAutocompleteCategoryFadeBlurple {
+	%gifPickerCategoryFadeBlurple {
 		&,
 		&:hover {
 			background: transparent;
@@ -67,13 +63,13 @@
 			opacity: .7;
 		}
 	}
-	%gifAutocompleteCategoryText {
+	%gifPickerCategoryText {
 		color: #fff;
 		filter: drop-shadow(0 1px 1px rgba(0, 0, 0, .7));
 	}
 
 	// RESULTS
-	%gifAutocompleteResult {
+	%gifPickerResult {
 		&:after {
 			transition: all .15s ease-in-out;
 		}
@@ -90,24 +86,24 @@
 			filter: brightness(.7);
 		}
 	}
-	%gifAutocompleteResult:hover,
-	%gifAutocompleteResultFocused {
+	%gifPickerResult:hover,
+	%gifPickerResultFocused {
 		&:after {
 			box-shadow: inset 0 0 0 2px $main-color, inset 0 0 0 3px rgba(0, 0, 0, .3);
 		}
 	}
-	%gifAutocompletePlaceholder {
+	%gifPickerPlaceholder {
 		background: hsla(0, 0%, 100%, .07);
 	}
 
 	// HINT CARD
-	%gifAutocompleteEmptyHintCard {
+	%gifPickerEmptyHintCard {
 		background: hsla(0, 0%, 100%, .04);
 		color: hsla(0, 0%, 100%, .5);
 	}
 
 	// END CONTAINER
-	%gifAutocompleteEndContainer {
+	%gifPickerEndContainer {
 		&:after {
 			filter: grayscale(1) brightness(.7);
 			opacity: .3;
