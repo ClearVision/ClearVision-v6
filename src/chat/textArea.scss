@@ -16,8 +16,8 @@
 	}
 
 	%channelTextAreaScrollable {
-		background: rgba(0, 0, 0, .6);
-		border: 2px solid transparent;		
+		background: var(--textbox-color);
+		border: var(--textbox-radius) solid transparent;		
 	}
 	%channelTextAreaAttachButton {
 		padding: 10px 10px 10px 12px;
@@ -82,7 +82,7 @@
 
 // Reply
 %replyContainer {
-    background: rgba(0,0,0,0.6);
+    background: var(--textbox-reply);
     border: 2px solid transparent;
 }
 %replyMentionButton {
@@ -110,4 +110,4 @@
 	}
 }
 
-// Partial credit to Leafy
+// Partial credit to Leafy and Crenshaw
