@@ -127,7 +127,16 @@ $cv: (
 				icon: var(--home-icon),
 				pos: var(--home-position),
 				size: var(--home-size)
+			),
+
+			// TEXT BOX SHIT
+			textbox: (
+				color: var(--textbox-color),
+				autocomplete: var(--textbox-autocomplete),
+				reply: var(--textbox-reply),
+				radius: var(--textbox-radius)
 			)
+
 		)
 	),
 

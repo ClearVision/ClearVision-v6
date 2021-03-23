@@ -108,6 +108,12 @@
 	--user-modal-grayscale: var(--background-grayscale); /* user modal background grayscale (0 - 100%) [default: var(---background-grayscale)] */
 	--user-modal-sepia: var(--background-sepia); /* user modal background sepia (0 - 100%) [default: var(---background-sepia)] */
 	--user-modal-blur: calc(var(--background-blur) + 3px); /* user modal background blur [default: calc(var(--background-blur) + 3px)] */
+
+	/*TEXTBOX MODUAL SETTINGS*/
+	--textbox-color: var(--main-color);
+	--textbox-autocomplete: var(--main-color);
+	--textbox-reply: var(--main-color);
+	--textbox-radius: 30px;
 	
 	/* THEME BD COLORS */
 	--bd-blue: var(--main-color); /* betterdiscord main color [default: var(--main-color)] */
