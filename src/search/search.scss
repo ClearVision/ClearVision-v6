@@ -28,7 +28,7 @@
 				position: absolute;
 				@include stretch;
 				background: linear-gradient(to top, transparent, hsla(0, 0%, 100%, .07) 50%);
-				border-radius: 3px 3px 0 0;
+				border-radius: 3px;
 				opacity: 0;
 				transition: all .15s ease-in-out, bottom .2s ease-in-out;
 				z-index: -1;
@@ -38,8 +38,8 @@
 				position: absolute;
 				@include pos(100%, 0, 0, 0);
 				background: $main-color;
-				box-shadow: inset 0 -2px rgba(0, 0, 0, .3);
-				border-radius: 3px 3px 0 0;
+				box-shadow: none;
+				border-radius: 3px;
 				transition: all .2s ease-in-out;
 				z-index: -1;
 			}
