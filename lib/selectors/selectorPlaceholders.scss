@@ -2825,11 +2825,17 @@ pre {
 .bubble-3qRl2J {
 	@extend %playerMediaBarBubble !optional;
 }
+.mouse-mode.full-motion {
+	@extend %mouseModeFullMotion !optional;
+}
 .message-2qnXI6 {
 	@extend %message !optional;
 }
 .wrapper-2a6GCs {
 	@extend %messagesWrapper !optional;
+}
+.selected-2P5D_Z {
+	@extend %messageSelected !optional;
 }
 .groupStart-23k01U {
 	@extend %messageGroupStart !optional;

@@ -28,8 +28,13 @@
 }
 %mentioned {
 	background-color: hsla(0, 0%, 100%, .05);
-	:hover {
-		background-color: hsla(0, 0%, 100%, .08) !important;
+	&%message {
+		&%messageSelected {
+			background-color: hsla(0, 0%, 100%, .08);
+		}
+	}
+	%mouseModeFullMotion &:hover {
+		background-color: hsla(0, 0%, 100%, .08);
 	}
 	&::before {
 		background-color: $main-color;
@@ -38,7 +43,7 @@
 		%mention {
 			&%mentionedInteractive{
 				color: $main-color;
-				:hover {
+				&:hover {
 					color: $hover-color;
 					text-decoration: none;
 				}
