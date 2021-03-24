@@ -2891,8 +2891,11 @@ pre {
 .repliedTextPlaceholder-dmN7D1 {
 	@extend %messageRepliedTextPlaceholder !optional;
 }
-.isMentioned-N-h9aa {
+.mentioned-xhSam7 {
 	@extend %mentioned !optional;
+}
+.interactive {
+	@extend %mentionedInteractive !optional;
 }
 .markup-2BOw-j {
 	@extend %markup !optional;

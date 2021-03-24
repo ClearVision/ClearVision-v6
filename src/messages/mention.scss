@@ -12,10 +12,10 @@
 		cursor: pointer;
 	}
 	%mention {
-		background: hsla(0, 0%, 100%, .04);
+		background-color: hsla(0, 0%, 100%, .04);
 		color: hsla(0, 0%, 100%, .7);
 		&:hover {
-			background: $main-color;
+			background-color: $main-color;
 			color: #fff;
 		}
 	}
@@ -26,15 +26,24 @@
 		}
 	}
 }
-%mentioned %markup %roleMention {
-	padding: 0;
-	background: transparent !important;
-	color: $main-color;
-	@include hover-shadow;
-	&:hover {
-		color: $main-color;
+%mentioned {
+	background-color: hsla(0, 0%, 100%, .05);
+	&::before {
+		background-color: $main-color;
+		%themeDark & {
+			%mention {
+				&%mentionedInteractive{
+					color: $main-color;
+					:hover {
+						color: $hover-color;
+						text-decoration: none;
+					}
+				}
+			}
+		} 
 	}
-}
+
+} 
 //New server channel welcome message #link to another channel
 %mention {
 	color: var(--main-color);
