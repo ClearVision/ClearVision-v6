@@ -12,8 +12,9 @@
 		cursor: pointer;
 	}
 	%mention {
-		background: hsla(0, 0%, 100%, .04);
+		background: hsla(0, 0%, 100%, .04) !important;
 		color: hsla(0, 0%, 100%, .7);
+		border-radius: 5px;
 		&:hover {
 			background: $main-color;
 			color: #fff;
