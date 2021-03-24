@@ -15,9 +15,6 @@
 .lookGhost-2Fn_0-.colorGrey-2DXtkV {color: white; background-color: var(--main-color);}
 .lookGhost-2Fn_0-.colorBrand-3pXr91 {color: white; background-color: var(--hover-color);}
 
-/* Test Audio */
-.userSettingsVoice-iwdUCU .sliderBar-3DezvM.speaking-2bFhO4 {background: var(--main-color) !important;}
-
 /* So this was gay */
 .body-3AJVSA, .theme-light .input-UJ9Tr3, .theme-light .input-1mgnkM{color: rgba(255, 255, 255, 0.9); font-weight: 200;}
 
@@ -92,20 +89,12 @@
 /* No friends playing games? Not sure. */
 .emptyCard-1RJw8n {background-color: var(--background-overlay);}
 
-
-/* the quote bar thingy */
-.blockquoteDivider-2hH8H6 {background-color: rgba(255, 255, 255, 0.2);}
-
 /* BD sliders were forgotten about in CV, apparently. */
 #bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch.checked {background-color: var(--main-color);}
 #bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch {background-color: rgba(255,255,255,0.3);}
 
 /* Emoji Picker Nitro Ending Soon Notification - Cruxie */
 .premiumRetentionNotice-1MsjHe {background-color: var(--background-overlay);}
-
-/* styles Mention Button */
-.tabBar-2UKwcE .tabBarItem-1Cg-MI:after {background: var(--main-color); border-radius: 3px;}
-.tabBar-2UKwcE .tabBarItem-1Cg-MI[style*="color: rgb(255, 255, 255)"] {color: #fff !important;}
 
 /* default text */
 .defaultValue-3gC7yw .markValue-2DwdXI {color: var(--success-color);}
@@ -338,10 +327,6 @@
 
 /* Server boost bar */
 .barSecondary-3B1aP2 {background-color: var(--main-color);}
-
-/* Changes the outline on a focused image to main color */
-.imageWrapper-2p5ogY:focus {outline-color:var(--main-color);}
-
 
 /* Discord Store transparency */
 .scroller-1JpcIc {background-color:transparent;}

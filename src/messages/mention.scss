@@ -29,7 +29,7 @@
 %mentioned {
 	background-color: hsla(0, 0%, 100%, .05);
 	:hover {
-		color: hsla(0, 0%, 100%, .08) !important;
+		background-color: hsla(0, 0%, 100%, .08) !important;
 	}
 	&::before {
 		background-color: $main-color;
