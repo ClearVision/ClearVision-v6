@@ -28,21 +28,23 @@
 }
 %mentioned {
 	background-color: hsla(0, 0%, 100%, .05);
+	:hover {
+		color: hsla(0, 0%, 100%, .08) !important;
+	}
 	&::before {
 		background-color: $main-color;
-		%themeDark & {
-			%mention {
-				&%mentionedInteractive{
-					color: $main-color;
-					:hover {
-						color: $hover-color;
-						text-decoration: none;
-					}
+	}
+	%themeDark & {
+		%mention {
+			&%mentionedInteractive{
+				color: $main-color;
+				:hover {
+					color: $hover-color;
+					text-decoration: none;
 				}
 			}
-		} 
+		}
 	}
-
 } 
 //New server channel welcome message #link to another channel
 %mention {
