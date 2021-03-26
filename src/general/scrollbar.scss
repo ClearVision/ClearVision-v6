@@ -55,3 +55,8 @@ textarea {
 %scrollbarNone::-webkit-scrollbar {
 	width: 0px !important;
 }
+
+// THIN SCROLLBAR
+%scrollbarThin::-webkit-scrollbar {
+	width: 10px !important;
+}

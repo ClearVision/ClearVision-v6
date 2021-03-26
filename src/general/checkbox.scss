@@ -1,10 +1,10 @@
 /* CHECKBOX */
 
 %checkbox {
-	&%checkboxChecked[style*="border-color: rgb(114, 137, 218)"] {
-		background-color: var(--background-overlay) !important;
-		border-color: var(--main-color) !important;
-		
+	border-color: hsla(0, 0%, 100%, .5);
+	&%checkboxChecked {
+		background-color: transparent !important;
+		border-color: var(--main-color) !important;		
 		>svg {
 			>path {
 				fill: #fff;

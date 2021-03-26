@@ -2990,11 +2990,11 @@ pre {
 .keybindShortcut-1BD6Z1 {
 	@extend %keybindShortcut !optional;
 }
-.modal-yWgWj- {
+.modal-2VIBV8 {
 	@extend %modal !optional;
 }
 .root-1gCeng {
-	@extend %modal2 !optional;
+	@extend %modalRoot !optional;
 }
 .header-2tA9Os {
 	@extend %modalHeader !optional;
@@ -3004,6 +3004,12 @@ pre {
 }
 .input-cIJ7To {
 	@extend %modalInput !optional;
+}
+.focused-1mmYsC {
+	@extend %modalInputFocused !optional;
+}
+.noBorder-CTIBpT {
+	@extend %modalInputNoBorder !optional;
 }
 .root-SR8cQa {
 	@extend %userModal !optional;
@@ -3449,7 +3455,7 @@ pre {
 .popout-103y-5 {
 	@extend %groupInvitePopout !optional;
 }
-.header-1R_AjF {
+.header-1TKi98 {
 	@extend %groupInvitePopoutHeader !optional;
 }
 .title-3sZWYQ {
@@ -3476,25 +3482,22 @@ pre {
 .close-3WVtCL {
 	@extend %groupInvitePopoutSearchTagClose !optional;
 }
-.friendWrapper-LdKLp8 {
+.friendWrapper-2SrUFF {
 	@extend %groupInvitePopoutFriendWrapper !optional;
 }
-.friend-2E0q2S {
+.friend-3KALPe {
 	@extend %groupInvitePopoutFriend !optional;
 }
-.friendSelected-3J_Uh8 {
+.friendSelected-1sa4bG {
 	@extend %groupInvitePopoutFriendSelected !optional;
 }
-.nickname-2CALbl {
+.nickname-O95uts {
 	@extend %groupInvitePopoutNickname !optional;
 }
-.discordTag-3gO1VA {
+.discordTag-X7dpau {
 	@extend %groupInvitePopoutDiscordTag !optional;
 }
-.checkboxWrapper-SkhIWG {
-	@extend %groupInvitePopoutCheckboxWrapper !optional;
-}
-.input-3ITkQf {
+.input-1Rv96N {
 	@extend %groupInvitePopoutInput !optional;
 }
 .inputDefault-3JxKJ2 {
@@ -3502,9 +3505,6 @@ pre {
 }
 .inputDisabled-110Jqx {
 	@extend %groupInvitePopoutInputDisabled !optional;
-}
-.checkbox-1ix_J3 {
-	@extend %groupInvitePopoutCheckbox !optional;
 }
 .footer-1eyGBa {
 	@extend %groupInvitePopoutFooter !optional;
@@ -4231,4 +4231,37 @@ pre {
 }
 .none-2Eo-qx {
 	@extend %scrollbarNone !optional;
+}
+.thin-1ybCId {
+	@extend %scrollbarThin !optional;
+}
+.segmentContainer-3izQ9Z {
+	@extend %screenshareSegmentContainer !optional;
+}
+.segmentControlOption-1vCKaY {
+	@extend %screenshareSegmentControlOption !optional;
+}
+.selected-P8xTeN {
+	@extend %screenshareSegmentControlSelected !optional;
+}
+.tile-2w4k5N {
+	@extend %screenshareTile !optional;
+}
+.sourceThumbnail-27dolk {
+	@extend %screenshareSourceThumbnail !optional;
+}
+.selected-1nOkyc {
+	@extend %screenshareSourceSelected !optional;
+}
+.card-2Mz_4z {
+	@extend %screenshareCard !optional;
+}
+.selectorButton-EEUWed {
+	@extend %screenshareSettingsSelector !optional;
+}
+.selectorButtonSelected-t5V9On {
+	@extend %screenshareSettingsSelected !optional;
+}
+.selectorButtonPremiumRequired-mKMbIu {
+	@extend %screenshareSettingsPremiumRequired !optional;
 }

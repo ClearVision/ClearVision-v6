@@ -1,0 +1,36 @@
+/* SCREEN SHARE */
+%screenshareSegmentControlOption {
+    color: hsla(0, 0%, 100%, .7);
+    %themeDark &%screenshareSegmentControlSelected {
+        color: $main-color;
+        border-bottom: 2px solid $main-color;
+    }
+}
+%screenshareTile {
+    :hover {
+        %screenshareSorceThumbnail {
+            box-shadow: inset 0 0 0 2px var(--hover-color);
+        }
+    }
+    %screenshareSorceThumbnail {
+        &%screenshareSourceSelected {
+            box-shadow: inset 0 0 0 2px var(--main-color);
+        }
+    }
+}
+%screenshareCard {
+    background-color: hsla(0, 0%, 100%, .1);
+	border: 2px solid hsla(0, 0%, 100%, .12);
+}
+%themeDark {
+    %screenshareSettingsSelector {
+        background-color: hsla(0, 0%, 100%, .1);
+	    border-color: hsla(0, 0%, 100%, .12);
+        &:not(%screenshareSettingsPremiumRequired):hover {
+            background-color: hsla(0, 0%, 100%, .13);
+        }
+        &%screenshareSettingsSelected {
+            background-color: $main-color;
+        }
+    }
+}

@@ -1,10 +1,14 @@
 /* NEW GROUP INVITE POPOUT */
-%groupInvitePopout {
+%themeDark {
+	%groupInvitePopout {
+		&%modalRoot {
+			background-color: hsla(0, 0%, 0%, .8);
+		}
+	}
 
-	// HEADER
+		// HEADER
 	%groupInvitePopoutTitle {
 		color: #fff;
-		text-shadow: 0 0 1px #000;
 	}
 	%groupInvitePopoutSubtitle {
 		color: hsla(0, 0%, 100%, .7);
@@ -13,6 +17,7 @@
 	// SEARCH
 	%groupInvitePopoutSearchContainer {
 		background-color: hsla(0, 0%, 100%, .1);
+		box-shadow: 0 0 0 2px rgba(255,255,255,0.12);
 	}
 	%groupInvitePopoutSearchTag {
 		background: $main-color;
@@ -44,60 +49,6 @@
 		opacity: 1;
 		transition: all .15s ease-in-out;
 	}
-	%groupInvitePopoutCheckboxWrapper {
-		height: 18px !important;
-	}
-	%groupInvitePopoutInput {
-		width: 35px;
-		height: 18px !important;
-		border-radius: 10px;
-		&:checked {
-			+ %groupInvitePopoutCheckbox {
-				&:before {
-					right: 0;
-					background: $main-color;
-				}
-				&:after {
-					left: 100%;
-					width: 18px;
-					height: 18px;
-					margin-left: -18px;
-					border: none;
-					transform: none;
-				}
-			}
-		}
-	}
-	%groupInvitePopoutCheckbox {
-		width: 35px !important;
-		height: 18px !important;
-		background: hsla(0, 0%, 100%, .04);
-		border: none;
-		border-radius: 10px;
-		box-shadow: 0 0 5px rgba(0, 0, 0, .5);
-		transition: all .15s ease-in-out;
-		&:before {
-			content: "";
-			position: absolute;
-			@include pos(0, 100%, 0, 0);
-			border-radius: 10px;
-			transition: all .2s ease-in-out;
-		}
-		&:after {
-			content: "";
-			position: absolute;
-			left: 0;
-			width: 18px;
-			height: 18px;
-			background: #fff;
-			border-radius: 50%;
-			box-shadow: 0 0 1px 1px rgba(0, 0, 0, .3);
-			transition: all .2s ease-in-out;
-		}
-		> svg {
-			display: none;
-		}
-	}
 
 	// FOOTER
 	%groupInvitePopoutFooterSeparator {
@@ -108,4 +59,5 @@
 // Invite to server
 %groupInvitePopoutSearchContainer {
 	background-color: hsla(0, 0%, 100%, .1);
+	box-shadow: 0 0 0 2px rgba(255,255,255,0.12);
 }

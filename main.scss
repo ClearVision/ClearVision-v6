@@ -112,7 +112,7 @@ $version: "6.0.3";
 @import "src/popouts/VoiceChannelListenigTo";
 @import "src/popouts/emojiInfoPopout";
 @import "src/popouts/mentionEveryone";
-@import "src/popouts/gifPicker.scss";
+@import "src/popouts/gifPicker";
 
 // MODALS
 @import "src/modals/modal";
@@ -122,6 +122,7 @@ $version: "6.0.3";
 @import "src/modals/uploadModal";
 @import "src/modals/regionSelectorModal";
 @import "src/modals/otherModals";
+@import "src/modals/screenshare";
 
 // SETTINGS
 @import "src/settings/sidebar";
