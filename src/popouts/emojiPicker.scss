@@ -21,8 +21,8 @@
 }
 // SEARCH BAR
 %emojiPickerSearchBar {
-	background-color: rgba(255, 255, 255, 0.1);
-	box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.12);
+	background-color: hsla(0, 0%, 100%, .07);
+	box-shadow: 0 0 0 2px hsla(0, 0%, 100%, .09);
 	margin-top: 2px;
 	&:focus-within {
 		box-shadow: 0 0 2px 2px $main-color;
@@ -89,7 +89,7 @@
 		border-radius: 4px;		
 	}
 	&%emojiCategoryItemSelected {
-		background-color: hsla(0, 0%, 100%, .1);
+		background-color: hsla(0, 0%, 100%, .07);
 		border-radius: 4px;
 	}
 }
