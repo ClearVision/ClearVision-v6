@@ -19,14 +19,14 @@
 		max-width: 93%;
 		padding: 0;
 		background: transparent;
-		border: 2px solid transparent;
+		border: 2px solid hsla(0, 0%, 100%, .5);
+		border-radius: 8px;
 		font-family: cv("font.code");
 		& > %codeHLJS {
 			position: relative;
 			padding: 6px;
 			background: rgba(0, 0, 0, .42);
 			border: none;
-			border-radius: 5px;
 			color: hsla(0, 0%, 100%, .7);
 			&:before {
 				height: 10px;

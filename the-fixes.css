@@ -57,7 +57,6 @@
 
 /* Server unavailable screen. Slight easter egg. */
 .content-MLh4nU, .category-2haXBH, .channelIcon-1TvDoP, .channelName-2wrHHc {background-color: var(--background-overlay);}
-.splashHeader-ehL7gZ:after {content: "WE DIED";color: var(--danger-color);font-size: 20px;}
 .splashText-3jk87t {font-size: 0px;}
 .splashHeader-ehL7gZ, .splashHeader-3jk87 {font-size: 0px;}
 
@@ -255,15 +254,6 @@
 /* tickbox in role menu popout */
 .colorDefault-2K3EoJ .checkbox-3s5GYZ, .colorDefault-2K3EoJ .radioSelection-1HmrQS, .colorDefault-2K3EoJ.focused-3afm-j .check-1JyqgN {color: var(--main-color);}
 
-/* Search Menu */
-.searchResultsWrap-3-pOjs, .jumpButton-1ol35X, .searchResult-2N9RV4.expanded-ovgtuV {background-color: var(--backdrop-overlay);}
-.channelName-wvgELL, .searchResult-2N9RV4.expanded-ovgtuV {background-color: transparent;}
-    /*gradients*/
-.searchResult-2N9RV4:before, .searchResult-2N9RV4:after {background-image: none;}
-    /*result*/
-.searchResultMessage-30QnSN.hit-1CXhXT {box-shadow: none; background-color: var(--background-overlay);}
-    /*clicked result*/
-.expanded-ovgtuV .searchResultMessage-30QnSN.hit-1CXhXT {background-color: var(--background-overlay);}
 
 /* quick reactions */
 .button-F9qN4n.focused-3ZzkKr {box-shadow: 0 0 2px 2px var(--hover-color);}
