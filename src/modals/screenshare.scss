@@ -8,11 +8,11 @@
 }
 %screenshareTile {
     &:hover {
-        %screenshareSorceThumbnail {
+        %screenshareSourceThumbnail {
             box-shadow: inset 0 0 0 2px var(--hover-color);
         }
     }
-    %screenshareSorceThumbnail {
+    %screenshareSourceThumbnail {
         &%screenshareSourceSelected {
             box-shadow: inset 0 0 0 2px var(--main-color);
         }
@@ -26,11 +26,14 @@
     %screenshareSettingsSelector {
         background-color: hsla(0, 0%, 100%, .07);
 	    border-color: hsla(0, 0%, 100%, .09);
-        &:not(%screenshareSettingsPremiumRequired):hover {
-            background-color: hsla(0, 0%, 100%, .13);
+        &:not(%screenshareSettingsPremiumRequired){
+            &:hover {
+                background-color: $hover-color;
+            }
+            &%screenshareSettingsSelected {
+                background-color: $main-color;
+            }
         }
-        &%screenshareSettingsSelected {
-            background-color: $main-color;
-        }
+        
     }
 }

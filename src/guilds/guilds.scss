@@ -102,11 +102,12 @@
 
 // BADGE
 %guildBadgeIcon {
-	background: hsla(0, 0%, 100%, .07);
-	box-shadow: 0 0 0 1px hsla(0, 0%, 100%, .07);
-	&.participating-1NvRVd {
-		background: hsla(0, 0%, 100%, .07);
-		box-shadow: 0 0 0 1px hsla(0, 0%, 100%, .07);
+	background: hsla(0, 0%, 0%, .07);
+	&%guildBadgeParticipating {
+		background: $main-color;
+		%guildBadgeIconSVG {
+			color: #fff;
+		}
 	}
 }
 %guildBadgeIconSVG {
@@ -146,7 +147,7 @@
 // ICON BUTTON
 %circleIconButton {
 	background: rgba(0, 0, 0, .3);
-	color: hsla(0, 0%, 100%, .3);
+	color: hsla(0, 0%, 100%, .7);
 	transition: all .3s ease-in-out;
 	&:hover,
 	&%circleIconButtonSelected {
