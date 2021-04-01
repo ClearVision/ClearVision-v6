@@ -1,11 +1,11 @@
 /* Text Container */
-.textContainer-C0szpm {
+%textContainer {
     background-color: rgba(0,0,0,0.42);
     border: 2px solid hsla(0, 0%, 100%, .05);
     border-radius: 8px 8px 0 0;
 }
-.footer-2yA7Ep {
-    background-color: rgba(163, 58, 58, 0.12);
+%textContainerFooter {
+    background-color: hsla(0, 0%, 100%, .1);
     border: none;
 }
 .colorHeaderSecondary-3Sp3Ft {
@@ -14,16 +14,34 @@
         color: hsla(0, 0%, 100%, .9);
     }
 }
-.attachmentName-1iFwvb {
+%attachmentName {
     color: hsla(0, 0%, 100%, .7);
     &:hover {
         color: hsla(0, 0%, 100%, .9);
     }
 }
-.formattedSize-2PXVec {
+%attachmentSize {
     color: hsla(0, 0%, 100%, .5);
     margin: 0 5px;
     &:hover {
         color: hsla(0, 0%, 100%, .7);
     }
+}
+
+
+%languageSelector {
+    background-color: hsla(0, 0%, 0%, .8);
+    %languageSelectorItem {
+        &:hover {
+            background-color: hsla(0, 0%, 100%, .05);
+        }
+        %languageSelectorSelected {
+            background-color: $main-color;
+        }
+    }   
+}
+
+%textContainerModal {
+    background-color: hsla(0, 0%, 0%, .5);
+    border: none;
 }

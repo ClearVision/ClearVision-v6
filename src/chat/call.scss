@@ -58,3 +58,52 @@
 .contextMenuCaret-3tjo32 {
 	color: #fff;
 }
+
+// STAGE
+.stageIconBackground-5uF4K9 {
+	background-color: $main-color;
+}
+.textInput-2xgsSa {
+	background-color: transparent;
+}
+
+.callContainer-3UuV6S {
+	background-color: transparent;
+}
+.scroller-1SuHJo {
+	background-color: transparent;
+}
+
+
+.rowContainer-2tYerQ, .container-2t1JyW {
+	background-color: hsla(0, 0%, 0%, .4);
+}
+
+.container-1KVp62 {	
+	>svg {
+		fill: #fff;
+		>rect {
+		fill: $main-color;
+		}
+	}
+}
+
+
+.participants-soO0aD {
+	background-color: hsla(0, 0%, 0%, .4);
+}
+.tileContainer-BaRAZF {
+	&:hover {
+		background-color: hsla(0, 0%, 100%, .07);
+	}
+}
+
+.container-1EOCj2 {
+	background-color: hsla(0, 0%, 0%, .6);
+}
+.background-1vAsyP {
+	background-color: $main-color;
+	.foreground-2XBsBU {
+		color: #fff;
+	}
+}
