@@ -3,6 +3,12 @@
 .connectionHeader-2MDqhu {
     background: transparent;
 }
+.connectionAccountLabel-1DiK0A {
+    color: hsla(0, 0%, 100%, .7);
+}
+.connectionDelete-2Odoln {
+    color: hsla(0, 0%, 100%, .7);
+}
 
 .connectionIcon-2ElzVe {
     + div {
@@ -37,11 +43,19 @@
     // Twitch
     &[alt*="Twitch"] {
         + div {
-            &:before {
-                background-color: cv("const:colors.twitch-purple");
-            }
+            &:before,
             &:after {
                 background-color: cv("const:colors.twitch-purple");
+            }
+        }
+    }
+
+    // YOUTUBE
+    &[alt*="Youtube"] {
+        + div {
+            &:before,
+            &:after {
+                background-color: #E5151A;
             }
         }
     }
@@ -49,10 +63,8 @@
     // BATTLE.NET
     &[alt*="Battle.net"] {
         + div {
-            &:before {
-                background-color: #0566b0;
-            }
-            &:after {
+            &:before,
+            &:after  {
                 background-color: #0566b0;
             }
         }
@@ -61,33 +73,70 @@
     // STEAM
     &[alt*="Steam"] {
         + div {
-            &:before {
-                background-color: #171a21;
-            }
+            &:before,
             &:after {
-                background-color: #171a21;
-                bottom: -64px;
+                background-color: #212121;
             }
         }
     }
-    
+
+    // REDDIT
+    &[alt*="Reddit"]{
+        + div {
+            &:before,
+            &:after {
+                background-color: #FF5900;
+            }
+        }
+    }
+
+    // FACEBOOK
+    &[alt*="Facebook"]{
+        + div {
+            &:before,
+            &:after {
+                background-color: cv("const:colors.facebook-blue");
+            }
+        }
+    }
+
+    // TWITTER
+    &[alt*="Twitter"]{
+        + div {
+            &:before,
+            &:after {
+                background-color: #33AEFA;
+            }
+        }
+    }
+
     // SPOTIFY
     &[alt*="Spotify"]{
         + div {
-            &:before {
-                background-color: cv("const:colors.spotify-green");
-            }
+            &:before,
             &:after {
                 background-color: cv("const:colors.spotify-green");
+            }
+            &:before {
                 bottom: -108px;
             }
         }
     }
+
+    // XBOX LIVE
+    &[alt*="Xbox Live"] {
+        + div {
+            &:before,
+            &:after {
+                background: cv("const:colors.xbox-green");
+            }
+        }
+    }
+
+    // GITHUB
     &[alt*="GitHub"] {
         + div {
-            &:before {
-                background: #333;
-            }
+            &:before,
             &:after {
                 background: #333;
             }
