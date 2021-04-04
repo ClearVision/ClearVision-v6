@@ -7,19 +7,18 @@
 		transition: all .15s ease-in-out;		
 		&%menuPopoutItemHover {
 			background-color: var(--hover-color);
-			color: #fff;			
+			color: #fff;
+			%menuPopoutCheckbox,
+			%menuPopoutRadio {
+				color: #fff;
+			}
+			%menuPopoutCheck {
+				color: var(--main-color);
+			}
 		}
 		%menuPopoutCheckbox,
 		%menuPopoutRadio {
 			color: var(--main-color);
-			&%menuPopoutItemHover {
-				color: #fff;
-			}
-		}
-		&%menuPopoutItemHover {
-			%menuPopoutCheck {
-				color: var(--main-color);
-			}
 		}
 	}
 	 %menuPopoutItemInvite {

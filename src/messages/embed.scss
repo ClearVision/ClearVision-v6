@@ -1,8 +1,6 @@
 /* EMBED */
 %embed {
-	position: relative;
-	background: transparent;
-	border-color: #fff;
+	background: rgba(0, 0, 0, .3);
 	%embedAuthorName,
 	%embedFieldName,
 	%embedTitle {

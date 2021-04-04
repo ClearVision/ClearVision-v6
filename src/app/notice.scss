@@ -1,11 +1,7 @@
 /* APP NOTICE */
-%appMount {
-	%notice {
-		border-radius: 3px !important;
-		color: hsla(0, 0%, 100%, .7);
-	}
-}
+
 %notice {
+	border-radius: 3px;
 	&%noticeDefault {
 		background: rgba(#f26522, .6);
 	}
@@ -35,25 +31,5 @@
 	}
 	&%noticeBrand {
 		background: rgba(cv("const:colors.discord-blurple"), .6);
-	}
-	%noticeButton {
-		background: hsla(0, 0%, 100%, .1);
-		border: 1px solid transparent;
-		color: #fff;
-		transition: all .15s ease-in-out;
-		mix-blend-mode: screen;
-		transform: translateZ(0);
-		&:hover {
-			background: #fff;
-			color: #000;
-		}
-	}
-	%noticeDismiss {
-		background: url(https://clearvision.gitlab.io/icons/close.svg) center/18px no-repeat;
-		opacity: .5;
-		transition: all .15s ease-in-out;
-		&:hover {
-			opacity: 1;
-		}
 	}
 }

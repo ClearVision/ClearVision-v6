@@ -1,0 +1,35 @@
+/* PREVIEW SERVER */
+
+// WELCOME MODAL
+.optionContainer-15srkc {
+    background-color: $main-color;
+    &:hover {
+        background-color: $hover-color;
+    }
+    .optionArrow-2L2fza {
+        color: #fff;
+    }
+}
+.channelIcon-g61PDh {
+    background-color: transparent;
+}
+
+.theme-dark .notice-2X5hT5 {
+	background-color: transparent;
+}
+.notice-2X5hT5 .header-1g25vm::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color: var(--main-color);
+	opacity: .6;
+	pointer-events: none;
+	z-index: -1;
+}
+
+.container-2Uhd6d {
+    background-color: rgba(0, 0, 0, .8);
+}

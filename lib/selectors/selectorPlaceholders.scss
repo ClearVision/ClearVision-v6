@@ -53,7 +53,7 @@
 .backdrop-1wrmKB {
 	@extend %backdrop !optional;
 }
-.notice-2FJMB4 {
+.notice-3bPHh- {
 	@extend %notice !optional;
 }
 .noticeDefault-362Ko2 {
@@ -74,7 +74,7 @@
 .noticeDanger-7u-yT9 {
 	@extend %noticeDanger !optional;
 }
-.noticeStreamerMode-2TSQpg {
+.colorStreamerMode-2SJAUN {
 	@extend %noticeStreamerMode !optional;
 }
 .noticeFacebook-3equ5g {
@@ -89,10 +89,10 @@
 .noticeSurvey-1XW9Ln {
 	@extend %noticeSurvey !optional;
 }
-.dismiss-SCAH9H {
-	@extend %noticeDismiss !optional;
+.closeButton-3cJIM4 {
+	@extend %noticeClose !optional;
 }
-.button-1MICoQ {
+.button-2DhvE9 {
 	@extend %noticeButton !optional;
 }
 .icon-KgjVwm {
@@ -622,6 +622,12 @@
 }
 .centerButton-3CaNcJ {
 	@extend %callCenterButton !optional;
+}
+.centerIcon-2G6o-T {
+	@extend %callCenterIcon !optional;
+}
+.slash-33-IMF {
+	@extend %micSlash !optional;
 }
 .colorable-1bkp8v {
 	@extend %callButtonColorable !optional;
@@ -1840,6 +1846,9 @@
 }
 .actionButton-uPB8Fs {
 	@extend %friendActionButton !optional;
+}
+.highlight-Lf97TE {
+	@extend %friendActionButtonSelected !optional;
 }
 .actionAccept-LV-szU {
 	@extend %friendActionAcceptButton !optional;

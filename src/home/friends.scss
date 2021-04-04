@@ -25,10 +25,10 @@
 }
 
 // ACTION BUTTON 
-%friendActionButton,
-%friendActionButton.highlight-Lf97TE {
+%friendActionButton {
 	background-color: hsla(0, 0, 0, 0.6);
 	color: #fff;
+	&%friendActionButtonSelected,
 	&:hover {
 		background-color: $hover-color;
 		color: #fff;

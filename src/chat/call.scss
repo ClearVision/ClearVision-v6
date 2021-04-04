@@ -1,5 +1,6 @@
 /* PRIVATE CALL */
-%call {
+%call,
+%call%callMinimum {
 	background: rgba(0, 0, 0, calc(var(--background-shading) * .6));
 }
 
@@ -21,8 +22,10 @@
 }
 
 // ACTION BUTTON
-%callButtonColorable {
+%callCenterButton {
 	border-radius: 50%;
+}
+%callButtonColorable {
 	&%callButtonPrimaryDark {
 		background-color: rgba(0, 0, 0, .6);
 		color: #fff;
@@ -39,6 +42,10 @@
 		}
 		%callButtonActive {
 			background-color: $main-color;
+		}
+		%callCenterIcon,
+		%micSlash {
+			color: #fff;
 		}
 	}
 	%callButtonRed {

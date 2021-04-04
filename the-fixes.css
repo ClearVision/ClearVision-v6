@@ -153,15 +153,6 @@
 /*server Discover searchbar focus colour*/
 .searchPage-3GKAdT .search-1iTphC .searchBox-2_mAlO:focus, .searchPage-3GKAdT .search-1iTphC .searchBox-2_mAlO:focus-within {border-color: var(--main-color);}
 
-/* Temp Joins for Public Servers*/
-    /* bar at top */
-.theme-dark .notice-2X5hT5 {background-color: rgba(0,0,0,calc(var(--background-shading) * 0.8));}
-    /* options in some menu */
-.optionContainer-15srkc {background-color: var(--background-overlay) !important;}
-.channelIcon-g61PDh {background-color: var(--backdrop-overlay);}
-    /* haven't yet joined popup */
-.container-2Uhd6d {background-color: var(--backdrop-overlay);}
-
 /* Channel Follow */
 .theme-dark .header-1pGpFt {background-image: none; background-color: var(--backdrop-overlay);}
 .channelContainer-1x3D6I .channel-2PJTLY {background-color: var(--background-overlay);}
