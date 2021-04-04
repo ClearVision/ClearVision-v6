@@ -22,6 +22,7 @@
 
 // ACTION BUTTON
 %callButtonColorable {
+	border-radius: 50%;
 	&%callButtonPrimaryDark {
 		background-color: rgba(0, 0, 0, .6);
 		color: #fff;
@@ -32,6 +33,7 @@
 	}
 	&%callButtonWhite {
 		background-color: $main-color;
+		color: #fff;
 		&:hover {
 		background-color: var(--hover-color);
 		}

@@ -35,7 +35,7 @@
 			background-color: var(--dnd-color);
 		}
 	}
-	&#status-picker-invisble {
+	&#status-picker-invisible {
 		&:not(%menuPopoutItemHover) {
 			%statusPickerIcon {
 				background-color: var(--offline-color) !important;

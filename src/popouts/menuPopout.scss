@@ -12,6 +12,9 @@
 		%menuPopoutCheckbox,
 		%menuPopoutRadio {
 			color: var(--main-color);
+			&%menuPopoutItemHover {
+				color: #fff;
+			}
 		}
 		&%menuPopoutItemHover {
 			%menuPopoutCheck {
