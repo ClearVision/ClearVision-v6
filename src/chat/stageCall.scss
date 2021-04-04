@@ -1,0 +1,50 @@
+/* STAGE CALL */
+
+// POPOUT
+%stageIconBackground {
+	background-color: $main-color;
+}
+%stagePopoutTextInput {
+	background-color: transparent;
+}
+
+// STAGE
+%stageContainer {
+	background: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .5));
+}
+%stageCallContainer,
+%stageScroller {
+	background-color: transparent;
+}
+%stageGradientContainer {
+	background-image: none;
+}
+%stageHeaderContainer,
+%stageSpeakers,
+%stageParticipants {
+	background-color: hsla(0, 0%, 0%, .4);
+}
+%stageModIconContainer {	
+	>svg {
+		fill: #fff;
+		>rect {
+		fill: $main-color;
+		}
+	}
+}
+%stageParticipant {
+	&:hover {
+		background-color: hsla(0, 0%, 100%, .05);
+	}
+}
+
+// REQUESTS
+%stageRequestContainer {
+	background-color: hsla(0, 0%, 0%, .6);
+}
+%stageIconBigBackground {
+	background-color: $main-color;
+	%stageIconBigForeground {
+		color: #fff;
+	}
+}

@@ -602,29 +602,53 @@
 .hasMore-3e72_v {
 	@extend %hasMore !optional;
 }
-.wrapper-29NfPK {
-	@extend %privateCall !optional;
+.wrapper-2qzCYF {
+	@extend %call !optional;
 }
-.minimum-2d6zH6 {
-	@extend %privateCallMinimum !optional;
+.minimum-28Z35l {
+	@extend %callMinimum !optional;
 }
-.normal-2GSW0u {
-	@extend %privateCallNormal !optional;
+.normal-2GSW0u {///
+	@extend %callNormal !optional;
 }
-.noChat-2qlG4B {
-	@extend %privateCallNoChat !optional;
+.noChat-18KtBD {
+	@extend %callNoChat !optional;
 }
-.video-1FfuMD {
-	@extend %privateCallVideo !optional;
+.video-1FfuMD {//////
+	@extend %callVideo !optional;
 }
-.actions-2vadYq {
-	@extend %privateCallActions !optional;
+.controlButton-2MhVEL {
+	@extend %callControlButton !optional;
 }
-.center-1Vp33r {
-	@extend %privateCallActionsCenter !optional;
+.centerButton-3CaNcJ {
+	@extend %callCenterButton !optional;
 }
-.side-kO0bwV {
-	@extend %privateCallActionsSide !optional;
+.colorable-1bkp8v {
+	@extend %callButtonColorable !optional;
+}
+.primaryDark-3mSFDl {
+	@extend %callButtonPrimaryDark !optional;
+}
+.white-3GPOIp {
+	@extend %callButtonWhite !optional;
+}
+.red-33-Lnk {
+	@extend %callButtonRed !optional;
+}
+.active-1QRrIS {
+	@extend %callButtonActive !optional;
+}
+.participantsButton-KYW-IW {
+	@extend %videoParticipantsButton !optional;
+}
+.tile-2gi3tr {
+	@extend %videoParticipantTile !optional;
+}
+.border-3dQmSY {
+	@extend %videoAvatarBorder !optional;
+}
+.speaking-WDn8Wm {
+	@extend %videoAvatarSpeaking !optional;
 }
 .chat-3bRxxu {
 	@extend %chat !optional;
@@ -3525,31 +3549,40 @@ pre {
 	@extend %groupInvitePopoutFooterSeparator !optional;
 }
 .menu-3sdvDG {
-	@extend %guildHeaderPopout !optional;
+	@extend %menuPopout !optional;
 }
 .item-1tOPte {
-	@extend %guildHeaderPopoutItem !optional;
+	@extend %menuPopoutItem !optional;
 }
 .focused-3afm-j {
-	@extend %guildHeaderPopoutItemHover !optional;
+	@extend %menuPopoutItemHover !optional;
 }
 .colorBrand-ROmMP1 {
-	@extend %guildHeaderPopoutItemInvite !optional;
+	@extend %menuPopoutItemInvite !optional;
 }
 .colorDanger-2qLCe1 {
-	@extend %guildHeaderPopoutItemLeave !optional;
+	@extend %menuPopoutItemLeave !optional;
 }
 .separator-2zcjq8 {
-	@extend %guildHeaderPopoutSeparator !optional;
+	@extend %menuPopoutSeparator !optional;
 }
 .iconContainer-2-XQPY {
-	@extend %guildHeaderPopoutIconContainer !optional;
+	@extend %menuPopoutIconContainer !optional;
 }
 .icon-LYJorE {
-	@extend %guildHeaderPopoutIcon !optional;
+	@extend %menuPopoutIcon !optional;
 }
 .label-1Y-LW5 {
-	@extend %guildHeaderPopoutLabel !optional;
+	@extend %menuPopoutLabel !optional;
+}
+.checkbox-3s5GYZ {
+	@extend %menuPopoutCheckbox !optional;
+}
+.radioSelection-1HmrQS {
+	@extend %menuPopoutRadio !optional;
+}
+.check-1JyqgN {
+	@extend %menuPopoutCheck !optional;
 }
 .container-3cGP6G {
 	@extend %messageOptions !optional;
@@ -3881,20 +3914,17 @@ pre {
 .optionNormal-12VR9V {
 	@extend %selectPopoutOptionNormal !optional;
 }
-.statusItem-2uzPIV {
+.statusItem-33LqPf {
 	@extend %statusPickerItem !optional;
 }
-.statusIconText-3b4TkH {
+.status-1fhblQ	 {
 	@extend %statusPickerText !optional;
 }
-.status-3Kz6VS {
-	@extend %statusPickerStatus !optional;
+.description-2L932D {
+	@extend %statusPickerDescription !optional;
 }
 .status-1AY8sU {
-	@extend %statusPickerStatusInner !optional;
-}
-.helper-2c73HK {
-	@extend %statusPickerHelper !optional;
+	@extend %statusPickerIcon !optional;
 }
 .userPopout-3XzG_A {
 	@extend %userPopout !optional;
@@ -4300,4 +4330,46 @@ pre {
 }
 .formattedSize-2PXVec {
 	@extend %attachmentSize !optional;
+}
+.container-pTf0Ly {
+	@extend %stageContainer !optional;
+}
+.callContainer-3UuV6S {
+	@extend %stageCallContainer !optional;
+}
+.scroller-1SuHJo {
+	@extend %stageScroller !optional;
+}
+.gradientContainer-10lXLB {
+	@extend %stageGradientContainer !optional;
+}
+.container-2t1JyW {
+	@extend %stageHeaderContainer !optional;
+}
+.rowContainer-2tYerQ {
+	@extend %stageSpeakers !optional;
+}
+.participants-soO0aD {
+	@extend %stageParticipants !optional;
+}
+.tileContainer-BaRAZF {
+	@extend %stageParticipant !optional;
+}
+.container-1KVp62 {
+	@extend %stageModIconContainer !optional;
+}
+.container-1EOCj2 {
+	@extend %stageRequestContainer !optional;
+}
+.background-1vAsyP {
+	@extend %stageIconBigBackground !optional;
+}
+.foreground-2XBsBU {
+	@extend %stageIconBigForeground !optional;
+}
+.stageIconBackground-5uF4K9 {
+	@extend %stageIconBackground !optional;
+}
+.textInput-2xgsSa {
+	@extend %stagePopoutTextInput !optional;
 }

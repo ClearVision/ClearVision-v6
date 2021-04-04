@@ -1,18 +1,48 @@
 /* STATUS PICKER */
 %popoutAnimatorTop {
-	%guildHeaderPopout {
+	%menuPopout {
 		margin-left: -10px;
 	}
 }
-
-.item-1tOPte#status-picker-online:not(.focused-3afm-j) .status-1AY8sU {background-color: var(--online-color) !important;}
-.item-1tOPte#status-picker-idle:not(.focused-3afm-j) .status-1AY8sU {background-color: var(--idle-color) !important;}
-.item-1tOPte#status-picker-dnd:not(.focused-3afm-j) .status-1AY8sU {background-color: var(--dnd-color) !important;}
-.item-1tOPte#status-picker-invisible:not(.focused-3afm-j) .status-1AY8sU {background-color: var(--offline-color) !important;}
-
-
-.item-1tOPte.focused-3afm-j#status-picker-online {background-color: var(--online-color);}
-.item-1tOPte.focused-3afm-j#status-picker-idle {background-color: var(--idle-color);}
-.item-1tOPte.focused-3afm-j#status-picker-dnd {background-color: var(--dnd-color);}
-.item-1tOPte.focused-3afm-j#status-picker-invisible {background-color: var(--offline-color);}
-.item-1tOPte.focused-3afm-j {transition: all .15s ease-in-out;}
+%menuPopoutItem {
+	&#status-picker-online {
+		&:not(%menuPopoutItemHover) {
+			%statusPickerIcon {
+				background-color: var(--online-color) !important;
+			}
+		}
+		&%menuPopoutItemHover {
+			background-color: var(--online-color);
+		}
+	}
+	&#status-picker-idle {
+		&:not(%menuPopoutItemHover) {
+			%statusPickerIcon {
+				background-color: var(--idle-color) !important;
+			}
+		}
+		&%menuPopoutItemHover {
+			background-color: var(--idle-color);
+		}
+	}
+	&#status-picker-dnd {
+		&:not(%menuPopoutItemHover) {
+			%statusPickerIcon {
+				background-color: var(--dnd-color) !important;
+			}
+		}
+		&%menuPopoutItemHover {
+			background-color: var(--dnd-color);
+		}
+	}
+	&#status-picker-invisble {
+		&:not(%menuPopoutItemHover) {
+			%statusPickerIcon {
+				background-color: var(--offline-color) !important;
+			}
+		}
+		&%menuPopoutItemHover {
+			background-color: var(--offline-color);
+		}
+	}
+}

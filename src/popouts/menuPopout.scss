@@ -1,30 +1,36 @@
-/* GUILD HEADER POPOUT */
+/* MENU HEADER POPOUT */
 
-%guildHeaderPopout {
+%menuPopout {
 	background-color: rgba(0, 0, 0, .8);
-	%guildHeaderPopoutItem {
+	%menuPopoutItem {
 		color: hsla(0, 0%, 100%, .7);
 		transition: all .15s ease-in-out;		
-		&.focused-3afm-j {
+		&%menuPopoutItemHover {
 			background-color: var(--hover-color);
-			color: #fff;
+			color: #fff;			
+		}
+		%menuPopoutCheckbox,
+		%menuPopoutRadio {
+			color: var(--main-color);
+		}
+		&%menuPopoutItemHover {
+			%menuPopoutCheck {
+				color: var(--main-color);
+			}
 		}
 	}
-	 %guildHeaderPopoutItemInvite {
+	 %menuPopoutItemInvite {
 	    color: var(--main-color);
 	}
-	%guildHeaderPopoutItemLeave {
+	%menuPopoutItemLeave {
 	    color: var(--danger-color);
-		&%guildHeaderPopoutItemHover {
+		&%menuPopoutItemHover {
 		    background-color: var(--danger-color);
 			color: #fff;
-			%guildHeaderPopoutIcon {
+			%menuPopoutIcon {
 				transform: rotateY(180deg);
 				transition: all .15s ease-in-out;
 			}
 		}
 	}
 }
-
-// Right click submenu
-.submenu-2-ysNh {left: 2px;}

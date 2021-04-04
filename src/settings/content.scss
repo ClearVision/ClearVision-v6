@@ -15,6 +15,23 @@
 .avatarUploaderInner-3UNxY3 {
 	background-color: hsla(0, 0%, 100%, .05);
 }
+.theme-dark .avatarUploaderIndicator-2G-aIZ {
+	background-color: var(--main-color);
+	background-image: none;
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		background-image: url(/assets/d5c25e76af04cea8997e4a060572feae.svg);
+		background-repeat: no-repeat;
+		background-position: 50%;
+		filter: brightness(0) invert(1);
+		pointer-events: none;
+	}
+}
 
 // Item cards
 %themeDark {

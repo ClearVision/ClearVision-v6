@@ -103,8 +103,10 @@
 // BADGE
 %guildBadgeIcon {
 	background: hsla(0, 0%, 0%, .7);
+	box-shadow: 0 0 0 1px hsla(0, 0%, 100%, .07);
 	&%guildBadgeParticipating {
 		background: $main-color;
+		box-shadow: 0 0 0 1px $main-color;
 		%guildBadgeIconSVG {
 			color: #fff;
 		}

@@ -128,7 +128,7 @@
         + div {
             &:before,
             &:after {
-                background: cv("const:colors.xbox-green");
+                background-color: cv("const:colors.xbox-green");
             }
         }
     }
@@ -138,7 +138,7 @@
         + div {
             &:before,
             &:after {
-                background: #333;
+                background-color: #333;
             }
         }
     }

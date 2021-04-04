@@ -109,24 +109,11 @@
 
 
 /* Calls apparently broke */
-.wrapper-2qzCYF.minimum-28Z35l, .wrapper-2qzCYF{background-color: rgba(0,0,0,calc(var(--background-shading)*0.6));}
-.controlButton-2MhVEL.leaveButton-2YnTyt,.controlButton-2MhVEL.leaveButton-2YnTyt:hover {background: var(--danger-color);}
-.tile-2gi3tr, .container-2x5lvQ {background: transparent;}
+.container-2x5lvQ {background: transparent;}
 .noiseCancellationPopout-iRK2A0 {background-color: var(--backdrop-overlay);}
-.content-2Sfaij > .background-ujHpbY {background-color: transparent !important;}
-.border-3dQmSY.speaking-WDn8Wm {box-shadow: inset 0 0 0 2px var(--main-color);}
-.wrapper-3EGhDO>div>button {border-radius: 50%;}
-.centerButton-3CaNcJ {background-color: rgba(0,0,0,calc(var(--background-shading)*0.6));}
-.centerButton-3CaNcJ.active-1QRrIS {background-color: var(--main-color);}
-.centerButton-3CaNcJ.active-1QRrIS:hover, .centerButton-3CaNcJ:hover {background-color: var(--hover-color);}
+
 .streamPreview-3YL8OQ {background-color: var(--background-color);}
 .imageSelected-4Kl81J {border-color: var(--main-color);}
-.button-1YfofB.buttonColor-7qQbGO {padding: 0px;} /* fixes some buttom */
-/* .icon-3BcwQu>path:nth-child(1){display: block;} */
-/*above: shows cam icon */
-.participantsButton-KYW-IW {background-color: var(--background-overlay);}
-.participantsButton-KYW-IW:hover {background-color: var(--backdrop-overlay);}
-/* TODO: Attempt to make speaking border over one's avatar */
 
 /* Server Discovery Language Drop down + Search bar */
 .css-1wqqa50-container, .css-1rckt42-menu,  .appMount-3lHmkl .searchBox-3Y2Vi7 {background-color: var(--background-overlay);}
@@ -248,10 +235,6 @@
 /* Korean */
 .container-3baos1 .button-14-BFJ[aria-label="사용자 설정"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
 
-/* tickbox in role menu popout */
-.colorDefault-2K3EoJ .checkbox-3s5GYZ, .colorDefault-2K3EoJ .radioSelection-1HmrQS, .colorDefault-2K3EoJ.focused-3afm-j .check-1JyqgN {color: var(--main-color);}
-
-
 /* quick reactions */
 .button-F9qN4n.focused-3ZzkKr {box-shadow: 0 0 2px 2px var(--hover-color);}
 .button-F9qN4n, .button-F9qN4n.focused-3ZzkKr, .button-F9qN4n:hover {background-color: var(--backdrop-overlay);}
@@ -261,9 +244,6 @@
 
 /*Border hover and select on search options*/
 .tab-EiCZG6.selected-3gXBLQ, .tab-EiCZG6:hover {border-bottom: 2px solid var(--main-color) !important;}
-
-/*Fixes attachments*/
-.theme-dark .attachment-33OFj0 {border-color: rgba(47,49,54,.6); background-color: rgba(47,49,54,.3);}
 
 /* birthday confirmation modal */
 .theme-dark .footer-3rDWdC {background-color: var(--backdrop-overlay); box-shadow: none;}
