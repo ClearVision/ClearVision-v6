@@ -1,13 +1,13 @@
-[release-badge]: https://img.shields.io/github/release-pre/ClearVision/v6.svg?style=flat-square
-[release-link]: https://github.com/ClearVision/v6/releases
-[license-badge]: https://img.shields.io/github/license/ClearVision/v6.svg?style=flat-square
-[license-link]: https://github.com/ClearVision/v6/blob/master/LICENSE
+[release-badge]: https://img.shields.io/github/v/release/ClearVision/ClearVision-v6.svg?include_prereleases&style=flat-square
+[release-link]: https://github.com/ClearVision/ClearVision-v6/releases
+[license-badge]: https://img.shields.io/github/license/ClearVision/ClearVision-v6.svg?style=flat-square
+[license-link]: https://github.com/ClearVision/ClearVision-v6/blob/master/LICENSE
 [discord-badge]: https://img.shields.io/discord/212324635356692500.svg?style=flat-square
 [discord-link]: https://clearvision.gitlab.io/join
-[issues-badge]: https://img.shields.io/github/issues/ClearVision/v6.svg?style=flat-square
-[issues-link]: https://github.com/ClearVision/v6/issues
-[prs-badge]: https://img.shields.io/github/issues-pr/ClearVision/v6.svg?style=flat-square
-[prs-link]: https://github.com/ClearVision/v6/pulls
+[issues-badge]: https://img.shields.io/github/issues/ClearVision/ClearVision-v6.svg?style=flat-square
+[issues-link]: https://github.com/ClearVision/ClearVision-v6/issues
+[prs-badge]: https://img.shields.io/github/issues-pr/ClearVision/ClearVision-v6.svg?style=flat-square
+[prs-link]: https://github.com/ClearVision/ClearVision-v6/pulls
 
 <div align="center">
 
@@ -22,6 +22,12 @@
 ![v6 Sapphire](https://github.com/ClearVision/ClearVision-v6/raw/master/screenshots/6-stable.4.7.9.png)
 
 </div>
+
+## Theme Editor
+You are now able to customize the theme with a preview before downloading it to your computer.
+>[Theme Editor](https://gibbu.me/editor/clearvision)
+
+*Thank you to @Gibbu to providing this.*
 
 ## Installing
 Download the theme file and move it into your [BetterDiscord](https://betterdiscord.net) themes folder:
