@@ -7,6 +7,7 @@
 // BUTTON FILLED
 %appMount {
 	%buttonFilledGreen,
+	%buttonFilledGrey,
 	%buttonFilledBrand,
 	%buttonFilledPrimary {
 		background: $main-color;
@@ -19,8 +20,7 @@
 		}
 	}
 }
-%buttonFilledWhite,
-%buttonFilledGrey {
+%buttonFilledWhite {
 	background: hsla(0, 0%, 100%, .1);
 	> %buttonContents {
 		color: hsla(0, 0%, 100%, .7);
