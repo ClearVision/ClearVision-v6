@@ -16,22 +16,22 @@
 			"Gift Inventory": "https://clearvision.gitlab.io/icons/gift.svg",
 			"Billing": "https://clearvision.gitlab.io/icons/payment.svg",
 
+			"Appearance": "https://clearvision.gitlab.io/icons/camera.svg",
 			"Voice & Video": "https://clearvision.gitlab.io/icons/mic.svg",
 			"Text & Images": "https://clearvision.gitlab.io/icons/chat.svg",
-			"Appearance": "https://clearvision.gitlab.io/icons/camera.svg",
 			"Notifications": "https://clearvision.gitlab.io/icons/notifications.svg",
 			"Keybinds": "https://clearvision.gitlab.io/icons/keyboard.svg",
 			"Language": "https://clearvision.gitlab.io/icons/language.svg",
 			"Windows Settings": "https://clearvision.gitlab.io/icons/windows.svg",
 			"Linux Settings": "https://clearvision.gitlab.io/icons/linux.svg",
 			"Streamer Mode": "https://clearvision.gitlab.io/icons/videocam.svg",
+			"Advanced": "https://clearvision.gitlab.io/icons/bug.svg",
 
 			"Game Activity": "https://clearvision.gitlab.io/icons/games.svg",
 			"Overlay": "https://clearvision.gitlab.io/icons/aspect_ratio.svg",
+
 			"Change Log": "https://clearvision.gitlab.io/icons/history.svg",
 			"HypeSquad": "https://clearvision.gitlab.io/icons/hypesquad.svg",
-			"Experiments": "https://clearvision.gitlab.io/icons/flask.svg",
-			"Developer Options": "https://clearvision.gitlab.io/icons/bug.svg",
 
 			"Log Out": "https://clearvision.gitlab.io/icons/exit.svg"
 		);
@@ -88,8 +88,15 @@
 				}
 			}
 		}
+		// Footer
 		%tabBarItem:nth-last-child(4):before {
-			background-image: url(#{map-get($icons, "Log Out")}) !important;
+			background-image: url(#{map-get($icons, "Log Out")});
+		}
+		%tabBarItem:nth-last-child(6):before {
+			background-image: url(#{map-get($icons, "HypeSquad")});
+		}
+		%tabBarItem:nth-last-child(7):before {
+			background-image: url(#{map-get($icons, "Change Log")});
 		}
 	}
 }

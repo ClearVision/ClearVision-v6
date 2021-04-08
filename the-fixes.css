@@ -6,17 +6,9 @@
 .tierMarker-5HkGJ_[style*="linear-gradient(to right, rgb(32, 34, 37), rgb(32, 34, 37));"] {background: var(--backdrop-overlay) !important;}
 .theme-dark .barForeground-3KglC8 {background-color: rgba(244,127,255,0.9);}
 
-/* Reactions List  */
-.theme-dark .reactors-Blmlhw , .theme-dark .sidebar-1-SQro {background-color: transparent;}
-.theme-dark .reactionSelected-1pqISm {background-color: var(--main-color);}
-.theme-dark .scroller-1-nKid {background:transparent;}
-
 /* Region Selector button */
 .lookGhost-2Fn_0-.colorGrey-2DXtkV {color: white; background-color: var(--main-color);}
 .lookGhost-2Fn_0-.colorBrand-3pXr91 {color: white; background-color: var(--hover-color);}
-
-/* So this was gay */
-.body-3AJVSA, .theme-light .input-UJ9Tr3, .theme-light .input-1mgnkM{color: rgba(255, 255, 255, 0.9); font-weight: 200;}
 
 /* Invite Modal */
 .inviteRow-2L02ae:hover {background-color: rgba(255,255,255,0.4);}
@@ -30,23 +22,8 @@
 /* Dropdown voice call region changer */
 .theme-dark .quickSelectPopout-X1hvgV {background: var(--backdrop-overlay);}
 
-/* Now playing modal */
-.theme-dark .emptyPlayers-dx3qig, .theme-dark .players-1zg2l8 {background-color: var(--background-overlay);}
-.theme-dark .footer-3J5oP4 {background-color: var(--backdrop-overlay);}
-.lookFilled-1Gx00P.colorWhite-rEQuAQ, .lookFilled-1Gx00P.colorGrey-2DXtkV {background: var(--main-color);}
-.lookFilled-1Gx00P.colorWhite-rEQuAQ>.contents-18-Yxp, .lookFilled-1Gx00P.colorGrey-2DXtkV>.contents-18-Yxp {color: white;}
-.lookFilled-1Gx00P.colorWhite-rEQuAQ:hover, .lookFilled-1Gx00P.colorGrey-2DXtkV:hover{background: var(--hover-color) !important;}
-
 /* Stream Ended background */
 .theme-dark .container-2oTpPc, .root-25RxKh {background: transparent;}
-
-/* Format Bar */
-.toolbar-2bjZV7 {background-color: var(--background-overlay);}
-.divider-24xeUg {display: none;}
-.lookFilled-1Gx00P .contents-18-Yxp, .lookInverted-2D7oAl .contents-18-Yxp, .lookLink-9FtZy- .contents-18-Yxp, .lookOutlined-3sRXeN .contents-18-Yxp {transition: none;}
-
-/* Mic muted by self change */
-.strikethrough-231d_b {color: var(--channels-default);}
 
 /* Invalid Gift | ref: https://discord.gift/1 */
 .theme-dark .tile-2OwFgW {background-color: var(--background-overlay);}
@@ -54,28 +31,13 @@
 
 /* Server unavailable screen. Slight easter egg. */
 .content-MLh4nU, .category-2haXBH, .channelIcon-1TvDoP, .channelName-2wrHHc {background-color: var(--background-overlay);}
-.splashText-3jk87t {font-size: 0px;}
-.splashHeader-ehL7gZ, .splashHeader-3jk87 {font-size: 0px;}
 
 /* Games tab */
 .scroller-1IIF0A, .scroller-2XE8rp, .header-39GIC8 {background-color: transparent;}
 
-/* Live */
-.theme-dark .streamPreview-2-WUWT {background-color: var(--background-overlay);border: 2px solid var(--main-color);}
-.theme-dark .previewContainer-12UlHl, .theme-dark .popout-1k352f {background-color: var(--backdrop-overlay);}
-.overflow-3zpvTV {background-color: var(--main-color);}
-
 /* Volume slider */
 .theme-dark .bubble-3we2di {background-color: var(--main-color);}
 .theme-dark .bubble-3we2di:before {border-top-color: var(--main-color);}
-
-/* invite */
-.theme-dark .guildIconImage-3qTk45 {background-color: transparent;}
-.wrapper-35wsBm {background-color: rgba(0,0,0,0.4);}
-.guildName-2hvnt_ {color: var(--main-color);}
-.statusOnline-8PnF5L {background-color: var(--online-color);}
-.statusOffline-37RKt7 {background-color: var(--offline-color);}
-.guildIcon-lQ0uiM {background-color: rgba(255,255,255,0.04);}
 
 /*
   ==/ NEW FRIENDS LIST because discord keeps changing shit /==
@@ -96,15 +58,10 @@
 .defaultValue-3gC7yw .markValue-2DwdXI {color: var(--success-color);}
 
 /* Search dropdown */
-.theme-dark .container-3ayLPN {background-color: var(--backdrop-overlay);}
-
-/* "Quick" Reactions */
-.button-1I8KM5 {background-color: var(--backdrop-overlay);}
-.button-1I8KM5:hover {background-color: var(--hover-color);}
+.theme-dark .container-3ayLPN {background-color: rgba(0,0,0,0.8);}
 
 /* mentions */
 .messageContainer-gbhlwo {background-color: var(--background-overlay);}
-.jumpIcon-2diCoP, .tertiary-aMXF0g, .secondary-dIudih {color: #fff;} 
 .guildIcon-3Co6k- {background-color: transparent;}
 
 
@@ -157,13 +114,6 @@
 .theme-dark .header-1pGpFt {background-image: none; background-color: var(--backdrop-overlay);}
 .channelContainer-1x3D6I .channel-2PJTLY {background-color: var(--background-overlay);}
 .channelContainer-1x3D6I {background-color: transparent;}
-
-/* Watch Stream button */
-.content-2Sfaij:hover .cta-2DQ2ez {background-color: var(--background-overlay);}
-.content-2Sfaij .cta-2DQ2ez {background-color: var(--backdrop-overlay);}
-
-/*colour inner icon of mentions buttons to be more readable*/
-.secondary-dIudih, .tertiary-aMXF0g {color:#fff;}
 
 /* Spotify Popup */
 .attachPopout-36hjtN {background-color: var(--backdrop-overlay);}
@@ -230,9 +180,6 @@
 .button-F9qN4n.focused-3ZzkKr {box-shadow: 0 0 2px 2px var(--hover-color);}
 .button-F9qN4n, .button-F9qN4n.focused-3ZzkKr, .button-F9qN4n:hover {background-color: var(--backdrop-overlay);}
 
-/* volume slider hover */
-.slider-1PF9SW:focus .grabber-3mFHz2 {box-shadow: 0 0 3px 3px var(--hover-color);}
-
 /*Border hover and select on search options*/
 .tab-EiCZG6.selected-3gXBLQ, .tab-EiCZG6:hover {border-bottom: 2px solid var(--main-color) !important;}
 
@@ -280,8 +227,6 @@
 
 /* Home -> Nitro (Under Library) */
 .scroller-9moviB {background: transparent}
-/* Switch Plans button (needs to be !important since discord used !important) */
-.button-G2dHuB:hover, .button-G2dHuB:active {background-color: var(--hover-color)!important;}
 
 /* Server boost bar */
 .barSecondary-3B1aP2 {background-color: var(--main-color);}
@@ -316,8 +261,6 @@
 /* New feature badge */
 .badge-_BgAUQ {background-color: var(--main-color);}
 
-/* Fixed media volume bar */
-.mediaBarProgress-1xaPtl:before, .mediaBarProgress-1xaPtl:after {background-color: inherit;}
 
 .lookOutlined-3sRXeN.colorBrand-3pXr91 {
     color: var(--main-color);
@@ -332,3 +275,6 @@
 .close-jnIfru:hover {color:var(--danger-color);}
 
 .channelHeader-3Gd2xq {background-color: var(--backdrop-overlay);} /*message popout stuff */
+/* a few dropdowns somewhere idk */
+.css-n57xjs-menu {background-color: var(--backdrop-overlay);}
+.css-3vaxre-menu {background-color: var(--backdrop-overlay);}

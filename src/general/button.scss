@@ -45,10 +45,13 @@
 %buttonInvertedBrand,
 %buttonInvertedGreen {
 	background: hsla(0, 0%, 100%, .1);
-	color: hsla(0, 0%, 100%, .7);
+	color: #fff;
 	&:hover {
 		background: hsla(0, 0%, 100%, .2);
 		color: #fff;
+	}
+	&:disabled {
+		background: hsla(0, 0%, 100%, .1);
 	}
 }
 
@@ -81,6 +84,7 @@
 //BUTTON CIRCLE
 %buttonCircle {
 	background-color: $main-color;
+	color: #fff;
 	&:hover {
 		&:not(%buttonCircleDisabled) {
 			background-color: $hover-color;

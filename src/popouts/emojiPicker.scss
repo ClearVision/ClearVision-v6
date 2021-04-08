@@ -70,9 +70,9 @@
 		outline: var(--main-color) auto 1px;
 	}
 }
-%themeDark {
-	%emojiPickerItemLoading {
-	background-image: none;
+%emojiPickerItemLoading {
+	%themeDark & {
+		background-image: none;
 	}
 }
 %emojiPickerInspector {

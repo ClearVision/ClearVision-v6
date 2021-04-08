@@ -30,6 +30,24 @@
 	background-color: var(--main-color);
 }
 
+/* Reactions List  */
+.theme-dark {
+	.scroller-1-nKid,
+	.reactors-Blmlhw {
+		background-color: transparent;
+	}
+	.reactionDefault-GBA58K {
+		margin-bottom: 10px;
+	}
+	.reactionSelected-1pqISm {
+		background-color: var(--main-color);
+		margin-bottom: 10px;
+		.colorStandard-2KCXvj {
+			color: #fff;
+		}
+	}
+}
+
 /* Quickswitcher */
 .quickswitcher-3JagVE {background-color: rgba(0,0,0,0.5);}
 .input-2VB9rf {background-color: rgba(255,255,255,0.07);}

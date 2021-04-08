@@ -168,7 +168,7 @@ $cv: (
 				"Gift Inventory",
 				"Billing",
 				null,
-				null,				
+				null,	
 			),
 			windows: (
 				"Appearance",
@@ -180,56 +180,63 @@ $cv: (
 				"Language",				
 				"Windows Settings",
 				"Streamer Mode",
-				"Developer Options",
-				
+				"Advanced",				
 				null,
 				null,
 				"Game Activity",
-				"Overlay",
-				null,
-				"Change Log",
-				"HypeSquad",				
+				"Overlay"
 			),
 			osx: (
+				"Appearance",
+				null, //accessibility
+				"Voice & Video",
+				"Text & Images",
 				"Notifications",
 				"Keybinds",
-				"Game Activity",
-				"Activity Feed",
-				"Text & Images",
-				"Appearance",
-				"Streamer Mode",
 				"Language",
+				"Streamer Mode",
+				"Advanced",				
 				null,
-				"Change Log",
-				"Experiments",
-				"Developer Options"
+				null,
+				"Game Activity",
+				"Overlay"
 			),
 			linux: (
+				"Appearance",
+				null, //accessibility
+				"Voice & Video",
+				"Text & Images",
 				"Notifications",
 				"Keybinds",
-				"Game Activity",
-				"Text & Images",
-				"Appearance",
-				"Streamer Mode",
-				"Language",
+				"Language",				
 				"Linux Settings",
+				"Streamer Mode",
+				"Advanced",				
 				null,
-				"Change Log",
-				"Experiments",
-				"Developer Options"
+				null,
+				"Game Activity",
+				"Overlay"
 			),
 			web: (
+				"Appearance",
+				null, //accessibility
+				"Voice & Video",
+				"Text & Images",
 				"Notifications",
 				"Keybinds",
-				"Game Activity",
-				"Text & Images",
-				"Appearance",
-				"Streamer Mode",
 				"Language",
+				"Streamer Mode",
+				"Advanced",				
 				null,
+				null,
+				"Game Activity",
+				"Overlay"
+			)
+			footer: (
+				"Hypersquad",
 				"Change Log",
-				"Experiments",
-				"Developer Options"
+				null,
+				"Log Out"
 			)
 		)
 	)
