@@ -6,12 +6,12 @@
 }
 
 // FRIENDS COLUMN
-.peopleColumn-29fq28 {
+%friendsColumn {
 	background: rgba(0, 0, 0, calc(var(--background-shading) * .4));
 }
-.peopleListItem-2nzedh {
+%friendsItem {
 	&:hover,
-	&.active-rhSpJJ {
+	&%friendsItemActive {
 		background-color: hsla(0, 0%, 100%, .05);
 	}	
 }

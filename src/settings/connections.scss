@@ -97,6 +97,9 @@
             &:after {
                 background-color: cv("const:colors.facebook-blue");
             }
+            &:after {
+                bottom: -108px;
+            }
         }
     }
 

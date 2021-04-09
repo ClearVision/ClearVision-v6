@@ -35,36 +35,32 @@
 		%autocompleteIconForeground {
 			fill: hsla(0, 0%, 100%, .7);
 		}
-		%autocompleteDescription,
-		%autocompleteDescriptionUsername,
-		%autocompleteDescriptionDiscriminator {
-			color: hsla(0, 0%, 100%, .7);
+		%autocompleteContentSecondary,
+		%autocompleteDescriptionDiscriminator,
+		%autocompleteRowSubheading {
+			color: #fff;
 		}
 	}
 }
 
 // SLASH COMMANDS AUTOCOMPLETE
-.rail-2CbP6L {
+%autocompleteListWrapper,
+%autocompleteList,
+%autocompleteCategoryHeader {
 	background-color: transparent;
 }
-.selected-3xBBKs, .selected-3xBBKs:hover {
-	background-color: $main-color;
-}
-.categoryHeader-O1zU94 {
-	background-color: transparent;
-}
-%autocompleteSelectorSelected {
-	.source-3DBj4z,
-	.description-QP9Ktn {
-		color: hsla(0, 0%, 100%, .7);
+%autocompleteListItem{
+	%autocompleteListItemSelected,
+	%autocompleteListItemSelected:hover {
+		background-color: $main-color;
 	}
 }
-.optionalHeader-mLQoIx {
+%autocompleteOptionalHeader {
 	color: hsla(0, 0%, 100%, .7);
 	border-color: transparent;
 }
-.option-1B5ZV8 {
-	background-color: hsla(0,0%,0%,.7);
+%autocompleteOption {
+	background-color: hsla(0,0%,0%,.5);
 }
 
 // SLASH COMMANDS AUTOCOMPLETE TAB

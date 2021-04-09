@@ -896,11 +896,11 @@
 .iconForeground-1w5n7R {
 	@extend %autocompleteIconForeground !optional;
 }
-.description-11DmNu {
-	@extend %autocompleteDescription !optional;
+.autocompleteRowSubheading-WqMMIl {
+	@extend %autocompleteRowSubheading !optional;
 }
-.descriptionUsername-J_75O8 {
-	@extend %autocompleteDescriptionUsername !optional;
+.autocompleteRowContentSecondary-1tgI-F {
+	@extend %autocompleteContentSecondary !optional;
 }
 .descriptionDiscriminator-3vUOCc {
 	@extend%autocompleteDescriptionDiscriminator !optional;
@@ -911,8 +911,26 @@
 .selected-1Tbx07 {
 	@extend %autocompleteSelectorSelected !optional;
 }
-.content-Qb0rXO {
-	@extend %autocompleteSelectorContent !optional;
+.categoryHeader-O1zU94 {
+	@extend %autocompleteCategoryHeader !optional;
+}
+.wrapper-uf3cnO {
+	@extend %autocompleteListWrapper !optional;
+}
+.list-A0BHjR {
+	@extend %autocompleteList !optional;
+}
+.wrapper-2siovq {
+	@extend %autocompleteListItem !optional;
+}
+.selected-3xBBKs {
+	@extend %autocompleteListItemSelected !optional;
+}
+.optionalHeader-mLQoIx {
+	@extend %autocompleteOptionalHeader !optional;
+}
+.option-1B5ZV8 {
+	@extend %autocompleteOption !optional;
 }
 .welcomeMessage-3_Mcht {
 	@extend %welcomeMessage !optional;
@@ -1843,6 +1861,15 @@
 }
 .container-1D34oG {
 	@extend %friends !optional;
+}
+.peopleColumn-29fq28 {
+	@extend %friendsColumn !optional;
+}
+.peopleListItem-2nzedh {
+	@extend %friendsItem !optional;
+}
+.active-rhSpJJ {
+	@extend %friendsItemActive !optional;
 }
 .activity-2myFBH {
 	@extend %friendActivity !optional;
