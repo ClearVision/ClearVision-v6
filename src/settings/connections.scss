@@ -117,7 +117,7 @@
             &:after {
                 background-color: cv("const:colors.spotify-green");
             }
-            &:before {
+            &:after {
                 bottom: -108px;
             }
         }
@@ -129,6 +129,9 @@
             &:before,
             &:after {
                 background-color: cv("const:colors.xbox-green");
+            }
+            &:after {
+                bottom: -108px;
             }
         }
     }
