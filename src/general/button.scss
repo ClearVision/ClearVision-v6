@@ -59,11 +59,11 @@
 %appMount {
 	%buttonOutlinedWhite,
 	%buttonOutlinedPrimary {
-		background: hsla(0, 0%, 100%, .05);
+		background: transparent;
 		border-color: transparent;
-		color: hsla(0, 0%, 100%, .7);
+		color: hsla(0, 0%, 100%, .8);
 		&:hover {
-			background: hsla(0, 0%, 100%, .1);
+			background: transparent;
 			border-color: transparent;
 			color: #fff;
 		}
