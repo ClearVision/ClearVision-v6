@@ -5,9 +5,9 @@
   "private": true,
   "scripts": {
     "clean": "rimraf {test,public}",
-    "test": "node-sass ./ --output=test --recursive=false --output-style=expanded",
+    "test": "sass --style=expanded --no-source-map hljs.scss:test/hljs.css main.scss:test/main.css",
     "build": "npm run build.sass && npm run build.prefix",
-    "build.sass": "node-sass ./ --output=public --recursive=false --output-style=compressed",
+    "build.sass": "sass --style=expanded --no-source-map hljs.scss:public/hljs.css main.scss:public/main.css",
     "build.prefix": "postcss public/*.css --dir=public --use=autoprefixer  -b=\"> 5%\" --no-map"
   },
   "repository": {
@@ -22,8 +22,9 @@
   "homepage": "https://github.com/ClearVision/ClearVision-v6/README.md",
   "devDependencies": {
     "autoprefixer": "^9.8.6",
-    "node-sass": "^4.14.1",
     "postcss-cli": "^7.1.2",
-    "rimraf": "^3.0.2"
-  }
+    "rimraf": "^3.0.2",
+    "sass": "^1.32.12"
+  },
+  "dependencies": {}
 }
