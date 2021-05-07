@@ -2,7 +2,7 @@
 [release-link]: https://github.com/ClearVision/ClearVision-v6/releases
 [license-badge]: https://img.shields.io/github/license/ClearVision/ClearVision-v6.svg?style=flat-square
 [license-link]: https://github.com/ClearVision/ClearVision-v6/blob/master/LICENSE
-[discord-badge]: https://img.shields.io/discord/212324635356692500.svg?style=flat-square
+[discord-badge]: https://discord.com/api/guilds/212324635356692500/widget.png?style=shield
 [discord-link]: https://clearvision.gitlab.io/join
 [issues-badge]: https://img.shields.io/github/issues/ClearVision/ClearVision-v6.svg?style=flat-square
 [issues-link]: https://github.com/ClearVision/ClearVision-v6/issues
@@ -47,11 +47,6 @@ With [npm](https://npmjs.org/get-npm) installed you can simply run `npm install`
 
 ## Contributing
 In order to contribute you need to be able to compile [Sass](https://sass-lang.com).
-
-If you use [Node Sass](https://github.com/sass/node-sass) via CLI, you can run:
-```
-node-sass main.scss public/main.css --watch
-```
 
 If you use [Dart Sass](https://github.com/sass/dart-sass) via CLI, you can run:
 ```
