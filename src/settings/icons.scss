@@ -6,34 +6,57 @@
 
 		// ICON MAP
 		$icons: (
+			// My Account 
 			"My Account": "https://clearvision.gitlab.io/icons/person.svg",
+			// Privacy & Safety
 			"Privacy & Safety": "https://clearvision.gitlab.io/icons/security.svg",
+			// Authorized Apps
 			"Authorized Apps": "https://clearvision.gitlab.io/icons/apps.svg",
+			// Connections
 			"Connections": "https://clearvision.gitlab.io/icons/link.svg",
 
-			"Subscriptions": "https://clearvision.gitlab.io/icons/nitro.svg",
-			"Server Boost": "https://clearvision.gitlab.io/icons/server_boost.svg",
-			"Gift Inventory": "https://clearvision.gitlab.io/icons/gift.svg",
+			// Subscriptions
+			"Discord Nitro": "https://clearvision.gitlab.io/icons/nitro.svg",
+			// Server Boost
+			"Nitro Server Boost": "https://clearvision.gitlab.io/icons/server_boost.svg",
+			// Gift Inventory
+			"Library Inventory": "https://clearvision.gitlab.io/icons/gift.svg",
+			// Billing
 			"Billing": "https://clearvision.gitlab.io/icons/payment.svg",
 
+			// Appearance
 			"Appearance": "https://clearvision.gitlab.io/icons/camera.svg",
+			// Voice & Video
 			"Voice & Video": "https://clearvision.gitlab.io/icons/mic.svg",
+			// Text & Images
 			"Text & Images": "https://clearvision.gitlab.io/icons/chat.svg",
+			// Notifications
 			"Notifications": "https://clearvision.gitlab.io/icons/notifications.svg",
+			// Keybinds
 			"Keybinds": "https://clearvision.gitlab.io/icons/keyboard.svg",
+			// Language
 			"Language": "https://clearvision.gitlab.io/icons/language.svg",
-			"Windows Settings": "https://clearvision.gitlab.io/icons/windows.svg",
-			"Linux Settings": "https://clearvision.gitlab.io/icons/linux.svg",
+			// Windows Settings
+			"Windows": "https://clearvision.gitlab.io/icons/windows.svg",
+			// Linux Settings
+			"Linux": "https://clearvision.gitlab.io/icons/linux.svg",
+			// Streamer Mode 
 			"Streamer Mode": "https://clearvision.gitlab.io/icons/videocam.svg",
+			// Advanced
 			"Advanced": "https://clearvision.gitlab.io/icons/bug.svg",
 
+			// Game Activity
 			"Game Activity": "https://clearvision.gitlab.io/icons/games.svg",
+			// Overlay
 			"Overlay": "https://clearvision.gitlab.io/icons/aspect_ratio.svg",
 
-			"Change Log": "https://clearvision.gitlab.io/icons/history.svg",
-			"HypeSquad": "https://clearvision.gitlab.io/icons/hypesquad.svg",
+			// Change Log
+			"changelog": "https://clearvision.gitlab.io/icons/history.svg",
+			//HypeSquad 
+			"Hypesquad Online": "https://clearvision.gitlab.io/icons/hypesquad.svg",
 
-			"Log Out": "https://clearvision.gitlab.io/icons/exit.svg"
+			// Log Out
+			"logout": "https://clearvision.gitlab.io/icons/exit.svg"
 		);
 
 		// SETTINGS LISTS
@@ -58,45 +81,9 @@
 
 		// ICON STYLES
 		@each $i, $u in $icons {
-			$id: unique-id();
-			%tabBarItem%#{$id}:before {
-				background-image: url(#{$u});
+			%tabBarItem[aria-controls="#{$i}-tab"]:before {
+				background-image: url(#{$u});	
 			}
-			@if (index($general, $i)) {
-				:nth-child(#{index($general, $i) + 1}) {
-					@extend %#{$id};
-				}
-			}
-			@if (index($windows, $i)) {
-				%platformWin & :nth-child(#{index($windows, $i) + length($general) + 1}) {
-					@extend %#{$id};
-				}
-			}
-			@if (index($osx, $i)) {
-				%platformOSX & :nth-child(#{index($osx, $i) + length($general) + 1}) {
-					@extend %#{$id};
-				}
-			}
-			@if (index($linux, $i)) {
-				%platformLinux & :nth-child(#{index($linux, $i) + length($general) + 1}) {
-					@extend %#{$id};
-				}
-			}
-			@if (index($web, $i)) {
-				%platformWeb & :nth-child(#{index($web, $i) + length($general) + 1}) {
-					@extend %#{$id};
-				}
-			}
-		}
-		// Footer
-		%tabBarItem:nth-last-child(4):before {
-			background-image: url(#{map-get($icons, "Log Out")});
-		}
-		%tabBarItem:nth-last-child(6):before {
-			background-image: url(#{map-get($icons, "HypeSquad")});
-		}
-		%tabBarItem:nth-last-child(7):before {
-			background-image: url(#{map-get($icons, "Change Log")});
 		}
 	}
 }
