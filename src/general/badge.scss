@@ -43,3 +43,11 @@
 		mix-blend-mode: screen;
 	}
 }
+
+// FLOWER STAR BADGE
+%flowerStarContainer {
+	color: var(--main-color);
+	%flowerStarIcon {
+		color: #fff;
+	}
+}       

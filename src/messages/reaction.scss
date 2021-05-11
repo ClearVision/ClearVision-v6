@@ -18,6 +18,7 @@
 	}
 	&%reactionMe {
 		background-color:hsla(0, 0%, 100%, .1);
+		border-color: transparent;
 		%reactionCount {
 			color: $main-color;
 		}

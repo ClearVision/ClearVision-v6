@@ -1,5 +1,7 @@
 /* PRIVATE CALL */
-%call,
+%call {
+	background: rgba(0, 0, 0, calc(var(--background-shading) * .6));
+}
 %call%callMinimum {
 	background: rgba(0, 0, 0, calc(var(--background-shading) * .6));
 }

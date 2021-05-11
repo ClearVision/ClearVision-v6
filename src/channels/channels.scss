@@ -25,36 +25,6 @@
 			background: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .3));
 		}
 	}
-	
-	// GUILD BADGE
-	%channelsHeaderGuildBadge {
-		%flowerStar {
-			display: none;
-		}
-		%flowerStarChild {
-			background: hsla(0, 0%, 100%, .07);
-			border-radius: 50%;
-		}
-	}
-	%guildPartnered {
-		background: hsla(0, 0%, 100%, .07);
-		border-radius: 50%;
-		%channelsHeaderGuildBadgeIcon {
-			color: $main-color;
-			filter: drop-shadow(0 0 3px);
-		}
-	}
-	%guildVerified {
-		background: url(https://clearvision.gitlab.io/icons/verified.svg) center/18px no-repeat;
-		filter: drop-shadow(0 0 5px);
-		%flowerStarChild {
-			display: none;
-		}
-	}
-	%guildBoostedIcon {
-		color: $main-color;
-		filter: drop-shadow(0 0 3px);
-	}
 
 	// GUILD BANNER
 	%bannerAnimatedContainer {

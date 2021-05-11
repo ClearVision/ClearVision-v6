@@ -28,7 +28,7 @@
 %friendActionButton {
 	background-color: hsla(0, 0%, 0%, 0.6);
 	color: #fff;
-	&%friendActionButtonSelected,
+	%friendsItem%friendsItemActive &,
 	&:hover {
 		background-color: $hover-color;
 		color: #fff;
@@ -54,16 +54,16 @@
 
 
 // ADD FRIENDS BUTTON
-%tabBarItem[style*="background-color: rgb(67, 181, 129)"] {
+%tabBarItem[style*="background-color: rgb(59, 165, 92)"] {
 	background-color: cv("colors.success") !important;
 	color: #fff !important;
 }
-%tabBarItem[style*="background-color: rgba(67, 181, 129, 0.2)"] {
+%tabBarItem[style*="background-color: rgba(59, 165, 92, 0.2)"] {
 	background-color: transparent !important;
 	color: cv("colors.success") !important;
 	box-shadow: 0 0 0 1px var(--success-color) inset;
 }
-%tabBarItem[style*="background-color: rgba(67, 181, 129, 0.2)"]:before {
+%tabBarItem[style*="background-color: rgba(59, 165, 92, 0.2)"]:before {
 	content: "";
 	position: absolute;
 	background-color: var(--success-color);
