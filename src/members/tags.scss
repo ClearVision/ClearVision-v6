@@ -76,6 +76,10 @@ $cv_cruxie: (
 $cv_leafy: (
 		"309976820109803520"     // Leafy former CV Team
 );
+$teamhydra: (
+		"148359099782791168",    // JakeyPrime
+	        "206212600596398080",    // Panther
+);
 
 // OUTPUT
 %messageContent > img {
@@ -128,6 +132,11 @@ $cv_leafy: (
 	@each $user_id in $cv_leafy {
 		&[src*="#{$user_id}"] ~ %messageHeader > %messageHeaderText > %messageUsername::after {
 		content: "Former CV Team";
+		}
+	}
+	@each $user_id in $teamhydra {
+		&[src*="#{$user_id}"] ~ %messageHeader > %messageHeaderText > %messageUsername::after {
+		content: "Team Hydra";
 		}
 	}
 }
