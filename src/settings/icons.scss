@@ -59,13 +59,6 @@
 			"logout": "https://clearvision.gitlab.io/icons/exit.svg"
 		);
 
-		// SETTINGS LISTS
-		$general: cv("disc:settings.general");
-		$windows: cv("disc:settings.windows");
-		$osx: cv("disc:settings.osx");
-		$linux: cv("disc:settings.linux");
-		$web: cv("disc:settings.web");
-
 		// GENERAL STYLES
 		%tabBarItem {
 			padding-left: 50px !important;
