@@ -28,16 +28,14 @@
 %friendActionButton {
 	background-color: hsla(0, 0%, 0%, 0.6);
 	color: #fff;
-	%friendsItem%friendsItemActive &,
+	&%friendActionButtonHighlight,
 	&:hover {
 		background-color: $hover-color;
 		color: #fff;
 	}
-}
-
-%friendActionButton {
 	&%friendActionAcceptButton {
 		color: cv("colors.success");
+		&%friendActionButtonHighlight,
 		&:hover {
 			background-color: cv("colors.success");
 			color: #fff !important;
@@ -45,6 +43,7 @@
 	}
 	&%friendActionDenyButton {
 		color: cv("colors.danger");
+		&%friendActionButtonHighlight,
 		&:hover {
 			background-color: cv("colors.danger");
 			color: #fff !important;

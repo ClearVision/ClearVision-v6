@@ -1881,7 +1881,7 @@
 	@extend %friendActionButton !optional;
 }
 .highlight-Lf97TE {
-	@extend %friendActionButtonSelected !optional;
+	@extend %friendActionButtonHighlight !optional;
 }
 .actionAccept-LV-szU {
 	@extend %friendActionAcceptButton !optional;
@@ -3257,23 +3257,14 @@ pre {
 .pageWrapper-1PgVDX {
 	@extend %pageWrapper !optional;
 }
-.bg-AYqtMd {
-	@extend %discoveryBG !optional;
-}
 .pageHeader-3615mp {
 	@extend %pageHeader !optional;
 }
 .body-2lagau {
 	@extend %pageBody !optional;
 }
-.search-JQJ-3r {
-	@extend %discoverySearch !optional;
-}
-.mainHeader-1i17pL {
-	@extend %discoveryMainHeader !optional;
-}
-.searchBox-26HYGw {
-	@extend %discoverySearchBox !optional;
+.search-1iTphC {
+	@extend %search !optional;
 }
 .searchBox-3Y2Vi7 {
 	@extend %searchBox !optional;
@@ -3281,110 +3272,77 @@ pre {
 .searchBoxInput-uJtBcv {
 	@extend %searchBoxInput !optional;
 }
-.input-cIJ7To.focused-1mmYsC {
-	@extend %searchBoxInputfocused !optional;
-}
 .searchIcon-1a1-yA {
 	@extend %searchBoxIconSearch !optional;
 }
 .clearIcon-2N9YIn {
-	@extend %searchBoxIconClear !optional;
+	@extend %searchBoxClearIcon !optional;
 }
-.searchHelpText-19imBp {
-	@extend %searchHelpText !optional;
+.closeIcon-2WLZc1 {
+	@extend %searchBoxCloseIcon !optional;
 }
-.searchHelpTextVisible-1mRnNd {
-	@extend %searchHelpTextVisible !optional;
-}
-.sectionHeader-1Hee-5 {
-	@extend %discoverySectionHeader !optional;
-}
-.guildList-1ItbxP {
-	@extend %discoveryGuildList !optional;
-}
-.guildCard-2arfcG {
-	@extend %discoveryGuildCard !optional;
-}
-.loading-17PYl_ {
-	@extend %discoveryGuildCardLoading !optional;
+.guildList-3cJX3d {
+	@extend %discoverGuildList !optional;
 }
 .loaded-1eBnjq {
-	@extend %discoveryGuildCardLoaded !optional;
+	@extend %discoverGuildCardLoaded !optional;
 }
 .card-3DjzTQ {
-	@extend %discoveryCard !optional;
+	@extend %discoverGuildCard !optional;
 }
-.cardHovered-15wbb- {
-	@extend %discoveryCardHovered !optional;
+.iconMask-3b8GzQ {
+	@extend %discoverGuildCardIcon !optional;
 }
 .splash-3N0nhD {
-	@extend %discoveryCardSplash !optional;
+	@extend %discoverCardSplash !optional;
 }
 .fade-rdt5qH {
-	@extend %discoveryCardFade !optional;
+	@extend %discoverCardFade !optional;
 }
 .guildInfo-2wGKIg {
-	@extend %discoveryGuildInfo !optional;
+	@extend %discoverGuildInfo !optional;
 }
 .guildIcon-3W0pfo {
-	@extend %discoveryGuildIcon !optional;
+	@extend %discoverGuildIcon !optional;
 }
 .avatar-22otdK {
-	@extend %discoveryGuildAvatar !optional;
-}
-.verifiedIcon-1vpk3S {
-	@extend %discoveryGuildVerifiedIcon !optional;
+	@extend %discoverGuildAvatar !optional;
 }
 .title-OqQvkN {
-	@extend %discoveryGuildTitle !optional;
+	@extend %discoverGuildTitle !optional;
 }
 .memberInfo-3r4FKx {
-	@extend %discoveryGuildMemberInfo !optional;
+	@extend %discoverGuildMemberInfo !optional;
 }
 .dotOnline-8Ag7EB {
-	@extend %discoveryGuildStatusOnline !optional;
+	@extend %discoverGuildStatusOnline !optional;
 }
 .dotOffline-3DXoDy {
-	@extend %discoveryGuildStatusOffline !optional;
+	@extend %discoverGuildStatusOffline !optional;
 }
 .viewButton-3jDZqV {
-	@extend %discoveryViewButton !optional;
+	@extend %discoverViewButton !optional;
 }
 .viewButtonVisible-2AtUPc {
-	@extend %discoveryViewButtonVisible !optional;
+	@extend %discoverViewButtonVisible !optional;
 }
-.sectionSeparator-2OWiNT {
-	@extend %discoverySectionSeparator !optional;
+.languageSelector-LEtpHP {
+	@extend %discoverLanguageSelector !optional;
 }
-.pageControlContainer-3czZwE {
-	@extend %discoveryPageControlContainer !optional;
+.css-12hk9yc-control {
+	@extend %discoverLanguageSelectorControl !optional;
 }
-.pageControl-1aUwvK {
-	@extend %discoveryPageControl !optional;
+.separator-2xbLUz {
+	@extend %discoverSectionSeparator !optional;
 }
-.pageButton-MknE-_ {
-	@extend %discoveryPageButton !optional;
+.emptyContainer-1_gwCl {
+	@extend %discoverEmptyResults !optional;
 }
-.endButton-3wGL3C {
-	@extend %discoveryPageButtonEnd !optional;
+.emptyImage-1ABqhB {
+	@extend %discoverEmptyImage !optional;
 }
-.roundButton-2CW1Hh {
-	@extend %discoveryPageButtonRound !optional;
-}
-.activeButton-1BJAiN {
-	@extend %discoveryPageButtonActive !optional;
-}
-.emptySearchResults-1ba__I {
-	@extend %discoveryEmptyResults !optional;
-}
-.emptySearchImage-1qOMLW {
-	@extend %discoveryEmptyImage !optional;
-}
-.emptySearchTitle-2zDhhZ {
-	@extend %discoveryEmptyTitle !optional;
-}
-.emptySearchDescription-2AmfE4 {
-	@extend %discoveryEmptyDescription !optional;
+.emptyHeader-3hf8Hv {
+	@extend %discoverEmptyTitle !optional;
 }
 .container-VSDcQc {
 	@extend %autocompletePopout !optional;
@@ -4417,4 +4375,10 @@ pre {
 }
 .textInput-2xgsSa {
 	@extend %stagePopoutTextInput !optional;
+}
+.categoryPill-34fszg{
+	@extend %categoryPill !optional;
+}
+.selected-1dONk0 {
+	@extend %categoryPillSelected !optional;
 }

@@ -68,7 +68,7 @@
 				height: unset;
 				padding: 8px 0 8px 20px;
 				margin: 0;
-				color: hsla(0, 0%, 100%, .3);
+				color: hsla(0, 0%, 100%, .4);
 				backface-visibility: hidden;
 				transition: all .15s ease-in-out;
 				cursor: pointer;
@@ -99,7 +99,7 @@
 				background: transparent;
 				transition: all .15s ease-in-out;
 				&:before {
-					opacity: .3;
+					opacity: .4;
 					transition: inherit;
 				}
 				&:after {

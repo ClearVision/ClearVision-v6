@@ -1,0 +1,84 @@
+/* SERVER DISCOVER */
+%base {
+	%pageWrapper {
+		background: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .5));
+	}
+}
+
+// SIDEBAR
+.categoryItem-1QIroW.selectedCategoryItem-FHKU_o .itemInner-gPkiWb {
+	background-color: var(--main-color);
+}
+
+// SEARCH BOX
+%search {
+	%searchBox {
+		background: hsla(0, 0%, 0%, .6);
+		border: none;
+		box-shadow: 0 0 0 2px hsla(0, 0%, 100%, .09);
+		&:focus-within {
+			border: none;
+			box-shadow: 0 0 2px 2px var(--main-color);
+		}
+		.input-cIJ7To:focus, .focused-1mmYsC.input-cIJ7To {
+			border: none;
+			box-shadow: none;
+		}
+		%searchBoxInput {
+			color: var(--text-normal);
+			&::placeholder {
+				color: hsla(0, 0%, 100%, .3);
+			}
+		}		
+		%searchBoxIconSearch {
+			color: var(--main-color);
+		}
+		%searchBoxCloseIcon {
+			color: var(--main-color);
+			&:hover {
+				color: var(--hover-color);
+			}
+		}
+	}
+}
+
+// GUILD LIST
+%themeDark {
+	%discoverGuildCard,
+	%discoverGuildCardIcon {
+		background-color: hsla(0, 0%, 0%, .6);
+		transition: all .15s ease-in-out;
+		&:hover {	
+			background-color: hsla(0, 0%, 0%, .8);
+		}
+	}
+}
+%discoverGuildStatusOnline {
+	background-color: cv("colors.online");
+}
+%discoverGuildStatusOffline{
+	background-color: cv("colors.offline");
+}
+%discoverGuildList {
+	%discoverGuildCardLoading {
+		background: hsla(0, 0%, 100%, .1);
+	}
+}
+
+// LANGUAGE SELECTOR
+%discoverLanguageSelectorControl {
+	background-color: hsla(0, 0%, 0%, .6);
+}
+
+// SEARCH CATEGORY
+%categoryPill {
+	&%categoryPillSelected {
+		background-color: var(--main-color);
+	}
+}
+
+
+// EMPTY RESULTS
+%discoverEmptyResults {
+	background-color: hsla(0, 0%, 0%, .6);
+}

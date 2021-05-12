@@ -72,7 +72,7 @@
 .streamPreview-3YL8OQ {background-color: var(--background-color);}
 .imageSelected-4Kl81J {border-color: var(--main-color);}
 
-/* Server Discovery Language Drop down + Search bar */
+/* Server discover Language Drop down + Search bar */
 .css-1wqqa50-container, .css-1rckt42-menu,  .appMount-3lHmkl .searchBox-3Y2Vi7 {background-color: var(--background-overlay);}
 .css-12o7ek3-option, .css-1gnr91b-option:hover {background-color: var(--background-modifier-hover);}
 
@@ -86,29 +86,6 @@
 .mask-1l8v16>rect[fill='#593695'] {fill: var(--streaming-color) !important;}
 .mask-1l8v16>rect[fill='#747f8d'] {fill: var(--offline-color) !important;}
 
-/* Discover/Explore Public Servers */
-    /* search bars + icons */
-.searchPage-3GKAdT .search-1iTphC .searchBox-2_mAlO {background-color: var(--background-overlay);}
-.search-1iTphC .searchBox-2_mAlO .searchBoxInput-K6mkng {color: var(--text-normal) !important;}
-.search-1iTphC .searchBox-2_mAlO .closeIcon-2WLZc1, .search-1iTphC .searchBox-2_mAlO .searchIcon-6ljH-4, .searchPage-3GKAdT .search-1iTphC .searchBox-2_mAlO .closeIcon-2WLZc1 {color: var(--main-color);}
-.search-1iTphC .searchBox-2_mAlO .closeIcon-2WLZc1:hover, .search-1iTphC .searchBox-2_mAlO .searchIcon-6ljH-4:hover, .searchPage-3GKAdT .search-1iTphC .searchBox-2_mAlO .closeIcon-2WLZc1:hover {color: var(--hover-color);}
-    /* server cards */
-.theme-dark .card-3DjzTQ, .theme-dark .iconMask-3b8GzQ, .theme-dark .card-3DjzTQ:hover, .theme-dark .card-3DjzTQ:hover .iconMask-3b8GzQ, .loading-17PYl_ {background-color: var(--background-overlay);}
-    /* lang selector */
-.languageSelector-LEtpHP>div>div {background-color: var(--background-overlay);}
-    /* spinner */
-.spinner-3lb-NU {background-color: var(--backdrop-overlay);}
-    /* selected tab + category when searching */
-.categoryPill-34fszg.selected-1dONk0, .categoryItem-3zFJns.selectedCategoryItem-3X8ujp .itemInner-3gVXMG {background-color: var(--main-color);}
-    /* emote bar */
-.emojiContainer-1u-_sQ {background-color: var(--backdrop-overlay);}
-    /* statuses */
-.dotOnline-8Ag7EB {background-color: var(--online-color);}
-.dotOffline-3DXoDy {background-color: var(--offline-color);}
-  /* no search results */
- .emptyContainer-1_gwCl {background-color: var(--background-overlay);}
-/*server Discover searchbar focus colour*/
-.searchPage-3GKAdT .search-1iTphC .searchBox-2_mAlO:focus, .searchPage-3GKAdT .search-1iTphC .searchBox-2_mAlO:focus-within {border-color: var(--main-color);}
 
 /* Channel Follow */
 .theme-dark .header-1pGpFt {background-image: none; background-color: var(--backdrop-overlay);}
@@ -246,7 +223,7 @@
 /* Community overview->settings box */
 .upsellContent-1JlpHe, .upsellFooter-ZYsio_, .upsellContainer-L9xv7w {background-color: transparent;}
 
-/* Enable Discovery icons and cards */
+/* Enable discover icons and cards */
 .theme-dark .card-3_CqkU, .theme-dark .iconMask-30Tvqs, .perkArt-1SGWbA {background-color: var(--background-overlay);}
 
 /* Webhooks, channels followed icons */
