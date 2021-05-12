@@ -6,13 +6,18 @@
 }
 
 // SIDEBAR
-.categoryItem-1QIroW.selectedCategoryItem-FHKU_o .itemInner-gPkiWb {
-	background-color: var(--main-color);
+%discoverCategoryItem {
+	&%discoverCategoryItemSelected {
+		%discoverCategoryItemInner {
+			background-color: var(--main-color);
+		}
+	}
 }
 
 // SEARCH BOX
 %search {
-	%searchBox {
+	%searchBox,
+	%searchPage & %searchBox {
 		background: hsla(0, 0%, 0%, .6);
 		border: none;
 		box-shadow: 0 0 0 2px hsla(0, 0%, 100%, .09);
@@ -20,7 +25,9 @@
 			border: none;
 			box-shadow: 0 0 2px 2px var(--main-color);
 		}
-		.input-cIJ7To:focus, .focused-1mmYsC.input-cIJ7To {
+		.input-cIJ7To,
+		.input-cIJ7To:focus,
+		.focused-1mmYsC.input-cIJ7To {
 			border: none;
 			box-shadow: none;
 		}
@@ -33,7 +40,8 @@
 		%searchBoxIconSearch {
 			color: var(--main-color);
 		}
-		%searchBoxCloseIcon {
+		%searchBoxCloseIcon,
+		%searchPage & %searchBoxCloseIcon {
 			color: var(--main-color);
 			&:hover {
 				color: var(--hover-color);

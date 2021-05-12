@@ -3263,6 +3263,9 @@ pre {
 .body-2lagau {
 	@extend %pageBody !optional;
 }
+.searchPage-3GKAdT {
+	@extend %searchPage !optional;
+}
 .search-1iTphC {
 	@extend %search !optional;
 }
@@ -3280,6 +3283,15 @@ pre {
 }
 .closeIcon-2WLZc1 {
 	@extend %searchBoxCloseIcon !optional;
+}
+.categoryItem-1QIroW {
+	@extend %discoverCategoryItem !optional;
+}
+.selectedCategoryItem-FHKU_o {
+	@extend %discoverCategoryItemSelected !optional;
+}
+.itemInner-gPkiWb {
+	@extend %discoverCategoryItemInner !optional;
 }
 .guildList-3cJX3d {
 	@extend %discoverGuildList !optional;
