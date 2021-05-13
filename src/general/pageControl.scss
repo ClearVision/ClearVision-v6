@@ -1,7 +1,9 @@
 // PAGE CONTROL
 %themeDark {
     %pageButton {
-        &%pageButtonActive,
+        &%pageButtonActive {
+            background-color: var(--main-color);
+        }
         &%pageButtonActive:hover {
             background-color: var(--main-color);
         }

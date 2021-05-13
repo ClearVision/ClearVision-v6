@@ -75,7 +75,7 @@
 // ADD FRIENDS PAGE
 %friendsAddFriendInputWrapper {
 	background-color: hsla(0, 0%, 100%, .07);
-	box-shadow: 0 0 0 2px rgba(255,255,255,0.9);
+	box-shadow: 0 0 0 2px rgba(255,255,255,0.09);
 	border: none;
 	&:focus-within {
 		box-shadow: 0 0 2px 2px var(--main-color);
@@ -91,48 +91,32 @@
 }
 
 // NOW PLAYING
-.nowPlayingColumn-2sl4cE {
+%nowPlayingColumn {
 	background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.6))
 }
-.container-lRFx4q {
+%nowPlayingColumnContainer {
 	background-color: transparent;
 }
-
-
-
-// Active Now voice channel overflow count
-.theme-dark .partyMemberOverflow-lXnzvu {
-	background-color: var(--background-overlay);
-}
-
-
-
-
-.consentCard-1iSxB_ {
+%consentCard {
 	background-color: hsla(0, 0%, 0%, .4);
 }
 
 // ACTIVE NOW
 %themeDark {
-	.outer-1AjyKL {
+	%activeNowOuterCard {
 		background-color: hsla(0, 0%, 0%, .4);
-		&.interactive-3B9GmY:hover,
-		&.active-1xchHY {
+		&%activeNowCardInteractive:hover,
+		&%activeNowCardActive {
 			background-color: hsla(0, 0%, 0%, .6);
 		}
 	}
-	.inset-3sAvek {
+	%activeNowCardInset {
 		background-color: hsla(0, 0%, 0%, .4);
 	}
+	.partyMemberOverflow-lXnzvu {
+		background-color: var(--background-overlay);
+	}
 }
-
-
-.theme-dark {	
-	.popout-38lTFE {
-		background-color: hsla(0, 0%, 0%, .8);
-	}
-	.enabled-1t_Gxm:hover,
-	.memberListItem-31QoHj:not(.popoutDisabled-2RK7MF):hover {
-		background-color: hsla(0, 0%, 100%, .05);
-	}
+%activeNowCardSection {
+	background-color: transparent;
 }
