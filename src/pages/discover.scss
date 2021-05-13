@@ -16,8 +16,7 @@
 
 // SEARCH BOX
 %search {
-	%searchBox,
-	%searchPage & %searchBox {
+	%searchBox {
 		background: hsla(0, 0%, 0%, .6);
 		border: none;
 		box-shadow: 0 0 0 2px hsla(0, 0%, 100%, .09);
@@ -25,9 +24,7 @@
 			border: none;
 			box-shadow: 0 0 2px 2px var(--main-color);
 		}
-		.input-cIJ7To,
-		.input-cIJ7To:focus,
-		.focused-1mmYsC.input-cIJ7To {
+		.input-cIJ7To {
 			border: none;
 			box-shadow: none;
 		}
@@ -40,11 +37,37 @@
 		%searchBoxIconSearch {
 			color: var(--main-color);
 		}
-		%searchBoxCloseIcon,
-		%searchPage & %searchBoxCloseIcon {
+		%searchBoxCloseIcon {
 			color: var(--main-color);
 			&:hover {
 				color: var(--hover-color);
+			}
+		}
+	}
+	%searchPage & {
+		%searchBox {
+			background: hsla(0, 0%, 100%, .07);
+			border: none;
+			box-shadow: 0 0 0 2px hsla(0, 0%, 100%, .09);
+			&:focus-within {
+				border: none;
+				box-shadow: 0 0 2px 2px var(--main-color);
+			}
+			.input-cIJ7To {
+				border: none;
+				box-shadow: none;
+			}
+			%searchBoxInput {
+				color: var(--text-normal);
+				&::placeholder {
+					color: hsla(0, 0%, 100%, .3);
+				}
+			}
+			%searchBoxCloseIcon {
+				color: var(--main-color);
+				&:hover {
+					color: var(--hover-color);
+				}
 			}
 		}
 	}
@@ -54,10 +77,11 @@
 %themeDark {
 	%discoverGuildCard,
 	%discoverGuildCardIcon {
-		background-color: hsla(0, 0%, 0%, .6);
+		background-color: hsla(0, 0%, 0%, .4);
 		transition: all .15s ease-in-out;
-		&:hover {	
-			background-color: hsla(0, 0%, 0%, .8);
+		&:hover,
+		&:hover %discoverGuildCardIcon {	
+			background-color: hsla(0, 0%, 0%, .6);
 		}
 	}
 }
@@ -67,14 +91,9 @@
 %discoverGuildStatusOffline{
 	background-color: cv("colors.offline");
 }
-%discoverGuildList {
-	%discoverGuildCardLoading {
-		background: hsla(0, 0%, 100%, .1);
-	}
-}
 
 // LANGUAGE SELECTOR
-%discoverLanguageSelectorControl {
+%discoverLanguageSelector>div>div {
 	background-color: hsla(0, 0%, 0%, .6);
 }
 

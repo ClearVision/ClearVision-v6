@@ -15,10 +15,12 @@
 }
 
 // CHAT TOOLBAR
-.toolbar-2bjZV7,
-.toolbar-2bjZV7::before {
+.toolbar-2bjZV7 {
 	background-color: hsla(0, 0%, 0%, .8);
 }
+.toolbar-2bjZV7::before {
+	border-top: 8px solid hsla(0, 0%, 0%, .8);
+} 
 .active-2HPddW,
 .hover-28QbSq:hover {
 	background-color: hsla(0,0%,100%,.05);

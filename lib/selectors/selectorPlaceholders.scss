@@ -3515,7 +3515,7 @@ pre {
 .searchBar-1Vaz-O {
 	@extend %groupInvitePopoutSearchBar !optional;
 }
-.container-2XeR5Z {
+.searchBarComponent-yxeVIL {
 	@extend %groupInvitePopoutSearchContainer !optional;
 }
 .inner-3ErfOT {
@@ -4393,4 +4393,16 @@ pre {
 }
 .selected-1dONk0 {
 	@extend %categoryPillSelected !optional;
+}
+.pageControlContainer-eP-SVd {
+	@extend %pageControlContainer !optional;
+}
+.pageControl-xGOf_S {
+	@extend %pageControl !optional;
+}
+.pageButton-2ruNwd {
+	@extend %pageButton !optional;
+}
+.activeButton-rvKcqq {
+	@extend %pageButtonActive !optional;
 }

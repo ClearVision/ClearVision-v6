@@ -1,0 +1,15 @@
+// PAGE CONTROL
+%themeDark {
+    %pageButton {
+        &%pageButtonActive,
+        &%pageButtonActive:hover {
+            background-color: var(--main-color);
+        }
+        &:hover {
+            background-color: var(--hover-color);
+            &:disabled {
+                background-color: transparent;
+            }
+        }
+    }
+}

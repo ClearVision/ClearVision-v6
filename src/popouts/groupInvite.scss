@@ -1,4 +1,4 @@
-/* NEW GROUP INVITE POPOUT */
+/* GROUP INVITE POPOUT */
 %themeDark {
 	%groupInvitePopout {
 		&%modalRoot {
@@ -15,9 +15,11 @@
 }
 
 // SEARCH
-%groupInvitePopoutSearchContainer {
-	background-color: hsla(0, 0%, 100%, .07);
-	box-shadow: 0 0 0 2px rgba(255,255,255,0.12);
+%groupInvitePopoutSearchBar {
+	%groupInvitePopoutSearchContainer {
+		background-color: hsla(0, 0%, 100%, .07);
+		box-shadow: 0 0 0 2px rgba(255,255,255,0.09);
+	}
 }
 %groupInvitePopoutSearchTag {
 	background: $main-color;

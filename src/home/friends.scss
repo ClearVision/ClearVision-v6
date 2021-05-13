@@ -75,32 +75,30 @@
 // ADD FRIENDS PAGE
 %friendsAddFriendInputWrapper {
 	background-color: hsla(0, 0%, 100%, .07);
-	box-shadow: 0 0 2px 2px rgba(255,255,255,0.12);
+	box-shadow: 0 0 0 2px rgba(255,255,255,0.9);
 	border: none;
+	&:focus-within {
+		box-shadow: 0 0 2px 2px var(--main-color);
+	}
 }
 %friendsAddFriendInput {
 	&::placeholder {
 		color: hsla(0, 0%, 100%, .3);
 	}
-	+ %friendsAddFriendHint {
-		&:after {
-			content: "";
-			position: fixed;
-			@include stretch;
-			border-radius: 8px;
-			transition: all .15s ease-in-out;
-			pointer-events: none;
-		}
-	}	
-	&:focus + %friendsAddFriendHint {
-		&:after {
-			box-shadow: 0 0 2px 2px $main-color;
-		}
-	}
 }
 %friendsAddFriendHint {
 	color: hsla(0, 0%, 100%, .3);
 }
+
+// NOW PLAYING
+.nowPlayingColumn-2sl4cE {
+	background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.6))
+}
+.container-lRFx4q {
+	background-color: transparent;
+}
+
+
 
 // Active Now voice channel overflow count
 .theme-dark .partyMemberOverflow-lXnzvu {
@@ -108,9 +106,7 @@
 }
 
 
-.nowPlayingColumn-2sl4cE {
-	background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.6))
-}
+
 
 .consentCard-1iSxB_ {
 	background-color: hsla(0, 0%, 0%, .4);
