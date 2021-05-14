@@ -1,23 +1,20 @@
 /* STATUS */
-@each $status, $color in cv("disc:status") {
-	$id: unique-id();
-	%#{$id} {
-		fill: cv("colors.#{$status}");
-	}
-	%statusPointerEvents {
-		&[mask="url(#svg-mask-status-#{$status})"] {
-			@extend %#{$id};
+%avatarMask {
+	rect {
+		&[fill='#3ba55c'] {
+			fill: var(--online-color);
 		}
-		@if $status == "online" {
-			&[mask="url(#svg-mask-status-#{$status}-mobile)"] {
-				@extend %#{$id};
-			}
+		&[fill='#faa61a'] {
+			fill: var(--idle-color);
 		}
-	}
-	%statusMask,
-	%avatarMask {
-		rect[fill="#{map-get($color, rgb)}"] {
-			@extend %#{$id};
+		&[fill='#ed4245'] {
+			fill: var(--dnd-color);
+		}
+		&[fill='#593695'] {
+			fill: var(--streaming-color);
+		}
+		&[fill='#747f8d'] {
+			fill: var(--offline-color);
 		}
 	}
 }
