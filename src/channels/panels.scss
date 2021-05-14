@@ -38,64 +38,19 @@
 		color: #fff;
 		opacity: .3;
 		transition: all .1s ease-in-out;
-		&[name=Nova_Microphone] {
-			background-image: url(https://clearvision.gitlab.io/icons/mic.svg);
-			> path {
-				display: none;
-			}
-		}
-		&[name=Nova_MicrophoneMute] {
-			background-image: url(https://clearvision.gitlab.io/icons/mic_off.svg);
-			> path {
-				display: none;
-			}
-		}
-		&[name=Nova_Headset] {
-			background-image: url(https://clearvision.gitlab.io/icons/volume_up.svg);
-			> svg {
-				display: none;
-			}
-		}
-		&[name=Nova_HeadsetDeafen] {
-			background-image: url(https://clearvision.gitlab.io/icons/volume_off.svg);
-			> path {
-				display: none;
-			}
-		}
-		&[name=Gear] {
-			background-image: url(https://clearvision.gitlab.io/icons/settings.svg);
-			> path {
-				display: none;
-			}
-		}
-		&[name=Info] {
-			background-image: url(https://clearvision.gitlab.io/icons/info.svg);
-			> g {
-				display: none;
-			}
-		}
-		&[name=Nova_CallLeave] {
-			background-image: url(https://clearvision.gitlab.io/icons/call_end.svg);
-			> path {
-				display: none;
-			}
-		}
 	}
 	&:hover {
-		&%panelButtonEnabled {
-			background: transparent;
-		}
 		> %buttonContents > svg {
 			opacity: .7;
-			&[name=Gear] {
-				animation: cv-spin 2.5s linear infinite;
-			}
 		}
 	}
 	&%panelButtonDisabled {
 		> %buttonContents > svg {
 			opacity: .1;
 		}
+	}
+	&:nth-child(3):hover > %buttonContents > svg {
+		animation: cv-spin 2.5s linear infinite;
 	}
 }
 

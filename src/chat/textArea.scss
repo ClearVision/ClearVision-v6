@@ -62,25 +62,14 @@
 			}
 		}
 	}
-
-	// CHANNEL INFO DISPLAY
-	%channelInfo {
-		background-color: var(--background-overlay);
-		border-radius: 5px;
-		color: hsla(0, 0%, 100%, .7);
-		%channelInfoImage {
-			filter: grayscale(1);
-			opacity: .5;
-		}
-	}
 }
 
 // FOLLOW CHANNEL
 %channelInfo {
-	background-color: var(--background-overlay);
+	background-color: hsla(0, 0%, 0%, .6);
 }
 
-// Reply
+// REPLY
 %replyContainer {
     background: rgba(0,0,0,0.6);
     border: 2px solid transparent;

@@ -47,6 +47,9 @@
 // FLOWER STAR BADGE
 %flowerStarContainer {
 	color: var(--main-color);
+	>svg>path {
+		fill: var(--main-color)
+	}
 	%flowerStarIcon {
 		color: #fff;
 	}

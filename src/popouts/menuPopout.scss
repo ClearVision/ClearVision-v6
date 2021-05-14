@@ -36,3 +36,15 @@
 		}
 	}
 }
+
+// QUICK REACTIONS
+%quickReactButton {
+	background-color: transparent;
+	&%quickReactButtonFocused
+	&:hover {
+		background-color: transparent;
+	}
+	&%quickReactButtonFocused {
+		box-shadow: 0 0 2px 2px var(--hover-color);
+	}
+}

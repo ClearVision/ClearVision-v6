@@ -6,10 +6,6 @@
 .tierMarker-5HkGJ_[style*="linear-gradient(to right, rgb(32, 34, 37), rgb(32, 34, 37));"] {background: var(--backdrop-overlay) !important;}
 .theme-dark .barForeground-3KglC8 {background-color: rgba(244,127,255,0.9);}
 
-/* Region Selector button */
-.lookGhost-2Fn_0-.colorGrey-2DXtkV {color: white; background-color: var(--main-color);}
-.lookGhost-2Fn_0-.colorBrand-3pXr91 {color: white; background-color: var(--hover-color);}
-
 /* Invite Modal */
 .inviteRow-2L02ae:hover {background-color: rgba(255,255,255,0.4);}
 
@@ -76,93 +72,12 @@
 /* Ha fcking no nitro nerds */
 .premiumSubscriptionAccountCredit-25i0tQ{background-color: var(--background-overlay);}
 
-/* status color */
-.mask-1l8v16>rect[fill='#43b581'] {fill: var(--online-color) !important;}
-.mask-1l8v16>rect[fill='#faa61a'] {fill: var(--idle-color) !important;}
-.mask-1l8v16>rect[fill='#f04747'] {fill: var(--dnd-color) !important;}
-.mask-1l8v16>rect[fill='#593695'] {fill: var(--streaming-color) !important;}
-.mask-1l8v16>rect[fill='#747f8d'] {fill: var(--offline-color) !important;}
-
-
-/* Channel Follow */
-.theme-dark .header-1pGpFt {background-image: none; background-color: var(--backdrop-overlay);}
-.channelContainer-1x3D6I .channel-2PJTLY {background-color: var(--background-overlay);}
-.channelContainer-1x3D6I {background-color: transparent;}
-
-/* Spotify Popup */
-.attachPopout-36hjtN {background-color: var(--backdrop-overlay);}
-
-/* Cv spin All Langs - ONLY HITS USER SETTINGS */
-/* Danish */
-.container-3baos1 .button-14-BFJ[aria-label="Brugerindstillinger"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
-/* Deutsch */
-.container-3baos1 .button-14-BFJ[aria-label="Benutzereinstellungen"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
-/* English */
-.container-3baos1 .button-14-BFJ[aria-label="User Settings"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
-/* Spanish */
-.container-3baos1 .button-14-BFJ[aria-label="Ajustes de usuario"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
-/* French */
-.container-3baos1 .button-14-BFJ[aria-label="Paramètres utilisateur"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
-/* Croatian */
-.container-3baos1 .button-14-BFJ[aria-label="Korisničke postavke"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
-/* Italian */
-.container-3baos1 .button-14-BFJ[aria-label="Impostazioni utente"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
-/* Lithuanian */
-.container-3baos1 .button-14-BFJ[aria-label="Naudotojo Nustatymai"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
-/* Hungarian */
-.container-3baos1 .button-14-BFJ[aria-label="Felhasználói beállítások"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
-/* Dutch */
-.container-3baos1 .button-14-BFJ[aria-label="Gebruikersinstellingen"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
-/* Norwegian */
-.container-3baos1 .button-14-BFJ[aria-label="Brukerinnstillinger"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
-/* Polish */
-.container-3baos1 .button-14-BFJ[aria-label="Ustawienia użytkownika"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
-/* Portuguese, Brazilian */
-.container-3baos1 .button-14-BFJ[aria-label="Configurações de Usuário"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
-/* Romanian */
-.container-3baos1 .button-14-BFJ[aria-label="Setări utilizator"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
-/* Finnisch */
-.container-3baos1 .button-14-BFJ[aria-label="Käyttäjäasetukset"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
-/* Swedish */
-.container-3baos1 .button-14-BFJ[aria-label="Användarinställningar"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
-/* Vietnamese */
-.container-3baos1 .button-14-BFJ[aria-label="Cài đặt người dùng"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
-/* Turkish */
-.container-3baos1 .button-14-BFJ[aria-label="Kullanıcı Ayarları"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
-/* Czech */
-.container-3baos1 .button-14-BFJ[aria-label="Uživatelská nastavení"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
-/* Greek */
-.container-3baos1 .button-14-BFJ[aria-label="Ρυθμίσεις χρήστη"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
-/* Bulgarian */
-.container-3baos1 .button-14-BFJ[aria-label="Потребителски настройки"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
-/* Russian */
-.container-3baos1 .button-14-BFJ[aria-label="Настройки пользователя"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
-/* Ukrainian */
-.container-3baos1 .button-14-BFJ[aria-label="Користувацькі налаштування"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
-/* Thai */
-.container-3baos1 .button-14-BFJ[aria-label="ตั้งค่าผู้ใช้"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
-/* Chinese - China */
-.container-3baos1 .button-14-BFJ[aria-label="用户设置"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
-/* Japanese */
-.container-3baos1 .button-14-BFJ[aria-label="ユーザー設定"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
-/* Chinese Taiwan */
-.container-3baos1 .button-14-BFJ[aria-label="使用者設定"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
-/* Korean */
-.container-3baos1 .button-14-BFJ[aria-label="사용자 설정"]:hover  > .contents-18-Yxp > svg {animation: cv-spin 2.5s linear infinite;}
-
-/* quick reactions */
-.button-F9qN4n.focused-3ZzkKr {box-shadow: 0 0 2px 2px var(--hover-color);}
-.button-F9qN4n, .button-F9qN4n.focused-3ZzkKr, .button-F9qN4n:hover {background-color: var(--backdrop-overlay);}
-
 /*Border hover and select on search options*/
 .tab-EiCZG6.selected-3gXBLQ, .tab-EiCZG6:hover {border-bottom: 2px solid var(--main-color) !important;}
 
 /* birthday confirmation modal */
 .theme-dark .footer-3rDWdC {background-color: var(--backdrop-overlay); box-shadow: none;}
 .required-7sPBq3 {color: var(--danger-color);}
-
-/*Invite your friends*/
-.card-1yV8cG {background-color: rgba(0,0,0,0.4);}
 
 /* Unread Popout p.s. hecc u discord */
 .tutorial-3w5I9h, .container-enaOkj, .messages-3G3erD {background-color: var(--background-overlay);}
@@ -171,10 +86,6 @@
 .messageContainer-1ei2zM:hover .jumpButton-3vBz5U{background-color: transparent;}
 .tutorialIcon-3f1miQ {background-color: var(--main-color); color: #fff;}
 
-/*inbox badge*/
-.badge-2qGa_k:after{background-color: var(--main-color);}
-/* inbox Jump to button */
-.messageContainer-gbhlwo:hover .jumpButton-2F6EMx {background-color: var(--backdrop-overlay);}
 
 /* You're all caught up*/
 .icon-1Itzco{background-color: var(--background-overlay); color: #fff;}
@@ -197,10 +108,6 @@
 .searchResult-9tQ1uo .hit-1fVM9e .messageGroupCozy-2-Q370 {background-color: var(--background-overlay);}
 .searchResult-9tQ1uo:focus-within .jumpButton-JkYoYK, .searchResult-9tQ1uo:hover .jumpButton-JkYoYK {background-color: var(--backdrop-overlay);}
 .expanded-w_LCGl .searchResultMessage-1fxgXh.hit-1fVM9e{background-color: transparent;}
-
-
-/* Home -> Nitro (Under Library) */
-.scroller-9moviB {background: transparent}
 
 /* Server boost bar */
 .barSecondary-3B1aP2 {background-color: var(--main-color);}
@@ -226,23 +133,8 @@
 /* Webhooks, channels followed icons */
 .iconWrapper-lS1uig {background-color: var(--background-overlay);}
 
-/* New channel "edit channel link" */
-.button-2OOM0p {color: var(--url-color);}
-
 /* Fixes Add another channel button drag color */
 .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:active, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:hover {background-color: var(--hover-color);}
-
-/* New feature badge */
-.badge-_BgAUQ {background-color: var(--main-color);}
-
-
-.lookOutlined-3sRXeN.colorBrand-3pXr91 {
-    color: var(--main-color);
-    border-color: var(--main-color);} 
-	
-.lookOutlined-3sRXeN.colorBrand-3pXr91:hover{
- color: var(--hover-color);
- border-color: var(--hover-color);}
 
 /* Server is going to lose a level popout */
 .message-39hdqk {width: 110%;}

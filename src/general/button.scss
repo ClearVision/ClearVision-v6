@@ -48,7 +48,7 @@
 	color: #fff;
 	&:hover {
 		background: hsla(0, 0%, 100%, .2);
-		color: #fff;
+		color: $main-color;
 	}
 	&:disabled {
 		background: hsla(0, 0%, 100%, .1);
@@ -58,7 +58,10 @@
 // BUTTON OUTLINED
 %appMount {
 	%buttonOutlinedWhite,
-	%buttonOutlinedPrimary {
+	%buttonOutlinedPrimary,
+	%buttonOutlinedGreen,
+	%buttonOutlinedRed,
+	%buttonOutlinedBrand {
 		background: transparent;
 		border-color: transparent;
 		color: hsla(0, 0%, 100%, .8);
