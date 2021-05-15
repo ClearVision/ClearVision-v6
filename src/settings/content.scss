@@ -11,7 +11,22 @@
 	}
 }
 
-// Avatar uploader
+// CLOSE BUTTON
+%settingsCloseButton {
+	border-color: hsla(0, 0%, 100%, .4);
+	&:hover {
+		border-color: hsla(0, 0%, 100%, .6);
+		background-color: transparent;
+	}
+	>svg>path {
+		fill:hsla(0, 0%, 100%, .6);
+	}
+}
+%themeDark %settingsCloseButtonKeybind {
+	color: hsla(0, 0%, 100%, .6);
+}
+
+// AVATAR UPLOADER
 .avatarUploaderInner-3UNxY3 {
 	background-color: hsla(0, 0%, 100%, .05);
 }
@@ -33,7 +48,7 @@
 	}
 }
 
-// Item cards
+// ITEM CARDS
 %themeDark {
 	.card-FDVird:before {
 		background-color: hsla(0, 0%, 0%, .4);
@@ -60,7 +75,7 @@
 	animation:none;
 }
 
-// Unsaved changes warning shake
+// WARNING SHAKE
 %shakeable[style*="transform"] {
 	transform:none !important;
 	%bg{

@@ -56,20 +56,17 @@
 }
 
 // BUTTON OUTLINED
-%appMount {
-	%buttonOutlinedWhite,
-	%buttonOutlinedPrimary,
-	%buttonOutlinedGreen,
-	%buttonOutlinedRed,
-	%buttonOutlinedBrand {
+%buttonOutlinedWhite,
+%buttonOutlinedPrimary,
+%buttonOutlinedGreen,j
+%buttonOutlinedBrand {
+	background: transparent;
+	border-color: $main-color;
+	color: hsla(0, 0%, 100%, .8);
+	&:hover {
 		background: transparent;
-		border-color: transparent;
-		color: hsla(0, 0%, 100%, .8);
-		&:hover {
-			background: transparent;
-			border-color: transparent;
-			color: #fff;
-		}
+		border-color: $hover-color;
+		color: #fff;
 	}
 }
 
