@@ -40,6 +40,9 @@
 		transition: all .1s ease-in-out;
 	}
 	&:hover {
+		&%panelButtonEnabled {
+			background: transparent;
+		}
 		> %buttonContents > svg {
 			opacity: .7;
 		}
