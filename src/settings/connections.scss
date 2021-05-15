@@ -36,11 +36,13 @@ $colours: (
         }
     }
     @each $i, $u in $colours {
-        [alt*="#{$i}"] + div:before {
-            background-color: rgba( $u, .6) ;	
-        }
-        [alt*="#{$i}"] + div:after {
-            background-color: rgba( $u, .5) ;	
+        &[alt*="#{$i}"] + div {
+            &:before {
+                background-color: rgba( $u, .6);	
+            }
+            &:after {
+                background-color: rgba( $u, .5);	
+            }
         }
     }
     &[alt*="Facebook"],
