@@ -7,27 +7,27 @@
 		// ICON MAP
 		$icons: (
 			// My Account 
-			"My-Account": "https://clearvision.gitlab.io/icons/person.svg",
+			"My Account": "https://clearvision.gitlab.io/icons/person.svg",
 			// Privacy & Safety
-			"Privacy-&-Safety": "https://clearvision.gitlab.io/icons/security.svg",
+			"Privacy & Safety": "https://clearvision.gitlab.io/icons/security.svg",
 			// Authorized Apps
-			"Authorized-Apps": "https://clearvision.gitlab.io/icons/apps.svg",
+			"Authorized Apps": "https://clearvision.gitlab.io/icons/apps.svg",
 			// Connections
 			"Connections": "https://clearvision.gitlab.io/icons/link.svg",
 
 			// Subscriptions
-			"Discord-Nitro": "https://clearvision.gitlab.io/icons/nitro.svg",
+			"Discord Nitro": "https://clearvision.gitlab.io/icons/nitro.svg",
 			// Server Boost
-			"Nitro-Server-Boost": "https://clearvision.gitlab.io/icons/server_boost.svg",
+			"Nitro Server Boost": "https://clearvision.gitlab.io/icons/server_boost.svg",
 			// Gift Inventory
-			"Library-Inventory": "https://clearvision.gitlab.io/icons/gift.svg",
+			"Library Inventory": "https://clearvision.gitlab.io/icons/gift.svg",
 			// Billing
 			"Billing": "https://clearvision.gitlab.io/icons/payment.svg",
 
 			// Appearance
 			"Appearance": "https://clearvision.gitlab.io/icons/camera.svg",
 			// Voice & Video
-			"Voice-&-Video": "https://clearvision.gitlab.io/icons/mic.svg",
+			"Voice & Video": "https://clearvision.gitlab.io/icons/mic.svg",
 			// Text & Images
 			"Text-&-Images": "https://clearvision.gitlab.io/icons/chat.svg",
 			// Notifications
@@ -41,19 +41,19 @@
 			// Linux Settings
 			"Linux": "https://clearvision.gitlab.io/icons/linux.svg",
 			// Streamer Mode 
-			"Streamer-Mode": "https://clearvision.gitlab.io/icons/videocam.svg",
+			"Streamer Mode": "https://clearvision.gitlab.io/icons/videocam.svg",
 			// Advanced
 			"Advanced": "https://clearvision.gitlab.io/icons/bug.svg",
 
 			// Game Activity
-			"Game-Activity": "https://clearvision.gitlab.io/icons/games.svg",
+			"Game Activity": "https://clearvision.gitlab.io/icons/games.svg",
 			// Overlay
 			"Overlay": "https://clearvision.gitlab.io/icons/aspect_ratio.svg",
 
 			// Change Log
 			"changelog": "https://clearvision.gitlab.io/icons/history.svg",
 			//HypeSquad 
-			"Hypesquad-Online": "https://clearvision.gitlab.io/icons/hypesquad.svg",
+			"Hypesquad Online": "https://clearvision.gitlab.io/icons/hypesquad.svg",
 
 			// Log Out
 			"logout": "https://clearvision.gitlab.io/icons/exit.svg"
@@ -69,6 +69,10 @@
 				height: 24px;
 				left: 15px;
 				margin-top: -2px;
+			}
+			&:hover:before{
+				transform: rotateY(180deg);
+				transition: all .15s ease-in-out;
 			}
 		}
 

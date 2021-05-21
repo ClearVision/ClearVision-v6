@@ -12,18 +12,20 @@
 }
 
 // CLOSE BUTTON
-%settingsCloseButton {
-	border-color: hsla(0, 0%, 100%, .4);
-	&:hover {
-		border-color: hsla(0, 0%, 100%, .6);
-		background-color: transparent;
+%themeDark {
+	%settingsCloseButton {
+		border-color: hsla(0, 0%, 100%, .4);
+		&:hover {
+			border-color: hsla(0, 0%, 100%, .6);
+			background-color: transparent;
+		}
+		>svg>path {
+			fill:hsla(0, 0%, 100%, .6);
+		}
 	}
-	>svg>path {
-		fill:hsla(0, 0%, 100%, .6);
-	}
-}
-%themeDark %settingsCloseButtonKeybind {
+	%settingsCloseButtonKeybind {
 	color: hsla(0, 0%, 100%, .6);
+	}
 }
 
 // AVATAR UPLOADER
