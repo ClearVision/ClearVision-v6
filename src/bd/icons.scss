@@ -3,27 +3,21 @@
 
 	// BD ICON MAP
 	$bd: (
-		"Settings": "https://clearvision.gitlab.io/icons/betterdiscord.svg",
-		"Emotes": "https://clearvision.gitlab.io/icons/emote.svg",
-		"Plugins": "https://clearvision.gitlab.io/icons/puzzle.svg",
-		"Themes": "https://clearvision.gitlab.io/icons/palette.svg",
-		"Custom CSS": "https://clearvision.gitlab.io/icons/code_braces.svg"
+		// Settings
+		"settings": "https://clearvision.gitlab.io/icons/betterdiscord.svg",
+		// Custom CSS
+		"customcss": "https://clearvision.gitlab.io/icons/code_braces.svg",
+		// Plugins
+		"plugins": "https://clearvision.gitlab.io/icons/puzzle.svg",
+		// Themes
+		"themes": "https://clearvision.gitlab.io/icons/palette.svg",		
 	);
 	
 	// BD ICON STYLES
-	%bdSettingsSidebar %bdSettingsSidebarItem {
-		padding-left: 50px !important;
-		&:before {
-			content: "";
-			position: absolute;
-			width: 24px;
-			height: 24px;
-			left: 15px;
-			margin-top: -2px;
-		}
+	%tabBarItem {
 		@each $i, $u in $bd {
-			&:nth-child(#{index(map-keys($bd), $i) + 2}):before {
-				background-image: url(#{$u});
+			&.bd-#{$i}-tab:before {
+				background-image: url(#{$u});	
 			}
 		}
 	}
