@@ -21,7 +21,6 @@
 	--text-muted:  rgb(114, 118, 125);
 	--channels-width: 220px;
 	--members-width: 240px;
-	--avatar-roundness: 50%;
 	--background-shading: 100%;
 	--background-overlay: rgba(0, 0, 0, .6);
 	--background-image: url(https://clearvision.gitlab.io/images/sapphire.jpg);
@@ -61,6 +60,7 @@
 	--user-popout-grayscale: var(--background-grayscale);
 	--user-popout-sepia: var(--background-sepia);
 	--user-popout-blur: calc(var(--background-blur) + 3px);
+	--user-popout-overlay: rgba(0, 0, 0, .65);
 	--user-modal-image: var(--background-image);
 	--user-modal-position: var(--background-position);
 	--user-modal-size: var(--background-size);
