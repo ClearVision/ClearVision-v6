@@ -74,6 +74,9 @@
     background: rgba(0,0,0,0.6);
     border: 2px solid transparent;
 }
+%replyBar {
+    background: transparent;
+}
 %replyMentionButton {
 	padding: 4px;
 	margin-right: 3px;
@@ -92,11 +95,6 @@
 	visibility: hidden;
 	height: 0px;
 	width: 0px;
-}
-%replyingToIndicator {
-	&:before {
-		background-color: var(--main-color);
-	}
 }
 
 // Partial credit to Leafy

@@ -112,3 +112,13 @@
 		color: var(--main-color);
 	}
 }
+
+%replyingToIndicator {
+	background-color: hsla(0, 0%, 100%, .05);
+	%mouseModeFullMotion &:hover {
+		background-color: hsla(0, 0%, 100%, .08);
+	}
+	&:before {
+		background-color: var(--main-color);
+	}
+}
