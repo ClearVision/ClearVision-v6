@@ -1,19 +1,25 @@
 /* STATUS */
 %avatarMask {
 	rect {
-		&[mask="url(#svg-mask-status-online)"] {
+		&[mask="url(#svg-mask-status-online)"],
+		&[mask="url(#svg-mask-status-online-mobile)"],
+		&[fill='#3ba55c'] {
 			fill: var(--online-color);
 		}
-		&[mask="url(#svg-mask-status-idle)"] {
+		&[mask="url(#svg-mask-status-idle)"],
+		&[fill='#faa61a'] {
 			fill: var(--idle-color);
 		}
-		&[mask="url(#svg-mask-status-dnd)"] {
+		&[mask="url(#svg-mask-status-dnd)"],
+		&[fill='#ed4245'] {
 			fill: var(--dnd-color);
 		}
-		&[mask="url(#svg-mask-status-streaming)"] {
+		&[mask="url(#svg-mask-status-streaming)"],
+		&[fill='#593695'] {
 			fill: var(--streaming-color);
 		}
-		&[mask="url(#svg-mask-status-offline)"] {
+		&[mask="url(#svg-mask-status-offline)"],
+		&[fill='#747f8d'] {
 			fill: var(--offline-color);
 		}
 	}
