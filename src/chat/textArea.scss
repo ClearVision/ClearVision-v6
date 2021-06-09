@@ -9,14 +9,14 @@
 	}
 }
 %channelTextArea {
-	background: transparent;
+	background: rgba(0, 0, 0, 0.6);
 	transition: all .15s ease-in-out;
 	&:focus-within {
 		box-shadow: 0 0 2px 2px var(--main-color);
 	}
 
 	%channelTextAreaScrollable {
-		background: rgba(0, 0, 0, .6);
+		background: transparent;
 		border: 2px solid transparent;		
 	}
 	%channelTextAreaAttachButton {
@@ -70,12 +70,9 @@
 }
 
 // REPLY
-%replyContainer {
-    background: rgba(0,0,0,0.6);
-    border: 2px solid transparent;
-}
 %replyBar {
     background: transparent;
+	border: 2px solid transparent;
 }
 %replyMentionButton {
 	padding: 4px;
