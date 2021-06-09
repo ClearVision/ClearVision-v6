@@ -15,18 +15,6 @@
 	> %userModalTopSection {
 		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)) center/cover;
 	}
-	> %userModalTopSectionStreaming {
-		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)) center/cover,
-			linear-gradient(to bottom, rgba(cv("const:colors.twitch-purple"), .4) calc(95% - 55px), transparent calc(110% - 55px));
-	}
-	> %userModalTopSectionSpotify {
-		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)) center/cover,
-		linear-gradient(to bottom, rgba(cv("const:colors.spotify-green"), .4) calc(95% - 55px), transparent calc(110% - 55px));
-	}
-	> %userModalTopSectionXbox {
-		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)) center/cover,
-			linear-gradient(to bottom, rgba(cv("const:colors.xbox-green"), .4) calc(95% - 55px), transparent calc(110% - 55px));
-	}
 }
 %userModalAdditionalActionsIcon {
 	width: 24px;
@@ -65,7 +53,7 @@
 	}
 }
 *,
-%userModalTopSectionNormal * {
+%userModalTopSection * {
 	&%profileBadgeStaff {
 		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeStaff.svg);
 	}
