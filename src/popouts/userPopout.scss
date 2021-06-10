@@ -69,12 +69,9 @@
 		}
 	}
 	%userPopoutNote {
-		> textarea {
+		> %userPopoutNoteTextArea {
 			&:focus {
 				background: hsla(0, 0%, 100%, .07);
-			}
-			&::placeholder {	
-				color: hsla(0, 0%, 100%, .5);
 			}
 		}
 	}
