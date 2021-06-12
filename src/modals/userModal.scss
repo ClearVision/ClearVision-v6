@@ -16,6 +16,10 @@
 		background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)) center/cover;
 	}
 }
+%userModalProfileBanner {
+	-webkit-mask: linear-gradient(to bottom, #000, transparent 93%);
+	mask: linear-gradient(to bottom, #000, transparent 93%);
+}
 %userModalAdditionalActionsIcon {
 	width: 24px;
 	height: 24px;
@@ -29,13 +33,9 @@
 		display: none;
 	}
 }
-%userModalHeaderFill {
-	background: rgba(0, 0, 0, .04);
-	> %userModalActivity {
-		%activityHeaderText {
-			color: hsla(0, 0%, 100%, .7);
-		}
-	}
+%userModalAvatar {
+	border-color: transparent;
+	background-color: transparent;
 }
 %userModalNameTag {
 	display: flex;
@@ -167,13 +167,6 @@
 				bottom: 100%;
 				animation: cv-slide-bottom .2s ease-in-out reverse;
 			}
-		}
-	}
-}
-%userModalHeaderFill {
-	%tabBarItem {
-		&:after {
-			background: rgba(0, 0, 0, .225);
 		}
 	}
 }

@@ -1355,15 +1355,6 @@
 .tabBarItem-1Cg-MI {
 	@extend %messagesPopoutTabBarItem !optional;
 }
-.tabBarContainer-37hZsr {
-	@extend %userModalTabBarContainer !optional;
-}
-.tabBar-3nvOPa {
-	@extend %userModalTabBar !optional;
-}
-.tabBarItem-3dfX8P {
-	@extend %userModalTabBarItem !optional;
-}
 .tooltip-2QfLtc {
 	@extend %tooltip !optional;
 }
@@ -3095,23 +3086,32 @@ pre {
 .topSection-y3p-_D {
 	@extend %userModalTopSection !optional;
 }
-.headerInfo-1Y1Vge {
-	@extend %userModalHeaderInfo !optional;
+.profileBanner-33-uE1 {
+	@extend %userModalProfileBanner !optional;
 }
-.nameTag-2IFDfL {
+.avatar-AvHqJA {
+	@extend %userModalAvatar !optional;
+}
+.nameTag-ECvD8P {
 	@extend %userModalNameTag !optional;
 }
-.username-3gJmXY {
+.username-FvTBog {
 	@extend %userModalUsername !optional;
 }
-.discriminator-xUhQkU {
+.discriminator-1swucG {
 	@extend %userModalDiscriminator !optional;
 }
-.additionalActionsIcon-1FoUlE {
+.additionalActionsIcon-365LnQ {
 	@extend %userModalAdditionalActionsIcon !optional;
 }
-.headerFill-39azRn {
-	@extend %userModalHeaderFill !optional;
+.tabBarContainer-37hZsr {
+	@extend %userModalTabBarContainer !optional;
+}
+.tabBar-3nvOPa {
+	@extend %userModalTabBar !optional;
+}
+.tabBarItem-3dfX8P {
+	@extend %userModalTabBarItem !optional;
 }
 .activityProfile-2bJRaP {
 	@extend %userModalActivity !optional;
@@ -3930,7 +3930,7 @@ pre {
 	@extend %userPopoutHeader !optional;
 }
 .popoutBanner-19WKGg {
-	@extend %userPopoutProfileBanner !optional;
+	@extend %userPopoutPopoutBanner !optional;
 }
 .headerTop-2cWpdB {
 	@extend %userPopoutHeaderTop !optional;
@@ -3956,7 +3956,7 @@ pre {
 .nameTag-m8r81H {
 	@extend %userPopoutNameTag !optional;
 }
-.avatar-22FtUu {
+.avatar-37jOim {
 	@extend %userPopoutAvatar !optional;
 }
 .body-3HBlXn {
@@ -4177,9 +4177,6 @@ pre {
 }
 .avatarOffline-3GF27z {
 	@extend %avatarOffline !optional;
-}
-.avatar-AvHqJA {
-	@extend %avatarProfile !optional;
 }
 .botTag-2WPJ74 {
 	@extend %botTag !optional;
