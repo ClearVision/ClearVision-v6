@@ -30,7 +30,7 @@ You are now able to customize the theme with a preview before downloading it to 
 *Thank you to @Gibbu to providing this.*
 
 ## Installing
-Download the theme file and move it into your [BetterDiscord](https://betterdiscord.net) themes folder:
+Download the theme file and move it into your [BetterDiscord](https://betterdiscord.app) themes folder:
 
 >[ClearVision_v6.theme.css](https://clearvision.gitlab.io/download/v6/latest)
 
