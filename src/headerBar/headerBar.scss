@@ -21,9 +21,10 @@
 		}
 	}
 	%headerBarTitle {
-		margin-left: 5px;
+		margin-left: 0;
 		color: #fff;
 		text-shadow: 0 0 3px #000;
+		font-family: cv("font.main");
 		&%headerBarTitleMuted {
 			color: hsla(0, 0%, 100%, .3);
 			text-shadow: none;
@@ -51,11 +52,6 @@
 	margin: 0 1px;
 	padding: 2px 3px;
 	box-sizing: content-box;
-}
-%chat {
-	%headerBarTitle {
-		margin-left: 0;
-	}
 }
 %headerBarInput {
 	&:focus {
