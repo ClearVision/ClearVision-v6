@@ -10,26 +10,3 @@
 		} 
 	}
 }
-
-%modalInput {
-	color: var(--text-normal);
-	background-color: hsla(0, 0%, 100%, .07);
-	border: none;
-	box-shadow: 0 0 0 2px hsla(0, 0%, 100%, .09);
-	&::placeholder {
-		color: hsla(0, 0%, 100%, .3);
-	}
-	&:hover {
-		border: none;
-	}
-	&:focus,
-	&%modalInputFocused {
-		box-shadow: 0 0 2px 2px var(--main-color);
-	}
-	&%modalInputNoBorder {
-		border: none;
-		box-shadow: none;
-		background: none;
-	}
-	
-}

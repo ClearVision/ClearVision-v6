@@ -419,13 +419,13 @@
 .container-3w7J-x {
 	@extend %channelsContainer !optional;
 }
-.container-2Rl01u {
+.container-1taM1r {
 	@extend %channelsHeaderContainer !optional;
 }
 .hasDropdown-2invhV {
 	@extend %channelsHasDropDown !optional;
 }
-.header-2o-2hj {
+.header-2V-4Sw {
 	@extend %channelsHeader !optional;
 }
 .name-3YKhmS {
@@ -3059,6 +3059,27 @@ pre {
 .keybindShortcut-1BD6Z1 {
 	@extend %keybindShortcut !optional;
 }
+.input-cIJ7To {
+	@extend %input !optional;
+}
+.focused-1mmYsC {
+	@extend %inputFocused !optional;
+}
+.noBorder-CTIBpT {
+	@extend %inputNoBorder !optional;
+}
+.multiInput-2AiDV2 {
+	@extend %multiInput !optional;
+}
+.multiInputFirst-2aPTwX {
+	@extend %multiInputFirst !optional;
+}
+.multiInputLast-33BbRU {
+	@extend %multiInputLast !optional;
+}
+.multiInputField-3K361B {
+	@extend %multiInputField !optional;
+}
 .modal-2VIBV8 {
 	@extend %modal !optional;
 }
@@ -3070,15 +3091,6 @@ pre {
 }
  .footer-2gL1pp {
 	@extend %modalFooter !optional;
-}
-.input-cIJ7To {
-	@extend %modalInput !optional;
-}
-.focused-1mmYsC {
-	@extend %modalInputFocused !optional;
-}
-.noBorder-CTIBpT {
-	@extend %modalInputNoBorder !optional;
 }
 .root-3QyAh1 {
 	@extend %userModal !optional;
