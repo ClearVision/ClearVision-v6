@@ -1406,6 +1406,12 @@
 .tooltipYellow-E7eIBE {
 	@extend %tooltipYellow !optional;
 }
+.tooltip-BPhxJN {
+	@extend %commandTooltip !optional;
+}
+.tooltipPointer-lElcog {
+	@extend %commandTooltipPointer !optional;
+}
 .wrapper-3NnKdC {
 	@extend %guildsWrapper !optional;
 }
@@ -2981,6 +2987,9 @@ pre {
 .repliedTextPlaceholder-dmN7D1 {
 	@extend %messageRepliedTextPlaceholder !optional;
 }
+.executedCommand-2GE3w2 {
+	@extend %messageRepliedExecutedCommand !optional;
+}
 .mentioned-xhSam7 {
 	@extend %mentioned !optional;
 }
@@ -3959,7 +3968,7 @@ pre {
 .popoutBannerPremium-1n96gg {
 	@extend %userPopoutPopoutBanner !optional;
 }
-.headerTop-2cWpdB {
+.headerTop-3vNv-a {
 	@extend %userPopoutHeaderTop !optional;
 }
 .aboutMeSection-1Fw5Ia {

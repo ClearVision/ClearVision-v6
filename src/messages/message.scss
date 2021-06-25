@@ -91,6 +91,11 @@
 			opacity: 1;
 		}
 	}
+	&%messageRepliedExecutedCommand {
+		%messageRepliedCommandName {
+			color: $main-color
+		}
+	}
 }
 
 // BUTTONS
