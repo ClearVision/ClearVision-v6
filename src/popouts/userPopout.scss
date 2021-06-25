@@ -26,7 +26,11 @@
 	%userPopoutHeaderTop {
 		background: cv("bg.popout.overlay");
 	}
-	%userPopoutPopoutBanner {
+	%userPopoutBanner {
+		-webkit-mask: linear-gradient(to bottom, #000 , transparent 93%);
+		mask: linear-gradient(to bottom, #000 , transparent 93%);
+	}
+	%userPopoutBannerPremium {
 		-webkit-mask: linear-gradient(to bottom, #000 50%, transparent);
 		mask: linear-gradient(to bottom, #000 50%, transparent);
 	}	

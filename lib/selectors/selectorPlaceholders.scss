@@ -2990,6 +2990,9 @@ pre {
 .executedCommand-2GE3w2 {
 	@extend %messageRepliedExecutedCommand !optional;
 }
+.commandName-1klrjB {
+	@extend %messageRepliedCommandName !optional;
+}
 .mentioned-xhSam7 {
 	@extend %mentioned !optional;
 }
@@ -3965,8 +3968,11 @@ pre {
 .headerNormal-3KXFBt {
 	@extend %userPopoutHeader !optional;
 }
+.popoutBanner-19WKGg {
+	@extend %userPopoutBanner !optional;
+}
 .popoutBannerPremium-1n96gg {
-	@extend %userPopoutPopoutBanner !optional;
+	@extend %userPopoutBannerPremium !optional;
 }
 .headerTop-3vNv-a {
 	@extend %userPopoutHeaderTop !optional;
