@@ -1,20 +1,19 @@
 /* USER SETTINGS */
 
-// My Account
+// MY ACCOUNT
+.accountProfileCard-1XCH88 {
+	background-color: rgba(0,0,0,0.4);
+}
+.background-1QDuV2,
 .fieldList-21DyL8 {
 	background-color: transparent;
 }
-.background-1QDuV2 {
-	background-color: rgba(0,0,0,0.4);
-}
 
-.theme-dark {
-	.questionMark-3qBhGj {
-		background-color: var(--main-color);
-		&:hover {
-			background-color: var(--hover-color);
-		}
-	}
+.profileBannerPreview-3_l0Wd {
+    background-color: cv("bg.popout.overlay");
+    > %userPopoutHeaderTop {
+        background: transparent;
+    }
 }
 
 // Privacy & Safety

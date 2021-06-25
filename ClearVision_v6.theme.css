@@ -93,7 +93,7 @@
 	--user-popout-grayscale: var(--background-grayscale); /* user popout background grayscale (0 - 100%) [default: var(---background-grayscale)] */
 	--user-popout-sepia: var(--background-sepia); /* user popout background sepia (0 - 100%) [default: var(---background-sepia)] */
 	--user-popout-blur: calc(var(--background-blur) + 3px); /* user popout background blur [default: calc(var(--background-blur) + 3px)] */
-	--user-popout-overlay: rgba(0, 0, 0, .65); /* user popout overlay color [default: rgba(0, 0, 0, .65)] */
+	--user-popout-overlay: rgba(0, 0, 0, .6); /* user popout overlay color [default: rgba(0, 0, 0, .6)] */
 	
 	/* USER MODAL BACKGROUND */
 	--user-modal-image: var(--background-image); /* app background image (link must be HTTPS) [default: var(---background-image)] */

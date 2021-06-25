@@ -22,16 +22,13 @@
 	}
 
 	// HEADER
-	%userPopoutHeader {
+	%userPopoutHeader,
+	%userPopoutHeaderTop {
 		background: cv("bg.popout.overlay");
 	}
 	%userPopoutPopoutBanner {
-		-webkit-mask: linear-gradient(to bottom, #000, transparent 93%);
-		mask: linear-gradient(to bottom, #000, transparent 93%);
-	}
-	%userPopoutHeaderTop,
-	%userPopoutAboutMe {
-		background-color: transparent;
+		-webkit-mask: linear-gradient(to bottom, #000 50%, transparent);
+		mask: linear-gradient(to bottom, #000 50%, transparent);
 	}	
 	%userPopoutMobileIndicator {
 		color: hsla(0, 0%, 100%, .4);
@@ -52,6 +49,9 @@
 	// BODY
 	%userPopoutBody {
 		background: cv("bg.popout.overlay");
+	}
+	.bodyInnerWrapper-26fQXj {
+		background-color: transparent;
 	}
 	%userPopoutBodyTitle {
 		color: hsla(0, 0%, 100%, .7);

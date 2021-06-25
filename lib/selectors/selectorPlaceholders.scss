@@ -866,6 +866,12 @@
 .text-1y-e8- {
 	@extend %channelTextAreaTypingText !optional;
 }
+.attachedBars-tZDmyV {
+	@extend %channelTextAreAttachedBar !optional;
+}
+.stackedAttachedBar-3A2J3X {
+	@extend %channelTextAreaStackedAttachedBar !optional;
+}
 .operations-36ENbA {
 	@extend %operations !optional;
 }
@@ -923,17 +929,26 @@
 .list-A0BHjR {
 	@extend %autocompleteList !optional;
 }
-.wrapper-2siovq {
-	@extend %autocompleteListItem !optional;
+.listItems-1uJgMC {
+	@extend %autocompleteListItems !optional;
 }
 .selected-3xBBKs {
 	@extend %autocompleteListItemSelected !optional;
 }
-.optionalHeader-mLQoIx {
-	@extend %autocompleteOptionalHeader !optional;
-}
 .option-1B5ZV8 {
 	@extend %autocompleteOption !optional;
+}
+.active-2awTSY {
+	@extend %autocompleteOptionActive !optional;
+}
+.error-1NcCbc {
+	@extend %autocompleteOptionError !optional;
+}
+.pill-2pQByF {
+	@extend %autocompletePill !optional;
+}
+.tabButton-1n4gNP {
+	@extend %autocompletetabButton !optional;
 }
 .welcomeMessage-3_Mcht {
 	@extend %welcomeMessage !optional;
@@ -3938,16 +3953,16 @@ pre {
 .userPopout-xaxa6l {
 	@extend %userPopout !optional;
 }
-.headerNormal-1mX3KY {
+.headerNormal-3KXFBt {
 	@extend %userPopoutHeader !optional;
 }
-.popoutBanner-19WKGg {
+.popoutBannerPremium-1n96gg {
 	@extend %userPopoutPopoutBanner !optional;
 }
 .headerTop-2cWpdB {
 	@extend %userPopoutHeaderTop !optional;
 }
-.aboutMeSection---MkQa {
+.aboutMeSection-1Fw5Ia {
 	@extend %userPopoutAboutMe !optional;
 }
 .activityUserPopout-2yItg2 {
@@ -3983,13 +3998,13 @@ pre {
 .rolesList-22qj2L {
 	@extend %userPopoutRolesList !optional;
 }
-.note-1MiCN7 {
+.note-1oo11U {
 	@extend %userPopoutNote !optional;
 }
 .textarea-2r0oV8 {
 	@extend %userPopoutNoteTextArea !optional;
 }
-.footer-1N3bR3 {
+.footer-3UKYOU {
 	@extend %userPopoutFooter !optional;
 }
 .protip-YaFfgO {

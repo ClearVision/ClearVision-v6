@@ -69,6 +69,14 @@
 	background-color: hsla(0, 0%, 0%, .6);
 }
 
+// ATTACHED BARS
+%channelTextAreAttachedBar {
+	background: transparent;
+}
+%channelTextAreaStackedAttachedBar {
+	border-bottom: 1px solid hsla(0, 0%, 100%, .07);
+}
+
 // REPLY
 %replyBar {
     background: transparent;
@@ -94,4 +102,23 @@
 	width: 0px;
 }
 
-// Partial credit to Leafy
+
+// SLASH COMMANDS
+%autocompleteOption {
+	&%autocompleteOptionActive {
+		background-color: $main-color;
+	}
+}
+%themeDark %autocompletePill {
+	background-color: $main-color;
+	color: #fff;
+}
+%autocompletetabButton {
+	border: 1px solid $hover-color;
+	border-radius: 3px;
+	box-shadow: inset 0 -4px $main-color;
+	path:first-child,
+	rect {
+		fill: transparent;
+	}
+}
