@@ -33,24 +33,18 @@
     background-color: transparent;
     &:before {
         content: "";
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
+        @include stretch;
         position: absolute;
         z-index: -1;
-        background: var(--background-image) var(--background-position)/var(--background-size) var(--background-repeat) var(--background-attachment);
-        filter: grayscale(var(--background-grayscale)) sepia(var(--background-sepia)) invert(var(--background-invert)) brightness(var(--background-brightness)) contrast(var(--background-contrast)) saturate(var(--background-saturation)) blur(var(--background-blur));
+        background: cv("bg.app.img") cv("bg.app.pos")/cv("bg.app.size") cv("bg.app.repeat") cv("bg.app.attach");
+	    @include filters(cv("bg.app"));
     }
     &:after {
         content: "";
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
+        @include stretch;
         position: absolute;
         z-index: -1;
-        background: var(--background-overlay);
+        background: cv("bg.popout.overlay");
     }
     
 }
