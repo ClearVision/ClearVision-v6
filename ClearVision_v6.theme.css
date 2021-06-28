@@ -67,46 +67,46 @@
 	
 	/* MODAL BACKDROP */
 	--backdrop-overlay: rgba(0, 0, 0, 0.8); /* modal backdrop overlay color/gradient [default: rgba(0, 0, 0, 0.8)] */
-	--backdrop-image: var(--background-image); /* modal backdrop image (link must be HTTPS) [default: var(---background-image)] */
-	--backdrop-position: var(--background-position); /* modal backdrop position [default: var(---background-position)] */
-	--backdrop-size: var(--background-size); /* modal backdrop size [default: var(---background-size)] */
-	--backdrop-repeat: var(--background-repeat); /* modal backdrop repeat [default: var(---background-repeat)] */
+	--backdrop-image: var(--background-image); /* modal backdrop image (link must be HTTPS) [default: var(--background-image)] */
+	--backdrop-position: var(--background-position); /* modal backdrop position [default: var(--background-position)] */
+	--backdrop-size: var(--background-size); /* modal backdrop size [default: var(--background-size)] */
+	--backdrop-repeat: var(--background-repeat); /* modal backdrop repeat [default: var(--background-repeat)] */
 	--backdrop-attachment: var(--background-attachment); /* modal backdrop attachment [default: var(--background-attachment)] */
-	--backdrop-brightness: var(--background-brightness); /* modal backdrop brightness (< 100% for darken, > 100% for lighten) [default: var(---background-brightness)] */
-	--backdrop-contrast: var(--background-contrast); /* modal backdrop contrast [default: var(---background-contrast)] */
-	--backdrop-saturation: var(--background-saturation); /* modal backdrop saturation [default: var(---background-saturation)] */
-	--backdrop-invert: var(--background-invert); /* modal backdrop invert (0 - 100%)  [default: var(---background-invert)] */
-	--backdrop-grayscale: var(--background-grayscale); /* modal backdrop grayscale ( 0 - 100%) [default: var(---background-grayscale)] */
-	--backdrop-sepia: var(--background-sepia); /* modal backdrop sepia (0 - 100%) [default: var(---background-sepia)] */
+	--backdrop-brightness: var(--background-brightness); /* modal backdrop brightness (< 100% for darken, > 100% for lighten) [default: var(--background-brightness)] */
+	--backdrop-contrast: var(--background-contrast); /* modal backdrop contrast [default: var(--background-contrast)] */
+	--backdrop-saturation: var(--background-saturation); /* modal backdrop saturation [default: var(--background-saturation)] */
+	--backdrop-invert: var(--background-invert); /* modal backdrop invert (0 - 100%)  [default: var(--background-invert)] */
+	--backdrop-grayscale: var(--background-grayscale); /* modal backdrop grayscale ( 0 - 100%) [default: var(--background-grayscale)] */
+	--backdrop-sepia: var(--background-sepia); /* modal backdrop sepia (0 - 100%) [default: var(--background-sepia)] */
 	--backdrop-blur: var(--background-blur); /* modal backdrop blur [default: var(--background-blur)] */
 	
 	/* USER POPOUT BACKGROUND */
-	--user-popout-image: var(--background-image); /* app background image (link must be HTTPS) [default: var(---background-image)] */
-	--user-popout-position: var(--background-position); /* user popout background position [default: var(---background-position)] */
-	--user-popout-size: var(--background-size); /* user popout background size [default: var(---background-size)] */
-	--user-popout-repeat: var(--background-repeat); /* user popout background repeat [default: var(---background-repeat)] */
+	--user-popout-image: var(--background-image); /* app background image (link must be HTTPS) [default: var(--background-image)] */
+	--user-popout-position: var(--background-position); /* user popout background position [default: var(--background-position)] */
+	--user-popout-size: var(--background-size); /* user popout background size [default: var(--background-size)] */
+	--user-popout-repeat: var(--background-repeat); /* user popout background repeat [default: var(--background-repeat)] */
 	--user-popout-attachment: var(--background-attachment); /* user popout background attachment [default: var(--background-attachment)] */
-	--user-popout-brightness: var(--background-brightness); /* user popout background brightness (< 100% for darken, > 100% for lighten) [default: var(---background-brightness)] */
-	--user-popout-contrast: var(--background-contrast); /* user popout background contrast [default: var(---background-contrast)] */
-	--user-popout-saturation: var(--background-saturation); /* user popout background saturation [default: var(---background-saturation)] */
-	--user-popout-invert: var(--background-invert); /* user popout background invert (0 - 100%) [default: var(---background-invert)] */
-	--user-popout-grayscale: var(--background-grayscale); /* user popout background grayscale (0 - 100%) [default: var(---background-grayscale)] */
-	--user-popout-sepia: var(--background-sepia); /* user popout background sepia (0 - 100%) [default: var(---background-sepia)] */
+	--user-popout-brightness: var(--background-brightness); /* user popout background brightness (< 100% for darken, > 100% for lighten) [default: var(--background-brightness)] */
+	--user-popout-contrast: var(--background-contrast); /* user popout background contrast [default: var(--background-contrast)] */
+	--user-popout-saturation: var(--background-saturation); /* user popout background saturation [default: var(--background-saturation)] */
+	--user-popout-invert: var(--background-invert); /* user popout background invert (0 - 100%) [default: var(--background-invert)] */
+	--user-popout-grayscale: var(--background-grayscale); /* user popout background grayscale (0 - 100%) [default: var(--background-grayscale)] */
+	--user-popout-sepia: var(--background-sepia); /* user popout background sepia (0 - 100%) [default: var(--background-sepia)] */
 	--user-popout-blur: calc(var(--background-blur) + 3px); /* user popout background blur [default: calc(var(--background-blur) + 3px)] */
 	--user-popout-overlay: rgba(0, 0, 0, .6); /* user popout overlay color [default: rgba(0, 0, 0, .6)] */
 	
 	/* USER MODAL BACKGROUND */
-	--user-modal-image: var(--background-image); /* app background image (link must be HTTPS) [default: var(---background-image)] */
-	--user-modal-position: var(--background-position); /* user modal background position [default: var(---background-position)] */
-	--user-modal-size: var(--background-size); /* user modal background size [default: var(---background-size)] */
-	--user-modal-repeat: var(--background-repeat); /* user modal background repeat [default: var(---background-repeat)] */
+	--user-modal-image: var(--background-image); /* app background image (link must be HTTPS) [default: var(--background-image)] */
+	--user-modal-position: var(--background-position); /* user modal background position [default: var(--background-position)] */
+	--user-modal-size: var(--background-size); /* user modal background size [default: var(--background-size)] */
+	--user-modal-repeat: var(--background-repeat); /* user modal background repeat [default: var(--background-repeat)] */
 	--user-modal-attachment: var(--background-attachment); /* user modal background attachment [default: var(--background-attachment)] */
-	--user-modal-brightness: var(--background-brightness); /* user modal background brightness (< 100% for darken, > 100% for lighten) [default: var(---background-brightness)] */
-	--user-modal-contrast: var(--background-contrast); /* user modal background contrast [default: var(---background-contrast)] */
-	--user-modal-saturation: var(--background-saturation); /* user modal background saturation [default: var(---background-saturation)] */
-	--user-modal-invert: var(--background-invert); /* user modal background invert (0 - 100%) [default: var(---background-invert)] */
-	--user-modal-grayscale: var(--background-grayscale); /* user modal background grayscale (0 - 100%) [default: var(---background-grayscale)] */
-	--user-modal-sepia: var(--background-sepia); /* user modal background sepia (0 - 100%) [default: var(---background-sepia)] */
+	--user-modal-brightness: var(--background-brightness); /* user modal background brightness (< 100% for darken, > 100% for lighten) [default: var(--background-brightness)] */
+	--user-modal-contrast: var(--background-contrast); /* user modal background contrast [default: var(--background-contrast)] */
+	--user-modal-saturation: var(--background-saturation); /* user modal background saturation [default: var(--background-saturation)] */
+	--user-modal-invert: var(--background-invert); /* user modal background invert (0 - 100%) [default: var(--background-invert)] */
+	--user-modal-grayscale: var(--background-grayscale); /* user modal background grayscale (0 - 100%) [default: var(--background-grayscale)] */
+	--user-modal-sepia: var(--background-sepia); /* user modal background sepia (0 - 100%) [default: var(--background-sepia)] */
 	--user-modal-blur: calc(var(--background-blur) + 3px); /* user modal background blur [default: calc(var(--background-blur) + 3px)] */
 	
 	/* THEME BD COLORS */
