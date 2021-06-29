@@ -134,6 +134,8 @@
 		margin: 10px 0 0;
 		padding: 0 10px;
 		border: none !important;
+		border-radius: 3px;
+		max-height: 30px;
 		color: hsla(0, 0%, 100%, .5) !important;
 		transition: color .15s ease-in-out;
 		z-index: 1;
