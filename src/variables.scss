@@ -48,9 +48,6 @@ $cv: (
 		// GENERAL
 		channels-width: var(--channels-width),
 		members-width: var(--members-width),
-		avatars: (
-			roundness: var(--avatar-roundness)
-		),
 
 		// BACKGROUNDS
 		bg: (
@@ -103,7 +100,8 @@ $cv: (
 				invert: var(--user-popout-invert),
 				grayscale: var(--user-popout-grayscale),
 				sepia: var(--user-popout-sepia),
-				blur: var(--user-popout-blur)
+				blur: var(--user-popout-blur),
+				overlay: var(--user-popout-overlay)
 			),
 
 			// USER MODAL BACKGROUND

@@ -21,6 +21,8 @@
 /* Stream Ended background */
 .theme-dark .container-2oTpPc, .root-25RxKh {background: transparent;}
 
+.theme-dark .previewContainer-12UlHl{background: transparent;}
+
 /* Invalid Gift | ref: https://discord.gift/1 */
 .theme-dark .tile-2OwFgW {background-color: var(--background-overlay);}
 .theme-dark .tile-2OwFgW:hover {background-color: var(--backdrop-overlay);}
@@ -47,9 +49,6 @@
 #bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch.checked {background-color: var(--main-color);}
 #bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch {background-color: rgba(255,255,255,0.3);}
 
-/* Emoji Picker Nitro Ending Soon Notification - Cruxie */
-.premiumRetentionNotice-1MsjHe {background-color: var(--background-overlay);}
-
 /* default text */
 .defaultValue-3gC7yw .markValue-2DwdXI {color: var(--success-color);}
 
@@ -67,10 +66,6 @@
 
 .streamPreview-3YL8OQ {background-color: var(--background-color);}
 .imageSelected-4Kl81J {border-color: var(--main-color);}
-
-
-/* Ha fcking no nitro nerds */
-.premiumSubscriptionAccountCredit-25i0tQ{background-color: var(--background-overlay);}
 
 /*Border hover and select on search options*/
 .tab-EiCZG6.selected-3gXBLQ, .tab-EiCZG6:hover {border-bottom: 2px solid var(--main-color) !important;}

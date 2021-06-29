@@ -115,6 +115,24 @@
 	}
 }
 
+// NO NITRO 
+.premiumPromo-fVlLu- {
+	background-color: hsla(0, 0%, 0%, .9);
+}
+.premiumPromoClose-1w65km {
+	filter: brightness(0) invert(1);
+	opacity: .6;
+	&:hover {
+		opacity: .8;
+	}
+}
+.premiumPromoTitle-2cKOQe {
+	color: #fff;
+}
+.premiumPromoTitle-2cKOQe {
+	color: hsla(0, 0%, 100%, .7)
+}
+
 /*  OLD CATEGORIES
 %emojiPickerCategoriesItemPeople {
 	background-image: url(https://clearvision.gitlab.io/icons/discord/emojiSmileys.svg);

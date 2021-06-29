@@ -31,6 +31,22 @@
 }
 .header-2mZ9Ov {
     background-color: transparent;
+    &:before {
+        content: "";
+        @include stretch;
+        position: absolute;
+        z-index: -1;
+        background: cv("bg.app.img") cv("bg.app.pos")/cv("bg.app.size") cv("bg.app.repeat") cv("bg.app.attach");
+	    @include filters(cv("bg.app"));
+    }
+    &:after {
+        content: "";
+        @include stretch;
+        position: absolute;
+        z-index: -1;
+        background: cv("bg.popout.overlay");
+    }
+    
 }
 .topPill-30KHOu .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ {
     background-color: $main-color;

@@ -85,6 +85,11 @@
 		}
 	}
 }
+%discoverGuildList {
+	%spinner {
+		background-color: hsla(0, 0%, 0%, .8);
+	}
+}
 %discoverGuildStatusOnline {
 	background-color: cv("colors.online");
 }

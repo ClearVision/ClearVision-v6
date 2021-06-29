@@ -22,39 +22,40 @@
 	}
 
 	// HEADER
-	%userPopoutHeader {
-		background: rgba(0, 0, 0, .6);
+	%userPopoutHeader,
+	%userPopoutHeaderTop {
+		background: cv("bg.popout.overlay");
 	}
+	%userPopoutBanner {
+		-webkit-mask: linear-gradient(to bottom, #000 , transparent 93%);
+		mask: linear-gradient(to bottom, #000 , transparent 93%);
+	}
+	%userPopoutBannerPremium {
+		-webkit-mask: linear-gradient(to bottom, #000 50%, transparent);
+		mask: linear-gradient(to bottom, #000 50%, transparent);
+	}	
 	%userPopoutMobileIndicator {
 		color: hsla(0, 0%, 100%, .4);
 	}
 	%userPopoutNameTag {
 		overflow: visible;
-	}
-	%userPopoutActions,
-	%userPopoutActionsListening {
-		> %button {
-			flex-grow: 1;
-		}
-	}
-	.profileBanner-33-uE1 {
-		-webkit-mask: linear-gradient(to bottom, #000, transparent 93%);
-		mask: linear-gradient(to bottom, #000, transparent 93%);
-	}
-	.headerTop-2y3V6H {
-		background-color: transparent;
-	}
-	.avatar-22FtUu {
+	}	
+	%userPopoutAvatar {
 		border-color: transparent;
 		background-color: transparent;
+	}
+	%userPopoutprofileBadge {
+		width: 25px !important;
+		height: 25px;
+		background-size: 25px;
 	}
 
 	// BODY
 	%userPopoutBody {
-		background: rgba(0, 0, 0, .6);
+		background: cv("bg.popout.overlay");
 	}
-	%userPopoutBodyInner {
-		background: transparent;
+	.bodyInnerWrapper-26fQXj {
+		background-color: transparent;
 	}
 	%userPopoutBodyTitle {
 		color: hsla(0, 0%, 100%, .7);
@@ -72,44 +73,19 @@
 		}
 	}
 	%userPopoutNote {
-		> textarea {
-			background: transparent;
-			color: hsla(0, 0%, 100%, .8);
+		> %userPopoutNoteTextArea {
 			&:focus {
-				background: transparent;
-			}
-			&::placeholder {	
-				color: hsla(0, 0%, 100%, .5);
+				background: hsla(0, 0%, 100%, .07);
 			}
 		}
 	}
 	
 	// FOOTER
 	%userPopoutFooter {
-		background: rgba(0, 0, 0, .6);
-	}
-	%userPopoutQuickMessage {
-		background: rgba(0, 0, 0, .3);
-		border-color: transparent;
-		color: #fff;
-		transition: all .3s ease-in-out;
-		&::placeholder {	
-			color: hsla(0, 0%, 100%, .5);
-		}
-		&:focus {
-			border-color: $main-color;
-			box-shadow: 0 0 1px $main-color;
-		}
+		background: cv("bg.popout.overlay");
 	}
 	%userPopoutTip {
 		color: hsla(0, 0%, 100%, .5);
 		opacity: 1;
-	}
-}
-
-//Community Updates
-.theme-dark {
-	.popout-6p6fkZ {
-		background-color: var(--backdrop-overlay);
 	}
 }

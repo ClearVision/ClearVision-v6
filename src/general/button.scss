@@ -20,6 +20,9 @@
 		}
 	}
 }
+%buttonFilledRed {
+	background-color: cv("colors.danger");
+}
 %buttonFilledWhite {
 	background: hsla(0, 0%, 100%, .1);
 	> %buttonContents {
@@ -60,7 +63,6 @@
 	%buttonOutlinedWhite,
 	%buttonOutlinedPrimary,
 	%buttonOutlinedGreen,
-	%buttonOutlinedRed,
 	%buttonOutlinedBrand {
 		background: transparent;
 		border-color: $main-color;
@@ -72,6 +74,19 @@
 		}
 	}
 }
+%appMount {
+	%buttonOutlinedRed {
+		background: transparent;
+		border-color: cv("colors.danger");
+		color: hsla(0, 0%, 100%, .8);
+		&:hover {
+			background: transparent;
+			border-color: $hover-color;
+			color: #fff;
+		}
+	}
+}
+
 
 // BUTTON LINK
 %buttonLinkWhite {

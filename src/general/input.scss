@@ -1,0 +1,39 @@
+%input {
+	color: var(--text-normal);
+	background-color: hsla(0, 0%, 100%, .07);
+	border: none;
+	box-shadow: 0 0 0 2px hsla(0, 0%, 100%, .09);
+	&::placeholder {
+		color: hsla(0, 0%, 100%, .3);
+	}
+	&:hover {
+		border: none;
+	}
+	&:focus,
+	&%inputFocused {
+		box-shadow: 0 0 2px 2px var(--main-color);
+	}
+	&%inputNoBorder {
+		border: none;
+		box-shadow: none;
+		background: none;
+	}
+	&%multiInput {
+		background: transparent;
+		box-shadow: none;
+	}
+	%multiInputFirst {
+		%multiInputField {
+			border-radius: 3px 0 0 3px;
+		}
+	}
+	%multiInputLast {
+		&:before {
+			height: 0;
+			width: 0;
+		}
+		%multiInputField {
+			border-radius: 0 3px 3px 0;
+		}
+	}
+}

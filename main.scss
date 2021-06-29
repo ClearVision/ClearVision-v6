@@ -85,6 +85,7 @@ $version: "6.1.0";
 @import "src/home/library";
 @import "src/home/activity";
 @import "src/home/store";
+@import "src/home/stageDiscovery";
 
 // GENERAL ELEMENTS
 @import "src/general/button";
@@ -98,6 +99,7 @@ $version: "6.1.0";
 @import "src/general/switch";
 @import "src/general/radioGroup";
 @import "src/general/pageControl";
+@import "src/general/input";
 
 // POPOUTS
 @import "src/popouts/popout";
