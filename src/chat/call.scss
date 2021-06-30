@@ -37,13 +37,15 @@
 		}
 	}
 	&%callButtonWhite {
-		background-color: $main-color;
 		color: #fff;
+		&:not(:hover) {
+			background-color: $main-color !important;
+		}
 		&:hover {
-		background-color: var(--hover-color);
+			background-color: var(--hover-color);
 		}
 		%callButtonActive {
-			background-color: $main-color;
+			background-color: transparent;
 		}
 		%callCenterIcon,
 		%micSlash {
