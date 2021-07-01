@@ -56,6 +56,9 @@
 .scroller-zPkAnE {
 	background-color: transparent;
 	margin-top: 10px;
+	&::-webkit-scrollbar-track {
+		background-color: transparent !important;
+	}
 }
 
 /* Discord Nitro Gift Payment */
