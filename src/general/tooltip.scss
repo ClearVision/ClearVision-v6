@@ -58,3 +58,10 @@
 		border-top-color: rgba(0, 0, 0, .9);
 	}
 }
+
+%subscribeTooltipWrapper {
+	background-color: $main-color;
+	&:after {
+		border-bottom-color: var(--main-color);
+	}
+}
