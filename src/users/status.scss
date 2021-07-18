@@ -1,5 +1,6 @@
 /* STATUS */
-%avatarMask {
+%avatarMask,
+%headerBarStatusMask {
 	rect {
 		&[mask="url(#svg-mask-status-online)"],
 		&[mask="url(#svg-mask-status-online-mobile)"],

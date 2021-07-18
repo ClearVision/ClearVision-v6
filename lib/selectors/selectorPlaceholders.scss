@@ -1190,6 +1190,9 @@
 .icon-1ihkOt {
 	@extend %flowerStarIcon !optional;
 }
+.gameVerifiedIcon-2dGGa5 {
+	@extend %gameVerifiedIcon !optional;
+}
 .indicator-1afSc8 {
 	@extend %indicator !optional;
 }
@@ -1639,6 +1642,9 @@
 }
 .input-2A_zIr {
 	@extend %headerBarInput !optional;
+}
+.mask-1qbNWk {
+	@extend %headerBarStatusMask !optional;
 }
 .search-2oPWTC {
 	@extend %chatSearch !optional;
@@ -4461,11 +4467,17 @@ pre {
 	@extend %quickReactButtonFocused !optional;
 }
 .subscribeTooltipWrapper-1JoUuw {
-	@extend %subscribeTooltipWrapper !optional;	
+	@extend %subscribeTooltipWrapper !optional;
 }
 .subscribeTooltipHeader-Cf_Izr {
-	@extend %subscribeTooltipHeader !optional;	
+	@extend %subscribeTooltipHeader !optional;
 }
 .subscribeTooltipText-3d3QxF-1JoUuw {
-	@extend %subscribeTooltipText !optional;	
+	@extend %subscribeTooltipText !optional;
+}
+.wrapper-18yWki {
+	@extend %stickersUploadCard !optional;
+}
+.tierLock-3nsR0q {
+	@extend %stickersTierLock !optional;
 }
