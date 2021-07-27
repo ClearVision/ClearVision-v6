@@ -74,17 +74,6 @@
 .theme-dark .footer-3rDWdC {background-color: var(--backdrop-overlay); box-shadow: none;}
 .required-7sPBq3 {color: var(--danger-color);}
 
-/* Unread Popout p.s. hecc u discord */
-.tutorial-3w5I9h, .container-enaOkj, .messages-3G3erD {background-color: var(--background-overlay);}
-.messages-3G3erD, .channelHeader-3Gd2xq{padding-right: 10px;padding-left: 20px;}
-.collapseButton-2ZsEjz{padding-left: 10px;}
-.messageContainer-1ei2zM:hover .jumpButton-3vBz5U{background-color: transparent;}
-.tutorialIcon-3f1miQ {background-color: var(--main-color); color: #fff;}
-
-
-/* You're all caught up*/
-.icon-1Itzco{background-color: var(--background-overlay); color: #fff;}
-
 /* Announcement settings */
 .theme-dark .row-_dKwg4:nth-child(odd) {background-color: var(--background-overlay);}
 

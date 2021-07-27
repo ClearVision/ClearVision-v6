@@ -4481,3 +4481,30 @@ pre {
 .tierLock-3nsR0q {
 	@extend %stickersTierLock !optional;
 }
+.container-enaOkj {
+	@extend %inboxPopout !optional;
+}
+.tutorial-3w5I9h {
+	@extend %inboxTutorial !optional;
+}
+.tutorialIcon-3f1miQ{
+	@extend %inboxTutorialIcon !optional;
+}
+.channelHeader-3Gd2xq {
+	@extend %inboxChannel !optional;
+}
+.messages-3G3erD {
+	@extend %inboxMessages !optional;
+}
+.collapseButton-2ZsEjz {
+	@extend %inboxCollapseButton !optional;
+}
+.jumpButton-2dvRSC {
+	@extend %inboxJumpButton !optional;
+}
+.text-3KVtey {
+	@extend %inboxJumpButtonText !optional;
+}
+.icon-1Itzco {
+	@extend %inboxMentionsIcon !optional;
+}

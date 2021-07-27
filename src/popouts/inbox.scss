@@ -1,0 +1,40 @@
+/* INBOX POPOUT */
+%inboxPopout {
+    background-color: hsla(0, 0%, 0%, .8);
+}
+%inboxMentionsIcon {
+    background-color: var(--background-overlay);
+    color: #fff;
+}
+
+// TUTORIAL
+%inboxTutorial {
+    background: rgba(0, 0, 0, 0.6);
+}
+%inboxTutorialIcon {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+// MESSAGES
+%inboxChannel,
+%inboxMessages {
+	background: rgba(0, 0, 0, 0.6);
+    padding-right: 10px;
+    padding-left: 20px;
+}
+%inboxCollapseButton {
+    padding-left: 9px;
+}
+%inboxJumpButton {
+	background-color: var(--main-color);
+	%inboxJumpButtonText {
+        color: #fff;
+    }
+    &:hover {
+        background-color: var(--hover-color);
+        %inboxJumpButtonText {
+            color: #fff;
+        }
+    }
+}
