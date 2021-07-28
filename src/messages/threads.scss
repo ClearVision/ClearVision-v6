@@ -1,16 +1,16 @@
 %threadsChatIcon {
-			color: $main-color;
-			filter: drop-shadow(0 0 3px);
-			width: 22px;
+	color: $main-color;
+	filter: drop-shadow(0 0 3px);
+	width: 22px;
 }
 %threadsJumpButton{
-			background-color: var(--main-color);
-			color: #fff;
-			&:hover {
-						background-color: var(--hover-color);
-						color: #fff;
-			}
+	background-color: var(--main-color);
+	color: #fff;
+	&:hover {
+		background-color: var(--hover-color);
+		color: #fff;
+	}
 }
 %threadsEmbed {
-			background-color: hsla(0, 0%, 0%, 0.30);
+	background-color: hsla(0, 0%, 0%, 0.30);
 }
