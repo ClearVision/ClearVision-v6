@@ -1,15 +1,41 @@
 /* INBOX POPOUT */
-%inboxPopout {
+%inboxContainer,
+%messagesPopoutWrap {
     background-color: hsla(0, 0%, 0%, .8);
+    animation: cv-menu-fold-y .2s cubic-bezier(.2, .6, .5, 1.1);
+	transform-origin: 50% 0;
+    border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 }
 %inboxMentionsIcon {
-    background-color: var(--background-overlay);
+    background-color: transparent;
     color: #fff;
+}
+%inboxHeader {
+    background-color: transparent;
+}
+
+// TAB BAR
+%themeDark {
+	%inboxHeader {
+		%inboxHeaderTabBar {
+            %inboxHeaderTab {
+                color: #fff;
+                %inboxHeaderTabActive {
+                    background-color: $main-color;
+                }
+                &:hover:not(%tabBarItemDisabled) {
+                    color: hsla(0, 0%, 100%, .7);
+                    background-color: hsla(0, 0%, 100%, .08);
+                }
+            }
+        }
+	}
 }
 
 // TUTORIAL
 %inboxTutorial {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.4);
 }
 %inboxTutorialIcon {
     background-color: var(--main-color);
@@ -19,7 +45,7 @@
 // MESSAGES
 %inboxChannel,
 %inboxMessages {
-	background: rgba(0, 0, 0, 0.6);
+	background: rgba(0, 0, 0, 0.4);
     padding-right: 10px;
     padding-left: 20px;
 }
