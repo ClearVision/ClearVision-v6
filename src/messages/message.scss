@@ -101,7 +101,7 @@
 // THREADS
 %cozy{
 	&%messageThread {
-		&:before {
+		&:after {
 			border-color: $main-color;
 		}
 	}
