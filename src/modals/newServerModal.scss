@@ -1,15 +1,18 @@
 .theme-dark{	
 	.footer-2gL1pp {
-        .footerTitle-2CYZch {
-            color: #fff;
-        }
-        .button-38aScr {
-            color: #fff;
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-    }
+	    .footerTitle-2CYZch {
+		color: #fff;
+	    }
+	    .button-38aScr {
+		color: #fff;
+		&:hover {
+		    text-decoration: underline;
+		}
+	    }
+    	}
+	.base-1x0h_U {
+		color: #fff;
+	}
 }
 
 .root-1gCeng {
@@ -29,9 +32,8 @@
 .container-UC8Ug1 {
     background-color: $main-color;
     &:hover {
-        background-color: $hover-color;
+	background-color: $hover-color;
     }
-    .base-1x0h_U,
     .text-1FOLJS {
         color: #fff;
     }
