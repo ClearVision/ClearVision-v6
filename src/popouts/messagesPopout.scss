@@ -1,0 +1,111 @@
+/* MESSAGES POPOUT */
+%messagesPopoutWrap,
+%recentMentionsPopout {
+    background-color: hsla(0, 0%, 0%, .8);
+    animation: cv-menu-fold-y .2s cubic-bezier(.2, .6, .5, 1.1);
+    transform-origin: 50% 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+%messagesPopoutHeader,
+%messagesPopoutFooter {
+    background-color: transparent;
+}
+
+// TAB BAR
+%themeDark %messagesPopoutHeader %messagesPopoutTabBar %messagesPopoutTab {
+    color: #fff;
+    &%messagesPopoutTabActive {
+        background-color: $main-color;
+    }
+    &:hover:not(%messagesPopoutTabActive) {
+        background-color: hsla(0, 0%, 100%, .06);
+        color: #fff;
+    }        
+}
+
+// CHANNEL HEADER
+%messagesPopoutChannelHeader {
+    background: hsla(0, 0%, 0%, .8);
+    padding-right: 10px;
+    padding-left: 20px;
+}
+
+// PINNED MESSAGES
+%pinnedMessageGroupWrapper {
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px hsla(0, 0%, 100%, .04);
+    border-radius: 0;
+    transition: all .15s ease-in-out;
+    &:last-child {
+        border-bottom: none;
+    }
+    + %pinnedMessageGroupWrapper {
+        margin-top: -1px;
+    }
+}
+%pinnedJumpButton{
+	background-color: var(--main-color);
+	color: #fff;
+    &:hover {
+        background-color: var(--hover-color);
+        color: #fff;
+    }
+}
+
+// RECENT MENTIONS MESSAGES
+%recentMentionsContainer {
+	margin: 0;
+	background-color: transparent;
+	border: none;
+	border-bottom: solid 1px hsla(0, 0%, 100%, .08);
+	border-radius: 0;
+}
+%recentMentionsMessagesContainer {
+    background: transparent;
+    padding-right: 10px;
+    padding-left: 20px;
+}
+%recentMentionsJumpButton {
+	background-color: var(--main-color);
+	%recentMentionsJumpButtonText {
+        color: #fff;
+    }
+    &:hover {
+        background-color: var(--hover-color);
+        %recentMentionsJumpButtonText {
+            color: #fff;
+        }
+    }
+}
+%recentMentionsIcon {
+    background-color: $main-color;
+    color: #fff;
+}
+
+// UNREAD MESSAGES
+%unreadTutorial {
+    background: transparent;
+    border-bottom: solid 1px hsla(0, 0%, 100%, .08);
+}
+%unreadTutorialIcon {
+    background-color: var(--main-color);
+    color: #fff;
+}
+%unreadChannel {
+	margin: 0;
+	background-color: transparent;
+	border: none;
+	border-bottom: solid 1px hsla(0, 0%, 100%, .08);
+	border-radius: 0;
+}
+%unreadMessages {
+    background: transparent;
+    padding-right: 10px;
+    padding-left: 20px;
+}
+%unreadCollapseButton {
+    padding-left: 9px;
+}

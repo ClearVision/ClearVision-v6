@@ -3659,12 +3659,6 @@ pre {
 .noShadow-3pu20z {
 	@extend %popoutNoShadow !optional;
 }
-.header-ykumBX {
-	@extend %popoutHeader !optional;
-}
-.footer-1kmXd4 {
-	@extend %popoutFooter !optional;
-}
 .layerContainer-yqaFcK {
 	@extend %layerContainer !optional;
 }
@@ -4409,47 +4403,65 @@ pre {
 .tierLock-3nsR0q {
 	@extend %stickersTierLock !optional;
 }
-.container-enaOkj {
-	@extend %inboxContainer !optional;
-}
 .messagesPopoutWrap-1MQ1bW {
 	@extend %messagesPopoutWrap !optional;
 }
 .header-ykumBX {
-	@extend %inboxHeader !optional;
+	@extend %messagesPopoutHeader !optional;
+}
+.footer-1kmXd4 {
+	@extend %messagesPopoutFooter !optional;
 }
 .tabBar-1kuXvJ {
-	@extend %inboxHeaderTabBar !optional;
+	@extend %messagesPopoutTabBar !optional;
 }
 .tab-ck0077 {
-	@extend %inboxHeaderTab !optional;
+	@extend %messagesPopoutTab !optional;
 }
 .active-1MbGPa {
-	@extend %inboxHeaderTabActive !optional;
-}
-.tutorial-3w5I9h {
-	@extend %inboxTutorial !optional;
-}
-.tutorialIcon-3f1miQ{
-	@extend %inboxTutorialIcon !optional;
+	@extend %messagesPopoutTabActive !optional;
 }
 .channelHeader-3Gd2xq {
-	@extend %inboxChannel !optional;
+	@extend %messagesPopoutChannelHeader !optional;
 }
-.messages-3G3erD {
-	@extend %inboxMessages !optional;
+.messageGroupWrapper-o-Zw7G {
+	@extend %pinnedMessageGroupWrapper !optional;
 }
-.collapseButton-2ZsEjz {
-	@extend %inboxCollapseButton !optional;
+.jumpButton-3DTcS_ {
+	@extend %pinnedJumpButton !optional;
+}
+.recentMentionsPopout-3rCiI6 {
+	@extend %recentMentionsPopout !optional;
+}
+.container-3iAQ-0 {
+	@extend %recentMentionsContainer !optional;
+}
+.messageContainer-gbhlwo {
+	@extend %recentMentionsMessagesContainer !optional;	
 }
 .jumpButton-2dvRSC {
-	@extend %inboxJumpButton !optional;
+	@extend %recentMentionsJumpButton !optional;
 }
 .text-3KVtey {
-	@extend %inboxJumpButtonText !optional;
+	@extend %recentMentionsJumpButtonText !optional;
 }
 .icon-1Itzco {
-	@extend %inboxMentionsIcon !optional;
+	@extend %recentMentionsIcon !optional;
+}
+.tutorial-3w5I9h {
+	@extend %unreadTutorial !optional;
+}
+.tutorialIcon-3f1miQ{
+	@extend %unreadTutorialIcon !optional;
+}
+.channel-3pEHab {
+	@extend %unreadChannel !optional;
+}
+.messages-3G3erD {
+	@extend %unreadMessages !optional;
+}
+.collapseButton-2ZsEjz {
+	@extend %unreadCollapseButton !optional;
 }
 .container-7uh5fX {
 	@extend %treadsPopoutContainer !optional;
