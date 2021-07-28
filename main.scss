@@ -147,6 +147,10 @@ $version: "6.1.1";
 @import "src/screens/loading";
 @import "src/screens/crash";
 
+// TREADS
+@import "src/treads/treadspopout";
+@import "src/treads/createTread";
+
 // BETTERDISCORD
 @import "src/bd/sidebar";
 @import "src/bd/icons";

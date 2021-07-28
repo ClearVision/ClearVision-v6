@@ -7,30 +7,20 @@
     border-radius: 5px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 }
-%inboxMentionsIcon {
-    background-color: transparent;
-    color: #fff;
-}
 %inboxHeader {
     background-color: transparent;
 }
 
 // TAB BAR
-%themeDark {
-	%inboxHeader {
-		%inboxHeaderTabBar {
-            %inboxHeaderTab {
-                color: #fff;
-                %inboxHeaderTabActive {
-                    background-color: $main-color;
-                }
-                &:hover:not(%tabBarItemDisabled) {
-                    color: hsla(0, 0%, 100%, .7);
-                    background-color: hsla(0, 0%, 100%, .08);
-                }
-            }
-        }
-	}
+%themeDark %inboxHeader %inboxHeaderTabBar %inboxHeaderTab {
+    color: #fff;
+    &%inboxHeaderTabActive {
+        background-color: $main-color;
+    }
+    &:hover:not(%inboxHeaderTabActive) {
+        background-color: hsla(0, 0%, 100%, .06);
+        color: #fff;
+    }        
 }
 
 // TUTORIAL
@@ -63,4 +53,10 @@
             color: #fff;
         }
     }
+}
+
+// FOOTER
+%inboxMentionsIcon {
+    background-color: $main-color;
+    color: #fff;
 }
