@@ -13,7 +13,7 @@
 }
 
 // TAB BAR
-%themeDark %messagesPopoutHeader %messagesPopoutHeaderTabBar %messagesPopoutHeaderTab {
+%themeDark %messagesPopoutHeader %messagesPopoutTabBar %messagesPopoutTab {
     color: #fff;
     &%messagesPopoutTabActive {
         background-color: $main-color;
@@ -62,9 +62,6 @@
 	border: none;
 	border-bottom: solid 1px hsla(0, 0%, 100%, .08);
 	border-radius: 0;
-    + %recentMentionsContainer {
-        margin-top: -1px;
-    }
 }
 %recentMentionsMessagesContainer {
     background: transparent;
@@ -103,9 +100,6 @@
 	border: none;
 	border-bottom: solid 1px hsla(0, 0%, 100%, .08);
 	border-radius: 0;
-    + %unreadChannel {
-        margin-top: -1px;
-    }
 }
 %unreadMessages {
     background: transparent;
