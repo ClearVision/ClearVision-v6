@@ -64,3 +64,20 @@
 /* Discord Nitro Gift Payment */
 .table-39R0Oe {background-color: transparent;}
 .paymentSourceWrapper-2dIzE4 .lookFilled-1h1y05.select-1Pkeg4 {margin: 0 2px;}
+
+
+/* Server dropdown menu server boost */
+%themeDark .perksModal-fSYqOq, .theme-dark .tierMarkerBackground-3q29am {
+    background-color: transparent;
+}
+.ctaBar-2UsjF2 {
+    background-color: hsla(0, 0%, 0%, .4);
+}
+.theme-dark .perk-2WeBWW, .theme-dark .barBackground-2EEiLw {background-color: var(--backdrop-overlay);}
+
+%themeDark {
+    .tierBody-16Chc9,
+    .tierHeaderLocked-1s2JJz {
+        background-color: hsla(0, 0%, 0%, .4);
+    }
+} 

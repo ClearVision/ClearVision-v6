@@ -1,10 +1,5 @@
 /* The following CSS was made in part by Leozard, LeafyLuigi, KitKat, Scars and Cruxie */
 
-/* Server dropdown menu server boost */
-.theme-dark .perksModal-fSYqOq, .theme-dark .tierMarkerBackground-3q29am {background-color: transparent;}
-.theme-dark .ctaBar-2UsjF2, .theme-dark .perk-2WeBWW, .theme-dark .tierBody-16Chc9, .theme-dark .tierHeaderLocked-1s2JJz, .theme-dark .barBackground-2EEiLw {background-color: var(--backdrop-overlay);}
-.tierMarker-5HkGJ_[style*="linear-gradient(to right, rgb(32, 34, 37), rgb(32, 34, 37));"] {background: var(--backdrop-overlay) !important;}
-.theme-dark .barForeground-3KglC8 {background-color: rgba(244,127,255,0.9);}
 
 /* Invite Modal */
 .inviteRow-2L02ae:hover {background-color: rgba(255,255,255,0.4);}
@@ -49,16 +44,8 @@
 #bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch.checked {background-color: var(--main-color);}
 #bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch {background-color: rgba(255,255,255,0.3);}
 
-/* default text */
-.defaultValue-3gC7yw .markValue-2DwdXI {color: var(--success-color);}
-
 /* Search dropdown */
 .theme-dark .container-3ayLPN {background-color: rgba(0,0,0,0.8);}
-
-/* mentions */
-.messageContainer-gbhlwo {background-color: var(--background-overlay);}
-.guildIcon-3Co6k- {background-color: transparent;}
-
 
 /* Calls apparently broke */
 .container-2x5lvQ {background: transparent;}
@@ -80,8 +67,6 @@
 /* Welcome Screen - Server settings */
 .enableContainer-1ZFFhM, .previewContainer-1OoJ8M, .welcomeChannel-1wxdCJ, .descriptionInput-1C1q6Z{background-color: var(--background-overlay);}
 
-/* Boost level unlock loading */
-.theme-dark .tierHeaderUnlocked-2RhWqn {background-color: var(--background-overlay);}
 
 /* Search results */
 .channelName-1JRO3C {background: transparent;}
@@ -93,8 +78,6 @@
 .searchResult-9tQ1uo:focus-within .jumpButton-JkYoYK, .searchResult-9tQ1uo:hover .jumpButton-JkYoYK {background-color: var(--backdrop-overlay);}
 .expanded-w_LCGl .searchResultMessage-1fxgXh.hit-1fVM9e{background-color: transparent;}
 
-/* Server boost bar */
-.barSecondary-3B1aP2 {background-color: var(--main-color);}
 
 /* Discord Store transparency */
 .scroller-1JpcIc {background-color:transparent;}
@@ -124,7 +107,6 @@
 .message-39hdqk {width: 110%;}
 .close-jnIfru:hover {color:var(--danger-color);}
 
-.channelHeader-3Gd2xq {background-color: var(--backdrop-overlay);} /*message popout stuff */
 /* a few dropdowns somewhere idk */
 .css-n57xjs-menu {background-color: var(--backdrop-overlay);}
 .css-3vaxre-menu {background-color: var(--backdrop-overlay);}
