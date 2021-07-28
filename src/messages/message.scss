@@ -98,6 +98,15 @@
 	}
 }
 
+// THREADS
+%cozy{
+	&%messageThread {
+		&:before {
+			border-color: $main-color;
+		}
+	}
+}
+
 // BUTTONS
 %messageButtonWrapper {
 	background-color: transparent;
