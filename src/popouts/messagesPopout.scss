@@ -18,7 +18,7 @@
     &%messagesPopoutTabActive {
         background-color: $main-color;
     }
-    &:hover:not(%%messagesPopoutTabActive) {
+    &:hover:not(%messagesPopoutTabActive) {
         background-color: hsla(0, 0%, 100%, .06);
         color: #fff;
     }        
