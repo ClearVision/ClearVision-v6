@@ -4184,6 +4184,9 @@ pre {
 .replyBar-1YLQ2F {
 	@extend %replyBar !optional;
 }
+.threadSuggestionBar-2ufK2Z{
+	@extend %replySuggestion !optional;
+}
 .mentionButton-3710-W {
 	@extend %replyMentionButton !optional;
 }
