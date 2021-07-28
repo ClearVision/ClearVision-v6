@@ -28,4 +28,7 @@
 		-webkit-mask: linear-gradient(to bottom, #000, transparent);
 		mask: linear-gradient(to bottom, #000, transparent);
 	}
+	%threadChannelConnector {
+		color: $main-color;
+	}
 }

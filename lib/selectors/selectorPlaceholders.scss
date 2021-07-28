@@ -4490,6 +4490,36 @@ pre {
 .container-3hZ-gs {
 	@extend %threadsEmbed !optional;
 }
+.spine--Wla_O {
+	@extend %threadChannelConnector !optional;
+}
+.chatHeaderBar-4vZS1x {
+	@extend %threadHeaderBar !optional;
+}
+.popout-APcvZm {
+	@extend %channelThreadPopout !optional;
+}
+.row-1ImlrZ {
+	@extend %channelThreadPopoutEntry !optional;
+}
+.container-2I9Hud {
+	@extend %threadPreview !optional;
+}
+.modal-2DCYwU {
+	@extend %threadModal !optional;
+}
+.list-wek7hJ {
+	@extend %threadModalList !optional;
+}
+.tabBar-wS4pjJ {
+	@extend %threadModalTabBar !optional;
+}
+.tab-17bjMB {
+	@extend %threadModalTab !optional;
+}
+.active-3JUHqX {
+	@extend %threadModalTabActive !optional;
+}
 .previewMessage-1ZN7YG {
 	@extend %accessibilityMessagePreview !optional;
 }
