@@ -65,6 +65,7 @@ $version: "6.1.1";
 @import "src/messages/attachment";
 @import "src/messages/blocked";
 @import "src/messages/textContainer";
+@import "src/messages/threads";
 
 // MEMBERS
 @import "src/members/members";
@@ -119,6 +120,8 @@ $version: "6.1.1";
 @import "src/popouts/gifPicker";
 @import "src/popouts/stickers";
 @import "src/popouts/messagesPopout";
+@import "src/popouts/threadPopout";
+
 
 // MODALS
 @import "src/modals/modal";
@@ -150,6 +153,7 @@ $version: "6.1.1";
 // TREADS
 @import "src/treads/createTread";
 @import "src/treads/treadsPopout";
+@import "src/treads/threadModal";
 
 // BETTERDISCORD
 @import "src/bd/sidebar";

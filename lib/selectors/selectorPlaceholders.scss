@@ -4184,6 +4184,9 @@ pre {
 .replyBar-1YLQ2F {
 	@extend %replyBar !optional;
 }
+.threadSuggestionBar-2ufK2Z{
+	@extend %replySuggestion !optional;
+}
 .mentionButton-3710-W {
 	@extend %replyMentionButton !optional;
 }
@@ -4480,4 +4483,52 @@ pre {
 }
 .icon-3pEw1v {
 	@extend %treadsPopoutIcon !optional;
+}
+.icon-1zIRB4 {
+	@extend %threadsChatIcon !optional;
+}
+.jump-2-Xh5Z {
+	@extend %threadsJumpButton !optional;
+}
+.container-3hZ-gs {
+	@extend %threadsEmbed !optional;
+}
+.spine--Wla_O {
+	@extend %threadChannelConnector !optional;
+}
+.chatHeaderBar-4vZS1x {
+	@extend %threadHeaderBar !optional;
+}
+.popout-APcvZm {
+	@extend %channelThreadPopout !optional;
+}
+.row-1ImlrZ {
+	@extend %channelThreadPopoutEntry !optional;
+}
+.container-2I9Hud {
+	@extend %threadPreview !optional;
+}
+.modal-2DCYwU {
+	@extend %threadModal !optional;
+}
+.list-wek7hJ {
+	@extend %threadModalList !optional;
+}
+.tabBar-wS4pjJ {
+	@extend %threadModalTabBar !optional;
+}
+.tab-17bjMB {
+	@extend %threadModalTab !optional;
+}
+.active-3JUHqX {
+	@extend %threadModalTabActive !optional;
+}
+.previewMessage-1ZN7YG {
+	@extend %accessibilityMessagePreview !optional;
+}
+.hasThread-2k82W0 {
+	@extend %messageThread !optional;
+}
+.cozy-3raOZG {
+	@extend %cozy !optional;
 }
