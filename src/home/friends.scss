@@ -53,15 +53,15 @@
 
 
 // ADD FRIENDS BUTTON
-%tabBarItem[style*="hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%)"] {
+%tabBarItem[aria-controls="ADD_FRIEND-tab"][aria-selected="false"] {
 	background-color: cv("colors.success") !important;
 	color: #fff !important;
 }
-%tabBarItem[style*="color: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%)"] {
+%tabBarItem[aria-controls="ADD_FRIEND-tab"][aria-selected="true"] {
 	color: cv("colors.success") !important;
 	box-shadow: 0 0 0 1px var(--success-color) inset;
 }
-%tabBarItem[style*="hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%)"]:before {
+%tabBarItem[aria-controls="ADD_FRIEND-tab"][aria-selected="true"]:before {
 	content: "";
 	position: absolute;
 	background-color: var(--success-color);
