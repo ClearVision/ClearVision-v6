@@ -58,6 +58,7 @@
 	color: #fff !important;
 }
 %tabBarItem[aria-controls="ADD_FRIEND-tab"][aria-selected="true"] {
+	background-color: transparent !important;
 	color: cv("colors.success") !important;
 	box-shadow: 0 0 0 1px var(--success-color) inset;
 }

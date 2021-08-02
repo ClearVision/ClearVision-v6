@@ -1,4 +1,4 @@
-/* MENU HEADER POPOUT */
+/* MENU POPOUT */
 
 %menuPopout {
 	background-color: rgba(0, 0, 0, .8);
@@ -47,4 +47,12 @@
 	&%quickReactButtonFocused {
 		box-shadow: 0 0 2px 2px var(--hover-color);
 	}
+}
+
+// CHANNEL THREAD MENU
+%channelThreadPopout {
+    background-color: hsla(0, 0%, 0%, .8);
+    %channelThreadPopoutEntry:hover {
+        background-color: $hover-color;
+    }
 }

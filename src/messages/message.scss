@@ -99,13 +99,33 @@
 }
 
 // THREADS
-%cozy{
-	&%messageThread {
+%threadChatIcon {
+	color: $main-color;
+	filter: drop-shadow(0 0 3px);
+	width: 22px;
+}
+%threadEmbed {
+	background-color: hsla(0, 0%, 0%, .4);
+}
+%threadCTA {
+	color: $main-color;
+}
+%cozy {
+	&%messageHasThread {
 		&:after {
 			border-color: $main-color;
 		}
 	}
 }
+%threadJumpButton {
+	background-color: var(--main-color);
+	color: #fff;
+	&:hover {
+		background-color: var(--hover-color);
+		color: #fff;
+	}
+}
+
 
 // BUTTONS
 %messageButtonWrapper {

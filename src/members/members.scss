@@ -24,7 +24,7 @@
 		text-align: center;
 		transition: all .15s ease-in-out;
 		opacity: .85;
-		&[style*="color:"] {
+		&:hover {
 			opacity: 1;
 		}
 		&:before {
@@ -154,15 +154,45 @@
 		background: hsla(0, 0%, 100%, .3);
 	}
 }
-%memberOwnerIcon {
-	background: url(https://clearvision.gitlab.io/icons/crown.svg) center/contain no-repeat;
-	opacity: .4;
-	transition: all .15s ease-in-out;
-	> path,
-	> g {
-		display: none;
-	}
-}
 .addMembersIcon-1Bz_VS {
 	background-color: var(--background-overlay);
+}
+
+// THREAD EMPTY MEMBERS
+%threadMembersEmpty {
+	width: cv("members-width");
+	background: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .6));
+	>div {
+		background-color: transparent;
+	}
+}
+%threadMembersEmptyHeader {
+	padding-top: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: $main-color;
+	font-size: 11px;
+	font-weight: 700;
+	text-align: center;
+	transition: all .15s ease-in-out;
+	opacity: 1;
+	&:before {
+		content: "";
+		height: 2px;
+		flex-grow: 1;
+		background: linear-gradient(to left, currentColor 50%, transparent);
+		margin-right: 5px;
+	}
+	&:after {
+		content: "";
+		height: 2px;
+		flex-grow: 1;
+		background: linear-gradient(to right, currentColor 50%, transparent);
+		margin-left: 5px;
+	}
+}
+%threadMembersEmptyIcon {
+	background-color: var(--main-color);
+	color: #fff;
 }

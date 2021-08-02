@@ -566,6 +566,9 @@
 .actions-aUdUfC {
 	@extend %activityPanelActions !optional;
 }
+.badge-1JXQev {
+	@extend %panelBadge !optional;
+}
 .privateChannels-1nO12o {
 	@extend %privateChannels !optional;
 }
@@ -2525,7 +2528,7 @@
 .icon-1mmpLU {
 	@extend %memberIcon !optional;
 }
-.ownerIcon-uZ6mE7 {
+.ownerIcon-2NH9FM {
 	@extend %memberOwnerIcon !optional;
 }
 .premiumIcon-2IFPOX {
@@ -4485,13 +4488,16 @@ pre {
 	@extend %treadsPopoutIcon !optional;
 }
 .icon-1zIRB4 {
-	@extend %threadsChatIcon !optional;
+	@extend %threadChatIcon !optional;
 }
 .jump-2-Xh5Z {
-	@extend %threadsJumpButton !optional;
+	@extend %threadJumpButton !optional;
 }
 .container-3hZ-gs {
-	@extend %threadsEmbed !optional;
+	@extend %threadEmbed !optional;
+}
+.cta-3MixHV {
+	@extend %threadCTA !optional;
 }
 .spine--Wla_O {
 	@extend %threadChannelConnector !optional;
@@ -4527,8 +4533,17 @@ pre {
 	@extend %accessibilityMessagePreview !optional;
 }
 .hasThread-2k82W0 {
-	@extend %messageThread !optional;
+	@extend %messageHasThread !optional;
 }
 .cozy-3raOZG {
 	@extend %cozy !optional;
+}
+.members-1998pB {
+	@extend %threadMembersEmpty !optional;
+}
+.emptyStateHeader-W2ruuN {
+	@extend %threadMembersEmptyHeader !optional;
+}
+.emptyStateIcon-1JWNn4 {
+	@extend %threadMembersEmptyIcon !optional;
 }
