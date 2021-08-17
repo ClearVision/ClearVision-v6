@@ -258,19 +258,22 @@
 			content: "";
 			position: absolute;
 			width: 0;
-			@include pos($top: 0, $bottom: 0, $left: 50%);
+			@include pos($top: 0, $bottom: 0, $left: 0);
 			background: linear-gradient(to right, $main-color 10%, transparent);
 			opacity: .5;
 			transition: all .1s ease-in-out,  width .15s ease-in-out;
 			pointer-events: none;
 			z-index: -1;
+			border-radius: 999px;
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
 		}
 	}
 	%voiceUserAvatarSpeaking {
 		box-shadow: 0 0 0 2px $main-color, inset 0 0 3px rgba(0, 0, 0, .5);
 		&:after {
 			@include pos($top: -2px, $bottom: -2px);
-			width: 100px;
+			width: 150px;
 		}
 	}
 	%voiceUserName {
