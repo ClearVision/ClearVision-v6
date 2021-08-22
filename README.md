@@ -25,7 +25,7 @@
 
 ## Theme Editor
 You are now able to customize the theme with a preview before downloading it to your computer.
->[Theme Editor](https://gibbu.me/editor/clearvision)
+>[Theme Editor](https://bdeditor.dev/theme/clearvision)
 
 *Thank you to @Gibbu to providing this.*
 
