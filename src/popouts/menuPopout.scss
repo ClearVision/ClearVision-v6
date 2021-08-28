@@ -52,7 +52,10 @@
 // CHANNEL THREAD MENU
 %channelThreadPopout {
     background-color: hsla(0, 0%, 0%, .8);
-    %channelThreadPopoutEntry:hover {
+    %channelThreadPopoutRow:hover {
         background-color: $hover-color;
     }
+	%channelThreadPopoutMore {
+		color: $main-color;
+	}
 }

@@ -26,6 +26,11 @@
 		}
 	}
 }
+%mention {
+	&%mentionIcon {
+		padding-left: 1.2rem;
+	}
+}
 %mentioned {
 	background-color: hsla(0, 0%, 100%, .05);
 	&%message {

@@ -230,7 +230,7 @@
 
 // DATEPICKER
 %searchPopoutDatePicker > %searchPopoutCalendarPicker {
-	> %datepicker,
+	%datepicker,
 	%datepickerHeader {
 		background-color: transparent;
 	}

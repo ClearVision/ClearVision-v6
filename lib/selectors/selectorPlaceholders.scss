@@ -3008,6 +3008,9 @@ pre {
 .mention {
 	@extend %roleMention !optional;
 }
+.iconMention-1_KJ_B {
+	@extend %mentionIcon !optional;
+}
 .anchor-3Z-8Bb {
 	@extend %anchor !optional;
 }
@@ -4509,7 +4512,10 @@ pre {
 	@extend %channelThreadPopout !optional;
 }
 .row-1ImlrZ {
-	@extend %channelThreadPopoutEntry !optional;
+	@extend %channelThreadPopoutRow !optional;
+}
+.more-3VADkW {
+	@extend %channelThreadPopoutMore !optional;
 }
 .container-2I9Hud {
 	@extend %threadPreview !optional;
