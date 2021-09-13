@@ -1,6 +1,6 @@
 {
   "name": "clearvision",
-  "version": "6.1.1",
+  "version": "6.1.2",
   "description": "Highly customizable theme for BetterDiscord.",
   "private": true,
   "scripts": {
@@ -24,7 +24,7 @@
     "autoprefixer": "^9.8.6",
     "postcss-cli": "^7.1.2",
     "rimraf": "^3.0.2",
-    "sass": "^1.35.1"
+    "sass": "^1.39.2"
   },
   "dependencies": {}
 }
