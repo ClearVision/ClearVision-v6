@@ -4,12 +4,6 @@
 /* Invite Modal */
 .inviteRow-2L02ae:hover {background-color: rgba(255,255,255,0.4);}
 
-/* Invite from web browser modal */
-.theme-dark .contentWrapper-3WC1ID {background: var(--background-overlay)}
-.pill-1dHPfk {background-color: transparent;}
-.lookLink-9FtZy-.colorBrand-3pXr91{color: var(--main-color);}
-.lookLink-9FtZy-.colorBrand-3pXr91:hover .contents-18-Yxp {background-image: linear-gradient(0deg,transparent,transparent 1px,var(--main-color) 0,var(--main-color) 2px,transparent 0);}
-
 /* Dropdown voice call region changer */
 .theme-dark .quickSelectPopout-X1hvgV {background: var(--backdrop-overlay);}
 

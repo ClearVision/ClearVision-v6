@@ -129,10 +129,11 @@ $version: "6.1.2";
 @import "src/modals/regionSelectorModal";
 @import "src/modals/otherModals";
 @import "src/modals/screenshare";
+@import "src/modals/serverBoost";
 
 // SETTINGS
 @import "src/settings/sidebar";
-@import "src/settings/connections";
+@import "src/settings/appConnections";
 @import "src/settings/icons";
 @import "src/settings/content";
 @import "src/settings/userSettings";

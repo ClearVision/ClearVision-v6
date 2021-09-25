@@ -1,14 +1,13 @@
 /* SERVER SETTINGS */
 
-// Save Changes
+// SAVE CHANGES
 .theme-dark .elevationHigh-1PneE4 {
     background-color: hsla(0, 0%, 0%, .7) !important;
 }
 
-// Overview
+// OVERVIEW
 
-
-// Roles
+// ROLES
 .theme-dark .colorPickerCustom-2CWBn2 {
     background-color: hsla(0, 0%, 0%, .7)
 }
@@ -25,7 +24,6 @@
         background-color: $hover-color;
 	}
 }
-
 .titleContainer-2CXtJo {
     background-color: transparent;
 }
@@ -49,7 +47,7 @@
     
 }
 
-// Emoji
+// EMOJI
 .theme-dark .emojiAliasInput-1y-NBz .emojiInput-1aLNse {
     background-color: hsla(0, 0%, 100%, .05);
     padding-bottom: 2.5px;
@@ -65,7 +63,7 @@
 	opacity: .3;
 }
 
-// Audit Log
+// AUDIT LOG
 %themeDark {
     .auditLog-3jNbM6 {
         border-color: hsla(0, 0%, 100%, .07);
@@ -81,7 +79,7 @@
     }
 } 
 
-// Server Insights
+// SERVER INSIGHTS
 .analyticsCard-qckucw {
     background-color: hsla(0, 0%, 0%, .4);
 }
@@ -157,7 +155,7 @@
 }
 
 
-// Server Boost Status
+// SERVER BOOST STATUS
 %themeDark {
     .background-3xPPFc {
         color: hsla(0, 0%, 0%, .4)
@@ -172,32 +170,8 @@
         background-color: hsla(0, 0%, 0%, .4);
     }
 }
-// Server icon in server boost page
-.guildIcon-3raYf3 {background-color: transparent;}
 
-// Server Boost
-.upsellFooter-3coAfO {
-	background-color: transparent;
-}
-.theme-dark {
-	.iconWrapper-3LVgIo {
-		background: var(--main-color);
-	}
-}
-.icon-TYbVk4 {
-	color: #fff;
-	&.disabled-24YXy- {
-		color: #fff;
-	}
-	&:hover {
-		background: var(--hover-color);
-	}
-}
-.icon-TYbVk4.disabled-24YXy-, .icon-TYbVk4.disabled-24YXy-:hover {
-	color: var(--hover-color);
-}
-
-// Members
+// MEMBERS
 .searchBar-1YE5UV {
     background-color: hsla(0,0%,0%,.4);
 }
@@ -214,7 +188,7 @@
     }
 }
 
-// Bans
+// BANS
 .searchBar-281-wK {
     background-color: hsla(0, 0%, 0%, .4);
 }

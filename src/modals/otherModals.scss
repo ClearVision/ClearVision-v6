@@ -1,15 +1,15 @@
-/* Message Deletion Confirmation*/
+// MESSAGE DELETION CONFIRMATION
 .theme-dark .message-2qRu38 {
 	background-color: transparent;
 	box-shadow: 0 0 2px 2px var(--main-color);
 }
 
-/* Notifications Settings */
+// NOTIFICATIONS SETTINGS
 .searchInput-5YMkDH {background-color: transparent;}
 .theme-dark .override-2YgiXd:hover {border-color: $main-color;}
 .option-3KoAJB.focused-1T6PE5 {background: var(--hover-color);}
 
-/* Custom Status Clear After Duration */
+// CUSTOM STATUS CLEAR AFTER DURATION
 .option-3KoAJB:focus, .option-3KoAJB:hover {
 	background-color: var(--hover-color);
 }
@@ -30,7 +30,7 @@
 	background-color: var(--main-color);
 }
 
-/* Reactions List  */
+// REACTIONS LIST
 .theme-dark {
 	.scroller-1-nKid,
 	.reactors-Blmlhw {
@@ -47,10 +47,13 @@
 		}
 	}
 }
-/* Change Identity */
-.upsellCard-11CKVn {background-color: transparent;}
 
-/* Quickswitcher */
+// CHANGE IDENTITY
+.upsellCard-11CKVn {
+	background-color: transparent;
+}
+
+// QUICKSWITCHER
 .quickswitcher-3JagVE {background-color: rgba(0,0,0,0.5);}
 .input-2VB9rf {background-color: rgba(255,255,255,0.07);}
 .scroller-zPkAnE {
@@ -61,23 +64,17 @@
 	}
 }
 
-/* Discord Nitro Gift Payment */
+// DISCORD NITRO GIFT PAYMENT
 .table-39R0Oe {background-color: transparent;}
 .paymentSourceWrapper-2dIzE4 .lookFilled-1h1y05.select-1Pkeg4 {margin: 0 2px;}
 
-
-/* Server dropdown menu server boost */
-%themeDark .perksModal-fSYqOq, .theme-dark .tierMarkerBackground-3q29am {
-    background-color: transparent;
+// INVITE FROM WEB BROWSER
+.theme-dark .contentWrapper-3WC1ID {
+	background: hsla(0, 0%, 0%, .5);
 }
-.ctaBar-2UsjF2 {
-    background-color: hsla(0, 0%, 0%, .4);
+.pillIconOnline-2JGlqR {
+	background-color: var(--online-color);
 }
-.theme-dark .perk-2WeBWW, .theme-dark .barBackground-2EEiLw {background-color: var(--backdrop-overlay);}
-
-%themeDark {
-    .tierBody-16Chc9,
-    .tierHeaderLocked-1s2JJz {
-        background-color: hsla(0, 0%, 0%, .4);
-    }
-} 
+.pillIconTotal-1BqTcA {
+	background-color: var(--offline-color);
+}

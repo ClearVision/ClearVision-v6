@@ -9,6 +9,8 @@
 	background-color: transparent;
 }
 
+
+// USER PROFILE
 .profileBannerPreview-3_l0Wd {
     background-color: cv("bg.popout.overlay");
     > %userPopoutHeaderTop {
@@ -16,7 +18,7 @@
     }
 }
 
-// Privacy & Safety
+// PRIVACY AND SAFETY
 
 // Authorized Apps
 .authedApp-mj2Hmd {
@@ -24,7 +26,7 @@
     border-color: hsla(0, 0%, 100%, .07);
 }
 
-// Connections
+// CONNECTIONS
 .accountList-33MS45 {
     background-color: rgba(0, 0, 0, .4);
     border-color: hsla(0, 0%, 100%, .07);
@@ -74,15 +76,24 @@
     }
 }
 
-// Discord Nitro
-
-.theme-dark {
+// DISCORD NITRO
+%themeDark {
 	.feature-2w65J5 {
 		background-color: rgba(0,0,0,0.4);
 	}
 }
 
-// Subscriptions
+// SUBSCRIPTIONS
+%themeDark {
+    .noItemsIcon-21jJYT,
+    .noItemsIcon-ygEH8z {
+        background-color: transparent;
+        >g>* {
+            fill-opacity: .8 !important;
+            stroke-opacity: .8 !important;
+        }
+    }
+} 
 .scroller-9moviB {
     background-color: transparent;
 }
@@ -92,7 +103,7 @@
 }
 
 
-// Gift Inventory
+// GIFT INVENTORY
 
 
 // Server Boost 
@@ -140,7 +151,7 @@
 }
 
 
-// Overlay
+// GAME OVERLAY
 .wrapper-3jrx9n {
     border-color: $main-color;
 }
@@ -157,7 +168,7 @@
     }
 }
 
-// Keybinds
+// KEYBINDS
 %themeDark {
     .container-1nZlH6 {
         background-color: hsla(0, 0%, 100%, .05);
@@ -168,14 +179,15 @@
 	        box-shadow: 0 0 2px 2px var(--main-color);
         }
         &.recording-1H2dS7 {
-            animation: cv-shadow-pulse 1s ease-in infinite;
+            color: #fff;
             box-shadow: 0 0 2px 2px var(--main-color);
+            animation: cv-shadow-pulse 1s ease-in infinite;
         }
     }
 }
 
 
-// Game Activity 
+// ACTIVITY STATUS
 %themeDark {
     .notDetected-33MY4s {
         background-color: hsla(0, 0%, 0%, .4);
@@ -188,6 +200,13 @@
             text-decoration: underline;
         }
     }
+    .addGamePopout-2RY8Ju {
+        background-color: hsla(0, 0%, 0%, .7);
+    }
+    .css-1yz4bi9-option:hover {
+        background-color: $hover-color;
+    }
+
     .game-1ipmAa {
         box-shadow: 0 1px 0 0 hsla(0,0%,100%,.04);
     }
