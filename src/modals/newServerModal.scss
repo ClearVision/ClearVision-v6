@@ -32,9 +32,11 @@
 
 // Server template categories
 .container-UC8Ug1 {
-    background-color: $main-color;
+    background-color: hsla(0, 0%, 0%, .3);
+	border: 2px solid var(--main-color);
     &:hover {
-	background-color: $hover-color;
+		background-color: hsla(0, 0%, 0%, .3);
+		border: 2px solid var(--hover-color);
     }
     .text-1FOLJS {
         color: #fff;
