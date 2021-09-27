@@ -8,7 +8,9 @@
 .fieldList-21DyL8 {
 	background-color: transparent;
 }
-
+.avatar-1uQSZT {
+    border-color: transparent;
+}
 
 // USER PROFILE
 .profileBannerPreview-3_l0Wd {
@@ -16,6 +18,10 @@
     > %userPopoutHeaderTop {
         background: transparent;
     }
+}
+.avatarUploaderInner-Oiob_P {
+    background-color: transparent;
+    border-color: transparent;
 }
 
 // PRIVACY AND SAFETY
@@ -38,16 +44,8 @@
     }
 }
 
-// SERVER BOOST
-.guildHeader-3nh5RK {
-	background-color: rgba(0, 0, 0, .6);
-}
-.guildSubscriptionSlots-JPXXvN {
-	background-color: rgba(0, 0, 0, .4);
-}
-
-// Billing
-.theme-dark {
+// BILLING
+%themeDark {
     .paymentPane-3bwJ6A,
     .paginator-166-09 {
         background-color: transparent;        
@@ -73,6 +71,22 @@
     .codeRedemptionRedirect-1wVR4b {
         background-color: rgba(0, 0, 0, .4);
         border-color: hsla(0, 0%, 100%, .07);
+    }
+}
+.pageButtonNext-V2kUq0,
+.pageIndicator-1gAbyA,
+.pageButtonPrev-1Y-47D {
+    border-color: $main-color;
+	color: #fff;
+}
+.pageButtonNext-V2kUq0,
+.pageButtonPrev-1Y-47D {
+	&.disabled-BrLY9Y {
+        opacity: .5;
+        cursor: not-allowed
+    }
+    &:not(.disabled-BrLY9Y):hover {
+        border-color: $hover-color;
     }
 }
 
@@ -102,15 +116,14 @@
     background-color: rgba(0, 0, 0, .4);
 }
 
-
 // GIFT INVENTORY
 
 
-// Server Boost 
+// SERVER BOOST
 .cardWrapper-2Min21 {
-    background-color: rgba(0, 0, 0, .4);
+    background-color: transparent;
 }
-.theme-dark {
+%themeDark {
     .gemIndicatorContainer-2jdECl {
         background-color: transparent;
     }
@@ -123,7 +136,7 @@
     background-color: hsla(0, 0%, 0%, 0.00);
 }
 
-// Voice
+// VOICE
 %themeDark {
     %userSettingsVoice {
         %micTestContainer {
@@ -134,22 +147,27 @@
         }
         %micTestNotches {
             background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='20' fill='rgba(0,0,0,.8)'%3E%3Cpath fill-rule='evenodd' d='M0 0h8v20H0V0zm4 2a2 2 0 00-2 2v12a2 2 0 104 0V4a2 2 0 00-2-2z'/%3E%3C/svg%3E");
-        }
-        
-    }
-    
+        }        
+    }    
 }
-.userSettingsVoice-iwdUCU .sliderBar-3DezvM.speaking-2bFhO4 {background: var(--main-color) !important;}
+.userSettingsVoice-iwdUCU .sliderBar-3DezvM.speaking-2bFhO4 {
+    background: var(--main-color) !important;
+}
 
-// Video
-.userSettingsVoice-iwdUCU .media-engine-video {
-    background-color: rgba(0, 0, 0, .4);
-}
-.theme-dark .userSettingsVoice-iwdUCU .previewOverlay-2O7_KC {
+// VIDEO
+.cameraWrapper-2n3EKe {
     background-color: rgba(0, 0, 0, .7);
     border-color: hsla(0, 0%,100%,.07);
 }
-
+.userSettingsVoice-iwdUCU .media-engine-video {
+    background-color: rgba(0, 0, 0, .4);
+}
+.backgroundOption-3SYprY {
+    background-color: rgba(0, 0, 0, .7);
+}
+.backgroundOptionSelected-33AYZn {
+    border: 2px solid $main-color;
+}
 
 // GAME OVERLAY
 .wrapper-3jrx9n {
@@ -186,7 +204,6 @@
     }
 }
 
-
 // ACTIVITY STATUS
 %themeDark {
     .notDetected-33MY4s {
@@ -203,7 +220,7 @@
     .addGamePopout-2RY8Ju {
         background-color: hsla(0, 0%, 0%, .7);
     }
-    .css-1yz4bi9-option:hover {
+    .css-rzbxvl-option {
         background-color: $hover-color;
     }
 
