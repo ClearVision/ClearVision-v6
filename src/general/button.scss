@@ -19,6 +19,9 @@
 		&:disabled {
 			background: $main-color !important;
 		}
+		&:active {
+			background: $main-color;
+		}
 	}
 }
 %buttonFilledRed {

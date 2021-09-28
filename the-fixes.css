@@ -12,19 +12,8 @@
 
 .theme-dark .previewContainer-12UlHl{background: transparent;}
 
-/* Invalid Gift | ref: https://discord.gift/1 */
-.theme-dark .tile-2OwFgW {background-color: var(--background-overlay);}
-.theme-dark .tile-2OwFgW:hover {background-color: var(--backdrop-overlay);}
-
 /* Server unavailable screen. Slight easter egg. */
 .content-MLh4nU, .category-2haXBH, .channelIcon-1TvDoP, .channelName-2wrHHc {background-color: var(--background-overlay);}
-
-/* Games tab */
-.scroller-1IIF0A, .scroller-2XE8rp, .header-39GIC8 {background-color: transparent;}
-
-/* Volume slider */
-.theme-dark .bubble-3we2di {background-color: var(--main-color);}
-.theme-dark .bubble-3we2di:before {border-top-color: var(--main-color);}
 
 /*
   ==/ NEW FRIENDS LIST because discord keeps changing shit /==
@@ -40,10 +29,6 @@
 
 /* Search dropdown */
 .theme-dark .container-3ayLPN {background-color: rgba(0,0,0,0.8);}
-
-/* Calls apparently broke */
-.container-2x5lvQ {background: transparent;}
-.noiseCancellationPopout-iRK2A0 {background-color: var(--backdrop-overlay);}
 
 .streamPreview-3YL8OQ {background-color: var(--background-color);}
 .imageSelected-4Kl81J {border-color: var(--main-color);}
@@ -61,7 +46,6 @@
 /* Welcome Screen - Server settings */
 .enableContainer-1ZFFhM, .previewContainer-1OoJ8M, .welcomeChannel-1wxdCJ, .descriptionInput-1C1q6Z{background-color: var(--background-overlay);}
 
-
 /* Search results */
 .channelName-1JRO3C {background: transparent;}
 .searchResult-9tQ1uo:after {background-image:none;}
@@ -71,7 +55,6 @@
 .searchResult-9tQ1uo .hit-1fVM9e .messageGroupCozy-2-Q370 {background-color: var(--background-overlay);}
 .searchResult-9tQ1uo:focus-within .jumpButton-JkYoYK, .searchResult-9tQ1uo:hover .jumpButton-JkYoYK {background-color: var(--backdrop-overlay);}
 .expanded-w_LCGl .searchResultMessage-1fxgXh.hit-1fVM9e{background-color: transparent;}
-
 
 /* Discord Store transparency */
 .scroller-1JpcIc {background-color:transparent;}
@@ -93,9 +76,6 @@
 
 /* Webhooks, channels followed icons */
 .iconWrapper-lS1uig {background-color: var(--background-overlay);}
-
-/* Fixes Add another channel button drag color */
-.theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:active, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:hover {background-color: var(--hover-color);}
 
 /* Server is going to lose a level popout */
 .message-39hdqk {width: 110%;}

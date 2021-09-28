@@ -1,24 +1,32 @@
 /* PRIVATE CALL */
-%call {
-	background: rgba(0, 0, 0, calc(var(--background-shading) * .6));
+%callWrapper {
+	&,
+	&%callMinimum {
+		background: rgba(0, 0, 0, calc(var(--background-shading) * .6));
+	}
 }
-%call%callMinimum {
-	background: rgba(0, 0, 0, calc(var(--background-shading) * .6));
-}
-
-
-// VIDEO STREAM
-%videoParticipantTile {
+%callContainer {
 	background-color: transparent;
 }
-%videoParticipantsButton {
+
+// VIDEO STREAM
+%callTile {
+	background-color: rgba(0, 0, 0, .7);
+}
+%callInviteButton {
+	background-color: $main-color;
+}
+%callUserTile {
+	background-color: transparent;
+}
+%callParticipantsButton {
 	background-color: rgba(0, 0, 0, .4);
 	&:hover {
 		background-color: rgba(0, 0, 0, .6);
 	}
 }
-%videoAvatarBorder {
-	&%videoAvatarSpeaking {
+%callTileBorder {
+	&%callTileSpeaking {
 		box-shadow: inset 0 0 0 2px var(--main-color);
 	}
 }
@@ -38,11 +46,9 @@
 	}
 	&%callButtonWhite {
 		color: #fff;
-		&:not(:hover) {
-			background-color: $main-color !important;
-		}
+		background-color: $main-color;
 		&:hover {
-			background-color: var(--hover-color);
+			background-color: $hover-color;
 		}
 		%callButtonActive {
 			background-color: transparent;
@@ -52,7 +58,7 @@
 			color: #fff;
 		}
 	}
-	%callButtonRed {
+	&%callButtonRed {
 		background-color: var(--danger-color);
 	}
 }

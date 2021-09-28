@@ -161,13 +161,13 @@
 				&[style*="color: hsl(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%)"] {
 					background: transparent !important;
 					color: cv("colors.danger") !important;
-					&:hover {
-						color: cv("colors.danger") !important;
-					}
 				}
 				&[style*="background-color: hsl(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%)"] {
 					background-color: cv("colors.danger") !important;
 					color: #fff !important;
+					&:before {
+						opacity: 1;
+					}
 				}
 			}
 		}

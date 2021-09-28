@@ -569,6 +569,9 @@
 .badge-1JXQev {
 	@extend %panelBadge !optional;
 }
+.noiseCancellationPopout-iRK2A0 {
+	@extend %noiseCancellationPopout !optional;
+}
 .privateChannels-1nO12o {
 	@extend %privateChannels !optional;
 }
@@ -612,7 +615,10 @@
 	@extend %hasMore !optional;
 }
 .wrapper-2qzCYF {
-	@extend %call !optional;
+	@extend %callWrapper !optional;
+}
+.callContainer-36WRfH {
+	@extend %callContainer !optional;
 }
 .minimum-28Z35l {
 	@extend %callMinimum !optional;
@@ -654,16 +660,22 @@
 	@extend %callButtonActive !optional;
 }
 .participantsButton-KYW-IW {
-	@extend %videoParticipantsButton !optional;
+	@extend %callParticipantsButton !optional;
+}
+.tile-2naSqK {
+	@extend %callTile !optional;
+}
+.button-3HqqDX {
+	@extend %callInviteButton !optional;
 }
 .tile-2gi3tr {
-	@extend %videoParticipantTile !optional;
+	@extend %callUserTile !optional;
 }
 .border-3dQmSY {
-	@extend %videoAvatarBorder !optional;
+	@extend %callTileBorder !optional;
 }
 .speaking-WDn8Wm {
-	@extend %videoAvatarSpeaking !optional;
+	@extend %callTileSpeaking !optional;
 }
 .chat-3bRxxu {
 	@extend %chat !optional;
@@ -1309,9 +1321,6 @@
 }
 .grabber-3mFHz2 {
 	@extend %sliderGrabber !optional;
-}
-.bubble-3we2di {
-	@extend %sliderBubble !optional;
 }
 .spinner-2enMB9 {
 	@extend %spinner !optional;
@@ -4235,6 +4244,24 @@ pre {
 .notches-1sAcEM {
 	@extend %micTestNotches !optional;
 }
+.sliderBar-3DezvM {
+	@extend %inputSensitivitySliderBar !optional;
+}
+.speaking-2bFhO4 {
+	@extend %inputSensitivitySpeaking !optional;
+}
+.cameraWrapper-2n3EKe {
+	@extend %cameraWrapper !optional;
+}
+.media-engine-video {
+	@extend %mediaEngineVideo !optional;
+}
+.backgroundOption-3SYprY {
+	@extend %videoBgOption !optional;
+}
+.backgroundOptionSelected-33AYZn {
+	@extend %videoBgOptionSelected !optional;
+}
 .roleRow-30TwGe {
 	@extend %roleRow !optional;
 }
@@ -4360,6 +4387,18 @@ pre {
 }
 .activeButton-rvKcqq {
 	@extend %pageButtonActive !optional;
+}
+.pageButtonNext-V2kUq0 {
+	@extend %pageButtonNext !optional;
+}
+.pageIndicator-1gAbyA {
+	@extend %pageIndicator !optional;
+}
+.pageButtonPrev-1Y-47D {
+	@extend %pageButtonPrev !optional;
+}
+.disabled-BrLY9Y {
+	@extend %pageButtonDisabled !optional;
 }
 .consentCard-1iSxB_ {
 	@extend %consentCard !optional;

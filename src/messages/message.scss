@@ -68,6 +68,16 @@
 	color: var(--url-color) !important;
 }
 
+// INVALID GIFT
+%themeDark {
+	.tile-2OwFgW {
+		&,
+		&:hover {
+			background-color: hsla(0, 0%, 0%, .4);
+		}
+	}
+}
+
 // REPLY
 %messageReplied {
 	&:before {

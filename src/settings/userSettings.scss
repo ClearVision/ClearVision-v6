@@ -26,7 +26,7 @@
 
 // PRIVACY AND SAFETY
 
-// Authorized Apps
+// AUTHORIZED APPS
 .authedApp-mj2Hmd {
     background-color: rgba(0, 0, 0, .4);
     border-color: hsla(0, 0%, 100%, .07);
@@ -73,22 +73,6 @@
         border-color: hsla(0, 0%, 100%, .07);
     }
 }
-.pageButtonNext-V2kUq0,
-.pageIndicator-1gAbyA,
-.pageButtonPrev-1Y-47D {
-    border-color: $main-color;
-	color: #fff;
-}
-.pageButtonNext-V2kUq0,
-.pageButtonPrev-1Y-47D {
-	&.disabled-BrLY9Y {
-        opacity: .5;
-        cursor: not-allowed
-    }
-    &:not(.disabled-BrLY9Y):hover {
-        border-color: $hover-color;
-    }
-}
 
 // DISCORD NITRO
 %themeDark {
@@ -118,7 +102,6 @@
 
 // GIFT INVENTORY
 
-
 // SERVER BOOST
 .cardWrapper-2Min21 {
     background-color: transparent;
@@ -129,9 +112,9 @@
     }
 }
 
-// HypeSquad
+// HYPESQUAD
 
-// Accessibility Tab
+// ACCESSIBILITY
 %accessibilityMessagePreview {
     background-color: hsla(0, 0%, 0%, 0.00);
 }
@@ -147,25 +130,27 @@
         }
         %micTestNotches {
             background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='20' fill='rgba(0,0,0,.8)'%3E%3Cpath fill-rule='evenodd' d='M0 0h8v20H0V0zm4 2a2 2 0 00-2 2v12a2 2 0 104 0V4a2 2 0 00-2-2z'/%3E%3C/svg%3E");
-        }        
-    }    
-}
-.userSettingsVoice-iwdUCU .sliderBar-3DezvM.speaking-2bFhO4 {
-    background: var(--main-color) !important;
+        }
+        %inputSensitivitySliderBar {
+            &%inputSensitivitySpeaking {
+                background: var(--main-color) !important;
+            }
+        }
+    }
 }
 
 // VIDEO
-.cameraWrapper-2n3EKe {
+%cameraWrapper {
     background-color: rgba(0, 0, 0, .7);
     border-color: hsla(0, 0%,100%,.07);
 }
-.userSettingsVoice-iwdUCU .media-engine-video {
+%userSettingsVoice %mediaEngineVideo {
     background-color: rgba(0, 0, 0, .4);
 }
-.backgroundOption-3SYprY {
+%videoBgOption {
     background-color: rgba(0, 0, 0, .7);
 }
-.backgroundOptionSelected-33AYZn {
+%videoBgOptionSelected {
     border: 2px solid $main-color;
 }
 
@@ -222,6 +207,7 @@
     }
     .css-rzbxvl-option {
         background-color: $hover-color;
+        color: #fff;
     }
 
     .game-1ipmAa {

@@ -15,3 +15,19 @@
         }
     }
 }
+%pageButtonNext,
+%pageIndicator,
+%pageButtonPrev {
+    border-color: $main-color;
+	color: #fff;
+}
+%pageButtonNext,
+%pageButtonPrev {
+	&%pageButtonDisabled {
+        opacity: .5;
+        cursor: not-allowed
+    }
+    &:not(%pageButtonDisabled):hover {
+        border-color: $hover-color;
+    }
+}
