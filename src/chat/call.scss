@@ -1,6 +1,6 @@
 /* PRIVATE CALL */
 %callWrapper {
-	&,
+	background: rgba(0, 0, 0, calc(var(--background-shading) * .6));
 	&%callMinimum {
 		background: rgba(0, 0, 0, calc(var(--background-shading) * .6));
 	}

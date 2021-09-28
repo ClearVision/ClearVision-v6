@@ -19,13 +19,16 @@
 %pageIndicator,
 %pageButtonPrev {
     border-color: $main-color;
-	color: #fff;
+    color: #fff;
 }
 %pageButtonNext,
 %pageButtonPrev {
 	&%pageButtonDisabled {
+        border-color: $main-color;
+        color: #fff;
         opacity: .5;
-        cursor: not-allowed
+        cursor: not-allowed;
+        
     }
     &:not(%pageButtonDisabled):hover {
         border-color: $hover-color;

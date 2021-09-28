@@ -286,7 +286,8 @@
 		}
 		> %datepickerDayDisabled,
 		> %datepickerDayOutsideMonth {
-			&,
+			background-color: transparent;
+			color: hsla(0, 0%, 100%, .1);
 			&:hover {
 				background-color: transparent;
 				color: hsla(0, 0%, 100%, .1);

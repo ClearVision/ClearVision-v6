@@ -61,43 +61,17 @@
 		}
 	}
 }
-%layer {
-	%standardSidebarView {
-		%settingsSide {
-			%tabBarItem {
-				height: unset;
-				padding: 8px 0 8px 20px;
-				margin: 0;
-				color: hsla(0, 0%, 100%, .4);
-				backface-visibility: hidden;
-				transition: all .15s ease-in-out;
-				cursor: pointer;
-				&:hover {
-					background-color: hsla(0, 0%, 100%, .07);
-					color: hsla(0, 0%, 100%, .7);
-				}
-				&%tabBarItemSelected {
-					&,
-					&:hover {
-						background-color: $main-color;
-						color: #fff;
-					}
-				}
-				&%settingsRoleItem {
-					background-size: 0;
-					animation: none;
-				}
-			}
-		}
-	}
-}
 %standardSidebarView {
 	%settingsSidebar {
 		%settingsSide {
 			%tabBarItem {
 				position: relative;
+				padding: 8px 0 8px 20px;
+				color: hsla(0, 0%, 100%, .4);
+				margin: 0;
 				background: transparent;
 				transition: all .15s ease-in-out;
+				cursor: pointer;
 				&:before {
 					opacity: .4;
 					transition: inherit;
@@ -112,16 +86,6 @@
 					pointer-events: none;
 				}
 
-				// BRAND
-				&[style*="color: rgb(114, 137, 218)"] {
-					background-color: transparent !important;
-					color: hsla(0, 0%, 100%, .3) !important;
-					&:hover {
-						background: hsla(0, 0%, 100%, .07) !important;
-						color: hsla(0, 0%, 100%, .7) !important;
-					}
-				}
-
 				// HOVER
 				&:hover {
 					background: hsla(0, 0%, 100%, .07);
@@ -132,8 +96,7 @@
 				}
 
 				// SELECTED
-				&%tabBarItemSelected,
-				&[style*="color: rgb(255, 255, 255)"] {
+				&%tabBarItemSelected {
 					&:before {
 						opacity: 1;
 					}
@@ -147,14 +110,6 @@
 					background: transparent !important;
 					color: #fff !important;
 					transition: all .15s ease-in-out, background .3s .2s;
-				}
-				&[style*="color: rgb(255, 255, 255)"] {
-					&,
-					&:hover {
-						background: transparent !important;
-						color: #fff !important;
-						transition: all .15s ease-in-out, background .3s .2s;
-					}
 				}
 				
 				// DANGER

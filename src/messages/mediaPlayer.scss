@@ -19,7 +19,7 @@
 		}
 	}
 	%playerMetadataIcon {
-		&,
+		color: #fff;
 		&:hover {
 			color: #fff;
 		}
@@ -40,14 +40,15 @@
 
 // MEDIA BAR
 %playerMediaBarWrapper {
-	&,
+	background: hsla(0, 0%, 100%, .07);
 	&:before,
 	&:after {
 		background: hsla(0, 0%, 100%, .07);
 	}
 }
 %playerMediaBarBuffer {
-	&,
+	background: hsla(0, 0%, 100%, .04);
+	opacity: 1;
 	&:before,
 	&:after {
 		background: hsla(0, 0%, 100%, .04);
@@ -66,7 +67,7 @@
 	}
 }
 %playerMediaBarPreview {
-	&,
+	background: #fff;
 	&:before,
 	&:after {
 		background: #fff;
