@@ -9,6 +9,7 @@
 	background-color: transparent;
 }
 .avatar-1uQSZT {
+    background: transparent;
     border-color: transparent;
 }
 
@@ -21,7 +22,17 @@
 }
 .avatarUploaderInner-Oiob_P {
     background-color: transparent;
-    border-color: transparent;
+    border: none;
+}
+.optionBox-1b4n4P {
+	background-color: transparent;
+	border-color: rgba(255,255,255,0.1);
+    &:hover {
+        border-color: $main-color;
+    }
+}
+.contentCircle-2uR76y {
+	background-color: $main-color;
 }
 
 // PRIVACY AND SAFETY

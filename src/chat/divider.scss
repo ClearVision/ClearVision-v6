@@ -14,8 +14,27 @@
 
 // DATE
 %dividerDate {
-	background: rgba(255,255,255,0.07);
-	color: var(--main-color);
+	color: $main-color;
 	text-transform: uppercase;
 	opacity: 0.9;
+	&%dividerUnread {
+		color: $main-color;
+		&:before {
+			content: "";
+			@include stretch;
+			position: absolute;
+			z-index: -1;
+			background: cv("bg.app.img") cv("bg.app.pos")/cv("bg.app.size") cv("bg.app.repeat") cv("bg.app.attach");
+			@include filters(cv("bg.app"));
+			border-radius: 8px;
+		}
+		&:after {
+			content: "";
+			@include stretch;
+			position: absolute;
+			z-index: -1;
+			background: cv("bg.app.overlay");
+			border-radius: 8px;
+		}
+	}
 }

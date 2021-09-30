@@ -42,9 +42,8 @@
         @include stretch;
         position: absolute;
         z-index: -1;
-        background: cv("bg.popout.overlay");
+        background: cv("bg.app.overlay");
     }
-    
 }
 
 // EMOJI
