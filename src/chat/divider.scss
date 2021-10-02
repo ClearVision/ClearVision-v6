@@ -15,9 +15,10 @@
 // DATE
 %dividerDate {
 	color: $main-color;
+	background: hsla(0, 0%, 100%, .07);
 	text-transform: uppercase;
 	opacity: 0.9;
-	&%dividerUnread {
+	%dividerUnread & {
 		color: $main-color;
 		&:before {
 			content: "";
