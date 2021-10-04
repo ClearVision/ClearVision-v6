@@ -39,7 +39,7 @@ In order build the theme from source you will need [Sass](https://sass-lang.com)
 With [npm](https://npmjs.org/get-npm) installed you can simply run `npm install` to install all missing dependencies and compile the theme into the `/public` folder via `npm run build`.
 
 **Dependencies:**
-- [node-sass](https://github.com/sass/node-sass)
+- [sass](https://github.com/sass/dart-sass)
 - [PostCSS Autoprefixer](https://github.com/postcss/autoprefixer)
 - [PostCSS CLI](https://github.com/postcss/postcss-cli)
 - *[DiscordSelectors](https://github.com/zerthox/discordselectors) (included in the `/lib` folder)*
@@ -48,9 +48,9 @@ With [npm](https://npmjs.org/get-npm) installed you can simply run `npm install`
 ## Contributing
 In order to contribute you need to be able to compile [Sass](https://sass-lang.com).
 
-If you use [Dart Sass](https://github.com/sass/dart-sass) via CLI, you can run:
+Using [Dart Sass](https://github.com/sass/dart-sass) via CLI, you can run the following command to compile the theme:
 ```
 sass main.scss:public/main.css --watch
 ```
 
-This will compile the theme into the `/public` folder and watch changes.
+The result will be placed in the `/public` folder, and watch changes for auto-recompilation.
