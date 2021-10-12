@@ -101,18 +101,18 @@
 }
 
 // BADGE
-%guildBadgeIcon {
+%guildBadge {
 	background: hsla(0, 0%, 0%, .7);
 	box-shadow: 0 0 0 1px hsla(0, 0%, 0%, .7);
 	&%guildBadgeParticipating {
 		background: $main-color;
 		box-shadow: 0 0 0 1px $main-color;
-		%guildBadgeIconSVG {
+		%guildBadgeIcon {
 			color: #fff;
 		}
 	}
 }
-%guildBadgeIconSVG {
+%guildBadgeIcon {
 	padding: 1px;
 	color: $main-color;
 	filter: drop-shadow(0 0 3px $main-color);
