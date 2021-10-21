@@ -40,7 +40,7 @@
 // QUICK REACTIONS
 %quickReactButton {
 	background-color: transparent;
-	&%quickReactButtonFocused
+	&%quickReactButtonFocused,
 	&:hover {
 		background-color: transparent;
 	}
