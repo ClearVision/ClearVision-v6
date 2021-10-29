@@ -45,6 +45,16 @@
         background: cv("bg.app.overlay");
     }
 }
+.top-28JiJ- {
+    .brand-1Zl8en {
+        %tabBarItem {
+            &%tabBarItemSelected,
+            &:active {
+                border-bottom-color: $main-color;
+            }
+        }
+    }
+}
 
 // EMOJI
 .theme-dark .emojiAliasInput-1y-NBz .emojiInput-1aLNse {

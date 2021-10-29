@@ -15,9 +15,9 @@
 // DATE
 %dividerDate {
 	color: $main-color;
-	background: transparent;
+	background: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .5));
 	text-transform: uppercase;
-	opacity: 0.9;
+	border-radius: 0;
 	position: relative;
 	%dividerUnread & {
 		color: $main-color;
