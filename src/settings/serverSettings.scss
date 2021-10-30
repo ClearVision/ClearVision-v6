@@ -47,7 +47,10 @@
 }
 .top-28JiJ- {
     .brand-1Zl8en {
-        %tabBarItem {
+        &%tabBarItem {
+            &:hover {
+                border-bottom-color: $hover-color;
+            }
             &%tabBarItemSelected,
             &:active {
                 border-bottom-color: $main-color;
