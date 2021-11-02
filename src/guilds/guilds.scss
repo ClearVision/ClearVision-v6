@@ -119,18 +119,7 @@
 }
 
 // FOLDER
-%guildFolderWrapper {
-	%guildFolderBackground {
-		background: hsla(0, 0%, 100%, .04);
-		border-radius: 16px 16px 24px 24px;
-		transition: background-color .3s ease-in-out;
-		&%guildFolderBackgroundCollapsed {
-			background: transparent;
-		}
-	}
-}
 %guildFolder {
-	background: hsla(0, 0%, 100%, .07);
 	transition: all .3s ease-in-out;
 	&%guildFolderHover {
 		background: hsla(0, 0%, 100%, .1);
@@ -139,6 +128,11 @@
 %guildFolderNoIcon {
 	background: rgba(0, 0, 0, .3) !important;
 	color: hsla(0, 0%, 100%, .7);
+}
+%guildExpandedFolderBackground {
+	background: hsla(0, 0%, 100%, .04);
+	border-radius: 16px 16px 24px 24px;
+	transition: background-color .3s ease-in-out;
 }
 %guildFolderExpandedGuilds {
 	> %guild {
