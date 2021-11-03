@@ -120,9 +120,10 @@
 
 // FOLDER
 %guildFolder {
+	background-color: transparent;
 	transition: all .3s ease-in-out;
 	&%guildFolderHover {
-		background: hsla(0, 0%, 100%, .1);
+		background-color: hsla(0, 0%, 100%, .1);
 	}
 }
 %guildFolderNoIcon {
@@ -130,7 +131,7 @@
 	color: hsla(0, 0%, 100%, .7);
 }
 %guildExpandedFolderBackground {
-	background: hsla(0, 0%, 100%, .04);
+	background: hsla(0, 0%, 100%, .07);
 	border-radius: 16px 16px 24px 24px;
 	transition: background-color .3s ease-in-out;
 }
@@ -140,7 +141,7 @@
 	}
 }
 
-// ICON BUTTON
+// CIRCLE ICON BUTTON
 %circleIconButton {
 	background: rgba(0, 0, 0, .3);
 	color: hsla(0, 0%, 100%, .7);
