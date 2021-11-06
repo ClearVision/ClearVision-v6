@@ -2519,6 +2519,9 @@
 .checkmarkIcon-2EnYwn {
 	@extend %storeListingFeatureCheckmark !optional;
 }
+.container-2wlB3z {
+	@extend %membersContainer !optional;
+}
 .membersWrap-2h-GB4 {
 	@extend %membersWrap !optional;
 }
@@ -4582,9 +4585,6 @@ pre {
 }
 .cozy-3raOZG {
 	@extend %cozy !optional;
-}
-.members-1998pB {
-	@extend %threadMembersEmpty !optional;
 }
 .emptyStateHeader-W2ruuN {
 	@extend %threadMembersEmptyHeader !optional;
