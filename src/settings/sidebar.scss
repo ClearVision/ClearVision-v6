@@ -110,6 +110,9 @@
 					background: transparent !important;
 					color: #fff !important;
 					transition: all .15s ease-in-out, background .3s .2s;
+					%premiumSelectedBackground {
+						background-color: transparent;
+					}
 				}
 				
 				// DANGER

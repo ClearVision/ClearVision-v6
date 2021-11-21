@@ -887,6 +887,9 @@
 .stackedAttachedBar-3A2J3X {
 	@extend %channelTextAreaStackedAttachedBar !optional;
 }
+.upload-3Dkqd6 {
+	@extend %channelTextAreaUpload !optional;
+}
 .operations-36ENbA {
 	@extend %operations !optional;
 }
@@ -1381,6 +1384,15 @@
 }
 .tabBar-1E2ExX {
 	@extend %headerBarTabBar !optional;
+}
+.premiumLabel-fDtYys {
+	@extend %premiumLabel !optional;
+}
+.background-CYva7T {
+	@extend %premiumSelectedBackground !optional;
+}
+.selectedBackground-2KQZ6B {
+	@extend %premiumSelectedBackground !optional;
 }
 .tooltip-2QfLtc {
 	@extend %tooltip !optional;
@@ -4426,12 +4438,6 @@ pre {
 }
 .section-2gLsgF {
 	@extend %activeNowCardSection !optional;
-}
-.icon-Zc-uZZ {
-	@extend %nitroActiveIcon !optional;
-}
-.icon-3Povsy {
-	@extend %serverBoostIcon !optional;
 }
 .button-F9qN4n {
 	@extend %quickReactButton !optional;
