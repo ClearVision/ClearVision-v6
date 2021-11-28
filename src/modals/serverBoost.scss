@@ -1,18 +1,18 @@
 /* SERVER BOOST */
 %themeDark {
-    .perksModal-fSYqOq {
+    .perksModal-1pSu7w {
         background-color: transparent;
     }
-    .ctaBar-2UsjF2 {
+    .ctaBar-2nFzdG {
         background-color: hsla(0, 0%, 0%, .4);
-        .guildIcon-3raYf3 {
+        .guildIcon-8fJ64E {
             background-color: transparent;
         }
-        .badgeIconWithoutSubscribers-3A9Xol {
+        .badgeIconWithoutSubscribers-3DQlA3 {
             color: #fff;
             opacity: .8;
         }
-        .giftIcon-ZxlWk5 {
+        .giftIcon-2nHRRI {
             color: currentColor;
         }
     }
@@ -23,15 +23,15 @@
     .barBackground-2EEiLw {
 	    background-color: hsla(0, 0%, 0%, .4) !important;
     }
-    .tierBody-16Chc9,
-    .tierHeaderLocked-1s2JJz,
-    .perk-2WeBWW {
+    .tierBody-3gjrjH,
+    .tierHeaderLocked-CPaKnj,
+    .perk-2YwViL {
         background-color: hsla(0, 0%, 0%, .4);
     }
-    .tierHeaderLocked-1s2JJz {
+    .tierHeaderLocked-CPaKnj     {
         color: hsla(0, 0%, 100%, .7);
     }
-    .tierLock-3CSxSX {
+    .tierLock-1e5kZi {
         color: #fff;
         opacity: .3;
     }
@@ -39,33 +39,49 @@
 
 
 // NEW SERVER BOOST PAGE
-.wrapper-3qSb0d {
-	background-color: transparent;
-}
-.theme-dark .navigationBar-2JJXBp {
-	background-color: transparent;
-}
-.planCard-rYl0vk,
-.perksTable-7Z6tK2 {
-	background-color: rgba(0, 0, 0, .4);
-}
-.perksTableRow-7kHR8w {
-    +.perksTableRow-7kHR8w {
-        border-top: hsla(0, 0%, 100%, .07);
+%themeDark {
+    .wrapper-3qSb0d {
+        background-color: transparent;
     }
-    +.perksTableRowBody-3adE9w:hover,
-    +.perksTableRowFocused-37qPHa {
-	    background-color: rgba(255,255,255,.05);
-        border-top: hsla(0, 0%, 100%, .07);
-        +.perksTableRowBody-3adE9w {
+    .theme-dark .navigationBar-2JJXBp {
+        background-color: transparent;
+    }
+    .planCard-rYl0vk,
+    .perksTable-7Z6tK2 {
+        background-color: rgba(0, 0, 0, .4);
+    }
+    .perksTableRow-7kHR8w {
+        +.perksTableRow-7kHR8w {
             border-top: hsla(0, 0%, 100%, .07);
         }
+        +.perksTableRowBody-3adE9w:hover,
+        +.perksTableRowFocused-37qPHa {
+            background-color: rgba(255,255,255,.05);
+            border-top: hsla(0, 0%, 100%, .07);
+            +.perksTableRowBody-3adE9w {
+                border-top: hsla(0, 0%, 100%, .07);
+            }
+        }
     }
-}
-.perksTablePerkCheckmarkTier0-eK6gBQ {
-	color: #fff;
-	opacity: .7;
-}
-.perkPopout-1e9U4Y {
-	background-color: rgba(0, 0, 0, .8);
+    .perksTableRowPerkHighlighted-3bmp8T,
+    .perksTableHighlightedColumnHeader-CkjCDK,
+    .perksTableRow-7kHR8w:last-child .perksTableRowPerkHighlighted-3bmp8T:after {
+        background-color: hsla(0,0%,100%,.05);
+    }
+    
+    .perksTableHighlightedColumnHeader-CkjCDK {
+        padding: 7px 12px;
+    }
+    .perksTableHighlightedColumnHeaderCopy-vcrleo {
+        background-image: none;
+        background-color: $main-color;
+    }
+
+    .perksTablePerkCheckmarkTier0-eK6gBQ {
+        color: #fff;
+        opacity: .7;
+    }
+    .perkPopout-1e9U4Y {
+        background-color: rgba(0, 0, 0, .8);
+    }
 }
