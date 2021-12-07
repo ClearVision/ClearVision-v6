@@ -43,6 +43,15 @@
 	}
 }
 
+// XMAS TEMP HOME BUTTON
+%guildChildWrapper {
+	background-image: cv("bg.home.icon");
+	background-position:  cv("bg.home.pos");
+	background-size: cv("bg.home.size");
+	background-repeat: no-repeat;
+}
+
+
 // FRIENDS COUNT
 %friendsOnline {
 	background: transparent;
@@ -89,7 +98,7 @@
 	&:hover,
 	&%guildLinkSelected {
 		%guildChildWrapper {
-			background: $main-color;
+			background-color: $main-color;
 			color: #fff;
 		}
 	}
