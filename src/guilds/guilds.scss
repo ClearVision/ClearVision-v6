@@ -44,7 +44,7 @@
 }
 
 // XMAS TEMP HOME BUTTON
-%guildChildWrapper {
+%guildLink[data-list-item-id="guildsnav___home"] %guildChildWrapper {
 	background-image: cv("bg.home.icon");
 	background-position:  cv("bg.home.pos");
 	background-size: cv("bg.home.size");
@@ -93,7 +93,7 @@
 
 // ACRONYM
 %guildChildWrapper {
-	background: rgba(0, 0, 0, .3);
+	background-color: rgba(0, 0, 0, .3);
 	color: hsla(0, 0%, 100%, .7);
 	transition: all .3s ease-in-out;
 }
