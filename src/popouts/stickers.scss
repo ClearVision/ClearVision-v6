@@ -29,14 +29,15 @@
 		border-radius: 4px;		
 	}
 }
-.stickerCategorySelected-2uaMAG, .stickerCategorySelected-2uaMAG:hover {
+.stickerCategorySelected-2uaMAG, 
+.stickerCategorySelected-2uaMAG:hover {
     background-color: $main-color;
     color: #fff
 }
 
 // PICKER
-.upsell-voV9AC {
-    background-color: transparent;
+.upsellBackground-2Nr3j7 {
+    background-color: hsla(0, 0%, 0%, .8);
 }
 .row-2psonc {
     column-gap: 8px !important;
@@ -51,3 +52,4 @@
     background-color: hsla(0, 0%, 0%, .8);
     border: none;
 }
+
