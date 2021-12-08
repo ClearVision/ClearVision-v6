@@ -50,7 +50,7 @@
 	background-size: cv("bg.home.size");
 	background-repeat: no-repeat;
 	>svg {
-		display: none;
+		display: none !important;
 	}
 }
 
