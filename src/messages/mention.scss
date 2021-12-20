@@ -63,3 +63,12 @@
 		background-color: var(--main-color);
 	}
 }
+
+%channelroles {
+	background-color: hsla(0, 0%, 100%, .04);
+	border-radius: 5px;
+	&:hover {
+		background-color: $hover-color;
+		color: #fff;
+	}
+}
