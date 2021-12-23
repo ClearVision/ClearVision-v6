@@ -80,16 +80,18 @@
     +%perksTableRow {
         border-top: hsla(0, 0%, 100%, .07);
     }
-    +%perksTableRowBody:hover,
-    +%perksTableRowFocused {
-        background-color: rgba(255,255,255,.05);
-        border-top: hsla(0, 0%, 100%, .07);
-        +%perksTableRowBody {
-            border-top: hsla(0, 0%, 100%, .07);
-        }
-        %perksTableRowHighlighted {
+    %themeDark & {
+        +%perksTableRowBody:hover,
+        +%perksTableRowFocused {
             background-color: rgba(255,255,255,.05);
-            border-color: hsla(0, 0%, 100%, .07);
+            border-top: hsla(0, 0%, 100%, .07);
+            +%perksTableRowBody {
+                border-top: hsla(0, 0%, 100%, .07);
+            }
+            %perksTableRowHighlighted {
+                background-color: rgba(255,255,255,.05);
+                border-color: hsla(0, 0%, 100%, .07);
+            }
         }
     }
 }
