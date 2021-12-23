@@ -1,0 +1,115 @@
+/* SERVER BOOST */
+%themeDark {
+    .perksModal-12XaFK {
+        background-color: transparent;
+    }
+    .ctaBar-AS95ST {
+        background-color: hsla(0, 0%, 0%, .4);
+        .guildIcon-3kPJme {
+            background-color: transparent;
+        }
+        .badgeIconWithoutSubscribers-XDrfue {
+            color: #fff;
+            opacity: .8;
+        }
+        .giftIcon-ux_SI2 {
+            color: currentColor;
+        }
+    }
+    .tierMarkerBackground-3q29am {
+        background-color: transparent;
+    }
+    .tierMarkerInProgress-24LMzJ,
+    .barBackground-2EEiLw {
+	    background-color: hsla(0, 0%, 0%, .4) !important;
+    }
+    .tierBody-24neog,
+    .tierHeaderLocked-AmFepj,
+    .perk-3ia9RN {
+        background-color: hsla(0, 0%, 0%, .4);
+    }
+    .tierHeaderLocked-AmFepj    {
+        color: hsla(0, 0%, 100%, .7);
+    }
+    .tierLock-WKTTrK {
+        color: #fff;
+        opacity: .3;
+    }
+}
+
+
+// NEW SERVER BOOST PAGE
+%themeDark {
+    %serverBoostWrapper {
+        background-color: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .5));
+    }
+    %serverBoostNavigationBar {
+        background-color: transparent;
+    }
+}
+
+%serverBoostProgressBarTrack,
+%serverBoostProgressBarMarker {
+	background-color: hsla(0, 0%, 0%, .6);
+}
+%serverBoostProgressBarMarkerNextTier {
+    %serverBoostProgressBarMarkerIndicator {
+        background-image: none;
+	    box-shadow: 0 0 2px 2px var(--main-color);
+        &:after {
+            background-color: transparent;
+        }
+    }
+}
+%serverBoostProgressBarMarkerNumSubReq {
+	color: #fff
+}
+%serverBoostProgressBarUnlocked %serverBoostProgressBarMarkerIndicator,
+%serverBoostProgressBarFill {
+	background-image: none;
+	background-color: var(--main-color);
+}
+
+%serverBoostPlanCard {
+    background-color: rgba(0, 0, 0, .4);
+}
+%perksTable {
+    background-color: rgba(0, 0, 0, .4);
+}
+%perksTableRow {
+    +%perksTableRow {
+        border-top: hsla(0, 0%, 100%, .07);
+    }
+    +%perksTableRowBody:hover,
+    +%perksTableRowFocused {
+        background-color: rgba(255,255,255,.05);
+        border-top: hsla(0, 0%, 100%, .07);
+        +%perksTableRowBody {
+            border-top: hsla(0, 0%, 100%, .07);
+        }
+        %perksTableRowHighlighted {
+            background-color: rgba(255,255,255,.05);
+            border-color: hsla(0, 0%, 100%, .07);
+        }
+    }
+}
+%perksTableRowHighlighted,
+%perksTableHighlightedColumnHeader,
+%perksTableRow:last-child %perksTableRowHighlighted:after {
+    background-color: hsla(0,0%,100%,.05);
+}
+
+%perksTableHighlightedColumnHeader {
+    padding: 7px 12px;
+}
+%perksTableHighlightedColumnHeaderCopy {
+    background-image: none;
+    background-color: $main-color;
+}
+%perksTablePerkCheckmarkTier0 {
+    color: #fff;
+    opacity: .7;
+}
+%perkPopout {
+    background-color: rgba(0, 0, 0, .8);
+}

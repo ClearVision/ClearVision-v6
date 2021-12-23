@@ -1030,6 +1030,9 @@
 .colorBrand-3pXr91 {
 	@extend %buttonBrand !optional;
 }
+.colorBrandNew-g5lmBU {
+	@extend %buttonBrandNew !optional;
+}
 .colorPrimary-3b3xI6 {
 	@extend %buttonPrimary !optional;
 }
@@ -1050,6 +1053,9 @@
 }
 .lookFilled-1Gx00P.colorBrand-3pXr91 {
 	@extend %buttonFilledBrand !optional;
+}
+.lookFilled-1Gx00P.colorBrandNew-g5lmBU {
+	@extend %buttonFilledBrandNew !optional;
 }
 .lookFilled-1Gx00P.colorPrimary-3b3xI6 {
 	@extend %buttonFilledPrimary !optional;
@@ -4606,4 +4612,61 @@ pre {
 }
 .emptyStateIcon-1JWNn4 {
 	@extend %threadMembersEmptyIcon !optional;
+}
+.wrapper-3qSb0d {
+	@extend %serverBoostWrapper !optional;
+}
+.navigationBar-2JJXBp {
+	@extend %serverBoostNavigationBar !optional;
+}
+.progressBarTrack-3y6rh7 {
+	@extend %serverBoostProgressBarTrack !optional;
+}
+.progressBarFill-T4kMVn {
+	@extend %serverBoostProgressBarFill !optional;
+}
+.progressBarMarker-1PPOYV {
+	@extend %serverBoostProgressBarMarker !optional;
+}
+.progressBarMarkerNumSubscriptionsRequired-3wj3cy {
+	@extend %serverBoostProgressBarMarkerNumSubReq !optional;
+}
+.progressBarMarkerNextTier-EG5a7t {
+	@extend %serverBoostProgressBarMarkerNextTier !optional;
+}
+.progressBarMarkerUnlocked-3IgZ-5 {
+	@extend %serverBoostProgressBarUnlocked !optional;
+}
+.progressBarMarkerIndicator-15WiF7 {
+	@extend %serverBoostProgressBarMarkerIndicator !optional;
+}
+.planCard-rYl0vk {
+	@extend %serverBoostPlanCard !optional;
+}
+.perksTable-7Z6tK2 {
+	@extend %perksTable !optional;
+}
+.perksTableRow-7kHR8w {
+	@extend %perksTableRow !optional;
+}
+.perksTableRowBody-3adE9w {
+	@extend %perksTableRowBody !optional;
+}
+.perksTableRowFocused-37qPHa {
+	@extend %perksTableRowFocused !optional;
+}
+.perksTableRowPerkHighlighted-3bmp8T {
+	@extend %perksTableRowHighlighted !optional;
+}
+.perksTableHighlightedColumnHeader-CkjCDK {
+	@extend %perksTableHighlightedColumnHeader !optional;
+}
+.perksTableHighlightedColumnHeaderCopy-vcrleo {
+	@extend %perksTableHighlightedColumnHeaderCopy !optional;
+}
+.perksTablePerkCheckmarkTier0-eK6gBQ {
+	@extend %perksTablePerkCheckmarkTier0 !optional;
+}
+.perkPopout-1e9U4Y {
+	@extend %perkPopout !optional;
 }
