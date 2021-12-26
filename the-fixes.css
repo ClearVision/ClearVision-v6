@@ -62,12 +62,6 @@
 /* Fixed menu selection color when dragging server drop-down */
 .colorDefault-2K3EoJ:active:not(.hideInteraction-1iHO1O) {background-color: var(--hover-color);}
 
-/* Not enough server members warning */
-.notEnoughMembersError-1KwJkE {background-color: var(--background-help-warning);}
-
-/* Community overview->settings box */
-.upsellContent-1JlpHe, .upsellFooter-ZYsio_, .upsellContainer-L9xv7w {background-color: transparent;}
-
 /* Enable discover icons and cards */
 .theme-dark .card-3_CqkU, .theme-dark .iconMask-30Tvqs, .perkArt-1SGWbA {background-color: var(--background-overlay);}
 

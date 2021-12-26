@@ -91,6 +91,16 @@
     }
 } 
 
+// Server Template
+.descriptionBox-2ypBKO {
+    background-color: hsla(0, 0%, 0%, .4);
+}
+
+// COMMUNITY OVERVIEW
+// settings box
+.upsellContainer-1G_YVf, .upsellContent--qqwsl, .upsellFooter-LSx-FB {background-color: transparent;}
+
+
 // SERVER INSIGHTS
 .analyticsCard-qckucw {
     background-color: hsla(0, 0%, 0%, .4);
@@ -99,9 +109,8 @@
     background-color: transparent;
 }
 
-// Server Template
-.descriptionBox-1EKQKL {
-    background-color: hsla(0, 0%, 0%, .4);
+.notEnoughMembersError-16EXyM {
+   background-color: var(--info-warning-background);
 }
 
 // Enable community footer pictures
@@ -111,9 +120,9 @@
 }
 
 // Partner Program 
-.checklistContainer-mFJZEJ {
+.checklistContainer-euvGxh {
     background-color: hsla(0, 0%, 0%, .4);
-    .checklistHeader-1KWcEY {
+    .checklistHeader-TtQAoo {
         background-color: hsla(0, 0%, 0%, .4);
     }
     .separator-Hx_3SF {
@@ -122,16 +131,20 @@
     }
 }
 
+.featureCard-1TcVMH {
+    background-color: hsla(0, 0%, 0%, .4);
+}
+
 // Enable Discovery
-.container-2w0lh0 {
+.container-1ArfEZ {
     background-color: hsla(0, 0%, 0%, .7);
 }
-.checklist-3Y6Fqp {
+.checklist-Q2wuVY {
     background-color: hsla(0, 0%, 0%, .4);
-    .header-2Y0-A- {
+    .header-18YAsG {
         background-color: hsla(0, 0%, 0%, .4);
     }
-    .separator-1COOpU {
+    .separator-1M0Hlx {
         background-color: hsla(0, 0%, 100%, .06);
     }
 }
