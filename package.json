@@ -21,10 +21,10 @@
   },
   "homepage": "https://github.com/ClearVision/ClearVision-v6/README.md",
   "devDependencies": {
-    "autoprefixer": "^9.8.6",
-    "postcss-cli": "^7.1.2",
+    "autoprefixer": "^10.4.0",
+    "postcss-cli": "^9.1.0",
     "rimraf": "^3.0.2",
-    "sass": "^1.39.2"
+    "sass": "^1.45.1"
   },
   "dependencies": {}
 }

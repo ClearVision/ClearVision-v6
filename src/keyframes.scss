@@ -13,7 +13,7 @@
 			opacity: 0;
 		}
 		to {
-			opacity: #{$i / 10};
+			opacity: #{$i * 0.1};
 		}
 	}
 }
