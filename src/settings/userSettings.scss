@@ -14,27 +14,24 @@
 }
 
 // USER PROFILE
-.profileBannerPreview-3_l0Wd {
+.profileBannerPreview-gaX5MP {
     background-color: cv("bg.popout.overlay");
-    > %userPopoutHeaderTop {
-        background: transparent;
-    }
 }
 .avatarUploaderInner-Oiob_P {
     background-color: transparent;
-    border: none;
+    border: 6px solid transparent;
+    background-clip: content-box;
 }
 .optionBox-1b4n4P {
 	background-color: transparent;
-	border-color: rgba(255,255,255,0.1);
-    &:hover {
-        border-color: $main-color;
-    }
 }
 .contentCircle-2uR76y {
 	background-color: $main-color;
 }
 .notice-ZSe05e {
+    background-color: transparent;
+}
+.editingContainer-1iOrsV {
     background-color: transparent;
 }
 
