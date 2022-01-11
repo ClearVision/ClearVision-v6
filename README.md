@@ -35,8 +35,7 @@ Download the theme file and move it into your [BetterDiscord](https://betterdisc
 >[ClearVision_v6.theme.css](https://clearvision.gitlab.io/download/v6/latest)
 
 ## Building from source
-In order build the theme from source you will need [Sass](https://sass-lang.com) & [PostCSS Autoprefixer](https://github.com/postcss/autoprefixer).  
-With [npm](https://npmjs.org/get-npm) installed you can simply run `npm install` to install all missing dependencies and compile the theme into the `/public` folder via `npm run build`.
+In order build the theme from source, you can simply run `npm install` to install all missing dependencies, and `npm run build` to compile the theme into the `/public` folder.
 
 **Dependencies:**
 - [sass](https://github.com/sass/dart-sass)
@@ -46,11 +45,5 @@ With [npm](https://npmjs.org/get-npm) installed you can simply run `npm install`
 - *[rimraf](https://github.com/isaacs/rimraf) (for cleanup)*
 
 ## Contributing
-In order to contribute you need to be able to compile [Sass](https://sass-lang.com).
-
-Using [Dart Sass](https://github.com/sass/dart-sass) via CLI, you can run the following command to compile the theme:
-```
-sass main.scss:public/main.css --watch
-```
-
-The result will be placed in the `/public` folder, and watch changes for auto-recompilation.
+You can run `npm run test` to compile the theme.
+The `main.css` file will be in the `/test` directory, which can then be copied into BetterDiscord's Custom CSS.
