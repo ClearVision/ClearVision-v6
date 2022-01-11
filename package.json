@@ -16,6 +16,15 @@
     "url": "git+https://github.com/ClearVision/ClearVision-v6.git"
   },
   "author": "Zerthox",
+  "contributors": [
+    "untuned",
+    "Leozard",
+    "Mentalscars",
+    "nihaals",
+    "NyxIsBad",
+    "OmgDani",
+    "xcruxiex"
+  ],
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/ClearVision/ClearVision-v6/issues"
