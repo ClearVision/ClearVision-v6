@@ -1,7 +1,7 @@
 /* USER PROFILE MODAl */
 %userModal {
 	max-height: 100vh;
-	background: transparent;
+	background: transparent !important;
 	box-shadow: 0 0 30px 5px rgba(0, 0, 0, .3);
 	&:before {
 		content: "";
@@ -41,72 +41,6 @@
 	display: flex;
 	flex-direction: row;
 	align-items: flex-end;
-}
-
-// PROFILE BADGES
-%profileBadge {
-	opacity: .7;
-	transition: all .15s ease-in-out;
-	filter: drop-shadow(0 0 3px rgba(0, 0, 0, .7));
-	&:hover {
-		opacity: 1;
-	}
-}
-*,
-%userModalTopSection * {
-	&%profileBadgeStaff {
-		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeStaff.svg);
-	}
-	&%profileBadgePartner {
-		background-image: url(https://clearvision.gitlab.io/icons/discord/badgePartner.svg);
-	}
-	&%profileBadgeHypeSquad {
-		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeHypeSquad.svg);
-	}
-	&%profileBadgeHypeSquadHouse1 {
-		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeHypeSquadBravery.svg);
-	}
-	&%profileBadgeHypeSquadHouse2 {
-		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeHypeSquadBrilliance.svg);
-	}
-	&%profileBadgeHypeSquadHouse3 {
-		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeHypeSquadBalance.svg);
-	}
-	&%profileBadgeHypeSquadHouse1Winner {
-		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeHypeSquadBraveryWinner.svg);
-	}
-	&%profileBadgeHypeSquadHouse2Winner {
-		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeHypeSquadBrillianceWinner.svg);
-	}
-	&%profileBadgeHypeSquadHouse3Winner {
-		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeHypeSquadBalanceWinner.svg);
-	}
-	&%profileBadgeEarlySupporter {
-		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeEarlySupporter.svg);
-	}
-	&%profileBadgePremium {
-		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeNitro.svg);
-	}
-	&%profileBadgeBugHunter {
-		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeBugHunter.svg);
-	}
-	&%profileBadgeGuildSubscriber1 {
-		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeGuildSubscriber1.svg);
-	}
-	&%profileBadgeGuildSubscriber2 {
-		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeGuildSubscriber2.svg);
-	}
-	&%profileBadgeGuildSubscriber3 {
-		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeGuildSubscriber3.svg);
-	}
-	&%profileBadgeGuildSubscriber4 {
-		background-image: url(https://clearvision.gitlab.io/icons/discord/badgeGuildSubscriber4.svg);
-	}
-}
-%userModalTopSectionPlaying {
-	%profileBadgePartner {
-		background-image: url(https://clearvision.gitlab.io/icons/discord/badgePartner.svg);
-	}
 }
 
 // TAB BAR
@@ -238,10 +172,6 @@
 		position: absolute;
 		@include stretch;
 	}
-}
-%userModalEmptyIcon {
-	filter: grayscale(1) brightness(2);
-	opacity: .3;
 }
 %userModalEmptyText {
 	color: hsla(0, 0%, 100%, .3);
