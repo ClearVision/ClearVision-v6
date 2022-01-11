@@ -41,9 +41,6 @@
 	%channelName {
 		color: var(--channel-color);
 		transition: all .15s ease-in-out;
-	}	
-	%channelSubtitle {
-		color: hsla(0, 0%, 100%, .7);
 	}
 }
 %channelButtons {
@@ -199,6 +196,9 @@
 			display: none;
 		}
 	}
+}
+%channelIconLive {
+	background-color: $main-color !important;
 }
 
 // USER LIMIT

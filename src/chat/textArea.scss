@@ -35,10 +35,9 @@
 	%textArea {
 		%textAreaPlaceholder {
 			color: hsla(0, 0%, 100%, .4);
-			padding-left: 10px;
 		}
-		%slateTextArea {
-			padding-left: 10px;
+		&%slateTextArea {
+			margin-left: 10px;
 		}
 	}
 

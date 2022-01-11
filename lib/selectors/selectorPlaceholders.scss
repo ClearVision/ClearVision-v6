@@ -206,127 +206,106 @@
 .ui-tab-bar-separator {
 	@extend %bdSettingsSidebarSeparator !optional;
 }
-.containerDefault-3tr_sE {
+.containerDefault-3TQ5YN {
 	@extend %categoryContainerDefault !optional;
 }
-.containerUserOver-98-yc7 {
+.containerUserOver-3woq86 {
 	@extend %categoryContainerUserOver !optional;
 }
-.containerDragBefore-1YqewQ {
+.containerDragBefore-ei4h1m {
 	@extend %categoryContainerDragBefore !optional;
 }
-.containerDragAfter-Zk9oyx {
+.containerDragAfter-1J_-1V {
 	@extend %categoryContainerDragAfter !optional;
 }
-.containerDragBefore-1YqewQ, .containerDragAfter-Zk9oyx {
+.containerDragAfter-1J_-1V, .containerDragBefore-ei4h1m {
 	@extend %categoryContainerDrag !optional;
 }
-.containerDefault-3tr_sE, .containerDragAfter-Zk9oyx, .containerDragBefore-1YqewQ, .containerUserOver-98-yc7 {
+.containerDefault-3TQ5YN, .containerDragAfter-1J_-1V, .containerDragBefore-ei4h1m, .containerUserOver-3woq86 {
 	@extend %categoryContainer !optional;
 }
-.wrapper-PY0fhH {
+.wrapper-1S43wv {
 	@extend %categoryWrapper !optional;
 }
-.clickable-536fPF {
+.clickable-2AoIYN {
 	@extend %categoryWrapperClickable !optional;
 }
-.collapsed-2-tg8y {
+.collapsed-2KOacR {
 	@extend %categoryWrapperCollapsed !optional;
 }
-.muted-2JBAyG {
+.muted-19J0ih {
 	@extend %categoryWrapperMuted !optional;
 }
-.mainContent-2h-GEV {
+.mainContent-uDGa6R {
 	@extend %categoryMain !optional;
 }
-.icon-2yIBmh {
+.icon-3zI3d2 {
 	@extend %categoryIcon !optional;
 }
-.name-3l27Hl {
+.name-3BUDLf {
 	@extend %categoryName !optional;
 }
-.children-L002ao {
+.children-3MeUvj {
 	@extend %categoryButtons !optional;
 }
-.addButtonIcon-2CbG1X {
+.addButtonIcon-3rJeaD {
 	@extend %categoryAddIcon !optional;
 }
-.containerDefault--pIXnN {
-	@extend %channelContainerDefault !optional;
-}
-.containerDragBefore-3iTCc7 {
-	@extend %channelContainerDragBefore !optional;
-}
-.containerDragAfter-3Fp7LC {
-	@extend %channelContainerDragAfter !optional;
-}
-.containerUserOver-2mv1jO {
-	@extend %channelContainerUserOver !optional;
-}
-.containerDragBefore-3iTCc7, .containerDragAfter-3Fp7LC {
-	@extend %channelContainerDrag !optional;
-}
-.containerDefault--pIXnN, .containerDragAfter-3Fp7LC, .containerDragBefore-3iTCc7, .containerUserOver-2mv1jO {
-	@extend %channelContainer !optional;
-}
-.wrapper-2jXpOf {
+.wrapper-NhbLHG {
 	@extend %channelWrapper !optional;
 }
-.modeUnread-1qO3K1 {
+.modeUnread-3Cxepe {
 	@extend %channelWrapperUnread !optional;
 }
-.modeSelected-346R90 {
+.modeSelected-3DmyhH {
 	@extend %channelWrapperSelected !optional;
 }
-.modeConnected-3IsKId {
+.modeConnected-NrO4cP {
 	@extend %channelWrapperConnected !optional;
 }
-.modeMuted-onO3r- {
+.modeMuted-2T4MDZ {
 	@extend %channelWrapperMuted !optional;
 }
-.content-1x5b-n {
+.content-1gYQeQ {
 	@extend %channelContent !optional;
 }
-.mainContent-u_9PKf {
+.mainContent-20q_Hp {
 	@extend %channelMain !optional;
 }
-.icon-1DeIlz {
+.icon-2W8DHg {
 	@extend %channelIcon !optional;
 }
-.iconLive-AtZKgD {
+.live-1V2D-f {
 	@extend %channelIconLive !optional;
 }
-.name-23GUGE {
+.name-28HaxV {
 	@extend %channelName !optional;
-}
-.subtitle-3V1p2E {
-	@extend %channelSubtitle !optional;
 }
 .children-Bmpf2Q {
 	@extend %channelButtons !optional;
 }
-.iconItem-1-bXkn {
+.iconItem-1EjiK0 {
 	@extend %channelButton !optional;
 }
-.actionIcon-PgcMM2 {
+.actionIcon-2sw4Sl {
 	@extend %channelActionIcon !optional;
 }
-.unread-2lAfLh {
+.unread-36eUEm {
 	@extend %channelUnreadPill !optional;
 }
-.mentionsBadge-7f5lud {
+.mentionsBadge-2ckrKL {
 	@extend %channelBadge !optional;
 }
-.userLimit-64AFxe {
+.userLimit-VbEkeM {
 	@extend %channelUserLimit !optional;
 }
-.wrapper-pZmgj4 {
+.wrapper-2fEmwW {
 	@extend %channelUserLimitWrapper !optional;
 }
-.users-3kndPl {
+.users-2JoyGL {
 	@extend %channelUserLimitUsers !optional;
 }
-.total-i6us2n {
+.total-1c5KCN {
 	@extend %channelUserLimitTotal !optional;
 }
 .listDefault-3ir5aS {
@@ -461,7 +440,7 @@
 .unread-2wipsx {
 	@extend %channelsUnreadIndicator !optional;
 }
-.mention-1f5kbO {
+.mention-3XBnnZ {
 	@extend %channelsMentionIndicator !optional;
 }
 .panels-3wFtMD {
@@ -476,88 +455,85 @@
 .disabled-2iW-fm {
 	@extend %panelButtonDisabled !optional;
 }
-.container-3baos1 {
+.container-YkUktl {
 	@extend %accountPanel !optional;
 }
-.avatarWrapper-2yR4wp {
+.avatarWrapper-1B9FTW {
 	@extend %accountPanelAvatarWrapper !optional;
 }
-.avatar-SmRMf2 {
+.avatar-1EWyVD {
 	@extend %accountPanelAvatar !optional;
 }
-.nameTag-3uD-yy {
+.nameTag-sc-gpq {
 	@extend %accountPanelNameTag !optional;
 }
-.usernameContainer-1fp4nu {
+.usernameContainer-3PPkWq {
 	@extend %accountPanelUsernameContainer !optional;
 }
-.username-2BIRiC {
+.title-338goq {
 	@extend %accountPanelUsername !optional;
 }
-.discriminator-3-Lf_x {
+.subtext-2HDqJ7 {
 	@extend %accountPanelDiscriminator !optional;
 }
-.container-1giJp5 {
+.container-1zzFcN {
 	@extend %connectionPanel !optional;
 }
-.inner-tyMogq {
+.inner-llGtyq {
 	@extend %connectionPanelInner !optional;
 }
-.rtcConnectionStatus-2-jIsi {
+.rtcConnectionStatus-c5A6Av {
 	@extend %rtcConnectionStatus !optional;
 }
-.rtcConnectionStatusConnected-VRZDjy {
+.rtcConnectionStatusConnected-1c73OK {
 	@extend %rtcConnectionStatusConnected !optional;
 }
-.rtcConnectionStatusConnecting-3322Pa {
+.rtcConnectionStatusConnecting-2D7M2N {
 	@extend %rtcConnectionStatusConnecting !optional;
 }
 .rtcConnectionStatusError-2hLzrL {
 	@extend %rtcConnectionStatusError !optional;
 }
-.rtcConnectionQualityFine-2J6i8z {
+.rtcConnectionQualityFine-3zZrSa {
 	@extend %rtcConnectionQualityFine !optional;
 }
-.rtcConnectionQualityAverage-3KV0u- {
+.rtcConnectionQualityAverage-USzsaD {
 	@extend %rtcConnectionQualityAverage !optional;
 }
-.rtcConnectionQualityBad-1J7mUU {
+.rtcConnectionQualityBad-3fxsmZ {
 	@extend %rtcConnectionQualityBad !optional;
 }
-.ping-2NgC8E {
+.ping-2IpLcU {
 	@extend %rtcConnectionPing !optional;
 }
-.description-1MbtwQ {
+.contents-3ca1mk {
 	@extend %connectionPanelDescription !optional;
 }
-.channel-1TmDQ6 {
+.channel-3prF2u {
 	@extend %connectionPanelChannel !optional;
 }
-.activityPanel-28dQGo {
+.activityPanel-9icbyU {
 	@extend %activityPanel !optional;
 }
-.body-GmmuPm {
+.body-1FrnJD {
 	@extend %activityPanelBody !optional;
 }
-.gameWrapper-1jIQAX {
+.gameWrapper-2TFy7F {
 	@extend %activityPanelGameWrapper !optional;
 }
-.clickableGameWrapper-2fpjdx {
-	@extend %activityPanelGameWrapperClickable !optional;
-}
-.gameIcon-gg34Dz {
+.gameIcon-2BIUJ3 {
 	@extend %activityPanelGameIcon !optional;
 }
-.gameName-13va7o {
-	@extend %activityPanelGameName !optional;
+.title-338goq {
+	@extend %activityPanelTitle !optional;
 }
-.actions-aUdUfC {
+.actions-zk2vB_ {
 	@extend %activityPanelActions !optional;
 }
-.badge-1JXQev {
-	@extend %panelBadge !optional;
+.liveBadge-3E8LQj {
+	@extend %panelLiveBadge !optional;
 }
-.noiseCancellationPopout-iRK2A0 {
+.noiseCancellationPopout-2-e5Xz {
 	@extend %noiseCancellationPopout !optional;
 }
 .privateChannels-1nO12o {
