@@ -2660,64 +2660,61 @@ pre {
 .hljs {
 	@extend %codeHLJS !optional;
 }
-.container-206Blv {
+.container-2sjPya {
 	@extend %embedContainer !optional;
 }
-.embed-IeVjo6 {
+.embed-hKpSrO {
 	@extend %embed !optional;
 }
-.embedPill-1Zntps {
-	@extend %embedPill !optional;
+.grid-1aWVsE {
+	@extend %embedGrid !optional;
 }
-.embedInner-1-fpTo {
-	@extend %embedInner !optional;
-}
-.embedMargin-UO5XwE {
+.embedMargin-2PsaQ4 {
 	@extend %embedMargin !optional;
 }
-.embedLink-1G1K1D {
+.embedLink-1TLNja {
 	@extend %embedLink !optional;
 }
-.embedProvider-3k5pfl {
+.embedProvider-1GSN0c {
 	@extend %embedProvider !optional;
 }
-.embedAuthor-3l5luH {
+.embedAuthor-TJIHp5 {
 	@extend %embedAuthor !optional;
 }
-.embedAuthorName-3mnTWj {
+.embedAuthorName-pGyUPR {
 	@extend %embedAuthorname !optional;
 }
-.embedAuthorNameLink-1gVryT {
+.embedAuthorNameLink-1NK1y6 {
 	@extend %embedAuthorNameLink !optional;
 }
-.embedAuthorIcon--1zR3L {
+.embedAuthorIcon-3pnkS4 {
 	@extend %embedAuthorIcon !optional;
 }
-.embedTitle-3OXDkz {
+.embedTitle-2n1pEb {
 	@extend %embedTitle !optional;
 }
-.embedTitleLink-1Zla9e {
+.embedTitleLink-1QbYA- {
 	@extend %embedTitleLink !optional;
 }
-.embedDescription-1Cuq9a {
+.embedDescription-1DrJxZ {
 	@extend %embedDescription !optional;
 }
-.embedFields-2IPs5Z {
+.embedFields-2yHGHT {
 	@extend %embedFields !optional;
 }
-.embedField-1v-Pnh {
+.embedField-2kda1Q {
 	@extend %embedField !optional;
 }
-.embedFieldName-NFrena {
+.embedFieldName-9LYSyR {
 	@extend %embedFieldName !optional;
 }
-.embedFieldValue-nELq2s {
+.embedFieldValue-3EHtvR {
 	@extend %embedFieldValue !optional;
 }
-.embedImage-2W1cML {
-	@extend %embedImage !optional;
+.embedImage-2Ynqkh {
+	@extend %embedImagea !optional;
 }
-.imageWrapper-2p5ogY {
+.imageWrapper-oMkQl4 {
 	@extend %imageWrapper !optional;
 }
 .imageWrapperBackground-E_M6Nu {
@@ -2732,34 +2729,34 @@ pre {
 .embedThumbnail-2Y84-K {
 	@extend %embedThumbnail !optional;
 }
-.embedVideo-3nf0O9 {
+.embedVideo-2ixt5A {
 	@extend %embedVideo !optional;
 }
-.embedIframe-2hcNY5 {
+.embedIframe-1UpXja {
 	@extend %embedIframe !optional;
 }
-.embedGIFTag-n_mDqR {
+.gifTag-1TvtGO {
 	@extend %embedGIFTag !optional;
 }
-.embedVideoActions-O6vR7W {
+.embedVideoActions-2XdFk2 {
 	@extend %embedVideoActions !optional;
 }
 .embedVideoAction-2BIhKO {
 	@extend %embedVideoAction !optional;
 }
-.wrapper-129saQ {
+.wrapper-x4po40 {
 	@extend %embedVideoActionsButtonWrapper !optional;
 }
-.embedFooter-3yVop- {
+.embedFooter-3dj0UE {
 	@extend %embedFooter !optional;
 }
-.embedFooterText-28V_Wb {
+.embedFooterText-2Mc7H9 {
 	@extend %embedFooterText !optional;
 }
-.embedFooterSeparator-3klTIQ {
+.embedFooterSeparator-2YCzYT {
 	@extend %embedFooterSeparator !optional;
 }
-.embedFooterIcon-239O1f {
+.embedFooterIcon-1dTZzD {
 	@extend %embedFooterIcon !optional;
 }
 .wrapper-35wsBm {
@@ -2969,7 +2966,7 @@ pre {
 .commandName-1klrjB {
 	@extend %messageRepliedCommandName !optional;
 }
-.mentioned-xhSam7 {
+.mentioned-Tre-dv {
 	@extend %mentioned !optional;
 }
 .interactive {
@@ -2982,10 +2979,10 @@ pre {
 	@extend %messageSystemIcon !optional;
 }
 .wrapper-3WhCwL {
-	@extend %mention !optional;
+	@extend %mentionWrapper !optional;
 }
 .mention {
-	@extend %roleMention !optional;
+	@extend %mention !optional;
 }
 .iconMention-1_KJ_B {
 	@extend %mentionIcon !optional;
@@ -3404,7 +3401,7 @@ pre {
 .wrapper-1NNaWG {
 	@extend %emojiPickerCategoryHeaderWrapper !optional;
 }
-.header-11eigE {
+.header-1XpmZs {
 	@extend %emojiPickerCategoryHeader !optional;
 }
 .emojiItem-277VFM {
@@ -4085,7 +4082,6 @@ pre {
 .role-1P70N6 {
 	@extend %channelroles !optional
 }
-
 .pointerEvents-2zdfdO {
 	@extend %statusPointerEvents !optional;
 }
