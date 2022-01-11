@@ -1,5 +1,5 @@
 /*! Powered by DiscordSelectors v0.2.7 */
-.appMount-3lHmkl {
+.appMount-2yBXZl {
 	@extend %appMount !optional;
 }
 .platform-win {
@@ -23,19 +23,19 @@
 .fakeLink-26oLcc {
 	@extend %fakeLink !optional;
 }
-.app-19_DXt {
+.app-3xd6d0 {
 	@extend %app !optional;
 }
-.app-2rEoOp {
+.app-2CXKsg {
 	@extend %shakeable !optional;
 }
-.bg-h5JY_x {
+.bg-1QIAus {
 	@extend %bg !optional;
 }
-.layers-3iHuyZ {
+.layers-OrUESM {
 	@extend %layers !optional;
 }
-.layer-3QrUeG {
+.layer-86YKbF {
 	@extend %layer !optional;
 }
 .animating-rRxada {
@@ -44,13 +44,13 @@
 .stop-animations {
 	@extend %layerStopAnimations !optional;
 }
-.container-2lgZY8 {
+.container-1eFtFS	 {
 	@extend %containerMain !optional;
 }
-.base-3dtUhz {
+.base-2jDfDU {
 	@extend %base !optional;
 }
-.backdrop-1wrmKB {
+.backdrop-2ByYRN {
 	@extend %backdrop !optional;
 }
 .notice-3bPHh- {
@@ -59,11 +59,9 @@
 .noticeDefault-362Ko2 {
 	@extend %noticeDefault !optional;
 }
-
 .notice-3uyY6c {
 	@extend %noticeComplete !optional;
 }
-
 .noticePremium-12Zvj9 {
 	@extend %noticePremium !optional;
 }
@@ -121,25 +119,25 @@
 .platformIcon-2NdO9F {
 	@extend %noticePlatformIcon !optional;
 }
-.titleBar-AC4pGV {
+.titleBar-1it3bQ {
 	@extend %titlebar !optional;
 }
 .unfocused-1QsMU3 {
 	@extend %titlebarUnfocused !optional;
 }
-.typeWindows-1za-n7 {
+.typeWindows-2-g3UY {
 	@extend %titlebarWin !optional;
 }
-.wordmark-2iDDfm {
+.wordmark-2u86JB {
 	@extend %titlebarWordmark !optional;
 }
-.winButton-iRh8-Z {
+.winButton-3UMjdg {
 	@extend %titlebarWinButton !optional;
 }
-.winButtonMinMax-PBQ2gm {
+.winButtonMinMax-3RsPUg {
 	@extend %titlebarWinButtonMinMax !optional;
 }
-.winButtonClose-1HsbF- {
+.winButtonClose-3Q8ZH5 {
 	@extend %titlebarWinButtonClose !optional;
 }
 .typeMacOS-3EmCyP {
@@ -418,41 +416,32 @@
 .btn-11C5_u {
 	@extend %channelNoticeMessageButton !optional;
 }
-.sidebar-2K8pFh {
+.sidebar-1tnWFu {
 	@extend %channelsSidebar !optional;
 }
-.container-3w7J-x {
+.container-1NXEtd {
 	@extend %channelsContainer !optional;
 }
-.container-1taM1r {
+.container-1-ERn5 {
 	@extend %channelsHeaderContainer !optional;
 }
-.hasDropdown-2invhV {
-	@extend %channelsHasDropDown !optional;
-}
-.header-2V-4Sw {
+.header-3OsQeK {
 	@extend %channelsHeader !optional;
 }
-.name-3YKhmS {
+.name-3Uvkvr {
 	@extend %channelsHeaderName !optional;
 }
-.button-1w5pas {
+.headerButton-1nmDZ3 {
 	@extend %channelsHeaderButton !optional;
 }
-.guildIconContainer-2FW_iA {
+.guildIconContainer-3QvE6w {
 	@extend %channelsHeaderGuildBadge !optional;
 }
-.icon-1ihkOt {
-	@extend %channelsHeaderGuildBadgeIcon !optional;
-}
-.partnered-3nJayh {
+.partnered-23cXFN {
 	@extend %guildPartnered !optional;
 }
-.verified-1eC5dy {
+.verified-1Jv_7P {
 	@extend %guildVerified !optional;
-}
-.premiumGuildIconGem-DAxGL7 {
-	@extend %guildBoostedIcon !optional;
 }
 .iconTierOne-s_oiRb {
 	@extend %guildBoostedIconTier1 !optional;
@@ -463,25 +452,19 @@
 .iconTierThree-3EAOB7 {
 	@extend %guildBoostedIconTier3 !optional;
 }
-.withBanner-3j8ruM {
-	@extend %guildBoostedIconWithBanner !optional;
-}
-.animatedContainer-1NSq4T {
+.animatedContainer-2laTjx {
 	@extend %bannerAnimatedContainer !optional;
 }
-.banner-1TiK82 {
-	@extend %banner !optional;
-}
-.bannerImage-3KhIJ6 {
+.bannerImage-ubW8K- {
 	@extend %bannerImage !optional;
 }
-.unread-1xRYoj {
+.unread-2wipsx {
 	@extend %channelsUnreadIndicator !optional;
 }
 .mention-1f5kbO {
 	@extend %channelsMentionIndicator !optional;
 }
-.panels-j1Uci_ {
+.panels-3wFtMD {
 	@extend %panels !optional;
 }
 .button-14-BFJ {
@@ -682,13 +665,13 @@
 .speaking-WDn8Wm {
 	@extend %callTileSpeaking !optional;
 }
-.chat-3bRxxu {
+.chat-2ZfjoI {
 	@extend %chat !optional;
 }
-.content-yTz4x3 {
+.content-1jQy2l {
 	@extend %chatContentWrapper !optional;
 }
-.chatContent-a9vAAp {
+.chatContent-3KubbW {
 	@extend %chatContent !optional;
 }
 .base-34jWEe {
@@ -1444,55 +1427,49 @@
 .tooltipPointer-lElcog {
 	@extend %commandTooltipPointer !optional;
 }
-.wrapper-3NnKdC {
+.wrapper-1_HaEi {
 	@extend %guildsWrapper !optional;
 }
-.scrollerWrap-1IAIlv {
-	@extend %guildsScrollerWrap !optional;
-}
-.scroller-1Bvpku {
+.scroller-3X7KbA {
 	@extend %guilds !optional;
 }
-.listItem-GuPuDH {
+.listItem-3SmSlK {
 	@extend %guild !optional;
 }
-.friendsOnline-2JkivW {
-	@extend %friendsOnline !optional;
-}
-.guildSeparator-33mFX6 {
+.guildSeparator-a4uisj {
 	@extend %guildSeparator !optional;
 }
-.homeIcon-AaowEC {
+.homeIcon-r0w4ny {
 	@extend %homeIcon !optional;
 }
-.pill-3N7f9r {
+.pill-L_aLMQ {
 	@extend %homePill !optional;
 }
-.blobContainer-pmnxKB {
+.blobContainer-ikKyFs {
 	@extend %guildContainer !optional;
 }
-.wrapper-sa6paO {
+.pill-2RsI5Q {
 	@extend %guildPill !optional;
 }
-.item-2hkk8m {
+.item-2LIpTv {
 	@extend %guildPillItem !optional;
 }
-.svg-1X37T1 {
+.svg-2zuE5p {
 	@extend %guildSVG !optional;
 }
-.wrapper-1BJsBx {
+.wrapper-3kah-n {
 	@extend %guildLink !optional;
 }
-.selected-bZ3Lue {
+.selected-1Drb7Z {
 	@extend %guildLinkSelected !optional;
 }
-.icon-27yU2q {
+.icon-3AqZ2e {
 	@extend %guildIcon !optional;
 }
-.childWrapper-anI2G9 {
+.childWrapper-1j_1ub {
 	@extend %guildChildWrapper !optional;
 }
-.acronym-2mOFsV {
+.acronym-2zrAHN {
 	@extend %guildAcronym !optional;
 }
 .badgeWrapper-3e8pMZ {
@@ -2539,32 +2516,26 @@
 .checkmarkIcon-2EnYwn {
 	@extend %storeListingFeatureCheckmark !optional;
 }
-.container-2wlB3z {
+.container-2o3qEW {
 	@extend %membersContainer !optional;
 }
-.membersWrap-2h-GB4 {
+.membersWrap-3NUR2t {
 	@extend %membersWrap !optional;
 }
-.members-1998pB {
+.members-3WRCEx {
 	@extend %members !optional;
 }
-.membersGroup-v9BXpm {
+.membersGroup-2eiWxl {
 	@extend %membersGroup !optional;
 }
-.member-3-YXUe {
+.member-2gU6Ar {
 	@extend %member !optional;
 }
-.offline-3nJYBR {
+.offline-22aM7E {
 	@extend %memberOffline !optional;
 }
-.icon-1mmpLU {
-	@extend %memberIcon !optional;
-}
-.ownerIcon-2NH9FM {
+.ownerIcon-255uKo {
 	@extend %memberOwnerIcon !optional;
-}
-.premiumIcon-2IFPOX {
-	@extend %memberPremiumIcon !optional;
 }
 .memberGroupsPlaceholder-3mwPub {
 	@extend %memberGroupPlaceholder !optional;
@@ -4214,7 +4185,7 @@ pre {
 .cursorDefault-dsQJ1n {
 	@extend %statusCursorDefault !optional;
 }
-.loading-Ags1CY {
+.loading-1yrGTe {
 	@extend %loading !optional;
 }
 .container-2fRDfG {
