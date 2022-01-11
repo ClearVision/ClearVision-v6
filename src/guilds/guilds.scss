@@ -24,9 +24,7 @@
 %guilds {
 	background: transparent;
 }
-
-// Was displayed when double clicking Guild List
-.tree-2wKJdG  {
+%guildsTree  {
     outline: none;
 }
 
@@ -118,11 +116,6 @@
 	background: hsla(0, 0%, 100%, .07);
 	border-radius: 16px 16px 24px 24px;
 	transition: background-color .3s ease-in-out;
-}
-%guildFolderExpandedGuilds {
-	> %guild {
-		animation: cv-fade-in .3s ease-in-out;
-	}
 }
 
 // CIRCLE ICON BUTTON

@@ -704,19 +704,22 @@
 .text-27cdrj {
 	@extend %noChannelText !optional;
 }
-.divider-3gKybi {
+.wrapper-3HVHpV, .wrapper-15CKyy {
+	@extend %chatLoadingWrapper !optional;
+}
+.divider-2rZFJK {
 	@extend %divider !optional;
 }
-.isUnread-3Ef-o9  {
+.isUnread-3Lojb-  {
 	@extend %dividerUnread !optional;
 }
-.unreadPill-2HyYtt {
+.unreadPill-3nEWYM {
 	@extend %unreadPill !optional;
 }
-.unreadPillCapStroke-7rkHbg {
+.unreadPillCapStroke-1nE1Q8 {
 	@extend %unreadPillCapStroke !optional;
 }
-.content-1o0f9g {
+.content-3spvdd {
 	@extend %dividerDate !optional;
 }
 .container-23gRWx {
@@ -977,7 +980,7 @@
 .wrapper-232cHJ {
 	@extend %badge !optional;
 }
-.numberBadge-2s8kKX {
+.numberBadge-37OJ3S {
 	@extend %numberBadge !optional;
 }
 .textBadge-1iylP6 {
@@ -1226,58 +1229,46 @@
 .top-3fo3zT, .bottom-UE1eOv {
 	@extend %indicatorExclamation !optional;
 }
-.container-2Pjhx- {
+.container-1oeRFJ {
 	@extend %listItem !optional;
 }
-.selected-aXhQR6 {
+.selected-1-Z6gm {
 	@extend %listItemSelected !optional;
 }
-.layout-2DM8Md {
+.layout-1qmrhw {
 	@extend %listItemLayout !optional;
 }
-.avatar-3uk_u9 {
+.avatar-6qzftW {
 	@extend %listItemAvatar !optional;
 }
-.content-3QAtGj {
+.content-1U25dZ {
 	@extend %listItemContent !optional;
 }
-.nameAndDecorators-5FJ2dg {
+.nameAndDecorators-3ERwy2 {
 	@extend %listItemNameAndDecorators !optional;
 }
-.name-uJV0GL {
+.name-3Vmqxm {
 	@extend %listItemName !optional;
 }
-.roleColor-rz2vM0 {
+.roleColor-nA7BqX {
 	@extend %listItemRoleColor !optional;
 }
 .children-gzQq2t {
-	@extend %listItemChildren !optional;
+	@extend %listItemSubtext !optional;
 }
-.subText-1KtqkB {
+.subText-OGOWMj {
 	@extend %listItemActivityText !optional;
 }
-.subText-1KtqkB {
-	@extend %memberListItemSubText !optional;
-}
-.activity-525YDR {
+.activity-2EQDZv {
 	@extend %listItemActivity !optional;
 }
-.activity-2Gy-9S {
-	@extend %memberListItemActivity !optional;
-}
-.activityText-OW8WYb {
+.activityText-1rR-8O {
 	@extend %listItemActivityText !optional;
 }
-.activityText-yGKsKm {
-	@extend %memberListItemActivityText !optional;
-}
-.activityEmoji-1AR8K6 {
+.activityEmoji-SDBJp8 {
 	@extend %listItemActivityEmoji !optional;
 }
-.activityEmoji-2GDGtF {
-	@extend %memberListItemActivityEmoji !optional;
-}
-.icon-15YQ1T {
+.icon-Lupfh- {
 	@extend %listItemActivityIcon !optional;
 }
 .closeButton-2GCmT5 {
@@ -1286,7 +1277,7 @@
 .scrollerWrap-2lJEkd {
 	@extend %scrollerWrap !optional;
 }
-scrollerBase-_bVAAt {
+.scrollerBase-_bVAAt {
 	@extend %scroller !optional;
 }
 .slider-1PF9SW {
@@ -1310,28 +1301,28 @@ scrollerBase-_bVAAt {
 .grabber-3mFHz2 {
 	@extend %sliderGrabber !optional;
 }
-.spinner-2enMB9 {
+.loadingPopout-1feYe_ {
+	@extend %spinnerPopout !optional;
+}
+.spinner-2RT7ZC {
 	@extend %spinner !optional;
 }
-.inner-1gJC7_ {
+.inner-26JK4f {
 	@extend %spinnerInner !optional;
 }
 .spinnerItem-2HfQC8 {
 	@extend %spinnerItem !optional;
 }
-.wanderingCubesItem-WPXqao {
+.wanderingCubesItem-3Us-UG {
 	@extend %spinnerWanderingCubesItem !optional;
 }
 .loadingMore-sPqUXZ {
 	@extend %loadingMore !optional;
 }
-.ellipsis-19qdx6 {
-	@extend %spinnerEllipsis !optional;
-}
-.pulsingEllipsis-3YiXRF {
+.pulsingEllipsis-10G8Z6 {
 	@extend %spinnerPulsingEllipsis !optional;
 }
-.pulsingEllipsisItem-32hhWL {
+.pulsingEllipsisItem-3pNmEc {
 	@extend %spinnerPulsingEllipsisItem !optional;
 }
 .control-2BBjec {
@@ -1424,6 +1415,9 @@ scrollerBase-_bVAAt {
 .wrapper-1_HaEi {
 	@extend %guildsWrapper !optional;
 }
+.tree-3agP2X {
+	@extend %guildsTree !optional;
+}
 .scroller-3X7KbA {
 	@extend %guilds !optional;
 }
@@ -1466,76 +1460,64 @@ scrollerBase-_bVAAt {
 .acronym-2zrAHN {
 	@extend %guildAcronym !optional;
 }
-.badgeWrapper-3e8pMZ {
-	@extend %guildBadgeWrapper !optional;
-}
-.lowerBadge-29hYVK {
+.lowerBadge-3WTshO {
 	@extend %guildBadgeLower !optional;
 }
-.upperBadge-2XnnGB {
+.upperBadge-1V6Iyi {
 	@extend %guildBadgeUpper !optional;
 }
-.iconBadge-1Prgh2 {
+.iconBadge-32fMme {
 	@extend %guildBadge !optional;
 }
-.icon-3s6X1M {
+.icon-2Ug6UV {
 	@extend %guildBadgeIcon !optional;
 }
-.participating-1CYXS2 {
+.participating-2Z81oO {
 	@extend %guildBadgeParticipating !optional;
 }
-.placeholderMask-3v3K7P {
+.placeholderMask-2FHNZU {
 	@extend %guildPlaceholderMask !optional;
 }
-.dragInner-Oq_toX {
+.dragInner-1CUBf_ {
 	@extend %guildDragInner !optional;
 }
-.lurkingGuild-3ZJ1gi {
-	@extend %guildLurking !optional;
-}
-.wrapper-shyHJt {
+.wrapper-38slSD {
 	@extend %guildFolderWrapper !optional;
 }
-.expandedFolderBackground-3ZDF05 {
+.expandedFolderBackground-1kSAf6 {
 	@extend %guildExpandedFolderBackground !optional;
 }
-.collapsed-2Zqqnx {
+.collapsed-uGXEbi {
 	@extend %guildFolderCollapsed !optional;
 }
-.folder-2w6LX1 {
+.folder-241Joy {
 	@extend %guildFolder !optional;
 }
-.hover-vBJrIv {
+.hover-3m7-WT {
 	@extend %guildFolderHover !optional;
 }
-.folderIconWrapper-1Ml_1q {
+.folderIconWrapper-1oRIZr {
 	@extend %guildFolderIconWrapper !optional;
 }
-.closedFolderIconWrapper-1I9YfS {
+.closedFolderIconWrapper-3tRb2d {
 	@extend %guildFolderClosedIconWrapper !optional;
 }
-.expandedFolderIconWrapper-3fmTfW {
+.expandedFolderIconWrapper-3RwQpD {
 	@extend %guildFolderExpandedIconWrapper !optional;
 }
-.icon-3o6xvg {
+.icon-1zKOXL {
 	@extend %guildFolderIcon !optional;
 }
-.iconSizeSmol-2Dw61G {
+.iconSizeSmol-qsFaRK {
 	@extend %guildFolderIconSizeSmol !optional;
 }
-.guildIcon-2Tpnad {
+.guildIcon-2I5sfu {
 	@extend %guildFolderGuildIcon !optional;
 }
-.noIcon-1a_FrS {
-	@extend %guildFolderNoIcon !optional;
-}
-.expandedGuilds-1JMD4M {
-	@extend %guildFolderExpandedGuilds !optional;
-}
-.circleIconButton-hZmpE8 {
+.circleIconButton-1VxDrg {
 	@extend %circleIconButton !optional;
 }
-.selected-3mFF3I {
+.selected-2r1Hvo {
 	@extend %circleIconButtonSelected !optional;
 }
 .guildsErrorContainer-2uWYsE {
@@ -3116,7 +3098,7 @@ pre {
 .header-2tA9Os {
 	@extend %modalHeader !optional;
 }
-.footer-2gL1pp {
+.footer-31IekZ {
 	@extend %modalFooter !optional;
 }
 .root-8LYsGj {
@@ -4191,7 +4173,7 @@ pre {
 .none-2-_0dP {
 	@extend %scrollbarNone !optional;
 }
-.thin-1ybCId {
+.thin-31rlnD {
 	@extend %scrollbarThin !optional;
 }
 .segmentContainer-3izQ9Z {
