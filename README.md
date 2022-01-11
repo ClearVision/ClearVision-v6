@@ -38,11 +38,11 @@ Download the theme file and move it into your [BetterDiscord](https://betterdisc
 In order build the theme from source, you can simply run `npm install` to install all missing dependencies, and `npm run build` to compile the theme into the `/public` folder.
 
 **Dependencies:**
-- [sass](https://github.com/sass/dart-sass)
-- [PostCSS Autoprefixer](https://github.com/postcss/autoprefixer)
-- [PostCSS CLI](https://github.com/postcss/postcss-cli)
-- *[DiscordSelectors](https://github.com/zerthox/discordselectors) (included in the `/lib` folder)*
-- *[rimraf](https://github.com/isaacs/rimraf) (for cleanup)*
+- [sass](https://www.npmjs.com/package/sass)
+- [PostCSS Autoprefixer](https://www.npmjs.com/package/autoprefixer)
+- [PostCSS CLI](https://www.npmjs.com/package/postcss-cli)
+- *[DiscordSelectors](https://github.com/Zerthox/DiscordSelectors) (included in the `/lib` folder)*
+- *[rimraf](https://www.npmjs.com/package/rimraf) (for cleanup)*
 
 ## Contributing
 You can run `npm run test` to compile the theme.
