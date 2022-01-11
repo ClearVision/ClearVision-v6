@@ -784,10 +784,10 @@
 .container-2jxBbw {
 	@extend %gifPickerContainer !optional;
 }
-.categoryFade-2ybR1J {
+.categoryFade-2EGqIh {
 	@extend %gifPickerCategoryFade !optional;
 }
-.categoryFadeBlurple-1j72_A {
+.categoryFadeBlurple-1HuV1x {
 	@extend %gifPickerCategoryFadeBlurple !optional;
 }
 .categoryText-2-8pri {
@@ -841,46 +841,43 @@
 .form-2fGMdU {
 	@extend %chatForm !optional;
 }
-.channelTextArea-2VhZ6z {
+.channelTextArea-1VQBuV {
 	@extend %channelTextArea !optional;
 }
-.scrollableContainer-2NUZem {
+.scrollableContainer-15eg7h {
 	@extend %channelTextAreaScrollable !optional;
 }
-.inner-MADQqc {
+.inner-NQg18Y {
 	@extend %channelTextAreaInner !optional;
 }
-.attachWrapper-2TRKBi {
+.attachWrapper-3slhXI {
 	@extend %channelTextAreaAttachWrapper !optional;
 }
-.attachButton-2WznTc {
+.attachButton-_ACFSu {
 	@extend %channelTextAreaAttachButton !optional;
 }
-.attachButtonInner-PQjIyk {
+.attachButtonInner-2mwer8 {
 	@extend %channelTextAreaAttachButtonInner !optional;
 }
-.attachButtonPlus-jWVFah {
+.attachButtonPlus-3IYelE {
 	@extend %channelTextAreaAttachButtonPlus !optional;
 }
-.textArea-12jD-V {
+.textArea-2CLwUE {
 	@extend %textArea !optional;
 }
-.placeholder-37qJjk {
+.placeholder-1_mJY1 {
 	@extend %textAreaPlaceholder !optional;
 }
-.slateTextArea-1Mkdgw {
+.textAreaSlate-9-y-k2 {
 	@extend %slateTextArea !optional;
 }
-.buttons-3JBrkn {
-	@extend %channelTextAreaButtons !optional;
-}
-.button-3AYNKb {
+.button-2fCJ0o {
 	@extend %channelTextAreaButton !optional;
 }
-.emojiButton-3uL3Aw {
+.emojiButton-3FRTuj {
 	@extend %channelTextAreaEmojiButton !optional;
 }
-.typing-2GQL18 {
+.typing-2J1mQU {
 	@extend %channelTextAreaTyping !optional;
 }
 .text-1y-e8- {
@@ -1051,7 +1048,7 @@
 .contents-18-Yxp {
 	@extend %buttonContents !optional;
 }
-.lookFilled-1Gx00P.colorBrand-3pXr91 {
+.lookFilled-yCfaCM.colorBrand-I6CyqQ {
 	@extend %buttonFilledBrand !optional;
 }
 .lookFilled-1Gx00P.colorBrandNew-g5lmBU {
@@ -1063,13 +1060,13 @@
 .lookFilled-1Gx00P.colorWhite-rEQuAQ {
 	@extend %buttonFilledWhite !optional;
 }
-.lookFilled-1Gx00P.colorGreen-29iAKY {
+.lookFilled-yCfaCM.colorGreen-3y-Z79 {
 	@extend %buttonFilledGreen !optional;
 }
 .lookFilled-1Gx00P.colorRed-1TFJan {
 	@extend %buttonFilledRed !optional;
 }
-.lookFilled-1Gx00P.colorGrey-2DXtkV {
+.lookFilled-yCfaCM.colorGrey-2iAG-B {
 	@extend %buttonFilledGrey !optional;
 }
 .lookOutlined-3sRXeN.colorBrand-3pXr91 {
@@ -1756,7 +1753,7 @@
 .clear--Eywng {
 	@extend %storeSearchIconClear !optional;
 }
-.topPill-30KHOu {
+.topPill-3DJJNV {
 	@extend %topPill !optional;
 }
 .item-PXvHYJ {
@@ -3031,7 +3028,7 @@ pre {
 .interactive {
 	@extend %mentionedInteractive !optional;
 }
-.markup-2BOw-j {
+.markup-eYLPri {
 	@extend %markup !optional;
 }
 .icon-2Po-VO {
@@ -3496,70 +3493,67 @@ pre {
 .itemSubMenu-1vN_Yn {
 	@extend %contextMenuItemSubMenu !optional;
 }
-.emojiPicker-3PwZFl {
+.emojiPicker-6YCk8a {
 	@extend %emojiPicker !optional;
 }
-.searchBar-5di9mG {
+.searchBar-2M9mRP {
 	@extend %emojiPickerSearchBar !optional;
 }
-.input-1Rv96N {
+.input-2FSSDe {
 	@extend %emojiPickerSearchInput !optional;
 }
-.diversitySelector-1v4_1A {
-	@extend %emojiPickerDiversitySelector !optional;
-}
-.diversitySelectorOptions-4YM-vX {
+.diversitySelectorOptions-3DhNYs {
 	@extend %emojiPickerDiversitySelectorPopout !optional;
 }
-.diversityEmojiItem-L6_IXw {
+.diversityEmojiItem-2bgZKv {
 	@extend %emojiPickerDiversityItem !optional;
 }
-.categorySection-2sgp74 {
+.categorySection-3j71bm {
 	@extend %emojiPickerCategorySection !optional;
 }
-.wrapper-1-Fsb8 {
+.wrapper-1NNaWG {
 	@extend %emojiPickerCategoryHeaderWrapper !optional;
 }
-.header-19cWci {
+.header-11eigE {
 	@extend %emojiPickerCategoryHeader !optional;
 }
-.emojiItem-14v6tW {
+.emojiItem-277VFM {
 	@extend %emojiPickerItem !optional;
 }
-.emojiItemSelected-1aLkfV {
+.emojiItemSelected-2Lg50V {
 	@extend %emojiPickerItemSelected !optional;
 }
-.emojiItemDisabled-1FvFuF {
+.emojiItemDisabled-3VVnwp {
 	@extend %emojiPickerItemDisabled !optional;
 }
-.imageLoading-bpSr0M {
+.imageLoading-2uloYN {
 	@extend %emojiPickerItemLoading !optional;
 }
-.inspector-S2gM3e {
+.inspector-DFKXwB {
 	@extend %emojiPickerInspector !optional;
 }
-.categoryList-2Kzf65 {
+.categoryList-2qRrlj {
 	@extend %emojiCategoryList !optional;
 }
-.scroller-3gAZLs {
+.scroller-2MALzE {
 	@extend %emojiCategoryScroller !optional;
 }
-.categoryItem-1D0nxC {
+.categoryItem-1sHzUv {
 	@extend %emojiCategoryItem !optional;
 }
-.categoryIcon-1SvUHG {
+.categoryIcon-2cYeku {
 	@extend %emojiCategoryItemIcon !optional;
 }
-.categoryItemDefaultCategorySelected-_HCKoz {
+.categoryItemDefaultCategorySelected-2YeRUu {
 	@extend %emojiCategoryItemSelected !optional;
 }
-.categoryItemGuildCategory-3MisqI {
+.categoryItemGuildCategory-3mvXlo {
 	@extend %emojiCategoryGuildItem !optional;
 }
-.guildIcon-3h-1IH {
+.guildIcon-2SUGiq {
 	@extend %emojiCategoryGuildIcon !optional;
 }
-.unicodeShortcut-15J8Ck {
+.unicodeShortcut-3N8oDe {
 	@extend %emojiCategoryUnicodeShortcut !optional;
 }
 .popout-103y-5 {
@@ -4475,43 +4469,43 @@ pre {
 .tierLock-3nsR0q {
 	@extend %stickersTierLock !optional;
 }
-.messagesPopoutWrap-1MQ1bW {
+.messagesPopoutWrap-3zryHW {
 	@extend %messagesPopoutWrap !optional;
 }
-.header-ykumBX {
+.header-145e10 {
 	@extend %messagesPopoutHeader !optional;
 }
 .footer-1kmXd4 {
 	@extend %messagesPopoutFooter !optional;
 }
-.tabBar-1kuXvJ {
+.tabBar-1qdMr5 {
 	@extend %messagesPopoutTabBar !optional;
 }
-.tab-ck0077 {
+.tab-TRrPC8 {
 	@extend %messagesPopoutTab !optional;
 }
 .active-1MbGPa {
 	@extend %messagesPopoutTabActive !optional;
 }
-.channelHeader-3Gd2xq {
+.channelHeader-DFRX8q {
 	@extend %messagesPopoutChannelHeader !optional;
 }
 .messageGroupWrapper-o-Zw7G {
 	@extend %pinnedMessageGroupWrapper !optional;
 }
-.jumpButton-3DTcS_ {
+.jumpButton-1ZwI_j {
 	@extend %pinnedJumpButton !optional;
 }
-.recentMentionsPopout-3rCiI6 {
+.recentMentionsPopout-2bI1ZN {
 	@extend %recentMentionsPopout !optional;
 }
 .container-3iAQ-0 {
 	@extend %recentMentionsContainer !optional;
 }
-.messageContainer-gbhlwo {
+.messageContainer-3VTXBC {
 	@extend %recentMentionsMessagesContainer !optional;	
 }
-.jumpButton-2dvRSC {
+.jumpButton-1ITAeq {
 	@extend %recentMentionsJumpButton !optional;
 }
 .text-3KVtey {
