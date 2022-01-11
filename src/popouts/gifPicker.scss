@@ -34,7 +34,7 @@
 %gifPickerContent {
 	%scroller {
 		&::-webkit-scrollbar {
-			width: 10px !important;
+			width: 8px !important;
 		}
 	}
 
@@ -109,4 +109,9 @@
 			opacity: .3;
 		}
 	}
+}
+
+//Search Suggestion
+.searchSuggestion-PfUKKS {
+	background: hsla(0, 0%, 100%, .04);
 }
