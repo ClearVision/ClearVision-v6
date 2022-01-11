@@ -251,6 +251,24 @@
 .addButtonIcon-3rJeaD {
 	@extend %categoryAddIcon !optional;
 }
+.containerDefault-YUSmu3 {
+	@extend %channelContainerDefault !optional;
+}
+.containerDragBefore-1s5Qg6 {
+	@extend %channelContainerDragBefore !optional;
+}
+.containerDragAfter-3aBiOW {
+	@extend %channelContainerDragAfter !optional;
+}
+.containerUserOver-SDa1HW {
+	@extend %channelContainerUserOver !optional;
+}
+.containerDragAfter-3aBiOW, .containerDragBefore-1s5Qg6 {
+	@extend %channelContainerDrag !optional;
+}
+.containerDefault-YUSmu3, .containerDragAfter-3aBiOW, .containerDragBefore-1s5Qg6, .containerUserOver-SDa1HW {
+	@extend %channelContainer !optional;
+}
 .wrapper-NhbLHG {
 	@extend %channelWrapper !optional;
 }
@@ -848,7 +866,7 @@
 .stackedAttachedBar-3A2J3X {
 	@extend %channelTextAreaStackedAttachedBar !optional;
 }
-.upload-3Dkqd6 {
+.upload-3GTSF9 {
 	@extend %channelTextAreaUpload !optional;
 }
 .operations-36ENbA {
@@ -2990,7 +3008,7 @@ pre {
 .iconMention-1_KJ_B {
 	@extend %mentionIcon !optional;
 }
-.anchor-3Z-8Bb {
+.anchor-1MIwyf {
 	@extend %anchor !optional;
 }
 .anchorUnderlineOnHover-2ESHQB {
@@ -3092,172 +3110,115 @@ pre {
 .modal-2VIBV8 {
 	@extend %modal !optional;
 }
-.root-1gCeng {
+.root-g14mjS {
 	@extend %modalRoot !optional;
 }
 .header-2tA9Os {
 	@extend %modalHeader !optional;
 }
- .footer-2gL1pp {
+.footer-2gL1pp {
 	@extend %modalFooter !optional;
 }
-.root-3QyAh1 {
+.root-8LYsGj {
 	@extend %userModal !optional;
 }
-.topSection-y3p-_D {
+.topSection-13QKHs {
 	@extend %userModalTopSection !optional;
 }
-.profileBanner-33-uE1 {
+.profileBanner-1owKI5 {
 	@extend %userModalProfileBanner !optional;
 }
-.avatar-AvHqJA {
+.avatar-3QF_VA {
 	@extend %userModalAvatar !optional;
 }
-.nameTag-ECvD8P {
+.nameTag-2Nlmsy {
 	@extend %userModalNameTag !optional;
 }
-.username-FvTBog {
+.username-1g6Iq1 {
 	@extend %userModalUsername !optional;
 }
-.discriminator-1swucG {
+.discriminator-1bqsd3 {
 	@extend %userModalDiscriminator !optional;
 }
-.additionalActionsIcon-365LnQ {
+.additionalActionsIcon-3Cy8UU {
 	@extend %userModalAdditionalActionsIcon !optional;
 }
-.tabBarContainer-37hZsr {
+.tabBarContainer-sCZC4w {
 	@extend %userModalTabBarContainer !optional;
 }
-.tabBar-3nvOPa {
+.tabBar-2hXqzU {
 	@extend %userModalTabBar !optional;
 }
-.tabBarItem-3dfX8P {
+.tabBarItem-30Te4- {
 	@extend %userModalTabBarItem !optional;
 }
-.activityProfile-2bJRaP {
-	@extend %userModalActivity !optional;
-}
-.profileBadgeWrapper-rl_RO6 {
-	@extend %profileBadgeWrapper !optional;
-}
-.profileBadge24-179Xm3 {
-	@extend %profileBadge !optional;
-}
-.profileBadgeStaff-13GO7z {
-	@extend %profileBadgeStaff !optional;
-}
-.profileBadgePartner-SjK6L2 {
-	@extend %profileBadgePartner !optional;
-}
-.profileBadgeHypesquad-1YIe7Z {
-	@extend %profileBadgeHypeSquad !optional;
-}
-.profileBadgeHypeSquadOnlineHouse1-xN6tES {
-	@extend %profileBadgeHypeSquadHouse1 !optional;
-}
-.profileBadgeHypeSquadOnlineHouse2-3jBpXR {
-	@extend %profileBadgeHypeSquadHouse2 !optional;
-}
-.profileBadgeHypeSquadOnlineHouse3-1YbjMX {
-	@extend %profileBadgeHypeSquadHouse3 !optional;
-}
-.profileBadgeHypeSquadOnlineHouse1Winner-3OGyO6 {
-	@extend %profileBadgeHypeSquadHouse1Winner !optional;
-}
-.profileBadgeHypeSquadOnlineHouse2Winner-3GW5Sm {
-	@extend %profileBadgeHypeSquadHouse2Winner !optional;
-}
-.profileBadgeHypeSquadOnlineHouse3Winner-2iVu11 {
-	@extend %profileBadgeHypeSquadHouse3Winner !optional;
-}
-.profileBadgeEarlySupporter-PQB_0a {
-	@extend %profileBadgeEarlySupporter !optional;
-}
-.profileBadgePremium-3kZ9Qj {
-	@extend %profileBadgePremium !optional;
-}
-.profileBadgeBugHunter-IV0vLE {
-	@extend %profileBadgeBugHunter !optional;
-}
-.profileGuildSubscriberlvl1-pKd1EZ {
-	@extend %profileBadgeGuildSubscriber1 !optional;
-}
-.profileGuildSubscriberlvl2-1aIFve {
-	@extend %profileBadgeGuildSubscriber2 !optional;
-}
-.profileGuildSubscriberlvl3-33AROf {
-	@extend %profileBadgeGuildSubscriber3 !optional;
-}
-.profileGuildSubscriberlvl4-2yY8EG {
-	@extend %profileBadgeGuildSubscriber4 !optional;
-}
-.body-r6_QPy {
+.body-1Ukv50 {
 	@extend %userModalBody !optional;
 }
-.userInfoSection-q_35fn {
+.userInfoSection-2u2hir {
 	@extend %userModalInfoSection !optional;
 }
-.userInfoSectionHeader-3TYk6R {
+.userInfoSectionHeader-2mYYun {
 	@extend %userModalInfoSectionHeader !optional;
 }
-.note-367eZJ {
+.note-3M15gE {
 	@extend %userModalNote !optional;
 }
-.connectedAccounts-QlRa4m {
+.connectedAccounts-1YaT2t {
 	@extend %userModalConnectedAccounts !optional;
 }
-.connectedAccount-2Jb-Z0 {
+.connectedAccount-1xKpli {
 	@extend %userModalConnectedAccount !optional;
 }
-.connectedAccountIcon-3_EQqg {
+.connectedAccountIcon-2vls0t {
 	@extend %userModalConnectedAccountIcon !optional;
 }
-.connectedAccountNameInner-2q3MVf {
+.connectedAccountNameInner-t24B11 {
 	@extend %userModalConnectedAccountNameInner !optional;
 }
-.connectedAccountName-E1KzaT {
+.connectedAccountName-j0meX4 {
 	@extend %userModalConnectedAccountName !optional;
 }
-.connectedAccountVerifiedIcon-2cA82O {
+.connectedAccountVerifiedIcon-3XCxT8 {
 	@extend %userModalConnectedAccountVerifiedIcon !optional;
 }
-.connectedAccountOpenIcon-E5wGF4 {
+.connectedAccountOpenIcon-1yfBsb {
 	@extend %userModalConnectedAccountOpenIcon !optional;
 }
-.emptyIcon-1yiM-z {
-	@extend %userModalEmptyIcon !optional;
+.userProfileActivity-sal5no {
+	@extend %userModalActivity !optional;
 }
-.emptyIconFriends-2l7flK {
-	@extend %userModalEmptyIconFriends !optional;
-}
-.emptyIconGuilds-zT7p-8 {
+.emptyIconGuilds-2NNSTU {
 	@extend %userModalEmptyIconGuilds !optional;
+}
+.emptyIconFriends-2LNxTX {
+	@extend %userModalEmptyIconFriends !optional;
 }
 .emptyIconStreamerMode-1h-oZF {
 	@extend %userModalEmptyIconStreamerMode !optional;
 }
-.emptyText-2d2yNp {
+.emptyText-mZZyQk {
 	@extend %userModalEmptyText !optional;
 }
-.listScroller-3GmIYj {
+.listScroller-entkMk {
 	@extend %userModalListScroller !optional;
 }
-.listRow-hutiT_ {
+.listRow-2nO1T6 {
 	@extend %userModalListRow !optional;
 }
-.listAvatar-1NlAhb {
+.listAvatar-2bU5Uh {
 	@extend %userModalListAvatar !optional;
 }
-.listRowContent-3Kih4Q {
+.listRowContent-PEmSWj {
 	@extend %userModalListRowConent !optional;
 }
-.listName-3w10cx {
+.listName-PwbeHL {
 	@extend %userModalListName !optional;
 }
-.guildNick-3uAm3i {
+.guildNick-fe8oPN {
 	@extend %userModalListGuildNick !optional;
 }
-.listDiscriminator-253zfw {
+.listDiscriminator-1HAKWY {
 	@extend %userModalListDiscriminator !optional;
 }
 .pageWrapper-1PgVDX {
@@ -3659,7 +3620,7 @@ pre {
 .animatorBottom-fS5rNO {
 	@extend %popoutAnimatorBottom !optional;
 }
-.animatorLeft-1EQxU0 {
+.animatorLeft-3yvG13  {
 	@extend %popoutAnimatorLeft !optional;
 }
 .animatorRight-3i_YPs {
@@ -3875,71 +3836,59 @@ pre {
 .status-1AY8sU {
 	@extend %statusPickerIcon !optional;
 }
-.userPopout-xaxa6l {
+.userPopout-2j1gM4 {
 	@extend %userPopout !optional;
 }
-.headerNormal-3KXFBt {
+.headerNormal-3Zn_yu {
 	@extend %userPopoutHeader !optional;
 }
-.popoutBanner-19WKGg {
+.popoutBanner-3cqRD9 {
 	@extend %userPopoutBanner !optional;
 }
-.popoutBannerPremium-1n96gg {
+.popoutBannerPremium-3i5EEI {
 	@extend %userPopoutBannerPremium !optional;
 }
-.headerTop-3vNv-a {
-	@extend %userPopoutHeaderTop !optional;
-}
-.aboutMeSection-1Fw5Ia {
-	@extend %userPopoutAboutMe !optional;
-}
-.activityUserPopout-2yItg2 {
-	@extend %userPopoutActivity !optional;
-}
-.mobileIndicator-29f8Xh {
-	@extend %userPopoutMobileIndicator !optional;
-}
-.headerText-2WJ44e {
-	@extend %userPopoutHeaderText !optional;
-}
-.headerName-fajvi9 {
-	@extend %userPopoutHeaderName !optional;
-}
-.profileBadge18-NVHzY4 {
-	@extend %userPopoutprofileBadge !optional;
-}
-.nameTag-m8r81H {
-	@extend %userPopoutNameTag !optional;
-}
-.avatar-37jOim {
+.avatar-2Vndt_ {
 	@extend %userPopoutAvatar !optional;
 }
-.body-3HBlXn {
+.headerTop-3GPUSF {
+	@extend %userPopoutHeaderTop !optional;
+}
+.profileBadge22-3GAYRy {
+	@extend %userPopoutprofileBadge !optional;
+}
+.headerText-1-WmDq {
+	@extend %userPopoutHeaderText !optional;
+}
+.nameTag-H6kSJ0 {
+	@extend %userPopoutNameTag !optional;
+}
+.aboutMeSection-PUghFQ {
+	@extend %userPopoutAboutMe !optional;
+}
+.body-2wLx-E {
 	@extend %userPopoutBody !optional;
 }
-.bodyInnerWrapper-Z8WDxe {
+.bodyInnerWrapper-2bQs1k {
 	@extend %userPopoutBodyInnerWrapper !optional;
 }
-.bodyTitle-Y0qMQz {
+.activityUserPopout-2MzGCj {
+	@extend %userPopoutActivity !optional;
+}
+.bodyTitle-2Az3VQ {
 	@extend %userPopoutBodyTitle !optional;
 }
-.rolesList-22qj2L {
+.rolesList-3uZoaa {
 	@extend %userPopoutRolesList !optional;
 }
-.note-1oo11U {
+.note-Go5ZP2 {
 	@extend %userPopoutNote !optional;
 }
-.textarea-2r0oV8 {
+.textarea-_59yqs {
 	@extend %userPopoutNoteTextArea !optional;
 }
-.footer-3UKYOU {
+.footer-3naVBw {
 	@extend %userPopoutFooter !optional;
-}
-.protip-YaFfgO {
-	@extend %userPopoutPro !optional;
-}
-.tip-2ab612 {
-	@extend %userPopoutTip !optional;
 }
 .errorPage-u8SYh4 {
 	@extend %errorPage !optional;
