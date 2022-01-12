@@ -1,6 +1,6 @@
 {
   "name": "clearvision",
-  "version": "6.2.0-dev",
+  "version": "6.2.0",
   "description": "Highly customizable theme for BetterDiscord.",
   "private": true,
   "scripts": {
