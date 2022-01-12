@@ -1010,7 +1010,7 @@
 .colorBrandNew-g5lmBU {
 	@extend %buttonBrandNew !optional;
 }
-colorPrimary-2AuQVo {
+.colorPrimary-2AuQVo {
 	@extend %buttonPrimary !optional;
 }
 .colorWhite-rEQuAQ {
@@ -1034,7 +1034,7 @@ colorPrimary-2AuQVo {
 .lookFilled-yCfaCM.colorBrandNew-g5lmBU {
 	@extend %buttonFilledBrandNew !optional;
 }
-.lookFilled-yCfaCMcolorPrimary-2AuQVo {
+.lookFilled-yCfaCM.colorPrimary-2AuQVo {
 	@extend %buttonFilledPrimary !optional;
 }
 .lookFilled-yCfaCM.colorWhite-rEQuAQ {
@@ -1052,7 +1052,7 @@ colorPrimary-2AuQVo {
 .lookOutlined-3sRXeN.colorBrand-3pXr91 {
 	@extend %buttonOutlinedBrand !optional;
 }
-.lookOutlined-3sRXeNcolorPrimary-2AuQVo {
+.lookOutlined-3sRXeN.colorPrimary-2AuQVo {
 	@extend %buttonOutlinedPrimary !optional;
 }
 .lookOutlined-3sRXeN.colorWhite-rEQuAQ {
@@ -1070,7 +1070,7 @@ colorPrimary-2AuQVo {
 .lookInverted-2D7oAl.colorBrand-3pXr91 {
 	@extend %buttonInvertedBrand !optional;
 }
-.lookInverted-2D7oAlcolorPrimary-2AuQVo {
+.lookInverted-2D7oAl.colorPrimary-2AuQVo {
 	@extend %buttonInvertedPrimary !optional;
 }
 .lookInverted-2D7oAl.colorWhite-rEQuAQ {
@@ -1088,7 +1088,7 @@ colorPrimary-2AuQVo {
 .lookLink-9FtZy-.colorBrand-3pXr91 {
 	@extend %buttonLinkBrand !optional;
 }
-.lookLink-9FtZy-colorPrimary-2AuQVo {
+.lookLink-9FtZy-.colorPrimary-2AuQVo {
 	@extend %buttonLinkPrimary !optional;
 }
 .lookLink-9FtZy-.colorWhite-rEQuAQ {
@@ -2804,7 +2804,7 @@ pre {
 .lookFilled-yCfaCM.colorGreen-3y-Z79 {
 	@extend %inviteButtonAccept !optional;
 }
-.lookOutlined-3sRXeNcolorPrimary-2AuQVo {
+.lookOutlined-3sRXeN.colorPrimary-2AuQVo {
 	@extend %inviteButtonJoined !optional;
 }
 .lookFilled-yCfaCM.colorBrand-3pXr91 {
