@@ -16,15 +16,15 @@
 .ace-monokai .ace_gutter-active-line, .ace-monokai .ace_marker-layer .ace_active-line {
 	background-color: rgba(0, 0, 0, 0.8)!important;
 }
-.contentRegion-3nDuYy #bd-customcss-attach-controls, #bd-customcss-detach-container #bd-customcss-attach-controls {
+.contentRegion-3HkfJJ #bd-customcss-attach-controls, #bd-customcss-detach-container #bd-customcss-attach-controls {
 	background-color: rgba(0, 0, 0, 0.65);
 	box-shadow: none;
 }
-.standardSidebarView-3F1I7i #bd-customcss-attach-controls button, .bd-detached-css-editor #bd-customcss-attach-controls button {
+.standardSidebarView-E9Pc3j #bd-customcss-attach-controls button, .bd-detached-css-editor #bd-customcss-attach-controls button {
 	background: rgba(0, 0, 0, 0.3);
 	border-color: rgba(0, 0, 0, 0.0) !important;
 }
-.standardSidebarView-3F1I7i #bd-customcss-attach-controls button:hover, .bd-detached-css-editor #bd-customcss-attach-controls button:hover {
+.standardSidebarView-E9Pc3j #bd-customcss-attach-controls button:hover, .bd-detached-css-editor #bd-customcss-attach-controls button:hover {
 	background-color: rgba(0, 0, 0, 0.8);
 	border: 2px solid var(--hover-color) !important;
 }
@@ -42,9 +42,9 @@
 #bd-customcss-detach-container {
 	background-color: transparent;
 }
-.checkbox-3kaeSU {
-	.checkboxInner-3yjcPe {
-		.checkboxElement-1qV33p {
+.checkbox-1ycfTw {
+	.checkboxInner-1aRh1d {
+		.checkboxElement-uwAa9F {
 			&:checked {
 				& + span {
 					background-color: var(--main-color);

@@ -30,7 +30,7 @@
 .notice-1Qe0b_ {
     background-color: transparent;
 }
-.editingContainer-1iOrsV {
+.editingContainer-1_nnqZ {
     background-color: transparent;
 }
 
@@ -56,25 +56,25 @@
 
 // BILLING
 %themeDark {
-    .paymentPane-3bwJ6A,
-    .paginator-166-09 {
+    .paymentPane-ut5qKZ,
+    .paginator-1eqD2g {
         background-color: transparent;        
     }
-    .bottomDivider-1K9Gao {
+    .bottomDivider-ZmTm-j {
         border-color: rgba(0,0,0,.07);
     }
-    .hoverablePayment-Yc6mK7 {
+    .hoverablePayment-lE1s4t {
         &:hover {
             background-color: rgba(255,255,255,.05);
         }
     }
-    .payment-xT17Mq {
+    .payment-2bOh4k {
         background-color: transparent;
-        &:not(.hoverablePayment-Yc6mK7) {
+        &:not(.hoverablePayment-lE1s4t) {
             background-color: hsla(0, 0%, 0%, .4);
         }
     }
-    .expandedInfo-3kfShd {
+    .expandedInfo-1W31i3 {
         background-color: transparent;
         box-shadow: 0 0 2px 2px $main-color;
     }
@@ -102,7 +102,7 @@
         }
     }
 } 
-.scroller-9moviB {
+.scroller-29cQFV {
     background-color: transparent;
 }
 .detailsBlock-FoDTGA,
@@ -113,11 +113,11 @@
 // GIFT INVENTORY
 
 // SERVER BOOST
-.cardWrapper-2Min21 {
+.cardWrapper-CyvwQv {
     background-color: transparent;
 }
 %themeDark {
-    .gemIndicatorContainer-2jdECl {
+    .gemIndicatorContainer-PqApbX {
         background-color: transparent;
     }
 }
@@ -179,7 +179,7 @@
         background-color: hsla(0, 0%,100%,.07);
         opacity: 1;
     }
-    &.selected-mKYnfr {
+    &.selected-18Wszc {
         background-color: $main-color;
         border-color: $main-color;
     }
@@ -187,15 +187,15 @@
 
 // KEYBINDS
 %themeDark {
-    .container-1nZlH6 {
+    .container-30qY7E {
         background-color: hsla(0, 0%, 100%, .05);
         box-shadow: 0 0 0 2px hsla(0, 0%, 100%, .07);
         border-color: transparent;
-        &:not(.disabled-29eJ21):hover {
+        &:not(.disabled-3S7pz8):hover {
             border-color: transparent;
 	        box-shadow: 0 0 2px 2px var(--main-color);
         }
-        &.recording-1H2dS7 {
+        &.recording-3ny5_E {
             color: #fff;
             box-shadow: 0 0 2px 2px var(--main-color);
             animation: cv-shadow-pulse 1s ease-in infinite;
@@ -224,7 +224,7 @@
         color: #fff;
     }
 
-    .game-1ipmAa {
+    .game-3x3aDt {
         box-shadow: 0 1px 0 0 hsla(0,0%,100%,.04);
     }
     .gameNameInput-3TuPuA {

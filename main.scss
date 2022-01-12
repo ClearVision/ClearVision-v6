@@ -113,7 +113,7 @@ $version: "6.2.0";
 @import "src/popouts/searchPopout";
 @import "src/popouts/emojiPicker";
 @import "src/popouts/groupInvite";
-@import "src/popouts/VoiceChannelListenigTo";
+@import "src/popouts/voiceChannelListeningTo";
 @import "src/popouts/otherPopouts";
 @import "src/popouts/mentionEveryone";
 @import "src/popouts/gifPicker";
@@ -148,10 +148,10 @@ $version: "6.2.0";
 @import "src/screens/loading";
 @import "src/screens/crash";
 
-// TREADS
-@import "src/treads/createTread";
-@import "src/treads/treadsPopout";
-@import "src/treads/threadModal";
+// THREADS
+@import "src/threads/createThread";
+@import "src/threads/threadsPopout";
+@import "src/threads/threadModal";
 
 // BETTERDISCORD
 @import "src/bd/sidebar";
@@ -176,6 +176,3 @@ $version: "6.2.0";
 
 // KEYFRAMES
 @import "src/keyframes";
-
-// IMPORT FIX
-@import "the-fixes";

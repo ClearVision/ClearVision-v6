@@ -1,8 +1,8 @@
-/* TREADS POPOUT */
-%treadsPopoutContainer {
+/* THREADS POPOUT */
+%threadsPopoutContainer {
     background-color: transparent;
 }
-%popoutLayer %treadsPopoutContainer {
+%popoutLayer %threadsPopoutContainer {
     background-color: hsla(0, 0%, 0%, .8);
     animation: cv-menu-fold-y .2s cubic-bezier(.2, .6, .5, 1.1);
 	transform-origin: 50% 0;
@@ -10,20 +10,20 @@
 	box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 }
 
-%treadsPopoutHeader {
+%threadsPopoutHeader {
 	background-color: transparent;
 }
-%treadsPopoutIcon {
+%threadsPopoutIcon {
 	background-color: var(--main-color);
 	color: #fff;
 }
 
-%themeDark %treadsPopoutHeader %treadsPopoutTabBar %treadsPopoutTab {
+%themeDark %threadsPopoutHeader %threadsPopoutTabBar %threadsPopoutTab {
     color: #fff;
-    &%treadsPopoutTabActive {
+    &%threadsPopoutTabActive {
 	background-color: var(--main-color);
     }
-    &:hover:not(%treadsPopoutTabActive) {
+    &:hover:not(%threadsPopoutTabActive) {
         background-color: hsla(0, 0%, 100%, .06);
         color: #fff;
     }

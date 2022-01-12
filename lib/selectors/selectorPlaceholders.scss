@@ -65,9 +65,6 @@
 .noticePremium-12Zvj9 {
 	@extend %noticePremium !optional;
 }
-.noticePremiumGrandfathered-ollUxF {
-	@extend %noticePremiumGrandfathered !optional;
-}
 .noticeInfo-3_iTE1 {
 	@extend %noticeInfo !optional;
 }
@@ -4380,22 +4377,22 @@ pre {
 	@extend %unreadCollapseButton !optional;
 }
 .container-18GwIk {
-	@extend %treadsPopoutContainer !optional;
+	@extend %threadsPopoutContainer !optional;
 }
 .header-3_zmOb {
-	@extend %treadsPopoutHeader !optional;
+	@extend %threadsPopoutHeader !optional;
 }
 .tabBar-2WhZ9G{
-	@extend %treadsPopoutTabBar !optional;
+	@extend %threadsPopoutTabBar !optional;
 }
 .tab-2Jo-cu {
-	@extend %treadsPopoutTab !optional;
+	@extend %threadsPopoutTab !optional;
 }
 .active-346HgG {
-	@extend %treadsPopoutTabActive !optional;
+	@extend %threadsPopoutTabActive !optional;
 }
 .icon-mJhEWn {
-	@extend %treadsPopoutIcon !optional;
+	@extend %threadsPopoutIcon !optional;
 }
 .icon-3OHhZU {
 	@extend %threadChatIcon !optional;
