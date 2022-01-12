@@ -8,7 +8,7 @@
     "test.clean": "rimraf {test,public}",
     "test.build": "sass --style=expanded --no-source-map hljs.scss:test/hljs.css main.scss:test/main.css",
     "build": "npm run build.sass && npm run build.prefix",
-    "build.sass": "sass --style=expanded --no-source-map hljs.scss:public/hljs.css main.scss:public/main.css",
+    "build.sass": "sass --style=compressed --no-source-map hljs.scss:public/hljs.css main.scss:public/main.css",
     "build.prefix": "postcss public/*.css --dir=public --use=autoprefixer  -b=\"> 5%\" --no-map"
   },
   "repository": {
