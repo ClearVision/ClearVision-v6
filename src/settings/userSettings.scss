@@ -14,17 +14,17 @@
 }
 
 // USER PROFILE
-.profileBannerPreview-gaX5MP {
+.profileBannerPreview-3mLIdO {
     background-color: cv("bg.popout.overlay");
 }
-.avatarUploaderInner-mAGe3e {
+.avatarUploaderInner-p38nm2 {
     border: 6px solid transparent;
     background-clip: padding-box;
 }
-.optionBox-1b4n4P {
+.optionBox-1UOevl {
 	background-color: transparent;
 }
-.contentCircle-2uR76y {
+.contentCircle-15IFyT {
 	background-color: $main-color;
 }
 .notice-1Qe0b_ {
@@ -37,16 +37,16 @@
 // PRIVACY AND SAFETY
 
 // AUTHORIZED APPS
-.authedApp-mj2Hmd {
+.authedApp-1tw-eT {
     background-color: rgba(0, 0, 0, .4);
     border-color: hsla(0, 0%, 100%, .07);
 }
 
 // CONNECTIONS
-.accountList-33MS45 {
+.accountList-305sx3 {
     background-color: rgba(0, 0, 0, .4);
     border-color: hsla(0, 0%, 100%, .07);
-    .accountBtn-2Nozo3 .accountBtnInner-sj5jLs {
+    .accountBtn-1YkMgV .accountBtnInner-3XK70s {
         background-color: hsla(0, 0%,100%,.05);
         &:hover {
             background-color: hsla(0, 0%,100%,.07);
@@ -78,7 +78,7 @@
         background-color: transparent;
         box-shadow: 0 0 2px 2px $main-color;
     }
-    .codeRedemptionRedirect-1wVR4b {
+    .codeRedemptionRedirect-3SBiCp {
         background-color: rgba(0, 0, 0, .4);
         border-color: hsla(0, 0%, 100%, .07);
     }
@@ -86,15 +86,15 @@
 
 // DISCORD NITRO
 %themeDark {
-	.feature-2w65J5 {
+	.feature-2IUcBI {
 		background-color: rgba(0,0,0,0.4);
 	}
 }
 
 // SUBSCRIPTIONS
 %themeDark {
-    .noItemsIcon-21jJYT,
-    .noItemsIcon-ygEH8z {
+    .noItemsIcon-1rZlXZ,
+    .noItemsIcon-2OeOld {
         background-color: transparent;
         >g>* {
             fill-opacity: .8 !important;
@@ -163,12 +163,16 @@
 %videoBgOptionSelected {
     border: 2px solid $main-color;
 }
+%videoBgOptionInner {
+    background-color: transparent;
+}
+
 
 // GAME OVERLAY
-.wrapper-3jrx9n {
+.wrapper-SdcMKg {
     border-color: $main-color;
 }
-.option-n0icdO {
+.option-1QI4c9 {
     background-color: hsla(0, 0%,100%,.05);
     opacity: 1;
     &:hover {
@@ -201,21 +205,21 @@
 
 // ACTIVITY STATUS
 %themeDark {
-    .notDetected-33MY4s {
+    .notDetected-2HEmAp {
         background-color: hsla(0, 0%, 0%, .4);
         border: hsla(0, 0%, 100%, .07);
     }
-    .lookLink-9FtZy-.colorLink-35jkBc {
+    .lookLink-15mFoz.colorLink-1Md3RZ {
         color: $main-color;
-        &:hover .contents-18-Yxp {
+        &:hover .content-2a4AW9 {
             background-image: none;
             text-decoration: underline;
         }
     }
-    .addGamePopout-2RY8Ju {
+    .addGamePopout-3yePJc {
         background-color: hsla(0, 0%, 0%, .7);
     }
-    .css-rzbxvl-option {
+    .option-2eIyOn.focused-ODgjnC {
         background-color: $hover-color;
         color: #fff;
     }
@@ -223,11 +227,20 @@
     .game-1ipmAa {
         box-shadow: 0 1px 0 0 hsla(0,0%,100%,.04);
     }
-    .gameNameInput-385LoS {
+    .gameNameInput-3TuPuA {
         &:hover,
         &:focus {
             background-color: hsla(0, 0%,100%,.05);
             border: hsla(0, 0%, 100%, .07);
         }
+    }
+}
+
+
+.option-2eIyOn {
+    &:hover,
+    &:focus {
+        background-color: hsla(0, 0%,100%,.05);
+        border: hsla(0, 0%, 100%, .07);
     }
 }

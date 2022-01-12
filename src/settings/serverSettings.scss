@@ -1,17 +1,24 @@
 /* SERVER SETTINGS */
 
 // SAVE CHANGES
-.theme-dark .elevationHigh-1PneE4 {
+.theme-dark .elevationHigh-28Pty4 {
     background-color: hsla(0, 0%, 0%, .7) !important;
 }
 
-// OVERVIEW
+// OVERVIEW - server banner
+.theme-dark .bannerUpsellContainer-31E9J5 {
+    background-color: transparent;
+}
+.avatarUploaderInnerSquareDisabled-e_U2MZ {
+    background-color: transparent;
+}
+
 
 // ROLES
-.theme-dark .colorPickerCustom-2CWBn2 {
+.theme-dark .colorPickerCustom-1swUKF {
     background-color: hsla(0, 0%, 0%, .7)
 }
-.container-_phMUq {
+.container-3EtAkD {
     background-color: $main-color;
     color: #fff;
     &:hover {
@@ -24,10 +31,10 @@
         background-color: $hover-color;
 	}
 }
-.titleContainer-2CXtJo {
+.titleContainer-3fPic2 {
     background-color: transparent;
 }
-.header-2mZ9Ov {
+.header-JUTO-g {
     background-color: transparent;
     &:before {
         content: "";
@@ -45,8 +52,8 @@
         background: cv("bg.app.overlay");
     }
 }
-.top-28JiJ- {
-    .brand-1Zl8en {
+.top-K_jibn {
+    .brand-3g5E0C {
         &%tabBarItem {
             &:hover {
                 border-bottom-color: $hover-color;
@@ -102,14 +109,13 @@
 
 
 // SERVER INSIGHTS
-.analyticsCard-qckucw {
+.analyticsCard-2fnrVG {
     background-color: hsla(0, 0%, 0%, .4);
 }
-.developerPortalCtaWrapper-Pxhnc3 {
+.developerPortalCtaWrapper-2PniQs {
     background-color: transparent;
 }
-
-.notEnoughMembersError-16EXyM {
+.notEnoughMembersError-3-VD0N {
    background-color: var(--info-warning-background);
 }
 
@@ -191,7 +197,7 @@
     }
     .tierHeaderLocked-3S508x,
     .tierHeaderUnlocked-3lTDnP,
-    .tierBody-3aUxuc {
+    .tierBody-1d3UiS{
         background-color: hsla(0, 0%, 0%, .4);
     }
 }

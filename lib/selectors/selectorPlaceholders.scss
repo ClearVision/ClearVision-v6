@@ -1034,6 +1034,9 @@
 .lookFilled-yCfaCM.colorBrandNew-g5lmBU {
 	@extend %buttonFilledBrandNew !optional;
 }
+.lookFilled-yCfaCM.colorBrandNew-2-gGsS {
+	@extend %buttonFilledBrandNew2 !optional;
+}
 .lookFilled-yCfaCM.colorPrimary-2AuQVo {
 	@extend %buttonFilledPrimary !optional;
 }
@@ -1049,7 +1052,7 @@
 .lookFilled-yCfaCM.colorGrey-2iAG-B {
 	@extend %buttonFilledGrey !optional;
 }
-.lookOutlined-3sRXeN.colorBrand-3pXr91 {
+.lookOutlined-3yKVGo.colorBrand-I6CyqQ {
 	@extend %buttonOutlinedBrand !optional;
 }
 .lookOutlined-3sRXeN.colorPrimary-2AuQVo {
@@ -4160,6 +4163,9 @@ pre {
 .backgroundOptionSelected-DXK_2z {
 	@extend %videoBgOptionSelected !optional;
 }
+.backgroundOptionInner-TuavSG {
+	@extend %videoBgOptionInner !optional;
+}
 .roleRow-3LoHQ6 {
 	@extend %roleRow !optional;
 }
@@ -4466,7 +4472,7 @@ pre {
 .active-3WMEyE {
 	@extend %threadModalTabActive !optional;
 }
-.previewMessage-2uxBrA {
+.preview-38jjUi {
 	@extend %accessibilityMessagePreview !optional;
 }
 .hasThread-3h-KJV {

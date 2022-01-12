@@ -12,11 +12,11 @@ $colours: (
     "Github": #333333,
 );
 
-.connection-1fbD7X,
-.connectionHeader-2MDqhu {
+.connection-107AGH,
+.connectionHeader-2rV1ze {
     background: transparent;
 }
-.connectionIcon-2ElzVe {
+.connectionIcon-3nqZDW {
     + div {
         &:before {
             content: "";
@@ -53,17 +53,17 @@ $colours: (
         }
     }
 }
-.connectionAccountLabel-1DiK0A {
+.connectionAccountLabel-HkwS6X {
     color: hsla(0, 0%, 100%, .7);
 }
-.connectionDelete-2Odoln {
+.connectionDelete-XXTMqE {
     color: hsla(0, 0%, 100%, .7);
 }
 
-.integrationsWrapper-VkM_zO {
+.integrationsWrapper-3a2pGd {
     background-color: cv("const:colors.twitch-purple");
     border-radius: 0 0 8px 8px;
 }
-.integration-3kMeY4  {
+.integration-1f5IUi  {
     background-color: cv("const:colors.twitch-purple");
 }
