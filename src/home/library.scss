@@ -1,165 +1,117 @@
 /* GAME LIBRARY */
-%base {
-	%gameLibrary,
-	%libraryRoot {
-		background-color: transparent;
+
+%libraryContainer {
+	background-color: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .5));
+}
+
+// HEADER
+%libraryFilterInput {
+	background-color: hsla(0, 0%, 100%, .1);
+	color: #fff;
+	&::placeholder {
+		color: hsla(0, 0%, 100%, .3);
 	}
 }
-%gameLibrary,
-%libraryRoot {
-	> %scrollerWrap {
-		background-color: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .5));
-	}
+
+// BODY
+%libraryScroller {
+	background: transparent;
 }
-%gameLibrary {
-
-	// HEADER
-	%libraryFilterInput {
-		background-color: hsla(0, 0%, 100%, .1);
-		color: #fff;
-		&::placeholder {
-			color: hsla(0, 0%, 100%, .3);
-		}
-	}
-
-	// BODY
-	%libraryScroller {
-		background: transparent;
-	}
-	%libraryTableHeader {
-		background-color: transparent;
-		border-bottom: 1px solid hsla(0, 0%, 100%, .07);
-		> %libraryTableHeaderCell {
-			border-left-color: hsla(0, 0%, 100%, .07);
-			color: hsla(0, 0%, 100%, .3);
-			transition: all .3s ease-in-out;
-			&:hover {
-				&:not(%libraryTableHeaderCellSorted) {
-					color: hsla(0, 0%, 100%, .5);
-				}
+%libraryTableHeader {
+	background-color: transparent;
+	border-bottom: 1px solid hsla(0, 0%, 100%, .07);
+	> %libraryTableHeaderCell {
+		border-left-color: hsla(0, 0%, 100%, .07);
+		color: hsla(0, 0%, 100%, .3);
+		transition: all .3s ease-in-out;
+		&:hover {
+			&:not(%libraryTableHeaderCellSorted) {
+				color: hsla(0, 0%, 100%, .5);
 			}
 		}
-		> %libraryTableHeaderCellSorted {
-			color: hsla(0, 0%, 100%, .7);
-		}
 	}
-	%libraryTableRowWrapper {
-		background-color: transparent;
-		border-radius: 0;
-		transition: all .15s ease-in-out;
-		&,
-		&:hover {
-			margin: 0 20px;
-			padding: 0;
-			+ %libraryTableRowWrapper {
-				> %libraryTableRow {
-					margin-top: -1px;
-					border-top: 1px solid hsla(0, 0%, 100%, .04);
-				}
-			}
-		}
-		&:hover {
-			background-color: rgba(0, 0, 0, .3);
-		}
-	}
-	%libraryTableRow {
-		margin: 0;
+	> %libraryTableHeaderCellSorted {
 		color: hsla(0, 0%, 100%, .7);
-		%libraryTableActionsCell {
-			%button {
-				background-color: hsla(0, 0%, 100%, .07);
-				color: hsla(0, 0%, 100%, .7);
-				transition: all .15s ease-in-out;
-			}
-			&:hover {
-				%button:hover {
-					background-color: $main-color;
-					color: #fff;
-				}
+	}
+}
+%libraryTableRowWrapper {
+	background-color: transparent;
+	border-radius: 0;
+	transition: all .15s ease-in-out;
+	&,
+	&:hover {
+		margin: 0 20px;
+		padding: 0;
+		+ %libraryTableRowWrapper {
+			> %libraryTableRow {
+				margin-top: -1px;
+				border-top: 1px solid hsla(0, 0%, 100%, .04);
 			}
 		}
 	}
-	%libraryPlayButtonShine {
-		margin-left: -4px;
+	&:hover {
+		background-color: rgba(0, 0, 0, .3);
 	}
-	%libraryTableRowBackground {
-		border-radius: 0;
-		animation: cv-fade-in 1s ease-in-out;
-	}
-	%libraryTableTextCell {
-		color: hsla(0, 0%, 100%, .5);
-	}
-	%libraryTableLastPlayedCellNew {
-		color: $main-color;
-	}
-	%libraryTableSettingIcon {
-		color: #fff;
-		opacity: .5;
-		transition: all .15s ease-in-out;
-		&:hover {
-			opacity: 1;
-		}
-	}
-	%libraryTableRowWrapperDim {
-		%libraryTableNameCell,
-		%libraryTableTextCell,
-		%libraryTableSettingIcon {
+}
+%libraryTableRow {
+	margin: 0;
+	color: hsla(0, 0%, 100%, .7);
+	%libraryTableActionsCell {
+		%button {
+			background-color: hsla(0, 0%, 100%, .07);
+			color: hsla(0, 0%, 100%, .7);
 			transition: all .15s ease-in-out;
 		}
-	}
-}
-
-.theme-dark {
-	.defaultIndicator-3WqGFB {
-		background-color: transparent;
-	}
-}
-
-.theme-dark {
-	.background-yZEZik {
-		stroke: var(--backdrop-overlay);
-	}
-}
-.foreground-2aE44H {
-	stroke: var(--main-color);
-}
-
-// GIFT INVENTORY
-%giftInventoryBody {
-	%giftInventoryCodeRedemptionHeader,
-	%giftInventoryRootHeader {
-		color: hsla(0, 0%, 100%, .7);
-	}
-	%giftInventoryDivider {
-		background-color: hsla(0, 0%, 100%, .07);
-	}
-	%giftInventoryInputPrompt {
-		color: hsla(0, 0%, 100%, .5);
-	}
-	%giftInventoryInput {
-		background-color: rgba(0, 0, 0, .3);
-		border: 1px solid transparent;
-		color: #fff;
-		transition: all .15s ease-in-out;
 		&:hover {
-			border-color: transparent;
-		}
-		&:focus {
-			border-color: $main-color;
-			box-shadow: 0 0 1px $main-color;
-		}
-		&::placeholder {
-			color: hsla(0, 0%, 100%, .2);
+			%button:hover {
+				background-color: $main-color;
+				color: #fff;
+			}
 		}
 	}
-	%giftInventoryEmptyImage {
-		filter: grayscale(1) brightness(2);
-		opacity: .3;
+}
+%libraryPlayButtonShine {
+	margin-left: -4px;
+}
+%libraryTableRowBackground {
+	border-radius: 0;
+	animation: cv-fade-in 1s ease-in-out;
+}
+%libraryTableTextCell {
+	color: hsla(0, 0%, 100%, .5);
+}
+%libraryTableLastPlayedCellNew {
+	color: $main-color;
+}
+%libraryTableSettingIcon {
+	color: #fff;
+	opacity: .5;
+	transition: all .15s ease-in-out;
+	&:hover {
+		opacity: 1;
 	}
-	%giftInventoryEmptyHeader {
-		color: hsla(0, 0%, 100%, .7);
+}
+%libraryTableRowWrapperDim {
+	%libraryTableNameCell,
+	%libraryTableTextCell,
+	%libraryTableSettingIcon {
+		transition: all .15s ease-in-out;
 	}
-	%giftInventoryEmptySubtext {
-		color: hsla(0, 0%, 100%, .5);
+}
+
+// SETTINGS
+%themeDark {
+	%libraryInstallationPath {
+		box-shadow: 0 1px 0 0 hsla(0, 0%, 100%, .06);
 	}
+	%libraryUsageBackground {
+		stroke: hsla(0, 0%, 0%, .6);
+	}
+	%libraryUsageForeground {
+		stroke: $main-color;
+	}
+	%libraryDefaultIndicator {
+		background-color: $main-color;
+	}
+
 }

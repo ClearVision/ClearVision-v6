@@ -1,0 +1,41 @@
+/* ADD SERVER MODAL */
+.base-1x0h_U {
+	color: #fff;
+}
+.subtitle-3m-md1,
+.optionHeader-27AHfD {
+	color: hsla(0, 0%, 100%, .7)
+}
+.iconContainer-GFfNaA>svg>circle {
+	fill: $main-color;
+}
+.sampleLink-5BWNy9 {
+	color: $main-color;
+	font-weight: 500;
+}
+
+// SERVER TEMPLATES
+.container-x8Y1ix {
+    background-color: $main-color;
+    &:hover {
+		background-color: $hover-color;
+    }
+    .text-PdAsFQ {
+        color: #fff;
+    }
+    .arrow-2yY1Tm {
+        filter: brightness(0) invert(1);
+    }
+}
+.rowContainer-3t7486 {
+	background-color: $main-color;
+	&:hover {
+		background-color: $hover-color;
+    }
+	.colorStandard-21JIj7 {
+		color: #fff;
+	}
+	.rowArrow-TIwwIc {
+		filter: brightness(0) invert(1);
+	}
+}

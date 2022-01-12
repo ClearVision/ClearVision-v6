@@ -1001,7 +1001,7 @@
 .lookInverted-2D7oAl {
 	@extend %buttonInverted !optional;
 }
-.lookLink-9FtZy- {
+.lookLink-15mFoz {
 	@extend %buttonLink !optional;
 }
 .colorBrand-3pXr91 {
@@ -1085,22 +1085,22 @@
 .lookInverted-2D7oAl.colorGrey-2DXtkV {
 	@extend %buttonInvertedGrey !optional;
 }
-.lookLink-9FtZy-.colorBrand-3pXr91 {
+.lookLink-15mFoz.colorBrand-3pXr91 {
 	@extend %buttonLinkBrand !optional;
 }
-.lookLink-9FtZy-.colorPrimary-2AuQVo {
+.lookLink-15mFoz.colorPrimary-2AuQVo {
 	@extend %buttonLinkPrimary !optional;
 }
-.lookLink-9FtZy-.colorWhite-rEQuAQ {
+.lookLink-15mFoz.colorWhite-rEQuAQ {
 	@extend %buttonLinkWhite !optional;
 }
-.lookLink-9FtZy-.colorGreen-3y-Z79 {
+.lookLink-15mFoz.colorGreen-3y-Z79 {
 	@extend %buttonLinkGreen !optional;
 }
-.lookLink-9FtZy-colorRed-rQXKgM {
+.lookLink-15mFozcolorRed-rQXKgM {
 	@extend %buttonLinkRed !optional;
 }
-.lookLink-9FtZy-.colorGrey-2DXtkV {
+.lookLink-15mFoz.colorGrey-2DXtkV {
 	@extend %buttonLinkGrey !optional;
 }
 .button-1_oXub {
@@ -1889,7 +1889,7 @@
 .actionDeny-1pQVuZ {
 	@extend %friendActionDenyButton !optional;
 }
-.wrapper-1cBijl {
+.addFriendInputWrapper-kkoSV9 {
 	@extend %friendsAddFriendInputWrapper !optional;
 }
 .addFriendInput-1Ta-rO {
@@ -1898,8 +1898,8 @@
 .addFriendHint-1EVQJY {
 	@extend %friendsAddFriendHint !optional;
 }
-.gameLibrary-TTDw4Y {
-	@extend %gameLibrary !optional;
+.container-36u7Lw {
+	@extend %libraryContainer !optional;
 }
 .root-1BQpZw {
 	@extend %libraryRoot !optional;
@@ -1979,6 +1979,18 @@
 .hidden-17y4NU {
 	@extend %libraryTableSettingIconHidden !optional;
 }
+.installationPath-2PbaRC {
+	@extend %libraryInstallationPath !optional;
+}
+.background-yZEZik {
+	@extend %libraryUsageBackground !optional;
+}
+.foreground-2JnqVD {
+	@extend %libraryUsageForeground !optional;
+}
+.defaultIndicator-3WqGFB {
+	@extend %libraryDefaultIndicator !optional;
+}
 .playButton-2Hc0gE {
 	@extend %libraryPlayButton !optional;
 }
@@ -1987,45 +1999,6 @@
 }
 .buttonShine-p5V5TB {
 	@extend %libraryPlayButtonShine !optional;
-}
-.body-2xXalD {
-	@extend %giftInventoryBody !optional;
-}
-.divider-3LgWDL {
-	@extend %giftInventoryDivider !optional;
-}
-.codeRedemption-2CtsK6 {
-	@extend %giftInventoryCodeRedemption !optional;
-}
-.header-3YT7-d {
-	@extend %giftInventoryCodeRedemptionHeader !optional;
-}
-.inputPrompt-1vnYnD {
-	@extend %giftInventoryInputPrompt !optional;
-}
-.codeRedemptionInput-2ewYLZ {
-	@extend %giftInventoryCodeRedemptionInput !optional;
-}
-.input-2g-os5 {
-	@extend %giftInventoryInput !optional;
-}
-.root-3iawo2 {
-	@extend %giftInventoryRoot !optional;
-}
-.header-2HrZI4 {
-	@extend %giftInventoryRootHeader !optional;
-}
-.emptyState-20gB_x {
-	@extend %giftInventoryEmpty !optional;
-}
-.emptyStateImage-2eMp68 {
-	@extend %giftInventoryEmptyImage !optional;
-}
-.emptyStateHeader-1ADtcL {
-	@extend %giftInventoryEmptyHeader !optional;
-}
-.emptyStateSubtext-2njjqg {
-	@extend %giftInventoryEmptySubtext !optional;
 }
 .applicationStore-2nk7Lo {
 	@extend %applicationStore !optional;
@@ -2802,12 +2775,9 @@ pre {
 	@extend %inviteButton !optional;
 }
 .lookFilled-yCfaCM.colorGreen-3y-Z79 {
-	@extend %inviteButtonAccept !optional;
+	@extend %inviteButtonJoin !optional;
 }
-.lookOutlined-3sRXeN.colorPrimary-2AuQVo {
-	@extend %inviteButtonJoined !optional;
-}
-.lookFilled-yCfaCM.colorBrand-3pXr91 {
+.lookFilled-yCfaCM.colorBrand-I6CyqQ {
 	@extend %inviteButtonExpired !optional;
 }
 .wrapper-1FP9YQ {

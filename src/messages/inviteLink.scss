@@ -53,19 +53,13 @@
 	%inviteButton{
 		border-color: transparent;
 	}
-	%inviteButtonAccept {
+	%inviteButtonJoin {
 		background: transparent;
 		border: 1px solid cv("colors.success");
 		transition: all .3s ease-in-out;
 		&:hover {
 			background: cv("colors.success");
 		}
-	}
-	%inviteButtonJoined {
-		background: hsla(0, 0%, 100%, .1);
-		border-color: transparent;
-		opacity: .3;
-		cursor: default;
 	}
 	%inviteButtonExpired {
 		background: transparent;
