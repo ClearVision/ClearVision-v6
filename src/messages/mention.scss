@@ -14,22 +14,23 @@
 			background-color: $main-color;
 			color: #fff;
 		}
+		&%mentionedInteractive{
+			color: $main-color;
+			&:hover {
+				color: #fff;
+				text-decoration: none;
+			}
+		}
+		&%mentionIcon {
+			padding-left: 1.2rem;
+		}
 	}
 	strong {
 		> %mention {
 			font-weight: 600;
 		}
 	}
-	&%mentionedInteractive{
-		color: $main-color;
-		&:hover {
-			color: #fff;
-			text-decoration: none;
-		}
-	}
-	&%mentionIcon {
-		padding-left: 1.2rem;
-	}
+	
 }
 %mentioned {
 	background-color: hsla(0, 0%, 100%, .05);
