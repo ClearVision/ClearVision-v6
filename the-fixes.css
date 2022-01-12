@@ -27,8 +27,6 @@
 /* Search dropdown */
 .theme-dark .container-3ayLPN {background-color: rgba(0,0,0,0.8);}
 
-.streamPreview-3YL8OQ {background-color: var(--background-color);}
-.imageSelected-4Kl81J {border-color: var(--main-color);}
 
 /*Border hover and select on search options*/
 .tab-EiCZG6.selected-3gXBLQ, .tab-EiCZG6:hover {border-bottom: 2px solid var(--main-color) !important;}
