@@ -1,8 +1,6 @@
 /* MENTIONS */
-%headerBarTopic,
-%markup {
-	%mention,
-	%roleMention {
+%themeDark {
+	%mention {
 		padding: 0 4px;
 		border-radius: 5px;
 		line-height: 22px;
@@ -10,65 +8,37 @@
 		white-space: nowrap;
 		transition: all .15s ease-in-out;
 		cursor: pointer;
-	}
-	%mention {
 		background-color: hsla(0, 0%, 100%, .04);
 		color: hsla(0, 0%, 100%, .7);
 		&:hover {
 			background-color: $main-color;
 			color: #fff;
 		}
+		&%mentionedInteractive{
+			color: $main-color;
+			&:hover {
+				color: #fff;
+				text-decoration: none;
+			}
+		}
+		&%mentionIcon {
+			padding-left: 1.2rem;
+		}
 	}
 	strong {
-		> %mention,
-		> %roleMention {
+		> %mention {
 			font-weight: 600;
 		}
 	}
-}
-%mention {
-	&%mentionIcon {
-		padding-left: 1.2rem;
-	}
+	
 }
 %mentioned {
 	background-color: hsla(0, 0%, 100%, .05);
-	&%message {
-		&%messageSelected {
-			background-color: hsla(0, 0%, 100%, .08);
-		}
-	}
+	&%message%messageSelected,
 	%mouseModeFullMotion &:hover {
 		background-color: hsla(0, 0%, 100%, .08);
 	}
 	&::before {
 		background-color: $main-color;
 	}
-	%themeDark & {
-		%mention {
-			&%mentionedInteractive{
-				color: $main-color;
-				&:hover {
-					color: #fff;
-					text-decoration: none;
-				}
-			}
-		}
-	}
 } 
-//New server channel welcome message #link to another channel
-%mention {
-	color: var(--main-color);
-	&:hover {
-		background-color: var(--main-color);
-	}
-}
-
-%channelroles {
-	background-color: hsla(0, 0%, 100%, .04);
-	border-radius: 5px;
-	&:hover {
-		background-color: $hover-color;
-		color: #fff;
-	}
-}

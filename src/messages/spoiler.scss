@@ -26,11 +26,11 @@
 		transition: all .15s ease-in-out;
 	}
 	%spoilerImage,
-	%spoilerEmbed > %embedInner {
+	%spoilerEmbed > %embedGrid {
 		transition: all .15s ease-in-out;
 	}
 	%spoilerImageHidden,
-	%spoilerEmbedHidden > %embedInner {
+	%spoilerEmbedHidden > %embedGrid {
 		filter: blur(40px);
 	}
 	%spoilerEmbedHidden {
@@ -45,7 +45,7 @@
 			 filter: blur(30px);
 		}
 		%spoilerEmbedHidden {
-			> %embedInner {
+			> %embedGrid {
 				filter: blur(30px);
 			}
 		}

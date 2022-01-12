@@ -1,11 +1,12 @@
 {
   "name": "clearvision",
-  "version": "6.1.3",
+  "version": "6.2.0",
   "description": "Highly customizable theme for BetterDiscord.",
   "private": true,
   "scripts": {
-    "clean": "rimraf {test,public}",
-    "test": "sass --style=expanded --no-source-map hljs.scss:test/hljs.css main.scss:test/main.css",
+    "test": "npm run test.clean && npm run test.build",
+    "test.clean": "rimraf {test,public}",
+    "test.build": "sass --style=expanded --no-source-map hljs.scss:test/hljs.css main.scss:test/main.css",
     "build": "npm run build.sass && npm run build.prefix",
     "build.sass": "sass --style=expanded --no-source-map hljs.scss:public/hljs.css main.scss:public/main.css",
     "build.prefix": "postcss public/*.css --dir=public --use=autoprefixer  -b=\"> 5%\" --no-map"
@@ -15,16 +16,25 @@
     "url": "git+https://github.com/ClearVision/ClearVision-v6.git"
   },
   "author": "Zerthox",
+  "contributors": [
+    "untuned",
+    "Leozard",
+    "Mentalscars",
+    "nihaals",
+    "NyxIsBad",
+    "OmgDani",
+    "xcruxiex"
+  ],
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/ClearVision/ClearVision-v6/issues"
   },
   "homepage": "https://github.com/ClearVision/ClearVision-v6/README.md",
   "devDependencies": {
-    "autoprefixer": "^10.4.0",
+    "autoprefixer": "^10.4.2",
     "postcss-cli": "^9.1.0",
     "rimraf": "^3.0.2",
-    "sass": "^1.45.1"
+    "sass": "^1.47.0"
   },
   "dependencies": {}
 }
