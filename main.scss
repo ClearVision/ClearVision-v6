@@ -1,6 +1,6 @@
 $version: "6.2.1";
 
-/*! ClearVision v#{$version} by the ClearVision team */
+/* ### ClearVision v#{$version} by the ClearVision team ### */
 
 // SELECTORS
 @import "lib/selectors/selectorPlaceholders";
@@ -8,20 +8,21 @@ $version: "6.2.1";
 // DEFAULT SETTINGS
 @import "src/defaultSettings";
 
-// VARIABLES
-@import "src/variables";
-
 // FUNCTIONS
 @import "src/functions";
 
-// KEYFRAMES
-@import "src/keyframes";
+// VARIABLES
+@import "src/variables";
 
 // MIXINS
 @import "src/mixins";
 
+// KEYFRAMES
+@import "src/keyframes";
+
 // APP
 @import "src/app/app";
+
 @import "src/app/notice";
 @import "src/app/titlebar";
 
@@ -47,18 +48,20 @@ $version: "6.2.1";
 @import "src/bd/plugins/Finicalmist/copyCode";
 @import "src/bd/plugins/noodlebox/lineNumbers";
 
-// CHANNELS
-@import "src/channels/category";
+// CHANNEL
 @import "src/channels/channel";
+
+@import "src/channels/category";
 @import "src/channels/channelNotice";
 @import "src/channels/indicators";
 @import "src/channels/panels";
 @import "src/channels/privateChannels";
 
 // CHAT
+@import "src/chat/chat";
+
 @import "src/chat/bars";
 @import "src/chat/call";
-@import "src/chat/chat";
 @import "src/chat/divider";
 @import "src/chat/stageCall";
 @import "src/chat/textArea";
@@ -83,8 +86,9 @@ $version: "6.2.1";
 @import "src/guilds/guilds";
 
 // HEADER BAR
-@import "src/headerBar/breadcrumbs";
 @import "src/headerBar/headerBar";
+
+@import "src/headerBar/breadcrumbs";
 @import "src/headerBar/searchBars";
 @import "src/headerBar/toolbar";
 @import "src/headerBar/topPill";
@@ -96,9 +100,12 @@ $version: "6.2.1";
 
 // MEMBERS
 @import "src/members/members";
+
 @import "src/members/tags";
 
 // MESSAGES
+@import "src/messages/message";
+
 @import "src/messages/activityInvite";
 @import "src/messages/attachment";
 @import "src/messages/blocked";
@@ -108,15 +115,15 @@ $version: "6.2.1";
 @import "src/messages/inviteLink";
 @import "src/messages/mediaPlayer";
 @import "src/messages/mention";
-@import "src/messages/message";
 @import "src/messages/reaction";
 @import "src/messages/spoiler";
 @import "src/messages/textContainer";
 
 // MODALS
+@import "src/modals/modal";
+
 @import "src/modals/addServerModal";
 @import "src/modals/keyboardShortcuts";
-@import "src/modals/modal";
 @import "src/modals/otherModals";
 @import "src/modals/regionSelectorModal";
 @import "src/modals/screenshare";
@@ -130,6 +137,8 @@ $version: "6.2.1";
 @import "src/pages/serverprofile";
 
 // POPOUTS
+@import "src/popouts/popout";
+
 @import "src/popouts/autoCompletePopout";
 @import "src/popouts/connectionInfo";
 @import "src/popouts/contextMenu";
@@ -141,7 +150,6 @@ $version: "6.2.1";
 @import "src/popouts/messageOptions";
 @import "src/popouts/messagesPopout";
 @import "src/popouts/otherPopouts";
-@import "src/popouts/popout";
 @import "src/popouts/searchPopout";
 @import "src/popouts/statusPicker";
 @import "src/popouts/stickers";
