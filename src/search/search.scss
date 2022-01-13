@@ -12,7 +12,7 @@
 			color: hsla(0, 0%, 100%, .5);
 			opacity: 1;
 		}
-		> %searchTab {
+		> %tabBarItem {
 			position: relative;
 			padding: 10px;
 			margin: 10px 0 0;
@@ -20,7 +20,7 @@
 			color: hsla(0, 0%, 100%, .5);
 			opacity: 1;
 			transition: all .15s ease-in-out;
-			+ %searchTab {
+			+ %tabBarItem {
 				margin-left: 5px;
 			}
 			&:before {
@@ -66,45 +66,40 @@
 	}
 
 	// SEPARATOR
-	%searchChannelSeparator {
+	%searchChannelName {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: transparent;
+		color: $main-color;
+		text-shadow: 0 0 1px;
+		transition: all .15s ease-in-out;
 		&:before {
-			display: none;
-		}
-		> %searchChannelName {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			background-color: transparent;
-			color: $main-color;
-			text-shadow: 0 0 1px;
+			content: "";
+			height: 2px;
+			border: none;
+			flex-grow: 1;
 			transition: all .15s ease-in-out;
-			&:before {
-				content: "";
-				height: 2px;
-				border: none;
-				flex-grow: 1;
-				transition: all .15s ease-in-out;
-				opacity: .7;
-				margin-right: 5px;
-				background: linear-gradient(to left, $main-color 50%, transparent);
-			}
+			opacity: .7;
+			margin-right: 5px;
+			background: linear-gradient(to left, $main-color 50%, transparent);
+		}
+		&:after {
+			content: "";
+			height: 2px;
+			border: none;
+			flex-grow: 1;
+			transition: all .15s ease-in-out;
+			opacity: .7;
+			margin-left: 5px;
+			background: linear-gradient(to right, $main-color 50%, transparent);
+		}
+		&:hover {
+			text-shadow: 0 0 3px;
+			text-decoration: none;
+			&:before,
 			&:after {
-				content: "";
-				height: 2px;
-				border: none;
-				flex-grow: 1;
-				transition: all .15s ease-in-out;
-				opacity: .7;
-				margin-left: 5px;
-				background: linear-gradient(to right, $main-color 50%, transparent);
-			}
-			&:hover {
-				text-shadow: 0 0 3px;
-				text-decoration: none;
-				&:before,
-				&:after {
-					opacity: 1;
-				}
+				opacity: 1;
 			}
 		}
 	}
@@ -210,26 +205,6 @@
 		border-radius: 3px;
 		color: #fff;
 		text-shadow: 0 0 3px;
-	}
-
-	// PAGINATION
-	%searchPagination {
-		color: hsla(0, 0%, 100%, .5);
-		> %searchPaginationPrevious,
-		> %searchPaginationNext {
-			background-color: hsla(0, 0%, 100%, .1);
-			border: 1px solid transparent;
-			opacity: .7;
-			transition: all .15s ease-in-out;
-			&:hover {
-				background-color: $main-color;
-				opacity: 1;
-			}
-		}
-		> %searchPaginationDisabled {
-			opacity: .3;
-			pointer-events: none;
-		}
 	}
 }
 

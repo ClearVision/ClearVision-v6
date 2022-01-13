@@ -3206,24 +3206,6 @@ pre {
 .hintValue-1x-flY {
 	@extend %searchPopoutHintValue !optional;
 }
-.result-2S5Awv {
-	@extend %searchPopoutGame !optional;
-}
-.focused-1Yu0L3 {
-	@extend %searchPopoutGameFocused !optional;
-}
-.resultAssetContainer-Iffozm {
-	@extend %searchPopoutGameAssetContainer !optional;
-}
-.resultContent-1b6_y4 {
-	@extend %searchPopoutGameContent !optional;
-}
-.resultName-raPnaf {
-	@extend %searchPopoutGameName !optional;
-}
-.directorySearchPrice-3X8YHl {
-	@extend %searchPopoutGamePrice !optional;
-}
 .react-datepicker {
 	@extend %datepicker !optional;
 }
@@ -3419,22 +3401,13 @@ pre {
 .totalResults-2On644 {
 	@extend %searchTotalResults !optional;
 }
-.tab-2j5AEF {
-	@extend %searchTab !optional;
-}
-.selected-2LAck8 {
-	@extend %searchTabSelected !optional;
-}
 .resultsWrapper-hoiXCY {
 	@extend %searchResultsWrapper !optional;
 }
 .searchResults-2J8dju {
 	@extend %searchResults !optional;
 }
-.channelSeparator-1X1FuH {
-	@extend %searchChannelSeparator !optional;
-}
-.channelName-1QajIf {
+.channelName-3w2Y3c {
 	@extend %searchChannelName !optional;
 }
 .searchResult-O9NDji {
@@ -3466,18 +3439,6 @@ pre {
 }
 .highlight {
 	@extend %searchResultHighlight !optional;
-}
-.pagination-eQpqgk {
-	@extend %searchPagination !optional;
-}
-.paginationPrevious-4Yw0Tk {
-	@extend %searchPaginationPrevious !optional;
-}
-.paginationNext-3Tefao {
-	@extend %searchPaginationNext !optional;
-}
-.disabled-AFY2aL {
-	@extend %searchPaginationDisabled !optional;
 }
 .contentRegion-3HkfJJ {
 	@extend %settingsContentRegion !optional;

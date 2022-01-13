@@ -1,21 +1,9 @@
 /* SEARCH POPOUT */
-%popout {
-	&%popoutBottom%popoutNoArrow%popoutNoShadow {
-		%platformWin + div &[style*="top: 60px"],
-		%platformOSX &[style*="top: 38px"],
-		%platformLinux + div &[style*="top: 38px"],
-		%platformWeb + div &[style*="top: 38px"] {
-			left: auto !important;
-			right: 40px;
-			transform: none !important;
-		}
-	}
-	> %searchPopout {
-		background-color: rgba(0, 0, 0, .8);
-		box-shadow: 0 0 10px rgba(0, 0, 0, .5);
-		animation: cv-menu-fold-y .2s cubic-bezier(.2, .6, .5, 1.1) .1s backwards;
-		transform-origin: 50% 0;
-	}
+%searchPopout {
+	background-color: rgba(0, 0, 0, .8);
+	box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+	animation: cv-menu-fold-y .2s cubic-bezier(.2, .6, .5, 1.1) .1s backwards;
+	transform-origin: 50% 0;
 }
 %searchPopout {
 
@@ -48,7 +36,6 @@
 
 	// SEARCH OPTION
 	%searchPopoutOption {
-		background-color: transparent;
 		transition: all .15s ease-in-out;
 		&:after {
 			display: none;
@@ -58,7 +45,7 @@
 			color: #fff;
 			opacity: 0;
 			transition: all .15s ease-in-out;
-			&:hover {
+			%searchPopoutOption:hover & {
 				opacity: .7;
 			}
 		}
@@ -191,22 +178,6 @@
 				}
 			}
 		}
-	}
-
-	// STORE
-	%searchPopoutGame {
-		&:after {
-			background: hsla(0, 0%, 100%, .07);
-		}
-		&%searchPopoutGameFocused {
-			background: hsla(0, 0%, 100%, .1);
-		}
-	}
-	%searchPopoutGameName {
-		color: #fff;
-	}
-	%searchPopoutGamePrice {
-		color: hsla(0, 0%, 100%, .5);
 	}
 
 	// SEARCH DATEPICKER
