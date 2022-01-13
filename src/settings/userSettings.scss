@@ -95,10 +95,15 @@
 }
 .lookInverted-2mDUMi.colorBrand-I6CyqQ {
     color: white;
-    background-color: Var(--main-color);
+    background-color: $main-color;
   
     &:hover {
-      background-color: var(--main-color);
+      background-color: $hover-color;
+      color:white
+    }
+    &:active {
+        background-color: $main-color;
+        color: white;
     }
   }
 

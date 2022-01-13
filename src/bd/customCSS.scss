@@ -39,12 +39,14 @@
 	background-color: rgba(0, 0, 0, 0.3);
 	height: 14px !important;
 }
+
+//New 13/01/2022
 #bd-customcss-detach-container {
 	background-color: transparent;
 }
-.checkbox-1ycfTw {
-	.checkboxInner-1aRh1d {
-		.checkboxElement-uwAa9F {
+.checkbox-3kaeSU {
+	.checkboxInner-3yjcPe {
+		.checkboxElement-1qV33p {
 			&:checked {
 				& + span {
 					background-color: var(--main-color);
@@ -53,4 +55,7 @@
 			}
 		}
 	}
+}
+#bd-editor-controls {
+	background: var(--background-overlay);
 }
