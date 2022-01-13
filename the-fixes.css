@@ -51,9 +51,6 @@
 .searchResult-9tQ1uo:focus-within .jumpButton-JkYoYK, .searchResult-9tQ1uo:hover .jumpButton-JkYoYK {background-color: var(--backdrop-overlay);}
 .expanded-w_LCGl .searchResultMessage-1fxgXh.hit-1fVM9e{background-color: transparent;}
 
-/* Discord Store transparency */
-.scroller-1JpcIc {background-color:transparent;}
-
 /* Enable community words, e.g. learn latin, python */
 .guildDetails-2p1NmK {background-color: transparent;}
 
