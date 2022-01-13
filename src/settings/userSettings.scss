@@ -90,6 +90,17 @@
 		background-color: rgba(0,0,0,0.4);
 	}
 }
+%nitroHomePage {
+    background-color: transparent;
+}
+.lookInverted-2mDUMi.colorBrand-I6CyqQ {
+    color: white;
+    background-color: Var(--main-color);
+  
+    &:hover {
+      background-color: var(--main-color);
+    }
+  }
 
 // SUBSCRIPTIONS
 %themeDark {
@@ -164,9 +175,9 @@
 %videoBgOption {
     background-color: rgba(0, 0, 0, .7);
 }
-%videoBgOptionSelected {
+/* %videoBgOptionSelected {
     border: 2px solid $main-color;
-}
+} */
 %videoBgOptionInner {
     background-color: transparent;
 }
@@ -215,7 +226,7 @@
     }
     .lookLink-15mFoz.colorLink-1Md3RZ {
         color: $main-color;
-        &:hover .content-2a4AW9 {
+        &:hover .contents-3ca1mk {
             background-image: none;
             text-decoration: underline;
         }
