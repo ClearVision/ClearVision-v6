@@ -100,6 +100,9 @@
 }
 
 // SETTINGS
+%librarySettingsScroller {
+	background: transparent;
+}
 %themeDark {
 	%libraryInstallationPath {
 		box-shadow: 0 1px 0 0 hsla(0, 0%, 100%, .06);

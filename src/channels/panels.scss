@@ -36,7 +36,7 @@
 	> %buttonContents > svg {
 		@include bg($rep: no-repeat, $pos: center, $size: 18px);
 		color: #fff;
-		opacity: .3;
+		opacity: .5;
 		transition: all .1s ease-in-out;
 	}
 	&:hover {
