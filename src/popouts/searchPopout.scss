@@ -1,5 +1,5 @@
 /* SEARCH POPOUT */
-.theme-dark %searchPopout {
+%themeDark %searchPopout {
 	background-color: rgba(0, 0, 0, .8);
 	box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 	animation: cv-menu-fold-y .2s cubic-bezier(.2, .6, .5, 1.1) .1s backwards;
@@ -45,7 +45,9 @@
 			color: #fff;
 			opacity: 0;
 			transition: all .15s ease-in-out;
-			%searchPopoutOption:hover & {
+		}
+		&:hover {
+			%searchPopoutPlusIcon {
 				opacity: .7;
 			}
 		}

@@ -1,12 +1,12 @@
 /* SERVER SETTINGS */
 
 // SAVE CHANGES
-.theme-dark .elevationHigh-28Pty4 {
+%themeDark .elevationHigh-28Pty4 {
     background-color: hsla(0, 0%, 0%, .7) !important;
 }
 
 // OVERVIEW - server banner
-.theme-dark .bannerUpsellContainer-31E9J5 {
+%themeDark .bannerUpsellContainer-31E9J5 {
     background-color: transparent;
 }
 .avatarUploaderInnerSquareDisabled-e_U2MZ {
@@ -15,7 +15,7 @@
 
 
 // ROLES
-.theme-dark .colorPickerCustom-1swUKF {
+%themeDark .colorPickerCustom-1swUKF {
     background-color: hsla(0, 0%, 0%, .7)
 }
 .container-3EtAkD {
@@ -70,7 +70,7 @@
 }
 
 // EMOJI
-.theme-dark .emojiAliasInput-1y-NBz .emojiInput-1aLNse {
+%themeDark .emojiAliasInput-1y-NBz .emojiInput-1aLNse {
     background-color: hsla(0, 0%, 100%, .05);
     padding-bottom: 2.5px;
     padding-left: 8px;
@@ -212,7 +212,7 @@
 .searchBar-3joS_I {
     background-color: hsla(0,0%,0%,.4);
 }
-.theme-dark {
+%themeDark {
     .popoutList-10IFAa {
         background-color: hsla(0, 0%, 0%, .4);
         box-shadow: 0 0 0 1px hsla(0, 0%, 100%, .07);

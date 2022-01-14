@@ -1,4 +1,39 @@
-/* CHANNEL */
+/* CHANNELS */
+%channelsSidebar {
+	width: cv("channels-width");
+	background: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .3));
+	%platformWin & {
+		border-radius: 0;
+	}	
+}
+%channelsContainer {
+	background: transparent;
+
+	// CHANNELS HEADER
+	%channelsHeader {
+		height: 48px;
+		color: #fff;
+		font-family: cv("font.main");
+		font-weight: 600;
+		text-shadow: 0 0 3px #000;
+	}
+
+	// GUILD BANNER
+	%bannerAnimatedContainer {
+		background: transparent;
+		box-shadow: none;
+	}
+	%bannerImage {
+		width: cv("channels-width");
+		-webkit-mask: linear-gradient(to bottom, #000, transparent);
+		mask: linear-gradient(to bottom, #000, transparent);
+	}
+	%threadChannelConnector {
+		color: $main-color;
+	}
+}
+
+// CHANNEL CONTENT
 %channelContent {
 	transition: all .15s ease-in-out;
 }
@@ -319,37 +354,3 @@
 	}
 }
 
-// CHANNEL LIST
-%channelsSidebar {
-	width: cv("channels-width");
-	background: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .3));
-	%platformWin & {
-		border-radius: 0;
-	}	
-}
-%channelsContainer {
-	background: transparent;
-
-	// CHANNELS HEADER
-	%channelsHeader {
-		height: 48px;
-		color: #fff;
-		font-family: cv("font.main");
-		font-weight: 600;
-		text-shadow: 0 0 3px #000;
-	}
-
-	// GUILD BANNER
-	%bannerAnimatedContainer {
-		background: transparent;
-		box-shadow: none;
-	}
-	%bannerImage {
-		width: cv("channels-width");
-		-webkit-mask: linear-gradient(to bottom, #000, transparent);
-		mask: linear-gradient(to bottom, #000, transparent);
-	}
-	%threadChannelConnector {
-		color: $main-color;
-	}
-}
