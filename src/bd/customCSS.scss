@@ -44,18 +44,6 @@
 #bd-customcss-detach-container {
 	background-color: transparent;
 }
-.checkbox-3kaeSU {
-	.checkboxInner-3yjcPe {
-		.checkboxElement-1qV33p {
-			&:checked {
-				& + span {
-					background-color: var(--main-color);
-					border-color: var(--main-color);
-				}
-			}
-		}
-	}
-}
 #bd-editor-controls {
 	background: var(--background-overlay);
 }

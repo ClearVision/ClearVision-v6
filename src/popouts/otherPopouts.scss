@@ -37,6 +37,10 @@
 	.previewContainer-21fFBz {
 		background-color: transparent;
 	}
+	.watchButton-2v6cPT:not([disabled]):hover {
+		border-color: $main-color;
+		background-color: $hover-color;
+	}
 }
 .overflow-3zpvTV {
 	background-color: var(--main-color);

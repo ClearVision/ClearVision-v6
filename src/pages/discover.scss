@@ -114,3 +114,17 @@
 %discoverEmptyResults {
 	background-color: hsla(0, 0%, 0%, .6);
 }
+
+//Student Hubs
+%studentHubsPage {
+	background-color: transparent;
+}
+%joinHubContainer {
+	background-color: rgba(0,0,0,0.6);
+}
+.sidebarContainer-gUKhtL {
+	background-color: var(--backdrop-overlay);
+}
+%studentHubsIcon {
+	background-color: $main-color;
+}

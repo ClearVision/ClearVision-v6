@@ -60,6 +60,12 @@
 }
 .bd-toast {
 	background-color: $main-color;
+	&.toast-info {
+		background-color: $main-color;
+	}
+	&.toast-success {
+		background-color: $main-color;
+	}
 }
 .bd-link {
 	color: var(--url-color);
