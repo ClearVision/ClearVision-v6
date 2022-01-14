@@ -19,3 +19,12 @@
 		}
 	}
 }
+
+// TAB SELECT INDICATOR
+.ring-370dIp[style*="var(--focus-primary)"] {
+	box-shadow: inset 0px 0px 5px 5px var(--main-color) !important;
+  }
+  .keyboard-mode .focusStroke-3V8pid {
+  fill: var(--main-color);
+  stroke: var(--main-color);
+}
