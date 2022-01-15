@@ -704,6 +704,18 @@
 .wrapper-3HVHpV, .wrapper-15CKyy {
 	@extend %chatLoadingWrapper !optional;
 }
+.uploadModalIn-2w48Zf  {
+	@extend %uploadModalIn !optional;
+}
+.uploadDropModal-13Kd20 {
+	@extend %uploadDropModal !optional;
+}
+.bgScale-1iWuPF {
+	@extend %uploadDropModalBgScale !optional;
+}
+.inner-rBP-MS {
+	@extend %uploadDropModalInner !optional;
+}
 .divider-2rZFJK {
 	@extend %divider !optional;
 }
