@@ -50,6 +50,11 @@
 	%flowerStarIcon {
 		color: #fff;
 	}
+	%flowerStarChild {
+		>svg {
+			color: #fff;
+		}
+	}
 }
 
 %gameVerifiedIcon > svg > path {

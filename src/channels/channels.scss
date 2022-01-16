@@ -31,6 +31,16 @@
 	%threadChannelConnector {
 		color: $main-color;
 	}
+
+	// GUILD BADGE
+	&:not(%bannerVisible) {
+		%flowerStarContainer {
+			color: #fff;
+		}
+		%flowerStarChild>svg {
+			color: $main-color;
+		}
+	}
 }
 
 // CHANNEL CONTENT
