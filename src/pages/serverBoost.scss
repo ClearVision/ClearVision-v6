@@ -56,10 +56,10 @@
     %serverBoostProgressBarMarkerIndicator {
         background-image: none;
 	    box-shadow: 0 0 2px 2px var(--main-color);
-        &:after {
-            background-color: transparent;
-        }
     }
+}
+%serverBoostProgressBarMarkerIndicator:after {
+    display: none;
 }
 %serverBoostProgressBarMarkerNumSubReq {
 	color: #fff
@@ -69,7 +69,6 @@
 	background-image: none;
 	background-color: var(--main-color);
 }
-
 %serverBoostPlanCard {
     background-color: rgba(0, 0, 0, .4);
 }

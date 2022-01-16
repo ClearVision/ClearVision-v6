@@ -33,7 +33,7 @@
 	}
 
 	// GUILD BADGE
-	&:not(%bannerVisible) {
+	%channelsHeaderContainer:not(%bannerVisible) {
 		%flowerStarContainer {
 			color: #fff;
 		}
