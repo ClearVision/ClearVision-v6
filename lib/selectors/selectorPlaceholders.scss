@@ -1019,7 +1019,7 @@
 .colorPrimary-2AuQVo {
 	@extend %buttonPrimary !optional;
 }
-.colorWhite-rEQuAQ {
+.colorWhite-1H92hK{
 	@extend %buttonWhite !optional;
 }
 .colorGreen-3y-Z79 {
@@ -1046,7 +1046,7 @@
 .lookFilled-yCfaCM.colorPrimary-2AuQVo {
 	@extend %buttonFilledPrimary !optional;
 }
-.lookFilled-yCfaCM.colorWhite-rEQuAQ {
+.lookFilled-yCfaCM.colorWhite-1H92hK{
 	@extend %buttonFilledWhite !optional;
 }
 .lookFilled-yCfaCM.colorGreen-3y-Z79 {
@@ -1064,7 +1064,7 @@
 .lookOutlined-3yKVGo.colorPrimary-2AuQVo {
 	@extend %buttonOutlinedPrimary !optional;
 }
-.lookOutlined-3yKVGo.colorWhite-rEQuAQ {
+.lookOutlined-3yKVGo.colorWhite-1H92hK{
 	@extend %buttonOutlinedWhite !optional;
 }
 .lookOutlined-3yKVGo.colorGreen-3y-Z79 {
@@ -1082,7 +1082,7 @@
 .lookInverted-2mDUMi.colorPrimary-2AuQVo {
 	@extend %buttonInvertedPrimary !optional;
 }
-.lookInverted-2mDUMi.colorWhite-rEQuAQ {
+.lookInverted-2mDUMi.colorWhite-1H92hK{
 	@extend %buttonInvertedWhite !optional;
 }
 .lookInverted-2mDUMi.colorGreen-3y-Z79 {
@@ -1100,7 +1100,7 @@
 .lookLink-15mFoz.colorPrimary-2AuQVo {
 	@extend %buttonLinkPrimary !optional;
 }
-.lookLink-15mFoz.colorWhite-rEQuAQ {
+.lookLink-15mFoz.colorWhite-1H92hK{
 	@extend %buttonLinkWhite !optional;
 }
 .lookLink-15mFoz.colorGreen-3y-Z79 {
@@ -2762,6 +2762,9 @@ pre {
 .guildList-3GXKvP {
 	@extend %discoverGuildList !optional;
 }
+.loading-3ozbwt {
+	@extend %discoverGuildCardLoading !optional;
+}
 .loaded-igpmmx {
 	@extend %discoverGuildCardLoaded !optional;
 }
@@ -2827,6 +2830,9 @@ pre {
 }
 .container-1wv6C6 {
 	@extend %joinHubContainer !optional;
+}
+.sidebarContainer-gUKhtL {
+	@extend %studentHubsSidebarContainer !optional;
 }
 .iconContainer-3LclNk {
 	@extend %studentHubsIcon !optional;
