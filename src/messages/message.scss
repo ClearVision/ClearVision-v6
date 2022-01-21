@@ -167,3 +167,12 @@
 		background-color: var(--main-color);
 	}
 }
+
+// BEGINNING DM WAVE
+%waveButton, %waveButtonDisabled {
+	background-color: $main-color;
+}
+
+%waveButton:hover {
+	background-color: $hover-color;
+}
