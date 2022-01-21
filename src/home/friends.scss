@@ -16,7 +16,6 @@
 	}	
 }
 
-
 %friendActivity {
 	color: hsla(0, 0%, 100%, .5);
 	strong {
@@ -52,18 +51,17 @@
 	}
 }
 
-
 // ADD FRIENDS BUTTON
-%tabBarItem[aria-controls="ADD_FRIEND-tab"][aria-selected="false"] {
+%tabBarItem[aria-controls="add_friend-tab"][aria-selected="false"] {
 	background-color: cv("colors.success") !important;
 	color: #fff !important;
 }
-%tabBarItem[aria-controls="ADD_FRIEND-tab"][aria-selected="true"] {
+%tabBarItem[aria-controls="add_friend-tab"][aria-selected="true"] {
 	background-color: transparent !important;
 	color: cv("colors.success") !important;
 	box-shadow: 0 0 0 1px var(--success-color) inset;
 }
-%tabBarItem[aria-controls="ADD_FRIEND-tab"][aria-selected="true"]:before {
+%tabBarItem[aria-controls="add_friend-tab"][aria-selected="true"]:before {
 	content: "";
 	position: absolute;
 	background-color: var(--success-color);
@@ -80,6 +78,14 @@
 	border: none;
 	&:focus-within {
 		box-shadow: 0 0 2px 2px var(--main-color);
+	}
+	%input {
+		background-color: transparent;
+		box-shadow: none;
+		&:focus,
+		&%inputFocused {
+			box-shadow: none;
+		}
 	}
 }
 %friendsAddFriendInput {

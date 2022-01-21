@@ -581,12 +581,6 @@
 .searchBarComponent-3N7dCG {
 	@extend %privateChannelsSearchBarComponent !optional;
 }
-.inner-1NoIT5 {
-	@extend %privateChannelsSearchBarInner !optional;
-}
-.input-2FSSDe {
-	@extend %privateChannelsSearchBarInput !optional;
-}
 .newMessagesBar-1hF-9G {
 	@extend %newMessagesBar !optional;
 }
@@ -1007,7 +1001,7 @@
 .lookFilled-yCfaCM {
 	@extend %buttonFilled !optional;
 }
-.lookOutlined-3sRXeN {
+.lookOutlined-3yKVGo {
 	@extend %buttonOutlined !optional;
 }
 .lookInverted-2mDUMi {
@@ -1067,19 +1061,19 @@
 .lookOutlined-3yKVGo.colorBrand-I6CyqQ {
 	@extend %buttonOutlinedBrand !optional;
 }
-.lookOutlined-3sRXeN.colorPrimary-2AuQVo {
+.lookOutlined-3yKVGo.colorPrimary-2AuQVo {
 	@extend %buttonOutlinedPrimary !optional;
 }
-.lookOutlined-3sRXeN.colorWhite-rEQuAQ {
+.lookOutlined-3yKVGo.colorWhite-rEQuAQ {
 	@extend %buttonOutlinedWhite !optional;
 }
-.lookOutlined-3sRXeN.colorGreen-3y-Z79 {
+.lookOutlined-3yKVGo.colorGreen-3y-Z79 {
 	@extend %buttonOutlinedGreen !optional;
 }
 .lookOutlined-3yKVGo.colorRed-rQXKgM {
 	@extend %buttonOutlinedRed !optional;
 }
-.lookOutlined-3sRXeN.colorGrey-2DXtkV {
+.lookOutlined-3yKVGo.colorGrey-2DXtkV {
 	@extend %buttonOutlinedGrey !optional;
 }
 .lookInverted-2mDUMi.colorBrand-I6CyqQ {
@@ -3491,11 +3485,14 @@ pre {
 .keybind-13vtq8 {
 	@extend %settingsCloseButtonKeybind !optional;
 }
-.userSettingsAccount-2eMFVR {
-	@extend %settingsUserAccount !optional;
+.avatarUploaderInner-yEhTv5 {
+	@extend %settingsAvatarUploaderInner !optional;
 }
-.userSettingsSecurity-3C5Hg5 {
-	@extend %settingsUserAccountSecurity !optional;
+.avatarUploaderIcon-3-5PWB {
+	@extend %settingsAvatarUploaderIcon !optional;
+}
+.card-16VQ8C {
+	@extend %settingsCard !optional;
 }
 .standardSidebarView-E9Pc3j {
 	@extend %standardSidebarView !optional;

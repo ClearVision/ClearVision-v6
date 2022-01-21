@@ -121,13 +121,6 @@
 %privateChannelsSearchBar {
 	%privateChannelsSearchBarComponent {
 		background: hsla(0, 0%, 100%, .1);
-	}
-	%privateChannelsSearchBarInner {
-		padding: 0 1px;
-		> %privateChannelsSearchBarInput {
-			&::placeholder{
-				color: hsla(0, 0%, 100%, .3);
-			}
-		}
+		color: hsla(0, 0%, 100%, .3);
 	}
 }

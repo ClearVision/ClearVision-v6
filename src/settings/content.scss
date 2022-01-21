@@ -29,10 +29,10 @@
 }
 
 // AVATAR UPLOADER
-.avatarUploaderInner-p38nm2 {
+%settingsAvatarUploaderInner {
 	background-color: hsla(0, 0%, 100%, .05);
 }
-%themeDark .avatarUploaderIcon-3-5PWB {
+%themeDark %settingsAvatarUploaderIcon {
 	background-color: var(--main-color);
 	background-image: none;
 	&:after {
@@ -52,19 +52,7 @@
 
 // ITEM CARDS
 %themeDark {
-	.card-2ART2V:before {
-		background-color: hsla(0, 0%, 0%, .4);
-		border: hsla(0, 0%, 100%, .07);
-	}
-    .button-1yVL_7 {
-		background-color: hsla(0, 0%, 0%, .4);
-		border: hsla(0, 0%, 100%, .07);
-		&:hover {
-			background-color: hsla(0, 0%, 0%, .7);
-			border: hsla(0, 0%, 100%, .07);
-		}
-	}
-	.card-16VQ8C  {
+	%settingsCard {
 		background-color: rgba(0, 0, 0, .4);
 		border-color: hsla(0, 0%, 100%, .07);
 		a {
@@ -72,6 +60,7 @@
 		}
 	}
 }
+
 // New webkit pulse
 .pulse-3KGsIm {
 	animation:none;
