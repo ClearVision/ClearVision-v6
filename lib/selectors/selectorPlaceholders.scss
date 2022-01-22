@@ -182,6 +182,12 @@
 .emote-menu-inner {
 	@extend %bdEmoteMenuInner !optional;
 }
+.bd-emote-header {
+	@extend %bdEmoteMenuHeader !optional;
+}
+.bd-emote-item {
+	@extend %bdEmoteItem !optional;
+}
 .emote-container {
 	@extend %bdEmoteContainer !optional;
 }
@@ -758,49 +764,49 @@
 .clear-3102V9 {
 	@extend %gifPickerSearchIconClear !optional;
 }
-.backButton-3D5utk {
+.backButton-bSKWLe {
 	@extend %gifPickerSearchBackButton !optional;
 }
 .searchHeader-3w5h-0 {
 	@extend %gifPickerSearchHeader !optional;
 }
-.content-1CboaJ {
+.content-A8TzKf {
 	@extend %gifPickerContent !optional;
 }
-.container-2Qb0ED {
+.container-3eG4QA {
 	@extend %gifPickerContainer !optional;
 }
-.categoryFade-2EGqIh {
+.categoryFade-3RRG67 {
 	@extend %gifPickerCategoryFade !optional;
 }
-.categoryFadeBlurple-1HuV1x {
+.categoryFadeBlurple-1l49_Q {
 	@extend %gifPickerCategoryFadeBlurple !optional;
 }
-.categoryText-2i9GtE {
+.categoryText-3B1jLN {
 	@extend %gifPickerCategoryText !optional;
 }
-.categoryIcon-WcHLuT {
+.categoryIcon-3zvsg2 {
 	@extend %gifPickerCategoryIcon !optional;
 }
-.categoryName-1iPNc5 {
+.categoryName-26b0Ij {
 	@extend %gifPickerCategoryName !optional;
 }
-.results-3OoWM- {
+.results-2CQlZp {
 	@extend %gifPickerResults !optional;
 }
-.result-3OpoO7 {
+.result-pzZrwj {
 	@extend %gifPickerResult !optional;
 }
 .focused-q9B2e4 {
 	@extend %gifPickerResultFocused !optional;
 }
-.favButton-LMagkH {
+.favButton-2Bi3Ff {
 	@extend %gifPickerFavButton !optional;
 }
 .icon-1m_PLf {
 	@extend %gifPickerFavButtonIcon !optional;
 }
-.gif-1EWTs- {
+.gif-2kTiNB {
 	@extend %gifPickerGif !optional;
 }
 .emptyHints-1KtTYR {

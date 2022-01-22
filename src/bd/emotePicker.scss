@@ -34,3 +34,12 @@
 		background-color: hsla(0, 0%, 100%, .07);
 	}
 }
+
+// 22/01/2022
+%bdEmoteMenuHeader {
+	background: transparent;
+}
+%bdEmoteItem:hover {
+	background: $hover-color;
+	cursor: pointer;
+}
