@@ -1,10 +1,5 @@
 /* SERVER SETTINGS */
 
-// SAVE CHANGES
-%themeDark .elevationHigh-28Pty4 {
-    background-color: hsla(0, 0%, 0%, .7) !important;
-}
-
 // OVERVIEW - server banner
 %themeDark .bannerUpsellContainer-31E9J5 {
     background-color: transparent;
@@ -90,24 +85,24 @@
 
 // AUDIT LOG
 %themeDark {
-    .auditLog-3jNbM6 {
+    .auditLog-1NVAY0 {
         border-color: hsla(0, 0%, 100%, .07);
-        .headerClickable-2IVFo9,
-        .headerDefault-1wrJcN {
-            background-color: hsla(0, 0%, 0%, .4);
-        }
-        .headerExpanded-CUEwZ5,
-        .divider-1pnAR2,
-        .changeDetails-bk98pu {
-            background-color: hsla(0, 0%, 0%, .7);
-        }
+    }
+    .headerClickable-zGQJz3,
+    .headerDefault-1e6yjj {
+        background-color: hsla(0, 0%, 0%, .4);
+    }
+    .headerExpanded-1-zwDr,
+    .divider-M3saWq,
+    .changeDetails-1kMZqI {
+        background-color: hsla(0, 0%, 0%, .7);
     }
 }
 .selectedBrand-1AtwYE {
     background-color: $main-color;
 } 
 
-// Server Template
+// SERVER TEMPLATE
 .descriptionBox-SKGNgB {
     background-color: hsla(0, 0%, 0%, .4);
 }
@@ -193,7 +188,6 @@
         background-color: transparent;
     }
 }
-
 
 // SERVER BOOST STATUS
 %themeDark {

@@ -1016,6 +1016,9 @@
 .lookLink-15mFoz {
 	@extend %buttonLink !optional;
 }
+.lookBlank-21BCro {
+	@extend %buttonBlank !optional;
+}
 .colorBrand-3pXr91 {
 	@extend %buttonBrand !optional;
 }
@@ -1117,6 +1120,9 @@
 }
 .lookLink-15mFoz.colorGrey-2DXtkV {
 	@extend %buttonLinkGrey !optional;
+}
+.lookBlank-21BCro.colorBrand-I6CyqQ {
+	@extend %buttonBlankBrand !optional;
 }
 .button-1_oXub {
 	@extend %buttonCircle !optional;

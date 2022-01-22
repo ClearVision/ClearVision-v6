@@ -24,8 +24,13 @@
 		}
 	}
 	%settingsCloseButtonKeybind {
-	color: hsla(0, 0%, 100%, .6);
+		color: hsla(0, 0%, 100%, .6);
 	}
+}
+
+// SAVE CHANGES
+%themeDark .elevationHigh-28Pty4 {
+    background-color: hsla(0, 0%, 0%, .7) !important;
 }
 
 // AVATAR UPLOADER
@@ -69,7 +74,7 @@
 // WARNING SHAKE
 %shakeable[style*="transform"] {
 	transform:none !important;
-	%bg{
+	%bg {
 		animation: cv-shake .5s ease-in;
 	}
 }

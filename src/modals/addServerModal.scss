@@ -13,6 +13,13 @@
 	color: $main-color;
 	font-weight: 500;
 }
+.backButton-2Ps-B8 {
+	color: hsla(0, 0%, 100%, .7);
+	&:hover {
+		color: #fff;
+		text-decoration: underline;
+	}
+}
 
 // SERVER TEMPLATES
 .container-x8Y1ix {
