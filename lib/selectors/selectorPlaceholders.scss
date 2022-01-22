@@ -4046,3 +4046,15 @@ pre {
 .compactButtonDisabled-MwB2d6 {
 	@extend %waveButtonDisabled !optional;
 }
+.option-1O-Hwt {
+	@extend %serverDeleteReasonOption !optional;
+}
+.checkbox-1ycfTw {
+	@extend %deleteServerCheckbox !optional;
+}
+.checkboxInner-1aRh1d {
+	@extend %deleteServerCheckboxInner !optional;
+}
+.checkboxElement-uwAa9F {
+	@extend %deleteServerCheckboxElement !optional;
+}

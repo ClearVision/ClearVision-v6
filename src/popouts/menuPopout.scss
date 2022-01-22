@@ -59,3 +59,24 @@
 		color: $main-color;
 	}
 }
+
+// HELP US UNDERSTAND WHY YOU'RE DELETING THIS SERVER
+%serverDeleteReasonOption {
+	color: #fff;
+	background: var(--main-color);
+	border-bottom: 1px solid hsla(0, 0%, 100%, .08);
+	transition: all .15s ease-in-out;
+	&:hover {
+		background: var(--hover-color);
+	}
+}
+%deleteServerCheckbox {
+	%deleteServerCheckboxInner {
+		%deleteServerCheckboxElement {
+			&:checked+span {
+				background-color: var(--main-color);
+				border-color: var(--main-color);
+			}
+		}
+	}
+}
