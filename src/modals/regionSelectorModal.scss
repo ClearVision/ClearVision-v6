@@ -1,22 +1,19 @@
 /* Region Selector */
 
-.regionSelectModal-12e-57 {
-	background-color: rgba(0,0,0,0.5) !important;
+.theme-dark .regionSelectPopout-3sEzVB {
+	background-color: rgba(0,0,0,0.5);
 	
-	.regionSelectModalHeader-21khC1 {
-	    color: var(--header-primary);
-	}
-	
-	.regionSelectModalOption-2DSIZ3 {
+	.quickSelectPopoutOption-2E2UmS {
         background-color: transparent;
         border: none;
-        box-shadow: 0 0 0 2px rgba(255,255,255,0.07);
+        //box-shadow: 0 0 0 2px rgba(255,255,255,0.07);
         
         &:hover {
-            box-shadow: 0 0 2px 2px var(--main-color);
+            box-shadow: 0 0 2px 2px $hover-color;
+            background-color: $hover-color;
         }
         
-        .regionSelectName-2-2FWh {
+        .regionSelectName-1Tj9C9 {
             color: #fff;
         }
     }
