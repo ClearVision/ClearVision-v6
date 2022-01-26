@@ -3836,6 +3836,12 @@ pre {
 .section-3G9aLW {
 	@extend %activeNowCardSection !optional;
 }
+.emptyCard-KDifrB {
+	@extend %emptyActiveNowCard !optional;
+}
+.emptyText-29ycwI {
+	@extend %emptyActiveNowText !optional;
+}
 .button-1zW0-r {
 	@extend %quickReactButton !optional;
 }
