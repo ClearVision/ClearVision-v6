@@ -61,6 +61,10 @@
 	&:disabled {
 		background: hsla(0, 0%, 100%, .3);
 	}
+	&:active {
+        background: hsla(0, 0%, 100%, .95);
+		color: $hover-color;
+    }
 }
 
 // BUTTON OUTLINED

@@ -33,12 +33,12 @@
 	}
 
 	// GUILD BADGE
-	%channelsHeaderContainer:not(%bannerVisible) {
+	%channelsHeaderContainer {
 		%flowerStarContainer {
-			color: #fff;
+			color: $main-color;
 		}
 		%flowerStarChild>svg {
-			color: $main-color;
+			color: #fff;
 		}
 	}
 }

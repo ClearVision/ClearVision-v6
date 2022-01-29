@@ -881,7 +881,7 @@
 .stackedAttachedBar-u4gXN8 {
 	@extend %channelTextAreaStackedAttachedBar !optional;
 }
-.upload-3GTSF9 {
+.upload-vLbqu- {
 	@extend %channelTextAreaUpload !optional;
 }
 .operations-3q3u6E {
@@ -3512,6 +3512,18 @@ pre {
 .card-16VQ8C {
 	@extend %settingsCard !optional;
 }
+.card-2ART2V {
+	@extend %settingsLongCard !optional;
+}
+.button-1yVL_7 {
+	@extend %settingsLongCardButton !optional;
+}
+.colorPickerCustom-1swUKF {
+	@extend %settingsColorPickerCustom !optional;
+}
+.container-20TyK0 {
+	@extend %settingsNoticeContainer !optional;
+}
 .standardSidebarView-E9Pc3j {
 	@extend %standardSidebarView !optional;
 }
@@ -4075,4 +4087,13 @@ pre {
 }
 .checkboxElement-uwAa9F {
 	@extend %deleteServerCheckboxElement !optional;
+}
+.streamPreview-I7itZ6 {
+	@extend %streamPopoutPreview !optional;
+}
+.previewContainer-35LFgt {
+	@extend %streamPopoutPreviewContainer !optional;
+}
+.watchButton-2YRKxv {
+	@extend %streamPopoutWatchButton !optional;
 }

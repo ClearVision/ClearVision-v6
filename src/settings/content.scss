@@ -28,9 +28,9 @@
 	}
 }
 
-// SAVE CHANGES
-%themeDark .elevationHigh-28Pty4 {
-    background-color: hsla(0, 0%, 0%, .7) !important;
+// UNSAVED CHANGES
+%settingsNoticeContainer {
+    background-color: hsla(0, 0%, 0%, .8) !important;
 }
 
 // AVATAR UPLOADER
@@ -65,10 +65,26 @@
 		}
 	}
 }
+%settingsLongCard:before {
+	background-color: rgba(0, 0, 0, .4);
+	border-color: hsla(0, 0%, 100%, .07);
+}
+%themeDark {
+	%settingsLongCardButton {
+		background-color: rgba(0, 0, 0, .4);
+		border-color: hsla(0, 0%, 100%, .07);
+		&:hover {
+			background-color: hsla(0, 0%, 0%, .7);
+			border: hsla(0, 0%, 100%, .07);
+		}
+	}
+}
 
-// New webkit pulse
-.pulse-3KGsIm {
-	animation:none;
+// COLOR PICKER
+%themeDark %settingsColorPickerCustom	 {
+    background-color: hsla(0, 0%, 0%, .8);
+    border-color: transparent;
+    border-radius: 5px;
 }
 
 // WARNING SHAKE

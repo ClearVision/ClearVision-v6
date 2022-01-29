@@ -102,19 +102,6 @@
 %nitroHomePage {
     background-color: transparent;
 }
-.lookInverted-2mDUMi.colorBrand-I6CyqQ {
-    color: white;
-    background-color: $main-color;
-  
-    &:hover {
-      background-color: $hover-color !important;
-      color:white;
-    }
-    &:active {
-        background-color: $main-color;
-        color: white;
-    }
-  }
 
 // SUBSCRIPTIONS
 %themeDark {
