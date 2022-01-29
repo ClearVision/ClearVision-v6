@@ -31,6 +31,9 @@
 }
 %embedContainer %buttonFilledGreen {
 	background-color: cv("colors.success");
+	&:hover {
+		background-color: hsl(139,calc(var(--saturation-factor, 1)*47.1%),33.3%)
+	}
 }
 %buttonFilledWhite {
 	background: hsla(0, 0%, 100%, .1);
