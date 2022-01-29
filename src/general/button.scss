@@ -8,6 +8,7 @@
 %appMount {
 	%buttonFilledGrey,
 	%buttonFilledBrand,
+	%buttonFilledGreen,
 	%buttonFilledBrandNew,
 	%buttonFilledBrandNew2,
 	%buttonFilledPrimary {
@@ -28,7 +29,7 @@
 %buttonFilledRed {
 	background-color: cv("colors.danger");
 }
-%buttonFilledGreen {
+%embedContainer %buttonFilledGreen {
 	background-color: cv("colors.success");
 }
 %buttonFilledWhite {
