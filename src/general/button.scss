@@ -6,7 +6,6 @@
 
 // BUTTON FILLED
 %appMount {
-	%buttonFilledGreen,
 	%buttonFilledGrey,
 	%buttonFilledBrand,
 	%buttonFilledBrandNew,
@@ -28,6 +27,9 @@
 }
 %buttonFilledRed {
 	background-color: cv("colors.danger");
+}
+%buttonFilledGreen {
+	background-color: cv("colors.success");
 }
 %buttonFilledWhite {
 	background: hsla(0, 0%, 100%, .1);
