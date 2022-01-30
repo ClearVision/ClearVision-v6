@@ -6,23 +6,28 @@
 		color: hsla(0, 0%, 100%, .7);
 		transition: all .15s ease-in-out;		
 		&%menuPopoutItemHover {
-			background-color: var(--hover-color);
+			background-color: $hover-color;
 			color: #fff;
 			%menuPopoutCheckbox,
 			%menuPopoutRadio {
 				color: #fff;
 			}
 			%menuPopoutCheck {
-				color: var(--main-color);
+				color: $main-color;
 			}
+		}
+		&%menuPopoutSelected:active {
+			background-color: $hover-color;
+			color: #fff;
+			border-color: $hover-color;
 		}
 		%menuPopoutCheckbox,
 		%menuPopoutRadio {
-			color: var(--main-color);
+			color: $main-color;
 		}
 	}
 	 %menuPopoutItemInvite {
-	    color: var(--main-color);
+	    color: $main-color;
 	}
 	%menuPopoutItemLeave {
 	    color: var(--danger-color);
@@ -45,7 +50,7 @@
 		background-color: transparent;
 	}
 	&%quickReactButtonFocused {
-		box-shadow: 0 0 2px 2px var(--hover-color);
+		box-shadow: 0 0 2px 2px $hover-color;
 	}
 }
 .premiumUpsell-2K2V_c {
@@ -66,19 +71,19 @@
 // HELP US UNDERSTAND WHY YOU'RE DELETING THIS SERVER
 %serverDeleteReasonOption {
 	color: #fff;
-	background: var(--main-color);
+	background: $main-color;
 	border-bottom: 1px solid hsla(0, 0%, 100%, .08);
 	transition: all .15s ease-in-out;
 	&:hover {
-		background: var(--hover-color);
+		background: $hover-color;
 	}
 }
 %deleteServerCheckbox {
 	%deleteServerCheckboxInner {
 		%deleteServerCheckboxElement {
 			&:checked+span {
-				background-color: var(--main-color);
-				border-color: var(--main-color);
+				background-color: $main-color;
+				border-color: $main-color;
 			}
 		}
 	}
