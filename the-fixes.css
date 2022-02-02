@@ -36,9 +36,6 @@
 /* Enable community words, e.g. learn latin, python */
 .guildDetails-2p1NmK {background-color: transparent;}
 
-/* Fixed menu selection color when dragging server drop-down */
-.colorDefault-2K3EoJ:active:not(.hideInteraction-1iHO1O) {background-color: var(--hover-color);}
-
 /* Enable discover icons and cards */
 .theme-dark .card-3_CqkU, .theme-dark .iconMask-30Tvqs, .perkArt-1SGWbA {background-color: var(--background-overlay);}
 

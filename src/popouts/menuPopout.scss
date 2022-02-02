@@ -16,7 +16,7 @@
 				color: $main-color;
 			}
 		}
-		&%menuPopoutSelected:active {
+		&%menuPopoutSelected:active:not(%menuPopoutHideInteraction) {
 			background-color: $hover-color;
 			color: #fff;
 			border-color: $hover-color;
