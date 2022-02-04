@@ -1,3 +1,4 @@
+/* RADIO */
 %radioItem {
     background-color: transparent;
     color: #fff;
@@ -9,9 +10,9 @@
         background-color: rgba(0, 0, 0, .4);
         border-left: 3px solid var(--radio-bar-accent-color);
     }
-    &[aria-checked=true]{
+    &[aria-checked=true] {
         %radioBar {
-            background-color: var(--radio-bar-accent-color ,var(--main-color));
+            background-color: var(--radio-bar-accent-color, var(--main-color));
         }
     }
     %radioIconChecked {
@@ -19,5 +20,21 @@
     }
     %radioText {
         color: #fff;
+    }
+}
+
+// RADIO ACCENTS
+%radioBar {
+    &[style*="--radio-bar-accent-color:hsl(139, calc(var(--saturation-factor, 1) * 47.3%)"] {
+        --radio-bar-accent-color: #43b581 !important;
+    }
+    &[style*="--radio-bar-accent-color:hsl(38, calc(var(--saturation-factor, 1) * 95.7%), 54.1%)"] {
+        --radio-bar-accent-color: #faa61a !important;
+    }
+    &[style*="--radio-bar-accent-color:hsl(21, calc(var(--saturation-factor, 1) * 90.7%), 57.6%)"] {
+        --radio-bar-accent-color: #e67727 !important;
+    }
+    &[style*="--radio-bar-accent-color:hsl(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%)"] {
+        --radio-bar-accent-color: #982929 !important;
     }
 }
