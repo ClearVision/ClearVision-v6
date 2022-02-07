@@ -34,10 +34,10 @@
 }
 
 // AVATAR UPLOADER
-%settingsAvatarUploaderInner {
+%settingsImageUploaderInner {
 	background-color: hsla(0, 0%, 100%, .05);
 }
-%themeDark %settingsAvatarUploaderIcon {
+%themeDark %settingsImageUploaderIcon {
 	background-color: var(--main-color);
 	background-image: none;
 	&:after {

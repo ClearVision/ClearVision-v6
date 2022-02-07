@@ -17,11 +17,8 @@
         background-color: $hover-color;
     }
 }
-%roleRow:hover:not(%roleRowDisabledHover) %buttonCircle {
-    background-color: $main-color;
-	&:hover {
-        background-color: $hover-color;
-	}
+.icon-2DGsye {
+    background-color: hsla(0, 0%, 0%, .6);
 }
 .titleContainer-3fPic2 {
     background-color: transparent;
@@ -57,12 +54,7 @@
         }
     }
 }
-.selectedBrand-1AtwYE {
-    background-color: var(--background-overlay);
-}
-.icon-2DGsye {
-    background-color: $main-color;
-}
+
 
 // EMOJI
 %themeDark .emojiAliasInput-1y-NBz .emojiInput-1aLNse {
@@ -120,9 +112,12 @@
    background-color: var(--info-warning-background);
 }
 
-// Enable community footer pictures
+// ENABLE COMMUNITY
+.guildDetails-1il1dn {
+    background-color: $main-color;
+}
 .featureCard-1RR4Tl,
-.featureIcon-3p1TC_ {
+.featureIcon-2sTnDK {
     background-color: hsla(0, 0%, 0%, .4);
 }
 

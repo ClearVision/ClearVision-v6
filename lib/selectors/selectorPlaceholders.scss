@@ -1400,6 +1400,9 @@
 .selectedBackground-1qyzak {
 	@extend %premiumSelectedBackground !optional;
 }
+.icon-3FU6Ir {
+	@extend %serverBoostIcon !optional;
+}
 .tooltip-14MtrL {
 	@extend %tooltip !optional;
 }
@@ -3518,11 +3521,11 @@ pre {
 .keybind-13vtq8 {
 	@extend %settingsCloseButtonKeybind !optional;
 }
-.avatarUploaderInner-yEhTv5 {
-	@extend %settingsAvatarUploaderInner !optional;
+.imageUploaderInner-IIRaFr {
+	@extend %settingsImageUploaderInner !optional;
 }
-.avatarUploaderIcon-3-5PWB {
-	@extend %settingsAvatarUploaderIcon !optional;
+.imageUploaderIcon-2OHmFu {
+	@extend %settingsImageUploaderIcon !optional;
 }
 .card-16VQ8C {
 	@extend %settingsCard !optional;
