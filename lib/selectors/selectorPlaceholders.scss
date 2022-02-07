@@ -479,6 +479,15 @@
 .disabled-GROwTe {
 	@extend %panelButtonDisabled !optional;
 }
+.button-1EGGcP {
+	@extend %panelActionButton !optional;
+}
+.buttonColor-3bP3fX {
+	@extend %panelActionButtonColor !optional;
+}
+.buttonActive-Uc1jHx {
+	@extend %panelActionButtonActive !optional;
+}
 .container-YkUktl {
 	@extend %accountPanel !optional;
 }

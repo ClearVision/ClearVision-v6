@@ -53,6 +53,22 @@
 		}
 	}
 }
+%appMount {
+	%panelActionButton {
+		&%panelActionButtonColor {
+			padding: 14px 2px;
+			&%panelActionButtonActive {
+				background-color: #fff;
+				color: var(--main-color);
+				&:hover {
+					background: hsla(0, 0%, 100%, .95);
+					color: $hover-color;
+				}
+			}
+		}
+	}
+}
+
 
 // ACCOUNT PANEL
 %accountPanel {
