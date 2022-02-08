@@ -70,6 +70,23 @@
 .planOptionDiscount-2UFc37 {
 	background-color: $main-color;
 }
+// SERVER BOOST PAYMENT MODAL
+.upsellFooter-1H_OCF {
+	background: transparent;
+}
+.icon-2TbMdT {
+	color: #fff;
+	&:hover {
+		color: #fff;
+		background-color: $hover-color;
+	}
+}
+%themeDark .iconWrapper-2_MXbk {
+	background: hsla(0, 0%, 0%, .8);
+}
+.actions-10aT1z .input-2g-os5 {
+    box-shadow: none;
+}
 
 // INVITE FROM WEB BROWSER
 %themeDark .contentWrapper-3oy4Xo {
