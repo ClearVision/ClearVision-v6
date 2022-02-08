@@ -1,29 +1,43 @@
 /* SERVER SETTINGS */
 
 // OVERVIEW - server banner
-%themeDark .bannerUpsellContainer-31E9J5 {
-    background-color: transparent;
+%guildFeatureAvailabilityIndicator {
+    background-color: $main-color;
 }
-.avatarUploaderInnerSquareDisabled-e_U2MZ {
-    background-color: transparent;
-}
-
 
 // ROLES
-.container-3EtAkD {
+%guildSettingsRoleDefaultPermissions {
     background-color: $main-color;
     color: #fff;
     &:hover {
         background-color: $hover-color;
     }
 }
-.icon-2DGsye {
+%guildSettingsRoleDefaultPermissionsIcon {
     background-color: hsla(0, 0%, 0%, .6);
 }
-.titleContainer-3fPic2 {
+%buttonCircle {
+	background-color: hsla(0, 0%, 0%, 0.6);
+	color: #fff;
+	&:hover {
+		&:not(%buttonCircleDisabled) {
+			background-color: $hover-color;
+			color: #fff;
+		}
+	}
+    %roleRow:hover:not(%roleRowDisabledHover) & {
+        background-color: hsla(0, 0%, 0%, 0.6);
+        color: #fff;
+        &:hover {
+            background-color: $hover-color;
+                color: #fff;
+        }
+    }
+}
+%guildSettingsRoleBackContainer {
     background-color: transparent;
 }
-.header-JUTO-g {
+%guildSettingsRoleHeader {
     background-color: transparent;
     &:before {
         content: "";
@@ -41,8 +55,8 @@
         background: cv("bg.app.overlay");
     }
 }
-.top-K_jibn {
-    .brand-3g5E0C {
+%guildSettingsRoleHeaderTabTop {
+    %guildSettingsRoleHeaderTabBrand {
         &%tabBarItem {
             &:hover {
                 border-bottom-color: $hover-color;
@@ -53,6 +67,13 @@
             }
         }
     }
+}
+// View server as role selection bar
+.container-3ssFyj {
+	background-color: hsla(0, 0%, 0%, .8);
+}
+.container-2oNtJn {
+	background-color: hsla(0, 0%, 100%, .07);
 }
 
 
@@ -65,7 +86,7 @@
 
 // STICKERS
 %stickersUploadCard {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, .4);
 }
 %stickersTierLock {
 	color: #fff;
@@ -217,15 +238,4 @@
 // BANS
 .searchBar-30dqPB {
     background-color: hsla(0, 0%, 0%, .4);
-}
-
-// View server as role selection bar
-.container-3ssFyj {
-	background-color: hsla(0, 0%, 0%, .8);
-}
-.role-fz0UH0:hover {
-	background-color: rgba(255,255,255,0.1);
-}
-.container-2oNtJn {
-	background-color: hsla(0, 0%, 100%, .07);
 }

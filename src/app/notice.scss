@@ -27,7 +27,16 @@
 		background: rgba(cv("const:colors.spotify-green"), .6);
 	}
 	&%noticeBrand {
-		background: rgba(cv("const:colors.discord-blurple"), .6);
+		background: transparent;
+		&:before {
+			content: '';
+			position: absolute;
+			@include stretch;
+			background-color: var(--main-color);
+			opacity: .6;
+			z-index: -1;
+			border-radius: 3px;
+		}
 	}
 	%noticeTextLink {
 		color: #fff;

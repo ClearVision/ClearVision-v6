@@ -83,7 +83,7 @@
 .noticeSpotify-27dhr0 {
 	@extend %noticeSpotify !optional;
 }
-.colorBrand-2hgZSE {
+.colorBrand1-2u_MN9 {
 	@extend %noticeBrand !optional;
 }
 .noticeContents-1dYEwP {
@@ -3563,6 +3563,33 @@ pre {
 .link-39xJu3 {
 	@extend %settingsSocialLink !optional;
 }
+.guildFeatureAvailabilityIndicator-34eQAP {
+	@extend %guildFeatureAvailabilityIndicator !optional;
+}
+.roleRow-3LoHQ6 {
+	@extend %roleRow !optional;
+}
+.roleRowDisableHover-2TXfy- {
+	@extend %roleRowDisabledHover !optional;
+}
+.container-3EtAkD {
+	@extend %guildSettingsRoleDefaultPermissions !optional;
+}
+.icon-2DGsye {
+	@extend %guildSettingsRoleDefaultPermissionsIcon !optional;
+}
+.titleContainer-3fPic2 {
+	@extend %guildSettingsRoleBackContainer !optional;
+}
+.header-JUTO-g {
+	@extend %guildSettingsRoleHeader !optional;
+}
+.top-K_jibn {
+	@extend %guildSettingsRoleHeaderTabTop !optional;
+}
+.brand-3g5E0C {
+	@extend %guildSettingsRoleHeaderTabBrand !optional;
+}
 .activityUserPopout-2MzGCj, .activityProfile-1712BN {
 	@extend %activity !optional;
 }
@@ -3703,12 +3730,6 @@ pre {
 }
 .backgroundOptionInner-TuavSG {
 	@extend %videoBgOptionInner !optional;
-}
-.roleRow-3LoHQ6 {
-	@extend %roleRow !optional;
-}
-.roleRowDisableHover-2TXfy- {
-	@extend %roleRowDisabledHover !optional;
 }
 .none-2-_0dP {
 	@extend %scrollbarNone !optional;

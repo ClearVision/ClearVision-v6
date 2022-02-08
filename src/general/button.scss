@@ -122,16 +122,3 @@
 		}
 	}
 }
-
-
-// BUTTON CIRCLE
-%buttonCircle {
-	background-color: hsla(0, 0%, 0%, 0.6);
-	color: #fff;
-	&:hover {
-		&:not(%buttonCircleDisabled) {
-			background-color: $hover-color;
-			color: #fff;
-		}
-	}
-}
