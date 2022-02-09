@@ -128,3 +128,14 @@
 %channelTextAreaUpload {
 	background-color: transparent;
 }
+
+// TIMEOUT
+%timeoutBar { 
+	background: rgba(0,0,0,.6);
+}
+%timeoutPopup { 
+	background: rgba(0,0,0,.5);
+	%timeoutIcon { 
+		background: rgba(0,0,0,.2); 
+	}
+}

@@ -971,6 +971,15 @@
 .tabButton-1hJ4oW {
 	@extend %autocompletetabButton !optional;
 }
+.spamBanner-1auiob { 
+	@extend %timeoutBar !optional;
+}
+.container-lJuBHq { 
+	@extend %timeoutPopup !optional;
+}
+.iconContainer-2k2ykS {
+	@extend %timeoutIcon !optional; 
+}
 .welcomeMessage-3_Mcht {
 	@extend %welcomeMessage !optional;
 }
