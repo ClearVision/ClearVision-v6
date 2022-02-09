@@ -1,0 +1,98 @@
+.previewContainer-1GxmBJ { /*Choose image for new role*/
+	background: rgba(0,0,0,.2);
+}
+.root-g14mjS .content-Lj791F .input-2g-os5 { /*textboxes inside modal*/
+	margin: 2px;
+	width: 98%;
+	background-color: rgba(0,0,0,.1);
+}
+.root-g14mjS .content-Lj791F .lookFilled-1GseHa.select-1Ia3hD { /*time selector second background on second screen*/
+	background-color: rgba(255,255,255,.1);
+}
+.root-g14mjS .content-Lj791F .textInput-3g8y92 { /*name second background on second screen*/
+	background: rgba(255,255,255,.1);
+}
+.theme-dark .root-g14mjS .content-GYGe57 .card-8UsK4b, //First event modal
+.theme-dark .root-g14mjS .content-2gE8yW .card-8UsK4b,//second
+.theme-dark .previewCard-E137i2 {//another preview card
+	background: rgba(0,0,0,.2);
+    border: 2px solid var(--main-color);
+    &:hover {
+        border: 2px solid var(--hover-color);
+    }
+}
+.theme-dark .root-g14mjS .container-3eB5yh .contentContainer-BWAau5 {
+    background: transparent;
+}
+
+.iconBackground-3gHYPJ,//End event
+.iconContainer-36kI2p { //Event finished making
+    background: transparent;
+}
+// DATEPICKER
+.theme-dark .calendarPicker-sDhzdi {
+	%datepicker,
+	%datepickerHeader {
+		background-color: rgba(0,0,0,.5);
+	}
+	> %datepicker {
+		%datepickerNavigation {
+			background-color: hsla(0, 0%, 100%, .1);
+			border: 1px solid transparent;
+			opacity: .7;
+			transition: all .15s ease-in-out;
+			&:hover {
+				background-color: $main-color;
+				opacity: 1;
+			}
+		}
+	}
+	%datepickerCurrentMonth {
+		border-bottom: 1px solid hsla(0, 0%, 100%, .04);
+		color: $main-color;
+		font-weight: 600;
+	}
+	%datepickerDayName {
+		color: hsla(0, 0%, 100%, .7);
+	}
+	%datepickerWeek {
+		&:last-of-type {
+			> %datePickerDay {
+				border-bottom: 1px solid hsla(0, 0%, 100%, .04);
+			}
+		}
+		> %datepickerDay {
+			background-color: hsla(0, 0%, 100%, .1);
+			border-left: 1px solid hsla(0, 0%, 100%, .04);
+			border-top: 1px solid hsla(0, 0%, 100%, .04);
+			color: hsla(0, 0%, 100%, .7);
+			transition: all .15s ease-in-out;
+			&:last-of-type {
+				border-right: 1px solid hsla(0, 0%, 100%, .04);
+			}
+			&:hover {
+				background-color: $main-color;
+				color: #fff;
+			}
+		}
+		> %datepickerDaySelected {
+			box-shadow: inset 0 -3px $main-color;
+			&:after {
+				display: none,
+			}
+		}
+		> %datepickerDayToday {
+			color: $main-color;
+			font-weight: 700;
+		}
+		> %datepickerDayDisabled,
+		> %datepickerDayOutsideMonth {
+			background-color: transparent;
+			color: hsla(0, 0%, 100%, .1);
+			&:hover {
+				background-color: transparent;
+				color: hsla(0, 0%, 100%, .1);
+			}
+		}
+	}
+}
