@@ -76,13 +76,7 @@
 	background-color: hsla(0, 0%, 100%, .07);
 }
 
-
 // EMOJI
-%themeDark .emojiAliasInput-1y-NBz .emojiInput-1aLNse {
-    background-color: hsla(0, 0%, 100%, .05);
-    padding-bottom: 2.5px;
-    padding-left: 8px;
-}
 
 // STICKERS
 %stickersUploadCard {
@@ -118,9 +112,12 @@
 }
 
 // COMMUNITY OVERVIEW
-// settings box
-.upsellContainer-2a5eMP, .upsellContent-10YytV, .upsellFooter-3M1V33 {background-color: transparent;}
-
+.upsellContainer-2a5eMP {
+	background-color: hsla(0, 0%, 0%, .4);
+}
+.upsellFooter-3M1V33 {
+	background-color: transparent;
+}
 
 // SERVER INSIGHTS
 .analyticsCard-2fnrVG {
@@ -135,14 +132,14 @@
 
 // ENABLE COMMUNITY
 .guildDetails-1il1dn {
-    background-color: $main-color;
+    background-color: hsla(0, 0%, 0%, .4);
 }
 .featureCard-1RR4Tl,
 .featureIcon-2sTnDK {
     background-color: hsla(0, 0%, 0%, .4);
 }
 
-// Partner Program 
+// PARTNER PROGRAM
 .checklistContainer-12xGp5 {
     background-color: hsla(0, 0%, 0%, .4);
     .checklistHeader-3liG7E {
@@ -153,15 +150,11 @@
         opacity: 1;
     }
 }
-
 .featureCard-3XHbjy {
     background-color: hsla(0, 0%, 0%, .4);
 }
 
-// Enable Discovery
-.container-13pE3E {
-    background-color: hsla(0, 0%, 0%, .7);
-}
+// DISCOVERY
 .checklist-Asy_56 {
     background-color: hsla(0, 0%, 0%, .4);
     .header-Wl8ec- {
@@ -172,34 +165,35 @@
     }
 }
 
-// Welcome Screen - example
-.card-PQEqCK, .emptyChannelIcon-1YdEz2 { //something else
-	background-color: var(--background-overlay);
-}
-.exampleModal-2X2Vf8 {
-    background-color: hsla(0, 0%, 0%, .5);
-    .optionContainer-1FtykV {
-        background-color: $main-color;
-    }
-}
-.exampleModal-2X2Vf8, .exampleContainer-25sB-A, .optionContainer-1FtykV {
-	background-color: hsla(0, 0%, 0%, .5);
-}
-
-// Welcome Screen - settings
-.enableContainer-6E-puu,
-.previewContainer-1GxmBJ {
+// MEMBERSHIP SCREENING
+.exampleContainer-2O-nVK,
+.exampleModal-1lRfuE {
     background-color: hsla(0, 0%, 0%, .4);
 }
-.editCircle-ityklj {
+.guildSidebar-pjuGkm,
+.content-pHpkq8,
+.formFieldWrapper-2LV3S6,
+%themeDark .footer-11k_3m {
+	background-color: transparent;
+}
+.fakeButton-3RWbMY {
+	background-color: $main-color;
+}
+
+// WELCOME SCREEN
+.enableContainer-2MEsKV,
+.previewContainer-29oeA6 {
+    background-color: hsla(0, 0%, 0%, .4);
+}
+.editCircle-2k-Y6E {
     background-color: $main-color;
     color: white;
 }
-.welcomeChannel-1rFrIO {
+.welcomeChannel-_Q4qAA {
     background-color: hsla(0, 0%, 100%, .05);
-    .channelIcon-1eKmlw {
-        background-color: transparent;
-    }
+}
+.channelIcon-2N5-5h {
+    background-color: transparent;
 }
 
 // SERVER BOOST STATUS
