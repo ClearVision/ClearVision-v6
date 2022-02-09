@@ -1,36 +1,35 @@
-.previewContainer-1GxmBJ { /*Choose image for new role*/
-	background: rgba(0,0,0,.2);
-}
-.root-g14mjS .content-Lj791F .input-2g-os5 { /*textboxes inside modal*/
+%modalRoot %eventCreationContent %input {
 	margin: 2px;
 	width: 98%;
 	background-color: rgba(0,0,0,.1);
 }
-.root-g14mjS .content-Lj791F .lookFilled-1GseHa.select-1Ia3hD { /*time selector second background on second screen*/
-	background-color: rgba(255,255,255,.1);
-}
-.root-g14mjS .content-Lj791F .textInput-3g8y92 { /*name second background on second screen*/
-	background: rgba(255,255,255,.1);
-}
-.theme-dark .root-g14mjS .content-GYGe57 .card-8UsK4b, //First event modal
-.theme-dark .root-g14mjS .content-2gE8yW .card-8UsK4b,//second
-.theme-dark .previewCard-E137i2 {//another preview card
-	background: rgba(0,0,0,.2);
-    border: 2px solid var(--main-color);
-    &:hover {
-        border: 2px solid var(--hover-color);
+%modalRoot %eventCreationContent %eventButton {
+	&%eventTimeSelect {
+        background-color: rgba(255,255,255,.1);
     }
 }
-.theme-dark .root-g14mjS .container-3eB5yh .contentContainer-BWAau5 {
-    background: transparent;
+%modalRoot %eventCreationContent %eventsTextInput {
+	background: rgba(255,255,255,.1);
+}
+%themeDark %modalRoot %eventPreviewContent %eventCard,
+%themeDark %modalRoot %eventStartContent %eventCard,
+%themeDark %eventPreviewCard {
+	background: rgba(0,0,0,.2);
+	border: 2px solid var(--main-color);
+	&:hover {
+		border: 2px solid var(--hover-color);
+	}
+}
+%themeDark %modalRoot %eventInformationContent %eventContentContainer {
+	background: transparent;
 }
 
-.iconBackground-3gHYPJ,//End event
-.iconContainer-36kI2p { //Event finished making
-    background: transparent;
+%eventIconBackground,
+%eventIconContainer {
+	background: transparent;
 }
 // DATEPICKER
-.theme-dark .calendarPicker-sDhzdi {
+%themeDark %eventCalendarPicker {
 	%datepicker,
 	%datepickerHeader {
 		background-color: rgba(0,0,0,.5);
