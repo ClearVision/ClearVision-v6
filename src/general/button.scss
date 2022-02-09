@@ -31,7 +31,8 @@
 }
 %embedContainer %buttonFilledGreen {
 	background-color: cv("colors.success");
-	&:hover {
+	&:hover,
+	&:active {
 		background-color: hsl(139,calc(var(--saturation-factor, 1)*47.1%),33.3%)
 	}
 }
