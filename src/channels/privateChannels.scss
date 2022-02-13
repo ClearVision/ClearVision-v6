@@ -66,47 +66,38 @@
 				z-index: -1;
 				pointer-events: none;
 			}
-		}
-		%listItemClose {
-			display: block;
-			background: url(https://clearvision.gitlab.io/icons/close.svg) center/18px no-repeat;
-			opacity: 0;
-			transition: all .15s ease-in-out;
-			>%privateCloseIcon {
-				display: none;
-			}
-		}
-		
-		// HOVER
-		&:hover {
-			background: transparent;
-			&:before {
-				background: hsla(0, 0%, 100%, .1);
-			}
-			%listItemClose {
-				opacity: .3;
-				&:hover {
-					opacity: .7;
+
+			// HOVER
+			&:hover {
+				background: transparent;
+				&:before {
+					background: hsla(0, 0%, 100%, .1);
+				}
+				%listItemClose {
+					opacity: .3;
+					&:hover {
+						opacity: .7;
+					}
 				}
 			}
-		}
 		
-		// SELECTED
-		&%privateChannelInteractiveSelected {
-		background: transparent;
-			&:before {
-				background: hsla(0, 0%, 100%, .1);
+			// SELECTED
+			&%privateChannelInteractiveSelected {
+				background: transparent;
+					&:before {
+						background: hsla(0, 0%, 100%, .1);
+					}
+					&:after {
+						right: 0;
+						background: $main-color;
+						animation: cv-channel-select .3s ease-in-out;
+					}
+					%privateChannelIcon {
+						color: #fff;
+					}
+				}
 			}
-			&:after {
-				right: 0;
-				background: $main-color;
-				animation: cv-channel-select .3s ease-in-out;
-			}
-			%privateChannelIcon {
-				color: #fff;
-			}
-		}
-			
+		
 	}
 }
 
