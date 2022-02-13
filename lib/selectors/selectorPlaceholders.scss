@@ -578,8 +578,14 @@
 .channel-1Shao0 {
 	@extend %privateChannel !optional;
 }
-.linkButtonIcon-7rsZcu {
-	@extend %privateChannelIcon !optional;
+.interactive-1vLZ_I {
+	@extend %privateChannelInteractive !optional;
+}
+.interactiveSelected-29CP8y {
+	@extend %privateChannelInteractiveSelected !optional;
+}
+.closeIcon-1NwtbI {
+	@extend %privateCloseIcon !optional;
 }
 .privateChannelsHeaderContainer-1UWASm {
 	@extend %privateChannelsHeader !optional;

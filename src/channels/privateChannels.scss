@@ -44,7 +44,7 @@
 	// PRIVATE CHANNEL
 	%privateChannel {
 		max-width: none;
-		%listItemLayout {
+		%privateChannelInteractive {
 			position: relative;
 			z-index: 1;
 			&:before {
@@ -72,19 +72,16 @@
 			background: url(https://clearvision.gitlab.io/icons/close.svg) center/18px no-repeat;
 			opacity: 0;
 			transition: all .15s ease-in-out;
-		}
-		%privateChannelIcon {
-			color: hsla(0, 0%, 100%, .3);
-			transition: all .15s ease-in-out;
+			>%privateCloseIcon {
+				display: none;
+			}
 		}
 		
 		// HOVER
 		&:hover {
-			%listItemLayout {
-				background: transparent;
-				&:before {
-					background: hsla(0, 0%, 100%, .1);
-				}
+			background: transparent;
+			&:before {
+				background: hsla(0, 0%, 100%, .1);
 			}
 			%listItemClose {
 				opacity: .3;
@@ -92,28 +89,24 @@
 					opacity: .7;
 				}
 			}
-			%privateChannelIcon {
-				color: hsla(0, 0%, 100%, .7);
-			}
 		}
 		
 		// SELECTED
-		&%listItemSelected {
-			%listItemLayout {
-				background: transparent;
-				&:before {
-					background: hsla(0, 0%, 100%, .1);
-				}
-				&:after {
-					right: 0;
-					background: $main-color;
-					animation: cv-channel-select .3s ease-in-out;
-				}
+		&%privateChannelInteractiveSelected {
+		background: transparent;
+			&:before {
+				background: hsla(0, 0%, 100%, .1);
+			}
+			&:after {
+				right: 0;
+				background: $main-color;
+				animation: cv-channel-select .3s ease-in-out;
 			}
 			%privateChannelIcon {
 				color: #fff;
 			}
 		}
+			
 	}
 }
 
