@@ -78,6 +78,39 @@
 	}
 }
 
+// EMPTY CHANNEL
+%emptyChannelIcon {
+	background-color: $main-color;
+}
+%emptyChannelRole {
+	background: transparent;
+	&[style] {
+		&:not(:hover) {
+			border-color: transparent !important;
+		}
+	}
+	&:not([style]) {
+		background: hsla(0, 0%, 100%, .1);
+		border-color: transparent;
+	}
+	%emptyChannelRoleColor {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		margin: 0;
+		right: -1px;
+		border-radius: 3px;
+		z-index: -1;
+		opacity: .2;
+	}
+	&:hover  {
+		background-color: transparent;
+		%emptyChannelRoleColor {
+			opacity: .3;
+		}
+	}
+}
+
 // NO CHANNEL
 %base {
 	%noChannel {

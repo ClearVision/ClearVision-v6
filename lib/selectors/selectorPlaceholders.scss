@@ -707,6 +707,15 @@
 .actionRed-gYn8D3 {
 	@extend %chatGatedActionRed !optional;
 }
+.emptyChannelIcon-1YdEz2 {
+	@extend %emptyChannelIcon !optional;
+}
+.role-23oyrw {
+	@extend %emptyChannelRole !optional;
+}
+.roleColor-3cA0as {
+	@extend %emptyChannelRoleColor !optional;
+}
 .noChannel-1GDIAZ {
 	@extend %noChannel !optional;
 }
@@ -1676,13 +1685,13 @@
 .mask-2Me5HY {
 	@extend %headerBarStatusMask !optional;
 }
-.search-1FM8Qc {
+.search-2Mwzzq {
 	@extend %chatSearch !optional;
 }
 .open-1F8u2c {
 	@extend %chatSearchOpen !optional;
 }
-.focused-8aNhVB {
+.focused-1xh-wG {
 	@extend %chatSearchFocused !optional;
 }
 .searchBar-jGtisZ {
@@ -3191,37 +3200,31 @@ pre {
 .container-2McqkF {
 	@extend %searchPopout !optional;
 }
-.resultsGroup-1BPR25 {
+.resultsGroup-cfY57t {
 	@extend %searchPopoutResultsGroup !optional;
 }
-.header-3A13BX {
+.header-1BR0Ro {
 	@extend %searchPopoutHeader !optional;
 }
 .option-ayUoaq {
 	@extend %searchPopoutOption !optional;
 }
-.selected-rZcOL- {
-	@extend %searchPopoutOptionSelected !optional;
-}
-.searchOption-351dTI {
-	@extend %searchPopoutSearchOption !optional;
-}
-.filter-5YbOzJ {
+.filter-2QaH9y {
 	@extend %searchPopoutFilter !optional;
 }
-.answer-2fBfuP {
+.answer-14OVbQ {
 	@extend %searchPopoutAnswer !optional;
 }
-.nonText-3_4gtu {
+.nonText-28q_Ot {
 	@extend %searchPopoutNonText !optional;
 }
-.plusIcon-2V7coV {
+.plusIcon-1RVszG {
 	@extend %searchPopoutPlusIcon !optional;
 }
-.searchLearnMore-7__o_n {
+.searchLearnMore-1gNL3A {
 	@extend %searchPopoutLearnMore !optional;
 }
-.searchClearHistory-2Be-92 {
+.searchClearHistory-3nIKUO {
 	@extend %searchPopoutClearHistory !optional;
 }
 .queryContainer-ZunrLZ {
@@ -3239,25 +3242,22 @@ pre {
 .keybindShortcutSearchPopout-pt_bn5 {
 	@extend %searchPopoutKeybindShortcut !optional;
 }
-.user-23VtPS {
+.user-1dKxvu {
 	@extend %searchPopoutOptionUser !optional;
 }
-.displayedNick-2dDbfG {
+.displayedNick-1atSpT {
 	@extend %searchPopoutDisplayedNick !optional;
 }
-.displayUsername-14aOpK {
+.displayUsername-UTerwm {
 	@extend %searchPopoutDisplayUsername !optional;
 }
-.resultChannel-1ZxSuE {
+.resultChannel-37MfX_ {
 	@extend %searchPopoutChannel !optional;
 }
-.searchResultChannelIcon-1Il1Qo {
+.searchResultChannelIcon-C-3P9x {
 	@extend %searchPopoutChannelIcon !optional;
 }
-.searchResultChannelIconBackground-1Jf02D {
-	@extend %searchResultChannelIconBackground !optional;
-}
-.searchResultChannelCategory-3cL8uG {
+.searchResultChannelCategory-19ujDo {
 	@extend %searchPopoutChannelCategory !optional;
 }
 .datePicker-70cO23 {
@@ -3661,9 +3661,6 @@ pre {
 }
 .addButton-1_dZYu {
 	@extend %roleAddButton !optional;
-}
-.role-23oyrw {
-	@extend %channelroles !optional
 }
 .pointerEvents-9SZWKj {
 	@extend %statusPointerEvents !optional;

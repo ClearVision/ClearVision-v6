@@ -70,7 +70,7 @@
 		}
 		
 		// SELECTED
-		&%searchPopoutOptionSelected {
+		&[aria-selected=true] {
 			background-color: hsla(0, 0%, 100%, .1);
 			%searchPopoutPlusIcon {
 				opacity: .3;
@@ -121,9 +121,6 @@
 				color: hsla(0, 0%, 100%, .3);
 				transition: all .15s ease-in-out;
 			}
-			> %searchPopoutChannelIconBackground {
-				opacity: .7;
-			}
 		}
 		&%searchPopoutOptionSelected {
 			> %searchPopoutChannel {
@@ -135,25 +132,6 @@
 					color: hsla(0, 0%, 100%, .5);
 				}
 			}
-		}
-	}
-
-	// SEARCH OPTION
-	%searchPopoutSearchOption {
-		&%searchPopoutOptionSelected {
-			%searchPopoutFilter {
-				color: hsla(0, 0%, 100%, .7);
-			}
-			%searchPopoutAnswer {
-				color: hsla(0, 0%, 100%, .5);
-			}
-		}
-		%searchPopoutFilter {
-			color: hsla(0, 0%, 100%, .5);
-			font-weight: 500; 
-		}
-		%searchPopoutAnswer {
-			color: hsla(0, 0%, 100%, .3);
 		}
 	}
 
