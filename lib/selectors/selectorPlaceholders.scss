@@ -3263,9 +3263,7 @@ pre {
 .datePicker-3iA7_k {
 	@extend %searchPopoutDatePicker !optional;
 }
-.calendarPicker-sDhzdi {
-	@extend %searchPopoutCalendarPicker !optional;
-}
+
 .datePickerHint-Ir4715 {
 	@extend %searchPopoutDatePickerHint !optional;
 }
@@ -3274,6 +3272,9 @@ pre {
 }
 .hintValue-V9hd8l {
 	@extend %searchPopoutHintValue !optional;
+}
+.calendarPicker-sDhzdi {
+	@extend %calendarPicker !optional;
 }
 .react-datepicker {
 	@extend %datepicker !optional;
