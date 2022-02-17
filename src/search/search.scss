@@ -8,59 +8,12 @@
 	> %searchHeader {
 		background-color: rgba(0, 0, 0, .3);
 		box-shadow: 0 0 10px rgba(0, 0, 0, .3);
-		> %searchTotalResults {
-			color: hsla(0, 0%, 100%, .5);
-			opacity: 1;
-		}
-		> %tabBarItem {
-			position: relative;
-			padding: 10px;
-			margin: 10px 0 0;
-			border: none !important;
-			color: hsla(0, 0%, 100%, .5);
-			opacity: 1;
-			transition: all .15s ease-in-out;
-			+ %tabBarItem {
-				margin-left: 5px;
+		%tabBarItem {
+			&%tabBarItemSelected {
+				background-color: $main-color;
 			}
-			&:before {
-				content: "";
-				position: absolute;
-				@include stretch;
-				background: linear-gradient(to top, transparent, hsla(0, 0%, 100%, .07) 50%);
-				border-radius: 3px;
-				opacity: 0;
-				transition: all .15s ease-in-out, bottom .2s ease-in-out;
-				z-index: -1;
-			}
-			&:after {
-				content: "";
-				position: absolute;
-				@include pos(100%, 0, 0, 0);
-				background: $main-color;
-				box-shadow: none;
-				border-radius: 3px;
-				transition: all .2s ease-in-out;
-				z-index: -1;
-			}
-			&:hover {
-				color: hsla(0, 0%, 100%, .7);
-				&:before {
-					opacity: 1;
-				}
-			}
-			&%searchTabSelected {
-				background-color: transparent;
-				color: #fff;
-				&:after {
-					top: 0;
-					animation: cv-slide-top .2s ease-in-out;
-				}
-				&:before {
-					bottom: 100%;
-					opacity: 1;
-					animation: cv-slide-bottom .2s ease-in-out reverse;
-				}
+			&:hover:not(%tabBarItemDisabled) {
+				background-color: $hover-color;
 			}
 		}
 	}
@@ -106,10 +59,9 @@
 
 	// RESULT
 	%searchResult {
-		margin-bottom: 0;
 		padding-bottom: 10px;
 		border-bottom: 1px solid hsla(0, 0%, 100%, .04);
-		background-color: var(--background-overlay);
+		background-color: transparent;
 		&:before,
 		&:after {
 			display: none;

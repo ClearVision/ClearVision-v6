@@ -4190,10 +4190,6 @@ pre {
 .iconBackground-3gHYPJ {
 	@extend %eventIconBackground !optional;
 }
-
-
-
-
 .progressBar-18rmp1 {
 	@extend %createEventProgressBar !optional;
 }
@@ -4205,6 +4201,9 @@ pre {
 }
 .form-1ejeax {
 	@extend %createEventInfoForm !optional;
+}
+.container-3zZkKh {
+	@extend %createEventCreateStageContainer !optional;
 }
 .textInput-3g8y92 {
 	@extend %createEventTextInput !optional;
