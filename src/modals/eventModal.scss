@@ -1,97 +1,74 @@
-%modalRoot %eventCreationContent %input {
-	margin: 2px;
-	width: 98%;
-	background-color: rgba(0,0,0,.1);
+/* EVENT MODAL */
+%eventHeader	{
+	background-color: transparent;
 }
-%modalRoot %eventCreationContent %eventButton {
-	&%eventTimeSelect {
-        background-color: rgba(255,255,255,.1);
-    }
+%eventIconCircle {
+	background-color: var(--main-color);
 }
-%modalRoot %eventCreationContent %eventsTextInput {
-	background: rgba(255,255,255,.1);
+%eventCard {
+	background-color: hsla(0, 0%, 0%, .4);
+	border: 2px solid $main-color;
 }
-%themeDark %modalRoot %eventPreviewContent %eventCard,
-%themeDark %modalRoot %eventStartContent %eventCard,
-%themeDark %eventPreviewCard {
-	background: rgba(0,0,0,.2);
-	border: 2px solid var(--main-color);
-	&:hover {
-		border: 2px solid var(--hover-color);
+%eventStatusBrand,
+%eventStatusLabel {
+	color: $main-color;
+	%eventStatusGreen {
+		color: cv("colors.success");
 	}
 }
-%themeDark %modalRoot %eventInformationContent %eventContentContainer {
-	background: transparent;
+%eventRSVPCount {
+	background-color: $main-color;
+	%eventRSVPIcon,
+	.colorHeaderSecondary-g5teka {
+		color: #fff;
+	}
 }
 
-%eventIconBackground,
-%eventIconContainer {
+// EVENT INFO
+%eventInfoHeader {
+	%tabBarItem {
+		&:hover {
+			border-bottom-color: $hover-color;
+		}
+		&%tabBarItemSelected,
+		&:active {
+			border-bottom-color: $main-color;
+		}
+	}
+}
+%eventInfoContentContainer {
 	background: transparent;
 }
-// DATEPICKER
-%themeDark %eventCalendarPicker {
-	%datepicker,
-	%datepickerHeader {
-		background-color: rgba(0,0,0,.5);
-	}
-	> %datepicker {
-		%datepickerNavigation {
-			background-color: hsla(0, 0%, 100%, .1);
-			border: 1px solid transparent;
-			opacity: .7;
-			transition: all .15s ease-in-out;
-			&:hover {
-				background-color: $main-color;
-				opacity: 1;
-			}
-		}
-	}
-	%datepickerCurrentMonth {
-		border-bottom: 1px solid hsla(0, 0%, 100%, .04);
-		color: $main-color;
-		font-weight: 600;
-	}
-	%datepickerDayName {
-		color: hsla(0, 0%, 100%, .7);
-	}
-	%datepickerWeek {
-		&:last-of-type {
-			> %datePickerDay {
-				border-bottom: 1px solid hsla(0, 0%, 100%, .04);
-			}
-		}
-		> %datepickerDay {
-			background-color: hsla(0, 0%, 100%, .1);
-			border-left: 1px solid hsla(0, 0%, 100%, .04);
-			border-top: 1px solid hsla(0, 0%, 100%, .04);
-			color: hsla(0, 0%, 100%, .7);
-			transition: all .15s ease-in-out;
-			&:last-of-type {
-				border-right: 1px solid hsla(0, 0%, 100%, .04);
-			}
-			&:hover {
-				background-color: $main-color;
-				color: #fff;
-			}
-		}
-		> %datepickerDaySelected {
-			box-shadow: inset 0 -3px $main-color;
-			&:after {
-				display: none,
-			}
-		}
-		> %datepickerDayToday {
-			color: $main-color;
-			font-weight: 700;
-		}
-		> %datepickerDayDisabled,
-		> %datepickerDayOutsideMonth {
-			background-color: transparent;
-			color: hsla(0, 0%, 100%, .1);
-			&:hover {
-				background-color: transparent;
-				color: hsla(0, 0%, 100%, .1);
-			}
-		}
-	}
+%eventInfoIconCircle {
+	background-color: $main-color;
+}
+
+// CREATE EVENT
+%createEventProgressBar {
+    background-color: hsla(0, 0%, 100%, .3);
+    &%createEventProgressBarSelected {
+        background-color: $main-color;
+    }
+    +.colorMuted-20987_ {
+        color: hsla(0, 0%, 100%, .3);
+    }
+    +.colorBrand-21Le_q {
+        color: var(--main-color);
+    }
+}
+%createEventLocationContainer,
+%createEventInfoForm {
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-bottom: 2px;
+}
+%createEventTextInput {
+	background: transparent;
+}
+%themeDark %createEventPreviewCard {
+	background-color: hsla(0, 0%, 0%, .4);
+	border: 2px solid $main-color;
+}
+%createEventIconContainer {
+	background-color: $main-color;
 }

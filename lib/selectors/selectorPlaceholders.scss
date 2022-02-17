@@ -3260,19 +3260,19 @@ pre {
 .searchResultChannelCategory-19ujDo {
 	@extend %searchPopoutChannelCategory !optional;
 }
-.datePicker-70cO23 {
+.datePicker-3iA7_k {
 	@extend %searchPopoutDatePicker !optional;
 }
 .calendarPicker-sDhzdi {
 	@extend %searchPopoutCalendarPicker !optional;
 }
-.datePickerHint-17MnA8 {
+.datePickerHint-Ir4715 {
 	@extend %searchPopoutDatePickerHint !optional;
 }
-.hint-3D5yHh {
+.hint-xfbpCV {
 	@extend %searchPopoutHint !optional;
 }
-.hintValue-1x-flY {
+.hintValue-V9hd8l {
 	@extend %searchPopoutHintValue !optional;
 }
 .react-datepicker {
@@ -4148,42 +4148,70 @@ pre {
 .watchButton-2YRKxv {
 	@extend %streamPopoutWatchButton !optional;
 }
-.content-Lj791F {
-	@extend %eventCreationContent !optional;
+.header-1sd0RU {
+	@extend %eventHeader !optional;
 }
-.content-GYGe57 {
-	@extend %eventPreviewContent !optional;
+.circle-2tR2Qh {
+	@extend %eventIconCircle !optional;
 }
-.content-2gE8yW {
-	@extend %eventStartContent !optional;
-}
-.container-3eB5yh {
-	@extend %eventInformationContent !optional;
-}
-.textInput-3g8y92 {
-	@extend %eventsTextInput !optional;
-}
-.card-8UsK4b {
+.eventCard-2ZL9GD {
 	@extend %eventCard !optional;
 }
+.eventStatusBrand-3D-ae6 {
+	@extend %eventStatusBrand !optional;
+}
+.eventStatusLabel-1og3vG {
+	@extend %eventStatusLabel !optional;
+}
+.eventStatusGreen-2-f2N8 {
+	@extend %eventStatusLabel !optional;
+}
 .previewCard-E137i2 {
-	@extend %eventPreviewCard !optional;
+	@extend %eventStatusGreen !optional;
+}
+.rsvpCount-iCkObl {
+	@extend %eventRSVPCount !optional;
+}
+.rsvpIcon-1R5Esx {
+	@extend %eventRSVPIcon !optional;
+}
+.container-3EBHNg {
+	@extend %eventInfoHeader !optional;
+}
+.container-3eB5yh {
+	@extend %eventInfoContent !optional;
+}
+.contentContainer-BWAau5 {
+	@extend %eventInfoContentContainer !optional;
+}
+.circle-1g-jMn {
+	@extend %eventInfoIconCircle !optional;
 }
 .iconBackground-3gHYPJ {
 	@extend %eventIconBackground !optional;
 }
+
+
+
+
+.progressBar-18rmp1 {
+	@extend %createEventProgressBar !optional;
+}
+.selectedProgressBar-11z5d9 {
+	@extend %createEventProgressBarSelected !optional;
+}
+.container-1hz3gm {
+	@extend %createEventLocationContainer !optional;
+}
+.form-1ejeax {
+	@extend %createEventInfoForm !optional;
+}
+.textInput-3g8y92 {
+	@extend %createEventTextInput !optional;
+}
+.previewCard-E137i2 {
+	@extend %createEventPreviewCard !optional;
+}
 .iconContainer-36kI2p {
-	@extend %eventIconContainer !optional;
-}
-.calendarPicker-sDhzdi {
-	@extend %eventCalendarPicker !optional;
-}
-.lookFilled-1GseHa {
-	@extend %eventButton !optional;
-}
-.select-1Ia3hD {
-	@extend %eventTimeSelect !optional;
-}
-.contentContainer-BWAau5 {
-	@extend %eventContentContainer !optional;
+	@extend %createEventIconContainer !optional;
 }

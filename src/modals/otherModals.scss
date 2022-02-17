@@ -104,45 +104,6 @@
 	background-color: rgba(255,255,255,.07);
 }
 
-// EVENTS
-.header-1sd0RU	{
-	background-color: rgba(0, 0, 0, 0.8)
-}
-
-.circle-2tR2Qh {
-	background-color: var(--main-color);
-	}
-
-// CREATE EVENT
-.progressBar-18rmp1 {
-    background-color: hsla(0, 0%, 100%, .3);
-    &.selectedProgressBar-11z5d9 {
-        background-color: var(--main-color);
-    }
-    +.colorMuted-20987_ {
-        color: hsla(0, 0%, 100%, .3);
-    }
-    +.colorBrand-21Le_q {
-        color: var(--main-color);
-    }
-}
-%themeDark .previewCard-E137i2 {
-	background-color: hsla(0, 0%, 0%, .4);
-}
-.rsvpCount-iCkObl {
-	background-color: var(--main-color);
-}
-.rsvpIcon-1R5Esx {
-	color: #fff;;
-}
-.eventStatusBrand-3D-ae6 {
-	color: var(--main-color);
-}
-
-.container-3zZkKh {
-	background-color: transparent;
-}
-
 // TIMEOUT
 %themeDark .item-2OyinQ:hover {
 	background-color: var(--hover-color);
