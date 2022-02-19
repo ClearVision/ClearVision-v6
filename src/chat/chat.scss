@@ -84,15 +84,6 @@
 }
 %emptyChannelRole {
 	background: transparent;
-	&[style] {
-		&:not(:hover) {
-			border-color: transparent !important;
-		}
-	}
-	&:not([style]) {
-		background: hsla(0, 0%, 100%, .1);
-		border-color: transparent;
-	}
 	%emptyChannelRoleColor {
 		position: absolute;
 		height: 100%;

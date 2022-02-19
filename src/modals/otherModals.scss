@@ -1,7 +1,7 @@
 // MESSAGE DELETION CONFIRMATION
 %themeDark .message-G6O-Wv {
 	background-color: transparent;
-	box-shadow: 0 0 2px 2px var(--main-color);
+	box-shadow: 0 0 2px 2px $main-color;
 }
 
 // NOTIFICATIONS SETTINGS
@@ -10,9 +10,6 @@
 }
 
 // CUSTOM STATUS CLEAR AFTER DURATION
-.option-2eIyOn:focus, .option-2eIyOn:hover {
-	background-color: var(--hover-color);
-}
 .selectedIcon-19TbzU {
 	color: var(--interactive-active);
 }
@@ -28,7 +25,7 @@
 	border-radius: 4px;
 }
 .option-2eIyOn[aria-selected=true] {
-	background-color: var(--main-color);
+	background-color: $main-color;
 }
 
 // REACTIONS LIST
@@ -41,7 +38,7 @@
 		margin-bottom: 10px;
 	}
 	.reactionSelected-1aMb2K {
-		background-color: var(--main-color);
+		background-color: $main-color;
 		margin-bottom: 10px;
 		.colorStandard-21JIj7 {
 			color: #fff;
@@ -111,7 +108,7 @@
 	}
 	
 .selectorButtonSelected-1VZ6hz {
-	background-color: var(--main-color);
+	background-color: $main-color;
 }
 
 // Tab Help

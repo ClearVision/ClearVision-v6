@@ -66,12 +66,24 @@
 				z-index: -1;
 				pointer-events: none;
 			}
+			%privateChannelIcon,
+			%privateChannelName {
+				color: hsla(0, 0%, 100%, .4);
+				transition: all .15s ease-in-out;
+			}
+			%listItemClose {
+				color: #fff;
+			}
 
 			// HOVER
 			&:hover {
 				background: transparent;
 				&:before {
 					background: hsla(0, 0%, 100%, .1);
+				}
+				%privateChannelIcon,
+				%privateChannelName {
+					color: hsla(0, 0%, 100%, .7);
 				}
 				%listItemClose {
 					opacity: .3;
@@ -92,12 +104,18 @@
 						background: $main-color;
 						animation: cv-channel-select .3s ease-in-out;
 					}
-					%privateChannelIcon {
+					%privateChannelIcon,
+					%privateChannelName {
 						color: #fff;
+					}
+					%listItemClose {
+					opacity: .7;
+					&:hover {
+						opacity: 1;
 					}
 				}
 			}
-		
+		}
 	}
 }
 

@@ -584,8 +584,14 @@
 .interactiveSelected-29CP8y {
 	@extend %privateChannelInteractiveSelected !optional;
 }
+.name-2m3Cms {
+	@extend %privateChannelName !optional;
+}
 .closeIcon-1NwtbI {
-	@extend %privateCloseIcon !optional;
+	@extend %privateChannelCloseIcon !optional;
+}
+.linkButtonIcon-7rsZcu {
+	@extend %privateChannelIcon !optional;
 }
 .privateChannelsHeaderContainer-1UWASm {
 	@extend %privateChannelsHeader !optional;
@@ -1250,7 +1256,7 @@
 .icon-3BYlXK {
 	@extend %flowerStarIcon !optional;
 }
-.gameVerifiedIcon-3t4jtr {
+.gameVerifiedIcon-1YMUdQ {
 	@extend %gameVerifiedIcon !optional;
 }
 .indicator-9QMksR {
@@ -1415,7 +1421,7 @@
 .tabBar-1E2ExX {
 	@extend %headerBarTabBar !optional;
 }
-.premiumLabel-V52REm {
+.premiumLabel-3HPvdB {
 	@extend %premiumLabel !optional;
 }
 .background-3iPORX {

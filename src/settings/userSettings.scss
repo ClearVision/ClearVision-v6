@@ -228,15 +228,10 @@
     .addGamePopout-2SKNIV {
         background-color: hsla(0, 0%, 0%, .7);
     }
-    .option-2eIyOn.focused-ODgjnC {
-        background-color: $hover-color;
-        color: #fff;
-    }
-
-    .game-3x3aDt {
+    .game-2f2vPC {
         box-shadow: 0 1px 0 0 hsla(0,0%,100%,.04);
     }
-    .gameNameInput-3TuPuA {
+    .gameNameInput-2wbDJ9 {
         &:hover,
         &:focus {
             background-color: hsla(0, 0%,100%,.05);
@@ -244,11 +239,10 @@
         }
     }
 }
-
-
 .option-2eIyOn {
     &:hover,
-    &:focus {
+    &:focus,
+    .focused-ODgjnC {
         background-color: hsla(0, 0%,100%,.05);
         border: hsla(0, 0%, 100%, .07);
     }
