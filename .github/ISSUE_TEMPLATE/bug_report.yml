@@ -11,6 +11,14 @@ body:
       options:
       - label: "I have checked other issues"
         required: true
+  - type: checkboxes
+    id: default-theme
+    attributes:
+      label: Does This Bug Show On The Default Theme?
+      description: "Is this issue reproduced on the default theme **with no customizations**?"
+      options:
+      - label: "I have reproduced this on the default theme"
+        required: true
   - type: textarea
     id: bug-description
     attributes:
