@@ -68,10 +68,19 @@
 			}
 			%privateChannelIcon,
 			%privateChannelName {
-				color: hsla(0, 0%, 100%, .4);
+				font-size: 14px;
+				color: hsla(0, 0%, 100%, .6);
 				transition: all .15s ease-in-out;
+				overflow: hidden;
 			}
-			%listItemClose {
+			%privateChannelActivityText {
+				strong {
+					color: $main-color;
+					font-weight: 700;
+					transition: all .15s ease-in-out;
+				}
+			}
+			%privateChannelCloseButton {
 				color: #fff;
 			}
 
@@ -85,7 +94,7 @@
 				%privateChannelName {
 					color: hsla(0, 0%, 100%, .7);
 				}
-				%listItemClose {
+				%privateChannelCloseButton {
 					opacity: .3;
 					&:hover {
 						opacity: .7;
@@ -96,19 +105,28 @@
 			// SELECTED
 			&%privateChannelInteractiveSelected {
 				background: transparent;
-					&:before {
-						background: hsla(0, 0%, 100%, .1);
-					}
-					&:after {
-						right: 0;
-						background: $main-color;
-						animation: cv-channel-select .3s ease-in-out;
-					}
-					%privateChannelIcon,
-					%privateChannelName {
+				&:before {
+					background: hsla(0, 0%, 100%, .1);
+				}
+				&:after {
+					right: 0;
+					background: $main-color;
+					animation: cv-channel-select .3s ease-in-out;
+				}
+				%privateChannelIcon,
+				%privateChannelName {
+					color: #fff;
+				}
+				%privateChannelActivityEmoji,
+				%privateChannelActivityIcon {
+					filter: drop-shadow(0 0 3px rgba(0, 0, 0, .7));
+				}
+				%privateChannelActivityText {
+					strong {
 						color: #fff;
 					}
-					%listItemClose {
+				}
+				%privateChannelCloseButton {
 					opacity: .7;
 					&:hover {
 						opacity: 1;

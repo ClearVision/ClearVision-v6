@@ -159,7 +159,7 @@
         }
         %inputSensitivitySliderBar {
             &%inputSensitivitySpeaking {
-                background: var(--main-color) !important;
+                background: $main-color;
             }
         }
     }

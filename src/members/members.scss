@@ -52,17 +52,17 @@
 		background: transparent !important;
 		backface-visibility: hidden;
 		&%memberOffline {
-			%listItemAvatar {
+			%memberAvatar {
 				filter: grayscale(100%) blur(1px);
 				transition: all .5s ease-in-out;
 			}
 			&:hover {
-				%listItemAvatar {
+				%memberAvatar {
 					filter: none;
 				}
 			}
 		}
-		%listItemLayout {
+		%memberLayout {
 			position: relative;
 			background: transparent;
 			transition: all .15s ease-in-out, transform .1s ease-in-out;
@@ -71,7 +71,7 @@
 				transform: scale(.9);
 			}
 		}
-		%listItemRoleColor {
+		%memberRoleColor {
 			max-width: 100%;
 			overflow: visible;
 			transition: all .15s ease-in-out;
@@ -105,8 +105,8 @@
 			}
 		}	
 		&:hover,
-		&%listItemSelected {
-			%listItemRoleColor {
+		&%memberSelected {
+			%memberRoleColor {
 				&:before {
 					opacity: 1;
 				}
@@ -115,8 +115,8 @@
 				}
 			}
 		}
-		&%listItemSelected {
-			%listItemRoleColor {
+		&%memberSelected {
+			%memberRoleColor {
 				-webkit-text-fill-color: #fff;
 				text-shadow: 0 0 3px rgba(0, 0, 0, .7);
 				&:after {
@@ -124,6 +124,46 @@
 				}
 			}
 		}
+		%memberName {
+			font-size: 14px;
+			color: hsla(0, 0%, 100%, .6);
+			transition: all .15s ease-in-out;
+			overflow: hidden;
+		}
+		%memberActivityText {
+			color: hsla(0, 0%, 100%, .4);
+			transition: all .15s ease-in-out;
+		}
+		%memberActivityText {
+			strong {
+				color: $main-color;
+				font-weight: 700;
+				transition: all .15s ease-in-out;
+			}
+		}
+		&%memberSelected {
+			%memberName {
+				color: #fff;
+			}
+			%memberActivityText {
+				text-shadow: 0 0 3px rgba(0, 0, 0, .7);
+				color: hsla(0, 0%, 100%, .7);
+			}
+			%memberActivityText {
+				strong {
+					color: #fff;
+				}
+			}
+			%memberOwnerIcon {
+				filter: drop-shadow(0 0 3px rgba(0, 0, 0, .7));
+				opacity: .7;
+			}
+			%memberActivityIcon,
+			%memberActivityEmoji {
+				filter: drop-shadow(0 0 3px rgba(0, 0, 0, .7));
+			}
+		}
+
 	}
 
 	// PLACEHOLDERS
