@@ -1317,12 +1317,12 @@
 	@extend %listItemSubtext !optional;
 }
 .subText-OGOWMj {
-	@extend %listItemActivityText !optional;
+	@extend %listItemActivitySubText !optional;
 }
 .activity-2EQDZv {
 	@extend %listItemActivity !optional;
 }
-.activityText-1rR-8O {
+.activityText-ev7Z1T {
 	@extend %listItemActivityText !optional;
 }
 .activityEmoji-SDBJp8 {
@@ -3558,6 +3558,9 @@ pre {
 .button-1yVL_7 {
 	@extend %settingsLongCardButton !optional;
 }
+.cardWrapper-1bSePP {
+	@extend %settingsCardWrapper !optional;
+}
 .colorPickerCustom-1swUKF {
 	@extend %settingsColorPickerCustom !optional;
 }
@@ -3729,10 +3732,10 @@ pre {
 .notches-2w7UZJ {
 	@extend %micTestNotches !optional;
 }
-.sliderBar-2T41Pw {
+.sliderBar-2s16ej {
 	@extend %inputSensitivitySliderBar !optional;
 }
-.speaking-NGQNT9 {
+.speaking-2Crrvt {
 	@extend %inputSensitivitySpeaking !optional;
 }
 .cameraWrapper-3a7Ngv {
@@ -3741,13 +3744,13 @@ pre {
 .media-engine-video {
 	@extend %mediaEngineVideo !optional;
 }
-.backgroundOption-2TVAQt {
+.backgroundOption-2mIYjm {
 	@extend %videoBgOption !optional;
 }
-.backgroundOptionRing-2wxJ7j {
+.backgroundOptionRing-1vvQ0C {
 	@extend %videoBgOptionRing !optional;
 }
-.backgroundOptionInner-TuavSG {
+.backgroundOptionInner-SSz19O {
 	@extend %videoBgOptionInner !optional;
 }
 .none-2-_0dP {

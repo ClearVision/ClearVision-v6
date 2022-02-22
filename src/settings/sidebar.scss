@@ -56,8 +56,12 @@
 		}
 	}
 	[aria-label="USER_SETTINGS"] & %tabBarItem {
-		&:nth-child(9) + %tabBarSeparator {
-			display: none;
+		&:nth-child(6),
+		&:nth-child(13),
+		&:nth-child(25) {
+			+ %tabBarSeparator {
+				display: none;
+			}
 		}
 	}
 }

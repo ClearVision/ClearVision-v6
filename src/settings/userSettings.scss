@@ -242,8 +242,11 @@
 .option-2eIyOn {
     &:hover,
     &:focus,
-    .focused-ODgjnC {
+    &.focused-ODgjnC {
         background-color: hsla(0, 0%,100%,.05);
         border: hsla(0, 0%, 100%, .07);
+    }
+    &[aria-selected=true] {
+        background-color: $main-color;
     }
 }
