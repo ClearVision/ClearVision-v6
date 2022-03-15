@@ -638,6 +638,9 @@
 .hasMore-3e72_v {
 	@extend %hasMore !optional;
 }
+.messagesErrorBar-1IQ1rH {
+	@extend %messagesErrorBar !optional;
+}
 .wrapper-1gVUIN {
 	@extend %callWrapper !optional;
 }
@@ -2987,9 +2990,6 @@ pre {
 .searchBar-2M9mRP {
 	@extend %emojiPickerSearchBar !optional;
 }
-.input-2FSSDe {
-	@extend %emojiPickerSearchInput !optional;
-}
 .diversitySelectorOptions-3DhNYs {
 	@extend %emojiPickerDiversitySelectorPopout !optional;
 }
@@ -3065,9 +3065,6 @@ pre {
 .inner-1NoIT5 {
 	@extend %groupInvitePopoutSearchBarInner !optional;
 }
-.input-2FSSDe {
-	@extend %groupInvitePopoutSearchInput !optional;
-}
 .tag-15zcD_ {
 	@extend %groupInvitePopoutSearchTag !optional;
 }
@@ -3088,15 +3085,6 @@ pre {
 }
 .discordTag-2ke74W {
 	@extend %groupInvitePopoutDiscordTag !optional;
-}
-.input-2FSSDe {
-	@extend %groupInvitePopoutInput !optional;
-}
-.inputDefault-2F39XG {
-	@extend %groupInvitePopoutInputDefault !optional;
-}
-.inputDisabled-sYasHz {
-	@extend %groupInvitePopoutInputDisabled !optional;
 }
 .footer-C9oLp9 {
 	@extend %groupInvitePopoutFooter !optional;
@@ -3214,6 +3202,9 @@ pre {
 }
 .didRender-2SiRlm {
 	@extend %popoutAnimatorDidRender !optional;
+}
+.input-2FSSDe {
+	@extend %popoutInput !optional;
 }
 .container-2McqkF {
 	@extend %searchPopout !optional;
@@ -4235,4 +4226,31 @@ pre {
 }
 .iconContainer-36kI2p {
 	@extend %createEventIconContainer !optional;
+}
+.container-1SX9VC {
+	@extend %stickerSearchContainer !optional;
+}
+.wrapper-22rqw6 {
+	@extend %stickerCategoryWrapper !optional;
+}
+.stickerCategoryGeneric-29JiZ2 {
+	@extend %stickerCategoryGeneric !optional;
+}
+.stickerCategoryGenericSelected-DnO2K8 {
+	@extend %stickerCategoryGenericSelected !optional;
+}
+.upsellContent-1ppSei {
+	@extend %stickerUpsellContent !optional;
+}
+.row-2mBMW2 {
+	@extend %stickerPickerRow !optional;
+}
+.stickerInspected-mwnU6w {
+	@extend %stickerPickerInspected !optional;
+}
+.inspectedIndicator-27zwNZ {
+	@extend %stickerPickerInspectedIndicator !optional;
+}
+.containerBackground-Ang24O {
+	@extend %stickerSuggestionContainerBackground !optional;
 }

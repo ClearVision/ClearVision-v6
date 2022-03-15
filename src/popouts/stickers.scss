@@ -1,7 +1,7 @@
 /* STICKERS */
 
 // SEARCH
-.container-1SX9VC {
+%stickerSearchContainer {
     background-color: hsla(0, 0%, 100%, .07);
     border: none;
     box-shadow: 0 0 0 2px hsla(0, 0%, 100%, .09);
@@ -10,7 +10,7 @@
         box-shadow: 0 0 2px 2px $main-color;
         transition: all .15s ease-in-out;
     }
-    .input-2FSSDe {
+    %popoutInput {
         color: #fff;	
         &::placeholder {
             color: hsla(0, 0%, 100%, .3);
@@ -19,35 +19,35 @@
 }
 
 // CATEGORY
-.wrapper-22rqw6 {
+%stickerCategoryWrapper {
     background-color: transparent;
 }
-.stickerCategory-2f6iSo {
+%stickerCategoryGeneric {
     color:  hsla(0, 0%, 100%, .7);
-	&:hover {
-		background-color: hsla(0, 0%, 100%, .07);
-		border-radius: 4px;		
-	}
+    &:hover {
+    background-color: hsla(0, 0%, 100%, .07);
+    border-radius: 4px;
+    }
 }
-.stickerCategorySelected-2uaMAG, 
-.stickerCategorySelected-2uaMAG:hover {
-    background-color: $main-color;
+%stickerCategoryGenericSelected, 
+%stickerCategoryGenericSelected:hover {
+	background-color: $main-color;
     color: #fff
 }
 
 // PICKER
-.upsellContent-1ppSei {
+%stickerUpsellContent {
     background-color: hsla(0, 0%, 0%, .8);
 }
-.row-2mBMW2 {
+%stickerPickerRow {
     column-gap: 8px !important;
 }
-.stickerInspected-mwnU6w .inspectedIndicator-27zwNZ {
+%stickerPickerInspected %stickerPickerInspectedIndicator {
 	background-color: $main-color;
 }
 
 // SUGGESTION
-%themeDark .containerBackground-Ang24O {
+%themeDark %stickerSuggestionContainerBackground {
     opacity: 1;
     background-color: hsla(0, 0%, 0%, .8);
     border: none;

@@ -27,7 +27,7 @@
 	&:focus-within {
 		box-shadow: 0 0 2px 2px $main-color;
 		transition: all .15s ease-in-out;
-		%emojiPickerSearchInput {
+		%popoutInput {
 		color: #fff;
 			&::placeholder {
 			color: hsla(0, 0%, 100%, .3);

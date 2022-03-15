@@ -71,8 +71,8 @@
 }
 
 // MESSAGE ERROR BAR
-.messagesErrorBar-1IQ1rH {
-	background: rgba(0, 0, 0, .7);
+%messagesErrorBar {
+	background: cv("colors.danger");
 	border-radius: 3px;
 	transition: all .15s ease-in-out;
 	padding-bottom: 0px;

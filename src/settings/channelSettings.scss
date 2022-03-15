@@ -1,29 +1,25 @@
 /* CHANNEL SETTINGS */
 
-// Permissions
+// PERMISSIONS
 .item-4m-12I {
 	background-color: hsla(0, 0%, 0%, .4);
 	border-color: hsla(0, 0%, 100%, .07);
-}
-.allow-1h61-Z {
+	cursor: pointer;
 	&.selected-3jieYB {
-		background-color: rgb(67, 181, 129);
-		border-color: rgb(67, 181, 129);
+		&.allow-1h61-Z {
+			background-color: rgb(67, 181, 129);
+			border-color: rgb(67, 181, 129);
+		}
+		&.deny-1GO6vI {
+			background-color: rgb(240, 71, 71);
+			border-color: rgb(240, 71, 71);
+		}
+		&.passthrough--fbdFR {
+			background-color: rgb(250, 166, 26);
+			border-color: rgb(250, 166, 26);
+		}
 	}
 }
-.deny-1GO6vI {
-	&.selected-3jieYB {
-		background-color: rgb(240, 71, 71);
-		border-color: rgb(240, 71, 71);
-	}
-}
-.passthrough--fbdFR {
-	&.selected-3jieYB {
-		background-color: rgb(250, 166, 26);
-		border-color: rgb(250, 166, 26);
-	}
-}
-
 .settingCard-xZSDjS {
 	background-color: rgba(0, 0, 0, 0.4);
 	&.active-3EK-ed {
@@ -35,4 +31,6 @@
 }
 
 //Add role popout
-.container-1S70rv .header-3i_Csh{ background-color: rgba(0,0,0,0.7); }
+.container-1S70rv .header-3i_Csh{
+	background-color: rgba(0,0,0,0.7);
+}
