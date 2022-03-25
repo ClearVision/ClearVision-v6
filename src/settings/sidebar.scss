@@ -55,7 +55,7 @@
 			text-overflow: ellipsis;
 		}
 	}
-	[aria-label="USER_SETTINGS"] & %tabBarItem {
+	[aria-label="User Settings"] %tabBarItem {
 		&:nth-child(6),
 		&:nth-child(13),
 		&:nth-child(25) {
