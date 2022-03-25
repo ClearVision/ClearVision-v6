@@ -3783,6 +3783,12 @@ pre {
 .card-m7VgZ8 {
 	@extend %screenshareCard !optional;
 }
+.card-PQEqCK {
+	@extend %serverWelcomeCards !optional;
+}
+.checkmark-bW9BK8 {
+	@extend %serverInviteTick !optional;
+}
 .selectorButton-3fWZ0_ {
 	@extend %screenshareSettingsSelector !optional;
 }

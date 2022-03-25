@@ -39,3 +39,11 @@
 .button-3_1yil:hover {
 	background-color: $hover-color;
 }
+
+// WELCOME TO SERVER CARDS
+%serverWelcomeCards {
+	background-color: hsla(0, 0%, 0%, .4);
+}
+%serverInviteTick {
+	background-color: $main-color;
+}
