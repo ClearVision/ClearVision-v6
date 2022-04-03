@@ -1,99 +1,99 @@
 /* SETTINGS CONTENT */
 %standardSidebarView {
-	> %settingsContentRegion {
-		background: transparent;
-	}
+  > %settingsContentRegion {
+    background: transparent;
+  }
 }
 %settingsContentRegion {
-	%settingsContentScroller,
-	%settingsContentSidebarScroller {
-		background: transparent;
-	}
+  %settingsContentScroller,
+  %settingsContentSidebarScroller {
+    background: transparent;
+  }
 }
 
 // CLOSE BUTTON
 %themeDark {
-	%settingsCloseButton {
-		border-color: hsla(0, 0%, 100%, .4);
-		&:hover {
-			border-color: hsla(0, 0%, 100%, .6);
-			background-color: transparent;
-		}
-		>svg>path {
-			fill:hsla(0, 0%, 100%, .6);
-		}
-	}
-	%settingsCloseButtonKeybind {
-		color: hsla(0, 0%, 100%, .6);
-	}
+  %settingsCloseButton {
+    border-color: hsla(0, 0%, 100%, 0.4);
+    &:hover {
+      border-color: hsla(0, 0%, 100%, 0.6);
+      background-color: transparent;
+    }
+    > svg > path {
+      fill: hsla(0, 0%, 100%, 0.6);
+    }
+  }
+  %settingsCloseButtonKeybind {
+    color: hsla(0, 0%, 100%, 0.6);
+  }
 }
 
 // UNSAVED CHANGES
 %settingsNoticeContainer {
-    background-color: hsla(0, 0%, 0%, .8) !important;
+  background-color: hsla(0, 0%, 0%, 0.8) !important;
 }
 
 // AVATAR UPLOADER
 %settingsImageUploaderInner {
-	background-color: hsla(0, 0%, 100%, .05);
+  background-color: hsla(0, 0%, 100%, 0.05);
 }
 %themeDark %settingsImageUploaderIcon {
-	background-color: var(--main-color);
-	background-image: none;
-	&:after {
-		content: '';
-		position: absolute;
-		top: 0;
-		right: 0;
-		left: 0;
-		bottom: 0;
-		background-image: url(https://discord.com/assets/d5c25e76af04cea8997e4a060572feae.svg);
-		background-repeat: no-repeat;
-		background-position: 50%;
-		filter: brightness(0) invert(1);
-		pointer-events: none;
-	}
+  background-color: var(--main-color);
+  background-image: none;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: url(https://discord.com/assets/d5c25e76af04cea8997e4a060572feae.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    filter: brightness(0) invert(1);
+    pointer-events: none;
+  }
 }
 
 // ITEM CARDS
 %themeDark {
-	%settingsCard {
-		background-color: rgba(0, 0, 0, .4);
-		border-color: hsla(0, 0%, 100%, .07);
-		a {
-			color: var(--url-color);
-		}
-	}
+  %settingsCard {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-color: hsla(0, 0%, 100%, 0.07);
+    a {
+      color: var(--url-color);
+    }
+  }
 }
 %settingsLongCard:before {
-	background-color: rgba(0, 0, 0, .4);
-	border-color: hsla(0, 0%, 100%, .07);
+  background-color: rgba(0, 0, 0, 0.4);
+  border-color: hsla(0, 0%, 100%, 0.07);
 }
 %themeDark {
-	%settingsLongCardButton {
-		background-color: rgba(0, 0, 0, .4);
-		border-color: hsla(0, 0%, 100%, .07);
-		&:hover {
-			background-color: hsla(0, 0%, 0%, .7);
-			border: hsla(0, 0%, 100%, .07);
-		}
-	}
+  %settingsLongCardButton {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-color: hsla(0, 0%, 100%, 0.07);
+    &:hover {
+      background-color: hsla(0, 0%, 0%, 0.7);
+      border: hsla(0, 0%, 100%, 0.07);
+    }
+  }
 }
 %settingsCardWrapper {
-	background-color: transparent;
+  background-color: transparent;
 }
 
 // COLOR PICKER
-%themeDark %settingsColorPickerCustom	 {
-    background-color: hsla(0, 0%, 0%, .8);
-    border-color: transparent;
-    border-radius: 5px;
+%themeDark %settingsColorPickerCustom {
+  background-color: hsla(0, 0%, 0%, 0.8);
+  border-color: transparent;
+  border-radius: 5px;
 }
 
 // WARNING SHAKE
-%shakeable[style*="transform"] {
-	transform:none !important;
-	%bg {
-		animation: cv-shake .5s ease-in;
-	}
+%shakeable[style*='transform'] {
+  transform: none !important;
+  %bg {
+    animation: cv-shake 0.5s ease-in;
+  }
 }

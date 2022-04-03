@@ -1,114 +1,122 @@
 // MESSAGE DELETION CONFIRMATION
 %themeDark .message-G6O-Wv {
-	background-color: transparent;
-	box-shadow: 0 0 2px 2px $main-color;
+  background-color: transparent;
+  box-shadow: 0 0 2px 2px $main-color;
 }
 
 // NOTIFICATIONS SETTINGS
 %themeDark .override-1sK4r0:hover {
-	border-color: $main-color;
+  border-color: $main-color;
 }
 
 // CUSTOM STATUS CLEAR AFTER DURATION
 .selectedIcon-19TbzU {
-	color: var(--interactive-active);
+  color: var(--interactive-active);
 }
 .lookFilled-1GseHa {
-	&.select-1Ia3hD {
-		background-color: rgba(255,255,255,0.05);
-		border-color: rgba(0, 0, 0, .07);
-	}
+  &.select-1Ia3hD {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: rgba(0, 0, 0, 0.07);
+  }
 }
 .popout-1KHNAq {
-	background-color: rgba(0, 0, 0, 0.8);
-	border: none;
-	border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: none;
+  border-radius: 4px;
 }
 
 // REACTIONS LIST
 %themeDark {
-	.scroller-2GkvCq,
-	.reactors-1VXca7 {
-		background-color: transparent;
-	}
-	.reactionDefault-1Sjj1f {
-		margin-bottom: 10px;
-	}
-	.reactionSelected-1aMb2K {
-		background-color: $main-color;
-		margin-bottom: 10px;
-		.colorStandard-21JIj7 {
-			color: #fff;
-		}
-	}
+  .scroller-2GkvCq,
+  .reactors-1VXca7 {
+    background-color: transparent;
+  }
+  .reactionDefault-1Sjj1f {
+    margin-bottom: 10px;
+  }
+  .reactionSelected-1aMb2K {
+    background-color: $main-color;
+    margin-bottom: 10px;
+    .colorStandard-21JIj7 {
+      color: #fff;
+    }
+  }
 }
 
 // CHANGE IDENTITY
 .upsellCard-11CKVn {
-	background-color: transparent;
+  background-color: transparent;
 }
 
 // QUICKSWITCHER
-.quickswitcher-pKcM9U { background-color: rgba(0,0,0,0.5); }
-.input-3r5zZY { background-color: rgba(255,255,255,0.07); }
+.quickswitcher-pKcM9U {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.input-3r5zZY {
+  background-color: rgba(255, 255, 255, 0.07);
+}
 .scroller-2qwVWY {
-	background-color: transparent;
-	margin-top: 10px;
-	&::-webkit-scrollbar-track {
-		background-color: transparent !important;
-	}
+  background-color: transparent;
+  margin-top: 10px;
+  &::-webkit-scrollbar-track {
+    background-color: transparent !important;
+  }
 }
 
 // DISCORD NITRO GIFT PAYMENT
-.table-17_dGF {background-color: transparent;}
-.paymentSourceWrapper-39oqV6 .lookFilled-1h1y05.select-1Pkeg4 { margin: 0 2px; }
+.table-17_dGF {
+  background-color: transparent;
+}
+.paymentSourceWrapper-39oqV6 .lookFilled-1h1y05.select-1Pkeg4 {
+  margin: 0 2px;
+}
 .planOptionDiscount-2UFc37 {
-	background-color: $main-color;
+  background-color: $main-color;
 }
 // SERVER BOOST PAYMENT MODAL
 .upsellFooter-1H_OCF {
-	background: transparent;
+  background: transparent;
 }
 .icon-2TbMdT {
-	color: #fff;
-	&:hover {
-		color: #fff;
-		background-color: $hover-color;
-	}
+  color: #fff;
+  &:hover {
+    color: #fff;
+    background-color: $hover-color;
+  }
 }
 %themeDark .iconWrapper-2_MXbk {
-	background: hsla(0, 0%, 0%, .8);
+  background: hsla(0, 0%, 0%, 0.8);
 }
 .actions-10aT1z .input-2g-os5 {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 // INVITE FROM WEB BROWSER
 %themeDark .contentWrapper-3oy4Xo {
-	background: hsla(0, 0%, 0%, .5);
+  background: hsla(0, 0%, 0%, 0.5);
 }
 .pillIconOnline-2JLgFw {
-	background-color: var(--online-color);
+  background-color: var(--online-color);
 }
 .pillIconTotal-3rJafa {
-	background-color: var(--offline-color);
+  background-color: var(--offline-color);
 }
 
 // INVITE MODAL
 .inviteRow-3vmB7i:hover {
-	background-color: rgba(255,255,255,.07);
+  background-color: rgba(255, 255, 255, 0.07);
 }
 
 // TIMEOUT
 %themeDark .item-2OyinQ:hover {
-	background-color: var(--hover-color);
-	}
-	
+  background-color: var(--hover-color);
+}
+
 .selectorButtonSelected-1VZ6hz {
-	background-color: $main-color;
+  background-color: $main-color;
 }
 
 // Tab Help
 .tips-39ZVzW {
-	background-color: hsla(0, 0%, 0%, .4);
+  background-color: hsla(0, 0%, 0%, 0.4);
 }

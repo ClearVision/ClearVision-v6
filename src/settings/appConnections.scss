@@ -1,69 +1,69 @@
 /* CONNECTIONS */
 $colours: (
-    "Twitch": #9146ff,
-    "YouTube": #ff0000,
-    "Battle.net": #0566b0,
-    "Steam": #000000,
-    "Reddit": #ff4500,
-    "Facebook": #1877f2,
-    "Twitter": #009ef7,
-    "Spotify": #1db954,
-    "Xbox Live": #107c10,
-    "GitHub": #222222,
+  'Twitch': #9146ff,
+  'YouTube': #ff0000,
+  'Battle.net': #0566b0,
+  'Steam': #000000,
+  'Reddit': #ff4500,
+  'Facebook': #1877f2,
+  'Twitter': #009ef7,
+  'Spotify': #1db954,
+  'Xbox Live': #107c10,
+  'GitHub': #222222,
 );
 
 .connection-YOVI9j,
 .connectionHeader-Ixbb1s {
-    background: transparent;
+  background: transparent;
 }
 .connectionIcon-1iZ6F_ {
-    + div {
-        &:before {
-            content: "";
-            position: absolute;
-            @include stretch;
-            border-radius: 8px 8px 0 0;
-            pointer-events: none;
-            z-index: -1;
-        }
-        &:after {
-            content: "";
-            position: absolute;
-            @include pos(72px, 0, -64px, 0);
-            border-radius: 0 0 8px 8px;
-            pointer-events: none;
-            z-index: -1;
-        }
+  + div {
+    &:before {
+      content: '';
+      position: absolute;
+      @include stretch;
+      border-radius: 8px 8px 0 0;
+      pointer-events: none;
+      z-index: -1;
     }
-    @each $i, $u in $colours {
-        &[alt*="#{$i}"] + div {
-            &:before {
-                background-color: rgba( $u, .6);	
-            }
-            &:after {
-                background-color: rgba( $u, .5);	
-            }
-        }
+    &:after {
+      content: '';
+      position: absolute;
+      @include pos(72px, 0, -64px, 0);
+      border-radius: 0 0 8px 8px;
+      pointer-events: none;
+      z-index: -1;
     }
-    &[alt*="Facebook"],
-    &[alt*="Spotify"],
-    &[alt*="Xbox Live"] {
-        + div:after {
-            bottom: -108px;
-        }
+  }
+  @each $i, $u in $colours {
+    &[alt*='#{$i}'] + div {
+      &:before {
+        background-color: rgba($u, 0.6);
+      }
+      &:after {
+        background-color: rgba($u, 0.5);
+      }
     }
+  }
+  &[alt*='Facebook'],
+  &[alt*='Spotify'],
+  &[alt*='Xbox Live'] {
+    + div:after {
+      bottom: -108px;
+    }
+  }
 }
 .connectionAccountLabel-28GEPk {
-    color: hsla(0, 0%, 100%, .7);
+  color: hsla(0, 0%, 100%, 0.7);
 }
 .connectionDelete-3YgMVq {
-    color: hsla(0, 0%, 100%, .7);
+  color: hsla(0, 0%, 100%, 0.7);
 }
 
 .integrationsWrapper-1V-5L9 {
-    background-color: cv("const:colors.twitch-purple");
-    border-radius: 0 0 8px 8px;
+  background-color: cv('const:colors.twitch-purple');
+  border-radius: 0 0 8px 8px;
 }
-.integration-1qC-fv  {
-    background-color: cv("const:colors.twitch-purple");
+.integration-1qC-fv {
+  background-color: cv('const:colors.twitch-purple');
 }

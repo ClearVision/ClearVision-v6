@@ -24,26 +24,33 @@
 </div>
 
 ## Theme Editor
-You are now able to customize the theme with a preview before downloading it to your computer.
->[Theme Editor](https://bdeditor.dev/theme/clearvision)
 
-*Thank you to @Gibbu to providing this.*
+You are now able to customize the theme with a preview before downloading it to your computer.
+
+> [Theme Editor](https://bdeditor.dev/theme/clearvision)
+
+_Thank you to @Gibbu to providing this._
 
 ## Installing
+
 Download the theme file and move it into your [BetterDiscord](https://betterdiscord.app) themes folder:
 
->[ClearVision_v6.theme.css](https://clearvision.gitlab.io/download/v6/latest)
+> [ClearVision_v6.theme.css](https://clearvision.gitlab.io/download/v6/latest)
 
 ## Building from source
+
 In order build the theme from source, you can simply run `npm install` to install all missing dependencies, and `npm run build` to compile the theme into the `/public` folder.
 
-**Dependencies:**
+### Dependencies
+
 - [sass](https://www.npmjs.com/package/sass)
 - [PostCSS Autoprefixer](https://www.npmjs.com/package/autoprefixer)
 - [PostCSS CLI](https://www.npmjs.com/package/postcss-cli)
-- *[DiscordSelectors](https://github.com/Zerthox/DiscordSelectors) (included in the `/lib` folder)*
-- *[rimraf](https://www.npmjs.com/package/rimraf) (for cleanup)*
+- [rimraf](https://www.npmjs.com/package/rimraf) (for cleanup)
+- [Prettier](https://www.npmjs.com/package/prettier) (code formatting)
+- _[DiscordSelectors](https://github.com/Zerthox/DiscordSelectors) (included in the `/lib` folder)_
 
 ## Contributing
+
 You can run `npm run test` to compile the theme.
 The `main.css` file will be in the `/test` directory, which can then be copied into BetterDiscord's Custom CSS.

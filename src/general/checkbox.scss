@@ -1,14 +1,14 @@
 /* CHECKBOX */
 
 %checkbox {
-	border-color: hsla(0, 0%, 100%, .5);
-	&%checkboxChecked {
-		background-color: transparent !important;
-		border-color: var(--main-color) !important;		
-		>svg {
-			>path {
-				fill: #fff;
-			}
-		}
-	}
+  border-color: hsla(0, 0%, 100%, 0.5);
+  &%checkboxChecked {
+    background-color: transparent !important;
+    border-color: var(--main-color) !important;
+    > svg {
+      > path {
+        fill: #fff;
+      }
+    }
+  }
 }

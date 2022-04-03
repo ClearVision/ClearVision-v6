@@ -1,62 +1,61 @@
 /* MESSAGE */
 %messages {
-	%messageGroup {
-		transition: background .3s ease-in-out;
-		&:active {
-			background: hsla(0, 0%, 100%, .1);
-			transition-delay: .3s;
-		}
-	}
+  %messageGroup {
+    transition: background 0.3s ease-in-out;
+    &:active {
+      background: hsla(0, 0%, 100%, 0.1);
+      transition-delay: 0.3s;
+    }
+  }
 }
 %message {
+  // HEADER
+  %avatarLarge {
+    transition: all 0.3s ease-in-out, transform 0.1s ease-in-out;
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+  %messageTimestamp,
+  %messageTimestampAlt {
+    text-align: center;
+    color: hsla(0, 0%, 100%, 0.5);
+  }
 
-	// HEADER
-	%avatarLarge {
-		transition: all .3s ease-in-out, transform .1s ease-in-out;
-		&:active {
-			transform: scale(.9);
-		}	
-	}
-	%messageTimestamp,
-	%messageTimestampAlt {
-		text-align: center;
-		color: hsla(0, 0%, 100%, .5);
-	}
+  // CONTENT
+  %messageSystemContainer {
+    color: hsla(0, 0%, 100%, 0.5);
+  }
+  %markup {
+    color: var(--text-normal);
+  }
 
-	// CONTENT
-	%messageSystemContainer {
-		color: hsla(0, 0%, 100%, .5);
-	}
-	%markup {
-		color: var(--text-normal);
-	}
+  // MENTIONED
+  %mentioned {
+    background: hsla(0, 0%, 100%, 0.1);
+    &:after {
+      background: hsla(0, 0%, 100%, 0.1);
+      border-left: 4px solid $main-color;
+      border-radius: 2px 0 0 2px;
+    }
+  }
 
-	// MENTIONED
-	%mentioned {
-		background: hsla(0, 0%, 100%, .1);
-		&:after {
-			background: hsla(0, 0%, 100%, .1);
-			border-left: 4px solid $main-color;
-			border-radius: 2px 0 0 2px;
-		}
-	}
+  // BLOCKQUOTE
+  %markup {
+    %blockquoteDivider {
+      background: hsla(0, 0%, 100%, 0.2);
+      border-radius: 0;
+    }
+  }
 
-	// BLOCKQUOTE
-	%markup {
-		%blockquoteDivider {
-			background: hsla(0, 0%, 100%, .2);
-			border-radius: 0;
-		}
-	}
-
-	// MESSAGE JUMP
-	> div[style^="border-radius: 2px;"] {
-		&[style$="0);"] {
-			animation: none;
-		}
-		border-radius: 3px !important;
-		animation: cv-message-jump 2s ease-in-out;
-	}
+  // MESSAGE JUMP
+  > div[style^='border-radius: 2px;'] {
+    &[style$='0);'] {
+      animation: none;
+    }
+    border-radius: 3px !important;
+    animation: cv-message-jump 2s ease-in-out;
+  }
 }
 
 // LINKS
@@ -64,115 +63,116 @@
 %embed > %embedTitleLink,
 %markup a,
 .content-s2SEQO a,
-.colorLink-2apWfY, .fakeLink-1wGafz {
-	color: var(--url-color) !important;
+.colorLink-2apWfY,
+.fakeLink-1wGafz {
+  color: var(--url-color) !important;
 }
 
 // INVALID GIFT
 %themeDark {
-	.tile-2mmK5T {
-		background-color: hsla(0, 0%, 0%, .4);
-		&:hover {
-			background-color: hsla(0, 0%, 0%, .4);
-		}
-	}
+  .tile-2mmK5T {
+    background-color: hsla(0, 0%, 0%, 0.4);
+    &:hover {
+      background-color: hsla(0, 0%, 0%, 0.4);
+    }
+  }
 }
 
 // REPLY
 %messageReplied {
-	&:before {
-		border-color: $main-color;
-	}
-	%messageRepliedTextPreview {
-		opacity: .7;
-		&%messageRepliedTextPreviewClickable:hover {
-			opacity: 1;
-		}
-		%messageRepliedTextContent {
-			color: #fff;
-		}
-		%messageRepliedTextPlaceholder {
-			color: $main-color;
-		}
-	}
-	%messageRepliedTextContentIcon {
-		opacity: .7;
-		%messageRepliedTextPreview:hover + & {
-			opacity: 1;
-		}
-	}
-	&%messageRepliedExecutedCommand {
-		%messageRepliedCommandName {
-			color: $main-color
-		}
-	}
+  &:before {
+    border-color: $main-color;
+  }
+  %messageRepliedTextPreview {
+    opacity: 0.7;
+    &%messageRepliedTextPreviewClickable:hover {
+      opacity: 1;
+    }
+    %messageRepliedTextContent {
+      color: #fff;
+    }
+    %messageRepliedTextPlaceholder {
+      color: $main-color;
+    }
+  }
+  %messageRepliedTextContentIcon {
+    opacity: 0.7;
+    %messageRepliedTextPreview:hover + & {
+      opacity: 1;
+    }
+  }
+  &%messageRepliedExecutedCommand {
+    %messageRepliedCommandName {
+      color: $main-color;
+    }
+  }
 }
 
 // THREADS
 %threadChatIcon {
-	color: $main-color;
-	filter: drop-shadow(0 0 3px);
-	width: 22px;
+  color: $main-color;
+  filter: drop-shadow(0 0 3px);
+  width: 22px;
 }
 %threadEmbed {
-	background-color: hsla(0, 0%, 0%, .4);
+  background-color: hsla(0, 0%, 0%, 0.4);
 }
 %threadCTA {
-	color: $main-color;
+  color: $main-color;
 }
 %cozy {
-	&%messageHasThread {
-		&:after {
-			border-color: $main-color;
-		}
-	}
+  &%messageHasThread {
+    &:after {
+      border-color: $main-color;
+    }
+  }
 }
 %threadJumpButton {
-	background-color: var(--main-color);
-	color: #fff;
-	&:hover {
-		background-color: var(--hover-color);
-		color: #fff;
-	}
+  background-color: var(--main-color);
+  color: #fff;
+  &:hover {
+    background-color: var(--hover-color);
+    color: #fff;
+  }
 }
-
 
 // BUTTONS
 %messageButtonWrapper {
-	background-color: transparent;
-	%messageButton {
-		color: hsla(0, 0%, 100%, .7);
-		&:hover,
-		&%messageButtonSelected {
-			background-color: hsla(0, 0%, 100%, .1);
-			color: #fff;
-		}
-	}
+  background-color: transparent;
+  %messageButton {
+    color: hsla(0, 0%, 100%, 0.7);
+    &:hover,
+    &%messageButtonSelected {
+      background-color: hsla(0, 0%, 100%, 0.1);
+      color: #fff;
+    }
+  }
 }
 
 // EDITING
 %themeDark %operations {
-	color: hsla(0, 0%, 100%, .5);
-	>a {
-		color: var(--main-color);
-	}
+  color: hsla(0, 0%, 100%, 0.5);
+  > a {
+    color: var(--main-color);
+  }
 }
 
 %replyingToIndicator {
-	background-color: hsla(0, 0%, 100%, .05);
-	%mouseModeFullMotion &:hover {
-		background-color: hsla(0, 0%, 100%, .08);
-	}
-	&:before {
-		background-color: var(--main-color);
-	}
+  background-color: hsla(0, 0%, 100%, 0.05);
+  %mouseModeFullMotion &:hover {
+    background-color: hsla(0, 0%, 100%, 0.08);
+  }
+  &:before {
+    background-color: var(--main-color);
+  }
 }
 
 // BEGINNING DM WAVE
-%waveButton, %waveButtonDisabled {
-	background-color: $main-color;
+%waveButton,
+%waveButtonDisabled {
+  background-color: $main-color;
 }
 
 %waveButton:hover {
-	background-color: $hover-color;
+  background-color: $hover-color;
 }

@@ -1,137 +1,137 @@
 /* FRIENDS */
 %themeDark {
-	%friends {
-		background-color: transparent;
-	}
+  %friends {
+    background-color: transparent;
+  }
 }
 
 // FRIENDS COLUMN
 %friendsColumn {
-	background: rgba(0, 0, 0, calc(var(--background-shading) * .4));
+  background: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
 }
 %friendsItem {
-	&:hover,
-	&%friendsItemActive {
-		background-color: hsla(0, 0%, 100%, .05);
-	}	
+  &:hover,
+  &%friendsItemActive {
+    background-color: hsla(0, 0%, 100%, 0.05);
+  }
 }
 
 %friendActivity {
-	color: hsla(0, 0%, 100%, .5);
-	strong {
-		color: $main-color;
-	}
+  color: hsla(0, 0%, 100%, 0.5);
+  strong {
+    color: $main-color;
+  }
 }
 
-// ACTION BUTTON 
+// ACTION BUTTON
 %friendActionButton {
-	background-color: hsla(0, 0%, 0%, 0.6);
-	color: #fff;
-	&%friendActionButtonHighlight {
-		background-color: hsla(0, 0%, 0%, 0.6);
-		color: #fff;
-	}
-	&:hover {
-		background-color: $hover-color;
-		color: #fff;
-	}
-	&%friendActionAcceptButton {
-		color: cv("colors.success");
-		&:hover {
-			background-color: cv("colors.success");
-			color: #fff !important;
-		}
-	}
-	&%friendActionDenyButton {
-		color: cv("colors.danger");
-		&:hover {
-			background-color: cv("colors.danger");
-			color: #fff !important;
-		}
-	}
+  background-color: hsla(0, 0%, 0%, 0.6);
+  color: #fff;
+  &%friendActionButtonHighlight {
+    background-color: hsla(0, 0%, 0%, 0.6);
+    color: #fff;
+  }
+  &:hover {
+    background-color: $hover-color;
+    color: #fff;
+  }
+  &%friendActionAcceptButton {
+    color: cv('colors.success');
+    &:hover {
+      background-color: cv('colors.success');
+      color: #fff !important;
+    }
+  }
+  &%friendActionDenyButton {
+    color: cv('colors.danger');
+    &:hover {
+      background-color: cv('colors.danger');
+      color: #fff !important;
+    }
+  }
 }
 
 // ADD FRIENDS BUTTON
-%tabBarItem[aria-controls="add_friend-tab"][aria-selected="false"] {
-	background-color: cv("colors.success") !important;
-	color: #fff !important;
+%tabBarItem[aria-controls='add_friend-tab'][aria-selected='false'] {
+  background-color: cv('colors.success') !important;
+  color: #fff !important;
 }
-%tabBarItem[aria-controls="add_friend-tab"][aria-selected="true"] {
-	background-color: transparent !important;
-	color: cv("colors.success") !important;
-	box-shadow: 0 0 0 1px var(--success-color) inset;
+%tabBarItem[aria-controls='add_friend-tab'][aria-selected='true'] {
+  background-color: transparent !important;
+  color: cv('colors.success') !important;
+  box-shadow: 0 0 0 1px var(--success-color) inset;
 }
-%tabBarItem[aria-controls="add_friend-tab"][aria-selected="true"]:before {
-	content: "";
-	position: absolute;
-	background-color: var(--success-color);
-	opacity: 0.2;
-	width: 100%;
-	height: 100%;
-	z-index: -1;
+%tabBarItem[aria-controls='add_friend-tab'][aria-selected='true']:before {
+  content: '';
+  position: absolute;
+  background-color: var(--success-color);
+  opacity: 0.2;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 // ADD FRIENDS PAGE
 %friendsAddFriendInputWrapper {
-	background-color: hsla(0, 0%, 100%, .07);
-	box-shadow: 0 0 0 2px rgba(255,255,255,0.09);
-	border: none;
-	&:focus-within {
-		box-shadow: 0 0 2px 2px var(--main-color);
-	}
-	%input {
-		background-color: transparent;
-		box-shadow: none;
-		&:focus,
-		&%inputFocused {
-			box-shadow: none;
-		}
-	}
+  background-color: hsla(0, 0%, 100%, 0.07);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.09);
+  border: none;
+  &:focus-within {
+    box-shadow: 0 0 2px 2px var(--main-color);
+  }
+  %input {
+    background-color: transparent;
+    box-shadow: none;
+    &:focus,
+    &%inputFocused {
+      box-shadow: none;
+    }
+  }
 }
 %friendsAddFriendInput {
-	&::placeholder {
-		color: hsla(0, 0%, 100%, .3);
-	}
+  &::placeholder {
+    color: hsla(0, 0%, 100%, 0.3);
+  }
 }
 %friendsAddFriendHint {
-	color: hsla(0, 0%, 100%, .3);
+  color: hsla(0, 0%, 100%, 0.3);
 }
 
 // NOW PLAYING
 %nowPlayingColumn {
-	background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.6))
+  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.6));
 }
 %nowPlayingColumnContainer {
-	background-color: transparent;
+  background-color: transparent;
 }
 %consentCard {
-	background-color: hsla(0, 0%, 0%, .4);
+  background-color: hsla(0, 0%, 0%, 0.4);
 }
 
 // ACTIVE NOW
 %themeDark {
-	%activeNowOuterCard {
-		background-color: hsla(0, 0%, 0%, .4);
-		border: 1px solid transparent;
-		&%activeNowCardInteractive:hover,
-		&%activeNowCardActive {
-			background-color: hsla(0, 0%, 0%, .6);
-		}
-	}
-	%activeNowCardInset {
-		background-color: hsla(0, 0%, 0%, .4);
-	}
-	.partyMemberOverflow-3G1oZz {
-		background-color: var(--background-overlay);
-	}
+  %activeNowOuterCard {
+    background-color: hsla(0, 0%, 0%, 0.4);
+    border: 1px solid transparent;
+    &%activeNowCardInteractive:hover,
+    &%activeNowCardActive {
+      background-color: hsla(0, 0%, 0%, 0.6);
+    }
+  }
+  %activeNowCardInset {
+    background-color: hsla(0, 0%, 0%, 0.4);
+  }
+  .partyMemberOverflow-3G1oZz {
+    background-color: var(--background-overlay);
+  }
 }
 %activeNowCardSection {
-	background-color: transparent;
+  background-color: transparent;
 }
 // IT'S QUIET FOR NOW...
 %emptyActiveNowCard {
-	background-color:hsla(0, 0%, 0%, .4);
+  background-color: hsla(0, 0%, 0%, 0.4);
 }
 %emptyActiveNowText {
-	color: hsla(0, 0%, 100%, .3);
+  color: hsla(0, 0%, 100%, 0.3);
 }

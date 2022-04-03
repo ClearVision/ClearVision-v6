@@ -1,48 +1,48 @@
 /* ADD SERVER MODAL */
 .base-21yXnu {
-	color: #fff;
+  color: #fff;
 }
 .subtitle-3m-md1,
 .optionHeader-27AHfD {
-	color: hsla(0, 0%, 100%, .7)
+  color: hsla(0, 0%, 100%, 0.7);
 }
-.iconContainer-GFfNaA>svg>circle {
-	fill: $main-color;
+.iconContainer-GFfNaA > svg > circle {
+  fill: $main-color;
 }
 .sampleLink-5BWNy9 {
-	color: $main-color;
-	font-weight: 500;
+  color: $main-color;
+  font-weight: 500;
 }
 .backButton-2Ps-B8 {
-	color: hsla(0, 0%, 100%, .7);
-	&:hover {
-		color: #fff;
-		text-decoration: underline;
-	}
+  color: hsla(0, 0%, 100%, 0.7);
+  &:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
 }
 
 // SERVER TEMPLATES
 .container-x8Y1ix {
-    background-color: $main-color;
-    &:hover {
-		background-color: $hover-color;
-    }
-    .text-PdAsFQ {
-        color: #fff;
-    }
-    .arrow-2yY1Tm {
-        filter: brightness(0) invert(1);
-    }
+  background-color: $main-color;
+  &:hover {
+    background-color: $hover-color;
+  }
+  .text-PdAsFQ {
+    color: #fff;
+  }
+  .arrow-2yY1Tm {
+    filter: brightness(0) invert(1);
+  }
 }
 .rowContainer-3t7486 {
-	background-color: $main-color;
-	&:hover {
-		background-color: $hover-color;
-    }
-	.colorStandard-21JIj7 {
-		color: #fff;
-	}
-	.rowArrow-TIwwIc {
-		filter: brightness(0) invert(1);
-	}
+  background-color: $main-color;
+  &:hover {
+    background-color: $hover-color;
+  }
+  .colorStandard-21JIj7 {
+    color: #fff;
+  }
+  .rowArrow-TIwwIc {
+    filter: brightness(0) invert(1);
+  }
 }

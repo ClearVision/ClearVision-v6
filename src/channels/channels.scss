@@ -1,349 +1,346 @@
 /* CHANNELS */
 %channelsSidebar {
-	width: cv("channels-width");
-	background: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .3));
-	%platformWin & {
-		border-radius: 0;
-	}	
+  width: cv('channels-width');
+  background: rgba(0, 0, 0, calc(#{cv('bg.app.shading')} * 0.3));
+  %platformWin & {
+    border-radius: 0;
+  }
 }
 %channelsContainer {
-	background: transparent;
+  background: transparent;
 
-	// CHANNELS HEADER
-	%channelsHeader {
-		height: 48px;
-		color: #fff;
-		font-family: cv("font.main");
-		font-weight: 600;
-		text-shadow: 0 0 3px #000;
-	}
+  // CHANNELS HEADER
+  %channelsHeader {
+    height: 48px;
+    color: #fff;
+    font-family: cv('font.main');
+    font-weight: 600;
+    text-shadow: 0 0 3px #000;
+  }
 
-	// GUILD BANNER
-	%bannerAnimatedContainer {
-		background: transparent;
-		box-shadow: none;
-	}
-	%bannerImage {
-		width: cv("channels-width");
-		-webkit-mask: linear-gradient(to bottom, #000, transparent);
-		mask: linear-gradient(to bottom, #000, transparent);
-	}
-	%threadChannelConnector {
-		color: $main-color;
-	}
+  // GUILD BANNER
+  %bannerAnimatedContainer {
+    background: transparent;
+    box-shadow: none;
+  }
+  %bannerImage {
+    width: cv('channels-width');
+    -webkit-mask: linear-gradient(to bottom, #000, transparent);
+    mask: linear-gradient(to bottom, #000, transparent);
+  }
+  %threadChannelConnector {
+    color: $main-color;
+  }
 
-	// GUILD BADGE
-	%channelsHeaderContainer {
-		%flowerStarContainer {
-			color: $main-color;
-		}
-		%flowerStarChild>svg {
-			color: #fff;
-		}
-	}
+  // GUILD BADGE
+  %channelsHeaderContainer {
+    %flowerStarContainer {
+      color: $main-color;
+    }
+    %flowerStarChild > svg {
+      color: #fff;
+    }
+  }
 }
 
 // CHANNEL CONTENT
 %channelContent {
-	transition: all .15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 %channelContent {
-	position: relative;
-	background: transparent !important;
-	&:before {
-		content: "";
-		position: absolute;
-		@include stretch;
-		transition: all .15s ease-in-out;
-		z-index: -1;
-		pointer-events: none;
-		border-radius: 4px;
-	}
-	&:after {
-		content: "";
-		position: absolute;
-		@include pos(0, 100%, 0, 0);
-		opacity: .9;
-		transition: all .3s ease-in-out;
-		z-index: -1;
-		pointer-events: none;
-		border-radius: 4px;
-	}
-	%channelIcon {
-		width: 18px;
-		height: 18px;
-		margin-right: 3px;
-		color: var(--channel-color);
-		opacity: 1;
-		transition: all .15s ease-in-out;
-		> path {
-			opacity: .7;
-		}
-		> path:last-of-type {	
-			opacity: 1;
-		}
-	}
-	%channelName {
-		color: var(--channel-color);
-		transition: all .15s ease-in-out;
-	}
+  position: relative;
+  background: transparent !important;
+  &:before {
+    content: '';
+    position: absolute;
+    @include stretch;
+    transition: all 0.15s ease-in-out;
+    z-index: -1;
+    pointer-events: none;
+    border-radius: 4px;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    @include pos(0, 100%, 0, 0);
+    opacity: 0.9;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+    pointer-events: none;
+    border-radius: 4px;
+  }
+  %channelIcon {
+    width: 18px;
+    height: 18px;
+    margin-right: 3px;
+    color: var(--channel-color);
+    opacity: 1;
+    transition: all 0.15s ease-in-out;
+    > path {
+      opacity: 0.7;
+    }
+    > path:last-of-type {
+      opacity: 1;
+    }
+  }
+  %channelName {
+    color: var(--channel-color);
+    transition: all 0.15s ease-in-out;
+  }
 }
 %channelButtons {
-	margin-left: 1px;
-	animation: cv-fade-to-3 .15s ease-in-out;
+  margin-left: 1px;
+  animation: cv-fade-to-3 0.15s ease-in-out;
 }
 %channelActionIcon {
-	color: #fff;
-	opacity: .3;
-	transition: all .15s ease-in-out;
-	&:hover {
-		opacity: .7;
-	}
+  color: #fff;
+  opacity: 0.3;
+  transition: all 0.15s ease-in-out;
+  &:hover {
+    opacity: 0.7;
+  }
 }
 %channelWrapper {
+  // HOVER
+  &:hover {
+    %channelContent {
+      &:before {
+        background: hsla(0, 0%, 100%, 0.1);
+      }
+      %channelMain {
+        %channelContainerDefault & {
+          %channelIcon,
+          %channelName {
+            color: hsla(0, 0%, 100%, 0.7);
+          }
+        }
+      }
+    }
+  }
+  // UNREAD
+  &%channelWrapperUnread {
+    %channelContent {
+      %channelMain {
+        %channelName {
+          color: var(--channel-unread);
+          text-shadow: 0 0 3px;
+        }
+        %channelIcon {
+          color: var(--channel-unread);
+          filter: drop-shadow(0 0 3px);
+          opacity: 1;
+        }
+      }
+    }
+    &:hover {
+      %channelContent {
+        %channelMain {
+          %channelName {
+            color: var(--channel-text-selected);
+          }
+          %channelIcon {
+            color: var(--channel-text-selected);
+          }
+        }
+      }
+    }
+  }
+  // SELECTED
+  &%channelWrapperSelected {
+    %channelContent {
+      &:before {
+        background: hsla(0, 0%, 100%, 0.1);
+      }
+      &:after {
+        right: 0;
+        background: $main-color;
+        animation: cv-channel-select 0.3s ease-in-out;
+      }
+      %channelContainerDefault & {
+        %channelIcon,
+        %channelName {
+          color: var(--channel-text-selected);
+        }
+        %channelIconLive {
+          color: var(--channel-text-selected) !important;
+        }
+      }
+      %channelActionIcon {
+        opacity: 0.7;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
 
-	// HOVER
-	&:hover {
-		%channelContent {
-			&:before {
-				background: hsla(0, 0%, 100%, .1);
-			}
-			%channelMain {
-				%channelContainerDefault & {
-					%channelIcon,
-					%channelName {
-					color: hsla(0, 0%, 100%, .7);
-					}
-				}
-			}
-		}
-	}
-	// UNREAD
-	&%channelWrapperUnread {
-		%channelContent {
-			%channelMain {
-				%channelName {
-					color: var(--channel-unread);
-					text-shadow: 0 0 3px;
-				}
-				%channelIcon {
-					color: var(--channel-unread);
-					filter: drop-shadow(0 0 3px);
-					opacity: 1;
-				}
-			}
-		}
-		&:hover {
-			%channelContent {
-				%channelMain {
-					%channelName {
-						color: var(--channel-text-selected);
-					}
-					%channelIcon {
-						color: var(--channel-text-selected);
-					}
-				}
-			}
-		}
-	}
-	// SELECTED
-	&%channelWrapperSelected {
-		%channelContent {
-			&:before {
-				background: hsla(0, 0%, 100%, .1);
-			}
-			&:after {
-				right: 0;
-				background: $main-color;
-				animation: cv-channel-select .3s ease-in-out;
-			}
-			%channelContainerDefault & {
-				%channelIcon,
-				%channelName {
-					color: var(--channel-text-selected);
-				}
-				%channelIconLive {
-					color: var(--channel-text-selected) !important;
-				}
-			}
-			%channelActionIcon {
-				opacity: .7;
-				&:hover {
-					opacity: 1;
-				}
-			}
-		}
-	}
-
-	
-	// CONNECTED
-	&%channelWrapperConnected {
-		%channelContent {
-			%channelMain {
-				%channelName {
-					color: $main-color;
-					text-shadow: 0 0 3px;
-				}
-				%channelIcon {
-					color: $main-color;
-					filter: drop-shadow(0 0 3px);
-				}
-			}
-		}
-	}
-	// MUTED
-	&%channelWrapperMuted {
-		%channelContent {
-			%channelMain {
-				%channelIcon,
-				%channelName {
-					color: var(--muted-color);
-				}
-			}
-		}
-		&:hover {
-			%channelContent {
-				%channelMain {
-					&:before {
-						background: hsla(0, 0%, 100%, .07);
-					}
-					%channelContainerDefault & {
-						%channelIcon,
-						%channelName {
-							color: var(--channel-color);
-						}
-					}
-				}
-			}
-		}
-	}
+  // CONNECTED
+  &%channelWrapperConnected {
+    %channelContent {
+      %channelMain {
+        %channelName {
+          color: $main-color;
+          text-shadow: 0 0 3px;
+        }
+        %channelIcon {
+          color: $main-color;
+          filter: drop-shadow(0 0 3px);
+        }
+      }
+    }
+  }
+  // MUTED
+  &%channelWrapperMuted {
+    %channelContent {
+      %channelMain {
+        %channelIcon,
+        %channelName {
+          color: var(--muted-color);
+        }
+      }
+    }
+    &:hover {
+      %channelContent {
+        %channelMain {
+          &:before {
+            background: hsla(0, 0%, 100%, 0.07);
+          }
+          %channelContainerDefault & {
+            %channelIcon,
+            %channelName {
+              color: var(--channel-color);
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 // UNREAD & MENTIONS INDICATION
 %channelUnreadPill {
-	display: none;
+  display: none;
 }
 
 // ICONS
 %channelIconLive {
-	background-color: $main-color !important;
+  background-color: $main-color !important;
 }
 
 // USER LIMIT
 %channelUserLimitUsers,
 %channelUserLimitTotal {
-	width: 24px;
-	color: hsla(0, 0%, 100%, .3);
-	font-weight: 600;
-	text-align: right;
-	transition: all .15s ease-in-out;
+  width: 24px;
+  color: hsla(0, 0%, 100%, 0.3);
+  font-weight: 600;
+  text-align: right;
+  transition: all 0.15s ease-in-out;
 }
 %channelUserLimitUsers {
-	padding: 0 4px 0 6px;
-	background: rgba(0, 0, 0, .15);
+  padding: 0 4px 0 6px;
+  background: rgba(0, 0, 0, 0.15);
 }
 %channelUserLimitTotal {
-	padding: 0 6px 0 4px;
-	background: hsla(0, 0%, 100%, .04);
-	box-shadow: inset 1px 0 hsla(0, 0%, 100%, .07);
-	&:after {
-		display: none;
-	}
+  padding: 0 6px 0 4px;
+  background: hsla(0, 0%, 100%, 0.04);
+  box-shadow: inset 1px 0 hsla(0, 0%, 100%, 0.07);
+  &:after {
+    display: none;
+  }
 }
 %channelWrapperConnected {
-	%channelUserLimitUsers {
-		color: $main-color;
-		text-shadow: 0 0 1px;
-	}
+  %channelUserLimitUsers {
+    color: $main-color;
+    text-shadow: 0 0 1px;
+  }
 }
 
 // VOICE USER LIST
 %voiceUserList {
-	padding-left: 24px;
+  padding-left: 24px;
 }
 %voiceUser {
-	z-index: 1;
-	%voiceUserContent {
-		border-radius: 3px;
-		transition: all .15s ease-in-out;
-	}
-	&:hover,
-	&:active,
-	&%voiceUserSelected {
-		%channels %voiceUserList & {
-			%voiceUserContent {
-				background: hsla(0, 0%, 100%, .04);
-			}
-			%voiceUserName {
-				color: hsla(0, 0%, 100%, .7);
-			}
-		}
-	}
-	%voiceUserAvatar {
-		position: relative;
-		transition: all .1s ease-in-out;
-		&:after {
-			content: "";
-			position: absolute;
-			width: 0;
-			@include pos($top: 0, $bottom: 0, $left: 0);
-			background: linear-gradient(to right, $main-color 10%, transparent);
-			opacity: .5;
-			transition: all .1s ease-in-out,  width .15s ease-in-out;
-			pointer-events: none;
-			z-index: -1;
-			border-radius: 999px;
-			border-top-right-radius: 0;
-			border-bottom-right-radius: 0;
-		}
-	}
-	%voiceUserAvatarSpeaking {
-		box-shadow: 0 0 0 2px $main-color, inset 0 0 3px rgba(0, 0, 0, .5);
-		&:after {
-			@include pos($top: -2px, $bottom: -2px);
-			width: 150px;
-		}
-	}
-	%voiceUserName {
-		color: hsla(0, 0%, 100%, .5);
-		transition: all .1s ease-in-out;
-	}
-	%voiceUserNameSpeaking {
-		color: #fff !important;
-	}
+  z-index: 1;
+  %voiceUserContent {
+    border-radius: 3px;
+    transition: all 0.15s ease-in-out;
+  }
+  &:hover,
+  &:active,
+  &%voiceUserSelected {
+    %channels %voiceUserList & {
+      %voiceUserContent {
+        background: hsla(0, 0%, 100%, 0.04);
+      }
+      %voiceUserName {
+        color: hsla(0, 0%, 100%, 0.7);
+      }
+    }
+  }
+  %voiceUserAvatar {
+    position: relative;
+    transition: all 0.1s ease-in-out;
+    &:after {
+      content: '';
+      position: absolute;
+      width: 0;
+      @include pos($top: 0, $bottom: 0, $left: 0);
+      background: linear-gradient(to right, $main-color 10%, transparent);
+      opacity: 0.5;
+      transition: all 0.1s ease-in-out, width 0.15s ease-in-out;
+      pointer-events: none;
+      z-index: -1;
+      border-radius: 999px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+  %voiceUserAvatarSpeaking {
+    box-shadow: 0 0 0 2px $main-color, inset 0 0 3px rgba(0, 0, 0, 0.5);
+    &:after {
+      @include pos($top: -2px, $bottom: -2px);
+      width: 150px;
+    }
+  }
+  %voiceUserName {
+    color: hsla(0, 0%, 100%, 0.5);
+    transition: all 0.1s ease-in-out;
+  }
+  %voiceUserNameSpeaking {
+    color: #fff !important;
+  }
 }
 %audienceVoiceUserIconContainer {
-	background-color: $main-color;
-	color: #fff;
+  background-color: $main-color;
+  color: #fff;
 }
 
 // USER SUMMARY
 %userSummaryIcon {
-	width: 18px;
-	height: 18px;
-	margin-right: 3px;
-	color: hsla(0, 0%, 100%, .3);
+  width: 18px;
+  height: 18px;
+  margin-right: 3px;
+  color: hsla(0, 0%, 100%, 0.3);
 }
 %userSummaryMoreUsers {
-	padding: 0 4px;
-	background: rgba(0, 0, 0, .3);
-	border-radius: 10px;
+  padding: 0 4px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
 }
 
 // DRAG INDICATORS
 %categoryContainerDrag,
 %channelContainerDrag {
-	&:before,
-	&:after {
-		background: $main-color;
-		border-radius: 0;
-	}
+  &:before,
+  &:after {
+    background: $main-color;
+    border-radius: 0;
+  }
 }
 %channelContainerUserOver {
-	&:after {
-		background: $main-color;
-		border-color: transparent;
-		opacity: .1;
-	}
+  &:after {
+    background: $main-color;
+    border-color: transparent;
+    opacity: 0.1;
+  }
 }
-

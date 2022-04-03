@@ -1,60 +1,60 @@
 /* CHAT CHANNEL TEXT AREA AUTOCOMPLETE */
 %chat {
-	%autocomplete {
-		background: transparent;
-		overflow: hidden;
-	}
+  %autocomplete {
+    background: transparent;
+    overflow: hidden;
+  }
 }
 %autocomplete {
-	%autocompleteInner {
-		background: rgba(0, 0, 0, .8);
-		animation: cv-menu-slide-bottom .2s ease-in-out;		
-		transform-origin: 50% 100%;
-	}
-	%autocompleteTitle {
-		color: hsla(0, 0%, 100%, .5);
-	}
-	%autocompleteContent {
-		color: hsla(0, 0%, 100%, .6);
-	}
-	%autocompleteIconForeground {
-		fill: hsla(0, 0%, 100%, .3);
-	}
-	%autocompleteDescription,
-	%autocompleteDescriptionUsername {
-		color: hsla(0, 0%, 100%, .3);
-	}
-	%autocompleteDescriptionDiscriminator {
-		color: hsla(0, 0%, 100%, .15);
-	}
-	%autocompleteSelectorSelected {
-		background: $main-color !important;
-		> %autocompleteContent {
-			color: #fff;
-		}
-		%autocompleteIconForeground {
-			fill: hsla(0, 0%, 100%, .7);
-		}
-		%autocompleteContentSecondary,
-		%autocompleteDescriptionDiscriminator,
-		%autocompleteRowSubheading {
-			color: #fff;
-		}
-	}
+  %autocompleteInner {
+    background: rgba(0, 0, 0, 0.8);
+    animation: cv-menu-slide-bottom 0.2s ease-in-out;
+    transform-origin: 50% 100%;
+  }
+  %autocompleteTitle {
+    color: hsla(0, 0%, 100%, 0.5);
+  }
+  %autocompleteContent {
+    color: hsla(0, 0%, 100%, 0.6);
+  }
+  %autocompleteIconForeground {
+    fill: hsla(0, 0%, 100%, 0.3);
+  }
+  %autocompleteDescription,
+  %autocompleteDescriptionUsername {
+    color: hsla(0, 0%, 100%, 0.3);
+  }
+  %autocompleteDescriptionDiscriminator {
+    color: hsla(0, 0%, 100%, 0.15);
+  }
+  %autocompleteSelectorSelected {
+    background: $main-color !important;
+    > %autocompleteContent {
+      color: #fff;
+    }
+    %autocompleteIconForeground {
+      fill: hsla(0, 0%, 100%, 0.7);
+    }
+    %autocompleteContentSecondary,
+    %autocompleteDescriptionDiscriminator,
+    %autocompleteRowSubheading {
+      color: #fff;
+    }
+  }
 }
 
 // SLASH COMMANDS AUTOCOMPLETE
 %autocompleteListWrapper,
 %autocompleteList,
 %autocompleteCategoryHeader {
-	background-color: transparent;
+  background-color: transparent;
 }
 %autocompleteListItemSelected {
-	background-color: $main-color;
-	&:hover {
-		background-color: $main-color;
-	}
+  background-color: $main-color;
+  &:hover {
+    background-color: $main-color;
+  }
 }
 %themeDark %autocompleteOption {
-	background-color: hsla(0,0%,0%,.5);
+  background-color: hsla(0, 0%, 0%, 0.5);
 }

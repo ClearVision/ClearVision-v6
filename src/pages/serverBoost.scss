@@ -1,116 +1,115 @@
 /* SERVER BOOST */
 %themeDark {
-    .perksModal-CLcR1c {
-        background-color: transparent;
+  .perksModal-CLcR1c {
+    background-color: transparent;
+  }
+  .ctaBar-Nhk8yY {
+    background-color: hsla(0, 0%, 0%, 0.4);
+    .guildIcon-2xKEtM {
+      background-color: transparent;
     }
-    .ctaBar-Nhk8yY {
-        background-color: hsla(0, 0%, 0%, .4);
-        .guildIcon-2xKEtM {
-            background-color: transparent;
-        }
-        .badgeIconWithoutSubscribers-1hjTfX {
-            color: #fff;
-            opacity: .8;
-        }
-        .giftIcon-2kmx1K {
-            color: currentColor;
-        }
+    .badgeIconWithoutSubscribers-1hjTfX {
+      color: #fff;
+      opacity: 0.8;
     }
-    .tierMarkerBackground-G8FoN4 {
-        background-color: transparent;
+    .giftIcon-2kmx1K {
+      color: currentColor;
     }
-    .tierMarkerInProgress-2Tdxjz,
-    .barBackground-unEPDT {
-	    background-color: hsla(0, 0%, 0%, .4) !important;
-    }
-    .tierBody-3ju-rc,
-    .tierHeaderLocked-3ItHYn,
-    .perk-19D_HN {
-        background-color: hsla(0, 0%, 0%, .4);
-    }
-    .tierHeaderLocked-3ItHYn    {
-        color: hsla(0, 0%, 100%, .7);
-    }
-    .tierLock-1uBqZ0 {
-        color: #fff;
-        opacity: .3;
-    }
+  }
+  .tierMarkerBackground-G8FoN4 {
+    background-color: transparent;
+  }
+  .tierMarkerInProgress-2Tdxjz,
+  .barBackground-unEPDT {
+    background-color: hsla(0, 0%, 0%, 0.4) !important;
+  }
+  .tierBody-3ju-rc,
+  .tierHeaderLocked-3ItHYn,
+  .perk-19D_HN {
+    background-color: hsla(0, 0%, 0%, 0.4);
+  }
+  .tierHeaderLocked-3ItHYn {
+    color: hsla(0, 0%, 100%, 0.7);
+  }
+  .tierLock-1uBqZ0 {
+    color: #fff;
+    opacity: 0.3;
+  }
 }
-
 
 // NEW SERVER BOOST PAGE
 %themeDark {
-    %serverBoostWrapper {
-        background-color: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .5));
-    }
-    %serverBoostNavigationBar {
-        background-color: transparent;
-    }
+  %serverBoostWrapper {
+    background-color: rgba(0, 0, 0, calc(#{cv('bg.app.shading')} * 0.5));
+  }
+  %serverBoostNavigationBar {
+    background-color: transparent;
+  }
 }
 
 %serverBoostProgressBarTrack,
 %serverBoostProgressBarMarker {
-	background-color: hsla(0, 0%, 0%, .6);
+  background-color: hsla(0, 0%, 0%, 0.6);
 }
 %serverBoostProgressBarMarkerNextTier {
-    %serverBoostProgressBarMarkerIndicator {
-        background-image: none;
-	    box-shadow: 0 0 2px 2px var(--main-color);
-    }
+  %serverBoostProgressBarMarkerIndicator {
+    background-image: none;
+    box-shadow: 0 0 2px 2px var(--main-color);
+  }
 }
 %serverBoostProgressBarMarkerIndicator:after {
-    display: none;
+  display: none;
 }
 %serverBoostProgressBarMarkerNumSubReq {
-	color: #fff
+  color: #fff;
 }
 %serverBoostProgressBarUnlocked %serverBoostProgressBarMarkerIndicator,
 %serverBoostProgressBarFill {
-	background-image: none;
-	background-color: var(--main-color);
+  background-image: none;
+  background-color: var(--main-color);
 }
 %serverBoostPlanCard {
-    background-color: rgba(0, 0, 0, .4);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 %perksTable {
-    background-color: rgba(0, 0, 0, .4);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 %perksTableRow {
-    +%perksTableRow {
-        border-top: hsla(0, 0%, 100%, .07);
+  + %perksTableRow {
+    border-top: hsla(0, 0%, 100%, 0.07);
+  }
+  %themeDark & {
+    + %perksTableRowBody:hover,
+    + %perksTableRowFocused {
+      background-color: rgba(255, 255, 255, 0.05);
+      border-top: hsla(0, 0%, 100%, 0.07);
+      + %perksTableRowBody {
+        border-top: hsla(0, 0%, 100%, 0.07);
+      }
+      %perksTableRowHighlighted {
+        background-color: rgba(255, 255, 255, 0.05);
+        border-color: hsla(0, 0%, 100%, 0.07);
+      }
     }
-    %themeDark & {
-        +%perksTableRowBody:hover,
-        +%perksTableRowFocused {
-            background-color: rgba(255,255,255,.05);
-            border-top: hsla(0, 0%, 100%, .07);
-            +%perksTableRowBody {
-                border-top: hsla(0, 0%, 100%, .07);
-            }
-            %perksTableRowHighlighted {
-                background-color: rgba(255,255,255,.05);
-                border-color: hsla(0, 0%, 100%, .07);
-            }
-        }
-    }
+  }
 }
 %perksTableRowHighlighted,
 %perksTableHighlightedColumnHeader,
 %perksTableRow:last-child %perksTableRowHighlighted:after {
-    background-color: hsla(0,0%,100%,.05);
+  background-color: hsla(0, 0%, 100%, 0.05);
 }
 
 %perksTableHighlightedColumnHeader {
-    padding: 7px 12px;
+  padding: 7px 12px;
 }
 %perksTableHighlightedColumnHeaderCopy {
-    background-image: none;
-    background-color: $main-color;
+  background-image: none;
+  background-color: $main-color;
 }
 %perksTablePerkCheckmarkTier0 {
-    color: #fff;
-    opacity: .7;
+  color: #fff;
+  opacity: 0.7;
 }
 %perkPopout {
-    background-color: rgba(0, 0, 0, .8);
+  background-color: rgba(0, 0, 0, 0.8);
 }

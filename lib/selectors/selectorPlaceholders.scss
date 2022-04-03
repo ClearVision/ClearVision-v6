@@ -1,4262 +1,4279 @@
 /* ### Powered by DiscordSelectors v0.2.7 ### */
 .appMount-2yBXZl {
-	@extend %appMount !optional;
+  @extend %appMount !optional;
 }
 .platform-win {
-	@extend %platformWin !optional;
+  @extend %platformWin !optional;
 }
 .platform-osx {
-	@extend %platformOSX !optional;
+  @extend %platformOSX !optional;
 }
 .platform-linux {
-	@extend %platformLinux !optional;
+  @extend %platformLinux !optional;
 }
 .platform-web {
-	@extend %platformWeb !optional;
+  @extend %platformWeb !optional;
 }
 .theme-dark {
-	@extend %themeDark !optional;
+  @extend %themeDark !optional;
 }
 .theme-light {
-	@extend %themeLight !optional;
+  @extend %themeLight !optional;
 }
 .fakeLink-2FvUR7 {
-	@extend %fakeLink !optional;
+  @extend %fakeLink !optional;
 }
 .app-3xd6d0 {
-	@extend %app !optional;
+  @extend %app !optional;
 }
 .app-2CXKsg {
-	@extend %shakeable !optional;
+  @extend %shakeable !optional;
 }
 .bg-1QIAus {
-	@extend %bg !optional;
+  @extend %bg !optional;
 }
 .layers-OrUESM {
-	@extend %layers !optional;
+  @extend %layers !optional;
 }
 .layer-86YKbF {
-	@extend %layer !optional;
+  @extend %layer !optional;
 }
 .animating-1rIrGV {
-	@extend %layerAnimating !optional;
+  @extend %layerAnimating !optional;
 }
 .stop-animations {
-	@extend %layerStopAnimations !optional;
+  @extend %layerStopAnimations !optional;
 }
-.container-1eFtFS	 {
-	@extend %containerMain !optional;
+.container-1eFtFS {
+  @extend %containerMain !optional;
 }
 .base-2jDfDU {
-	@extend %base !optional;
+  @extend %base !optional;
 }
 .backdrop-2ByYRN {
-	@extend %backdrop !optional;
+  @extend %backdrop !optional;
 }
 .notice-2HEN-u {
-	@extend %notice !optional;
+  @extend %notice !optional;
 }
 .noticeDefault-362Ko2 {
-	@extend %noticeDefault !optional;
+  @extend %noticeDefault !optional;
 }
 .notice-1x8lm- {
-	@extend %noticeComplete !optional;
+  @extend %noticeComplete !optional;
 }
 .noticePremium-12Zvj9 {
-	@extend %noticePremium !optional;
+  @extend %noticePremium !optional;
 }
 .noticeInfo-3_iTE1 {
-	@extend %noticeInfo !optional;
+  @extend %noticeInfo !optional;
 }
 .noticeSuccess-3Y62ob {
-	@extend %noticeSuccess !optional;
+  @extend %noticeSuccess !optional;
 }
 .colorDanger-2YLzLC {
-	@extend %noticeDanger !optional;
+  @extend %noticeDanger !optional;
 }
 .colorStreamerMode-8uoRWd {
-	@extend %noticeStreamerMode !optional;
+  @extend %noticeStreamerMode !optional;
 }
 .noticeFacebook-3equ5g {
-	@extend %noticeFacebook !optional;
+  @extend %noticeFacebook !optional;
 }
 .noticeSpotify-27dhr0 {
-	@extend %noticeSpotify !optional;
+  @extend %noticeSpotify !optional;
 }
 .colorBrand1-2u_MN9 {
-	@extend %noticeBrand !optional;
+  @extend %noticeBrand !optional;
 }
 .noticeContents-1dYEwP {
-	@extend %noticeContents !optional;
+  @extend %noticeContents !optional;
 }
 .textLink-2oCmaf {
-	@extend %noticeTextLink !optional;
+  @extend %noticeTextLink !optional;
 }
 .noticeSurvey-1XW9Ln {
-	@extend %noticeSurvey !optional;
+  @extend %noticeSurvey !optional;
 }
 .closeButton-30b1gR {
-	@extend %noticeClose !optional;
+  @extend %noticeClose !optional;
 }
 .button-1iHNQ2 {
-	@extend %noticeButton !optional;
+  @extend %noticeButton !optional;
 }
 .icon-2b6NbB {
-	@extend %noticeIcon !optional;
+  @extend %noticeIcon !optional;
 }
 .iconWindows-1o_-54 {
-	@extend %noticeIconWindows !optional;
+  @extend %noticeIconWindows !optional;
 }
 .iconApple-3GcJtX {
-	@extend %noticeIconApple !optional;
+  @extend %noticeIconApple !optional;
 }
 .iconAndroid-2DSyPS {
-	@extend %noticeIconAndroid !optional;
+  @extend %noticeIconAndroid !optional;
 }
 .platformIcon-OrI7z3 {
-	@extend %noticePlatformIcon !optional;
+  @extend %noticePlatformIcon !optional;
 }
 .titleBar-1it3bQ {
-	@extend %titlebar !optional;
+  @extend %titlebar !optional;
 }
 .unfocused-1U-yOa {
-	@extend %titlebarUnfocused !optional;
+  @extend %titlebarUnfocused !optional;
 }
 .typeWindows-2-g3UY {
-	@extend %titlebarWin !optional;
+  @extend %titlebarWin !optional;
 }
 .wordmark-2u86JB {
-	@extend %titlebarWordmark !optional;
+  @extend %titlebarWordmark !optional;
 }
 .winButton-3UMjdg {
-	@extend %titlebarWinButton !optional;
+  @extend %titlebarWinButton !optional;
 }
 .winButtonMinMax-3RsPUg {
-	@extend %titlebarWinButtonMinMax !optional;
+  @extend %titlebarWinButtonMinMax !optional;
 }
 .winButtonClose-3Q8ZH5 {
-	@extend %titlebarWinButtonClose !optional;
+  @extend %titlebarWinButtonClose !optional;
 }
 .typeMacOS-3V4xXE {
-	@extend %titlebarMac !optional;
+  @extend %titlebarMac !optional;
 }
 .typeMacOSWithFrame-1XEpN7 {
-	@extend %titlebarMacWithFrame !optional;
+  @extend %titlebarMacWithFrame !optional;
 }
 .macButtons-eIdy0e {
-	@extend %titlebarMacButtons !optional;
+  @extend %titlebarMacButtons !optional;
 }
 .macButton-2M5W_9 {
-	@extend %titlebarMacButton !optional;
+  @extend %titlebarMacButton !optional;
 }
 .macButtonClose-3IXwAm {
-	@extend %titlebarMacButtonClose !optional;
+  @extend %titlebarMacButtonClose !optional;
 }
 .macButtonMaximize-1vTCwt {
-	@extend %titlebarMacButtonMaximize !optional;
+  @extend %titlebarMacButtonMaximize !optional;
 }
 .macButtonMinimize-Q8clSI {
-	@extend %titlebarMacButtonMinimize !optional;
+  @extend %titlebarMacButtonMinimize !optional;
 }
 #bda-qem {
-	@extend %bdEmoteMenu !optional;
+  @extend %bdEmoteMenu !optional;
 }
 #bda-qem-twitch {
-	@extend %bdEmoteMenuTwitch !optional;
+  @extend %bdEmoteMenuTwitch !optional;
 }
 #bda-qem-favourite {
-	@extend %bdEmoteMenuFavourite !optional;
+  @extend %bdEmoteMenuFavourite !optional;
 }
 #bda-qem-emojis {
-	@extend %bdEmoteMenuEmojis !optional;
+  @extend %bdEmoteMenuEmojis !optional;
 }
-#bda-qem-twitch.active, #bda-qem-favourite.active, #bda-qem-emojis.active {
-	@extend %bdEmoteMenuActive !optional;
+#bda-qem-twitch.active,
+#bda-qem-favourite.active,
+#bda-qem-emojis.active {
+  @extend %bdEmoteMenuActive !optional;
 }
 #bda-qem-twitch-container {
-	@extend %bdEmoteMenuTwitchContainer !optional;
+  @extend %bdEmoteMenuTwitchContainer !optional;
 }
 #bda-qem-favourite-container {
-	@extend %bdEmoteMenuFavouriteContainer !optional;
+  @extend %bdEmoteMenuFavouriteContainer !optional;
 }
 .emote-menu-inner {
-	@extend %bdEmoteMenuInner !optional;
+  @extend %bdEmoteMenuInner !optional;
 }
 .bd-emote-header {
-	@extend %bdEmoteMenuHeader !optional;
+  @extend %bdEmoteMenuHeader !optional;
 }
 .bd-emote-item {
-	@extend %bdEmoteItem !optional;
+  @extend %bdEmoteItem !optional;
 }
 .emote-container {
-	@extend %bdEmoteContainer !optional;
+  @extend %bdEmoteContainer !optional;
 }
 .emote-icon {
-	@extend %bdEmoteIcon !optional;
+  @extend %bdEmoteIcon !optional;
 }
 #bd-settings-sidebar {
-	@extend %bdSettingsSidebar !optional;
+  @extend %bdSettingsSidebar !optional;
 }
 .ui-tab-bar-header {
-	@extend %bdSettingsSidebarHeader !optional;
+  @extend %bdSettingsSidebarHeader !optional;
 }
 .ui-tab-bar-item {
-	@extend %bdSettingsSidebarItem !optional;
+  @extend %bdSettingsSidebarItem !optional;
 }
 .ui-tab-bar-item.selected {
-	@extend %bdSettingsSidebarItemSelected !optional;
+  @extend %bdSettingsSidebarItemSelected !optional;
 }
 .ui-tab-bar-separator {
-	@extend %bdSettingsSidebarSeparator !optional;
+  @extend %bdSettingsSidebarSeparator !optional;
 }
 .containerDefault-3TQ5YN {
-	@extend %categoryContainerDefault !optional;
+  @extend %categoryContainerDefault !optional;
 }
 .containerUserOver-3woq86 {
-	@extend %categoryContainerUserOver !optional;
+  @extend %categoryContainerUserOver !optional;
 }
 .containerDragBefore-ei4h1m {
-	@extend %categoryContainerDragBefore !optional;
+  @extend %categoryContainerDragBefore !optional;
 }
 .containerDragAfter-1J_-1V {
-	@extend %categoryContainerDragAfter !optional;
+  @extend %categoryContainerDragAfter !optional;
 }
-.containerDragAfter-1J_-1V, .containerDragBefore-ei4h1m {
-	@extend %categoryContainerDrag !optional;
+.containerDragAfter-1J_-1V,
+.containerDragBefore-ei4h1m {
+  @extend %categoryContainerDrag !optional;
 }
-.containerDefault-3TQ5YN, .containerDragAfter-1J_-1V, .containerDragBefore-ei4h1m, .containerUserOver-3woq86 {
-	@extend %categoryContainer !optional;
+.containerDefault-3TQ5YN,
+.containerDragAfter-1J_-1V,
+.containerDragBefore-ei4h1m,
+.containerUserOver-3woq86 {
+  @extend %categoryContainer !optional;
 }
 .wrapper-1S43wv {
-	@extend %categoryWrapper !optional;
+  @extend %categoryWrapper !optional;
 }
 .clickable-2AoIYN {
-	@extend %categoryWrapperClickable !optional;
+  @extend %categoryWrapperClickable !optional;
 }
 .collapsed-2KOacR {
-	@extend %categoryWrapperCollapsed !optional;
+  @extend %categoryWrapperCollapsed !optional;
 }
 .muted-19J0ih {
-	@extend %categoryWrapperMuted !optional;
+  @extend %categoryWrapperMuted !optional;
 }
 .mainContent-uDGa6R {
-	@extend %categoryMain !optional;
+  @extend %categoryMain !optional;
 }
 .icon-3zI3d2 {
-	@extend %categoryIcon !optional;
+  @extend %categoryIcon !optional;
 }
 .name-3BUDLf {
-	@extend %categoryName !optional;
+  @extend %categoryName !optional;
 }
 .children-3MeUvj {
-	@extend %categoryButtons !optional;
+  @extend %categoryButtons !optional;
 }
 .addButtonIcon-3rJeaD {
-	@extend %categoryAddIcon !optional;
+  @extend %categoryAddIcon !optional;
 }
 .containerDefault-YUSmu3 {
-	@extend %channelContainerDefault !optional;
+  @extend %channelContainerDefault !optional;
 }
 .containerDragBefore-1s5Qg6 {
-	@extend %channelContainerDragBefore !optional;
+  @extend %channelContainerDragBefore !optional;
 }
 .containerDragAfter-3aBiOW {
-	@extend %channelContainerDragAfter !optional;
+  @extend %channelContainerDragAfter !optional;
 }
 .containerUserOver-SDa1HW {
-	@extend %channelContainerUserOver !optional;
+  @extend %channelContainerUserOver !optional;
 }
-.containerDragAfter-3aBiOW, .containerDragBefore-1s5Qg6 {
-	@extend %channelContainerDrag !optional;
+.containerDragAfter-3aBiOW,
+.containerDragBefore-1s5Qg6 {
+  @extend %channelContainerDrag !optional;
 }
-.containerDefault-YUSmu3, .containerDragAfter-3aBiOW, .containerDragBefore-1s5Qg6, .containerUserOver-SDa1HW {
-	@extend %channelContainer !optional;
+.containerDefault-YUSmu3,
+.containerDragAfter-3aBiOW,
+.containerDragBefore-1s5Qg6,
+.containerUserOver-SDa1HW {
+  @extend %channelContainer !optional;
 }
 .wrapper-NhbLHG {
-	@extend %channelWrapper !optional;
+  @extend %channelWrapper !optional;
 }
 .modeUnread-3Cxepe {
-	@extend %channelWrapperUnread !optional;
+  @extend %channelWrapperUnread !optional;
 }
 .modeSelected-3DmyhH {
-	@extend %channelWrapperSelected !optional;
+  @extend %channelWrapperSelected !optional;
 }
 .modeConnected-NrO4cP {
-	@extend %channelWrapperConnected !optional;
+  @extend %channelWrapperConnected !optional;
 }
 .modeMuted-2T4MDZ {
-	@extend %channelWrapperMuted !optional;
+  @extend %channelWrapperMuted !optional;
 }
 .content-1gYQeQ {
-	@extend %channelContent !optional;
+  @extend %channelContent !optional;
 }
 .mainContent-20q_Hp {
-	@extend %channelMain !optional;
+  @extend %channelMain !optional;
 }
 .icon-2W8DHg {
-	@extend %channelIcon !optional;
+  @extend %channelIcon !optional;
 }
 .live-1V2D-f {
-	@extend %channelIconLive !optional;
+  @extend %channelIconLive !optional;
 }
 .name-28HaxV {
-	@extend %channelName !optional;
+  @extend %channelName !optional;
 }
 .children-Bmpf2Q {
-	@extend %channelButtons !optional;
+  @extend %channelButtons !optional;
 }
 .iconItem-1EjiK0 {
-	@extend %channelButton !optional;
+  @extend %channelButton !optional;
 }
 .actionIcon-2sw4Sl {
-	@extend %channelActionIcon !optional;
+  @extend %channelActionIcon !optional;
 }
 .unread-36eUEm {
-	@extend %channelUnreadPill !optional;
+  @extend %channelUnreadPill !optional;
 }
 .mentionsBadge-2ckrKL {
-	@extend %channelBadge !optional;
+  @extend %channelBadge !optional;
 }
 .userLimit-VbEkeM {
-	@extend %channelUserLimit !optional;
+  @extend %channelUserLimit !optional;
 }
 .wrapper-2fEmwW {
-	@extend %channelUserLimitWrapper !optional;
+  @extend %channelUserLimitWrapper !optional;
 }
 .users-2JoyGL {
-	@extend %channelUserLimitUsers !optional;
+  @extend %channelUserLimitUsers !optional;
 }
 .total-1c5KCN {
-	@extend %channelUserLimitTotal !optional;
+  @extend %channelUserLimitTotal !optional;
 }
 .listDefault-2F-w65 {
-	@extend %voiceUserList !optional;
+  @extend %voiceUserList !optional;
 }
 .draggable-S2aEx4 {
-	@extend %voiceUserDraggable !optional;
+  @extend %voiceUserDraggable !optional;
 }
 .voiceUser-3nRK-K {
-	@extend %voiceUser !optional;
+  @extend %voiceUser !optional;
 }
 .selected-3TGCSZ {
-	@extend %voiceUserSelected !optional;
+  @extend %voiceUserSelected !optional;
 }
 .content-3xS9Lh {
-	@extend %voiceUserContent !optional;
+  @extend %voiceUserContent !optional;
 }
 .avatarContainer-3FF_Km {
-	@extend %voiceUserAvatar !optional;
+  @extend %voiceUserAvatar !optional;
 }
 .avatarSpeaking-2pCGrZ {
-	@extend %voiceUserAvatarSpeaking !optional;
+  @extend %voiceUserAvatarSpeaking !optional;
 }
 .username-vAneIW {
-	@extend %voiceUserName !optional;
+  @extend %voiceUserName !optional;
 }
 .usernameSpeaking-3FKv6H {
-	@extend %voiceUserNameSpeaking !optional;
+  @extend %voiceUserNameSpeaking !optional;
 }
 .icons-3q-_6z {
-	@extend %voiceUserIcons !optional;
+  @extend %voiceUserIcons !optional;
 }
 .iconSpacing-3LzVxF {
-	@extend %voiceUserIconSpacing !optional;
+  @extend %voiceUserIconSpacing !optional;
 }
 .icon-3BcwQu {
-	@extend %voiceUserIcon !optional;
+  @extend %voiceUserIcon !optional;
 }
 .audienceVoiceUserIconContainer-1aQGLF {
-	@extend %audienceVoiceUserIconContainer !optional;
+  @extend %audienceVoiceUserIconContainer !optional;
 }
 .container-1jha_j {
-	@extend %userSummaryContainer !optional;
+  @extend %userSummaryContainer !optional;
 }
 .icon-3akWb2 {
-	@extend %userSummaryIcon !optional;
+  @extend %userSummaryIcon !optional;
 }
 .avatarContainer-gPrCzX {
-	@extend %userSummaryAvatarContainer !optional;
+  @extend %userSummaryAvatarContainer !optional;
 }
 .avatarContainerMasked-13fYnN {
-	@extend %userSummaryAvatarContainerMasked !optional;
+  @extend %userSummaryAvatarContainerMasked !optional;
 }
 .avatar-3TrM7c {
-	@extend %userSummaryAvatar !optional;
+  @extend %userSummaryAvatar !optional;
 }
 .clickableAvatar-igrb2Y {
-	@extend %userSummaryAvatarClickable !optional;
+  @extend %userSummaryAvatarClickable !optional;
 }
 .emptyUser-2FDCJv {
-	@extend %userSummaryEmptyUser !optional;
+  @extend %userSummaryEmptyUser !optional;
 }
 .moreUsers-_v6T-L {
-	@extend %userSummaryMoreUsers !optional;
+  @extend %userSummaryMoreUsers !optional;
 }
 .channelNotices-41mJbj {
-	@extend %channelNotices !optional;
+  @extend %channelNotices !optional;
 }
 .channelNotice-tO6Tus {
-	@extend %channelNotice !optional;
+  @extend %channelNotice !optional;
 }
 .quickswitcher-35bYg4 {
-	@extend %channelNoticeQuickswitcher !optional;
+  @extend %channelNoticeQuickswitcher !optional;
 }
 .invite-OjTXrW {
-	@extend %channelNoticeInvite !optional;
+  @extend %channelNoticeInvite !optional;
 }
 .guildMFAWarning-3GEzs8 {
-	@extend %channelNoticeGuildMFAWarning !optional;
+  @extend %channelNoticeGuildMFAWarning !optional;
 }
 .close-2ISPTL {
-	@extend %channelNoticeClose !optional;
+  @extend %channelNoticeClose !optional;
 }
 .message-3KLVy1 {
-	@extend %channelNoticeMessage !optional;
+  @extend %channelNoticeMessage !optional;
 }
 .btn-38SvSS {
-	@extend %channelNoticeMessageButton !optional;
+  @extend %channelNoticeMessageButton !optional;
 }
 .sidebar-1tnWFu {
-	@extend %channelsSidebar !optional;
+  @extend %channelsSidebar !optional;
 }
 .container-1NXEtd {
-	@extend %channelsContainer !optional;
+  @extend %channelsContainer !optional;
 }
 .container-1-ERn5 {
-	@extend %channelsHeaderContainer !optional;
+  @extend %channelsHeaderContainer !optional;
 }
 .header-3OsQeK {
-	@extend %channelsHeader !optional;
+  @extend %channelsHeader !optional;
 }
 .name-3Uvkvr {
-	@extend %channelsHeaderName !optional;
+  @extend %channelsHeaderName !optional;
 }
 .headerButton-1nmDZ3 {
-	@extend %channelsHeaderButton !optional;
+  @extend %channelsHeaderButton !optional;
 }
 .guildIconContainer-3QvE6w {
-	@extend %channelsHeaderGuildBadge !optional;
+  @extend %channelsHeaderGuildBadge !optional;
 }
 .partnered-23cXFN {
-	@extend %guildPartnered !optional;
+  @extend %guildPartnered !optional;
 }
 .verified-1Jv_7P {
-	@extend %guildVerified !optional;
+  @extend %guildVerified !optional;
 }
 .iconTierOne-s_oiRb {
-	@extend %guildBoostedIconTier1 !optional;
+  @extend %guildBoostedIconTier1 !optional;
 }
 .iconTierTwo-1JOWNK {
-	@extend %guildBoostedIconTier2 !optional;
+  @extend %guildBoostedIconTier2 !optional;
 }
 .iconTierThree-3EAOB7 {
-	@extend %guildBoostedIconTier3 !optional;
+  @extend %guildBoostedIconTier3 !optional;
 }
 .animatedContainer-2laTjx {
-	@extend %bannerAnimatedContainer !optional;
+  @extend %bannerAnimatedContainer !optional;
 }
 .bannerImage-ubW8K- {
-	@extend %bannerImage !optional;
+  @extend %bannerImage !optional;
 }
 .bannerVisible-Vkyg1I {
-	@extend %bannerVisible !optional;
+  @extend %bannerVisible !optional;
 }
 .unread-2wipsx {
-	@extend %channelsUnreadIndicator !optional;
+  @extend %channelsUnreadIndicator !optional;
 }
 .mention-3XBnnZ {
-	@extend %channelsMentionIndicator !optional;
+  @extend %channelsMentionIndicator !optional;
 }
 .panels-3wFtMD {
-	@extend %panels !optional;
+  @extend %panels !optional;
 }
 .button-12Fmur {
-	@extend %panelButton !optional;
+  @extend %panelButton !optional;
 }
 .enabled-9OeuTA {
-	@extend %panelButtonEnabled !optional;
+  @extend %panelButtonEnabled !optional;
 }
 .disabled-GROwTe {
-	@extend %panelButtonDisabled !optional;
+  @extend %panelButtonDisabled !optional;
 }
 .button-1EGGcP {
-	@extend %panelActionButton !optional;
+  @extend %panelActionButton !optional;
 }
 .buttonColor-3bP3fX {
-	@extend %panelActionButtonColor !optional;
+  @extend %panelActionButtonColor !optional;
 }
 .buttonActive-Uc1jHx {
-	@extend %panelActionButtonActive !optional;
+  @extend %panelActionButtonActive !optional;
 }
 .container-YkUktl {
-	@extend %accountPanel !optional;
+  @extend %accountPanel !optional;
 }
 .avatarWrapper-1B9FTW {
-	@extend %accountPanelAvatarWrapper !optional;
+  @extend %accountPanelAvatarWrapper !optional;
 }
 .avatar-1EWyVD {
-	@extend %accountPanelAvatar !optional;
+  @extend %accountPanelAvatar !optional;
 }
 .nameTag-sc-gpq {
-	@extend %accountPanelNameTag !optional;
+  @extend %accountPanelNameTag !optional;
 }
 .usernameContainer-3PPkWq {
-	@extend %accountPanelUsernameContainer !optional;
+  @extend %accountPanelUsernameContainer !optional;
 }
 .title-338goq {
-	@extend %accountPanelUsername !optional;
+  @extend %accountPanelUsername !optional;
 }
 .subtext-2HDqJ7 {
-	@extend %accountPanelDiscriminator !optional;
+  @extend %accountPanelDiscriminator !optional;
 }
 .container-1zzFcN {
-	@extend %connectionPanel !optional;
+  @extend %connectionPanel !optional;
 }
 .inner-llGtyq {
-	@extend %connectionPanelInner !optional;
+  @extend %connectionPanelInner !optional;
 }
 .rtcConnectionStatus-c5A6Av {
-	@extend %rtcConnectionStatus !optional;
+  @extend %rtcConnectionStatus !optional;
 }
 .rtcConnectionStatusConnected-1c73OK {
-	@extend %rtcConnectionStatusConnected !optional;
+  @extend %rtcConnectionStatusConnected !optional;
 }
 .rtcConnectionStatusConnecting-2D7M2N {
-	@extend %rtcConnectionStatusConnecting !optional;
+  @extend %rtcConnectionStatusConnecting !optional;
 }
 .rtcConnectionStatusError-2QNGCS {
-	@extend %rtcConnectionStatusError !optional;
+  @extend %rtcConnectionStatusError !optional;
 }
 .rtcConnectionQualityFine-3zZrSa {
-	@extend %rtcConnectionQualityFine !optional;
+  @extend %rtcConnectionQualityFine !optional;
 }
 .rtcConnectionQualityAverage-USzsaD {
-	@extend %rtcConnectionQualityAverage !optional;
+  @extend %rtcConnectionQualityAverage !optional;
 }
 .rtcConnectionQualityBad-3fxsmZ {
-	@extend %rtcConnectionQualityBad !optional;
+  @extend %rtcConnectionQualityBad !optional;
 }
 .ping-2IpLcU {
-	@extend %rtcConnectionPing !optional;
+  @extend %rtcConnectionPing !optional;
 }
 .contents-3ca1mk {
-	@extend %connectionPanelDescription !optional;
+  @extend %connectionPanelDescription !optional;
 }
 .channel-3prF2u {
-	@extend %connectionPanelChannel !optional;
+  @extend %connectionPanelChannel !optional;
 }
 .activityPanel-9icbyU {
-	@extend %activityPanel !optional;
+  @extend %activityPanel !optional;
 }
 .body-1FrnJD {
-	@extend %activityPanelBody !optional;
+  @extend %activityPanelBody !optional;
 }
 .gameWrapper-2TFy7F {
-	@extend %activityPanelGameWrapper !optional;
+  @extend %activityPanelGameWrapper !optional;
 }
 .gameIcon-2BIUJ3 {
-	@extend %activityPanelGameIcon !optional;
+  @extend %activityPanelGameIcon !optional;
 }
 .title-338goq {
-	@extend %activityPanelTitle !optional;
+  @extend %activityPanelTitle !optional;
 }
 .actions-zk2vB_ {
-	@extend %activityPanelActions !optional;
+  @extend %activityPanelActions !optional;
 }
 .liveBadge-3E8LQj {
-	@extend %panelLiveBadge !optional;
+  @extend %panelLiveBadge !optional;
 }
 .noiseCancellationPopout-2-e5Xz {
-	@extend %noiseCancellationPopout !optional;
+  @extend %noiseCancellationPopout !optional;
 }
 .privateChannels-oVe7HL {
-	@extend %privateChannels !optional;
+  @extend %privateChannels !optional;
 }
 .scroller-WSmht3 {
-	@extend %privateChannelsScroller !optional;
+  @extend %privateChannelsScroller !optional;
 }
 .channel-1Shao0 {
-	@extend %privateChannel !optional;
+  @extend %privateChannel !optional;
 }
 .interactive-1vLZ_I {
-	@extend %privateChannelInteractive !optional;
+  @extend %privateChannelInteractive !optional;
 }
 .interactiveSelected-29CP8y {
-	@extend %privateChannelInteractiveSelected !optional;
+  @extend %privateChannelInteractiveSelected !optional;
 }
 .avatar-1HDIsL {
-	@extend %privateChannelAvatar !optional;
+  @extend %privateChannelAvatar !optional;
 }
 .name-2m3Cms {
-	@extend %privateChannelName !optional;
+  @extend %privateChannelName !optional;
 }
 .subText-3Sk0zy {
-	@extend %privateChannelSubText !optional;
+  @extend %privateChannelSubText !optional;
 }
 .activity-1-H7Zd {
-	@extend %privateChannelActivity !optional;
+  @extend %privateChannelActivity !optional;
 }
 .activityEmoji-24oKjc {
-	@extend %privateChannelActivityEmoji !optional;
+  @extend %privateChannelActivityEmoji !optional;
 }
 .activityText-ev7Z1T {
-	@extend %privateChannelActivityText !optional;
+  @extend %privateChannelActivityText !optional;
 }
 .icon-Lupfh- {
-	@extend %privateChannelActivityIcon !optional;
+  @extend %privateChannelActivityIcon !optional;
 }
 .closeButton-mupH76 {
-	@extend %privateChannelCloseButton !optional;
+  @extend %privateChannelCloseButton !optional;
 }
 .closeIcon-1NwtbI {
-	@extend %privateChannelCloseIcon !optional;
+  @extend %privateChannelCloseIcon !optional;
 }
 .linkButtonIcon-7rsZcu {
-	@extend %privateChannelIcon !optional;
+  @extend %privateChannelIcon !optional;
 }
 .privateChannelsHeaderContainer-1UWASm {
-	@extend %privateChannelsHeader !optional;
+  @extend %privateChannelsHeader !optional;
 }
 .headerText-1qIDDT {
-	@extend %privateChannelsHeaderText !optional;
+  @extend %privateChannelsHeaderText !optional;
 }
 .privateChannelRecipientsInviteButtonIcon-1ObKXK {
-	@extend %privateChannelsInviteButton !optional;
+  @extend %privateChannelsInviteButton !optional;
 }
 .searchBar-3TnChZ {
-	@extend %privateChannelsSearchBar !optional;
+  @extend %privateChannelsSearchBar !optional;
 }
 .searchBarComponent-3N7dCG {
-	@extend %privateChannelsSearchBarComponent !optional;
+  @extend %privateChannelsSearchBarComponent !optional;
 }
 .newMessagesBar-1hF-9G {
-	@extend %newMessagesBar !optional;
+  @extend %newMessagesBar !optional;
 }
 .jumpToPresentBar-1cEnH0 {
-	@extend %jumpToPresentBar !optional;
+  @extend %jumpToPresentBar !optional;
 }
 .hasMore-3e72_v {
-	@extend %hasMore !optional;
+  @extend %hasMore !optional;
 }
 .messagesErrorBar-1IQ1rH {
-	@extend %messagesErrorBar !optional;
+  @extend %messagesErrorBar !optional;
 }
 .wrapper-1gVUIN {
-	@extend %callWrapper !optional;
+  @extend %callWrapper !optional;
 }
 .callContainer-HtHELf {
-	@extend %callContainer !optional;
+  @extend %callContainer !optional;
 }
 .minimum-fXpVNc {
-	@extend %callMinimum !optional;
+  @extend %callMinimum !optional;
 }
-.normal-2GSW0u {///
-	@extend %callNormal !optional;
+.normal-2GSW0u {
+  ///
+  @extend %callNormal !optional;
 }
 .noChat-2UYgeE {
-	@extend %callNoChat !optional;
+  @extend %callNoChat !optional;
 }
-.video-eAcneW {//////
-	@extend %callVideo !optional;
+.video-eAcneW {
+  //////
+  @extend %callVideo !optional;
 }
 .controlButton-2PMNom {
-	@extend %callControlButton !optional;
+  @extend %callControlButton !optional;
 }
 .centerButton-1IShs7 {
-	@extend %callCenterButton !optional;
+  @extend %callCenterButton !optional;
 }
 .centerIcon-JYpTUi {
-	@extend %callCenterIcon !optional;
+  @extend %callCenterIcon !optional;
 }
 .slash-2yrR11 {
-	@extend %micSlash !optional;
+  @extend %micSlash !optional;
 }
 .colorable-3rVGna {
-	@extend %callButtonColorable !optional;
+  @extend %callButtonColorable !optional;
 }
 .primaryDark-2UJt1G {
-	@extend %callButtonPrimaryDark !optional;
+  @extend %callButtonPrimaryDark !optional;
 }
 .white-11auuQ {
-	@extend %callButtonWhite !optional;
+  @extend %callButtonWhite !optional;
 }
 .red-3T8maV {
-	@extend %callButtonRed !optional;
+  @extend %callButtonRed !optional;
 }
 .active-3D763s {
-	@extend %callButtonActive !optional;
+  @extend %callButtonActive !optional;
 }
 .participantsButton-1WBdFP {
-	@extend %callParticipantsButton !optional;
+  @extend %callParticipantsButton !optional;
 }
 .tile-2TcwiO {
-	@extend %callTile !optional;
+  @extend %callTile !optional;
 }
 .button-3Vyz67 {
-	@extend %callInviteButton !optional;
+  @extend %callInviteButton !optional;
 }
 .tile-2Dr6M1 {
-	@extend %callUserTile !optional;
+  @extend %callUserTile !optional;
 }
 .border-2Vy6FN {
-	@extend %callTileBorder !optional;
+  @extend %callTileBorder !optional;
 }
 .speaking-7QZEkv {
-	@extend %callTileSpeaking !optional;
+  @extend %callTileSpeaking !optional;
 }
 .chat-2ZfjoI {
-	@extend %chat !optional;
+  @extend %chat !optional;
 }
 .content-1jQy2l {
-	@extend %chatContentWrapper !optional;
+  @extend %chatContentWrapper !optional;
 }
 .chatContent-3KubbW {
-	@extend %chatContent !optional;
+  @extend %chatContent !optional;
 }
 .base-34jWEe {
-	@extend %chatBase !optional;
+  @extend %chatBase !optional;
 }
 .gatedContent-31-gID {
-	@extend %chatGatedContent !optional;
+  @extend %chatGatedContent !optional;
 }
 .image-3HC6rC {
-	@extend %chatGatedImage !optional;
+  @extend %chatGatedImage !optional;
 }
 .title-FyH9jw {
-	@extend %chatGatedTitle !optional;
+  @extend %chatGatedTitle !optional;
 }
 .description-fPkcPm {
-	@extend %chatGatedDescription !optional;
+  @extend %chatGatedDescription !optional;
 }
 .separator-17R7Yp {
-	@extend %chatGatedSeparator !optional;
+  @extend %chatGatedSeparator !optional;
 }
 .action-3eQ5Or {
-	@extend %chatGatedAction !optional;
+  @extend %chatGatedAction !optional;
 }
 .actionRed-gYn8D3 {
-	@extend %chatGatedActionRed !optional;
+  @extend %chatGatedActionRed !optional;
 }
 .emptyChannelIcon-1YdEz2 {
-	@extend %emptyChannelIcon !optional;
+  @extend %emptyChannelIcon !optional;
 }
 .role-23oyrw {
-	@extend %emptyChannelRole !optional;
+  @extend %emptyChannelRole !optional;
 }
 .roleColor-3cA0as {
-	@extend %emptyChannelRoleColor !optional;
+  @extend %emptyChannelRoleColor !optional;
 }
 .noChannel-1GDIAZ {
-	@extend %noChannel !optional;
+  @extend %noChannel !optional;
 }
 .image-20MDYu {
-	@extend %noChannelImage !optional;
+  @extend %noChannelImage !optional;
 }
 .title-2CL_z0 {
-	@extend %noChannelTitle !optional;
+  @extend %noChannelTitle !optional;
 }
 .text-27cdrj {
-	@extend %noChannelText !optional;
+  @extend %noChannelText !optional;
 }
-.wrapper-3HVHpV, .wrapper-15CKyy {
-	@extend %chatLoadingWrapper !optional;
+.wrapper-3HVHpV,
+.wrapper-15CKyy {
+  @extend %chatLoadingWrapper !optional;
 }
-.uploadModalIn-2w48Zf  {
-	@extend %uploadModalIn !optional;
+.uploadModalIn-2w48Zf {
+  @extend %uploadModalIn !optional;
 }
 .uploadDropModal-13Kd20 {
-	@extend %uploadDropModal !optional;
+  @extend %uploadDropModal !optional;
 }
 .bgScale-1iWuPF {
-	@extend %uploadDropModalBgScale !optional;
+  @extend %uploadDropModalBgScale !optional;
 }
 .inner-rBP-MS {
-	@extend %uploadDropModalInner !optional;
+  @extend %uploadDropModalInner !optional;
 }
 .divider-2rZFJK {
-	@extend %divider !optional;
+  @extend %divider !optional;
 }
-.isUnread-3Lojb-  {
-	@extend %dividerUnread !optional;
+.isUnread-3Lojb- {
+  @extend %dividerUnread !optional;
 }
 .unreadPill-3nEWYM {
-	@extend %unreadPill !optional;
+  @extend %unreadPill !optional;
 }
 .unreadPillCapStroke-1nE1Q8 {
-	@extend %unreadPillCapStroke !optional;
+  @extend %unreadPillCapStroke !optional;
 }
 .content-3spvdd {
-	@extend %dividerDate !optional;
+  @extend %dividerDate !optional;
 }
 .container-23gRWx {
-	@extend %gifPicker !optional;
+  @extend %gifPicker !optional;
 }
 .header-JHwfVI {
-	@extend %gifPickerHeader !optional;
+  @extend %gifPickerHeader !optional;
 }
 .searchBar-gJe8lY {
-	@extend %gifPickerSearchBar !optional;
+  @extend %gifPickerSearchBar !optional;
 }
 .inner-2pOSmK {
-	@extend %gifPickerSearchBarInner !optional;
+  @extend %gifPickerSearchBarInner !optional;
 }
 .input-2m5SfJ {
-	@extend %gifPickerSearchInput !optional;
+  @extend %gifPickerSearchInput !optional;
 }
 .iconLayout-3Bjizv {
-	@extend %gifPickerSearchIconLayout !optional;
+  @extend %gifPickerSearchIconLayout !optional;
 }
 .iconContainer-6pgShY {
-	@extend %gifPickerSearchIconContainer !optional;
+  @extend %gifPickerSearchIconContainer !optional;
 }
 .icon-3CDcPB {
-	@extend %gifPickerSearchIcon !optional;
+  @extend %gifPickerSearchIcon !optional;
 }
 .visible-CwPfRb {
-	@extend %gifPickerSearchIconVisible !optional;
+  @extend %gifPickerSearchIconVisible !optional;
 }
 .clear-3102V9 {
-	@extend %gifPickerSearchIconClear !optional;
+  @extend %gifPickerSearchIconClear !optional;
 }
 .backButton-bSKWLe {
-	@extend %gifPickerSearchBackButton !optional;
+  @extend %gifPickerSearchBackButton !optional;
 }
 .searchHeader-3w5h-0 {
-	@extend %gifPickerSearchHeader !optional;
+  @extend %gifPickerSearchHeader !optional;
 }
 .content-A8TzKf {
-	@extend %gifPickerContent !optional;
+  @extend %gifPickerContent !optional;
 }
 .container-3eG4QA {
-	@extend %gifPickerContainer !optional;
+  @extend %gifPickerContainer !optional;
 }
 .categoryFade-3RRG67 {
-	@extend %gifPickerCategoryFade !optional;
+  @extend %gifPickerCategoryFade !optional;
 }
 .categoryFadeBlurple-1l49_Q {
-	@extend %gifPickerCategoryFadeBlurple !optional;
+  @extend %gifPickerCategoryFadeBlurple !optional;
 }
 .categoryText-3B1jLN {
-	@extend %gifPickerCategoryText !optional;
+  @extend %gifPickerCategoryText !optional;
 }
 .categoryIcon-3zvsg2 {
-	@extend %gifPickerCategoryIcon !optional;
+  @extend %gifPickerCategoryIcon !optional;
 }
 .categoryName-26b0Ij {
-	@extend %gifPickerCategoryName !optional;
+  @extend %gifPickerCategoryName !optional;
 }
 .results-2CQlZp {
-	@extend %gifPickerResults !optional;
+  @extend %gifPickerResults !optional;
 }
 .result-pzZrwj {
-	@extend %gifPickerResult !optional;
+  @extend %gifPickerResult !optional;
 }
 .focused-q9B2e4 {
-	@extend %gifPickerResultFocused !optional;
+  @extend %gifPickerResultFocused !optional;
 }
 .favButton-2Bi3Ff {
-	@extend %gifPickerFavButton !optional;
+  @extend %gifPickerFavButton !optional;
 }
 .icon-1m_PLf {
-	@extend %gifPickerFavButtonIcon !optional;
+  @extend %gifPickerFavButtonIcon !optional;
 }
 .gif-2kTiNB {
-	@extend %gifPickerGif !optional;
+  @extend %gifPickerGif !optional;
 }
 .emptyHints-1KtTYR {
-	@extend %gifPickerEmptyHints !optional;
+  @extend %gifPickerEmptyHints !optional;
 }
 .placeholder-2Mfkde {
-	@extend %gifPickerPlaceholder !optional;
+  @extend %gifPickerPlaceholder !optional;
 }
 .emptyHintCard-3Btf0V {
-	@extend %gifPickerEmptyHint !optional;
+  @extend %gifPickerEmptyHint !optional;
 }
 .emptyHintCard-3Btf0V {
-	@extend %gifPickerEmptyHintCard !optional;
+  @extend %gifPickerEmptyHintCard !optional;
 }
 .emptyHintFavorite-1cKHnJ {
-	@extend %gifPickerEmptyHintFavorite !optional;
+  @extend %gifPickerEmptyHintFavorite !optional;
 }
 .emptyHintText-3PF7lP {
-	@extend %gifPickerEmptyHintText !optional;
+  @extend %gifPickerEmptyHintText !optional;
 }
 .endContainer-3FEUTM {
-	@extend %gifPickerEndContainer !optional;
+  @extend %gifPickerEndContainer !optional;
 }
 .form-3gdLxP {
-	@extend %chatForm !optional;
+  @extend %chatForm !optional;
 }
 .channelTextArea-1VQBuV {
-	@extend %channelTextArea !optional;
+  @extend %channelTextArea !optional;
 }
 .scrollableContainer-15eg7h {
-	@extend %channelTextAreaScrollable !optional;
+  @extend %channelTextAreaScrollable !optional;
 }
 .inner-NQg18Y {
-	@extend %channelTextAreaInner !optional;
+  @extend %channelTextAreaInner !optional;
 }
 .attachWrapper-3slhXI {
-	@extend %channelTextAreaAttachWrapper !optional;
+  @extend %channelTextAreaAttachWrapper !optional;
 }
 .attachButton-_ACFSu {
-	@extend %channelTextAreaAttachButton !optional;
+  @extend %channelTextAreaAttachButton !optional;
 }
 .attachButtonInner-2mwer8 {
-	@extend %channelTextAreaAttachButtonInner !optional;
+  @extend %channelTextAreaAttachButtonInner !optional;
 }
 .attachButtonPlus-3IYelE {
-	@extend %channelTextAreaAttachButtonPlus !optional;
+  @extend %channelTextAreaAttachButtonPlus !optional;
 }
 .textArea-2CLwUE {
-	@extend %textArea !optional;
+  @extend %textArea !optional;
 }
 .placeholder-1_mJY1 {
-	@extend %textAreaPlaceholder !optional;
+  @extend %textAreaPlaceholder !optional;
 }
 .textAreaSlate-9-y-k2 {
-	@extend %slateTextArea !optional;
+  @extend %slateTextArea !optional;
 }
 .button-2fCJ0o {
-	@extend %channelTextAreaButton !optional;
+  @extend %channelTextAreaButton !optional;
 }
 .emojiButton-3FRTuj {
-	@extend %channelTextAreaEmojiButton !optional;
+  @extend %channelTextAreaEmojiButton !optional;
 }
 .typing-2J1mQU {
-	@extend %channelTextAreaTyping !optional;
+  @extend %channelTextAreaTyping !optional;
 }
 .text-3S7XCz {
-	@extend %channelTextAreaTypingText !optional;
+  @extend %channelTextAreaTypingText !optional;
 }
 .attachedBars-2BCP3l {
-	@extend %channelTextAreAttachedBar !optional;
+  @extend %channelTextAreAttachedBar !optional;
 }
 .stackedAttachedBar-u4gXN8 {
-	@extend %channelTextAreaStackedAttachedBar !optional;
+  @extend %channelTextAreaStackedAttachedBar !optional;
 }
 .upload-vLbqu- {
-	@extend %channelTextAreaUpload !optional;
+  @extend %channelTextAreaUpload !optional;
 }
 .operations-3q3u6E {
-	@extend %operations !optional;
+  @extend %operations !optional;
 }
 .wrapper-2SplAX {
-	@extend %channelInfo !optional;
+  @extend %channelInfo !optional;
 }
 .content-2M_BlY {
-	@extend %channelInfoContent !optional;
+  @extend %channelInfoContent !optional;
 }
 .image-3FliiM {
-	@extend %channelInfoImage !optional;
+  @extend %channelInfoImage !optional;
 }
 .buttonContainer-KMz3Ex {
-	@extend %channelInfoButtonContainer !optional;
+  @extend %channelInfoButtonContainer !optional;
 }
 .autocomplete-3NRXG8 {
-	@extend %autocomplete !optional;
+  @extend %autocomplete !optional;
 }
 .autocompleteInner-y1mjDl {
-	@extend %autocompleteInner !optional;
+  @extend %autocompleteInner !optional;
 }
 .contentTitle-3CylD3 {
-	@extend %autocompleteTitle !optional;
+  @extend %autocompleteTitle !optional;
 }
 .content-Qb0rXO {
-	@extend %autocompleteContent !optional;
+  @extend %autocompleteContent !optional;
 }
 .icon-nmEpWl {
-	@extend %autocompleteIcon !optional;
+  @extend %autocompleteIcon !optional;
 }
 .iconForeground-2P-YQq {
-	@extend %autocompleteIconForeground !optional;
+  @extend %autocompleteIconForeground !optional;
 }
 .autocompleteRowSubheading-6CMP2P {
-	@extend %autocompleteRowSubheading !optional;
+  @extend %autocompleteRowSubheading !optional;
 }
 .autocompleteRowContentSecondary-Oobh2b {
-	@extend %autocompleteContentSecondary !optional;
+  @extend %autocompleteContentSecondary !optional;
 }
 .descriptionDiscriminator-tCKMLV {
-	@extend%autocompleteDescriptionDiscriminator !optional;
+  @extend%autocompletedescriptiondiscriminator !optional;
 }
 .selector-2IcQBU {
-	@extend %autocompleteSelector !optional;
+  @extend %autocompleteSelector !optional;
 }
 .selected-3H3-RC {
-	@extend %autocompleteSelectorSelected !optional;
+  @extend %autocompleteSelectorSelected !optional;
 }
 .categoryHeader-OpJ1Ly {
-	@extend %autocompleteCategoryHeader !optional;
+  @extend %autocompleteCategoryHeader !optional;
 }
 .wrapper-3z7DuG {
-	@extend %autocompleteListWrapper !optional;
+  @extend %autocompleteListWrapper !optional;
 }
 .list-33W-Tv {
-	@extend %autocompleteList !optional;
+  @extend %autocompleteList !optional;
 }
 .listItems-6eZzQ1 {
-	@extend %autocompleteListItems !optional;
+  @extend %autocompleteListItems !optional;
 }
 .selected-3B2w1z {
-	@extend %autocompleteListItemSelected !optional;
+  @extend %autocompleteListItemSelected !optional;
 }
 .option-Tt7anD {
-	@extend %autocompleteOption !optional;
+  @extend %autocompleteOption !optional;
 }
 .active-WHsd77 {
-	@extend %autocompleteOptionActive !optional;
+  @extend %autocompleteOptionActive !optional;
 }
 .error-1SecXe {
-	@extend %autocompleteOptionError !optional;
+  @extend %autocompleteOptionError !optional;
 }
 .pill-1HLSrc {
-	@extend %autocompletePill !optional;
+  @extend %autocompletePill !optional;
 }
 .tabButton-1hJ4oW {
-	@extend %autocompletetabButton !optional;
+  @extend %autocompletetabButton !optional;
 }
-.spamBanner-1auiob { 
-	@extend %timeoutBar !optional;
+.spamBanner-1auiob {
+  @extend %timeoutBar !optional;
 }
-.container-lJuBHq { 
-	@extend %timeoutPopup !optional;
+.container-lJuBHq {
+  @extend %timeoutPopup !optional;
 }
 .iconContainer-2k2ykS {
-	@extend %timeoutIcon !optional; 
+  @extend %timeoutIcon !optional;
 }
 .welcomeMessage-3_Mcht {
-	@extend %welcomeMessage !optional;
+  @extend %welcomeMessage !optional;
 }
 .h1-1IDj26 {
-	@extend %welcomeMessageH1 !optional;
+  @extend %welcomeMessageH1 !optional;
 }
 .itemContainer-WiE19S {
-	@extend %welcomeMessageItemContainer !optional;
+  @extend %welcomeMessageItemContainer !optional;
 }
 .icon-2shpbb {
-	@extend %welcomeMessageIcon !optional;
+  @extend %welcomeMessageIcon !optional;
 }
 .exclamation-1mi7Vi {
-	@extend %welcomeMessageIconExclamation !optional;
+  @extend %welcomeMessageIconExclamation !optional;
 }
 .share-1EA-d2 {
-	@extend %welcomeMessageIconShare !optional;
+  @extend %welcomeMessageIconShare !optional;
 }
 .mobile-3_KEmF {
-	@extend %welcomeMessageIconMobile !optional;
+  @extend %welcomeMessageIconMobile !optional;
 }
 .twitter-1TN3uJ {
-	@extend %welcomeMessageIconTwitter !optional;
+  @extend %welcomeMessageIconTwitter !optional;
 }
 .base-34jWEe {
-	@extend %welcomeMessageBase !optional;
+  @extend %welcomeMessageBase !optional;
 }
 .wrapper-22ayhK {
-	@extend %badge !optional;
+  @extend %badge !optional;
 }
 .numberBadge-37OJ3S {
-	@extend %numberBadge !optional;
+  @extend %numberBadge !optional;
 }
 .textBadge-1fdDPJ {
-	@extend %textBadge !optional;
+  @extend %textBadge !optional;
 }
 .button-38aScr {
-	@extend %button !optional;
+  @extend %button !optional;
 }
 .hasHover-3X1-zV {
-	@extend %buttonHasHover !optional;
+  @extend %buttonHasHover !optional;
 }
 .lookFilled-yCfaCM {
-	@extend %buttonFilled !optional;
+  @extend %buttonFilled !optional;
 }
 .lookOutlined-3yKVGo {
-	@extend %buttonOutlined !optional;
+  @extend %buttonOutlined !optional;
 }
 .lookInverted-2mDUMi {
-	@extend %buttonInverted !optional;
+  @extend %buttonInverted !optional;
 }
 .lookLink-15mFoz {
-	@extend %buttonLink !optional;
+  @extend %buttonLink !optional;
 }
 .lookBlank-21BCro {
-	@extend %buttonBlank !optional;
+  @extend %buttonBlank !optional;
 }
 .colorBrand-3pXr91 {
-	@extend %buttonBrand !optional;
+  @extend %buttonBrand !optional;
 }
 .colorBrandNew-g5lmBU {
-	@extend %buttonBrandNew !optional;
+  @extend %buttonBrandNew !optional;
 }
 .colorPrimary-2AuQVo {
-	@extend %buttonPrimary !optional;
+  @extend %buttonPrimary !optional;
 }
-.colorWhite-1H92hK{
-	@extend %buttonWhite !optional;
+.colorWhite-1H92hK {
+  @extend %buttonWhite !optional;
 }
 .colorGreen-3y-Z79 {
-	@extend %buttonGreen !optional;
+  @extend %buttonGreen !optional;
 }
 .colorRed-rQXKgM {
-	@extend %buttonRed !optional;
+  @extend %buttonRed !optional;
 }
 .colorGrey-2DXtkV {
-	@extend %buttonGrey !optional;
+  @extend %buttonGrey !optional;
 }
 .contents-3ca1mk {
-	@extend %buttonContents !optional;
+  @extend %buttonContents !optional;
 }
 .lookFilled-yCfaCM.colorBrand-I6CyqQ {
-	@extend %buttonFilledBrand !optional;
+  @extend %buttonFilledBrand !optional;
 }
 .lookFilled-yCfaCM.colorBrandNew-g5lmBU {
-	@extend %buttonFilledBrandNew !optional;
+  @extend %buttonFilledBrandNew !optional;
 }
 .lookFilled-yCfaCM.colorBrandNew-2-gGsS {
-	@extend %buttonFilledBrandNew2 !optional;
+  @extend %buttonFilledBrandNew2 !optional;
 }
 .lookFilled-yCfaCM.colorPrimary-2AuQVo {
-	@extend %buttonFilledPrimary !optional;
+  @extend %buttonFilledPrimary !optional;
 }
-.lookFilled-yCfaCM.colorWhite-1H92hK{
-	@extend %buttonFilledWhite !optional;
+.lookFilled-yCfaCM.colorWhite-1H92hK {
+  @extend %buttonFilledWhite !optional;
 }
 .lookFilled-yCfaCM.colorGreen-3y-Z79 {
-	@extend %buttonFilledGreen !optional;
+  @extend %buttonFilledGreen !optional;
 }
 .lookFilled-yCfaCM.colorRed-rQXKgM {
-	@extend %buttonFilledRed !optional;
+  @extend %buttonFilledRed !optional;
 }
 .lookFilled-yCfaCM.colorGrey-2iAG-B {
-	@extend %buttonFilledGrey !optional;
+  @extend %buttonFilledGrey !optional;
 }
 .lookOutlined-3yKVGo.colorBrand-I6CyqQ {
-	@extend %buttonOutlinedBrand !optional;
+  @extend %buttonOutlinedBrand !optional;
 }
 .lookOutlined-3yKVGo.colorPrimary-2AuQVo {
-	@extend %buttonOutlinedPrimary !optional;
+  @extend %buttonOutlinedPrimary !optional;
 }
-.lookOutlined-3yKVGo.colorWhite-1H92hK{
-	@extend %buttonOutlinedWhite !optional;
+.lookOutlined-3yKVGo.colorWhite-1H92hK {
+  @extend %buttonOutlinedWhite !optional;
 }
 .lookOutlined-3yKVGo.colorGreen-3y-Z79 {
-	@extend %buttonOutlinedGreen !optional;
+  @extend %buttonOutlinedGreen !optional;
 }
 .lookOutlined-3yKVGo.colorRed-rQXKgM {
-	@extend %buttonOutlinedRed !optional;
+  @extend %buttonOutlinedRed !optional;
 }
 .lookOutlined-3yKVGo.colorGrey-2DXtkV {
-	@extend %buttonOutlinedGrey !optional;
+  @extend %buttonOutlinedGrey !optional;
 }
 .lookInverted-2mDUMi.colorBrand-I6CyqQ {
-	@extend %buttonInvertedBrand !optional;
+  @extend %buttonInvertedBrand !optional;
 }
 .lookInverted-2mDUMi.colorPrimary-2AuQVo {
-	@extend %buttonInvertedPrimary !optional;
+  @extend %buttonInvertedPrimary !optional;
 }
-.lookInverted-2mDUMi.colorWhite-1H92hK{
-	@extend %buttonInvertedWhite !optional;
+.lookInverted-2mDUMi.colorWhite-1H92hK {
+  @extend %buttonInvertedWhite !optional;
 }
 .lookInverted-2mDUMi.colorGreen-3y-Z79 {
-	@extend %buttonInvertedGreen !optional;
+  @extend %buttonInvertedGreen !optional;
 }
 .lookInverted-2mDUMicolorRed-rQXKgM {
-	@extend %buttonInvertedRed !optional;
+  @extend %buttonInvertedRed !optional;
 }
 .lookInverted-2mDUMi.colorGrey-2DXtkV {
-	@extend %buttonInvertedGrey !optional;
+  @extend %buttonInvertedGrey !optional;
 }
 .lookLink-15mFoz.colorBrand-I6CyqQ {
-	@extend %buttonLinkBrand !optional;
+  @extend %buttonLinkBrand !optional;
 }
 .lookLink-15mFoz.colorPrimary-2AuQVo {
-	@extend %buttonLinkPrimary !optional;
+  @extend %buttonLinkPrimary !optional;
 }
-.lookLink-15mFoz.colorWhite-1H92hK{
-	@extend %buttonLinkWhite !optional;
+.lookLink-15mFoz.colorWhite-1H92hK {
+  @extend %buttonLinkWhite !optional;
 }
 .lookLink-15mFoz.colorGreen-3y-Z79 {
-	@extend %buttonLinkGreen !optional;
+  @extend %buttonLinkGreen !optional;
 }
 .lookLink-15mFozcolorRed-rQXKgM {
-	@extend %buttonLinkRed !optional;
+  @extend %buttonLinkRed !optional;
 }
 .lookLink-15mFoz.colorGrey-2DXtkV {
-	@extend %buttonLinkGrey !optional;
+  @extend %buttonLinkGrey !optional;
 }
 .lookBlank-21BCro.colorBrand-I6CyqQ {
-	@extend %buttonBlankBrand !optional;
+  @extend %buttonBlankBrand !optional;
 }
 .button-1_oXub {
-	@extend %buttonCircle !optional;
+  @extend %buttonCircle !optional;
 }
 .disabled-184-il {
-	@extend %buttonCircleDisabled !optional;
+  @extend %buttonCircleDisabled !optional;
 }
 .checkbox-f1HnKB {
-	@extend %checkbox !optional;
+  @extend %checkbox !optional;
 }
 .checked-1pZh2h {
-	@extend %checkboxChecked !optional;
+  @extend %checkboxChecked !optional;
 }
 .checkboxWrapper-2fDzaA {
-	@extend %checkboxWrapper !optional;
+  @extend %checkboxWrapper !optional;
 }
 .flex-3BkGQD {
-	@extend %flex !optional;
+  @extend %flex !optional;
 }
 .alignStart-2nShwY {
-	@extend %flexAlignStart !optional;
+  @extend %flexAlignStart !optional;
 }
 .alignEnd-2awoY_ {
-	@extend %flexAlignEnd !optional;
+  @extend %flexAlignEnd !optional;
 }
 .alignCenter-14kD11 {
-	@extend %flexAlignCenter !optional;
+  @extend %flexAlignCenter !optional;
 }
 .alignStretch-Uwowzr {
-	@extend %flexAlignStretch !optional;
+  @extend %flexAlignStretch !optional;
 }
 .alignBaseline-2kE5ql {
-	@extend %flexAlignBaseline !optional;
+  @extend %flexAlignBaseline !optional;
 }
 .justifyStart-2Mwniq {
-	@extend %flexJustifyStart !optional;
+  @extend %flexJustifyStart !optional;
 }
 .justifyEnd-2G0m6w {
-	@extend %flexJustifyEnd !optional;
+  @extend %flexJustifyEnd !optional;
 }
 .justifyCenter-rrurWZ {
-	@extend %flexJustifyCenter !optional;
+  @extend %flexJustifyCenter !optional;
 }
 .justifyAround-1MJ202 {
-	@extend %flexJustifyAround !optional;
+  @extend %flexJustifyAround !optional;
 }
 .justifyBetween-wAERV6 {
-	@extend %flexJustifyBetween !optional;
+  @extend %flexJustifyBetween !optional;
 }
 .noWrap-hBpHBz {
-	@extend %flexNoWrap !optional;
+  @extend %flexNoWrap !optional;
 }
 .wrap-7NZuTn {
-	@extend %flexWrap !optional;
+  @extend %flexWrap !optional;
 }
 .wrapReverse-jL3MY8 {
-	@extend %flexWrapReverse !optional;
+  @extend %flexWrapReverse !optional;
 }
 .directionRow-2Iu2A9 {
-	@extend %flexDirectionRow !optional;
+  @extend %flexDirectionRow !optional;
 }
 .directionRowReverse-HZatnx {
-	@extend %flexDirectionRowReverse !optional;
+  @extend %flexDirectionRowReverse !optional;
 }
 .directionColumn-3pi1nm {
-	@extend %flexDirectionColumn !optional;
+  @extend %flexDirectionColumn !optional;
 }
 .spacer-2upayl {
-	@extend %spacer !optional;
+  @extend %spacer !optional;
 }
 .directionUp-3GeJic {
-	@extend %directionUp !optional;
+  @extend %directionUp !optional;
 }
 .directionRight-2cNgoe {
-	@extend %directionRight !optional;
+  @extend %directionRight !optional;
 }
 .directionDown-2w0MZz {
-	@extend %directionDown !optional;
+  @extend %directionDown !optional;
 }
 .directionLeft-KIR_5K {
-	@extend %directionLeft !optional;
+  @extend %directionLeft !optional;
 }
 .flowerStarContainer-1QeD-L {
-	@extend %flowerStarContainer !optional;
+  @extend %flowerStarContainer !optional;
 }
 .flowerStar-2tNFCR {
-	@extend %flowerStar !optional;
+  @extend %flowerStar !optional;
 }
 .childContainer-U_a6Yh {
-	@extend %flowerStarChild !optional;
+  @extend %flowerStarChild !optional;
 }
 .icon-3BYlXK {
-	@extend %flowerStarIcon !optional;
+  @extend %flowerStarIcon !optional;
 }
 .gameVerifiedIcon-1YMUdQ {
-	@extend %gameVerifiedIcon !optional;
+  @extend %gameVerifiedIcon !optional;
 }
 .indicator-9QMksR {
-	@extend %indicator !optional;
+  @extend %indicator !optional;
 }
 .animationContainer-1fE4lX {
-	@extend %indicatorContainer !optional;
+  @extend %indicatorContainer !optional;
 }
 .animating-1VBoFQ {
-	@extend %indicatorAnimating !optional;
+  @extend %indicatorAnimating !optional;
 }
 .notAnimating-2LOPSO {
-	@extend %indicatorNotAnimating !optional;
+  @extend %indicatorNotAnimating !optional;
 }
 .innerCircle-2zWLZe {
-	@extend %indicatorCircleInner !optional;
+  @extend %indicatorCircleInner !optional;
 }
 .outerCircle-2Uqqis {
-	@extend %indicatorCircleOuter !optional;
+  @extend %indicatorCircleOuter !optional;
 }
-.innerCircle-2zWLZe, .outerCircle-2Uqqis {
-	@extend %indicatorCircle !optional;
+.innerCircle-2zWLZe,
+.outerCircle-2Uqqis {
+  @extend %indicatorCircle !optional;
 }
 .top-1orLYG {
-	@extend %indicatorExclamationTop !optional;
+  @extend %indicatorExclamationTop !optional;
 }
 .bottom-3Mou5l {
-	@extend %indicatorExclamationBottom !optional;
+  @extend %indicatorExclamationBottom !optional;
 }
-.top-1orLYG, .bottom-3Mou5l {
-	@extend %indicatorExclamation !optional;
+.top-1orLYG,
+.bottom-3Mou5l {
+  @extend %indicatorExclamation !optional;
 }
 .scrollerWrap-2lJEkd {
-	@extend %scrollerWrap !optional;
+  @extend %scrollerWrap !optional;
 }
 .scrollerBase-_bVAAt {
-	@extend %scroller !optional;
+  @extend %scroller !optional;
 }
 .slider-1NC-Gf {
-	@extend %slider !optional;
+  @extend %slider !optional;
 }
 .mini-2qY9iv {
-	@extend %sliderMini !optional;
+  @extend %sliderMini !optional;
 }
 .input-1hjJtk {
-	@extend %sliderInput !optional;
+  @extend %sliderInput !optional;
 }
 .track-1BI4CA {
-	@extend %sliderTrack !optional;
+  @extend %sliderTrack !optional;
 }
 .bar-1Bhnl9 {
-	@extend %sliderBar !optional;
+  @extend %sliderBar !optional;
 }
 .barFill-2Bh7CX {
-	@extend %sliderBarFill !optional;
+  @extend %sliderBarFill !optional;
 }
 .grabber-2GQyvM {
-	@extend %sliderGrabber !optional;
+  @extend %sliderGrabber !optional;
 }
 .loadingPopout-1feYe_ {
-	@extend %spinnerPopout !optional;
+  @extend %spinnerPopout !optional;
 }
 .spinner-2RT7ZC {
-	@extend %spinner !optional;
+  @extend %spinner !optional;
 }
 .inner-26JK4f {
-	@extend %spinnerInner !optional;
+  @extend %spinnerInner !optional;
 }
 .spinnerItem-2HfQC8 {
-	@extend %spinnerItem !optional;
+  @extend %spinnerItem !optional;
 }
 .wanderingCubesItem-3Us-UG {
-	@extend %spinnerWanderingCubesItem !optional;
+  @extend %spinnerWanderingCubesItem !optional;
 }
 .loadingMore-sPqUXZ {
-	@extend %loadingMore !optional;
+  @extend %loadingMore !optional;
 }
 .pulsingEllipsis-10G8Z6 {
-	@extend %spinnerPulsingEllipsis !optional;
+  @extend %spinnerPulsingEllipsis !optional;
 }
 .pulsingEllipsisItem-3pNmEc {
-	@extend %spinnerPulsingEllipsisItem !optional;
+  @extend %spinnerPulsingEllipsisItem !optional;
 }
 .control-1fl03- {
-	@extend %switch !optional;
+  @extend %switch !optional;
 }
 .container-2nx-BQ {
-	@extend %switchContainer !optional;
+  @extend %switchContainer !optional;
 }
 .slider-32CRPX {
-	@extend %switchSlider !optional;
+  @extend %switchSlider !optional;
 }
 .input-2XRLou {
-	@extend %switchCheckbox !optional;
+  @extend %switchCheckbox !optional;
 }
 .item-3XjbnG {
-	@extend %tabBarItem !optional;
+  @extend %tabBarItem !optional;
 }
 .selected-g-kMVV {
-	@extend %tabBarItemSelected !optional;
+  @extend %tabBarItemSelected !optional;
 }
 .primary-3j8BhM {
-	@extend %tabBarItemPrimary !optional;
+  @extend %tabBarItemPrimary !optional;
 }
 .primarySelected-3uHKZn {
-	@extend %tabBarItemPrimarySelected !optional;
+  @extend %tabBarItemPrimarySelected !optional;
 }
 .disabled-1nofHP {
-	@extend %tabBarItemDisabled !optional;
+  @extend %tabBarItemDisabled !optional;
 }
 .header-2Kx1US {
-	@extend %tabBarHeader !optional;
+  @extend %tabBarHeader !optional;
 }
 .separator-2wx7h6 {
-	@extend %tabBarSeparator !optional;
+  @extend %tabBarSeparator !optional;
 }
 .tabBar-1E2ExX {
-	@extend %headerBarTabBar !optional;
+  @extend %headerBarTabBar !optional;
 }
 .premiumLabel-3HPvdB {
-	@extend %premiumLabel !optional;
+  @extend %premiumLabel !optional;
 }
 .background-3iPORX {
-	@extend %premiumSelectedBackground !optional;
+  @extend %premiumSelectedBackground !optional;
 }
 .selectedBackground-1t6xXq {
-	@extend %premiumSelectedBackground !optional;
+  @extend %premiumSelectedBackground !optional;
 }
 .icon-3FU6Ir {
-	@extend %serverBoostIcon !optional;
+  @extend %serverBoostIcon !optional;
 }
 .tooltip-14MtrL {
-	@extend %tooltip !optional;
+  @extend %tooltip !optional;
 }
 .tooltipPointer-3L49xb {
-	@extend %tooltipPointer !optional;
+  @extend %tooltipPointer !optional;
 }
 .tooltipTop-1wv5UJ {
-	@extend %tooltipTop !optional;
+  @extend %tooltipTop !optional;
 }
 .tooltipBottom-2WzfVx {
-	@extend %tooltipBottom !optional;
+  @extend %tooltipBottom !optional;
 }
 .tooltipLeft-3H43DQ {
-	@extend %tooltipLeft !optional;
+  @extend %tooltipLeft !optional;
 }
 .tooltipRight-2TSb42 {
-	@extend %tooltipRight !optional;
+  @extend %tooltipRight !optional;
 }
 .tooltipContent-Nejnvh {
-	@extend %tooltipContent !optional;
+  @extend %tooltipContent !optional;
 }
 .tooltipPrimary-3qLMbS {
-	@extend %tooltipPrimary !optional;
+  @extend %tooltipPrimary !optional;
 }
 .tooltipBrand-20XsMA {
-	@extend %tooltipBrand !optional;
+  @extend %tooltipBrand !optional;
 }
 .tooltipRed-2z14Wl {
-	@extend %tooltipRed !optional;
+  @extend %tooltipRed !optional;
 }
 .tooltipGreen-oouJdx {
-	@extend %tooltipGreen !optional;
+  @extend %tooltipGreen !optional;
 }
 .tooltipYellow-3a3Cmr {
-	@extend %tooltipYellow !optional;
+  @extend %tooltipYellow !optional;
 }
 .tooltip-1T4pLi {
-	@extend %commandTooltip !optional;
+  @extend %commandTooltip !optional;
 }
 .tooltipPointer-r3VntW {
-	@extend %commandTooltipPointer !optional;
+  @extend %commandTooltipPointer !optional;
 }
 .wrapper-1_HaEi {
-	@extend %guildsWrapper !optional;
+  @extend %guildsWrapper !optional;
 }
 .tree-3agP2X {
-	@extend %guildsTree !optional;
+  @extend %guildsTree !optional;
 }
 .scroller-3X7KbA {
-	@extend %guilds !optional;
+  @extend %guilds !optional;
 }
 .listItem-3SmSlK {
-	@extend %guild !optional;
+  @extend %guild !optional;
 }
 .guildSeparator-a4uisj {
-	@extend %guildSeparator !optional;
+  @extend %guildSeparator !optional;
 }
 .homeIcon-r0w4ny {
-	@extend %homeIcon !optional;
+  @extend %homeIcon !optional;
 }
 .pill-L_aLMQ {
-	@extend %homePill !optional;
+  @extend %homePill !optional;
 }
 .blobContainer-ikKyFs {
-	@extend %guildContainer !optional;
+  @extend %guildContainer !optional;
 }
 .pill-2RsI5Q {
-	@extend %guildPill !optional;
+  @extend %guildPill !optional;
 }
 .item-2LIpTv {
-	@extend %guildPillItem !optional;
+  @extend %guildPillItem !optional;
 }
 .svg-2zuE5p {
-	@extend %guildSVG !optional;
+  @extend %guildSVG !optional;
 }
 .wrapper-3kah-n {
-	@extend %guildLink !optional;
+  @extend %guildLink !optional;
 }
 .selected-1Drb7Z {
-	@extend %guildLinkSelected !optional;
+  @extend %guildLinkSelected !optional;
 }
 .icon-3AqZ2e {
-	@extend %guildIcon !optional;
+  @extend %guildIcon !optional;
 }
 .childWrapper-1j_1ub {
-	@extend %guildChildWrapper !optional;
+  @extend %guildChildWrapper !optional;
 }
 .acronym-2zrAHN {
-	@extend %guildAcronym !optional;
+  @extend %guildAcronym !optional;
 }
 .lowerBadge-3WTshO {
-	@extend %guildBadgeLower !optional;
+  @extend %guildBadgeLower !optional;
 }
 .upperBadge-1V6Iyi {
-	@extend %guildBadgeUpper !optional;
+  @extend %guildBadgeUpper !optional;
 }
 .iconBadge-32fMme {
-	@extend %guildBadge !optional;
+  @extend %guildBadge !optional;
 }
 .icon-2Ug6UV {
-	@extend %guildBadgeIcon !optional;
+  @extend %guildBadgeIcon !optional;
 }
 .participating-2Z81oO {
-	@extend %guildBadgeParticipating !optional;
+  @extend %guildBadgeParticipating !optional;
 }
 .placeholderMask-2FHNZU {
-	@extend %guildPlaceholderMask !optional;
+  @extend %guildPlaceholderMask !optional;
 }
 .dragInner-1CUBf_ {
-	@extend %guildDragInner !optional;
+  @extend %guildDragInner !optional;
 }
 .wrapper-38slSD {
-	@extend %guildFolderWrapper !optional;
+  @extend %guildFolderWrapper !optional;
 }
 .expandedFolderBackground-1kSAf6 {
-	@extend %guildExpandedFolderBackground !optional;
+  @extend %guildExpandedFolderBackground !optional;
 }
 .collapsed-uGXEbi {
-	@extend %guildFolderCollapsed !optional;
+  @extend %guildFolderCollapsed !optional;
 }
 .folder-241Joy {
-	@extend %guildFolder !optional;
+  @extend %guildFolder !optional;
 }
 .hover-3m7-WT {
-	@extend %guildFolderHover !optional;
+  @extend %guildFolderHover !optional;
 }
 .folderIconWrapper-1oRIZr {
-	@extend %guildFolderIconWrapper !optional;
+  @extend %guildFolderIconWrapper !optional;
 }
 .closedFolderIconWrapper-3tRb2d {
-	@extend %guildFolderClosedIconWrapper !optional;
+  @extend %guildFolderClosedIconWrapper !optional;
 }
 .expandedFolderIconWrapper-3RwQpD {
-	@extend %guildFolderExpandedIconWrapper !optional;
+  @extend %guildFolderExpandedIconWrapper !optional;
 }
 .icon-1zKOXL {
-	@extend %guildFolderIcon !optional;
+  @extend %guildFolderIcon !optional;
 }
 .iconSizeSmol-qsFaRK {
-	@extend %guildFolderIconSizeSmol !optional;
+  @extend %guildFolderIconSizeSmol !optional;
 }
 .guildIcon-2I5sfu {
-	@extend %guildFolderGuildIcon !optional;
+  @extend %guildFolderGuildIcon !optional;
 }
 .circleIconButton-1VxDrg {
-	@extend %circleIconButton !optional;
+  @extend %circleIconButton !optional;
 }
 .selected-2r1Hvo {
-	@extend %circleIconButtonSelected !optional;
+  @extend %circleIconButtonSelected !optional;
 }
 .guildsErrorContainer-2uWYsE {
-	@extend %guildsErrorContainer !optional;
+  @extend %guildsErrorContainer !optional;
 }
 .guildsError-g6NwOI {
-	@extend %guildsError !optional;
+  @extend %guildsError !optional;
 }
 .breadcrumbs-2uP7wU {
-	@extend %breadcrumbs !optional;
+  @extend %breadcrumbs !optional;
 }
 .breadcrumbWrapper-3rpYiO {
-	@extend %breadcrumbWrapper !optional;
+  @extend %breadcrumbWrapper !optional;
 }
 .breadcrumbClickWrapper-1nRR9e {
-	@extend %breadcrumbClickWrapper !optional;
+  @extend %breadcrumbClickWrapper !optional;
 }
 .breadcrumbFinalWrapper-1BwQdx {
-	@extend %breadcrumbFinalWrapper !optional;
+  @extend %breadcrumbFinalWrapper !optional;
 }
 .breadcrumb-2tlXzO {
-	@extend %breadcrumb !optional;
+  @extend %breadcrumb !optional;
 }
 .breadcrumbArrow-1LY2zF {
-	@extend %breadcrumbArrow !optional;
+  @extend %breadcrumbArrow !optional;
 }
 .container-ZMc96U {
-	@extend %headerBar !optional;
+  @extend %headerBar !optional;
 }
 .children-3xh0VB {
-	@extend %headerBarChildren !optional;
+  @extend %headerBarChildren !optional;
 }
 .toolbar-3_r2xA {
-	@extend %toolbar !optional;
+  @extend %toolbar !optional;
 }
 .base-21yXnu {
-	@extend %headerBarTitle !optional;
+  @extend %headerBarTitle !optional;
 }
 .muted-eZM05q {
-	@extend %headerBarTitleMuted !optional;
+  @extend %headerBarTitleMuted !optional;
 }
 .topic-11NuQZ {
-	@extend %headerBarTopic !optional;
+  @extend %headerBarTopic !optional;
 }
 .akaBadge-3i7V3p {
-	@extend %headerBarAkaBadge !optional;
+  @extend %headerBarAkaBadge !optional;
 }
 .nicknames-10Sg6e {
-	@extend %headerBarNicknames !optional;
+  @extend %headerBarNicknames !optional;
 }
 .iconWrapper-2awDjA {
-	@extend %headerBarIconWrapper !optional;
+  @extend %headerBarIconWrapper !optional;
 }
 .icon-2xnN2Y {
-	@extend %headerBarIcon !optional;
+  @extend %headerBarIcon !optional;
 }
 .clickable-ZD7xvu {
-	@extend %headerBarIconClickable !optional;
+  @extend %headerBarIconClickable !optional;
 }
 .selected-29KTGM {
-	@extend %headerBarIconSelected !optional;
+  @extend %headerBarIconSelected !optional;
 }
 .icon-2xnN2Y.popout-open {
-	@extend %headerBarIconPopoutOpen !optional;
+  @extend %headerBarIconPopoutOpen !optional;
 }
 .cloud-PaJUGP {
-	@extend %headerBarIconUpdateCloud !optional;
+  @extend %headerBarIconUpdateCloud !optional;
 }
 .downloadArrow-3u87TS {
-	@extend %headerBarIconUpdateDownloadArrow !optional;
+  @extend %headerBarIconUpdateDownloadArrow !optional;
 }
 .iconBadge-3Mmg92 {
-	@extend %headerBarIconBadge !optional;
+  @extend %headerBarIconBadge !optional;
 }
 .divider-q3P9HC {
-	@extend %headerBarDivider !optional;
+  @extend %headerBarDivider !optional;
 }
 .updateAvailable-3JeyBT {
-	@extend %headerBarIconUpdateAvailable !optional;
+  @extend %headerBarIconUpdateAvailable !optional;
 }
 .iconForeground-3y9f0B {
-	@extend %headerBarIconForeground !optional;
+  @extend %headerBarIconForeground !optional;
 }
 .updateIconForeground-2V_zo4 {
-	@extend %headerBarIconUpdateForeground !optional;
+  @extend %headerBarIconUpdateForeground !optional;
 }
 .link-2T7oYD {
-	@extend %headerBarLinkButton !optional;
+  @extend %headerBarLinkButton !optional;
 }
 .linkIcon-PzfbqY {
-	@extend %headerBarLinkIcon !optional;
+  @extend %headerBarLinkIcon !optional;
 }
 .headerBarListing-3DL3sL {
-	@extend %headerBarListing !optional;
+  @extend %headerBarListing !optional;
 }
 .headerSection-VnaiAo {
-	@extend %headerBarListingSection !optional;
+  @extend %headerBarListingSection !optional;
 }
 .headerPurchase-2z_nch {
-	@extend %headerBarPurchase !optional;
+  @extend %headerBarPurchase !optional;
 }
 .active-MpmWDn {
-	@extend %headerBarPurchaseActive !optional;
+  @extend %headerBarPurchaseActive !optional;
 }
 .input-1nrc5P {
-	@extend %headerBarInput !optional;
+  @extend %headerBarInput !optional;
 }
 .mask-2Me5HY {
-	@extend %headerBarStatusMask !optional;
+  @extend %headerBarStatusMask !optional;
 }
 .search-2Mwzzq {
-	@extend %chatSearch !optional;
+  @extend %chatSearch !optional;
 }
 .open-1F8u2c {
-	@extend %chatSearchOpen !optional;
+  @extend %chatSearchOpen !optional;
 }
 .focused-1xh-wG {
-	@extend %chatSearchFocused !optional;
+  @extend %chatSearchFocused !optional;
 }
 .searchBar-jGtisZ {
-	@extend %chatSearchBar !optional;
+  @extend %chatSearchBar !optional;
 }
 .DraftEditor-root {
-	@extend %chatSearchRoot !optional;
+  @extend %chatSearchRoot !optional;
 }
 .public-DraftEditorPlaceholder-root {
-	@extend %chatSearchPlaceholder !optional;
+  @extend %chatSearchPlaceholder !optional;
 }
 .searchFilter-2UfsDk {
-	@extend %chatSearchFilter !optional;
+  @extend %chatSearchFilter !optional;
 }
 .searchAnswer-23w-CH {
-	@extend %chatSearchAnswer !optional;
+  @extend %chatSearchAnswer !optional;
 }
 .libraryFilter-1nwg6T {
-	@extend %librarySearch !optional;
+  @extend %librarySearch !optional;
 }
 .focused-mTQKRf {
-	@extend %librarySearchFocused !optional;
+  @extend %librarySearchFocused !optional;
 }
 .container-2oNtJn {
-	@extend %librarySearchBar !optional;
+  @extend %librarySearchBar !optional;
 }
 .inner-2pOSmK {
-	@extend %librarySearchBarInner !optional;
+  @extend %librarySearchBarInner !optional;
 }
 .input-2m5SfJ {
-	@extend %librarySearchInput !optional;
+  @extend %librarySearchInput !optional;
 }
 .iconLayout-3Bjizv {
-	@extend %librarySearchIconLayout !optional;
+  @extend %librarySearchIconLayout !optional;
 }
 .icon-3CDcPB {
-	@extend %librarySearchIcon !optional;
+  @extend %librarySearchIcon !optional;
 }
 .clear-3102V9 {
-	@extend %librarySearchIconClear !optional;
+  @extend %librarySearchIconClear !optional;
 }
 .browseSearch-e9jF-f {
-	@extend %storeSearch !optional;
+  @extend %storeSearch !optional;
 }
 .focused-20l6Zp {
-	@extend %storeSearchFocused !optional;
+  @extend %storeSearchFocused !optional;
 }
 .container-2oNtJn {
-	@extend %storeSearchBar !optional;
+  @extend %storeSearchBar !optional;
 }
 .inner-2pOSmK {
-	@extend %storeSearchBarInner !optional;
+  @extend %storeSearchBarInner !optional;
 }
 .input-2m5SfJ {
-	@extend %storeSearchInput !optional;
+  @extend %storeSearchInput !optional;
 }
 .iconLayout-3Bjizv {
-	@extend %storeSearchIconLayout !optional;
+  @extend %storeSearchIconLayout !optional;
 }
 .iconContainer-6pgShY {
-	@extend %storeSearchIconContainer !optional;
+  @extend %storeSearchIconContainer !optional;
 }
 .icon-3CDcPB {
-	@extend %storeSearchIcon !optional;
+  @extend %storeSearchIcon !optional;
 }
 .visible-CwPfRb {
-	@extend %storeSearchIconVisible !optional;
+  @extend %storeSearchIconVisible !optional;
 }
 .clear-3102V9 {
-	@extend %storeSearchIconClear !optional;
+  @extend %storeSearchIconClear !optional;
 }
 .applicationStore-2nk7Lo {
-	@extend %nitroHomePage !optional;
+  @extend %nitroHomePage !optional;
 }
 .topPill-3DJJNV {
-	@extend %topPill !optional;
+  @extend %topPill !optional;
 }
 .item-3XjbnG {
-	@extend %topPillItem !optional;
+  @extend %topPillItem !optional;
 }
 .selected-g-kMVV {
-	@extend %topPillItemSelected !optional;
+  @extend %topPillItemSelected !optional;
 }
 .themed-2-lozF {
-	@extend %topPillItemThemed !optional;
+  @extend %topPillItemThemed !optional;
 }
 .activityFeed-1C0EmJ {
-	@extend %activityFeed !optional;
+  @extend %activityFeed !optional;
 }
 .layout-1cQCv2 {
-	@extend %activityFeedLayout !optional;
+  @extend %activityFeedLayout !optional;
 }
 .h5-2RwDNl {
-	@extend %activityFeedH5 !optional;
+  @extend %activityFeedH5 !optional;
 }
 .column-E5Tpw7 {
-	@extend %activityFeedColumn !optional;
+  @extend %activityFeedColumn !optional;
 }
 .card-GqTca8 {
-	@extend %activityFeedCard !optional;
+  @extend %activityFeedCard !optional;
 }
 .outer-2IVh5n {
-	@extend %activityFeedOuter !optional;
+  @extend %activityFeedOuter !optional;
 }
 .interactive-1BeKSi {
-	@extend %activityFeedOuterInteractive !optional;
+  @extend %activityFeedOuterInteractive !optional;
 }
 .wrapper-Qvfyci {
-	@extend %activityFeedMediaWrapper !optional;
+  @extend %activityFeedMediaWrapper !optional;
 }
 .image-3g0L65 {
-	@extend %activityFeedImage !optional;
+  @extend %activityFeedImage !optional;
 }
 .video-TNzRgt {
-	@extend %activityFeedVideo !optional;
+  @extend %activityFeedVideo !optional;
 }
 .coloredBackground-37Z6Gv {
-	@extend %activityFeedColoredBackground !optional;
+  @extend %activityFeedColoredBackground !optional;
 }
 .title-3mg8_z {
-	@extend %activityFeedCardTitle !optional;
+  @extend %activityFeedCardTitle !optional;
 }
 .coloredText-1kAd0O {
-	@extend %activityFeedColoredText !optional;
+  @extend %activityFeedColoredText !optional;
 }
 .ctaButtons-3Aw3iT {
-	@extend %activityFeedCtaButtons !optional;
+  @extend %activityFeedCtaButtons !optional;
 }
 .wrapper-9ppXpy {
-	@extend %activityFeedCardFooter !optional;
+  @extend %activityFeedCardFooter !optional;
 }
 .iconWrapper-3-slmh {
-	@extend %activityFeedCardIconWrapper !optional;
+  @extend %activityFeedCardIconWrapper !optional;
 }
 .interactive-1FxC7B {
-	@extend %activityFeedCardIconWrapperInteractive !optional;
+  @extend %activityFeedCardIconWrapperInteractive !optional;
 }
 .colorStandard-21JIj7 {
-	@extend %activityFeedColorStandard !optional;
+  @extend %activityFeedColorStandard !optional;
 }
 .colorMuted-20987_ {
-	@extend %activityFeedColorMuted !optional;
+  @extend %activityFeedColorMuted !optional;
 }
 .shareButton-3w0M74 {
-	@extend %activityFeedShareButton !optional;
+  @extend %activityFeedShareButton !optional;
 }
 .grid-1rkoVH {
-	@extend %activityFeedQuickLauncher !optional;
+  @extend %activityFeedQuickLauncher !optional;
 }
 .wrapped-15rg6t {
-	@extend %activityFeedQuickLauncherWrapped !optional;
+  @extend %activityFeedQuickLauncherWrapped !optional;
 }
 .unwrapped-37iUtM {
-	@extend %activityFeedQuickLauncherUnwrapped !optional;
+  @extend %activityFeedQuickLauncherUnwrapped !optional;
 }
 .clickable-nnkAZy {
-	@extend %activityFeedQuickLauncherClickable !optional;
+  @extend %activityFeedQuickLauncherClickable !optional;
 }
 .empty-hejAOj {
-	@extend %activityFeedQuickLauncherEmpty !optional;
+  @extend %activityFeedQuickLauncherEmpty !optional;
 }
 .icon-2hm0JA {
-	@extend %activityFeedQuickLauncherIcon !optional;
+  @extend %activityFeedQuickLauncherIcon !optional;
 }
 .wrapper-2ULRsd {
-	@extend %activityFeedNowPlayingContainer !optional;
+  @extend %activityFeedNowPlayingContainer !optional;
 }
 .recentlyPlayedContainer-2F3MqS {
-	@extend %activityFeedRecentlyPlayedContainer !optional;
+  @extend %activityFeedRecentlyPlayedContainer !optional;
 }
 .popoutContainer-3WC9HR {
-	@extend %activityFeedPopoutContainer !optional;
+  @extend %activityFeedPopoutContainer !optional;
 }
 .headerIcon-2AzihC {
-	@extend %activityFeedContainerHeaderIcon !optional;
+  @extend %activityFeedContainerHeaderIcon !optional;
 }
 .multipleIconWrapper-1PjkRO {
-	@extend %activityFeedContainerMultipleIconWrapper !optional;
+  @extend %activityFeedContainerMultipleIconWrapper !optional;
 }
 .body-1BpgWG {
-	@extend %activityFeedPopoutContainerBody !optional;
+  @extend %activityFeedPopoutContainerBody !optional;
 }
 .section-2VKIPC {
-	@extend %activityFeedPopoutContainerSection !optional;
+  @extend %activityFeedPopoutContainerSection !optional;
 }
 .popout-3G62UL {
-	@extend %activityFeedPopout !optional;
+  @extend %activityFeedPopout !optional;
 }
 .enabled-5QKLzu {
-	@extend %activityFeedPopoutEnabled !optional;
+  @extend %activityFeedPopoutEnabled !optional;
 }
 .memberListContainer-1AKCDy {
-	@extend %activityFeedPopoutMemberListContainer !optional;
+  @extend %activityFeedPopoutMemberListContainer !optional;
 }
 .memberListItem-3V-x8Q {
-	@extend %activityFeedPopoutMemberListItem !optional;
+  @extend %activityFeedPopoutMemberListItem !optional;
 }
 .avatar-3a2ws7 {
-	@extend %activityFeedPopoutAvatar !optional;
+  @extend %activityFeedPopoutAvatar !optional;
 }
 .avatarMask-2Mo_pM {
-	@extend %activityFeedPopoutAvatarMask !optional;
+  @extend %activityFeedPopoutAvatarMask !optional;
 }
 .separator-2c4hi3 {
-	@extend %activityFeedSeparator !optional;
+  @extend %activityFeedSeparator !optional;
 }
 .placeholderWrapper-3FaLtZ {
-	@extend %activityFeedPlaceholderWrapper !optional;
+  @extend %activityFeedPlaceholderWrapper !optional;
 }
 .wrapper-3UweLa {
-	@extend %activityFeedNoticeWrapper !optional;
+  @extend %activityFeedNoticeWrapper !optional;
 }
 .gdprWrapper-33M2Mg {
-	@extend %activityFeedGdprWrapper !optional;
+  @extend %activityFeedGdprWrapper !optional;
 }
 .image-2prtMm {
-	@extend %activityFeedNoticeImage !optional;
+  @extend %activityFeedNoticeImage !optional;
 }
 .header-3uLGFv {
-	@extend %activityFeedNoticeHeader !optional;
+  @extend %activityFeedNoticeHeader !optional;
 }
 .body-2d4vNQ {
-	@extend %activityFeedNoticeBody !optional;
+  @extend %activityFeedNoticeBody !optional;
 }
 .buttons-1T0m8S {
-	@extend %activityFeedNoticeButtons !optional;
+  @extend %activityFeedNoticeButtons !optional;
 }
 .close-C7sU74 {
-	@extend %activityFeedNoticeClose !optional;
+  @extend %activityFeedNoticeClose !optional;
 }
 .container-2cd8Mz {
-	@extend %friends !optional;
+  @extend %friends !optional;
 }
 .peopleColumn-1wMU14 {
-	@extend %friendsColumn !optional;
+  @extend %friendsColumn !optional;
 }
 .peopleListItem-u6dGxF {
-	@extend %friendsItem !optional;
+  @extend %friendsItem !optional;
 }
 .active-2UF8Zh {
-	@extend %friendsItemActive !optional;
+  @extend %friendsItemActive !optional;
 }
 .activity-1KqKY2 {
-	@extend %friendActivity !optional;
+  @extend %friendActivity !optional;
 }
 .actionButton-3-B2x- {
-	@extend %friendActionButton !optional;
+  @extend %friendActionButton !optional;
 }
 .highlight-3DSi7b {
-	@extend %friendActionButtonHighlight !optional;
+  @extend %friendActionButtonHighlight !optional;
 }
 .actionAccept-2nmnLv {
-	@extend %friendActionAcceptButton !optional;
+  @extend %friendActionAcceptButton !optional;
 }
 .actionDeny-1pQVuZ {
-	@extend %friendActionDenyButton !optional;
+  @extend %friendActionDenyButton !optional;
 }
 .addFriendInputWrapper-kkoSV9 {
-	@extend %friendsAddFriendInputWrapper !optional;
+  @extend %friendsAddFriendInputWrapper !optional;
 }
 .addFriendInput-1Ta-rO {
-	@extend %friendsAddFriendInput !optional;
+  @extend %friendsAddFriendInput !optional;
 }
 .addFriendHint-1EVQJY {
-	@extend %friendsAddFriendHint !optional;
+  @extend %friendsAddFriendHint !optional;
 }
 .container-36u7Lw {
-	@extend %libraryContainer !optional;
+  @extend %libraryContainer !optional;
 }
 .root-1BQpZw {
-	@extend %libraryRoot !optional;
+  @extend %libraryRoot !optional;
 }
 .libraryHeader-2loraV {
-	@extend %libraryHeader !optional;
+  @extend %libraryHeader !optional;
 }
 .libraryFilter-1nwg6T {
-	@extend %libraryFilter !optional;
+  @extend %libraryFilter !optional;
 }
 .libraryFilterInput-3JzqZD {
-	@extend %libraryFilterInput !optional;
+  @extend %libraryFilterInput !optional;
 }
 .scroller-2XLwLg {
-	@extend %libraryScroller !optional;
+  @extend %libraryScroller !optional;
 }
 .table-2J5ScI {
-	@extend %libraryTable !optional;
+  @extend %libraryTable !optional;
 }
 .header-2EadGG {
-	@extend %libraryTableHeader !optional;
+  @extend %libraryTableHeader !optional;
 }
 .headerCell-3WoADH {
-	@extend %libraryTableHeaderCell !optional;
+  @extend %libraryTableHeaderCell !optional;
 }
 .headerCellSorted-2sXjX3 {
-	@extend %libraryTableHeaderCellSorted !optional;
+  @extend %libraryTableHeaderCellSorted !optional;
 }
 .headerCellContent-iBms3e {
-	@extend %libraryTableHeaderCellContent !optional;
+  @extend %libraryTableHeaderCellContent !optional;
 }
 .rowWrapper-N-4fji {
-	@extend %libraryTableRowWrapper !optional;
+  @extend %libraryTableRowWrapper !optional;
 }
 .rowWrapperActive-nOO7R3 {
-	@extend %libraryTableRowWrapperActive !optional;
+  @extend %libraryTableRowWrapperActive !optional;
 }
 .rowWrapperDim-huz1mA {
-	@extend %libraryTableRowWrapperDim !optional;
+  @extend %libraryTableRowWrapperDim !optional;
 }
 .rowBackground-1vJ4Ix {
-	@extend %libraryTableRowBackground !optional;
+  @extend %libraryTableRowBackground !optional;
 }
 .row-1_1Nya {
-	@extend %libraryTableRow !optional;
+  @extend %libraryTableRow !optional;
 }
 .bodyCell-10p1iS {
-	@extend %libraryTableBodyCell !optional;
+  @extend %libraryTableBodyCell !optional;
 }
 .nameBodyCell-2RYQL9 {
-	@extend %libraryTableNameCell !optional;
+  @extend %libraryTableNameCell !optional;
 }
 .gameIcon-14OR-M {
-	@extend %libraryTableGameIcon !optional;
+  @extend %libraryTableGameIcon !optional;
 }
 .nameCellInfo-1PSy8b {
-	@extend %libraryTableNameCellInfo !optional;
+  @extend %libraryTableNameCellInfo !optional;
 }
 .nameCellText-2i43C0 {
-	@extend %libraryTableNameCellText !optional;
+  @extend %libraryTableNameCellText !optional;
 }
 .textCell-sKsLUQ {
-	@extend %libraryTableTextCell !optional;
+  @extend %libraryTableTextCell !optional;
 }
 .lastPlayedCellNew-2sRIP_ {
-	@extend %libraryTableLastPlayedCellNew !optional;
+  @extend %libraryTableLastPlayedCellNew !optional;
 }
 .actionsCell-20cP38 {
-	@extend %libraryTableActionsCell !optional;
+  @extend %libraryTableActionsCell !optional;
 }
 .settingIcons-38tvz2 {
-	@extend %libraryTableSettingsIcons !optional;
+  @extend %libraryTableSettingsIcons !optional;
 }
 .settingIcon-1PlYq2 {
-	@extend %libraryTableSettingIcon !optional;
+  @extend %libraryTableSettingIcon !optional;
 }
 .hidden-17y4NU {
-	@extend %libraryTableSettingIconHidden !optional;
+  @extend %libraryTableSettingIconHidden !optional;
 }
 .scroller-1TOeMq {
-	@extend %librarySettingsScroller !optional;
+  @extend %librarySettingsScroller !optional;
 }
 .installationPath-2PbaRC {
-	@extend %libraryInstallationPath !optional;
+  @extend %libraryInstallationPath !optional;
 }
 .background-3laMJt {
-	@extend %libraryUsageBackground !optional;
+  @extend %libraryUsageBackground !optional;
 }
 .foreground-2JnqVD {
-	@extend %libraryUsageForeground !optional;
+  @extend %libraryUsageForeground !optional;
 }
 .defaultIndicator-1AxErs {
-	@extend %libraryDefaultIndicator !optional;
+  @extend %libraryDefaultIndicator !optional;
 }
 .playButton-2Hc0gE {
-	@extend %libraryPlayButton !optional;
+  @extend %libraryPlayButton !optional;
 }
 .playButtonContents-3vgiax {
-	@extend %libraryPlayButtonContents !optional;
+  @extend %libraryPlayButtonContents !optional;
 }
 .buttonShine-p5V5TB {
-	@extend %libraryPlayButtonShine !optional;
+  @extend %libraryPlayButtonShine !optional;
 }
 .container-2o3qEW {
-	@extend %membersContainer !optional;
+  @extend %membersContainer !optional;
 }
 .membersWrap-3NUR2t {
-	@extend %membersWrap !optional;
+  @extend %membersWrap !optional;
 }
 .members-3WRCEx {
-	@extend %members !optional;
+  @extend %members !optional;
 }
 .membersGroup-2eiWxl {
-	@extend %membersGroup !optional;
+  @extend %membersGroup !optional;
 }
 .member-2gU6Ar {
-	@extend %member !optional;
+  @extend %member !optional;
 }
 .selected-1-Z6gm {
-	@extend %memberSelected !optional;
+  @extend %memberSelected !optional;
 }
 .offline-22aM7E {
-	@extend %memberOffline !optional;
+  @extend %memberOffline !optional;
 }
 .layout-1qmrhw {
-	@extend %memberLayout !optional;
+  @extend %memberLayout !optional;
 }
 .avatar-6qzftW {
-	@extend %memberAvatar !optional;
+  @extend %memberAvatar !optional;
 }
 .content-1U25dZ {
-	@extend %memberContent !optional;
+  @extend %memberContent !optional;
 }
 .nameAndDecorators-3ERwy2 {
-	@extend %memberNameAndDecorators !optional;
+  @extend %memberNameAndDecorators !optional;
 }
 .name-3Vmqxm {
-	@extend %memberName !optional;
+  @extend %memberName !optional;
 }
 .roleColor-nA7BqX {
-	@extend %memberRoleColor !optional;
+  @extend %memberRoleColor !optional;
 }
 .ownerIcon-255uKo {
-	@extend %memberOwnerIcon !optional;
+  @extend %memberOwnerIcon !optional;
 }
 .subText-OGOWMj {
-	@extend %memberSubText !optional;
+  @extend %memberSubText !optional;
 }
 .activity-2EQDZv {
-	@extend %memberActivity !optional;
+  @extend %memberActivity !optional;
 }
 .activityEmoji-SDBJp8 {
-	@extend %memberActivityEmoji !optional;
+  @extend %memberActivityEmoji !optional;
 }
 .activityText-1rR-8O {
-	@extend %memberActivityText !optional;
+  @extend %memberActivityText !optional;
 }
 .icon-Lupfh- {
-	@extend %memberActivityIcon !optional;
+  @extend %memberActivityIcon !optional;
 }
 .memberGroupsPlaceholder-9tqX9V {
-	@extend %memberGroupPlaceholder !optional;
+  @extend %memberGroupPlaceholder !optional;
 }
 .placeholder-38d3Iv {
-	@extend %memberPlaceholder !optional;
+  @extend %memberPlaceholder !optional;
 }
 .multiplePlaceholder-3kBQ96 {
-	@extend %memberPlaceholderMultiple !optional;
+  @extend %memberPlaceholderMultiple !optional;
 }
 .placeholderAvatar-1qAcRZ {
-	@extend %memberPlaceholderAvatar !optional;
+  @extend %memberPlaceholderAvatar !optional;
 }
 .placeholderUsername-3iQi_D {
-	@extend %memberPlaceholderUsername !optional;
+  @extend %memberPlaceholderUsername !optional;
 }
 .mulitplePlaceholderUsername-2T3DCI {
-	@extend %memberPlaceholderUsernameMultiple !optional;
+  @extend %memberPlaceholderUsernameMultiple !optional;
 }
 .invite-3uuHYQ {
-	@extend %activityInvite !optional;
+  @extend %activityInvite !optional;
 }
 .coverImageWrapper-2wx5q1 {
-	@extend %activityInviteCoverImageWrapper !optional;
+  @extend %activityInviteCoverImageWrapper !optional;
 }
 .coverImage-oTYoFG {
-	@extend %activityInviteCoverImage !optional;
+  @extend %activityInviteCoverImage !optional;
 }
 .coverImageActionable-38UjN9 {
-	@extend %activityInviteCoverImageActionable !optional;
+  @extend %activityInviteCoverImageActionable !optional;
 }
 .coverImageNotActionable-3_d2tn {
-	@extend %activityInviteCoverImageNotActionable !optional;
+  @extend %activityInviteCoverImageNotActionable !optional;
 }
 .blurred-3p_Z84 {
-	@extend %activityInviteCoverImageBlurred !optional;
+  @extend %activityInviteCoverImageBlurred !optional;
 }
 .artwork-28Cmnt {
-	@extend %activityInviteArtwork !optional;
+  @extend %activityInviteArtwork !optional;
 }
 .artworkActionable-hSZZCK {
-	@extend %activityInviteArtworkActionable !optional;
+  @extend %activityInviteArtworkActionable !optional;
 }
 .artworkNotActionable-UGHb0J {
-	@extend %activityInviteArtworkNotActionable !optional;
+  @extend %activityInviteArtworkNotActionable !optional;
 }
 .artworkSpotifySessionEnded-D18iXB {
-	@extend %activityInviteArtworkSessionEnded !optional;
+  @extend %activityInviteArtworkSessionEnded !optional;
 }
 .header-1Fx4D1 {
-	@extend %activityInviteHeader !optional;
+  @extend %activityInviteHeader !optional;
 }
 .partyStatus-2-VcyG {
-	@extend %activityInvitePartyStatus !optional;
+  @extend %activityInvitePartyStatus !optional;
 }
 .actionAndParty-3gueRh {
-	@extend %activityInviteActionAndParty !optional;
+  @extend %activityInviteActionAndParty !optional;
 }
 .actionButton-1oqssG {
-	@extend %activityInviteActionButton !optional;
+  @extend %activityInviteActionButton !optional;
 }
 .name-QjR4Jk {
-	@extend %activityInviteName !optional;
+  @extend %activityInviteName !optional;
 }
 .partyMembers-3cd-7x {
-	@extend %activityInvitePartyMembers !optional;
+  @extend %activityInvitePartyMembers !optional;
 }
 .partyMember-1ywltu {
-	@extend %activityInvitePartyMember !optional;
+  @extend %activityInvitePartyMember !optional;
 }
 .partyMemberKnown-3IXfnB {
-	@extend %activityInvitePartyMemberKnown !optional;
+  @extend %activityInvitePartyMemberKnown !optional;
 }
 .partyAvatar-1X95NO {
-	@extend %activityInvitePartyAvatar !optional;
+  @extend %activityInvitePartyAvatar !optional;
 }
 .partyMemberEmpty-GtlQ_s {
-	@extend %activityInvitePartyMemberEmpty !optional;
+  @extend %activityInvitePartyMemberEmpty !optional;
 }
 .moreUsers-3PdGZN {
-	@extend %activityInviteMoreUsers !optional;
+  @extend %activityInviteMoreUsers !optional;
 }
 .helpIcon-24pk1Z {
-	@extend %activityInviteHelpIcon !optional;
+  @extend %activityInviteHelpIcon !optional;
 }
 .details-1nO3iV {
-	@extend %activityInviteDetails !optional;
+  @extend %activityInviteDetails !optional;
 }
 .state-3Nm83F {
-	@extend %activityInviteState !optional;
+  @extend %activityInviteState !optional;
 }
 .textLink-_PElWP {
-	@extend %activityInviteTextLink !optional;
+  @extend %activityInviteTextLink !optional;
 }
 .attachment-1PZZB2 {
-	@extend %attachment !optional;
+  @extend %attachment !optional;
 }
 .embedWrapper-1MtIDg {
-	@extend %attachmentEmbedWrapper !optional;
+  @extend %attachmentEmbedWrapper !optional;
 }
 .icon-1KCy88 {
-	@extend %attachmentIcon !optional;
+  @extend %attachmentIcon !optional;
 }
 .attachmentInner-1fP7iq {
-	@extend %attachmentInner !optional;
+  @extend %attachmentInner !optional;
 }
 .filenameLinkWrapper-3Rc6sk {
-	@extend %fileNameLinkWrapper !optional;
+  @extend %fileNameLinkWrapper !optional;
 }
 .fileNameLink-1odyIc {
-	@extend %fileNameLink !optional;
+  @extend %fileNameLink !optional;
 }
 .metadata-1E7Z4i {
-	@extend %fileMetadata !optional;
+  @extend %fileMetadata !optional;
 }
 .downloadButton-2HLFWN {
-	@extend %attachmentDownloadButton !optional;
+  @extend %attachmentDownloadButton !optional;
 }
 .filenameWrapper-11iVyW {
-	@extend %fileNameWrapper !optional;
+  @extend %fileNameWrapper !optional;
 }
 .filename-3A5bVl {
-	@extend %fileName !optional;
+  @extend %fileName !optional;
 }
 .size-2mQ7x9 {
-	@extend %fileSize !optional;
+  @extend %fileSize !optional;
 }
 .progress-xNqAjK {
-	@extend %fileProgress !optional;
+  @extend %fileProgress !optional;
 }
 .progressBar-1T6LYX {
-	@extend %fileProgressBar !optional;
+  @extend %fileProgressBar !optional;
 }
 .cancelButton-oOSTov {
-	@extend %attachmentCancelButton !optional;
+  @extend %attachmentCancelButton !optional;
 }
-.downloadButton-2HLFWN, .cancelButton-oOSTov {
-	@extend %attachmentButton !optional;
+.downloadButton-2HLFWN,
+.cancelButton-oOSTov {
+  @extend %attachmentButton !optional;
 }
 .inline {
-	@extend %codeInline !optional;
+  @extend %codeInline !optional;
 }
 pre {
-	@extend %codePre !optional;
+  @extend %codePre !optional;
 }
 .hljs {
-	@extend %codeHLJS !optional;
+  @extend %codeHLJS !optional;
 }
 .container-2sjPya {
-	@extend %embedContainer !optional;
+  @extend %embedContainer !optional;
 }
 .embed-hKpSrO {
-	@extend %embed !optional;
+  @extend %embed !optional;
 }
 .grid-1aWVsE {
-	@extend %embedGrid !optional;
+  @extend %embedGrid !optional;
 }
 .embedMargin-2PsaQ4 {
-	@extend %embedMargin !optional;
+  @extend %embedMargin !optional;
 }
 .embedLink-1TLNja {
-	@extend %embedLink !optional;
+  @extend %embedLink !optional;
 }
 .embedProvider-1GSN0c {
-	@extend %embedProvider !optional;
+  @extend %embedProvider !optional;
 }
 .embedAuthor-TJIHp5 {
-	@extend %embedAuthor !optional;
+  @extend %embedAuthor !optional;
 }
 .embedAuthorName-pGyUPR {
-	@extend %embedAuthorname !optional;
+  @extend %embedAuthorname !optional;
 }
 .embedAuthorNameLink-1NK1y6 {
-	@extend %embedAuthorNameLink !optional;
+  @extend %embedAuthorNameLink !optional;
 }
 .embedAuthorIcon-3pnkS4 {
-	@extend %embedAuthorIcon !optional;
+  @extend %embedAuthorIcon !optional;
 }
 .embedTitle-2n1pEb {
-	@extend %embedTitle !optional;
+  @extend %embedTitle !optional;
 }
 .embedTitleLink-1QbYA- {
-	@extend %embedTitleLink !optional;
+  @extend %embedTitleLink !optional;
 }
 .embedDescription-1DrJxZ {
-	@extend %embedDescription !optional;
+  @extend %embedDescription !optional;
 }
 .embedFields-2yHGHT {
-	@extend %embedFields !optional;
+  @extend %embedFields !optional;
 }
 .embedField-2kda1Q {
-	@extend %embedField !optional;
+  @extend %embedField !optional;
 }
 .embedFieldName-9LYSyR {
-	@extend %embedFieldName !optional;
+  @extend %embedFieldName !optional;
 }
 .embedFieldValue-3EHtvR {
-	@extend %embedFieldValue !optional;
+  @extend %embedFieldValue !optional;
 }
 .embedImage-2Ynqkh {
-	@extend %embedImagea !optional;
+  @extend %embedImagea !optional;
 }
 .imageWrapper-oMkQl4 {
-	@extend %imageWrapper !optional;
+  @extend %imageWrapper !optional;
 }
 .imageWrapperBackground-3Vss_C {
-	@extend %imageWrapperBackground !optional;
+  @extend %imageWrapperBackground !optional;
 }
 .imageWrapperInner-3X03J4 {
-	@extend %imageWrapperInner !optional;
+  @extend %imageWrapperInner !optional;
 }
 .imageError-dy476I {
-	@extend %imageError !optional;
+  @extend %imageError !optional;
 }
 .embedThumbnail-2nTasl {
-	@extend %embedThumbnail !optional;
+  @extend %embedThumbnail !optional;
 }
 .embedVideo-2ixt5A {
-	@extend %embedVideo !optional;
+  @extend %embedVideo !optional;
 }
 .embedIframe-1UpXja {
-	@extend %embedIframe !optional;
+  @extend %embedIframe !optional;
 }
 .gifTag-1TvtGO {
-	@extend %embedGIFTag !optional;
+  @extend %embedGIFTag !optional;
 }
 .embedVideoActions-2XdFk2 {
-	@extend %embedVideoActions !optional;
+  @extend %embedVideoActions !optional;
 }
 .embedVideoAction-39JZ9- {
-	@extend %embedVideoAction !optional;
+  @extend %embedVideoAction !optional;
 }
 .wrapper-x4po40 {
-	@extend %embedVideoActionsButtonWrapper !optional;
+  @extend %embedVideoActionsButtonWrapper !optional;
 }
 .embedFooter-3dj0UE {
-	@extend %embedFooter !optional;
+  @extend %embedFooter !optional;
 }
 .embedFooterText-2Mc7H9 {
-	@extend %embedFooterText !optional;
+  @extend %embedFooterText !optional;
 }
 .embedFooterSeparator-2YCzYT {
-	@extend %embedFooterSeparator !optional;
+  @extend %embedFooterSeparator !optional;
 }
 .embedFooterIcon-1dTZzD {
-	@extend %embedFooterIcon !optional;
+  @extend %embedFooterIcon !optional;
 }
 .wrapper-1HIH0j {
-	@extend %inviteWrapper !optional;
+  @extend %inviteWrapper !optional;
 }
 .h5-2RwDNl {
-	@extend %inviteTitle !optional;
+  @extend %inviteTitle !optional;
 }
 .guildIcon-3ZfRfI {
-	@extend %inviteGuildIcon !optional;
+  @extend %inviteGuildIcon !optional;
 }
 .guildIconExpired-2BFmZC {
-	@extend %inviteGuildIconExpired !optional;
+  @extend %inviteGuildIconExpired !optional;
 }
 .guildInfo-UCKhrV {
-	@extend %inviteGuildInfo !optional;
+  @extend %inviteGuildInfo !optional;
 }
 .guildName-3G4jq- {
-	@extend %inviteGuildName !optional;
+  @extend %inviteGuildName !optional;
 }
 .guildNameJoined-H7D9uF {
-	@extend %inviteGuildNameJoined !optional;
+  @extend %inviteGuildNameJoined !optional;
 }
 .guildNameExpired-2Hp80V {
-	@extend %inviteGuildNameExpired !optional;
+  @extend %inviteGuildNameExpired !optional;
 }
 .guildDetail-3EJhW_ {
-	@extend %inviteGuildDetail !optional;
+  @extend %inviteGuildDetail !optional;
 }
 .status-JIDx3x {
-	@extend %inviteStatus !optional;
+  @extend %inviteStatus !optional;
 }
 .statusOnline-Iw3r2o {
-	@extend %inviteStatusOnline !optional;
+  @extend %inviteStatusOnline !optional;
 }
 .statusOffline-2R-ArP {
-	@extend %inviteStatusOffline !optional;
+  @extend %inviteStatusOffline !optional;
 }
 .onlineCount-w6_WmG {
-	@extend %inviteOnlineCount !optional;
+  @extend %inviteOnlineCount !optional;
 }
 .button-2b4VEQ {
-	@extend %inviteButton !optional;
+  @extend %inviteButton !optional;
 }
 .lookFilled-yCfaCM.colorGreen-3y-Z79 {
-	@extend %inviteButtonJoin !optional;
+  @extend %inviteButtonJoin !optional;
 }
 .lookFilled-yCfaCM.colorBrand-I6CyqQ {
-	@extend %inviteButtonExpired !optional;
+  @extend %inviteButtonExpired !optional;
 }
 .wrapper-1FP9YQ {
-	@extend %player !optional;
+  @extend %player !optional;
 }
 .wrapperAudio-1Bzv_Z {
-	@extend %playerAudio !optional;
+  @extend %playerAudio !optional;
 }
 .wrapperControlsHidden-2BK8R2 {
-	@extend %playerControlsHidden !optional;
+  @extend %playerControlsHidden !optional;
 }
 .wrapperPaused-9B8znP {
-	@extend %playerPaused !optional;
+  @extend %playerPaused !optional;
 }
 .wrapperPlaying-1D8LD- {
-	@extend %playerPlaying !optional;
+  @extend %playerPlaying !optional;
 }
 .metadata-3IncIG {
-	@extend %playerMetadata !optional;
+  @extend %playerMetadata !optional;
 }
 .audioMetadata-1Hrt8T {
-	@extend %playerAudioMetadata !optional;
+  @extend %playerAudioMetadata !optional;
 }
 .metadataContent-lalfZ3 {
-	@extend %playerMetadataContent !optional;
+  @extend %playerMetadataContent !optional;
 }
 .metadataName-1KMZtB {
-	@extend %playerMetadataName !optional;
+  @extend %playerMetadataName !optional;
 }
 .metadataSize-2A2s1T {
-	@extend %playerMetadataSize !optional;
+  @extend %playerMetadataSize !optional;
 }
 .metadataDownload-3IY84h {
-	@extend %playerMetadataDownload !optional;
+  @extend %playerMetadataDownload !optional;
 }
 .metadataIcon-3QMhu9 {
-	@extend %playerMetadataIcon !optional;
+  @extend %playerMetadataIcon !optional;
 }
 .audioControls-3fmemK {
-	@extend %playerAudioControls !optional;
+  @extend %playerAudioControls !optional;
 }
 .videoControls-2NzHnF {
-	@extend %playerVideoControls !optional;
+  @extend %playerVideoControls !optional;
 }
 .controlIcon-1grhw_ {
-	@extend %playerControlIcon !optional;
+  @extend %playerControlIcon !optional;
 }
 .durationTimeWrapper-LdSEv8 {
-	@extend %playerDurationTimeWrapper !optional;
+  @extend %playerDurationTimeWrapper !optional;
 }
 .durationTimeDisplay-QwCeRr {
-	@extend %playerDurationTimeDisplay !optional;
+  @extend %playerDurationTimeDisplay !optional;
 }
 .durationTimeSeparator-1Cqi9N {
-	@extend %playerDurationTimeSeparator !optional;
+  @extend %playerDurationTimeSeparator !optional;
 }
 .mediaBarInteraction-tUE5dq {
-	@extend %playerMediaBarInteraction !optional;
+  @extend %playerMediaBarInteraction !optional;
 }
 .mediaBarInteractionDragging-3XLL8k {
-	@extend %playerMediaBarInteractionDragging !optional;
+  @extend %playerMediaBarInteractionDragging !optional;
 }
 .mediaBarWrapper-33h1oY {
-	@extend %playerMediaBarWrapper !optional;
+  @extend %playerMediaBarWrapper !optional;
 }
 .buffer-3eVqKK {
-	@extend %playerMediaBarBuffer !optional;
+  @extend %playerMediaBarBuffer !optional;
 }
 .mediaBarPreview-1gUbVy {
-	@extend %playerMediaBarPreview !optional;
+  @extend %playerMediaBarPreview !optional;
 }
 .mediaBarGrabber-FvJKJg {
-	@extend %playerMediaBarGrabber !optional;
+  @extend %playerMediaBarGrabber !optional;
 }
 .mediaBarProgress-38I317 {
-	@extend %playerMediaBarProgress !optional;
+  @extend %playerMediaBarProgress !optional;
 }
 .bubble-3XikHF {
-	@extend %playerMediaBarBubble !optional;
+  @extend %playerMediaBarBubble !optional;
 }
 .mouse-mode.full-motion {
-	@extend %mouseModeFullMotion !optional;
+  @extend %mouseModeFullMotion !optional;
 }
 .message-2CShn3 {
-	@extend %message !optional;
+  @extend %message !optional;
 }
 .wrapper-30-Nkg {
-	@extend %messagesWrapper !optional;
+  @extend %messagesWrapper !optional;
 }
 .selected-2LX7Jy {
-	@extend %messageSelected !optional;
+  @extend %messageSelected !optional;
 }
 .groupStart-3Mlgv1 {
-	@extend %messageGroupStart !optional;
+  @extend %messageGroupStart !optional;
 }
 .cozyMessage-1DWF9U {
-	@extend %messageCozy !optional;
+  @extend %messageCozy !optional;
 }
 .contents-2MsGLg {
-	@extend %messageContent !optional;
+  @extend %messageContent !optional;
 }
 .localBotMessage-1cGMdw {
-	@extend %messageGroupLocalBotMessage !optional;
+  @extend %messageGroupLocalBotMessage !optional;
 }
 .messageGroupBlocked-3wrQQX {
-	@extend %messageGroupBlocked !optional;
+  @extend %messageGroupBlocked !optional;
 }
 .revealed-1_RKsf {
-	@extend %messageGroupBlockedRevealed !optional;
+  @extend %messageGroupBlockedRevealed !optional;
 }
 .messageGroupBlockedBtn-1PBBh- {
-	@extend %messageGroupBlockedButton !optional;
+  @extend %messageGroupBlockedButton !optional;
 }
 .messageCompact-kQa7ES {
-	@extend %messageCompact !optional;
+  @extend %messageCompact !optional;
 }
 .header-2jRmjb {
-    @extend %messageHeader !optional;
+  @extend %messageHeader !optional;
 }
 .headerText-2z4IhQ {
-    @extend %messageHeaderText !optional;
+  @extend %messageHeaderText !optional;
 }
 .username-h_Y3Us {
-	@extend %messageUsername !optional;
+  @extend %messageUsername !optional;
 }
 .timestamp-p1Df1m {
-	@extend %messageTimestamp !optional;
+  @extend %messageTimestamp !optional;
 }
 .timestamp-p1Df1m.alt-1dvXnH {
-	@extend %messageTimestampAlt !optional;
+  @extend %messageTimestampAlt !optional;
 }
 .container-x059i8 {
-	@extend %messageSystemContainer !optional;
+  @extend %messageSystemContainer !optional;
 }
 .repliedMessage-3Z6XBG {
-	@extend %messageReplied !optional;
+  @extend %messageReplied !optional;
 }
 .repliedTextPreview-1bvxun {
-	@extend %messageRepliedTextPreview !optional;
+  @extend %messageRepliedTextPreview !optional;
 }
 .clickable-31pE3P {
-	@extend %messageRepliedTextPreviewClickable !optional;
+  @extend %messageRepliedTextPreviewClickable !optional;
 }
 .repliedTextContent-2hOYMB {
-	@extend %messageRepliedTextContent !optional;
+  @extend %messageRepliedTextContent !optional;
 }
 .repliedTextContentIcon-1LQXRB {
-	@extend %messageRepliedTextContentIcon !optional;
+  @extend %messageRepliedTextContentIcon !optional;
 }
 .repliedTextPlaceholder-1Njd47 {
-	@extend %messageRepliedTextPlaceholder !optional;
+  @extend %messageRepliedTextPlaceholder !optional;
 }
 .executedCommand-14-SNW {
-	@extend %messageRepliedExecutedCommand !optional;
+  @extend %messageRepliedExecutedCommand !optional;
 }
 .commandName-1KhvGm {
-	@extend %messageRepliedCommandName !optional;
+  @extend %messageRepliedCommandName !optional;
 }
 .mentioned-Tre-dv {
-	@extend %mentioned !optional;
+  @extend %mentioned !optional;
 }
 .interactive {
-	@extend %mentionedInteractive !optional;
+  @extend %mentionedInteractive !optional;
 }
 .markup-eYLPri {
-	@extend %markup !optional;
+  @extend %markup !optional;
 }
 .icon-JRJzJz {
-	@extend %messageSystemIcon !optional;
+  @extend %messageSystemIcon !optional;
 }
 .wrapper-1ZcZW- {
-	@extend %mentionWrapper !optional;
+  @extend %mentionWrapper !optional;
 }
 .mention {
-	@extend %mention !optional;
+  @extend %mention !optional;
 }
 .iconMention-3WxjBe {
-	@extend %mentionIcon !optional;
+  @extend %mentionIcon !optional;
 }
 .anchor-1MIwyf {
-	@extend %anchor !optional;
+  @extend %anchor !optional;
 }
 .anchorUnderlineOnHover-2qPutX {
-	@extend %anchorUnderlineOnHover !optional;
+  @extend %anchorUnderlineOnHover !optional;
 }
 .buttonContainer-1502pf {
-	@extend %messageButtonContainer !optional;
+  @extend %messageButtonContainer !optional;
 }
 .buttons-3dF5Kd {
-	@extend %messageButtons !optional;
+  @extend %messageButtons !optional;
 }
-.wrapper-2vIMkT{
-	@extend %messageButtonWrapper !optional;
+.wrapper-2vIMkT {
+  @extend %messageButtonWrapper !optional;
 }
 .button-3bklZh {
-	@extend %messageButton !optional;
+  @extend %messageButton !optional;
 }
 .selected-69H4ua {
-	@extend %messageButtonSelected !optional;
+  @extend %messageButtonSelected !optional;
 }
 .blockquoteContainer-3VtvI1 {
-	@extend %blockquoteContainer !optional;
+  @extend %blockquoteContainer !optional;
 }
 .blockquoteDivider-363utW {
-	@extend %blockquoteDivider !optional;
+  @extend %blockquoteDivider !optional;
 }
 .reactions-1BUEKl {
-	@extend %reactions !optional;
+  @extend %reactions !optional;
 }
 .reaction-2A2y9y {
-	@extend %reaction !optional;
+  @extend %reaction !optional;
 }
 .reactionMe-3I9gFK {
-	@extend %reactionMe !optional;
+  @extend %reactionMe !optional;
 }
 .reactionInner-9eVHJa {
-	@extend %reactionInner !optional;
+  @extend %reactionInner !optional;
 }
 .reactionCount-1zkLcN {
-	@extend %reactionCount !optional;
+  @extend %reactionCount !optional;
 }
 .spoilerText-27bIiA {
-	@extend %spoilerText !optional;
+  @extend %spoilerText !optional;
 }
 .hidden-3B-Rum {
-	@extend %spoilerHidden !optional;
+  @extend %spoilerHidden !optional;
 }
 .inlineContent-2YnoDy {
-	@extend %spoilerInlineContent !optional;
+  @extend %spoilerInlineContent !optional;
 }
 .spoilerContainer-3wsC0k {
-	@extend %spoilerContainer !optional;
+  @extend %spoilerContainer !optional;
 }
 .spoilerWarning-8ovW0v {
-	@extend %spoilerWarning !optional;
+  @extend %spoilerWarning !optional;
 }
 .spoiler-3aUoEX {
-	@extend %spoilerImage !optional;
+  @extend %spoilerImage !optional;
 }
 .hiddenSpoilers-19m4Pg {
-	@extend %spoilerImageHidden !optional;
+  @extend %spoilerImageHidden !optional;
 }
 .spoilerEmbed-1LYr3G {
-	@extend %spoilerEmbed !optional;
+  @extend %spoilerEmbed !optional;
 }
 .hiddenSpoiler-3pPzRF {
-	@extend %spoilerEmbedHidden !optional;
+  @extend %spoilerEmbedHidden !optional;
 }
 .keyboardShortcutsModal-2CRmCm {
-	@extend %keyboardShortcutsModal !optional;
+  @extend %keyboardShortcutsModal !optional;
 }
 .keybindShortcut-3zF1P9 {
-	@extend %keybindShortcut !optional;
+  @extend %keybindShortcut !optional;
 }
 .inputWrapper-1YNMmM {
-	@extend %inputWrapper !optional;
+  @extend %inputWrapper !optional;
 }
 .input-2g-os5 {
-	@extend %input !optional;
+  @extend %input !optional;
 }
 .focused-1AtTHC {
-	@extend %inputFocused !optional;
+  @extend %inputFocused !optional;
 }
 .noBorder-2p63tM {
-	@extend %inputNoBorder !optional;
+  @extend %inputNoBorder !optional;
 }
 .multiInput-1VARjC {
-	@extend %multiInput !optional;
+  @extend %multiInput !optional;
 }
 .multiInputFirst-3-OxIz {
-	@extend %multiInputFirst !optional;
+  @extend %multiInputFirst !optional;
 }
 .multiInputLast-35zVz0 {
-	@extend %multiInputLast !optional;
+  @extend %multiInputLast !optional;
 }
 .multiInputField-1zyopx {
-	@extend %multiInputField !optional;
+  @extend %multiInputField !optional;
 }
 .modal-1Kmy_E {
-	@extend %modal !optional;
+  @extend %modal !optional;
 }
 .root-g14mjS {
-	@extend %modalRoot !optional;
+  @extend %modalRoot !optional;
 }
 .header-2w6VV8 {
-	@extend %modalHeader !optional;
+  @extend %modalHeader !optional;
 }
 .footer-31IekZ {
-	@extend %modalFooter !optional;
+  @extend %modalFooter !optional;
 }
 .root-8LYsGj {
-	@extend %userModal !optional;
+  @extend %userModal !optional;
 }
 .topSection-13QKHs {
-	@extend %userModalTopSection !optional;
+  @extend %userModalTopSection !optional;
 }
 .profileBanner-1owKI5 {
-	@extend %userModalProfileBanner !optional;
+  @extend %userModalProfileBanner !optional;
 }
 .avatar-3QF_VA {
-	@extend %userModalAvatar !optional;
+  @extend %userModalAvatar !optional;
 }
 .nameTag-2Nlmsy {
-	@extend %userModalNameTag !optional;
+  @extend %userModalNameTag !optional;
 }
 .username-1g6Iq1 {
-	@extend %userModalUsername !optional;
+  @extend %userModalUsername !optional;
 }
 .discriminator-1bqsd3 {
-	@extend %userModalDiscriminator !optional;
+  @extend %userModalDiscriminator !optional;
 }
 .additionalActionsIcon-3Cy8UU {
-	@extend %userModalAdditionalActionsIcon !optional;
+  @extend %userModalAdditionalActionsIcon !optional;
 }
 .tabBarContainer-sCZC4w {
-	@extend %userModalTabBarContainer !optional;
+  @extend %userModalTabBarContainer !optional;
 }
 .tabBar-2hXqzU {
-	@extend %userModalTabBar !optional;
+  @extend %userModalTabBar !optional;
 }
 .tabBarItem-30Te4- {
-	@extend %userModalTabBarItem !optional;
+  @extend %userModalTabBarItem !optional;
 }
 .body-1Ukv50 {
-	@extend %userModalBody !optional;
+  @extend %userModalBody !optional;
 }
 .userInfoSection-2u2hir {
-	@extend %userModalInfoSection !optional;
+  @extend %userModalInfoSection !optional;
 }
 .userInfoSectionHeader-2mYYun {
-	@extend %userModalInfoSectionHeader !optional;
+  @extend %userModalInfoSectionHeader !optional;
 }
 .note-3M15gE {
-	@extend %userModalNote !optional;
+  @extend %userModalNote !optional;
 }
 .connectedAccounts-1YaT2t {
-	@extend %userModalConnectedAccounts !optional;
+  @extend %userModalConnectedAccounts !optional;
 }
 .connectedAccount-1xKpli {
-	@extend %userModalConnectedAccount !optional;
+  @extend %userModalConnectedAccount !optional;
 }
 .connectedAccountIcon-2vls0t {
-	@extend %userModalConnectedAccountIcon !optional;
+  @extend %userModalConnectedAccountIcon !optional;
 }
 .connectedAccountNameInner-t24B11 {
-	@extend %userModalConnectedAccountNameInner !optional;
+  @extend %userModalConnectedAccountNameInner !optional;
 }
 .connectedAccountName-j0meX4 {
-	@extend %userModalConnectedAccountName !optional;
+  @extend %userModalConnectedAccountName !optional;
 }
 .connectedAccountVerifiedIcon-3XCxT8 {
-	@extend %userModalConnectedAccountVerifiedIcon !optional;
+  @extend %userModalConnectedAccountVerifiedIcon !optional;
 }
 .connectedAccountOpenIcon-1yfBsb {
-	@extend %userModalConnectedAccountOpenIcon !optional;
+  @extend %userModalConnectedAccountOpenIcon !optional;
 }
 .userProfileActivity-sal5no {
-	@extend %userModalActivity !optional;
+  @extend %userModalActivity !optional;
 }
 .emptyIconGuilds-2NNSTU {
-	@extend %userModalEmptyIconGuilds !optional;
+  @extend %userModalEmptyIconGuilds !optional;
 }
 .emptyIconFriends-2LNxTX {
-	@extend %userModalEmptyIconFriends !optional;
+  @extend %userModalEmptyIconFriends !optional;
 }
 .emptyIconStreamerMode-3P4I-V {
-	@extend %userModalEmptyIconStreamerMode !optional;
+  @extend %userModalEmptyIconStreamerMode !optional;
 }
 .emptyText-mZZyQk {
-	@extend %userModalEmptyText !optional;
+  @extend %userModalEmptyText !optional;
 }
 .listScroller-entkMk {
-	@extend %userModalListScroller !optional;
+  @extend %userModalListScroller !optional;
 }
 .listRow-2nO1T6 {
-	@extend %userModalListRow !optional;
+  @extend %userModalListRow !optional;
 }
 .listAvatar-2bU5Uh {
-	@extend %userModalListAvatar !optional;
+  @extend %userModalListAvatar !optional;
 }
 .listRowContent-PEmSWj {
-	@extend %userModalListRowConent !optional;
+  @extend %userModalListRowConent !optional;
 }
 .listName-PwbeHL {
-	@extend %userModalListName !optional;
+  @extend %userModalListName !optional;
 }
 .guildNick-fe8oPN {
-	@extend %userModalListGuildNick !optional;
+  @extend %userModalListGuildNick !optional;
 }
 .listDiscriminator-1HAKWY {
-	@extend %userModalListDiscriminator !optional;
+  @extend %userModalListDiscriminator !optional;
 }
 .pageWrapper-2PwDoS {
-	@extend %pageWrapper !optional;
+  @extend %pageWrapper !optional;
 }
 .pageHeader-3615mp {
-	@extend %pageHeader !optional;
+  @extend %pageHeader !optional;
 }
 .body-2lagau {
-	@extend %pageBody !optional;
+  @extend %pageBody !optional;
 }
 .searchPage-1Rxeav {
-	@extend %searchPage !optional;
+  @extend %searchPage !optional;
 }
 .search-25t1e9 {
-	@extend %search !optional;
+  @extend %search !optional;
 }
 .searchBox-pyIJJj {
-	@extend %searchBox !optional;
+  @extend %searchBox !optional;
 }
 .searchBoxInput-P0mWHW {
-	@extend %searchBoxInput !optional;
+  @extend %searchBoxInput !optional;
 }
 .searchIcon-34RNw9 {
-	@extend %searchBoxIconSearch !optional;
+  @extend %searchBoxIconSearch !optional;
 }
 .clearIcon-TMIIUa {
-	@extend %searchBoxClearIcon !optional;
+  @extend %searchBoxClearIcon !optional;
 }
 .closeIcon-BMGxx0 {
-	@extend %searchBoxCloseIcon !optional;
+  @extend %searchBoxCloseIcon !optional;
 }
 .categoryItem-Kc_HK_ {
-	@extend %discoverCategoryItem !optional;
+  @extend %discoverCategoryItem !optional;
 }
 .selectedCategoryItem-ZjqSui {
-	@extend %discoverCategoryItemSelected !optional;
+  @extend %discoverCategoryItemSelected !optional;
 }
 .itemInner-3e_4G4 {
-	@extend %discoverCategoryItemInner !optional;
+  @extend %discoverCategoryItemInner !optional;
 }
 .guildList-3GXKvP {
-	@extend %discoverGuildList !optional;
+  @extend %discoverGuildList !optional;
 }
 .loading-3ozbwt {
-	@extend %discoverGuildCardLoading !optional;
+  @extend %discoverGuildCardLoading !optional;
 }
 .loaded-igpmmx {
-	@extend %discoverGuildCardLoaded !optional;
+  @extend %discoverGuildCardLoaded !optional;
 }
 .card-2TuZPZ {
-	@extend %discoverGuildCard !optional;
+  @extend %discoverGuildCard !optional;
 }
 .iconMask-2fMR98 {
-	@extend %discoverGuildCardIcon !optional;
+  @extend %discoverGuildCardIcon !optional;
 }
 .splash-1VADA3 {
-	@extend %discoverCardSplash !optional;
+  @extend %discoverCardSplash !optional;
 }
 .fade-rdt5qH {
-	@extend %discoverCardFade !optional;
+  @extend %discoverCardFade !optional;
 }
 .guildInfo-PdhToW {
-	@extend %discoverGuildInfo !optional;
+  @extend %discoverGuildInfo !optional;
 }
 .guildIcon-1nnIAv {
-	@extend %discoverGuildIcon !optional;
+  @extend %discoverGuildIcon !optional;
 }
 .avatar-30VHqO {
-	@extend %discoverGuildAvatar !optional;
+  @extend %discoverGuildAvatar !optional;
 }
 .title-2vVOzt {
-	@extend %discoverGuildTitle !optional;
+  @extend %discoverGuildTitle !optional;
 }
 .memberInfo-3G3E9W {
-	@extend %discoverGuildMemberInfo !optional;
+  @extend %discoverGuildMemberInfo !optional;
 }
 .dotOnline-j08lOY {
-	@extend %discoverGuildStatusOnline !optional;
+  @extend %discoverGuildStatusOnline !optional;
 }
 .dotOffline-38lJFn {
-	@extend %discoverGuildStatusOffline !optional;
+  @extend %discoverGuildStatusOffline !optional;
 }
 .viewButton-3jDZqV {
-	@extend %discoverViewButton !optional;
+  @extend %discoverViewButton !optional;
 }
 .viewButtonVisible-2AtUPc {
-	@extend %discoverViewButtonVisible !optional;
+  @extend %discoverViewButtonVisible !optional;
 }
 .languageSelector-1hjSyO {
-	@extend %discoverLanguageSelector !optional;
+  @extend %discoverLanguageSelector !optional;
 }
 .css-12hk9yc-control {
-	@extend %discoverLanguageSelectorControl !optional;
+  @extend %discoverLanguageSelectorControl !optional;
 }
 .separator-2xbLUz {
-	@extend %discoverSectionSeparator !optional;
+  @extend %discoverSectionSeparator !optional;
 }
 .emptyContainer-poti7J {
-	@extend %discoverEmptyResults !optional;
+  @extend %discoverEmptyResults !optional;
 }
 .emptyImage-2pCD2j {
-	@extend %discoverEmptyImage !optional;
+  @extend %discoverEmptyImage !optional;
 }
 .emptyHeader-2cxTFP {
-	@extend %discoverEmptyTitle !optional;
+  @extend %discoverEmptyTitle !optional;
 }
 .scroller-RfJjkV {
-	@extend %studentHubsPage !optional;
+  @extend %studentHubsPage !optional;
 }
 .container-1wv6C6 {
-	@extend %joinHubContainer !optional;
+  @extend %joinHubContainer !optional;
 }
 .sidebarContainer-gUKhtL {
-	@extend %studentHubsSidebarContainer !optional;
+  @extend %studentHubsSidebarContainer !optional;
 }
 .iconContainer-3LclNk {
-	@extend %studentHubsIcon !optional;
+  @extend %studentHubsIcon !optional;
 }
 .container-1S70rv {
-	@extend %autocompletePopout !optional;
+  @extend %autocompletePopout !optional;
 }
 .positionTop-3SXWNj {
-	@extend %autocompletePopoutTop !optional;
+  @extend %autocompletePopoutTop !optional;
 }
 .positionBottom-1pd-ap {
-	@extend %autocompletePopoutBottom !optional;
+  @extend %autocompletePopoutBottom !optional;
 }
 .autocompleteShadow-2nfsSy {
-	@extend %autocompletePopoutShadow !optional;
+  @extend %autocompletePopoutShadow !optional;
 }
 .autocompleteArrowWrapper-Kr4DnW {
-	@extend %autocompletePopoutArrowWrapper !optional;
+  @extend %autocompletePopoutArrowWrapper !optional;
 }
 .autocompleteArrow-jJE9TQ {
-	@extend %autocompletePopoutArrow !optional;
+  @extend %autocompletePopoutArrow !optional;
 }
 .header-3i_Csh {
-	@extend %autocompletePopoutHeader !optional;
+  @extend %autocompletePopoutHeader !optional;
 }
 .autocompleteHeaderBackground-3u7TwO {
-	@extend %autocompletePopoutHeaderBackground !optional;
+  @extend %autocompletePopoutHeaderBackground !optional;
 }
 .headerText-27z-EV {
-	@extend %autocompletePopoutHeaderText !optional;
+  @extend %autocompletePopoutHeaderText !optional;
 }
 .input-2lpFVz {
-	@extend %autocompletePopoutInput !optional;
+  @extend %autocompletePopoutInput !optional;
 }
 .sectionTag-28mLyE {
-	@extend %autocompletePopoutSection !optional;
+  @extend %autocompletePopoutSection !optional;
 }
 .autocompleteScroller-3L6kmy {
-	@extend %autocompletePopoutScroller !optional;
+  @extend %autocompletePopoutScroller !optional;
 }
 .row-1Ib2uD {
-	@extend %autocompletePopoutRow !optional;
+  @extend %autocompletePopoutRow !optional;
 }
 .selected-1IWCoj {
-	@extend %autocompletePopoutSelected !optional;
+  @extend %autocompletePopoutSelected !optional;
 }
 .container-1ILvLB {
-	@extend %connectionInfo !optional;
+  @extend %connectionInfo !optional;
 }
 .header-2C89wJ {
-	@extend %connectionInfoHeader !optional;
+  @extend %connectionInfoHeader !optional;
 }
 .sparkline-3A-8OK {
-	@extend %connectionInfoSparkline !optional;
+  @extend %connectionInfoSparkline !optional;
 }
 .popoutBottom-15-vLu {
-	@extend %connectionInfoBottom !optional;
+  @extend %connectionInfoBottom !optional;
 }
 .secured-2wavXv {
-	@extend %connectionInfoSecured !optional;
+  @extend %connectionInfoSecured !optional;
 }
 .contextMenu-HLZMGh {
-	@extend %contextMenu !optional;
+  @extend %contextMenu !optional;
 }
 .subMenuContext-2n_9YM {
-	@extend %subContextMenu !optional;
+  @extend %subContextMenu !optional;
 }
 .itemGroup-1tL0uz {
-	@extend %contextMenuItemGroup !optional;
+  @extend %contextMenuItemGroup !optional;
 }
 .item-1Yvehc {
-	@extend %contextMenuItem !optional;
+  @extend %contextMenuItem !optional;
 }
 .danger-2dXSTE {
-	@extend %contextMenuItemDanger !optional;
+  @extend %contextMenuItemDanger !optional;
 }
 .brand-3igrJY {
-	@extend %contextMenuItemBrand !optional;
+  @extend %contextMenuItemBrand !optional;
 }
 .itemSubMenu-1vN_Yn {
-	@extend %contextMenuItemSubMenu !optional;
+  @extend %contextMenuItemSubMenu !optional;
 }
 .emojiPicker-6YCk8a {
-	@extend %emojiPicker !optional;
+  @extend %emojiPicker !optional;
 }
 .searchBar-2M9mRP {
-	@extend %emojiPickerSearchBar !optional;
+  @extend %emojiPickerSearchBar !optional;
 }
 .diversitySelectorOptions-3DhNYs {
-	@extend %emojiPickerDiversitySelectorPopout !optional;
+  @extend %emojiPickerDiversitySelectorPopout !optional;
 }
 .diversityEmojiItem-2bgZKv {
-	@extend %emojiPickerDiversityItem !optional;
+  @extend %emojiPickerDiversityItem !optional;
 }
 .categorySection-3j71bm {
-	@extend %emojiPickerCategorySection !optional;
+  @extend %emojiPickerCategorySection !optional;
 }
 .wrapper-1NNaWG {
-	@extend %emojiPickerCategoryHeaderWrapper !optional;
+  @extend %emojiPickerCategoryHeaderWrapper !optional;
 }
 .header-1XpmZs {
-	@extend %emojiPickerCategoryHeader !optional;
+  @extend %emojiPickerCategoryHeader !optional;
 }
 .emojiItem-277VFM {
-	@extend %emojiPickerItem !optional;
+  @extend %emojiPickerItem !optional;
 }
 .emojiItemSelected-2Lg50V {
-	@extend %emojiPickerItemSelected !optional;
+  @extend %emojiPickerItemSelected !optional;
 }
 .emojiItemDisabled-3VVnwp {
-	@extend %emojiPickerItemDisabled !optional;
+  @extend %emojiPickerItemDisabled !optional;
 }
 .imageLoading-2uloYN {
-	@extend %emojiPickerItemLoading !optional;
+  @extend %emojiPickerItemLoading !optional;
 }
 .inspector-DFKXwB {
-	@extend %emojiPickerInspector !optional;
+  @extend %emojiPickerInspector !optional;
 }
 .categoryList-2qRrlj {
-	@extend %emojiCategoryList !optional;
+  @extend %emojiCategoryList !optional;
 }
 .scroller-2MALzE {
-	@extend %emojiCategoryScroller !optional;
+  @extend %emojiCategoryScroller !optional;
 }
 .categoryItem-1sHzUv {
-	@extend %emojiCategoryItem !optional;
+  @extend %emojiCategoryItem !optional;
 }
 .categoryIcon-2cYeku {
-	@extend %emojiCategoryItemIcon !optional;
+  @extend %emojiCategoryItemIcon !optional;
 }
 .categoryItemDefaultCategorySelected-2YeRUu {
-	@extend %emojiCategoryItemSelected !optional;
+  @extend %emojiCategoryItemSelected !optional;
 }
 .categoryItemGuildCategory-3mvXlo {
-	@extend %emojiCategoryGuildItem !optional;
+  @extend %emojiCategoryGuildItem !optional;
 }
 .guildIcon-2SUGiq {
-	@extend %emojiCategoryGuildIcon !optional;
+  @extend %emojiCategoryGuildIcon !optional;
 }
 .unicodeShortcut-3N8oDe {
-	@extend %emojiCategoryUnicodeShortcut !optional;
+  @extend %emojiCategoryUnicodeShortcut !optional;
 }
 .popout-3gby1q {
-	@extend %groupInvitePopout !optional;
+  @extend %groupInvitePopout !optional;
 }
 .header-1zd7se {
-	@extend %groupInvitePopoutHeader !optional;
+  @extend %groupInvitePopoutHeader !optional;
 }
 .title-3hptVQ {
-	@extend %groupInvitePopoutTitle !optional;
+  @extend %groupInvitePopoutTitle !optional;
 }
 .subtitle-3v29zT {
-	@extend %groupInvitePopoutSubtitle !optional;
+  @extend %groupInvitePopoutSubtitle !optional;
 }
 .searchBar-14YqL- {
-	@extend %groupInvitePopoutSearchBar !optional;
+  @extend %groupInvitePopoutSearchBar !optional;
 }
 .searchBarComponent-18D6hD {
-	@extend %groupInvitePopoutSearchContainer !optional;
+  @extend %groupInvitePopoutSearchContainer !optional;
 }
 .inner-1NoIT5 {
-	@extend %groupInvitePopoutSearchBarInner !optional;
+  @extend %groupInvitePopoutSearchBarInner !optional;
 }
 .tag-15zcD_ {
-	@extend %groupInvitePopoutSearchTag !optional;
+  @extend %groupInvitePopoutSearchTag !optional;
 }
 .close-3-lUJg {
-	@extend %groupInvitePopoutSearchTagClose !optional;
+  @extend %groupInvitePopoutSearchTagClose !optional;
 }
 .friendWrapper-2x5j0A {
-	@extend %groupInvitePopoutFriendWrapper !optional;
+  @extend %groupInvitePopoutFriendWrapper !optional;
 }
 .friend-8ZraY7 {
-	@extend %groupInvitePopoutFriend !optional;
+  @extend %groupInvitePopoutFriend !optional;
 }
 .friendSelected-3cwmD7 {
-	@extend %groupInvitePopoutFriendSelected !optional;
+  @extend %groupInvitePopoutFriendSelected !optional;
 }
 .nickname-1PdAp3 {
-	@extend %groupInvitePopoutNickname !optional;
+  @extend %groupInvitePopoutNickname !optional;
 }
 .discordTag-2ke74W {
-	@extend %groupInvitePopoutDiscordTag !optional;
+  @extend %groupInvitePopoutDiscordTag !optional;
 }
 .footer-C9oLp9 {
-	@extend %groupInvitePopoutFooter !optional;
+  @extend %groupInvitePopoutFooter !optional;
 }
 .footerSeparator-b6VH1V {
-	@extend %groupInvitePopoutFooterSeparator !optional;
+  @extend %groupInvitePopoutFooterSeparator !optional;
 }
 .menu-1QACrS {
-	@extend %menuPopout !optional;
+  @extend %menuPopout !optional;
 }
 .colorDefault-CDqZdO {
-	@extend %menuPopoutSelected !optional;
+  @extend %menuPopoutSelected !optional;
 }
 .hideInteraction-2jPGL_ {
-	@extend %menuPopoutHideInteraction !optional;
+  @extend %menuPopoutHideInteraction !optional;
 }
 .item-1OdjEX {
-	@extend %menuPopoutItem !optional;
+  @extend %menuPopoutItem !optional;
 }
 .focused-3qFvc8 {
-	@extend %menuPopoutItemHover !optional;
+  @extend %menuPopoutItemHover !optional;
 }
 .colorBrand-3cPPsm {
-	@extend %menuPopoutItemInvite !optional;
+  @extend %menuPopoutItemInvite !optional;
 }
 .colorDanger-3n-KnP {
-	@extend %menuPopoutItemLeave !optional;
+  @extend %menuPopoutItemLeave !optional;
 }
 .separator-2zcjq8 {
-	@extend %menuPopoutSeparator !optional;
+  @extend %menuPopoutSeparator !optional;
 }
 .iconContainer-1-SsTR {
-	@extend %menuPopoutIconContainer !optional;
+  @extend %menuPopoutIconContainer !optional;
 }
 .icon-E4cW1l {
-	@extend %menuPopoutIcon !optional;
+  @extend %menuPopoutIcon !optional;
 }
 .label-1Y-LW5 {
-	@extend %menuPopoutLabel !optional;
+  @extend %menuPopoutLabel !optional;
 }
 .checkbox-hADx5o {
-	@extend %menuPopoutCheckbox !optional;
+  @extend %menuPopoutCheckbox !optional;
 }
 .radioSelection-1UHp0b {
-	@extend %menuPopoutRadio !optional;
+  @extend %menuPopoutRadio !optional;
 }
 .check-3HZJs4 {
-	@extend %menuPopoutCheck !optional;
+  @extend %menuPopoutCheck !optional;
 }
 .container-3cGP6G {
-	@extend %messageOptions !optional;
+  @extend %messageOptions !optional;
 }
 .item-2J1YMK {
-	@extend %popoutItem !optional;
+  @extend %popoutItem !optional;
 }
 .popouts-2bnG9Z {
-	@extend %popouts !optional;
+  @extend %popouts !optional;
 }
 .popout-2iWAc- {
-	@extend %popout !optional;
+  @extend %popout !optional;
 }
 .themedPopout-1TrfdI {
-	@extend %themedPopout !optional;
+  @extend %themedPopout !optional;
 }
 .popoutTop-3WSJtH {
-	@extend %popoutTop !optional;
+  @extend %popoutTop !optional;
 }
 .popoutTopRight-1lc8Mq {
-	@extend %popoutTopRight !optional;
+  @extend %popoutTopRight !optional;
 }
 .popoutTopLeft-3B0mFf {
-	@extend %popoutTopLeft !optional;
+  @extend %popoutTopLeft !optional;
 }
 .popoutRight-1veHKi {
-	@extend %popoutRight !optional;
+  @extend %popoutRight !optional;
 }
 .popoutLeft-3aViER {
-	@extend %popoutLeft !optional;
+  @extend %popoutLeft !optional;
 }
 .popoutBottom-2GAFPg {
-	@extend %popoutBottom !optional;
+  @extend %popoutBottom !optional;
 }
 .popoutBottomRight-2Rno5S {
-	@extend %popoutBottomRight !optional;
+  @extend %popoutBottomRight !optional;
 }
 .popoutBottomLeft-1pG8B4 {
-	@extend %popoutBottomLeft !optional;
+  @extend %popoutBottomLeft !optional;
 }
 .noArrow-2foL9g {
-	@extend %popoutNoArrow !optional;
+  @extend %popoutNoArrow !optional;
 }
 .noShadow-3pu20z {
-	@extend %popoutNoShadow !optional;
+  @extend %popoutNoShadow !optional;
 }
 .layerContainer-2v_Sit {
-	@extend %layerContainer !optional;
+  @extend %layerContainer !optional;
 }
 .layer-2aCOJ3 {
-	@extend %popoutLayer !optional;
+  @extend %popoutLayer !optional;
 }
 .translate-PeW1wK {
-	@extend %popoutTranslate !optional;
+  @extend %popoutTranslate !optional;
 }
 .animatorTop-3ltI52 {
-	@extend %popoutAnimatorTop !optional;
+  @extend %popoutAnimatorTop !optional;
 }
 .animatorBottom-L63-7D {
-	@extend %popoutAnimatorBottom !optional;
+  @extend %popoutAnimatorBottom !optional;
 }
-.animatorLeft-3yvG13  {
-	@extend %popoutAnimatorLeft !optional;
+.animatorLeft-3yvG13 {
+  @extend %popoutAnimatorLeft !optional;
 }
 .animatorRight-xAUgTY {
-	@extend %popoutAnimatorRight !optional;
+  @extend %popoutAnimatorRight !optional;
 }
 .didRender-2SiRlm {
-	@extend %popoutAnimatorDidRender !optional;
+  @extend %popoutAnimatorDidRender !optional;
 }
 .input-2FSSDe {
-	@extend %popoutInput !optional;
+  @extend %popoutInput !optional;
 }
 .container-2McqkF {
-	@extend %searchPopout !optional;
+  @extend %searchPopout !optional;
 }
 .resultsGroup-cfY57t {
-	@extend %searchPopoutResultsGroup !optional;
+  @extend %searchPopoutResultsGroup !optional;
 }
 .header-1BR0Ro {
-	@extend %searchPopoutHeader !optional;
+  @extend %searchPopoutHeader !optional;
 }
 .option-ayUoaq {
-	@extend %searchPopoutOption !optional;
+  @extend %searchPopoutOption !optional;
 }
 .filter-2QaH9y {
-	@extend %searchPopoutFilter !optional;
+  @extend %searchPopoutFilter !optional;
 }
 .answer-14OVbQ {
-	@extend %searchPopoutAnswer !optional;
+  @extend %searchPopoutAnswer !optional;
 }
 .nonText-28q_Ot {
-	@extend %searchPopoutNonText !optional;
+  @extend %searchPopoutNonText !optional;
 }
 .plusIcon-1RVszG {
-	@extend %searchPopoutPlusIcon !optional;
+  @extend %searchPopoutPlusIcon !optional;
 }
 .searchLearnMore-1gNL3A {
-	@extend %searchPopoutLearnMore !optional;
+  @extend %searchPopoutLearnMore !optional;
 }
 .searchClearHistory-3nIKUO {
-	@extend %searchPopoutClearHistory !optional;
+  @extend %searchPopoutClearHistory !optional;
 }
 .queryContainer-ZunrLZ {
-	@extend %searchPopoutQueryContainer !optional;
+  @extend %searchPopoutQueryContainer !optional;
 }
 .focused-2FU0YH {
-	@extend %searchPopoutQueryContainerFocused !optional;
+  @extend %searchPopoutQueryContainerFocused !optional;
 }
 .queryText-j8z984 {
-	@extend %searchPopoutQueryText !optional;
+  @extend %searchPopoutQueryText !optional;
 }
 .queryShortcut-GrmI-7 {
-	@extend %searchPopoutQueryShortcut !optional;
+  @extend %searchPopoutQueryShortcut !optional;
 }
 .keybindShortcutSearchPopout-pt_bn5 {
-	@extend %searchPopoutKeybindShortcut !optional;
+  @extend %searchPopoutKeybindShortcut !optional;
 }
 .user-1dKxvu {
-	@extend %searchPopoutOptionUser !optional;
+  @extend %searchPopoutOptionUser !optional;
 }
 .displayedNick-1atSpT {
-	@extend %searchPopoutDisplayedNick !optional;
+  @extend %searchPopoutDisplayedNick !optional;
 }
 .displayUsername-UTerwm {
-	@extend %searchPopoutDisplayUsername !optional;
+  @extend %searchPopoutDisplayUsername !optional;
 }
 .resultChannel-37MfX_ {
-	@extend %searchPopoutChannel !optional;
+  @extend %searchPopoutChannel !optional;
 }
 .searchResultChannelIcon-C-3P9x {
-	@extend %searchPopoutChannelIcon !optional;
+  @extend %searchPopoutChannelIcon !optional;
 }
 .searchResultChannelCategory-19ujDo {
-	@extend %searchPopoutChannelCategory !optional;
+  @extend %searchPopoutChannelCategory !optional;
 }
 .datePicker-3iA7_k {
-	@extend %searchPopoutDatePicker !optional;
+  @extend %searchPopoutDatePicker !optional;
 }
 
 .datePickerHint-Ir4715 {
-	@extend %searchPopoutDatePickerHint !optional;
+  @extend %searchPopoutDatePickerHint !optional;
 }
 .hint-xfbpCV {
-	@extend %searchPopoutHint !optional;
+  @extend %searchPopoutHint !optional;
 }
 .hintValue-V9hd8l {
-	@extend %searchPopoutHintValue !optional;
+  @extend %searchPopoutHintValue !optional;
 }
 .calendarPicker-sDhzdi {
-	@extend %calendarPicker !optional;
+  @extend %calendarPicker !optional;
 }
 .react-datepicker {
-	@extend %datepicker !optional;
+  @extend %datepicker !optional;
 }
 .react-datepicker__navigation {
-	@extend %datepickerNavigation !optional;
+  @extend %datepickerNavigation !optional;
 }
 .react-datepicker__navigation--next {
-	@extend %datepickerNavigationNext !optional;
+  @extend %datepickerNavigationNext !optional;
 }
 .react-datepicker__navigation--previous {
-	@extend %datepickerNavigationPrevious !optional;
+  @extend %datepickerNavigationPrevious !optional;
 }
 .react-datepicker__month-container {
-	@extend %datepickerMonthContainer !optional;
+  @extend %datepickerMonthContainer !optional;
 }
 .react-datepicker__header {
-	@extend %datepickerHeader !optional;
+  @extend %datepickerHeader !optional;
 }
 .react-datepicker__current-month {
-	@extend %datepickerCurrentMonth !optional;
+  @extend %datepickerCurrentMonth !optional;
 }
 .react-datepicker__day-names {
-	@extend %datepickerDayNames !optional;
+  @extend %datepickerDayNames !optional;
 }
 .react-datepicker__day-name {
-	@extend %datepickerDayName !optional;
+  @extend %datepickerDayName !optional;
 }
 .react-datepicker__month {
-	@extend %datepickerMonth !optional;
+  @extend %datepickerMonth !optional;
 }
 .react-datepicker__week {
-	@extend %datepickerWeek !optional;
+  @extend %datepickerWeek !optional;
 }
 .react-datepicker__day {
-	@extend %datepickerDay !optional;
+  @extend %datepickerDay !optional;
 }
 .react-datepicker__day--selected {
-	@extend %datepickerDaySelected !optional;
+  @extend %datepickerDaySelected !optional;
 }
 .react-datepicker__day--disabled {
-	@extend %datepickerDayDisabled !optional;
+  @extend %datepickerDayDisabled !optional;
 }
 .react-datepicker__day--today {
-	@extend %datepickerDayToday !optional;
+  @extend %datepickerDayToday !optional;
 }
 .react-datepicker__day--outside-month {
-	@extend %datepickerDayOutsideMonth !optional;
+  @extend %datepickerDayOutsideMonth !optional;
 }
 .react-datepicker__day--weekend {
-	@extend %datepickerDayWeekend !optional;
+  @extend %datepickerDayWeekend !optional;
 }
 .react-datepicker__day--mon {
-	@extend %datepickerDayMon !optional;
+  @extend %datepickerDayMon !optional;
 }
 .react-datepicker__day--tue {
-	@extend %datepickerDayTue !optional;
+  @extend %datepickerDayTue !optional;
 }
 .react-datepicker__day--wed {
-	@extend %datepickerDayWed !optional;
+  @extend %datepickerDayWed !optional;
 }
 .react-datepicker__day--thu {
-	@extend %datepickerDayThu !optional;
+  @extend %datepickerDayThu !optional;
 }
 .react-datepicker__day--fri {
-	@extend %datepickerDayFri !optional;
+  @extend %datepickerDayFri !optional;
 }
 .react-datepicker__day--sat {
-	@extend %datepickerDaySat !optional;
+  @extend %datepickerDaySat !optional;
 }
 .react-datepicker__day--sun {
-	@extend %datepickerDaySun !optional;
+  @extend %datepickerDaySun !optional;
 }
 .popout-2sKjHu {
-	@extend %selectPopout !optional;
+  @extend %selectPopout !optional;
 }
 .filterBrowsingSelectPopout-2kjxuc {
-	@extend %selectPopoutFilterBrowsing !optional;
+  @extend %selectPopoutFilterBrowsing !optional;
 }
 .option-1mJRMP {
-	@extend %selectPopoutOption !optional;
+  @extend %selectPopoutOption !optional;
 }
 .optionActive-KkAdqq {
-	@extend %selectPopoutOptionActive !optional;
+  @extend %selectPopoutOptionActive !optional;
 }
 .optionFocused-8MflSE {
-	@extend %selectPopoutOptionFocused !optional;
+  @extend %selectPopoutOptionFocused !optional;
 }
 .optionNormal-12VR9V {
-	@extend %selectPopoutOptionNormal !optional;
+  @extend %selectPopoutOptionNormal !optional;
 }
 .statusItem-2hiCNB {
-	@extend %statusPickerItem !optional;
+  @extend %statusPickerItem !optional;
 }
-.status-3TYC5W	 {
-	@extend %statusPickerText !optional;
+.status-3TYC5W {
+  @extend %statusPickerText !optional;
 }
 .description-3Cwkxk {
-	@extend %statusPickerDescription !optional;
+  @extend %statusPickerDescription !optional;
 }
 .status-2DiCMd {
-	@extend %statusPickerIcon !optional;
+  @extend %statusPickerIcon !optional;
 }
 .userPopout-2j1gM4 {
-	@extend %userPopout !optional;
+  @extend %userPopout !optional;
 }
 .headerNormal-3Zn_yu {
-	@extend %userPopoutHeader !optional;
+  @extend %userPopoutHeader !optional;
 }
 .popoutBanner-3cqRD9 {
-	@extend %userPopoutBanner !optional;
+  @extend %userPopoutBanner !optional;
 }
 .popoutBannerPremium-3i5EEI {
-	@extend %userPopoutBannerPremium !optional;
+  @extend %userPopoutBannerPremium !optional;
 }
 .avatar-2Vndt_ {
-	@extend %userPopoutAvatar !optional;
+  @extend %userPopoutAvatar !optional;
 }
 .headerTop-3GPUSF {
-	@extend %userPopoutHeaderTop !optional;
+  @extend %userPopoutHeaderTop !optional;
 }
 .profileBadge22-3GAYRy {
-	@extend %userPopoutprofileBadge !optional;
+  @extend %userPopoutprofileBadge !optional;
 }
 .headerText-1-WmDq {
-	@extend %userPopoutHeaderText !optional;
+  @extend %userPopoutHeaderText !optional;
 }
 .nameTag-H6kSJ0 {
-	@extend %userPopoutNameTag !optional;
+  @extend %userPopoutNameTag !optional;
 }
 .aboutMeSection-PUghFQ {
-	@extend %userPopoutAboutMe !optional;
+  @extend %userPopoutAboutMe !optional;
 }
 .body-2wLx-E {
-	@extend %userPopoutBody !optional;
+  @extend %userPopoutBody !optional;
 }
 .bodyInnerWrapper-2bQs1k {
-	@extend %userPopoutBodyInnerWrapper !optional;
+  @extend %userPopoutBodyInnerWrapper !optional;
 }
 .activityUserPopout-2MzGCj {
-	@extend %userPopoutActivity !optional;
+  @extend %userPopoutActivity !optional;
 }
 .bodyTitle-2Az3VQ {
-	@extend %userPopoutBodyTitle !optional;
+  @extend %userPopoutBodyTitle !optional;
 }
 .rolesList-3uZoaa {
-	@extend %userPopoutRolesList !optional;
+  @extend %userPopoutRolesList !optional;
 }
 .note-Go5ZP2 {
-	@extend %userPopoutNote !optional;
+  @extend %userPopoutNote !optional;
 }
 .textarea-_59yqs {
-	@extend %userPopoutNoteTextArea !optional;
+  @extend %userPopoutNoteTextArea !optional;
 }
 .footer-3naVBw {
-	@extend %userPopoutFooter !optional;
+  @extend %userPopoutFooter !optional;
 }
 .errorPage-2pZ2Kq {
-	@extend %errorPage !optional;
+  @extend %errorPage !optional;
 }
 .image-35kDIs {
-	@extend %errorPageImage !optional;
+  @extend %errorPageImage !optional;
 }
 .text-3IbNaT {
-	@extend %errorPageText !optional;
+  @extend %errorPageText !optional;
 }
 .note-Ph806N {
-	@extend %errorPageNote !optional;
+  @extend %errorPageNote !optional;
 }
 .children-1xdcWE {
-	@extend %paymentinfo !optional;
+  @extend %paymentinfo !optional;
 }
 .container-2RRFHK {
-	@extend %loadingScreen !optional;
+  @extend %loadingScreen !optional;
 }
 .links-30fqF9 {
-	@extend %loadingLinks !optional;
+  @extend %loadingLinks !optional;
 }
 .path-lhsLSV {
-	@extend %loadingPath !optional;
+  @extend %loadingPath !optional;
 }
 .path2-F-M5gP {
-	@extend %loadingPath2 !optional;
+  @extend %loadingPath2 !optional;
 }
 .path3-3tVOpU {
-	@extend %loadingPath3 !optional;
+  @extend %loadingPath3 !optional;
 }
 .searchResultsWrap-5RVOkx {
-	@extend %searchResultsWrap !optional;
+  @extend %searchResultsWrap !optional;
 }
 .searchHeader-1r_ZSh {
-	@extend %searchHeader !optional;
+  @extend %searchHeader !optional;
 }
 .totalResults-2On644 {
-	@extend %searchTotalResults !optional;
+  @extend %searchTotalResults !optional;
 }
 .resultsWrapper-hoiXCY {
-	@extend %searchResultsWrapper !optional;
+  @extend %searchResultsWrapper !optional;
 }
 .searchResults-2J8dju {
-	@extend %searchResults !optional;
+  @extend %searchResults !optional;
 }
 .channelName-3w2Y3c {
-	@extend %searchChannelName !optional;
+  @extend %searchChannelName !optional;
 }
 .searchResult-O9NDji {
-	@extend %searchResult !optional;
+  @extend %searchResult !optional;
 }
 .expanded-v2Szsz {
-	@extend %searchResultExpanded !optional;
+  @extend %searchResultExpanded !optional;
 }
 .searchResultMessage-2VxO12 {
-	@extend %searchResultMessage !optional;
+  @extend %searchResultMessage !optional;
 }
 .hit-NLlWXA {
-	@extend %searchResultMessageHit !optional;
+  @extend %searchResultMessageHit !optional;
 }
 .sibling-3tUBeh {
-	@extend %searchResultMessageSibling !optional;
+  @extend %searchResultMessageSibling !optional;
 }
 .before-1x1q5S {
-	@extend %searchResultMessageBefore !optional;
+  @extend %searchResultMessageBefore !optional;
 }
 .after-2g0jjc {
-	@extend %searchResultMessageAfter !optional;
+  @extend %searchResultMessageAfter !optional;
 }
 .actionButtons-14P9IC {
-	@extend %searchResultActionButtons !optional;
+  @extend %searchResultActionButtons !optional;
 }
 .button-cfOvv- {
-	@extend %searchResultJumpButton !optional;
+  @extend %searchResultJumpButton !optional;
 }
 .highlight {
-	@extend %searchResultHighlight !optional;
+  @extend %searchResultHighlight !optional;
 }
 .contentRegion-3HkfJJ {
-	@extend %settingsContentRegion !optional;
+  @extend %settingsContentRegion !optional;
 }
 .contentRegionScroller-2_GT_N {
-	@extend %settingsContentScroller !optional;
+  @extend %settingsContentScroller !optional;
 }
 .sidebarScrollable-2mW9Ls {
-	@extend %settingsContentSidebarScrollable !optional;
+  @extend %settingsContentSidebarScrollable !optional;
 }
 .scroller-3_YDR2 {
-	@extend %settingsContentSidebarScroller !optional;
+  @extend %settingsContentSidebarScroller !optional;
 }
 .toolsContainer-25FL6V {
-	@extend %settingsToolsContainer !optional;
+  @extend %settingsToolsContainer !optional;
 }
 .tools-kIrEGr {
-	@extend %settingsTools !optional;
+  @extend %settingsTools !optional;
 }
 .container-O54IuJ {
-	@extend %settingsCloseButtonContainer !optional;
+  @extend %settingsCloseButtonContainer !optional;
 }
 .closeButton-PCZcma {
-	@extend %settingsCloseButton !optional;
+  @extend %settingsCloseButton !optional;
 }
 .keybind-13vtq8 {
-	@extend %settingsCloseButtonKeybind !optional;
+  @extend %settingsCloseButtonKeybind !optional;
 }
 .imageUploaderInner-IIRaFr {
-	@extend %settingsImageUploaderInner !optional;
+  @extend %settingsImageUploaderInner !optional;
 }
 .imageUploaderIcon-2OHmFu {
-	@extend %settingsImageUploaderIcon !optional;
+  @extend %settingsImageUploaderIcon !optional;
 }
 .card-16VQ8C {
-	@extend %settingsCard !optional;
+  @extend %settingsCard !optional;
 }
 .card-2ART2V {
-	@extend %settingsLongCard !optional;
+  @extend %settingsLongCard !optional;
 }
 .button-1yVL_7 {
-	@extend %settingsLongCardButton !optional;
+  @extend %settingsLongCardButton !optional;
 }
 .cardWrapper-1bSePP {
-	@extend %settingsCardWrapper !optional;
+  @extend %settingsCardWrapper !optional;
 }
 .colorPickerCustom-1swUKF {
-	@extend %settingsColorPickerCustom !optional;
+  @extend %settingsColorPickerCustom !optional;
 }
 .container-20TyK0 {
-	@extend %settingsNoticeContainer !optional;
+  @extend %settingsNoticeContainer !optional;
 }
 .standardSidebarView-E9Pc3j {
-	@extend %standardSidebarView !optional;
+  @extend %standardSidebarView !optional;
 }
 .sidebarRegion-1VBisG {
-	@extend %settingsSidebarRegion !optional;
+  @extend %settingsSidebarRegion !optional;
 }
 .sidebarRegionScroller-FXiQOh {
-	@extend %settingsSidebarScroller !optional;
+  @extend %settingsSidebarScroller !optional;
 }
 .sidebar-nqHbhN {
-	@extend %settingsSidebar !optional;
+  @extend %settingsSidebar !optional;
 }
 .side-2ur1Qk {
-	@extend %settingsSide !optional;
+  @extend %settingsSide !optional;
 }
 .socialLinks-2DELRE {
-	@extend %settingsSocialLinks !optional;
+  @extend %settingsSocialLinks !optional;
 }
 .link-39xJu3 {
-	@extend %settingsSocialLink !optional;
+  @extend %settingsSocialLink !optional;
 }
 .guildFeatureAvailabilityIndicator-34eQAP {
-	@extend %guildFeatureAvailabilityIndicator !optional;
+  @extend %guildFeatureAvailabilityIndicator !optional;
 }
 .roleRow-3LoHQ6 {
-	@extend %roleRow !optional;
+  @extend %roleRow !optional;
 }
 .roleRowDisableHover-2TXfy- {
-	@extend %roleRowDisabledHover !optional;
+  @extend %roleRowDisabledHover !optional;
 }
 .container-3EtAkD {
-	@extend %guildSettingsRoleDefaultPermissions !optional;
+  @extend %guildSettingsRoleDefaultPermissions !optional;
 }
 .icon-2DGsye {
-	@extend %guildSettingsRoleDefaultPermissionsIcon !optional;
+  @extend %guildSettingsRoleDefaultPermissionsIcon !optional;
 }
 .titleContainer-3fPic2 {
-	@extend %guildSettingsRoleBackContainer !optional;
+  @extend %guildSettingsRoleBackContainer !optional;
 }
 .header-JUTO-g {
-	@extend %guildSettingsRoleHeader !optional;
+  @extend %guildSettingsRoleHeader !optional;
 }
 .top-K_jibn {
-	@extend %guildSettingsRoleHeaderTabTop !optional;
+  @extend %guildSettingsRoleHeaderTabTop !optional;
 }
 .brand-3g5E0C {
-	@extend %guildSettingsRoleHeaderTabBrand !optional;
+  @extend %guildSettingsRoleHeaderTabBrand !optional;
 }
-.activityUserPopout-2MzGCj, .activityProfile-1712BN {
-	@extend %activity !optional;
+.activityUserPopout-2MzGCj,
+.activityProfile-1712BN {
+  @extend %activity !optional;
 }
 .headerText-3g1XK9 {
-	@extend %activityHeaderText !optional;
+  @extend %activityHeaderText !optional;
 }
 .nameNormal-2fPMD2 {
-	@extend %activityNameNormal !optional;
+  @extend %activityNameNormal !optional;
 }
 .activityName-3YXl6e {
-	@extend %activityName !optional;
+  @extend %activityName !optional;
 }
 .textHover-3f_j3D {
-	@extend %activityNameTextHover !optional;
+  @extend %activityNameTextHover !optional;
 }
 .bodyLink-1E-g-R {
-	@extend %activityBodyLink !optional;
+  @extend %activityBodyLink !optional;
 }
 .timestamp-2f1NmH {
-	@extend %activityTimestamp !optional;
+  @extend %activityTimestamp !optional;
 }
 .wrapper-1VLyxH {
-	@extend %avatarWrapper !optional;
+  @extend %avatarWrapper !optional;
 }
 .mask-1FEkla {
-	@extend %avatarMask !optional;
+  @extend %avatarMask !optional;
 }
 .avatar-b5OQ1N {
-	@extend %avatarImage !optional;
+  @extend %avatarImage !optional;
 }
 .avatar-2e8lTP {
-	@extend %avatarLarge !optional;
+  @extend %avatarLarge !optional;
 }
 .avatarOffline-3GF27z {
-	@extend %avatarOffline !optional;
+  @extend %avatarOffline !optional;
 }
 .botTag-7aX5WZ {
-	@extend %botTag !optional;
+  @extend %botTag !optional;
 }
 .botTagInvert-1nKcq_ {
-	@extend %botTagInvert !optional;
+  @extend %botTagInvert !optional;
 }
 .role-2TIOKu {
-	@extend %role !optional;
+  @extend %role !optional;
 }
 .roleCircle-1EgnFN {
-	@extend %roleCircle !optional;
+  @extend %roleCircle !optional;
 }
 .roleRemoveIcon-387wKV {
-	@extend %roleRemoveIcon !optional;
+  @extend %roleRemoveIcon !optional;
 }
 .roleName-2ZJJYR {
-	@extend %roleName !optional;
+  @extend %roleName !optional;
 }
 .addButton-1_dZYu {
-	@extend %roleAddButton !optional;
+  @extend %roleAddButton !optional;
 }
 .pointerEvents-9SZWKj {
-	@extend %statusPointerEvents !optional;
+  @extend %statusPointerEvents !optional;
 }
 .cursorDefault--wfhy5 {
-	@extend %statusCursorDefault !optional;
+  @extend %statusCursorDefault !optional;
 }
 .loading-1yrGTe {
-	@extend %loading !optional;
+  @extend %loading !optional;
 }
 .container-A2jo65 {
-	@extend %replyContainer !optional;
+  @extend %replyContainer !optional;
 }
 .replyBar-1oi75v {
-	@extend %replyBar !optional;
+  @extend %replyBar !optional;
 }
-.threadSuggestionBar-3ExSyc{
-	@extend %replySuggestion !optional;
+.threadSuggestionBar-3ExSyc {
+  @extend %replySuggestion !optional;
 }
 .mentionButton-3C5YMI {
-	@extend %replyMentionButton !optional;
+  @extend %replyMentionButton !optional;
 }
 .closeButton-3IEry2 {
-	@extend %replyCancelButton !optional;
+  @extend %replyCancelButton !optional;
 }
 .separator-8ngZ3p {
-	@extend %replySeperator !optional;
+  @extend %replySeperator !optional;
 }
 .hasReply-16cIUP {
-	@extend %textAreaHasReply !optional;
+  @extend %textAreaHasReply !optional;
 }
 .replying-eZ7p5z {
-	@extend %replyingToIndicator !optional;
+  @extend %replyingToIndicator !optional;
 }
 .item-2idW98 {
-	@extend %radioItem !optional;
+  @extend %radioItem !optional;
 }
 .radioBar-3w9XY- {
-	@extend %radioBar !optional;
+  @extend %radioBar !optional;
 }
 .radioIconForeground-2BMavi {
-	@extend %radioIconChecked !optional;
+  @extend %radioIconChecked !optional;
 }
 .radioText-3Mv1MY {
-	@extend %radioText !optional;
+  @extend %radioText !optional;
 }
 .info-2FZci4 {
-	@extend %radioInfo !optional;
+  @extend %radioInfo !optional;
 }
 .userSettingsVoice-1fEtsL {
-	@extend %userSettingsVoice !optional;
+  @extend %userSettingsVoice !optional;
 }
 .container-3NTP7o {
-	@extend %micTestContainer !optional;
+  @extend %micTestContainer !optional;
 }
 .progress-1S-TDF {
-	@extend %micTestProgress !optional;
+  @extend %micTestProgress !optional;
 }
 .notches-2w7UZJ {
-	@extend %micTestNotches !optional;
+  @extend %micTestNotches !optional;
 }
 .sliderBar-2s16ej {
-	@extend %inputSensitivitySliderBar !optional;
+  @extend %inputSensitivitySliderBar !optional;
 }
 .speaking-2Crrvt {
-	@extend %inputSensitivitySpeaking !optional;
+  @extend %inputSensitivitySpeaking !optional;
 }
 .cameraWrapper-3a7Ngv {
-	@extend %cameraWrapper !optional;
+  @extend %cameraWrapper !optional;
 }
 .media-engine-video {
-	@extend %mediaEngineVideo !optional;
+  @extend %mediaEngineVideo !optional;
 }
 .backgroundOption-2mIYjm {
-	@extend %videoBgOption !optional;
+  @extend %videoBgOption !optional;
 }
 .backgroundOptionRing-1vvQ0C {
-	@extend %videoBgOptionRing !optional;
+  @extend %videoBgOptionRing !optional;
 }
 .backgroundOptionInner-SSz19O {
-	@extend %videoBgOptionInner !optional;
+  @extend %videoBgOptionInner !optional;
 }
 .none-2-_0dP {
-	@extend %scrollbarNone !optional;
+  @extend %scrollbarNone !optional;
 }
 .thin-31rlnD {
-	@extend %scrollbarThin !optional;
+  @extend %scrollbarThin !optional;
 }
 .segmentContainer-2dq0ta {
-	@extend %screenshareSegmentContainer !optional;
+  @extend %screenshareSegmentContainer !optional;
 }
 .segmentControlOption-3MnJdT {
-	@extend %screenshareSegmentControlOption !optional;
+  @extend %screenshareSegmentControlOption !optional;
 }
 .selected-2xa993 {
-	@extend %screenshareSegmentControlSelected !optional;
+  @extend %screenshareSegmentControlSelected !optional;
 }
 .tile-3POX2m {
-	@extend %screenshareTile !optional;
+  @extend %screenshareTile !optional;
 }
 .sourceThumbnail-ERDcZE {
-	@extend %screenshareSourceThumbnail !optional;
+  @extend %screenshareSourceThumbnail !optional;
 }
 .selected-1i-g6T {
-	@extend %screenshareSourceSelected !optional;
+  @extend %screenshareSourceSelected !optional;
 }
 .card-m7VgZ8 {
-	@extend %screenshareCard !optional;
+  @extend %screenshareCard !optional;
 }
 .card-PQEqCK {
-	@extend %serverWelcomeCards !optional;
+  @extend %serverWelcomeCards !optional;
 }
 .checkmark-bW9BK8 {
-	@extend %serverInviteTick !optional;
+  @extend %serverInviteTick !optional;
 }
 .selectorButton-3fWZ0_ {
-	@extend %screenshareSettingsSelector !optional;
+  @extend %screenshareSettingsSelector !optional;
 }
 .selectorButtonSelected-3cQUnj {
-	@extend %screenshareSettingsSelected !optional;
+  @extend %screenshareSettingsSelected !optional;
 }
 .selectorButtonPremiumRequired-IZXhgV {
-	@extend %screenshareSettingsPremiumRequired !optional;
+  @extend %screenshareSettingsPremiumRequired !optional;
 }
 .textContainer-36wgKK {
-	@extend %textContainer !optional;
+  @extend %textContainer !optional;
 }
 .footer-GXWBBp {
-	@extend %textContainerFooter !optional;
+  @extend %textContainerFooter !optional;
 }
 .languageSelector-2e1IuO {
-	@extend %languageSelector !optional;
+  @extend %languageSelector !optional;
 }
 .item-1BCeuB {
-	@extend %languageSelectorItem !optional;
+  @extend %languageSelectorItem !optional;
 }
 .selected-22ukbQ {
-	@extend %languageSelectorSelected !optional;
+  @extend %languageSelectorSelected !optional;
 }
 .modalTextContainer-1FUO2W {
-	@extend %textContainerModal !optional;
+  @extend %textContainerModal !optional;
 }
 .attachmentName-vgRpzs {
-	@extend %attachmentName !optional;
+  @extend %attachmentName !optional;
 }
 .formattedSize-1YbZww {
-	@extend %attachmentSize !optional;
+  @extend %attachmentSize !optional;
 }
 .container-cH6QoY {
-	@extend %stageContainer !optional;
+  @extend %stageContainer !optional;
 }
 .callContainer-BGIngG {
-	@extend %stageCallContainer !optional;
+  @extend %stageCallContainer !optional;
 }
 .scroller-35tvpe {
-	@extend %stageScroller !optional;
+  @extend %stageScroller !optional;
 }
 .gradientContainer-phMG8d {
-	@extend %stageGradientContainer !optional;
+  @extend %stageGradientContainer !optional;
 }
 .container-2t1JyW {
-	@extend %stageHeaderContainer !optional;
+  @extend %stageHeaderContainer !optional;
 }
 .rowContainer-jDvyA4 {
-	@extend %stageSpeakers !optional;
+  @extend %stageSpeakers !optional;
 }
 .participants-3hk3ND {
-	@extend %stageParticipants !optional;
+  @extend %stageParticipants !optional;
 }
 .tileContainer-Os085F {
-	@extend %stageParticipant !optional;
+  @extend %stageParticipant !optional;
 }
 .container-36u7Lw {
-	@extend %stageModIconContainer !optional;
+  @extend %stageModIconContainer !optional;
 }
 .container-lqPArA {
-	@extend %stageRequestContainer !optional;
+  @extend %stageRequestContainer !optional;
 }
 .background-29WdEM {
-	@extend %stageIconBigBackground !optional;
+  @extend %stageIconBigBackground !optional;
 }
 .foreground-uvONBR {
-	@extend %stageIconBigForeground !optional;
+  @extend %stageIconBigForeground !optional;
 }
 .stageIconBackground-5uF4K9 {
-	@extend %stageIconBackground !optional;
+  @extend %stageIconBackground !optional;
 }
 .textInput-2xgsSa {
-	@extend %stagePopoutTextInput !optional;
+  @extend %stagePopoutTextInput !optional;
 }
-.categoryPill-1zjNrr{
-	@extend %categoryPill !optional;
+.categoryPill-1zjNrr {
+  @extend %categoryPill !optional;
 }
 .selected-bLcqYK {
-	@extend %categoryPillSelected !optional;
+  @extend %categoryPillSelected !optional;
 }
 .pageControlContainer-6nt7kY {
-	@extend %pageControlContainer !optional;
+  @extend %pageControlContainer !optional;
 }
 .pageControl-1XvHg0 {
-	@extend %pageControl !optional;
+  @extend %pageControl !optional;
 }
 .pageButton-1GMGeJ {
-	@extend %pageButton !optional;
+  @extend %pageButton !optional;
 }
 .activeButton-LRWFC_ {
-	@extend %pageButtonActive !optional;
+  @extend %pageButtonActive !optional;
 }
 .pageButtonNext-2_bbdk {
-	@extend %pageButtonNext !optional;
+  @extend %pageButtonNext !optional;
 }
 .pageIndicator-cOEPV8 {
-	@extend %pageIndicator !optional;
+  @extend %pageIndicator !optional;
 }
 .pageButtonPrev-3q9rh8 {
-	@extend %pageButtonPrev !optional;
+  @extend %pageButtonPrev !optional;
 }
 .disabled-29cfPA {
-	@extend %pageButtonDisabled !optional;
+  @extend %pageButtonDisabled !optional;
 }
 .consentCard-1MV_A4 {
-	@extend %consentCard !optional;
+  @extend %consentCard !optional;
 }
 .nowPlayingColumn-1eCBCN {
-	@extend %nowPlayingColumn !optional;
+  @extend %nowPlayingColumn !optional;
 }
 .container-1oAagU {
-	@extend %nowPlayingColumnContainer !optional;
+  @extend %nowPlayingColumnContainer !optional;
 }
 .outer-2JOHae {
-	@extend %activeNowOuterCard !optional;
+  @extend %activeNowOuterCard !optional;
 }
 .interactive-2zD88a {
-	@extend %activeNowCardInteractive !optional;
+  @extend %activeNowCardInteractive !optional;
 }
 .active-1W_Gl9 {
-	@extend %activeNowCardActive !optional;
+  @extend %activeNowCardActive !optional;
 }
 .inset-SbsSFp {
-	@extend %activeNowCardInset !optional;
+  @extend %activeNowCardInset !optional;
 }
 .section-3G9aLW {
-	@extend %activeNowCardSection !optional;
+  @extend %activeNowCardSection !optional;
 }
 .emptyCard-KDifrB {
-	@extend %emptyActiveNowCard !optional;
+  @extend %emptyActiveNowCard !optional;
 }
 .emptyText-29ycwI {
-	@extend %emptyActiveNowText !optional;
+  @extend %emptyActiveNowText !optional;
 }
 .button-1zW0-r {
-	@extend %quickReactButton !optional;
+  @extend %quickReactButton !optional;
 }
 .focused-H4w81f {
-	@extend %quickReactButtonFocused !optional;
+  @extend %quickReactButtonFocused !optional;
 }
 .subscribeTooltipWrapper-3ipXtC {
-	@extend %subscribeTooltipWrapper !optional;
+  @extend %subscribeTooltipWrapper !optional;
 }
 .subscribeTooltipHeader-15pGbG {
-	@extend %subscribeTooltipHeader !optional;
+  @extend %subscribeTooltipHeader !optional;
 }
 .subscribeTooltipText-2A8MMi-1JoUuw {
-	@extend %subscribeTooltipText !optional;
+  @extend %subscribeTooltipText !optional;
 }
 .wrapper-24fR1R {
-	@extend %stickersUploadCard !optional;
+  @extend %stickersUploadCard !optional;
 }
 .tierLock-1eabw6 {
-	@extend %stickersTierLock !optional;
+  @extend %stickersTierLock !optional;
 }
 .messagesPopoutWrap-3zryHW {
-	@extend %messagesPopoutWrap !optional;
+  @extend %messagesPopoutWrap !optional;
 }
 .header-1w9Q93 {
-	@extend %messagesPopoutHeader !optional;
+  @extend %messagesPopoutHeader !optional;
 }
 .footer-5ji8u1 {
-	@extend %messagesPopoutFooter !optional;
+  @extend %messagesPopoutFooter !optional;
 }
 .tabBar-1qdMr5 {
-	@extend %messagesPopoutTabBar !optional;
+  @extend %messagesPopoutTabBar !optional;
 }
 .tab-TRrPC8 {
-	@extend %messagesPopoutTab !optional;
+  @extend %messagesPopoutTab !optional;
 }
 .active-1grPyy {
-	@extend %messagesPopoutTabActive !optional;
+  @extend %messagesPopoutTabActive !optional;
 }
 .channelHeader-DFRX8q {
-	@extend %messagesPopoutChannelHeader !optional;
+  @extend %messagesPopoutChannelHeader !optional;
 }
 .messageGroupWrapper-1jf_7C {
-	@extend %pinnedMessageGroupWrapper !optional;
+  @extend %pinnedMessageGroupWrapper !optional;
 }
 .jumpButton-1ZwI_j {
-	@extend %pinnedJumpButton !optional;
+  @extend %pinnedJumpButton !optional;
 }
 .recentMentionsPopout-2bI1ZN {
-	@extend %recentMentionsPopout !optional;
+  @extend %recentMentionsPopout !optional;
 }
 .container-iA3Qrz {
-	@extend %recentMentionsContainer !optional;
+  @extend %recentMentionsContainer !optional;
 }
 .messageContainer-3VTXBC {
-	@extend %recentMentionsMessagesContainer !optional;	
+  @extend %recentMentionsMessagesContainer !optional;
 }
 .jumpButton-1ITAeq {
-	@extend %recentMentionsJumpButton !optional;
+  @extend %recentMentionsJumpButton !optional;
 }
 .text-2ifC_x {
-	@extend %recentMentionsJumpButtonText !optional;
+  @extend %recentMentionsJumpButtonText !optional;
 }
 .icon-2yhmi8 {
-	@extend %recentMentionsIcon !optional;
+  @extend %recentMentionsIcon !optional;
 }
 .tutorial-Nb3Zz5 {
-	@extend %unreadTutorial !optional;
+  @extend %unreadTutorial !optional;
 }
-.tutorialIcon-25VF3Q{
-	@extend %unreadTutorialIcon !optional;
+.tutorialIcon-25VF3Q {
+  @extend %unreadTutorialIcon !optional;
 }
 .channel-3NJZ1V {
-	@extend %unreadChannel !optional;
+  @extend %unreadChannel !optional;
 }
 .messages-23can0 {
-	@extend %unreadMessages !optional;
+  @extend %unreadMessages !optional;
 }
 .collapseButton-39-IRc {
-	@extend %unreadCollapseButton !optional;
+  @extend %unreadCollapseButton !optional;
 }
 .container-18GwIk {
-	@extend %threadsPopoutContainer !optional;
+  @extend %threadsPopoutContainer !optional;
 }
 .header-3_zmOb {
-	@extend %threadsPopoutHeader !optional;
+  @extend %threadsPopoutHeader !optional;
 }
-.tabBar-2WhZ9G{
-	@extend %threadsPopoutTabBar !optional;
+.tabBar-2WhZ9G {
+  @extend %threadsPopoutTabBar !optional;
 }
 .tab-2Jo-cu {
-	@extend %threadsPopoutTab !optional;
+  @extend %threadsPopoutTab !optional;
 }
 .active-346HgG {
-	@extend %threadsPopoutTabActive !optional;
+  @extend %threadsPopoutTabActive !optional;
 }
 .icon-mJhEWn {
-	@extend %threadsPopoutIcon !optional;
+  @extend %threadsPopoutIcon !optional;
 }
 .icon-3OHhZU {
-	@extend %threadChatIcon !optional;
+  @extend %threadChatIcon !optional;
 }
 .jump-1vIlrw {
-	@extend %threadJumpButton !optional;
+  @extend %threadJumpButton !optional;
 }
 .container-3i3IzO {
-	@extend %threadEmbed !optional;
+  @extend %threadEmbed !optional;
 }
 .cta-1XhfrG {
-	@extend %threadCTA !optional;
+  @extend %threadCTA !optional;
 }
 .spine-29OFwR {
-	@extend %threadChannelConnector !optional;
+  @extend %threadChannelConnector !optional;
 }
 .chatHeaderBar-2fUORh {
-	@extend %threadHeaderBar !optional;
+  @extend %threadHeaderBar !optional;
 }
 .popout-TdhJ6Z {
-	@extend %channelThreadPopout !optional;
+  @extend %channelThreadPopout !optional;
 }
 .row-1qtctT {
-	@extend %channelThreadPopoutRow !optional;
+  @extend %channelThreadPopoutRow !optional;
 }
 .more-2c3Z-T {
-	@extend %channelThreadPopoutMore !optional;
+  @extend %channelThreadPopoutMore !optional;
 }
 .container-2rzKKA {
-	@extend %threadPreview !optional;
+  @extend %threadPreview !optional;
 }
 .modal-ZdazA8 {
-	@extend %threadModal !optional;
+  @extend %threadModal !optional;
 }
 .list-1uSVgu {
-	@extend %threadModalList !optional;
+  @extend %threadModalList !optional;
 }
 .tabBar-3N44FC {
-	@extend %threadModalTabBar !optional;
+  @extend %threadModalTabBar !optional;
 }
 .tab-1tp4jL {
-	@extend %threadModalTab !optional;
+  @extend %threadModalTab !optional;
 }
 .active-3WMEyE {
-	@extend %threadModalTabActive !optional;
+  @extend %threadModalTabActive !optional;
 }
 .previewMessage-2g_aBv {
-	@extend %accessibilityMessagePreview !optional;
+  @extend %accessibilityMessagePreview !optional;
 }
 .hasThread-3h-KJV {
-	@extend %messageHasThread !optional;
+  @extend %messageHasThread !optional;
 }
 .cozy-VmLDNB {
-	@extend %cozy !optional;
+  @extend %cozy !optional;
 }
 .emptyStateHeader-3X-dcc {
-	@extend %threadMembersEmptyHeader !optional;
+  @extend %threadMembersEmptyHeader !optional;
 }
 .emptyStateIcon-2xfcFG {
-	@extend %threadMembersEmptyIcon !optional;
+  @extend %threadMembersEmptyIcon !optional;
 }
 .wrapper-1w686E {
-	@extend %serverBoostWrapper !optional;
+  @extend %serverBoostWrapper !optional;
 }
 .navigationBar-3r0IQK {
-	@extend %serverBoostNavigationBar !optional;
+  @extend %serverBoostNavigationBar !optional;
 }
 .progressBarTrack-31JzOY {
-	@extend %serverBoostProgressBarTrack !optional;
+  @extend %serverBoostProgressBarTrack !optional;
 }
 .progressBarFill-r3JZQ7 {
-	@extend %serverBoostProgressBarFill !optional;
+  @extend %serverBoostProgressBarFill !optional;
 }
 .progressBarMarker-2F7kNV {
-	@extend %serverBoostProgressBarMarker !optional;
+  @extend %serverBoostProgressBarMarker !optional;
 }
 .progressBarMarkerNumSubscriptionsRequired-4_Rgoj {
-	@extend %serverBoostProgressBarMarkerNumSubReq !optional;
+  @extend %serverBoostProgressBarMarkerNumSubReq !optional;
 }
 .progressBarMarkerNextTier-1lj6AI {
-	@extend %serverBoostProgressBarMarkerNextTier !optional;
+  @extend %serverBoostProgressBarMarkerNextTier !optional;
 }
 .progressBarMarkerUnlocked-2l_py0 {
-	@extend %serverBoostProgressBarUnlocked !optional;
+  @extend %serverBoostProgressBarUnlocked !optional;
 }
 .progressBarMarkerIndicator-2Vf_sE {
-	@extend %serverBoostProgressBarMarkerIndicator !optional;
+  @extend %serverBoostProgressBarMarkerIndicator !optional;
 }
 .planCard-3heGy1 {
-	@extend %serverBoostPlanCard !optional;
+  @extend %serverBoostPlanCard !optional;
 }
 .perksTable-2Hjc0m {
-	@extend %perksTable !optional;
+  @extend %perksTable !optional;
 }
 .perksTableRow-n0T8Yj {
-	@extend %perksTableRow !optional;
+  @extend %perksTableRow !optional;
 }
 .perksTableRowBody-pELwOS {
-	@extend %perksTableRowBody !optional;
+  @extend %perksTableRowBody !optional;
 }
 .perksTableRowFocused--UdCIh {
-	@extend %perksTableRowFocused !optional;
+  @extend %perksTableRowFocused !optional;
 }
 .perksTableRowPerkHighlighted-33Ea3c {
-	@extend %perksTableRowHighlighted !optional;
+  @extend %perksTableRowHighlighted !optional;
 }
 .perksTableHighlightedColumnHeader-1f38p4 {
-	@extend %perksTableHighlightedColumnHeader !optional;
+  @extend %perksTableHighlightedColumnHeader !optional;
 }
 .perksTableHighlightedColumnHeaderCopy-2DMeJr {
-	@extend %perksTableHighlightedColumnHeaderCopy !optional;
+  @extend %perksTableHighlightedColumnHeaderCopy !optional;
 }
 .perksTablePerkCheckmarkTier0-S7zpLb {
-	@extend %perksTablePerkCheckmarkTier0 !optional;
+  @extend %perksTablePerkCheckmarkTier0 !optional;
 }
 .perkPopout-2bt1aW {
-	@extend %perkPopout !optional;
+  @extend %perkPopout !optional;
 }
 .compactButton-3hG-bs {
-	@extend %waveButton !optional;
+  @extend %waveButton !optional;
 }
 .compactButtonDisabled-MwB2d6 {
-	@extend %waveButtonDisabled !optional;
+  @extend %waveButtonDisabled !optional;
 }
 .option-1O-Hwt {
-	@extend %serverDeleteReasonOption !optional;
+  @extend %serverDeleteReasonOption !optional;
 }
 .checkbox-1ycfTw {
-	@extend %deleteServerCheckbox !optional;
+  @extend %deleteServerCheckbox !optional;
 }
 .checkboxInner-1aRh1d {
-	@extend %deleteServerCheckboxInner !optional;
+  @extend %deleteServerCheckboxInner !optional;
 }
 .checkboxElement-uwAa9F {
-	@extend %deleteServerCheckboxElement !optional;
+  @extend %deleteServerCheckboxElement !optional;
 }
 .streamPreview-I7itZ6 {
-	@extend %streamPopoutPreview !optional;
+  @extend %streamPopoutPreview !optional;
 }
 .previewContainer-35LFgt {
-	@extend %streamPopoutPreviewContainer !optional;
+  @extend %streamPopoutPreviewContainer !optional;
 }
 .watchButton-2YRKxv {
-	@extend %streamPopoutWatchButton !optional;
+  @extend %streamPopoutWatchButton !optional;
 }
 .header-1sd0RU {
-	@extend %eventHeader !optional;
+  @extend %eventHeader !optional;
 }
 .circle-2tR2Qh {
-	@extend %eventIconCircle !optional;
+  @extend %eventIconCircle !optional;
 }
 .eventCard-2ZL9GD {
-	@extend %eventCard !optional;
+  @extend %eventCard !optional;
 }
 .eventStatusBrand-3D-ae6 {
-	@extend %eventStatusBrand !optional;
+  @extend %eventStatusBrand !optional;
 }
 .eventStatusLabel-1og3vG {
-	@extend %eventStatusLabel !optional;
+  @extend %eventStatusLabel !optional;
 }
 .eventStatusGreen-2-f2N8 {
-	@extend %eventStatusLabel !optional;
+  @extend %eventStatusLabel !optional;
 }
 .previewCard-E137i2 {
-	@extend %eventStatusGreen !optional;
+  @extend %eventStatusGreen !optional;
 }
 .rsvpCount-iCkObl {
-	@extend %eventRSVPCount !optional;
+  @extend %eventRSVPCount !optional;
 }
 .rsvpIcon-1R5Esx {
-	@extend %eventRSVPIcon !optional;
+  @extend %eventRSVPIcon !optional;
 }
 .container-3EBHNg {
-	@extend %eventInfoHeader !optional;
+  @extend %eventInfoHeader !optional;
 }
 .container-3eB5yh {
-	@extend %eventInfoContent !optional;
+  @extend %eventInfoContent !optional;
 }
 .contentContainer-BWAau5 {
-	@extend %eventInfoContentContainer !optional;
+  @extend %eventInfoContentContainer !optional;
 }
 .circle-1g-jMn {
-	@extend %eventInfoIconCircle !optional;
+  @extend %eventInfoIconCircle !optional;
 }
 .iconBackground-3gHYPJ {
-	@extend %eventIconBackground !optional;
+  @extend %eventIconBackground !optional;
 }
 .progressBar-18rmp1 {
-	@extend %createEventProgressBar !optional;
+  @extend %createEventProgressBar !optional;
 }
 .selectedProgressBar-11z5d9 {
-	@extend %createEventProgressBarSelected !optional;
+  @extend %createEventProgressBarSelected !optional;
 }
 .container-1hz3gm {
-	@extend %createEventLocationContainer !optional;
+  @extend %createEventLocationContainer !optional;
 }
 .form-1ejeax {
-	@extend %createEventInfoForm !optional;
+  @extend %createEventInfoForm !optional;
 }
 .container-3zZkKh {
-	@extend %createEventCreateStageContainer !optional;
+  @extend %createEventCreateStageContainer !optional;
 }
 .textInput-3g8y92 {
-	@extend %createEventTextInput !optional;
+  @extend %createEventTextInput !optional;
 }
 .previewCard-E137i2 {
-	@extend %createEventPreviewCard !optional;
+  @extend %createEventPreviewCard !optional;
 }
 .iconContainer-36kI2p {
-	@extend %createEventIconContainer !optional;
+  @extend %createEventIconContainer !optional;
 }
 .container-1SX9VC {
-	@extend %stickerSearchContainer !optional;
+  @extend %stickerSearchContainer !optional;
 }
 .wrapper-22rqw6 {
-	@extend %stickerCategoryWrapper !optional;
+  @extend %stickerCategoryWrapper !optional;
 }
 .stickerCategoryGeneric-29JiZ2 {
-	@extend %stickerCategoryGeneric !optional;
+  @extend %stickerCategoryGeneric !optional;
 }
 .stickerCategoryGenericSelected-DnO2K8 {
-	@extend %stickerCategoryGenericSelected !optional;
+  @extend %stickerCategoryGenericSelected !optional;
 }
 .upsellContent-1ppSei {
-	@extend %stickerUpsellContent !optional;
+  @extend %stickerUpsellContent !optional;
 }
 .row-2mBMW2 {
-	@extend %stickerPickerRow !optional;
+  @extend %stickerPickerRow !optional;
 }
 .stickerInspected-mwnU6w {
-	@extend %stickerPickerInspected !optional;
+  @extend %stickerPickerInspected !optional;
 }
 .inspectedIndicator-27zwNZ {
-	@extend %stickerPickerInspectedIndicator !optional;
+  @extend %stickerPickerInspectedIndicator !optional;
 }
 .containerBackground-Ang24O {
-	@extend %stickerSuggestionContainerBackground !optional;
+  @extend %stickerSuggestionContainerBackground !optional;
 }

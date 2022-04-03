@@ -1,55 +1,54 @@
 /* SPINNER */
 %spinnerPopout {
-	background-color: hsla(0, 0%, 0%, .6);
+  background-color: hsla(0, 0%, 0%, 0.6);
 }
 %spinnerPulsingEllipsisItem {
-	background-color: $main-color;
-	border-radius: 50%;
-	animation: cv-spinner-pulse 1s ease-in-out infinite alternate;
-	opacity: .3;
-	&:nth-child(2) {
-		animation-delay: .2s;
-	}
-	&:nth-child(3) {
-		animation-delay: .4s;
-	}
+  background-color: $main-color;
+  border-radius: 50%;
+  animation: cv-spinner-pulse 1s ease-in-out infinite alternate;
+  opacity: 0.3;
+  &:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  &:nth-child(3) {
+    animation-delay: 0.4s;
+  }
 }
 %spinnerWanderingCubesItem {
-	width: 100%;
-	height: 100%;
-	background: transparent;
-	animation: none;
-	filter: drop-shadow(0 0 3px $main-color);
-	&:before,
-	&:after {
-		content: "";
-		position: absolute;
-		@include stretch;
-		border: 3px solid transparent;
-		border-radius: 50%;
-	}
-	&:before {
-		animation: cv-spin 1s ease-in-out infinite;
-	}
-	&:after {
-		border-color: $main-color;
-		opacity: .1;
-	}
-	&:first-child {
-		&:before {
-			border-left-color: $main-color;
-			border-right-color: $main-color;
-		}
-		
-	}
-	&:last-child {
-		width: calc(100% - 10px);
-		height: calc(100% - 10px);
-		margin: 5px;
-		&:before {
-			border-top-color: $main-color;
-			border-bottom-color: $main-color;
-			animation-direction: reverse;
-		}
-	}
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  animation: none;
+  filter: drop-shadow(0 0 3px $main-color);
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    @include stretch;
+    border: 3px solid transparent;
+    border-radius: 50%;
+  }
+  &:before {
+    animation: cv-spin 1s ease-in-out infinite;
+  }
+  &:after {
+    border-color: $main-color;
+    opacity: 0.1;
+  }
+  &:first-child {
+    &:before {
+      border-left-color: $main-color;
+      border-right-color: $main-color;
+    }
+  }
+  &:last-child {
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    margin: 5px;
+    &:before {
+      border-top-color: $main-color;
+      border-bottom-color: $main-color;
+      animation-direction: reverse;
+    }
+  }
 }

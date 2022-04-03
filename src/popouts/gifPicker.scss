@@ -1,112 +1,110 @@
 /* GIF PICKER */
 
 %gifPickerHeader {
-
-	// SEARCH
-	%gifPickerSearchBar {
-		background-color: hsla(0, 0%, 100%, .07);
-		border: none;
-		box-shadow: 0 0 0 2px hsla(0, 0%, 100%, .09);
-		margin-top: 2px;
-		&:focus-within {
-			box-shadow: 0 0 2px 2px $main-color;
-			transition: all .15s ease-in-out;
-		}
-		%gifPickerSearchInput {
-			color: #fff;	
-			&::placeholder {
-				color: hsla(0, 0%, 100%, .3);
-			}
-		}
-	}
-	%gifPickerSearchIcon,
-	%gifPickerSearchBackButton {
-		color: hsla(0, 0%, 100%, .7);
-		transition: all .15s ease-in-out;
-		&:hover {
-			color: #fff;
-		}
-	}
-	%gifPickerSearchHeader {
-		color: hsla(0, 0%, 100%, .7);
-	}
+  // SEARCH
+  %gifPickerSearchBar {
+    background-color: hsla(0, 0%, 100%, 0.07);
+    border: none;
+    box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.09);
+    margin-top: 2px;
+    &:focus-within {
+      box-shadow: 0 0 2px 2px $main-color;
+      transition: all 0.15s ease-in-out;
+    }
+    %gifPickerSearchInput {
+      color: #fff;
+      &::placeholder {
+        color: hsla(0, 0%, 100%, 0.3);
+      }
+    }
+  }
+  %gifPickerSearchIcon,
+  %gifPickerSearchBackButton {
+    color: hsla(0, 0%, 100%, 0.7);
+    transition: all 0.15s ease-in-out;
+    &:hover {
+      color: #fff;
+    }
+  }
+  %gifPickerSearchHeader {
+    color: hsla(0, 0%, 100%, 0.7);
+  }
 }
 %gifPickerContent {
+  // CATEGORIES
+  %gifPickerCategoryFade,
+  %gifPickerCategoryFadeBlurple {
+    transition: all 0.15s ease-in-out;
+  }
+  %gifPickerCategoryFade {
+    &:hover {
+      background: rgba(0, 0, 0, 0.7);
+    }
+  }
+  %gifPickerCategoryFadeBlurple {
+    background: transparent;
+    &:hover {
+      background: transparent;
+    }
+    &:after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      display: block;
+      background: $main-color;
+      border-radius: 4px;
+      opacity: 0.7;
+    }
+  }
+  %gifPickerCategoryText {
+    color: #fff;
+    filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.7));
+  }
 
-	// CATEGORIES
-	%gifPickerCategoryFade,
-	%gifPickerCategoryFadeBlurple {
-		transition: all .15s ease-in-out;
-	}
-	%gifPickerCategoryFade {
-		&:hover {
-			background: rgba(0, 0, 0, .7);
-		}
-	}
-	%gifPickerCategoryFadeBlurple {
-		background: transparent;
-		&:hover {
-			background: transparent;
-		}
-		&:after {
-			content: "";
-			width: 100%;
-			height: 100%;
-			display: block;
-			background: $main-color;
-			border-radius: 4px;
-			opacity: .7;
-		}
-	}
-	%gifPickerCategoryText {
-		color: #fff;
-		filter: drop-shadow(0 1px 1px rgba(0, 0, 0, .7));
-	}
+  // RESULTS
+  %gifPickerResult {
+    &:after {
+      transition: all 0.15s ease-in-out;
+    }
+    &[style*='background-color:'] {
+      background: $main-color !important;
+    }
+    &[style*='background-color: rgb(179, 174, 255)'] {
+      filter: brightness(1.3);
+    }
+    &[style*='background-color: rgb(115, 142, 245)'] {
+      filter: grayscale(0.3);
+    }
+    &[style*='background-color: rgb(146, 154, 250)'] {
+      filter: brightness(0.7);
+    }
+  }
+  %gifPickerResult:hover,
+  %gifPickerResultFocused {
+    &:after {
+      box-shadow: inset 0 0 0 2px $main-color, inset 0 0 0 3px rgba(0, 0, 0, 0.3);
+    }
+  }
+  %gifPickerPlaceholder {
+    background: hsla(0, 0%, 100%, 0.07);
+  }
 
-	// RESULTS
-	%gifPickerResult {
-		&:after {
-			transition: all .15s ease-in-out;
-		}
-		&[style*="background-color:"] {
-			background: $main-color !important;
-		}
-		&[style*="background-color: rgb(179, 174, 255)"] {
-			filter: brightness(1.3);
-		}
-		&[style*="background-color: rgb(115, 142, 245)"] {
-			filter: grayscale(.3)
-		}
-		&[style*="background-color: rgb(146, 154, 250)"] {
-			filter: brightness(.7);
-		}
-	}
-	%gifPickerResult:hover,
-	%gifPickerResultFocused {
-		&:after {
-			box-shadow: inset 0 0 0 2px $main-color, inset 0 0 0 3px rgba(0, 0, 0, .3);
-		}
-	}
-	%gifPickerPlaceholder {
-		background: hsla(0, 0%, 100%, .07);
-	}
+  // HINT CARD
+  %gifPickerEmptyHintCard {
+    background: hsla(0, 0%, 100%, 0.04);
+    color: hsla(0, 0%, 100%, 0.5);
+  }
 
-	// HINT CARD
-	%gifPickerEmptyHintCard {
-		background: hsla(0, 0%, 100%, .04);
-		color: hsla(0, 0%, 100%, .5);
-	}
-
-	// END CONTAINER
-	%gifPickerEndContainer {
-		&:after {
-			filter: grayscale(1) brightness(.7);
-			opacity: .3;
-		}
-	}
+  // END CONTAINER
+  %gifPickerEndContainer {
+    &:after {
+      filter: grayscale(1) brightness(0.7);
+      opacity: 0.3;
+    }
+  }
 }
 
 //Search Suggestion
 .searchSuggestion-PfUKKS {
-	background: hsla(0, 0%, 100%, .04);
+  background: hsla(0, 0%, 100%, 0.04);
 }

@@ -1,34 +1,34 @@
 // GUILDS
 %guilds {
-	%badge {
-		animation: cv-badge 1s ease-in-out infinite alternate;
-	}
+  %badge {
+    animation: cv-badge 1s ease-in-out infinite alternate;
+  }
 }
 
 // CHANNELS
 %channels {
-	%categoryContainerDefault,
-	%channelContainerDefault {
-		animation: cv-fade-in .3s ease-in-out;
-	}
+  %categoryContainerDefault,
+  %channelContainerDefault {
+    animation: cv-fade-in 0.3s ease-in-out;
+  }
 }
 
 // MESSAGES
 %message,
 %messageGroup,
 %divider {
-	animation: cv-fade-in .15s ease-in-out .25s backwards;
+  animation: cv-fade-in 0.15s ease-in-out 0.25s backwards;
 }
 %messageGroupBlocked %messageGroup {
-	animation: cv-fade-in .3s ease-in-out;
+  animation: cv-fade-in 0.3s ease-in-out;
 }
 
 // KEYFRAMES
 @keyframes cv-badge {
-	from {
-		background: $main-color;
-	}
-	to {
-		background: $hover-color;
-	}
+  from {
+    background: $main-color;
+  }
+  to {
+    background: $hover-color;
+  }
 }

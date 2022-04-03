@@ -1,36 +1,35 @@
 // PAGE CONTROL
 %themeDark {
-    %pageButton {
-        &%pageButtonActive {
-            background-color: var(--main-color);
-        }
-        &%pageButtonActive:hover {
-            background-color: var(--main-color);
-        }
-        &:hover {
-            background-color: var(--hover-color);
-            &:disabled {
-                background-color: transparent;
-            }
-        }
+  %pageButton {
+    &%pageButtonActive {
+      background-color: var(--main-color);
     }
+    &%pageButtonActive:hover {
+      background-color: var(--main-color);
+    }
+    &:hover {
+      background-color: var(--hover-color);
+      &:disabled {
+        background-color: transparent;
+      }
+    }
+  }
 }
 %pageButtonNext,
 %pageIndicator,
 %pageButtonPrev {
-    border-color: $main-color;
-    color: #fff;
+  border-color: $main-color;
+  color: #fff;
 }
 %pageButtonNext,
 %pageButtonPrev {
-	&%pageButtonDisabled {
-        border-color: $main-color;
-        color: #fff;
-        opacity: .5;
-        cursor: not-allowed;
-        
-    }
-    &:not(%pageButtonDisabled):hover {
-        border-color: $hover-color;
-    }
+  &%pageButtonDisabled {
+    border-color: $main-color;
+    color: #fff;
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  &:not(%pageButtonDisabled):hover {
+    border-color: $hover-color;
+  }
 }

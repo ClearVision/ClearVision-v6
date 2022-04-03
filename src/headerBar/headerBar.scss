@@ -1,68 +1,68 @@
 /* HEADER BAR */
 %base {
-	%headerBar {
-		height: 48px;
-		background: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .6));
-		box-shadow: 0 0 10px rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .6));
-		color: hsla(0, 0%, 100%, .5);
-	}
-	%threadHeaderBar {
-		background: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .6));
-		box-shadow: 0 0 10px rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .6));
-		color: hsla(0, 0%, 100%, .5);
-	}
+  %headerBar {
+    height: 48px;
+    background: rgba(0, 0, 0, calc(#{cv('bg.app.shading')} * 0.6));
+    box-shadow: 0 0 10px rgba(0, 0, 0, calc(#{cv('bg.app.shading')} * 0.6));
+    color: hsla(0, 0%, 100%, 0.5);
+  }
+  %threadHeaderBar {
+    background: rgba(0, 0, 0, calc(#{cv('bg.app.shading')} * 0.6));
+    box-shadow: 0 0 10px rgba(0, 0, 0, calc(#{cv('bg.app.shading')} * 0.6));
+    color: hsla(0, 0%, 100%, 0.5);
+  }
 }
 %headerBar {
-	%headerBarChildren {
-		-webkit-mask: linear-gradient(to left, transparent, #000 20px);
-		mask: linear-gradient(to left, transparent, #000 20px);
-		&:after {
-			display: none;
-		}
-		%headerBarIcon {
-			color: $main-color;
-			filter: drop-shadow(0 0 3px);
-			width: 22px;
-		}
-	}
-	%headerBarTitle {
-		margin-left: 0;
-		color: #fff;
-		text-shadow: 0 0 3px #000;
-		font-family: cv("font.main");
-		&%headerBarTitleMuted {
-			color: hsla(0, 0%, 100%, .3);
-			text-shadow: none;
-		}
-	}
-	%headerBarTopic {
-		color: hsla(0, 0%, 100%, .5);
-		> %anchor {
-			color: $main-color;
-			@include hover-shadow;
-		}
-	}
-	%headerBarAkaBadge {
-		background: hsla(0, 0%, 100%, .1);
-		color: #fff;
-	}
-	%headerBarNicknames {
-		color: hsla(0, 0%, 100%, .5);
-	}
-	%headerBarDivider {
-		background: hsla(0, 0%, 100%, .1);
-	}
+  %headerBarChildren {
+    -webkit-mask: linear-gradient(to left, transparent, #000 20px);
+    mask: linear-gradient(to left, transparent, #000 20px);
+    &:after {
+      display: none;
+    }
+    %headerBarIcon {
+      color: $main-color;
+      filter: drop-shadow(0 0 3px);
+      width: 22px;
+    }
+  }
+  %headerBarTitle {
+    margin-left: 0;
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+    font-family: cv('font.main');
+    &%headerBarTitleMuted {
+      color: hsla(0, 0%, 100%, 0.3);
+      text-shadow: none;
+    }
+  }
+  %headerBarTopic {
+    color: hsla(0, 0%, 100%, 0.5);
+    > %anchor {
+      color: $main-color;
+      @include hover-shadow;
+    }
+  }
+  %headerBarAkaBadge {
+    background: hsla(0, 0%, 100%, 0.1);
+    color: #fff;
+  }
+  %headerBarNicknames {
+    color: hsla(0, 0%, 100%, 0.5);
+  }
+  %headerBarDivider {
+    background: hsla(0, 0%, 100%, 0.1);
+  }
 }
 %headerBarIconWrapper {
-	margin: 0 1px;
-	padding: 2px 3px;
-	box-sizing: content-box;
+  margin: 0 1px;
+  padding: 2px 3px;
+  box-sizing: content-box;
 }
 %headerBarIconWrapper > svg > foreignObject {
-	mask: none;
+  mask: none;
 }
 %headerBarInput {
-	&:focus {
-		background-color: hsla(0, 0%, 100%, .1);
-	}
+  &:focus {
+    background-color: hsla(0, 0%, 100%, 0.1);
+  }
 }

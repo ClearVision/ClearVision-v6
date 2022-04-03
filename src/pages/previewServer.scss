@@ -2,48 +2,48 @@
 
 // WELCOME MODAL
 .optionContainer-yOpaLq {
-    background-color: $main-color;
-    &:hover {
-        background-color: $hover-color;
-    }
-    .optionArrow-1kVloh {
-        color: #fff;
-    }
+  background-color: $main-color;
+  &:hover {
+    background-color: $hover-color;
+  }
+  .optionArrow-1kVloh {
+    color: #fff;
+  }
 }
 .channelIcon-QyaRxN {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 %themeDark .notice-12Koq- {
-	background-color: transparent;
+  background-color: transparent;
 }
 .notice-12Koq- .header-26uvhX::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	right: 0;
-	left: 0;
-	bottom: 0;
-	background-color: var(--main-color);
-	opacity: .6;
-	pointer-events: none;
-	z-index: -1;
-	border-radius: 3px;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: var(--main-color);
+  opacity: 0.6;
+  pointer-events: none;
+  z-index: -1;
+  border-radius: 3px;
 }
 
 .container-2dXT_2 {
-    background-color: rgba(0, 0, 0, .8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 // TOP BAR JOIN AND BACK BUTTON
 .button-3_1yil:hover {
-	background-color: $hover-color;
+  background-color: $hover-color;
 }
 
 // WELCOME TO SERVER CARDS
 %serverWelcomeCards {
-	background-color: hsla(0, 0%, 0%, .4);
+  background-color: hsla(0, 0%, 0%, 0.4);
 }
 %serverInviteTick {
-	background-color: $main-color;
+  background-color: $main-color;
 }

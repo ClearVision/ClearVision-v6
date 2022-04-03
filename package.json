@@ -7,6 +7,7 @@
     "build.sass": "sass --style=compressed --no-source-map hljs.scss:public/hljs.css main.scss:public/main.css",
     "build.prefix": "postcss public/*.css --dir=public --use=autoprefixer  -b=\"> 5%\" --no-map",
     "clean": "rimraf {public,test}",
+    "format": "prettier --write .",
     "test": "npm run clean && npm run test.build",
     "test.build": "sass --style=expanded --no-source-map hljs.scss:test/hljs.css main.scss:test/main.css"
   },
@@ -30,10 +31,10 @@
   },
   "homepage": "https://clearvision.gitlab.io",
   "devDependencies": {
-    "autoprefixer": "^10.4.2",
+    "autoprefixer": "^10.4.4",
     "postcss-cli": "^9.1.0",
+    "prettier": "^2.6.2",
     "rimraf": "^3.0.2",
-    "sass": "^1.47.0"
-  },
-  "dependencies": {}
+    "sass": "^1.49.11"
+  }
 }

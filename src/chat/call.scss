@@ -1,64 +1,64 @@
 /* PRIVATE CALL */
 %callWrapper {
-	background: rgba(0, 0, 0, calc(var(--background-shading) * .6));
-	&%callMinimum {
-		background: rgba(0, 0, 0, calc(var(--background-shading) * .6));
-	}
+  background: rgba(0, 0, 0, calc(var(--background-shading) * 0.6));
+  &%callMinimum {
+    background: rgba(0, 0, 0, calc(var(--background-shading) * 0.6));
+  }
 }
 %callContainer {
-	background-color: transparent;
+  background-color: transparent;
 }
 
 // VIDEO STREAM
 %callTile {
-	background-color: rgba(0, 0, 0, .7);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 %callInviteButton {
-	background-color: $main-color;
+  background-color: $main-color;
 }
 %callUserTile {
-	background-color: transparent;
+  background-color: transparent;
 }
 %callParticipantsButton {
-	background-color: rgba(0, 0, 0, .4);
-	&:hover {
-		background-color: rgba(0, 0, 0, .6);
-	}
+  background-color: rgba(0, 0, 0, 0.4);
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
 }
 %callTileBorder {
-	&%callTileSpeaking {
-		box-shadow: inset 0 0 0 2px var(--main-color);
-	}
+  &%callTileSpeaking {
+    box-shadow: inset 0 0 0 2px var(--main-color);
+  }
 }
 
 // ACTION BUTTON
 %button%callCenterButton {
-	border-radius: 50%;
+  border-radius: 50%;
 }
 %callButtonColorable {
-	&%callButtonPrimaryDark {
-		background-color: rgba(0, 0, 0, .6);
-		color: #fff;
-		&:hover {
-			background-color: var(--hover-color);
-			color: #fff;
-		}
-	}
-	&%callButtonWhite {
-		color: #fff;
-		background-color: $main-color;
-		&:hover {
-			background-color: $hover-color;
-		}
-		%callButtonActive {
-			background-color: transparent;
-		}
-		%callCenterIcon,
-		%micSlash {
-			color: #fff;
-		}
-	}
-	&%callButtonRed {
-		background-color: var(--danger-color);
-	}
+  &%callButtonPrimaryDark {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    &:hover {
+      background-color: var(--hover-color);
+      color: #fff;
+    }
+  }
+  &%callButtonWhite {
+    color: #fff;
+    background-color: $main-color;
+    &:hover {
+      background-color: $hover-color;
+    }
+    %callButtonActive {
+      background-color: transparent;
+    }
+    %callCenterIcon,
+    %micSlash {
+      color: #fff;
+    }
+  }
+  &%callButtonRed {
+    background-color: var(--danger-color);
+  }
 }

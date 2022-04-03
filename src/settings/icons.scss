@@ -1,96 +1,94 @@
 /* SETTINGS SIDEBAR ICONS */
 %settingsSidebar {
+  // USER SETTINGS
+  [aria-label='User Settings'] {
+    // ICON MAP
+    $icons: (
+      // My Account
+      'my-account': 'https://clearvision.gitlab.io/icons/person.svg',
+      // User Profile
+      'profile-customization': 'https://clearvision.gitlab.io/icons/user_profile.svg',
+      // Privacy & Safety
+      'privacy-&-safety': 'https://clearvision.gitlab.io/icons/security.svg',
+      // Authorized Apps
+      'authorized-apps': 'https://clearvision.gitlab.io/icons/apps.svg',
+      // Connections
+      'connections': 'https://clearvision.gitlab.io/icons/link.svg',
 
-	// USER SETTINGS
-	[aria-label="User Settings"] {
+      // Discord Nitro
+      'discord-nitro': 'https://clearvision.gitlab.io/icons/nitro.svg',
+      // Server Boost
+      'nitro-server-boost': 'https://clearvision.gitlab.io/icons/server_boost.svg',
+      // Subscriptions
+      'subscriptions': 'https://clearvision.gitlab.io/icons/subscriptions.svg',
+      // Gift Inventory
+      'library-inventory': 'https://clearvision.gitlab.io/icons/gift.svg',
+      // Billing
+      'billing': 'https://clearvision.gitlab.io/icons/payment.svg',
 
-		// ICON MAP
-		$icons: (
-			// My Account 
-			"my-account": "https://clearvision.gitlab.io/icons/person.svg",
-			// User Profile 
-			"profile-customization": "https://clearvision.gitlab.io/icons/user_profile.svg",
-			// Privacy & Safety
-			"privacy-&-safety": "https://clearvision.gitlab.io/icons/security.svg",
-			// Authorized Apps
-			"authorized-apps": "https://clearvision.gitlab.io/icons/apps.svg",
-			// Connections
-			"connections": "https://clearvision.gitlab.io/icons/link.svg",
+      // Appearance
+      'appearance': 'https://clearvision.gitlab.io/icons/camera.svg',
+      // Accessibility
+      'accessibility': 'https://clearvision.gitlab.io/icons/accessibility.svg',
+      // Voice & Video
+      'voice-&-video': 'https://clearvision.gitlab.io/icons/mic.svg',
+      // Text & Images
+      'text-&-images': 'https://clearvision.gitlab.io/icons/chat.svg',
+      // Notifications
+      'notifications': 'https://clearvision.gitlab.io/icons/notifications.svg',
+      // Keybinds
+      'keybinds': 'https://clearvision.gitlab.io/icons/keyboard.svg',
+      // Language
+      'language': 'https://clearvision.gitlab.io/icons/language.svg',
+      // Windows Settings
+      'windows': 'https://clearvision.gitlab.io/icons/windows.svg',
+      // Linux Settings
+      'linux': 'https://clearvision.gitlab.io/icons/linux.svg',
+      // Streamer Mode
+      'streamer-mode': 'https://clearvision.gitlab.io/icons/videocam.svg',
+      // Advanced
+      'advanced': 'https://clearvision.gitlab.io/icons/bug.svg',
 
-			// Discord Nitro
-			"discord-nitro": "https://clearvision.gitlab.io/icons/nitro.svg",
-			// Server Boost
-			"nitro-server-boost": "https://clearvision.gitlab.io/icons/server_boost.svg",
-			// Subscriptions
-			"subscriptions": "https://clearvision.gitlab.io/icons/subscriptions.svg",
-			// Gift Inventory
-			"library-inventory": "https://clearvision.gitlab.io/icons/gift.svg",
-			// Billing
-			"billing": "https://clearvision.gitlab.io/icons/payment.svg",
+      // Game Activity
+      'game-activity': 'https://clearvision.gitlab.io/icons/games.svg',
+      // Overlay
+      'overlay': 'https://clearvision.gitlab.io/icons/aspect_ratio.svg',
 
-			// Appearance
-			"appearance": "https://clearvision.gitlab.io/icons/camera.svg",
-			// Accessibility
-			"accessibility": "https://clearvision.gitlab.io/icons/accessibility.svg",
-			// Voice & Video
-			"voice-&-video": "https://clearvision.gitlab.io/icons/mic.svg",
-			// Text & Images
-			"text-&-images": "https://clearvision.gitlab.io/icons/chat.svg",
-			// Notifications
-			"notifications": "https://clearvision.gitlab.io/icons/notifications.svg",
-			// Keybinds
-			"keybinds": "https://clearvision.gitlab.io/icons/keyboard.svg",
-			// Language
-			"language": "https://clearvision.gitlab.io/icons/language.svg",
-			// Windows Settings
-			"windows": "https://clearvision.gitlab.io/icons/windows.svg",
-			// Linux Settings
-			"linux": "https://clearvision.gitlab.io/icons/linux.svg",
-			// Streamer Mode 
-			"streamer-mode": "https://clearvision.gitlab.io/icons/videocam.svg",
-			// Advanced
-			"advanced": "https://clearvision.gitlab.io/icons/bug.svg",
+      // Change Log
+      'changelog': 'https://clearvision.gitlab.io/icons/history.svg',
+      //HypeSquad
+      'hypesquad-online': 'https://clearvision.gitlab.io/icons/hypesquad.svg',
 
-			// Game Activity
-			"game-activity": "https://clearvision.gitlab.io/icons/games.svg",
-			// Overlay
-			"overlay": "https://clearvision.gitlab.io/icons/aspect_ratio.svg",
+      // Log Out
+      'logout': 'https://clearvision.gitlab.io/icons/exit.svg'
+    );
 
-			// Change Log
-			"changelog": "https://clearvision.gitlab.io/icons/history.svg",
-			//HypeSquad 
-			"hypesquad-online": "https://clearvision.gitlab.io/icons/hypesquad.svg",
+    // GENERAL STYLES
+    %tabBarItem {
+      padding-left: 50px !important;
+      &:before {
+        content: '';
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        left: 15px;
+        margin-top: -2px;
+      }
+      &:hover:before {
+        transform: rotateY(180deg);
+        transition: all 0.15s ease-in-out;
+      }
+    }
 
-			// Log Out
-			"logout": "https://clearvision.gitlab.io/icons/exit.svg"
-		);
-
-		// GENERAL STYLES
-		%tabBarItem {
-			padding-left: 50px !important;
-			&:before {
-				content: "";
-				position: absolute;
-				width: 24px;
-				height: 24px;
-				left: 15px;
-				margin-top: -2px;
-			}
-			&:hover:before{
-				transform: rotateY(180deg);
-				transition: all .15s ease-in-out;
-			}
-		}
-
-		// ICON STYLES
-		@each $i, $u in $icons {
-			%tabBarItem[aria-controls="#{$i}-tab"]:before {
-				background-image: url(#{$u});	
-			}
-		}
-	}
+    // ICON STYLES
+    @each $i, $u in $icons {
+      %tabBarItem[aria-controls='#{$i}-tab']:before {
+        background-image: url(#{$u});
+      }
+    }
+  }
 }
 %premiumLabel > svg,
 %serverBoostIcon {
-	margin-right: 15px;
+  margin-right: 15px;
 }

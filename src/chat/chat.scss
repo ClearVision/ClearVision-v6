@@ -1,139 +1,138 @@
 /* CHAT */
 %base {
-	%chat {
-		background: transparent;
-	}
+  %chat {
+    background: transparent;
+  }
 }
 %chat {
+  // CONTENT
+  %chatContentWrapper {
+    background: transparent;
+    &:before {
+      display: none;
+    }
+  }
+  %chatContent {
+    background: rgba(0, 0, 0, calc(#{cv('bg.app.shading')} * 0.5));
+  }
+  %messages {
+    background: transparent;
+    backface-visibility: hidden;
+  }
 
-	// CONTENT
-	%chatContentWrapper {
-		background: transparent;
-		&:before {
-			display: none;
-		}
-	}
-	%chatContent {
-		background: rgba(0, 0, 0, calc(#{cv("bg.app.shading")} * .5));
-	}
-	%messages {
-		background: transparent;
-		backface-visibility: hidden;
-	}
-
-	// BASE
-	%chatBase {
-		border-bottom: 1px solid hsla(0, 0%, 100%, .02);
-		> h1 {
-			color: hsla(0, 0%, 100%, .3);
-			> strong {
-				color: hsla(0, 0%, 100%, .5);
-				font-weight: 700;
-			}
-		}
-	}
+  // BASE
+  %chatBase {
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.02);
+    > h1 {
+      color: hsla(0, 0%, 100%, 0.3);
+      > strong {
+        color: hsla(0, 0%, 100%, 0.5);
+        font-weight: 700;
+      }
+    }
+  }
 }
 
 // GATED CHANNEL
 %chatContentWrapper > %scrollerWrap {
-	background: rgba(0, 0, 0, .5);
+  background: rgba(0, 0, 0, 0.5);
 }
 %chatGatedContent {
-	%chatGatedImage {
-		filter: hue-rotate(-47deg) saturate(2);
-		opacity: .5;
-	}
-	%chatGatedTitle {
-		color: cv("colors.danger");
-		font-weight: 600;
-		text-shadow: 0 0 3px #000;
-	}
-	%chatGatedDescription {
-		color: hsla(0, 0%, 100%, .7);
-	}
-	%chatGatedSeparator {
-		background: hsla(0, 0%, 100%, .07);
-	}
-	%chatGatedActionRed {
-		position: relative;
-		background: transparent;
-		color: hsla(0, 0%, 100%, .7);
-		z-index: 1;
-		&:after {
-			content: "";
-			position: absolute;
-			@include stretch;
-			background: cv("colors.danger");
-			border-radius: 3px;
-			opacity: .5;
-			transition: inherit;
-			z-index: -1;
-		}
-		&:hover {
-			color: #fff;
-			&:after {
-				opacity: .7;
-			}
-		}
-	}
+  %chatGatedImage {
+    filter: hue-rotate(-47deg) saturate(2);
+    opacity: 0.5;
+  }
+  %chatGatedTitle {
+    color: cv('colors.danger');
+    font-weight: 600;
+    text-shadow: 0 0 3px #000;
+  }
+  %chatGatedDescription {
+    color: hsla(0, 0%, 100%, 0.7);
+  }
+  %chatGatedSeparator {
+    background: hsla(0, 0%, 100%, 0.07);
+  }
+  %chatGatedActionRed {
+    position: relative;
+    background: transparent;
+    color: hsla(0, 0%, 100%, 0.7);
+    z-index: 1;
+    &:after {
+      content: '';
+      position: absolute;
+      @include stretch;
+      background: cv('colors.danger');
+      border-radius: 3px;
+      opacity: 0.5;
+      transition: inherit;
+      z-index: -1;
+    }
+    &:hover {
+      color: #fff;
+      &:after {
+        opacity: 0.7;
+      }
+    }
+  }
 }
 
 // EMPTY CHANNEL
 %emptyChannelIcon {
-	background-color: $main-color;
+  background-color: $main-color;
 }
 %emptyChannelRole {
-	background: transparent;
-	%emptyChannelRoleColor {
-		position: absolute;
-		height: 100%;
-		width: 100%;
-		margin: 0;
-		right: -1px;
-		border-radius: 3px;
-		z-index: -1;
-		opacity: .2;
-	}
-	&:hover  {
-		background-color: transparent;
-		%emptyChannelRoleColor {
-			opacity: .3;
-		}
-	}
+  background: transparent;
+  %emptyChannelRoleColor {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    right: -1px;
+    border-radius: 3px;
+    z-index: -1;
+    opacity: 0.2;
+  }
+  &:hover {
+    background-color: transparent;
+    %emptyChannelRoleColor {
+      opacity: 0.3;
+    }
+  }
 }
 
 // NO CHANNEL
 %base {
-	%noChannel {
-		background: rgba(0, 0, 0, .5);
-	}
+  %noChannel {
+    background: rgba(0, 0, 0, 0.5);
+  }
 }
 %noChannel {
-	%noChannelImage {
-		filter: grayscale(1) brightness(2);
-		opacity: .3;
-	}
-	%noChannelTitle {
-		color: hsla(0, 0%, 100%, .5);
-	}
-	%noChannelText {
-		color: hsla(0, 0%, 100%, .3);
-	}
+  %noChannelImage {
+    filter: grayscale(1) brightness(2);
+    opacity: 0.3;
+  }
+  %noChannelTitle {
+    color: hsla(0, 0%, 100%, 0.5);
+  }
+  %noChannelText {
+    color: hsla(0, 0%, 100%, 0.3);
+  }
 }
 
 // CHAT LOADING
 %chatLoadingWrapper {
-	background-color: transparent;
+  background-color: transparent;
 }
 
 // UPLOAD DROP MODAL
-%uploadModalIn{
-	%uploadDropModal {
-		%uploadDropModalBgScale {
-			background-color: $main-color;
-		}
-		%uploadDropModalInner {
-			border: 2px dashed hsla(0,0%,100%,.5);
-		}
-	}
+%uploadModalIn {
+  %uploadDropModal {
+    %uploadDropModalBgScale {
+      background-color: $main-color;
+    }
+    %uploadDropModalInner {
+      border: 2px dashed hsla(0, 0%, 100%, 0.5);
+    }
+  }
 }

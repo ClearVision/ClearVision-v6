@@ -1,137 +1,137 @@
 /* SETTINGS SIDEBAR */
 %standardSidebarView {
-	%settingsSidebarRegion {
-		background: transparent;
-		%settingsSidebar {
-			height: 100%;
-			padding: 0px 6px 0px 20px;
-		}
-	}
+  %settingsSidebarRegion {
+    background: transparent;
+    %settingsSidebar {
+      height: 100%;
+      padding: 0px 6px 0px 20px;
+    }
+  }
 }
 %settingsSidebarRegion {
-	%settingsSidebarScroller {
-		margin: 30px 8px 30px 0;
-		background: transparent;
-		-webkit-mask-image: linear-gradient(to bottom, transparent, #000 5%, #000 95%, transparent);
-		mask-image: linear-gradient(to bottom, transparent, #000 5%, #000 95%, transparent);
-		&::-webkit-scrollbar {
-			width: 0 !important;
-		}
-	}
+  %settingsSidebarScroller {
+    margin: 30px 8px 30px 0;
+    background: transparent;
+    -webkit-mask-image: linear-gradient(to bottom, transparent, #000 5%, #000 95%, transparent);
+    mask-image: linear-gradient(to bottom, transparent, #000 5%, #000 95%, transparent);
+    &::-webkit-scrollbar {
+      width: 0 !important;
+    }
+  }
 }
 %settingsSide {
-	padding: 30px 0;
-	%tabBarHeader {
-		color: $main-color;
-		font-weight: 700;
-	}
-	%tabBarSeparator {
-		background: hsla(0, 0%, 100%, .07);
-	}
+  padding: 30px 0;
+  %tabBarHeader {
+    color: $main-color;
+    font-weight: 700;
+  }
+  %tabBarSeparator {
+    background: hsla(0, 0%, 100%, 0.07);
+  }
 }
 %settingsSidebar {
-	%tabBarHeader {
-		padding-top: 20px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		&:before {
-			content: "";
-			height: 2px;
-			flex-grow: 1;
-			background: linear-gradient(to left, var(--main-color) 50%, transparent);
-			margin-right: 5px;
-		}
-		&:after {
-			content: "";
-			height: 2px;
-			flex-grow: 1;
-			background: linear-gradient(to right, var(--main-color) 50%, transparent);
-			margin-left: 5px;
-		}
-		> span {
-			max-width: 100%;
-			overflow: hidden;
-			text-overflow: ellipsis;
-		}
-	}
-	[aria-label="User Settings"] %tabBarItem {
-		&:nth-child(6),
-		&:nth-child(13),
-		&:nth-child(25) {
-			+ %tabBarSeparator {
-				display: none;
-			}
-		}
-	}
+  %tabBarHeader {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:before {
+      content: '';
+      height: 2px;
+      flex-grow: 1;
+      background: linear-gradient(to left, var(--main-color) 50%, transparent);
+      margin-right: 5px;
+    }
+    &:after {
+      content: '';
+      height: 2px;
+      flex-grow: 1;
+      background: linear-gradient(to right, var(--main-color) 50%, transparent);
+      margin-left: 5px;
+    }
+    > span {
+      max-width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  [aria-label='User Settings'] %tabBarItem {
+    &:nth-child(6),
+    &:nth-child(13),
+    &:nth-child(25) {
+      + %tabBarSeparator {
+        display: none;
+      }
+    }
+  }
 }
 %standardSidebarView {
-	%settingsSidebar {
-		%settingsSide {
-			%tabBarItem {
-				position: relative;
-				padding: 8px 0 8px 20px;
-				color: hsla(0, 0%, 100%, .4);
-				margin: 0;
-				background: transparent;
-				transition: all .15s ease-in-out;
-				cursor: pointer;
-				&:before {
-					opacity: .4;
-					transition: inherit;
-				}
-				&:after {
-					content: "";
-					position: absolute;
-					@include pos(0, 100%, 0, 0);
-					opacity: .9;
-					transition: all .3s ease-in-out;
-					z-index: -1;
-					pointer-events: none;
-				}
+  %settingsSidebar {
+    %settingsSide {
+      %tabBarItem {
+        position: relative;
+        padding: 8px 0 8px 20px;
+        color: hsla(0, 0%, 100%, 0.4);
+        margin: 0;
+        background: transparent;
+        transition: all 0.15s ease-in-out;
+        cursor: pointer;
+        &:before {
+          opacity: 0.4;
+          transition: inherit;
+        }
+        &:after {
+          content: '';
+          position: absolute;
+          @include pos(0, 100%, 0, 0);
+          opacity: 0.9;
+          transition: all 0.3s ease-in-out;
+          z-index: -1;
+          pointer-events: none;
+        }
 
-				// HOVER
-				&:hover {
-					background: hsla(0, 0%, 100%, .07);
-					color: hsla(0, 0%, 100%, .7);
-					&:before {
-						opacity: .7;
-					}
-				}
+        // HOVER
+        &:hover {
+          background: hsla(0, 0%, 100%, 0.07);
+          color: hsla(0, 0%, 100%, 0.7);
+          &:before {
+            opacity: 0.7;
+          }
+        }
 
-				// SELECTED
-				&%tabBarItemSelected {
-					&:before {
-						opacity: 1;
-					}
-					&:after {
-						right: 0;
-						background: $main-color;
-						animation: cv-channel-select .3s ease-in-out;
-					}
-				}
-				&%tabBarItemSelected {
-					background: transparent !important;
-					color: #fff !important;
-					transition: all .15s ease-in-out, background .3s .2s;
-					%premiumSelectedBackground {
-						background-color: transparent;
-					}
-				}
-				
-				// DANGER
-				&[style*="color: hsl(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%)"] {
-					background: transparent !important;
-					color: cv("colors.danger") !important;
-				}
-				&[style*="background-color: hsl(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%)"] {
-					background-color: cv("colors.danger") !important;
-					color: #fff !important;
-					&:before {
-						opacity: 1;
-					}
-				}
-			}
-		}
-	}
+        // SELECTED
+        &%tabBarItemSelected {
+          &:before {
+            opacity: 1;
+          }
+          &:after {
+            right: 0;
+            background: $main-color;
+            animation: cv-channel-select 0.3s ease-in-out;
+          }
+        }
+        &%tabBarItemSelected {
+          background: transparent !important;
+          color: #fff !important;
+          transition: all 0.15s ease-in-out, background 0.3s 0.2s;
+          %premiumSelectedBackground {
+            background-color: transparent;
+          }
+        }
+
+        // DANGER
+        &[style*='color: hsl(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%)'] {
+          background: transparent !important;
+          color: cv('colors.danger') !important;
+        }
+        &[style*='background-color: hsl(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%)'] {
+          background-color: cv('colors.danger') !important;
+          color: #fff !important;
+          &:before {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
 }

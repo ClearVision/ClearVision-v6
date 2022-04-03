@@ -1,125 +1,124 @@
 /* BUTTON */
 %button {
-	border-radius: 3px;
-	transition: all .3s ease-in-out;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
 }
 
 // BUTTON FILLED
 %appMount {
-	%buttonFilledGrey,
-	%buttonFilledBrand,
-	%buttonFilledGreen,
-	%buttonFilledBrandNew,
-	%buttonFilledBrandNew2,
-	%buttonFilledPrimary {
-		background: $main-color;
-		color: #fff;
-		&:hover,
-		&%buttonHasHover:hover {
-			background: $hover-color;
-		}
-		&:disabled {
-			background: $main-color !important;
-		}
-		&:active {
-			background: $main-color;
-		}
-	}
+  %buttonFilledGrey,
+  %buttonFilledBrand,
+  %buttonFilledGreen,
+  %buttonFilledBrandNew,
+  %buttonFilledBrandNew2,
+  %buttonFilledPrimary {
+    background: $main-color;
+    color: #fff;
+    &:hover,
+    &%buttonHasHover:hover {
+      background: $hover-color;
+    }
+    &:disabled {
+      background: $main-color !important;
+    }
+    &:active {
+      background: $main-color;
+    }
+  }
 }
 %buttonFilledRed {
-	background-color: cv("colors.danger");
+  background-color: cv('colors.danger');
 }
 %embedContainer %buttonFilledGreen {
-	background-color: cv("colors.success");
-	&:hover,
-	&:active {
-		background-color: hsl(139,calc(var(--saturation-factor, 1)*47.1%),33.3%)
-	}
+  background-color: cv('colors.success');
+  &:hover,
+  &:active {
+    background-color: hsl(139, calc(var(--saturation-factor, 1) * 47.1%), 33.3%);
+  }
 }
 %buttonFilledWhite {
-	background: hsla(0, 0%, 100%, .1);
-	> %buttonContents {
-		color: hsla(0, 0%, 100%, .7);
-		transition: inherit;
-	}
-	&:hover {
-		background: hsla(0, 0%, 100%, .2) !important;
-		> %buttonContents {
-			color: #fff;
-		}
-	}
-	&:disabled {
-		background: hsla(0, 0%, 100%, .1) !important;
-		> %buttonContents {
-			color: hsla(0, 0%, 100%, .5);
-		}
-	}
+  background: hsla(0, 0%, 100%, 0.1);
+  > %buttonContents {
+    color: hsla(0, 0%, 100%, 0.7);
+    transition: inherit;
+  }
+  &:hover {
+    background: hsla(0, 0%, 100%, 0.2) !important;
+    > %buttonContents {
+      color: #fff;
+    }
+  }
+  &:disabled {
+    background: hsla(0, 0%, 100%, 0.1) !important;
+    > %buttonContents {
+      color: hsla(0, 0%, 100%, 0.5);
+    }
+  }
 }
 
 // BUTTON INVERTED
 %buttonInvertedBrand,
 %buttonInvertedGreen {
-	background: #fff;
-    color: $main-color;
-	&:hover {
-		background: hsla(0, 0%, 100%, .95);
-		color: $hover-color;
-	}
-	&:disabled {
-		background: hsla(0, 0%, 100%, .3);
-	}
-	&:active {
-        background: hsla(0, 0%, 100%, .95);
-		color: $hover-color;
-    }
+  background: #fff;
+  color: $main-color;
+  &:hover {
+    background: hsla(0, 0%, 100%, 0.95);
+    color: $hover-color;
+  }
+  &:disabled {
+    background: hsla(0, 0%, 100%, 0.3);
+  }
+  &:active {
+    background: hsla(0, 0%, 100%, 0.95);
+    color: $hover-color;
+  }
 }
 
 // BUTTON OUTLINED
 %appMount {
-	%buttonOutlinedWhite,
-	%buttonOutlinedPrimary,
-	%buttonOutlinedGreen,
-	%buttonOutlinedBrand {
-		background: transparent;
-		border-color: $main-color;
-		color: hsla(0, 0%, 100%, .8);
-		&:hover {
-			background: transparent;
-			border-color: $hover-color;
-			color: #fff;
-		}
-	}
+  %buttonOutlinedWhite,
+  %buttonOutlinedPrimary,
+  %buttonOutlinedGreen,
+  %buttonOutlinedBrand {
+    background: transparent;
+    border-color: $main-color;
+    color: hsla(0, 0%, 100%, 0.8);
+    &:hover {
+      background: transparent;
+      border-color: $hover-color;
+      color: #fff;
+    }
+  }
 }
 %appMount {
-	%buttonOutlinedRed {
-		background: transparent;
-		border-color: cv("colors.danger");
-		color: hsla(0, 0%, 100%, .8);
-		&:hover {
-			background: transparent;
-			border-color: $hover-color;
-			color: #fff;
-		}
-	}
+  %buttonOutlinedRed {
+    background: transparent;
+    border-color: cv('colors.danger');
+    color: hsla(0, 0%, 100%, 0.8);
+    &:hover {
+      background: transparent;
+      border-color: $hover-color;
+      color: #fff;
+    }
+  }
 }
-
 
 // BUTTON LINK
 %buttonLinkWhite {
-	color: #fff;
-	&:hover {
-		text-shadow: 0 0 3px;
-		> %buttonContents {
-			background-image: none;
-		}
-	}
+  color: #fff;
+  &:hover {
+    text-shadow: 0 0 3px;
+    > %buttonContents {
+      background-image: none;
+    }
+  }
 }
 %appMount {
-	%buttonLinkPrimary {
-		color: hsla(0, 0%, 100%, .7);
-		&:hover {
-			color: #fff;
-			text-decoration: underline;
-		}
-	}
+  %buttonLinkPrimary {
+    color: hsla(0, 0%, 100%, 0.7);
+    &:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
 }

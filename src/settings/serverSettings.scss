@@ -2,240 +2,240 @@
 
 // OVERVIEW - server banner
 %guildFeatureAvailabilityIndicator {
-    background-color: $main-color;
+  background-color: $main-color;
 }
 
 // ROLES
 %guildSettingsRoleDefaultPermissions {
-    background-color: $main-color;
-    color: #fff;
-    &:hover {
-        background-color: $hover-color;
-    }
+  background-color: $main-color;
+  color: #fff;
+  &:hover {
+    background-color: $hover-color;
+  }
 }
 %guildSettingsRoleDefaultPermissionsIcon {
-    background-color: hsla(0, 0%, 0%, .6);
+  background-color: hsla(0, 0%, 0%, 0.6);
 }
 %buttonCircle {
-	background-color: hsla(0, 0%, 0%, 0.6);
-	color: #fff;
-	&:hover {
-		&:not(%buttonCircleDisabled) {
-			background-color: $hover-color;
-			color: #fff;
-		}
-	}
-    %roleRow:hover:not(%roleRowDisabledHover) & {
-        background-color: hsla(0, 0%, 0%, 0.6);
-        color: #fff;
-        &:hover {
-            background-color: $hover-color;
-                color: #fff;
-        }
+  background-color: hsla(0, 0%, 0%, 0.6);
+  color: #fff;
+  &:hover {
+    &:not(%buttonCircleDisabled) {
+      background-color: $hover-color;
+      color: #fff;
     }
+  }
+  %roleRow:hover:not(%roleRowDisabledHover) & {
+    background-color: hsla(0, 0%, 0%, 0.6);
+    color: #fff;
+    &:hover {
+      background-color: $hover-color;
+      color: #fff;
+    }
+  }
 }
 %guildSettingsRoleBackContainer {
-    background-color: transparent;
+  background-color: transparent;
 }
 %guildSettingsRoleHeader {
-    background-color: transparent;
-    &:before {
-        content: "";
-        @include stretch;
-        position: absolute;
-        z-index: -1;
-        background: cv("bg.app.img") cv("bg.app.pos")/cv("bg.app.size") cv("bg.app.repeat") cv("bg.app.attach");
-	    @include filters(cv("bg.app"));
-    }
-    &:after {
-        content: "";
-        @include stretch;
-        position: absolute;
-        z-index: -1;
-        background: cv("bg.app.overlay");
-    }
+  background-color: transparent;
+  &:before {
+    content: '';
+    @include stretch;
+    position: absolute;
+    z-index: -1;
+    background: cv('bg.app.img') cv('bg.app.pos') / cv('bg.app.size') cv('bg.app.repeat') cv('bg.app.attach');
+    @include filters(cv('bg.app'));
+  }
+  &:after {
+    content: '';
+    @include stretch;
+    position: absolute;
+    z-index: -1;
+    background: cv('bg.app.overlay');
+  }
 }
 %guildSettingsRoleHeaderTabTop {
-    %guildSettingsRoleHeaderTabBrand {
-        &%tabBarItem {
-            &:hover {
-                border-bottom-color: $hover-color;
-            }
-            &%tabBarItemSelected,
-            &:active {
-                border-bottom-color: $main-color;
-            }
-        }
+  %guildSettingsRoleHeaderTabBrand {
+    &%tabBarItem {
+      &:hover {
+        border-bottom-color: $hover-color;
+      }
+      &%tabBarItemSelected,
+      &:active {
+        border-bottom-color: $main-color;
+      }
     }
+  }
 }
 // View server as role selection bar
 .container-3ssFyj {
-	background-color: hsla(0, 0%, 0%, .8);
+  background-color: hsla(0, 0%, 0%, 0.8);
 }
 .container-2oNtJn {
-	background-color: hsla(0, 0%, 100%, .07);
+  background-color: hsla(0, 0%, 100%, 0.07);
 }
 
 // EMOJI
 
 // STICKERS
 %stickersUploadCard {
-    background-color: rgba(0, 0, 0, .4);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 %stickersTierLock {
-	color: #fff;
-	opacity: .3;
+  color: #fff;
+  opacity: 0.3;
 }
 
 // AUDIT LOG
 %themeDark {
-    .auditLog-1NVAY0 {
-        border-color: hsla(0, 0%, 100%, .07);
-    }
-    .headerClickable-zGQJz3,
-    .headerDefault-1e6yjj {
-        background-color: hsla(0, 0%, 0%, .4);
-    }
-    .headerExpanded-1-zwDr,
-    .divider-M3saWq,
-    .changeDetails-1kMZqI {
-        background-color: hsla(0, 0%, 0%, .7);
-    }
+  .auditLog-1NVAY0 {
+    border-color: hsla(0, 0%, 100%, 0.07);
+  }
+  .headerClickable-zGQJz3,
+  .headerDefault-1e6yjj {
+    background-color: hsla(0, 0%, 0%, 0.4);
+  }
+  .headerExpanded-1-zwDr,
+  .divider-M3saWq,
+  .changeDetails-1kMZqI {
+    background-color: hsla(0, 0%, 0%, 0.7);
+  }
 }
 .selectedBrand-1AtwYE {
-    background-color: $main-color;
-} 
+  background-color: $main-color;
+}
 
 // SERVER TEMPLATE
 .descriptionBox-SKGNgB {
-    background-color: hsla(0, 0%, 0%, .4);
+  background-color: hsla(0, 0%, 0%, 0.4);
 }
 
 // COMMUNITY OVERVIEW
 .upsellContainer-2a5eMP {
-	background-color: hsla(0, 0%, 0%, .4);
+  background-color: hsla(0, 0%, 0%, 0.4);
 }
 .upsellFooter-3M1V33 {
-	background-color: transparent;
+  background-color: transparent;
 }
 
 // SERVER INSIGHTS
 .analyticsCard-2fnrVG {
-    background-color: hsla(0, 0%, 0%, .4);
+  background-color: hsla(0, 0%, 0%, 0.4);
 }
 .developerPortalCtaWrapper-2PniQs {
-    background-color: transparent;
+  background-color: transparent;
 }
 .notEnoughMembersError-3-VD0N {
-   background-color: var(--info-warning-background);
+  background-color: var(--info-warning-background);
 }
 
 // ENABLE COMMUNITY
 .guildDetails-1il1dn {
-    background-color: hsla(0, 0%, 0%, .4);
+  background-color: hsla(0, 0%, 0%, 0.4);
 }
 .featureCard-1RR4Tl,
 .featureIcon-2sTnDK {
-    background-color: hsla(0, 0%, 0%, .4);
+  background-color: hsla(0, 0%, 0%, 0.4);
 }
 .checkboxWrapper-2fDzaA.row-31nALW.checked-1pZh2h {
-    background-color: transparent;
+  background-color: transparent;
 }
 .checkboxWrapper-2fDzaA.row-31nALW {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 // PARTNER PROGRAM
 .checklistContainer-12xGp5 {
-    background-color: hsla(0, 0%, 0%, .4);
-    .checklistHeader-3liG7E {
-        background-color: hsla(0, 0%, 0%, .4);
-    }
-    .separator-2qVfIV {
-        background-color: hsla(0, 0%, 100%, .06);
-        opacity: 1;
-    }
+  background-color: hsla(0, 0%, 0%, 0.4);
+  .checklistHeader-3liG7E {
+    background-color: hsla(0, 0%, 0%, 0.4);
+  }
+  .separator-2qVfIV {
+    background-color: hsla(0, 0%, 100%, 0.06);
+    opacity: 1;
+  }
 }
 .featureCard-3XHbjy {
-    background-color: hsla(0, 0%, 0%, .4);
+  background-color: hsla(0, 0%, 0%, 0.4);
 }
 
 // DISCOVERY
 .checklist-Asy_56 {
-    background-color: hsla(0, 0%, 0%, .4);
-    .header-Wl8ec- {
-        background-color: hsla(0, 0%, 0%, .4);
-    }
-    .separator-1py8Bj {
-        background-color: hsla(0, 0%, 100%, .06);
-    }
+  background-color: hsla(0, 0%, 0%, 0.4);
+  .header-Wl8ec- {
+    background-color: hsla(0, 0%, 0%, 0.4);
+  }
+  .separator-1py8Bj {
+    background-color: hsla(0, 0%, 100%, 0.06);
+  }
 }
 
 // MEMBERSHIP SCREENING
 .exampleContainer-2O-nVK,
 .exampleModal-1lRfuE {
-    background-color: hsla(0, 0%, 0%, .4);
+  background-color: hsla(0, 0%, 0%, 0.4);
 }
 .guildSidebar-pjuGkm,
 .content-pHpkq8,
 .formFieldWrapper-2LV3S6,
 %themeDark .footer-11k_3m {
-	background-color: transparent;
+  background-color: transparent;
 }
 .fakeButton-3RWbMY {
-	background-color: $main-color;
+  background-color: $main-color;
 }
 
 // WELCOME SCREEN
 .enableContainer-2MEsKV,
 .previewContainer-29oeA6 {
-    background-color: hsla(0, 0%, 0%, .4);
+  background-color: hsla(0, 0%, 0%, 0.4);
 }
 .editCircle-2k-Y6E {
-    background-color: $main-color;
-    color: white;
+  background-color: $main-color;
+  color: white;
 }
 .welcomeChannel-_Q4qAA {
-    background-color: hsla(0, 0%, 100%, .05);
+  background-color: hsla(0, 0%, 100%, 0.05);
 }
 .channelIcon-2N5-5h {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 // SERVER BOOST STATUS
 %themeDark {
-    .background-3xJH_4 {
-        color: hsla(0, 0%, 0%, .4)
-    }
-    .tierInProgress-1vFUnw {
-        background-color: hsla(0, 0%, 0%, .4);
-        border: 3px solid #f47fff;
-    }
-    .tierHeaderLocked-30MLlO,
-    .tierHeaderUnlocked-1OpOLf,
-    .tierBody-1d3UiS{
-        background-color: hsla(0, 0%, 0%, .4);
-    }
+  .background-3xJH_4 {
+    color: hsla(0, 0%, 0%, 0.4);
+  }
+  .tierInProgress-1vFUnw {
+    background-color: hsla(0, 0%, 0%, 0.4);
+    border: 3px solid #f47fff;
+  }
+  .tierHeaderLocked-30MLlO,
+  .tierHeaderUnlocked-1OpOLf,
+  .tierBody-1d3UiS {
+    background-color: hsla(0, 0%, 0%, 0.4);
+  }
 }
 
 // MEMBERS
 .searchBar-3joS_I {
-    background-color: hsla(0,0%,0%,.4);
+  background-color: hsla(0, 0%, 0%, 0.4);
 }
 %themeDark {
-    .popoutList-10IFAa {
-        background-color: hsla(0, 0%, 0%, .4);
-        box-shadow: 0 0 0 1px hsla(0, 0%, 100%, .07);
-        .selectableItem-3-fmiM.selected-1l_Bxn[style*="background: rgb(114, 137, 218)"] {
-            background-color: $main-color !important;
-        }
+  .popoutList-10IFAa {
+    background-color: hsla(0, 0%, 0%, 0.4);
+    box-shadow: 0 0 0 1px hsla(0, 0%, 100%, 0.07);
+    .selectableItem-3-fmiM.selected-1l_Bxn[style*='background: rgb(114, 137, 218)'] {
+      background-color: $main-color !important;
     }
-    .popoutListInput-1w4TxY {
-        background-color: hsla(0, 0%, 100%, .05);
-    }
+  }
+  .popoutListInput-1w4TxY {
+    background-color: hsla(0, 0%, 100%, 0.05);
+  }
 }
 
 // BANS
 .searchBar-30dqPB {
-    background-color: hsla(0, 0%, 0%, .4);
+  background-color: hsla(0, 0%, 0%, 0.4);
 }
