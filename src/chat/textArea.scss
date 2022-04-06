@@ -104,23 +104,20 @@
 }
 
 // SLASH COMMANDS
-%autocompleteOption {
-  &%autocompleteOptionActive {
-    background-color: $main-color !important;
+%themeDark {
+  %autocompleteOptioPill {
+    background-color: hsla(0, 0%, 100%, .05);
+	  border-color: hsla(0, 0%, 100%, .07);
+    &%autocompleteOptionPillSelected {
+      border-color: $main-color !important;
+    }
+  }
+  %autocompleteOptionPillKey {
+    border-color: hsla(0, 0%, 100%, .07);
   }
 }
-%themeDark %autocompletePill {
-  background-color: $main-color;
-  color: #fff;
-}
-%autocompletetabButton {
-  border: 1px solid $hover-color;
-  border-radius: 3px;
-  box-shadow: inset 0 -4px $main-color;
-  path:first-child,
-  rect {
-    fill: transparent;
-  }
+%autocompleteRemainingOptions {
+  color: hsla(0, 0%, 100%, .5);
 }
 
 // UPLOADER

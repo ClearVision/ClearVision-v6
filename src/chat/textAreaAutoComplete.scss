@@ -58,3 +58,9 @@
 %themeDark %autocompleteOption {
   background-color: hsla(0, 0%, 0%, 0.5);
 }
+%autocompleteOptionals {
+  border: none;
+}
+%autocompleteOptionalCount {
+  color: hsla(0, 0%, 100%, .7);
+}

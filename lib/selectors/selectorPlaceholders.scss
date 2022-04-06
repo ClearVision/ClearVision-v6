@@ -1017,17 +1017,23 @@
 .option-Tt7anD {
   @extend %autocompleteOption !optional;
 }
-.active-WHsd77 {
-  @extend %autocompleteOptionActive !optional;
+.optionals-2w-NPQ {
+  @extend %autocompleteOptionals !optional;
 }
-.error-1SecXe {
-  @extend %autocompleteOptionError !optional;
+.optionalCount-1BzEgg {
+  @extend %autocompleteOptionalCount !optional;
 }
-.pill-1HLSrc {
-  @extend %autocompletePill !optional;
+.optionPill-2kmuZR {
+  @extend %autocompleteOptionPill !optional;
 }
-.tabButton-1hJ4oW {
-  @extend %autocompletetabButton !optional;
+.selectedPill-3cOyS6 {
+  @extend %autocompleteOptionPillSelected !optional;
+}
+.optionPillKey-2JyeoP {
+  @extend %autocompleteOptionPillKey !optional;
+}
+.remainingOptions-2kCt8U {
+  @extend %autocompleteRemainingOptions !optional;
 }
 .spamBanner-1auiob {
   @extend %timeoutBar !optional;
