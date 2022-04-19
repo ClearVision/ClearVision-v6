@@ -1044,6 +1044,15 @@
 .iconContainer-2k2ykS {
   @extend %timeoutIcon !optional;
 }
+.before_inlineCode-1zngJj {
+  @extend %inlineCodeBefore !optional;
+}
+.after_inlineCode-2_JXPm {
+  @extend %inlineCodeAfter !optional;
+}
+.inlineCode-ERyvy_ {
+  @extend %inlineCode !optional;
+}
 .welcomeMessage-3_Mcht {
   @extend %welcomeMessage !optional;
 }
@@ -1690,6 +1699,9 @@
 }
 .mask-2Me5HY {
   @extend %headerBarStatusMask !optional;
+}
+.content-FDHp32 {
+  @extend %headerBarModalContent !optional;
 }
 .search-2Mwzzq {
   @extend %chatSearch !optional;

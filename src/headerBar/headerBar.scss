@@ -37,7 +37,7 @@
   }
   %headerBarTopic {
     color: hsla(0, 0%, 100%, 0.5);
-    > %anchor {
+    a {
       color: $main-color;
       @include hover-shadow;
     }
@@ -64,5 +64,12 @@
 %headerBarInput {
   &:focus {
     background-color: hsla(0, 0%, 100%, 0.1);
+  }
+}
+
+// MODAL POPOUT
+%headerBarModalContent {
+  a {
+    color: $main-color;
   }
 }

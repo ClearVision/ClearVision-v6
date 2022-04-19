@@ -87,9 +87,3 @@ textarea,
   color: #fff;
   background: $main-color;
 }
-
-// ANCHORS
-%anchor {
-  color: $main-color;
-  @include hover-shadow;
-}

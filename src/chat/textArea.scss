@@ -137,12 +137,12 @@
 }
 
 // INLINE CODE PREVIEW
-.before_inlineCode-1zngJj,
-.after_inlineCode-2_JXPm {
+%inlineCodeBefore,
+%inlineCodeAfter {
   background: rgba(255, 255, 255, .05);
   padding: 3.5px 0.5px;
 }
-.inlineCode-ERyvy_ {
+%inlineCode {
   background: rgba(255, 255, 255, .1);
   padding: 3.5px 0.5px;
 }
