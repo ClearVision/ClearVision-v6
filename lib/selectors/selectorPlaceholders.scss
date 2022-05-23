@@ -4298,3 +4298,27 @@ pre {
 .unreadMentionsIndicatorTop-2bTgUU {
   @extend %guildUnreadMentionsTop !optional;
 }
+.pageContainer-36uo3F {
+  @extend %studentHubsJoinServers !optional;
+}
+.card-3N2v9t {
+  @extend %studentHubsServerCard !optional;
+}
+.splash-1Rnkv- {
+  @extend %studentHubServerCardSplash !optional;
+}
+.iconMask-24Ybpm {
+  @extend %studentHubServerCardIconMask !optional;
+}
+.headerContent-3_EO-5 {
+  @extend %studentHubJoinServersHeader !optional;
+}
+.searchHeader-UFC-sz {
+  @extend %studentHubSearchHeader !optional;
+}
+.searchPageBox-2yxhpp {
+  @extend %studentHubSearchBox !optional;
+}
+.emptySearchWrapper-3EI_HG {
+  @extend %studentHubEmptyResults !optional;
+}

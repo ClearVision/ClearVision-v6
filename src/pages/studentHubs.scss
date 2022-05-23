@@ -1,0 +1,16 @@
+// JOIN SERVERS
+%studentHubsJoinServers {
+  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.5));
+
+  %studentHubJoinServersHeader {
+    margin: 0 180px;
+  }
+  %studentHubsServerCard {
+    &, %studentHubServerCardSplash, %studentHubServerCardIconMask {
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+  }
+  %studentHubEmptyResults {
+      background-color: rgba(0, 0, 0, 0.6);
+  }
+}
