@@ -106,18 +106,18 @@
 // SLASH COMMANDS
 %themeDark {
   %autocompleteOptionPill {
-    background-color: hsla(0, 0%, 100%, .05);
-	  border-color: hsla(0, 0%, 100%, .07);
+    background-color: hsla(0, 0%, 100%, 0.05);
+    border-color: hsla(0, 0%, 100%, 0.07);
     &%autocompleteOptionPillSelected {
       border-color: $main-color !important;
     }
   }
   %autocompleteOptionPillKey {
-    background-color: hsla(0, 0%, 100%, .07);
+    background-color: hsla(0, 0%, 100%, 0.07);
   }
 }
 %autocompleteRemainingOptions {
-  color: hsla(0, 0%, 100%, .5);
+  color: hsla(0, 0%, 100%, 0.5);
 }
 
 // UPLOADER
@@ -139,10 +139,10 @@
 // INLINE CODE PREVIEW
 %inlineCodeBefore,
 %inlineCodeAfter {
-  background: rgba(255, 255, 255, .05);
+  background: rgba(255, 255, 255, 0.05);
   padding: 3.5px 0.5px;
 }
 %inlineCode {
-  background: rgba(255, 255, 255, .1);
+  background: rgba(255, 255, 255, 0.1);
   padding: 3.5px 0.5px;
 }

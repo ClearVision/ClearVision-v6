@@ -2643,19 +2643,19 @@ pre {
 .blockquoteDivider-363utW {
   @extend %blockquoteDivider !optional;
 }
-.reactions-1BUEKl {
+.reactions-3ryImn {
   @extend %reactions !optional;
 }
-.reaction-2A2y9y {
+.reaction-3vwAF2 {
   @extend %reaction !optional;
 }
-.reactionMe-3I9gFK {
+.reactionMe-1PwQAc {
   @extend %reactionMe !optional;
 }
-.reactionInner-9eVHJa {
+.reactionInner-YJjOtT {
   @extend %reactionInner !optional;
 }
-.reactionCount-1zkLcN {
+.reactionCount-26U4As {
   @extend %reactionCount !optional;
 }
 .spoilerText-27bIiA {
@@ -4300,4 +4300,7 @@ pre {
 }
 .containerBackground-Ang24O {
   @extend %stickerSuggestionContainerBackground !optional;
+}
+.unreadMentionsIndicatorTop-2bTgUU {
+  @extend %guildUnreadMentionsTop !optional;
 }

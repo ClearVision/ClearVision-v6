@@ -5,6 +5,9 @@
   }
 }
 %platformOSX {
+  %guildUnreadMentionsTop {
+    top: 24px;
+  }
   %guildsWrapper {
     margin-top: 0;
     padding-top: 48px;
