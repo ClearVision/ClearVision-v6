@@ -975,8 +975,11 @@
 .contentTitle-3CylD3 {
   @extend %autocompleteTitle !optional;
 }
-.content-Qb0rXO {
-  @extend %autocompleteContent !optional;
+.text-xs-medium-2LRpEj {
+  @extend %autocompleteContentMedium !optional;
+}
+.text-xs-normal-3SiVjE {
+  @extend %autocompleteContentNormal !optional;
 }
 .icon-nmEpWl {
   @extend %autocompleteIcon !optional;
@@ -996,8 +999,11 @@
 .selector-2IcQBU {
   @extend %autocompleteSelector !optional;
 }
-.selected-3H3-RC {
+.clickable-2V8YKY {
   @extend %autocompleteSelectorSelected !optional;
+}
+.base-2v-uc0 {
+  @extend %autocompleteBase !optional;
 }
 .categoryHeader-OpJ1Ly {
   @extend %autocompleteCategoryHeader !optional;

@@ -27,22 +27,25 @@
   %autocompleteDescriptionDiscriminator {
     color: hsla(0, 0%, 100%, 0.15);
   }
-  %autocompleteSelectorSelected {
-    background: $main-color !important;
-    > %autocompleteContent {
-      color: #fff;
-    }
-    %autocompleteIconForeground {
-      fill: hsla(0, 0%, 100%, 0.7);
-    }
-    %autocompleteContentSecondary,
-    %autocompleteDescriptionDiscriminator,
-    %autocompleteRowSubheading {
-      color: #fff;
+  %autocompleteSelectorSelected[aria-selected=true] %autocompleteBase,
+  %autocompleteSelectorSelected[aria-disabled=false] %autocompleteBase:hover {
+    background: $main-color;
+  }
+  %autocompleteBase{
+    %autocompleteContentMedium,
+    %autocompleteContentNormal {
+      color: #fff !important;
     }
   }
+  %autocompleteIconForeground {
+      fill: hsla(0, 0%, 100%, 0.7);
+  }
+  %autocompleteContentSecondary,
+  %autocompleteDescriptionDiscriminator,
+  %autocompleteRowSubheading {
+      color: #fff;
+  }
 }
-
 // SLASH COMMANDS AUTOCOMPLETE
 %autocompleteListWrapper,
 %autocompleteList,
