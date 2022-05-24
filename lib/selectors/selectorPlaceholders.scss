@@ -3625,10 +3625,10 @@ pre {
 .side-2ur1Qk {
   @extend %settingsSide !optional;
 }
-.socialLinks-2DELRE {
+.socialLinks-3ywLUf {
   @extend %settingsSocialLinks !optional;
 }
-.link-39xJu3 {
+.link-1-SDSV {
   @extend %settingsSocialLink !optional;
 }
 .guildFeatureAvailabilityIndicator-34eQAP {
@@ -3736,6 +3736,12 @@ pre {
 }
 .mentionButton-3C5YMI {
   @extend %replyMentionButton !optional;
+}
+.colorMuted-1jNaVo {
+  @extend %replyMentionButtonMuted !optional;
+}
+.colorLink-12GX9V {
+  @extend %replyMentionButtonLink !optional;
 }
 .closeButton-3IEry2 {
   @extend %replyCancelButton !optional;
