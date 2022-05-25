@@ -245,8 +245,7 @@
     background-color: hsla(0, 0%, 100%, 0.05);
     border: hsla(0, 0%, 100%, 0.07);
   }
-  &[aria-selected='true'] {
+  &[aria-selected='true']:not(.option-2eIyOn.multi-1HXDiv) {
     background-color: $main-color !important;
   }
 }
-// DO NOT REMOVE THE IMPORTANT UNLESS YOU REWRITE THE ENTIRE CODE

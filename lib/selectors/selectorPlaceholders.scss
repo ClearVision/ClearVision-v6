@@ -3634,10 +3634,10 @@ pre {
 .guildFeatureAvailabilityIndicator-34eQAP {
   @extend %guildFeatureAvailabilityIndicator !optional;
 }
-.roleRow-3LoHQ6 {
+.roleRow-230vCm {
   @extend %roleRow !optional;
 }
-.roleRowDisableHover-2TXfy- {
+.roleRowDisableHover-3En0vy {
   @extend %roleRowDisabledHover !optional;
 }
 .container-3EtAkD {
@@ -3949,6 +3949,9 @@ pre {
 }
 .container-1oAagU {
   @extend %nowPlayingColumnContainer !optional;
+}
+.scroller-hE2gWq {
+  @extend %nowPlayingColumnScroller !optional;
 }
 .outer-2JOHae {
   @extend %activeNowOuterCard !optional;

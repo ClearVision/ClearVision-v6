@@ -13,9 +13,8 @@
   }
 
   // HEADER
-  %autocompletePopoutHeaderBackground {
-    background: $main-color;
-    border-radius: 5px 5px 0 0;
+  %autocompletePopoutHeader {
+    background: rgba(0, 0, 0, 0.8);
   }
   %autocompletePopoutHeaderText,
   %autocompletePopoutInput {
@@ -29,7 +28,7 @@
 
   // BODY
   %autocompletePopoutSection {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.8);
   }
   %autocompletePopoutScroller {
     overflow-y: auto;
