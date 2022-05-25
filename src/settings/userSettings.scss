@@ -246,6 +246,7 @@
     border: hsla(0, 0%, 100%, 0.07);
   }
   &[aria-selected='true'] {
-    background-color: $main-color;
+    background-color: $main-color !important;
   }
 }
+// DO NOT REMOVE THE IMPORTANT UNLESS YOU REWRITE THE ENTIRE CODE

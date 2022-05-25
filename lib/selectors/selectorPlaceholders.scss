@@ -4310,3 +4310,9 @@ pre {
 .unreadMentionsIndicatorTop-2bTgUU {
   @extend %guildUnreadMentionsTop !optional;
 }
+.css-3vaxre-menu {
+  @extend %pruneMemberMenu !optional;
+}
+.css-rzbxvl-option {
+  @extend %pruneMemberMenuDropdown !optional;
+}

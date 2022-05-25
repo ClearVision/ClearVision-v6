@@ -248,3 +248,15 @@
 .searchBar-30dqPB {
   background-color: hsla(0, 0%, 0%, 0.4);
 }
+
+// MEMBERS
+%pruneMemberMenuDropdown {
+	background: var(--hover-color);
+	&:hover {
+		background: var(--hover-color);
+	}
+}
+%pruneMemberMenu {
+	background-color: rgba(0,0,0,.5);
+	border: hsla(0, 0%, 100%, 0.07);
+}
