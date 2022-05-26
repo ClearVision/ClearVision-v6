@@ -4319,3 +4319,12 @@ pre {
 .css-rzbxvl-option {
   @extend %pruneMemberMenuDropdown !optional;
 }
+.list-3-WAYB {
+@extend %manageAccountsList !optional;
+}
+.authBox-1HR6Ha {
+  @extend %addAccountAuthBox !optional;
+}
+.navRow-dG-XX8 {
+  @extend %addAccountNavRow !optional;
+}
