@@ -16,6 +16,15 @@
 %guildSettingsRoleDefaultPermissionsIcon {
   background-color: hsla(0, 0%, 0%, 0.6);
 }
+%roleRow {
+  &:before,
+  &::last-child:after {
+    background-color: hsla(0, 0%, 100%, 0.1);
+  }
+  &:hover:not(%roleRowDisabledHover) {
+    background-color: rgba(255,255,255,.05);
+  }
+}
 %buttonCircle {
   background-color: hsla(0, 0%, 0%, 0.6);
   color: #fff;
@@ -247,4 +256,16 @@
 // BANS
 .searchBar-30dqPB {
   background-color: hsla(0, 0%, 0%, 0.4);
+}
+
+// MEMBERS
+%pruneMemberMenuDropdown {
+	background: var(--hover-color);
+	&:hover {
+		background: var(--hover-color);
+	}
+}
+%pruneMemberMenu {
+	background-color: rgba(0,0,0,.5);
+	border: hsla(0, 0%, 100%, 0.07);
 }

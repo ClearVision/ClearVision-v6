@@ -10,6 +10,7 @@
   background: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
 }
 %friendsItem {
+  border-top: 1px solid hsla(0, 0%, 100%, 0.1);
   &:hover,
   &%friendsItemActive {
     background-color: hsla(0, 0%, 100%, 0.05);
@@ -103,6 +104,9 @@
 }
 %nowPlayingColumnContainer {
   background-color: transparent;
+}
+%nowPlayingColumnScroller {
+  border-left: none
 }
 %consentCard {
   background-color: hsla(0, 0%, 0%, 0.4);

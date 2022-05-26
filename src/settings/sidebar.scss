@@ -135,3 +135,13 @@
     }
   }
 }
+
+// SOCIAL LINKS
+%settingsSocialLinks {
+  %settingsSocialLink {
+    color: hsla(0, 0%, 100%, 0.4);
+    &:hover {
+      color: hsla(0, 0%, 100%, 0.7);
+    }
+  }
+}

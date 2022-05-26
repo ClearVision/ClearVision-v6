@@ -86,11 +86,11 @@
 %replyMentionButton {
   padding: 4px;
   margin-right: 3px;
-  &.colorMuted-HdFt4q {
-    color: rgb(240, 71, 71) !important;
+  &%replyMentionButtonMuted {
+    color: rgb(240, 71, 71);
   }
-  &.colorLink-2vG20E {
-    color: rgb(67, 181, 129) !important;
+  &%replyMentionButtonLink {
+    color: rgb(67, 181, 129);
   }
 }
 %replyCancelButton {

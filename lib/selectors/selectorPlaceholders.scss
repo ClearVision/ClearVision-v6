@@ -975,8 +975,11 @@
 .contentTitle-3CylD3 {
   @extend %autocompleteTitle !optional;
 }
-.content-Qb0rXO {
-  @extend %autocompleteContent !optional;
+.text-xs-medium-2LRpEj {
+  @extend %autocompleteContentMedium !optional;
+}
+.text-xs-normal-3SiVjE {
+  @extend %autocompleteContentNormal !optional;
 }
 .icon-nmEpWl {
   @extend %autocompleteIcon !optional;
@@ -996,8 +999,11 @@
 .selector-2IcQBU {
   @extend %autocompleteSelector !optional;
 }
-.selected-3H3-RC {
+.clickable-2V8YKY {
   @extend %autocompleteSelectorSelected !optional;
+}
+.base-2v-uc0 {
+  @extend %autocompleteBase !optional;
 }
 .categoryHeader-OpJ1Ly {
   @extend %autocompleteCategoryHeader !optional;
@@ -3619,19 +3625,19 @@ pre {
 .side-2ur1Qk {
   @extend %settingsSide !optional;
 }
-.socialLinks-2DELRE {
+.socialLinks-3ywLUf {
   @extend %settingsSocialLinks !optional;
 }
-.link-39xJu3 {
+.link-1-SDSV {
   @extend %settingsSocialLink !optional;
 }
 .guildFeatureAvailabilityIndicator-34eQAP {
   @extend %guildFeatureAvailabilityIndicator !optional;
 }
-.roleRow-3LoHQ6 {
+.roleRow-230vCm {
   @extend %roleRow !optional;
 }
-.roleRowDisableHover-2TXfy- {
+.roleRowDisableHover-3En0vy {
   @extend %roleRowDisabledHover !optional;
 }
 .container-3EtAkD {
@@ -3730,6 +3736,12 @@ pre {
 }
 .mentionButton-3C5YMI {
   @extend %replyMentionButton !optional;
+}
+.colorMuted-1jNaVo {
+  @extend %replyMentionButtonMuted !optional;
+}
+.colorLink-12GX9V {
+  @extend %replyMentionButtonLink !optional;
 }
 .closeButton-3IEry2 {
   @extend %replyCancelButton !optional;
@@ -3937,6 +3949,9 @@ pre {
 }
 .container-1oAagU {
   @extend %nowPlayingColumnContainer !optional;
+}
+.scroller-hE2gWq {
+  @extend %nowPlayingColumnScroller !optional;
 }
 .outer-2JOHae {
   @extend %activeNowOuterCard !optional;
@@ -4321,4 +4336,10 @@ pre {
 }
 .emptySearchWrapper-3EI_HG {
   @extend %studentHubEmptyResults !optional;
+}
+.css-3vaxre-menu {
+  @extend %pruneMemberMenu !optional;
+}
+.css-rzbxvl-option {
+  @extend %pruneMemberMenuDropdown !optional;
 }
