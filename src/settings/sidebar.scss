@@ -111,8 +111,8 @@
           }
         }
         &%tabBarItemSelected {
-          background: transparent !important;
-          color: #fff !important;
+          background: transparent ;
+          color: #fff;
           transition: all 0.15s ease-in-out, background 0.3s 0.2s;
           %premiumSelectedBackground {
             background-color: transparent;
@@ -120,15 +120,24 @@
         }
 
         // DANGER
-        &[style*='color: hsl(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%)'] {
-          background: transparent !important;
-          color: cv('colors.danger') !important;
+        &[aria-controls=logout-tab],
+        &[aria-controls=delete-tab] {
+          color: cv('colors.danger');
+          &:hover {
+            background-color: cv('colors.danger');
+	          color: #fff;
+          }
         }
-        &[style*='background-color: hsl(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%)'] {
-          background-color: cv('colors.danger') !important;
-          color: #fff !important;
+        &[aria-controls=logout-tab] {            
           &:before {
+            background-color: cv('colors.danger');
             opacity: 1;
+          }
+          &:hover {
+            &:before {
+              color: #fff;
+              opacity: 1;
+            }
           }
         }
       }

@@ -56,11 +56,12 @@
 
       // Change Log
       'changelog': 'https://clearvision.gitlab.io/icons/history.svg',
-      //HypeSquad
+      // HypeSquad
       'hypesquad-online': 'https://clearvision.gitlab.io/icons/hypesquad.svg',
 
-      // Log Out
+      /* Log Out - for reference only
       'logout': 'https://clearvision.gitlab.io/icons/exit.svg'
+      */
     );
 
     // GENERAL STYLES
@@ -84,6 +85,16 @@
     @each $i, $u in $icons {
       %tabBarItem[aria-controls='#{$i}-tab']:before {
         background-image: url(#{$u});
+      }
+    }
+
+    // DANGER
+    %tabBarItem {
+      &[aria-controls=logout-tab] {
+        &:before {
+          -webkit-mask: url(https://clearvision.gitlab.io/icons/exit.svg);
+          mask: url(https://clearvision.gitlab.io/icons/exit.svg);
+        }
       }
     }
   }
