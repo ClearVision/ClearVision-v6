@@ -56,7 +56,7 @@
 .notice-2HEN-u {
   @extend %notice !optional;
 }
-.noticeDefault-362Ko2 {
+.colorDefault-1e8tQv {
   @extend %noticeDefault !optional;
 }
 .notice-1x8lm- {
@@ -632,6 +632,9 @@
 }
 .privateChannelRecipientsInviteButtonIcon-1ObKXK {
   @extend %privateChannelsInviteButton !optional;
+}
+.empty-yQo7LQ {
+  @extend %privateChannelsEmpty !optional;
 }
 .searchBar-3TnChZ {
   @extend %privateChannelsSearchBar !optional;

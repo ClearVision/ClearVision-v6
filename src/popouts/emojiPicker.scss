@@ -65,9 +65,6 @@
   &%emojiPickerItemDisabled {
     filter: grayscale(1);
   }
-  &:focus {
-    outline: var(--main-color) auto 1px;
-  }
 }
 %emojiPickerItemLoading {
   %themeDark & {
