@@ -73,9 +73,16 @@
 .paymentSourceWrapper-39oqV6 .lookFilled-1h1y05.select-1Pkeg4 {
   margin: 0 2px;
 }
-.planOptionDiscount-2UFc37 {
+.planOptionDiscount-2nex9n {
   background-color: $main-color;
 }
+.contents-1X8z-d{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.cardInput-33x7OF {
+  background-color: hsla(0, 0%, 100%, 0.07);
+}
+
 // SERVER BOOST PAYMENT MODAL
 .upsellFooter-1H_OCF {
   background: transparent;
@@ -92,6 +99,12 @@
 }
 .actions-10aT1z .input-2g-os5 {
   box-shadow: none;
+}
+.subscription-1wJwQk {
+  background-color: hsla(0, 0%, 0%, 0.5);
+}
+%themeDark .tierPill-l7DvKo {
+  background-color: $main-color;
 }
 
 // INVITE FROM WEB BROWSER
