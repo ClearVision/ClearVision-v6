@@ -136,6 +136,11 @@
   }
 }
 
+// EMPTY PRIVATE CHANNEL
+%privateChannelsEmpty {
+  fill: hsla(0, 0%, 100%, .15);
+}
+
 // PRIVATE CHANNELS SEARCH BAR
 %privateChannelsSearchBar {
   %privateChannelsSearchBarComponent {

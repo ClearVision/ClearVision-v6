@@ -18,7 +18,7 @@
 }
 %roleRow {
   &:before,
-  &::last-child:after {
+  &:last-child:after {
     background-color: hsla(0, 0%, 100%, 0.1);
   }
   &:hover:not(%roleRowDisabledHover) {
