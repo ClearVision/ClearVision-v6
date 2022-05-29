@@ -4331,3 +4331,9 @@ pre {
 .navRow-dG-XX8 {
   @extend %addAccountNavRow !optional;
 }
+.copyInput-3AbKWB {
+  @extend %copyGiftCode !optional;
+}
+.promotionCard-mo7ClH {
+  @extend %giftPromotionCard !optional;
+}

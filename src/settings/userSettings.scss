@@ -127,6 +127,12 @@
 }
 
 // GIFT INVENTORY
+%giftPromotionCard {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+%copyGiftCode {
+  background-color: hsla(0, 0%, 100%, 0.07);
+}
 
 // SERVER BOOST
 .cardWrapper-CyvwQv {
@@ -136,6 +142,9 @@
   .gemIndicatorContainer-PqApbX {
     background-color: transparent;
   }
+}
+.guildSubscriptionSlots-1i_C21 {
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 // HYPESQUAD
