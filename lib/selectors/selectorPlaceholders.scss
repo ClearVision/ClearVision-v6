@@ -4337,3 +4337,12 @@ pre {
 .promotionCard-mo7ClH {
   @extend %giftPromotionCard !optional;
 }
+.phoneField-3NAPDv {
+  @extend %phoneVerification !optional;
+}
+.inputField-1iYysB {
+  @extend %phoneVerificationInput !optional;
+}
+.maskBackground-F7QD-A {
+  @extend %typingStickerRecommendationHover !optional;
+}
