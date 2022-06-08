@@ -65,3 +65,11 @@
     border-bottom-color: var(--main-color);
   }
 }
+
+// UPSELL
+%upsellTooltipText {
+  background-color: hsla(0, 0%, 0%, 0.8);
+  &:after {
+    border-bottom-color: hsla(0, 0%, 0%, 0.8);
+  }
+}
