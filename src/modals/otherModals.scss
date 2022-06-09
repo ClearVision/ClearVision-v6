@@ -62,7 +62,7 @@
     background-color: transparent !important;
   }
 }
-.result-u66Ywh[aria-selected=true] {
+.result-u66Ywh[aria-selected='true'] {
   background: var(--background-modifier-hover);
 }
 
@@ -76,7 +76,7 @@
 .planOptionDiscount-2nex9n {
   background-color: $main-color;
 }
-.contents-1X8z-d{
+.contents-1X8z-d {
   background-color: rgba(0, 0, 0, 0.5);
 }
 .cardInput-33x7OF {
@@ -144,12 +144,13 @@
 %manageAccountsList {
   background-color: rgba(0, 0, 0, 0.5);
 }
-.activeIcon-1ykRnF>circle:not([fill^="hsl(0"]),
-.activeIcon-1ykRnF>g>path:not([fill^="hsl(0"]) {
+.activeIcon-1ykRnF > circle:not([fill^='hsl(0']),
+.activeIcon-1ykRnF > g > path:not([fill^='hsl(0']) {
   fill: var(--main-color);
 }
 // ADD ACCOUNT
-%themeDark %addAccountAuthBox, %themeDark %addAccountNavRow {
+%themeDark %addAccountAuthBox,
+%themeDark %addAccountNavRow {
   background-color: rgba(0, 0, 0, 0.5);
 }
 // VERIFY PHONE

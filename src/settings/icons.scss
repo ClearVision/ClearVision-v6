@@ -55,9 +55,9 @@
     // CHANGE LOG
     'changelog': 'https://clearvision.gitlab.io/icons/history.svg',
     // HYPESQUAD
-    'hypesquad-online': 'https://clearvision.gitlab.io/icons/hypesquad.svg',
+    'hypesquad-online': 'https://clearvision.gitlab.io/icons/hypesquad.svg'
   );
-/*
+  /*
   $serverSettingsIcons: (
   // OVERVIEW
   'overview': '',
@@ -111,14 +111,14 @@
     // INVITES
     'instant_invites': 'https://clearvision.gitlab.io/link-plus.svg',
     // INTEGRATIONS
-    'integrations': 'https://clearvision.gitlab.io/jigsaw.svg',
+    'integrations': 'https://clearvision.gitlab.io/jigsaw.svg'
   );
 
   $dangerIcons: (
     // LOG OUT
     'logout': 'https://clearvision.gitlab.io/icons/exit.svg',
     // DELETE
-    'delete': 'https://clearvision.gitlab.io/delete.svg',
+    'delete': 'https://clearvision.gitlab.io/delete.svg'
   );
 
   // GENERAL STYLES
@@ -155,7 +155,7 @@
   // DANGER
   @each $i, $u in $dangerIcons {
     %tabBarItem[aria-controls='#{$i}-tab']:before {
-      -webkit-mask:  url(#{$u});
+      -webkit-mask: url(#{$u});
       mask: url(#{$u});
     }
   }

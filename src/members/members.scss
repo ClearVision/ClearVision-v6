@@ -70,7 +70,7 @@
         transform: scale(0.9);
       }
     }
-    %memberUsername>span {
+    %memberUsername > span {
       max-width: 100%;
       overflow: visible;
       transition: all 0.15s ease-in-out;
@@ -105,7 +105,7 @@
     }
     &:hover,
     &%memberSelected {
-      %memberUsername>span {
+      %memberUsername > span {
         &:before {
           opacity: 1;
         }
@@ -115,7 +115,7 @@
       }
     }
     &%memberSelected {
-      %memberUsername>span {
+      %memberUsername > span {
         -webkit-text-fill-color: #fff;
         text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
         &:after {
