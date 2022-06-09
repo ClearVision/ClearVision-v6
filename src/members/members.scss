@@ -70,7 +70,7 @@
         transform: scale(0.9);
       }
     }
-    %memberRoleColor {
+    %memberUsername>span {
       max-width: 100%;
       overflow: visible;
       transition: all 0.15s ease-in-out;
@@ -96,7 +96,7 @@
         z-index: -1;
         pointer-events: none;
       }
-      &[style*='color:'] {
+      &[style^='color:'] {
         &:before,
         &:after {
           background: linear-gradient(to right, currentColor 90%, transparent);
@@ -105,17 +105,17 @@
     }
     &:hover,
     &%memberSelected {
-      %memberRoleColor {
+      %memberUsername>span {
         &:before {
           opacity: 1;
         }
-        &[style*='color:']:before {
+        &[style^='color:']:before {
           opacity: 0.07;
         }
       }
     }
     &%memberSelected {
-      %memberRoleColor {
+      %memberUsername>span {
         -webkit-text-fill-color: #fff;
         text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
         &:after {
