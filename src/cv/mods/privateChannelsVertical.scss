@@ -1,13 +1,13 @@
 // VERTICAL PRIVATE CHANNEL TABS
 %privateChannel {
   display: inline;
-  > a {
+  >a {
     position: relative;
   }
-  > [href='/activity'],
-  > [href='/library'],
-  > [href='/store'],
-  > [href='/channels/@me'] {
+  >[href='/activity'],
+  >[href='/library'],
+  >[href='/store'],
+  >[href='/channels/@me'] {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -16,7 +16,7 @@
       right: 0 !important;
       animation: none !important;
     }
-    > %privateChannelName {
+    >%privateChannelName {
       position: absolute;
       bottom: -33px;
       padding: 3px 7px;
@@ -45,11 +45,11 @@
       }
     }
     &:not(:hover) {
-      > %privateChannelName {
+      >%privateChannelName {
         display: none;
       }
     }
-    > %privateChannelIcon {
+    >%privateChannelIcon {
       margin: 0;
     }
   }

@@ -42,7 +42,7 @@
   &:last-child {
     border-bottom: none;
   }
-  + %pinnedMessageGroupWrapper {
+  +%pinnedMessageGroupWrapper {
     margin-top: -1px;
   }
 }

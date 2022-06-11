@@ -14,26 +14,26 @@
   }
 }
 %popouts {
-  > %popoutTop,
-  > %popoutTopLeft,
-  > %popoutTopRight {
+  >%popoutTop,
+  >%popoutTopLeft,
+  >%popoutTopRight {
     &:after {
       border-top-color: rgba(0, 0, 0, 0.7);
     }
   }
-  > %popoutRight {
+  >%popoutRight {
     &:after {
       border-right-color: rgba(0, 0, 0, 0.7);
     }
   }
-  > %popoutLeft {
+  >%popoutLeft {
     &:after {
       border-left-color: rgba(0, 0, 0, 0.7);
     }
   }
-  > %popoutBottom,
-  > %popoutBottomLeft,
-  > %popoutBottomRight {
+  >%popoutBottom,
+  >%popoutBottomLeft,
+  >%popoutBottomRight {
     &:after {
       border-bottom-color: $main-color;
     }

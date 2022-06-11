@@ -1,6 +1,6 @@
 /* SETTINGS CONTENT */
 %standardSidebarView {
-  > %settingsContentRegion {
+  >%settingsContentRegion {
     background: transparent;
   }
 }
@@ -19,7 +19,7 @@
       border-color: hsla(0, 0%, 100%, 0.6);
       background-color: transparent;
     }
-    > svg > path {
+    >svg>path {
       fill: hsla(0, 0%, 100%, 0.6);
     }
   }

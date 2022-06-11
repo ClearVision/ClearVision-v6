@@ -81,7 +81,7 @@
 %deleteServerCheckbox {
   %deleteServerCheckboxInner {
     %deleteServerCheckboxElement {
-      &:checked + span {
+      &:checked+span {
         background-color: $main-color;
         border-color: $main-color;
       }

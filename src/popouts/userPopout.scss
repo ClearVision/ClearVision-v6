@@ -16,7 +16,7 @@
     @include filters(cv('bg.popout'));
     z-index: -1;
   }
-  %popoutAnimatorLeft > & {
+  %popoutAnimatorLeft>& {
     margin-right: -16px;
     transform-origin: 100% 50%;
   }
@@ -65,12 +65,12 @@
     display: flex;
     flex-direction: column;
     flex-shrink: 1;
-    > %userPopoutRolesList {
+    >%userPopoutRolesList {
       max-height: unset;
     }
   }
   %userPopoutNote {
-    > %userPopoutNoteTextArea {
+    >%userPopoutNoteTextArea {
       &:focus {
         background: hsla(0, 0%, 100%, 0.07);
       }

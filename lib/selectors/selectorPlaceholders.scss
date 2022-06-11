@@ -997,7 +997,7 @@
   @extend %autocompleteContentSecondary !optional;
 }
 .descriptionDiscriminator-tCKMLV {
-  @extend%autocompletedescriptiondiscriminator !optional;
+  @extend%autocompletedescriptiondiscriminator  !optional;
 }
 .selector-2IcQBU {
   @extend %autocompleteSelector !optional;
@@ -4348,4 +4348,7 @@ pre {
 }
 .maskBackground-F7QD-A {
   @extend %typingStickerRecommendationHover !optional;
+}
+.iconWrapper-1sOtkE {
+  @extend %integrationsIconWrapper !optional;
 }

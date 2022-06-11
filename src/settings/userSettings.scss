@@ -108,7 +108,7 @@
   .noItemsIcon-1rZlXZ,
   .noItemsIcon-2OeOld {
     background-color: transparent;
-    > g > * {
+    >g>* {
       fill-opacity: 0.8 !important;
       stroke-opacity: 0.8 !important;
     }
@@ -158,7 +158,7 @@
 %themeDark {
   %userSettingsVoice {
     %micTestContainer {
-      background-color: $main-color !important;
+      background-color: $main-color  !important;
     }
     %micTestProgress {
       background-color: hsla(0, 0%, 0%, 0.7);
@@ -255,6 +255,6 @@
     border: hsla(0, 0%, 100%, 0.07);
   }
   &[aria-selected='true']:not(.option-2eIyOn.multi-1HXDiv) {
-    background-color: $main-color !important;
+    background-color: $main-color  !important;
   }
 }

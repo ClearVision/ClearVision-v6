@@ -1,8 +1,7 @@
 /* BD SETTINGS SIDEBAR ICONS */
 %settingsSidebar {
   // BD ICON MAP
-  $bd: (
-    // Settings
+  $bd: ( // Settings
     'settings': 'https://clearvision.gitlab.io/icons/betterdiscord.svg',
     // Emotes
     'emotes': 'https://clearvision.gitlab.io/icons/emote.svg',
@@ -16,7 +15,8 @@
 
   // BD ICON STYLES
   %tabBarItem {
-    @each $i, $u in $bd {
+    @each $i,
+    $u in $bd {
       &.bd-#{$i}-tab:before {
         background-image: url(#{$u});
       }

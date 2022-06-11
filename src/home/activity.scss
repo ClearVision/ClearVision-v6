@@ -6,7 +6,7 @@
 }
 %activityFeed {
   %activityFeedLayout,
-  > %flex:last-child {
+  >%flex:last-child {
     background-color: rgba(0, 0, 0, calc(#{cv('bg.app.shading')} * 0.5));
   }
   %activityFeedLayout {

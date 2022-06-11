@@ -26,13 +26,13 @@
     }
 
     // UNREAD
-    > svg:not(%headerBarIcon) {
+    >svg:not(%headerBarIcon) {
       color: $main-color;
       filter: drop-shadow(0 0 5px);
       transition: filter 0.3s ease-in-out;
     }
     &:hover {
-      > svg:not(%headerBarIcon) {
+      >svg:not(%headerBarIcon) {
         filter: drop-shadow(0 0 5px) drop-shadow(0 0 10px);
       }
     }

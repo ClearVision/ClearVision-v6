@@ -55,7 +55,7 @@
     background: transparent;
     %channelTextAreaTypingText {
       color: hsla(0, 0%, 100%, 0.5);
-      > strong {
+      >strong {
         color: hsla(0, 0%, 100%, 0.7);
         font-weight: 700;
       }
@@ -109,7 +109,7 @@
     background-color: hsla(0, 0%, 100%, 0.05);
     border-color: hsla(0, 0%, 100%, 0.07);
     &%autocompleteOptionPillSelected {
-      border-color: $main-color !important;
+      border-color: $main-color  !important;
     }
   }
   %autocompleteOptionPillKey {

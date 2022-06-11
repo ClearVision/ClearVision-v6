@@ -6,8 +6,8 @@
   box-shadow: 0 0 10px -3px $main-color;
 }
 %guildSVG {
-  > mask {
-    > rect {
+  >mask {
+    >rect {
       &:nth-child(3) {
         rx: 3;
         ry: 3;

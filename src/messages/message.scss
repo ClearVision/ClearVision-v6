@@ -49,7 +49,7 @@
   }
 
   // MESSAGE JUMP
-  > div[style^='border-radius: 2px;'] {
+  >div[style^='border-radius: 2px;'] {
     &[style$='0);'] {
       animation: none;
     }
@@ -60,7 +60,7 @@
 
 // LINKS
 %fakeLink,
-%embed > %embedTitleLink,
+%embed>%embedTitleLink,
 %markup a,
 %anchor,
 .content-s2SEQO a,
@@ -97,7 +97,7 @@
   }
   %messageRepliedTextContentIcon {
     opacity: 0.7;
-    %messageRepliedTextPreview:hover + & {
+    %messageRepliedTextPreview:hover+& {
       opacity: 1;
     }
   }
@@ -152,7 +152,7 @@
 // EDITING
 %themeDark %operations {
   color: hsla(0, 0%, 100%, 0.5);
-  > a {
+  >a {
     color: var(--main-color);
   }
 }

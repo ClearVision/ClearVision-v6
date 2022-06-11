@@ -12,7 +12,7 @@
     @include filters(cv('bg.modal'));
     z-index: -1;
   }
-  > %userModalTopSection {
+  >%userModalTopSection {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)) center/cover;
   }
 }
@@ -29,7 +29,7 @@
   &:hover {
     opacity: 0.7;
   }
-  > g {
+  >g {
     display: none;
   }
 }
@@ -51,7 +51,7 @@
   }
 }
 %userModalTabBar {
-  > %tabBarItem {
+  >%tabBarItem {
     position: relative;
     margin: 10px 0 0;
     padding: 0 10px;
@@ -59,7 +59,7 @@
     color: hsla(0, 0%, 100%, 0.5) !important;
     transition: color 0.15s ease-in-out;
     z-index: 1;
-    + %tabBarItem {
+    +%tabBarItem {
       margin-left: 20px;
     }
     &:before {
@@ -107,21 +107,21 @@
 
 // BODY
 %userModal {
-  > %userModalBody {
+  >%userModalBody {
     height: 306px;
     background: rgba(0, 0, 0, 0.7);
   }
 }
 %userModalBody {
   %userModalInfoSection {
-    + %userModalInfoSection {
+    +%userModalInfoSection {
       border-color: hsla(0, 0%, 100%, 0.04);
     }
-    > %userModalInfoSectionHeader {
+    >%userModalInfoSectionHeader {
       color: hsla(0, 0%, 100%, 0.7);
     }
-    > %userModalNote {
-      > textarea {
+    >%userModalNote {
+      >textarea {
         background: transparent;
         color: hsla(0, 0%, 100%, 0.8);
         &:focus {
@@ -135,7 +135,7 @@
   }
 }
 %userModalConnectedAccounts {
-  > %userModalConnectedAccount {
+  >%userModalConnectedAccount {
     position: relative;
     background: hsla(0, 0%, 100%, 0.04);
     border-color: transparent;

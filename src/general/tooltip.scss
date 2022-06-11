@@ -13,25 +13,25 @@
   }
   &%tooltipPrimary {
     background: rgba(0, 0, 0, 0.9);
-    > %tooltipPointer {
+    >%tooltipPointer {
       border-top-color: rgba(0, 0, 0, 0.9);
     }
   }
   &%tooltipBrand {
     background: $main-color;
-    > %tooltipPointer {
+    >%tooltipPointer {
       border-top-color: $main-color;
     }
   }
   &%tooltipRed {
     background: cv('colors.danger');
-    > %tooltipPointer {
+    >%tooltipPointer {
       border-top-color: cv('colors.danger');
     }
   }
   &%tooltipGreen {
     background: cv('colors.success');
-    > %tooltipPointer {
+    >%tooltipPointer {
       border-top-color: cv('colors.success');
     }
   }
@@ -54,7 +54,7 @@
 }
 %commandTooltip {
   background: rgba(0, 0, 0, 0.9);
-  > %commandTooltipPointer {
+  >%commandTooltipPointer {
     border-top-color: rgba(0, 0, 0, 0.9);
   }
 }

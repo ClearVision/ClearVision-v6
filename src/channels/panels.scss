@@ -9,7 +9,7 @@
 // ACCOUNT & CONNECTION PANELS
 %accountPanel,
 %connectionPanel {
-  > %flex {
+  >%flex {
     background: rgba(0, 0, 0, 0.3);
     border-radius: 15px;
     > :nth-child(n + 2) {
@@ -33,7 +33,7 @@
   width: 32px;
   height: 32px;
   opacity: 1;
-  > %buttonContents > svg {
+  >%buttonContents>svg {
     @include bg($rep: no-repeat, $pos: center, $size: 18px);
     color: #fff;
     opacity: 0.5;
@@ -43,12 +43,12 @@
     &%panelButtonEnabled {
       background: transparent;
     }
-    > %buttonContents > svg {
+    >%buttonContents>svg {
       opacity: 0.7;
     }
   }
   &%panelButtonDisabled {
-    > %buttonContents > svg {
+    >%buttonContents>svg {
       opacity: 0.1;
     }
   }
@@ -155,7 +155,7 @@
 
 // CONNECTION PANEL
 %connectionPanel {
-  > %flex {
+  >%flex {
     background: rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     padding: 5px;

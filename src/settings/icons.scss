@@ -1,8 +1,7 @@
 /* SETTINGS SIDEBAR ICONS */
 %settingsSidebar {
   // ICON MAP
-  $userSettingsIcons: (
-    // MY ACCOUNT
+  $userSettingsIcons: ( // MY ACCOUNT
     'my-account': 'https://clearvision.gitlab.io/icons/person.svg',
     // USER PROFILE
     'profile-customization': 'https://clearvision.gitlab.io/icons/user_profile.svg',
@@ -103,8 +102,7 @@
   'bans': '',
   );
 */
-  $channelSettingsIcons: (
-    // OVERVIEW
+  $channelSettingsIcons: ( // OVERVIEW
     'overview': 'https://clearvision.gitlab.io/info.svg',
     // PERMISSIONS
     'permissions': 'https://clearvision.gitlab.io/rule.svg',
@@ -114,8 +112,7 @@
     'integrations': 'https://clearvision.gitlab.io/jigsaw.svg'
   );
 
-  $dangerIcons: (
-    // LOG OUT
+  $dangerIcons: ( // LOG OUT
     'logout': 'https://clearvision.gitlab.io/icons/exit.svg',
     // DELETE
     'delete': 'https://clearvision.gitlab.io/delete.svg'
@@ -139,21 +136,24 @@
   }
 
   // USER SETTINGS
-  @each $i, $u in $userSettingsIcons {
+  @each $i,
+  $u in $userSettingsIcons {
     %tabBarItem[aria-controls='#{$i}-tab']:before {
       background-image: url(#{$u});
     }
   }
 
   // CHANNEL SETTINGS
-  @each $i, $u in $channelSettingsIcons {
+  @each $i,
+  $u in $channelSettingsIcons {
     %tabBarItem[aria-controls='#{$i}-tab']:before {
       background-image: url(#{$u});
     }
   }
 
   // DANGER
-  @each $i, $u in $dangerIcons {
+  @each $i,
+  $u in $dangerIcons {
     %tabBarItem[aria-controls='#{$i}-tab']:before {
       -webkit-mask: url(#{$u});
       mask: url(#{$u});
@@ -162,8 +162,8 @@
 }
 
 // DISCORD RIGHT SIDE ICONS
-%premiumLabel > svg,
-.tabBarItemContainer-2HdIlr > svg,
+%premiumLabel>svg,
+.tabBarItemContainer-2HdIlr>svg,
 %serverBoostIcon {
   margin-right: 15px;
 }

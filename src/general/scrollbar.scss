@@ -10,9 +10,9 @@
   background-clip: padding-box !important;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: $main-color !important;
+  background-color: $main-color  !important;
   &:active {
-    background-color: $hover-color !important;
+    background-color: $hover-color  !important;
   }
 }
 ::-webkit-scrollbar-track,

@@ -16,7 +16,7 @@
   width: 240px;
 }
 %chatSearch {
-  > %chatSearchRoot {
+  >%chatSearchRoot {
     color: #fff;
   }
   %chatSearchPlaceholder {
@@ -79,7 +79,7 @@
 .container-2McqkF {
   .queryContainer-ZunrLZ {
     .keybindShortcutSearchPopout-pt_bn5 {
-      & > span {
+      &>span {
         display: none;
       }
     }

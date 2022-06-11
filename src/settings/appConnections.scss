@@ -17,7 +17,7 @@ $colours: (
   background: transparent;
 }
 .connectionIcon-1iZ6F_ {
-  + div {
+  +div {
     &:before {
       content: '';
       position: absolute;
@@ -35,8 +35,9 @@ $colours: (
       z-index: -1;
     }
   }
-  @each $i, $u in $colours {
-    &[alt*='#{$i}'] + div {
+  @each $i,
+  $u in $colours {
+    &[alt*='#{$i}']+div {
       &:before {
         background-color: rgba($u, 0.6);
       }
@@ -48,7 +49,7 @@ $colours: (
   &[alt*='Facebook'],
   &[alt*='Spotify'],
   &[alt*='Xbox Live'] {
-    + div:after {
+    +div:after {
       bottom: -108px;
     }
   }

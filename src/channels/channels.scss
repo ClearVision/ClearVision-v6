@@ -37,7 +37,7 @@
     %flowerStarContainer {
       color: $main-color;
     }
-    %flowerStarChild > svg {
+    %flowerStarChild>svg {
       color: #fff;
     }
   }
@@ -76,10 +76,10 @@
     color: var(--channel-color);
     opacity: 1;
     transition: all 0.15s ease-in-out;
-    > path {
+    >path {
       opacity: 0.7;
     }
-    > path:last-of-type {
+    >path:last-of-type {
       opacity: 1;
     }
   }
@@ -224,7 +224,7 @@
 
 // ICONS
 %channelIconLive {
-  background-color: $main-color !important;
+  background-color: $main-color  !important;
 }
 
 // USER LIMIT
