@@ -22,7 +22,7 @@
     background-color: hsla(0, 0%, 100%, 0.1);
   }
   &:hover:not(%roleRowDisabledHover) {
-    background-color: rgba(255,255,255,.05);
+    background-color: rgba(255, 255, 255, 0.05);
   }
 }
 %buttonCircle {
@@ -260,12 +260,12 @@
 
 // MEMBERS
 %pruneMemberMenuDropdown {
-	background: var(--hover-color);
-	&:hover {
-		background: var(--hover-color);
-	}
+  background: var(--hover-color);
+  &:hover {
+    background: var(--hover-color);
+  }
 }
 %pruneMemberMenu {
-	background-color: rgba(0,0,0,.5);
-	border: hsla(0, 0%, 100%, 0.07);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: hsla(0, 0%, 100%, 0.07);
 }

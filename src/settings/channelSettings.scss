@@ -2,7 +2,7 @@
 
 // PERMISSIONS
 .group-LWHoGI {
-  border: 1px solid hsla(0,0%,100%,.07);
+  border: 1px solid hsla(0, 0%, 100%, 0.07);
 }
 .item-4m-12I {
   background-color: hsla(0, 0%, 0%, 0.4);
@@ -10,15 +10,15 @@
   cursor: pointer;
   &.selected-3jieYB {
     &.deny-1GO6vI {
-      background-color: rgba($color: #f04747, $alpha: .6);
+      background-color: rgba($color: #f04747, $alpha: 0.6);
       border-color: #f04747;
     }
     &.passthrough--fbdFR {
-      background-color: rgba($color: #faa61a, $alpha: .6);
+      background-color: rgba($color: #faa61a, $alpha: 0.6);
       border-color: #faa61a;
     }
     &.allow-1h61-Z {
-      background-color: rgba($color: #43b581, $alpha: .6);
+      background-color: rgba($color: #43b581, $alpha: 0.6);
       border-color: #43b581;
     }
   }
