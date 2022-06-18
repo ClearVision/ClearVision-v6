@@ -127,15 +127,13 @@
             background-color: cv('colors.danger');
             color: #fff;
           }
-        }
-        &[aria-controls='logout-tab'] {
           &:before {
             background-color: cv('colors.danger');
             opacity: 1;
           }
           &:hover {
             &:before {
-              color: #fff;
+              background-color: #fff;
               opacity: 1;
             }
           }
