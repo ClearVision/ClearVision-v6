@@ -1,7 +1,8 @@
 /* SETTINGS SIDEBAR ICONS */
 %settingsSidebar {
   // ICON MAP
-  $userSettingsIcons: ( // MY ACCOUNT
+  $userSettingsIcons: (
+    // MY ACCOUNT
     'my-account': 'https://clearvision.gitlab.io/icons/person.svg',
     // USER PROFILE
     'profile-customization': 'https://clearvision.gitlab.io/icons/user_profile.svg',
@@ -56,66 +57,70 @@
     // HYPESQUAD
     'hypesquad-online': 'https://clearvision.gitlab.io/icons/hypesquad.svg'
   );
-  /*
+  
   $serverSettingsIcons: (
-  // OVERVIEW
-  'overview': '',
-  // ROLES
-  'role': '',
-  // EMOJI
-  'emoji': '',
-  // STICKERS
-  'stickers': '',
-  // MODERATION
-  'moderation': '',
-  // AUDIT LOG
-  'audit_log': '',
-  // INTEGRATIONS
-  'integrations': '',
-  // WIDGET
-  'widget': '',
-  // SERVER TEMPLATE
-  'guild_templates': '',
-  // CUSTOM INVITE LINK
-  'vanity_url': '',
-
-  // ENABLE COMMUNITY/OVERVIEW
-  'community': '',
-  // SERVER INSIGHTS
-  'analytics': '',
-  // PARTNER PROGRAM
-  'partner': '',
-  // DISCOVERY
-  'discovery': ''
-  // MEMBERSHIP SCREENING
-  'member_verification': '',
-  // WELCOME SCREEN
-  'community_welcome': '',
-  // SERVER BOOST STATUS
-  'guild_premium-tab': 'https://clearvision.gitlab.io/icons/server_boost.svg',
-
-  // MEMBERS
-  'members': '',
-  // INVITES
-  'instant_invites': '',
-  // BANS
-  'bans': '',
-  );
-*/
-  $channelSettingsIcons: ( // OVERVIEW
-    'overview': 'https://clearvision.gitlab.io/info.svg',
-    // PERMISSIONS
-    'permissions': 'https://clearvision.gitlab.io/rule.svg',
-    // INVITES
-    'instant_invites': 'https://clearvision.gitlab.io/link-plus.svg',
+    // OVERVIEW
+    'overview': 'https://clearvision.gitlab.io/icons/info.svg',
+    // ROLES
+    'role': 'https://clearvision.gitlab.io/icons/flag.svg',
+    // EMOJI
+    'emoji': 'https://clearvision.gitlab.io/icons/emoji.svg',
+    // STICKERS
+    'stickers': 'https://clearvision.gitlab.io/icons/sticker.svg',
+    // MODERATION
+    'moderation': 'https://clearvision.gitlab.io/icons/security.svg',
+    // CONTENT MODERATION
+    'guild_automod_message_filter': 'https://clearvision.gitlab.io/icons/filter.svg',
+    // AUDIT LOG
+    'audit_log': 'https://clearvision.gitlab.io/icons/list.svg',
     // INTEGRATIONS
-    'integrations': 'https://clearvision.gitlab.io/jigsaw.svg'
+    'integrations': 'https://clearvision.gitlab.io/icons/puzzle.svg',
+    // WIDGET
+    'widget': 'https://clearvision.gitlab.io/icons/widget.svg',
+    // SERVER TEMPLATE
+    'guild_templates': 'https://clearvision.gitlab.io/icons/website.svg',
+    // CUSTOM INVITE LINK
+    'vanity_url': 'https://clearvision.gitlab.io/icons/link_plus.svg',
+
+    // ENABLE COMMUNITY/OVERVIEW
+    'community': 'https://clearvision.gitlab.io/icons/people.svg',
+    // SERVER INSIGHTS
+    'analytics': 'https://clearvision.gitlab.io/icons/insights.svg',
+    // PARTNER PROGRAM
+    'partner': 'https://clearvision.gitlab.io/icons/handshake.svg',
+    // DISCOVERY
+    'discovery': 'https://clearvision.gitlab.io/icons/explore.svg'
+    // MEMBERSHIP SCREENING
+    'member_verification': 'https://clearvision.gitlab.io/icons/person_search.svg',
+    // WELCOME SCREEN
+    'community_welcome': '',
+    // SERVER BOOST STATUS
+    'guild_premium-tab': 'https://clearvision.gitlab.io/icons/server_boost.svg',
+
+    // MEMBERS
+    'members': 'https://clearvision.gitlab.io/icons/group.svg',
+    // INVITES
+    'instant_invites': 'https://clearvision.gitlab.io/icons/person_add.svg',
+    // BANS
+    'bans': 'https://clearvision.gitlab.io/icons/hammer.svg'
   );
 
-  $dangerIcons: ( // LOG OUT
+  $channelSettingsIcons: (
+    /* OVERVIEW - DUPE
+    'overview': 'https://clearvision.gitlab.io/icons/info.svg', */
+    // PERMISSIONS
+    'permissions': 'https://clearvision.gitlab.io/icons/rule.svg',
+    /* INVITES - DUPE
+    'instant_invites': 'https://clearvision.gitlab.io/icons/person_add.svg', */
+    /* INTEGRATIONS - DUPE
+    'integrations': 'https://clearvision.gitlab.io/icons/puzzle.svg' */
+  );
+
+  $dangerIcons: (
+    // LOG OUT
     'logout': 'https://clearvision.gitlab.io/icons/exit.svg',
     // DELETE
-    'delete': 'https://clearvision.gitlab.io/delete.svg'
+    'delete': 'https://clearvision.gitlab.io/icons/delete.svg'
   );
 
   // GENERAL STYLES
@@ -138,6 +143,14 @@
   // USER SETTINGS
   @each $i,
   $u in $userSettingsIcons {
+    %tabBarItem[aria-controls='#{$i}-tab']:before {
+      background-image: url(#{$u});
+    }
+  }
+
+  // SERVER SETTINGS
+  @each $i,
+  $u in $serverSettingsIcons {
     %tabBarItem[aria-controls='#{$i}-tab']:before {
       background-image: url(#{$u});
     }
