@@ -1,23 +1,28 @@
 /* ADD SERVER MODAL */
-.base-21yXnu {
-  color: #fff;
-}
-.subtitle-3m-md1,
-.optionHeader-27AHfD {
-  color: hsla(0, 0%, 100%, 0.7);
-}
-.iconContainer-GFfNaA>svg>circle {
-  fill: $main-color;
-}
-.sampleLink-5BWNy9 {
-  color: $main-color;
-  font-weight: 500;
-}
-.backButton-2Ps-B8 {
-  color: hsla(0, 0%, 100%, 0.7);
-  &:hover {
+%themeLight {
+  .title-1_TkpU {
     color: #fff;
-    text-decoration: underline;
+  }
+  .subtitle-3m-md1,
+  .optionHeader-27AHfD {
+    color: hsla(0, 0%, 100%, 0.7);
+  }
+  .iconContainer-GFfNaA>svg>circle {
+    fill: $main-color;
+  }
+  .sampleLink-5BWNy9 {
+    color: $main-color;
+    font-weight: 500;
+  }
+  .backButton-2Ps-B8 {
+    color: hsla(0, 0%, 100%, 0.7);
+    &:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+  .skip-2hTIXL {
+    color: hsla(0, 0%, 100%, 0.7) !important;
   }
 }
 

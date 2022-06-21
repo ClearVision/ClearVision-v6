@@ -53,17 +53,18 @@
     }
   }
 }
-%appMount {
-  %panelActionButton {
-    &%panelActionButtonColor {
-      padding: 14px 2px;
-      &%panelActionButtonActive {
-        background-color: #fff;
-        color: var(--main-color);
-        &:hover {
-          background: hsla(0, 0%, 100%, 0.95);
-          color: $hover-color;
-        }
+%panelActionButtons {
+  grid-gap: 6px;
+}
+%panelActionButton {
+  &%panelActionButtonColor {
+    padding: 2px 14px;
+    &%panelActionButtonActive {
+      background-color: #fff;
+      color: var(--main-color);
+      &:hover {
+        background: hsla(0, 0%, 100%, 0.95);
+        color: $hover-color;
       }
     }
   }
