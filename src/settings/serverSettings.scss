@@ -99,6 +99,54 @@
   opacity: 0.3;
 }
 
+// CONTENT MODERATION
+.editCard-K9Q9mb {
+	background-color: hsla(0, 0%, 0%, .4);
+  &.active-Xi2rnV,
+  &.active-Xi2rnV.toggled-35JcVc {
+    background-color: hsla(0, 0%, 0%, .4);
+  }
+}
+.actionContainer-EzNGrb {
+	background-color: hsla(0, 0%, 100%, .1);
+}
+.actionIcon-2VtFPq,
+.actionTextHeader-yeCKjC {
+	color: hsla(0, 0%, 100%, .9) !important;
+}
+.stepCountIcon-1A2Rxd {
+	background-color: hsla(0, 0%, 100%, .1);
+}
+.keywordListContainer-9ux8nU,
+.actionContainer-2krsiT {
+	background-color: hsla(0, 0%, 0%, .4);
+}
+.keywordsTextArea-3QkFoG {
+	color: var(--text-normal);
+	background-color: hsla(0, 0%, 100%, 0.07);
+	border: none;
+	box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.09);
+  &:focus {
+    box-shadow: 0 0 2px 2px var(--main-color);
+  }
+  &::placeholder {
+    color: hsla(0, 0%, 100%, 0.3);
+  }
+}
+.resultsList-2d3x5p {
+	background-color: hsla(0, 0%, 0%, .8);
+	border: 1px solid hsla(0, 0%, 100%, .07);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.channelRowLabel-3fw5wf,
+.roleLabel-1ML0Dw {
+	background-color: hsla(0, 0%, 100%, .1);
+}
+.channelIcon-36DzP5 {
+	color: #fff
+}
+
+
 // AUDIT LOG
 %themeDark {
   .auditLog-1NVAY0 {

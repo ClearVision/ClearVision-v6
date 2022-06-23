@@ -1,4 +1,7 @@
 /* INPUT */
+%inputWrapper {
+  padding: 0 2px 2px 2px;
+}
 %input {
   color: var(--text-normal);
   background-color: hsla(0, 0%, 100%, 0.07);
@@ -12,7 +15,7 @@
   }
   &:focus,
   &%inputFocused {
-    box-shadow: 0 0 2px 2px var(--main-color);
+    box-shadow: 0 0 2px 2px $main-color;
   }
   &%inputNoBorder {
     border: none;
