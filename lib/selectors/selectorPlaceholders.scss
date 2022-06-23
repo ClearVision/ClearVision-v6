@@ -1481,6 +1481,12 @@
 .tooltipBrand-20XsMA {
   @extend %tooltipBrand !optional;
 }
+.hub-3NNcVs {
+  @extend %tooltipHub !optional;
+}
+.icon-3BYlXK {
+  @extend %tooltipHubIcon !optional;
+}
 .tooltipRed-2z14Wl {
   @extend %tooltipRed !optional;
 }
@@ -2886,6 +2892,9 @@ pre {
 .card-2TuZPZ {
   @extend %discoverGuildCard !optional;
 }
+.container-1wv6C6 {
+  @extend %discoverHubCard !optional;
+}
 .iconMask-2fMR98 {
   @extend %discoverGuildCardIcon !optional;
 }
@@ -2939,18 +2948,6 @@ pre {
 }
 .emptyHeader-2cxTFP {
   @extend %discoverEmptyTitle !optional;
-}
-.scroller-RfJjkV {
-  @extend %studentHubsPage !optional;
-}
-.container-1wv6C6 {
-  @extend %joinHubContainer !optional;
-}
-.sidebarContainer-gUKhtL {
-  @extend %studentHubsSidebarContainer !optional;
-}
-.iconContainer-3LclNk {
-  @extend %studentHubsIcon !optional;
 }
 .container-1S70rv {
   @extend %autocompletePopout !optional;
@@ -4354,4 +4351,34 @@ pre {
 }
 .iconWrapper-1sOtkE {
   @extend %integrationsIconWrapper !optional;
+}
+.scroller-RfJjkV {
+  @extend %hubDiscoverScroller !optional
+}
+.pageContainer-36uo3F {
+  @extend %hubContainer !optional;
+}
+.optionItem-2tdutc {
+  @extend %hubCategoryItem !optional;
+}
+.selected-1-Z6gm {
+  @extend %hubCategoryItemSelected !optional;
+}
+.layout-1qmrhw {
+  @extend %hubCategoryItemLayout !optional;
+}
+.headerContent-3_EO-5 {
+  @extend %hubHeader !optional;
+}
+.searchBox-3wTyE4 {
+  @extend %hubSearch !optional;
+}
+.card-3N2v9t {
+  @extend %hubCard !optional;
+}
+.splash-1Rnkv- {
+  @extend %hubSplash !optional;
+}
+.sidebarContainer-gUKhtL {
+  @extend %hubPopoutSidebar !optional;
 }

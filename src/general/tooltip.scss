@@ -51,6 +51,9 @@
     animation: cv-menu-fold-x 0.15s cubic-bezier(0.2, 0.6, 0.5, 1.1);
     transform-origin: 100% 50%;
   }
+  %tooltipHub > %tooltipHubIcon > circle {
+    fill: $main-color;
+  }
 }
 %commandTooltip {
   background: rgba(0, 0, 0, 0.9);
@@ -62,7 +65,7 @@
 %subscribeTooltipWrapper {
   background-color: $main-color;
   &:after {
-    border-bottom-color: var(--main-color);
+    border-bottom-color: $main-color;
   }
 }
 

@@ -1,6 +1,7 @@
 /* SERVER DISCOVER */
 %base {
-  %pageWrapper {
+  %pageWrapper,
+  %hubDiscoverScroller {
     background: rgba(0, 0, 0, calc(#{cv('bg.app.shading')} * 0.5));
   }
 }
@@ -76,6 +77,7 @@
 // GUILD LIST
 %themeDark {
   %discoverGuildCard,
+  %discoverHubCard,
   %discoverGuildCardIcon {
     background-color: hsla(0, 0%, 0%, 0.4);
     transition: all 0.15s ease-in-out;
@@ -115,18 +117,4 @@
 // EMPTY RESULTS
 %discoverEmptyResults {
   background-color: hsla(0, 0%, 0%, 0.6);
-}
-
-// STUDENT HUBS
-%studentHubsPage {
-  background-color: transparent;
-}
-%joinHubContainer {
-  background-color: rgba(0, 0, 0, 0.6);
-}
-%studentHubsSidebarContainer {
-  background-color: transparent;
-}
-%studentHubsIcon {
-  background-color: $main-color;
 }

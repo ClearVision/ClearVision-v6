@@ -7,7 +7,6 @@
     content: '';
     position: absolute;
     @include stretch;
-    margin: calc(-2 * #{cv('bg.modal.blur')});
     background: cv('bg.modal.img') cv('bg.modal.pos') / cv('bg.modal.size') cv('bg.modal.repeat') cv('bg.modal.attach');
     @include filters(cv('bg.modal'));
     z-index: -1;

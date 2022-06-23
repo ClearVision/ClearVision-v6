@@ -133,6 +133,7 @@ $version: '6.3.0';
 @import 'src/pages/previewServer';
 @import 'src/pages/serverBoost';
 @import 'src/pages/serverprofile';
+@import 'src/pages/studentHub.scss';
 
 // POPOUTS
 @import 'src/popouts/popout';
@@ -152,6 +153,7 @@ $version: '6.3.0';
 @import 'src/popouts/searchPopout';
 @import 'src/popouts/statusPicker';
 @import 'src/popouts/stickers';
+@import 'src/popouts/studentHubPopout.scss';
 @import 'src/popouts/threadPopout';
 @import 'src/popouts/userPopout';
 @import 'src/popouts/voiceChannelListeningTo';
