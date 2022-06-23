@@ -13,8 +13,11 @@
     }
   }
 }
+%hubCategoryItemIcon > svg > path {
+  fill: var(--interactive-active);
+}
 
-// SERVER SEARCH
+// SERVER LIST
 %hubCard {
   background-color: hsla(0, 0%, 0%, 0.4);
   transition: all 0.15s ease-in-out;
@@ -24,4 +27,63 @@
 }
 %hubSplash {
   background: transparent;
+}
+
+// SEARCH BOX
+%hubHeader {
+  %searchBox {
+    background: hsl(247, 55%, 24%);
+    border: none;
+    box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.09);
+    &:focus-within {
+      border: none;
+      box-shadow: 0 0 2px 2px var(--main-color);
+    }
+    %input {
+      border: none;
+      box-shadow: none;
+    }
+    %searchBoxInput {
+      color: var(--text-normal);
+      &::placeholder {
+      color: hsla(0, 0%, 100%, 0.3);
+      }
+    }
+    %searchBoxIconSearch {
+      color: var(--main-color);
+    }
+    %searchBoxCloseIcon {
+      color: var(--main-color);
+      &:hover {
+      color: var(--hover-color);
+      }
+    }
+  }
+}
+%searchHubHeader {
+  %searchPageBox {
+    background: hsla(0, 0%, 100%, 0.07);
+    border: none;
+    box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.09);
+    &:focus-within {
+      border: none;
+      box-shadow: 0 0 2px 2px var(--main-color);
+    }
+    %input {
+      border: none;
+      box-shadow: none;
+    }
+    %searchBoxInput {
+      color: var(--text-normal);
+      &::placeholder {
+        color: hsla(0, 0%, 100%, 0.3);
+      }
+    }
+    %searchBoxCloseIcon {
+      color: var(--main-color);
+      &:hover {
+        color: var(--hover-color);
+      }
+    }
+  }
 }

@@ -2859,6 +2859,9 @@ pre {
 .searchBox-pyIJJj {
   @extend %searchBox !optional;
 }
+.searchPageBox-2yxhpp {
+  @extend %searchPageBox !optional;
+}
 .searchBoxInput-P0mWHW {
   @extend %searchBoxInput !optional;
 }
@@ -3519,6 +3522,9 @@ pre {
 }
 .searchHeader-1r_ZSh {
   @extend %searchHeader !optional;
+}
+.searchHeader-UFC-sz {
+  @extend %searchHubHeader !optional;
 }
 .totalResults-2On644 {
   @extend %searchTotalResults !optional;
@@ -4366,6 +4372,9 @@ pre {
 }
 .layout-1qmrhw {
   @extend %hubCategoryItemLayout !optional;
+}
+.avatar-3VNtDW {
+  @extend %hubCategoryItemIcon !optional;
 }
 .headerContent-3_EO-5 {
   @extend %hubHeader !optional;
