@@ -27,6 +27,14 @@
   &:hover {
     background-color: hsla(0, 0%, 0%, 0.6);
   }
+  %hubCardIconMask {
+    background-color: rgba(0,0,0,.4);
+    transition: all .15s ease-in-out;
+  }
+  %hubCardIcon {
+    background-color: $main-color;
+    color: #fff;
+  }
 }
 %hubSplash {
   background: transparent;
