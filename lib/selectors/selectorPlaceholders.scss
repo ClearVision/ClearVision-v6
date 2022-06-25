@@ -4400,3 +4400,18 @@ pre {
 .sidebarContainer-gUKhtL {
   @extend %hubPopoutSidebar !optional;
 }
+.scrollTierBackground-BnWR8k {
+  @extend %activitiesScroller !optional;
+}
+.activityItem-1Z9CTr {
+  @extend %activityItem !optional;
+}
+.activityTag-3C3YK5 {
+  @extend %activityTag !optional;
+}
+.modalHeader-3X0A4K {
+  @extend %activityModalHeader !optional;
+}
+.modalDivider-MtZbPb {
+  @extend %activityModalDivider !optional;
+}

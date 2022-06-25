@@ -161,3 +161,23 @@
   background-color: hsla(0, 0%, 100%, 0.07);
   border: 1px solid hsla(0, 0%, 100%, 0.07);
 }
+
+// ACTIVITIES
+%activityModalHeader,
+%activityModalDivider {
+  background: rgba(0, 0, 0, .4);
+}
+%activityTag {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+%activityItem {
+  background: rgba(0, 0, 0, 0.4);
+  &:hover {
+    background: $hover-color;
+    box-sizing: border-box;
+    border: 2px solid $main-color;
+  }
+}
+%activitiesScroller {
+  background: transparent;
+}
