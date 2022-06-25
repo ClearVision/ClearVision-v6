@@ -13,7 +13,7 @@
     }
   }
 }
-%hubCategoryItemIcon > svg > path {
+%hubCategoryItemIcon>svg>path {
   fill: var(--interactive-active);
 }
 
@@ -28,7 +28,7 @@
     background-color: hsla(0, 0%, 0%, 0.6);
   }
   %hubCardIconMask {
-    background-color: rgba(0,0,0,.4);
+    background-color: rgba(0, 0, 0, .4);
     transition: all .15s ease-in-out;
   }
   %hubCardIcon {
@@ -57,7 +57,7 @@
     %searchBoxInput {
       color: var(--text-normal);
       &::placeholder {
-      color: hsla(0, 0%, 100%, 0.3);
+        color: hsla(0, 0%, 100%, 0.3);
       }
     }
     %searchBoxIconSearch {
@@ -66,7 +66,7 @@
     %searchBoxCloseIcon {
       color: var(--main-color);
       &:hover {
-      color: var(--hover-color);
+        color: var(--hover-color);
       }
     }
   }
