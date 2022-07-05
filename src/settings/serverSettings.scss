@@ -99,13 +99,19 @@
   opacity: 0.3;
 }
 
-// CONTENT MODERATION
+// AUTOMOD
 .editCard-K9Q9mb {
 	background-color: hsla(0, 0%, 0%, .4);
   &.active-Xi2rnV,
   &.active-Xi2rnV.toggled-35JcVc {
     background-color: hsla(0, 0%, 0%, .4);
   }
+}
+.ruleIconContainer-dXW56- {
+  background-color: hsla(0, 0%, 100%, .1);
+}
+.ruleIcon-jIriNN {
+  color: #fff;
 }
 .actionContainer-EzNGrb {
 	background-color: hsla(0, 0%, 100%, .1);
