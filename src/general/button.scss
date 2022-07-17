@@ -5,25 +5,23 @@
 }
 
 // BUTTON FILLED
-%appMount {
-  %buttonFilledGrey,
-  %buttonFilledBrand,
-  %buttonFilledGreen,
-  %buttonFilledBrandNew,
-  %buttonFilledBrandNew2,
-  %buttonFilledPrimary {
+%buttonFilledGrey,
+%buttonFilledBrand,
+%buttonFilledGreen,
+%buttonFilledBrandNew,
+%buttonFilledBrandNew2,
+%buttonFilledPrimary {
+  background: $main-color;
+  color: #fff;
+  &:hover,
+  &%buttonHasHover:hover {
+    background: $hover-color;
+  }
+  &:disabled {
+    background: $main-color  !important;
+  }
+  &:active {
     background: $main-color;
-    color: #fff;
-    &:hover,
-    &%buttonHasHover:hover {
-      background: $hover-color;
-    }
-    &:disabled {
-      background: $main-color  !important;
-    }
-    &:active {
-      background: $main-color;
-    }
   }
 }
 %buttonFilledRed {

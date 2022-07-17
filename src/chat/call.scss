@@ -27,7 +27,7 @@
 }
 %callTileBorder {
   &%callTileSpeaking {
-    box-shadow: inset 0 0 0 2px var(--main-color);
+    box-shadow: inset 0 0 0 2px $main-color;
   }
 }
 
@@ -40,7 +40,7 @@
     background-color: rgba(0, 0, 0, 0.6);
     color: #fff;
     &:hover {
-      background-color: var(--hover-color);
+      background-color: $hover-color;
       color: #fff;
     }
   }
@@ -50,12 +50,20 @@
     &:hover {
       background-color: $hover-color;
     }
-    %callButtonActive {
-      background-color: transparent;
+    &%callButtonActive {
+      background-color: #fff;
+      &:hover {
+        background-color: hsla(0, 0%, 100%, .7);
+      }
     }
     %callCenterIcon,
     %micSlash {
       color: #fff;
+    }
+    %callCenterIcon {
+      &%callButtonActive {
+        color: $main-color
+      }
     }
   }
   &%callButtonRed {
