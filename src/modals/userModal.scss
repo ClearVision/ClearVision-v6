@@ -134,7 +134,7 @@
   }
 }
 %userModalConnectedAccounts {
-  >%userModalConnectedAccount {
+  %userModalConnectedAccountContainer {
     position: relative;
     background: hsla(0, 0%, 100%, 0.04);
     border-color: transparent;
