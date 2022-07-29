@@ -277,14 +277,13 @@
       }
     }
   }
-  %voiceUserAvatar {
+  %voiceUserAvatarSpeaking {
     position: relative;
     transition: all 0.1s ease-in-out;
     &:after {
       content: '';
       position: absolute;
-      width: 0;
-      @include pos($top: 0, $bottom: 0, $left: 0);
+      height: 1.7em;
       background: linear-gradient(to right, $main-color 10%, transparent);
       opacity: 0.5;
       transition: all 0.1s ease-in-out, width 0.15s ease-in-out;
