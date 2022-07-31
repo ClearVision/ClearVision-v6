@@ -1,7 +1,6 @@
-- name: Build
-
-on: "push"
-
+name: Build
+on: 
+  - push
 jobs:
   project:
     name: Build
