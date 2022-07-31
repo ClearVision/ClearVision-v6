@@ -1,4 +1,4 @@
-#Deploys using JamesIves' project
+# Deploys using JamesIves' project
 - name: Deploy to GitHub Pages
   uses: JamesIves/github-pages-deploy-action@v4.4.0
 
