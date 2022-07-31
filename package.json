@@ -3,9 +3,8 @@
   "description": "Highly customizable theme for BetterDiscord.",
   "private": true,
   "scripts": {
-    "build": "npm run clean && npm run build.sass && npm run build.prefix",
+    "build": "npm run clean && npm run build.sass",
     "build.sass": "sass --style=compressed --no-source-map hljs.scss:public/hljs.css main.scss:public/main.css",
-    "build.prefix": "postcss public/*.css --dir=public --use=autoprefixer  -b=\"> 5%\" --no-map",
     "clean": "rimraf {public,test}",
     "format": "prettier --write .",
     "test": "npm run clean && npm run test.build",
