@@ -30,7 +30,7 @@ jobs:
         with:
           node-version: 12
       - name: install
-        run: npm ci
+        run: npm i
       - name: run
         run: npm run build
         
