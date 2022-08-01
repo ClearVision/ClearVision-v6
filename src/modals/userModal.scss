@@ -22,7 +22,7 @@
 %userModalAdditionalActionsIcon {
   width: 24px;
   height: 24px;
-  background: url(https://clearvision.gitlab.io/icons/expand_more.svg) center/36px no-repeat;
+  background: url(https://clearvision.github.io/icons/expand_more.svg) center/36px no-repeat;
   opacity: 0.3;
   transition: all 0.15s ease-in-out;
   &:hover {
@@ -152,7 +152,7 @@
   }
 }
 %userModalConnectedAccountVerifiedIcon {
-  background: url(https://clearvision.gitlab.io/icons/verified.svg) center/18px no-repeat;
+  background: url(https://clearvision.github.io/icons/verified.svg) center/18px no-repeat;
   opacity: 0.5;
   z-index: 1;
   %flowerStar {
@@ -163,7 +163,7 @@
   }
 }
 %userModalConnectedAccountOpenIcon {
-  background: url(https://clearvision.gitlab.io/icons/popout.svg) center/18px no-repeat;
+  background: url(https://clearvision.github.io/icons/popout.svg) center/18px no-repeat;
   opacity: 0.3;
   transition: all 0.15s ease-in-out;
   &:after {

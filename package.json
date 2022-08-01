@@ -28,7 +28,7 @@
   "bugs": {
     "url": "https://github.com/ClearVision/ClearVision-v6/issues"
   },
-  "homepage": "https://clearvision.gitlab.io",
+  "homepage": "https://clearvision.github.io",
   "devDependencies": {
     "autoprefixer": "^10.4.4",
     "postcss-cli": "^9.1.0",
