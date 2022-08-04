@@ -66,12 +66,18 @@
   background: var(--background-modifier-hover);
 }
 
-// DISCORD NITRO GIFT PAYMENT
-.table-17_dGF {
-  background-color: transparent;
+// DISCORD NITRO PAYMENT
+.spinner-3QeLKO {
+	background-color: transparent;
 }
-.paymentSourceWrapper-39oqV6 .lookFilled-1h1y05.select-1Pkeg4 {
-  margin: 0 2px;
+.modalHeader-gQTY3L {
+	background-image: none;
+}
+.paymentModalContent {
+	background-color: transparent;
+}
+.table-17_dGF {
+  background-color: hsla(0, 0%, 0%, 0.4);
 }
 .planOptionDiscount-2nex9n {
   background-color: $main-color;
@@ -79,8 +85,18 @@
 .contents-1X8z-d {
   background-color: rgba(0, 0, 0, 0.5);
 }
+.cardNumberWrapper-3JnfVP {
+	margin: 0 2px;
+}
 .cardInput-33x7OF {
   background-color: hsla(0, 0%, 100%, 0.07);
+	box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.09);
+}
+.cardInputFocused-31lFD1 {
+	box-shadow: 0 0 2px 2px var(--main-color);
+}
+.cardIcon-1rZ5-N {
+	top: 9px;
 }
 
 // SERVER BOOST PAYMENT MODAL
