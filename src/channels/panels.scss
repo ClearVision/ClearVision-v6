@@ -113,7 +113,7 @@
     min-width: calc(100% - 100px);
 	  width: auto;
     &:hover {
-      background-color: $hover-color;
+      background-color: hsla(0, 0%, 0%, 0.3);
       color: #fff;
     }
   }
