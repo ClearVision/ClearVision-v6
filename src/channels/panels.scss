@@ -107,7 +107,12 @@
       transform: none;
     }
   }
-
+  // SOME POSITIONING
+  %accountPanelTagButton,
+  %accountPanelTagless {
+    min-width: calc(100% - 100px);
+	  width: auto;
+  }
   // AVATAR
   %accountPanelAvatar {
     width: 32px !important;

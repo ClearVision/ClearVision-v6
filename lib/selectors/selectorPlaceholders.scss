@@ -522,6 +522,12 @@
 .subtext-2HDqJ7 {
   @extend %accountPanelDiscriminator !optional;
 }
+.withTagAsButton-OsgQ9L {
+  @extend %accountPanelTagButton !optional;
+}
+.withTagless-10ooWt {
+  @extend %accountPanelTagless !optional;
+}
 .container-1zzFcN {
   @extend %connectionPanel !optional;
 }
