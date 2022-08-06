@@ -48,6 +48,10 @@
     }
   }
 
+  // GIFS/EMBEDS
+  %messageInlineMediaEmbed {
+    max-width: auto;
+  }
   // MESSAGE JUMP
   >div[style^='border-radius: 2px;'] {
     &[style$='0);'] {

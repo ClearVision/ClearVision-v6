@@ -502,7 +502,7 @@
   @extend %panelActionButtonActive !optional;
 }
 .container-YkUktl {
-  @extend %accountPanel !optional;
+  @extend %b !optional;
 }
 .avatarWrapper-1B9FTW {
   @extend %accountPanelAvatarWrapper !optional;
@@ -2612,6 +2612,9 @@ pre {
 }
 .commandName-1KhvGm {
   @extend %messageRepliedCommandName !optional;
+}
+.inlineMediaEmbed-1m3ApS {
+  @extend %messageInlineMediaEmbed !optional;
 }
 .mentioned-Tre-dv {
   @extend %mentioned !optional;
