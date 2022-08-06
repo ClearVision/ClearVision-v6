@@ -47,11 +47,6 @@
       border-radius: 0;
     }
   }
-
-  // GIFS/EMBEDS
-  %messageInlineMediaEmbed {
-    max-width: auto;
-  }
   // MESSAGE JUMP
   >div[style^='border-radius: 2px;'] {
     &[style$='0);'] {
@@ -61,7 +56,10 @@
     animation: cv-message-jump 2s ease-in-out;
   }
 }
-
+// GIFS/EMBEDS
+%messageInlineMediaEmbed {
+  max-width: max-content;
+}
 // LINKS
 %fakeLink,
 %embed>%embedTitleLink,
