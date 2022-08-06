@@ -112,6 +112,10 @@
   %accountPanelTagless {
     min-width: calc(100% - 100px);
 	  width: auto;
+    &:hover {
+      background-color: $hover-color;
+      color: #fff;
+    }
   }
   // AVATAR
   %accountPanelAvatar {
