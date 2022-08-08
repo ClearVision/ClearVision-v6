@@ -1,6 +1,5 @@
 /* EMBED */
 %embed {
-  background: hsla(0, 0%, 0%, 0.3);
   %embedAuthorName,
   %embedFieldName,
   %embedTitle {
@@ -42,6 +41,9 @@
   %embedFooterSeparator {
     color: hsla(0, 0%, 100%, 0.07);
   }
+}
+%embedFull {
+  background: hsla(0, 0%, 0%, 0.3);
 }
 
 // IMAGE ERROR
