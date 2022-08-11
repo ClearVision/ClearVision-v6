@@ -33,6 +33,8 @@ _Thank you to @Gibbu to providing this._
 
 ## Installing
 
+Note: ClearVision doesn't actively support plugins (as in, we don't seek out and actively theme fixes to every new plugin). However, when a plugin is widely used, we try our best to stay compatible. 
+
 Download the theme file and move it into your [BetterDiscord](https://betterdiscord.app) themes folder:
 
 > [ClearVision_v6.theme.css](https://clearvision.gitlab.io/download/v6/latest)
