@@ -2673,14 +2673,23 @@ pre {
 .reaction-3vwAF2 {
   @extend %reaction !optional;
 }
+.reaction-102jx9 {
+  @extend %forumReaction !optional;
+}
 .reactionMe-1PwQAc {
   @extend %reactionMe !optional;
+}
+.reactionMe-2zhiyZ {
+  @extend %forumReactionMe !optional;
 }
 .reactionInner-YJjOtT {
   @extend %reactionInner !optional;
 }
 .reactionCount-26U4As {
   @extend %reactionCount !optional;
+}
+.reactionCount-SWXh9W {
+  @extend %forumReactionCount !optional;
 }
 .spoilerText-27bIiA {
   @extend %spoilerText !optional;

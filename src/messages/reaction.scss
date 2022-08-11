@@ -1,5 +1,4 @@
-/* MESSAGE REACTION */
-
+/* MESSAGE REACTIONS */
 %reaction {
   background-color: hsla(0, 0%, 100%, 0.05);
   border-radius: 3px;
@@ -25,6 +24,37 @@
     &:hover {
       background-color: hsla(0, 0%, 100%, 0.2);
       %reactionCount {
+        color: $hover-color;
+      }
+    }
+  }
+}
+/* FORUM REACTIONS */
+%forumReaction {
+  background-color: hsla(0, 0%, 100%, 0.05);
+  border-radius: 3px;
+  transition: all 0.15s ease-in-out;
+  &:hover {
+    background-color: hsla(0, 0%, 100%, 0.2);
+    %forumReactionCount {
+      color: hsla(0, 0%, 100%, 0.9);
+    }
+  }
+  %forumReactionInner {
+    padding: 0 5px;
+  }
+  %forumReactionCount {
+    color: hsla(0, 0%, 100%, 0.4);
+  }
+  &%forumReactionMe {
+    background-color: hsla(0, 0%, 100%, 0.1);
+    border-color: transparent;
+    %forumReactionCount {
+      color: $main-color;
+    }
+    &:hover {
+      background-color: hsla(0, 0%, 100%, 0.2);
+      %forumReactionCount {
         color: $hover-color;
       }
     }
