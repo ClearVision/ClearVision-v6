@@ -26,29 +26,6 @@ $version: '6.3.0';
 @import 'src/app/notice';
 @import 'src/app/titlebar';
 
-// BETTERDISCORD
-@import 'src/bd/bdSettings';
-@import 'src/bd/customCSS';
-@import 'src/bd/emotePicker';
-@import 'src/bd/icons';
-@import 'src/bd/popouts';
-@import 'src/bd/sidebar';
-@import 'src/bd/sources';
-
-// BETTERDISCORD PLUGINS
-@import 'src/bd/plugins/messageButtons';
-@import 'src/bd/plugins/pluginNotice';
-
-@import 'src/bd/plugins/Arashiryuu/memberCount';
-@import 'src/bd/plugins/CapnKitten/HideChannels';
-@import 'src/bd/plugins/DevilBro/badgesEverywhere';
-@import 'src/bd/plugins/DevilBro/dateText';
-@import 'src/bd/plugins/DevilBro/ownerTag';
-@import 'src/bd/plugins/DevilBro/showHiddenChannels';
-@import 'src/bd/plugins/DevilBro/tooltips';
-@import 'src/bd/plugins/Finicalmist/copyCode';
-@import 'src/bd/plugins/noodlebox/lineNumbers';
-
 // CHANNEL
 @import 'src/channels/channels';
 @import 'src/channels/category';
@@ -183,3 +160,27 @@ $version: '6.3.0';
 @import 'src/users/botTag';
 @import 'src/users/role';
 @import 'src/users/status';
+
+// BETTERDISCORD
+@import 'src/bd/bdSettings';
+@import 'src/bd/customCSS';
+@import 'src/bd/emotePicker';
+@import 'src/bd/icons';
+@import 'src/bd/popouts';
+@import 'src/bd/sidebar';
+@import 'src/bd/sources';
+
+// BETTERDISCORD PLUGINS
+@import 'src/bd/plugins/messageButtons';
+@import 'src/bd/plugins/pluginNotice';
+
+@import 'src/bd/plugins/Arashiryuu/memberCount';
+@import 'src/bd/plugins/CapnKitten/HideChannels';
+@import 'src/bd/plugins/DevilBro/badgesEverywhere';
+@import 'src/bd/plugins/DevilBro/dateText';
+@import 'src/bd/plugins/DevilBro/gameActivityToggle';
+@import 'src/bd/plugins/DevilBro/ownerTag';
+@import 'src/bd/plugins/DevilBro/showHiddenChannels';
+@import 'src/bd/plugins/DevilBro/tooltips';
+@import 'src/bd/plugins/Finicalmist/copyCode';
+@import 'src/bd/plugins/noodlebox/lineNumbers';
