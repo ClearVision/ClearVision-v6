@@ -1,0 +1,80 @@
+%themeDark %forumContainer{
+    background: rgba(0, 0, 0, calc(#{cv('bg.app.shading')} * 0.3));
+}
+%forumCardContainer {
+    &%forumOpenCard {
+        background: hsla(0, 0%, 0%, 0.3);
+    }
+}
+%forumCard {
+    background: hsla(0, 0%, 0%, 0.3);
+    border: 2px solid $main-color;
+    &:hover {
+        background: hsla(0, 0%, 0%, 0.3);
+        border: 2px solid $hover-color;
+    }
+    %channelTextArea {
+        background: hsla(0, 0%, 100%, 0.07);
+        width: 95%;
+        %channelTextAreaScrollable {
+            background: transparent;
+        }
+    }
+    %forumContentContainer {
+        padding: 10px 0px 0px 0px;
+    }
+}
+%forumHeaderRow {
+    %forumCard, %forumCard:hover {
+        border: 2px solid transparent;
+    }
+}
+%forumHeaderBorder {
+    box-shadow: 0 0 0 2px transparent;
+}
+%forumCardName {
+	color: #fff !important;
+}
+%forumTag {
+	background: transparent;
+	border: 2px solid $main-color;
+    &%forumTagClickable:not(%forumTagDisabled):hover {
+        background: transparent;
+        border: 2px solid $hover-color;
+    }
+}
+%forumGuidelineContainer, %forumTagContainer {
+	background: hsla(0, 0%, 0%, 0.3);
+	border: none;
+}
+%forumPencilIcon, %forumSearchIcon, %forumCloseIcon {
+	color: rgba(255,255,255,.9);
+	width: 20px;
+	height: 20px;
+	left: 10px;
+	top: 10px;
+    &:hover {
+        color: #fff;
+    };
+}
+%forumSearchInput {
+	width: 95%;
+	border-radius: 4px;
+	height: 30px;
+}
+%forumSearch input, %forumSearch input::placeholder{
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-weight: 300;
+}
+%forumLoadingCard {
+	background: hsla(0, 0%, 0%, 0.3); 
+}
+%forumUploadIcon {
+    background: $main-color;
+    transition: all .15s ease-in-out;
+    &:hover {
+        background: $hover-color;
+        transition: all .15s ease-in-out;
+    }
+}
