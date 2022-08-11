@@ -78,3 +78,12 @@
         transition: all .15s ease-in-out;
     }
 }
+
+/* FORUM CHAT */
+%forumChatIcon {
+	background: $main-color;
+}
+%forumChatHead,
+%forumChatDivider {
+	background-color: transparent;
+}
