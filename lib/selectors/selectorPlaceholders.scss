@@ -2694,6 +2694,12 @@ pre {
 .reactionCount-SWXh9W {
   @extend %forumReactionCount !optional;
 }
+.addReactButton-3bSQb6 {
+  @extend %forumReactAdd !optional;
+}
+.buttonInner-3aRbcx {
+  @extend %forumReactButton !optional;
+}
 .spoilerText-27bIiA {
   @extend %spoilerText !optional;
 }
@@ -4504,4 +4510,13 @@ pre {
 }
 .uploadInput-3fblkw {
   @extend %forumUploadIcon !optional;
+}
+.iconWrapper-3FqQ75 {
+  @extend %forumChatIcon !optional;
+}
+.container-3YcgdM {
+  @extend %forumChatHead !optional;
+}
+.divider-AZrXIA {
+  @extend %forumChatDivider !optional;
 }
