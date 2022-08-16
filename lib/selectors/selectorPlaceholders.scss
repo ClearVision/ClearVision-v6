@@ -438,6 +438,9 @@
 .header-3OsQeK {
   @extend %channelsHeader !optional;
 }
+.selected-1GtAC5 v{
+  @extend %channelsHeaderSelected !optional;
+}
 .name-3Uvkvr {
   @extend %channelsHeaderName !optional;
 }
@@ -1224,7 +1227,7 @@
 .lookLink-15mFoz.colorGreen-3y-Z79 {
   @extend %buttonLinkGreen !optional;
 }
-.lookLink-15mFozcolorRed-rQXKgM {
+.lookLink-15mFoz.colorRed-rQXKgM {
   @extend %buttonLinkRed !optional;
 }
 .lookLink-15mFoz.colorGrey-2DXtkV {
