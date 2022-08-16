@@ -36,11 +36,17 @@
 %integrationsIconWrapper {
   background-color: hsla(0, 0%, 0%, 0.4);
 }
-/*---forums settings---*/
-/*guidelines editor*/
+
+// FORUMS
 .staticToolbar-x12NJC {
 	background: transparent;
 }
 .addTags-2AjBTc {
-	background: var(--main-color);
+	background: $main-color;
+}
+.container-16urgA {
+	border-color: $main-color;
+}
+.placeholderLine-86Fsd9, .placeholderMedia-34JHvE, .reaction-BL6n45 {
+  background-color: hsla(0, 0%, 100%, .15)
 }

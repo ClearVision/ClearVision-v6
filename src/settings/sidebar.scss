@@ -89,6 +89,7 @@
           transition: all 0.3s ease-in-out;
           z-index: -1;
           pointer-events: none;
+          border-radius: 4px;
         }
 
         // HOVER
@@ -116,7 +117,7 @@
           color: #fff;
           transition: all 0.15s ease-in-out, background 0.3s 0.2s;
           %premiumSelectedBackground {
-            background-color: transparent;
+            background-color: transparent !important;
           }
         }
 
@@ -151,5 +152,12 @@
     &:hover {
       color: hsla(0, 0%, 100%, 0.7);
     }
+  }
+}
+
+// PROMO
+%themeDark {
+  .auPromo-Gk5s48 {
+    opacity: .2;
   }
 }

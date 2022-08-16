@@ -11,7 +11,7 @@
     // Authorized Apps
     'authorized-apps': 'https://clearvision.github.io/icons/apps.svg',
     // CONNECTIONS
-    'connections': 'https://clearvision.github.io/icons/link.svg',
+    'passport': 'https://clearvision.github.io/icons/link.svg',
     // FRIEND REQUEST
     'friend-requests': 'https://clearvision.github.io/icons/person_add.svg',
 
@@ -137,6 +137,7 @@
       height: 24px;
       left: 15px;
       margin-top: -2px;
+      z-index: 999;
     }
     &:hover:before {
       transform: rotateY(180deg);
