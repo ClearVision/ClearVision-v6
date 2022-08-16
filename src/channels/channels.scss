@@ -17,7 +17,7 @@
     font-weight: 600;
     text-shadow: 0 0 3px #000;
     &:hover,
-    .selected-1GtAC5 & {
+    %channelsHeaderSelected & {
       background-color: hsla(0,0%,100%,.1);
     }
   }
