@@ -120,6 +120,9 @@
     }
   }
 }
+%buttonLinkBrand {
+  color: $main-color
+}
 %buttonLinkRed {
   color: cv('colors.danger');
 }
