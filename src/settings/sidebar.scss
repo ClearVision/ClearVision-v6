@@ -116,7 +116,7 @@
           background: transparent;
           color: #fff;
           transition: all 0.15s ease-in-out, background 0.3s 0.2s;
-          %serverBoostTabItem {
+          &%serverBoostTabItem {
             background-color: transparent !important;
           }
         }

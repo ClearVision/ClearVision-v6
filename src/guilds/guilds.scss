@@ -111,9 +111,8 @@
     background-color: hsla(0, 0%, 100%, 0.1);
   }
 }
-%guildFolderNoIcon {
-  background: rgba(0, 0, 0, 0.3) !important;
-  color: hsla(0, 0%, 100%, 0.7);
+%guildFolderGuildNoIcon {
+  background: rgba(0, 0, 0, 0.4)
 }
 %guildExpandedFolderBackground {
   background: hsla(0, 0%, 100%, 0.07);

@@ -111,18 +111,31 @@
     }
   }
 }
-%appMount {
-  %buttonLinkPrimary {
-    color: hsla(0, 0%, 100%, 0.7);
-    &:hover {
-      color: #fff;
-      text-decoration: underline;
-    }
+%buttonLinkPrimary {
+  color: hsla(0, 0%, 100%, 0.7);
+  &:hover {
+    color: #fff;
+    text-decoration: underline;
   }
 }
 %buttonLinkBrand {
-  color: $main-color
+  color: $main-color;
+  &:hover %buttonContents {
+    background-image: none;
+    text-decoration: underline;
+  }
+}
+%buttonLinkLink {
+  color: var(--url-color);
+  &:hover %buttonContents {
+    background-image: none;
+    text-decoration: underline;
+  }
 }
 %buttonLinkRed {
   color: cv('colors.danger');
+  &:hover %buttonContents {
+    background-image: none;
+    text-decoration: underline;
+  }
 }
