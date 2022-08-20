@@ -3,135 +3,137 @@
   // ICON MAP
   $userSettingsIcons: (
     // MY ACCOUNT
-    'my-account': 'https://clearvision.github.io/icons/person.svg',
+    'MyAccount': 'https://clearvision.github.io/icons/person.svg',
     // USER PROFILE
-    'profile-customization': 'https://clearvision.github.io/icons/user_profile.svg',
+    'ProfileCustomizationn': 'https://clearvision.github.io/icons/user_profile.svg',
     // PRIVACY & SAFETY
-    'privacy-&-safety': 'https://clearvision.github.io/icons/security.svg',
+    'PrivacynSafety': 'https://clearvision.github.io/icons/security.svg',
     // Authorized Apps
-    'authorized-apps': 'https://clearvision.github.io/icons/apps.svg',
+    'AuthorizedApps': 'https://clearvision.github.io/icons/apps.svg',
     // CONNECTIONS
-    'passport': 'https://clearvision.github.io/icons/link.svg',
+    'Passport': 'https://clearvision.github.io/icons/link.svg',
     // FRIEND REQUEST
-    'friend-requests': 'https://clearvision.github.io/icons/person_add.svg',
+    'FriendRequests': 'https://clearvision.github.io/icons/person_add.svg',
 
     // NITRO
-    'discord-nitro': 'https://clearvision.github.io/icons/nitro.svg',
+    'DiscordNitro': 'https://clearvision.github.io/icons/nitro.svg',
     // SERVER BOOST
-    'nitro-server-boost': 'https://clearvision.github.io/icons/server_boost.svg',
+    'NitroServerBoost': 'https://clearvision.github.io/icons/server_boost.svg',
     // SUBSCRIPTIONS
-    'subscriptions': 'https://clearvision.github.io/icons/subscriptions.svg',
+    'Subscriptions': 'https://clearvision.github.io/icons/subscriptions.svg',
     // GIFT INVENTORY
-    'library-inventory': 'https://clearvision.github.io/icons/gift.svg',
+    'LibraryInventory': 'https://clearvision.github.io/icons/gift.svg',
     // BILLING
-    'billing': 'https://clearvision.github.io/icons/payment.svg',
+    'Billing': 'https://clearvision.github.io/icons/payment.svg',
 
     // APPEARANCE
-    'appearance': 'https://clearvision.github.io/icons/camera.svg',
+    'Appearance': 'https://clearvision.github.io/icons/camera.svg',
     // ACCESSIBILITY
-    'accessibility': 'https://clearvision.github.io/icons/accessibility.svg',
+    'Accessibility': 'https://clearvision.github.io/icons/accessibility.svg',
     // VOICE & VIDEO
-    'voice-&-video': 'https://clearvision.github.io/icons/mic.svg',
+    'VoicenVideo': 'https://clearvision.github.io/icons/mic.svg',
     // TEXT & IMAGES
-    'text-&-images': 'https://clearvision.github.io/icons/chat.svg',
+    'TextnImages': 'https://clearvision.github.io/icons/chat.svg',
     // NOTIFICATIONS
-    'notifications': 'https://clearvision.github.io/icons/notifications.svg',
+    'Notifications': 'https://clearvision.github.io/icons/notifications.svg',
     // KEYBINDS
-    'keybinds': 'https://clearvision.github.io/icons/keyboard.svg',
+    'Keybinds': 'https://clearvision.github.io/icons/keyboard.svg',
     // LANGUAGE
-    'language': 'https://clearvision.github.io/icons/language.svg',
+    'Language': 'https://clearvision.github.io/icons/language.svg',
     // WINDOWS SETTINGS
-    'windows': 'https://clearvision.github.io/icons/windows.svg',
+    'Windows': 'https://clearvision.github.io/icons/windows.svg',
     // LINUX SETTINGS
-    'linux': 'https://clearvision.github.io/icons/linux.svg',
+    'Linux': 'https://clearvision.github.io/icons/linux.svg',
     // STREAMER MODE
-    'streamer-mode': 'https://clearvision.github.io/icons/videocam.svg',
+    'StreamerMode': 'https://clearvision.github.io/icons/videocam.svg',
     // ADVANCED
-    'advanced': 'https://clearvision.github.io/icons/bug.svg',
+    'Advanced': 'https://clearvision.github.io/icons/bug.svg',
 
     // ACTIVITY PRIVACY
-    'activity-privacy': 'https://clearvision.github.io/icons/controller-off.svg',
+    'ActivityPrivacy': 'https://clearvision.github.io/icons/controller-off.svg',
     // REGISTERED GAMES
-    'game-activity': 'https://clearvision.github.io/icons/games.svg',
+    'GameActivity': 'https://clearvision.github.io/icons/games.svg',
     // OVERLAY
-    'overlay': 'https://clearvision.github.io/icons/aspect_ratio.svg',
+    'Overlay': 'https://clearvision.github.io/icons/aspect_ratio.svg',
 
     // CHANGE LOG
     'changelog': 'https://clearvision.github.io/icons/history.svg',
     // HYPESQUAD
-    'hypesquad-online': 'https://clearvision.github.io/icons/hypesquad.svg'
+    'HypesquadOnline': 'https://clearvision.github.io/icons/hypesquad.svg'
   );
   
   $serverSettingsIcons: (
     // OVERVIEW
-    'overview': 'https://clearvision.github.io/icons/info.svg',
+    'OVERVIEW': 'https://clearvision.github.io/icons/info.svg',
     // ROLES
-    'roles': 'https://clearvision.github.io/icons/flag.svg',
+    'ROLES': 'https://clearvision.github.io/icons/flag.svg',
     // EMOJI
-    'emoji': 'https://clearvision.github.io/icons/emoji.svg',
+    'EMOJI': 'https://clearvision.github.io/icons/emoji.svg',
     // STICKERS
-    'stickers': 'https://clearvision.github.io/icons/sticker.svg',
+    'STICKERS': 'https://clearvision.github.io/icons/sticker.svg',
     // MODERATION
     'moderation': 'https://clearvision.github.io/icons/security.svg',
-    // AUTOMOD
-    'guild_automod': 'https://clearvision.github.io/icons/robot.svg',
-    // AUDIT LOG
-    'audit_log': 'https://clearvision.github.io/icons/list.svg',
     // INTEGRATIONS
-    'integrations': 'https://clearvision.github.io/icons/puzzle.svg',
+    'INTEGRATIONS': 'https://clearvision.github.io/icons/puzzle.svg',
     // WIDGET
-    'widget': 'https://clearvision.github.io/icons/widgets.svg',
+    'WIDGET': 'https://clearvision.github.io/icons/widgets.svg',
     // SERVER TEMPLATE
-    'guild_templates': 'https://clearvision.github.io/icons/website.svg',
+    'GUILD_TEMPLATES': 'https://clearvision.github.io/icons/website.svg',
     // CUSTOM INVITE LINK
-    'vanity_url': 'https://clearvision.github.io/icons/link_plus.svg',
+    'VANITY_URL': 'https://clearvision.github.io/icons/link_plus.svg',
+    
+    // MEMBERSHIP SCREENING
+    'MEMBER_VERIFICATION': 'https://clearvision.github.io/icons/person_search.svg',
+    // MODERATION
+    // 'MODERATION': '',
+    // AUTOMOD
+    'GUILD_AUTOMOD': 'https://clearvision.github.io/icons/robot.svg',
+    // AUDIT LOG
+    'AUDIT_LOG': 'https://clearvision.github.io/icons/list.svg',
+    // BANS
+    'BANS': 'https://clearvision.github.io/icons/hammer.svg',
 
     // ENABLE COMMUNITY/OVERVIEW
-    'community': 'https://clearvision.github.io/icons/people.svg',
+    'COMMUNITY': 'https://clearvision.github.io/icons/people.svg',
     // SERVER INSIGHTS
-    'analytics': 'https://clearvision.github.io/icons/insights.svg',
+    'ANALYTICS': 'https://clearvision.github.io/icons/insights.svg',
     // PARTNER PROGRAM
-    'partner': 'https://clearvision.github.io/icons/handshake.svg',
+    'PARTNER': 'https://clearvision.github.io/icons/handshake.svg',
     // DISCOVERY
-    'discovery': 'https://clearvision.github.io/icons/explore.svg',
-    // MEMBERSHIP SCREENING
-    'member_verification': 'https://clearvision.github.io/icons/person_search.svg',
+    'DISCOVERY': 'https://clearvision.github.io/icons/explore.svg',
     // WELCOME SCREEN
-    'community_welcome': 'https://clearvision.github.io/icons/waving_hand.svg',
+    'COMMUNITY_WELCOME': 'https://clearvision.github.io/icons/waving_hand.svg',
     // SERVER BOOST STATUS
-    'guild_premium': 'https://clearvision.github.io/icons/server_boost.svg',
+    'GUILD_PREMIUM': 'https://clearvision.github.io/icons/server_boost.svg',
 
     // MEMBERS
-    'members': 'https://clearvision.github.io/icons/group.svg',
+    'MEMBERS': 'https://clearvision.github.io/icons/group.svg',
     // INVITES
-    'instant_invites': 'https://clearvision.github.io/icons/person_add.svg',
-    // BANS
-    'bans': 'https://clearvision.github.io/icons/hammer.svg'
+    'INSTANT_INVITES': 'https://clearvision.github.io/icons/person_add.svg'
   );
 
   $channelSettingsIcons: (
     /* OVERVIEW - DUPE
-    'overview': 'https://clearvision.github.io/icons/info.svg', */
+    'OVERVIEW': 'https://clearvision.github.io/icons/info.svg', */
     // PERMISSIONS
-    'permissions': 'https://clearvision.github.io/icons/rule.svg',
+    'PERMISSIONS': 'https://clearvision.github.io/icons/rule.svg',
     /* INVITES - DUPE
-    'instant_invites': 'https://clearvision.github.io/icons/person_add.svg', */
+    'INSTANT_INVITES': 'https://clearvision.github.io/icons/person_add.svg', */
     /* INTEGRATIONS - DUPE
-    'integrations': 'https://clearvision.github.io/icons/puzzle.svg' */
+    'INTEGRATIONS': 'https://clearvision.github.io/icons/puzzle.svg' */
   );
 
   $dangerIcons: (
     // LOG OUT
     'logout': 'https://clearvision.github.io/icons/exit.svg',
     // DELETE
-    'delete': 'https://clearvision.github.io/icons/delete.svg'
+    'DELETE': 'https://clearvision.github.io/icons/delete.svg'
   );
 
   // GENERAL STYLES
   %tabBarItem {
     padding-left: 50px !important;
     &:before {
-      content: '';
       position: absolute;
       width: 24px;
       height: 24px;
@@ -148,7 +150,8 @@
   // USER SETTINGS
   @each $i,
   $u in $userSettingsIcons {
-    %tabBarItem[aria-controls='#{$i}-tab']:before {
+    %tabBarItem[data-item-id='#{$i}-tab']:before {
+      content: '';
       background-image: url(#{$u});
     }
   }
@@ -156,7 +159,8 @@
   // SERVER SETTINGS
   @each $i,
   $u in $serverSettingsIcons {
-    %tabBarItem[aria-controls='#{$i}-tab']:before {
+    %tabBarItem[data-item-id='#{$i}-tab']:before {
+      content: '';
       background-image: url(#{$u});
     }
   }
@@ -164,7 +168,8 @@
   // CHANNEL SETTINGS
   @each $i,
   $u in $channelSettingsIcons {
-    %tabBarItem[aria-controls='#{$i}-tab']:before {
+    %tabBarItem[data-item-id='#{$i}-tab']:before {
+      content: '';
       background-image: url(#{$u});
     }
   }
@@ -172,7 +177,7 @@
   // DANGER
   @each $i,
   $u in $dangerIcons {
-    %tabBarItem[aria-controls='#{$i}-tab']:before {
+    %tabBarItem[data-item-id='#{$i}-tab']:before {
       -webkit-mask: url(#{$u});
       mask: url(#{$u});
     }
