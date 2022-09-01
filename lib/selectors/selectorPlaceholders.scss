@@ -942,6 +942,9 @@
 .textAreaSlate-9-y-k2 {
   @extend %slateTextArea !optional;
 }
+.root-3PVcjb {
+  @extend %channelTextAreaUpsell !optional;
+}
 .button-2fCJ0o {
   @extend %channelTextAreaButton !optional;
 }
@@ -3481,8 +3484,14 @@ pre {
 .popoutBanner-3cqRD9 {
   @extend %userPopoutBanner !optional;
 }
+.popoutBanner-16rVDY {
+  @extend %newUserPopoutBanner !optional;
+}
 .popoutBannerPremium-3i5EEI {
   @extend %userPopoutBannerPremium !optional;
+}
+.popoutBannerPremium-2RvDNZ {
+  @extend %newUserPopoutBannerPremium !optional;
 }
 .avatar-2Vndt_ {
   @extend %userPopoutAvatar !optional;
@@ -3525,6 +3534,24 @@ pre {
 }
 .footer-3naVBw {
   @extend %userPopoutFooter !optional;
+}
+.userPopout-3fydSP {
+  @extend %newUserPopout !optional;
+}
+.userPopoutInnerWithBanner-wsoegj {
+  @extend %userPopoutInnerWithBanner !optional;
+}
+.userPopoutInnerNonPremium-3zrFkp {
+  @extend %userPopoutInnerNonPremium !optional;
+}
+.userPopoutInnerPremiumWithoutBanner-na5t_W {
+  @extend %userPopoutInnerPremiumNoBanner !optional;
+}
+.overlayBackground-arbZMT {
+  @extend %userPopoutInnerOverlayBackground !optional;
+}
+.wrapper-400BN2 {
+  @extend %userPopoutUpsell !optional;
 }
 .errorPage-2pZ2Kq {
   @extend %errorPage !optional;
