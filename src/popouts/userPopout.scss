@@ -85,7 +85,9 @@
 
 %userPopoutInnerWithBanner,
 %userPopoutInnerNonPremium,
-%userPopoutInnerPremiumNoBanner {
+%userPopoutInnerPremiumNoBanner,
+%userPopoutSettingsNonPremium,
+%userPopoutSettingsWithoutBanner {
   position: relative;
   max-height: calc(100vh - 40px);
   border-radius: 5px;
@@ -142,5 +144,13 @@
   }
   %userPopoutUpsell {
     width: 100%;
+  }
+}
+%userPopoutCustomization {
+  background: transparent;
+  // BODY
+  %userPopoutSettingsOverlayBackground,
+  %userPopoutprofileBadgeContainer {
+    background: cv('bg.popout.overlay');
   }
 }

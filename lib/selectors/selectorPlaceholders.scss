@@ -1119,6 +1119,9 @@
 .lookFilled-yCfaCM {
   @extend %buttonFilled !optional;
 }
+.buttonColor-1u-3JF {
+  @extend %buttonPreview !optional;
+}
 .lookOutlined-3yKVGo {
   @extend %buttonOutlined !optional;
 }
@@ -3547,11 +3550,23 @@ pre {
 .userPopoutInnerNonPremium-3zrFkp {
   @extend %userPopoutInnerNonPremium !optional;
 }
+.userPopoutInnerNonPremium-tEvJkL {
+  @extend %userPopoutSettingsNonPremium !optional;
+}
 .userPopoutInnerPremiumWithoutBanner-na5t_W {
   @extend %userPopoutInnerPremiumNoBanner !optional;
 }
+.userPopoutInnerPremiumWithoutBanner-2drBVp {
+  @extend %userPopoutSettingsWithoutBanner !optional;
+}
 .overlayBackground-arbZMT {
   @extend %userPopoutInnerOverlayBackground !optional;
+}
+.overlayBackground-H1K9ZY {
+  @extend %userPopoutSettingsOverlayBackground !optional;
+}
+.profileCustomizationPreview-2-Y173 {
+  @extend %userPopoutCustomization !optional;
 }
 .wrapper-400BN2 {
   @extend %userPopoutUpsell !optional;
