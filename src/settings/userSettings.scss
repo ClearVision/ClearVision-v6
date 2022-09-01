@@ -34,6 +34,21 @@
   background-color: transparent;
 }
 
+// USER SETTINGS CUSTOMIZATION
+%userPopoutCustomization {
+  background: transparent;
+  // BODY
+  %userPopoutSettingsOverlayBackground,
+  %userPopoutprofileBadgeContainer {
+    background: cv('bg.popout.overlay');
+  }
+}
+.profileThemeSectionPremiumBorder-pH_ioT {
+  background: transparent;
+}
+.inlineUpsell-3zPTgw {
+  background: rgba(0,0,0,.5);
+}
 // PRIVACY AND SAFETY
 
 // AUTHORIZED APPS

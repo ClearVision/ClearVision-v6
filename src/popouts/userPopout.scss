@@ -146,11 +146,3 @@
     width: 100%;
   }
 }
-%userPopoutCustomization {
-  background: transparent;
-  // BODY
-  %userPopoutSettingsOverlayBackground,
-  %userPopoutprofileBadgeContainer {
-    background: cv('bg.popout.overlay');
-  }
-}

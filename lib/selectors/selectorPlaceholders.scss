@@ -3529,8 +3529,11 @@ pre {
 .bodyTitle-2Az3VQ {
   @extend %userPopoutBodyTitle !optional;
 }
-.roles-3zC7MX {
+.rolesList-3uZoaa {
   @extend %userPopoutRolesList !optional;
+}
+.roles-3zC7MX {
+  @extend %newUserPopoutRolesList !optional;
 }
 .note-Go5ZP2 {
   @extend %userPopoutNote !optional;
