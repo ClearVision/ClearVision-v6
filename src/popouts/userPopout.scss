@@ -121,7 +121,8 @@
   }
 
   // BODY
-  %userPopoutInnerOverlayBackground {
+  %userPopoutInnerOverlayBackground,
+  %userPopoutprofileBadgeContainer {
     background: cv('bg.popout.overlay');
   }
   %userPopoutBodyTitle {
