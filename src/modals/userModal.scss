@@ -166,10 +166,9 @@
   background: url(https://clearvision.github.io/icons/popout.svg) center/18px no-repeat;
   opacity: 0.3;
   transition: all 0.15s ease-in-out;
-  &:after {
-    content: '';
-    position: absolute;
-    @include stretch;
+  transform: none;
+  >polygon {
+    display: none;
   }
 }
 %userModalEmptyText {
