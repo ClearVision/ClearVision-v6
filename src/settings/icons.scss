@@ -132,26 +132,28 @@
 
   // GENERAL STYLES
   %tabBarItem {
-    padding-left: 50px !important;
     &:before {
+      content: '';
       position: absolute;
-      width: 24px;
+      width: 0;
       height: 24px;
       left: 15px;
       margin-top: -2px;
       z-index: 999;
-    }
-    &:hover:before {
-      transform: rotateY(180deg);
       transition: all 0.15s ease-in-out;
+    }
+    &%tabBarItemSelected {
+      padding-left: 50px !important;
+      &:before {
+        width: 24px;
+      }
     }
   }
 
   // USER SETTINGS
   @each $i,
   $u in $userSettingsIcons {
-    %tabBarItem[data-item-id='#{$i}-tab']:before {
-      content: '';
+    %tabBarItem[aria-controls='#{$i}-tab']:before {
       background-image: url(#{$u});
     }
   }
@@ -159,8 +161,7 @@
   // SERVER SETTINGS
   @each $i,
   $u in $serverSettingsIcons {
-    %tabBarItem[data-item-id='#{$i}-tab']:before {
-      content: '';
+    %tabBarItem[aria-controls='#{$i}-tab']:before {
       background-image: url(#{$u});
     }
   }
@@ -168,8 +169,7 @@
   // CHANNEL SETTINGS
   @each $i,
   $u in $channelSettingsIcons {
-    %tabBarItem[data-item-id='#{$i}-tab']:before {
-      content: '';
+    %tabBarItem[aria-controls='#{$i}-tab']:before {
       background-image: url(#{$u});
     }
   }
@@ -177,7 +177,7 @@
   // DANGER
   @each $i,
   $u in $dangerIcons {
-    %tabBarItem[data-item-id='#{$i}-tab']:before {
+    %tabBarItem[aria-controls='#{$i}-tab']:before {
       -webkit-mask: url(#{$u});
       mask: url(#{$u});
     }
