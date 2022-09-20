@@ -83,25 +83,20 @@
   }
 }
 
-%userPopoutInnerWithBanner,
-%userPopoutInnerNonPremium,
-%userPopoutInnerPremiumNoBanner,
-%userPopoutSettingsNonPremium,
-%userPopoutSettingsWithoutBanner {
+%userPopoutInner%userPopoutInnerWithoutTheme {
   position: relative;
   max-height: calc(100vh - 40px);
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   animation: cv-menu-fold-x 0.2s cubic-bezier(0.2, 0.6, 0.5, 1.1);
   transform-origin: 0 50%;
-  background: transparent;
+  background: transparent none;
   &:before {
     content: '';
     position: absolute;
     @include stretch;
     background: cv('bg.popout.img') cv('bg.popout.pos') / cv('bg.popout.size') cv('bg.popout.repeat') cv('bg.popout.attach');
     @include filters(cv('bg.popout'));
-    z-index: -1;
   }
 }
 %newUserPopout {

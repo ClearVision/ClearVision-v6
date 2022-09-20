@@ -29,7 +29,6 @@ $version: '6.3.0';
 // CHANNEL
 @import 'src/channels/channels';
 @import 'src/channels/category';
-@import 'src/channels/channelNotice';
 @import 'src/channels/indicators';
 @import 'src/channels/panels';
 @import 'src/channels/privateChannels';
@@ -43,7 +42,6 @@ $version: '6.3.0';
 @import 'src/chat/stageCall';
 @import 'src/chat/textArea';
 @import 'src/chat/textAreaAutoComplete';
-@import 'src/chat/welcomeMessage';
 
 // GENERAL ELEMENTS
 @import 'src/general/badge';
@@ -70,7 +68,6 @@ $version: '6.3.0';
 @import 'src/headerBar/topPill';
 
 // HOME
-@import 'src/home/activity';
 @import 'src/home/friends';
 @import 'src/home/library';
 
@@ -114,8 +111,6 @@ $version: '6.3.0';
 @import 'src/pages/studentHub.scss';
 
 // POPOUTS
-@import 'src/popouts/popout';
-
 @import 'src/popouts/autoCompletePopout';
 @import 'src/popouts/connectionInfo';
 @import 'src/popouts/contextMenu';

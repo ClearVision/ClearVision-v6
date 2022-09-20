@@ -10,6 +10,8 @@
     'privacy-&-safety': 'https://clearvision.github.io/icons/security.svg',
     // Authorized Apps
     'authorized-apps': 'https://clearvision.github.io/icons/apps.svg',
+    // SESSIONS
+    // 'sessions': '',
     // CONNECTIONS
     'passport': 'https://clearvision.github.io/icons/link.svg',
     // FRIEND REQUEST
@@ -129,21 +131,14 @@
 
   // GENERAL STYLES
   %tabBarItem {
+    display: flex;
+    height: 36px;
     &:before {
-      content: '';
-      position: absolute;
-      width: 0;
+      width: 24px;
       height: 24px;
-      left: 15px;
       margin-top: -2px;
+      margin-right: 10px;
       z-index: 999;
-      transition: all 0.15s ease-in-out;
-    }
-    &%tabBarItemSelected {
-      padding-left: 50px !important;
-      &:before {
-        width: 24px;
-      }
     }
   }
 
@@ -151,6 +146,7 @@
   @each $i,
   $u in $userSettingsIcons {
     %tabBarItem[aria-controls='#{$i}-tab']:before {
+      content: '';
       background-image: url(#{$u});
     }
   }
@@ -159,6 +155,7 @@
   @each $i,
   $u in $serverSettingsIcons {
     %tabBarItem[aria-controls='#{$i}-tab']:before {
+      content: '';
       background-image: url(#{$u});
     }
   }
@@ -167,6 +164,7 @@
   @each $i,
   $u in $channelSettingsIcons {
     %tabBarItem[aria-controls='#{$i}-tab']:before {
+      content: '';
       background-image: url(#{$u});
     }
   }
@@ -175,6 +173,7 @@
   @each $i,
   $u in $dangerIcons {
     %tabBarItem[aria-controls='#{$i}-tab']:before {
+      content: '';
       -webkit-mask: url(#{$u});
       mask: url(#{$u});
     }
@@ -182,9 +181,12 @@
 }
 
 // DISCORD RIGHT SIDE ICONS
-%premiumLabel>svg,
-.tabBarItemContainer-2HdIlr>svg,
-%serverBoostIcon,
-.side-2ur1Qk .textBadge-1fdDPJ {
+.tabBarItemContainer-2HdIlr,
+.premiumLabel-3HPvdB {
+  flex: 1;
+}
+.tabBarItemContainer-2HdIlr svg,
+.tabBarItemContainer-2HdIlr .textBadge-1fdDPJ,
+.premiumLabel-3HPvdB svg {
   margin-right: 15px;
 }

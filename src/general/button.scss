@@ -5,80 +5,77 @@
 }
 
 // BUTTON FILLED
-%buttonFilledGrey,
-%buttonFilledBrand,
-%buttonFilledGreen,
-%buttonFilledBrandNew,
-%buttonFilledBrandNew2,
-%buttonFilledPrimary,
-%buttonPreview {
-  background: $main-color;
-  color: #fff;
-  &:hover,
-  &%buttonHasHover:hover {
-    background: $hover-color;
-  }
-  &:disabled {
-    background: $main-color  !important;
-  }
-  &:active {
-    background: $main-color;
-  }
-}
-%buttonFilledRed {
-  background-color: cv('colors.danger');
-}
-%embedContainer %buttonFilledGreen {
-  background-color: cv('colors.success');
-  &:hover,
-  &:active {
-    background-color: hsl(139, calc(var(--saturation-factor, 1) * 47.1%), 33.3%);
-  }
-}
-%buttonFilledWhite {
-  background: hsla(0, 0%, 100%, 0.1);
-  >%buttonContents {
-    color: hsla(0, 0%, 100%, 0.7);
-    transition: inherit;
-  }
-  &:hover {
-    background: hsla(0, 0%, 100%, 0.2) !important;
-    >%buttonContents {
+%buttonLookFilled {
+  &%buttonColorBrand,
+  &%buttonColorBrandNew,
+  &%buttonColorPrimary,
+  &%buttonPreview {
+    &:active,
+    & {
+      background: $main-color;
       color: #fff;
     }
+    &:hover {
+      background: $hover-color;
+    }
+    &:disabled {
+      background: $main-color !important;
+    }
   }
-  &:disabled {
-    background: hsla(0, 0%, 100%, 0.1) !important;
-    >%buttonContents {
+  &%buttonColorRed {
+    background: cv('colors.danger');
+  }
+  &%buttonColorGreen {
+    background: cv('colors.success');
+    color: #fff;
+    &:hover,
+    &:active {
+      background: hsl(139, calc(var(--saturation-factor, 1) * 47.1%), 33.3%);
+    }
+    &:disabled {
+      background: $main-color !important;
+    }
+  }
+  &%buttonColorWhite {
+    background: hsla(0, 0%, 100%, 0.1);
+    color: hsla(0, 0%, 100%, 0.7);
+    &:hover {
+      background: hsla(0, 0%, 100%, 0.2);
+      color: #fff;
+    }
+    &:disabled {
+      background: hsla(0, 0%, 100%, 0.1) !important;
       color: hsla(0, 0%, 100%, 0.5);
     }
   }
 }
 
 // BUTTON INVERTED
-%buttonInvertedBrand,
-%buttonInvertedGreen {
-  background: #fff;
-  color: $main-color;
-  &:hover {
-    background: hsla(0, 0%, 100%, 0.95);
-    color: $hover-color;
-  }
-  &:disabled {
-    background: hsla(0, 0%, 100%, 0.3);
-  }
-  &:active {
-    background: hsla(0, 0%, 100%, 0.95);
-    color: $hover-color;
+%buttonLookInverted {
+  &%buttonColorBrand,
+  &%buttonColorGreen {
+    background: #fff;
+    color: $main-color;
+    &:hover {
+      background: hsla(0, 0%, 100%, 0.95);
+      color: $hover-color;
+    }
+    &:active {
+      background: hsla(0, 0%, 100%, 0.95);
+      color: $hover-color;
+    }
+    &:disabled {
+      background: hsla(0, 0%, 100%, 0.3);
+    }
   }
 }
 
 // BUTTON OUTLINED
-%appMount {
-  %buttonOutlinedWhite,
-  %buttonOutlinedPrimary,
-  %buttonOutlinedGreen,
-  %buttonOutlinedBrand {
+%buttonLookOutlined {
+  &%buttonColorWhite,
+  &%buttonColorPrimary,
+  &%buttonColorGreen,
+  &%buttonColorBrand {
     background: transparent;
     border-color: $main-color;
     color: hsla(0, 0%, 100%, 0.8);
@@ -88,9 +85,7 @@
       color: #fff;
     }
   }
-}
-%appMount {
-  %buttonOutlinedRed {
+  &%buttonColorRed {
     background: transparent;
     border-color: cv('colors.danger');
     color: hsla(0, 0%, 100%, 0.8);
@@ -103,40 +98,36 @@
 }
 
 // BUTTON LINK
-%buttonLinkWhite {
-  color: #fff;
-  &:hover {
-    text-shadow: 0 0 3px;
-    >%buttonContents {
+%buttonLookLink {
+  &%buttonColorWhite,
+  &%buttonColorPrimary,
+  &%buttonColorBrand,
+  &%buttonColorLink,
+  &%buttonColorRed {
+    &:hover %buttonContents {
       background-image: none;
+      text-decoration: underline;
     }
   }
-}
-%buttonLinkPrimary {
-  color: hsla(0, 0%, 100%, 0.7);
-  &:hover {
+  &%buttonColorWhite {
     color: #fff;
-    text-decoration: underline;
+    &:hover {
+      text-shadow: 0 0 3px;
+    }
   }
-}
-%buttonLinkBrand {
-  color: $main-color;
-  &:hover %buttonContents {
-    background-image: none;
-    text-decoration: underline;
+  &%buttonColorPrimary {
+    color: hsla(0, 0%, 100%, 0.7);
+    &:hover {
+      color: #fff;
+    }
   }
-}
-%buttonLinkLink {
-  color: var(--url-color);
-  &:hover %buttonContents {
-    background-image: none;
-    text-decoration: underline;
+  &%buttonColorBrand {
+    color: $main-color;
   }
-}
-%buttonLinkRed {
-  color: cv('colors.danger');
-  &:hover %buttonContents {
-    background-image: none;
-    text-decoration: underline;
+  &%buttonColorLink {
+    color: var(--url-color);
+  }
+  &%buttonColorRed {
+    color: cv('colors.danger');
   }
 }

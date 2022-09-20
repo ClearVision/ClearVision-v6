@@ -115,7 +115,6 @@
 @mixin hover-cutout {
   background: transparent;
   color: #fff;
-  mix-blend-mode: screen;
   transform: translateZ(0);
   &:hover {
     background: #fff;
