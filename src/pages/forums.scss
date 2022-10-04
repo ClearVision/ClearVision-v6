@@ -23,9 +23,13 @@
     %forumContentContainer {
         padding: 10px 0px 0px 0px;
     }
+    %themeDark &%forumCardIsOpen {
+        background-color: hsla(0,0%,100%,0.1);
+    }
 }
 %forumHeaderRow {
-    %forumCard, %forumCard:hover {
+    %forumCard,
+    %forumCard:hover {
         border: 2px solid transparent;
     }
 }

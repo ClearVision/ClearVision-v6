@@ -663,6 +663,9 @@
 .messagesErrorBar-1IQ1rH {
   @extend %messagesErrorBar !optional;
 }
+.bar-2qGj24 {
+  @extend %barBrand !optional;
+}
 .wrapper-1gVUIN {
   @extend %callWrapper !optional;
 }
@@ -4507,6 +4510,9 @@ pre {
 }
 .mainCard-3KBsBI {
   @extend %forumCard !optional;
+}
+.isOpen-2OXbFs {
+  @extend %forumCardIsOpen !optional;
 }
 .channelName-1On3TJ {
   @extend %forumCardName !optional;
