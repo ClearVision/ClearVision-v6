@@ -3757,6 +3757,9 @@ pre {
 .brand-3g5E0C {
   @extend %guildSettingsRoleHeaderTabBrand !optional;
 }
+.previewContainer-1GxmBJ {
+  @extend %guildSettingsRoleIconPreview !optional;
+}
 .activityUserPopout-2MzGCj,
 .activityProfile-1712BN {
   @extend %activity !optional;
