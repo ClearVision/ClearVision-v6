@@ -2748,6 +2748,9 @@ pre {
 .keybindShortcut-3zF1P9 {
   @extend %keybindShortcut !optional;
 }
+.key-N5VmHN {
+  @extend %keybindShortcutKey !optional;
+}
 .inputWrapper-1YNMmM {
   @extend %inputWrapper !optional;
 }
@@ -3717,6 +3720,9 @@ pre {
 }
 .side-2ur1Qk {
   @extend %settingsSide !optional;
+}
+.selectedBackground-1t6xXq {
+  @extend %settingsSidebarScrollerSelectedBackground !optional;
 }
 .socialLinks-3ywLUf {
   @extend %settingsSocialLinks !optional;

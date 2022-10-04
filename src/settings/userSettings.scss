@@ -71,11 +71,17 @@
   border-color: hsla(0, 0%, 100%, 0.07);
 }
 
+// DEVICES
+.sessionIcon-2fwSzb {
+  background-color: $main-color;
+  color: #fff;
+}
+
 // CONNECTIONS
-.accountList-Wii_T5 {
+.connectContainer-1hylYM {
   background-color: rgba(0, 0, 0, 0.4);
   border-color: hsla(0, 0%, 100%, 0.07);
-  .accountBtn-3pgcgr .accountBtnInner-3ttD-i {
+  .accountButton-234qAZ .accountButtonInner-33vCDY {
     background-color: hsla(0, 0%, 100%, 0.05);
     &:hover {
       background-color: hsla(0, 0%, 100%, 0.07);
@@ -85,6 +91,9 @@
 
 // BILLING
 %themeDark {
+  .defaultIndicator-2ndWks {
+    color: $main-color;
+  }
   .paymentPane-ut5qKZ,
   .paginator-1eqD2g {
     background-color: transparent;

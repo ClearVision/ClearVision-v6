@@ -1,15 +1,15 @@
 /* CONNECTIONS */
 $colours: (
-  'Twitch': #9146ff,
-  'YouTube': #ff0000,
-  'Battle.net': #0566b0,
-  'Steam': #000000,
   'Reddit': #ff4500,
-  'Facebook': #1877f2,
+  'Steam': #000000,
   'Twitter': #009ef7,
   'Spotify': #1db954,
   'Xbox Live': #107c10,
+  'Battle.net': #0566b0,
+  'Facebook': #1877f2,
   'GitHub': #222222,
+  'Twitch': #9146ff,
+  'YouTube': #ff0000,
 );
 
 .connection-YOVI9j,
@@ -29,7 +29,7 @@ $colours: (
     &:after {
       content: '';
       position: absolute;
-      @include pos(72px, 0, -64px, 0);
+      @include pos(68px, 0, -64px, 0);
       border-radius: 0 0 8px 8px;
       pointer-events: none;
       z-index: -1;
@@ -46,9 +46,11 @@ $colours: (
       }
     }
   }
-  &[alt*='Facebook'],
+  &[alt*='Steam'],
+  &[alt*='Twitter'],
   &[alt*='Spotify'],
-  &[alt*='Xbox Live'] {
+  &[alt*='Xbox Live'],
+  &[alt*='Facebook'] {
     +div:after {
       bottom: -108px;
     }
