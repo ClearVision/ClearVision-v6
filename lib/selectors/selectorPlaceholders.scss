@@ -2787,15 +2787,6 @@ pre {
 .footer-31IekZ {
   @extend %modalFooter !optional;
 }
-.userProfileModalOuter-1FYL8T {
-  @extend %userModalOuter !optional;
-}
-.userProfileModalInner-3fh3QA {
-  @extend %userModalInner !optional;
-}
-.userProfileModalOverlayBackground-8p3-eU {
-  @extend %userModalOverlayBackground !optional;
-}
 .root-8LYsGj {
   @extend %userModal !optional;
 }
@@ -3490,26 +3481,62 @@ pre {
 .status-2DiCMd {
   @extend %statusPickerIcon !optional;
 }
-.userProfileOuterUnthemed-2b2rsv {
-  @extend %userProfileOuterUnthemed !optional;
+.userPopout-2j1gM4 {
+  @extend %userPopout !optional;
 }
-.userPopoutOuter-3AVBmJ {
-  @extend %userPopoutOuter !optional;
+.headerNormal-3Zn_yu {
+  @extend %userPopoutHeader !optional;
 }
-.userPopoutInner-1hXSeY {
-  @extend %userPopoutInner !optional;
-}
-.popoutBanner-16rVDY {
+.popoutBanner-3cqRD9 {
   @extend %userPopoutBanner !optional;
 }
-.popoutBannerPremium-2RvDNZ {
+.popoutBanner-16rVDY {
+  @extend %newUserPopoutBanner !optional;
+}
+.popoutBannerPremium-3i5EEI {
   @extend %userPopoutBannerPremium !optional;
 }
-.userPopoutOverlayBackground-dKOOda {
-  @extend %userPopoutOverlayBackground !optional;
+.popoutBannerPremium-2RvDNZ {
+  @extend %newUserPopoutBannerPremium !optional;
+}
+.avatar-2Vndt_ {
+  @extend %userPopoutAvatar !optional;
+}
+.headerTop-3GPUSF {
+  @extend %userPopoutHeaderTop !optional;
+}
+.profileBadge22-3GAYRy {
+  @extend %userPopoutprofileBadge !optional;
 }
 .profileBadges-31rDHI {
-  @extend %userPopoutProfileBadges !optional;
+  @extend %userPopoutprofileBadgeContainer !optional;
+}
+.headerText-1-WmDq {
+  @extend %userPopoutHeaderText !optional;
+}
+.nameTag-H6kSJ0 {
+  @extend %userPopoutNameTag !optional;
+}
+.aboutMeSection-PUghFQ {
+  @extend %userPopoutAboutMe !optional;
+}
+.body-2wLx-E {
+  @extend %userPopoutBody !optional;
+}
+.bodyInnerWrapper-2bQs1k {
+  @extend %userPopoutBodyInnerWrapper !optional;
+}
+.activityUserPopout-2MzGCj {
+  @extend %userPopoutActivity !optional;
+}
+.bodyTitle-2Az3VQ {
+  @extend %userPopoutBodyTitle !optional;
+}
+.rolesList-3uZoaa {
+  @extend %userPopoutRolesList !optional;
+}
+.roles-3zC7MX {
+  @extend %newUserPopoutRolesList !optional;
 }
 .note-Go5ZP2 {
   @extend %userPopoutNote !optional;
@@ -3517,8 +3544,38 @@ pre {
 .textarea-_59yqs {
   @extend %userPopoutNoteTextArea !optional;
 }
-.messageInputContainer-2rGDH8 {
-  @extend %userPopoutMessageInputContainer !optional;
+.footer-3naVBw {
+  @extend %userPopoutFooter !optional;
+}
+.userPopout-3fydSP {
+  @extend %newUserPopout !optional;
+}
+.userPopoutInnerWithBanner-wsoegj {
+  @extend %userPopoutInnerWithBanner !optional;
+}
+.userPopoutInnerNonPremium-3zrFkp {
+  @extend %userPopoutInnerNonPremium !optional;
+}
+.userPopoutInnerNonPremium-tEvJkL {
+  @extend %userPopoutSettingsNonPremium !optional;
+}
+.userPopoutInnerPremiumWithoutBanner-na5t_W {
+  @extend %userPopoutInnerPremiumNoBanner !optional;
+}
+.userPopoutInnerPremiumWithoutBanner-2drBVp {
+  @extend %userPopoutSettingsWithoutBanner !optional;
+}
+.overlayBackground-arbZMT {
+  @extend %userPopoutInnerOverlayBackground !optional;
+}
+.overlayBackground-H1K9ZY {
+  @extend %userPopoutSettingsOverlayBackground !optional;
+}
+.profileCustomizationPreview-2-Y173 {
+  @extend %userPopoutCustomization !optional;
+}
+.wrapper-400BN2 {
+  @extend %userPopoutUpsell !optional;
 }
 .errorPage-2pZ2Kq {
   @extend %errorPage !optional;

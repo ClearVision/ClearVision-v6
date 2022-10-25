@@ -1,38 +1,148 @@
-%userPopoutOuter {
-  &%userProfileOuterUnthemed {
-    background: transparent;
-    %userPopoutInner {
-      background: cv('bg.popout.overlay');
-      &::before {
-        content: '';
-        position: absolute;
-        @include stretch;
-        background: cv('bg.popout.img') cv('bg.popout.pos') / cv('bg.popout.size') cv('bg.popout.repeat') cv('bg.popout.attach');
-        @include filters(cv('bg.popout'));
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-      }
-    }
+/* LEGACY POPOUT (Still used!) */
+%userPopout {
+  position: relative;
+  max-height: calc(100vh - 40px);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  animation: cv-menu-fold-x 0.2s cubic-bezier(0.2, 0.6, 0.5, 1.1);
+  transform-origin: 0 50%;
+  background-color: transparent;
+  margin-right: 4px;
+  &:before {
+    content: '';
+    position: absolute;
+    @include stretch;
+    background: cv('bg.popout.img') cv('bg.popout.pos') / cv('bg.popout.size') cv('bg.popout.repeat') cv('bg.popout.attach');
+    @include filters(cv('bg.popout'));
+    z-index: -1;
   }
   %popoutAnimatorLeft>& {
     transform-origin: 100% 50%;
   }
+
+  // HEADER
+  %userPopoutHeader,
+  %userPopoutHeaderTop {
+    background: cv('bg.popout.overlay');
+  }
+  %userPopoutBanner {
+    -webkit-mask: linear-gradient(to bottom, #000, transparent 93%);
+    mask: linear-gradient(to bottom, #000, transparent 93%);
+  }
+  %userPopoutBannerPremium {
+    -webkit-mask: linear-gradient(to bottom, #000 50%, transparent);
+    mask: linear-gradient(to bottom, #000 50%, transparent);
+  }
+  %userPopoutNameTag {
+    overflow: visible;
+  }
+  %userPopoutAvatar {
+    border-color: transparent;
+    background-color: transparent;
+  }
+  %userPopoutprofileBadge {
+    width: 25px !important;
+    height: 25px;
+    background-size: 25px;
+  }
+
+  // BODY
+  %userPopoutBody {
+    background: cv('bg.popout.overlay');
+  }
+  %userPopoutBodyInnerWrapper {
+    background-color: transparent;
+  }
+  %userPopoutBodyTitle {
+    color: hsla(0, 0%, 100%, 0.7);
+    flex-shrink: 0;
+  }
+  %userPopoutRolesList {
+    margin-top: 0;
+  }
+  #permissions-popout {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    >%userPopoutRolesList {
+      max-height: unset;
+    }
+  }
+  %userPopoutNote {
+    >%userPopoutNoteTextArea {
+      &:focus {
+        background: hsla(0, 0%, 100%, 0.07);
+      }
+    }
+  }
+
+  // FOOTER
+  %userPopoutFooter {
+    background: cv('bg.popout.overlay');
+    margin-top: 0px;
+  }
 }
-%userPopoutBanner {
-  -webkit-mask: linear-gradient(to bottom, #000, transparent 93%);
-  mask: linear-gradient(to bottom, #000, transparent 93%);
+
+%userPopoutInnerWithBanner,
+%userPopoutInnerNonPremium,
+%userPopoutInnerPremiumNoBanner,
+%userPopoutSettingsNonPremium,
+%userPopoutSettingsWithoutBanner {
+  position: relative;
+  max-height: calc(100vh - 40px);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  animation: cv-menu-fold-x 0.2s cubic-bezier(0.2, 0.6, 0.5, 1.1);
+  transform-origin: 0 50%;
+  background: transparent;
+  &:before {
+    content: '';
+    position: absolute;
+    @include stretch;
+    background: cv('bg.popout.img') cv('bg.popout.pos') / cv('bg.popout.size') cv('bg.popout.repeat') cv('bg.popout.attach');
+    @include filters(cv('bg.popout'));
+    z-index: -1;
+  }
 }
-%userPopoutBannerPremium {
-  -webkit-mask: linear-gradient(to bottom, #000 50%, transparent);
-  mask: linear-gradient(to bottom, #000 50%, transparent);
-}
-%userPopoutProfileBadges {
-  background-color: hsla(0, 0%, 0%, .4);
-}
-%userPopoutOverlayBackground {
-  background-color: hsla(0, 0%, 0%, .4);
-}
-%userPopoutMessageInputContainer {
-  border: none;
+%newUserPopout {
+  %popoutAnimatorLeft>& {
+    transform-origin: 100% 50%;
+  }
+
+  // HEADER
+  %newUserPopoutBanner {
+    -webkit-mask: linear-gradient(to bottom, #000 50%, transparent 93%);
+    mask: linear-gradient(to bottom, #000 50%, transparent 93%);
+  }
+  %newUserPopoutBannerPremium {
+    -webkit-mask: linear-gradient(to bottom, #000 50%, transparent);
+    mask: linear-gradient(to bottom, #000 50%, transparent);
+  }
+  %userPopoutNameTag {
+    overflow: visible;
+  }
+
+  // BODY
+  %userPopoutInnerOverlayBackground,
+  %userPopoutprofileBadgeContainer {
+    background: cv('bg.popout.overlay');
+  }
+  %userPopoutBodyTitle {
+    color: hsla(0, 0%, 100%, 0.7);
+    flex-shrink: 0;
+  }
+  #permissions-popout {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    >%userPopoutRolesList { /*Note!!*/
+      max-height: unset;
+    }
+  }
+  %userPopoutNoteTextArea {
+    width: 99%;
+  }
+  %userPopoutUpsell {
+    width: 100%;
+  }
 }
