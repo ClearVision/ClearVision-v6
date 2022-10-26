@@ -34,7 +34,7 @@
   border-color: hsla(0, 0%, 100%, 0.04);
 }
 %userModalTabBar {
-  >%tabBarItem {
+  %tabBarItem {
     position: relative;
     margin: 10px 0 0;
     padding: 0 10px;
@@ -70,9 +70,7 @@
     &:hover {
       color: hsla(0, 0%, 100%, 0.7) !important;
     }
-    &%tabBarItemSelected,
-    &[style*='color: rgb(255, 255, 255)'] {
-      color: #fff !important;
+    &%tabBarItemSelected {
       &:after {
         top: 0;
         animation: cv-slide-top 0.2s ease-in-out;
@@ -80,6 +78,17 @@
       &:before {
         bottom: 100%;
         animation: cv-slide-bottom 0.2s ease-in-out reverse;
+      }
+    }
+  }
+}
+%userModalOuter {
+  &%userProfileOuterUnthemed {
+    %userModalTabBar {
+      %tabBarItem {
+        &%tabBarItemSelected {
+          border-bottom-color: $main-color;
+        }
       }
     }
   }

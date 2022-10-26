@@ -19,6 +19,9 @@
   %popoutAnimatorLeft>& {
     transform-origin: 100% 50%;
   }
+  %menuPopout {
+    background-color: transparent;
+  }
 }
 %userPopoutBanner {
   -webkit-mask: linear-gradient(to bottom, #000, transparent 93%);
