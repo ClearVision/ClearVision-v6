@@ -20,56 +20,18 @@
 %userModalOverlayBackground {
   background-color: hsla(0, 0%, 0%, .4);
 }
-
-%userModal {
-  max-height: 100vh;
-  background: transparent !important;
-  box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.3);
-  &:before {
-    content: '';
-    position: absolute;
-    @include stretch;
-    background: cv('bg.modal.img') cv('bg.modal.pos') / cv('bg.modal.size') cv('bg.modal.repeat') cv('bg.modal.attach');
-    @include filters(cv('bg.modal'));
-    z-index: -1;
-  }
-  >%userModalTopSection {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)) center/cover;
-  }
-}
 %userModalProfileBanner {
   -webkit-mask: linear-gradient(to bottom, #000 50%, transparent);
   mask: linear-gradient(to bottom, #000 50%, transparent);
 }
-%userModalAdditionalActionsIcon {
-  width: 24px;
-  height: 24px;
-  background: url(https://clearvision.github.io/icons/expand_more.svg) center/36px no-repeat;
-  opacity: 0.3;
-  transition: all 0.15s ease-in-out;
-  &:hover {
-    opacity: 0.7;
-  }
-  >g {
-    display: none;
-  }
-}
-%userModalAvatar {
-  border-color: transparent;
-  background-color: transparent;
-}
-%userModalNameTag {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
+%userModalBadgeList {
+  background-color: hsla(0, 0%, 0%, .4);
 }
 
 // TAB BAR
-%userModal {
-  %userModalTabBarContainer {
-    padding: 0 20px;
-    border-color: hsla(0, 0%, 100%, 0.04);
-  }
+%userModalTabBarContainer {
+  padding: 0 20px;
+  border-color: hsla(0, 0%, 100%, 0.04);
 }
 %userModalTabBar {
   >%tabBarItem {
@@ -127,12 +89,6 @@
 }
 
 // BODY
-%userModal {
-  >%userModalBody {
-    height: 306px;
-    background: rgba(0, 0, 0, 0.7);
-  }
-}
 %userModalBody {
   %userModalInfoSection {
     +%userModalInfoSection {

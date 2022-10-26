@@ -2793,41 +2793,20 @@ pre {
 .userProfileModalInner-3fh3QA {
   @extend %userModalInner !optional;
 }
+.profileBanner-2zIsK7 {
+  @extend %userModalProfileBanner !optional;
+}
+.badgeList-2pMvZX {
+  @extend %userModalBadgeList !optional;
+}
 .userProfileModalOverlayBackground-8p3-eU {
   @extend %userModalOverlayBackground !optional;
 }
-.root-8LYsGj {
-  @extend %userModal !optional;
-}
-.topSection-13QKHs {
-  @extend %userModalTopSection !optional;
-}
-.profileBanner-1owKI5 {
-  @extend %userModalProfileBanner !optional;
-}
-.avatar-3QF_VA {
-  @extend %userModalAvatar !optional;
-}
-.nameTag-2Nlmsy {
-  @extend %userModalNameTag !optional;
-}
-.username-1g6Iq1 {
-  @extend %userModalUsername !optional;
-}
-.discriminator-1bqsd3 {
-  @extend %userModalDiscriminator !optional;
-}
-.additionalActionsIcon-3Cy8UU {
-  @extend %userModalAdditionalActionsIcon !optional;
-}
-.tabBarContainer-sCZC4w {
+.tabBarContainer-2UG0vy {
   @extend %userModalTabBarContainer !optional;
 }
-.tabBar-2hXqzU {
+.tabBar-2StdUa {
   @extend %userModalTabBar !optional;
-}
-.tabBarItem-30Te4- {
-  @extend %userModalTabBarItem !optional;
 }
 .body-1Ukv50 {
   @extend %userModalBody !optional;
