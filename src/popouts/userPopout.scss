@@ -19,9 +19,6 @@
   %popoutAnimatorLeft>& {
     transform-origin: 100% 50%;
   }
-  %menuPopout {
-    background-color: transparent;
-  }
 }
 %userPopoutBanner {
   -webkit-mask: linear-gradient(to bottom, #000, transparent 93%);
@@ -36,6 +33,9 @@
 }
 %userPopoutOverlayBackground {
   background-color: hsla(0, 0%, 0%, .4);
+  >%menuPopout {
+    background-color: transparent;
+  }
 }
 %userPopoutOuter {
   &%userProfileOuterUnthemed {

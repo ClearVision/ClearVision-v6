@@ -38,7 +38,6 @@
     position: relative;
     margin: 10px 0 0;
     padding: 0 10px;
-    border-color: $main-color;
     color: hsla(0, 0%, 100%, 0.5) !important;
     transition: color 0.15s ease-in-out;
     z-index: 1;
@@ -67,9 +66,6 @@
         opacity: 1;
       }
     }
-    &:hover {
-      color: hsla(0, 0%, 100%, 0.7) !important;
-    }
     &%tabBarItemSelected {
       &:after {
         top: 0;
@@ -86,6 +82,9 @@
   &%userProfileOuterUnthemed {
     %userModalTabBar {
       %tabBarItem {
+        &:hover {
+          border-bottom-color: $hover-color;
+        }
         &%tabBarItemSelected {
           border-bottom-color: $main-color;
         }
