@@ -38,13 +38,10 @@
     position: relative;
     margin: 10px 0 0;
     padding: 0 10px;
-    border: none !important;
+    border-color: $main-color;
     color: hsla(0, 0%, 100%, 0.5) !important;
     transition: color 0.15s ease-in-out;
     z-index: 1;
-    +%tabBarItem {
-      margin-left: 20px;
-    }
     &:before {
       content: '';
       position: absolute;
@@ -148,9 +145,6 @@
   >polygon {
     display: none;
   }
-}
-%userModalEmptyText {
-  color: hsla(0, 0%, 100%, 0.3);
 }
 
 // LIST

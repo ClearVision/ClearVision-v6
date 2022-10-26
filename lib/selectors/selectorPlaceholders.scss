@@ -2841,25 +2841,13 @@ pre {
 .userProfileActivity-sal5no {
   @extend %userModalActivity !optional;
 }
-.emptyIconGuilds-2NNSTU {
-  @extend %userModalEmptyIconGuilds !optional;
-}
-.emptyIconFriends-2LNxTX {
-  @extend %userModalEmptyIconFriends !optional;
-}
-.emptyIconStreamerMode-3P4I-V {
-  @extend %userModalEmptyIconStreamerMode !optional;
-}
-.emptyText-mZZyQk {
-  @extend %userModalEmptyText !optional;
-}
 .listScroller-entkMk {
   @extend %userModalListScroller !optional;
 }
 .listRow-2nO1T6 {
   @extend %userModalListRow !optional;
 }
-.listAvatar-2bU5Uh {
+.listAvatar-2GhWlb {
   @extend %userModalListAvatar !optional;
 }
 .listRowContent-PEmSWj {
@@ -3484,11 +3472,14 @@ pre {
 .popoutBannerPremium-2RvDNZ {
   @extend %userPopoutBannerPremium !optional;
 }
+.profileBadges-31rDHI {
+  @extend %userPopoutProfileBadges !optional;
+}
 .userPopoutOverlayBackground-dKOOda {
   @extend %userPopoutOverlayBackground !optional;
 }
-.profileBadges-31rDHI {
-  @extend %userPopoutProfileBadges !optional;
+.buttonColor-XIRMbp {
+  @extend %userPopoutButtonColor !optional;
 }
 .roles-3zC7MX {
   @extend %userPopoutRoles !optional;
