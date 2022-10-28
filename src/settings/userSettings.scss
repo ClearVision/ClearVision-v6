@@ -33,11 +33,11 @@
 .editingContainer-1_nnqZ {
   background-color: transparent;
 }
-.improvedUpsellContainer-GX81ui {
+.premiumFeatureBorder-3vL7bn {
 	background: hsla(0, 0%, 0%, .4);
 	border-color: hsl(302,100%,72.5%);
 }
-.improvedUpsellSection-camPo1 {
+.background-3N0xBT {
 	background: transparent;
 }
 .upsellOverlayContainer-3NMgTS {
@@ -122,14 +122,10 @@
   }
 }
 
-// DISCORD NITRO
-%themeDark {
-  .feature-2IUcBI {
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-}
-%nitroHomePage {
-  background-color: transparent;
+// NITRO
+.bigPerkCard-1uwmWV,
+.smallPerkCard-2sX_-- {
+	background-color: rgba(0, 0, 0, 0.4);
 }
 
 // SUBSCRIPTIONS
