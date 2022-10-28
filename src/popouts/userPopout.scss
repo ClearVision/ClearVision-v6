@@ -2,9 +2,11 @@
 %userPopoutOuter {
   &%userProfileOuterUnthemed {
     background: transparent;
-    &:not(.profileCustomizationPreview-2-Y173) {
+    %userPopoutInner {
+      background: cv('bg.popout.overlay');
+    }
+    :not(.profileCustomizationPreview-2-Y173) {
       %userPopoutInner {
-        background: cv('bg.popout.overlay');
         &::before {
           content: '';
           position: absolute;
