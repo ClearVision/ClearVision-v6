@@ -64,6 +64,8 @@
     flex-shrink: 1;
     >%userPopoutRolesList { /*Note!!*/
       max-height: unset;
+    }
+  }
 }
 %userPopoutOuter {
   &%userProfileOuterUnthemed {
