@@ -4502,6 +4502,9 @@ pre {
 .countContainer-3DOo5v {
   @extend %forumTagBoxCount !optional;
 }
+.contents-3ca1mk {
+  @extend %forumTagClear !optional;
+}
 .countContainer-3uQ087 {
   @extend %forumTagCount !optional;
 }
@@ -4539,7 +4542,7 @@ pre {
   @extend %forumRulesGradient !optional;
 }
 .linkContainer-2xEQjX {
-  @extend %forumRulesExtension !optional;
+  @extend %forumRulesLinkContainer !optional;
 }
 .text-sm-bold-1Dtt0R {
   @extend %textSmallBold !optional;
