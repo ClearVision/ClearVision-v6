@@ -5,7 +5,7 @@
     %userPopoutInner {
       background: cv('bg.popout.overlay');
     }
-    :not(.profileCustomizationPreview-2-Y173) {
+    &:not(.profileCustomizationPreview-2-Y173) {
       %userPopoutInner {
         &::before {
           content: '';
@@ -40,7 +40,6 @@
   >%menuPopout {
     background-color: transparent;
   }
-  %newUserPopoutBannerPremium,
   %userPopoutNoBannerPremium {
     -webkit-mask: linear-gradient(to bottom, #000 50%, transparent);
     mask: linear-gradient(to bottom, #000 50%, transparent);
@@ -50,10 +49,6 @@
   }
 
   // BODY
-  %userPopoutInnerOverlayBackground,
-  %userPopoutprofileBadgeContainer {
-    background: cv('bg.popout.overlay');
-  }
   %userPopoutBodyTitle {
     color: hsla(0, 0%, 100%, 0.7);
     flex-shrink: 0;
