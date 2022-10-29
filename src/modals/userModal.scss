@@ -1,66 +1,46 @@
 /* USER PROFILE MODAl */
-%userModal {
-  max-height: 100vh;
-  background: transparent !important;
-  box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.3);
-  &:before {
-    content: '';
-    position: absolute;
-    @include stretch;
-    background: cv('bg.modal.img') cv('bg.modal.pos') / cv('bg.modal.size') cv('bg.modal.repeat') cv('bg.modal.attach');
-    @include filters(cv('bg.modal'));
-    z-index: -1;
+%userModalOuter {
+  &%userProfileOuterUnthemed {
+    background: transparent;
+    %userModalInner {
+      background: rgba(0, 0, 0, 0.7);
+      &::before {
+        content: '';
+      position: absolute;
+      @include stretch;
+      background: cv('bg.modal.img') cv('bg.modal.pos') / cv('bg.modal.size') cv('bg.modal.repeat') cv('bg.modal.attach');
+      @include filters(cv('bg.modal'));
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      }
+    }
   }
-  >%userModalTopSection {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)) center/cover;
-  }
+}
+%userModalOverlayBackground {
+  background-color: hsla(0, 0%, 0%, .4);
 }
 %userModalProfileBanner {
   -webkit-mask: linear-gradient(to bottom, #000 50%, transparent);
   mask: linear-gradient(to bottom, #000 50%, transparent);
 }
-%userModalAdditionalActionsIcon {
-  width: 24px;
-  height: 24px;
-  background: url(https://clearvision.github.io/icons/expand_more.svg) center/36px no-repeat;
-  opacity: 0.3;
-  transition: all 0.15s ease-in-out;
-  &:hover {
-    opacity: 0.7;
-  }
-  >g {
-    display: none;
-  }
-}
-%userModalAvatar {
-  border-color: transparent;
-  background-color: transparent;
-}
-%userModalNameTag {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
+%userModalBadgeList {
+  background-color: hsla(0, 0%, 0%, .4);
 }
 
 // TAB BAR
-%userModal {
-  %userModalTabBarContainer {
-    padding: 0 20px;
-    border-color: hsla(0, 0%, 100%, 0.04);
-  }
+%userModalTabBarContainer {
+  padding: 0 20px;
+  border-color: hsla(0, 0%, 100%, 0.04);
 }
 %userModalTabBar {
-  >%tabBarItem {
+  %tabBarItem {
     position: relative;
     margin: 10px 0 0;
     padding: 0 10px;
-    border: none !important;
     color: hsla(0, 0%, 100%, 0.5) !important;
     transition: color 0.15s ease-in-out;
     z-index: 1;
-    +%tabBarItem {
-      margin-left: 20px;
-    }
     &:before {
       content: '';
       position: absolute;
@@ -86,12 +66,7 @@
         opacity: 1;
       }
     }
-    &:hover {
-      color: hsla(0, 0%, 100%, 0.7) !important;
-    }
-    &%tabBarItemSelected,
-    &[style*='color: rgb(255, 255, 255)'] {
-      color: #fff !important;
+    &%tabBarItemSelected {
       &:after {
         top: 0;
         animation: cv-slide-top 0.2s ease-in-out;
@@ -103,14 +78,22 @@
     }
   }
 }
-
-// BODY
-%userModal {
-  >%userModalBody {
-    height: 306px;
-    background: rgba(0, 0, 0, 0.7);
+%userModalOuter {
+  &%userProfileOuterUnthemed {
+    %userModalTabBar {
+      %tabBarItem {
+        &:hover {
+          border-bottom-color: $hover-color;
+        }
+        &%tabBarItemSelected {
+          border-bottom-color: $main-color;
+        }
+      }
+    }
   }
 }
+
+// BODY
 %userModalBody {
   %userModalInfoSection {
     +%userModalInfoSection {
@@ -166,14 +149,10 @@
   background: url(https://clearvision.github.io/icons/popout.svg) center/18px no-repeat;
   opacity: 0.3;
   transition: all 0.15s ease-in-out;
-  &:after {
-    content: '';
-    position: absolute;
-    @include stretch;
+  transform: none;
+  >polygon {
+    display: none;
   }
-}
-%userModalEmptyText {
-  color: hsla(0, 0%, 100%, 0.3);
 }
 
 // LIST

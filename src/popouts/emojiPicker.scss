@@ -17,7 +17,12 @@
 %emojiPicker {
   background-color: rgba(0, 0, 0, 0.8);
   min-width: 430px;
+  border-radius: 0;
 }
+%emojiPickerHeader {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 // SEARCH BAR
 %emojiPickerSearchBar {
   background-color: hsla(0, 0%, 100%, 0.07);
@@ -140,33 +145,3 @@
 .perkRow-10K6XE {
   border-bottom: none;
 }
-
-/*  OLD CATEGORIES
-%emojiPickerCategoriesItemPeople {
-	background-image: url(https://clearvision.github.io/icons/discord/emojiSmileys.svg);
-}
-%emojiPickerCategoriesItemNature {
-	background-image: url(https://clearvision.github.io/icons/discord/emojiNature.svg);
-}
-%emojiPickerCategoriesItemFood {
-	background-image: url(https://clearvision.github.io/icons/discord/emojiFood.svg);
-}
-%emojiPickerCategoriesItemActivity {
-	background-image: url(https://clearvision.github.io/icons/discord/emojiActivity.svg);
-}
-%emojiPickerCategoriesItemTravel {
-	background-image: url(https://clearvision.github.io/icons/discord/emojiTravel.svg);
-}
-%emojiPickerCategoriesItemObjects {
-	background-image: url(https://clearvision.github.io/icons/discord/emojiObject.svg);
-}
-%emojiPickerCategoriesItemSymbols {
-	background-image: url(https://clearvision.github.io/icons/discord/emojiSymbol.svg);
-}
-%emojiPickerCategoriesItemFlags {
-	background-image: url(https://clearvision.github.io/icons/discord/emojiFlags.svg);
-}   
-%emojiPickerCategoriesItemCustom {
-	background-image: url(https://clearvision.github.io/icons/discord/emojiCustom.svg);
-}
-*/

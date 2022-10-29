@@ -77,7 +77,31 @@
     }
   }
 }
-.previewContainer-1GxmBJ {
+%settingsSide {
+  %topPillItemThemed%tabBarItem {
+    &:hover {
+      &:not(%tabBarItemDisabled) {
+        background-color: hsla(0, 0%, 100%, .07);
+      }
+    }
+    &%tabBarItemSelected {
+      background-color: hsla(0, 0%, 100%, .1);
+      %roleCircle {
+        &::before {
+          content: '';
+          position: absolute;
+          @include stretch;
+          z-index: -1	;
+          background-color: inherit;
+          opacity: .2;
+          border-radius: 4px;
+          transition: all 0.1 ease-in-out;
+        }
+      }
+    }
+  }
+}
+%guildSettingsRoleIconPreview {
   background-color: hsla(0, 0%, 0%, 0.6);
 }
 // View server as role selection bar

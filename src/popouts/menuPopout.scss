@@ -1,5 +1,4 @@
 /* MENU POPOUT */
-
 %menuPopout {
   background-color: rgba(0, 0, 0, 0.8);
   %menuPopoutItem {
@@ -86,5 +85,52 @@
         border-color: $main-color;
       }
     }
+  }
+}
+
+// STATUS PICKER
+%menuPopoutItem {
+  &#account-status-picker--online {
+    &:not(%menuPopoutItemHover) {
+      %statusPickerIcon {
+        background-color: var(--online-color);
+      }
+    }
+    &%menuPopoutItemHover {
+      background-color: var(--online-color);
+    }
+  }
+  &#account-status-picker--idle {
+    &:not(%menuPopoutItemHover) {
+      %statusPickerIcon {
+        background-color: var(--idle-color);
+      }
+    }
+    &%menuPopoutItemHover {
+      background-color: var(--idle-color);
+    }
+  }
+  &#account-status-picker--dnd {
+    &:not(%menuPopoutItemHover) {
+      %statusPickerIcon {
+        background-color: var(--dnd-color);
+      }
+    }
+    &%menuPopoutItemHover {
+      background-color: var(--dnd-color);
+    }
+  }
+  &#account-status-picker--invisible {
+    &:not(%menuPopoutItemHover) {
+      %statusPickerIcon {
+        background-color: var(--offline-color);
+      }
+    }
+    &%menuPopoutItemHover {
+      background-color: var(--offline-color);
+    }
+  }
+  %userPopoutBodyInnerWrapper {
+    background-color: transparent;
   }
 }

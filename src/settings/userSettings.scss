@@ -33,6 +33,20 @@
 .editingContainer-1_nnqZ {
   background-color: transparent;
 }
+.premiumFeatureBorder-3vL7bn {
+	background: hsla(0, 0%, 0%, .4);
+	border-color: hsl(302,100%,72.5%);
+}
+.background-3N0xBT {
+	background: transparent;
+}
+.upsellOverlayContainer-3NMgTS {
+	background: hsla(0, 0%, 0%, .4);
+	border-color: hsl(302,100%,72.5%);
+}
+.theme-dark .upsellOverlay-3sCO8V {
+	background: hsla(0, 0%, 0%, .4);;
+}
 
 // USER SETTINGS CUSTOMIZATION
 %userPopoutCustomization {
@@ -57,20 +71,29 @@
   border-color: hsla(0, 0%, 100%, 0.07);
 }
 
+// DEVICES
+.sessionIcon-2fwSzb {
+  background-color: $main-color;
+  color: #fff;
+}
+
 // CONNECTIONS
-.accountList-Wii_T5 {
+.connectContainer-1hylYM {
   background-color: rgba(0, 0, 0, 0.4);
   border-color: hsla(0, 0%, 100%, 0.07);
-  .accountBtn-3pgcgr .accountBtnInner-3ttD-i {
-    background-color: hsla(0, 0%, 100%, 0.05);
-    &:hover {
-      background-color: hsla(0, 0%, 100%, 0.07);
-    }
+}
+.accountButtonInner-33vCDY, .accountBtnInner-1DCgBm {
+  background-color: hsla(0, 0%, 100%, 0.05);
+  &:hover {
+    background-color: hsla(0, 0%, 100%, 0.07);
   }
 }
 
 // BILLING
 %themeDark {
+  .defaultIndicator-2ndWks {
+    background-color: $main-color;
+  }
   .paymentPane-ut5qKZ,
   .paginator-1eqD2g {
     background-color: transparent;
@@ -99,14 +122,10 @@
   }
 }
 
-// DISCORD NITRO
-%themeDark {
-  .feature-2IUcBI {
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-}
-%nitroHomePage {
-  background-color: transparent;
+// NITRO
+.bigPerkCard-1uwmWV,
+.smallPerkCard-2sX_-- {
+	background-color: rgba(0, 0, 0, 0.4);
 }
 
 // SUBSCRIPTIONS

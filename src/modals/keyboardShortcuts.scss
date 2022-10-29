@@ -4,7 +4,7 @@
     background-color: hsla(0, 0%, 0%, 0.5);
   }
   %keybindShortcut {
-    span {
+    %keybindShortcutKey {
       background: transparent;
       border: 1px solid $hover-color;
       border-radius: 3px;
@@ -18,7 +18,7 @@
       &:active {
         border: 1px solid $hover-color;
         box-shadow: inset 0 -2px $main-color;
-        color: #fff;
+        color: hsla(0, 0%, 100%, .7);
       }
     }
   }
