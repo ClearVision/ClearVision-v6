@@ -114,7 +114,8 @@
     -webkit-mask: linear-gradient(to bottom, #000 50%, transparent 93%);
     mask: linear-gradient(to bottom, #000 50%, transparent 93%);
   }
-  %newUserPopoutBannerPremium {
+  %newUserPopoutBannerPremium,
+  %userPopoutNoBannerPremium {
     -webkit-mask: linear-gradient(to bottom, #000 50%, transparent);
     mask: linear-gradient(to bottom, #000 50%, transparent);
   }
