@@ -4463,6 +4463,9 @@ pre {
 .pill-3pRQlO {
   @extend %forumTag !optional;
 }
+.selected-24z1Ou {
+  @extend %forumTagSelected !optional;
+}
 .clickable-3YTfAq {
   @extend %forumTagClickable !optional;
 }
@@ -4490,6 +4493,24 @@ pre {
 .title-1v5ZfI {
   @extend %forumSearch !optional;
 }
+.matchingPostsRow-2IiEQ1 {
+	@extend %forumSearchRow !optional
+}
+.container-3kfp0r {
+  @extend %forumTagBox !optional;
+}
+.countContainer-3DOo5v {
+  @extend %forumTagBoxCount !optional;
+}
+.countContainer-3uQ087 {
+  @extend %forumTagCount !optional;
+}
+.tagsButton-4pwOKH {
+  @extend %forumTagButton !optional;
+}
+.tagsButtonInner-2pvSm1 {
+  @extend %forumTagButtonInner !optional;
+}
 .contentContainer-2xwoXK {
   @extend %forumContentContainer !optional;
 }
@@ -4504,4 +4525,25 @@ pre {
 }
 .divider-AZrXIA {
   @extend %forumChatDivider !optional;
+}
+.box-2iMsQm {
+  @extend %forumChatStartBox !optional;
+}
+.container-3arpDl {
+  @extend %forumRules !optional;
+}
+.descriptionContainer-2ylKGk {
+  @extend %forumRulesDesc !optional;
+}
+.gradient-1SYq38 {
+  @extend %forumRulesGradient !optional;
+}
+.linkContainer-2xEQjX {
+  @extend %forumRulesExtension !optional;
+}
+.text-sm-bold-1Dtt0R {
+  @extend %textSmallBold !optional;
+}
+.text-sm-semibold-3TWn25 {
+  @extend %textSmallSemibold !optional;
 }

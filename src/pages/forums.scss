@@ -46,6 +46,9 @@
         background: transparent;
         border: 2px solid $hover-color;
     }
+    &%forumTagSelected {
+        border: 2px solid var(--success-color);
+    }
 }
 %forumGuidelineContainer, %forumTagContainer {
 	background: hsla(0, 0%, 0%, 0.3);
@@ -61,16 +64,59 @@
         color: #fff;
     };
 }
-%forumSearchInput {
-	width: 95%;
-	border-radius: 4px;
-	height: 30px;
-}
-%forumSearch input, %forumSearch input::placeholder{
+%forumSearch {
     font-family: var(--main-font);
-    font-size: 14px;
     font-weight: 300;
+    padding: 0 5px 0 5px;
+    background: transparent;
+    border-radius: 4px;
 }
+%forumSearchRow {
+	background-color: rgba(0,0,0,.3);
+}
+%forumTagBox {
+	background: rgba(0,0,0,.7);
+    %forumTagBoxCount {
+        background-color: $main-color;
+    }
+    %forumTagClear {
+        color: $main-color;
+        &:hover {
+            color: $hover-color;
+        }
+    }
+}
+%forumTagCount {
+	background-color: var(--main-color);
+}
+%forumTagButton {
+	background-color: rgba(0,0,0,.3);
+    %forumTagButtonInner {
+        color: #fff;
+    }
+}
+
+%forumRules {
+    background: rgba(0,0,0,.3);
+    border: 2px solid $main-color;
+    %forumRulesDesc {
+        background: rgba(0,0,0,.3);
+    }
+    %forumRulesGradient {
+        background: linear-gradient(0deg, rgba(0,0,0,.8), transparent);
+    }
+    %forumRulesLinkContainer {
+        background: rgba(0,0,0,.8);
+    }
+    %textSmallBold,
+    %textSmallSemibold {
+        color: $main-color;
+        &:hover {
+            color: $hover-color;
+        }
+    }
+}
+
 %forumLoadingCard {
 	background: hsla(0, 0%, 0%, 0.3); 
 }
@@ -88,6 +134,7 @@
 	background: $main-color;
 }
 %forumChatHead,
-%forumChatDivider {
+%forumChatDivider,
+%forumChatStartBox {
 	background-color: transparent;
 }
