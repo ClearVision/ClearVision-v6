@@ -4122,7 +4122,7 @@ pre {
   @extend %threadChannelConnector !optional;
 }
 .spineBorder-1-F4s1 {
-  @extend %threadChannelSpine
+  @extend %threadChannelSpine !optional;
 }
 .chatHeaderBar-2fUORh {
   @extend %threadHeaderBar !optional;
