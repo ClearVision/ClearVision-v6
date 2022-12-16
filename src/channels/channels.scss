@@ -35,6 +35,9 @@
   %threadChannelConnector {
     color: $main-color;
   }
+  %threadChannelSpine {
+    background: $main-color;
+  }
 
   // GUILD BADGE
   %channelsHeaderContainer {
