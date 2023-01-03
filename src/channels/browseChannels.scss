@@ -1,0 +1,24 @@
+.container-27tlK1 {
+    background-color: hsla(0, 0%, 0%, .4);
+}
+
+.selectAll-1ZP46u {
+    .text-xs-medium-2LRpEj {
+        color: hsla(0, 0%, 100%, .5) !important;
+	    transition: all 0.15s ease-in-out;
+    }
+    .checked-1pZh2h {
+        &+.text-xs-medium-2LRpEj {
+            color: hsla(0, 0%, 100%, .7) !important;
+        }
+    }
+}
+
+.channelRow-4X_3fi {
+    background-color: hsla(0, 0%, 0%, .4);
+    &:hover {
+        &:not(.disabled-3cfocy){
+            background-color: hsla(0, 0%, 0%, .6);
+        }
+    }
+}
