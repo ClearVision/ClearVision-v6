@@ -51,3 +51,22 @@
 %hubPopoutSidebar {
   background: transparent;
 }
+
+// LEAVE SERVER REASON
+.root-cw9rWQ {
+	background-color: transparent;
+}
+.problemInfo-1QppuA {
+  .option-1O-Hwt {
+    color: #fff;
+    background: hsla(0, 0%, 100%, .03);
+    border: 1px solid hsla(0, 0%, 100%, .05);
+    border-top: none;
+    &:first-child {
+      border-top: 1px solid hsla(0, 0%, 100%, .05);
+    }
+  }
+  &:hover  {
+    background: hsla(0, 0%, 100%, .06);
+  }
+}
