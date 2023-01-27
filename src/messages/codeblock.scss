@@ -12,29 +12,29 @@
       margin-top: -1px;
     }
   }
-
-  // CODEBLOCK
-  %codePre {
-    padding: 0;
-    background: transparent;
-    border: 2px solid hsla(0, 0%, 100%, 0.05);
-    border-radius: 8px;
-    font-family: cv('font.code');
-    &>%codeHLJS {
-      position: relative;
-      padding: 6px;
-      background: rgba(0, 0, 0, 0.42);
-      border: none;
-      color: hsla(0, 0%, 100%, 0.7);
-      &:before {
-        height: 10px;
-        color: hsla(0, 0%, 100%, 0.3);
-        line-height: 10px;
-        opacity: 1;
-      }
+}
+// CODEBLOCK
+%codePre {
+  padding: 0;
+  background: transparent;
+  border: 2px solid hsla(0, 0%, 100%, 0.05);
+  border-radius: 8px;
+  font-family: cv('font.code');
+  &>%codeHLJS {
+    position: relative;
+    padding: 6px;
+    background: rgba(0, 0, 0, 0.42);
+    border: none;
+    color: hsla(0, 0%, 100%, 0.7);
+    &:before {
+      height: 10px;
+      color: hsla(0, 0%, 100%, 0.3);
+      line-height: 10px;
+      opacity: 1;
     }
   }
 }
+
 code {
   font-family: cv('font.code');
 }
