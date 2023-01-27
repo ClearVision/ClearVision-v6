@@ -666,6 +666,9 @@
 .bar-wDIGjg {
   @extend %barBrand !optional;
 }
+.barText-1eIsLx {
+  @extend %barBrandText !optional;
+}
 .wrapper-1gVUIN {
   @extend %callWrapper !optional;
 }
@@ -4465,6 +4468,9 @@ pre {
 }
 .sortDropdown-hY93nR {
   @extend %forumSortDropdown !optional;
+}
+.sortDropdownText-3smleu {
+  @extend %forumSortDropdownText !optional;
 }
 .textContentFooter-2JnNv8 {
   @extend %forumContentFooter !optional;
