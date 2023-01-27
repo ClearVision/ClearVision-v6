@@ -7,8 +7,7 @@
 }
 
 // ACCOUNT & CONNECTION PANELS
-%accountPanel,
-%connectionPanel {
+%accountPanel {
   >%flex {
     background: rgba(0, 0, 0, 0.3);
     border-radius: 15px;
@@ -171,6 +170,7 @@
     padding: 5px;
   }
   border-color: transparent;
+  background: transparent;
   %connectionPanelInner {
     %rtcConnectionStatus {
       %rtcConnectionPing {
