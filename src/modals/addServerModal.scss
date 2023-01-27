@@ -1,10 +1,10 @@
 /* ADD SERVER MODAL */
 %themeLight {
-  .defaultColor-HXu-5n {
+  .defaultColor-1GKx81 {
     color: #fff;
   }
   .subtitle-3m-md1,
-  .subtitle-1cc8Nz,
+  .subtitle-bIoUVX,
   .optionHeader-27AHfD {
     color: hsla(0, 0%, 100%, 0.7) !important;
   }
@@ -15,12 +15,8 @@
     color: $main-color;
     font-weight: 500;
   }
-  .backButton-2Ps-B8 {
+  %buttonLinkPrimary {
     color: hsla(0, 0%, 100%, 0.7);
-    &:hover {
-      color: #fff;
-      text-decoration: underline;
-    }
   }
   .skip-2hTIXL {
     color: hsla(0, 0%, 100%, 0.7) !important;
@@ -45,7 +41,7 @@
   &:hover {
     background-color: $hover-color;
   }
-  .colorStandard-21JIj7 {
+  .rowText-3MQqQi {
     color: #fff;
   }
   .rowArrow-TIwwIc {
