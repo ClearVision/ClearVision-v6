@@ -71,8 +71,9 @@
 }
 
 // ACCOUNT PANEL
-%accountPanel {
+%themeDark %accountPanel {
   position: relative;
+  background: transparent;
   margin-bottom: 10px;
   &:before,
   &:after {
@@ -153,7 +154,6 @@
       }
     }
   }
-
   // NAME TAG
   %accountPanelUsername {
     color: #fff;

@@ -663,7 +663,7 @@
 .messagesErrorBar-1IQ1rH {
   @extend %messagesErrorBar !optional;
 }
-.bar-2qGj24 {
+.bar-wDIGjg {
   @extend %barBrand !optional;
 }
 .wrapper-1gVUIN {
@@ -4465,6 +4465,12 @@ pre {
 }
 .headerBorder-jrk0Ic {
   @extend %forumHeaderBorder !optional;
+}
+.sortDropdown-hY93nR {
+  @extend %forumSortDropdown !optional;
+}
+.textContentFooter-2JnNv8 {
+  @extend %forumContentFooter !optional;
 }
 .pill-3pRQlO {
   @extend %forumTag !optional;
