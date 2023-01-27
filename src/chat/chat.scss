@@ -4,6 +4,9 @@
     background: transparent;
   }
 }
+%chatContent {
+  background: rgba(0, 0, 0, calc(#{cv('bg.app.shading')} * 0.5));
+}
 %chat {
   // CONTENT
   %chatContentWrapper {
@@ -11,9 +14,6 @@
     &:before {
       display: none;
     }
-  }
-  %chatContent {
-    background: rgba(0, 0, 0, calc(#{cv('bg.app.shading')} * 0.5));
   }
   %messages {
     background: transparent;
