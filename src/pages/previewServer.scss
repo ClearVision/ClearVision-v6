@@ -52,3 +52,38 @@
 .communityInfoPill-2Mll66 {
   background: rgba(0, 0, 0, 0.6);
 }
+
+// Nyx's fixes
+.container-2Hi7Km,
+.container-xwOzwi {
+  background: transparent;
+}
+.icon-2IDTxf {
+	border: 4px solid transparent;
+}
+.interactiveCard-2iMtdk,
+.interactiveCard-2iMtdk.selected-sszUNx {
+	border: 1px solid var(--main-color);
+}
+.interactiveCard-2iMtdk:active,
+.interactiveCard-2iMtdk:hover {
+	border: 1px solid var(--hover-color);
+}
+.card-3x20HF {
+	background: rgba(0,0,0,.4);
+}
+.iconContainer-2R-3M1 {
+	background: var(--main-color);
+	color: #fff;
+}
+.container-3HMTms:hover {
+	background: var(--hover-color);
+}
+.conversationRoot-3DieBj:after,
+.replySpine-3HmFN7 {
+	border-left: 2px solid var(--main-color);
+}
+.conversationMessage-hy6ISK:after {
+	border-left: 2px solid var(--main-color);
+	border-bottom: 2px solid var(--main-color);
+}
