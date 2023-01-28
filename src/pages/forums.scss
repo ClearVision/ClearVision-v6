@@ -91,7 +91,8 @@
 }
 %forumSortDropdown {
 	background-color: var(--main-color);
-    >* {
+    > *,
+    %forumSortDropdownText {
         color: #fff !important;
     }
 }
