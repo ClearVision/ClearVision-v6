@@ -97,3 +97,34 @@
     animation: cv-shake 0.5s ease-in;
   }
 }
+
+// DROP DOWN
+.lookFilled-GPyucw.select-Zz0IcO {
+	background-color: hsla(0, 0%, 100%, .07);
+	border-color: hsla(0, 0%, 100%, .09);
+}
+.popout-15UxD6 {
+	background-color: rgba(0, 0, 0, 0.8);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.option-Uc12mm {
+  &:hover,
+  &:focus,
+  &.focused-10mbp- {
+    background-color: hsla(0, 0%, 100%, 0.05);
+    border: hsla(0, 0%, 100%, 0.07);
+  }
+  &[aria-selected=true]:not(.option-Uc12mm.multi-2vPqc4) {
+    background-color: $main-color;
+    .selectedIcon-122rMx {
+      circle {
+        fill: $main-color;
+      }
+    }
+    path {
+      fill: #fff;
+    }
+  }
+}

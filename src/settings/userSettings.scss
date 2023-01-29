@@ -281,14 +281,3 @@
     }
   }
 }
-.option-2eIyOn {
-  &:hover,
-  &:focus,
-  &.focused-ODgjnC {
-    background-color: hsla(0, 0%, 100%, 0.05);
-    border: hsla(0, 0%, 100%, 0.07);
-  }
-  &[aria-selected='true']:not(.option-2eIyOn.multi-1HXDiv) {
-    background-color: $main-color  !important;
-  }
-}
