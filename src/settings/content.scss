@@ -128,3 +128,14 @@
     }
   }
 }
+
+// INPUT
+.input-3O04eu {
+	color: var(--text-normal);
+  background-color: hsla(0, 0%, 100%, 0.07);
+  border: none;
+  box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.09);
+  &:focus {
+    box-shadow: 0 0 2px 2px  $main-color;
+  }
+}
