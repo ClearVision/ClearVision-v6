@@ -85,6 +85,7 @@
     border-color: $main-color;
     color: hsla(0, 0%, 100%, 0.8);
     &:hover {
+      background-color: transparent;
       border-color: $hover-color;
       color: #fff;
     }
@@ -93,6 +94,7 @@
     border-color: cv('colors.danger');
     color: hsla(0, 0%, 100%, 0.8);
     &:hover {
+      background-color: transparent;
       color: #fff;
     }
   }
@@ -109,8 +111,11 @@
   }
   &%buttonColorLink {
     color: var(--url-color);
+    &:disabled:hover %buttonContents {
+      text-decoration: none;
+    }
   }
-  %buttonColorRed {
+  &%buttonColorRed {
     color: cv('colors.danger');
   }
   &:hover %buttonContents {
