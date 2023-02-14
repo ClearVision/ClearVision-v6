@@ -1128,9 +1128,6 @@
 .lookFilled-1H2Jvj {
   @extend %buttonFilled !optional;
 }
-.buttonColor-1u-3JF {
-  @extend %buttonPreview !optional;
-}
 .lookOutlined-3RTC7c {
   @extend %buttonOutlined !optional;
 }
@@ -1143,116 +1140,38 @@
 .lookBlank-21BCro {
   @extend %buttonBlank !optional;
 }
-.colorBrand-2M3O3N {
-  @extend %buttonBrand !optional;
+.buttonColor-1u-3JF {
+  @extend %buttonColor !optional;
 }
-.colorBrandNew-g5lmBU {
-  @extend %buttonBrandNew !optional;
+.colorBrand-2M3O3N {
+  @extend %buttonColorBrand !optional;
+}
+.colorBrandNew-abZT3v {
+  @extend %buttonColorBrandNew !optional;
 }
 .colorPrimary-2-Lusz {
-  @extend %buttonPrimary !optional;
+  @extend %buttonColorPrimary !optional;
 }
 .colorWhite-1H92hK {
-  @extend %buttonWhite !optional;
+  @extend %buttonColorWhite !optional;
 }
 .colorGreen-jIPCAS {
-  @extend %buttonGreen !optional;
+  @extend %buttonColorGreen !optional;
 }
 .colorRed-2VFhM4 {
-  @extend %buttonRed !optional;
+  @extend %buttonColorRed !optional;
 }
 .colorGrey-2DXtkV {
-  @extend %buttonGrey !optional;
+  @extend %buttonColorGrey !optional;
 }
 .colorLink-34zig_ {
   @extend %buttonColorLink !optional;
 }
-.contents-3ca1mk {
+.colorYellow-_9KFXL {
+  @extend %buttonColorYellow !optional;
+}
+.contents-3NembX {
   @extend %buttonContents !optional;
-}
-.lookFilled-1H2Jvj.colorBrand-2M3O3N {
-  @extend %buttonFilledBrand !optional;
-}
-.lookFilled-1H2Jvj.colorBrandNew-g5lmBU {
-  @extend %buttonFilledBrandNew !optional;
-}
-.lookFilled-1H2Jvj.colorBrandNew-2-gGsS {
-  @extend %buttonFilledBrandNew2 !optional;
-}
-.lookFilled-1H2Jvj.colorPrimary-2-Lusz {
-  @extend %buttonFilledPrimary !optional;
-}
-.lookFilled-1H2Jvj.colorWhite-1H92hK {
-  @extend %buttonFilledWhite !optional;
-}
-.lookFilled-1H2Jvj.colorGreen-jIPCAS {
-  @extend %buttonFilledGreen !optional;
-}
-.lookFilled-1H2Jvj.colorRed-2VFhM4 {
-  @extend %buttonFilledRed !optional;
-}
-.lookFilled-1H2Jvj.colorGrey-2iAG-B {
-  @extend %buttonFilledGrey !optional;
-}
-.lookOutlined-3RTC7c.colorBrand-2M3O3N {
-  @extend %buttonOutlinedBrand !optional;
-}
-.lookOutlined-3RTC7c.colorPrimary-2-Lusz {
-  @extend %buttonOutlinedPrimary !optional;
-}
-.lookOutlined-3RTC7c.colorWhite-1H92hK {
-  @extend %buttonOutlinedWhite !optional;
-}
-.lookOutlined-3RTC7c.colorGreen-jIPCAS {
-  @extend %buttonOutlinedGreen !optional;
-}
-.lookOutlined-3RTC7c.colorRed-2VFhM4 {
-  @extend %buttonOutlinedRed !optional;
-}
-.lookOutlined-3RTC7c.colorGrey-2DXtkV {
-  @extend %buttonOutlinedGrey !optional;
-}
-.lookInverted-2GrLaB.colorBrand-2M3O3N {
-  @extend %buttonInvertedBrand !optional;
-}
-.lookInverted-2GrLaB.colorPrimary-2-Lusz {
-  @extend %buttonInvertedPrimary !optional;
-}
-.lookInverted-2GrLaB.colorWhite-1H92hK {
-  @extend %buttonInvertedWhite !optional;
-}
-.lookInverted-2GrLaB.colorGreen-jIPCAS {
-  @extend %buttonInvertedGreen !optional;
-}
-.lookInverted-2GrLaBcolorRed-2VFhM4 {
-  @extend %buttonInvertedRed !optional;
-}
-.lookInverted-2GrLaB.colorGrey-2DXtkV {
-  @extend %buttonInvertedGrey !optional;
-}
-.lookLink-13iF2K.colorBrand-2M3O3N {
-  @extend %buttonLinkBrand !optional;
-}
-.lookLink-13iF2K.colorPrimary-2-Lusz {
-  @extend %buttonLinkPrimary !optional;
-}
-.lookLink-13iF2K.colorWhite-1H92hK {
-  @extend %buttonLinkWhite !optional;
-}
-.lookLink-13iF2K.colorGreen-jIPCAS {
-  @extend %buttonLinkGreen !optional;
-}
-.lookLink-13iF2K.colorRed-2VFhM4 {
-  @extend %buttonLinkRed !optional;
-}
-.lookLink-13iF2K.colorGrey-2DXtkV {
-  @extend %buttonLinkGrey !optional;
-}
-.lookLink-13iF2K.colorLink-34zig_ {
-  @extend %buttonLinkLink !optional;
-}
-.lookBlank-21BCro.colorBrand-2M3O3N {
-  @extend %buttonBlankBrand !optional;
 }
 .button-1_oXub {
   @extend %buttonCircle !optional;
