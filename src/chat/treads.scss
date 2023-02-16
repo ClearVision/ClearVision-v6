@@ -1,0 +1,25 @@
+/* TREADS */
+.container-1PloNW {
+    background: rgba(0,0,0,.3);
+    border: 2px solid $main-color;
+    &:hover {
+        background: rgba(0,0,0,.3);
+        border: 2px solid var(--hover-color);
+    }
+    &.isOpen-O7ANQc {
+        background-color: hsla(0,0%,100%,0.1);
+        border-color: $main-color;
+    }
+}
+.contentPreview-3fWiuC {
+	background-color: hsla(0,0%,100%,0.05);
+	border-color: hsla(0,0%,100%,0.09);
+}
+
+// CHAT
+.container-3XgAHv {
+    background: transparent;
+}
+.iconWrapper-3plkqh {
+    background-color: $main-color;
+}
