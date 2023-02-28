@@ -28,7 +28,7 @@
   %menuPopoutItemInvite {
     color: $main-color;
   }
-  %menuPopoutItemLeave {
+  %menuPopoutItemDanger {
     color: var(--danger-color);
     &%menuPopoutItemHover {
       background-color: var(--danger-color);
