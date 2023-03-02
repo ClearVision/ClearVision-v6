@@ -3,24 +3,19 @@
 %headerBarStatusMask {
   rect {
     &[mask='url(#svg-mask-status-online)'],
-    &[mask='url(#svg-mask-status-online-mobile)'],
-    &[fill='hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%)'] {
+    &[mask='url(#svg-mask-status-online-mobile)'] {
       fill: var(--online-color);
     }
-    &[mask='url(#svg-mask-status-idle)'],
-    &[fill='hsl(38, calc(var(--saturation-factor, 1) * 95.7%), 54.1%)'] {
+    &[mask='url(#svg-mask-status-idle)']{
       fill: var(--idle-color);
     }
-    &[mask='url(#svg-mask-status-dnd)'],
-    &[fill='hsl(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%)'] {
+    &[mask='url(#svg-mask-status-dnd)'] {
       fill: var(--dnd-color);
     }
-    &[mask='url(#svg-mask-status-streaming)'],
-    &[fill='hsl(262, calc(var(--saturation-factor, 1) * 46.8%), 39.8%)'] {
+    &[mask='url(#svg-mask-status-streaming)'] {
       fill: var(--streaming-color);
     }
-    &[mask='url(#svg-mask-status-offline)'],
-    &[fill='hsl(214, calc(var(--saturation-factor, 1) * 9.9%), 50.4%)'] {
+    &[mask='url(#svg-mask-status-offline)'] {
       fill: var(--offline-color);
     }
   }
