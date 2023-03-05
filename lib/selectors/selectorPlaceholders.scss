@@ -20,9 +20,6 @@
 .theme-light {
   @extend %themeLight !optional;
 }
-.fakeLink-2FvUR7 {
-  @extend %fakeLink !optional;
-}
 .app-3xd6d0 {
   @extend %app !optional;
 }
@@ -1337,11 +1334,23 @@
 .inner-MGEKw {
   @extend %spinnerInner !optional;
 }
+.wanderingCubes-2A046F {
+  @extend %spinnerWanderingCubes !optional;
+}
 .item-2VgEex {
   @extend %spinnerWanderingCubesItem !optional;
 }
-.loadingMore-sPqUXZ {
-  @extend %loadingMore !optional;
+.spinningCircle-3aZig- {
+  @extend %spinnerCircle !optional;
+}
+.spinningCircleInner-YCEeSc {
+  @extend %spinnerCircleInner !optional;
+}
+.path-_o_4bT {
+  @extend %spinnerCirclePath !optional;
+}
+.path3-3TAamH {
+  @extend %spinnerCirclePath3 !optional;
 }
 .pulsingEllipsis-10G8Z6 {
   @extend %spinnerPulsingEllipsis !optional;
@@ -2700,7 +2709,7 @@ pre {
 .header-2w6VV8 {
   @extend %modalHeader !optional;
 }
-.footer-31IekZ {
+.footer-IubaaS {
   @extend %modalFooter !optional;
 }
 .userProfileModalOuter-1FYL8T {
@@ -4055,8 +4064,8 @@ pre {
 .active-3WMEyE {
   @extend %threadModalTabActive !optional;
 }
-.previewMessage-2g_aBv {
-  @extend %accessibilityMessagePreview !optional;
+.preview-QJ3OG3 {
+  @extend %appearanceMessagePreview !optional;
 }
 .hasThread-3h-KJV {
   @extend %messageHasThread !optional;
