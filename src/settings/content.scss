@@ -58,24 +58,13 @@
 // ITEM CARDS
 %themeDark {
   %settingsCard {
-    background-color: rgba(0, 0, 0, 0.4);
-    border-color: hsla(0, 0%, 100%, 0.07);
+    &:not(.outline-3kFzf8),
+    &.outline-3kFzf8 {
+      background-color: rgba(0, 0, 0, 0.4);
+      border-color: hsla(0, 0%, 100%, 0.07);
+    }
     a {
       color: var(--url-color);
-    }
-  }
-}
-%settingsLongCard:before {
-  background-color: rgba(0, 0, 0, 0.4);
-  border-color: hsla(0, 0%, 100%, 0.07);
-}
-%themeDark {
-  %settingsLongCardButton {
-    background-color: rgba(0, 0, 0, 0.4);
-    border-color: hsla(0, 0%, 100%, 0.07);
-    &:hover {
-      background-color: hsla(0, 0%, 0%, 0.7);
-      border: hsla(0, 0%, 100%, 0.07);
     }
   }
 }

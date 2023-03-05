@@ -2670,10 +2670,10 @@ pre {
 .keyboardShortcutsModal-2CRmCm {
   @extend %keyboardShortcutsModal !optional;
 }
-.keybindShortcut-3zF1P9 {
-  @extend %keybindShortcut !optional;
+.combo-3PNrpQ {
+  @extend %keybindCombo !optional;
 }
-.key-N5VmHN {
+.key-RP8gj3 {
   @extend %keybindShortcutKey !optional;
 }
 .inputWrapper-1YNMmM {
@@ -3532,19 +3532,13 @@ pre {
 .imageUploaderIcon-2OHmFu {
   @extend %settingsImageUploaderIcon !optional;
 }
-.card-16VQ8C {
+.card-2guEcY {
   @extend %settingsCard !optional;
-}
-.card-2ART2V {
-  @extend %settingsLongCard !optional;
-}
-.button-1yVL_7 {
-  @extend %settingsLongCardButton !optional;
 }
 .cardWrapper-1bSePP {
   @extend %settingsCardWrapper !optional;
 }
-.colorPickerCustom-1swUKF {
+.customColorPicker-C_jddW {
   @extend %settingsColorPickerCustom !optional;
 }
 .container-20TyK0 {
@@ -3595,10 +3589,10 @@ pre {
 .header-JUTO-g {
   @extend %guildSettingsRoleHeader !optional;
 }
-.top-K_jibn {
+.top-Ktfr_T {
   @extend %guildSettingsRoleHeaderTabTop !optional;
 }
-.brand-3g5E0C {
+.brand-2EKq3J {
   @extend %guildSettingsRoleHeaderTabBrand !optional;
 }
 .previewContainer-1GxmBJ {
@@ -3650,7 +3644,7 @@ pre {
 .role-2TIOKu {
   @extend %role !optional;
 }
-.roleCircle-3K9O3d {
+.roleCircle-3TFUOr {
   @extend %roleCircle !optional;
 }
 .roleRemoveIcon-387wKV {
@@ -3715,6 +3709,12 @@ pre {
 }
 .radioIconForeground-3wH3aU {
   @extend %radioIconChecked !optional;
+}
+.previewMessage-2g_aBv {
+  @extend %accessibilityMessagePreview !optional;
+}
+.preview-3k9WhO {
+  @extend %accesibilityMessagePreview !optional;
 }
 .micTest-19EtdQ {
   @extend %micTest !optional;
@@ -4063,9 +4063,6 @@ pre {
 }
 .active-3WMEyE {
   @extend %threadModalTabActive !optional;
-}
-.preview-QJ3OG3 {
-  @extend %appearanceMessagePreview !optional;
 }
 .hasThread-3h-KJV {
   @extend %messageHasThread !optional;
