@@ -62,11 +62,9 @@
     }
   }
 }
-%userPopoutOuter {
-  &%userProfileOuterUnthemed {
-    %userPopoutButtonColor {
-      background-color: $main-color;
-    }
+%userProfileOuterUnthemed {
+  %userPopoutButtonColor {
+    background-color: $main-color;
   }
 }
 %userPopoutMessageInputContainer {
