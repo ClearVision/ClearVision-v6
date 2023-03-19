@@ -61,9 +61,11 @@
       }
     }
   }
-  %channelTextAreaUpsell {
-    background: transparent;
-  }
+}
+
+// LINK
+%fakeLink {
+  color: var(--url-color);
 }
 
 // FOLLOW CHANNEL

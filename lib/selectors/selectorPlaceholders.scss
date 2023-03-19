@@ -948,9 +948,6 @@
 .textAreaSlate-9-y-k2 {
   @extend %slateTextArea !optional;
 }
-.root-3PVcjb {
-  @extend %channelTextAreaUpsell !optional;
-}
 .button-2fCJ0o {
   @extend %channelTextAreaButton !optional;
 }
@@ -971,6 +968,9 @@
 }
 .upload-vLbqu- {
   @extend %channelTextAreaUpload !optional;
+}
+.fakeLink-1wGafz {
+  @extend %fakeLink !optional;
 }
 .operations-3q3u6E {
   @extend %operations !optional;
