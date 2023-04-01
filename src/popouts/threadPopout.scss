@@ -1,6 +1,7 @@
 /* THREADS POPOUT */
-%threadsPopoutContainer {
-  background-color: transparent;
+%threadsPopoutContainer,
+%threadsPopoutHeader {
+  background-color: hsla(0, 0%, 0%, 0.8);
 }
 %popoutLayer %threadsPopoutContainer {
   background-color: hsla(0, 0%, 0%, 0.8);
@@ -10,9 +11,6 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-%threadsPopoutHeader {
-  background-color: transparent;
-}
 %threadsPopoutIcon {
   background-color: var(--main-color);
   color: #fff;
