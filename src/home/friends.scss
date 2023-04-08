@@ -145,12 +145,9 @@
 }
 
 // DM USER PROFILE
-.userProfileOuterUnthemed-2b2rsv {
+%userProfileOuterUnthemed {
 	background-color: hsla(0, 0%, 0%, .4);
-}
-.userProfileOuterUnthemed-2b2rsv .userPanelInnerThemed-2xZFjl {
-	background: transparent;
-}
-.overlayBackground-1KgwVi {
-	background-color: hsla(0, 0%, 0%, .4);
+  .userPanelInnerThemed-3YO1BB{
+    background: transparent;
+  }
 }

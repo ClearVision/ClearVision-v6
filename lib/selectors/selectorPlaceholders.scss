@@ -1137,9 +1137,6 @@
 .lookBlank-21BCro {
   @extend %buttonBlank !optional;
 }
-.buttonColor-1u-3JF {
-  @extend %buttonColor !optional;
-}
 .colorBrand-2M3O3N {
   @extend %buttonColorBrand !optional;
 }
@@ -2718,23 +2715,23 @@ pre {
 .userProfileModalInner-3fh3QA {
   @extend %userModalInner !optional;
 }
-.profileBanner-2zIsK7 {
+.profileBanner-1owKI5 {
   @extend %userModalProfileBanner !optional;
 }
-.badgeList-2pMvZX {
+.badgeList-2aoHPw {
   @extend %userModalBadgeList !optional;
 }
-.userProfileModalOverlayBackground-8p3-eU {
+.overlayBackground-2aa7wt {
   @extend %userModalOverlayBackground !optional;
-}
-.tabBarContainer-2UG0vy {
-  @extend %userModalTabBarContainer !optional;
-}
-.tabBar-2StdUa {
-  @extend %userModalTabBar !optional;
 }
 .body-1Ukv50 {
   @extend %userModalBody !optional;
+}
+.tabBarContainer-sCZC4w {
+  @extend %userModalTabBarContainer !optional;
+}
+.tabBar-2hXqzU {
+  @extend %userModalTabBar !optional;
 }
 .userInfoSection-2u2hir {
   @extend %userModalInfoSection !optional;
@@ -3403,7 +3400,7 @@ pre {
 .userPopoutOverlayBackground-3A0Pcz {
   @extend %userPopoutOverlayBackground !optional;
 }
-.buttonColor-XIRMbp {
+.buttonColor-_0gSD_ {
   @extend %userPopoutButtonColor !optional;
 }
 .roles-3zC7MX {
