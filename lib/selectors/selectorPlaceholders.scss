@@ -1116,6 +1116,9 @@
 .textBadge-1fdDPJ {
   @extend %textBadge !optional;
 }
+.wrapper-2olG5t {
+  @extend %inboxBadge !optional;
+}
 .button-38aScr {
   @extend %button !optional;
 }
@@ -4000,6 +4003,9 @@ pre {
 }
 .friendRequestsButton-77veU7 {
   @extend %friendRequestsButton !optional;
+}
+.container-2ebMPP {
+  @extend %inboxHeader !optional;
 }
 .container-18GwIk {
   @extend %threadsPopoutContainer !optional;
