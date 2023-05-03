@@ -4532,3 +4532,15 @@ pre {
 .intentsContainer-FHJBSg {
   @extend %directoryAppIntentList !optional;
 }
+.picker-20lcBA {
+  @extend %soundboard !optional;
+}
+.soundButton-2P2Ua2 {
+  @extend %soundboardSound !optional;
+}
+.categoryIcon-jiMNyP.selected-21roRy {
+  @extend %soundboardGuildSelected !optional;
+}
+.keybindHint-2zIIxQ {
+  @extend %soundboardHint !optional;
+}

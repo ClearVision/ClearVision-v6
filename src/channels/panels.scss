@@ -60,7 +60,7 @@
 }
 %panelActionButton {
   &%panelActionButtonColor {
-    padding: 2px 14px;
+    padding: 0;
     &%panelActionButtonActive {
       background-color: #fff;
       color: var(--main-color);
@@ -193,6 +193,7 @@
       text-decoration: none;
     }
   }
+  
 }
 
 // ACTIVITY PANEL
