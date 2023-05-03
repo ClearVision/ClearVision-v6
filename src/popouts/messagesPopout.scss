@@ -1,3 +1,5 @@
+/* MESSAGES POPOUT AKA. INBOX */
+
 /* MESSAGES POPOUT */
 %messagesPopoutWrap,
 %recentMentionsPopout {
@@ -113,4 +115,15 @@
 // FOR YOU
 %forYouContainer {
   background: transparent;
+}
+
+// FRIENDS BUTTON
+%friendRequestsButton {
+  background: $main-color;
+  &:hover {
+    background: $hover-color;
+  }
+  > svg {
+    fill: #fff;
+  }
 }
