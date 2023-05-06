@@ -18,8 +18,9 @@
   }
 }
 
-// NUMBER BADGE
+// NUMBER BADGE (AKA PINGS)
 %numberBadge,
+%inboxBadge,
 %textBadge {
   background: $main-color  !important;
   box-shadow: 0 0 10px -3px $main-color, 0 0 0 1px $main-color;

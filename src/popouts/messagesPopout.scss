@@ -1,3 +1,5 @@
+/* MESSAGES POPOUT AKA. INBOX */
+
 /* MESSAGES POPOUT */
 %messagesPopoutWrap,
 %recentMentionsPopout {
@@ -108,4 +110,39 @@
 }
 %unreadCollapseButton {
   padding-left: 9px;
+}
+
+// FOR YOU
+%forYouContainer {
+  background: transparent;
+}
+
+// FRIENDS BUTTON
+%friendRequestsButton {
+  background: $main-color;
+  &:hover {
+    background: $hover-color;
+  }
+  > svg {
+    fill: #fff;
+  }
+}
+
+// Inbox header bar
+%topPill {
+  %topPillItemThemed {
+    background-color: transparent;
+    color: hsla(0, 0%, 100%, 0.5);
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: hsla(0, 0%, 100%, 0.7);
+    }
+    &%topPillItemSelected {
+      &%topPillItem {
+        background-color: $main-color;
+        color: #fff;
+      }
+    }
+  }
 }

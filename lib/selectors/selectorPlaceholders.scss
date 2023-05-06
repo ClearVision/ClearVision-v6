@@ -1116,6 +1116,9 @@
 .textBadge-1fdDPJ {
   @extend %textBadge !optional;
 }
+.wrapper-2olG5t {
+  @extend %inboxBadge !optional;
+}
 .button-38aScr {
   @extend %button !optional;
 }
@@ -1745,16 +1748,16 @@
 .applicationStore-2nk7Lo {
   @extend %nitroHomePage !optional;
 }
-.topPill-3DJJNV {
+.topPill-2vcLsa {
   @extend %topPill !optional;
 }
-.item-3XjbnG {
+.item-2GWPIy {
   @extend %topPillItem !optional;
 }
-.selected-g-kMVV {
+.selected-1sf9UK {
   @extend %topPillItemSelected !optional;
 }
-.themed-2-lozF {
+.themed-qqoYp3 {
   @extend %topPillItemThemed !optional;
 }
 .activityFeed-1C0EmJ {
@@ -3995,6 +3998,15 @@ pre {
 .collapseButton-39-IRc {
   @extend %unreadCollapseButton !optional;
 }
+.container-1A0qQO {
+  @extend %forYouContainer !optional;
+}
+.friendRequestsButton-77veU7 {
+  @extend %friendRequestsButton !optional;
+}
+.container-2ebMPP {
+  @extend %inboxHeader !optional;
+}
 .container-18GwIk {
   @extend %threadsPopoutContainer !optional;
 }
@@ -4468,4 +4480,67 @@ pre {
 }
 .text-sm-semibold-3TWn25 {
   @extend %textSmallSemibold !optional;
+}
+.directoryModal-YJsOMv {
+  @extend %directoryContainer !optional;
+}
+.category-2OvQ93 {
+  @extend %directoryCategory !optional;
+}
+.container-2NdZr9 {
+  @extend %directoryListCard !optional;
+}
+.card-2xymMp {
+  @extend %directoryCard !optional;
+}
+.clickable-O5xo4T {
+  @extend %directoryCardClickable !optional;
+}
+.container-SidGiM {
+  @extend %directoryFooter !optional;
+}
+.search-2RHhW6 {
+  @extend %directorySearchBar !optional;
+}
+.input-3O04eu {
+  @extend %directorySearchBarInput !optional;
+}
+.headerIcon-4CEo5y {
+  @extend %directoryAppIcon !optional;
+}
+.category-3LanTP {
+  @extend %directoryAppCategory !optional;
+}
+.card-sX105p {
+  @extend %directoryAppSupportServer !optional;
+}
+.list-1bztb- {
+  @extend %directoryAppCommandList !optional;
+}
+.commandName-SDgdgz {
+  @extend %directoryAppCommand !optional;
+}
+.cardHeader-3tWAak {
+  @extend %directoryPremiumCardHeader !optional;
+}
+.priceAndButtonContainer-2g2UBN {
+  @extend %directoryAppPremiumContainer !optional;
+}
+.list-3ykg7W {
+  @extend %directoryAppPermissionList !optional;
+}
+.intentsContainer-FHJBSg {
+  @extend %directoryAppIntentList !optional;
+}
+.picker-20lcBA {
+  @extend %soundboard !optional;
+}
+.soundButton-2P2Ua2 {
+  @extend %soundboardSound !optional;
+}
+.categoryIcon-jiMNyP.selected-21roRy {
+  @extend %soundboardGuildSelected !optional;
+}
+.keybindHint-2zIIxQ {
+  @extend %soundboardHint !optional;
 }

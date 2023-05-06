@@ -64,11 +64,9 @@ $version: '6.3.0';
 
 // HEADER BAR
 @import 'src/headerBar/headerBar';
-
 @import 'src/headerBar/breadcrumbs';
 @import 'src/headerBar/searchBars';
 @import 'src/headerBar/toolbar';
-@import 'src/headerBar/topPill';
 
 // HOME
 @import 'src/home/activity';
@@ -78,7 +76,6 @@ $version: '6.3.0';
 
 // MEMBERS
 @import 'src/members/members';
-
 @import 'src/members/tags';
 
 // MESSAGES
@@ -112,7 +109,7 @@ $version: '6.3.0';
 @import 'src/pages/forums';
 @import 'src/pages/previewServer';
 @import 'src/pages/serverBoost';
-@import 'src/pages/serverprofile';
+@import 'src/pages/serverProfile';
 @import 'src/pages/studentHub.scss';
 
 // POPOUTS

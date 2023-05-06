@@ -207,3 +207,15 @@
 .footer-3Gu_Tl {
 	background-color: transparent;
 }
+
+// SOUNDBOARD MODAL
+%soundboard {
+  background: rgba(0,0,0,.7);
+  %soundboardSound,
+  %soundboardGuildSelected {
+    background: $main-color;
+  }
+  %soundboardHint {
+    background: rgba(0,0,0,.3);
+  }
+}
