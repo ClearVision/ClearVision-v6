@@ -12,47 +12,19 @@ $colours: (
   'YouTube': #ff0000,
 );
 
-.connection-YOVI9j,
-.connectionHeader-Ixbb1s {
-  background: transparent;
-}
-.connectionIcon-1iZ6F_ {
-  +div {
-    &:before {
-      content: '';
-      position: absolute;
-      @include stretch;
-      border-radius: 8px 8px 0 0;
-      pointer-events: none;
-      z-index: -1;
-    }
-    &:after {
-      content: '';
-      position: absolute;
-      @include pos(68px, 0, -64px, 0);
-      border-radius: 0 0 8px 8px;
-      pointer-events: none;
-      z-index: -1;
-    }
-  }
+.connection-YOVI9j {
   @each $i,
   $u in $colours {
-    &[alt*='#{$i}']+div {
-      &:before {
-        background-color: rgba($u, 0.6);
-      }
-      &:after {
-        background-color: rgba($u, 0.5);
-      }
+    &:has(.connectionIcon-1iZ6F_[alt*='#{$i}']) {
+      background-color: rgba($u, 0.6);
     }
   }
-  &[alt*='Steam'],
-  &[alt*='Twitter'],
-  &[alt*='Spotify'],
-  &[alt*='Xbox Live'],
-  &[alt*='Facebook'] {
-    +div:after {
-      bottom: -108px;
+}
+.connectionHeader-Ixbb1s {
+  @each $i,
+  $u in $colours {
+    &:has(.connectionIcon-1iZ6F_[alt*='#{$i}']) {
+      background-color: rgba($u, 0.2);
     }
   }
 }
