@@ -49,6 +49,17 @@
       color: hsla(0, 0%, 100%, 0.9);
     }
   }
+  %themeDark .button-y6hemj {
+    .buttonChild-33lB5F {
+      color: hsla(0, 0%, 100%, 0.3)
+    }
+    .activeButtonChild-2hgLAO {
+      color: hsla(0, 0%, 100%, 0.7)
+    }
+    &:hover .activeButtonChild-2hgLAO {
+      color: #fff;
+    }
+  }
 
   // TYPING
   %channelTextAreaTyping {
