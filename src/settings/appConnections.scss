@@ -13,10 +13,17 @@ $colours: (
 );
 
 .connection-YOVI9j {
+  background-color: hsla(0, 0%, 100%, 0.4);
+}
+.connectionHeader-Ixbb1s {
+  background-color: transparent;
+}
+
+.connection-YOVI9j {
   @each $i,
   $u in $colours {
     &:has(.connectionIcon-1iZ6F_[alt*='#{$i}']) {
-      background-color: rgba($u, 0.6);
+      background-color: rgba($u, 0.5);
     }
   }
 }
