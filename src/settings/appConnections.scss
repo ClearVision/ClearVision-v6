@@ -13,7 +13,7 @@ $colours: (
 );
 
 .connection-YOVI9j {
-  background-color: hsla(0, 0%, 100%, 0.4);
+  background-color: hsla(0, 0%, 0%, 0.4);
 }
 .connectionHeader-Ixbb1s {
   background-color: transparent;
@@ -36,16 +36,11 @@ $colours: (
   }
 }
 .connectionAccountLabel-28GEPk {
-  color: hsla(0, 0%, 100%, 0.7);
+  color: hsla(0, 0%, 100%, 0.7) !important;
 }
 .connectionDelete-3YgMVq {
   color: hsla(0, 0%, 100%, 0.7);
 }
-
-.integrationsWrapper-1V-5L9 {
-  background-color: cv('const:colors.twitch-purple');
-  border-radius: 0 0 8px 8px;
-}
-.integration-1qC-fv {
-  background-color: cv('const:colors.twitch-purple');
+.metadataContainer-35U-On {
+	background-color: hsla(0, 0%, 100%, .1);
 }
