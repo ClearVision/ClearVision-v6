@@ -2712,6 +2712,9 @@ pre {
 .footer-IubaaS {
   @extend %modalFooter !optional;
 }
+.footer-VCsJQY {
+  @extend %uploadModalFooter !optional;
+}
 .userProfileModalOuter-2wdWjU {
   @extend %userModalOuter !optional;
 }
@@ -3597,6 +3600,12 @@ pre {
 }
 .previewContainer-1GxmBJ {
   @extend %guildSettingsRoleIconPreview !optional;
+}
+.upsellContainer-1Ml-W5 {
+  @extend %guildSettingsRoleUpsell !optional;
+}
+.upsellFooter-2aN0L_ {
+  @extend %guildSettingsRoleUpsellFooter !optional;
 }
 .activityUserPopout-2MzGCj,
 .activityProfile-1712BN {
