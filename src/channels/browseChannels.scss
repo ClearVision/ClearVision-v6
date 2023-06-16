@@ -1,3 +1,51 @@
+/*CUSTOMIZE CHANNELS*/
+/*header*/
+.tabBar-1_P75h {
+	border-bottom: none;
+}
+/*main section*/
+.prompt-1sE27N {
+	background: var(--background-overlay);
+}
+/*search bar*/
+.css-fcsbhh-control,
+.css-fcsbhh-control:focus-within {
+	background: rgba(0,0,0,.5);
+	border: 2px solid var(--main-color);
+}
+/*search bar with dropdown*/
+.css-1t5q03r-control,
+.css-1t5q03r-control:hover {
+	background: rgba(0,0,0,.5);
+	border: 2px solid var(--main-color);
+}
+/*dropdown options*/
+.css-153nlb6-option {
+	background: var(--main-color);
+}
+.css-6sv4e8-menu {
+	background: rgba(0,0,0,.8);
+}
+/*option buttons*/
+.optionButtonWrapper-2lbogO {
+	border: 2px solid var(--main-color);
+}
+.optionButtonWrapper-2lbogO:hover {
+	border: 2px solid var(--hover-color);
+}
+.optionButtonWrapper-2lbogO.selected-KQBgNS {
+	border: 2px solid var(--success-color);
+	background: rgba(0,0,0,.2);
+}
+/*profile card*/
+.profileCard-2gVmvm {
+	background: var(--background-overlay);
+}
+.role-3uAPnQ {
+	background: rgba(0,0,0,.2);
+}
+
+/*BROWSE CHANNELS*/
 .container-27tlK1 {
     background-color: hsla(0, 0%, 0%, .4);
 }
