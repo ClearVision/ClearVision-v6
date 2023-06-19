@@ -104,6 +104,10 @@
 %guildSettingsRoleIconPreview {
   background-color: hsla(0, 0%, 0%, 0.6);
 }
+%guildSettingsRoleUpsell,
+%guildSettingsRoleUpsellFooter {
+  background: hsla(0, 0%, 0%, 0.3);
+}
 // View server as role selection bar
 .container-3ssFyj {
   background-color: hsla(0, 0%, 0%, 0.8);
@@ -117,6 +121,9 @@
 // STICKERS
 %stickersUploadCard {
   background-color: rgba(0, 0, 0, 0.4);
+  &:hover {
+    background-color: $hover-color;
+  }
 }
 %stickersTierLock {
   color: #fff;
@@ -126,6 +133,9 @@
 // SAFETY SETUP
 .clickableContainer-3YtEIY {
   background-color: hsla(0, 0%, 0%, .4);
+}
+.backgroundModifierContainer-WjXgb2:hover:not(.disabled-3Q7kTN):not(.noAction-3PygTY) {
+	background:rgba(0,0,0,.2);
 }
 
 // AUTOMOD
@@ -153,9 +163,11 @@
 .actionTextHeader-yeCKjC {
 	color: hsla(0, 0%, 100%, .9) !important;
 }
+.stepperContainer-i-z0pP,
 .stepCountIcon-1A2Rxd {
 	background-color: hsla(0, 0%, 100%, .1);
 }
+.mentionLimitContainer-zBzr5i,
 .keywordListContainer-9ux8nU,
 .actionContainer-2krsiT {
 	background-color: hsla(0, 0%, 0%, .4);
