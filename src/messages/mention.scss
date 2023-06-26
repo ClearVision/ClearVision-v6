@@ -1,14 +1,12 @@
 /* MENTIONS */
 %themeDark {
   %mention {
-    padding: 0 4px;
+    padding: 2px 4px;
     border-radius: 5px;
     line-height: 22px;
-    font-weight: 500;
     white-space: nowrap;
     transition: all 0.15s ease-in-out;
-    cursor: pointer;
-    background-color: hsla(0, 0%, 100%, 0.04);
+    background-color: hsla(0, 0%, 100%, 0.1);
     color: hsla(0, 0%, 100%, 0.7);
     &:hover {
       background-color: $main-color;
@@ -42,5 +40,17 @@
   }
   &::before {
     background-color: $main-color;
+  }
+}
+
+// CHANNEL MENTION
+.channelMention {
+  padding: 2px 4px;
+  border-radius: 5px;
+  transition: all 0.15s ease-in-out;
+  background-color: $main-color;
+  color: hsla(0, 0%, 100%, 0.7);
+  &:hover {
+    background-color: $hover-color;
   }
 }
