@@ -1,6 +1,7 @@
 /* MESSAGES POPOUT AKA. INBOX */
 
 /* MESSAGES POPOUT */
+%messagesPopoutWrap,
 %recentMentionsPopout {
   background-color: var(--popout-color);
   animation: cv-menu-fold-y 0.2s cubic-bezier(0.2, 0.6, 0.5, 1.1);
@@ -150,6 +151,6 @@
 }
 
 // DATE
-%dividerDate:after {
-  background-color: rgba(0,0,0,.8);
+%recentMentionsPopout %dividerDate:after {
+  background-color: rgba(0,0,0,.93);
 }
