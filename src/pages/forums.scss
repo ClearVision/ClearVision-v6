@@ -40,7 +40,7 @@
 %forumCardName {
 	color: #fff !important;
 }
-%forumTag {
+%themeDark %forumTag {
 	background: hsla(0, 0%, 0%, 0.6);
 	border: 2px solid $main-color;
     &%forumTagClickable:not(%forumTagDisabled):hover {

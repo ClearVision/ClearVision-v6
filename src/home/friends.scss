@@ -24,6 +24,15 @@
   }
 }
 
+%friendsDiscoverHint {
+  background: hsla(0, 0%, 0%, .2);
+  border: 2px solid $main-color;
+  &:hover {
+    background: hsla(0, 0%, 0%, .4);
+    border: 2px solid $hover-color;
+  }
+}
+
 // ACTION BUTTON
 %friendActionButton {
   background-color: hsla(0, 0%, 0%, 0.6);
