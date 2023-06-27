@@ -39,6 +39,7 @@
   background-color: hsla(0, 0%, 0%, .4);
   >%menuPopout {
     background-color: transparent;
+    animation: none;
   }
   %userPopoutNoBannerPremium {
     -webkit-mask: linear-gradient(to bottom, #000 50%, transparent);
