@@ -30,16 +30,6 @@
     color: var(--text-normal);
   }
 
-  // MENTIONED
-  %mentioned {
-    background: hsla(0, 0%, 100%, 0.1);
-    &:after {
-      background: hsla(0, 0%, 100%, 0.1);
-      border-left: 4px solid $main-color;
-      border-radius: 2px 0 0 2px;
-    }
-  }
-
   // BLOCKQUOTE
   %markup {
     %blockquoteDivider {

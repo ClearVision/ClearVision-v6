@@ -1,7 +1,7 @@
 /* MENTIONS */
 %themeDark {
   %mention {
-    padding: 2px 4px;
+    padding: 1px 4px;
     border-radius: 5px;
     line-height: 22px;
     white-space: nowrap;
@@ -12,7 +12,6 @@
       background-color: $main-color;
       color: #fff;
     }
-
     &%mentionIcon {
       padding-left: 1.2rem;
     }
@@ -44,12 +43,12 @@
 }
 
 // CHANNEL MENTION
-.channelMention {
-  padding: 2px 4px;
+%channelMention {
+  padding: 1px 4px;
   border-radius: 5px;
   transition: all 0.15s ease-in-out;
   background-color: $main-color;
-  color: hsla(0, 0%, 100%, 0.7);
+  color: #fff;
   &:hover {
     background-color: $hover-color;
   }

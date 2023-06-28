@@ -2583,6 +2583,9 @@ pre {
 .iconMention-3WxjBe {
   @extend %mentionIcon !optional;
 }
+.channelMention {
+  @extend %channelMention !optional;
+}
 .anchor-1X4H4q {
   @extend %anchor !optional;
 }
