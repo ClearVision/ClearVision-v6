@@ -8,16 +8,26 @@
  * @invite dHaSxn3
  */
 
+
+/* Spotify timebar. */
+
+.theme-dark #vc-spotify-player {
+    background: none !important;
+}
+
+
 /* Credits to Zerthox for making the original theme. */
 
 /* IMPORT CSS */
 @import url(https://clearvision.github.io/ClearVision-v6/main.css);
+@import url(https://myrkur.dev/core/BBD/css/startup.css);
+@import url(https://myrkur.dev/core/BBD/css/friendmoals.css);
 
 /* SETTINGS */
 :root {
   /* ACCENT COLORS */
-  --main-color: #2780e6; /* main accent color (hex, rgb or hsl) [default: #2780e6] */
-  --hover-color: #1e63b3; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] */
+  --main-color: #e62727; /* main accent color (hex, rgb or hsl) [default: #2780e6] */
+  --hover-color: #b31e1e; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] */
   --success-color: #43b581; /* success accent color (hex, rgb or hsl) [default: #43b581] */
   --danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */
   --url-color: var(--main-color); /*The color of url links [default: var(--main-color)]*/
@@ -30,7 +40,7 @@
   --offline-color: #808080; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
 
   /* GENERAL */
-  --main-font: gg sans, Helvetica Neue, Helvetica, Arial, sans-serif; /* main font for app (font must be installed) [default: gg sans, Helvetica Neue, Helvetica, Arial, sans-serif] */
+  --main-font: Comic Sans MS, Whitney, Helvetica Neue, Helvetica, Arial, sans-serif; /* main font for app (font must be installed) [default: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif] */
   --code-font: Consolas, Liberation Mono, Menlo, Courier, monospace; /* font for codeblocks (font must be installed) [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
   --text-normal: rgb(220, 221, 222); /* color of default discord text */
   --text-muted: rgb(114, 118, 125); /* color of default discord muted text (e.g.text found in input fields before typing).*/
@@ -40,7 +50,7 @@
   /* APP BACKGROUND */
   --background-shading: 100%; /* app background shading (0 for complete smoothness) [default: 100%] */
   --background-overlay: rgba(0, 0, 0, 0.6); /* app background overlay color/gradient [default: rgba(0, 0, 0, 0.6)] */
-  --background-image: url(https://clearvision.github.io/images/sapphire.jpg); /* app background image (link must be HTTPS) [default: url(https://clearvision.github.io/images/sapphire.jpg)]*/
+  --background-image: url(https://myrkur.dev/core/BBD/images/8481.jpg); /* app background image (link must be HTTPS) [default: url(https://clearvision.github.io/images/sapphire.jpg)]*/
   --background-position: center; /* app background position [default: center] */
   --background-size: cover; /* app background size [default: cover] */
   --background-repeat: no-repeat; /* app background repeat [default: no-repeat] */
@@ -54,7 +64,7 @@
   --background-blur: 0px; /* app background blur [default: 0px] */
 
   /* HOME BUTTON ICON */
-  --home-icon: url(https://clearvision.github.io/icons/discord.svg); /* home button icon (link must be HTTPS) [default: url(https://clearvision.github.io/icons/discord.svg)]*/
+  --home-icon: url(https://myrkur.dev/core/BBD/images/rubyicon.png); /* home button icon (link must be HTTPS) [default: url(https://clearvision.github.io/icons/discord.svg)]*/
   --home-position: center; /* home button icon position [default: center] */
   --home-size: 40px; /* home button icon size [default: 40px] */
 
