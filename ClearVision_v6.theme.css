@@ -65,7 +65,7 @@
   --muted-color: rgba(255, 255, 255, 0.1); /*Muted channel color  [default: rgba(255,255,255,0.1);]*/
 
   /* MODAL BACKDROP */
-  --backdrop-overlay: rgba(123, 13, 206, 0.8); /* modal backdrop overlay color/gradient [default: rgba(0, 0, 0, 0.8)] */
+  --backdrop-overlay: rgba(0, 0, 0, 0.8); /* modal backdrop overlay color/gradient [default: rgba(0, 0, 0, 0.8)] */
   --backdrop-image: var(--background-image); /* modal backdrop image (link must be HTTPS) [default: var(--background-image)] */
   --backdrop-position: url(https://i.pinimg.com/originals/41/a8/92/41a8924c1f421cd95bc6ceec93ad03ca.jpg); /* modal backdrop position [default: var(--background-position)] */
   --backdrop-size: var(--background-size); /* modal backdrop size [default: var(--background-size)] */
