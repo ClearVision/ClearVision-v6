@@ -16,8 +16,7 @@
     font-family: cv('font.main');
     font-weight: 600;
     text-shadow: 0 0 3px #000;
-    &:hover,
-    %channelsHeaderSelected & {
+    &:hover {
       background-color: hsla(0,0%,100%,.1);
     }
   }
@@ -37,16 +36,6 @@
   }
   %threadChannelSpine {
     background: $main-color;
-  }
-
-  // GUILD BADGE
-  %channelsHeaderContainer {
-    %flowerStarContainer {
-      color: $main-color;
-    }
-    %flowerStarChild>svg {
-      color: #fff;
-    }
   }
 }
 
