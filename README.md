@@ -27,6 +27,8 @@
 
 You are now able to customize the theme with a preview before downloading it to your computer.
 
+Please keep in mind that **we do not manage the theme editor**, and cannot help with any bugs that come from using it.
+
 > [Theme Editor](https://bdeditor.dev/theme/clearvision)
 
 _Thank you to @Gibbu to providing this._
