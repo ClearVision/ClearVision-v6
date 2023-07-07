@@ -295,7 +295,10 @@
   @extend %channelWrapperMuted !optional;
 }
 .link-1_kTxV {
-  @extend %channelContent !optional;
+  @extend %channelLink !optional;
+}
+.linkTop-1W1aK6 {
+  @extend %channelLinkTop !optional;
 }
 .icon-2W8DHg {
   @extend %channelIcon !optional;
