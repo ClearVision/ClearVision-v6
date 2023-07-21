@@ -114,7 +114,6 @@ $version: '6.3.0';
 
 // POPOUTS
 @import 'src/popouts/popout';
-
 @import 'src/popouts/autoCompletePopout';
 @import 'src/popouts/connectionInfo';
 @import 'src/popouts/contextMenu';
@@ -124,7 +123,6 @@ $version: '6.3.0';
 @import 'src/popouts/mentionEveryone';
 @import 'src/popouts/menuPopout';
 @import 'src/popouts/regionSelectorPopout';
-@import 'src/popouts/messageOptions';
 @import 'src/popouts/messagesPopout';
 @import 'src/popouts/otherPopouts';
 @import 'src/popouts/searchPopout';

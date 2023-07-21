@@ -3,7 +3,7 @@
 /* MESSAGES POPOUT */
 %messagesPopoutWrap,
 %recentMentionsPopout {
-  background-color: hsla(0, 0%, 0%, 0.8);
+  background-color: var(--popout-color);
   animation: cv-menu-fold-y 0.2s cubic-bezier(0.2, 0.6, 0.5, 1.1);
   transform-origin: 50% 0;
   border-radius: 5px;
@@ -31,6 +31,9 @@
   background: hsla(0, 0%, 0%, 0.8);
   padding-right: 10px;
   padding-left: 20px;
+}
+.guildIcon-IklRcj {
+  background-color: transparent;
 }
 
 // PINNED MESSAGES
@@ -128,7 +131,7 @@
   }
 }
 
-// Inbox header bar
+// INBOX HEADER BAR
 %topPill {
   %topPillItemThemed {
     background-color: transparent;
@@ -145,4 +148,9 @@
       }
     }
   }
+}
+
+// DATE
+%recentMentionsPopout %dividerDate:after {
+  background-color: rgba(0,0,0,.93);
 }

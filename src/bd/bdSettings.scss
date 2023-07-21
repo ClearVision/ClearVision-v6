@@ -6,3 +6,7 @@
 .bd-switch input:checked+.bd-switch-body {
   --switch-color: var(--main-color);
 }
+
+.bd-transparency {
+  background: transparent !important;
+}

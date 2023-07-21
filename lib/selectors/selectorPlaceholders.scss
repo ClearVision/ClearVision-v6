@@ -294,11 +294,11 @@
 .modeMuted-2T4MDZ {
   @extend %channelWrapperMuted !optional;
 }
-.content-1gYQeQ {
-  @extend %channelContent !optional;
+.link-1_kTxV {
+  @extend %channelLink !optional;
 }
-.mainContent-20q_Hp {
-  @extend %channelMain !optional;
+.linkTop-1W1aK6 {
+  @extend %channelLinkTop !optional;
 }
 .icon-2W8DHg {
   @extend %channelIcon !optional;
@@ -435,7 +435,7 @@
 .header-3OsQeK {
   @extend %channelsHeader !optional;
 }
-.selected-1GtAC5 v{
+.selected-1GtAC5 {
   @extend %channelsHeaderSelected !optional;
 }
 .name-3Uvkvr {
@@ -2234,7 +2234,7 @@
 .progress-xNqAjK {
   @extend %fileProgress !optional;
 }
-.progressBar-1T6LYX {
+.progressBar-3fV-Dd {
   @extend %fileProgressBar !optional;
 }
 .cancelButton-oOSTov {
@@ -2582,6 +2582,9 @@ pre {
 }
 .iconMention-3WxjBe {
   @extend %mentionIcon !optional;
+}
+.channelMention {
+  @extend %channelMention !optional;
 }
 .anchor-1X4H4q {
   @extend %anchor !optional;
