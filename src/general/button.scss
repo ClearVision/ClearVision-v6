@@ -46,6 +46,18 @@
       }
     }
   }
+  &%buttonColorWhite {
+    background: #fff;
+    color: $main-color;
+    &:hover,
+    &:active {
+      background: hsla(0, 0%, 100%, 0.95);
+      color: $hover-color;
+    }
+    &:disabled {
+      background: hsla(0, 0%, 100%, 0.3);
+    }
+  }
   // EMBED BUTTON
   %embedContainer & {
     &%buttonColorGreen {
