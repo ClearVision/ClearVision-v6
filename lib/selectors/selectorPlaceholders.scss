@@ -1382,15 +1382,6 @@
 .disabled-2G98Nl {
   @extend %tabBarItemDisabled !optional;
 }
-.header-2F5_LB {
-  @extend %tabBarHeader !optional;
-}
-.separator-2N511j {
-  @extend %tabBarSeparator !optional;
-}
-.tabBar-3DfKkN {
-  @extend %headerBarTabBar !optional;
-}
 .premiumLabel-3HPvdB {
   @extend %premiumLabel !optional;
 }
@@ -3570,6 +3561,15 @@ pre {
 }
 .selectedBackground-1t6xXq {
   @extend %settingsSidebarScrollerSelectedBackground !optional;
+}
+.header-2F5_LB {
+  @extend %settingsHeader !optional;
+}
+.headerText-10ez_d {
+  @extend %settingsHeaderText !optional;
+}
+.separator-2N511j {
+  @extend %settingsSeparator !optional;
 }
 .socialLinks-3ywLUf {
   @extend %settingsSocialLinks !optional;
