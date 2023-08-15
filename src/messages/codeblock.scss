@@ -12,17 +12,6 @@
       margin-top: -1px;
     }
   }
-  code {
-    padding: 3.5px 7.5px;
-    background-color: hsla(0, 0%, 100%, 0.05);
-    border-radius: 3px;
-    color: hsla(0, 0%, 100%, 0.7);
-    font-family: cv('font.code');
-    line-height: 22px;
-    +pre {
-      margin-top: -1px;
-    }
-  }
 }
 // CODEBLOCK
 %codePre {
@@ -31,7 +20,7 @@
   border: 2px solid hsla(0, 0%, 100%, 0.05);
   border-radius: 8px;
   font-family: cv('font.code');
-  &>%codeHLJS {
+  %codeHLJS {
     position: relative;
     padding: 6px;
     background: rgba(0, 0, 0, 0.42);
