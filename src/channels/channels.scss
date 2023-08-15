@@ -322,6 +322,15 @@
   background-color: $main-color;
   color: #fff;
 }
+%voiceChannelsButton {
+  &:hover {
+    background: $hover-color;
+    transition: ease-in-out .15s;
+  }
+  > %textSmallMedium {
+    color: #fff;
+  }
+}
 
 // USER SUMMARY
 %userSummaryIcon {
@@ -352,3 +361,4 @@
     opacity: 0.1;
   }
 }
+

@@ -372,6 +372,9 @@
 .icon-3BcwQu {
   @extend %voiceUserIcon !optional;
 }
+.voiceChannelsButton-SRmgo8 {
+  @extend %voiceChannelsButton !optional;
+}
 .audienceVoiceUserIconContainer-1aQGLF {
   @extend %audienceVoiceUserIconContainer !optional;
 }
@@ -4498,6 +4501,9 @@ pre {
 }
 .text-sm-semibold-3TWn25 {
   @extend %textSmallSemibold !optional;
+}
+.text-sm-medium-2-Xzsi {
+  @extend %textSmallMedium !optional;
 }
 .directoryModal-YJsOMv {
   @extend %directoryContainer !optional;
