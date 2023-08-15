@@ -4584,3 +4584,27 @@ pre {
 .row--LCpto {
   @extend %serverGuideRow !optional;
 }
+.scroller-38C5lh {
+  @extend %serverSubscription !optional;
+}
+.tierInfoContainer-3o77tj {
+  @extend %serverSubscriptionTier !optional;
+}
+.subscriptionPerks-17BiNa {
+  @extend %serverSubscriptionPerk !optional;
+}
+.roleMessagePreview-NUi2Ri {
+  @extend %serverSubscriptionPreview !optional;
+}
+.navButtons-R_NSvX {
+  @extend %serverExperienceNav !optional;
+}
+.prompt-R8SyL4 {
+  @extend %serverExperiencePrompt !optional;
+}
+.termsFieldBody-2nQ2cD {
+  @extend %serverExperienceTerms !optional;
+}
+.overlay-1wSZ6w {
+  @extend %serverExperienceGradient !optional;
+}
