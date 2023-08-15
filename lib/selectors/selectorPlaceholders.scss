@@ -4559,3 +4559,28 @@ pre {
 .keybindHint-2zIIxQ {
   @extend %soundboardHint !optional;
 }
+
+.homeContainer-1T8N7y {
+  @extend %homeContainer !optional;
+}
+.userProfileOuterThemed-2BgJCM {
+  @extend %serverGuideMessage !optional;
+}
+.userCardInner-3c42YR {
+  @extend %serverGuideMessageInner !optional
+}
+.headerIcon-3Q7cOC {
+  @extend %serverGuideIcon !optional;
+}
+.avatarBackground-2PaDOT {
+  @extend %serverGuideAvatar !optional;
+}
+.action-3oG-si {
+  @extend %serverGuideAction !optional;
+}
+.sidebarCardWrapper-34oCuK {
+  @extend %serverGuideSidebarCard !optional;
+}
+.row--LCpto {
+  @extend %serverGuideRow !optional;
+}
