@@ -1,16 +1,15 @@
 /* MENTIONS */
 %themeDark {
-  %mention {
+  %mentionWrapper {
     padding: 1px 4px;
     border-radius: 5px;
     line-height: 22px;
     white-space: nowrap;
     transition: all 0.15s ease-in-out;
-    background-color: hsla(0, 0%, 100%, 0.1);
-    color: hsla(0, 0%, 100%, 0.7);
+    background-color:$main-color;
+    color: #fff;
     &:hover {
-      background-color: $main-color;
-      color: #fff;
+      background-color: $hover-color;
     }
     &%mentionIcon {
       padding-left: 1.2rem;
@@ -23,9 +22,11 @@
   }
   %mentioned {
     %mention%mentionedInteractive {
+      background-color: hsla(0, 0%, 100%, 0.1);
       color: $main-color;
       &:hover {
-        color: #fff;
+        background-color: hsla(0, 0%, 100%, 0.2);
+        color: $hover-color;
         text-decoration: none;
       }
     }
@@ -39,17 +40,5 @@
   }
   &::before {
     background-color: $main-color;
-  }
-}
-
-// CHANNEL MENTION
-%channelMention {
-  padding: 1px 4px;
-  border-radius: 5px;
-  transition: all 0.15s ease-in-out;
-  background-color: $main-color;
-  color: #fff;
-  &:hover {
-    background-color: $hover-color;
   }
 }

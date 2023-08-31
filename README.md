@@ -19,7 +19,7 @@
 [![Issues][issues-badge]][issues-link]
 [![Pull Requests][prs-badge]][prs-link]
 
-![v6 Sapphire](https://github.com/ClearVision/ClearVision-v6/raw/master/screenshots/6-stable.4.7.9.png)
+![v6 Sapphire](https://i.imgur.com/U7UXrEN.png)
 
 </div>
 
@@ -37,9 +37,7 @@ _Thank you to @Gibbu to providing this._
 
 Note: ClearVision doesn't actively support plugins (as in, we don't seek out and actively theme fixes to every new plugin). However, when a plugin is widely used, we try our best to stay compatible. 
 
-Download the theme file and move it into your [BetterDiscord](https://betterdiscord.app) themes folder:
-
-> [ClearVision_v6.theme.css](https://clearvision.gitlab.io/download/v6/latest)
+Download the theme file from [the BetterDiscord Website](https://betterdiscord.app/theme/ClearVision) or [releases](https://github.com/ClearVision/ClearVision-v6/releases) and move it into your [BetterDiscord](https://betterdiscord.app) themes folder:
 
 ## Building from source
 

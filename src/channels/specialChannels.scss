@@ -79,3 +79,46 @@
 .chatHeaderBar-31g1mU {
     background: transparent;
 }
+/* SERVER GUIDE */
+%homeContainer {
+	/*First msg*/
+	%serverGuideMessage {
+		background: transparent;
+	}
+	%serverGuideMessageInner,
+	%serverGuideAvatar,
+	%serverGuideAction,
+	%serverGuideSidebarCard,
+	%serverGuideRow {
+		background: rgba(0,0,0,.4);
+	}
+	%serverGuideAction:hover {
+		background: $hover-color;
+	}
+	%serverGuideIcon {
+		background: $main-color;
+		border: 4px solid transparent;
+	}
+}
+/* SERVER SUBSCRIPTIONS */
+%serverSubscription {
+	background: var(--background-overlay);
+}
+%serverSubscriptionTier {
+	background: rgba(0,0,0,.4);
+}
+%serverSubscriptionPerk,
+%serverSubscriptionPreview {
+	background: rgba(0,0,0,.2);
+}
+/* CUSTOMIZE YOUR EXPERIENCE */
+%serverExperienceNav {
+	background: rgba(0,0,0,.4);
+}
+%serverExperiencePrompt,
+%serverExperienceTerms {
+	background: rgba(0,0,0,.3)
+}
+%serverExperienceGradient {
+	display: none;
+}

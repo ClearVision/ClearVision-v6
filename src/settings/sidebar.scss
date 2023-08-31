@@ -22,16 +22,19 @@
 }
 %settingsSide {
   padding: 30px 0;
-  %tabBarHeader {
+  %settingsHeader {
     color: $main-color;
     font-weight: 700;
   }
-  %tabBarSeparator {
+  %settingsSeparator {
     background: hsla(0, 0%, 100%, 0.07);
+    &:has(+ %settingsHeader) {
+      display: none;
+    }
   }
 }
 %settingsSidebar {
-  %tabBarHeader {
+  %settingsHeader {
     padding-top: 20px;
     display: flex;
     align-items: center;
@@ -54,15 +57,6 @@
       max-width: 100%;
       overflow: hidden;
       text-overflow: ellipsis;
-    }
-  }
-  %tabBarItem {
-    &:nth-child(6),
-    &:nth-child(13),
-    &:nth-child(25) {
-      +%tabBarSeparator {
-        display: none;
-      }
     }
   }
 }

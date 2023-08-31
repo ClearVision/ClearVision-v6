@@ -99,7 +99,12 @@
 %channelWrapper {
   // HOVER
   &:hover {
+    %channelName,
+    %channelIcon {
+      color: #fff;
+    }
     %channelLink {
+      background: var(--bg-overlay-hover,var(--background-modifier-hover));
       &:before {
         background: hsla(0, 0%, 100%, 0.1);
       }
@@ -143,6 +148,10 @@
   }
   // SELECTED
   &%channelWrapperSelected {
+    %channelName,
+    %channelIcon {
+      color: #fff;
+    }
     %channelLink {
       &:before {
         background: hsla(0, 0%, 100%, 0.1);
@@ -313,6 +322,15 @@
   background-color: $main-color;
   color: #fff;
 }
+%voiceChannelsButton {
+  &:hover {
+    background: $hover-color;
+    transition: ease-in-out .15s;
+  }
+  > %textSmallMedium {
+    color: #fff;
+  }
+}
 
 // USER SUMMARY
 %userSummaryIcon {
@@ -343,3 +361,4 @@
     opacity: 0.1;
   }
 }
+

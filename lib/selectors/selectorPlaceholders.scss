@@ -372,6 +372,9 @@
 .icon-3BcwQu {
   @extend %voiceUserIcon !optional;
 }
+.voiceChannelsButton-SRmgo8 {
+  @extend %voiceChannelsButton !optional;
+}
 .audienceVoiceUserIconContainer-1aQGLF {
   @extend %audienceVoiceUserIconContainer !optional;
 }
@@ -1149,7 +1152,7 @@
 .colorPrimary-2-Lusz {
   @extend %buttonColorPrimary !optional;
 }
-.colorWhite-1H92hK {
+.colorWhite-Eshn2o {
   @extend %buttonColorWhite !optional;
 }
 .colorGreen-jIPCAS {
@@ -1381,15 +1384,6 @@
 }
 .disabled-2G98Nl {
   @extend %tabBarItemDisabled !optional;
-}
-.header-2F5_LB {
-  @extend %tabBarHeader !optional;
-}
-.separator-2N511j {
-  @extend %tabBarSeparator !optional;
-}
-.tabBar-3DfKkN {
-  @extend %headerBarTabBar !optional;
 }
 .premiumLabel-3HPvdB {
   @extend %premiumLabel !optional;
@@ -3571,6 +3565,15 @@ pre {
 .selectedBackground-1t6xXq {
   @extend %settingsSidebarScrollerSelectedBackground !optional;
 }
+.header-2F5_LB {
+  @extend %settingsHeader !optional;
+}
+.headerText-10ez_d {
+  @extend %settingsHeaderText !optional;
+}
+.separator-2N511j {
+  @extend %settingsSeparator !optional;
+}
 .socialLinks-3ywLUf {
   @extend %settingsSocialLinks !optional;
 }
@@ -4018,6 +4021,9 @@ pre {
 }
 .friendRequestsButton-77veU7 {
   @extend %friendRequestsButton !optional;
+}
+.forumPost-3i1mpe {
+  @extend %messagesPopoutThread !optional;
 }
 .container-2ebMPP {
   @extend %inboxHeader !optional;
@@ -4496,6 +4502,9 @@ pre {
 .text-sm-semibold-3TWn25 {
   @extend %textSmallSemibold !optional;
 }
+.text-sm-medium-2-Xzsi {
+  @extend %textSmallMedium !optional;
+}
 .directoryModal-YJsOMv {
   @extend %directoryContainer !optional;
 }
@@ -4558,4 +4567,53 @@ pre {
 }
 .keybindHint-2zIIxQ {
   @extend %soundboardHint !optional;
+}
+
+.homeContainer-1T8N7y {
+  @extend %homeContainer !optional;
+}
+.userProfileOuterThemed-2BgJCM {
+  @extend %serverGuideMessage !optional;
+}
+.userCardInner-3c42YR {
+  @extend %serverGuideMessageInner !optional
+}
+.headerIcon-3Q7cOC {
+  @extend %serverGuideIcon !optional;
+}
+.avatarBackground-2PaDOT {
+  @extend %serverGuideAvatar !optional;
+}
+.action-3oG-si {
+  @extend %serverGuideAction !optional;
+}
+.sidebarCardWrapper-34oCuK {
+  @extend %serverGuideSidebarCard !optional;
+}
+.row--LCpto {
+  @extend %serverGuideRow !optional;
+}
+.scroller-38C5lh {
+  @extend %serverSubscription !optional;
+}
+.tierInfoContainer-3o77tj {
+  @extend %serverSubscriptionTier !optional;
+}
+.subscriptionPerks-17BiNa {
+  @extend %serverSubscriptionPerk !optional;
+}
+.roleMessagePreview-NUi2Ri {
+  @extend %serverSubscriptionPreview !optional;
+}
+.navButtons-R_NSvX {
+  @extend %serverExperienceNav !optional;
+}
+.prompt-R8SyL4 {
+  @extend %serverExperiencePrompt !optional;
+}
+.termsFieldBody-2nQ2cD {
+  @extend %serverExperienceTerms !optional;
+}
+.overlay-1wSZ6w {
+  @extend %serverExperienceGradient !optional;
 }

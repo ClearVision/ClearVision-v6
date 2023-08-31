@@ -126,8 +126,17 @@
   &:hover {
     background: $hover-color;
   }
-  > svg {
-    fill: #fff;
+  > svg > g > path {
+    color: #fff;
+  }
+}
+
+// FORUM POST
+%messagesPopoutThread {
+  background: rgba(0,0,0,.1);
+  border: 2px solid var(--main-color);
+  &:hover {
+    border: 2px solid var(--hover-color);
   }
 }
 
