@@ -54,13 +54,13 @@
     }
   }
 }
-%forumReactAdd, %forumReactButton {
+%forumReactAdd {
 	background-color: hsla(0, 0%, 100%, 0.05);
     border-radius: 3px;
     transition: all .15s ease-in-out;
     &:hover {
       background-color: hsla(0, 0%, 100%, 0.2);
-	    border-color: hsla(0,calc(var(--saturation-factor, 1)*0%),100%,.2);
-	    color: #fff !important;
+	    border-color: hsla(0, 0%, 100%, 0.2);
+	    color: #fff;
     }
 }

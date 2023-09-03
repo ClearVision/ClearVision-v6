@@ -2638,7 +2638,10 @@ pre {
   @extend %forumReactAdd !optional;
 }
 .buttonInner-3aRbcx {
-  @extend %forumReactButton !optional;
+  @extend %forumMessageButton !optional;
+}
+.active-OdlCV- {
+  @extend %forumFollowActive !optional;
 }
 .spoilerText-27bIiA {
   @extend %spoilerText !optional;
@@ -2682,23 +2685,11 @@ pre {
 .input-3O04eu {
   @extend %input !optional;
 }
-.focused-1AtTHC {
+.focused-16iuXg {
   @extend %inputFocused !optional;
 }
 .noBorder-2p63tM {
   @extend %inputNoBorder !optional;
-}
-.multiInput-1VARjC {
-  @extend %multiInput !optional;
-}
-.multiInputFirst-3-OxIz {
-  @extend %multiInputFirst !optional;
-}
-.multiInputLast-35zVz0 {
-  @extend %multiInputLast !optional;
-}
-.multiInputField-1zyopx {
-  @extend %multiInputField !optional;
 }
 .modal-3Hrb0S {
   @extend %modal !optional;
@@ -3698,14 +3689,8 @@ pre {
 .mentionButton-3C5YMI {
   @extend %replyMentionButton !optional;
 }
-.colorMuted-1jNaVo {
-  @extend %replyMentionButtonMuted !optional;
-}
-.colorLink-12GX9V {
-  @extend %replyMentionButtonLink !optional;
-}
 .closeButton-3IEry2 {
-  @extend %replyCancelButton !optional;
+  @extend %replyCloseButton !optional;
 }
 .separator-8ngZ3p {
   @extend %replySeperator !optional;
@@ -4505,17 +4490,17 @@ pre {
 .text-sm-medium-2-Xzsi {
   @extend %textSmallMedium !optional;
 }
-.directoryModal-YJsOMv {
+.directoryContainer-z-0pgp {
   @extend %directoryContainer !optional;
 }
 .category-2OvQ93 {
   @extend %directoryCategory !optional;
 }
-.container-2NdZr9 {
-  @extend %directoryListCard !optional;
-}
 .card-2xymMp {
   @extend %directoryCard !optional;
+}
+.container-2NdZr9 {
+  @extend %directoryListCard !optional;
 }
 .clickable-O5xo4T {
   @extend %directoryCardClickable !optional;
@@ -4526,14 +4511,8 @@ pre {
 .search-2RHhW6 {
   @extend %directorySearchBar !optional;
 }
-.input-3O04eu {
-  @extend %directorySearchBarInput !optional;
-}
-.headerIcon-4CEo5y {
-  @extend %directoryAppIcon !optional;
-}
-.category-3LanTP {
-  @extend %directoryAppCategory !optional;
+.category-qFAw-K.activeCategory-1iqXig {
+  @extend %directorySearchCategory !optional;
 }
 .card-sX105p {
   @extend %directoryAppSupportServer !optional;

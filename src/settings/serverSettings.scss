@@ -371,7 +371,7 @@
 
 // APP DIRECTORY
 %directoryContainer {
-  background: transparent !important;
+  background: transparent;
   &:before {
     content: '';
     @include stretch;
@@ -380,33 +380,26 @@
     background: cv('bg.app.img') cv('bg.app.pos') / cv('bg.app.size') cv('bg.app.repeat') cv('bg.app.attach');
     @include filters(cv('bg.app'));
   }
-  &:after {
-    content: '';
-    @include stretch;
-    position: fixed;
-    z-index: -1;
-    background: cv('bg.app.overlay');
-  }
 }
-%directoryCategory,
-// 1st recommended app card
-%directoryCard {
-  background: rgba(0,0,0,.3);
+%directoryCategory {
+  background: rgba(0,0,0,.4);
   &:hover {
     background: $hover-color;
   }
 }
+%directoryCard {
+  background: rgba(0,0,0,.4);
+}
 // list cards
 %directoryListCard {
-  background: rgba(0,0,0,.3);
-}
-// list cards hover
-%directoryCardClickable%directoryListCard:hover {
-  background: $hover-color;
+  background: rgba(0,0,0,.4);
+  %directoryCardClickable &:hover {
+    background-color: hsla(0, 0%, 0%, 0.6);
+  }
 }
 // new to apps card
 %directoryFooter {
-  background: rgba(0,0,0,.3);
+  background: rgba(0,0,0,.4);
 }
 %themeDark {
   %directorySearchBar {
@@ -418,7 +411,7 @@
       box-shadow: 0 0 2px 2px $main-color;
       transition: all 0.15s ease-in-out;
     }
-    %directorySearchBarInput {
+    %input {
       color: #fff;
       box-shadow: none;
       &::placeholder {
@@ -427,14 +420,9 @@
     }
   }
 }
-
-%directoryAppIcon {
-	border: 7px solid transparent;
-	background: transparent;
-}
 /*side categories*/
-%directoryAppCategory {
-	background: var(--main-color);
+%directorySearchCategory {
+	background: $main-color;
 }
 /*side support server card*/
 %directoryAppSupportServer,

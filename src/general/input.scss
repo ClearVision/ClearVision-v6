@@ -22,22 +22,14 @@
     box-shadow: none;
     background: none;
   }
-  &%multiInput {
-    background: transparent;
-    box-shadow: none;
-  }
-  %multiInputFirst {
-    %multiInputField {
-      border-radius: 3px 0 0 3px;
-    }
-  }
-  %multiInputLast {
-    &:before {
-      height: 0;
-      width: 0;
-    }
-    %multiInputField {
-      border-radius: 0 3px 3px 0;
+  .copyInput-3QjTFp {
+    %input {
+      background-color: transparent;
+      box-shadow: none;
+      &:focus,
+      &%inputFocused {
+        box-shadow: none;
+      }
     }
   }
 }

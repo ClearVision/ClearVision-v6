@@ -99,17 +99,7 @@
   border: 2px solid transparent;
   box-shadow: none;
 }
-%replyMentionButton {
-  padding: 4px;
-  margin-right: 3px;
-  &%replyMentionButtonMuted {
-    color: rgb(240, 71, 71);
-  }
-  &%replyMentionButtonLink {
-    color: rgb(67, 181, 129);
-  }
-}
-%replyCancelButton {
+%replyCloseButton {
   padding: 8px 16px 8px 4px;
   margin-left: 4px;
 }
