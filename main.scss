@@ -105,11 +105,11 @@ $version: '6.3.0';
 @import 'src/modals/userModal';
 
 // PAGES
+@import 'src/pages/appDirectory';
 @import 'src/pages/discover';
 @import 'src/pages/forums';
 @import 'src/pages/previewServer';
 @import 'src/pages/serverBoost';
-@import 'src/pages/serverProfile';
 @import 'src/pages/studentHub.scss';
 
 // POPOUTS

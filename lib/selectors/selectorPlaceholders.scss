@@ -4490,6 +4490,9 @@ pre {
 .text-sm-medium-2-Xzsi {
   @extend %textSmallMedium !optional;
 }
+.text-md-normal-2rFCH3 {
+  @extend %textMediumNormal !optional;
+}
 .directoryContainer-z-0pgp {
   @extend %directoryContainer !optional;
 }
@@ -4512,7 +4515,10 @@ pre {
   @extend %directorySearchBar !optional;
 }
 .category-qFAw-K.activeCategory-1iqXig {
-  @extend %directorySearchCategory !optional;
+  @extend %directorySearchCategoryActive !optional;
+}
+.category-3LanTP {
+  @extend %directoryAppCategory !optional;
 }
 .card-sX105p {
   @extend %directoryAppSupportServer !optional;
@@ -4524,9 +4530,9 @@ pre {
   @extend %directoryAppCommand !optional;
 }
 .cardHeader-3tWAak {
-  @extend %directoryPremiumCardHeader !optional;
+  @extend %directoryAppPremiumCardHeader !optional;
 }
-.priceAndButtonContainer-2g2UBN {
+.benefitsContainer-xSjsOP {
   @extend %directoryAppPremiumContainer !optional;
 }
 .list-3ykg7W {
