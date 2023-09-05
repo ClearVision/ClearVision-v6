@@ -1018,7 +1018,7 @@
   @extend %autocompleteContentSecondary !optional;
 }
 .descriptionDiscriminator-tCKMLV {
-  @extend%autocompletedescriptiondiscriminator  !optional;
+  @extend %autocompletedescriptiondiscriminator  !optional;
 }
 .selector-2IcQBU {
   @extend %autocompleteSelector !optional;
@@ -4061,6 +4061,18 @@ pre {
 .more-2c3Z-T {
   @extend %channelThreadPopoutMore !optional;
 }
+.container-1PloNW {
+  @extend %threadContainer !optional;
+}
+.isOpen-O7ANQc {
+  @extend %threadOpen !optional;
+}
+.contentPreview-3fWiuC {
+  @extend %threadContentPreview !optional;
+}
+.container-3XgAHv {
+  @extend %threadChat !optional;
+}
 .container-2rzKKA {
   @extend %threadPreview !optional;
 }
@@ -4369,9 +4381,6 @@ pre {
 }
 .mainCard-3KBsBI {
   @extend %forumCard !optional;
-}
-.isOpen-2OXbFs {
-  @extend %forumCardIsOpen !optional;
 }
 .channelName-1On3TJ {
   @extend %forumCardName !optional;
