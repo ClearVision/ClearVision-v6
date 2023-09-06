@@ -770,7 +770,7 @@
 .text-27cdrj {
   @extend %noChannelText !optional;
 }
-.wrapper-15CKyy {
+.wrapper-3HVHpV {
   @extend %chatLoadingWrapper !optional;
 }
 .uploadModalIn-2w48Zf {
@@ -2227,6 +2227,9 @@ pre {
 }
 .hljs {
   @extend %codeHLJS !optional;
+}
+.codeActions-NqAKTN {
+  @extend %codeActions !optional;
 }
 .container-2sjPya {
   @extend %embedContainer !optional;
