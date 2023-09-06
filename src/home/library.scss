@@ -6,15 +6,6 @@
   background-color: rgba(0, 0, 0, calc(#{cv('bg.app.shading')} * 0.5));
 }
 
-// HEADER
-%libraryFilterInput {
-  background-color: hsla(0, 0%, 100%, 0.1);
-  color: #fff;
-  &::placeholder {
-    color: hsla(0, 0%, 100%, 0.3);
-  }
-}
-
 // BODY
 %libraryScroller {
   background: transparent;

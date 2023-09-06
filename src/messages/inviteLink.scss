@@ -9,9 +9,6 @@
     color: $main-color;
     @include hover-shadow;
   }
-  %inviteGuildNameExpired {
-    color: cv('colors.danger');
-  }
   %inviteGuildIcon {
     background-color: hsla(0, 0%, 100%, 0.04);
   }
