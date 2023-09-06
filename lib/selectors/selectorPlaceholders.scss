@@ -357,12 +357,6 @@
 .voiceChannelsButton-SRmgo8 {
   @extend %voiceChannelsButton !optional;
 }
-.audienceVoiceUserIconContainer-1aQGLF {
-  @extend %stageUserIconContainer !optional;
-}
-.container-1IyjjY {
-  @extend %stageContainer !optional;
-}
 .container-1jha_j {
   @extend %userSummaryContainer !optional;
 }
@@ -3848,6 +3842,15 @@ pre {
 .textInput-2xgsSa {
   @extend %stagePopoutTextInput !optional;
 }
+.audienceVoiceUserIconContainer-1aQGLF {
+  @extend %stageUserIconContainer !optional;
+}
+.container-1IyjjY {
+  @extend %stageOptionContainer !optional;
+}
+.separator-3FDGQ4 {
+  @extend %stageSeparator !optional;
+}
 .categoryPill-1zjNrr {
   @extend %categoryPill !optional;
 }
@@ -4305,7 +4308,7 @@ pre {
   @extend %integrationsIconWrapper !optional;
 }
 .scroller-RfJjkV {
-  @extend %hubDiscoverScroller !optional
+  @extend %hubDiscoverScroller !optional;
 }
 .pageContainer-36uo3F {
   @extend %hubContainer !optional;
