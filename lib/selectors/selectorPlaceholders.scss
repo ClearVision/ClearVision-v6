@@ -2411,9 +2411,6 @@ pre {
 .mention {
   @extend %mention !optional;
 }
-.iconMention-3WxjBe {
-  @extend %mentionIcon !optional;
-}
 .channelMention {
   @extend %channelMention !optional;
 }
@@ -2480,8 +2477,8 @@ pre {
 .active-OdlCV- {
   @extend %forumFollowActive !optional;
 }
-.spoilerText-27bIiA {
-  @extend %spoilerText !optional;
+.spoilerMarkdownContent-2R1Vwe {
+  @extend %spoilerMarkdownContent !optional;
 }
 .hidden-3B-Rum {
   @extend %spoilerHidden !optional;
