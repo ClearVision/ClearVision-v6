@@ -2,18 +2,6 @@
 %spinnerPopout {
   background-color: hsla(0, 0%, 0%, 0.6);
 }
-%spinnerPulsingEllipsisItem {
-  background-color: $main-color;
-  border-radius: 50%;
-  animation: cv-spinner-pulse 1s ease-in-out infinite alternate;
-  opacity: 0.3;
-  &:nth-child(2) {
-    animation-delay: 0.2s;
-  }
-  &:nth-child(3) {
-    animation-delay: 0.4s;
-  }
-}
 %spinnerWanderingCubes {
   %spinnerWanderingCubesItem {
     width: 100%;

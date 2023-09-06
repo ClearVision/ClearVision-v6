@@ -1279,10 +1279,10 @@ header-2TLOnc {
 .bottom-3Mou5l {
   @extend %indicatorExclamation !optional;
 }
-.scrollerWrap-2lJEkd {
+.scrollerWrap-6LjisI {
   @extend %scrollerWrap !optional;
 }
-.scrollerBase-_bVAAt {
+.scrollerBase-1Pkza4 {
   @extend %scroller !optional;
 }
 .slider-1mmyV6 {
@@ -1333,10 +1333,10 @@ header-2TLOnc {
 .path3-3TAamH {
   @extend %spinnerCirclePath3 !optional;
 }
-.pulsingEllipsis-10G8Z6 {
+.pulsingEllipsis-S-xTiX {
   @extend %spinnerPulsingEllipsis !optional;
 }
-.pulsingEllipsisItem-3pNmEc {
+.pulsingEllipsis-S-xTiX .item-2VgEex {
   @extend %spinnerPulsingEllipsisItem !optional;
 }
 .control-1fl03- {
@@ -1381,7 +1381,7 @@ header-2TLOnc {
 .tooltipBottom-1itlv3 {
   @extend %tooltipBottom !optional;
 }
-.tooltipLeft-3H43DQ {
+.tooltipLeft--ZiKiq {
   @extend %tooltipLeft !optional;
 }
 .tooltipRight-1UPNyA {
@@ -1393,7 +1393,7 @@ header-2TLOnc {
 .tooltipPrimary-2466a2 {
   @extend %tooltipPrimary !optional;
 }
-.tooltipBrand-20XsMA {
+.tooltipBrand-uKW6Xn {
   @extend %tooltipBrand !optional;
 }
 .hub-3NNcVs {
@@ -1402,10 +1402,10 @@ header-2TLOnc {
 .icon-3BYlXK {
   @extend %tooltipHubIcon !optional;
 }
-.tooltipRed-2z14Wl {
+.tooltipRed-2Pb7EW {
   @extend %tooltipRed !optional;
 }
-.tooltipGreen-oouJdx {
+.tooltipGreen-cAApx5 {
   @extend %tooltipGreen !optional;
 }
 .tooltipYellow-3a3Cmr {
@@ -1531,7 +1531,7 @@ header-2TLOnc {
 .guildsErrorContainer-2uWYsE {
   @extend %guildsErrorContainer !optional;
 }
-.guildsError-g6NwOI {
+.guildsError-YJjW3A {
   @extend %guildsError !optional;
 }
 .breadcrumbs-2uP7wU {
@@ -1561,7 +1561,7 @@ header-2TLOnc {
 .toolbar-3_r2xA {
   @extend %toolbar !optional;
 }
-.base-21yXnu {
+.title-17SveM {
   @extend %headerBarTitle !optional;
 }
 .muted-eZM05q {
@@ -1731,150 +1731,6 @@ header-2TLOnc {
 }
 .themed-qqoYp3 {
   @extend %topPillItemThemed !optional;
-}
-.activityFeed-1C0EmJ {
-  @extend %activityFeed !optional;
-}
-.layout-1cQCv2 {
-  @extend %activityFeedLayout !optional;
-}
-.h5-2RwDNl {
-  @extend %activityFeedH5 !optional;
-}
-.column-E5Tpw7 {
-  @extend %activityFeedColumn !optional;
-}
-.card-GqTca8 {
-  @extend %activityFeedCard !optional;
-}
-.outer-2IVh5n {
-  @extend %activityFeedOuter !optional;
-}
-.interactive-1BeKSi {
-  @extend %activityFeedOuterInteractive !optional;
-}
-.wrapper-Qvfyci {
-  @extend %activityFeedMediaWrapper !optional;
-}
-.image-3g0L65 {
-  @extend %activityFeedImage !optional;
-}
-.video-TNzRgt {
-  @extend %activityFeedVideo !optional;
-}
-.coloredBackground-37Z6Gv {
-  @extend %activityFeedColoredBackground !optional;
-}
-.title-3mg8_z {
-  @extend %activityFeedCardTitle !optional;
-}
-.coloredText-1kAd0O {
-  @extend %activityFeedColoredText !optional;
-}
-.ctaButtons-3Aw3iT {
-  @extend %activityFeedCtaButtons !optional;
-}
-.wrapper-9ppXpy {
-  @extend %activityFeedCardFooter !optional;
-}
-.iconWrapper-3-slmh {
-  @extend %activityFeedCardIconWrapper !optional;
-}
-.interactive-1FxC7B {
-  @extend %activityFeedCardIconWrapperInteractive !optional;
-}
-.colorStandard-21JIj7 {
-  @extend %activityFeedColorStandard !optional;
-}
-.colorMuted-20987_ {
-  @extend %activityFeedColorMuted !optional;
-}
-.shareButton-3w0M74 {
-  @extend %activityFeedShareButton !optional;
-}
-.grid-1rkoVH {
-  @extend %activityFeedQuickLauncher !optional;
-}
-.wrapped-15rg6t {
-  @extend %activityFeedQuickLauncherWrapped !optional;
-}
-.unwrapped-37iUtM {
-  @extend %activityFeedQuickLauncherUnwrapped !optional;
-}
-.clickable-nnkAZy {
-  @extend %activityFeedQuickLauncherClickable !optional;
-}
-.empty-hejAOj {
-  @extend %activityFeedQuickLauncherEmpty !optional;
-}
-.icon-2hm0JA {
-  @extend %activityFeedQuickLauncherIcon !optional;
-}
-.wrapper-2ULRsd {
-  @extend %activityFeedNowPlayingContainer !optional;
-}
-.recentlyPlayedContainer-2F3MqS {
-  @extend %activityFeedRecentlyPlayedContainer !optional;
-}
-.popoutContainer-3WC9HR {
-  @extend %activityFeedPopoutContainer !optional;
-}
-.headerIcon-2AzihC {
-  @extend %activityFeedContainerHeaderIcon !optional;
-}
-.multipleIconWrapper-1PjkRO {
-  @extend %activityFeedContainerMultipleIconWrapper !optional;
-}
-.body-1BpgWG {
-  @extend %activityFeedPopoutContainerBody !optional;
-}
-.section-2VKIPC {
-  @extend %activityFeedPopoutContainerSection !optional;
-}
-.popout-3G62UL {
-  @extend %activityFeedPopout !optional;
-}
-.enabled-5QKLzu {
-  @extend %activityFeedPopoutEnabled !optional;
-}
-.memberListContainer-1AKCDy {
-  @extend %activityFeedPopoutMemberListContainer !optional;
-}
-.memberListItem-3V-x8Q {
-  @extend %activityFeedPopoutMemberListItem !optional;
-}
-.avatar-3a2ws7 {
-  @extend %activityFeedPopoutAvatar !optional;
-}
-.avatarMask-2Mo_pM {
-  @extend %activityFeedPopoutAvatarMask !optional;
-}
-.separator-2c4hi3 {
-  @extend %activityFeedSeparator !optional;
-}
-.placeholderWrapper-3FaLtZ {
-  @extend %activityFeedPlaceholderWrapper !optional;
-}
-.wrapper-3UweLa {
-  @extend %activityFeedNoticeWrapper !optional;
-}
-.gdprWrapper-33M2Mg {
-  @extend %activityFeedGdprWrapper !optional;
-}
-.image-2prtMm {
-  @extend %activityFeedNoticeImage !optional;
-}
-.header-3uLGFv {
-  @extend %activityFeedNoticeHeader !optional;
-}
-.body-2d4vNQ {
-  @extend %activityFeedNoticeBody !optional;
-}
-.buttons-1T0m8S {
-  @extend %activityFeedNoticeButtons !optional;
-}
-.close-C7sU74 {
-  @extend %activityFeedNoticeClose !optional;
 }
 .container-2cd8Mz {
   @extend %friends !optional;

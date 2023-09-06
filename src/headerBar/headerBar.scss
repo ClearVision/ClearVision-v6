@@ -30,10 +30,6 @@
     color: #fff;
     text-shadow: 0 0 3px #000;
     font-family: cv('font.main');
-    &%headerBarTitleMuted {
-      color: hsla(0, 0%, 100%, 0.3);
-      text-shadow: none;
-    }
   }
   %headerBarTopic {
     color: hsla(0, 0%, 100%, 0.5);
