@@ -59,29 +59,11 @@
 .notice-1x8lm- {
   @extend %noticeComplete !optional;
 }
-.noticePremium-12Zvj9 {
-  @extend %noticePremium !optional;
-}
-.noticeInfo-3_iTE1 {
-  @extend %noticeInfo !optional;
-}
-.noticeSuccess-3Y62ob {
-  @extend %noticeSuccess !optional;
-}
 .colorDanger-2YLzLC {
   @extend %noticeDanger !optional;
 }
 .colorStreamerMode-8uoRWd {
   @extend %noticeStreamerMode !optional;
-}
-.noticeFacebook-3equ5g {
-  @extend %noticeFacebook !optional;
-}
-.noticeSpotify-27dhr0 {
-  @extend %noticeSpotify !optional;
-}
-.colorBrand1-2u_MN9 {
-  @extend %noticeBrand !optional;
 }
 .noticeContents-1dYEwP {
   @extend %noticeContents !optional;
@@ -309,7 +291,7 @@
 .name-28HaxV {
   @extend %channelName !optional;
 }
-.children-Bmpf2Q {
+.children-1MGS9G {
   @extend %channelButtons !optional;
 }
 .iconItem-1EjiK0 {
@@ -348,7 +330,7 @@
 .selected-3TGCSZ {
   @extend %voiceUserSelected !optional;
 }
-.content-3xS9Lh {
+.content-1Tgc42 {
   @extend %voiceUserContent !optional;
 }
 .avatarContainer-3FF_Km {
@@ -376,7 +358,10 @@
   @extend %voiceChannelsButton !optional;
 }
 .audienceVoiceUserIconContainer-1aQGLF {
-  @extend %audienceVoiceUserIconContainer !optional;
+  @extend %stageUserIconContainer !optional;
+}
+.container-1IyjjY {
+  @extend %stageContainer !optional;
 }
 .container-1jha_j {
   @extend %userSummaryContainer !optional;
@@ -1169,6 +1154,9 @@
 }
 .colorYellow-_9KFXL {
   @extend %buttonColorYellow !optional;
+}
+.buttonColor-28DXIe {
+  @extend %buttonCallInvite !optional;
 }
 .contents-3NembX {
   @extend %buttonContents !optional;
@@ -3854,7 +3842,7 @@ pre {
 .foreground-uvONBR {
   @extend %stageIconBigForeground !optional;
 }
-.stageIconBackground-5uF4K9 {
+.iconBackground-3qSXiM {
   @extend %stageIconBackground !optional;
 }
 .textInput-2xgsSa {
