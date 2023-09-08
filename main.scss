@@ -30,7 +30,6 @@ $version: '6.3.0';
 @import 'src/channels/specialChannels';
 @import 'src/channels/channels';
 @import 'src/channels/category';
-@import 'src/channels/channelNotice';
 @import 'src/channels/indicators';
 @import 'src/channels/panels';
 @import 'src/channels/privateChannels';
@@ -44,7 +43,6 @@ $version: '6.3.0';
 @import 'src/chat/textArea';
 @import 'src/chat/textAreaAutoComplete';
 @import 'src/chat/treads';
-@import 'src/chat/welcomeMessage';
 
 // GENERAL ELEMENTS
 @import 'src/general/badge';
@@ -69,7 +67,6 @@ $version: '6.3.0';
 @import 'src/headerBar/toolbar';
 
 // HOME
-@import 'src/home/activity';
 @import 'src/home/friends';
 @import 'src/home/library';
 @import 'src/home/requests';
@@ -80,7 +77,6 @@ $version: '6.3.0';
 
 // MESSAGES
 @import 'src/messages/message';
-
 @import 'src/messages/activityInvite';
 @import 'src/messages/attachment';
 @import 'src/messages/blocked';
@@ -91,7 +87,6 @@ $version: '6.3.0';
 @import 'src/messages/mediaPlayer';
 @import 'src/messages/mention';
 @import 'src/messages/reaction';
-@import 'src/messages/spoiler';
 @import 'src/messages/textContainer';
 
 // MODALS
@@ -105,11 +100,11 @@ $version: '6.3.0';
 @import 'src/modals/userModal';
 
 // PAGES
+@import 'src/pages/appDirectory';
 @import 'src/pages/discover';
 @import 'src/pages/forums';
 @import 'src/pages/previewServer';
 @import 'src/pages/serverBoost';
-@import 'src/pages/serverProfile';
 @import 'src/pages/studentHub.scss';
 
 // POPOUTS

@@ -24,7 +24,7 @@
     %forumContentContainer {
         padding: 10px 0px 0px 0px;
     }
-    %themeDark &%forumCardIsOpen {
+    %themeDark &%forumOpenCard {
         background-color: hsla(0,0%,100%,0.1);
     }
 }
@@ -149,4 +149,20 @@
 %forumChatDivider,
 %forumChatStartBox {
 	background-color: transparent;
+}
+%forumMessageButton {
+  background-color: hsla(0, 0%, 100%, 0.05);
+  border-radius: 3px;
+  transition: all .15s ease-in-out;  
+  &:hover {
+    background-color: hsla(0, 0%, 100%, 0.2);
+    border-color: hsla(0, 0%, 100%, 0.2);
+    color: #fff ;
+  }
+  &%forumFollowActive {
+    color: $main-color;
+    &:hover {
+      color: $hover-color;
+    }
+  }
 }

@@ -19,6 +19,9 @@
 %stageGradientContainer {
   background-image: none;
 }
+%stageSeparator {
+  background-color: $main-color;
+}
 %stageHeaderContainer,
 %stageSpeakers,
 %stageParticipants {
@@ -35,6 +38,16 @@
 %stageParticipant {
   &:hover {
     background-color: hsla(0, 0%, 100%, 0.05);
+  }
+}
+%stageUserIconContainer {
+  background-color: $main-color;
+  color: #fff;
+}
+%stageOptionContainer {
+  background: rgba(0,0,0,.3);
+  &:hover {
+    background: rgba(0,0,0,.6);
   }
 }
 

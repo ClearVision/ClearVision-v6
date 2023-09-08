@@ -63,7 +63,21 @@
 .inlineUpsell-3zPTgw {
   background: rgba(0,0,0,.5);
 }
-// PRIVACY AND SAFETY
+
+// FAMILY CENTER
+.container-2WMFjc,
+.container-jV-A82,
+.container-1iKw09,
+.box-3QCU9H {
+	background-color: hsla(0, 0%, 0%, 0.4);
+}
+.circle-1ip_Nd,
+.iconContainer-3cz2oI {
+	background-color: transparent;
+}
+.row-XYkFDK {
+	background-color: hsla(0, 0%, 100%, 0.07);
+}
 
 // AUTHORIZED APPS
 .authedApp-1tw-eT {
@@ -123,8 +137,7 @@
 }
 
 // NITRO
-.bigPerkCard-1uwmWV,
-.smallPerkCard-2sX_-- {
+.theme-dark .feature-2IUcBI {
 	background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -170,8 +183,6 @@
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-// HYPESQUAD
-
 // ACCESSIBILITY
 %accessibilityMessagePreview {
   background-color: transparent;
@@ -182,6 +193,7 @@
   %micTest {
     %micTestContainer {
       background: $main-color  !important;
+      mask-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='20' fill='yellow'%3E%3Cpath fill-rule='evenodd' d='M 4 2 C 2.895 2 2 2.895 2 4 L 2 16 C 2 17.54 3.667 18.502 5 17.732 C 5.619 17.375 6 16.715 6 16 L 6 4 C 6 2.895 5.105 2 4 2 Z'/%3E%3C/svg%3E");
       -webkit-mask-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='20' fill='yellow'%3E%3Cpath fill-rule='evenodd' d='M 4 2 C 2.895 2 2 2.895 2 4 L 2 16 C 2 17.54 3.667 18.502 5 17.732 C 5.619 17.375 6 16.715 6 16 L 6 4 C 6 2.895 5.105 2 4 2 Z'/%3E%3C/svg%3E");
     }
     %micTestProgress {

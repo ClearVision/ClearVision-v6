@@ -5,38 +5,11 @@
   &%noticeDefault {
     background: rgba(#43b581, 0.6);
   }
-  &%noticePremium {
-    background: rgba(#202225, 0.6);
-  }
-  &%noticeInfo {
-    background: rgba(#4a90e2, 0.6);
-  }
-  &%noticeSuccess {
-    background: rgba(#43b581, 0.6);
-  }
   &%noticeDanger {
     background: rgba(#f04747, 0.6);
   }
   &%noticeStreamerMode {
     background: rgba(cv('const:colors.twitch-purple'), 0.6);
-  }
-  &%noticeFacebook {
-    background: rgba(cv('const:colors.facebook-blue'), 0.6);
-  }
-  &%noticeSpotify {
-    background: rgba(cv('const:colors.spotify-green'), 0.6);
-  }
-  &%noticeBrand {
-    background: transparent;
-    &:before {
-      content: '';
-      position: absolute;
-      @include stretch;
-      background-color: var(--main-color);
-      opacity: 0.6;
-      z-index: -1;
-      border-radius: 3px;
-    }
   }
   %noticeTextLink {
     color: #fff;
