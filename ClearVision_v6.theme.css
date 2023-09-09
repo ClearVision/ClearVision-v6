@@ -49,7 +49,7 @@
 	--background-shading: 100%; /* app background shading (0 for complete smoothness) [default: 100%] */
 	--background-overlay: rgba(0, 0, 0, 0.6); /* app background overlay color/gradient [default: rgba(0, 0, 0, 0.6)] */
 	--background-image:         url(https://cdn.discordapp.com/attachments/878760998499147837/1147633918938464427/Untitled370_20230902224719.png);; /* app background image (link must be HTTPS) [default: url(https://clearvision.gitlab.io/images/sapphire.jpg)]*/
-	--background-position: bottom; /* app background position [default: center] */
+	--background-position: top; /* app background position [default: center] */
 	--background-size:       cover; /* app background size [default: cover] */
 	--background-repeat: no-repeat; /* app background repeat [default: no-repeat] */
 	--background-attachment: fixed; /* app background attachment [default: fixed] */
