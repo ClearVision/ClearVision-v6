@@ -2480,6 +2480,15 @@ pre {
 .active-OdlCV- {
   @extend %forumFollowActive !optional;
 }
+.container-2_J666 {
+  @extend %forumGetStartedContainer !optional;
+}
+.stepContainer-SaPPyG {
+  @extend %forumGetStartedStep !optional;
+}
+.staticToolbar-x12NJC {
+  @extend %forumSettingsGuidelinesToolbar !optional;
+}
 .spoilerMarkdownContent-2R1Vwe {
   @extend %spoilerMarkdownContent !optional;
 }
@@ -3490,6 +3499,9 @@ pre {
 .role-2TIOKu {
   @extend %role !optional;
 }
+.roleWrapper-2IhvNd {
+  @extend %roleWrapper !optional;
+}
 .roleCircle-3TFUOr {
   @extend %roleCircle !optional;
 }
@@ -3919,6 +3931,9 @@ pre {
 .container-3XgAHv {
   @extend %threadChat !optional;
 }
+.iconWrapper-3plkqh {
+  @extend %threadIconWrapper !optional;
+}
 .container-2rzKKA {
   @extend %threadPreview !optional;
 }
@@ -4222,17 +4237,24 @@ pre {
 .container-3wLKDe {
   @extend %forumContainer !optional;
 }
-.container-2qVG6q {
+.container-q2_DnH {
   @extend %forumCardContainer !optional;
 }
 .mainCard-3KBsBI {
   @extend %forumCard !optional;
 }
-.channelName-1On3TJ {
+.increasedActivityMainCard-2ry6hI {
+  @extend %forumIncreasedCard !optional;
+}
+.title-2qfNnd,
+.postTitleText-3gRCnO {
   @extend %forumCardName !optional;
 }
-.isOpen-2OXbFs {
+.isOpen-2Gyel_ {
   @extend %forumOpenCard !optional;
+}
+.isOpen-2ldXbM {
+  @extend %forumIncreasedOpenCard !optional;
 }
 .loadingCard-3pIp9h {
   @extend %forumLoadingCard !optional;
@@ -4240,8 +4262,14 @@ pre {
 .headerRow-1MKoR- {
   @extend %forumHeaderRow !optional;
 }
-.headerBorder-jrk0Ic {
+.replies-15QcwL {
+  @extend %forumIncreasedReplyPreview !optional;
+}
+.tagsDivider-3LhkLA {
   @extend %forumHeaderBorder !optional;
+}
+.container-2nXUah {
+  @extend %forumNoConversations !optional;
 }
 .sortDropdown-hY93nR {
   @extend %forumSortDropdown !optional;
@@ -4255,6 +4283,9 @@ pre {
 .pill-3pRQlO {
   @extend %forumTag !optional;
 }
+.increasedActivityPill-1VhSrh {
+  @extend %forumIncreasedTag !optional;
+}
 .selected-24z1Ou {
   @extend %forumTagSelected !optional;
 }
@@ -4263,12 +4294,6 @@ pre {
 }
 .disabled-3Rezaw {
   @extend %forumTagDisabled !optional;
-}
-.sidebarCard-1Gn1ch {
-  @extend %forumGuidelineContainer !optional;
-}
-.container-2IhveL {
-  @extend %forumTagContainer !optional;
 }
 .pencilIcon-1d4fcw {
   @extend %forumPencilIcon !optional;
@@ -4294,7 +4319,7 @@ pre {
 .countContainer-3DOo5v {
   @extend %forumTagBoxCount !optional;
 }
-.contents-3ca1mk {
+.clear-2gkgln {
   @extend %forumTagClear !optional;
 }
 .countContainer-3uQ087 {
@@ -4336,11 +4361,11 @@ pre {
 .linkContainer-2xEQjX {
   @extend %forumRulesLinkContainer !optional;
 }
-.text-sm-bold-1Dtt0R {
-  @extend %textSmallBold !optional;
+.heading-lg-bold-242r2N {
+  @extend %headingLargeBold !optional;
 }
-.text-sm-semibold-3TWn25 {
-  @extend %textSmallSemibold !optional;
+.heading-lg-semibold-14ouVv {
+  @extend %headingLargeSemibold !optional;
 }
 .text-sm-medium-2-Xzsi {
   @extend %textSmallMedium !optional;
@@ -4456,4 +4481,13 @@ pre {
 }
 .overlay-1wSZ6w {
   @extend %serverExperienceGradient !optional;
+}
+.inviteRow-3vmB7i {
+  @extend %inviteModalRow !optional;
+}
+.inviteBannerUpsell-1t_LYM {
+  @extend %inviteModalUpsell !optional;
+}
+.temporaryMembershipContainerBackground-13Hf5U {
+  @extend %inviteModalTemporary !optional;
 }
