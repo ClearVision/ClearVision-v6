@@ -135,11 +135,14 @@
 }
 
 // INVITE MODAL
-.inviteRow-3vmB7i:hover {
+%inviteModalRow:hover {
   background-color: rgba(255, 255, 255, 0.07);
 }
-.theme-dark .inviteBannerUpsell-1t_LYM {
+%themeDark %inviteModalUpsell {
   background-color: transparent;
+}
+%inviteModalTemporary {
+  background: rgba(0,0,0,.07);
 }
 
 // TIMEOUT
