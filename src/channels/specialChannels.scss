@@ -87,7 +87,7 @@
 	border-top: 1px solid $main-color;
 }
 /*user hover*/
-%membersChannelRowContainer td {
+%membersChannelRowContainer:hover td {
 	background: $hover-color;
 }
 /*user option buttons*/
