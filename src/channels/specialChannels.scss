@@ -1,82 +1,117 @@
 /*CUSTOMIZE CHANNELS*/
 /*header*/
-.tabBar-1_P75h {
+%customizeChannelsHeaderBar {
 	border-bottom: none;
 }
 /*main section*/
-.prompt-1sE27N {
+%customizeChannelsPrompt {
 	background: var(--background-overlay);
 }
 /*search bar*/
-.css-fcsbhh-control,
-.css-fcsbhh-control:focus-within {
+%customizeChannelsSearch,
+%customizeChannelsSearch:focus-within {
 	background: rgba(0,0,0,.5);
 	border: 2px solid var(--main-color);
 }
 /*search bar with dropdown*/
-.css-1t5q03r-control,
-.css-1t5q03r-control:hover {
+%customizeChannelsSearchDropdown,
+%customizeChannelsSearchDropdown:hover {
 	background: rgba(0,0,0,.5);
 	border: 2px solid var(--main-color);
 }
 /*dropdown options*/
-.css-153nlb6-option {
+%customizeChannelsSearchOption {
 	background: var(--main-color);
 }
-.css-6sv4e8-menu {
+%customizeChannelsSearchMenu {
 	background: rgba(0,0,0,.8);
 }
-.selectValuePill-shyR_x {
+%customizeChannelsPill {
 	background: rgba(0,0,0,.2);
 	border: 1px solid var(--main-color);	
 }
 /*option buttons*/
-.optionButtonWrapper-2lbogO {
+%customizeChannelsOption {
 	border: 2px solid var(--main-color);
-}
-.optionButtonWrapper-2lbogO:hover {
-	border: 2px solid var(--hover-color);
-}
-.optionButtonWrapper-2lbogO.selected-KQBgNS {
-	border: 2px solid var(--success-color);
-	background: rgba(0,0,0,.2);
+	&:hover {
+		border: 2px solid var(--hover-color);
+	}
+	&%customizeChannelsSelected {
+		border: 2px solid var(--success-color);
+		background: rgba(0,0,0,.2);
+	}
+
 }
 /*profile card*/
-.profileCard-2gVmvm {
+%customizeChannelsProfile {
 	background: var(--background-overlay);
 }
-.role-3uAPnQ {
+%customizeChannelsProfileRole {
 	background: rgba(0,0,0,.2);
 }
 
 /*BROWSE CHANNELS*/
-.container-27tlK1 {
+%browseChannels {
     background-color: hsla(0, 0%, 0%, .4);
 }
 
-.selectAll-1ZP46u {
-    .text-xs-medium-2LRpEj {
+%browseChannelsSelectAll {
+    %autocompleteContentMedium {
         color: hsla(0, 0%, 100%, .5) !important;
 	    transition: all 0.15s ease-in-out;
     }
-    .checked-1pZh2h {
-        &+.text-xs-medium-2LRpEj {
+    %browseChannelsChecked {
+        &+%autocompleteContentMedium {
             color: hsla(0, 0%, 100%, .7) !important;
         }
     }
 }
 
-.channelRow-4X_3fi {
+%browseChannelsRow {
     background-color: hsla(0, 0%, 0%, .4);
     &:hover {
-        &:not(.disabled-3cfocy){
+        &:not(%browseChannelsDisabled){
             background-color: hsla(0, 0%, 0%, .6);
         }
     }
 }
+// MEMBERS LIST
+/*main container*/
+%membersChannelContainer {
+	background: var(--background-overlay);
+	border: 1px solid $main-color;
+	box-shadow: none;
+}
+/*table border*/
+%membersChannelTable {
+	border-top: 1px solid $main-color;
+}
+/*user hover*/
+%membersChannelRowContainer td {
+	background: $hover-color;
+}
+/*user option buttons*/
+%membersChannelButton {
+	background: $main-color;
+	&:hover {
+		background: $hover-color;
+	}
+	&:nth-child(2) path ~ path,
+	&:nth-child(1) path {
+		fill: #fff;
+	}
+}
+/*roles*/
+%membersChannelRoleList {
+	background: var(--background-overlay);
+}
+/*hover page button*/
+%membersChannelPage > span {
+	color:#fff;
+}
 
 // NOT IN CHANNEL LIST
-.chatHeaderBar-31g1mU {
+%channelHeaderBar {
     background: transparent;
 }
 /* SERVER GUIDE */

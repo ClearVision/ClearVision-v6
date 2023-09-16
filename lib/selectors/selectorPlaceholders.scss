@@ -4491,3 +4491,72 @@ pre {
 .temporaryMembershipContainerBackground-13Hf5U {
   @extend %inviteModalTemporary !optional;
 }
+.tabBar-1_P75h {
+  @extend %customizeChannelsHeaderBar !optional;
+}
+.prompt-1sE27N {
+  @extend %customizeChannelsPrompt !optional;
+}
+.css-fcsbhh-control {
+  @extend %customizeChannelsSearch !optional;
+}
+.css-1t5q03r-control {
+  @extend %customizeChannelsSearchDropdown !optional;
+}
+.css-153nlb6-option {
+  @extend %customizeChannelsSearchOption !optional;
+}
+.css-6sv4e8-menu {
+  @extend %customizeChannelsSearchMenu !optional;
+}
+.selectValuePill-shyR_x {
+  @extend %customizeChannelsPill !optional;
+}
+.optionButtonWrapper-2lbogO {
+  @extend %customizeChannelsOption !optional;
+}
+.selected-KQBgNS {
+  @extend %customizeChannelsSelected !optional;
+}
+.profileCard-2gVmvm {
+  @extend %customizeChannelsProfile !optional;
+}
+.role-3uAPnQ {
+  @extend %customizeChannelsProfileRole !optional;
+}
+.container-27tlK1 {
+  @extend %browseChannels !optional;
+}
+.selectAll-1ZP46u {
+  @extend %browseChannelsSelectAll !optional;
+}
+.checked-1pZh2h {
+  @extend %browseChannelsChecked !optional;
+}
+.channelRow-4X_3fi {
+  @extend %browseChannelsRow !optional;
+}
+.disabled-3cfocy {
+  @extend %browseChannelsDisabled !optional;
+}
+.chatHeaderBar-31g1mU {
+  @extend %channelHeaderBar !optional;
+}
+.mainTableContainer-3Nxvkd {
+  @extend %membersChannelContainer !optional;
+}
+.table-2Z1caJ {
+  @extend %membersChannelTable !optional;
+}
+.memberRowContainer-ZDlmmA {
+  @extend %membersChannelRowContainer !optional;
+}
+.button-2XiUpU {
+  @extend %membersChannelButton !optional;
+}
+.otherRoles-LMys1u {
+  @extend %membersChannelRoleList !optional;
+}
+.pageButton-uta6J3 {
+  @extend %membersChannelPage !optional;
+}
