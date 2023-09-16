@@ -2,11 +2,6 @@
 %popoutLayer {
   %connectionInfo {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    >%connectionInfoHeader {
-      background: $main-color;
-      color: #fff;
-      border-radius: 3px 3px 0 0;
-    }
     >section {
       background: rgba(0, 0, 0, 0.7);
       border-radius: 0 0 3px 3px;
@@ -25,24 +20,6 @@
       >a {
         color: $main-color;
         @include hover-shadow;
-      }
-    }
-  }
-}
-%connectionInfoSparkline {
-  >svg {
-    >line {
-      stroke: hsla(0, 0%, 100%, 0.5) !important;
-      stroke-dasharray: 5, 3 !important;
-    }
-    >g {
-      >circle {
-        fill: $main-color  !important;
-        fill-opacity: 1 !important;
-      }
-      >polyline {
-        stroke: $main-color  !important;
-        stroke-opacity: 0.7 !important;
       }
     }
   }

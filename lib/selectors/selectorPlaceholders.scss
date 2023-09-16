@@ -2612,9 +2612,6 @@ pre {
 .listRow-2nO1T6 {
   @extend %userModalListRow !optional;
 }
-.listAvatar-2GhWlb {
-  @extend %userModalListAvatar !optional;
-}
 .listRowContent-PEmSWj {
   @extend %userModalListRowConent !optional;
 }
@@ -2783,35 +2780,11 @@ pre {
 .container-1ILvLB {
   @extend %connectionInfo !optional;
 }
-.header-2C89wJ {
-  @extend %connectionInfoHeader !optional;
-}
-.sparkline-3A-8OK {
-  @extend %connectionInfoSparkline !optional;
-}
 .popoutBottom-15-vLu {
   @extend %connectionInfoBottom !optional;
 }
 .secured-2wavXv {
   @extend %connectionInfoSecured !optional;
-}
-.contextMenu-HLZMGh {
-  @extend %contextMenu !optional;
-}
-.subMenuContext-2n_9YM {
-  @extend %subContextMenu !optional;
-}
-.itemGroup-1tL0uz {
-  @extend %contextMenuItemGroup !optional;
-}
-.item-1Yvehc {
-  @extend %contextMenuItem !optional;
-}
-.danger-2dXSTE {
-  @extend %contextMenuItemDanger !optional;
-}
-.brand-3igrJY {
-  @extend %contextMenuItemBrand !optional;
 }
 .itemSubMenu-1vN_Yn {
   @extend %contextMenuItemSubMenu !optional;
@@ -2971,42 +2944,6 @@ pre {
 }
 .item-2J1YMK {
   @extend %popoutItem !optional;
-}
-.popouts-2bnG9Z {
-  @extend %popouts !optional;
-}
-.popout-2iWAc- {
-  @extend %popout !optional;
-}
-.themedPopout-1TrfdI {
-  @extend %themedPopout !optional;
-}
-.popoutTop-3WSJtH {
-  @extend %popoutTop !optional;
-}
-.popoutTopRight-1lc8Mq {
-  @extend %popoutTopRight !optional;
-}
-.popoutTopLeft-3B0mFf {
-  @extend %popoutTopLeft !optional;
-}
-.popoutRight-1veHKi {
-  @extend %popoutRight !optional;
-}
-.popoutLeft-3aViER {
-  @extend %popoutLeft !optional;
-}
-.popoutBottom-2GAFPg {
-  @extend %popoutBottom !optional;
-}
-.popoutBottomRight-2Rno5S {
-  @extend %popoutBottomRight !optional;
-}
-.popoutBottomLeft-1pG8B4 {
-  @extend %popoutBottomLeft !optional;
-}
-.noArrow-2foL9g {
-  @extend %popoutNoArrow !optional;
 }
 .noShadow-3pu20z {
   @extend %popoutNoShadow !optional;

@@ -108,10 +108,8 @@ $version: '6.3.0';
 @import 'src/pages/studentHub.scss';
 
 // POPOUTS
-@import 'src/popouts/popout';
 @import 'src/popouts/autoCompletePopout';
 @import 'src/popouts/connectionInfo';
-@import 'src/popouts/contextMenu';
 @import 'src/popouts/emojiPicker';
 @import 'src/popouts/gifPicker';
 @import 'src/popouts/groupInvite';
