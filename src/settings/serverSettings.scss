@@ -117,6 +117,22 @@
 }
 
 // EMOJI
+%themeDark {
+  .card-2ART2V:before,
+  .emojiRemove-D9w3jo {
+    background-color: hsla(0, 0%, 0%, .4);
+  }
+}
+.emojiRow-1aPaM- .emojiAliasInput-3ZhdKx .emojiInput-B8MGXq {
+  color: var(--text-normal);
+  background-color: rgba(255,255,255,.07);
+  border: none;
+  box-shadow: 0 0 0 2px rgb(255 255 255 / 9%);
+}
+.emojiAliasPlaceholder-3oShSx {
+  padding-top: 5px;
+  padding-left: 7px;
+}
 
 // STICKERS
 %stickersUploadCard {
