@@ -25,7 +25,7 @@
 
 ## Theme Editor
 
-You are now able to customize the theme with a preview before downloading it to your computer.
+You can now customize the theme with a preview before downloading it to your computer.
 
 Please keep in mind that **we do not manage the theme editor**, and cannot help with any bugs that come from using it.
 
@@ -41,7 +41,7 @@ Download the theme file from [the BetterDiscord Website](https://betterdiscord.a
 
 ## Building from source
 
-In order build the theme from source, you can simply run `npm install` to install all missing dependencies, and `npm run build` to compile the theme into the `/public` folder.
+To build the theme from the source, you can simply run `npm install` to install all missing dependencies and `npm run build` to compile the theme into the `/public` folder.
 
 ### Dependencies
 
