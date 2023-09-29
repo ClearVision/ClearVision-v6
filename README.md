@@ -41,16 +41,15 @@ Download the theme file from [the BetterDiscord Website](https://betterdiscord.a
 
 ## Building from source
 
-To build the theme from the source, you can simply run `npm install` to install all missing dependencies and `npm run build` to compile the theme into the `/public` folder.
+To build the theme from source, you can simply run `npm install` to install all missing dependencies and `npm run build` to compile the theme into the `/public` folder.
 
 ### Dependencies
-
+- [NodeJS/npm](https://nodejs.org/)
 - [sass](https://www.npmjs.com/package/sass)
 - [PostCSS Autoprefixer](https://www.npmjs.com/package/autoprefixer)
 - [PostCSS CLI](https://www.npmjs.com/package/postcss-cli)
 - [rimraf](https://www.npmjs.com/package/rimraf) (for cleanup)
 - [Prettier](https://www.npmjs.com/package/prettier) (code formatting)
-- _[DiscordSelectors](https://github.com/Zerthox/DiscordSelectors) (included in the `/lib` folder)_
 
 ## Contributing
 
