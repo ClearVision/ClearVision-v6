@@ -1,0 +1,99 @@
+/* TAGGED USERS */
+// prettier-ignore
+$tagged: (
+	// Admins
+	"194151269399527425": "CV Admin",			// untuned
+	"144881947557101568": "CV Admin",			// Zerthox
+
+	// Team
+	"332394843743584256": "CV Team",			// cruxie
+	"240437190339854337": "CV Team",			// Leozard
+	"126652966265421824": "CV Team",			// Scars
+	"393900343135830016": "CV Team",			// Nyx
+
+	// Contributors
+	"335677038830682112": "CV Contributor",		// Snow
+	"195270435015884800": "CV Contributor",		// Daemonicdeveloper
+	"236579127090610176": "CV Contributor",		// Danielle
+	"97797564866236416":  "CV Contributor",		// Heebeejeebees
+	"150750980097441792": "CV Contributor",		// Orangutan
+	"213067580531933196": "CV Contributor",		// KitKat
+
+	// Legacy Donators
+	"262989909411758080": "CV Donator",			// coldarchie
+	"168551219135119361": "CV Donator",			// Auroatic
+	"241500427105992704": "CV Donator",			// Ghost_Recon131
+	"151995147150819328": "CV Donator",			// It
+	"157699533134888961": "CV Donator",			// Jayzer
+	"157492606752784384": "CV Donator",			// Kazumi
+	"174525242939670528": "CV Donator",			// lts
+	"78890013378486272":  "CV Donator",			// Macpot
+	"213263668312408066": "CV Donator",			// Nikolas
+	"152431535914614785": "CV Donator",			// Paco
+	"112619227466182656": "CV Donator",			// PieterVMB
+	"297873043265552384": "CV Donator",			// PureFallen
+	"258031697646321666": "CV Donator",			// Rich246™
+	"109933711142719488": "CV Donator",			// Samboy Chips
+	"251260900252712962": "CV Donator",			// viwalon
+	"199184208319610880": "CV Donator",			// xImGaming
+	"122731339890950145": "CV Donator",			// Lilith
+	"436228721033216009": "CV Donator",			// Hattyot
+	"66214870705516544":  "CV Donator",			// Lordmau5
+	"172426681800196096": "CV Donator",			// Luan San
+	"158311402677731328": "CV Donator",			// theLMGN
+	"284122164582416385": "CV Donator",			// Aetheryx
+	"107965218868457472": "CV Donator",			// Mudock Yatho
+	"183795147236966412": "CV Donator",			// blamecoopa
+	"245133485688225793": "CV Donator",			// Shadowcloud
+
+	// Testers, commented out for now as we aren't really testing anything.
+	/*
+	"266991742216175616": "CV Tester",			// Alpha$★☆
+	"97549189629636608":  "CV Tester",			// Baked
+	"128948605263413248": "CV Tester",			// Dingus
+	"168481642309091328": "CV Tester",			// Jen
+	"165581066524950530": "CV Tester",			// MoXAriApph
+	"102621249892544512": "CV Tester",			// Shiniyami ߷
+	"94553281296084992":  "CV Tester",			// Squibbus
+	"85410928408924160":  "CV Tester",			// †电离龙†
+	"143476079267414016": "CV Tester",			// Reĝino Kastilo
+	"131917628800237570": "CV Tester",			// FunkoChan
+	"155379920242081793": "CV Tester",			// Dimii04
+	"135130130942132224": "CV Tester",			// MTPyronaut
+	"123340872333918215": "CV Tester",			// Purvesh9211
+	"250721335305568258": "CV Tester",			// Valcreed
+	"297041315852713984": "CV Tester",			// Zou_Yongqi
+	"128006451053592577": "CV Tester",			// Rawrcolond
+	"102009847792291840": "CV Tester",			// SirSuperDeath
+	"513423192484872223": "CV Tester",			// O...O (yes that's a real username)
+	"580867069621567488": "CV Tester",			// skyspell413 / Primrose
+	*/
+
+	// Translators / Guide Makers
+	"538745942493495298": "CV Translator",		// Kuroikitten
+	"265627010733178892": "CV Guide Maker",		// Big Steve
+
+	// Former CV Team Members
+	"309976820109803520": "Former CV Team",		// Leafy
+
+);
+
+// OUTPUT
+%messageContent > img {
+  & ~ %messageHeader > %messageHeaderText > %messageUsername::after {
+    content: none;
+    color: currentcolor;
+    text-shadow: 0 0 2px currentcolor;
+    border: 1px solid;
+    border-radius: 6px;
+    margin-left: 8px;
+    background-color: rgba(255, 255, 255, 0.07);
+    font-size: 10px;
+    padding: 0 5px;
+  }
+  @each $user_id, $tag in $tagged {
+    &[src*='#{$user_id}'] ~ %messageHeader > %messageHeaderText > %messageUsername::after {
+      content: $tag;
+    }
+  }
+}

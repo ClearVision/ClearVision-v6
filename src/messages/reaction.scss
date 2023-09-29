@@ -1,0 +1,66 @@
+/* MESSAGE REACTIONS */
+%reaction {
+  background-color: hsla(0, 0%, 100%, 0.05);
+  border-radius: 3px;
+  transition: all 0.15s ease-in-out;
+  &:hover {
+    background-color: hsla(0, 0%, 100%, 0.2);
+    %reactionCount {
+      color: hsla(0, 0%, 100%, 0.9);
+    }
+  }
+  %reactionCount {
+    color: hsla(0, 0%, 100%, 0.4);
+  }
+  &%reactionMe {
+    background-color: hsla(0, 0%, 100%, 0.1);
+    border-color: transparent;
+    %reactionCount {
+      color: $main-color;
+    }
+    &:hover {
+      background-color: hsla(0, 0%, 100%, 0.2);
+      %reactionCount {
+        color: $hover-color;
+      }
+    }
+  }
+}
+/* FORUM REACTIONS */
+%forumReaction {
+  background-color: hsla(0, 0%, 100%, 0.05);
+  border-radius: 3px;
+  transition: all 0.15s ease-in-out;
+  &:hover {
+    background-color: hsla(0, 0%, 100%, 0.2);
+    %forumReactionCount {
+      color: hsla(0, 0%, 100%, 0.9);
+    }
+  }
+  %forumReactionCount {
+    color: hsla(0, 0%, 100%, 0.4);
+  }
+  &%forumReactionMe {
+    background-color: hsla(0, 0%, 100%, 0.1);
+    border-color: transparent;
+    %forumReactionCount {
+      color: $main-color;
+    }
+    &:hover {
+      background-color: hsla(0, 0%, 100%, 0.2);
+      %forumReactionCount {
+        color: $hover-color;
+      }
+    }
+  }
+}
+%forumReactAdd {
+	background-color: hsla(0, 0%, 100%, 0.05);
+    border-radius: 3px;
+    transition: all .15s ease-in-out;
+    &:hover {
+      background-color: hsla(0, 0%, 100%, 0.2);
+	    border-color: hsla(0, 0%, 100%, 0.2);
+	    color: #fff;
+    }
+}

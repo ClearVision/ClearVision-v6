@@ -1,0 +1,19 @@
+/* SWITCH */
+%switchContainer {
+  background-color: transparent !important;
+  &:before {
+    background-color: hsla(0, 0%, 100%, 0.15);
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    transition: all 0.1s ease-in-out;
+  }
+  &%switchChecked:before {
+    background-color: $main-color;
+  }
+  path {
+    fill: $main-color;
+  }
+}

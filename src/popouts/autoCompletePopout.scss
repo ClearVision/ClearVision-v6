@@ -1,0 +1,77 @@
+/* AUTOCOMPLETE POPOUT */
+%popoutLayer %autocompletePopout {
+  %autocompletePopoutShadow {
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.82), 0 1px 4px rgba(0, 0, 0, 0.1);
+  }
+  %autocompletePopoutArrow {
+    background: rgba(0, 0, 0, 0.7);
+  }
+  &%autocompletePopoutBottom {
+    %autocompletePopoutArrow {
+      background: $main-color;
+    }
+  }
+
+  // HEADER
+  %autocompletePopoutHeader {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  %autocompletePopoutHeaderText,
+  %autocompletePopoutInput {
+    color: #fff;
+  }
+  %autocompletePopoutInput {
+    &::placeholder {
+      color: hsla(0, 0%, 100%, 0.5);
+    }
+  }
+
+  // BODY
+  %autocompletePopoutSection {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  %autocompletePopoutScroller {
+    overflow-y: auto;
+  }
+  %autocompletePopoutRow {
+    position: relative;
+    border-radius: 5px;
+    font-weight: 500;
+    z-index: 1;
+    span {
+      color: hsla(0, 0%, 100%, 0.7);
+      &:after {
+        content: '';
+        position: absolute;
+        @include stretch;
+        background: transparent;
+        z-index: -1;
+        transition: all 0.15s ease-in-out;
+      }
+      &[style*='color:'] {
+        &:after {
+          opacity: 0.3;
+        }
+      }
+    }
+    >span {
+      &:after {
+        display: none;
+      }
+    }
+    &%autocompletePopoutSelected {
+      background: transparent;
+      span {
+        color: #fff;
+        &:after {
+          background: hsla(0, 0%, 100%, 0.1);
+        }
+        &[style*='color:'] {
+          &:after {
+            background: currentColor;
+          }
+        }
+      }
+    }
+  }
+}

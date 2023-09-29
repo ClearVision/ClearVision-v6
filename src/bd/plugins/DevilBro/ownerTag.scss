@@ -1,0 +1,10 @@
+// OWNER TAG
+.owner-tag {
+  color: hsla(0, 0%, 100%, 0.6);
+  &[style*='background'] {
+    color: #fff;
+  }
+  .BE-badges+& {
+    margin-left: 0;
+  }
+}

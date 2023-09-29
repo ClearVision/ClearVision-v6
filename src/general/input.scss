@@ -1,0 +1,35 @@
+/* INPUT */
+%inputWrapper {
+  padding: 0 2px 2px 2px;
+}
+%input {
+  color: var(--text-normal);
+  background-color: hsla(0, 0%, 100%, 0.07);
+  border: none;
+  box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.09);
+  &::placeholder {
+    color: hsla(0, 0%, 100%, 0.3);
+  }
+  &:hover {
+    border: none;
+  }
+  &:focus,
+  &%inputFocused {
+    box-shadow: 0 0 2px 2px $main-color;
+  }
+  &%inputNoBorder {
+    border: none;
+    box-shadow: none;
+    background: none;
+  }
+  .copyInput-3QjTFp {
+    %input {
+      background-color: transparent;
+      box-shadow: none;
+      &:focus,
+      &%inputFocused {
+        box-shadow: none;
+      }
+    }
+  }
+}

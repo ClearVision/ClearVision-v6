@@ -1,0 +1,24 @@
+image: node:latest
+
+cache:
+  paths:
+    - node_modules/
+
+before_script:
+  - npm install
+
+stages:
+  - deploy
+
+pages:
+  stage: deploy
+  script: npm run build
+  artifacts:
+    name: '$CI_JOB_STAGE-$CI_COMMIT_REF_NAME'
+    paths:
+      - public
+  only:
+    - master
+    - triggers
+    - schedules
+    - web

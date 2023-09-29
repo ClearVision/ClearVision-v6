@@ -1,0 +1,72 @@
+/* PRIVATE CALL */
+%callWrapper {
+  background: rgba(0, 0, 0, calc(var(--background-shading) * 0.6));
+  &%callMinimum {
+    background: rgba(0, 0, 0, calc(var(--background-shading) * 0.6));
+  }
+}
+%callContainer {
+  background-color: transparent;
+}
+
+// VIDEO STREAM
+%callTile {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+%callInviteButton {
+  background-color: $main-color;
+}
+%callUserTile {
+  background-color: transparent;
+}
+%callParticipantsButton {
+  background-color: rgba(0, 0, 0, 0.4);
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+%callTileBorder {
+  &%callTileSpeaking {
+    box-shadow: inset 0 0 0 2px $main-color;
+  }
+}
+
+// ACTION BUTTON
+%button%callCenterButton {
+  border-radius: 50%;
+}
+%callButtonColorable {
+  &%callButtonPrimaryDark {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    &:hover {
+      background-color: $hover-color;
+      color: #fff;
+    }
+  }
+  &%callButtonWhite {
+    color: #fff;
+    background-color: $main-color;
+    &:hover {
+      background-color: $hover-color;
+    }
+    &%callButtonActive {
+      background-color: #fff;
+      &:hover {
+        background-color: hsla(0, 0%, 100%, .7);
+      }
+    }
+    %callCenterIcon,
+    %micSlash {
+      color: #fff;
+    }
+    %callCenterIcon {
+      &%callButtonActive {
+        color: $main-color
+      }
+    }
+  }
+  &%callButtonRed {
+    background-color: var(--danger-color);
+  }
+}

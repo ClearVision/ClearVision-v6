@@ -1,0 +1,43 @@
+/* HEADER BAR TOOLBAR */
+%toolbar {
+  %headerBarIconWrapper {
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+    %headerBarIcon {
+      color: #fff;
+      opacity: 0.5;
+      transition: all 0.15s ease-in-out;
+    }
+
+    // SELECTED & POPOUT OPEN
+    &%headerBarIconSelected,
+    &%headerBarIconPopoutOpen {
+      background: hsla(0, 0%, 100%, 0.1);
+      %headerBarIcon {
+        opacity: 0.7;
+      }
+    }
+
+    // HOVER
+    &%headerBarIconClickable:hover {
+      %headerBarIcon {
+        opacity: 1;
+      }
+    }
+
+    // UNREAD
+    >svg:not(%headerBarIcon) {
+      color: $main-color;
+      filter: drop-shadow(0 0 5px);
+      transition: filter 0.3s ease-in-out;
+    }
+    &:hover {
+      >svg:not(%headerBarIcon) {
+        filter: drop-shadow(0 0 5px) drop-shadow(0 0 10px);
+      }
+    }
+    %headerBarIconBadge {
+      background-color: $main-color;
+    }
+  }
+}

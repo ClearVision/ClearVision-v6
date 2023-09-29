@@ -1,0 +1,38 @@
+/* SERVER BOOST */
+%themeDark {
+  .perksModal-CLcR1c {
+    background-color: transparent;
+  }
+  .ctaBar-Nhk8yY {
+    background-color: hsla(0, 0%, 0%, 0.4);
+    .guildIcon-2xKEtM {
+      background-color: transparent;
+    }
+    .badgeIconWithoutSubscribers-1hjTfX {
+      color: #fff;
+      opacity: 0.8;
+    }
+    .giftIcon-2kmx1K {
+      color: currentColor;
+    }
+  }
+  .tierMarkerBackground-G8FoN4 {
+    background-color: transparent;
+  }
+  .tierMarkerInProgress-2Tdxjz,
+  .barBackground-unEPDT {
+    background-color: hsla(0, 0%, 0%, 0.4) !important;
+  }
+  .tierBody-3ju-rc,
+  .tierHeaderLocked-3ItHYn,
+  .perk-19D_HN {
+    background-color: hsla(0, 0%, 0%, 0.4);
+  }
+  .tierHeaderLocked-3ItHYn {
+    color: hsla(0, 0%, 100%, 0.7);
+  }
+  .tierLock-1uBqZ0 {
+    color: #fff;
+    opacity: 0.3;
+  }
+}

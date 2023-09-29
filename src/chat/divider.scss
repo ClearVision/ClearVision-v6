@@ -1,0 +1,39 @@
+/* CHAT DIVIDER */
+
+// UNREAD
+%dividerUnread {
+  border-color: $main-color;
+}
+%unreadPill {
+  background-color: $main-color;
+}
+%unreadPillCapStroke {
+  fill: $main-color;
+  color: $main-color;
+}
+// DATE
+%dividerDate {
+  color: $main-color;
+  background: rgba(0, 0, 0, calc(#{cv('bg.app.shading')} * 0.5));
+  text-transform: uppercase;
+  border-radius: 0;
+  position: relative;
+  %dividerUnread & {
+    color: $main-color;
+  }
+  &:before {
+    content: '';
+    @include stretch;
+    position: absolute;
+    z-index: -1;
+    background: cv('bg.app.img') cv('bg.app.pos') / cv('bg.app.size') cv('bg.app.repeat') cv('bg.app.attach');
+    @include filters(cv('bg.app'));
+  }
+  &:after {
+    content: '';
+    @include stretch;
+    position: absolute;
+    z-index: -1;
+    background: cv('bg.app.overlay');
+  }
+}

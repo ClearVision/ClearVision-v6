@@ -1,0 +1,155 @@
+/* EMOJI PICKER */
+
+.drawerSizingWrapper-1txdWG {
+  min-width: 430px;
+}
+.contentWrapper-3vHNP2 {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+// NAV BAR
+.navButtonActive-1EqC5l {
+  background-color: $main-color;
+}
+
+%emojiPicker {
+  background-color: rgba(0, 0, 0, 0.8);
+  min-width: 430px;
+  border-radius: 0;
+}
+%emojiPickerHeader {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+// SEARCH BAR
+%emojiPickerSearchBar {
+  background-color: hsla(0, 0%, 100%, 0.07);
+  box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.09);
+  margin-top: 2px;
+  &:focus-within {
+    box-shadow: 0 0 2px 2px $main-color;
+    transition: all 0.15s ease-in-out;
+    %popoutInput {
+      color: #fff;
+      &::placeholder {
+        color: hsla(0, 0%, 100%, 0.3);
+      }
+    }
+  }
+}
+
+// DIVERSITY SELECTOR
+%emojiPickerDiversitySelectorPopout {
+  border: none;
+  padding: 2px;
+  background-color: hsla(0, 0%, 0%, 0.8);
+  %emojiPickerDiversityItem {
+    border-radius: 3px;
+    transition: all 0.15s ease-in-out;
+    &:hover {
+      background-color: hsla(0, 0%, 100%, 0.07);
+    }
+  }
+}
+
+// EMOJI ITEM
+%emojiPickerCategoryHeaderWrapper {
+  background-color: transparent;
+  %emojiPickerCategoryHeader {
+    color: #fff;
+  }
+}
+%emojiPickerItem {
+  border-radius: 3px;
+  transition: all 0.15s ease-in-out, filter 0s;
+  &%emojiPickerItemSelected {
+    background-color: hsla(0, 0%, 100%, 0.07);
+  }
+  &%emojiPickerItemDisabled {
+    filter: grayscale(1);
+  }
+}
+%emojiPickerItemLoading {
+  %themeDark & {
+    background-image: none;
+  }
+}
+%emojiPickerInspector {
+  background-color: transparent;
+}
+
+// CATEGORIES
+%emojiCategoryList {
+  background-color: transparent;
+}
+%emojiCategoryItem {
+  &:hover {
+    background-color: hsla(0, 0%, 100%, 0.07);
+    border-radius: 4px;
+  }
+  &%emojiCategoryItemSelected {
+    background-color: hsla(0, 0%, 100%, 0.07);
+    border-radius: 4px;
+  }
+}
+%emojiCategoryItemIcon {
+  color: hsla(0, 0%, 100%, 0.7);
+  %emojiCategoryItemSelected & {
+    color: #fff;
+  }
+}
+%emojiCategoryGuildIcon {
+  background-color: transparent;
+}
+%emojiCategoryUnicodeShortcut {
+  background-color: $main-color;
+  svg {
+    color: hsla(0, 0%, 100%, 0.9);
+  }
+  &:hover {
+    background-color: $hover-color;
+    svg {
+      color: #fff;
+    }
+  }
+}
+
+// NO NITRO
+.premiumPromo-1eKAIB {
+  background-color: hsla(0, 0%, 0%, 0.9);
+}
+.premiumPromoClose-Nuntxy {
+  filter: brightness(0) invert(1);
+  opacity: 0.6;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.premiumPromoTitle-3tWrPT {
+  color: #fff;
+}
+.premiumPromoTitle-3tWrPT {
+  color: hsla(0, 0%, 100%, 0.7);
+}
+.notice-1Qe0b_ {
+  background-color: transparent;
+}
+.upsell-3B1lnN {
+  background-color: transparent;
+}
+.perks-2IIbWQ {
+  background-color: transparent;
+}
+.perkRow-10K6XE {
+  border-bottom: none;
+}
+
+// REACTIONS
+.contentWrapper-2f9yME {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.navButtonActive-fwiUKp {
+  background-color: $main-color;}

@@ -1,0 +1,27 @@
+// CHANNELS
+%channels {
+  %categoryContainerDefault,
+  %channelContainerDefault {
+    animation: cv-fade-in 0.3s ease-in-out;
+  }
+}
+
+// MESSAGES
+%message,
+%messageGroup,
+%divider {
+  animation: cv-fade-in 0.15s ease-in-out 0.25s backwards;
+}
+%messageGroupBlocked %messageGroup {
+  animation: cv-fade-in 0.3s ease-in-out;
+}
+
+// KEYFRAMES
+@keyframes cv-badge {
+  from {
+    background: $main-color;
+  }
+  to {
+    background: $hover-color;
+  }
+}

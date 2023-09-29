@@ -1,0 +1,50 @@
+/* ADD SERVER MODAL */
+%themeLight {
+  .defaultColor-1GKx81 {
+    color: #fff;
+  }
+  .subtitle-3m-md1,
+  .subtitle-bIoUVX,
+  .optionHeader-27AHfD {
+    color: hsla(0, 0%, 100%, 0.7) !important;
+  }
+  .iconContainer-GFfNaA>svg>circle {
+    fill: $main-color;
+  }
+  .sampleLink-5BWNy9 {
+    color: $main-color;
+    font-weight: 500;
+  }
+  %buttonLinkPrimary {
+    color: hsla(0, 0%, 100%, 0.7);
+  }
+  .skip-2hTIXL {
+    color: hsla(0, 0%, 100%, 0.7) !important;
+  }
+}
+
+// SERVER TEMPLATES
+.container-x8Y1ix {
+  background-color: $main-color;
+  &:hover {
+    background-color: $hover-color;
+  }
+  .text-PdAsFQ {
+    color: #fff;
+  }
+  .arrow-2yY1Tm {
+    filter: brightness(0) invert(1);
+  }
+}
+.rowContainer-3t7486 {
+  background-color: $main-color;
+  &:hover {
+    background-color: $hover-color;
+  }
+  .rowText-3MQqQi {
+    color: #fff;
+  }
+  .rowArrow-TIwwIc {
+    filter: brightness(0) invert(1);
+  }
+}

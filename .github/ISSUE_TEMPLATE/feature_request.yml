@@ -1,0 +1,40 @@
+name: Feature Request
+description: Suggest an idea for the theme.
+title: '[Feature Request] Suggestion Description'
+labels: [enhancement]
+body:
+  - type: checkboxes
+    id: check
+    attributes:
+      label: 'Did You Search Other Suggestions?'
+      description: "Please ensure this request hasn't been posted before!"
+      options:
+        - label: 'I have checked if this feature request exists already'
+          required: true
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: 'Is your feature request related to a problem?'
+      description: 'Please write a clear and concise description of what the problem is.'
+      placeholder: "I'm always frustrated when... (please use bug reports where appropriate)"
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: 'Screenshots and/or description of the feature request.'
+      description: 'Please write a detailed description about how the feature will look, optionally providing screenshots.'
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: 'Why does the theme need this?'
+      description: 'A detailed description of why this could benefit either the theme.'
+    validations:
+      required: true
+  - type: textarea
+    id: other
+    attributes:
+      label: 'Additional context'
+      description: 'Add any other context about the problem here, or leave blank.'

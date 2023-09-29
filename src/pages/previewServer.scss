@@ -1,0 +1,89 @@
+/* PREVIEW SERVER */
+
+// WELCOME MODAL
+.optionContainer-yOpaLq {
+  background-color: $main-color;
+  &:hover {
+    background-color: $hover-color;
+  }
+  .optionArrow-1kVloh {
+    color: #fff;
+  }
+}
+.channelIcon-QyaRxN {
+  background-color: transparent;
+}
+
+%themeDark .notice-12Koq- {
+  background-color: transparent;
+}
+.notice-12Koq- .header-26uvhX::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: var(--main-color);
+  opacity: 0.6;
+  pointer-events: none;
+  z-index: -1;
+  border-radius: 3px;
+}
+
+.container-2dXT_2 {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+// TOP BAR JOIN AND BACK BUTTON
+.button-3_1yil:hover {
+  background-color: $hover-color;
+}
+
+// WELCOME TO SERVER CARDS
+%serverWelcomeCards {
+  background-color: hsla(0, 0%, 0%, 0.4);
+}
+%serverInviteTick {
+  background-color: $main-color;
+}
+
+// SERVER STATUS (E.G. PUBLIC OR PRIVATE)
+.communityInfoPill-2Mll66 {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+// Nyx's fixes
+.container-2Hi7Km,
+.container-xwOzwi {
+  background: transparent;
+}
+.icon-2IDTxf {
+	border: 4px solid transparent;
+}
+.interactiveCard-2iMtdk,
+.interactiveCard-2iMtdk.selected-sszUNx {
+	border: 1px solid var(--main-color);
+}
+.interactiveCard-2iMtdk:active,
+.interactiveCard-2iMtdk:hover {
+	border: 1px solid var(--hover-color);
+}
+.card-3x20HF {
+	background: rgba(0,0,0,.4);
+}
+.iconContainer-2R-3M1 {
+	background: var(--main-color);
+	color: #fff;
+}
+.container-3HMTms:hover {
+	background: var(--hover-color);
+}
+.conversationRoot-3DieBj:after,
+.replySpine-3HmFN7 {
+	border-left: 2px solid var(--main-color);
+}
+.conversationMessage-hy6ISK:after {
+	border-left: 2px solid var(--main-color);
+	border-bottom: 2px solid var(--main-color);
+}

@@ -1,0 +1,23 @@
+// COPYBUTTON
+%codeHLJS {
+  .copybutton {
+    background: hsla(0, 0%, 100%, 0.1) !important;
+    color: hsla(0, 0%, 100%, 0.7) !important;
+    border: none !important;
+    border-top-left-radius: 3px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+    &:hover {
+      color: #fff !important;
+    }
+    &:active {
+      color: $main-color  !important;
+    }
+  }
+  &:hover {
+    .copybutton {
+      opacity: 1;
+    }
+  }
+}

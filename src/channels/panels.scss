@@ -1,0 +1,229 @@
+/* CHANNEL LIST PANELS */
+%panels {
+  background: transparent;
+  > :first-child {
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, calc(#{cv('bg.app.shading')} * 0.3));
+  }
+}
+%themeDark %panel {
+  background-color: transparent;
+}
+
+// ACCOUNT & CONNECTION PANELS
+%accountPanel {
+  >%flex {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    > :nth-child(n + 2) {
+      position: relative;
+      margin-left: -1px;
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 2px;
+        bottom: 2px;
+        width: 1px;
+        background: hsla(0, 0%, 100%, 0.2);
+      }
+    }
+  }
+}
+
+// BUTTONS
+%panelButton {
+  width: 32px;
+  height: 32px;
+  opacity: 1;
+  >%buttonContents>svg {
+    @include bg($rep: no-repeat, $pos: center, $size: 18px);
+    color: #fff;
+    opacity: 0.5;
+    transition: all 0.1s ease-in-out;
+  }
+  &:hover {
+    &%panelButtonEnabled {
+      background: transparent;
+    }
+    >%buttonContents>svg {
+      opacity: 0.7;
+    }
+  }
+  &%panelButtonDisabled {
+    >%buttonContents>svg {
+      opacity: 0.1;
+    }
+  }
+}
+%panelActionButtons {
+  grid-gap: 6px;
+}
+%panelActionButton {
+  &%panelActionButtonColor {
+    padding: 0;
+    &%panelActionButtonActive {
+      background-color: #fff;
+      color: var(--main-color);
+      &:hover {
+        background: hsla(0, 0%, 100%, 0.95);
+        color: $hover-color;
+      }
+    }
+  }
+}
+
+// ACCOUNT PANEL
+%themeDark %accountPanel {
+  position: relative;
+  background: transparent;
+  margin-bottom: 10px;
+  &:before,
+  &:after {
+    bottom: -8px;
+    position: absolute;
+    color: hsla(0, 0%, 100%, 0.3);
+    font-size: 11px;
+    font-weight: 700;
+    transition: all 0.5s ease-in-out;
+  }
+  &:before {
+    content: cv('const:text.account.main');
+    right: 50%;
+    text-align: right;
+    transform: translateX(50%);
+  }
+  &:after {
+    content: cv('const:text.account.version');
+    left: 50%;
+    text-align: left;
+    opacity: 0;
+    transform: translateX(50%) rotateX(90deg);
+  }
+  &:hover {
+    &:before {
+      margin-right: 1px;
+      transform: none;
+    }
+    &:after {
+      margin-left: 1px;
+      opacity: 1;
+      transform: none;
+    }
+  }
+  // SOME POSITIONING
+  %accountPanelTagButton,
+  %accountPanelTagless {
+    min-width: calc(100% - 100px);
+	  width: auto;
+    &:hover {
+      background-color: hsla(0, 0%, 0%, 0.3);
+      color: #fff;
+    }
+  }
+  // AVATAR
+  %accountPanelAvatar {
+    width: 32px !important;
+    height: 32px !important;
+    transition: all 0.15s ease-in-out;
+    &:after {
+      content: 'Status';
+      position: absolute;
+      @include stretch;
+      color: #fff;
+      font-size: 5px;
+      font-weight: 700;
+      text-align: center;
+      line-height: 32px;
+      text-transform: uppercase;
+      opacity: 0;
+      transition: all 0.15s ease-in-out;
+      pointer-events: none;
+    }
+    foreignObject {
+      transition: all 0.15s ease-in-out;
+    }
+    &:hover {
+      width: 40px !important;
+      height: 40px !important;
+      opacity: 1;
+      &:after {
+        font-size: 10px;
+        line-height: 40px;
+        opacity: 1;
+      }
+      foreignObject {
+        opacity: 0.5;
+      }
+    }
+  }
+  // NAME TAG
+  %accountPanelUsername {
+    color: #fff;
+  }
+  %accountPanelDiscriminator {
+    color: hsla(0, 0%, 100%, 0.3);
+  }
+}
+
+// CONNECTION PANEL
+%connectionPanel {
+  >%flex {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 5px;
+  }
+  border-color: transparent;
+  background: transparent;
+  %connectionPanelInner {
+    %rtcConnectionStatus {
+      %rtcConnectionPing {
+        width: 16px;
+        height: 16px;
+        margin-right: 3px;
+        background-size: 16px;
+      }
+    }
+  }
+  %connectionPanelChannel {
+    color: hsla(0, 0%, 100%, 0.3);
+    opacity: 1;
+    transition: all 0.15s ease-in-out;
+    &:hover {
+      color: hsla(0, 0%, 100%, 0.5);
+      text-decoration: none;
+    }
+  }
+  
+}
+
+// ACTIVITY PANEL
+%activityPanel {
+  border-color: transparent;
+  %activityPanelActions {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    > :nth-child(n + 2) {
+      position: relative;
+      margin-left: -1px;
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 2px;
+        bottom: 2px;
+        width: 1px;
+        background: hsla(0, 0%, 100%, 0.2);
+      }
+    }
+  }
+}
+
+// VIDEO BADGE
+%panelLiveBadge {
+  background-color: $main-color;
+}
+
+// NOISE CANCELLATION POPOUT
+%noiseCancellationPopout {
+  background-color: rgba(0, 0, 0, 0.7);
+}

@@ -1,0 +1,58 @@
+/* STICKERS */
+
+// SEARCH
+%stickerSearchContainer {
+  background-color: hsla(0, 0%, 100%, 0.07);
+  border: none;
+  box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.09);
+  margin-top: 2px;
+  &:focus-within {
+    box-shadow: 0 0 2px 2px $main-color;
+    transition: all 0.15s ease-in-out;
+  }
+  %popoutInput {
+    color: #fff;
+    &::placeholder {
+      color: hsla(0, 0%, 100%, 0.3);
+    }
+  }
+}
+
+// CATEGORY
+%stickerCategoryWrapper {
+  background-color: transparent;
+}
+%stickerCategoryGeneric {
+  color: hsla(0, 0%, 100%, 0.7);
+  &:hover {
+    background-color: hsla(0, 0%, 100%, 0.07);
+    border-radius: 4px;
+  }
+}
+%stickerCategoryGenericSelected,
+%stickerCategoryGenericSelected:hover {
+  background-color: $main-color;
+  color: #fff;
+}
+
+// PICKER
+%stickerUpsellContent {
+  background-color: hsla(0, 0%, 0%, 0.8);
+}
+%stickerPickerRow {
+  column-gap: 8px !important;
+}
+%stickerPickerInspected %stickerPickerInspectedIndicator {
+  background-color: $main-color;
+}
+
+// SUGGESTION
+%themeDark %stickerSuggestionContainerBackground {
+  opacity: 1;
+  background-color: hsla(0, 0%, 0%, 0.8);
+  border: none;
+}
+
+%typingStickerRecommendationHover {
+  background: $hover-color;
+}

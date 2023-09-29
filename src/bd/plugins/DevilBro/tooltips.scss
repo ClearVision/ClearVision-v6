@@ -1,0 +1,11 @@
+// DEVILBRO TOOLTIPS FIX
+.BDFDB-tooltip {
+  >%tooltipTop {
+    position: relative;
+    margin-top: -36px;
+  }
+  >%tooltipRight {
+    position: relative;
+    margin-left: 10px;
+  }
+}

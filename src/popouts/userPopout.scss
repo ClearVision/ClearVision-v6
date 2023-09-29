@@ -1,0 +1,73 @@
+/* USER POPOUT */
+%userPopoutOuter {
+  &%userProfileOuterUnthemed {
+    background: transparent;
+    %userPopoutInner {
+      background: cv('bg.popout.overlay');
+    }
+    &:not(.profileCustomizationPreview-3zZw6E) {
+      %userPopoutInner {
+        &::before {
+          content: '';
+          position: absolute;
+          @include stretch;
+          background: cv('bg.popout.img') cv('bg.popout.pos') / cv('bg.popout.size') cv('bg.popout.repeat') cv('bg.popout.attach');
+          @include filters(cv('bg.popout'));
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+        }
+      }
+    }
+  }
+  %popoutAnimatorLeft>& {
+    transform-origin: 100% 50%;
+  }
+}
+%userPopoutBanner {
+  -webkit-mask: linear-gradient(to bottom, #000, transparent 93%);
+  mask: linear-gradient(to bottom, #000, transparent 93%);
+}
+%userPopoutBannerPremium {
+  -webkit-mask: linear-gradient(to bottom, #000 50%, transparent);
+  mask: linear-gradient(to bottom, #000 50%, transparent);
+}
+%userPopoutProfileBadges {
+  background-color: hsla(0, 0%, 0%, .4);
+}
+%userPopoutOverlayBackground {
+  background-color: hsla(0, 0%, 0%, .4);
+  >%menuPopout {
+    background-color: transparent;
+    animation: none;
+  }
+  %userPopoutNoBannerPremium {
+    -webkit-mask: linear-gradient(to bottom, #000 50%, transparent);
+    mask: linear-gradient(to bottom, #000 50%, transparent);
+  }
+  %userPopoutNameTag {
+    overflow: visible;
+  }
+
+  // BODY
+  %userPopoutBodyTitle {
+    color: hsla(0, 0%, 100%, 0.7);
+    flex-shrink: 0;
+  }
+  #permissions-popout {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    >%userPopoutRolesList { /*Note!!*/
+      max-height: unset;
+    }
+  }
+}
+%userProfileOuterUnthemed {
+  %userPopoutButtonColor {
+    background-color: $main-color;
+  }
+}
+%userPopoutMessageInputContainer {
+  border: none;
+}

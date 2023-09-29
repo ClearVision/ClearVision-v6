@@ -1,0 +1,166 @@
+/* SEARCH */
+%chatContentWrapper %searchResultsWrap {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+%searchResultsWrap {
+  // HEADER
+  >%searchHeader {
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    %tabBarItem {
+      &%tabBarItemSelected {
+        background-color: $main-color;
+      }
+      &:hover:not(%tabBarItemDisabled) {
+        background-color: $hover-color;
+      }
+    }
+  }
+
+  // SEPARATOR
+  %searchChannelName {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: $main-color;
+    text-shadow: 0 0 1px;
+    transition: all 0.15s ease-in-out;
+    &:before {
+      content: '';
+      height: 2px;
+      border: none;
+      flex-grow: 1;
+      transition: all 0.15s ease-in-out;
+      opacity: 0.7;
+      margin-right: 5px;
+      background: linear-gradient(to left, $main-color 50%, transparent);
+    }
+    &:after {
+      content: '';
+      height: 2px;
+      border: none;
+      flex-grow: 1;
+      transition: all 0.15s ease-in-out;
+      opacity: 0.7;
+      margin-left: 5px;
+      background: linear-gradient(to right, $main-color 50%, transparent);
+    }
+    &:hover {
+      text-shadow: 0 0 3px;
+      text-decoration: none;
+      &:before,
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+
+  // RESULT
+  %searchResult {
+    padding-bottom: 10px;
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.04);
+    background-color: transparent;
+    &:before,
+    &:after {
+      display: none;
+    }
+    +%searchResult {
+      margin-top: -1px;
+    }
+    >%searchResultMessage {
+      background-color: transparent;
+      border: 2px solid transparent;
+      transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+      &%searchResultMessageHit {
+        background-color: rgba(0, 0, 0, 0.3);
+        border: 2px solid transparent;
+        border-radius: 5px;
+        box-shadow: none;
+      }
+      &%searchResultMessageBefore,
+      &%searchResultMessageAfter {
+        opacity: 0;
+        transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, opacity 0s;
+      }
+      &%searchResultMessageSibling {
+        opacity: 0.3;
+        transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+      }
+    }
+    &:not(%searchResultExpanded)>%searchResultMessageSibling {
+      -webkit-mask-image: linear-gradient(to bottom, transparent 10%, #000 30%, #000 70%, transparent 90%);
+      mask-image: linear-gradient(to bottom, transparent 10%, #000 30%, #000 70%, transparent 90%);
+    }
+    &%searchResultExpanded {
+      background-color: hsla(0, 0%, 100%, 0.04);
+      border: none;
+      border-bottom: 1px solid hsla(0, 0%, 100%, 0.04);
+      border-radius: 0;
+      >%searchResultMessage {
+        &%searchResultMessageHit {
+          background-color: hsla(0, 0%, 100%, 0.1);
+          border: 2px solid transparent;
+          border-radius: 5px;
+        }
+        &%searchResultMessageBefore,
+        &%searchResultMessageAfter {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  %searchResultMessage {
+    %messageHeaderCozyMeta {
+      -webkit-mask-image: linear-gradient(to right, #000 290px, transparent 305px);
+      mask-image: linear-gradient(to right, #000 290px, transparent 305px);
+    }
+  }
+  %searchResultActionButtons {
+    background-color: transparent;
+    box-shadow: none;
+    opacity: 0;
+    transition: all 0.15s ease-in-out;
+  }
+  %searchResultMessageHit {
+    &:hover {
+      %messageHeaderCozyMeta {
+        -webkit-mask-image: linear-gradient(to right, #000 245px, transparent 260px);
+        mask-image: linear-gradient(to right, #000 245px, transparent 260px);
+      }
+      >%searchResultActionButtons {
+        opacity: 1;
+      }
+    }
+  }
+  %searchResultJumpButton {
+    background-color: hsla(0, 0%, 100%, 0.04);
+    color: hsla(0, 0%, 100%, 0.5);
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background-color: $main-color;
+      color: #fff;
+      transition-duration: 0.15s;
+    }
+  }
+  %searchResultExpanded {
+    %searchResultJumpButton {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  }
+  %searchResultHighlight {
+    position: relative;
+    padding: 0 2px;
+    background-color: $hover-color;
+    border-radius: 3px;
+    color: #fff;
+    text-shadow: 0 0 3px;
+  }
+}
+
+// Search results, a blocked user was hidden from your results
+.resultsBlocked-2lCGyA {
+  background-color: transparent;
+  border: none;
+}

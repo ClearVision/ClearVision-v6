@@ -1,0 +1,41 @@
+/* RADIO */
+%radioItem {
+  background-color: transparent;
+  color: #fff;
+  &:hover {
+    &:not([aria-checked=true]):not(%radioItemDisabled) {
+      background-color: transparent;
+      color: #fff;
+    }
+    
+  }
+  %radioBar {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-left: 3px solid var(--radio-bar-accent-color);
+    transition: all 0.15s ease-in-out;
+  }
+  &[aria-checked='true'] {
+    %radioBar {
+      background-color: var(--radio-bar-accent-color, var(--main-color));
+    }
+  }
+  %radioIconChecked {
+    color: #fff;
+  }
+}
+
+// RADIO ACCENTS
+%radioBar {
+  &[style*='--radio-bar-accent-color:var(--status-green-600)'] {
+    --radio-bar-accent-color: #43b581 !important;
+  }
+  &[style*='--radio-bar-accent-color:var(--status-yellow-560)'] {
+    --radio-bar-accent-color: #faa61a !important;
+  }
+  &[style*='--radio-bar-accent-color:hsl(21, calc(var(--saturation-factor, 1) * 90.7%), 57.6%)'] {
+    --radio-bar-accent-color: #e67727 !important;
+  }
+  &[style*='--radio-bar-accent-color:var(--status-red-500)'] {
+    --radio-bar-accent-color: #982929 !important;
+  }
+}

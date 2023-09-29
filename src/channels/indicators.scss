@@ -1,0 +1,30 @@
+/* CHANNEL INDICATORS */
+%channelsUnreadIndicator,
+%channelsMentionIndicator {
+  position: relative;
+  background: transparent;
+  &:after {
+    content: '';
+    position: absolute;
+    @include stretch;
+    background: $main-color;
+    border-radius: 3px;
+    opacity: 0.9;
+    z-index: -1;
+    transition: all 0.15s ease-in-out;
+  }
+  &:hover {
+    &:after {
+      opacity: 1;
+    }
+  }
+}
+
+// TAB SELECT INDICATOR
+.ring-370dIp {
+  box-shadow: inset 0px 0px 0 4px $main-color;
+}
+.keyboard-mode .focusStroke-3V8pid {
+  fill: $main-color;
+  stroke: $main-color;
+}

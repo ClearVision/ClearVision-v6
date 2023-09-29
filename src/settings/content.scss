@@ -1,0 +1,130 @@
+/* SETTINGS CONTENT */
+%standardSidebarView {
+  >%settingsContentRegion {
+    background: transparent;
+  }
+}
+%settingsContentRegion {
+  %settingsContentScroller,
+  %settingsContentSidebarScroller {
+    background: transparent;
+  }
+}
+
+// CLOSE BUTTON
+%themeDark {
+  %settingsCloseButton {
+    border-color: hsla(0, 0%, 100%, 0.4);
+    &:hover {
+      border-color: hsla(0, 0%, 100%, 0.6);
+      background-color: transparent;
+    }
+    >svg>path {
+      fill: hsla(0, 0%, 100%, 0.6);
+    }
+  }
+  %settingsCloseButtonKeybind {
+    color: hsla(0, 0%, 100%, 0.6);
+  }
+}
+
+// UNSAVED CHANGES
+%settingsNoticeContainer {
+  background-color: hsla(0, 0%, 0%, 0.8) !important;
+}
+
+// AVATAR UPLOADER
+%settingsImageUploaderInner {
+  background-color: hsla(0, 0%, 100%, 0.05);
+}
+%themeDark %settingsImageUploaderIcon {
+  background-color: var(--main-color);
+  background-image: none;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: url(https://discord.com/assets/d5c25e76af04cea8997e4a060572feae.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    filter: brightness(0) invert(1);
+    pointer-events: none;
+  }
+}
+
+// ITEM CARDS
+%themeDark {
+  %settingsCard {
+    &:not(.outline-3kFzf8),
+    &.outline-3kFzf8 {
+      background-color: rgba(0, 0, 0, 0.4);
+      border-color: hsla(0, 0%, 100%, 0.07);
+    }
+    a {
+      color: var(--url-color);
+    }
+  }
+}
+%settingsCardWrapper {
+  background-color: transparent;
+}
+
+// COLOR PICKER
+%themeDark %settingsColorPickerCustom {
+  background-color: hsla(0, 0%, 0%, 0.8);
+  border-color: transparent;
+  border-radius: 5px;
+}
+
+// WARNING SHAKE
+%shakeable[style*='transform'] {
+  transform: none !important;
+  %bg {
+    animation: cv-shake 0.5s ease-in;
+  }
+}
+
+// DROP DOWN
+.lookFilled-GPyucw.select-Zz0IcO {
+	background-color: hsla(0, 0%, 100%, .07);
+	border-color: hsla(0, 0%, 100%, .09);
+}
+.popout-15UxD6 {
+	background-color: rgba(0, 0, 0, 0.8);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.option-Uc12mm {
+  &:hover,
+  &:focus,
+  &.focused-10mbp- {
+    background-color: hsla(0, 0%, 100%, 0.05);
+    border: hsla(0, 0%, 100%, 0.07);
+  }
+  &[aria-selected=true]:not(.option-Uc12mm.multi-2vPqc4) {
+    background-color: $main-color;
+    .selectedIcon-122rMx {
+      circle {
+        fill: $main-color;
+      }
+    }
+    path {
+      fill: #fff;
+    }
+  }
+}
+
+// INPUT
+.input-3O04eu {
+	color: var(--text-normal);
+  background-color: hsla(0, 0%, 100%, 0.07);
+  border: none;
+  box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.09);
+  &:focus {
+    box-shadow: 0 0 2px 2px  $main-color;
+  }
+}

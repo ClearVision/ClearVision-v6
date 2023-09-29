@@ -1,0 +1,19 @@
+%layers {
+  position: relative;
+  margin-top: 26px;
+  overflow: visible;
+  &:before {
+    content: 'There is a new Version of ClearVision v6 available! Join clearvision.gitlab.io/join for more info.';
+    position: absolute;
+    top: -26px;
+    height: 20px;
+    left: 0;
+    right: 0;
+    padding: 3px 5px;
+    background-color: $main-color;
+    color: #fff;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+  }
+}

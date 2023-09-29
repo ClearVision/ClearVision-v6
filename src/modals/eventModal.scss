@@ -1,0 +1,87 @@
+/* EVENT MODAL */
+%eventHeader {
+  background-color: transparent;
+}
+%eventIconCircle {
+  background-color: var(--main-color);
+}
+%eventCard {
+  background-color: hsla(0, 0%, 0%, 0.4);
+  border: 2px solid $main-color;
+}
+%eventStatusBrand,
+%eventStatusLabel {
+  color: $main-color;
+  %eventStatusGreen {
+    color: cv('colors.success');
+  }
+}
+%eventRSVPCount {
+  background-color: $main-color;
+  %eventRSVPIcon,
+  .colorHeaderSecondary-g5teka {
+    color: #fff;
+  }
+}
+.card-8UsK4b:hover {
+  background-color: var(--hover-color);
+}
+
+// EVENT INFO
+%eventInfoHeader {
+  %tabBarItem {
+    &:hover {
+      border-bottom-color: $hover-color;
+    }
+    &%tabBarItemSelected,
+    &:active {
+      border-bottom-color: $main-color;
+    }
+  }
+}
+%eventInfoContentContainer {
+  background: transparent;
+}
+%eventInfoIconCircle {
+  background-color: $main-color;
+}
+
+// CREATE EVENT
+%createEventProgressBar {
+  background-color: hsla(0, 0%, 100%, 0.3);
+  &%createEventProgressBarSelected {
+    background-color: $main-color;
+  }
+  +.colorMuted-20987_ {
+    color: hsla(0, 0%, 100%, 0.3);
+  }
+  +.colorBrand-21Le_q {
+    color: var(--main-color);
+  }
+}
+%createEventLocationContainer,
+%createEventInfoForm {
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+}
+%createEventCreateStageContainer {
+  background-color: transparent;
+}
+%createEventTextInput {
+  background: transparent;
+}
+%themeDark %createEventPreviewCard {
+  background-color: hsla(0, 0%, 0%, 0.4);
+  border: 2px solid $main-color;
+}
+%createEventIconContainer {
+  background-color: $main-color;
+}
+
+// DATEPICKER
+%themeDark %popoutLayer %calendarPicker {
+  %datepicker {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}

@@ -1,0 +1,58 @@
+/* GROUP INVITE POPOUT */
+%themeDark {
+  %groupInvitePopout {
+    &%modalRoot {
+      background-color: hsla(0, 0%, 0%, 0.8);
+    }
+  }
+}
+// HEADER
+%groupInvitePopoutTitle {
+  color: #fff;
+}
+%groupInvitePopoutSubtitle {
+  color: hsla(0, 0%, 100%, 0.7);
+}
+
+// SEARCH
+%groupInvitePopoutSearchBar {
+  %groupInvitePopoutSearchContainer {
+    background-color: hsla(0, 0%, 100%, 0.07);
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.09);
+  }
+}
+%groupInvitePopoutSearchTag {
+  background: $main-color;
+  color: #fff;
+}
+
+// FRIEND
+%groupInvitePopoutFriend {
+  transition: all 0.15s ease-in-out;
+  %themeDark &%groupInvitePopoutFriendSelected {
+    background: hsla(0, 0%, 100%, 0.1);
+    %groupInvitePopoutNickname {
+      color: #fff;
+    }
+    %groupInvitePopoutDiscordTag {
+      color: hsla(0, 0%, 100%, 0.5);
+    }
+    %groupInvitePopoutCheckbox {
+      background: hsla(0, 0%, 100%, 0.1);
+    }
+  }
+}
+%groupInvitePopoutNickname {
+  color: hsla(0, 0%, 100%, 0.7);
+  transition: all 0.15s ease-in-out;
+}
+%groupInvitePopoutDiscordTag {
+  color: hsla(0, 0%, 100%, 0.3);
+  opacity: 1;
+  transition: all 0.15s ease-in-out;
+}
+
+// FOOTER
+%groupInvitePopoutFooterSeparator {
+  box-shadow: 0 -1px 0 hsla(0, 0%, 100%, 0.04);
+}

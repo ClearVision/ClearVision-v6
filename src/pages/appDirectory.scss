@@ -1,0 +1,81 @@
+/* APP DIRECTORY */
+%themeDark %directoryContainer {
+  background: transparent;
+  &:before {
+    content: '';
+    @include stretch;
+    position: fixed;
+    z-index: -1;
+    background: cv('bg.app.img') cv('bg.app.pos') / cv('bg.app.size') cv('bg.app.repeat') cv('bg.app.attach');
+    @include filters(cv('bg.app'));
+  }
+}
+
+// HOME PAGE
+%directoryCategory {
+  background: rgba(0,0,0,.4);
+  &:hover {
+    background: $hover-color;
+  }
+}
+%directoryCard {
+  background: rgba(0,0,0,.4);
+}
+%directoryListCard {
+  background: rgba(0,0,0,.4);
+  &%directoryCardClickable:hover {
+    background-color: hsla(0, 0%, 0%, 0.6);
+    color: #fff;
+    %textMediumNormal {
+      color: #fff;
+    }
+  }
+}
+%directoryFooter {
+  background: rgba(0,0,0,.4);
+}
+
+// SEARCH
+%themeDark {
+  %directorySearchBar {
+    background: hsla(0, 0%, 100%, 0.07) !important;
+    border: none;
+    box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.09);
+    &:focus-within {
+      box-shadow: 0 0 2px 2px $main-color;
+      transition: all 0.15s ease-in-out;
+    }
+    %input {
+      color: #fff;
+      box-shadow: none;
+      &::placeholder {
+        color: hsla(0, 0%, 100%, 0.3);
+      }
+    }
+  }
+}
+%directorySearchCategoryActive {
+	background: $main-color;
+}
+
+// APP PAGE
+%directoryAppCategory {
+  background-color: hsla(0, 0%, 100%, 0.1);
+  &:hover {
+    background-color: hsla(0, 0%, 100%, 0.15);
+  }
+}
+%directoryAppSupportServer {
+  background-color: hsla(0, 0%, 0%, 0.6);
+}
+%directoryAppCommandList,
+%directoryAppPermissionList,
+%directoryAppIntentList,
+%directoryAppPremiumCardHeader, 
+%directoryAppPremiumContainer {
+	background: hsla(0, 0%, 0%, 0.4);
+}
+%directoryAppCommand {
+  background: transparent;
+  border: 1px solid $main-color;
+}

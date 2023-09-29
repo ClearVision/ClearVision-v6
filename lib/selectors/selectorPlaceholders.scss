@@ -1,0 +1,4499 @@
+/* ### Powered by DiscordSelectors v0.2.7 ### */
+.appMount-2yBXZl {
+  @extend %appMount !optional;
+}
+.platform-win {
+  @extend %platformWin !optional;
+}
+.platform-osx {
+  @extend %platformOSX !optional;
+}
+.platform-linux {
+  @extend %platformLinux !optional;
+}
+.platform-web {
+  @extend %platformWeb !optional;
+}
+.theme-dark {
+  @extend %themeDark !optional;
+}
+.theme-light {
+  @extend %themeLight !optional;
+}
+.app-3xd6d0 {
+  @extend %app !optional;
+}
+.app-2CXKsg {
+  @extend %shakeable !optional;
+}
+.bg-1QIAus {
+  @extend %bg !optional;
+}
+.layers-OrUESM {
+  @extend %layers !optional;
+}
+.layer-86YKbF {
+  @extend %layer !optional;
+}
+.animating-1rIrGV {
+  @extend %layerAnimating !optional;
+}
+.stop-animations {
+  @extend %layerStopAnimations !optional;
+}
+.container-1eFtFS {
+  @extend %containerMain !optional;
+}
+.base-2jDfDU {
+  @extend %base !optional;
+}
+.backdrop-2ByYRN {
+  @extend %backdrop !optional;
+}
+.notice-2HEN-u {
+  @extend %notice !optional;
+}
+.colorDefault-1e8tQv {
+  @extend %noticeDefault !optional;
+}
+.notice-1x8lm- {
+  @extend %noticeComplete !optional;
+}
+.colorDanger-2YLzLC {
+  @extend %noticeDanger !optional;
+}
+.colorStreamerMode-8uoRWd {
+  @extend %noticeStreamerMode !optional;
+}
+.noticeContents-1dYEwP {
+  @extend %noticeContents !optional;
+}
+.textLink-2oCmaf {
+  @extend %noticeTextLink !optional;
+}
+.noticeSurvey-1XW9Ln {
+  @extend %noticeSurvey !optional;
+}
+.closeButton-30b1gR {
+  @extend %noticeClose !optional;
+}
+.button-1iHNQ2 {
+  @extend %noticeButton !optional;
+}
+.icon-2b6NbB {
+  @extend %noticeIcon !optional;
+}
+.iconWindows-1o_-54 {
+  @extend %noticeIconWindows !optional;
+}
+.iconApple-3GcJtX {
+  @extend %noticeIconApple !optional;
+}
+.iconAndroid-2DSyPS {
+  @extend %noticeIconAndroid !optional;
+}
+.platformIcon-OrI7z3 {
+  @extend %noticePlatformIcon !optional;
+}
+.titleBar-1it3bQ {
+  @extend %titlebar !optional;
+}
+.unfocused-1U-yOa {
+  @extend %titlebarUnfocused !optional;
+}
+.typeWindows-2-g3UY {
+  @extend %titlebarWin !optional;
+}
+.wordmark-2u86JB {
+  @extend %titlebarWordmark !optional;
+}
+.winButton-3UMjdg {
+  @extend %titlebarWinButton !optional;
+}
+.winButtonMinMax-3RsPUg {
+  @extend %titlebarWinButtonMinMax !optional;
+}
+.winButtonClose-3Q8ZH5 {
+  @extend %titlebarWinButtonClose !optional;
+}
+.typeMacOS-3V4xXE {
+  @extend %titlebarMac !optional;
+}
+.typeMacOSWithFrame-1XEpN7 {
+  @extend %titlebarMacWithFrame !optional;
+}
+.macButtons-eIdy0e {
+  @extend %titlebarMacButtons !optional;
+}
+.macButton-2M5W_9 {
+  @extend %titlebarMacButton !optional;
+}
+.macButtonClose-3IXwAm {
+  @extend %titlebarMacButtonClose !optional;
+}
+.macButtonMaximize-1vTCwt {
+  @extend %titlebarMacButtonMaximize !optional;
+}
+.macButtonMinimize-Q8clSI {
+  @extend %titlebarMacButtonMinimize !optional;
+}
+#bda-qem {
+  @extend %bdEmoteMenu !optional;
+}
+#bda-qem-twitch {
+  @extend %bdEmoteMenuTwitch !optional;
+}
+#bda-qem-favourite {
+  @extend %bdEmoteMenuFavourite !optional;
+}
+#bda-qem-emojis {
+  @extend %bdEmoteMenuEmojis !optional;
+}
+#bda-qem-twitch.active,
+#bda-qem-favourite.active,
+#bda-qem-emojis.active {
+  @extend %bdEmoteMenuActive !optional;
+}
+#bda-qem-twitch-container {
+  @extend %bdEmoteMenuTwitchContainer !optional;
+}
+#bda-qem-favourite-container {
+  @extend %bdEmoteMenuFavouriteContainer !optional;
+}
+.emote-menu-inner {
+  @extend %bdEmoteMenuInner !optional;
+}
+.bd-emote-header {
+  @extend %bdEmoteMenuHeader !optional;
+}
+.bd-emote-item {
+  @extend %bdEmoteItem !optional;
+}
+.emote-container {
+  @extend %bdEmoteContainer !optional;
+}
+.emote-icon {
+  @extend %bdEmoteIcon !optional;
+}
+#bd-settings-sidebar {
+  @extend %bdSettingsSidebar !optional;
+}
+.ui-tab-bar-header {
+  @extend %bdSettingsSidebarHeader !optional;
+}
+.ui-tab-bar-item {
+  @extend %bdSettingsSidebarItem !optional;
+}
+.ui-tab-bar-item.selected {
+  @extend %bdSettingsSidebarItemSelected !optional;
+}
+.ui-tab-bar-separator {
+  @extend %bdSettingsSidebarSeparator !optional;
+}
+.containerDefault-3TQ5YN {
+  @extend %categoryContainerDefault !optional;
+}
+.containerUserOver-3woq86 {
+  @extend %categoryContainerUserOver !optional;
+}
+.containerDragBefore-ei4h1m {
+  @extend %categoryContainerDragBefore !optional;
+}
+.containerDragAfter-1J_-1V {
+  @extend %categoryContainerDragAfter !optional;
+}
+.containerDragAfter-1J_-1V,
+.containerDragBefore-ei4h1m {
+  @extend %categoryContainerDrag !optional;
+}
+.containerDefault-3TQ5YN,
+.containerDragAfter-1J_-1V,
+.containerDragBefore-ei4h1m,
+.containerUserOver-3woq86 {
+  @extend %categoryContainer !optional;
+}
+.wrapper-1S43wv {
+  @extend %categoryWrapper !optional;
+}
+.clickable-2AoIYN {
+  @extend %categoryWrapperClickable !optional;
+}
+.collapsed-2KOacR {
+  @extend %categoryWrapperCollapsed !optional;
+}
+.muted-19J0ih {
+  @extend %categoryWrapperMuted !optional;
+}
+.mainContent-uDGa6R {
+  @extend %categoryMain !optional;
+}
+.icon-3zI3d2 {
+  @extend %categoryIcon !optional;
+}
+.name-3BUDLf {
+  @extend %categoryName !optional;
+}
+.children-3MeUvj {
+  @extend %categoryButtons !optional;
+}
+.addButtonIcon-3rJeaD {
+  @extend %categoryAddIcon !optional;
+}
+.containerDefault-YUSmu3 {
+  @extend %channelContainerDefault !optional;
+}
+.containerDragBefore-1s5Qg6 {
+  @extend %channelContainerDragBefore !optional;
+}
+.containerDragAfter-3aBiOW {
+  @extend %channelContainerDragAfter !optional;
+}
+.containerUserOver-SDa1HW {
+  @extend %channelContainerUserOver !optional;
+}
+.containerDragAfter-3aBiOW,
+.containerDragBefore-1s5Qg6 {
+  @extend %channelContainerDrag !optional;
+}
+.containerDefault-YUSmu3,
+.containerDragAfter-3aBiOW,
+.containerDragBefore-1s5Qg6,
+.containerUserOver-SDa1HW {
+  @extend %channelContainer !optional;
+}
+.wrapper-NhbLHG {
+  @extend %channelWrapper !optional;
+}
+.modeUnread-3Cxepe {
+  @extend %channelWrapperUnread !optional;
+}
+.modeSelected-3DmyhH {
+  @extend %channelWrapperSelected !optional;
+}
+.modeConnected-NrO4cP {
+  @extend %channelWrapperConnected !optional;
+}
+.modeMuted-2T4MDZ {
+  @extend %channelWrapperMuted !optional;
+}
+.link-1_kTxV {
+  @extend %channelLink !optional;
+}
+.linkTop-1W1aK6 {
+  @extend %channelLinkTop !optional;
+}
+.icon-2W8DHg {
+  @extend %channelIcon !optional;
+}
+.live-1V2D-f {
+  @extend %channelIconLive !optional;
+}
+.name-28HaxV {
+  @extend %channelName !optional;
+}
+.children-1MGS9G {
+  @extend %channelButtons !optional;
+}
+.iconItem-1EjiK0 {
+  @extend %channelButton !optional;
+}
+.actionIcon-2sw4Sl {
+  @extend %channelActionIcon !optional;
+}
+.unread-36eUEm {
+  @extend %channelUnreadPill !optional;
+}
+.mentionsBadge-2ckrKL {
+  @extend %channelBadge !optional;
+}
+.userLimit-VbEkeM {
+  @extend %channelUserLimit !optional;
+}
+.wrapper-2fEmwW {
+  @extend %channelUserLimitWrapper !optional;
+}
+.users-2JoyGL {
+  @extend %channelUserLimitUsers !optional;
+}
+.total-1c5KCN {
+  @extend %channelUserLimitTotal !optional;
+}
+.listDefault-2F-w65 {
+  @extend %voiceUserList !optional;
+}
+.draggable-S2aEx4 {
+  @extend %voiceUserDraggable !optional;
+}
+.voiceUser-3nRK-K {
+  @extend %voiceUser !optional;
+}
+.selected-3TGCSZ {
+  @extend %voiceUserSelected !optional;
+}
+.content-1Tgc42 {
+  @extend %voiceUserContent !optional;
+}
+.avatarContainer-3FF_Km {
+  @extend %voiceUserAvatar !optional;
+}
+.avatarSpeaking-2pCGrZ {
+  @extend %voiceUserAvatarSpeaking !optional;
+}
+.username-vAneIW {
+  @extend %voiceUserName !optional;
+}
+.usernameSpeaking-3FKv6H {
+  @extend %voiceUserNameSpeaking !optional;
+}
+.icons-3q-_6z {
+  @extend %voiceUserIcons !optional;
+}
+.iconSpacing-3LzVxF {
+  @extend %voiceUserIconSpacing !optional;
+}
+.icon-3BcwQu {
+  @extend %voiceUserIcon !optional;
+}
+.voiceChannelsButton-SRmgo8 {
+  @extend %voiceChannelsButton !optional;
+}
+.container-1jha_j {
+  @extend %userSummaryContainer !optional;
+}
+.icon-3akWb2 {
+  @extend %userSummaryIcon !optional;
+}
+.avatarContainer-gPrCzX {
+  @extend %userSummaryAvatarContainer !optional;
+}
+.avatarContainerMasked-13fYnN {
+  @extend %userSummaryAvatarContainerMasked !optional;
+}
+.avatar-3TrM7c {
+  @extend %userSummaryAvatar !optional;
+}
+.clickableAvatar-igrb2Y {
+  @extend %userSummaryAvatarClickable !optional;
+}
+.emptyUser-2FDCJv {
+  @extend %userSummaryEmptyUser !optional;
+}
+.moreUsers-_v6T-L {
+  @extend %userSummaryMoreUsers !optional;
+}
+.channelNotices-41mJbj {
+  @extend %channelNotices !optional;
+}
+.channelNotice-tO6Tus {
+  @extend %channelNotice !optional;
+}
+.quickswitcher-35bYg4 {
+  @extend %channelNoticeQuickswitcher !optional;
+}
+.invite-OjTXrW {
+  @extend %channelNoticeInvite !optional;
+}
+.guildMFAWarning-3GEzs8 {
+  @extend %channelNoticeGuildMFAWarning !optional;
+}
+.close-2ISPTL {
+  @extend %channelNoticeClose !optional;
+}
+.message-3KLVy1 {
+  @extend %channelNoticeMessage !optional;
+}
+.btn-38SvSS {
+  @extend %channelNoticeMessageButton !optional;
+}
+.sidebar-1tnWFu {
+  @extend %channelsSidebar !optional;
+}
+.container-1NXEtd {
+  @extend %channelsContainer !optional;
+}
+.container-1-ERn5 {
+  @extend %channelsHeaderContainer !optional;
+}
+.header-3OsQeK {
+  @extend %channelsHeader !optional;
+}
+.selected-1GtAC5 {
+  @extend %channelsHeaderSelected !optional;
+}
+.name-3Uvkvr {
+  @extend %channelsHeaderName !optional;
+}
+.headerButton-1nmDZ3 {
+  @extend %channelsHeaderButton !optional;
+}
+.guildIconContainer-3QvE6w {
+  @extend %channelsHeaderGuildBadge !optional;
+}
+.partnered-23cXFN {
+  @extend %guildPartnered !optional;
+}
+.verified-1Jv_7P {
+  @extend %guildVerified !optional;
+}
+.iconTierOne-s_oiRb {
+  @extend %guildBoostedIconTier1 !optional;
+}
+.iconTierTwo-1JOWNK {
+  @extend %guildBoostedIconTier2 !optional;
+}
+.iconTierThree-3EAOB7 {
+  @extend %guildBoostedIconTier3 !optional;
+}
+.animatedContainer-2laTjx {
+  @extend %bannerAnimatedContainer !optional;
+}
+.bannerImage-ubW8K- {
+  @extend %bannerImage !optional;
+}
+.bannerVisible-Vkyg1I {
+  @extend %bannerVisible !optional;
+}
+.unread-2wipsx {
+  @extend %channelsUnreadIndicator !optional;
+}
+.mention-3XBnnZ {
+  @extend %channelsMentionIndicator !optional;
+}
+.panels-3wFtMD {
+  @extend %panels !optional;
+}
+.panel-2ZFCRb {
+  @extend %panel !optional;
+}
+.button-12Fmur {
+  @extend %panelButton !optional;
+}
+.enabled-9OeuTA {
+  @extend %panelButtonEnabled !optional;
+}
+.disabled-GROwTe {
+  @extend %panelButtonDisabled !optional;
+}
+.actionButtons-2vEOUh {
+  @extend %panelActionButtons !optional;
+}
+.button-1EGGcP {
+  @extend %panelActionButton !optional;
+}
+.buttonColor-3bP3fX {
+  @extend %panelActionButtonColor !optional;
+}
+.buttonActive-Uc1jHx {
+  @extend %panelActionButtonActive !optional;
+}
+.container-YkUktl {
+  @extend %accountPanel !optional;
+}
+.avatarWrapper-1B9FTW {
+  @extend %accountPanelAvatarWrapper !optional;
+}
+.avatar-1EWyVD {
+  @extend %accountPanelAvatar !optional;
+}
+.nameTag-sc-gpq {
+  @extend %accountPanelNameTag !optional;
+}
+.usernameContainer-3PPkWq {
+  @extend %accountPanelUsernameContainer !optional;
+}
+.title-338goq {
+  @extend %accountPanelUsername !optional;
+}
+.subtext-2HDqJ7 {
+  @extend %accountPanelDiscriminator !optional;
+}
+.withTagAsButton-OsgQ9L {
+  @extend %accountPanelTagButton !optional;
+}
+.withTagless-10ooWt {
+  @extend %accountPanelTagless !optional;
+}
+.container-1zzFcN {
+  @extend %connectionPanel !optional;
+}
+.inner-llGtyq {
+  @extend %connectionPanelInner !optional;
+}
+.rtcConnectionStatus-c5A6Av {
+  @extend %rtcConnectionStatus !optional;
+}
+.rtcConnectionStatusConnected-1c73OK {
+  @extend %rtcConnectionStatusConnected !optional;
+}
+.rtcConnectionStatusConnecting-2D7M2N {
+  @extend %rtcConnectionStatusConnecting !optional;
+}
+.rtcConnectionStatusError-2QNGCS {
+  @extend %rtcConnectionStatusError !optional;
+}
+.rtcConnectionQualityFine-3zZrSa {
+  @extend %rtcConnectionQualityFine !optional;
+}
+.rtcConnectionQualityAverage-USzsaD {
+  @extend %rtcConnectionQualityAverage !optional;
+}
+.rtcConnectionQualityBad-3fxsmZ {
+  @extend %rtcConnectionQualityBad !optional;
+}
+.ping-2IpLcU {
+  @extend %rtcConnectionPing !optional;
+}
+.channel-3prF2u {
+  @extend %connectionPanelChannel !optional;
+}
+.activityPanel-9icbyU {
+  @extend %activityPanel !optional;
+}
+.body-1FrnJD {
+  @extend %activityPanelBody !optional;
+}
+.gameWrapper-2TFy7F {
+  @extend %activityPanelGameWrapper !optional;
+}
+.gameIcon-2BIUJ3 {
+  @extend %activityPanelGameIcon !optional;
+}
+.title-338goq {
+  @extend %activityPanelTitle !optional;
+}
+.actions-zk2vB_ {
+  @extend %activityPanelActions !optional;
+}
+.liveBadge-3E8LQj {
+  @extend %panelLiveBadge !optional;
+}
+.noiseCancellationPopout-2-e5Xz {
+  @extend %noiseCancellationPopout !optional;
+}
+.privateChannels-oVe7HL {
+  @extend %privateChannels !optional;
+}
+.scroller-WSmht3 {
+  @extend %privateChannelsScroller !optional;
+}
+.channel-1Shao0 {
+  @extend %privateChannel !optional;
+}
+.interactive-iyXY_x {
+  @extend %privateChannelInteractive !optional;
+}
+.interactiveSelected-29CP8y {
+  @extend %privateChannelInteractiveSelected !optional;
+}
+.avatar-1HDIsL {
+  @extend %privateChannelAvatar !optional;
+}
+.name-2m3Cms {
+  @extend %privateChannelName !optional;
+}
+.subText-3Sk0zy {
+  @extend %privateChannelSubText !optional;
+}
+.activity-1-H7Zd {
+  @extend %privateChannelActivity !optional;
+}
+.activityEmoji-24oKjc {
+  @extend %privateChannelActivityEmoji !optional;
+}
+.activityText-ev7Z1T {
+  @extend %privateChannelActivityText !optional;
+}
+.icon-Lupfh- {
+  @extend %privateChannelActivityIcon !optional;
+}
+.closeButton-mupH76 {
+  @extend %privateChannelCloseButton !optional;
+}
+.closeIcon-1NwtbI {
+  @extend %privateChannelCloseIcon !optional;
+}
+.linkButtonIcon-7rsZcu {
+  @extend %privateChannelIcon !optional;
+}
+.privateChannelsHeaderContainer-1UWASm {
+  @extend %privateChannelsHeader !optional;
+}
+.headerText-1qIDDT {
+  @extend %privateChannelsHeaderText !optional;
+}
+.privateChannelRecipientsInviteButtonIcon-1ObKXK {
+  @extend %privateChannelsInviteButton !optional;
+}
+.empty-yQo7LQ {
+  @extend %privateChannelsEmpty !optional;
+}
+.searchBar-3TnChZ {
+  @extend %privateChannelsSearchBar !optional;
+}
+.searchBarComponent-3N7dCG {
+  @extend %privateChannelsSearchBarComponent !optional;
+}
+.newMessagesBar-1hF-9G {
+  @extend %newMessagesBar !optional;
+}
+.jumpToPresentBar-1cEnH0 {
+  @extend %jumpToPresentBar !optional;
+}
+.hasMore-3e72_v {
+  @extend %hasMore !optional;
+}
+.messagesErrorBar-1IQ1rH {
+  @extend %messagesErrorBar !optional;
+}
+.bar-wDIGjg {
+  @extend %barBrand !optional;
+}
+.wrapper-1gVUIN {
+  @extend %callWrapper !optional;
+}
+.callContainer-HtHELf {
+  @extend %callContainer !optional;
+}
+.minimum-fXpVNc {
+  @extend %callMinimum !optional;
+}
+.normal-2GSW0u {
+  ///
+  @extend %callNormal !optional;
+}
+.noChat-2UYgeE {
+  @extend %callNoChat !optional;
+}
+.video-eAcneW {
+  //////
+  @extend %callVideo !optional;
+}
+.controlButton-2PMNom {
+  @extend %callControlButton !optional;
+}
+.centerButton-1IShs7 {
+  @extend %callCenterButton !optional;
+}
+.centerIcon-JYpTUi {
+  @extend %callCenterIcon !optional;
+}
+.slash-2yrR11 {
+  @extend %micSlash !optional;
+}
+.colorable-3rVGna {
+  @extend %callButtonColorable !optional;
+}
+.primaryDark-2UJt1G {
+  @extend %callButtonPrimaryDark !optional;
+}
+.white-11auuQ {
+  @extend %callButtonWhite !optional;
+}
+.red-3T8maV {
+  @extend %callButtonRed !optional;
+}
+.active-3D763s {
+  @extend %callButtonActive !optional;
+}
+.participantsButton-1WBdFP {
+  @extend %callParticipantsButton !optional;
+}
+.tile-2TcwiO {
+  @extend %callTile !optional;
+}
+.button-3Vyz67 {
+  @extend %callInviteButton !optional;
+}
+.tile-2Dr6M1 {
+  @extend %callUserTile !optional;
+}
+.border-2Vy6FN {
+  @extend %callTileBorder !optional;
+}
+.speaking-7QZEkv {
+  @extend %callTileSpeaking !optional;
+}
+.chat-2ZfjoI {
+  @extend %chat !optional;
+}
+.content-1jQy2l {
+  @extend %chatContentWrapper !optional;
+}
+.chatContent-3KubbW {
+  @extend %chatContent !optional;
+}
+.base-34jWEe {
+  @extend %chatBase !optional;
+}
+.gatedContent-31-gID {
+  @extend %chatGatedContent !optional;
+}
+.image-3HC6rC {
+  @extend %chatGatedImage !optional;
+}
+.title-FyH9jw {
+  @extend %chatGatedTitle !optional;
+}
+.description-fPkcPm {
+  @extend %chatGatedDescription !optional;
+}
+.separator-17R7Yp {
+  @extend %chatGatedSeparator !optional;
+}
+.action-3eQ5Or {
+  @extend %chatGatedAction !optional;
+}
+.actionRed-gYn8D3 {
+  @extend %chatGatedActionRed !optional;
+}
+.resizeHandle-PBRzPC {
+  @extend %chatResize !optional;
+}
+.emptyChannelIcon-1YdEz2 {
+  @extend %emptyChannelIcon !optional;
+}
+.role-23oyrw {
+  @extend %emptyChannelRole !optional;
+}
+.roleColor-3cA0as {
+  @extend %emptyChannelRoleColor !optional;
+}
+.noChannel-1GDIAZ {
+  @extend %noChannel !optional;
+}
+.image-20MDYu {
+  @extend %noChannelImage !optional;
+}
+.title-2CL_z0 {
+  @extend %noChannelTitle !optional;
+}
+.text-27cdrj {
+  @extend %noChannelText !optional;
+}
+.wrapper-15CKyy {
+  @extend %chatLoadingWrapper !optional;
+}
+.wrapper-3HVHpV {
+  @extend %chatLoadingWrapperOuter !optional;
+}
+.uploadModalIn-2w48Zf {
+  @extend %uploadModalIn !optional;
+}
+.uploadDropModal-13Kd20 {
+  @extend %uploadDropModal !optional;
+}
+.bgScale-1iWuPF {
+  @extend %uploadDropModalBgScale !optional;
+}
+.inner-rBP-MS {
+  @extend %uploadDropModalInner !optional;
+}
+.divider-2rZFJK {
+  @extend %divider !optional;
+}
+.isUnread-3Lojb- {
+  @extend %dividerUnread !optional;
+}
+.unreadPill-3nEWYM {
+  @extend %unreadPill !optional;
+}
+.unreadPillCapStroke-1nE1Q8 {
+  @extend %unreadPillCapStroke !optional;
+}
+.content-3spvdd {
+  @extend %dividerDate !optional;
+}
+.container-23gRWx {
+  @extend %gifPicker !optional;
+}
+header-2TLOnc {
+  @extend %gifPickerHeader !optional;
+}
+.searchBar-3aIzc- {
+  @extend %gifPickerSearchBar !optional;
+}
+.inner-2pOSmK {
+  @extend %gifPickerSearchBarInner !optional;
+}
+.input-2m5SfJ {
+  @extend %gifPickerSearchInput !optional;
+}
+.iconLayout-3Bjizv {
+  @extend %gifPickerSearchIconLayout !optional;
+}
+.iconContainer-6pgShY {
+  @extend %gifPickerSearchIconContainer !optional;
+}
+.icon-3CDcPB {
+  @extend %gifPickerSearchIcon !optional;
+}
+.visible-CwPfRb {
+  @extend %gifPickerSearchIconVisible !optional;
+}
+.clear-3102V9 {
+  @extend %gifPickerSearchIconClear !optional;
+}
+.backButton-bSKWLe {
+  @extend %gifPickerSearchBackButton !optional;
+}
+.searchHeader-3w5h-0 {
+  @extend %gifPickerSearchHeader !optional;
+}
+.content-A8TzKf {
+  @extend %gifPickerContent !optional;
+}
+.container-3eG4QA {
+  @extend %gifPickerContainer !optional;
+}
+.categoryFade-3RRG67 {
+  @extend %gifPickerCategoryFade !optional;
+}
+.categoryFadeBlurple-1l49_Q {
+  @extend %gifPickerCategoryFadeBlurple !optional;
+}
+.categoryText-3B1jLN {
+  @extend %gifPickerCategoryText !optional;
+}
+.categoryIcon-3zvsg2 {
+  @extend %gifPickerCategoryIcon !optional;
+}
+.categoryName-26b0Ij {
+  @extend %gifPickerCategoryName !optional;
+}
+.results-2CQlZp {
+  @extend %gifPickerResults !optional;
+}
+.result-pzZrwj {
+  @extend %gifPickerResult !optional;
+}
+.focused-q9B2e4 {
+  @extend %gifPickerResultFocused !optional;
+}
+.favButton-2Bi3Ff {
+  @extend %gifPickerFavButton !optional;
+}
+.icon-1m_PLf {
+  @extend %gifPickerFavButtonIcon !optional;
+}
+.gif-2kTiNB {
+  @extend %gifPickerGif !optional;
+}
+.emptyHints-1KtTYR {
+  @extend %gifPickerEmptyHints !optional;
+}
+.placeholder-2Mfkde {
+  @extend %gifPickerPlaceholder !optional;
+}
+.emptyHintCard-2A7Tng {
+  @extend %gifPickerEmptyHintCard !optional;
+}
+.emptyHintFavorite-1cKHnJ {
+  @extend %gifPickerEmptyHintFavorite !optional;
+}
+.emptyHintText-3PF7lP {
+  @extend %gifPickerEmptyHintText !optional;
+}
+.endContainer-22e-US {
+  @extend %gifPickerEndContainer !optional;
+}
+.form-3gdLxP {
+  @extend %chatForm !optional;
+}
+.channelTextArea-1VQBuV {
+  @extend %channelTextArea !optional;
+}
+.scrollableContainer-15eg7h {
+  @extend %channelTextAreaScrollable !optional;
+}
+.inner-NQg18Y {
+  @extend %channelTextAreaInner !optional;
+}
+.attachWrapper-3slhXI {
+  @extend %channelTextAreaAttachWrapper !optional;
+}
+.attachButton-_ACFSu {
+  @extend %channelTextAreaAttachButton !optional;
+}
+.attachButtonInner-2mwer8 {
+  @extend %channelTextAreaAttachButtonInner !optional;
+}
+.attachButtonPlus-3IYelE {
+  @extend %channelTextAreaAttachButtonPlus !optional;
+}
+.textArea-2CLwUE {
+  @extend %textArea !optional;
+}
+.placeholder-1_mJY1 {
+  @extend %textAreaPlaceholder !optional;
+}
+.textAreaSlate-9-y-k2 {
+  @extend %slateTextArea !optional;
+}
+.button-2fCJ0o {
+  @extend %channelTextAreaButton !optional;
+}
+.emojiButton-3FRTuj {
+  @extend %channelTextAreaEmojiButton !optional;
+}
+.typing-2J1mQU {
+  @extend %channelTextAreaTyping !optional;
+}
+.text-3S7XCz {
+  @extend %channelTextAreaTypingText !optional;
+}
+.attachedBars-2BCP3l {
+  @extend %channelTextAreAttachedBar !optional;
+}
+.stackedAttachedBar-u4gXN8 {
+  @extend %channelTextAreaStackedAttachedBar !optional;
+}
+.upload-vLbqu- {
+  @extend %channelTextAreaUpload !optional;
+}
+.fakeLink-1wGafz {
+  @extend %fakeLink !optional;
+}
+.operations-3q3u6E {
+  @extend %operations !optional;
+}
+.wrapper-2SplAX {
+  @extend %channelInfo !optional;
+}
+.content-2M_BlY {
+  @extend %channelInfoContent !optional;
+}
+.image-3FliiM {
+  @extend %channelInfoImage !optional;
+}
+.buttonContainer-KMz3Ex {
+  @extend %channelInfoButtonContainer !optional;
+}
+.autocomplete-3NRXG8 {
+  @extend %autocomplete !optional;
+}
+.autocompleteInner-y1mjDl {
+  @extend %autocompleteInner !optional;
+}
+.contentTitle-3CylD3 {
+  @extend %autocompleteTitle !optional;
+}
+.text-xs-medium-2LRpEj {
+  @extend %autocompleteContentMedium !optional;
+}
+.text-xs-normal-3SiVjE {
+  @extend %autocompleteContentNormal !optional;
+}
+.icon-nmEpWl {
+  @extend %autocompleteIcon !optional;
+}
+.iconForeground-2P-YQq {
+  @extend %autocompleteIconForeground !optional;
+}
+.autocompleteRowSubheading-6CMP2P {
+  @extend %autocompleteRowSubheading !optional;
+}
+.autocompleteRowContentSecondary-Oobh2b {
+  @extend %autocompleteContentSecondary !optional;
+}
+.descriptionDiscriminator-tCKMLV {
+  @extend %autocompletedescriptiondiscriminator  !optional;
+}
+.selector-2IcQBU {
+  @extend %autocompleteSelector !optional;
+}
+.clickable-2V8YKY {
+  @extend %autocompleteSelectorSelected !optional;
+}
+.base-2v-uc0 {
+  @extend %autocompleteBase !optional;
+}
+.categoryHeader-OpJ1Ly {
+  @extend %autocompleteCategoryHeader !optional;
+}
+.wrapper-3z7DuG {
+  @extend %autocompleteListWrapper !optional;
+}
+.list-33W-Tv {
+  @extend %autocompleteList !optional;
+}
+.listItems-6eZzQ1 {
+  @extend %autocompleteListItems !optional;
+}
+.selected-3B2w1z {
+  @extend %autocompleteListItemSelected !optional;
+}
+.option-Tt7anD {
+  @extend %autocompleteOption !optional;
+}
+.optionals-2w-NPQ {
+  @extend %autocompleteOptionals !optional;
+}
+.optionalCount-1BzEgg {
+  @extend %autocompleteOptionalCount !optional;
+}
+.optionPill-2kmuZR {
+  @extend %autocompleteOptionPill !optional;
+}
+.selectedPill-3cOyS6 {
+  @extend %autocompleteOptionPillSelected !optional;
+}
+.optionPillKey-2JyeoP {
+  @extend %autocompleteOptionPillKey !optional;
+}
+.remainingOptions-2kCt8U {
+  @extend %autocompleteRemainingOptions !optional;
+}
+.spamBanner-1auiob {
+  @extend %timeoutBar !optional;
+}
+.container-lJuBHq {
+  @extend %timeoutPopup !optional;
+}
+.iconContainer-2k2ykS {
+  @extend %timeoutIcon !optional;
+}
+.before_inlineCode-1zngJj {
+  @extend %inlineCodeBefore !optional;
+}
+.after_inlineCode-2_JXPm {
+  @extend %inlineCodeAfter !optional;
+}
+.inlineCode-ERyvy_ {
+  @extend %inlineCode !optional;
+}
+.welcomeMessage-3_Mcht {
+  @extend %welcomeMessage !optional;
+}
+.h1-1IDj26 {
+  @extend %welcomeMessageH1 !optional;
+}
+.itemContainer-WiE19S {
+  @extend %welcomeMessageItemContainer !optional;
+}
+.icon-2shpbb {
+  @extend %welcomeMessageIcon !optional;
+}
+.exclamation-1mi7Vi {
+  @extend %welcomeMessageIconExclamation !optional;
+}
+.share-1EA-d2 {
+  @extend %welcomeMessageIconShare !optional;
+}
+.mobile-3_KEmF {
+  @extend %welcomeMessageIconMobile !optional;
+}
+.twitter-1TN3uJ {
+  @extend %welcomeMessageIconTwitter !optional;
+}
+.base-34jWEe {
+  @extend %welcomeMessageBase !optional;
+}
+.wrapper-22ayhK {
+  @extend %badge !optional;
+}
+.numberBadge-37OJ3S {
+  @extend %numberBadge !optional;
+}
+.textBadge-1fdDPJ {
+  @extend %textBadge !optional;
+}
+.wrapper-2olG5t {
+  @extend %inboxBadge !optional;
+}
+.button-ejjZWC {
+  @extend %button !optional;
+}
+.hasHover-3X1-zV {
+  @extend %buttonHasHover !optional;
+}
+.lookFilled-1H2Jvj {
+  @extend %buttonFilled !optional;
+}
+.lookOutlined-3RTC7c {
+  @extend %buttonOutlined !optional;
+}
+.lookInverted-2GrLaB {
+  @extend %buttonInverted !optional;
+}
+.lookLink-13iF2K {
+  @extend %buttonLink !optional;
+}
+.lookBlank-21BCro {
+  @extend %buttonBlank !optional;
+}
+.colorBrand-2M3O3N {
+  @extend %buttonColorBrand !optional;
+}
+.colorBrandNew-abZT3v {
+  @extend %buttonColorBrandNew !optional;
+}
+.colorPrimary-2-Lusz {
+  @extend %buttonColorPrimary !optional;
+}
+.colorWhite-Eshn2o {
+  @extend %buttonColorWhite !optional;
+}
+.colorGreen-jIPCAS {
+  @extend %buttonColorGreen !optional;
+}
+.colorRed-2VFhM4 {
+  @extend %buttonColorRed !optional;
+}
+.colorGrey-2DXtkV {
+  @extend %buttonColorGrey !optional;
+}
+.colorLink-34zig_ {
+  @extend %buttonColorLink !optional;
+}
+.colorYellow-_9KFXL {
+  @extend %buttonColorYellow !optional;
+}
+.buttonColor-28DXIe {
+  @extend %buttonCallInvite !optional;
+}
+.contents-3NembX {
+  @extend %buttonContents !optional;
+}
+.button-1_oXub {
+  @extend %buttonCircle !optional;
+}
+.disabled-184-il {
+  @extend %buttonCircleDisabled !optional;
+}
+.checkboxWrapper-3zdYym {
+  @extend %checkboxWrapper !optional;
+}
+.checkbox-1LuCGM {
+  @extend %checkbox !optional;
+}
+.checked-22NTbO {
+  @extend %checkboxChecked !optional;
+}
+.flex-3BkGQD {
+  @extend %flex !optional;
+}
+.alignStart-2nShwY {
+  @extend %flexAlignStart !optional;
+}
+.alignEnd-2awoY_ {
+  @extend %flexAlignEnd !optional;
+}
+.alignCenter-14kD11 {
+  @extend %flexAlignCenter !optional;
+}
+.alignStretch-Uwowzr {
+  @extend %flexAlignStretch !optional;
+}
+.alignBaseline-2kE5ql {
+  @extend %flexAlignBaseline !optional;
+}
+.justifyStart-2Mwniq {
+  @extend %flexJustifyStart !optional;
+}
+.justifyEnd-2G0m6w {
+  @extend %flexJustifyEnd !optional;
+}
+.justifyCenter-rrurWZ {
+  @extend %flexJustifyCenter !optional;
+}
+.justifyAround-1MJ202 {
+  @extend %flexJustifyAround !optional;
+}
+.justifyBetween-wAERV6 {
+  @extend %flexJustifyBetween !optional;
+}
+.noWrap-hBpHBz {
+  @extend %flexNoWrap !optional;
+}
+.wrap-7NZuTn {
+  @extend %flexWrap !optional;
+}
+.wrapReverse-jL3MY8 {
+  @extend %flexWrapReverse !optional;
+}
+.directionRow-2Iu2A9 {
+  @extend %flexDirectionRow !optional;
+}
+.directionRowReverse-HZatnx {
+  @extend %flexDirectionRowReverse !optional;
+}
+.directionColumn-3pi1nm {
+  @extend %flexDirectionColumn !optional;
+}
+.spacer-2upayl {
+  @extend %spacer !optional;
+}
+.directionUp-3GeJic {
+  @extend %directionUp !optional;
+}
+.directionRight-2cNgoe {
+  @extend %directionRight !optional;
+}
+.directionDown-2w0MZz {
+  @extend %directionDown !optional;
+}
+.directionLeft-KIR_5K {
+  @extend %directionLeft !optional;
+}
+.flowerStarContainer-1QeD-L {
+  @extend %flowerStarContainer !optional;
+}
+.flowerStar-2tNFCR {
+  @extend %flowerStar !optional;
+}
+.childContainer-U_a6Yh {
+  @extend %flowerStarChild !optional;
+}
+.icon-3BYlXK {
+  @extend %flowerStarIcon !optional;
+}
+.gameVerifiedIcon-1YMUdQ {
+  @extend %gameVerifiedIcon !optional;
+}
+.indicator-9QMksR {
+  @extend %indicator !optional;
+}
+.animationContainer-1fE4lX {
+  @extend %indicatorContainer !optional;
+}
+.animating-1VBoFQ {
+  @extend %indicatorAnimating !optional;
+}
+.notAnimating-2LOPSO {
+  @extend %indicatorNotAnimating !optional;
+}
+.innerCircle-2zWLZe {
+  @extend %indicatorCircleInner !optional;
+}
+.outerCircle-2Uqqis {
+  @extend %indicatorCircleOuter !optional;
+}
+.innerCircle-2zWLZe,
+.outerCircle-2Uqqis {
+  @extend %indicatorCircle !optional;
+}
+.top-1orLYG {
+  @extend %indicatorExclamationTop !optional;
+}
+.bottom-3Mou5l {
+  @extend %indicatorExclamationBottom !optional;
+}
+.top-1orLYG,
+.bottom-3Mou5l {
+  @extend %indicatorExclamation !optional;
+}
+.scrollerWrap-6LjisI {
+  @extend %scrollerWrap !optional;
+}
+.scrollerBase-1Pkza4 {
+  @extend %scroller !optional;
+}
+.slider-1mmyV6 {
+  @extend %slider !optional;
+}
+.mini-28oMa3 {
+  @extend %sliderMini !optional;
+}
+.input-1hjJtk {
+  @extend %sliderInput !optional;
+}
+.track-3I-RwH {
+  @extend %sliderTrack !optional;
+}
+.bar-2H7Q9u {
+  @extend %sliderBar !optional;
+}
+.barFill-3RgCsY {
+  @extend %sliderBarFill !optional;
+}
+.grabber-3R-Rx9 {
+  @extend %sliderGrabber !optional;
+}
+.loadingPopout-1tyQMM {
+  @extend %spinnerPopout !optional;
+}
+.spinner-2ID8f1 {
+  @extend %spinner !optional;
+}
+.inner-MGEKw {
+  @extend %spinnerInner !optional;
+}
+.wanderingCubes-2A046F {
+  @extend %spinnerWanderingCubes !optional;
+}
+.item-2VgEex {
+  @extend %spinnerWanderingCubesItem !optional;
+}
+.spinningCircle-3aZig- {
+  @extend %spinnerCircle !optional;
+}
+.spinningCircleInner-YCEeSc {
+  @extend %spinnerCircleInner !optional;
+}
+.path-_o_4bT {
+  @extend %spinnerCirclePath !optional;
+}
+.path3-3TAamH {
+  @extend %spinnerCirclePath3 !optional;
+}
+.pulsingEllipsis-S-xTiX {
+  @extend %spinnerPulsingEllipsis !optional;
+}
+.pulsingEllipsis-S-xTiX .item-2VgEex {
+  @extend %spinnerPulsingEllipsisItem !optional;
+}
+.control-1fl03- {
+  @extend %switch !optional;
+}
+.container-1QtPKm {
+  @extend %switchContainer !optional;
+}
+.checked-16gMAN {
+  @extend %switchChecked !optional;
+}
+.slider-HJFN2i {
+  @extend %switchSlider !optional;
+}
+.input-125oad {
+  @extend %switchCheckbox !optional;
+}
+.item-2GWPIy {
+  @extend %tabBarItem !optional;
+}
+.selected-1sf9UK {
+  @extend %tabBarItemSelected !optional;
+}
+.disabled-2G98Nl {
+  @extend %tabBarItemDisabled !optional;
+}
+.premiumLabel-3HPvdB {
+  @extend %premiumLabel !optional;
+}
+.icon-3FU6Ir {
+  @extend %serverBoostIcon !optional;
+}
+.tooltip-33Jwqe {
+  @extend %tooltip !optional;
+}
+.tooltipPointer-sMBQqe {
+  @extend %tooltipPointer !optional;
+}
+.tooltipTop-CgYHUZ {
+  @extend %tooltipTop !optional;
+}
+.tooltipBottom-1itlv3 {
+  @extend %tooltipBottom !optional;
+}
+.tooltipLeft--ZiKiq {
+  @extend %tooltipLeft !optional;
+}
+.tooltipRight-1UPNyA {
+  @extend %tooltipRight !optional;
+}
+.tooltipContent-38tm3I {
+  @extend %tooltipContent !optional;
+}
+.tooltipPrimary-2466a2 {
+  @extend %tooltipPrimary !optional;
+}
+.tooltipBrand-uKW6Xn {
+  @extend %tooltipBrand !optional;
+}
+.hub-3NNcVs {
+  @extend %tooltipHub !optional;
+}
+.icon-3BYlXK {
+  @extend %tooltipHubIcon !optional;
+}
+.tooltipRed-2Pb7EW {
+  @extend %tooltipRed !optional;
+}
+.tooltipGreen-cAApx5 {
+  @extend %tooltipGreen !optional;
+}
+.tooltipYellow-3a3Cmr {
+  @extend %tooltipYellow !optional;
+}
+.tooltip-1T4pLi {
+  @extend %commandTooltip !optional;
+}
+.tooltipPointer-r3VntW {
+  @extend %commandTooltipPointer !optional;
+}
+.wrapper-1_HaEi {
+  @extend %guildsWrapper !optional;
+}
+.tree-3agP2X {
+  @extend %guildsTree !optional;
+}
+.scroller-3X7KbA {
+  @extend %guilds !optional;
+}
+.listItem-3SmSlK {
+  @extend %guild !optional;
+}
+.guildSeparator-a4uisj {
+  @extend %guildSeparator !optional;
+}
+.homeIcon-r0w4ny {
+  @extend %homeIcon !optional;
+}
+.pill-L_aLMQ {
+  @extend %homePill !optional;
+}
+.blobContainer-ikKyFs {
+  @extend %guildContainer !optional;
+}
+.pill-2RsI5Q {
+  @extend %guildPill !optional;
+}
+.item-2LIpTv {
+  @extend %guildPillItem !optional;
+}
+.svg-2zuE5p {
+  @extend %guildSVG !optional;
+}
+.wrapper-3kah-n {
+  @extend %guildLink !optional;
+}
+.selected-1Drb7Z {
+  @extend %guildLinkSelected !optional;
+}
+.icon-3AqZ2e {
+  @extend %guildIcon !optional;
+}
+.childWrapper-1j_1ub {
+  @extend %guildChildWrapper !optional;
+}
+.acronym-2zrAHN {
+  @extend %guildAcronym !optional;
+}
+.lowerBadge-3WTshO {
+  @extend %guildBadgeLower !optional;
+}
+.upperBadge-1V6Iyi {
+  @extend %guildBadgeUpper !optional;
+}
+.iconBadge-32fMme {
+  @extend %guildBadge !optional;
+}
+.icon-2Ug6UV {
+  @extend %guildBadgeIcon !optional;
+}
+.isCurrentUserConnected-1GQb_C {
+  @extend %guildBadgeParticipating !optional;
+}
+.placeholderMask-2FHNZU {
+  @extend %guildPlaceholderMask !optional;
+}
+.dragInner-1CUBf_ {
+  @extend %guildDragInner !optional;
+}
+.wrapper-38slSD {
+  @extend %guildFolderWrapper !optional;
+}
+.expandedFolderBackground-1kSAf6 {
+  @extend %guildExpandedFolderBackground !optional;
+}
+.collapsed-uGXEbi {
+  @extend %guildFolderCollapsed !optional;
+}
+.folder-241Joy {
+  @extend %guildFolder !optional;
+}
+.hover-3m7-WT {
+  @extend %guildFolderHover !optional;
+}
+.folderIconWrapper-1oRIZr {
+  @extend %guildFolderIconWrapper !optional;
+}
+.closedFolderIconWrapper-3tRb2d {
+  @extend %guildFolderClosedIconWrapper !optional;
+}
+.expandedFolderIconWrapper-3RwQpD {
+  @extend %guildFolderExpandedIconWrapper !optional;
+}
+.icon-1zKOXL {
+  @extend %guildFolderIcon !optional;
+}
+.iconSizeSmol-qsFaRK {
+  @extend %guildFolderIconSizeSmol !optional;
+}
+.guildIcon-2I5sfu {
+  @extend %guildFolderGuildIcon !optional;
+}
+.noIcon-3gSX9V {
+  @extend %guildFolderGuildNoIcon !optional;
+}
+.circleIconButton-1VxDrg {
+  @extend %circleIconButton !optional;
+}
+.selected-2r1Hvo {
+  @extend %circleIconButtonSelected !optional;
+}
+.guildsErrorContainer-2uWYsE {
+  @extend %guildsErrorContainer !optional;
+}
+.guildsError-YJjW3A {
+  @extend %guildsError !optional;
+}
+.breadcrumbs-2uP7wU {
+  @extend %breadcrumbs !optional;
+}
+.breadcrumbWrapper-3rpYiO {
+  @extend %breadcrumbWrapper !optional;
+}
+.breadcrumbClickWrapper-1nRR9e {
+  @extend %breadcrumbClickWrapper !optional;
+}
+.breadcrumbFinalWrapper-1BwQdx {
+  @extend %breadcrumbFinalWrapper !optional;
+}
+.breadcrumb-2tlXzO {
+  @extend %breadcrumb !optional;
+}
+.breadcrumbArrow-1LY2zF {
+  @extend %breadcrumbArrow !optional;
+}
+.container-ZMc96U {
+  @extend %headerBar !optional;
+}
+.children-3xh0VB {
+  @extend %headerBarChildren !optional;
+}
+.toolbar-3_r2xA {
+  @extend %toolbar !optional;
+}
+.title-17SveM {
+  @extend %headerBarTitle !optional;
+}
+.muted-eZM05q {
+  @extend %headerBarTitleMuted !optional;
+}
+.topic-11NuQZ {
+  @extend %headerBarTopic !optional;
+}
+.akaBadge-3i7V3p {
+  @extend %headerBarAkaBadge !optional;
+}
+.nicknames-10Sg6e {
+  @extend %headerBarNicknames !optional;
+}
+.iconWrapper-2awDjA {
+  @extend %headerBarIconWrapper !optional;
+}
+.icon-2xnN2Y {
+  @extend %headerBarIcon !optional;
+}
+.clickable-ZD7xvu {
+  @extend %headerBarIconClickable !optional;
+}
+.selected-29KTGM {
+  @extend %headerBarIconSelected !optional;
+}
+.icon-2xnN2Y.popout-open {
+  @extend %headerBarIconPopoutOpen !optional;
+}
+.cloud-PaJUGP {
+  @extend %headerBarIconUpdateCloud !optional;
+}
+.downloadArrow-3u87TS {
+  @extend %headerBarIconUpdateDownloadArrow !optional;
+}
+.iconBadge-3Mmg92 {
+  @extend %headerBarIconBadge !optional;
+}
+.divider-q3P9HC {
+  @extend %headerBarDivider !optional;
+}
+.updateAvailable-3JeyBT {
+  @extend %headerBarIconUpdateAvailable !optional;
+}
+.iconForeground-3y9f0B {
+  @extend %headerBarIconForeground !optional;
+}
+.updateIconForeground-2V_zo4 {
+  @extend %headerBarIconUpdateForeground !optional;
+}
+.link-2T7oYD {
+  @extend %headerBarLinkButton !optional;
+}
+.linkIcon-PzfbqY {
+  @extend %headerBarLinkIcon !optional;
+}
+.headerBarListing-3DL3sL {
+  @extend %headerBarListing !optional;
+}
+.headerSection-VnaiAo {
+  @extend %headerBarListingSection !optional;
+}
+.headerPurchase-2z_nch {
+  @extend %headerBarPurchase !optional;
+}
+.active-MpmWDn {
+  @extend %headerBarPurchaseActive !optional;
+}
+.input-1nrc5P {
+  @extend %headerBarInput !optional;
+}
+.mask-2Me5HY {
+  @extend %headerBarStatusMask !optional;
+}
+.content-FDHp32 {
+  @extend %headerBarModalContent !optional;
+}
+.search-2Mwzzq {
+  @extend %chatSearch !optional;
+}
+.open-1F8u2c {
+  @extend %chatSearchOpen !optional;
+}
+.focused-1xh-wG {
+  @extend %chatSearchFocused !optional;
+}
+.searchBar-jGtisZ {
+  @extend %chatSearchBar !optional;
+}
+.DraftEditor-root {
+  @extend %chatSearchRoot !optional;
+}
+.public-DraftEditorPlaceholder-root {
+  @extend %chatSearchPlaceholder !optional;
+}
+.searchFilter-2UfsDk {
+  @extend %chatSearchFilter !optional;
+}
+.searchAnswer-23w-CH {
+  @extend %chatSearchAnswer !optional;
+}
+.libraryFilter-1nwg6T {
+  @extend %librarySearch !optional;
+}
+.focused-mTQKRf {
+  @extend %librarySearchFocused !optional;
+}
+.container-2oNtJn {
+  @extend %librarySearchBar !optional;
+}
+.inner-2pOSmK {
+  @extend %librarySearchBarInner !optional;
+}
+.input-2m5SfJ {
+  @extend %librarySearchInput !optional;
+}
+.iconLayout-3Bjizv {
+  @extend %librarySearchIconLayout !optional;
+}
+.icon-3CDcPB {
+  @extend %librarySearchIcon !optional;
+}
+.clear-3102V9 {
+  @extend %librarySearchIconClear !optional;
+}
+.browseSearch-e9jF-f {
+  @extend %storeSearch !optional;
+}
+.focused-20l6Zp {
+  @extend %storeSearchFocused !optional;
+}
+.container-2oNtJn {
+  @extend %storeSearchBar !optional;
+}
+.inner-2pOSmK {
+  @extend %storeSearchBarInner !optional;
+}
+.input-2m5SfJ {
+  @extend %storeSearchInput !optional;
+}
+.iconLayout-3Bjizv {
+  @extend %storeSearchIconLayout !optional;
+}
+.iconContainer-6pgShY {
+  @extend %storeSearchIconContainer !optional;
+}
+.icon-3CDcPB {
+  @extend %storeSearchIcon !optional;
+}
+.visible-CwPfRb {
+  @extend %storeSearchIconVisible !optional;
+}
+.clear-3102V9 {
+  @extend %storeSearchIconClear !optional;
+}
+.applicationStore-2nk7Lo {
+  @extend %nitroHomePage !optional;
+}
+.topPill-2vcLsa {
+  @extend %topPill !optional;
+}
+.item-2GWPIy {
+  @extend %topPillItem !optional;
+}
+.selected-1sf9UK {
+  @extend %topPillItemSelected !optional;
+}
+.themed-qqoYp3 {
+  @extend %topPillItemThemed !optional;
+}
+.container-2cd8Mz {
+  @extend %friends !optional;
+}
+.peopleColumn-1wMU14 {
+  @extend %friendsColumn !optional;
+}
+.peopleListItem-u6dGxF {
+  @extend %friendsItem !optional;
+}
+.active-2UF8Zh {
+  @extend %friendsItemActive !optional;
+}
+.activity-1KqKY2 {
+  @extend %friendActivity !optional;
+}
+.actionButton-3-B2x- {
+  @extend %friendActionButton !optional;
+}
+.highlight-3DSi7b {
+  @extend %friendActionButtonHighlight !optional;
+}
+.actionAccept-2nmnLv {
+  @extend %friendActionAcceptButton !optional;
+}
+.actionDeny-1pQVuZ {
+  @extend %friendActionDenyButton !optional;
+}
+.addFriendInputWrapper-kkoSV9 {
+  @extend %friendsAddFriendInputWrapper !optional;
+}
+.addFriendInput-1Ta-rO {
+  @extend %friendsAddFriendInput !optional;
+}
+.addFriendHint-1EVQJY {
+  @extend %friendsAddFriendHint !optional;
+}
+.container-3tKtM_ {
+  @extend %friendsDiscoverHint !optional;
+}
+.container-36u7Lw {
+  @extend %libraryContainer !optional;
+}
+.root-1BQpZw {
+  @extend %libraryRoot !optional;
+}
+.libraryHeader-2loraV {
+  @extend %libraryHeader !optional;
+}
+.libraryFilter-1nwg6T {
+  @extend %libraryFilter !optional;
+}
+.libraryFilterInput-3JzqZD {
+  @extend %libraryFilterInput !optional;
+}
+.scroller-2XLwLg {
+  @extend %libraryScroller !optional;
+}
+.table-2J5ScI {
+  @extend %libraryTable !optional;
+}
+.header-2EadGG {
+  @extend %libraryTableHeader !optional;
+}
+.headerCell-3WoADH {
+  @extend %libraryTableHeaderCell !optional;
+}
+.headerCellSorted-2sXjX3 {
+  @extend %libraryTableHeaderCellSorted !optional;
+}
+.headerCellContent-iBms3e {
+  @extend %libraryTableHeaderCellContent !optional;
+}
+.rowWrapper-N-4fji {
+  @extend %libraryTableRowWrapper !optional;
+}
+.rowWrapperActive-nOO7R3 {
+  @extend %libraryTableRowWrapperActive !optional;
+}
+.rowWrapperDim-huz1mA {
+  @extend %libraryTableRowWrapperDim !optional;
+}
+.rowBackground-1vJ4Ix {
+  @extend %libraryTableRowBackground !optional;
+}
+.row-1_1Nya {
+  @extend %libraryTableRow !optional;
+}
+.bodyCell-10p1iS {
+  @extend %libraryTableBodyCell !optional;
+}
+.nameBodyCell-2RYQL9 {
+  @extend %libraryTableNameCell !optional;
+}
+.gameIcon-14OR-M {
+  @extend %libraryTableGameIcon !optional;
+}
+.nameCellInfo-1PSy8b {
+  @extend %libraryTableNameCellInfo !optional;
+}
+.nameCellText-2i43C0 {
+  @extend %libraryTableNameCellText !optional;
+}
+.textCell-sKsLUQ {
+  @extend %libraryTableTextCell !optional;
+}
+.lastPlayedCellNew-2sRIP_ {
+  @extend %libraryTableLastPlayedCellNew !optional;
+}
+.actionsCell-20cP38 {
+  @extend %libraryTableActionsCell !optional;
+}
+.settingIcons-38tvz2 {
+  @extend %libraryTableSettingsIcons !optional;
+}
+.settingIcon-1PlYq2 {
+  @extend %libraryTableSettingIcon !optional;
+}
+.hidden-17y4NU {
+  @extend %libraryTableSettingIconHidden !optional;
+}
+.scroller-1TOeMq {
+  @extend %librarySettingsScroller !optional;
+}
+.installationPath-2PbaRC {
+  @extend %libraryInstallationPath !optional;
+}
+.background-3laMJt {
+  @extend %libraryUsageBackground !optional;
+}
+.foreground-2JnqVD {
+  @extend %libraryUsageForeground !optional;
+}
+.defaultIndicator-1AxErs {
+  @extend %libraryDefaultIndicator !optional;
+}
+.playButton-2Hc0gE {
+  @extend %libraryPlayButton !optional;
+}
+.playButtonContents-3vgiax {
+  @extend %libraryPlayButtonContents !optional;
+}
+.buttonShine-p5V5TB {
+  @extend %libraryPlayButtonShine !optional;
+}
+.container-2o3qEW {
+  @extend %membersContainer !optional;
+}
+.membersWrap-3NUR2t {
+  @extend %membersWrap !optional;
+}
+.members-3WRCEx {
+  @extend %members !optional;
+}
+.membersGroup-2eiWxl {
+  @extend %membersGroup !optional;
+}
+.member-2gU6Ar {
+  @extend %member !optional;
+}
+.selected-1-Z6gm {
+  @extend %memberSelected !optional;
+}
+.offline-22aM7E {
+  @extend %memberOffline !optional;
+}
+.layout-1qmrhw {
+  @extend %memberLayout !optional;
+}
+.avatar-6qzftW {
+  @extend %memberAvatar !optional;
+}
+.content-1U25dZ {
+  @extend %memberContent !optional;
+}
+.nameAndDecorators-3ERwy2 {
+  @extend %memberNameAndDecorators !optional;
+}
+.name-3Vmqxm {
+  @extend %memberName !optional;
+}
+.username-i5-wv- {
+  @extend %memberUsername !optional;
+}
+.ownerIcon-255uKo {
+  @extend %memberOwnerIcon !optional;
+}
+.subText-OGOWMj {
+  @extend %memberSubText !optional;
+}
+.activity-2EQDZv {
+  @extend %memberActivity !optional;
+}
+.activityEmoji-SDBJp8 {
+  @extend %memberActivityEmoji !optional;
+}
+.activityText-1rR-8O {
+  @extend %memberActivityText !optional;
+}
+.icon-Lupfh- {
+  @extend %memberActivityIcon !optional;
+}
+.memberGroupsPlaceholder-9tqX9V {
+  @extend %memberGroupPlaceholder !optional;
+}
+.placeholder-38d3Iv {
+  @extend %memberPlaceholder !optional;
+}
+.multiplePlaceholder-3kBQ96 {
+  @extend %memberPlaceholderMultiple !optional;
+}
+.placeholderAvatar-1qAcRZ {
+  @extend %memberPlaceholderAvatar !optional;
+}
+.placeholderUsername-3iQi_D {
+  @extend %memberPlaceholderUsername !optional;
+}
+.mulitplePlaceholderUsername-2T3DCI {
+  @extend %memberPlaceholderUsernameMultiple !optional;
+}
+.invite-3uuHYQ {
+  @extend %activityInvite !optional;
+}
+.coverImageWrapper-2wx5q1 {
+  @extend %activityInviteCoverImageWrapper !optional;
+}
+.coverImage-oTYoFG {
+  @extend %activityInviteCoverImage !optional;
+}
+.coverImageActionable-38UjN9 {
+  @extend %activityInviteCoverImageActionable !optional;
+}
+.coverImageNotActionable-3_d2tn {
+  @extend %activityInviteCoverImageNotActionable !optional;
+}
+.blurred-3p_Z84 {
+  @extend %activityInviteCoverImageBlurred !optional;
+}
+.artwork-28Cmnt {
+  @extend %activityInviteArtwork !optional;
+}
+.artworkActionable-hSZZCK {
+  @extend %activityInviteArtworkActionable !optional;
+}
+.artworkNotActionable-UGHb0J {
+  @extend %activityInviteArtworkNotActionable !optional;
+}
+.artworkSpotifySessionEnded-D18iXB {
+  @extend %activityInviteArtworkSessionEnded !optional;
+}
+.header-1Fx4D1 {
+  @extend %activityInviteHeader !optional;
+}
+.partyStatus-2-VcyG {
+  @extend %activityInvitePartyStatus !optional;
+}
+.actionAndParty-3gueRh {
+  @extend %activityInviteActionAndParty !optional;
+}
+.actionButton-1oqssG {
+  @extend %activityInviteActionButton !optional;
+}
+.name-QjR4Jk {
+  @extend %activityInviteName !optional;
+}
+.partyMembers-3cd-7x {
+  @extend %activityInvitePartyMembers !optional;
+}
+.partyMember-1ywltu {
+  @extend %activityInvitePartyMember !optional;
+}
+.partyMemberKnown-3IXfnB {
+  @extend %activityInvitePartyMemberKnown !optional;
+}
+.partyAvatar-1X95NO {
+  @extend %activityInvitePartyAvatar !optional;
+}
+.partyMemberEmpty-GtlQ_s {
+  @extend %activityInvitePartyMemberEmpty !optional;
+}
+.moreUsers-3PdGZN {
+  @extend %activityInviteMoreUsers !optional;
+}
+.helpIcon-24pk1Z {
+  @extend %activityInviteHelpIcon !optional;
+}
+.details-1nO3iV {
+  @extend %activityInviteDetails !optional;
+}
+.state-3Nm83F {
+  @extend %activityInviteState !optional;
+}
+.textLink-_PElWP {
+  @extend %activityInviteTextLink !optional;
+}
+.attachment-1PZZB2 {
+  @extend %attachment !optional;
+}
+.embedWrapper-1MtIDg {
+  @extend %attachmentEmbedWrapper !optional;
+}
+.icon-1KCy88 {
+  @extend %attachmentIcon !optional;
+}
+.attachmentInner-1fP7iq {
+  @extend %attachmentInner !optional;
+}
+.filenameLinkWrapper-3Rc6sk {
+  @extend %fileNameLinkWrapper !optional;
+}
+.fileNameLink-1odyIc {
+  @extend %fileNameLink !optional;
+}
+.metadata-1E7Z4i {
+  @extend %fileMetadata !optional;
+}
+.downloadButton-2HLFWN {
+  @extend %attachmentDownloadButton !optional;
+}
+.filenameWrapper-11iVyW {
+  @extend %fileNameWrapper !optional;
+}
+.filename-3A5bVl {
+  @extend %fileName !optional;
+}
+.size-2mQ7x9 {
+  @extend %fileSize !optional;
+}
+.progress-xNqAjK {
+  @extend %fileProgress !optional;
+}
+.progressBar-3fV-Dd {
+  @extend %fileProgressBar !optional;
+}
+.cancelButton-oOSTov {
+  @extend %attachmentCancelButton !optional;
+}
+.downloadButton-2HLFWN,
+.cancelButton-oOSTov {
+  @extend %attachmentButton !optional;
+}
+.inline {
+  @extend %codeInline !optional;
+}
+pre {
+  @extend %codePre !optional;
+}
+.hljs {
+  @extend %codeHLJS !optional;
+}
+.codeActions-NqAKTN {
+  @extend %codeActions !optional;
+}
+.container-2sjPya {
+  @extend %embedContainer !optional;
+}
+.embed-hKpSrO {
+  @extend %embed !optional;
+}
+.grid-1aWVsE {
+  @extend %embedGrid !optional;
+}
+.embedMargin-2PsaQ4 {
+  @extend %embedMargin !optional;
+}
+.embedLink-1TLNja {
+  @extend %embedLink !optional;
+}
+.embedProvider-1GSN0c {
+  @extend %embedProvider !optional;
+}
+.embedAuthor-TJIHp5 {
+  @extend %embedAuthor !optional;
+}
+.embedAuthorName-pGyUPR {
+  @extend %embedAuthorname !optional;
+}
+.embedAuthorNameLink-1NK1y6 {
+  @extend %embedAuthorNameLink !optional;
+}
+.embedAuthorIcon-3pnkS4 {
+  @extend %embedAuthorIcon !optional;
+}
+.embedTitle-2n1pEb {
+  @extend %embedTitle !optional;
+}
+.embedTitleLink-1QbYA- {
+  @extend %embedTitleLink !optional;
+}
+.embedDescription-1DrJxZ {
+  @extend %embedDescription !optional;
+}
+.embedFields-2yHGHT {
+  @extend %embedFields !optional;
+}
+.embedField-2kda1Q {
+  @extend %embedField !optional;
+}
+.embedFieldName-9LYSyR {
+  @extend %embedFieldName !optional;
+}
+.embedFieldValue-3EHtvR {
+  @extend %embedFieldValue !optional;
+}
+.embedImage-2Ynqkh {
+  @extend %embedImagea !optional;
+}
+.embedFull-1HGV2S {
+  @extend %embedFull !optional;
+}
+.imageWrapper-oMkQl4 {
+  @extend %imageWrapper !optional;
+}
+.imageWrapperBackground-3Vss_C {
+  @extend %imageWrapperBackground !optional;
+}
+.imageWrapperInner-3X03J4 {
+  @extend %imageWrapperInner !optional;
+}
+.imageError-dy476I {
+  @extend %imageError !optional;
+}
+.embedThumbnail-2nTasl {
+  @extend %embedThumbnail !optional;
+}
+.embedVideo-2ixt5A {
+  @extend %embedVideo !optional;
+}
+.embedIframe-1UpXja {
+  @extend %embedIframe !optional;
+}
+.gifTag-1TvtGO {
+  @extend %embedGIFTag !optional;
+}
+.embedVideoActions-2XdFk2 {
+  @extend %embedVideoActions !optional;
+}
+.embedVideoAction-39JZ9- {
+  @extend %embedVideoAction !optional;
+}
+.wrapper-x4po40 {
+  @extend %embedVideoActionsButtonWrapper !optional;
+}
+.embedFooter-3dj0UE {
+  @extend %embedFooter !optional;
+}
+.embedFooterText-2Mc7H9 {
+  @extend %embedFooterText !optional;
+}
+.embedFooterSeparator-2YCzYT {
+  @extend %embedFooterSeparator !optional;
+}
+.embedFooterIcon-1dTZzD {
+  @extend %embedFooterIcon !optional;
+}
+.wrapper-1HIH0j {
+  @extend %inviteWrapper !optional;
+}
+.h5-2feg8J {
+  @extend %inviteTitle !optional;
+}
+.guildIcon-3ZfRfI {
+  @extend %inviteGuildIcon !optional;
+}
+.guildIconExpired-2BFmZC {
+  @extend %inviteGuildIconExpired !optional;
+}
+.guildInfo-UCKhrV {
+  @extend %inviteGuildInfo !optional;
+}
+.guildName-3G4jq- {
+  @extend %inviteGuildName !optional;
+}
+.guildNameJoined-H7D9uF {
+  @extend %inviteGuildNameJoined !optional;
+}
+.guildNameExpired-2Hp80V {
+  @extend %inviteGuildNameExpired !optional;
+}
+.guildDetail-3EJhW_ {
+  @extend %inviteGuildDetail !optional;
+}
+.status-JIDx3x {
+  @extend %inviteStatus !optional;
+}
+.statusOnline-Iw3r2o {
+  @extend %inviteStatusOnline !optional;
+}
+.statusOffline-2R-ArP {
+  @extend %inviteStatusOffline !optional;
+}
+.onlineCount-w6_WmG {
+  @extend %inviteOnlineCount !optional;
+}
+.button-2b4VEQ {
+  @extend %inviteButton !optional;
+}
+.lookFilled-1H2Jvj.colorGreen-jIPCAS {
+  @extend %inviteButtonJoin !optional;
+}
+.lookFilled-1H2Jvj.colorBrand-2M3O3N {
+  @extend %inviteButtonExpired !optional;
+}
+.wrapper-1FP9YQ {
+  @extend %player !optional;
+}
+.wrapperAudio-1Bzv_Z {
+  @extend %playerAudio !optional;
+}
+.wrapperControlsHidden-2BK8R2 {
+  @extend %playerControlsHidden !optional;
+}
+.wrapperPaused-9B8znP {
+  @extend %playerPaused !optional;
+}
+.wrapperPlaying-1D8LD- {
+  @extend %playerPlaying !optional;
+}
+.metadata-3IncIG {
+  @extend %playerMetadata !optional;
+}
+.audioMetadata-1Hrt8T {
+  @extend %playerAudioMetadata !optional;
+}
+.metadataContent-lalfZ3 {
+  @extend %playerMetadataContent !optional;
+}
+.metadataName-1KMZtB {
+  @extend %playerMetadataName !optional;
+}
+.metadataSize-2A2s1T {
+  @extend %playerMetadataSize !optional;
+}
+.metadataDownload-3IY84h {
+  @extend %playerMetadataDownload !optional;
+}
+.metadataIcon-3QMhu9 {
+  @extend %playerMetadataIcon !optional;
+}
+.audioControls-3fmemK {
+  @extend %playerAudioControls !optional;
+}
+.videoControls-2NzHnF {
+  @extend %playerVideoControls !optional;
+}
+.controlIcon-1grhw_ {
+  @extend %playerControlIcon !optional;
+}
+.durationTimeWrapper-LdSEv8 {
+  @extend %playerDurationTimeWrapper !optional;
+}
+.durationTimeDisplay-QwCeRr {
+  @extend %playerDurationTimeDisplay !optional;
+}
+.durationTimeSeparator-1Cqi9N {
+  @extend %playerDurationTimeSeparator !optional;
+}
+.mediaBarInteraction-tUE5dq {
+  @extend %playerMediaBarInteraction !optional;
+}
+.mediaBarInteractionDragging-3XLL8k {
+  @extend %playerMediaBarInteractionDragging !optional;
+}
+.mediaBarWrapper-33h1oY {
+  @extend %playerMediaBarWrapper !optional;
+}
+.buffer-3eVqKK {
+  @extend %playerMediaBarBuffer !optional;
+}
+.mediaBarPreview-1gUbVy {
+  @extend %playerMediaBarPreview !optional;
+}
+.mediaBarGrabber-FvJKJg {
+  @extend %playerMediaBarGrabber !optional;
+}
+.mediaBarProgress-38I317 {
+  @extend %playerMediaBarProgress !optional;
+}
+.bubble-3XikHF {
+  @extend %playerMediaBarBubble !optional;
+}
+.mouse-mode.full-motion {
+  @extend %mouseModeFullMotion !optional;
+}
+.message-2CShn3 {
+  @extend %message !optional;
+}
+.wrapper-30-Nkg {
+  @extend %messagesWrapper !optional;
+}
+.selected-2LX7Jy {
+  @extend %messageSelected !optional;
+}
+.groupStart-3Mlgv1 {
+  @extend %messageGroupStart !optional;
+}
+.cozyMessage-1DWF9U {
+  @extend %messageCozy !optional;
+}
+.contents-2MsGLg {
+  @extend %messageContent !optional;
+}
+.localBotMessage-1cGMdw {
+  @extend %messageGroupLocalBotMessage !optional;
+}
+.messageGroupBlocked-3oqIzZ {
+  @extend %messageGroupBlocked !optional;
+}
+.revealed-1_RKsf {
+  @extend %messageGroupBlockedRevealed !optional;
+}
+.messageGroupBlockedBtn-1Cdz7q {
+  @extend %messageGroupBlockedButton !optional;
+}
+.messageCompact-kQa7ES {
+  @extend %messageCompact !optional;
+}
+.header-2jRmjb {
+  @extend %messageHeader !optional;
+}
+.headerText-2z4IhQ {
+  @extend %messageHeaderText !optional;
+}
+.username-h_Y3Us {
+  @extend %messageUsername !optional;
+}
+.timestamp-p1Df1m {
+  @extend %messageTimestamp !optional;
+}
+.timestamp-p1Df1m.alt-1dvXnH {
+  @extend %messageTimestampAlt !optional;
+}
+.container-x059i8 {
+  @extend %messageSystemContainer !optional;
+}
+.repliedMessage-3Z6XBG {
+  @extend %messageReplied !optional;
+}
+.repliedTextPreview-1bvxun {
+  @extend %messageRepliedTextPreview !optional;
+}
+.clickable-31pE3P {
+  @extend %messageRepliedTextPreviewClickable !optional;
+}
+.repliedTextContent-2hOYMB {
+  @extend %messageRepliedTextContent !optional;
+}
+.repliedTextContentIcon-1LQXRB {
+  @extend %messageRepliedTextContentIcon !optional;
+}
+.repliedTextPlaceholder-1Njd47 {
+  @extend %messageRepliedTextPlaceholder !optional;
+}
+.executedCommand-14-SNW {
+  @extend %messageRepliedExecutedCommand !optional;
+}
+.commandName-1KhvGm {
+  @extend %messageRepliedCommandName !optional;
+}
+.inlineMediaEmbed-1m3ApS {
+  @extend %messageInlineMediaEmbed !optional;
+}
+.mentioned-Tre-dv {
+  @extend %mentioned !optional;
+}
+.interactive {
+  @extend %mentionedInteractive !optional;
+}
+.markup-eYLPri {
+  @extend %markup !optional;
+}
+.icon-JRJzJz {
+  @extend %messageSystemIcon !optional;
+}
+.wrapper-1ZcZW- {
+  @extend %mentionWrapper !optional;
+}
+.mention {
+  @extend %mention !optional;
+}
+.channelMention {
+  @extend %channelMention !optional;
+}
+.anchor-1X4H4q {
+  @extend %anchor !optional;
+}
+.anchorUnderlineOnHover-wiZFZ_ {
+  @extend %anchorUnderlineOnHover !optional;
+}
+.buttonContainer-1502pf {
+  @extend %messageButtonContainer !optional;
+}
+.buttons-3dF5Kd {
+  @extend %messageButtons !optional;
+}
+.wrapper-2vIMkT {
+  @extend %messageButtonWrapper !optional;
+}
+.button-3bklZh {
+  @extend %messageButton !optional;
+}
+.selected-69H4ua {
+  @extend %messageButtonSelected !optional;
+}
+.blockquoteContainer-3VtvI1 {
+  @extend %blockquoteContainer !optional;
+}
+.blockquoteDivider-363utW {
+  @extend %blockquoteDivider !optional;
+}
+.reactions-3ryImn {
+  @extend %reactions !optional;
+}
+.reaction-3vwAF2 {
+  @extend %reaction !optional;
+}
+.reaction-102jx9 {
+  @extend %forumReaction !optional;
+}
+.reactionMe-1PwQAc {
+  @extend %reactionMe !optional;
+}
+.reactionMe-2zhiyZ {
+  @extend %forumReactionMe !optional;
+}
+.reactionInner-YJjOtT {
+  @extend %reactionInner !optional;
+}
+.reactionInner-1po5__ {
+  @extend %forumReactionInner !optional;
+}
+.reactionCount-26U4As {
+  @extend %reactionCount !optional;
+}
+.reactionCount-SWXh9W {
+  @extend %forumReactionCount !optional;
+}
+.addReactButton-3bSQb6 {
+  @extend %forumReactAdd !optional;
+}
+.buttonInner-3aRbcx {
+  @extend %forumMessageButton !optional;
+}
+.active-OdlCV- {
+  @extend %forumFollowActive !optional;
+}
+.container-2_J666 {
+  @extend %forumGetStartedContainer !optional;
+}
+.stepContainer-SaPPyG {
+  @extend %forumGetStartedStep !optional;
+}
+.staticToolbar-x12NJC {
+  @extend %forumSettingsGuidelinesToolbar !optional;
+}
+.spoilerMarkdownContent-2R1Vwe {
+  @extend %spoilerMarkdownContent !optional;
+}
+.hidden-3B-Rum {
+  @extend %spoilerHidden !optional;
+}
+.inlineContent-2YnoDy {
+  @extend %spoilerInlineContent !optional;
+}
+.spoilerContainer-3wsC0k {
+  @extend %spoilerContainer !optional;
+}
+.spoilerWarning-8ovW0v {
+  @extend %spoilerWarning !optional;
+}
+.spoiler-3aUoEX {
+  @extend %spoilerImage !optional;
+}
+.hiddenSpoilers-19m4Pg {
+  @extend %spoilerImageHidden !optional;
+}
+.spoilerEmbed-1LYr3G {
+  @extend %spoilerEmbed !optional;
+}
+.hiddenSpoiler-3pPzRF {
+  @extend %spoilerEmbedHidden !optional;
+}
+.keyboardShortcutsModal-2CRmCm {
+  @extend %keyboardShortcutsModal !optional;
+}
+.combo-3PNrpQ {
+  @extend %keybindCombo !optional;
+}
+.key-RP8gj3 {
+  @extend %keybindShortcutKey !optional;
+}
+.inputWrapper-1YNMmM {
+  @extend %inputWrapper !optional;
+}
+.input-3O04eu {
+  @extend %input !optional;
+}
+.focused-16iuXg {
+  @extend %inputFocused !optional;
+}
+.noBorder-2p63tM {
+  @extend %inputNoBorder !optional;
+}
+.modal-3Hrb0S {
+  @extend %modal !optional;
+}
+.root-1CAIjD {
+  @extend %modalRoot !optional;
+}
+.header-2w6VV8 {
+  @extend %modalHeader !optional;
+}
+.footer-IubaaS {
+  @extend %modalFooter !optional;
+}
+.footer-VCsJQY {
+  @extend %uploadModalFooter !optional;
+}
+.userProfileModalOuter-2wdWjU {
+  @extend %userModalOuter !optional;
+}
+.userProfileModalInner-3dx9L9 {
+  @extend %userModalInner !optional;
+}
+.profileBanner-1owKI5 {
+  @extend %userModalProfileBanner !optional;
+}
+.badgeList-2aoHPw {
+  @extend %userModalBadgeList !optional;
+}
+.overlayBackground-2aa7wt {
+  @extend %userModalOverlayBackground !optional;
+}
+.body-1Ukv50 {
+  @extend %userModalBody !optional;
+}
+.tabBarContainer-sCZC4w {
+  @extend %userModalTabBarContainer !optional;
+}
+.tabBar-2hXqzU {
+  @extend %userModalTabBar !optional;
+}
+.userInfoSection-2u2hir {
+  @extend %userModalInfoSection !optional;
+}
+.userInfoSectionHeader-2mYYun {
+  @extend %userModalInfoSectionHeader !optional;
+}
+.note-3M15gE {
+  @extend %userModalNote !optional;
+}
+.connectedAccounts-2R5M4w {
+  @extend %userModalConnectedAccounts !optional;
+}
+.connectedAccountContainer-3aLMHJ {
+  @extend %userModalConnectedAccountContainer !optional;
+}
+.connectedAccountIcon-3FdW8x {
+  @extend %userModalConnectedAccountIcon !optional;
+}
+.connectedAccountName-2QfG-N {
+  @extend %userModalConnectedAccountName !optional;
+}
+.connectedAccountVerifiedIcon-3EPFPC {
+  @extend %userModalConnectedAccountVerifiedIcon !optional;
+}
+.connectedAccountOpenIcon-3i81Tz {
+  @extend %userModalConnectedAccountOpenIcon !optional;
+}
+.userProfileActivity-sal5no {
+  @extend %userModalActivity !optional;
+}
+.listScroller-entkMk {
+  @extend %userModalListScroller !optional;
+}
+.listRow-2nO1T6 {
+  @extend %userModalListRow !optional;
+}
+.listRowContent-PEmSWj {
+  @extend %userModalListRowConent !optional;
+}
+.listName-PwbeHL {
+  @extend %userModalListName !optional;
+}
+.guildNick-fe8oPN {
+  @extend %userModalListGuildNick !optional;
+}
+.listDiscriminator-1HAKWY {
+  @extend %userModalListDiscriminator !optional;
+}
+.pageWrapper-2PwDoS {
+  @extend %pageWrapper !optional;
+}
+.pageHeader-3615mp {
+  @extend %pageHeader !optional;
+}
+.body-2lagau {
+  @extend %pageBody !optional;
+}
+.searchPage-1Rxeav {
+  @extend %searchPage !optional;
+}
+.search-25t1e9 {
+  @extend %search !optional;
+}
+.searchBox-pyIJJj {
+  @extend %searchBox !optional;
+}
+.searchPageBox-2yxhpp {
+  @extend %searchPageBox !optional;
+}
+.searchBoxInput-P0mWHW {
+  @extend %searchBoxInput !optional;
+}
+.searchIcon-34RNw9 {
+  @extend %searchBoxIconSearch !optional;
+}
+.clearIcon-TMIIUa {
+  @extend %searchBoxClearIcon !optional;
+}
+.closeIcon-BMGxx0 {
+  @extend %searchBoxCloseIcon !optional;
+}
+.categoryItem-Kc_HK_ {
+  @extend %discoverCategoryItem !optional;
+}
+.selectedCategoryItem-ZjqSui {
+  @extend %discoverCategoryItemSelected !optional;
+}
+.itemInner-3e_4G4 {
+  @extend %discoverCategoryItemInner !optional;
+}
+.guildList-3GXKvP {
+  @extend %discoverGuildList !optional;
+}
+.loading-3ozbwt {
+  @extend %discoverGuildCardLoading !optional;
+}
+.loaded-igpmmx {
+  @extend %discoverGuildCardLoaded !optional;
+}
+.card-2TuZPZ {
+  @extend %discoverGuildCard !optional;
+}
+.container-1wv6C6 {
+  @extend %discoverHubCard !optional;
+}
+.iconMask-2fMR98 {
+  @extend %discoverGuildCardIcon !optional;
+}
+.splash-1VADA3 {
+  @extend %discoverCardSplash !optional;
+}
+.fade-rdt5qH {
+  @extend %discoverCardFade !optional;
+}
+.guildInfo-PdhToW {
+  @extend %discoverGuildInfo !optional;
+}
+.guildIcon-1nnIAv {
+  @extend %discoverGuildIcon !optional;
+}
+.avatar-30VHqO {
+  @extend %discoverGuildAvatar !optional;
+}
+.title-2vVOzt {
+  @extend %discoverGuildTitle !optional;
+}
+.memberInfo-3G3E9W {
+  @extend %discoverGuildMemberInfo !optional;
+}
+.dotOnline-j08lOY {
+  @extend %discoverGuildStatusOnline !optional;
+}
+.dotOffline-38lJFn {
+  @extend %discoverGuildStatusOffline !optional;
+}
+.viewButton-3jDZqV {
+  @extend %discoverViewButton !optional;
+}
+.viewButtonVisible-2AtUPc {
+  @extend %discoverViewButtonVisible !optional;
+}
+.languageSelector-1hjSyO {
+  @extend %discoverLanguageSelector !optional;
+}
+.css-12hk9yc-control {
+  @extend %discoverLanguageSelectorControl !optional;
+}
+.separator-2xbLUz {
+  @extend %discoverSectionSeparator !optional;
+}
+.emptyContainer-poti7J {
+  @extend %discoverEmptyResults !optional;
+}
+.emptyImage-2pCD2j {
+  @extend %discoverEmptyImage !optional;
+}
+.emptyHeader-2cxTFP {
+  @extend %discoverEmptyTitle !optional;
+}
+.container-1S70rv {
+  @extend %autocompletePopout !optional;
+}
+.positionTop-3SXWNj {
+  @extend %autocompletePopoutTop !optional;
+}
+.positionBottom-1pd-ap {
+  @extend %autocompletePopoutBottom !optional;
+}
+.autocompleteShadow-2nfsSy {
+  @extend %autocompletePopoutShadow !optional;
+}
+.autocompleteArrowWrapper-Kr4DnW {
+  @extend %autocompletePopoutArrowWrapper !optional;
+}
+.autocompleteArrow-jJE9TQ {
+  @extend %autocompletePopoutArrow !optional;
+}
+.header-3i_Csh {
+  @extend %autocompletePopoutHeader !optional;
+}
+.autocompleteHeaderBackground-3u7TwO {
+  @extend %autocompletePopoutHeaderBackground !optional;
+}
+.headerText-27z-EV {
+  @extend %autocompletePopoutHeaderText !optional;
+}
+.input-2lpFVz {
+  @extend %autocompletePopoutInput !optional;
+}
+.sectionTag-28mLyE {
+  @extend %autocompletePopoutSection !optional;
+}
+.autocompleteScroller-3L6kmy {
+  @extend %autocompletePopoutScroller !optional;
+}
+.row-1Ib2uD {
+  @extend %autocompletePopoutRow !optional;
+}
+.selected-1IWCoj {
+  @extend %autocompletePopoutSelected !optional;
+}
+.container-1ILvLB {
+  @extend %connectionInfo !optional;
+}
+.popoutBottom-15-vLu {
+  @extend %connectionInfoBottom !optional;
+}
+.secured-2wavXv {
+  @extend %connectionInfoSecured !optional;
+}
+.itemSubMenu-1vN_Yn {
+  @extend %contextMenuItemSubMenu !optional;
+}
+.emojiPicker-6YCk8a {
+  @extend %emojiPicker !optional;
+}
+.header-11eigE {
+  @extend %emojiPickerHeader !optional;
+}
+.searchBar-2M9mRP {
+  @extend %emojiPickerSearchBar !optional;
+}
+.diversitySelectorOptions-3DhNYs {
+  @extend %emojiPickerDiversitySelectorPopout !optional;
+}
+.diversityEmojiItem-2bgZKv {
+  @extend %emojiPickerDiversityItem !optional;
+}
+.categorySection-3j71bm {
+  @extend %emojiPickerCategorySection !optional;
+}
+.wrapper-1NNaWG {
+  @extend %emojiPickerCategoryHeaderWrapper !optional;
+}
+.header-1XpmZs {
+  @extend %emojiPickerCategoryHeader !optional;
+}
+.emojiItem-277VFM {
+  @extend %emojiPickerItem !optional;
+}
+.emojiItemSelected-2Lg50V {
+  @extend %emojiPickerItemSelected !optional;
+}
+.emojiItemDisabled-3VVnwp {
+  @extend %emojiPickerItemDisabled !optional;
+}
+.imageLoading-2uloYN {
+  @extend %emojiPickerItemLoading !optional;
+}
+.inspector-DFKXwB {
+  @extend %emojiPickerInspector !optional;
+}
+.categoryList-2qRrlj {
+  @extend %emojiCategoryList !optional;
+}
+.scroller-2MALzE {
+  @extend %emojiCategoryScroller !optional;
+}
+.categoryItem-1sHzUv {
+  @extend %emojiCategoryItem !optional;
+}
+.categoryIcon-2cYeku {
+  @extend %emojiCategoryItemIcon !optional;
+}
+.categoryItemDefaultCategorySelected-2YeRUu {
+  @extend %emojiCategoryItemSelected !optional;
+}
+.categoryItemGuildCategory-3mvXlo {
+  @extend %emojiCategoryGuildItem !optional;
+}
+.guildIcon-2SUGiq {
+  @extend %emojiCategoryGuildIcon !optional;
+}
+.unicodeShortcut-3N8oDe {
+  @extend %emojiCategoryUnicodeShortcut !optional;
+}
+.popout-3gby1q {
+  @extend %groupInvitePopout !optional;
+}
+.header-1zd7se {
+  @extend %groupInvitePopoutHeader !optional;
+}
+.title-3hptVQ {
+  @extend %groupInvitePopoutTitle !optional;
+}
+.subtitle-3v29zT {
+  @extend %groupInvitePopoutSubtitle !optional;
+}
+.searchBar-14YqL- {
+  @extend %groupInvitePopoutSearchBar !optional;
+}
+.searchBarComponent-18D6hD {
+  @extend %groupInvitePopoutSearchContainer !optional;
+}
+.inner-1NoIT5 {
+  @extend %groupInvitePopoutSearchBarInner !optional;
+}
+.tag-15zcD_ {
+  @extend %groupInvitePopoutSearchTag !optional;
+}
+.close-3-lUJg {
+  @extend %groupInvitePopoutSearchTagClose !optional;
+}
+.friendWrapper-2x5j0A {
+  @extend %groupInvitePopoutFriendWrapper !optional;
+}
+.friend-8ZraY7 {
+  @extend %groupInvitePopoutFriend !optional;
+}
+.friendSelected-3cwmD7 {
+  @extend %groupInvitePopoutFriendSelected !optional;
+}
+.nickname-1PdAp3 {
+  @extend %groupInvitePopoutNickname !optional;
+}
+.discordTag-2ke74W {
+  @extend %groupInvitePopoutDiscordTag !optional;
+}
+.footer-C9oLp9 {
+  @extend %groupInvitePopoutFooter !optional;
+}
+.footerSeparator-b6VH1V {
+  @extend %groupInvitePopoutFooterSeparator !optional;
+}
+.menu-2TXYjN {
+  @extend %menuPopout !optional;
+}
+.colorDefault-2_rLdz {
+  @extend %menuPopoutSelected !optional;
+}
+.hideInteraction-1vQrZJ {
+  @extend %menuPopoutHideInteraction !optional;
+}
+.item-5ApiZt {
+  @extend %menuPopoutItem !optional;
+}
+.focused-3LIdPu {
+  @extend %menuPopoutItemHover !optional;
+}
+.colorBrand-26tvUE {
+  @extend %menuPopoutItemInvite !optional;
+}
+.colorDanger-3umuSx {
+  @extend %menuPopoutItemDanger !optional;
+}
+.separator-12G2Op {
+  @extend %menuPopoutSeparator !optional;
+}
+.iconContainer-Ksy8Oj {
+  @extend %menuPopoutIconContainer !optional;
+}
+.icon-3XHs8t {
+  @extend %menuPopoutIcon !optional;
+}
+.checkbox-397WsK {
+  @extend %menuPopoutCheckbox !optional;
+}
+.radioSelection-3PDNAQ {
+  @extend %menuPopoutRadio !optional;
+}
+.check-3-73a4 {
+  @extend %menuPopoutCheck !optional;
+}
+.container-3cGP6G {
+  @extend %messageOptions !optional;
+}
+.item-2J1YMK {
+  @extend %popoutItem !optional;
+}
+.noShadow-3pu20z {
+  @extend %popoutNoShadow !optional;
+}
+.layerContainer-2v_Sit {
+  @extend %layerContainer !optional;
+}
+.layer-2aCOJ3 {
+  @extend %popoutLayer !optional;
+}
+.translate-PeW1wK {
+  @extend %popoutTranslate !optional;
+}
+.animatorTop-3ltI52 {
+  @extend %popoutAnimatorTop !optional;
+}
+.animatorBottom-L63-7D {
+  @extend %popoutAnimatorBottom !optional;
+}
+.animatorLeft-3yvG13 {
+  @extend %popoutAnimatorLeft !optional;
+}
+.animatorRight-xAUgTY {
+  @extend %popoutAnimatorRight !optional;
+}
+.didRender-2SiRlm {
+  @extend %popoutAnimatorDidRender !optional;
+}
+.input-2FSSDe {
+  @extend %popoutInput !optional;
+}
+.container-2McqkF {
+  @extend %searchPopout !optional;
+}
+.resultsGroup-cfY57t {
+  @extend %searchPopoutResultsGroup !optional;
+}
+.header-1BR0Ro {
+  @extend %searchPopoutHeader !optional;
+}
+.option-ayUoaq {
+  @extend %searchPopoutOption !optional;
+}
+.filter-2QaH9y {
+  @extend %searchPopoutFilter !optional;
+}
+.answer-14OVbQ {
+  @extend %searchPopoutAnswer !optional;
+}
+.nonText-28q_Ot {
+  @extend %searchPopoutNonText !optional;
+}
+.plusIcon-1RVszG {
+  @extend %searchPopoutPlusIcon !optional;
+}
+.searchLearnMore-1gNL3A {
+  @extend %searchPopoutLearnMore !optional;
+}
+.searchClearHistory-3nIKUO {
+  @extend %searchPopoutClearHistory !optional;
+}
+.queryContainer-ZunrLZ {
+  @extend %searchPopoutQueryContainer !optional;
+}
+.focused-2FU0YH {
+  @extend %searchPopoutQueryContainerFocused !optional;
+}
+.queryText-j8z984 {
+  @extend %searchPopoutQueryText !optional;
+}
+.queryShortcut-GrmI-7 {
+  @extend %searchPopoutQueryShortcut !optional;
+}
+.keybindShortcutSearchPopout-pt_bn5 {
+  @extend %searchPopoutKeybindShortcut !optional;
+}
+.user-1dKxvu {
+  @extend %searchPopoutOptionUser !optional;
+}
+.displayedNick-1atSpT {
+  @extend %searchPopoutDisplayedNick !optional;
+}
+.displayUsername-UTerwm {
+  @extend %searchPopoutDisplayUsername !optional;
+}
+.resultChannel-37MfX_ {
+  @extend %searchPopoutChannel !optional;
+}
+.searchResultChannelIcon-C-3P9x {
+  @extend %searchPopoutChannelIcon !optional;
+}
+.searchResultChannelCategory-19ujDo {
+  @extend %searchPopoutChannelCategory !optional;
+}
+.datePicker-3iA7_k {
+  @extend %searchPopoutDatePicker !optional;
+}
+
+.datePickerHint-Ir4715 {
+  @extend %searchPopoutDatePickerHint !optional;
+}
+.hint-xfbpCV {
+  @extend %searchPopoutHint !optional;
+}
+.hintValue-V9hd8l {
+  @extend %searchPopoutHintValue !optional;
+}
+.calendarPicker-sDhzdi {
+  @extend %calendarPicker !optional;
+}
+.react-datepicker {
+  @extend %datepicker !optional;
+}
+.react-datepicker__navigation {
+  @extend %datepickerNavigation !optional;
+}
+.react-datepicker__navigation--next {
+  @extend %datepickerNavigationNext !optional;
+}
+.react-datepicker__navigation--previous {
+  @extend %datepickerNavigationPrevious !optional;
+}
+.react-datepicker__month-container {
+  @extend %datepickerMonthContainer !optional;
+}
+.react-datepicker__header {
+  @extend %datepickerHeader !optional;
+}
+.react-datepicker__current-month {
+  @extend %datepickerCurrentMonth !optional;
+}
+.react-datepicker__day-names {
+  @extend %datepickerDayNames !optional;
+}
+.react-datepicker__day-name {
+  @extend %datepickerDayName !optional;
+}
+.react-datepicker__month {
+  @extend %datepickerMonth !optional;
+}
+.react-datepicker__week {
+  @extend %datepickerWeek !optional;
+}
+.react-datepicker__day {
+  @extend %datepickerDay !optional;
+}
+.react-datepicker__day--selected {
+  @extend %datepickerDaySelected !optional;
+}
+.react-datepicker__day--disabled {
+  @extend %datepickerDayDisabled !optional;
+}
+.react-datepicker__day--today {
+  @extend %datepickerDayToday !optional;
+}
+.react-datepicker__day--outside-month {
+  @extend %datepickerDayOutsideMonth !optional;
+}
+.react-datepicker__day--weekend {
+  @extend %datepickerDayWeekend !optional;
+}
+.react-datepicker__day--mon {
+  @extend %datepickerDayMon !optional;
+}
+.react-datepicker__day--tue {
+  @extend %datepickerDayTue !optional;
+}
+.react-datepicker__day--wed {
+  @extend %datepickerDayWed !optional;
+}
+.react-datepicker__day--thu {
+  @extend %datepickerDayThu !optional;
+}
+.react-datepicker__day--fri {
+  @extend %datepickerDayFri !optional;
+}
+.react-datepicker__day--sat {
+  @extend %datepickerDaySat !optional;
+}
+.react-datepicker__day--sun {
+  @extend %datepickerDaySun !optional;
+}
+.popout-2sKjHu {
+  @extend %selectPopout !optional;
+}
+.filterBrowsingSelectPopout-2kjxuc {
+  @extend %selectPopoutFilterBrowsing !optional;
+}
+.option-1mJRMP {
+  @extend %selectPopoutOption !optional;
+}
+.optionActive-KkAdqq {
+  @extend %selectPopoutOptionActive !optional;
+}
+.optionFocused-8MflSE {
+  @extend %selectPopoutOptionFocused !optional;
+}
+.optionNormal-12VR9V {
+  @extend %selectPopoutOptionNormal !optional;
+}
+.statusItem-2hiCNB {
+  @extend %statusPickerItem !optional;
+}
+.status-3TYC5W {
+  @extend %statusPickerText !optional;
+}
+.description-3Cwkxk {
+  @extend %statusPickerDescription !optional;
+}
+.status-2DiCMd {
+  @extend %statusPickerIcon !optional;
+}
+.userProfileOuterUnthemed-11rPfA {
+  @extend %userProfileOuterUnthemed !optional;
+}
+.userPopoutOuter-1OHwPL {
+  @extend %userPopoutOuter !optional;
+}
+.userPopoutInner-nv9Y92 {
+  @extend %userPopoutInner !optional;
+}
+.popoutBanner-3cqRD9 {
+  @extend %userPopoutBanner !optional;
+}
+.popoutNoBannerPremium-25mwJy {
+  @extend %userPopoutNoBannerPremium !optional;
+}
+.popoutBannerPremium-3i5EEI {
+  @extend %userPopoutBannerPremium !optional;
+}
+.profileBadges-2pItdR {
+  @extend %userPopoutProfileBadges !optional;
+}
+.userPopoutOverlayBackground-3A0Pcz {
+  @extend %userPopoutOverlayBackground !optional;
+}
+.buttonColor-_0gSD_ {
+  @extend %userPopoutButtonColor !optional;
+}
+.roles-3vQPxb {
+  @extend %userPopoutRoles !optional;
+}
+.note-Go5ZP2 {
+  @extend %userPopoutNote !optional;
+}
+.textarea-_59yqs {
+  @extend %userPopoutNoteTextArea !optional;
+}
+.messageInputContainer-2rGDH8 {
+  @extend %userPopoutMessageInputContainer !optional;
+}
+.errorPage-2pZ2Kq {
+  @extend %errorPage !optional;
+}
+.image-35kDIs {
+  @extend %errorPageImage !optional;
+}
+.text-3IbNaT {
+  @extend %errorPageText !optional;
+}
+.note-Ph806N {
+  @extend %errorPageNote !optional;
+}
+.children-1xdcWE {
+  @extend %paymentinfo !optional;
+}
+.container-2RRFHK {
+  @extend %loadingScreen !optional;
+}
+.links-30fqF9 {
+  @extend %loadingLinks !optional;
+}
+.path-lhsLSV {
+  @extend %loadingPath !optional;
+}
+.path2-F-M5gP {
+  @extend %loadingPath2 !optional;
+}
+.path3-3tVOpU {
+  @extend %loadingPath3 !optional;
+}
+.searchResultsWrap-5RVOkx {
+  @extend %searchResultsWrap !optional;
+}
+.searchHeader-1r_ZSh {
+  @extend %searchHeader !optional;
+}
+.searchHeader-UFC-sz {
+  @extend %searchHubHeader !optional;
+}
+.totalResults-2On644 {
+  @extend %searchTotalResults !optional;
+}
+.resultsWrapper-hoiXCY {
+  @extend %searchResultsWrapper !optional;
+}
+.searchResults-2J8dju {
+  @extend %searchResults !optional;
+}
+.channelName-3w2Y3c {
+  @extend %searchChannelName !optional;
+}
+.searchResult-O9NDji {
+  @extend %searchResult !optional;
+}
+.expanded-v2Szsz {
+  @extend %searchResultExpanded !optional;
+}
+.searchResultMessage-2VxO12 {
+  @extend %searchResultMessage !optional;
+}
+.hit-NLlWXA {
+  @extend %searchResultMessageHit !optional;
+}
+.sibling-3tUBeh {
+  @extend %searchResultMessageSibling !optional;
+}
+.before-1x1q5S {
+  @extend %searchResultMessageBefore !optional;
+}
+.after-2g0jjc {
+  @extend %searchResultMessageAfter !optional;
+}
+.actionButtons-14P9IC {
+  @extend %searchResultActionButtons !optional;
+}
+.button-cfOvv- {
+  @extend %searchResultJumpButton !optional;
+}
+.highlight {
+  @extend %searchResultHighlight !optional;
+}
+.contentRegion-3HkfJJ {
+  @extend %settingsContentRegion !optional;
+}
+.contentRegionScroller-2_GT_N {
+  @extend %settingsContentScroller !optional;
+}
+.sidebarScrollable-2mW9Ls {
+  @extend %settingsContentSidebarScrollable !optional;
+}
+.scroller-3_YDR2 {
+  @extend %settingsContentSidebarScroller !optional;
+}
+.toolsContainer-25FL6V {
+  @extend %settingsToolsContainer !optional;
+}
+.tools-kIrEGr {
+  @extend %settingsTools !optional;
+}
+.container-O54IuJ {
+  @extend %settingsCloseButtonContainer !optional;
+}
+.closeButton-PCZcma {
+  @extend %settingsCloseButton !optional;
+}
+.keybind-13vtq8 {
+  @extend %settingsCloseButtonKeybind !optional;
+}
+.imageUploaderInner-IIRaFr {
+  @extend %settingsImageUploaderInner !optional;
+}
+.imageUploaderIcon-2OHmFu {
+  @extend %settingsImageUploaderIcon !optional;
+}
+.card-2guEcY {
+  @extend %settingsCard !optional;
+}
+.cardWrapper-1bSePP {
+  @extend %settingsCardWrapper !optional;
+}
+.customColorPicker-C_jddW {
+  @extend %settingsColorPickerCustom !optional;
+}
+.container-20TyK0 {
+  @extend %settingsNoticeContainer !optional;
+}
+.standardSidebarView-E9Pc3j {
+  @extend %standardSidebarView !optional;
+}
+.sidebarRegion-1VBisG {
+  @extend %settingsSidebarRegion !optional;
+}
+.sidebarRegionScroller-FXiQOh {
+  @extend %settingsSidebarScroller !optional;
+}
+.sidebar-nqHbhN {
+  @extend %settingsSidebar !optional;
+}
+.side-1lrxIh {
+  @extend %settingsSide !optional;
+}
+.selectedBackground-1t6xXq {
+  @extend %settingsSidebarScrollerSelectedBackground !optional;
+}
+.header-2F5_LB {
+  @extend %settingsHeader !optional;
+}
+.headerText-10ez_d {
+  @extend %settingsHeaderText !optional;
+}
+.separator-2N511j {
+  @extend %settingsSeparator !optional;
+}
+.socialLinks-3ywLUf {
+  @extend %settingsSocialLinks !optional;
+}
+.link-1-SDSV {
+  @extend %settingsSocialLink !optional;
+}
+.guildFeatureAvailabilityIndicator-34eQAP {
+  @extend %guildFeatureAvailabilityIndicator !optional;
+}
+.roleRow-230vCm {
+  @extend %roleRow !optional;
+}
+.roleRowDisableHover-3En0vy {
+  @extend %roleRowDisabledHover !optional;
+}
+.container-3EtAkD {
+  @extend %guildSettingsRoleDefaultPermissions !optional;
+}
+.icon-2DGsye {
+  @extend %guildSettingsRoleDefaultPermissionsIcon !optional;
+}
+.titleContainer-3fPic2 {
+  @extend %guildSettingsRoleBackContainer !optional;
+}
+.header-JUTO-g {
+  @extend %guildSettingsRoleHeader !optional;
+}
+.top-Ktfr_T {
+  @extend %guildSettingsRoleHeaderTabTop !optional;
+}
+.brand-2EKq3J {
+  @extend %guildSettingsRoleHeaderTabBrand !optional;
+}
+.previewContainer-1GxmBJ {
+  @extend %guildSettingsRoleIconPreview !optional;
+}
+.upsellContainer-1Ml-W5 {
+  @extend %guildSettingsRoleUpsell !optional;
+}
+.upsellFooter-2aN0L_ {
+  @extend %guildSettingsRoleUpsellFooter !optional;
+}
+.activityUserPopout-2MzGCj,
+.activityProfile-1712BN {
+  @extend %activity !optional;
+}
+.headerText-3g1XK9 {
+  @extend %activityHeaderText !optional;
+}
+.nameNormal-2fPMD2 {
+  @extend %activityNameNormal !optional;
+}
+.activityName-3YXl6e {
+  @extend %activityName !optional;
+}
+.textHover-3f_j3D {
+  @extend %activityNameTextHover !optional;
+}
+.bodyLink-1E-g-R {
+  @extend %activityBodyLink !optional;
+}
+.timestamp-2f1NmH {
+  @extend %activityTimestamp !optional;
+}
+.wrapper-3Un6-K {
+  @extend %avatarWrapper !optional;
+}
+.mask-1y0tyc {
+  @extend %avatarMask !optional;
+}
+.avatar-6qzftW {
+  @extend %avatarImage !optional;
+}
+.avatar-2e8lTP {
+  @extend %avatarLarge !optional;
+}
+.avatarOffline-3GF27z {
+  @extend %avatarOffline !optional;
+}
+.botTag-7aX5WZ {
+  @extend %botTag !optional;
+}
+.botTagInvert-1nKcq_ {
+  @extend %botTagInvert !optional;
+}
+.role-2TIOKu {
+  @extend %role !optional;
+}
+.roleWrapper-2IhvNd {
+  @extend %roleWrapper !optional;
+}
+.roleCircle-3TFUOr {
+  @extend %roleCircle !optional;
+}
+.roleRemoveIcon-387wKV {
+  @extend %roleRemoveIcon !optional;
+}
+.roleRemoveButton-17oXnT {
+  @extend %roleRemoveButton !optional;
+}
+.roleName-2ZJJYR {
+  @extend %roleName !optional;
+}
+.addButton-1_dZYu {
+  @extend %roleAddButton !optional;
+}
+.pointerEvents-9SZWKj {
+  @extend %statusPointerEvents !optional;
+}
+.cursorDefault--wfhy5 {
+  @extend %statusCursorDefault !optional;
+}
+.loading-1yrGTe {
+  @extend %loading !optional;
+}
+.container-A2jo65 {
+  @extend %replyContainer !optional;
+}
+.replyBar-1oi75v {
+  @extend %replyBar !optional;
+}
+.threadSuggestionBar-3ExSyc {
+  @extend %replySuggestion !optional;
+}
+.mentionButton-3C5YMI {
+  @extend %replyMentionButton !optional;
+}
+.closeButton-3IEry2 {
+  @extend %replyCloseButton !optional;
+}
+.separator-8ngZ3p {
+  @extend %replySeperator !optional;
+}
+.hasReply-16cIUP {
+  @extend %textAreaHasReply !optional;
+}
+.replying-eZ7p5z {
+  @extend %replyingToIndicator !optional;
+}
+.item-1TA5qI {
+  @extend %radioItem !optional;
+}
+.disabled-WBmOu_ {
+  @extend %radioItemDisabled !optional;
+}
+.radioBar-1XgZqD {
+  @extend %radioBar !optional;
+}
+.radioIconForeground-3wH3aU {
+  @extend %radioIconChecked !optional;
+}
+.previewMessage-2g_aBv {
+  @extend %accessibilityMessagePreview !optional;
+}
+.preview-3k9WhO {
+  @extend %accesibilityMessagePreview !optional;
+}
+.micTest-19EtdQ {
+  @extend %micTest !optional;
+}
+.container-3NTP7o {
+  @extend %micTestContainer !optional;
+}
+.progress-1S-TDF {
+  @extend %micTestProgress !optional;
+}
+.notches-2w7UZJ {
+  @extend %micTestNotches !optional;
+}
+.sliderBar-2s16ej {
+  @extend %inputSensitivitySliderBar !optional;
+}
+.speaking-2Crrvt {
+  @extend %inputSensitivitySpeaking !optional;
+}
+.cameraWrapper-nG8dpo {
+  @extend %cameraWrapper !optional;
+}
+.media-engine-video {
+  @extend %mediaEngineVideo !optional;
+}
+.backgroundOption-2mIYjm {
+  @extend %videoBgOption !optional;
+}
+.backgroundOptionRing-1vvQ0C {
+  @extend %videoBgOptionRing !optional;
+}
+.backgroundOptionInner-SSz19O {
+  @extend %videoBgOptionInner !optional;
+}
+.none-1rXy4P {
+  @extend %scrollbarNone !optional;
+}
+.thin-RnSY0a {
+  @extend %scrollbarThin !optional;
+}
+.segmentContainer-2dq0ta {
+  @extend %screenshareSegmentContainer !optional;
+}
+.segmentControlOption-3MnJdT {
+  @extend %screenshareSegmentControlOption !optional;
+}
+.selected-2xa993 {
+  @extend %screenshareSegmentControlSelected !optional;
+}
+.tile-3POX2m {
+  @extend %screenshareTile !optional;
+}
+.sourceThumbnail-ERDcZE {
+  @extend %screenshareSourceThumbnail !optional;
+}
+.selected-1i-g6T {
+  @extend %screenshareSourceSelected !optional;
+}
+.card-m7VgZ8 {
+  @extend %screenshareCard !optional;
+}
+.card-PQEqCK {
+  @extend %serverWelcomeCards !optional;
+}
+.checkmark-bW9BK8 {
+  @extend %serverInviteTick !optional;
+}
+.selectorButton-3fWZ0_ {
+  @extend %screenshareSettingsSelector !optional;
+}
+.selectorButtonSelected-3cQUnj {
+  @extend %screenshareSettingsSelected !optional;
+}
+.selectorButtonPremiumRequired-IZXhgV {
+  @extend %screenshareSettingsPremiumRequired !optional;
+}
+.textContainer-36wgKK {
+  @extend %textContainer !optional;
+}
+.footer-GXWBBp {
+  @extend %textContainerFooter !optional;
+}
+.languageSelector-2e1IuO {
+  @extend %languageSelector !optional;
+}
+.item-1BCeuB {
+  @extend %languageSelectorItem !optional;
+}
+.selected-22ukbQ {
+  @extend %languageSelectorSelected !optional;
+}
+.modalTextContainer-1FUO2W {
+  @extend %textContainerModal !optional;
+}
+.attachmentName-vgRpzs {
+  @extend %attachmentName !optional;
+}
+.formattedSize-1YbZww {
+  @extend %attachmentSize !optional;
+}
+.container-cH6QoY {
+  @extend %stageContainer !optional;
+}
+.callContainer-BGIngG {
+  @extend %stageCallContainer !optional;
+}
+.scroller-35tvpe {
+  @extend %stageScroller !optional;
+}
+.gradientContainer-phMG8d {
+  @extend %stageGradientContainer !optional;
+}
+.container-2t1JyW {
+  @extend %stageHeaderContainer !optional;
+}
+.rowContainer-jDvyA4 {
+  @extend %stageSpeakers !optional;
+}
+.participants-3hk3ND {
+  @extend %stageParticipants !optional;
+}
+.tileContainer-Os085F {
+  @extend %stageParticipant !optional;
+}
+.container-36u7Lw {
+  @extend %stageModIconContainer !optional;
+}
+.container-lqPArA {
+  @extend %stageRequestContainer !optional;
+}
+.background-29WdEM {
+  @extend %stageIconBigBackground !optional;
+}
+.foreground-uvONBR {
+  @extend %stageIconBigForeground !optional;
+}
+.iconBackground-3qSXiM {
+  @extend %stageIconBackground !optional;
+}
+.textInput-2xgsSa {
+  @extend %stagePopoutTextInput !optional;
+}
+.audienceVoiceUserIconContainer-1aQGLF {
+  @extend %stageUserIconContainer !optional;
+}
+.container-1IyjjY {
+  @extend %stageOptionContainer !optional;
+}
+.separator-3FDGQ4 {
+  @extend %stageSeparator !optional;
+}
+.categoryPill-1zjNrr {
+  @extend %categoryPill !optional;
+}
+.selected-bLcqYK {
+  @extend %categoryPillSelected !optional;
+}
+.pageControlContainer-1Mbe6M {
+  @extend %pageControlContainer !optional;
+}
+.pageControl-1Kt_nb {
+  @extend %pageControl !optional;
+}
+.pageButton-uta6J3 {
+  @extend %pageButton !optional;
+}
+.activeButton-2K2Fwx {
+  @extend %pageButtonActive !optional;
+}
+.endButton-pLBGXH {
+  @extend %pageButtonEnd !optional;
+}
+.disabled-29cfPA {
+  @extend %pageButtonDisabled !optional;
+}
+.consentCard-1MV_A4 {
+  @extend %consentCard !optional;
+}
+.nowPlayingColumn-1eCBCN {
+  @extend %nowPlayingColumn !optional;
+}
+.container-1oAagU {
+  @extend %nowPlayingColumnContainer !optional;
+}
+.scroller-hE2gWq {
+  @extend %nowPlayingColumnScroller !optional;
+}
+.outer-2JOHae {
+  @extend %activeNowOuterCard !optional;
+}
+.interactive-2zD88a {
+  @extend %activeNowCardInteractive !optional;
+}
+.active-1W_Gl9 {
+  @extend %activeNowCardActive !optional;
+}
+.inset-SbsSFp {
+  @extend %activeNowCardInset !optional;
+}
+.section-3G9aLW {
+  @extend %activeNowCardSection !optional;
+}
+.emptyCard-KDifrB {
+  @extend %emptyActiveNowCard !optional;
+}
+.emptyText-29ycwI {
+  @extend %emptyActiveNowText !optional;
+}
+.button-1zW0-r {
+  @extend %quickReactButton !optional;
+}
+.focused-H4w81f {
+  @extend %quickReactButtonFocused !optional;
+}
+.subscribeTooltipWrapper-3ipXtC {
+  @extend %subscribeTooltipWrapper !optional;
+}
+.subscribeTooltipHeader-15pGbG {
+  @extend %subscribeTooltipHeader !optional;
+}
+.subscribeTooltipText-2A8MMi-1JoUuw {
+  @extend %subscribeTooltipText !optional;
+}
+.upsellTooltipWrapper-1wqikQ {
+  @extend %upsellTooltipText !optional;
+}
+.wrapper-24fR1R {
+  @extend %stickersUploadCard !optional;
+}
+.tierLock-1eabw6 {
+  @extend %stickersTierLock !optional;
+}
+.messagesPopoutWrap-3zryHW {
+  @extend %messagesPopoutWrap !optional;
+}
+.header-1w9Q93 {
+  @extend %messagesPopoutHeader !optional;
+}
+.footer-5ji8u1 {
+  @extend %messagesPopoutFooter !optional;
+}
+.tabBar-1qdMr5 {
+  @extend %messagesPopoutTabBar !optional;
+}
+.tab-TRrPC8 {
+  @extend %messagesPopoutTab !optional;
+}
+.active-1grPyy {
+  @extend %messagesPopoutTabActive !optional;
+}
+.channelHeader-DFRX8q {
+  @extend %messagesPopoutChannelHeader !optional;
+}
+.messageGroupWrapper-1jf_7C {
+  @extend %pinnedMessageGroupWrapper !optional;
+}
+.jumpButton-1ZwI_j {
+  @extend %pinnedJumpButton !optional;
+}
+.recentMentionsPopout-2bI1ZN {
+  @extend %recentMentionsPopout !optional;
+}
+.container-iA3Qrz {
+  @extend %recentMentionsContainer !optional;
+}
+.messageContainer-3VTXBC {
+  @extend %recentMentionsMessagesContainer !optional;
+}
+.jumpButton-1ITAeq {
+  @extend %recentMentionsJumpButton !optional;
+}
+.text-2ifC_x {
+  @extend %recentMentionsJumpButtonText !optional;
+}
+.icon-2yhmi8 {
+  @extend %recentMentionsIcon !optional;
+}
+.tutorial-Nb3Zz5 {
+  @extend %unreadTutorial !optional;
+}
+.tutorialIcon-25VF3Q {
+  @extend %unreadTutorialIcon !optional;
+}
+.channel-3NJZ1V {
+  @extend %unreadChannel !optional;
+}
+.messages-23can0 {
+  @extend %unreadMessages !optional;
+}
+.collapseButton-39-IRc {
+  @extend %unreadCollapseButton !optional;
+}
+.container-1A0qQO {
+  @extend %forYouContainer !optional;
+}
+.friendRequestsButton-77veU7 {
+  @extend %friendRequestsButton !optional;
+}
+.forumPost-3i1mpe {
+  @extend %messagesPopoutThread !optional;
+}
+.container-2ebMPP {
+  @extend %inboxHeader !optional;
+}
+.container-18GwIk {
+  @extend %threadsPopoutContainer !optional;
+}
+.header-3_zmOb {
+  @extend %threadsPopoutHeader !optional;
+}
+.tabBar-2WhZ9G {
+  @extend %threadsPopoutTabBar !optional;
+}
+.tab-2Jo-cu {
+  @extend %threadsPopoutTab !optional;
+}
+.active-346HgG {
+  @extend %threadsPopoutTabActive !optional;
+}
+.icon-mJhEWn {
+  @extend %threadsPopoutIcon !optional;
+}
+.icon-3OHhZU {
+  @extend %threadChatIcon !optional;
+}
+.jump-1vIlrw {
+  @extend %threadJumpButton !optional;
+}
+.container-3i3IzO {
+  @extend %threadEmbed !optional;
+}
+.cta-1XhfrG {
+  @extend %threadCTA !optional;
+}
+.spine-29OFwR {
+  @extend %threadChannelConnector !optional;
+}
+.spineBorder-1-F4s1 {
+  @extend %threadChannelSpine !optional;
+}
+.chatHeaderBar-2fUORh {
+  @extend %threadHeaderBar !optional;
+}
+.popout-TdhJ6Z {
+  @extend %channelThreadPopout !optional;
+}
+.row-1qtctT {
+  @extend %channelThreadPopoutRow !optional;
+}
+.more-2c3Z-T {
+  @extend %channelThreadPopoutMore !optional;
+}
+.container-1PloNW {
+  @extend %threadContainer !optional;
+}
+.isOpen-O7ANQc {
+  @extend %threadOpen !optional;
+}
+.contentPreview-3fWiuC {
+  @extend %threadContentPreview !optional;
+}
+.container-3XgAHv {
+  @extend %threadChat !optional;
+}
+.iconWrapper-3plkqh {
+  @extend %threadIconWrapper !optional;
+}
+.container-2rzKKA {
+  @extend %threadPreview !optional;
+}
+.modal-ZdazA8 {
+  @extend %threadModal !optional;
+}
+.list-1uSVgu {
+  @extend %threadModalList !optional;
+}
+.tabBar-3N44FC {
+  @extend %threadModalTabBar !optional;
+}
+.tab-1tp4jL {
+  @extend %threadModalTab !optional;
+}
+.active-3WMEyE {
+  @extend %threadModalTabActive !optional;
+}
+.hasThread-3h-KJV {
+  @extend %messageHasThread !optional;
+}
+.cozy-VmLDNB {
+  @extend %cozy !optional;
+}
+.emptyStateHeader-3X-dcc {
+  @extend %threadMembersEmptyHeader !optional;
+}
+.emptyStateIcon-2xfcFG {
+  @extend %threadMembersEmptyIcon !optional;
+}
+.wrapper-1w686E {
+  @extend %serverBoostWrapper !optional;
+}
+.navigationBar-3r0IQK {
+  @extend %serverBoostNavigationBar !optional;
+}
+.progressBarTrack-31JzOY {
+  @extend %serverBoostProgressBarTrack !optional;
+}
+.progressBarFill-r3JZQ7 {
+  @extend %serverBoostProgressBarFill !optional;
+}
+.progressBarMarker-2F7kNV {
+  @extend %serverBoostProgressBarMarker !optional;
+}
+.progressBarMarkerNumSubscriptionsRequired-4_Rgoj {
+  @extend %serverBoostProgressBarMarkerNumSubReq !optional;
+}
+.progressBarMarkerNextTier-1lj6AI {
+  @extend %serverBoostProgressBarMarkerNextTier !optional;
+}
+.progressBarMarkerUnlocked-2l_py0 {
+  @extend %serverBoostProgressBarUnlocked !optional;
+}
+.progressBarMarkerIndicator-2Vf_sE {
+  @extend %serverBoostProgressBarMarkerIndicator !optional;
+}
+.planCard-3heGy1 {
+  @extend %serverBoostPlanCard !optional;
+}
+.perksTable-2Hjc0m {
+  @extend %perksTable !optional;
+}
+.perksTableRow-n0T8Yj {
+  @extend %perksTableRow !optional;
+}
+.perksTableRowBody-pELwOS {
+  @extend %perksTableRowBody !optional;
+}
+.perksTableRowFocused--UdCIh {
+  @extend %perksTableRowFocused !optional;
+}
+.perksTableRowPerkHighlighted-33Ea3c {
+  @extend %perksTableRowHighlighted !optional;
+}
+.perksTableHighlightedColumnHeader-1f38p4 {
+  @extend %perksTableHighlightedColumnHeader !optional;
+}
+.perksTableHighlightedColumnHeaderCopy-2DMeJr {
+  @extend %perksTableHighlightedColumnHeaderCopy !optional;
+}
+.perksTablePerkCheckmarkTier0-S7zpLb {
+  @extend %perksTablePerkCheckmarkTier0 !optional;
+}
+.perkPopout-2bt1aW {
+  @extend %perkPopout !optional;
+}
+.compactButton-3hG-bs {
+  @extend %waveButton !optional;
+}
+.compactButtonDisabled-MwB2d6 {
+  @extend %waveButtonDisabled !optional;
+}
+.option-1O-Hwt {
+  @extend %serverDeleteReasonOption !optional;
+}
+.checkbox-1ycfTw {
+  @extend %deleteServerCheckbox !optional;
+}
+.checkboxInner-1aRh1d {
+  @extend %deleteServerCheckboxInner !optional;
+}
+.checkboxElement-uwAa9F {
+  @extend %deleteServerCheckboxElement !optional;
+}
+.streamPreview-I7itZ6 {
+  @extend %streamPopoutPreview !optional;
+}
+.previewContainer-35LFgt {
+  @extend %streamPopoutPreviewContainer !optional;
+}
+.watchButton-2YRKxv {
+  @extend %streamPopoutWatchButton !optional;
+}
+.header-1sd0RU {
+  @extend %eventHeader !optional;
+}
+.circle-2tR2Qh {
+  @extend %eventIconCircle !optional;
+}
+.eventCard-2ZL9GD {
+  @extend %eventCard !optional;
+}
+.eventStatusBrand-3D-ae6 {
+  @extend %eventStatusBrand !optional;
+}
+.eventStatusLabel-1og3vG {
+  @extend %eventStatusLabel !optional;
+}
+.eventStatusGreen-2-f2N8 {
+  @extend %eventStatusLabel !optional;
+}
+.previewCard-E137i2 {
+  @extend %eventStatusGreen !optional;
+}
+.rsvpCount-iCkObl {
+  @extend %eventRSVPCount !optional;
+}
+.rsvpIcon-1R5Esx {
+  @extend %eventRSVPIcon !optional;
+}
+.container-3EBHNg {
+  @extend %eventInfoHeader !optional;
+}
+.container-3eB5yh {
+  @extend %eventInfoContent !optional;
+}
+.contentContainer-BWAau5 {
+  @extend %eventInfoContentContainer !optional;
+}
+.circle-1g-jMn {
+  @extend %eventInfoIconCircle !optional;
+}
+.iconBackground-3gHYPJ {
+  @extend %eventIconBackground !optional;
+}
+.progressBar-18rmp1 {
+  @extend %createEventProgressBar !optional;
+}
+.selectedProgressBar-11z5d9 {
+  @extend %createEventProgressBarSelected !optional;
+}
+.container-1hz3gm {
+  @extend %createEventLocationContainer !optional;
+}
+.form-1ejeax {
+  @extend %createEventInfoForm !optional;
+}
+.container-3zZkKh {
+  @extend %createEventCreateStageContainer !optional;
+}
+.textInput-3g8y92 {
+  @extend %createEventTextInput !optional;
+}
+.previewCard-E137i2 {
+  @extend %createEventPreviewCard !optional;
+}
+.iconContainer-36kI2p {
+  @extend %createEventIconContainer !optional;
+}
+.container-1SX9VC {
+  @extend %stickerSearchContainer !optional;
+}
+.wrapper-22rqw6 {
+  @extend %stickerCategoryWrapper !optional;
+}
+.stickerCategoryGeneric-29JiZ2 {
+  @extend %stickerCategoryGeneric !optional;
+}
+.stickerCategoryGenericSelected-DnO2K8 {
+  @extend %stickerCategoryGenericSelected !optional;
+}
+.upsellContent-1ppSei {
+  @extend %stickerUpsellContent !optional;
+}
+.row-2mBMW2 {
+  @extend %stickerPickerRow !optional;
+}
+.stickerInspected-mwnU6w {
+  @extend %stickerPickerInspected !optional;
+}
+.inspectedIndicator-27zwNZ {
+  @extend %stickerPickerInspectedIndicator !optional;
+}
+.containerBackground-Ang24O {
+  @extend %stickerSuggestionContainerBackground !optional;
+}
+.unreadMentionsIndicatorTop-2bTgUU {
+  @extend %guildUnreadMentionsTop !optional;
+}
+.css-3vaxre-menu {
+  @extend %pruneMemberMenu !optional;
+}
+.css-rzbxvl-option {
+  @extend %pruneMemberMenuDropdown !optional;
+}
+.list-3-WAYB {
+  @extend %manageAccountsList !optional;
+}
+.authBox-1HR6Ha {
+  @extend %addAccountAuthBox !optional;
+}
+.navRow-dG-XX8 {
+  @extend %addAccountNavRow !optional;
+}
+.copyInput-3AbKWB {
+  @extend %copyGiftCode !optional;
+}
+.promotionCard-mo7ClH {
+  @extend %giftPromotionCard !optional;
+}
+.phoneField-3NAPDv {
+  @extend %phoneVerification !optional;
+}
+.inputField-1iYysB {
+  @extend %phoneVerificationInput !optional;
+}
+.maskBackground-F7QD-A {
+  @extend %typingStickerRecommendationHover !optional;
+}
+.iconWrapper-1sOtkE {
+  @extend %integrationsIconWrapper !optional;
+}
+.scroller-RfJjkV {
+  @extend %hubDiscoverScroller !optional;
+}
+.pageContainer-36uo3F {
+  @extend %hubContainer !optional;
+}
+.optionItem-2tdutc {
+  @extend %hubCategoryItem !optional;
+}
+.selected-1-Z6gm {
+  @extend %hubCategoryItemSelected !optional;
+}
+.layout-1qmrhw {
+  @extend %hubCategoryItemLayout !optional;
+}
+.avatar-3VNtDW {
+  @extend %hubCategoryItemIcon !optional;
+}
+.headerContent-3_EO-5 {
+  @extend %hubHeader !optional;
+}
+.searchBox-3wTyE4 {
+  @extend %hubSearch !optional;
+}
+.tabBar-2WseS- {
+  @extend %hubTabBar !optional;
+}
+.card-3N2v9t {
+  @extend %hubCard !optional;
+}
+.iconMask-24Ybpm {
+  @extend %hubCardIconMask !optional;
+}
+.icon-3Oacog {
+  @extend %hubCardIcon !optional;
+}
+.splash-1Rnkv- {
+  @extend %hubSplash !optional;
+}
+.sidebarContainer-gUKhtL {
+  @extend %hubPopoutSidebar !optional;
+}
+.scrollTierBackground-BnWR8k {
+  @extend %activitiesScroller !optional;
+}
+.activityItem-1Z9CTr {
+  @extend %activityItem !optional;
+}
+.activityTag-3C3YK5 {
+  @extend %activityTag !optional;
+}
+.modalHeader-3X0A4K {
+  @extend %activityModalHeader !optional;
+}
+.modalDivider-MtZbPb {
+  @extend %activityModalDivider !optional;
+}
+.container-3wLKDe {
+  @extend %forumContainer !optional;
+}
+.container-q2_DnH {
+  @extend %forumCardContainer !optional;
+}
+.mainCard-3KBsBI {
+  @extend %forumCard !optional;
+}
+.increasedActivityMainCard-2ry6hI {
+  @extend %forumIncreasedCard !optional;
+}
+.title-2qfNnd,
+.postTitleText-3gRCnO {
+  @extend %forumCardName !optional;
+}
+.isOpen-2Gyel_ {
+  @extend %forumOpenCard !optional;
+}
+.isOpen-2ldXbM {
+  @extend %forumIncreasedOpenCard !optional;
+}
+.loadingCard-3pIp9h {
+  @extend %forumLoadingCard !optional;
+}
+.headerRow-1MKoR- {
+  @extend %forumHeaderRow !optional;
+}
+.replies-15QcwL {
+  @extend %forumIncreasedReplyPreview !optional;
+}
+.tagsDivider-3LhkLA {
+  @extend %forumHeaderBorder !optional;
+}
+.container-2nXUah {
+  @extend %forumNoConversations !optional;
+}
+.sortDropdown-hY93nR {
+  @extend %forumSortDropdown !optional;
+}
+.sortDropdownText-3smleu {
+  @extend %forumSortDropdownText !optional;
+}
+.textContentFooter-2JnNv8 {
+  @extend %forumContentFooter !optional;
+}
+.pill-3pRQlO {
+  @extend %forumTag !optional;
+}
+.increasedActivityPill-1VhSrh {
+  @extend %forumIncreasedTag !optional;
+}
+.selected-24z1Ou {
+  @extend %forumTagSelected !optional;
+}
+.clickable-3YTfAq {
+  @extend %forumTagClickable !optional;
+}
+.disabled-3Rezaw {
+  @extend %forumTagDisabled !optional;
+}
+.pencilIcon-1d4fcw {
+  @extend %forumPencilIcon !optional;
+}
+.searchIcon-2Nw0OL {
+  @extend %forumSearchIcon !optional;
+}
+.closeIcon-3xe5xL {
+  @extend %forumCloseIcon !optional;
+}
+.searchInput-3NGPfp {
+  @extend %forumSearchInput !optional;
+}
+.title-1v5ZfI {
+  @extend %forumSearch !optional;
+}
+.matchingPostsRow-2IiEQ1 {
+	@extend %forumSearchRow !optional
+}
+.container-3kfp0r {
+  @extend %forumTagBox !optional;
+}
+.countContainer-3DOo5v {
+  @extend %forumTagBoxCount !optional;
+}
+.clear-2gkgln {
+  @extend %forumTagClear !optional;
+}
+.countContainer-3uQ087 {
+  @extend %forumTagCount !optional;
+}
+.tagsButton-4pwOKH {
+  @extend %forumTagButton !optional;
+}
+.tagsButtonInner-2pvSm1 {
+  @extend %forumTagButtonInner !optional;
+}
+.contentContainer-2xwoXK {
+  @extend %forumContentContainer !optional;
+}
+.uploadInput-3fblkw {
+  @extend %forumUploadIcon !optional;
+}
+.iconWrapper-3FqQ75 {
+  @extend %forumChatIcon !optional;
+}
+.container-3YcgdM {
+  @extend %forumChatHead !optional;
+}
+.divider-AZrXIA {
+  @extend %forumChatDivider !optional;
+}
+.box-2iMsQm {
+  @extend %forumChatStartBox !optional;
+}
+.container-3arpDl {
+  @extend %forumRules !optional;
+}
+.descriptionContainer-2ylKGk {
+  @extend %forumRulesDesc !optional;
+}
+.gradient-1SYq38 {
+  @extend %forumRulesGradient !optional;
+}
+.linkContainer-2xEQjX {
+  @extend %forumRulesLinkContainer !optional;
+}
+.heading-lg-bold-242r2N {
+  @extend %headingLargeBold !optional;
+}
+.heading-lg-semibold-14ouVv {
+  @extend %headingLargeSemibold !optional;
+}
+.text-sm-medium-2-Xzsi {
+  @extend %textSmallMedium !optional;
+}
+.text-md-normal-2rFCH3 {
+  @extend %textMediumNormal !optional;
+}
+.directoryContainer-z-0pgp {
+  @extend %directoryContainer !optional;
+}
+.category-2OvQ93 {
+  @extend %directoryCategory !optional;
+}
+.card-2xymMp {
+  @extend %directoryCard !optional;
+}
+.container-2NdZr9 {
+  @extend %directoryListCard !optional;
+}
+.clickable-O5xo4T {
+  @extend %directoryCardClickable !optional;
+}
+.container-SidGiM {
+  @extend %directoryFooter !optional;
+}
+.search-2RHhW6 {
+  @extend %directorySearchBar !optional;
+}
+.category-qFAw-K.activeCategory-1iqXig {
+  @extend %directorySearchCategoryActive !optional;
+}
+.category-3LanTP {
+  @extend %directoryAppCategory !optional;
+}
+.card-sX105p {
+  @extend %directoryAppSupportServer !optional;
+}
+.list-1bztb- {
+  @extend %directoryAppCommandList !optional;
+}
+.commandName-SDgdgz {
+  @extend %directoryAppCommand !optional;
+}
+.cardHeader-3tWAak {
+  @extend %directoryAppPremiumCardHeader !optional;
+}
+.benefitsContainer-xSjsOP {
+  @extend %directoryAppPremiumContainer !optional;
+}
+.list-3ykg7W {
+  @extend %directoryAppPermissionList !optional;
+}
+.intentsContainer-FHJBSg {
+  @extend %directoryAppIntentList !optional;
+}
+.picker-20lcBA {
+  @extend %soundboard !optional;
+}
+.soundButton-2P2Ua2 {
+  @extend %soundboardSound !optional;
+}
+.categoryIcon-jiMNyP.selected-21roRy {
+  @extend %soundboardGuildSelected !optional;
+}
+.keybindHint-2zIIxQ {
+  @extend %soundboardHint !optional;
+}
+
+.homeContainer-1T8N7y {
+  @extend %homeContainer !optional;
+}
+.userProfileOuterThemed-2BgJCM {
+  @extend %serverGuideMessage !optional;
+}
+.userCardInner-3c42YR {
+  @extend %serverGuideMessageInner !optional
+}
+.headerIcon-3Q7cOC {
+  @extend %serverGuideIcon !optional;
+}
+.avatarBackground-2PaDOT {
+  @extend %serverGuideAvatar !optional;
+}
+.action-3oG-si {
+  @extend %serverGuideAction !optional;
+}
+.sidebarCardWrapper-34oCuK {
+  @extend %serverGuideSidebarCard !optional;
+}
+.row--LCpto {
+  @extend %serverGuideRow !optional;
+}
+.scroller-38C5lh {
+  @extend %serverSubscription !optional;
+}
+.tierInfoContainer-3o77tj {
+  @extend %serverSubscriptionTier !optional;
+}
+.subscriptionPerks-17BiNa {
+  @extend %serverSubscriptionPerk !optional;
+}
+.roleMessagePreview-NUi2Ri {
+  @extend %serverSubscriptionPreview !optional;
+}
+.navButtons-R_NSvX {
+  @extend %serverExperienceNav !optional;
+}
+.prompt-R8SyL4 {
+  @extend %serverExperiencePrompt !optional;
+}
+.termsFieldBody-2nQ2cD {
+  @extend %serverExperienceTerms !optional;
+}
+.overlay-1wSZ6w {
+  @extend %serverExperienceGradient !optional;
+}
+.inviteRow-3vmB7i {
+  @extend %inviteModalRow !optional;
+}
+.inviteBannerUpsell-1t_LYM {
+  @extend %inviteModalUpsell !optional;
+}
+.temporaryMembershipContainerBackground-13Hf5U {
+  @extend %inviteModalTemporary !optional;
+}
+.tabBar-1_P75h {
+  @extend %customizeChannelsHeaderBar !optional;
+}
+.prompt-1sE27N {
+  @extend %customizeChannelsPrompt !optional;
+}
+.css-fcsbhh-control {
+  @extend %customizeChannelsSearch !optional;
+}
+.css-1t5q03r-control {
+  @extend %customizeChannelsSearchDropdown !optional;
+}
+.css-153nlb6-option {
+  @extend %customizeChannelsSearchOption !optional;
+}
+.css-6sv4e8-menu {
+  @extend %customizeChannelsSearchMenu !optional;
+}
+.selectValuePill-shyR_x {
+  @extend %customizeChannelsPill !optional;
+}
+.optionButtonWrapper-2lbogO {
+  @extend %customizeChannelsOption !optional;
+}
+.selected-KQBgNS {
+  @extend %customizeChannelsSelected !optional;
+}
+.profileCard-2gVmvm {
+  @extend %customizeChannelsProfile !optional;
+}
+.role-3uAPnQ {
+  @extend %customizeChannelsProfileRole !optional;
+}
+.container-27tlK1 {
+  @extend %browseChannels !optional;
+}
+.selectAll-1ZP46u {
+  @extend %browseChannelsSelectAll !optional;
+}
+.checked-1pZh2h {
+  @extend %browseChannelsChecked !optional;
+}
+.channelRow-4X_3fi {
+  @extend %browseChannelsRow !optional;
+}
+.disabled-3cfocy {
+  @extend %browseChannelsDisabled !optional;
+}
+.chatHeaderBar-31g1mU {
+  @extend %channelHeaderBar !optional;
+}
+.mainTableContainer-3Nxvkd {
+  @extend %membersChannelContainer !optional;
+}
+.table-2Z1caJ {
+  @extend %membersChannelTable !optional;
+}
+.memberRowContainer-ZDlmmA {
+  @extend %membersChannelRowContainer !optional;
+}
+.button-2XiUpU {
+  @extend %membersChannelButton !optional;
+}
+.otherRoles-LMys1u {
+  @extend %membersChannelRoleList !optional;
+}
+.pageButton-uta6J3 {
+  @extend %membersChannelPage !optional;
+}

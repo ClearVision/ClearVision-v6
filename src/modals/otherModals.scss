@@ -1,0 +1,226 @@
+// MESSAGE DELETION CONFIRMATION
+%themeDark .message-G6O-Wv {
+  background-color: transparent;
+  box-shadow: 0 0 2px 2px $main-color;
+}
+
+// NOTIFICATIONS SETTINGS
+%themeDark .override-1sK4r0:hover {
+  border-color: $main-color;
+}
+
+// CUSTOM STATUS CLEAR AFTER DURATION
+.selectedIcon-19TbzU {
+  color: var(--interactive-active);
+}
+.lookFilled-1GseHa {
+  &.select-1Ia3hD {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: rgba(0, 0, 0, 0.07);
+  }
+}
+.popout-1KHNAq {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: none;
+  border-radius: 4px;
+}
+
+// REACTIONS LIST
+%themeDark {
+  .scroller-2GkvCq,
+  .reactors-1VXca7 {
+    background-color: transparent;
+  }
+  .reactionDefault-1Sjj1f {
+    margin-bottom: 10px;
+  }
+  .reactionSelected-1aMb2K {
+    background-color: $main-color;
+    margin-bottom: 10px;
+    .colorStandard-21JIj7 {
+      color: #fff;
+    }
+  }
+}
+
+// CHANGE IDENTITY
+.upsellCard-11CKVn {
+  background-color: transparent;
+}
+
+// QUICKSWITCHER
+.quickswitcher-pKcM9U {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.input-3r5zZY {
+  background-color: rgba(255, 255, 255, 0.07);
+}
+.scroller-2qwVWY {
+  background-color: transparent;
+  margin-top: 10px;
+  &::-webkit-scrollbar-track {
+    background-color: transparent !important;
+  }
+}
+.result-u66Ywh[aria-selected='true'] {
+  background: var(--background-modifier-hover);
+}
+
+// DISCORD NITRO PAYMENT
+.spinner-1HUPsi {
+	background-color: transparent;
+}
+.paymentNote-3dcb-Z,
+.wrapper-wOVKdL,
+.body-2qXItL {
+	background-color: transparent;
+}
+.table-17_dGF {
+  background-color: hsla(0, 0%, 0%, 0.4);
+}
+.planOptionDiscount-2nex9n {
+  background-color: $main-color;
+}
+.contents-1X8z-d {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.body-1d1686 {
+	padding: 16px 2px;
+}
+.cardInput-33x7OF {
+  background-color: hsla(0, 0%, 100%, 0.07);
+	box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.09);
+}
+.cardInputFocused-31lFD1 {
+	box-shadow: 0 0 2px 2px var(--main-color);
+}
+.paymentModalContent {
+  background-color: transparent;
+}
+
+
+// SERVER BOOST PAYMENT MODAL
+.upsellFooter-1H_OCF {
+  background: transparent;
+}
+.icon-2TbMdT {
+  color: #fff;
+  &:hover {
+    color: #fff;
+    background-color: $hover-color;
+  }
+}
+%themeDark .iconWrapper-2_MXbk {
+  background: hsla(0, 0%, 0%, 0.8);
+}
+.actions-10aT1z .input-2g-os5 {
+  box-shadow: none;
+}
+.subscription-1wJwQk {
+  background-color: hsla(0, 0%, 0%, 0.5);
+}
+%themeDark .tierPill-l7DvKo {
+  background-color: $main-color;
+}
+
+// INVITE FROM WEB BROWSER
+%themeDark .contentWrapper-3oy4Xo {
+  background: hsla(0, 0%, 0%, 0.5);
+}
+.pillIconOnline-2JLgFw {
+  background-color: var(--online-color);
+}
+.pillIconTotal-3rJafa {
+  background-color: var(--offline-color);
+}
+
+// INVITE MODAL
+%inviteModalRow:hover {
+  background-color: rgba(255, 255, 255, 0.07);
+}
+%themeDark %inviteModalUpsell {
+  background-color: transparent;
+}
+%inviteModalTemporary {
+  background: rgba(0,0,0,.07);
+}
+
+// TIMEOUT
+%themeDark .item-2OyinQ:hover {
+  background-color: var(--hover-color);
+}
+
+.selectorButtonSelected-1VZ6hz {
+  background-color: $main-color;
+}
+
+// Tab Help
+.tips-39ZVzW {
+  background-color: hsla(0, 0%, 0%, 0.4);
+}
+
+// SWITCH ACCOUNT
+%manageAccountsList {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.activeIcon-1ykRnF>circle:not([fill^='hsl(0']),
+.activeIcon-1ykRnF>g>path:not([fill^='hsl(0']) {
+  fill: var(--main-color);
+}
+// ADD ACCOUNT
+%themeDark %addAccountAuthBox,
+%themeDark %addAccountNavRow {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+// VERIFY PHONE
+%phoneVerification %phoneVerificationInput {
+  background-color: hsla(0, 0%, 100%, 0.07);
+}
+%phoneVerification {
+  background-color: hsla(0, 0%, 100%, 0.07);
+  border: 1px solid hsla(0, 0%, 100%, 0.07);
+}
+
+// ACTIVITIES
+%activityModalHeader,
+%activityModalDivider {
+  background: rgba(0, 0, 0, .4);
+}
+%activityTag {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+%activityItem {
+  background: rgba(0, 0, 0, 0.4);
+  &:hover {
+    background: $hover-color;
+    box-sizing: border-box;
+    border: 2px solid $main-color;
+  }
+}
+%activitiesScroller {
+  background: transparent;
+}
+
+// AUTH MODAL
+.authorize-2xTTr- {
+	background-color: transparent;
+	border-radius: 5px;
+}
+.scopeTimes-KsAOBb {
+	background-color: hsla(0, 0%, 100%, .15);
+}
+.footer-3Gu_Tl {
+	background-color: transparent;
+}
+
+// SOUNDBOARD MODAL
+%soundboard {
+  background: rgba(0,0,0,.7);
+  %soundboardSound,
+  %soundboardGuildSelected {
+    background: $main-color;
+  }
+  %soundboardHint {
+    background: rgba(0,0,0,.3);
+  }
+}

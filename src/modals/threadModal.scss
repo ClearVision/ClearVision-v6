@@ -1,0 +1,26 @@
+/* THREAD MODAL */
+%threadModal {
+  background-color: hsla(0, 0%, 0%, 0.6) !important;
+  &%threadsPopoutContainer {
+    background-color: transparent;
+  }
+}
+
+%themeDark %threadModalList %threadModalTabBar %threadModalTab {
+  color: #fff;
+  &%threadModalTabActive {
+    background-color: var(--main-color);
+  }
+  &:hover:not(%threadModalTabActive) {
+    background-color: hsla(0, 0%, 100%, 0.06);
+    color: #fff;
+  }
+}
+
+%threadPreview {
+  background-color: hsla(0, 0%, 0%, 0.3);
+  border: 2px solid var(--main-color);
+  &:hover {
+    border: 2px solid var(--hover-color);
+  }
+}

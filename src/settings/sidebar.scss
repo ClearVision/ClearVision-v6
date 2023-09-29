@@ -1,0 +1,153 @@
+/* SETTINGS SIDEBAR */
+%standardSidebarView {
+  %settingsSidebarRegion {
+    background: transparent;
+    %settingsSidebar {
+      height: 100%;
+      width: 260px;
+      padding: 0px 6px 0px 20px;
+    }
+  }
+}
+%settingsSidebarRegion {
+  %settingsSidebarScroller {
+    margin: 30px 8px 30px 0;
+    background: transparent;
+    -webkit-mask-image: linear-gradient(to bottom, transparent, #000 5%, #000 95%, transparent);
+    mask-image: linear-gradient(to bottom, transparent, #000 5%, #000 95%, transparent);
+    &::-webkit-scrollbar {
+      width: 0 !important;
+    }
+  }
+}
+%settingsSide {
+  padding: 30px 0;
+  %settingsHeader {
+    color: $main-color;
+    font-weight: 700;
+  }
+  %settingsSeparator {
+    background: hsla(0, 0%, 100%, 0.07);
+    &:has(+ %settingsHeader) {
+      display: none;
+    }
+  }
+}
+%settingsSidebar {
+  %settingsHeader {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:before {
+      content: '';
+      height: 2px;
+      flex-grow: 1;
+      background: linear-gradient(to left, var(--main-color) 50%, transparent);
+      margin-right: 5px;
+    }
+    &:after {
+      content: '';
+      height: 2px;
+      flex-grow: 1;
+      background: linear-gradient(to right, var(--main-color) 50%, transparent);
+      margin-left: 5px;
+    }
+    >span {
+      max-width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+%standardSidebarView {
+  %settingsSidebar {
+    %settingsSide {
+      %tabBarItem {
+        position: relative;
+        padding: 8px 0 8px 20px;
+        color: hsla(0, 0%, 100%, 0.4);
+        margin: 0;
+        background: transparent;
+        transition: all 0.15s ease-in-out;
+        cursor: pointer;
+        &:before {
+          opacity: 0.4;
+          transition: inherit;
+        }
+        &:after {
+          content: '';
+          position: absolute;
+          @include pos(0, 100%, 0, 0);
+          opacity: 0.9;
+          transition: all 0.3s ease-in-out;
+          z-index: -1;
+          pointer-events: none;
+          border-radius: 4px;
+        }
+
+        // HOVER
+        &:hover {
+          background: hsla(0, 0%, 100%, 0.07);
+          color: hsla(0, 0%, 100%, 0.7);
+          &:before {
+            opacity: 0.7;
+          }
+        }
+
+        // SELECTED
+        &%tabBarItemSelected {
+          &:before {
+            opacity: 1;
+          }
+          &:after {
+            right: 0;
+            background: $main-color;
+            animation: cv-channel-select 0.3s ease-in-out;
+          }
+        }
+        &%tabBarItemSelected {
+          background: transparent;
+          color: #fff;
+          transition: all 0.15s ease-in-out, background 0.3s 0.2s;
+          &%serverBoostTabItem {
+            background-color: transparent !important;
+          }
+          %settingsSidebarScrollerSelectedBackground {
+            background-color: transparent;
+          }
+        }
+
+        // DANGER
+        &[aria-controls='logout-tab'],
+        &[aria-controls='delete-tab'] {
+          color: cv('colors.danger');
+          &:hover {
+            background-color: cv('colors.danger');
+            color: #fff;
+          }
+          &:before {
+            background-color: cv('colors.danger');
+            opacity: 1;
+          }
+          &:hover {
+            &:before {
+              background-color: #fff;
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// SOCIAL LINKS
+%settingsSocialLinks {
+  %settingsSocialLink {
+    color: hsla(0, 0%, 100%, 0.4);
+    &:hover {
+      color: hsla(0, 0%, 100%, 0.7);
+    }
+  }
+}

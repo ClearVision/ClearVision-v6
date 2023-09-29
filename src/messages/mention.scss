@@ -1,0 +1,44 @@
+/* MENTIONS */
+%themeDark {
+  %mentionWrapper {
+    padding: 1px 4px;
+    border-radius: 5px;
+    line-height: 22px;
+    white-space: nowrap;
+    transition: all 0.15s ease-in-out;
+    background-color:$main-color;
+    color: #fff;
+    &:hover {
+      background-color: $hover-color;
+    }
+    &%mentionIcon {
+      padding-left: 1.2rem;
+    }
+  }
+  strong {
+    >%mention {
+      font-weight: 600;
+    }
+  }
+  %mentioned {
+    %mention%mentionedInteractive {
+      background-color: hsla(0, 0%, 100%, 0.1);
+      color: $main-color;
+      &:hover {
+        background-color: hsla(0, 0%, 100%, 0.2);
+        color: $hover-color;
+        text-decoration: none;
+      }
+    }
+  }
+}
+%mentioned {
+  background-color: hsla(0, 0%, 100%, 0.05);
+  &%message%messageSelected,
+  %mouseModeFullMotion &:hover {
+    background-color: hsla(0, 0%, 100%, 0.08);
+  }
+  &::before {
+    background-color: $main-color;
+  }
+}

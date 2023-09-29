@@ -1,0 +1,63 @@
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 14px !important;
+}
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track-piece {
+  border: 3px solid transparent !important;
+  border-radius: 7px !important;
+  background-clip: padding-box !important;
+}
+::-webkit-scrollbar-thumb {
+  background-color: $main-color  !important;
+  &:active {
+    background-color: $hover-color  !important;
+  }
+}
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track-piece {
+  background-color: transparent !important;
+}
+%channels,
+%membersWrap,
+%channelsPrivate {
+  %scroller {
+    &::-webkit-scrollbar-thumb,
+    &::-webkit-scrollbar-track-piece {
+      visibility: hidden;
+    }
+    &:hover {
+      &::-webkit-scrollbar-thumb,
+      &::-webkit-scrollbar-track-piece {
+        visibility: visible;
+      }
+    }
+  }
+}
+%channels,
+%chat,
+%membersWrap,
+%channelsPrivate,
+%friendsTable {
+  %scroller {
+    &::-webkit-scrollbar-track-piece {
+      background-color: rgba(0, 0, 0, 0.3) !important;
+    }
+  }
+}
+textarea {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+// NO SCROLLBAR
+%scrollbarNone::-webkit-scrollbar {
+  width: 0px !important;
+}
+
+// THIN SCROLLBAR
+%scrollbarThin::-webkit-scrollbar {
+  width: 10px !important;
+}

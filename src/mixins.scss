@@ -1,0 +1,124 @@
+/// Set background properties separately in one mixin
+/// @param {*} $image [null] - background-image property value
+/// @param {*} $img [null] - background-image property value (alternative param)
+/// @param {*} $position [null] - background-position property value
+/// @param {*} $pos [null] - background-position property value (alternative param)
+/// @param {*} $size [null] - background-size property value
+/// @param {*} $repeat [null] - background-repeat property value
+/// @param {*} $rep [null] - background-repeat property value (alternative param)
+/// @param {*} $attachment [null] - background-attachment property value
+/// @param {*} $attach [null] - background-attachment property value (alternative param)
+/// @param {*} $color [null] - background-color property value
+/// @param {*} $clr [null] - background-color property value (alternative param)
+@mixin bg($image: null, $position: null, $size: null, $repeat: null, $attachment: null, $color: null, $img: null, $pos: null, $rep: null, $attach: null, $clr: null) {
+  $img: $image or $img;
+  $clr: $color or $clr;
+  $rep: $repeat or $rep;
+  $pos: $position or $pos;
+  $attach: $attachment or $attach;
+  $bg: ();
+  @if $img {
+    background-image: #{$img};
+  }
+  @if $clr {
+    background-color: #{$clr};
+  }
+  @if $pos {
+    background-position: #{$pos};
+  }
+  @if $size {
+    background-size: #{$size};
+  }
+  @if $rep {
+    background-repeat: #{$rep};
+  }
+  @if $attach {
+    background-attachment: #{$attach};
+  }
+}
+
+/// Set position properties in a single mixin
+/// @param {*} $top [null] - top property value
+/// @param {*} $right [null] - right property value
+/// @param {*} $bottom  [null]- bottom property value
+/// @param {*} $left [null] - left property value
+@mixin pos($top: null, $right: null, $bottom: null, $left: null) {
+  @if $top {
+    top: $top;
+  }
+  @if $right {
+    right: $right;
+  }
+  @if $bottom {
+    bottom: $bottom;
+  }
+  @if $left {
+    left: $left;
+  }
+}
+
+/// Specify a new web-hosted font via @font-face
+/// @param {*} $name - font name
+/// @param {*} $url [null] - font source (as url)
+/// @param {*} $format [null] - font file format
+/// @param {*} $weight [null] - font-weight value
+/// @param {*} $style [null] - font-style value
+/// @param {*} $decoration [null] - font-decoration value
+@mixin font($name, $local: null, $url: null, $format: null, $weight: null, $style: null, $decoration: null) {
+  @font-face {
+    font-family: $name;
+    @if $url  !=null and $format  !=null {
+      src: url($url) format($format);
+    }
+    @else if $url  !=null {
+      src: url($url);
+    }
+    @else {
+      @content;
+    }
+    @if variable-exists(weight) {
+      font-weight: $weight;
+    }
+    @if variable-exists(style) {
+      font-style: $style;
+    }
+    @if variable-exists(decoration) {
+      font-decoration: $decoration;
+    }
+  }
+}
+
+/// Stretch element
+@mixin stretch {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/// Include background filters
+/// @param {map} $source source map with filter settings
+@mixin filters($source) {
+  filter: #{'grayscale(' + map-get($source, grayscale) + ')'} sepia(map-get($source, sepia)) #{'invert(' + map-get($source, invert) + ')'} brightness(map-get($source, brightness)) contrast(map-get($source, contrast)) #{'saturate(' + map-get($source, saturate) + ')'} blur(map-get($source, blur));
+}
+
+/// Create hover shadow effect
+@mixin hover-shadow {
+  transition: all 0.1s ease-in-out;
+  &:hover {
+    text-shadow: 0 0 1px;
+    text-decoration: none !important;
+  }
+}
+
+/// Create hover cutout effect
+@mixin hover-cutout {
+  background: transparent;
+  color: #fff;
+  mix-blend-mode: screen;
+  transform: translateZ(0);
+  &:hover {
+    background: #fff;
+    color: #000;
+  }
+}

@@ -1,0 +1,20 @@
+/* APP NOTICE */
+
+%notice {
+  border-radius: 3px;
+  &%noticeDefault {
+    background: rgba(#43b581, 0.6);
+  }
+  &%noticeDanger {
+    background: rgba(#f04747, 0.6);
+  }
+  &%noticeStreamerMode {
+    background: rgba(cv('const:colors.twitch-purple'), 0.6);
+  }
+  %noticeTextLink {
+    color: #fff;
+  }
+  &%noticeComplete {
+    background: rgba(0, 0, 0, 0.6);
+  }
+}

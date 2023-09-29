@@ -1,0 +1,287 @@
+/* USER SETTINGS */
+
+// MY ACCOUNT
+.accountProfileCard-lbN7n- {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.background-3d_SjE,
+.fieldList-in8WkP {
+  background-color: transparent;
+}
+.avatar-3mTjvZ {
+  background: transparent;
+  border-color: transparent;
+}
+
+// USER PROFILE
+.profileBannerPreview-3mLIdO {
+  background-color: cv('bg.popout.overlay');
+}
+.avatarUploaderInner-p38nm2 {
+  background-clip: padding-box;
+}
+.optionBox-1UOevl {
+  background-color: transparent;
+}
+.contentCircle-15IFyT {
+  background-color: $main-color;
+}
+.notice-1Qe0b_ {
+  background-color: transparent;
+}
+.editingContainer-1_nnqZ {
+  background-color: transparent;
+}
+.premiumFeatureBorder-1i95si {
+	background: hsla(0, 0%, 0%, .4);
+	border-color: hsl(302,100%,72.5%);
+}
+.premiumBackground-34OIdE {
+	background: transparent;
+}
+.upsellOverlayContainer-3NMgTS {
+	background: hsla(0, 0%, 0%, .4);
+	border-color: hsl(302,100%,72.5%);
+}
+.theme-dark .upsellOverlay-3sCO8V,
+.upsellContainer-TwfTaF {
+	background: hsla(0, 0%, 0%, .4);
+}
+
+// USER SETTINGS CUSTOMIZATION
+%userPopoutCustomization {
+  background: transparent;
+  // BODY
+  %userPopoutSettingsOverlayBackground,
+  %userPopoutProfileBadges {
+    background: cv('bg.popout.overlay');
+  }
+}
+.profileThemeSectionPremiumBorder-pH_ioT {
+  background: transparent;
+}
+.inlineUpsell-3zPTgw {
+  background: rgba(0,0,0,.5);
+}
+
+// FAMILY CENTER
+.container-2WMFjc,
+.container-jV-A82,
+.container-1iKw09,
+.box-3QCU9H {
+	background-color: hsla(0, 0%, 0%, 0.4);
+}
+.circle-1ip_Nd,
+.iconContainer-3cz2oI {
+	background-color: transparent;
+}
+.row-XYkFDK {
+	background-color: hsla(0, 0%, 100%, 0.07);
+}
+
+// AUTHORIZED APPS
+.authedApp-1tw-eT {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-color: hsla(0, 0%, 100%, 0.07);
+}
+
+// DEVICES
+.sessionIcon-2fwSzb {
+  background-color: $main-color;
+  color: #fff;
+}
+
+// CONNECTIONS
+.connectContainer-1hylYM {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-color: hsla(0, 0%, 100%, 0.07);
+}
+.accountButtonInner-33vCDY, .accountBtnInner-1DCgBm {
+  background-color: hsla(0, 0%, 100%, 0.05);
+  &:hover {
+    background-color: hsla(0, 0%, 100%, 0.07);
+  }
+}
+
+// BILLING
+%themeDark {
+  .defaultIndicator-2ndWks {
+    background-color: $main-color;
+  }
+  .paymentPane-ut5qKZ,
+  .paginator-1eqD2g {
+    background-color: transparent;
+  }
+  .bottomDivider-ZmTm-j {
+    border-color: rgba(0, 0, 0, 0.07);
+  }
+  .hoverablePayment-lE1s4t {
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+  }
+  .payment-2bOh4k {
+    background-color: transparent;
+    &:not(.hoverablePayment-lE1s4t) {
+      background-color: hsla(0, 0%, 0%, 0.4);
+    }
+  }
+  .expandedInfo-1W31i3 {
+    background-color: transparent;
+    box-shadow: 0 0 2px 2px $main-color;
+  }
+  .codeRedemptionRedirect-3SBiCp {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-color: hsla(0, 0%, 100%, 0.07);
+  }
+}
+
+// NITRO
+.theme-dark .feature-2IUcBI {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+// SUBSCRIPTIONS
+%themeDark {
+  .noItemsIcon-1rZlXZ,
+  .noItemsIcon-2OeOld {
+    background-color: transparent;
+    >g>* {
+      fill-opacity: 0.8 !important;
+      stroke-opacity: 0.8 !important;
+    }
+  }
+}
+.noItemsCard-2V85P5,
+.noItemsCard-5EOcCl {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.scroller-29cQFV {
+  background-color: transparent;
+}
+.detailsBlock-24pLFz,
+.banner-WELp4M {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.premiumSubscriptionAccountCredit-1UInYJ {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+// GIFT INVENTORY
+%giftPromotionCard {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+%copyGiftCode {
+  background-color: hsla(0, 0%, 100%, 0.07);
+}
+
+// SERVER BOOST
+.guildContainer-o60hpj,
+.wrapper-3htY7x,
+.boosterRecognitionCard-3hndlJ,
+.faq-29l_f8 {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+// ACCESSIBILITY
+%accessibilityMessagePreview {
+  background-color: transparent;
+}
+
+// VOICE
+%themeDark {
+  %micTest {
+    %micTestContainer {
+      background: $main-color  !important;
+      mask-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='20' fill='yellow'%3E%3Cpath fill-rule='evenodd' d='M 4 2 C 2.895 2 2 2.895 2 4 L 2 16 C 2 17.54 3.667 18.502 5 17.732 C 5.619 17.375 6 16.715 6 16 L 6 4 C 6 2.895 5.105 2 4 2 Z'/%3E%3C/svg%3E");
+      -webkit-mask-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='20' fill='yellow'%3E%3Cpath fill-rule='evenodd' d='M 4 2 C 2.895 2 2 2.895 2 4 L 2 16 C 2 17.54 3.667 18.502 5 17.732 C 5.619 17.375 6 16.715 6 16 L 6 4 C 6 2.895 5.105 2 4 2 Z'/%3E%3C/svg%3E");
+    }
+    %micTestProgress {
+      background-color: hsla(0, 0%, 0%, 0.7);
+    }
+    %micTestNotches {
+      rect {
+        fill: none;
+      }
+    }
+  }
+}
+
+// VIDEO
+%cameraWrapper {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-color: hsla(0, 0%, 100%, 0.07);
+}
+%userSettingsVoice %mediaEngineVideo {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+%videoBgOption {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+%videoBgOptionRing {
+  border: 2px solid $main-color;
+}
+%videoBgOptionInner {
+  background-color: transparent;
+}
+
+// GAME OVERLAY
+%themeDark {
+  .nowPlaying-3UpuKc {
+    background-color: rgba($color: #43b581, $alpha: 0.6);
+  }
+}
+.wrapper-SdcMKg {
+  border-color: $main-color;
+}
+.option-1QI4c9 {
+  background-color: hsla(0, 0%, 100%, 0.05);
+  opacity: 1;
+  &:hover {
+    background-color: hsla(0, 0%, 100%, 0.07);
+    opacity: 1;
+  }
+  &.selected-18Wszc {
+    background-color: $main-color;
+    border-color: $main-color;
+  }
+}
+
+// KEYBINDS
+%themeDark {
+  .container-30qY7E {
+    background-color: hsla(0, 0%, 100%, 0.05);
+    box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.07);
+    border-color: transparent;
+    &:not(.disabled-3S7pz8):hover {
+      border-color: transparent;
+      box-shadow: 0 0 2px 2px var(--main-color);
+    }
+    &.recording-3ny5_E {
+      color: #fff;
+      box-shadow: 0 0 2px 2px var(--main-color);
+      animation: cv-shadow-pulse 1s ease-in infinite;
+    }
+  }
+}
+
+// ACTIVITY STATUS
+%themeDark {
+  .notDetected-M3Ghh2 {
+    background-color: hsla(0, 0%, 0%, 0.4);
+    border: hsla(0, 0%, 100%, 0.07);
+  }
+  .addGamePopout-2SKNIV {
+    background-color: hsla(0, 0%, 0%, 0.7);
+  }
+  .game-2f2vPC {
+    box-shadow: 0 1px 0 0 hsla(0, 0%, 100%, 0.04);
+  }
+  .gameNameInput-2wbDJ9 {
+    &:hover,
+    &:focus {
+      background-color: hsla(0, 0%, 100%, 0.05);
+      border: hsla(0, 0%, 100%, 0.07);
+    }
+  }
+}

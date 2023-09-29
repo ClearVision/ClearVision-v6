@@ -1,0 +1,33 @@
+/// Get a variable from the ClearVision variables map
+/// @param {string} $id identification for a variable
+/// @return {*} variable
+@function cv($id) {
+  $p: 'settings';
+  $s: $id;
+  @if str-index($id, ':') {
+    $p: str-slice($id, 0, str-index($id, ':') - 1);
+    $s: str-slice($id, str-index($id, ':') + 1);
+  }
+  @if $p =='const' {
+    $p: 'constants';
+  }
+  @if $p =='dc' or $p =='disc' {
+    $p: 'discord';
+  }
+  $r: map-get($cv, $p);
+  @if not $r {
+    @error "#{$p} is not a valid ClearVision set";
+  }
+  @while str-index($s, '.') {
+    $r: map-get($r, str-slice($s, 0, str-index($s, '.') - 1));
+    @if not $r {
+      @error "Property #{$id} not found in ClearVision #{$p} set";
+    }
+    $s: str-slice($s, str-index($s, '.') + 1);
+  }
+  $r: map-get($r, $s);
+  @if not $r {
+    @error "Property #{$id} not found in ClearVision #{$p} set";
+  }
+  @return $r;
+}

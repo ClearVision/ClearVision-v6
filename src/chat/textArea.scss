@@ -1,0 +1,151 @@
+/* CHAT CHANNEL TEXT AREA */
+%chatForm {
+  margin-top: 1px;
+  &:before {
+    display: none;
+  }
+  .charcounter {
+    color: hsla(0, 0%, 100%, 0.3);
+  }
+}
+%channelTextArea {
+  background: rgba(0, 0, 0, 0.6);
+  transition: all 0.15s ease-in-out;
+  &:focus-within {
+    box-shadow: 0 0 2px 2px var(--main-color);
+  }
+
+  %channelTextAreaScrollable {
+    background: transparent;
+    border: 2px solid transparent;
+  }
+  %channelTextAreaAttachButton {
+    padding: 10px 10px 10px 12px;
+
+    %channelTextAreaAttachButtonPlus {
+      color: hsla(0, 0%, 100%, 0.7);
+      transition: all 0.15s ease-in-out;
+    }
+    &:hover {
+      %channelTextAreaAttachButtonPlus {
+        color: hsla(0, 0%, 100%, 0.9);
+      }
+    }
+  }
+  %textArea {
+    %textAreaPlaceholder {
+      color: hsla(0, 0%, 100%, 0.4);
+    }
+    &%slateTextArea {
+      margin-left: 10px;
+    }
+  }
+
+  // BUTTONS
+  %channelTextAreaButton {
+    color: hsla(0, 0%, 100%, 0.7);
+    transition: all 0.15s ease-in-out;
+    &:hover {
+      color: hsla(0, 0%, 100%, 0.9);
+    }
+  }
+  %themeDark .button-y6hemj {
+    .buttonChild-33lB5F {
+      color: hsla(0, 0%, 100%, 0.3)
+    }
+    .activeButtonChild-2hgLAO {
+      color: hsla(0, 0%, 100%, 0.7)
+    }
+    &:hover .activeButtonChild-2hgLAO {
+      color: #fff;
+    }
+  }
+
+  // TYPING
+  %channelTextAreaTyping {
+    background: transparent;
+    %channelTextAreaTypingText {
+      color: hsla(0, 0%, 100%, 0.5);
+      >strong {
+        color: hsla(0, 0%, 100%, 0.7);
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+// LINK
+%fakeLink {
+  color: var(--url-color);
+}
+
+// FOLLOW CHANNEL
+%channelInfo {
+  background-color: hsla(0, 0%, 0%, 0.6);
+}
+
+// ATTACHED BARS
+%channelTextAreAttachedBar {
+  background: transparent;
+}
+%channelTextAreaStackedAttachedBar {
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.07);
+}
+
+// REPLY
+%replyBar,
+%replySuggestion {
+  background: transparent;
+  border: 2px solid transparent;
+  box-shadow: none;
+}
+%replyCloseButton {
+  padding: 8px 16px 8px 4px;
+  margin-left: 4px;
+}
+%replySeperator {
+  visibility: hidden;
+  height: 0px;
+  width: 0px;
+}
+
+// SLASH COMMANDS
+%themeDark {
+  %autocompleteOptionPill {
+    background-color: hsla(0, 0%, 100%, 0.05);
+    border-color: hsla(0, 0%, 100%, 0.07);
+    &%autocompleteOptionPillSelected {
+      border-color: $main-color  !important;
+    }
+  }
+  %autocompleteOptionPillKey {
+    background-color: hsla(0, 0%, 100%, 0.07);
+  }
+}
+
+// UPLOADER
+%channelTextAreaUpload {
+  background-color: transparent;
+}
+
+// TIMEOUT
+%timeoutBar {
+  background: rgba(0, 0, 0, 0.6);
+}
+%timeoutPopup {
+  background: rgba(0, 0, 0, 0.5);
+  %timeoutIcon {
+    background: rgba(0, 0, 0, 0.2);
+  }
+}
+
+// INLINE CODE PREVIEW
+%inlineCodeBefore,
+%inlineCodeAfter {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 3.5px 0.5px;
+}
+%inlineCode {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 3.5px 0.5px;
+}

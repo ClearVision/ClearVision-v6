@@ -1,0 +1,22 @@
+name: Test
+
+on:
+  - push
+  - pull_request
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: install
+        run: npm ci
+      - name: test
+        run: npm test
+      - uses: actions/upload-artifact@v1
+        with:
+          name: test-${{github.sha}}
+          path: test

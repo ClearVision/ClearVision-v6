@@ -1,0 +1,72 @@
+// EMOJI INFO POPOUT
+.popoutContainer-2wbmiM {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.emojiSection-3QtaWO {
+  background-color: transparent;
+}
+.guildSection-2Zyzy8 {
+  background-color: transparent;
+}
+.loadingBackground-1p5N1j {
+  .loading-1lSwpg {
+    opacity: 0.3;
+  }
+}
+
+// CHAT TOOLBAR
+.toolbar-37BrJ5 {
+  background-color: hsla(0, 0%, 0%, 0.8);
+}
+.toolbar-37BrJ5::before {
+  border-top: 8px solid hsla(0, 0%, 0%, 0.8);
+}
+.active-136ioF,
+.hover-3OQb9Y:hover {
+  background-color: hsla(0, 0%, 100%, 0.05);
+}
+.icon-3g7qdA {
+  color: hsla(0, 0%, 100%, 0.7);
+}
+
+// STREAM POPOUT
+%themeDark {
+  %streamPopoutPreview {
+    background-color: hsla(0, 0%, 0%, 0.8);
+  }
+  %streamPopoutPreviewContainer {
+    background-color: transparent;
+  }
+  %streamPopoutWatchButton {
+    border-color: $main-color;
+    color: hsla(0, 0%, 100%, 0.8);
+    &:not([disabled]):hover {
+      border-color: $hover-color;
+      color: #fff;
+    }
+  }
+}
+
+// STUDENT HUBS
+%hubPopoutSidebar {
+  background: transparent;
+}
+
+// LEAVE SERVER REASON
+.root-cw9rWQ {
+	background-color: transparent;
+}
+.problemInfo-1QppuA {
+  .option-1O-Hwt {
+    color: #fff;
+    background: hsla(0, 0%, 100%, .03);
+    border: 1px solid hsla(0, 0%, 100%, .05);
+    border-top: none;
+    &:first-child {
+      border-top: 1px solid hsla(0, 0%, 100%, .05);
+    }
+  }
+  &:hover  {
+    background: hsla(0, 0%, 100%, .06);
+  }
+}

@@ -1,0 +1,27 @@
+// LINE NUMBERS
+%codeHLJS>.kawaii-linenumbers {
+  list-style: none;
+  counter-reset: linenumbers;
+  border-left: 2.6ch solid hsla(0, 0%, 100%, 0.04);
+  margin: -6px;
+  padding: 6px;
+  >li {
+    text-indent: -3ch;
+    margin-left: 0;
+    padding: 0;
+    border: none;
+    &:before {
+      content: counter(linenumbers);
+      counter-increment: linenumbers;
+      color: hsla(0, 0%, 100%, 0.3);
+      display: inline-block;
+      width: 2ch;
+      margin-right: 0.5ch;
+      padding-right: 0.5ch;
+      text-align: right;
+      overflow: hidden;
+      vertical-align: top;
+      user-select: none;
+    }
+  }
+}

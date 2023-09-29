@@ -1,0 +1,53 @@
+/* EMBED */
+%embed {
+  %embedAuthorName,
+  %embedFieldName,
+  %embedTitle {
+    color: #fff !important;
+  }
+  %embedProvider {
+    color: hsla(0, 0%, 100%, 0.7) !important;
+  }
+  %embedDescription,
+  %embedFieldValue {
+    color: hsla(0, 0%, 100%, 0.7);
+  }
+  %embedLink {
+    color: $main-color;
+    @include hover-shadow;
+  }
+  %embedTitleLink {
+    color: $main-color  !important;
+  }
+
+  // VIDEO ACTIONS
+  %embedVideoActions {
+    %embedVideoActionsButtonWrapper {
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+  }
+  a>code {
+    &%codeInline {
+      color: $main-color;
+    }
+  }
+
+  // FOOTER
+  %embedFooterText {
+    color: hsla(0, 0%, 100%, 0.5);
+  }
+  %embedFooterSeparator {
+    color: hsla(0, 0%, 100%, 0.07);
+  }
+}
+%embedFull {
+  background: hsla(0, 0%, 0%, 0.3);
+}
+
+// IMAGE ERROR
+%imageError {
+  filter: grayscale(1) brightness(2);
+  opacity: 0.3;
+}

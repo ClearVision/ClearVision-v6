@@ -1,0 +1,75 @@
+// PLUGIN NOTICE
+#pluginNotice {
+  #outdatedPlugins {
+    span {
+      color: #fff;
+      @include hover-shadow;
+    }
+  }
+}
+
+// Plugins/Themes Searchbar & dropdown filter
+.bd-search-wrapper {
+  background-color: hsla(0, 0%, 0%, 0.4) !important;
+}
+.bd-select {
+  .bd-select-options {
+    background-color: hsla(0, 0%, 0%, 0.4) !important;
+    border: hidden !important;
+  }
+  .bd-select-option {
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1) !important;
+    }
+    &.selected {
+      background-color: var(--main-color) !important;
+    }
+  }
+}
+
+.bd-addon-list .bd-addon-card {
+  background-color: hsla(0, 0%, 0%, 0.4) !important;
+}
+
+.bd-addon-list .bd-addon-header {
+  background-color: var(--backdrop-overlay);
+}
+
+.bd-button {
+  background-color: $main-color;
+  &:hover {
+    background-color: $hover-color;
+  }
+  &:active {
+    background-color: $main-color;
+  }
+}
+.bd-addon-views {
+  .bd-view-button.selected {
+    background-color: $main-color;
+  }
+}
+.bd-switch input:checked+.bd-switch-body {
+  background-color: $main-color  !important;
+}
+.bd-switch-body {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+}
+.bd-switch-symbol {
+  color: $main-color  !important;
+}
+.bd-toast {
+  background-color: $main-color;
+  &.toast-info {
+    background-color: $main-color;
+  }
+  &.toast-success {
+    background-color: $main-color;
+  }
+}
+.bd-link {
+  color: var(--url-color);
+}
+.bd-settings-title {
+  color: #fff;
+}

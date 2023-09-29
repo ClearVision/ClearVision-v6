@@ -1,0 +1,28 @@
+// MESSAGE BUTTONS
+.replyer,
+.btn-quote,
+.citar-btn {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  border-radius: 3px;
+  transition: background-color 0.3s ease-in-out;
+  &:hover {
+    background-color: $main-color  !important;
+  }
+  %messageGroup:not(:hover) & {
+    visibility: visible;
+    opacity: 0;
+  }
+}
+%messageGroup:hover {
+  .replyer {
+    opacity: 1;
+    animation: cv-fade-in 0.3s ease-in-out;
+  }
+  .btn-quote {
+    opacity: 1;
+  }
+  .citar-btn {
+    opacity: 0.8;
+    animation: cv-fade-to-8 0.3s ease-in-out;
+  }
+}

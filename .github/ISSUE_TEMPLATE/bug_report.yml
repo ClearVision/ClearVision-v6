@@ -1,0 +1,52 @@
+name: Bug Report
+description: Create a bug report for the theme.
+title: '[Bug Report] Issue Description'
+labels: [unverified bug]
+body:
+  - type: checkboxes
+    id: check
+    attributes:
+      label: Did You Search Other Issues?
+      description: 'Please search other issues FIRST, before continuing.'
+      options:
+        - label: 'I have checked other issues'
+          required: true
+  - type: checkboxes
+    id: default-theme
+    attributes:
+      label: Does This Bug Show On The Default Theme?
+      description: 'Is this issue reproduced on the default theme **with no customizations**?'
+      options:
+        - label: 'I have reproduced this on the default theme'
+          required: true
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: 'Describe The Bug'
+      description: 'Please write a clear and concise description of what the bug is.'
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: 'Reproduction Steps'
+      description: 'How do you get to this page? Please walk us through it step by step.'
+      value: |
+        1.
+        2.
+        3.
+        ...
+      render: bash
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 'Screenshots'
+      description: 'If applicable, add screenshots to help explain and / or show your problem.'
+      render: bash
+  - type: textarea
+    id: other
+    attributes:
+      label: 'Additional Context'
+      description: 'Add any other context about the problem here, or leave blank.'

@@ -1,0 +1,120 @@
+/* SERVER DISCOVER */
+%base {
+  %pageWrapper,
+  %hubDiscoverScroller {
+    background: rgba(0, 0, 0, calc(#{cv('bg.app.shading')} * 0.5));
+  }
+}
+
+// SIDEBAR
+%discoverCategoryItem {
+  &%discoverCategoryItemSelected {
+    %discoverCategoryItemInner {
+      background-color: var(--main-color);
+    }
+  }
+}
+
+// SEARCH BOX
+%search {
+  %searchBox {
+    background: hsla(0, 0%, 0%, 0.6);
+    border: none;
+    box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.09);
+    &:focus-within {
+      border: none;
+      box-shadow: 0 0 2px 2px var(--main-color);
+    }
+    %input {
+      border: none;
+      box-shadow: none;
+    }
+    %searchBoxInput {
+      color: var(--text-normal);
+      &::placeholder {
+        color: hsla(0, 0%, 100%, 0.3);
+      }
+    }
+    %searchBoxIconSearch {
+      color: var(--main-color);
+    }
+    %searchBoxCloseIcon {
+      color: var(--main-color);
+      &:hover {
+        color: var(--hover-color);
+      }
+    }
+  }
+  %searchPage & {
+    %searchBox {
+      background: hsla(0, 0%, 100%, 0.07);
+      border: none;
+      box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.09);
+      &:focus-within {
+        border: none;
+        box-shadow: 0 0 2px 2px var(--main-color);
+      }
+      %input {
+        border: none;
+        box-shadow: none;
+      }
+      %searchBoxInput {
+        color: var(--text-normal);
+        &::placeholder {
+          color: hsla(0, 0%, 100%, 0.3);
+        }
+      }
+      %searchBoxCloseIcon {
+        color: var(--main-color);
+        &:hover {
+          color: var(--hover-color);
+        }
+      }
+    }
+  }
+}
+
+// GUILD LIST
+%themeDark {
+  %discoverGuildCard,
+  %discoverHubCard,
+  %discoverGuildCardIcon {
+    background-color: hsla(0, 0%, 0%, 0.4);
+    transition: all 0.15s ease-in-out;
+    &:hover,
+    &:hover %discoverGuildCardIcon {
+      background-color: hsla(0, 0%, 0%, 0.6);
+    }
+  }
+}
+%discoverGuildCardLoading {
+  background-color: transparent;
+}
+%discoverGuildList {
+  %spinner {
+    background-color: hsla(0, 0%, 0%, 0.8);
+  }
+}
+%discoverGuildStatusOnline {
+  background-color: cv('colors.online');
+}
+%discoverGuildStatusOffline {
+  background-color: cv('colors.offline');
+}
+
+// LANGUAGE SELECTOR
+%discoverLanguageSelector>div>div {
+  background-color: hsla(0, 0%, 0%, 0.6);
+}
+
+// SEARCH CATEGORY
+%categoryPill {
+  &%categoryPillSelected {
+    background-color: var(--main-color);
+  }
+}
+
+// EMPTY RESULTS
+%discoverEmptyResults {
+  background-color: hsla(0, 0%, 0%, 0.6);
+}

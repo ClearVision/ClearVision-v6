@@ -1,0 +1,22 @@
+// MEMBER COUNT
+%members {
+  >#MemberCount {
+    position: static;
+    height: 40px;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 8px;
+    background: transparent;
+    color: hsla(0, 0%, 100%, 0.3);
+    font-size: 11px;
+    font-weight: 600;
+    text-align: center;
+    &:before,
+    &:after {
+      display: none;
+    }
+    +%membersGroup {
+      margin-top: -10px;
+    }
+  }
+}

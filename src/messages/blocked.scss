@@ -1,0 +1,49 @@
+/* BLOCKED MESSAGE */
+%messageGroupBlocked {
+  position: relative;
+  background: rgba(0, 0, 0, 0.1) !important;
+  border: none;
+  border-radius: 0;
+  transition: all 0.15s ease-in-out;
+  &:hover {
+    box-shadow: none !important;
+  }
+  %messageGroupBlockedButton {
+    background: transparent !important;
+    color: hsla(0, 0%, 100%, 0.3) !important;
+    transition: all 0.15s ease-in-out;
+    &:after {
+      content: '';
+      position: absolute;
+      @include stretch;
+      border-top: 1px solid;
+      border-bottom: 1px solid;
+      border-color: hsla(0, 0%, 100%, 0.04);
+      transition: all 0.15s ease-in-out;
+      pointer-events: none;
+    }
+    &:hover {
+      color: hsla(0, 0%, 100%, 0.5) !important;
+      &:after {
+        border-color: hsla(0, 0%, 100%, 0.07);
+      }
+    }
+  }
+  %messageGroup {
+    margin-top: -20px;
+    margin-left: 0;
+  }
+  +%divider {
+    margin-top: 25px;
+  }
+  %divider+& {
+    margin-top: 25px;
+  }
+}
+// Show blocked message
+.blockedAction-2cPk2G {
+  color: $main-color;
+}
+.blockedSystemMessage-3FmE9n:hover .blockedAction-2cPk2G {
+  color: $hover-color;
+}

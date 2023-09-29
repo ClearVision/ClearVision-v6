@@ -1,0 +1,28 @@
+/* THREADS POPOUT */
+%threadsPopoutContainer,
+%threadsPopoutHeader {
+  background-color: hsla(0, 0%, 0%, 0.8);
+}
+%popoutLayer %threadsPopoutContainer {
+  background-color: hsla(0, 0%, 0%, 0.8);
+  animation: cv-menu-fold-y 0.2s cubic-bezier(0.2, 0.6, 0.5, 1.1);
+  transform-origin: 50% 0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+%threadsPopoutIcon {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+%themeDark %threadsPopoutHeader %threadsPopoutTabBar %threadsPopoutTab {
+  color: #fff;
+  &%threadsPopoutTabActive {
+    background-color: var(--main-color);
+  }
+  &:hover:not(%threadsPopoutTabActive) {
+    background-color: hsla(0, 0%, 100%, 0.06);
+    color: #fff;
+  }
+}

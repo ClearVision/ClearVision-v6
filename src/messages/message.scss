@@ -1,0 +1,191 @@
+/* MESSAGE */
+%messages {
+  %messageGroup {
+    transition: background 0.3s ease-in-out;
+    &:active {
+      background: hsla(0, 0%, 100%, 0.1);
+      transition-delay: 0.3s;
+    }
+  }
+}
+%message {
+  // HEADER
+  %avatarLarge {
+    transition: all 0.3s ease-in-out, transform 0.1s ease-in-out;
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+  %messageTimestamp,
+  %messageTimestampAlt {
+    text-align: center;
+    color: hsla(0, 0%, 100%, 0.5);
+  }
+
+  // CONTENT
+  %messageSystemContainer {
+    color: hsla(0, 0%, 100%, 0.5);
+  }
+  %markup {
+    color: var(--text-normal);
+  }
+
+  // BLOCKQUOTE
+  %markup {
+    %blockquoteDivider {
+      background: hsla(0, 0%, 100%, 0.2);
+      border-radius: 0;
+    }
+  }
+  // MESSAGE JUMP
+  >div[style^='border-radius: 2px;'] {
+    &[style$='0);'] {
+      animation: none;
+    }
+    border-radius: 3px !important;
+    animation: cv-message-jump 2s ease-in-out;
+  }
+}
+// GIFS/EMBEDS
+%messageInlineMediaEmbed {
+  max-width: max-content;
+}
+// LINKS
+%markup a,
+%anchor {
+  color: var(--url-color);
+}
+
+// INVALID GIFT
+%themeDark {
+  .tile-2mmK5T {
+    background-color: hsla(0, 0%, 0%, 0.4);
+    &:hover {
+      background-color: hsla(0, 0%, 0%, 0.4);
+    }
+  }
+}
+
+// REPLY
+%messageReplied {
+  &:before {
+    border-color: $main-color;
+  }
+  %messageRepliedTextPreview {
+    opacity: 0.7;
+    &%messageRepliedTextPreviewClickable:hover {
+      opacity: 1;
+    }
+    %messageRepliedTextContent {
+      color: #fff;
+    }
+    %messageRepliedTextPlaceholder {
+      color: $main-color;
+    }
+  }
+  %messageRepliedTextContentIcon {
+    opacity: 0.7;
+    %messageRepliedTextPreview:hover+& {
+      opacity: 1;
+    }
+  }
+  &%messageRepliedExecutedCommand {
+    %messageRepliedCommandName {
+      color: $main-color;
+    }
+  }
+}
+
+// THREADS
+%threadChatIcon {
+  color: $main-color;
+  filter: drop-shadow(0 0 3px);
+  width: 22px;
+}
+%threadEmbed {
+  background-color: hsla(0, 0%, 0%, 0.4);
+}
+%threadCTA {
+  color: $main-color;
+}
+%cozy {
+  &%messageHasThread {
+    &:after {
+      border-color: $main-color;
+    }
+  }
+}
+%threadJumpButton {
+  background-color: var(--main-color);
+  color: #fff;
+  &:hover {
+    background-color: var(--hover-color);
+    color: #fff;
+  }
+}
+
+// BUTTONS
+%messageButtonWrapper {
+  background-color: transparent;
+  %messageButton {
+    color: hsla(0, 0%, 100%, 0.7);
+    &:hover,
+    &%messageButtonSelected {
+      background-color: hsla(0, 0%, 100%, 0.1);
+      color: #fff;
+    }
+  }
+}
+
+// EDITING
+%themeDark %operations {
+  color: hsla(0, 0%, 100%, 0.5);
+  >a {
+    color: var(--main-color);
+  }
+}
+
+%replyingToIndicator {
+  background-color: hsla(0, 0%, 100%, 0.05);
+  %mouseModeFullMotion &:hover {
+    background-color: hsla(0, 0%, 100%, 0.08);
+  }
+  &:before {
+    background-color: var(--main-color);
+  }
+}
+
+// BEGINNING DM WAVE
+%waveButton,
+%waveButtonDisabled {
+  background-color: $main-color;
+}
+
+%waveButton:hover {
+  background-color: $hover-color;
+}
+
+// PUBLISH TO FOLLOWERS
+.bumpBox-1Pp4td {
+	background: hsla(0, 0%, 0%, .4);
+}
+.icon-3N9zCW,
+.tagline-7EjHTm {
+	color: #fff;
+}
+.closeIcon-2Qp1gl,
+.hidePermanently-3f2ZH0 {
+	color: hsla(0, 0%, 100%, .4) !important;
+}
+
+// AUTOMOD MESSAGE
+.embedCard-bDyD5S,
+.footerContainer-11-cKL  {
+	background-color: hsla(0, 0%, 0%, .4);
+}
+.footerAction-cEV-Po .text-xs-normal-3O7EaX {
+	color: $main-color !important;
+}
+.footerIcon-3nJDhW path {
+	fill: $main-color;
+}

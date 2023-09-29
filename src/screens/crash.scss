@@ -1,0 +1,65 @@
+/* CRASH SCREEN */
+%errorPage {
+  background: transparent;
+  box-shadow: inset 0 0 50vmin 10px cv('colors.danger');
+  %buttonContents {
+    height: 16px;
+    font-size: 0;
+    &:after {
+      content: 'Respawn at last Checkpoint';
+      font-size: 14px;
+    }
+  }
+}
+%errorPageImage {
+  display: none;
+}
+%errorPageText {
+  width: auto;
+  color: hsla(0, 0%, 100%, 0.7);
+  h4 {
+    height: 150px;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.5);
+    color: cv('colors.danger');
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 0;
+    font-weight: normal;
+    line-height: 150px;
+    &:after {
+      content: 'YOU DIED';
+      font-size: 150px;
+    }
+  }
+  %errorPageNote {
+    font-size: 0;
+    white-space: pre-line;
+  }
+}
+%errorPageNote {
+  >div {
+    >p {
+      margin: 0;
+      &:before,
+      &:after {
+        margin-bottom: 14px;
+        display: block;
+        font-size: 16px;
+      }
+    }
+    >p:first-child {
+      &:before {
+        content: 'Looks like you got slaughtered by an Error Level 9000.';
+      }
+      &:after {
+        content: 'Might have been one of your plugins?';
+      }
+    }
+    >p:last-child {
+      &:after {
+        content: 'Press Ctrl + Shift + I or Cmd + Alt + I to check Console for errors.';
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+/* MESSAGE ATTACHMENT */
+%themeDark %attachment {
+  background: hsla(0, 0%, 100%, 0.06);
+  border-color: hsla(0, 0%, 100%, 0.08);
+}
+%attachmentIcon {
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  padding-left: 30px;
+  background-image: url(https://clearvision.github.io/icons/file.svg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  :not(%attachmentEmbedWrapper)>&[title='unknown'] {
+    background-image: url(https://clearvision.github.io/icons/file_upload.svg);
+  }
+  &[title='document'] {
+    background-image: url(https://clearvision.github.io/icons/file_document.svg);
+  }
+  &[title='archive'] {
+    background-image: url(https://clearvision.github.io/icons/file_archive.svg);
+  }
+  &[title='code'] {
+    background-image: url(https://clearvision.github.io/icons/file_code.svg);
+  }
+  &[title='webcode'] {
+    background-image: url(https://clearvision.github.io/icons/file_webcode.svg);
+  }
+  &[title='ai'],
+  &[title='ps'],
+  &[title='photoshop'],
+  &[title='sketch'] {
+    background-image: url(https://clearvision.github.io/icons/file_image.svg);
+  }
+  &[title='ae'] {
+    background-image: url(https://clearvision.github.io/icons/file_video.svg);
+  }
+  &[title='spreadsheet'] {
+    background-image: url(https://clearvision.github.io/icons/file_table.svg);
+  }
+  &[title='acrobat'] {
+    background-image: url(https://clearvision.github.io/icons/file_pdf.svg);
+  }
+}
+%fileNameLink {
+  color: $main-color;
+  @include hover-shadow;
+}
+%attachmentButton {
+  color: hsla(0, 0%, 100%, 0.3);
+  transition: all 0.15s ease-in-out;
+  &:hover {
+    color: hsla(0, 0%, 100%, 0.5);
+  }
+}
+%fileMetadata {
+  color: hsla(0, 0%, 100%, 0.3);
+}
+
+// UPLOADING
+%attachment {
+  %fileName {
+    color: hsla(0, 0%, 100%, 0.7);
+  }
+  %fileSize {
+    color: hsla(0, 0%, 100%, 0.3);
+  }
+}
+%fileProgress {
+  background: hsla(0, 0%, 100%, 0.04) !important;
+}
+%fileProgressBar {
+  background: $main-color  !important;
+}

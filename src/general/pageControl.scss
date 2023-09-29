@@ -1,0 +1,26 @@
+// PAGE CONTROL
+%themeDark {
+  %pageButton {
+    &%pageButtonActive,
+    &%pageButtonActive:hover {
+      background-color: $main-color;
+    }
+    &:hover {
+      background-color: $hover-color;
+      &:disabled {
+        background-color: transparent;
+      }
+    }
+  }
+}
+%pageButtonEnd {
+  &:disabled {
+    border-color: $main-color;
+    color: #fff;
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  &:not(:disabled):hover {
+    border-color: $hover-color;
+  }
+}

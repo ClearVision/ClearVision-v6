@@ -1,0 +1,138 @@
+/* MENU POPOUT */
+%menuPopout {
+  background-color: rgba(0, 0, 0, 0.8);
+  animation: cv-menu-fold-y 0.2s cubic-bezier(0.2, 0.6, 0.5, 1.1);
+  transform-origin: 50% 0;
+  %menuPopoutItem {
+    color: hsla(0, 0%, 100%, 0.7);
+    transition: all 0.15s ease-in-out;
+    &%menuPopoutItemHover {
+      background-color: $hover-color;
+      color: #fff;
+      %menuPopoutCheckbox,
+      %menuPopoutRadio {
+        color: #fff;
+      }
+      %menuPopoutCheck {
+        color: $main-color;
+      }
+    }
+    &%menuPopoutSelected:active:not(%menuPopoutHideInteraction) {
+      background-color: $hover-color;
+      color: #fff;
+      border-color: $hover-color;
+    }
+    %menuPopoutCheckbox,
+    %menuPopoutRadio {
+      color: $main-color;
+    }
+  }
+  %menuPopoutItemInvite {
+    color: $main-color;
+  }
+  %menuPopoutItemDanger {
+    color: var(--danger-color);
+    &%menuPopoutItemHover {
+      background-color: var(--danger-color);
+      color: #fff;
+      %menuPopoutIcon {
+        transform: rotateY(180deg);
+        transition: all 0.15s ease-in-out;
+      }
+    }
+  }
+}
+
+// QUICK REACTIONS
+%quickReactButton {
+  background-color: transparent;
+  &%quickReactButtonFocused,
+  &:hover {
+    background-color: transparent;
+  }
+  &%quickReactButtonFocused {
+    box-shadow: 0 0 2px 2px $hover-color;
+  }
+}
+.premiumUpsell-2K2V_c {
+  background-color: transparent;
+}
+
+// CHANNEL THREAD MENU
+%channelThreadPopout {
+  background-color: hsla(0, 0%, 0%, 0.8);
+  %channelThreadPopoutRow:hover {
+    background-color: $hover-color;
+  }
+  %channelThreadPopoutMore {
+    color: $main-color;
+  }
+}
+
+// HELP US UNDERSTAND WHY YOU'RE DELETING THIS SERVER
+%serverDeleteReasonOption {
+  color: #fff;
+  background: $main-color;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.08);
+  transition: all 0.15s ease-in-out;
+  &:hover {
+    background: $hover-color;
+  }
+}
+%deleteServerCheckbox {
+  %deleteServerCheckboxInner {
+    %deleteServerCheckboxElement {
+      &:checked+span {
+        background-color: $main-color;
+        border-color: $main-color;
+      }
+    }
+  }
+}
+
+// STATUS PICKER
+%menuPopoutItem {
+  &#account-status-picker--online {
+    &:not(%menuPopoutItemHover) {
+      %statusPickerIcon {
+        background-color: var(--online-color);
+      }
+    }
+    &%menuPopoutItemHover {
+      background-color: var(--online-color);
+    }
+  }
+  &#account-status-picker--idle {
+    &:not(%menuPopoutItemHover) {
+      %statusPickerIcon {
+        background-color: var(--idle-color);
+      }
+    }
+    &%menuPopoutItemHover {
+      background-color: var(--idle-color);
+    }
+  }
+  &#account-status-picker--dnd {
+    &:not(%menuPopoutItemHover) {
+      %statusPickerIcon {
+        background-color: var(--dnd-color);
+      }
+    }
+    &%menuPopoutItemHover {
+      background-color: var(--dnd-color);
+    }
+  }
+  &#account-status-picker--invisible {
+    &:not(%menuPopoutItemHover) {
+      %statusPickerIcon {
+        background-color: var(--offline-color);
+      }
+    }
+    &%menuPopoutItemHover {
+      background-color: var(--offline-color);
+    }
+  }
+  %userPopoutBodyInnerWrapper {
+    background-color: transparent;
+  }
+}

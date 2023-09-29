@@ -1,0 +1,89 @@
+/* APP */
+%themeDark %appMount {
+  background: cv('bg.app.overlay');
+}
+%shakeable {
+  background: transparent;
+}
+%bg {
+  background: cv('bg.app.img') cv('bg.app.pos') / cv('bg.app.size') cv('bg.app.repeat') cv('bg.app.attach');
+  @include filters(cv('bg.app'));
+  z-index: -9999;
+}
+%appMount {
+  %layers,
+  %layer {
+    background: transparent;
+  }
+}
+%layer {
+  %containerMain,
+  %standardSidebarView {
+    background: transparent;
+  }
+}
+%containerMain {
+  %base {
+    border-radius: 0;
+  }
+}
+%backdrop {
+  &:before {
+    content: '';
+    position: fixed;
+    @include stretch;
+    background: cv('bg.backdrop.img') cv('bg.backdrop.pos') / cv('bg.backdrop.size') cv('bg.backdrop.repeat') cv('bg.backdrop.attach');
+    @include filters(cv('bg.backdrop'));
+    pointer-events: none;
+  }
+  &:after {
+    content: '';
+    position: fixed;
+    @include stretch;
+    background: cv('bg.backdrop.overlay');
+    pointer-events: none;
+  }
+}
+%loading {
+  background-color: transparent;
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    @include stretch;
+    border: 3px solid transparent;
+    border-radius: 50%;
+    margin: auto;
+    filter: drop-shadow(0 0 3px $main-color);
+    animation: cv-spin 1s ease-in-out infinite;
+  }
+  &:before {
+    height: 26px;
+    width: 26px;
+    border-left-color: var(--main-color);
+    border-right-color: var(--main-color);
+  }
+  &:after {
+    height: 16px;
+    width: 16px;
+    border-top-color: $main-color;
+    border-bottom-color: $main-color;
+    animation-direction: reverse;
+  }
+}
+
+// FONT
+body,
+button,
+input,
+select,
+textarea,
+::placeholder {
+  font-family: cv('font.main');
+}
+
+// SELECTION
+::selection {
+  color: #fff;
+  background: $main-color;
+}

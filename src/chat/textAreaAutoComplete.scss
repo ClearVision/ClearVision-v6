@@ -1,0 +1,69 @@
+/* CHAT CHANNEL TEXT AREA AUTOCOMPLETE */
+%chat {
+  %autocomplete {
+    background: transparent;
+    overflow: hidden;
+  }
+}
+%autocomplete {
+  %autocompleteInner {
+    background: rgba(0, 0, 0, 0.8);
+    animation: cv-menu-slide-bottom 0.2s ease-in-out;
+    transform-origin: 50% 100%;
+  }
+  %autocompleteTitle {
+    color: hsla(0, 0%, 100%, 0.5);
+  }
+  %autocompleteContent {
+    color: hsla(0, 0%, 100%, 0.6);
+  }
+  %autocompleteIconForeground {
+    fill: hsla(0, 0%, 100%, 0.3);
+  }
+  %autocompleteDescription,
+  %autocompleteDescriptionUsername {
+    color: hsla(0, 0%, 100%, 0.3);
+  }
+  %autocompleteDescriptionDiscriminator {
+    color: hsla(0, 0%, 100%, 0.15);
+  }
+  %autocompleteSelectorSelected[aria-selected='true'] %autocompleteBase,
+  %autocompleteSelectorSelected[aria-disabled='false'] %autocompleteBase:hover {
+    background: $main-color;
+  }
+  %autocompleteBase {
+    %autocompleteContentMedium,
+    %autocompleteContentNormal {
+      color: #fff !important;
+    }
+  }
+  %autocompleteIconForeground {
+    fill: hsla(0, 0%, 100%, 0.7);
+  }
+  %autocompleteContentSecondary,
+  %autocompleteDescriptionDiscriminator,
+  %autocompleteRowSubheading {
+    color: #fff;
+  }
+}
+// SLASH COMMANDS AUTOCOMPLETE
+%autocompleteListWrapper,
+%autocompleteList,
+%autocompleteCategoryHeader {
+  background-color: transparent;
+}
+%autocompleteListItemSelected {
+  background-color: $main-color;
+  &:hover {
+    background-color: $main-color;
+  }
+}
+%themeDark %autocompleteOption {
+  background-color: hsla(0, 0%, 0%, 0.5);
+}
+%autocompleteOptionals {
+  border: none;
+}
+%autocompleteOptionalCount {
+  color: hsla(0, 0%, 100%, 0.7);
+}

@@ -1,0 +1,162 @@
+/* FRIENDS */
+%themeDark {
+  %friends {
+    background-color: transparent;
+  }
+}
+
+// FRIENDS COLUMN
+%friendsColumn {
+  background: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
+}
+%friendsItem {
+  border-top: 1px solid hsla(0, 0%, 100%, 0.1);
+  &:hover,
+  &%friendsItemActive {
+    background-color: hsla(0, 0%, 100%, 0.05);
+  }
+}
+
+%friendActivity {
+  color: hsla(0, 0%, 100%, 0.5);
+  strong {
+    color: $main-color;
+  }
+}
+
+%friendsDiscoverHint {
+  background: hsla(0, 0%, 0%, .2);
+  border: 2px solid $main-color;
+  &:hover {
+    background: hsla(0, 0%, 0%, .4);
+    border: 2px solid $hover-color;
+  }
+}
+
+// ACTION BUTTON
+%friendActionButton {
+  background-color: hsla(0, 0%, 0%, 0.6);
+  color: #fff;
+  &%friendActionButtonHighlight {
+    background-color: hsla(0, 0%, 0%, 0.6);
+    color: #fff;
+  }
+  &:hover {
+    background-color: $hover-color;
+    color: #fff;
+  }
+  &%friendActionAcceptButton {
+    color: cv('colors.success');
+    &:hover {
+      background-color: cv('colors.success');
+      color: #fff !important;
+    }
+  }
+  &%friendActionDenyButton {
+    color: cv('colors.danger');
+    &:hover {
+      background-color: cv('colors.danger');
+      color: #fff !important;
+    }
+  }
+}
+
+// ADD FRIENDS BUTTON
+%tabBarItem[aria-controls='add_friend-tab'][aria-selected='false'] {
+  background-color: cv('colors.success') !important;
+  color: #fff !important;
+}
+%tabBarItem[aria-controls='add_friend-tab'][aria-selected='true'] {
+  background-color: transparent !important;
+  color: cv('colors.success') !important;
+  box-shadow: 0 0 0 1px var(--success-color) inset;
+}
+%tabBarItem[aria-controls='add_friend-tab'][aria-selected='true']:before {
+  content: '';
+  position: absolute;
+  background-color: var(--success-color);
+  opacity: 0.2;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+// ADD FRIENDS PAGE
+%friendsAddFriendInputWrapper {
+  background-color: hsla(0, 0%, 100%, 0.07);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.09);
+  border: none;
+  &:focus-within {
+    box-shadow: 0 0 2px 2px var(--main-color);
+  }
+  %input {
+    background-color: transparent;
+    box-shadow: none;
+    &:focus,
+    &%inputFocused {
+      box-shadow: none;
+    }
+  }
+}
+%friendsAddFriendInput {
+  &::placeholder {
+    color: hsla(0, 0%, 100%, 0.3);
+  }
+}
+%friendsAddFriendHint {
+  color: hsla(0, 0%, 100%, 0.3);
+}
+
+// NOW PLAYING
+%nowPlayingColumn {
+  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.6));
+}
+%nowPlayingColumnContainer {
+  background-color: transparent;
+}
+%nowPlayingColumnScroller {
+  border-left: none;
+}
+%consentCard {
+  background-color: hsla(0, 0%, 0%, 0.4);
+}
+
+// ACTIVE NOW
+%themeDark {
+  %activeNowOuterCard {
+    background-color: hsla(0, 0%, 0%, 0.4);
+    border: 1px solid transparent;
+    &%activeNowCardInteractive:hover,
+    &%activeNowCardActive {
+      background-color: hsla(0, 0%, 0%, 0.6);
+    }
+  }
+  %activeNowCardInset {
+    background-color: hsla(0, 0%, 0%, 0.4);
+  }
+  .partyMemberOverflow-3G1oZz {
+    background-color: var(--background-overlay);
+  }
+}
+%activeNowCardSection {
+  background-color: transparent;
+}
+%themeDark .applicationStreamingPreviewWrapper-7j27t8 {
+  background-color: transparent;
+}
+
+// IT'S QUIET FOR NOW...
+%emptyActiveNowCard {
+  background-color: hsla(0, 0%, 0%, 0.4);
+}
+%emptyActiveNowText {
+  color: hsla(0, 0%, 100%, 0.3);
+}
+
+// DM USER PROFILE
+%userProfileOuterUnthemed {
+	background-color: hsla(0, 0%, 0%, .4);
+  .userPanelInnerThemed-3YO1BB{
+    background: transparent;
+  }
+}

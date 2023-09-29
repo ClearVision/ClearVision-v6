@@ -1,0 +1,87 @@
+/* CHAT BARS */
+// NEW MESSAGES BAR
+%newMessagesBar {
+  background: transparent;
+  transition: all 0.15s ease-in-out;
+  &:before {
+    content: '';
+    position: absolute;
+    @include stretch;
+    background: $main-color;
+    border-radius: 0 0 3px 3px;
+    opacity: 0.8;
+    z-index: -1;
+    transition: all 0.15s ease-in-out;
+  }
+  &:hover,
+  &:active {
+    &:before {
+      opacity: 1;
+    }
+  }
+  &:active {
+    padding-top: 0;
+    transform: scale(0.99);
+  }
+  button,
+  button:last-child {
+    color: #fff;
+  }
+}
+
+// JUMP TO PRESENT BAR
+%jumpToPresentBar {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 3px;
+  transition: all 0.15s ease-in-out;
+  padding-bottom: 0px;
+  max-height: 24px;
+  >button {
+    color: hsla(0, 0%, 100%, 0.7);
+    transition: inherit;
+  }
+  &:hover {
+    background: $main-color;
+    >button {
+      color: #fff;
+    }
+  }
+  &:active {
+    transform: scale(0.99);
+  }
+}
+
+// HAS MORE BAR
+%messages {
+  %hasMore {
+    background: hsla(0, 0%, 100%, 0.07);
+    border: none;
+    border-radius: 3px;
+    box-shadow: none;
+    color: hsla(0, 0%, 100%, 0.7);
+    transition: all 0.15s ease-in-out;
+    &:hover {
+      background: $main-color;
+      color: #fff;
+    }
+    &:active {
+      transform: scale(0.99);
+    }
+  }
+}
+
+// MESSAGE ERROR BAR
+%messagesErrorBar {
+  background: cv('colors.danger');
+  border-radius: 3px;
+  transition: all 0.15s ease-in-out;
+  padding-bottom: 0px;
+}
+
+// BRAND
+%barBrand {
+  background-color: $main-color;
+  > * {
+    color: #fff !important;
+  }
+}

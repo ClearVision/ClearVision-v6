@@ -1,0 +1,25 @@
+/* BD SETTINGS SIDEBAR ICONS */
+%settingsSidebar {
+  // BD ICON MAP
+  $bd: ( // Settings
+    'settings': 'https://clearvision.github.io/icons/betterdiscord.svg',
+    // Emotes
+    'emotes': 'https://clearvision.github.io/icons/emote.svg',
+    // Custom CSS
+    'customcss': 'https://clearvision.github.io/icons/code_braces.svg',
+    // Plugins
+    'plugins': 'https://clearvision.github.io/icons/puzzle.svg',
+    // Themes
+    'themes': 'https://clearvision.github.io/icons/palette.svg'
+  );
+
+  // BD ICON STYLES
+  %tabBarItem {
+    @each $i,
+    $u in $bd {
+      &.bd-#{$i}-tab:before {
+        background-image: url(#{$u});
+      }
+    }
+  }
+}

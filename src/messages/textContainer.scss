@@ -1,0 +1,44 @@
+/* Text Container */
+%textContainer {
+  background-color: rgba(0, 0, 0, 0.42);
+  border: 2px solid hsla(0, 0%, 100%, 0.05);
+  border-radius: 8px 8px 0 0;
+}
+%textContainerFooter {
+  background-color: hsla(0, 0%, 100%, 0.1);
+  border: none;
+}
+.colorHeaderSecondary-g5teka {
+  color: hsla(0, 0%, 100%, 0.7);
+  &:hover {
+    color: hsla(0, 0%, 100%, 0.9);
+  }
+}
+%attachmentName {
+  color: hsla(0, 0%, 100%, 0.7);
+  &:hover {
+    color: hsla(0, 0%, 100%, 0.9);
+  }
+}
+%attachmentSize {
+  color: hsla(0, 0%, 100%, 0.5);
+  margin: 0 5px;
+  &:hover {
+    color: hsla(0, 0%, 100%, 0.7);
+  }
+}
+%languageSelector {
+  background-color: hsla(0, 0%, 0%, 0.8);
+  %languageSelectorItem {
+    &:hover {
+      background-color: hsla(0, 0%, 100%, 0.05);
+    }
+    &%languageSelectorSelected {
+      background-color: $main-color;
+    }
+  }
+}
+%textContainerModal {
+  background-color: hsla(0, 0%, 0%, 0.5);
+  border: none;
+}

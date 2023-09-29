@@ -1,0 +1,36 @@
+/* ACTIVITY INVITE */
+%messageGroup {
+  %activityInvite {
+    background: rgba(0, 0, 0, 0.3);
+    border: none;
+  }
+}
+%activityInvite {
+  %activityInviteHeader {
+    color: hsla(0, 0%, 100%, 0.5);
+  }
+  %activityInvitePartyStatus {
+    color: #fff;
+  }
+  %activityInviteHelpIcon {
+    display: flex;
+    background: hsla(0, 0%, 100%, 0.07);
+    transition: all 0.15s ease-in-out;
+    opacity: 0;
+  }
+  &:hover {
+    %activityInviteHelpIcon {
+      opacity: 0.7;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  %activityInviteArtworkSessionEnded {
+    filter: grayscale(1) brightness(2);
+    opacity: 0.3;
+  }
+  %activityInvitePartyMemberEmpty {
+    background: hsla(0, 0%, 100%, 0.07);
+  }
+}

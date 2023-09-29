@@ -1,0 +1,12 @@
+.bd-select,
+.bd-select.menu-open {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bd-switch input:checked+.bd-switch-body {
+  --switch-color: var(--main-color);
+}
+
+.bd-transparency {
+  background: transparent !important;
+}

@@ -1,0 +1,22 @@
+/* Region Selector */
+
+.theme-dark .regionSelectPopout-3sEzVB {
+  background-color: rgba(0, 0, 0, 0.5);
+
+  .quickSelectPopoutOption-2E2UmS {
+    background-color: transparent;
+    border: none;
+    //box-shadow: 0 0 0 2px rgba(255,255,255,0.07);
+    &.selected {
+      background-color: $main-color;
+    }
+    &:hover {
+      //box-shadow: 0 0 2px 2px $hover-color;
+      background-color: $hover-color;
+    }
+
+    .regionSelectName-1Tj9C9 {
+      color: #fff;
+    }
+  }
+}

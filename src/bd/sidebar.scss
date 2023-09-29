@@ -1,0 +1,88 @@
+/* BETTERDISCORD SETTINGS SIDEBAR */
+%settingsSide %bdSettingsSidebar {
+  %bdSettingsSidebarHeader {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $main-color;
+    font-weight: 700;
+    &:before {
+      content: '';
+      height: 2px;
+      flex-grow: 1;
+      background: linear-gradient(to left, var(--main-color) 50%, transparent);
+      margin-right: 5px;
+    }
+    &:after {
+      content: '';
+      height: 2px;
+      flex-grow: 1;
+      background: linear-gradient(to right, var(--main-color) 50%, transparent);
+      margin-left: 5px;
+    }
+  }
+
+  // ITEM
+  %bdSettingsSidebarItem {
+    color: hsla(0, 0%, 100%, 0.3);
+    padding: 8px 0 8px 20px;
+    margin: 0;
+    transition: all 0.15s ease-in-out, background-size 0.3s ease-in-out;
+    cursor: pointer;
+    &:before {
+      opacity: 0.3;
+      transition: all 0.15s ease-in-out;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      @include pos(0, 100%, 0, 0);
+      opacity: 0.9;
+      transition: all 0.3s ease-in-out;
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    // HOVER
+    &:hover {
+      background: hsla(0, 0%, 100%, 0.07);
+      color: hsla(0, 0%, 100%, 0.7);
+      &:before {
+        opacity: 0.7;
+      }
+    }
+
+    // SELECTED
+    &%bdSettingsSidebarItemSelected {
+      background: transparent;
+      color: #fff;
+      transition: all 0.15s ease-in-out, background 0.3s 0.2s;
+      &:before {
+        opacity: 1;
+      }
+      &:after {
+        right: 0;
+        background: $main-color;
+        animation: cv-channel-select 0.3s ease-in-out;
+      }
+    }
+  }
+
+  // SEPARATOR
+  %bdSettingsSidebarSeparator {
+    background: hsla(0, 0%, 100%, 0.07);
+    &:first-child {
+      display: none;
+    }
+  }
+
+  // CREDITS
+  div[style] {
+    color: hsla(0, 0%, 100%, 0.3) !important;
+  }
+  a {
+    color: $main-color;
+    @include hover-shadow;
+  }
+}
