@@ -78,10 +78,3 @@
 %createEventIconContainer {
   background-color: $main-color;
 }
-
-// DATEPICKER
-%themeDark %popoutLayer %calendarPicker {
-  %datepicker {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-}

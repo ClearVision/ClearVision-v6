@@ -13,7 +13,7 @@
   border-radius: 4px;
 }
 %nitroSettingsInner {
-  background-color: var(--background-overlay);
+  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.6));
   border-radius: 4px;
   box-shadow: none;
   %buttonInverted%buttonColorBrand:disabled,
