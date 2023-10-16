@@ -494,15 +494,19 @@
 .container-YkUktl {
   @extend %accountPanel !optional;
 }
+.avatarWrapper-12uuu4, /*Canary Fix*/
 .avatarWrapper-1B9FTW {
   @extend %accountPanelAvatarWrapper !optional;
 }
+.avatar-19siqs, /*Canary Fix*/
 .avatar-1EWyVD {
   @extend %accountPanelAvatar !optional;
 }
+.nameTag-2Q56-H, /*Canary Fix*/
 .nameTag-sc-gpq {
   @extend %accountPanelNameTag !optional;
 }
+.usernameContainer--2WsMy, /*Canary Fix*/
 .usernameContainer-3PPkWq {
   @extend %accountPanelUsernameContainer !optional;
 }
@@ -520,6 +524,7 @@
 .withTagless-10ooWt {
   @extend %accountPanelTagless !optional;
 }
+.container-2NLBJg, /*Canary Fix*/
 .container-1zzFcN {
   @extend %connectionPanel !optional;
 }
@@ -553,7 +558,6 @@
 .channel-3prF2u {
   @extend %connectionPanelChannel !optional;
 }
-
 .activityPanel-9icbyU {
   @extend %activityPanel !optional;
 }
@@ -757,6 +761,7 @@
 .actionRed-gYn8D3 {
   @extend %chatGatedActionRed !optional;
 }
+.resizeHandle-2F4Beb, /*Canary Fix*/
 .resizeHandle-PBRzPC {
   @extend %chatResize !optional;
 }
@@ -3898,6 +3903,7 @@ pre {
 .contentPreview-3fWiuC {
   @extend %threadContentPreview !optional;
 }
+.container-3s2w-i, /*Canary Fix*/
 .container-3XgAHv {
   @extend %threadChat !optional;
 }
