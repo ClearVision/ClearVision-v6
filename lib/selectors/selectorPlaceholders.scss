@@ -137,6 +137,9 @@
 .macButtonMinimize-Q8clSI {
   @extend %titlebarMacButtonMinimize !optional;
 }
+.wrapper-3-JZ_Z {
+  @extend %repluggedInstallWrapper !optional;
+}
 #bda-qem {
   @extend %bdEmoteMenu !optional;
 }
@@ -509,9 +512,11 @@
 .subtext-2HDqJ7 {
   @extend %accountPanelDiscriminator !optional;
 }
+.withTagAsButton-2_JkHX, /*Canary Fix*/
 .withTagAsButton-OsgQ9L {
   @extend %accountPanelTagButton !optional;
 }
+.withTagless-Lx3LMo, /*Canary Fix*/
 .withTagless-10ooWt {
   @extend %accountPanelTagless !optional;
 }
