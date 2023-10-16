@@ -1,6 +1,6 @@
 %themeDark {
-	.gameActivityToggleAdded-Yd-YxC %accountPanelTagButton, 
-	.gameActivityToggleAdded-Yd-YxC %accountPanelTagless {
+	%accountPanelTagButton:has(+ div > [aria-label="Hide Game Activity"]), 
+	%accountPanelTagless:has(+ div > [aria-label="Hide Game Activity"]) {
 		min-width: calc(100% - 140px);
 	}
 }
