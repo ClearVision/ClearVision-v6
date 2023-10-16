@@ -10,13 +10,13 @@
 /*search bar*/
 %customizeChannelsSearch,
 %customizeChannelsSearch:focus-within {
-	background: rgba(0,0,0,.5);
+	background: rgba(0, 0, 0, calc(var(--background-shading) * 0.5));
 	border: 2px solid var(--main-color);
 }
 /*search bar with dropdown*/
 %customizeChannelsSearchDropdown,
 %customizeChannelsSearchDropdown:hover {
-	background: rgba(0,0,0,.5);
+	background: rgba(0, 0, 0, calc(var(--background-shading) * 0.5));
 	border: 2px solid var(--main-color);
 }
 /*dropdown options*/
@@ -24,10 +24,10 @@
 	background: var(--main-color);
 }
 %customizeChannelsSearchMenu {
-	background: rgba(0,0,0,.8);
+	background: rgba(0, 0, 0, calc(var(--background-shading) * 0.8));
 }
 %customizeChannelsPill {
-	background: rgba(0,0,0,.2);
+	background: rgba(0, 0, 0, calc(var(--background-shading) * 0.2));
 	border: 1px solid var(--main-color);	
 }
 /*option buttons*/
@@ -38,7 +38,7 @@
 	}
 	&%customizeChannelsSelected {
 		border: 2px solid var(--success-color);
-		background: rgba(0,0,0,.2);
+		background: rgba(0, 0, 0, calc(var(--background-shading) * 0.2));
 	}
 
 }
@@ -47,12 +47,12 @@
 	background: var(--background-overlay);
 }
 %customizeChannelsProfileRole {
-	background: rgba(0,0,0,.2);
+	background: rgba(0, 0, 0, 0.2);
 }
 
 /*BROWSE CHANNELS*/
 %browseChannels {
-    background-color: hsla(0, 0%, 0%, .4);
+    background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
 }
 
 %browseChannelsSelectAll {
@@ -68,10 +68,10 @@
 }
 
 %browseChannelsRow {
-    background-color: hsla(0, 0%, 0%, .4);
+    background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
     &:hover {
         &:not(%browseChannelsDisabled){
-            background-color: hsla(0, 0%, 0%, .6);
+            background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.6));
         }
     }
 }
@@ -125,7 +125,7 @@
 	%serverGuideAction,
 	%serverGuideSidebarCard,
 	%serverGuideRow {
-		background: rgba(0,0,0,.4);
+		background: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
 	}
 	%serverGuideAction:hover {
 		background: $hover-color;

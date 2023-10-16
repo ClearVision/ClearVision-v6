@@ -4563,3 +4563,18 @@ pre {
 .smallDecorationPreviewsContainer-3kMKqr {
   @extend %avatarDecoPreviewSmall !optional;
 }
+.selected-11Gl-y {
+  @extend %messageReq !optional;
+}
+.selected-5uRER3 {
+  @extend %messageReqSpam !optional;
+}
+.messageRequestItem-1_NNAR {
+  @extend %messageReqItem !optional;
+}
+.active-1iRyqF {
+  @extend %messageReqActive !optional;
+}
+.hamBanner-2jDGhV {
+  @extend %messageReqSpamCheck !optional;
+}

@@ -61,7 +61,7 @@
 // tag
 %themeDark %forumTag,
 %themeDark %forumIncreasedTag {
-	background: hsla(0, 0%, 0%, 0.6);
+	background: rgba(0, 0, 0, calc(var(--background-shading) * 0.6));
 	border: 2px solid $main-color;
     &%forumTagClickable:not(%forumTagDisabled):hover {
         background: transparent;
@@ -70,6 +70,13 @@
     &%forumTagSelected {
         border: 2px solid var(--success-color);
     }
+}
+%themeDark %forumIncreasedTag {
+    border-radius: 20px;
+    height: 32px;
+    width: fit-content;
+    text-align: center; 
+    padding: 0 10px;
 }
 // icons
 %forumPencilIcon, %forumSearchIcon, %forumCloseIcon {
