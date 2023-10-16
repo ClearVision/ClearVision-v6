@@ -962,6 +962,7 @@ header-2TLOnc {
 .operations-3q3u6E {
   @extend %operations !optional;
 }
+.wrapper-IjGAlW, /*Canary Fix*/
 .wrapper-2SplAX {
   @extend %channelInfo !optional;
 }
@@ -1897,9 +1898,11 @@ header-2TLOnc {
 .buttonShine-p5V5TB {
   @extend %libraryPlayButtonShine !optional;
 }
+.container-2vWgD2, /*Canary Fix*/
 .container-2o3qEW {
   @extend %membersContainer !optional;
 }
+.membersWrap-3GwLFp, /*Canary Fix*/
 .membersWrap-3NUR2t {
   @extend %membersWrap !optional;
 }
@@ -1907,9 +1910,11 @@ header-2TLOnc {
 .members-3WRCEx {
   @extend %members !optional;
 }
+.membersListNotices-3yhEwx, /*Canary Fix*/
 .membersListNotices-UstAx3 {
   @extend %membersNotices !optional;
 }
+.membersGroup-2YoqY-, /*Canary Fix*/
 .membersGroup-2eiWxl {
   @extend %membersGroup !optional;
 }
@@ -1958,6 +1963,7 @@ header-2TLOnc {
 .icon-Lupfh- {
   @extend %memberActivityIcon !optional;
 }
+.memberGroupsPlaceholder-HII-9j, /*Canary Fix*/
 .memberGroupsPlaceholder-9tqX9V {
   @extend %memberGroupPlaceholder !optional;
 }
