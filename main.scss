@@ -148,6 +148,9 @@ $version: '6.3.0';
 @import 'src/users/role';
 @import 'src/users/status';
 
+// REPLUGGED/Canary TMP fixes 
+@import 'src/replugged/gameActivityToggle.scss';
+
 // BETTERDISCORD
 @import 'src/bd/bdSettings';
 @import 'src/bd/customCSS';

@@ -462,6 +462,7 @@
 .panels-3wFtMD {
   @extend %panels !optional;
 }
+.panel-ufc1-o, /*Canary Fix*/
 .panel-2ZFCRb {
   @extend %panel !optional;
 }
@@ -486,6 +487,7 @@
 .buttonActive-Uc1jHx {
   @extend %panelActionButtonActive !optional;
 }
+.container-1CH86i, /*Canary Fix*/
 .container-YkUktl {
   @extend %accountPanel !optional;
 }
@@ -546,6 +548,7 @@
 .channel-3prF2u {
   @extend %connectionPanelChannel !optional;
 }
+
 .activityPanel-9icbyU {
   @extend %activityPanel !optional;
 }
@@ -713,12 +716,15 @@
 .speaking-7QZEkv {
   @extend %callTileSpeaking !optional;
 }
+.chat-9g_3Xj, /*Canary Fix*/
 .chat-2ZfjoI {
   @extend %chat !optional;
 }
+.content-18rAwf, /*Canary Fix*/
 .content-1jQy2l {
   @extend %chatContentWrapper !optional;
 }
+.chatContent-2O4SXb, /*Canary Fix*/
 .chatContent-3KubbW {
   @extend %chatContent !optional;
 }
@@ -1897,6 +1903,7 @@ header-2TLOnc {
 .membersWrap-3NUR2t {
   @extend %membersWrap !optional;
 }
+.members-2y1nVj, /*Canary Fix*/
 .members-3WRCEx {
   @extend %members !optional;
 }
