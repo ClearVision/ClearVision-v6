@@ -101,9 +101,11 @@
 .unfocused-1U-yOa {
   @extend %titlebarUnfocused !optional;
 }
+.typeWindows-3ILlhq, /*Canary Fix*/
 .typeWindows-2-g3UY {
   @extend %titlebarWin !optional;
 }
+.wordmark-3wYFg6, /*Canary Fix*/
 .wordmark-2u86JB {
   @extend %titlebarWordmark !optional;
 }
