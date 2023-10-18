@@ -1,7 +1,20 @@
 /* SCROLLBAR */
-::-webkit-scrollbar {
-  width: 14px !important;
+
+// NORMAL SCROLLBAR
+%scrollbarAuto::-webkit-scrollbar {
+  width: 14px;
 }
+// THIN SCROLLBAR
+%scrollbarThin::-webkit-scrollbar {
+  width: 10px;
+}
+
+// NO SCROLLBAR
+%scrollbarNone::-webkit-scrollbar {
+  width: 0px;
+}
+
+// CONTENT
 ::-webkit-scrollbar-thumb,
 ::-webkit-scrollbar-track,
 ::-webkit-scrollbar-track-piece {
@@ -50,14 +63,4 @@ textarea {
   &::-webkit-scrollbar {
     display: none;
   }
-}
-
-// NO SCROLLBAR
-%scrollbarNone::-webkit-scrollbar {
-  width: 0px !important;
-}
-
-// THIN SCROLLBAR
-%scrollbarThin::-webkit-scrollbar {
-  width: 10px !important;
 }
