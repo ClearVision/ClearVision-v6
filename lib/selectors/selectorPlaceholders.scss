@@ -661,14 +661,12 @@
   @extend %callMinimum !optional;
 }
 .normal-2GSW0u {
-  ///
   @extend %callNormal !optional;
 }
 .noChat-2UYgeE {
   @extend %callNoChat !optional;
 }
 .video-eAcneW {
-  //////
   @extend %callVideo !optional;
 }
 .controlButton-2PMNom {
@@ -3553,11 +3551,14 @@ pre {
 .backgroundOptionInner-SSz19O {
   @extend %videoBgOptionInner !optional;
 }
-.none-1rXy4P {
-  @extend %scrollbarNone !optional;
+.auto-2TJ1RH {
+  @extend %scrollbarAuto !optional;
 }
 .thin-RnSY0a {
   @extend %scrollbarThin !optional;
+}
+.none-1rXy4P {
+  @extend %scrollbarNone !optional;
 }
 .segmentContainer-2dq0ta {
   @extend %screenshareSegmentContainer !optional;
@@ -4538,6 +4539,30 @@ pre {
 }
 .smallDecorationPreviewsContainer-3kMKqr {
   @extend %avatarDecoPreviewSmall !optional;
+}
+.shop-3sIaH8 {
+  @extend %shop !optional;
+}
+.skeleton-1U6yWM {
+  @extend %shopLoadingSkeleton !optional;
+}
+.bannerBody-20oTYV {
+  @extend %shopLoadingBanner !optional;
+}
+.cardBody-1ntQaF {
+  @extend %shopLoadingCard !optional;
+}
+.cardAvatar-DsY13f,
+.cardDescription-1eoWy6,
+.cardTitle-3D3z1l,
+.cardSummary-218DWR {
+  @extend %shopLoadingCardContent !optional;
+}
+.chatPreview-2rboc6 {
+  @extend %shopChatPreview !optional;
+}
+.mockInput-GqyVoT {
+  @extend %shopMockInput !optional;
 }
 .selected-11Gl-y {
   @extend %messageReq !optional;
