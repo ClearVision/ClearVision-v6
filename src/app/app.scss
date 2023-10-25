@@ -1,49 +1,46 @@
 /* APP */
-%themeDark %appMount {
-  background: cv('bg.app.overlay');
-}
-%shakeable {
-  background: transparent;
-}
-%bg {
-  background: cv('bg.app.img') cv('bg.app.pos') / cv('bg.app.size') cv('bg.app.repeat') cv('bg.app.attach');
-  @include filters(cv('bg.app'));
-  z-index: -9999;
-}
-%appMount {
-  %layers,
-  %layer {
+%themeDark {
+  %appMount {
+    background: cv('bg.app.overlay');
+  }
+  %shakeable {
     background: transparent;
   }
-}
-%layer {
-  %containerMain,
-  %standardSidebarView {
-    background: transparent;
+  %bg {
+    background: cv('bg.app.img') cv('bg.app.pos') / cv('bg.app.size') cv('bg.app.repeat') cv('bg.app.attach');
+    @include filters(cv('bg.app'));
+    z-index: -9999;
+  }
+  %appMount {
+    %layers,
+    %layer {
+      background: transparent;
+    }
+  }
+  %containerMain {
+    %base {
+      border-radius: 0;
+    }
+  }
+  %backdrop {
+    &:before {
+      content: '';
+      position: fixed;
+      @include stretch;
+      background: cv('bg.backdrop.img') cv('bg.backdrop.pos') / cv('bg.backdrop.size') cv('bg.backdrop.repeat') cv('bg.backdrop.attach');
+      @include filters(cv('bg.backdrop'));
+      pointer-events: none;
+    }
+    &:after {
+      content: '';
+      position: fixed;
+      @include stretch;
+      background: cv('bg.backdrop.overlay');
+      pointer-events: none;
+    }
   }
 }
-%containerMain {
-  %base {
-    border-radius: 0;
-  }
-}
-%backdrop {
-  &:before {
-    content: '';
-    position: fixed;
-    @include stretch;
-    background: cv('bg.backdrop.img') cv('bg.backdrop.pos') / cv('bg.backdrop.size') cv('bg.backdrop.repeat') cv('bg.backdrop.attach');
-    @include filters(cv('bg.backdrop'));
-    pointer-events: none;
-  }
-  &:after {
-    content: '';
-    position: fixed;
-    @include stretch;
-    background: cv('bg.backdrop.overlay');
-    pointer-events: none;
-  }
-}
+
 %loading {
   background-color: transparent;
   &:before,

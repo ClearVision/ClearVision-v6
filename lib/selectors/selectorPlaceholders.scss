@@ -35,19 +35,13 @@
 .layer-86YKbF {
   @extend %layer !optional;
 }
-.animating-1rIrGV {
-  @extend %layerAnimating !optional;
-}
-.stop-animations {
-  @extend %layerStopAnimations !optional;
-}
-.container-1eFtFS {
+.container__037ed {
   @extend %containerMain !optional;
 }
-.base-2jDfDU {
+.base__3e6af{
   @extend %base !optional;
 }
-.backdrop-2ByYRN {
+.backdrop__7e89b {
   @extend %backdrop !optional;
 }
 .notice-2HEN-u {
@@ -101,19 +95,19 @@
 .unfocused-1U-yOa {
   @extend %titlebarUnfocused !optional;
 }
-.typeWindows-3ILlhq {
+.typeWindows__5fa63 {
   @extend %titlebarWin !optional;
 }
-.wordmark-3wYFg6 {
+.wordmark__0d178 {
   @extend %titlebarWordmark !optional;
 }
-.winButton-3UMjdg {
+.winButton__88672 {
   @extend %titlebarWinButton !optional;
 }
-.winButtonMinMax-3RsPUg {
+.winButtonMinMax__72f36 {
   @extend %titlebarWinButtonMinMax !optional;
 }
-.winButtonClose-3Q8ZH5 {
+.winButtonClose__73489 {
   @extend %titlebarWinButtonClose !optional;
 }
 .typeMacOS-3V4xXE {
@@ -714,13 +708,13 @@
 .speaking-7QZEkv {
   @extend %callTileSpeaking !optional;
 }
-.chat-9g_3Xj {
+.chat__52833 {
   @extend %chat !optional;
 }
-.content-18rAwf {
+.content__1a4fe {
   @extend %chatContentWrapper !optional;
 }
-.chatContent-2O4SXb {
+.chatContent__5dca8 {
   @extend %chatContent !optional;
 }
 .base-34jWEe {
