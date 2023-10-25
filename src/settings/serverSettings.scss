@@ -112,24 +112,24 @@
 .container-3ssFyj {
   background-color: hsla(0, 0%, 0%, 0.8);
 }
-.container-2oNtJn {
+.container__7712a {
   background-color: hsla(0, 0%, 100%, 0.07);
 }
 
 // EMOJI
 %themeDark {
-  .card-2ART2V:before,
-  .emojiRemove-D9w3jo {
+  .card_dc88cd:before,
+  .emojiRemove_b299a6 {
     background-color: hsla(0, 0%, 0%, .4);
   }
 }
-.emojiRow-1aPaM- .emojiAliasInput-3ZhdKx .emojiInput-B8MGXq {
+.emojiRow__4661c .emojiAliasInput_dd55f7 .emojiInput__4fe54 {
   color: var(--text-normal);
   background-color: rgba(255,255,255,.07);
   border: none;
   box-shadow: 0 0 0 2px rgb(255 255 255 / 9%);
 }
-.emojiAliasPlaceholder-3oShSx {
+.emojiAliasPlaceholder__71733 {
   padding-top: 7px;
   padding-left: 7px;
 }
@@ -147,48 +147,48 @@
 }
 
 // SAFETY SETUP
-.clickableContainer-3YtEIY {
+.clickableContainer__69013 {
   background-color: hsla(0, 0%, 0%, .4);
 }
-.backgroundModifierContainer-WjXgb2:hover:not(.disabled-3Q7kTN):not(.noAction-3PygTY) {
+.backgroundModifierContainer__73a0a:hover:not(.disabled__8b7eb):not(.noAction_aabf92) {
 	background:rgba(0,0,0,.2);
 }
 
 // AUTOMOD
-.textBadge-v9EW9y {
+.textBadge__9e179 {
   border: none;
   padding: 4px 6px;
 }
-.editCard-K9Q9mb {
+.editCard_dfa091 {
 	background-color: hsla(0, 0%, 0%, .4);
-  &.active-Xi2rnV,
-  &.active-Xi2rnV.toggled-35JcVc {
+  &.active_ef2ec5,
+  &.active_ef2ec5.toggled_bf7bde {
     background-color: hsla(0, 0%, 0%, .4);
   }
 }
-.ruleIconContainer-dXW56- {
+.ruleIconContainer_baf164 {
   background-color: hsla(0, 0%, 100%, .1);
 }
-.ruleIcon-jIriNN {
+.ruleIcon__44d2b {
   color: #fff;
 }
-.actionContainer-EzNGrb {
+.actionContainer_d21d10 {
 	background-color: hsla(0, 0%, 100%, .1);
 }
-.actionIcon-2VtFPq,
-.actionTextHeader-yeCKjC {
+.actionIcon__2a5f8,
+.actionTextHeader__87eb9 {
 	color: hsla(0, 0%, 100%, .9) !important;
 }
-.stepperContainer-i-z0pP,
-.stepCountIcon-1A2Rxd {
+.stepperContainer__053f4,
+.stepCountIcon_a27a70 {
 	background-color: hsla(0, 0%, 100%, .1);
 }
-.mentionLimitContainer-zBzr5i,
-.keywordListContainer-9ux8nU,
-.actionContainer-2krsiT {
+.mentionLimitContainer__0f0ff,
+.keywordListContainer_fdf41c,
+.actionContainer__51bd9 {
 	background-color: hsla(0, 0%, 0%, .4);
 }
-.keywordsTextArea-3QkFoG {
+.keywordsTextArea_d5eadb {
 	color: var(--text-normal);
 	background-color: hsla(0, 0%, 100%, 0.07);
 	border: none;
@@ -216,16 +216,16 @@
 
 // AUDIT LOG
 %themeDark {
-  .auditLog-1NVAY0 {
+  .auditLog__6c805 {
     border-color: hsla(0, 0%, 100%, 0.07);
   }
-  .headerClickable-zGQJz3,
-  .headerDefault-1e6yjj {
+  .headerClickable_c4d7a9,
+  .headerDefault__3e003 {
     background-color: hsla(0, 0%, 0%, 0.4);
   }
-  .headerExpanded-1-zwDr,
-  .divider-M3saWq,
-  .changeDetails-1kMZqI {
+  .headerExpanded__03c29,
+  .divider__1505d,
+  .changeDetails_ecd760 {
     background-color: hsla(0, 0%, 0%, 0.7);
   }
 }
@@ -234,41 +234,41 @@
 }
 
 // SERVER TEMPLATE
-.descriptionBox-SKGNgB {
+.descriptionBox_cca0c3 {
   background-color: hsla(0, 0%, 0%, 0.4);
 }
 
 // COMMUNITY OVERVIEW
-.upsellContainer-2a5eMP {
+.upsellContainer__978df {
   background-color: hsla(0, 0%, 0%, 0.4);
 }
-.upsellFooter-3M1V33 {
+.upsellFooter__63475 {
   background-color: transparent;
 }
 
 // SERVER INSIGHTS
-.analyticsCard-2fnrVG {
+.analyticsCard_a976ba {
   background-color: hsla(0, 0%, 0%, 0.4);
 }
-.developerPortalCtaWrapper-2PniQs {
+.developerPortalCtaWrapper__21172 {
   background-color: transparent;
 }
-.notEnoughMembersError-3-VD0N {
+.notEnoughMembersError__96545 {
   background-color: var(--info-warning-background);
 }
-.memberInsightsContainer-3TdlTJ {
+.memberInsightsContainer_a79381 {
   background-color: transparent;
 }
-.insightsActions-3cTXpa {
+.insightsActions_f32a84 {
   background-color: transparent;
 }
 
 // ENABLE COMMUNITY
-.guildDetails-1il1dn {
+.guildDetails_fc2c63 {
   background-color: hsla(0, 0%, 0%, 0.4);
 }
 .featureCard-1RR4Tl,
-.featureIcon-2sTnDK {
+.featureIcon__48a2c {
   background-color: hsla(0, 0%, 0%, 0.4);
 }
 .checkboxWrapper-2fDzaA.row-31nALW.checked-1pZh2h {
@@ -289,17 +289,17 @@
     opacity: 1;
   }
 }
-.featureCard-3XHbjy {
+.featureCard__0a441 {
   background-color: hsla(0, 0%, 0%, 0.4);
 }
 
 // directory
-.checklist-Asy_56 {
+.checklist__88646 {
   background-color: hsla(0, 0%, 0%, 0.4);
-  .header-Wl8ec- {
+  .header_d08072 {
     background-color: hsla(0, 0%, 0%, 0.4);
   }
-  .separator-1py8Bj {
+  .separator__26ad8 {
     background-color: hsla(0, 0%, 100%, 0.06);
   }
 }
@@ -312,7 +312,7 @@
 .guildSidebar-pjuGkm,
 .content-pHpkq8,
 .formFieldWrapper-2LV3S6,
-%themeDark .footer-11k_3m {
+%themeDark .footer__2f589 {
   background-color: transparent;
 }
 .fakeButton-3RWbMY {
@@ -320,33 +320,33 @@
 }
 
 // WELCOME SCREEN
-.enableContainer-H2cRts,
-.previewContainer-29oeA6 {
+.enableContainer__0945b,
+.previewContainer_b0f5b4 {
   background-color: hsla(0, 0%, 0%, 0.4);
 }
-.editCircle-2aQAUC {
+.editCircle_fb533c {
   background-color: $main-color;
   color: white;
 }
-.welcomeChannel-_Q4qAA {
+.welcomeChannel__0122f {
   background-color: hsla(0, 0%, 100%, 0.05);
 }
-.channelIcon-2N5-5h {
+.channelIcon__2b0ed {
   background-color: transparent;
 }
 
 // SERVER BOOST STATUS
 %themeDark {
-  .background-3xJH_4 {
+  .background__3dd67 {
     color: hsla(0, 0%, 0%, 0.4);
   }
-  .tierInProgress-1vFUnw {
+  .tierInProgress_f08e8b {
     background-color: hsla(0, 0%, 0%, 0.4);
     border: 3px solid #f47fff;
   }
-  .tierHeaderLocked-30MLlO,
-  .tierHeaderUnlocked-1OpOLf,
-  .tierBody-1d3UiS {
+  .tierHeaderLocked__4d099,
+  .tierHeaderUnlocked_cc60fa,
+  .tierBody__615a1 {
     background-color: hsla(0, 0%, 0%, 0.4);
   }
 }
@@ -359,7 +359,7 @@
   .popoutList-10IFAa {
     background-color: hsla(0, 0%, 0%, 0.4);
     box-shadow: 0 0 0 1px hsla(0, 0%, 100%, 0.07);
-    .selectableItem-3-fmiM.selected-1l_Bxn[style*='background: rgb(114, 137, 218)'] {
+    .selectableItem__166c5.selected__47180[style*='background: rgb(114, 137, 218)'] {
       background-color: $main-color  !important;
     }
   }
@@ -369,7 +369,7 @@
 }
 
 // BANS
-.searchBar-30dqPB {
+.searchBar_f3eb4c {
   background-color: hsla(0, 0%, 0%, 0.4);
 }
 

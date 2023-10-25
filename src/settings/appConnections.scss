@@ -12,35 +12,35 @@ $colours: (
   'YouTube': #ff0000,
 );
 
-.connection-YOVI9j {
+.connection_fff5f6 {
   background-color: hsla(0, 0%, 0%, 0.4);
 }
-.connectionHeader-Ixbb1s {
+.connectionHeader__3c82d {
   background-color: transparent;
 }
 
-.connection-YOVI9j {
+.connection_fff5f6 {
   @each $i,
   $u in $colours {
-    &:has(.connectionIcon-1iZ6F_[alt*='#{$i}']) {
+    &:has(.connectionIcon__1428c[alt*='#{$i}']) {
       background-color: rgba($u, 0.5);
     }
   }
 }
-.connectionHeader-Ixbb1s {
+.connectionHeader__3c82d {
   @each $i,
   $u in $colours {
-    &:has(.connectionIcon-1iZ6F_[alt*='#{$i}']) {
+    &:has(.connectionIcon__1428c[alt*='#{$i}']) {
       background-color: rgba($u, 0.2);
     }
   }
 }
-.connectionAccountLabel-28GEPk {
+.connectionAccountLabel_a71192 {
   color: hsla(0, 0%, 100%, 0.7) !important;
 }
-.connectionDelete-3YgMVq {
+.connectionDelete__988b5 {
   color: hsla(0, 0%, 100%, 0.7);
 }
-.metadataContainer-35U-On {
+.metadataContainer__7b316 {
 	background-color: hsla(0, 0%, 100%, .1);
 }

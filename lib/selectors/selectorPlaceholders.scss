@@ -768,6 +768,9 @@
 .wrapper__3d460 {
   @extend %chatLoadingWrapper !optional;
 }
+.wrapper__5c5cd {
+  @extend %chatLoadingWrapperCozy !optional;
+}
 .uploadModalIn_c0ca4b {
   @extend %uploadModalIn !optional;
 }
@@ -4503,6 +4506,9 @@ pre {
 .cardDescription__435dd,
 .cardSummary__432c0 {
   @extend %shopLoadingCardContent !optional;
+}
+.modalContent__3d79f {
+  @extend %shopModal !optional;
 }
 .chatPreview_d690d1 {
   @extend %shopChatPreview !optional;

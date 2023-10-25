@@ -44,23 +44,23 @@
 }
 
 // PERMISSIONS
-.group-LWHoGI {
+.group__6ae8b {
   border: 1px solid hsla(0, 0%, 100%, 0.07);
 }
-.item-4m-12I {
+.item_f48d11 {
   background-color: hsla(0, 0%, 0%, 0.4);
   border-color: hsla(0, 0%, 100%, 0.07);
   cursor: pointer;
-  &.selected-3jieYB {
-    &.deny-1GO6vI {
+  &.selected__47401 {
+    &.deny__71546 {
       background-color: rgba($color: #f04747, $alpha: 0.6);
       border-color: #f04747;
     }
-    &.passthrough--fbdFR {
+    &.passthrough__7cd54 {
       background-color: rgba($color: #faa61a, $alpha: 0.6);
       border-color: #faa61a;
     }
-    &.allow-1h61-Z {
+    &.allow_bbc621 {
       background-color: rgba($color: #43b581, $alpha: 0.6);
       border-color: #43b581;
     }
@@ -81,19 +81,19 @@
 }
 
 // ROLES/MEMBERS DROPDOWN
-.container-1S70rv {
+.container-1YVRxo {
 	background-color: var(--popout-color);
 }
-.theme-dark .header-3i_Csh,
-.theme-dark .container-1S70rv .sectionTag-28mLyE {
+%themeDark .header-PfVfAO,
+%themeDark .container-1YVRxo .sectionTag-euh3ZW {
 	background-color: transparent;
 }
-.row-1Ib2uD.selected-1IWCoj {
+.row-3UUG_l.selected-3LIQAc {
 	background-color: hsla(0, 0%, 100%, .1);
 }
 
 // FORUMS
-.staticToolbar-x12NJC {
+.staticToolbar__7ef7b {
 	background: transparent;
 }
 .addTags-2AjBTc {

@@ -64,3 +64,8 @@ textarea {
     display: none;
   }
 }
+%shopModal {
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+}
