@@ -765,11 +765,8 @@
 .text__1c14c {
   @extend %noChannelText !optional;
 }
-.wrapper__5c5cd {
+.wrapper__3d460 {
   @extend %chatLoadingWrapper !optional;
-}
-.wrapper_b8c724 {
-  @extend %chatLoadingWrapperOuter !optional;
 }
 .uploadModalIn_c0ca4b {
   @extend %uploadModalIn !optional;
@@ -2376,7 +2373,7 @@ pre {
 .icon__8c32c {
   @extend %messageSystemIcon !optional;
 }
-.wrapper__2d9b1 {
+.wrapper_f46140 {
   @extend %mentionWrapper !optional;
 }
 .mention {
@@ -4462,55 +4459,55 @@ pre {
 .pageButton_bcd673 {
   @extend %membersChannelPage !optional;
 }
-.optionBox-1UOevl {
+.optionBox__0338f {
   @extend %avatarOptionBox !optional;
 }
-.contentCircle-15IFyT {
+.contentCircle_bc797d {
   @extend %avatarOptionCircle !optional;
 }
-.uploadIcon-2zMtOT {
+.uploadIcon__68f2c {
   @extend %avatarUploadIcon !optional;
 }
-.gifIconContainer-3os21a {
+.gifIconContainer__85e92 {
   @extend %avatarGifIconContainer !optional;
 }
-.decorationGridItem-3J_11G {
+.decorationGridItem__80f7f {
   @extend %avatarDecoItem !optional;
 }
-.selected-IxbpGM {
+.selected_a76908 {
   @extend %avatarDecoItemSelected !optional;
 }
-.iconBadge-2grb37 {
+.iconBadge__5fd10 {
   @extend %avatarDecoItemBadge !optional;
 }
-.decorationPreview-1EtFuW {
+.decorationPreview_d09d2f {
   @extend %avatarDecoPreview !optional;
 }
-.smallDecorationPreviewsContainer-3kMKqr {
+.smallDecorationPreviewsContainer_c0deb8 {
   @extend %avatarDecoPreviewSmall !optional;
 }
-.shop-3sIaH8 {
+.shop_b31ed2 {
   @extend %shop !optional;
 }
-.skeleton-1U6yWM {
+.skeleton__5ac25 {
   @extend %shopLoadingSkeleton !optional;
 }
-.bannerBody-20oTYV {
+.bannerBody_b2bf3f {
   @extend %shopLoadingBanner !optional;
 }
-.cardBody-1ntQaF {
+.cardBody__04250 {
   @extend %shopLoadingCard !optional;
 }
-.cardAvatar-DsY13f,
-.cardDescription-1eoWy6,
-.cardTitle-3D3z1l,
-.cardSummary-218DWR {
+.cardAvatar__4c223,
+.cardTitle__05039,
+.cardDescription__435dd,
+.cardSummary__432c0 {
   @extend %shopLoadingCardContent !optional;
 }
-.chatPreview-2rboc6 {
+.chatPreview_d690d1 {
   @extend %shopChatPreview !optional;
 }
-.mockInput-GqyVoT {
+.mockInput_fd89c6 {
   @extend %shopMockInput !optional;
 }
 .selected_ee2dc5 {

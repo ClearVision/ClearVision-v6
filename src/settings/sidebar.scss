@@ -1,13 +1,11 @@
 /* SETTINGS SIDEBAR */
 %standardSidebarView {
-  %settingsSidebarRegion {
-    background: transparent;
-    %settingsSidebar {
-      height: 100%;
-      width: 260px;
-      padding: 0px 6px 0px 20px;
-    }
-  }
+  background: transparent;
+}
+%settingsSidebar {
+  height: 100%;
+  width: 260px;
+  padding: 0px 6px 0px 20px;
 }
 %settingsSidebarRegion {
   %settingsSidebarScroller {
