@@ -57,11 +57,6 @@
 %headerBarIconWrapper>svg>foreignObject {
   mask: none;
 }
-%headerBarInput {
-  &:focus {
-    background-color: hsla(0, 0%, 100%, 0.1);
-  }
-}
 
 // MODAL POPOUT
 %headerBarModalContent {

@@ -52,7 +52,7 @@
 
   // MEMBER
   %member {
-    background: transparent !important;
+    background: transparent;
     backface-visibility: hidden;
     &%memberOffline {
       %memberAvatar {
