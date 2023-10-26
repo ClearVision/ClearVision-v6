@@ -33,6 +33,10 @@
     %themeDark &%forumIncreasedOpenCard {
     background-color: hsla(0, 0%, 100%, 0.1);
   }
+  %input {
+    background: transparent;
+    box-shadow: none;
+  }
 }
 // fix the increased view's new reply feature
 %forumIncreasedReplyPreview {
@@ -216,4 +220,12 @@
 // event no messages in forum yet
 %forumNoConversations {
   background: hsla(0, 0%, 0%, 0.3);
+}
+// new posts button
+%forumNewPosts {
+  background: rgba(0,0,0,.2);
+  border: 1px solid var(--main-color);
+  %textMediumMedium {
+    color: var(--main-color) !important;
+  }
 }

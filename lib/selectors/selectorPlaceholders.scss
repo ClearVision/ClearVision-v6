@@ -4024,7 +4024,7 @@ pre {
 .searchInput-3NGPfp {
   @extend %forumSearchInput !optional;
 }
-.title-1v5ZfI {
+.title__38892 {
   @extend %forumSearch !optional;
 }
 .matchingPostsRow__510be {
@@ -4066,17 +4066,20 @@ pre {
 .box_dd6d91 {
   @extend %forumChatStartBox !optional;
 }
-.container-3arpDl {
+.container__1b27a {
   @extend %forumRules !optional;
 }
-.descriptionContainer-2ylKGk {
+.descriptionContainer__3814d {
   @extend %forumRulesDesc !optional;
 }
-.gradient-1SYq38 {
+.gradient__03beb {
   @extend %forumRulesGradient !optional;
 }
-.linkContainer-2xEQjX {
+.linkContainer__32221 {
   @extend %forumRulesLinkContainer !optional;
+}
+.newPostsButton__760c6 {
+  @extend %forumNewPosts !optional;
 }
 .heading-lg-bold__02f24 {
   @extend %headingLargeBold !optional;
@@ -4086,6 +4089,9 @@ pre {
 }
 .text-sm-medium_bc6ffc {
   @extend %textSmallMedium !optional;
+}
+.text-md-medium_b12de1 {
+  @extend %textMediumMedium !optional;
 }
 .text-md-normal__6a4eb {
   @extend %textMediumNormal !optional;
