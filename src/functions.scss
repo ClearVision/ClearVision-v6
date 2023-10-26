@@ -8,10 +8,10 @@
     $p: str-slice($id, 0, str-index($id, ':') - 1);
     $s: str-slice($id, str-index($id, ':') + 1);
   }
-  @if $p =='const' {
+  @if $p == 'const' {
     $p: 'constants';
   }
-  @if $p =='dc' or $p =='disc' {
+  @if $p == 'dc' or $p == 'disc' {
     $p: 'discord';
   }
   $r: map-get($cv, $p);

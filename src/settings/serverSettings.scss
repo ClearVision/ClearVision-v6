@@ -81,19 +81,19 @@
   %topPillItemThemed%tabBarItem {
     &:hover {
       &:not(%tabBarItemDisabled) {
-        background-color: hsla(0, 0%, 100%, .07);
+        background-color: hsla(0, 0%, 100%, 0.07);
       }
     }
     &%tabBarItemSelected {
-      background-color: hsla(0, 0%, 100%, .1);
+      background-color: hsla(0, 0%, 100%, 0.1);
       %roleCircle {
         &::before {
           content: '';
           position: absolute;
           @include stretch;
-          z-index: -1	;
+          z-index: -1;
           background-color: inherit;
-          opacity: .2;
+          opacity: 0.2;
           border-radius: 4px;
           transition: all 0.1 ease-in-out;
         }
@@ -120,12 +120,12 @@
 %themeDark {
   .card_dc88cd:before,
   .emojiRemove_b299a6 {
-    background-color: hsla(0, 0%, 0%, .4);
+    background-color: hsla(0, 0%, 0%, 0.4);
   }
 }
 .emojiRow__4661c .emojiAliasInput_dd55f7 .emojiInput__4fe54 {
   color: var(--text-normal);
-  background-color: rgba(255,255,255,.07);
+  background-color: rgba(255, 255, 255, 0.07);
   border: none;
   box-shadow: 0 0 0 2px rgb(255 255 255 / 9%);
 }
@@ -148,10 +148,10 @@
 
 // SAFETY SETUP
 .clickableContainer__69013 {
-  background-color: hsla(0, 0%, 0%, .4);
+  background-color: hsla(0, 0%, 0%, 0.4);
 }
 .backgroundModifierContainer__73a0a:hover:not(.disabled__8b7eb):not(.noAction_aabf92) {
-	background:rgba(0,0,0,.2);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 // AUTOMOD
@@ -160,39 +160,39 @@
   padding: 4px 6px;
 }
 .editCard_dfa091 {
-	background-color: hsla(0, 0%, 0%, .4);
+  background-color: hsla(0, 0%, 0%, 0.4);
   &.active_ef2ec5,
   &.active_ef2ec5.toggled_bf7bde {
-    background-color: hsla(0, 0%, 0%, .4);
+    background-color: hsla(0, 0%, 0%, 0.4);
   }
 }
 .ruleIconContainer_baf164 {
-  background-color: hsla(0, 0%, 100%, .1);
+  background-color: hsla(0, 0%, 100%, 0.1);
 }
 .ruleIcon__44d2b {
   color: #fff;
 }
 .actionContainer_d21d10 {
-	background-color: hsla(0, 0%, 100%, .1);
+  background-color: hsla(0, 0%, 100%, 0.1);
 }
 .actionIcon__2a5f8,
 .actionTextHeader__87eb9 {
-	color: hsla(0, 0%, 100%, .9) !important;
+  color: hsla(0, 0%, 100%, 0.9) !important;
 }
 .stepperContainer__053f4,
 .stepCountIcon_a27a70 {
-	background-color: hsla(0, 0%, 100%, .1);
+  background-color: hsla(0, 0%, 100%, 0.1);
 }
 .mentionLimitContainer__0f0ff,
 .keywordListContainer_fdf41c,
 .actionContainer__51bd9 {
-	background-color: hsla(0, 0%, 0%, .4);
+  background-color: hsla(0, 0%, 0%, 0.4);
 }
 .keywordsTextArea_d5eadb {
-	color: var(--text-normal);
-	background-color: hsla(0, 0%, 100%, 0.07);
-	border: none;
-	box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.09);
+  color: var(--text-normal);
+  background-color: hsla(0, 0%, 100%, 0.07);
+  border: none;
+  box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.09);
   &:focus {
     box-shadow: 0 0 2px 2px var(--main-color);
   }
@@ -201,18 +201,17 @@
   }
 }
 .resultsList-2d3x5p {
-	background-color: hsla(0, 0%, 0%, .8);
-	border: 1px solid hsla(0, 0%, 100%, .07);
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: hsla(0, 0%, 0%, 0.8);
+  border: 1px solid hsla(0, 0%, 100%, 0.07);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .channelRowLabel-3fw5wf,
 .roleLabel-1ML0Dw {
-	background-color: hsla(0, 0%, 100%, .1);
+  background-color: hsla(0, 0%, 100%, 0.1);
 }
 .channelIcon-36DzP5 {
-	color: #fff
+  color: #fff;
 }
-
 
 // AUDIT LOG
 %themeDark {
@@ -360,7 +359,7 @@
     background-color: hsla(0, 0%, 0%, 0.4);
     box-shadow: 0 0 0 1px hsla(0, 0%, 100%, 0.07);
     .selectableItem__166c5.selected__47180[style*='background: rgb(114, 137, 218)'] {
-      background-color: $main-color  !important;
+      background-color: $main-color !important;
     }
   }
   .popoutListInput-1w4TxY {

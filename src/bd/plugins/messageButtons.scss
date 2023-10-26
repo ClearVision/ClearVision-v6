@@ -6,7 +6,7 @@
   border-radius: 3px;
   transition: background-color 0.3s ease-in-out;
   &:hover {
-    background-color: $main-color  !important;
+    background-color: $main-color !important;
   }
   %messageGroup:not(:hover) & {
     visibility: visible;

@@ -20,7 +20,7 @@
       background: $hover-color;
     }
     &:disabled {
-      background: $main-color  !important;
+      background: $main-color !important;
     }
     &:active {
       background: $main-color;
@@ -31,18 +31,18 @@
   }
   &%buttonFilledWhite {
     background: hsla(0, 0%, 100%, 0.1);
-    >%buttonContents {
+    > %buttonContents {
       color: hsla(0, 0%, 100%, 0.7);
     }
     &:hover {
       background: hsla(0, 0%, 100%, 0.2) !important;
-      >%buttonContents {
+      > %buttonContents {
         color: #fff;
       }
     }
     &:disabled {
       background: hsla(0, 0%, 100%, 0.1) !important;
-      >%buttonContents {
+      > %buttonContents {
         color: hsla(0, 0%, 100%, 0.5);
       }
     }

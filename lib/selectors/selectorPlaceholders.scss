@@ -38,7 +38,7 @@
 .container__037ed {
   @extend %containerMain !optional;
 }
-.base__3e6af{
+.base__3e6af {
   @extend %base !optional;
 }
 .backdrop__7e89b {
@@ -991,7 +991,7 @@ header_f7f1f3 {
   @extend %autocompleteContentSecondary !optional;
 }
 .descriptionDiscriminator__158a4 {
-  @extend %autocompletedescriptiondiscriminator  !optional;
+  @extend %autocompletedescriptiondiscriminator !optional;
 }
 .selector-2IcQBU {
   @extend %autocompleteSelector !optional;
@@ -4213,7 +4213,7 @@ pre {
   @extend %forumSearch !optional;
 }
 .matchingPostsRow-2IiEQ1 {
-	@extend %forumSearchRow !optional
+  @extend %forumSearchRow !optional;
 }
 .container-3kfp0r {
   @extend %forumTagBox !optional;
@@ -4343,7 +4343,7 @@ pre {
   @extend %serverGuideMessage !optional;
 }
 .userCardInner_d6aa46 {
-  @extend %serverGuideMessageInner !optional
+  @extend %serverGuideMessageInner !optional;
 }
 .headerIcon__8b099 {
   @extend %serverGuideIcon !optional;

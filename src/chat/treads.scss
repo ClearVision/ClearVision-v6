@@ -1,28 +1,28 @@
 /* TREADS */
 //Temporary addition to attempt to fix bug
-%threadContainer{
+%threadContainer {
+  background: rgba(0, 0, 0, calc(var(--background-shading) * 0.3));
+  border: 2px solid $main-color;
+  &:hover {
     background: rgba(0, 0, 0, calc(var(--background-shading) * 0.3));
-    border: 2px solid $main-color;
-    &:hover {
-        background: rgba(0, 0, 0, calc(var(--background-shading) * 0.3));
-        border: 2px solid var(--hover-color);
-    }
-    //Temporary addition to attempt to fix bug
-    &%threadOpen {
-        background-color: hsla(0,0%,100%,0.1);
-        border-color: $main-color;
-    }
+    border: 2px solid var(--hover-color);
+  }
+  //Temporary addition to attempt to fix bug
+  &%threadOpen {
+    background-color: hsla(0, 0%, 100%, 0.1);
+    border-color: $main-color;
+  }
 }
 //Temporary addition to attempt to fix bug
 %threadContentPreview {
-	background-color: hsla(0,0%,100%,0.05);
-	border-color: hsla(0,0%,100%,0.09);
+  background-color: hsla(0, 0%, 100%, 0.05);
+  border-color: hsla(0, 0%, 100%, 0.09);
 }
 
 // CHAT
 %threadChat {
-    background: transparent;
+  background: transparent;
 }
 %threadIconWrapper {
-    background-color: $main-color;
+  background-color: $main-color;
 }

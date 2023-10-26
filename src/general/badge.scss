@@ -2,7 +2,7 @@
 %numberBadge,
 %inboxBadge,
 %textBadge {
-  background: $main-color  !important;
+  background: $main-color !important;
   box-shadow: 0 0 10px -3px $main-color, 0 0 0 1px $main-color;
   color: #fff;
   font-weight: 600;
@@ -32,12 +32,12 @@
     color: #fff;
   }
   %flowerStarChild {
-    >svg {
+    > svg {
       color: #fff;
     }
   }
 }
 
-%gameVerifiedIcon>svg>path {
+%gameVerifiedIcon > svg > path {
   fill: var(--main-color);
 }

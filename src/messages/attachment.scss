@@ -13,7 +13,7 @@
   background-size: 100%;
   background-repeat: no-repeat;
   opacity: 0.5;
-  :not(%attachmentEmbedWrapper)>&[title='unknown'] {
+  :not(%attachmentEmbedWrapper) > &[title='unknown'] {
     background-image: url(https://clearvision.github.io/icons/file_upload.svg);
   }
   &[title='document'] {
@@ -72,5 +72,5 @@
   background: hsla(0, 0%, 100%, 0.04) !important;
 }
 %fileProgressBar {
-  background: $main-color  !important;
+  background: $main-color !important;
 }

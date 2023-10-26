@@ -13,7 +13,7 @@
     }
   }
 }
-%hubCategoryItemIcon>svg>path {
+%hubCategoryItemIcon > svg > path {
   fill: var(--interactive-active);
 }
 
@@ -28,8 +28,8 @@
     background-color: hsla(0, 0%, 0%, 0.6);
   }
   %hubCardIconMask {
-    background-color: rgba(0, 0, 0, .4);
-    transition: all .15s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: all 0.15s ease-in-out;
   }
   %hubCardIcon {
     background-color: $main-color;

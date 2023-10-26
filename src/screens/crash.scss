@@ -38,8 +38,8 @@
   }
 }
 %errorPageNote {
-  >div {
-    >p {
+  > div {
+    > p {
       margin: 0;
       &:before,
       &:after {
@@ -48,7 +48,7 @@
         font-size: 16px;
       }
     }
-    >p:first-child {
+    > p:first-child {
       &:before {
         content: 'Looks like you got slaughtered by an Error Level 9000.';
       }
@@ -56,7 +56,7 @@
         content: 'Might have been one of your plugins?';
       }
     }
-    >p:last-child {
+    > p:last-child {
       &:after {
         content: 'Press Ctrl + Shift + I or Cmd + Alt + I to check Console for errors.';
       }

@@ -2,12 +2,12 @@
 %popoutLayer {
   %connectionInfo {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    >section {
+    > section {
       background: rgba(0, 0, 0, 0.7);
       border-radius: 0 0 3px 3px;
-      >p {
+      > p {
         color: hsla(0, 0%, 100%, 0.5);
-        >strong {
+        > strong {
           color: $main-color;
         }
       }
@@ -15,9 +15,9 @@
   }
 }
 %connectionInfo {
-  >section {
+  > section {
     %connectionInfoBottom {
-      >a {
+      > a {
         color: $main-color;
         @include hover-shadow;
       }

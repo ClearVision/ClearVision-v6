@@ -18,8 +18,8 @@
       background: hsla(0, 0%, 100%, 0.1);
       border-color: transparent;
     }
-    
-    >%roleName {
+
+    > %roleName {
       margin-right: 0;
       margin-left: 4px;
       color: hsla(0, 0%, 100%, 0.9);
@@ -31,7 +31,7 @@
           opacity: 0.3;
         }
       }
-      >%roleName {
+      > %roleName {
         color: #fff;
       }
     }
@@ -67,7 +67,7 @@
     background: hsla(0, 0%, 100%, 0.1);
     transition: all 0.1s ease-in-out;
     cursor: pointer;
-    >svg {
+    > svg {
       width: 7px;
       height: 7px;
       color: hsla(0, 0%, 100%, 0.5);
@@ -75,7 +75,7 @@
     }
     &:hover {
       background: hsla(0, 0%, 100%, 0.2);
-      >svg {
+      > svg {
         color: #fff;
       }
     }

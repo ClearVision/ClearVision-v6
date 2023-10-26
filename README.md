@@ -35,7 +35,7 @@ _Thank you to @Gibbu to providing this._
 
 ## Installing
 
-Note: ClearVision doesn't actively support plugins (as in, we don't seek out and actively theme fixes to every new plugin). However, when a plugin is widely used, we try our best to stay compatible. 
+Note: ClearVision doesn't actively support plugins (as in, we don't seek out and actively theme fixes to every new plugin). However, when a plugin is widely used, we try our best to stay compatible.
 
 Download the theme file from [the BetterDiscord Website](https://betterdiscord.app/theme/ClearVision) or [releases](https://github.com/ClearVision/ClearVision-v6/releases) and move it into your [BetterDiscord](https://betterdiscord.app) themes folder:
 
@@ -44,6 +44,7 @@ Download the theme file from [the BetterDiscord Website](https://betterdiscord.a
 To build the theme from source, you can simply run `npm install` to install all missing dependencies and `npm run build` to compile the theme into the `/public` folder.
 
 ### Dependencies
+
 - [NodeJS/npm](https://nodejs.org/)
 - [sass](https://www.npmjs.com/package/sass)
 - [PostCSS Autoprefixer](https://www.npmjs.com/package/autoprefixer)

@@ -3,11 +3,10 @@
   background-color: transparent;
   color: #fff;
   &:hover {
-    &:not([aria-checked=true]):not(%radioItemDisabled) {
+    &:not([aria-checked='true']):not(%radioItemDisabled) {
       background-color: transparent;
       color: #fff;
     }
-    
   }
   %radioBar {
     background-color: rgba(0, 0, 0, 0.4);

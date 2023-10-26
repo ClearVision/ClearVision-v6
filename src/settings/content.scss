@@ -1,6 +1,6 @@
 /* SETTINGS CONTENT */
 %standardSidebarView {
-  >%settingsContentRegion {
+  > %settingsContentRegion {
     background: transparent;
   }
 }
@@ -19,7 +19,7 @@
       border-color: hsla(0, 0%, 100%, 0.6);
       background-color: transparent;
     }
-    >svg>path {
+    > svg > path {
       fill: hsla(0, 0%, 100%, 0.6);
     }
   }
@@ -89,11 +89,11 @@
 
 // DROP DOWN
 .lookFilled__3dba3.select__0eb48 {
-	background-color: hsla(0, 0%, 100%, .07);
-	border-color: hsla(0, 0%, 100%, .09);
+  background-color: hsla(0, 0%, 100%, 0.07);
+  border-color: hsla(0, 0%, 100%, 0.09);
 }
 .popout_a6e77f {
-	background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   border: none;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -105,7 +105,7 @@
     background-color: hsla(0, 0%, 100%, 0.05);
     border: hsla(0, 0%, 100%, 0.07);
   }
-  &[aria-selected=true]:not(.option_be8b2e.multi__8d15f) {
+  &[aria-selected='true']:not(.option_be8b2e.multi__8d15f) {
     background-color: $main-color;
     .selectedIcon__4b0ba {
       circle {
@@ -120,11 +120,11 @@
 
 // INPUT
 .input_d266e7 {
-	color: var(--text-normal);
+  color: var(--text-normal);
   background-color: hsla(0, 0%, 100%, 0.07);
   border: none;
   box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.09);
   &:focus {
-    box-shadow: 0 0 2px 2px  $main-color;
+    box-shadow: 0 0 2px 2px $main-color;
   }
 }

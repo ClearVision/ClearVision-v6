@@ -53,7 +53,7 @@
     &%callButtonActive {
       background-color: #fff;
       &:hover {
-        background-color: hsla(0, 0%, 100%, .7);
+        background-color: hsla(0, 0%, 100%, 0.7);
       }
     }
     %callCenterIcon,
@@ -62,7 +62,7 @@
     }
     %callCenterIcon {
       &%callButtonActive {
-        color: $main-color
+        color: $main-color;
       }
     }
   }

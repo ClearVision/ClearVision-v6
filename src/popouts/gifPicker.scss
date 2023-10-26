@@ -64,7 +64,7 @@
       transition: all 0.15s ease-in-out;
     }
     &[style*='background-color:'] {
-      background: $main-color  !important;
+      background: $main-color !important;
     }
     &[style*='background-color: rgb(179, 174, 255)'] {
       filter: brightness(1.3);

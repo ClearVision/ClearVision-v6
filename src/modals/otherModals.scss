@@ -68,12 +68,12 @@
 
 // DISCORD NITRO PAYMENT
 .spinner-1HUPsi {
-	background-color: transparent;
+  background-color: transparent;
 }
 .paymentNote-3dcb-Z,
 .wrapper-wOVKdL,
 .body__59737 {
-	background-color: transparent;
+  background-color: transparent;
 }
 .table-17_dGF {
   background-color: hsla(0, 0%, 0%, 0.4);
@@ -85,19 +85,18 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 .body-1d1686 {
-	padding: 16px 2px;
+  padding: 16px 2px;
 }
 .cardInput-33x7OF {
   background-color: hsla(0, 0%, 100%, 0.07);
-	box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.09);
+  box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.09);
 }
 .cardInputFocused-31lFD1 {
-	box-shadow: 0 0 2px 2px var(--main-color);
+  box-shadow: 0 0 2px 2px var(--main-color);
 }
 .paymentModalContent {
   background-color: transparent;
 }
-
 
 // SERVER BOOST PAYMENT MODAL
 .upsellFooter-1H_OCF {
@@ -163,8 +162,8 @@
 %manageAccountsList {
   background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.5));
 }
-.activeIcon_e452f7>circle:not([fill^='hsl(0']),
-.activeIcon_e452f7>g>path:not([fill^='hsl(0']) {
+.activeIcon_e452f7 > circle:not([fill^='hsl(0']),
+.activeIcon_e452f7 > g > path:not([fill^='hsl(0']) {
   fill: var(--main-color);
 }
 // ADD ACCOUNT
@@ -184,7 +183,7 @@
 // ACTIVITIES
 %activityModalHeader,
 %activityModalDivider {
-  background: rgba(0, 0, 0, .4);
+  background: rgba(0, 0, 0, 0.4);
 }
 %activityTag {
   background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.5));
@@ -203,14 +202,14 @@
 
 // AUTH MODAL
 .authorize__4ddfc {
-	background-color: transparent;
-	border-radius: 5px;
+  background-color: transparent;
+  border-radius: 5px;
 }
 .scopeTimes__83c10 {
-	background-color: hsla(0, 0%, 100%, .15);
+  background-color: hsla(0, 0%, 100%, 0.15);
 }
 .footer__04ee2 {
-	background-color: transparent;
+  background-color: transparent;
 }
 
 // SOUNDBOARD MODAL

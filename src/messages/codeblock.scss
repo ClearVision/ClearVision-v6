@@ -8,11 +8,11 @@
     color: hsla(0, 0%, 100%, 0.7);
     font-family: cv('font.code');
     line-height: 22px;
-    +pre {
+    + pre {
       margin-top: -1px;
     }
   }
-  %codeActions  {
+  %codeActions {
     z-index: 999;
   }
 }

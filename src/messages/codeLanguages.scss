@@ -5,21 +5,26 @@ $languages: (
   'ABNF': 'abnf',
   // Augmented Backus-Naur Form
   'Access Log': 'accesslog',
-  'ActionScript': ('actionscript',
+  'ActionScript': (
+    'actionscript',
     'as',
   ),
   'Ada': 'ada',
-  'Apache': ('apache',
+  'Apache': (
+    'apache',
     'apacheconf',
   ),
-  'Applescript': ('applescript',
+  'Applescript': (
+    'applescript',
     'osascript',
   ),
   'Arduino': 'arduino',
-  'ARM Assembly': ('armasm',
+  'ARM Assembly': (
+    'armasm',
     'arm',
   ),
-  'AsciiDoc': ('asciidoc',
+  'AsciiDoc': (
+    'asciidoc',
     'adoc',
   ),
   'AspectJ': 'aspectj',
@@ -29,60 +34,74 @@ $languages: (
   'AVR Assembler': 'avrasm',
   'awk': 'awk',
   'Axapta': 'axapta',
-  'Bash': ('bash',
+  'Bash': (
+    'bash',
     'sh',
     'zsh',
   ),
   'Basic': 'basic',
-  'Batch': ('dos',
+  'Batch': (
+    'dos',
     'bat',
     'cmd',
   ),
-  'BNF': ('bnf',
+  'BNF': (
+    'bnf',
     'bf',
   ),
   // Backus-Naur Form
   'Brainfuck': 'brainfuck',
-  'C/C++': ('c',
+  'C/C++': (
+    'c',
     'h',
   ),
-  'C++': ('cc',
+  'C++': (
+    'cc',
     'cpp',
     'hpp',
   ),
-  'C#': ('cs',
+  'C#': (
+    'cs',
     'csharp',
   ),
   'C/AL': 'cal',
   // Client/server Application Language
-  "Cap'n Proto": ('capnproto',
-    'capnp',
-  ),
+  "Cap'n Proto":
+    (
+      'capnproto',
+      'capnp',
+    ),
   'Ceylon': 'ceylon',
-  'Clean': ('clean',
+  'Clean': (
+    'clean',
     'icl',
     'dcl',
   ),
-  'Clojure': ('clojure',
+  'Clojure': (
+    'clojure',
     'clj',
   ),
   'Clojure REPL': 'clojure-repl',
   'CMake': 'cmake',
-  'CoffeeScript': ('coffeescript',
+  'CoffeeScript': (
+    'coffeescript',
     'coffee',
     'cson',
     'iced',
   ),
   'Coq': 'coq',
-  'Caché Object Script': ('cos',
+  'Caché Object Script': (
+    'cos',
     'cls',
   ),
   'CocoaPod': 'podspec',
-  'crmsh': ('crmsh',
+  'crmsh': (
+    'crmsh',
     'crm',
     'pcmk',
   ),
-  'Crystal': ('crystal',
+  'Crystal': (
+    'crystal',
     'cr',
   ),
   'CSP': 'csp',
@@ -91,24 +110,29 @@ $languages: (
   // Cascading Style Sheets
   'D': 'd',
   'Dart': 'dart',
-  'Delphi (Object Pascal)': ('delphi',
+  'Delphi (Object Pascal)': (
+    'delphi',
     'dfm',
     'dpr',
   ),
-  'Diff': ('diff',
+  'Diff': (
+    'diff',
     'patch',
   ),
   'Django': 'django',
-  'DNS Zone File': ('dns',
+  'DNS Zone File': (
+    'dns',
     'bind',
     'zone',
   ),
-  'Dockerfile': ('dockerfile',
+  'Dockerfile': (
+    'dockerfile',
     'docker',
   ),
   'dsconfig': 'dsconfig',
   'Device Tree': 'dts',
-  'Dust': ('dust',
+  'Dust': (
+    'dust',
     'dst',
   ),
   'EBNF': 'ebnf',
@@ -117,51 +141,65 @@ $languages: (
   'Elm': 'elm',
   'eRuby': 'erb',
   // Embedded Ruby
-  'Erlang': ('erlang',
-    'erl',
-  ),
+  'Erlang':
+    (
+      'erlang',
+      'erl',
+    ),
   'Erlang REPL': 'erlang-repl',
-  'Excel': ('excel',
+  'Excel': (
+    'excel',
     'xls',
     'xlsx',
   ),
-  'F#': ('fs',
+  'F#': (
+    'fs',
     'fsharp',
   ),
   'Fix': 'fix',
   'Flix': 'flix',
-  'Fortran': ('fortran',
+  'Fortran': (
+    'fortran',
     'f90',
     'f95',
   ),
-  'GAMS': ('gams',
+  'GAMS': (
+    'gams',
     'gms',
   ),
-  'GAUSS': ('gauss',
+  'GAUSS': (
+    'gauss',
     'gss',
   ),
-  'G-code': ('gcode',
+  'G-code': (
+    'gcode',
     'nc',
   ),
-  'Gherkin': ('gherkin',
+  'Gherkin': (
+    'gherkin',
     'feature',
   ),
   'GLSL': 'glsl',
   // OpenGL Shading Language
-  'Go': ('go',
-    'golang',
-  ),
+  'Go':
+    (
+      'go',
+      'golang',
+    ),
   'Golo': 'golo',
   'Gradle': 'gradle',
   'Groovy': 'groovy',
   'Haml': 'haml',
-  'Handlebars': ('handlebars',
+  'Handlebars': (
+    'handlebars',
     'hbs',
   ),
-  'Haskell': ('haskell',
+  'Haskell': (
+    'haskell',
     'hs',
   ),
-  'Haxe': ('haxe',
+  'Haxe': (
+    'haxe',
     'hx',
   ),
   'HSP': 'hsp',
@@ -173,10 +211,13 @@ $languages: (
   // Hyptertext Transfer Protocol
   'HTTPS': 'https',
   // Hyptertext Transfer Protocol Secure
-  'Hy': ('hy',
-    'hylang',
-  ),
-  'Inform7': ('inform7',
+  'Hy':
+    (
+      'hy',
+      'hylang',
+    ),
+  'Inform7': (
+    'inform7',
     'i7',
   ),
   'INI': 'ini',
@@ -184,15 +225,18 @@ $languages: (
   'IRB': 'irb',
   // Interactive Ruby Shell
   'IRPF90': 'irpf90',
-  'Java': ('java',
+  'Java': (
+    'java',
     'jsp',
   ),
-  'JavaScript/JSX': ('javascript',
+  'JavaScript/JSX': (
+    'javascript',
     'js',
     'jsx',
   ),
   'JAXB (XML)': 'xjb',
-  'JBoss CLI': ('jboss-cli',
+  'JBoss CLI': (
+    'jboss-cli',
     'wildfly-cli',
   ),
   'Jinja': 'jinja',
@@ -201,7 +245,8 @@ $languages: (
   'Julia': 'julia',
   'Julia REPL': 'julia-repl',
   'Kotlin': 'kotlin',
-  'Lasso': ('lasso',
+  'Lasso': (
+    'lasso',
     'lassoscript',
     'ls',
   ),
@@ -211,147 +256,178 @@ $languages: (
   'Less': 'less',
   'Lisp': 'lisp',
   'LiveCode Server': 'livecodeserver',
-  'LiveScript': ('livescript',
+  'LiveScript': (
+    'livescript',
     'ls',
   ),
   'LLVM IR': 'llvm',
   'LSL': 'lsl',
   // Linden Scripting Language
   'Lua': 'lua',
-  'Makefile': ('makefile',
+  'Makefile': (
+    'makefile',
     'mk',
     'mak',
   ),
-  'Markdown': ('markdown',
+  'Markdown': (
+    'markdown',
     'md',
     'mkd',
     'mkdown',
   ),
-  'Mathematica': ('mathematica',
+  'Mathematica': (
+    'mathematica',
     'mma',
   ),
   'MatLab': 'matlab',
   'Maxima': 'maxima',
   'MEL': 'mel',
-  'Mercury': ('mercury',
+  'Mercury': (
+    'mercury',
     'm',
     'moo',
   ),
-  'MIPS Assembly': ('mipsasm',
+  'MIPS Assembly': (
+    'mipsasm',
     'mips',
   ),
-  'Mikrotik RouterOS': ('routeros',
+  'Mikrotik RouterOS': (
+    'routeros',
     'mikrotik',
   ),
   'Mizar': 'mizar',
   'Mojolicious': 'mojolicious',
   'Monkey': 'monkey',
-  'MoonScript': ('moonscript',
+  'MoonScript': (
+    'moonscript',
     'moon',
   ),
   'N1QL': 'n1ql',
-  'Nginx': ('nginx',
+  'Nginx': (
+    'nginx',
     'nginxconf',
   ),
-  'Nimrod': ('nimrod',
+  'Nimrod': (
+    'nimrod',
     'nim',
   ),
-  'Nix': ('nix',
+  'Nix': (
+    'nix',
     'nixos',
   ),
   'NSIS': 'nsis',
-  'Objective-C': ('objectivec',
+  'Objective-C': (
+    'objectivec',
     'objc',
     'obj-c',
     'mm',
   ),
-  'OCaml': ('ocaml',
+  'OCaml': (
+    'ocaml',
     'ml',
   ),
-  'OpenSCAD': ('openscad',
+  'OpenSCAD': (
+    'openscad',
     'scad',
   ),
   'Oracle Rules Language': 'ruleslanguage',
   'Oxygene': 'oxygene',
   'Parser3': 'parser3',
-  'Pascal/Object Pascal': ('pascal',
+  'Pascal/Object Pascal': (
+    'pascal',
     'pas',
     'freepascal',
     'lazarus',
     'lfm',
     'lpr',
   ),
-  'Perl': ('perl',
+  'Perl': (
+    'perl',
     'pl',
     'pm',
   ),
   'OpenBSD PF': 'pf',
   // OpenBSD Packet Filter
-  'PHP': ('php',
-    'php3',
-    'php4',
-    'php5',
-    'php6',
-  ),
+  'PHP':
+    (
+      'php',
+      'php3',
+      'php4',
+      'php5',
+      'php6',
+    ),
   // PHP: Hypertext Preprocessor
   'Pony': 'pony',
-  'PowerShell': ('powershell',
+  'PowerShell': (
+    'powershell',
     'ps',
   ),
   'Processing': 'processing',
   'Prolog': 'prolog',
   'Property List': 'plist',
   'Protocol Buffers': 'protobuf',
-  'Puppet': ('puppet',
+  'Puppet': (
+    'puppet',
     'pp',
   ),
-  'PureBASIC': ('purebasic',
+  'PureBASIC': (
+    'purebasic',
     'pb',
     'pbi',
   ),
-  'Python': ('python',
+  'Python': (
+    'python',
     'py',
     'gyp',
   ),
   'Python profile': 'profile',
-  'Q': ('q',
+  'Q': (
+    'q',
     'k',
     'kdb',
   ),
-  'QML': ('qml',
+  'QML': (
+    'qml',
     'qt',
   ),
   // Qt Meta-object Language
   'R': 'r',
   'RenderMan RIB': 'rib',
   'RenderMan RSL': 'rsl',
-  'Roboconf': ('roboconf',
+  'Roboconf': (
+    'roboconf',
     'graph',
     'instances',
   ),
   'RSS Feed (XML)': 'rss',
-  'Ruby': ('ruby',
+  'Ruby': (
+    'ruby',
     'rb',
   ),
   'Thor (Ruby)': 'thor',
   'Ruby Gem': 'gemspec',
-  'Rust': ('rust',
+  'Rust': (
+    'rust',
     'rs',
   ),
   'Scala': 'scala',
   'Scheme': 'scheme',
-  'Scilab': ('scilab',
+  'Scilab': (
+    'scilab',
     'sci',
   ),
   'SCSS': 'scss',
-  'Shell': ('shell',
+  'Shell': (
+    'shell',
     'console',
   ),
   'Smali': 'smali',
-  'Smalltalk': ('smalltalk',
+  'Smalltalk': (
+    'smalltalk',
     'st',
   ),
-  'SML': ('sml',
+  'SML': (
+    'sml',
     'ml',
   ),
   // Standard ML
@@ -360,16 +436,19 @@ $languages: (
   'SQL': 'sql',
   // Structured Query Language
   'Stan': 'stan',
-  'Stata': ('stata',
+  'Stata': (
+    'stata',
     'do',
     'ado',
   ),
-  'STEP Part 21': ('step21',
+  'STEP Part 21': (
+    'step21',
     'step',
     'stp',
     'p21',
   ),
-  'Stylus': ('stylus',
+  'Stylus': (
+    'stylus',
     'styl',
   ),
   'SubUnit': 'subunit',
@@ -377,9 +456,11 @@ $languages: (
   'Tagger Script': 'taggerscript',
   'TAP': 'tap',
   // Test Anything Protocol
-  'Tcl': ('tcl',
-    'tk',
-  ),
+  'Tcl':
+    (
+      'tcl',
+      'tk',
+    ),
   // Tool Command Language
   'TeX': 'tex',
   'Thrift': 'thrift',
@@ -387,39 +468,50 @@ $languages: (
   // Tom's Obvious, Minimal Language
   'TP': 'tp',
   // Fanuc TP
-  'Twig': ('twig',
-    'craftcms',
-  ),
-  'TypeScript': ('typescript',
+  'Twig':
+    (
+      'twig',
+      'craftcms',
+    ),
+  'TypeScript': (
+    'typescript',
     'ts',
   ),
   'Vala': 'vala',
-  'VB.NET': ('vbnet',
+  'VB.NET': (
+    'vbnet',
     'vb',
   ),
   // Visual Basic .NET
-  'VBScript': ('vbscript',
-    'vbs',
-  ),
+  'VBScript':
+    (
+      'vbscript',
+      'vbs',
+    ),
   // Visual Basic Script
   'VBScript HTML': 'vbscript-html',
   // Visual Basic Script HTML
-  'Verilog': ('verilog',
-    'v',
-    'sv',
-    'svh',
-  ),
+  'Verilog':
+    (
+      'verilog',
+      'v',
+      'sv',
+      'svh',
+    ),
   'VHDL': 'vhdl',
   'Vim Script': 'vim',
   'x86 Assembly': 'x86asm',
-  'XL': ('xl',
+  'XL': (
+    'xl',
     'tao',
   ),
-  'XQuery': ('xquery',
+  'XQuery': (
+    'xquery',
     'xq',
     'xpath',
   ),
-  'YAML': ('yaml',
+  'YAML': (
+    'yaml',
     'yml',
   ),
   'XHTML': 'xhtml',
@@ -429,9 +521,11 @@ $languages: (
   'XML Schema': 'xsd',
   'XSL': 'xsl',
   // Extensible Stylesheet Language
-  'Zephir': ('zephir',
-    'zep',
-  ),
+  'Zephir':
+    (
+      'zephir',
+      'zep',
+    ),
 );
 
 // OUTPUT
@@ -444,8 +538,7 @@ $languages: (
     opacity: 0.5;
     pointer-events: none;
   }
-  @each $k,
-  $v in $languages {
+  @each $k, $v in $languages {
     $id: unique-id();
     &%#{$id} {
       &:before {

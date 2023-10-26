@@ -38,7 +38,7 @@
     }
   }
   // MESSAGE JUMP
-  >div[style^='border-radius: 2px;'] {
+  > div[style^='border-radius: 2px;'] {
     &[style$='0);'] {
       animation: none;
     }
@@ -85,7 +85,7 @@
   }
   %messageRepliedTextContentIcon {
     opacity: 0.7;
-    %messageRepliedTextPreview:hover+& {
+    %messageRepliedTextPreview:hover + & {
       opacity: 1;
     }
   }
@@ -140,7 +140,7 @@
 // EDITING
 %themeDark %operations {
   color: hsla(0, 0%, 100%, 0.5);
-  >a {
+  > a {
     color: var(--main-color);
   }
 }
@@ -167,25 +167,25 @@
 
 // PUBLISH TO FOLLOWERS
 .bumpBox_cfd81a {
-	background: hsla(0, 0%, 0%, .4);
+  background: hsla(0, 0%, 0%, 0.4);
 }
 .icon_c766f4,
 .tagline_a404cb {
-	color: #fff;
+  color: #fff;
 }
 .closeIcon__1f39d,
 .hidePermanently_a71dd2 {
-	color: hsla(0, 0%, 100%, .4) !important;
+  color: hsla(0, 0%, 100%, 0.4) !important;
 }
 
 // AUTOMOD MESSAGE
 .embedCard__66fca,
-.footerContainer_a703d5  {
-	background-color: hsla(0, 0%, 0%, .4);
+.footerContainer_a703d5 {
+  background-color: hsla(0, 0%, 0%, 0.4);
 }
 .footerAction_fba33a .text-xs-normal_ccc5fb {
-	color: $main-color !important;
+  color: $main-color !important;
 }
 .footerIcon__61cc7 path {
-	fill: $main-color;
+  fill: $main-color;
 }

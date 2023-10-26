@@ -3,7 +3,7 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.bd-switch input:checked+.bd-switch-body {
+.bd-switch input:checked + .bd-switch-body {
   --switch-color: var(--main-color);
 }
 

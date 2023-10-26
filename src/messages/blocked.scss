@@ -33,10 +33,10 @@
     margin-top: -20px;
     margin-left: 0;
   }
-  +%divider {
+  + %divider {
     margin-top: 25px;
   }
-  %divider+& {
+  %divider + & {
     margin-top: 25px;
   }
 }

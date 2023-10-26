@@ -20,16 +20,14 @@ $colours: (
 }
 
 .connection_fff5f6 {
-  @each $i,
-  $u in $colours {
+  @each $i, $u in $colours {
     &:has(.connectionIcon__1428c[alt*='#{$i}']) {
       background-color: rgba($u, 0.5);
     }
   }
 }
 .connectionHeader__3c82d {
-  @each $i,
-  $u in $colours {
+  @each $i, $u in $colours {
     &:has(.connectionIcon__1428c[alt*='#{$i}']) {
       background-color: rgba($u, 0.2);
     }
@@ -42,5 +40,5 @@ $colours: (
   color: hsla(0, 0%, 100%, 0.7);
 }
 .metadataContainer__7b316 {
-	background-color: hsla(0, 0%, 100%, .1);
+  background-color: hsla(0, 0%, 100%, 0.1);
 }

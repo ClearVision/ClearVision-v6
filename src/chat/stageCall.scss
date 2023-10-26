@@ -28,9 +28,9 @@
   background-color: hsla(0, 0%, 0%, 0.4);
 }
 %stageModIconContainer {
-  >svg {
+  > svg {
     fill: #fff;
-    >rect {
+    > rect {
       fill: $main-color;
     }
   }

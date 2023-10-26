@@ -1,159 +1,158 @@
 /*CUSTOMIZE CHANNELS*/
 /*header*/
 %customizeChannelsHeaderBar {
-	border-bottom: none;
+  border-bottom: none;
 }
 /*main section*/
 %customizeChannelsPrompt {
-	background: var(--background-overlay);
+  background: var(--background-overlay);
 }
 /*search bar*/
 %customizeChannelsSearch,
 %customizeChannelsSearch:focus-within {
-	background: rgba(0, 0, 0, calc(var(--background-shading) * 0.5));
-	border: 2px solid var(--main-color);
+  background: rgba(0, 0, 0, calc(var(--background-shading) * 0.5));
+  border: 2px solid var(--main-color);
 }
 /*search bar with dropdown*/
 %customizeChannelsSearchDropdown,
 %customizeChannelsSearchDropdown:hover {
-	background: rgba(0, 0, 0, calc(var(--background-shading) * 0.5));
-	border: 2px solid var(--main-color);
+  background: rgba(0, 0, 0, calc(var(--background-shading) * 0.5));
+  border: 2px solid var(--main-color);
 }
 /*dropdown options*/
 %customizeChannelsSearchOption {
-	background: var(--main-color);
+  background: var(--main-color);
 }
 %customizeChannelsSearchMenu {
-	background: rgba(0, 0, 0, calc(var(--background-shading) * 0.8));
+  background: rgba(0, 0, 0, calc(var(--background-shading) * 0.8));
 }
 %customizeChannelsPill {
-	background: rgba(0, 0, 0, calc(var(--background-shading) * 0.2));
-	border: 1px solid var(--main-color);	
+  background: rgba(0, 0, 0, calc(var(--background-shading) * 0.2));
+  border: 1px solid var(--main-color);
 }
 /*option buttons*/
 %customizeChannelsOption {
-	border: 2px solid var(--main-color);
-	&:hover {
-		border: 2px solid var(--hover-color);
-	}
-	&%customizeChannelsSelected {
-		border: 2px solid var(--success-color);
-		background: rgba(0, 0, 0, calc(var(--background-shading) * 0.2));
-	}
-
+  border: 2px solid var(--main-color);
+  &:hover {
+    border: 2px solid var(--hover-color);
+  }
+  &%customizeChannelsSelected {
+    border: 2px solid var(--success-color);
+    background: rgba(0, 0, 0, calc(var(--background-shading) * 0.2));
+  }
 }
 /*profile card*/
 %customizeChannelsProfile {
-	background: var(--background-overlay);
+  background: var(--background-overlay);
 }
 %customizeChannelsProfileRole {
-	background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 /*BROWSE CHANNELS*/
 %browseChannels {
-    background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
+  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
 }
 
 %browseChannelsSelectAll {
-    %autocompleteContentMedium {
-        color: hsla(0, 0%, 100%, .5) !important;
-	    transition: all 0.15s ease-in-out;
+  %autocompleteContentMedium {
+    color: hsla(0, 0%, 100%, 0.5) !important;
+    transition: all 0.15s ease-in-out;
+  }
+  %browseChannelsChecked {
+    & + %autocompleteContentMedium {
+      color: hsla(0, 0%, 100%, 0.7) !important;
     }
-    %browseChannelsChecked {
-        &+%autocompleteContentMedium {
-            color: hsla(0, 0%, 100%, .7) !important;
-        }
-    }
+  }
 }
 
 %browseChannelsRow {
-    background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
-    &:hover {
-        &:not(%browseChannelsDisabled){
-            background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.6));
-        }
+  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
+  &:hover {
+    &:not(%browseChannelsDisabled) {
+      background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.6));
     }
+  }
 }
 // MEMBERS LIST
 /*main container*/
 %membersChannelContainer {
-	background: var(--background-overlay);
-	border: 1px solid $main-color;
-	box-shadow: none;
+  background: var(--background-overlay);
+  border: 1px solid $main-color;
+  box-shadow: none;
 }
 /*table border*/
 %membersChannelTable {
-	border-top: 1px solid $main-color;
+  border-top: 1px solid $main-color;
 }
 /*user hover*/
 %membersChannelRowContainer:hover td {
-	background: $hover-color;
+  background: $hover-color;
 }
 /*user option buttons*/
 %membersChannelButton {
-	background: $main-color;
-	&:hover {
-		background: $hover-color;
-	}
-	&:nth-child(2) path ~ path,
-	&:nth-child(1) path {
-		fill: #fff;
-	}
+  background: $main-color;
+  &:hover {
+    background: $hover-color;
+  }
+  &:nth-child(2) path ~ path,
+  &:nth-child(1) path {
+    fill: #fff;
+  }
 }
 /*roles*/
 %membersChannelRoleList {
-	background: var(--background-overlay);
+  background: var(--background-overlay);
 }
 /*hover page button*/
 %membersChannelPage > span {
-	color:#fff;
+  color: #fff;
 }
 
 // NOT IN CHANNEL LIST
 %channelHeaderBar {
-    background: transparent;
+  background: transparent;
 }
 /* SERVER GUIDE */
 %homeContainer {
-	/*First msg*/
-	%serverGuideMessage {
-		background: transparent;
-	}
-	%serverGuideMessageInner,
-	%serverGuideAvatar,
-	%serverGuideAction,
-	%serverGuideSidebarCard,
-	%serverGuideRow {
-		background: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
-	}
-	%serverGuideAction:hover {
-		background: $hover-color;
-	}
-	%serverGuideIcon {
-		background: $main-color;
-		border: 4px solid transparent;
-	}
+  /*First msg*/
+  %serverGuideMessage {
+    background: transparent;
+  }
+  %serverGuideMessageInner,
+  %serverGuideAvatar,
+  %serverGuideAction,
+  %serverGuideSidebarCard,
+  %serverGuideRow {
+    background: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
+  }
+  %serverGuideAction:hover {
+    background: $hover-color;
+  }
+  %serverGuideIcon {
+    background: $main-color;
+    border: 4px solid transparent;
+  }
 }
 /* SERVER SUBSCRIPTIONS */
 %serverSubscription {
-	background: var(--background-overlay);
+  background: var(--background-overlay);
 }
 %serverSubscriptionTier {
-	background: rgba(0,0,0,.4);
+  background: rgba(0, 0, 0, 0.4);
 }
 %serverSubscriptionPerk,
 %serverSubscriptionPreview {
-	background: rgba(0,0,0,.2);
+  background: rgba(0, 0, 0, 0.2);
 }
 /* CUSTOMIZE YOUR EXPERIENCE */
 %serverExperienceNav {
-	background: rgba(0,0,0,.4);
+  background: rgba(0, 0, 0, 0.4);
 }
 %serverExperiencePrompt,
 %serverExperienceTerms {
-	background: rgba(0,0,0,.3)
+  background: rgba(0, 0, 0, 0.3);
 }
 %serverExperienceGradient {
-	display: none;
+  display: none;
 }

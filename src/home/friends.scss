@@ -25,10 +25,10 @@
 }
 
 %friendsDiscoverHint {
-  background: hsla(0, 0%, 0%, .2);
+  background: hsla(0, 0%, 0%, 0.2);
   border: 2px solid $main-color;
   &:hover {
-    background: hsla(0, 0%, 0%, .4);
+    background: hsla(0, 0%, 0%, 0.4);
     border: 2px solid $hover-color;
   }
 }
@@ -155,8 +155,8 @@
 
 // DM USER PROFILE
 %userProfileOuterUnthemed {
-	background-color: hsla(0, 0%, 0%, .4);
-  .userPanelInnerThemed__1804b{
+  background-color: hsla(0, 0%, 0%, 0.4);
+  .userPanelInnerThemed__1804b {
     background: transparent;
   }
 }

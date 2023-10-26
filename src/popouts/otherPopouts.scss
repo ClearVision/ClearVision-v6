@@ -54,19 +54,19 @@
 
 // LEAVE SERVER REASON
 .root_b4f834 {
-	background-color: transparent;
+  background-color: transparent;
 }
 .problemInfo__4ad5d {
   .option_f70eea {
     color: #fff;
-    background: hsla(0, 0%, 100%, .03);
-    border: 1px solid hsla(0, 0%, 100%, .05);
+    background: hsla(0, 0%, 100%, 0.03);
+    border: 1px solid hsla(0, 0%, 100%, 0.05);
     border-top: none;
     &:first-child {
-      border-top: 1px solid hsla(0, 0%, 100%, .05);
+      border-top: 1px solid hsla(0, 0%, 100%, 0.05);
     }
   }
-  &:hover  {
-    background: hsla(0, 0%, 100%, .06);
+  &:hover {
+    background: hsla(0, 0%, 100%, 0.06);
   }
 }

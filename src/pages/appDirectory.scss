@@ -55,7 +55,7 @@
   }
 }
 %directorySearchCategoryActive {
-	background: $main-color;
+  background: $main-color;
 }
 
 // APP PAGE
@@ -71,9 +71,9 @@
 %directoryAppCommandList,
 %directoryAppPermissionList,
 %directoryAppIntentList,
-%directoryAppPremiumCardHeader, 
+%directoryAppPremiumCardHeader,
 %directoryAppPremiumContainer {
-	background: hsla(0, 0%, 0%, 0.4);
+  background: hsla(0, 0%, 0%, 0.4);
 }
 %directoryAppCommand {
   background: transparent;
