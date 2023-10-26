@@ -23,15 +23,19 @@
 .app_b1f720 {
   @extend %app !optional;
 }
+.app_de4237, /*Canary Fix*/
 .app__00c92 {
   @extend %shakeable !optional;
 }
+.bg__12180, /*Canary FIx*/
 .bg__7adbf {
   @extend %bg !optional;
 }
+.layers__1c917, /*Canary Fix*/
 .layers_a40797 {
   @extend %layers !optional;
 }
+.layer__2efaa, /*Canary Fix*/
 .layer_e552e0 {
   @extend %layer !optional;
 }
@@ -741,7 +745,7 @@
 .content_d67847 {
   @extend %dividerDate !optional;
 }
-header_f7f1f3 {
+.header_f7f1f3 {
   @extend %gifPickerHeader !optional;
 }
 .searchBar__3b162 {
