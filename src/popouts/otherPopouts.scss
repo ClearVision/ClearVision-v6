@@ -70,3 +70,16 @@
     background: hsla(0, 0%, 100%, 0.06);
   }
 }
+
+// NITRO PROFILE PICTURE UPSELL
+/*right popout*/
+%sidebarPFPUpsell {
+	background: var(--background-overlay);
+	border-left: 5px solid var(--main-color);
+}
+
+/*bottom left popout*/
+%userPFPUpsell,
+%userPFPUpsellTop {
+	background: var(--background-overlay);
+}
