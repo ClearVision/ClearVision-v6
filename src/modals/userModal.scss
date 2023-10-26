@@ -102,18 +102,6 @@
     > %userModalInfoSectionHeader {
       color: hsla(0, 0%, 100%, 0.7);
     }
-    > %userModalNote {
-      > textarea {
-        background: transparent;
-        color: hsla(0, 0%, 100%, 0.8);
-        &:focus {
-          background: transparent;
-        }
-        &::placeholder {
-          color: hsla(0, 0%, 100%, 0.5);
-        }
-      }
-    }
   }
 }
 %userModalConnectedAccounts {

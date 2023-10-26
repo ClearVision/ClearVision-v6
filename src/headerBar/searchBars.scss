@@ -14,12 +14,6 @@
   width: 240px;
 }
 %chatSearch {
-  > %chatSearchRoot {
-    color: #fff;
-  }
-  %chatSearchPlaceholder {
-    color: hsla(0, 0%, 100%, 0.3);
-  }
   %chatSearchFilter,
   %chatSearchAnswer {
     background: $main-color;

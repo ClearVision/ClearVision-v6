@@ -6,7 +6,6 @@
 
 // BUTTON FILLED
 %buttonFilled {
-  &%buttonColorGrey,
   &%buttonColorBrand,
   &%buttonColorGreen,
   &%buttonColorBrandNew,
@@ -15,8 +14,7 @@
   &%buttonColorPrimary {
     background: $main-color;
     color: #fff;
-    &:hover,
-    &%buttonHasHover:hover {
+    &:hover {
       background: $hover-color;
     }
     &:disabled {
