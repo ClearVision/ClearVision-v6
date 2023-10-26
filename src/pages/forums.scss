@@ -61,7 +61,7 @@
 // tag
 %themeDark %forumTag,
 %themeDark %forumIncreasedTag {
-  background: rgba(0, 0, 0, calc(var(--background-shading) * 0.6));
+  background: rgba(0, 0, 0, .6);
   border: 2px solid $main-color;
   &%forumTagClickable:not(%forumTagDisabled):hover {
     background: transparent;

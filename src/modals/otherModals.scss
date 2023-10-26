@@ -160,7 +160,7 @@
 
 // SWITCH ACCOUNT
 %manageAccountsList {
-  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.5));
+  background-color: rgba(0, 0, 0, .5);
 }
 .activeIcon_e452f7 > circle:not([fill^='hsl(0']),
 .activeIcon_e452f7 > g > path:not([fill^='hsl(0']) {
@@ -169,7 +169,7 @@
 // ADD ACCOUNT
 %themeDark %addAccountAuthBox,
 %themeDark %addAccountNavRow {
-  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.5));
+  background-color: rgba(0, 0, 0, .5);
 }
 // VERIFY PHONE
 %phoneVerification %phoneVerificationInput {
