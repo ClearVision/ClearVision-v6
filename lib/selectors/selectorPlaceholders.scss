@@ -4030,13 +4030,13 @@ pre {
 .matchingPostsRow__510be {
   @extend %forumSearchRow !optional;
 }
-.container-3kfp0r {
+.container_ae7412 {
   @extend %forumTagBox !optional;
 }
-.countContainer-3DOo5v {
+.countContainer__51412 {
   @extend %forumTagBoxCount !optional;
 }
-.clear-2gkgln {
+.clear__72191 {
   @extend %forumTagClear !optional;
 }
 .countContainer-3uQ087 {
@@ -4051,7 +4051,7 @@ pre {
 .contentContainer-2xwoXK {
   @extend %forumContentContainer !optional;
 }
-.uploadInput-3fblkw {
+.uploadInput_bbab2f {
   @extend %forumUploadIcon !optional;
 }
 .iconWrapper__3e4a9 {
@@ -4390,4 +4390,13 @@ pre {
 }
 .guildSection_ebda04 {
   @extend %emojiInfoGuild !optional;
+}
+.settingCard__00567 {
+  @extend %channelSettingsCard !optional;
+}
+.active__898cd {
+  @extend %channelSettingsCardActive !optional;
+}
+.cardFolder__34393 {
+  @extend %channelSettingsCardPanel !optional;
 }
