@@ -4358,3 +4358,30 @@ pre {
 .ctaContainer__95bd7 {
   @extend %userPFPUpsellTop !optional;
 }
+.root_b4f834 {
+  @extend %serverLeave !optional;
+}
+.problemInfo__4ad5d {
+  @extend %serverLeaveReason !optional;
+}
+.toolbar_c7b525 {
+  @extend %chatToolbar !optional;
+}
+.icon__5a617 {
+  @extend %chatToolbarIcon !optional;
+}
+.active__05fbc {
+  @extend %chatToolbarActive !optional;
+}
+.hover_d0ebf2 {
+  @extend %chatToolbarHover !optional;
+}
+.popoutContainer__7b9a3 {
+  @extend %emojiInfoContainer !optional;
+}
+.emojiSection_a65b54 {
+  @extend %emojiInfoTip !optional;
+}
+.guildSection_ebda04 {
+  @extend %emojiInfoGuild !optional;
+}

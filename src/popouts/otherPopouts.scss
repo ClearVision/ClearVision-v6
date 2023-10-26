@@ -1,31 +1,26 @@
 // EMOJI INFO POPOUT
-.popoutContainer__7b9a3 {
+%emojiInfoContainer {
   background-color: rgba(0, 0, 0, 0.8);
 }
-.emojiSection_a65b54 {
+%emojiInfoTip {
   background-color: transparent;
 }
-.guildSection_ebda04 {
+%emojiInfoGuild {
   background-color: transparent;
-}
-.loadingBackground-1p5N1j {
-  .loading-1lSwpg {
-    opacity: 0.3;
-  }
 }
 
 // CHAT TOOLBAR
-.toolbar_c7b525 {
+%chatToolbar {
   background-color: hsla(0, 0%, 0%, 0.8);
+  &::before {
+    border-top: 8px solid hsla(0, 0%, 0%, 0.8);
+  }
 }
-.toolbar_c7b525::before {
-  border-top: 8px solid hsla(0, 0%, 0%, 0.8);
-}
-.active__05fbc,
-.hover_d0ebf2:hover {
+%chatToolbarActive,
+%chatToolbarHover:hover {
   background-color: hsla(0, 0%, 100%, 0.05);
 }
-.icon__5a617 {
+%chatToolbarIcon {
   color: hsla(0, 0%, 100%, 0.7);
 }
 
@@ -53,11 +48,11 @@
 }
 
 // LEAVE SERVER REASON
-.root_b4f834 {
+%serverLeave {
   background-color: transparent;
 }
-.problemInfo__4ad5d {
-  .option_f70eea {
+%serverLeaveReason {
+  %serverDeleteReasonOption {
     color: #fff;
     background: hsla(0, 0%, 100%, 0.03);
     border: 1px solid hsla(0, 0%, 100%, 0.05);
