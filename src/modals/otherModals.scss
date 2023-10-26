@@ -1,5 +1,5 @@
 // MESSAGE DELETION CONFIRMATION
-%themeDark .message-G6O-Wv {
+%themeDark .message__04d9f {
   background-color: transparent;
   box-shadow: 0 0 2px 2px $main-color;
 }
@@ -27,14 +27,14 @@
 
 // REACTIONS LIST
 %themeDark {
-  .scroller-2GkvCq,
-  .reactors-1VXca7 {
+  .scroller__5fda0,
+  .reactors__20ab0 {
     background-color: transparent;
   }
-  .reactionDefault-1Sjj1f {
+  .reactionDefault__792ef {
     margin-bottom: 10px;
   }
-  .reactionSelected-1aMb2K {
+  .reactionSelected__249a7 {
     background-color: $main-color;
     margin-bottom: 10px;
     .colorStandard-21JIj7 {
@@ -49,20 +49,20 @@
 }
 
 // QUICKSWITCHER
-.quickswitcher-pKcM9U {
+.quickswitcher_a3d29a {
   background-color: rgba(0, 0, 0, 0.5);
 }
-.input-3r5zZY {
+.input__848cd {
   background-color: rgba(255, 255, 255, 0.07);
 }
-.scroller-2qwVWY {
+.scroller__52ae7 {
   background-color: transparent;
   margin-top: 10px;
   &::-webkit-scrollbar-track {
     background-color: transparent !important;
   }
 }
-.result-u66Ywh[aria-selected='true'] {
+.result__25f11[aria-selected='true'] {
   background: var(--background-modifier-hover);
 }
 
@@ -72,7 +72,7 @@
 }
 .paymentNote-3dcb-Z,
 .wrapper-wOVKdL,
-.body-2qXItL {
+.body__59737 {
 	background-color: transparent;
 }
 .table-17_dGF {
@@ -103,17 +103,17 @@
 .upsellFooter-1H_OCF {
   background: transparent;
 }
-.icon-2TbMdT {
+.icon_ae3492 {
   color: #fff;
   &:hover {
     color: #fff;
     background-color: $hover-color;
   }
 }
-%themeDark .iconWrapper-2_MXbk {
+%themeDark .iconWrapper__9caa9 {
   background: hsla(0, 0%, 0%, 0.8);
 }
-.actions-10aT1z .input-2g-os5 {
+.actions_cba988 .input-2g-os5 {
   box-shadow: none;
 }
 .subscription-1wJwQk {
@@ -124,13 +124,13 @@
 }
 
 // INVITE FROM WEB BROWSER
-%themeDark .contentWrapper-3oy4Xo {
+%themeDark .contentWrapper__85d37 {
   background: hsla(0, 0%, 0%, 0.5);
 }
-.pillIconOnline-2JLgFw {
+.pillIconOnline_ab6089 {
   background-color: var(--online-color);
 }
-.pillIconTotal-3rJafa {
+.pillIconTotal__74a04 {
   background-color: var(--offline-color);
 }
 
@@ -163,8 +163,8 @@
 %manageAccountsList {
   background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.5));
 }
-.activeIcon-1ykRnF>circle:not([fill^='hsl(0']),
-.activeIcon-1ykRnF>g>path:not([fill^='hsl(0']) {
+.activeIcon_e452f7>circle:not([fill^='hsl(0']),
+.activeIcon_e452f7>g>path:not([fill^='hsl(0']) {
   fill: var(--main-color);
 }
 // ADD ACCOUNT
@@ -202,14 +202,14 @@
 }
 
 // AUTH MODAL
-.authorize-2xTTr- {
+.authorize__4ddfc {
 	background-color: transparent;
 	border-radius: 5px;
 }
-.scopeTimes-KsAOBb {
+.scopeTimes__83c10 {
 	background-color: hsla(0, 0%, 100%, .15);
 }
-.footer-3Gu_Tl {
+.footer__04ee2 {
 	background-color: transparent;
 }
 
