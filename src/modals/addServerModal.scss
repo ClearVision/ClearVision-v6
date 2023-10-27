@@ -2,11 +2,11 @@
 
 // MAIN PAGE
 %themeLight {
-  .title__23c2d {
+  .defaultColor__87d87 {
     color: #fff;
   }
   .subtitle__89b16 {
-    color: hsla(0, 0%, 100%, 0.7);
+    color: hsla(0, 0%, 100%, 0.7) !important;
   }
 }
 .container__73245 {
@@ -33,13 +33,6 @@
   }
   .skip_f687eb {
     color: hsla(0, 0%, 100%, 0.7) !important;
-  }
-}
-.backButton__576ea .contents_fb6220 {
-	color: hsla(0, 0%, 100%, .7);
-  &:hover {
-    color: #fff;
-    text-decoration: underline;
   }
 }
 

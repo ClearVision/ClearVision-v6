@@ -27,7 +27,7 @@
   &%buttonColorRed {
     background-color: cv('colors.danger');
   }
-  &%buttonFilledWhite {
+  &%buttonColorWhite {
     background: hsla(0, 0%, 100%, 0.1);
     > %buttonContents {
       color: hsla(0, 0%, 100%, 0.7);
@@ -131,5 +131,16 @@
   &:hover %buttonContents {
     background-image: none;
     text-decoration: underline;
+  }
+}
+
+// BUTTON BLANK
+%buttonBlank {
+  %buttonContents {
+    color: hsla(0, 0%, 100%, .7);
+    &:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
   }
 }
