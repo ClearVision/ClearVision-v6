@@ -156,6 +156,17 @@
 .tips-39ZVzW {
   background-color: hsla(0, 0%, 0%, 0.4);
 }
+// SWITCH ACCOUNTS
+.activeIcon_e452f7 > circle:not([fill^='hsl(0']),
+.activeIcon_e452f7 > g > path:not([fill^='hsl(0']) {
+  fill: $main-color;
+}
+%themeDark %modalRoot {
+  %loginAuthBox,
+  %addAccountFooter {
+    background-color: transparent;
+  }
+}
 
 // VERIFY PHONE
 %phoneVerification %phoneVerificationInput {
