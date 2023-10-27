@@ -11,7 +11,7 @@
 
 // ACCOUNT & CONNECTION PANELS
 %accountPanel {
-  >%flex {
+  > %flex {
     background: rgba(0, 0, 0, 0.3);
     border-radius: 15px;
     > :nth-child(n + 2) {
@@ -35,7 +35,7 @@
   width: 32px;
   height: 32px;
   opacity: 1;
-  >%buttonContents>svg {
+  > %buttonContents > svg {
     @include bg($rep: no-repeat, $pos: center, $size: 18px);
     color: #fff;
     opacity: 0.5;
@@ -45,12 +45,12 @@
     &%panelButtonEnabled {
       background: transparent;
     }
-    >%buttonContents>svg {
+    > %buttonContents > svg {
       opacity: 0.7;
     }
   }
   &%panelButtonDisabled {
-    >%buttonContents>svg {
+    > %buttonContents > svg {
       opacity: 0.1;
     }
   }
@@ -114,7 +114,7 @@
   %accountPanelTagButton,
   %accountPanelTagless {
     min-width: calc(100% - 100px);
-	  width: auto;
+    width: auto;
     &:hover {
       background-color: hsla(0, 0%, 0%, 0.3);
       color: #fff;
@@ -167,7 +167,7 @@
 
 // CONNECTION PANEL
 %connectionPanel {
-  >%flex {
+  > %flex {
     background: rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     padding: 5px;
@@ -193,7 +193,6 @@
       text-decoration: none;
     }
   }
-  
 }
 
 // ACTIVITY PANEL

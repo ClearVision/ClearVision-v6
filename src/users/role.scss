@@ -1,6 +1,6 @@
 /* USER ROLE */
 %userPopoutRoles,
-.roleWrapper-2IhvNd {
+%roleWrapper {
   %role {
     position: relative;
     display: flex;
@@ -18,8 +18,8 @@
       background: hsla(0, 0%, 100%, 0.1);
       border-color: transparent;
     }
-    
-    >%roleName {
+
+    > %roleName {
       margin-right: 0;
       margin-left: 4px;
       color: hsla(0, 0%, 100%, 0.9);
@@ -31,7 +31,7 @@
           opacity: 0.3;
         }
       }
-      >%roleName {
+      > %roleName {
         color: #fff;
       }
     }
@@ -67,7 +67,7 @@
     background: hsla(0, 0%, 100%, 0.1);
     transition: all 0.1s ease-in-out;
     cursor: pointer;
-    >svg {
+    > svg {
       width: 7px;
       height: 7px;
       color: hsla(0, 0%, 100%, 0.5);
@@ -75,7 +75,7 @@
     }
     &:hover {
       background: hsla(0, 0%, 100%, 0.2);
-      >svg {
+      > svg {
         color: #fff;
       }
     }
@@ -83,18 +83,18 @@
 }
 %autocompletePopoutRow {
   &%autocompletePopoutSelected {
-    .rowInner-3uonq8 {
+    .rowInner-1mo-C8 {
       background-color: transparent;
     }
   }
   &:hover {
-    .rowInner-3uonq8 {
+    .rowInner-1mo-C8 {
       background-color: transparent;
     }
   }
 }
 /*assign roles popout*/
-.container-2kTWmC {
+.container_d27846 {
   background-color: hsla(0, 0%, 0%, 0.8);
   border: none;
 }

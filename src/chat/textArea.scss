@@ -49,14 +49,14 @@
       color: hsla(0, 0%, 100%, 0.9);
     }
   }
-  %themeDark .button-y6hemj {
-    .buttonChild-33lB5F {
-      color: hsla(0, 0%, 100%, 0.3)
+  %themeDark .button__8d734 {
+    .buttonChild__7b90d {
+      color: hsla(0, 0%, 100%, 0.3);
     }
-    .activeButtonChild-2hgLAO {
-      color: hsla(0, 0%, 100%, 0.7)
+    .activeButtonChild__6e162 {
+      color: hsla(0, 0%, 100%, 0.7);
     }
-    &:hover .activeButtonChild-2hgLAO {
+    &:hover .activeButtonChild__6e162 {
       color: #fff;
     }
   }
@@ -66,7 +66,7 @@
     background: transparent;
     %channelTextAreaTypingText {
       color: hsla(0, 0%, 100%, 0.5);
-      >strong {
+      > strong {
         color: hsla(0, 0%, 100%, 0.7);
         font-weight: 700;
       }
@@ -115,7 +115,7 @@
     background-color: hsla(0, 0%, 100%, 0.05);
     border-color: hsla(0, 0%, 100%, 0.07);
     &%autocompleteOptionPillSelected {
-      border-color: $main-color  !important;
+      border-color: $main-color !important;
     }
   }
   %autocompleteOptionPillKey {

@@ -64,7 +64,7 @@
       transition: all 0.15s ease-in-out;
     }
     &[style*='background-color:'] {
-      background: $main-color  !important;
+      background: $main-color !important;
     }
     &[style*='background-color: rgb(179, 174, 255)'] {
       filter: brightness(1.3);
@@ -83,8 +83,8 @@
   }
 
   // ARROW KEY SELECTION OUTLINE
-  .theme-dark .focused-16Owih:after,
-  .theme-dark .result-pzZrwj:hover:after {
+  .theme-dark .focused__036ed:after,
+  .theme-dark .result_e1fc74:hover:after {
     box-shadow: inset 0 0 0 2px var(--main-color), inset 0 0 0 3px rgba(0, 0, 0, 0.7);
   }
 
@@ -104,6 +104,6 @@
 }
 
 //Search Suggestion
-.searchSuggestion-PfUKKS {
+.searchSuggestion__5559d {
   background: hsla(0, 0%, 100%, 0.04);
 }

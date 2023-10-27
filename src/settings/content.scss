@@ -1,6 +1,6 @@
 /* SETTINGS CONTENT */
 %standardSidebarView {
-  >%settingsContentRegion {
+  > %settingsContentRegion {
     background: transparent;
   }
 }
@@ -19,7 +19,7 @@
       border-color: hsla(0, 0%, 100%, 0.6);
       background-color: transparent;
     }
-    >svg>path {
+    > svg > path {
       fill: hsla(0, 0%, 100%, 0.6);
     }
   }
@@ -58,8 +58,8 @@
 // ITEM CARDS
 %themeDark {
   %settingsCard {
-    &:not(.outline-3kFzf8),
-    &.outline-3kFzf8 {
+    &:not(.outline_cb0aed),
+    &.outline_cb0aed {
       background-color: rgba(0, 0, 0, 0.4);
       border-color: hsla(0, 0%, 100%, 0.07);
     }
@@ -88,26 +88,26 @@
 }
 
 // DROP DOWN
-.lookFilled-GPyucw.select-Zz0IcO {
-	background-color: hsla(0, 0%, 100%, .07);
-	border-color: hsla(0, 0%, 100%, .09);
+.lookFilled__3dba3.select__0eb48 {
+  background-color: hsla(0, 0%, 100%, 0.07);
+  border-color: hsla(0, 0%, 100%, 0.09);
 }
-.popout-15UxD6 {
-	background-color: rgba(0, 0, 0, 0.8);
+.popout_a6e77f {
+  background-color: rgba(0, 0, 0, 0.8);
   border: none;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-.option-Uc12mm {
+.option_be8b2e {
   &:hover,
   &:focus,
-  &.focused-10mbp- {
+  &.focused_a2f507 {
     background-color: hsla(0, 0%, 100%, 0.05);
     border: hsla(0, 0%, 100%, 0.07);
   }
-  &[aria-selected=true]:not(.option-Uc12mm.multi-2vPqc4) {
+  &[aria-selected='true']:not(.option_be8b2e.multi__8d15f) {
     background-color: $main-color;
-    .selectedIcon-122rMx {
+    .selectedIcon__4b0ba {
       circle {
         fill: $main-color;
       }
@@ -115,16 +115,5 @@
     path {
       fill: #fff;
     }
-  }
-}
-
-// INPUT
-.input-3O04eu {
-	color: var(--text-normal);
-  background-color: hsla(0, 0%, 100%, 0.07);
-  border: none;
-  box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.09);
-  &:focus {
-    box-shadow: 0 0 2px 2px  $main-color;
   }
 }

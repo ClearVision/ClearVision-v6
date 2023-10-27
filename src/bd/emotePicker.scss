@@ -2,10 +2,10 @@
 %bdEmoteMenu {
   background-color: rgba(0, 0, 0, 0.5);
   border: none !important;
-  ~%emojiPicker {
+  ~ %emojiPicker {
     border-radius: 0 0 5px 5px;
   }
-  >button {
+  > button {
     border-color: transparent;
     box-shadow: none;
     color: hsla(0, 0%, 100%, 0.7);
@@ -14,7 +14,7 @@
       background-color: hsla(0, 0%, 100%, 0.07);
     }
   }
-  >%bdEmoteMenuActive {
+  > %bdEmoteMenuActive {
     background-color: $main-color;
     color: #fff;
   }

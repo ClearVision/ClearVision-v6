@@ -14,12 +14,6 @@
   width: 240px;
 }
 %chatSearch {
-  >%chatSearchRoot {
-    color: #fff;
-  }
-  %chatSearchPlaceholder {
-    color: hsla(0, 0%, 100%, 0.3);
-  }
   %chatSearchFilter,
   %chatSearchAnswer {
     background: $main-color;
@@ -53,10 +47,10 @@
     }
   }
 }
-.container-2McqkF {
-  .queryContainer-ZunrLZ {
+.container_d6dad3 {
+  .queryContainer_c359fe {
     .keybindShortcutSearchPopout-pt_bn5 {
-      &>span {
+      & > span {
         display: none;
       }
     }

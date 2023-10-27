@@ -1,7 +1,20 @@
 /* SCROLLBAR */
-::-webkit-scrollbar {
-  width: 14px !important;
+
+// NORMAL SCROLLBAR
+%scrollbarAuto::-webkit-scrollbar {
+  width: 14px;
 }
+// THIN SCROLLBAR
+%scrollbarThin::-webkit-scrollbar {
+  width: 10px;
+}
+
+// NO SCROLLBAR
+%scrollbarNone::-webkit-scrollbar {
+  width: 0px;
+}
+
+// CONTENT
 ::-webkit-scrollbar-thumb,
 ::-webkit-scrollbar-track,
 ::-webkit-scrollbar-track-piece {
@@ -10,9 +23,9 @@
   background-clip: padding-box !important;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: $main-color  !important;
+  background-color: $main-color !important;
   &:active {
-    background-color: $hover-color  !important;
+    background-color: $hover-color !important;
   }
 }
 ::-webkit-scrollbar-track,
@@ -51,13 +64,8 @@ textarea {
     display: none;
   }
 }
-
-// NO SCROLLBAR
-%scrollbarNone::-webkit-scrollbar {
-  width: 0px !important;
-}
-
-// THIN SCROLLBAR
-%scrollbarThin::-webkit-scrollbar {
-  width: 10px !important;
+%shopModal {
+  &::-webkit-scrollbar {
+    width: 0;
+  }
 }

@@ -54,7 +54,7 @@
     box-shadow: 0 0 2px 2px $hover-color;
   }
 }
-.premiumUpsell-2K2V_c {
+.premiumUpsell_e1bfd9 {
   background-color: transparent;
 }
 
@@ -82,7 +82,7 @@
 %deleteServerCheckbox {
   %deleteServerCheckboxInner {
     %deleteServerCheckboxElement {
-      &:checked+span {
+      &:checked + span {
         background-color: $main-color;
         border-color: $main-color;
       }

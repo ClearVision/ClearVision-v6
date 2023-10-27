@@ -101,17 +101,17 @@ $version: '6.3.0';
 
 // PAGES
 @import 'src/pages/appDirectory';
+@import 'src/pages/discordShop';
 @import 'src/pages/discover';
 @import 'src/pages/forums';
+@import 'src/pages/login';
 @import 'src/pages/previewServer';
 @import 'src/pages/serverBoost';
 @import 'src/pages/studentHub.scss';
 
 // POPOUTS
-@import 'src/popouts/popout';
 @import 'src/popouts/autoCompletePopout';
 @import 'src/popouts/connectionInfo';
-@import 'src/popouts/contextMenu';
 @import 'src/popouts/emojiPicker';
 @import 'src/popouts/gifPicker';
 @import 'src/popouts/groupInvite';
@@ -141,6 +141,7 @@ $version: '6.3.0';
 @import 'src/settings/serverSettings';
 @import 'src/settings/sidebar';
 @import 'src/settings/userSettings';
+@import 'src/settings/nitro';
 
 // USERS
 @import 'src/users/activity';
@@ -148,6 +149,10 @@ $version: '6.3.0';
 @import 'src/users/botTag';
 @import 'src/users/role';
 @import 'src/users/status';
+
+// REPLUGGED/Canary TMP fixes
+@import 'src/replugged/gameActivityToggle.scss';
+@import 'src/replugged/rpSettings.scss';
 
 // BETTERDISCORD
 @import 'src/bd/bdSettings';
@@ -168,7 +173,6 @@ $version: '6.3.0';
 @import 'src/bd/plugins/DevilBro/dateText';
 @import 'src/bd/plugins/DevilBro/gameActivityToggle';
 @import 'src/bd/plugins/DevilBro/ownerTag';
-@import 'src/bd/plugins/DevilBro/showHiddenChannels';
 @import 'src/bd/plugins/DevilBro/tooltips';
 @import 'src/bd/plugins/Finicalmist/copyCode';
 @import 'src/bd/plugins/noodlebox/lineNumbers';

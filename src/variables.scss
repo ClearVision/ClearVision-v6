@@ -1,124 +1,158 @@
 // CLEARVISION VARIABLES
 $cv: (
   // CONSTANTS
-  constants: (colors: (discord-blurple: #5865f2,
-      twitch-purple: #9146ff,
-      spotify-green: #1db954,
-      xbox-green: #107c10,
-      facebook-blue: #1877f2,
-    ),
-    text: (titlebar: (main: 'ClearVision',
-        version: 'v#{$version}',
-        short: 'CV',
+  constants:
+    (
+      colors: (
+        discord-blurple: #5865f2,
+        twitch-purple: #9146ff,
+        spotify-green: #1db954,
+        xbox-green: #107c10,
+        facebook-blue: #1877f2,
       ),
-      account: (main: 'ClearVision',
-        version: 'v#{$version}',
+      text: (
+        titlebar: (
+          main: 'ClearVision',
+          version: 'v#{$version}',
+          short: 'CV',
+        ),
+        account: (
+          main: 'ClearVision',
+          version: 'v#{$version}',
+        ),
       ),
     ),
-  ),
   // SETTINGS
-  settings: ( // COLORS
-    colors: (main: var(--main-color),
-      hover: var(--hover-color),
-      success: var(--success-color),
-      danger: var(--danger-color),
-      online: var(--online-color),
-      idle: var(--idle-color),
-      dnd: var(--dnd-color),
-      offline: var(--offline-color),
-      streaming: var(--streaming-color),
+  settings:
+    (
+      // COLORS
+      colors:
+        (
+          main: var(--main-color),
+          hover: var(--hover-color),
+          success: var(--success-color),
+          danger: var(--danger-color),
+          online: var(--online-color),
+          idle: var(--idle-color),
+          dnd: var(--dnd-color),
+          offline: var(--offline-color),
+          streaming: var(--streaming-color),
+        ),
+      // FONT
+      font:
+        (
+          main: var(--main-font),
+          code: var(--code-font),
+        ),
+      // GENERAL
+      channels-width: var(--channels-width),
+      members-width: var(--members-width),
+      // BACKGROUNDS
+      bg:
+        (
+          // APP BACKGROUND
+          app:
+            (
+              shading: var(--background-shading),
+              overlay: var(--background-overlay),
+              img: var(--background-image),
+              pos: var(--background-position),
+              size: var(--background-size),
+              repeat: var(--background-repeat),
+              attach: var(--background-attachment),
+              brightness: var(--background-brightness),
+              contrast: var(--background-contrast),
+              saturate: var(--background-saturation),
+              invert: var(--background-invert),
+              grayscale: var(--background-grayscale),
+              sepia: var(--background-sepia),
+              blur: var(--background-blur),
+            ),
+          // BACKDROP BACKGROUND
+          backdrop:
+            (
+              overlay: var(--backdrop-overlay),
+              img: var(--backdrop-image),
+              pos: var(--backdrop-position),
+              size: var(--backdrop-size),
+              repeat: var(--backdrop-repeat),
+              attach: var(--backdrop-attachment),
+              brightness: var(--backdrop-brightness),
+              contrast: var(--backdrop-contrast),
+              saturate: var(--backdrop-saturation),
+              invert: var(--backdrop-invert),
+              grayscale: var(--backdrop-grayscale),
+              sepia: var(--backdrop-sepia),
+              blur: var(--backdrop-blur),
+            ),
+          // USER POPOUT BACKGROUND
+          popout:
+            (
+              img: var(--user-popout-image),
+              pos: var(--user-popout-position),
+              size: var(--user-popout-size),
+              repeat: var(--user-popout-repeat),
+              attach: var(--user-popout-attachment),
+              brightness: var(--user-popout-brightness),
+              contrast: var(--user-popout-contrast),
+              saturate: var(--user-popout-saturation),
+              invert: var(--user-popout-invert),
+              grayscale: var(--user-popout-grayscale),
+              sepia: var(--user-popout-sepia),
+              blur: var(--user-popout-blur),
+              overlay: var(--user-popout-overlay),
+            ),
+          // USER MODAL BACKGROUND
+          modal:
+            (
+              img: var(--user-modal-image),
+              pos: var(--user-modal-position),
+              size: var(--user-modal-size),
+              repeat: var(--user-modal-repeat),
+              attach: var(--user-modal-attachment),
+              brightness: var(--user-modal-brightness),
+              contrast: var(--user-modal-contrast),
+              saturate: var(--user-modal-saturation),
+              invert: var(--user-modal-invert),
+              grayscale: var(--user-modal-grayscale),
+              sepia: var(--user-modal-sepia),
+              blur: var(--user-modal-blur),
+            ),
+          // HOME BUTTON BACKGROUND
+          home:
+            (
+              icon: var(--home-icon),
+              pos: var(--home-position),
+              size: var(--home-size),
+            )
+        )
     ),
-    // FONT
-    font: (main: var(--main-font),
-      code: var(--code-font),
-    ),
-    // GENERAL
-    channels-width: var(--channels-width),
-    members-width: var(--members-width),
-    // BACKGROUNDS
-    bg: ( // APP BACKGROUND
-      app: (shading: var(--background-shading),
-        overlay: var(--background-overlay),
-        img: var(--background-image),
-        pos: var(--background-position),
-        size: var(--background-size),
-        repeat: var(--background-repeat),
-        attach: var(--background-attachment),
-        brightness: var(--background-brightness),
-        contrast: var(--background-contrast),
-        saturate: var(--background-saturation),
-        invert: var(--background-invert),
-        grayscale: var(--background-grayscale),
-        sepia: var(--background-sepia),
-        blur: var(--background-blur),
-      ),
-      // BACKDROP BACKGROUND
-      backdrop: (overlay: var(--backdrop-overlay),
-        img: var(--backdrop-image),
-        pos: var(--backdrop-position),
-        size: var(--backdrop-size),
-        repeat: var(--backdrop-repeat),
-        attach: var(--backdrop-attachment),
-        brightness: var(--backdrop-brightness),
-        contrast: var(--backdrop-contrast),
-        saturate: var(--backdrop-saturation),
-        invert: var(--backdrop-invert),
-        grayscale: var(--backdrop-grayscale),
-        sepia: var(--backdrop-sepia),
-        blur: var(--backdrop-blur),
-      ),
-      // USER POPOUT BACKGROUND
-      popout: (img: var(--user-popout-image),
-        pos: var(--user-popout-position),
-        size: var(--user-popout-size),
-        repeat: var(--user-popout-repeat),
-        attach: var(--user-popout-attachment),
-        brightness: var(--user-popout-brightness),
-        contrast: var(--user-popout-contrast),
-        saturate: var(--user-popout-saturation),
-        invert: var(--user-popout-invert),
-        grayscale: var(--user-popout-grayscale),
-        sepia: var(--user-popout-sepia),
-        blur: var(--user-popout-blur),
-        overlay: var(--user-popout-overlay),
-      ),
-      // USER MODAL BACKGROUND
-      modal: (img: var(--user-modal-image),
-        pos: var(--user-modal-position),
-        size: var(--user-modal-size),
-        repeat: var(--user-modal-repeat),
-        attach: var(--user-modal-attachment),
-        brightness: var(--user-modal-brightness),
-        contrast: var(--user-modal-contrast),
-        saturate: var(--user-modal-saturation),
-        invert: var(--user-modal-invert),
-        grayscale: var(--user-modal-grayscale),
-        sepia: var(--user-modal-sepia),
-        blur: var(--user-modal-blur),
-      ),
-      // HOME BUTTON BACKGROUND
-      home: (icon: var(--home-icon),
-        pos: var(--home-position),
-        size: var(--home-size),
-      ))),
   // DISCORD
-  discord: (status: (online: (hex: #3ba55d,
-        rgb: 'rgb(59, 165, 93)',
+  discord:
+    (
+      status: (
+        online: (
+          hex: #3ba55d,
+          rgb: 'rgb(59, 165, 93)',
+        ),
+        idle: (
+          hex: #faa81a,
+          rgb: 'rgb(250, 168, 26)',
+        ),
+        dnd: (
+          hex: #ed4245,
+          rgb: 'rgb(237, 66, 69);',
+        ),
+        streaming: (
+          hex: #593695,
+          rgb: 'rgb(89, 54, 149)',
+        ),
+        offline: (
+          hex: #747f8d,
+          rgb: 'rgb(116, 127, 141)',
+        ),
       ),
-      idle: (hex: #faa81a,
-        rgb: 'rgb(250, 168, 26)',
-      ),
-      dnd: (hex: #ed4245,
-        rgb: 'rgb(237, 66, 69);',
-      ),
-      streaming: (hex: #593695,
-        rgb: 'rgb(89, 54, 149)',
-      ),
-      offline: (hex: #747f8d,
-        rgb: 'rgb(116, 127, 141)',
-      ),
-    ),
-  )
+    )
 );
 
 // SHORTHANDS

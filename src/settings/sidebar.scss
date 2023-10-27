@@ -1,13 +1,11 @@
 /* SETTINGS SIDEBAR */
 %standardSidebarView {
-  %settingsSidebarRegion {
-    background: transparent;
-    %settingsSidebar {
-      height: 100%;
-      width: 260px;
-      padding: 0px 6px 0px 20px;
-    }
-  }
+  background: transparent;
+}
+%settingsSidebar {
+  height: 100%;
+  width: 260px;
+  padding: 0px 6px 0px 20px;
 }
 %settingsSidebarRegion {
   %settingsSidebarScroller {
@@ -53,7 +51,7 @@
       background: linear-gradient(to right, var(--main-color) 50%, transparent);
       margin-left: 5px;
     }
-    >span {
+    > span {
       max-width: 100%;
       overflow: hidden;
       text-overflow: ellipsis;

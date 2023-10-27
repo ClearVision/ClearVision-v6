@@ -52,10 +52,10 @@
   &%createEventProgressBarSelected {
     background-color: $main-color;
   }
-  +.colorMuted-20987_ {
+  + .colorMuted-20987_ {
     color: hsla(0, 0%, 100%, 0.3);
   }
-  +.colorBrand-21Le_q {
+  + .colorBrand-21Le_q {
     color: var(--main-color);
   }
 }
@@ -77,11 +77,4 @@
 }
 %createEventIconContainer {
   background-color: $main-color;
-}
-
-// DATEPICKER
-%themeDark %popoutLayer %calendarPicker {
-  %datepicker {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
 }

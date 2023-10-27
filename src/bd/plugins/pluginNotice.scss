@@ -49,14 +49,14 @@
     background-color: $main-color;
   }
 }
-.bd-switch input:checked+.bd-switch-body {
-  background-color: $main-color  !important;
+.bd-switch input:checked + .bd-switch-body {
+  background-color: $main-color !important;
 }
 .bd-switch-body {
   background-color: rgba(255, 255, 255, 0.15) !important;
 }
 .bd-switch-symbol {
-  color: $main-color  !important;
+  color: $main-color !important;
 }
 .bd-toast {
   background-color: $main-color;

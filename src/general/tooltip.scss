@@ -5,33 +5,30 @@
   border-radius: 3px;
   font-size: 13px;
   font-weight: 600;
-  %layerContainer & {
-    color: #fff;
-  }
   %tooltipContent {
     padding: 0;
   }
   &%tooltipPrimary {
     background: rgba(0, 0, 0, 0.9);
-    >%tooltipPointer {
+    > %tooltipPointer {
       border-top-color: rgba(0, 0, 0, 0.9);
     }
   }
   &%tooltipBrand {
     background: $main-color;
-    >%tooltipPointer {
+    > %tooltipPointer {
       border-top-color: $main-color;
     }
   }
   &%tooltipRed {
     background: cv('colors.danger');
-    >%tooltipPointer {
+    > %tooltipPointer {
       border-top-color: cv('colors.danger');
     }
   }
   &%tooltipGreen {
     background: cv('colors.success');
-    >%tooltipPointer {
+    > %tooltipPointer {
       border-top-color: cv('colors.success');
     }
   }
@@ -57,7 +54,7 @@
 }
 %commandTooltip {
   background: rgba(0, 0, 0, 0.9);
-  >%commandTooltipPointer {
+  > %commandTooltipPointer {
     border-top-color: rgba(0, 0, 0, 0.9);
   }
 }
@@ -80,8 +77,8 @@
 // REACTION
 .reactionTooltip-3IOBwg {
   background: rgba(0, 0, 0, 0.9);
-	padding: 5px 10px;
-	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-	border-radius: 3px;
-	font-size: 13px;
+  padding: 5px 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  font-size: 13px;
 }

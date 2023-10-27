@@ -6,7 +6,7 @@
     line-height: 22px;
     white-space: nowrap;
     transition: all 0.15s ease-in-out;
-    background-color:$main-color;
+    background-color: $main-color;
     color: #fff;
     &:hover {
       background-color: $hover-color;
@@ -16,7 +16,7 @@
     }
   }
   strong {
-    >%mention {
+    > %mention {
       font-weight: 600;
     }
   }

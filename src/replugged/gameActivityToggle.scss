@@ -1,0 +1,6 @@
+%themeDark {
+  %accountPanelTagButton:has(+ div > [aria-label*='Game Activity']),
+  %accountPanelTagless:has(+ div > [aria-label*='Game Activity']) {
+    min-width: calc(100% - 140px);
+  }
+}

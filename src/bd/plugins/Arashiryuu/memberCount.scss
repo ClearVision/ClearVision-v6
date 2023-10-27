@@ -1,6 +1,6 @@
 // MEMBER COUNT
 %members {
-  >#MemberCount {
+  > #MemberCount {
     position: static;
     height: 40px;
     width: 100%;
@@ -15,7 +15,7 @@
     &:after {
       display: none;
     }
-    +%membersGroup {
+    + %membersGroup {
       margin-top: -10px;
     }
   }

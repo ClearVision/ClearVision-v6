@@ -10,10 +10,14 @@
 %members {
   width: cv('members-width');
   background: rgba(0, 0, 0, calc(#{cv('bg.app.shading')} * 0.6));
-  >div {
+  > div {
     background-color: transparent;
   }
 }
+%membersNotices {
+  width: var(--members-width);
+}
+
 %members {
   // GROUP
   %membersGroup {
@@ -48,7 +52,7 @@
 
   // MEMBER
   %member {
-    background: transparent !important;
+    background: transparent;
     backface-visibility: hidden;
     &%memberOffline {
       %memberAvatar {
@@ -70,7 +74,7 @@
         transform: scale(0.9);
       }
     }
-    %memberUsername>span {
+    %memberUsername > span {
       max-width: 100%;
       overflow: visible;
       transition: all 0.15s ease-in-out;
@@ -105,7 +109,7 @@
     }
     &:hover,
     &%memberSelected {
-      %memberUsername>span {
+      %memberUsername > span {
         &:before {
           opacity: 1;
         }
@@ -115,7 +119,7 @@
       }
     }
     &%memberSelected {
-      %memberUsername>span {
+      %memberUsername > span {
         -webkit-text-fill-color: #fff;
         text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
         &:after {
@@ -196,7 +200,7 @@
     background: hsla(0, 0%, 100%, 0.3);
   }
 }
-.addMembersIcon-2xvix1 {
+.addMembersIcon_e97261 {
   background-color: var(--background-overlay);
 }
 

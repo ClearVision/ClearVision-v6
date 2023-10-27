@@ -5,7 +5,28 @@
     &[mask='url(#svg-mask-status-online-mobile)'] {
       fill: var(--online-color);
     }
-    &[mask='url(#svg-mask-status-idle)']{
+    &[mask='url(#svg-mask-status-idle)'] {
+      fill: var(--idle-color);
+    }
+    &[mask='url(#svg-mask-status-dnd)'] {
+      fill: var(--dnd-color);
+    }
+    &[mask='url(#svg-mask-status-streaming)'] {
+      fill: var(--streaming-color);
+    }
+    &[mask='url(#svg-mask-status-offline)'] {
+      fill: var(--offline-color);
+    }
+  }
+}
+
+// USER PROFILE
+%userProfileStatus {
+  rect {
+    &[mask='url(#svg-mask-status-online)'] {
+      fill: var(--online-color);
+    }
+    &[mask='url(#svg-mask-status-idle)'] {
       fill: var(--idle-color);
     }
     &[mask='url(#svg-mask-status-dnd)'] {

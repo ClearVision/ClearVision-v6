@@ -1,9 +1,6 @@
 /* UNOFFICIAL SOURCES INDICATOR */
 // UNOFFICIAL SOURCES LIST
-$unofficial: (
-  'betterdocs.us',
-  'discordsource.com'
-);
+$unofficial: ('betterdocs.us', 'discordsource.com');
 
 html[lang] body #app-mount%appMount {
   %themeDark,
@@ -14,7 +11,7 @@ html[lang] body #app-mount%appMount {
       %embed %anchor%embedLink {
         &[href] {
           height: auto !important;
-          color: $main-color  !important;
+          color: $main-color !important;
           pointer-events: auto !important;
           cursor: pointer !important;
           &:before,
@@ -82,7 +79,7 @@ html[lang] body #app-mount%appMount {
           &[href*='#{$e}' i] {
             position: relative;
             cursor: not-allowed;
-            >img {
+            > img {
               opacity: 0;
               transition: all 0.3s ease-in-out;
             }
@@ -101,7 +98,7 @@ html[lang] body #app-mount%appMount {
               z-index: 1;
             }
             &:hover {
-              >img {
+              > img {
                 opacity: 1;
               }
               &:before {
@@ -117,7 +114,7 @@ html[lang] body #app-mount%appMount {
         &:after {
           display: none !important;
         }
-        ~%inviteButton {
+        ~ %inviteButton {
           display: flex !important;
         }
         &[style*='icons/153708594091655168/'] {
@@ -160,7 +157,7 @@ html[lang] body #app-mount%appMount {
               opacity: 0;
             }
           }
-          ~%inviteGuildInfo {
+          ~ %inviteGuildInfo {
             %inviteGuildName {
               position: relative;
               color: transparent;
@@ -191,7 +188,7 @@ html[lang] body #app-mount%appMount {
               color: cv('colors.danger');
             }
           }
-          ~%inviteButton {
+          ~ %inviteButton {
             cursor: not-allowed;
             &%inviteButtonAccept {
               border-color: cv('colors.danger');

@@ -63,7 +63,7 @@
     // HYPESQUAD
     'hypesquad-online': 'https://clearvision.github.io/icons/hypesquad.svg'
   );
-  
+
   $serverSettingsIcons: (
     // OVERVIEW
     'overview': 'https://clearvision.github.io/icons/info.svg',
@@ -113,12 +113,10 @@
 
   $channelSettingsIcons: (
     /* OVERVIEW - DUPE
-    'overview': 'https://clearvision.github.io/icons/info.svg', */
-    // PERMISSIONS
+    'overview': 'https://clearvision.github.io/icons/info.svg', */ // PERMISSIONS
     'permissions': 'https://clearvision.github.io/icons/rule.svg',
     /* INVITES - DUPE
-    'instant_invites': 'https://clearvision.github.io/icons/person_add.svg', */
-    /* INTEGRATIONS - DUPE
+    'instant_invites': 'https://clearvision.github.io/icons/person_add.svg', */ /* INTEGRATIONS - DUPE
     'integrations': 'https://clearvision.github.io/icons/puzzle.svg' */
   );
 
@@ -150,32 +148,28 @@
   }
 
   // USER SETTINGS
-  @each $i,
-  $u in $userSettingsIcons {
+  @each $i, $u in $userSettingsIcons {
     %tabBarItem[aria-controls='#{$i}-tab']:before {
       background-image: url(#{$u});
     }
   }
 
   // SERVER SETTINGS
-  @each $i,
-  $u in $serverSettingsIcons {
+  @each $i, $u in $serverSettingsIcons {
     %tabBarItem[aria-controls='#{$i}-tab']:before {
       background-image: url(#{$u});
     }
   }
 
   // CHANNEL SETTINGS
-  @each $i,
-  $u in $channelSettingsIcons {
+  @each $i, $u in $channelSettingsIcons {
     %tabBarItem[aria-controls='#{$i}-tab']:before {
       background-image: url(#{$u});
     }
   }
 
   // DANGER
-  @each $i,
-  $u in $dangerIcons {
+  @each $i, $u in $dangerIcons {
     %tabBarItem[aria-controls='#{$i}-tab']:before {
       -webkit-mask: url(#{$u});
       mask: url(#{$u});
@@ -184,9 +178,9 @@
 }
 
 // DISCORD RIGHT SIDE ICONS
-%premiumLabel>svg,
-.tabBarItemContainer-2HdIlr>svg,
+%premiumLabel > svg,
+.tabBarItemContainer_d74773 > svg,
 %serverBoostIcon,
-.side-2ur1Qk .textBadge-1fdDPJ {
+.side-2ur1Qk .textBadge__45d79 {
   margin-right: 15px;
 }

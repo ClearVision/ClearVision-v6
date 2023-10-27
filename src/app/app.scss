@@ -1,5 +1,5 @@
 /* APP */
-%themeDark %appMount {
+%appMount {
   background: cv('bg.app.overlay');
 }
 %shakeable {
@@ -13,12 +13,6 @@
 %appMount {
   %layers,
   %layer {
-    background: transparent;
-  }
-}
-%layer {
-  %containerMain,
-  %standardSidebarView {
     background: transparent;
   }
 }
@@ -44,6 +38,7 @@
     pointer-events: none;
   }
 }
+
 %loading {
   background-color: transparent;
   &:before,

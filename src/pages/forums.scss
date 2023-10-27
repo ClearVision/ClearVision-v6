@@ -1,168 +1,231 @@
 /* FORUMS */
-%themeDark %forumContainer{
-    background: rgba(0, 0, 0, calc(#{cv('bg.app.shading')} * 0.3));
+// main container
+%themeDark %forumContainer {
+  background: rgba(0, 0, 0, calc(#{cv('bg.app.shading')} * 0.3));
 }
+// each card
 %forumCardContainer {
-    &%forumOpenCard {
-        background: hsla(0, 0%, 0%, 0.3);
-    }
-}
-%forumCard {
+  &%forumOpenCard {
     background: hsla(0, 0%, 0%, 0.3);
-    border: 2px solid $main-color;
-    &:hover {
-        background: hsla(0, 0%, 0%, 0.3);
-        border: 2px solid $hover-color;
-    }
-    %channelTextArea {
-        background: hsla(0, 0%, 100%, 0.07);
-        width: 95%;
-        %channelTextAreaScrollable {
-            background: transparent;
-        }
-    }
-    %forumContentContainer {
-        padding: 10px 0px 0px 0px;
-    }
-    %themeDark &%forumOpenCard {
-        background-color: hsla(0,0%,100%,0.1);
-    }
+  }
 }
+// temporary addition. increased is the "new" forums view
+%forumIncreasedCard,
+%forumCard {
+  // theme each card w/ border, text preview, etc
+  background: hsla(0, 0%, 0%, 0.3);
+  border: 2px solid $main-color;
+  &:hover {
+    background: hsla(0, 0%, 0%, 0.3);
+    border: 2px solid $hover-color;
+  }
+  %channelTextArea {
+    background: hsla(0, 0%, 100%, 0.07);
+    width: 95%;
+    %channelTextAreaScrollable {
+      background: transparent;
+    }
+  }
+  %forumContentContainer {
+    padding: 10px 0px 0px 0px;
+  }
+  %themeDark &%forumOpenCard, // another temporary addition
+    %themeDark &%forumIncreasedOpenCard {
+    background-color: hsla(0, 0%, 100%, 0.1);
+  }
+  %input {
+    background: transparent;
+    box-shadow: none;
+  }
+}
+// fix the increased view's new reply feature
+%forumIncreasedReplyPreview {
+  background-color: hsla(0, 0%, 100%, 0.05);
+  border-color: 2px solid $main-color;
+  &:hover {
+    background-color: hsla(0, 0%, 100%, 0.05);
+    border-color: 2px solid $hover-color;
+  }
+}
+// header is the "search" area in main page
 %forumHeaderRow {
-    %forumCard,
-    %forumCard:hover {
-        border: 2px solid transparent;
-    }
+  %forumCard,
+  %forumCard:hover {
+    border: 2px solid transparent;
+  }
 }
+// thin line between header elements
 %forumHeaderBorder {
-    box-shadow: 0 0 0 2px transparent;
+  background: transparent;
 }
+// names
 %forumCardName {
-	color: #fff !important;
+  color: #fff !important;
 }
-%themeDark %forumTag {
-	background: hsla(0, 0%, 0%, 0.6);
-	border: 2px solid $main-color;
-    &%forumTagClickable:not(%forumTagDisabled):hover {
-        background: transparent;
-        border: 2px solid $hover-color;
-    }
-    &%forumTagSelected {
-        border: 2px solid var(--success-color);
-    }
+// tag
+%themeDark %forumTag,
+%themeDark %forumIncreasedTag {
+  background: rgba(0, 0, 0, .6);
+  border: 2px solid $main-color;
+  &%forumTagClickable:not(%forumTagDisabled):hover {
+    background: transparent;
+    border: 2px solid $hover-color;
+  }
+  &%forumTagSelected {
+    border: 2px solid var(--success-color);
+  }
 }
-%forumGuidelineContainer, %forumTagContainer {
-	background: hsla(0, 0%, 0%, 0.3);
-	border: none;
+%themeDark %forumIncreasedTag {
+  border-radius: 20px;
+  height: 32px;
+  width: fit-content;
+  text-align: center;
+  padding: 0 10px;
 }
-%forumPencilIcon, %forumSearchIcon, %forumCloseIcon {
-	color: rgba(255,255,255,.9);
-	width: 20px;
-	height: 20px;
-	left: 10px;
-	top: 10px;
-    &:hover {
-        color: #fff;
-    };
+// icons
+%forumPencilIcon,
+%forumSearchIcon,
+%forumCloseIcon {
+  color: rgba(255, 255, 255, 0.9);
+  width: 20px;
+  height: 20px;
+  left: 10px;
+  top: 10px;
+  &:hover {
+    color: #fff;
+  }
 }
 %forumSearch {
-    font-family: var(--main-font);
-    font-weight: 300;
-    padding: 0 5px 0 5px;
-    background: transparent;
-    border-radius: 4px;
+  font-family: var(--main-font);
+  font-weight: 300;
+  padding: 0 5px 0 5px;
+  background: transparent;
+  border-radius: 4px;
 }
 %forumSearchRow {
-	background-color: rgba(0,0,0,.3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
+// tag box etc
 %forumTagBox {
-	background: rgba(0,0,0,.7);
-    %forumTagBoxCount {
-        background-color: $main-color;
+  background: rgba(0, 0, 0, 0.7);
+  %forumTagBoxCount {
+    background-color: $main-color;
+  }
+  %forumTagClear {
+    color: $main-color;
+    &:hover {
+      color: $hover-color;
     }
-    %forumTagClear {
-        color: $main-color;
-        &:hover {
-            color: $hover-color;
-        }
-    }
+  }
 }
 %forumTagCount {
-	background-color: var(--main-color);
+  background-color: var(--main-color);
 }
 %forumSortDropdown {
-	background-color: var(--main-color);
-    > *,
-    %forumSortDropdownText {
-        color: #fff !important;
-    }
+  background-color: var(--main-color);
+  > *,
+  %forumSortDropdownText {
+    color: #fff !important;
+  }
 }
 %forumTagButton {
-	background-color: rgba(0,0,0,.3);
-    %forumTagButtonInner {
-        color: #fff;
-    }
+  background-color: rgba(0, 0, 0, 0.3);
+  %forumTagButtonInner {
+    color: #fff;
+  }
 }
 
 %themeDark %forumContentFooter {
-    background: transparent;
+  background: transparent;
 }
-
+// rules
 %forumRules {
-    background: rgba(0,0,0,.3);
-    border: 2px solid $main-color;
-    %forumRulesDesc {
-        background: rgba(0,0,0,.3);
+  background: rgba(0, 0, 0, 0.3);
+  border: 2px solid $main-color;
+  %forumRulesDesc {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  %forumRulesGradient {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), transparent);
+  }
+  %forumRulesLinkContainer {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  %headingLargeBold,
+  %headingLargeSemibold {
+    color: $main-color;
+    &:hover {
+      color: $hover-color;
     }
-    %forumRulesGradient {
-        background: linear-gradient(0deg, rgba(0,0,0,.8), transparent);
-    }
-    %forumRulesLinkContainer {
-        background: rgba(0,0,0,.8);
-    }
-    %textSmallBold,
-    %textSmallSemibold {
-        color: $main-color;
-        &:hover {
-            color: $hover-color;
-        }
-    }
+  }
 }
 
 %forumLoadingCard {
-	background: hsla(0, 0%, 0%, 0.3); 
+  background: hsla(0, 0%, 0%, 0.3);
 }
 %forumUploadIcon {
-    background: $main-color;
-    transition: all .15s ease-in-out;
-    &:hover {
-        background: $hover-color;
-        transition: all .15s ease-in-out;
-    }
+  background: $main-color;
+  transition: all 0.15s ease-in-out;
+  &:hover {
+    background: $hover-color;
+    transition: all 0.15s ease-in-out;
+  }
 }
 
 /* FORUM CHAT */
 %forumChatIcon {
-	background: $main-color;
+  background: $main-color;
 }
 %forumChatHead,
 %forumChatDivider,
 %forumChatStartBox {
-	background-color: transparent;
+  background-color: transparent;
 }
 %forumMessageButton {
   background-color: hsla(0, 0%, 100%, 0.05);
   border-radius: 3px;
-  transition: all .15s ease-in-out;  
+  transition: all 0.15s ease-in-out;
   &:hover {
     background-color: hsla(0, 0%, 100%, 0.2);
     border-color: hsla(0, 0%, 100%, 0.2);
-    color: #fff ;
+    color: #fff;
   }
   &%forumFollowActive {
     color: $main-color;
     &:hover {
       color: $hover-color;
     }
+  }
+}
+
+// admin/creation
+%forumGetStartedContainer {
+  background: hsla(0, 0%, 0%, 0.3);
+  %forumGetStartedStep {
+    background: hsla(0, 0%, 0%, 0.3);
+    border: 2px solid $main-color;
+    &:hover {
+      background: hsla(0, 0%, 0%, 0.3);
+      border: 2px solid $hover-color;
+    }
+  }
+}
+%themeDark %forumSettingsGuidelinesToolbar {
+  background: hsla(0, 0%, 0%, 0.6);
+  > %channelTextArea {
+    border-radius: 0 0 8px 8px;
+  }
+}
+
+// event no messages in forum yet
+%forumNoConversations {
+  background: hsla(0, 0%, 0%, 0.3);
+}
+// new posts button
+%forumNewPosts {
+  background: rgba(0,0,0,.2);
+  border: 1px solid var(--main-color);
+  %textMediumMedium {
+    color: var(--main-color) !important;
   }
 }

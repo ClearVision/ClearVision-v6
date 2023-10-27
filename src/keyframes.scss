@@ -17,10 +17,7 @@
     }
   }
 }
-@each $d in top,
-right,
-bottom,
-left {
+@each $d in top, right, bottom, left {
   @keyframes cv-slide-#{$d} {
     from {
       #{$d}: 100%;

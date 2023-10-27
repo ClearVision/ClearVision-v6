@@ -36,13 +36,13 @@
   transition: all 0.15s ease-in-out;
   padding-bottom: 0px;
   max-height: 24px;
-  >button {
+  > button {
     color: hsla(0, 0%, 100%, 0.7);
     transition: inherit;
   }
   &:hover {
     background: $main-color;
-    >button {
+    > button {
       color: #fff;
     }
   }

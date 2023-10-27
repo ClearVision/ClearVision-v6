@@ -54,13 +54,8 @@
   padding: 2px 3px;
   box-sizing: content-box;
 }
-%headerBarIconWrapper>svg>foreignObject {
+%headerBarIconWrapper > svg > foreignObject {
   mask: none;
-}
-%headerBarInput {
-  &:focus {
-    background-color: hsla(0, 0%, 100%, 0.1);
-  }
 }
 
 // MODAL POPOUT

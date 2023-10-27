@@ -17,7 +17,7 @@
     font-weight: 600;
     text-shadow: 0 0 3px #000;
     &:hover {
-      background-color: hsla(0,0%,100%,.1);
+      background-color: hsla(0, 0%, 100%, 0.1);
     }
   }
 
@@ -72,10 +72,10 @@
     color: var(--channel-color);
     opacity: 1;
     transition: all 0.15s ease-in-out;
-    >path {
+    > path {
       opacity: 0.7;
     }
-    >path:last-of-type {
+    > path:last-of-type {
       opacity: 1;
     }
   }
@@ -104,7 +104,7 @@
       color: #fff;
     }
     %channelLink {
-      background: var(--bg-overlay-hover,var(--background-modifier-hover));
+      background: var(--bg-overlay-hover, var(--background-modifier-hover));
       &:before {
         background: hsla(0, 0%, 100%, 0.1);
       }
@@ -233,7 +233,7 @@
 
 // ICONS
 %channelIconLive {
-  background-color: $main-color  !important;
+  background-color: $main-color !important;
 }
 
 // USER LIMIT
@@ -321,7 +321,7 @@
 %voiceChannelsButton {
   &:hover {
     background: $hover-color;
-    transition: ease-in-out .15s;
+    transition: ease-in-out 0.15s;
   }
   > %textSmallMedium {
     color: #fff;
@@ -357,4 +357,3 @@
     opacity: 0.1;
   }
 }
-

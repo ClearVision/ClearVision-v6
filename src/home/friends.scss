@@ -25,10 +25,10 @@
 }
 
 %friendsDiscoverHint {
-  background: hsla(0, 0%, 0%, .2);
+  background: hsla(0, 0%, 0%, 0.2);
   border: 2px solid $main-color;
   &:hover {
-    background: hsla(0, 0%, 0%, .4);
+    background: hsla(0, 0%, 0%, 0.4);
     border: 2px solid $hover-color;
   }
 }
@@ -134,14 +134,14 @@
   %activeNowCardInset {
     background-color: hsla(0, 0%, 0%, 0.4);
   }
-  .partyMemberOverflow-3G1oZz {
+  .partyMemberOverflow_d12297 {
     background-color: var(--background-overlay);
   }
 }
 %activeNowCardSection {
   background-color: transparent;
 }
-%themeDark .applicationStreamingPreviewWrapper-7j27t8 {
+%themeDark .applicationStreamingPreviewWrapper__97a95 {
   background-color: transparent;
 }
 
@@ -155,8 +155,8 @@
 
 // DM USER PROFILE
 %userProfileOuterUnthemed {
-	background-color: hsla(0, 0%, 0%, .4);
-  .userPanelInnerThemed-3YO1BB{
+  background-color: hsla(0, 0%, 0%, 0.4);
+  .userPanelInnerThemed__1804b {
     background: transparent;
   }
 }

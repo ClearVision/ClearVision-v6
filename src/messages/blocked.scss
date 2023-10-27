@@ -33,17 +33,17 @@
     margin-top: -20px;
     margin-left: 0;
   }
-  +%divider {
+  + %divider {
     margin-top: 25px;
   }
-  %divider+& {
+  %divider + & {
     margin-top: 25px;
   }
 }
 // Show blocked message
-.blockedAction-2cPk2G {
+.blockedAction__27053 {
   color: $main-color;
 }
-.blockedSystemMessage-3FmE9n:hover .blockedAction-2cPk2G {
+.blockedSystemMessage_e58a4c:hover .blockedAction__27053 {
   color: $hover-color;
 }

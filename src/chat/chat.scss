@@ -13,29 +13,13 @@
   %chatContentWrapper {
     background: transparent;
     &:before {
-      display: none;
-    }
-  }
-  %messages {
-    background: transparent;
-    backface-visibility: hidden;
-  }
-
-  // BASE
-  %chatBase {
-    border-bottom: 1px solid hsla(0, 0%, 100%, 0.02);
-    >h1 {
-      color: hsla(0, 0%, 100%, 0.3);
-      >strong {
-        color: hsla(0, 0%, 100%, 0.5);
-        font-weight: 700;
-      }
+      box-shadow: none;
     }
   }
 }
 
 // GATED CHANNEL
-%chatContentWrapper>%scrollerWrap {
+%chatContentWrapper > %scrollerWrap {
   background: rgba(0, 0, 0, 0.5);
 }
 %chatGatedContent {
@@ -122,8 +106,8 @@
 }
 
 // CHAT LOADING
-%chatLoadingWrapperOuter,
-%chatLoadingWrapper {
+%chatLoadingWrapper,
+%chatLoadingWrapperCozy {
   background-color: transparent;
 }
 

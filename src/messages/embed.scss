@@ -17,7 +17,7 @@
     @include hover-shadow;
   }
   %embedTitleLink {
-    color: $main-color  !important;
+    color: $main-color !important;
   }
 
   // VIDEO ACTIONS
@@ -28,7 +28,7 @@
       box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
     }
   }
-  a>code {
+  a > code {
     &%codeInline {
       color: $main-color;
     }

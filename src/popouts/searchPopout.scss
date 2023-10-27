@@ -7,27 +7,27 @@
 }
 %searchPopout {
   // SEARCH RESULTS GROUP
-  >%searchPopoutResultsGroup {
+  > %searchPopoutResultsGroup {
     &:after {
       border-top: 1px solid transparent;
     }
-    +%searchPopoutResultsGroup {
+    + %searchPopoutResultsGroup {
       &:after {
         border-top-color: hsla(0, 0%, 100%, 0.04);
       }
     }
-    >%searchPopoutHeader {
+    > %searchPopoutHeader {
       color: $main-color;
       font-weight: 700;
     }
-    >%searchPopoutLearnMore,
-    >%searchPopoutClearHistory {
+    > %searchPopoutLearnMore,
+    > %searchPopoutClearHistory {
       opacity: 0.5;
       transition: all 0.15s ease-in-out;
       &:hover {
         opacity: 1;
       }
-      >a {
+      > a {
         color: #fff;
       }
     }
@@ -63,7 +63,7 @@
       color: hsla(0, 0%, 100%, 0.5);
       transition: all 0.15s ease-in-out;
     }
-    >strong {
+    > strong {
       color: hsla(0, 0%, 100%, 0.7);
       transition: all 0.15s ease-in-out;
     }
@@ -84,7 +84,7 @@
       %searchPopoutNonText {
         color: hsla(0, 0%, 100%, 0.7);
       }
-      >strong {
+      > strong {
         color: #fff;
       }
     }
@@ -110,24 +110,24 @@
     }
 
     // OPTION CHANNEL
-    >%searchPopoutChannel {
-      >strong {
+    > %searchPopoutChannel {
+      > strong {
         color: hsla(0, 0%, 100%, 0.7);
         transition: all 0.15s ease-in-out;
       }
-      >%searchPopoutChannelIcon,
-      >%searchPopoutChannelCategory {
+      > %searchPopoutChannelIcon,
+      > %searchPopoutChannelCategory {
         color: hsla(0, 0%, 100%, 0.3);
         transition: all 0.15s ease-in-out;
       }
     }
     &%searchPopoutOptionSelected {
-      >%searchPopoutChannel {
-        >strong {
+      > %searchPopoutChannel {
+        > strong {
           color: #fff;
         }
-        >%searchPopoutChannelIcon,
-        >%searchPopoutChannelCategory {
+        > %searchPopoutChannelIcon,
+        > %searchPopoutChannelCategory {
           color: hsla(0, 0%, 100%, 0.5);
         }
       }
@@ -137,24 +137,10 @@
   // QUERY CONTAINER
   %searchPopoutQueryContainer {
     background-color: $main-color;
-    >%searchPopoutQueryText {
+    > %searchPopoutQueryText {
       color: hsla(0, 0%, 100%, 0.7);
-      >strong {
+      > strong {
         color: #fff;
-      }
-    }
-    %searchPopoutKeybindShortcut {
-      >span {
-        border-color: hsla(0, 0%, 100%, 0.5);
-        box-shadow: inset 0 -4px hsla(0, 0%, 100%, 0.7);
-        &:hover {
-          background-color: transparent;
-        }
-        &:active {
-          border-color: hsla(0, 0%, 100%, 0.5);
-          box-shadow: inset 0 -2px hsla(0, 0%, 100%, 0.7);
-          color: #fff;
-        }
       }
     }
   }
@@ -182,9 +168,9 @@
 %themeDark %calendarPicker {
   %datepicker,
   %datepickerHeader {
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.8));
   }
-  >%datepicker {
+  > %datepicker {
     %datepickerNavigation {
       background-color: hsla(0, 0%, 100%, 0.1);
       border: 1px solid transparent;
@@ -206,11 +192,11 @@
   }
   %datepickerWeek {
     &:last-of-type {
-      >%datePickerDay {
+      > %datePickerDay {
         border-bottom: 1px solid hsla(0, 0%, 100%, 0.04);
       }
     }
-    >%datepickerDay {
+    > %datepickerDay {
       background-color: hsla(0, 0%, 100%, 0.1);
       border-left: 1px solid hsla(0, 0%, 100%, 0.04);
       border-top: 1px solid hsla(0, 0%, 100%, 0.04);
@@ -224,18 +210,18 @@
         color: #fff;
       }
     }
-    >%datepickerDaySelected {
+    > %datepickerDaySelected {
       box-shadow: inset 0 -3px $main-color;
       &:after {
         display: none;
       }
     }
-    >%datepickerDayToday {
+    > %datepickerDayToday {
       color: $main-color;
       font-weight: 700;
     }
-    >%datepickerDayDisabled,
-    >%datepickerDayOutsideMonth {
+    > %datepickerDayDisabled,
+    > %datepickerDayOutsideMonth {
       background-color: transparent;
       color: hsla(0, 0%, 100%, 0.1);
       &:hover {

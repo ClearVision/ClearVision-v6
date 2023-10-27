@@ -6,7 +6,6 @@
 
 // BUTTON FILLED
 %buttonFilled {
-  &%buttonColorGrey,
   &%buttonColorBrand,
   &%buttonColorGreen,
   &%buttonColorBrandNew,
@@ -15,12 +14,11 @@
   &%buttonColorPrimary {
     background: $main-color;
     color: #fff;
-    &:hover,
-    &%buttonHasHover:hover {
+    &:hover {
       background: $hover-color;
     }
     &:disabled {
-      background: $main-color  !important;
+      background: $main-color !important;
     }
     &:active {
       background: $main-color;
@@ -29,20 +27,20 @@
   &%buttonColorRed {
     background-color: cv('colors.danger');
   }
-  &%buttonFilledWhite {
+  &%buttonColorWhite {
     background: hsla(0, 0%, 100%, 0.1);
-    >%buttonContents {
+    > %buttonContents {
       color: hsla(0, 0%, 100%, 0.7);
     }
     &:hover {
       background: hsla(0, 0%, 100%, 0.2) !important;
-      >%buttonContents {
+      > %buttonContents {
         color: #fff;
       }
     }
     &:disabled {
       background: hsla(0, 0%, 100%, 0.1) !important;
-      >%buttonContents {
+      > %buttonContents {
         color: hsla(0, 0%, 100%, 0.5);
       }
     }
@@ -133,5 +131,16 @@
   &:hover %buttonContents {
     background-image: none;
     text-decoration: underline;
+  }
+}
+
+// BUTTON BLANK
+%buttonBlank {
+  %buttonContents {
+    color: hsla(0, 0%, 100%, .7);
+    &:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
   }
 }

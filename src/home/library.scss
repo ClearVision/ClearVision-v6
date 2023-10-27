@@ -1,6 +1,5 @@
 /* GAME LIBRARY */
 
-%libraryContainer,
 %nitroHomePage {
   // Nitro Tab (Temp)
   background-color: rgba(0, 0, 0, calc(#{cv('bg.app.shading')} * 0.5));
@@ -13,7 +12,7 @@
 %libraryTableHeader {
   background-color: transparent;
   border-bottom: 1px solid hsla(0, 0%, 100%, 0.07);
-  >%libraryTableHeaderCell {
+  > %libraryTableHeaderCell {
     border-left-color: hsla(0, 0%, 100%, 0.07);
     color: hsla(0, 0%, 100%, 0.3);
     transition: all 0.3s ease-in-out;
@@ -23,7 +22,7 @@
       }
     }
   }
-  >%libraryTableHeaderCellSorted {
+  > %libraryTableHeaderCellSorted {
     color: hsla(0, 0%, 100%, 0.7);
   }
 }
@@ -35,8 +34,8 @@
   &:hover {
     margin: 0 20px;
     padding: 0;
-    +%libraryTableRowWrapper {
-      >%libraryTableRow {
+    + %libraryTableRowWrapper {
+      > %libraryTableRow {
         margin-top: -1px;
         border-top: 1px solid hsla(0, 0%, 100%, 0.04);
       }

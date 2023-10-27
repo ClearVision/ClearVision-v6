@@ -1,0 +1,27 @@
+/* DISCORD SHOP */
+
+%shop {
+  background-color: transparent;
+}
+
+// LOADING
+%shopLoadingSkeleton {
+  background-color: hsla(0, 0%, 100%, 0.07);
+}
+%shopLoadingBanner,
+%shopLoadingCard {
+  background-color: hsla(0, 0%, 0%, 0.4);
+}
+%shopLoadingCardContent {
+  background-color: hsla(0, 0%, 100%, 0.07);
+}
+
+// CONTENT
+%shopChatPreview {
+  left: 0;
+  bottom: 0;
+  margin: 10px auto 0 auto;
+}
+%shopMockInput {
+  background-color: hsla(0, 0%, 100%, 0.07);
+}

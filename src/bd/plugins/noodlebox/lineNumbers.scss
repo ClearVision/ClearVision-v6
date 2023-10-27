@@ -1,11 +1,11 @@
 // LINE NUMBERS
-%codeHLJS>.kawaii-linenumbers {
+%codeHLJS > .kawaii-linenumbers {
   list-style: none;
   counter-reset: linenumbers;
   border-left: 2.6ch solid hsla(0, 0%, 100%, 0.04);
   margin: -6px;
   padding: 6px;
-  >li {
+  > li {
     text-indent: -3ch;
     margin-left: 0;
     padding: 0;

@@ -67,13 +67,11 @@
 @mixin font($name, $local: null, $url: null, $format: null, $weight: null, $style: null, $decoration: null) {
   @font-face {
     font-family: $name;
-    @if $url  !=null and $format  !=null {
+    @if $url !=null and $format !=null {
       src: url($url) format($format);
-    }
-    @else if $url  !=null {
+    } @else if $url !=null {
       src: url($url);
-    }
-    @else {
+    } @else {
       @content;
     }
     @if variable-exists(weight) {

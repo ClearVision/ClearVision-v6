@@ -5,7 +5,7 @@
     %userPopoutInner {
       background: cv('bg.popout.overlay');
     }
-    &:not(.profileCustomizationPreview-3zZw6E) {
+    &:not(.profileCustomizationPreview_ccc6a9) {
       %userPopoutInner {
         &::before {
           content: '';
@@ -20,7 +20,7 @@
       }
     }
   }
-  %popoutAnimatorLeft>& {
+  %popoutAnimatorLeft > & {
     transform-origin: 100% 50%;
   }
 }
@@ -33,11 +33,11 @@
   mask: linear-gradient(to bottom, #000 50%, transparent);
 }
 %userPopoutProfileBadges {
-  background-color: hsla(0, 0%, 0%, .4);
+  background-color: hsla(0, 0%, 0%, 0.4);
 }
 %userPopoutOverlayBackground {
-  background-color: hsla(0, 0%, 0%, .4);
-  >%menuPopout {
+  background-color: hsla(0, 0%, 0%, 0.4);
+  > %menuPopout {
     background-color: transparent;
     animation: none;
   }
@@ -58,7 +58,8 @@
     display: flex;
     flex-direction: column;
     flex-shrink: 1;
-    >%userPopoutRolesList { /*Note!!*/
+    > %userPopoutRolesList {
+      /*Note!!*/
       max-height: unset;
     }
   }

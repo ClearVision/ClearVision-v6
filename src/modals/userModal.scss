@@ -6,26 +6,26 @@
       background: rgba(0, 0, 0, 0.7);
       &::before {
         content: '';
-      position: absolute;
-      @include stretch;
-      background: cv('bg.modal.img') cv('bg.modal.pos') / cv('bg.modal.size') cv('bg.modal.repeat') cv('bg.modal.attach');
-      @include filters(cv('bg.modal'));
-      width: 100%;
-      height: 100%;
-      z-index: -1;
+        position: absolute;
+        @include stretch;
+        background: cv('bg.modal.img') cv('bg.modal.pos') / cv('bg.modal.size') cv('bg.modal.repeat') cv('bg.modal.attach');
+        @include filters(cv('bg.modal'));
+        width: 100%;
+        height: 100%;
+        z-index: -1;
       }
     }
   }
 }
 %userModalOverlayBackground {
-  background-color: hsla(0, 0%, 0%, .4);
+  background-color: hsla(0, 0%, 0%, 0.4);
 }
 %userModalProfileBanner {
   -webkit-mask: linear-gradient(to bottom, #000 50%, transparent);
   mask: linear-gradient(to bottom, #000 50%, transparent);
 }
 %userModalBadgeList {
-  background-color: hsla(0, 0%, 0%, .4);
+  background-color: hsla(0, 0%, 0%, 0.4);
 }
 
 // TAB BAR
@@ -96,23 +96,11 @@
 // BODY
 %userModalBody {
   %userModalInfoSection {
-    +%userModalInfoSection {
+    + %userModalInfoSection {
       border-color: hsla(0, 0%, 100%, 0.04);
     }
-    >%userModalInfoSectionHeader {
+    > %userModalInfoSectionHeader {
       color: hsla(0, 0%, 100%, 0.7);
-    }
-    >%userModalNote {
-      >textarea {
-        background: transparent;
-        color: hsla(0, 0%, 100%, 0.8);
-        &:focus {
-          background: transparent;
-        }
-        &::placeholder {
-          color: hsla(0, 0%, 100%, 0.5);
-        }
-      }
     }
   }
 }
@@ -150,7 +138,7 @@
   opacity: 0.3;
   transition: all 0.15s ease-in-out;
   transform: none;
-  >polygon {
+  > polygon {
     display: none;
   }
 }
@@ -182,7 +170,4 @@
       transform: scale(0.97);
     }
   }
-}
-%userModalListAvatar {
-  background-color: rgba(0, 0, 0, 0.2);
 }

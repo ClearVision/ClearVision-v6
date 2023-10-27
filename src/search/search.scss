@@ -4,7 +4,7 @@
 }
 %searchResultsWrap {
   // HEADER
-  >%searchHeader {
+  > %searchHeader {
     background-color: rgba(0, 0, 0, 0.3);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     %tabBarItem {
@@ -65,10 +65,10 @@
     &:after {
       display: none;
     }
-    +%searchResult {
+    + %searchResult {
       margin-top: -1px;
     }
-    >%searchResultMessage {
+    > %searchResultMessage {
       background-color: transparent;
       border: 2px solid transparent;
       transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
@@ -88,7 +88,7 @@
         transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
       }
     }
-    &:not(%searchResultExpanded)>%searchResultMessageSibling {
+    &:not(%searchResultExpanded) > %searchResultMessageSibling {
       -webkit-mask-image: linear-gradient(to bottom, transparent 10%, #000 30%, #000 70%, transparent 90%);
       mask-image: linear-gradient(to bottom, transparent 10%, #000 30%, #000 70%, transparent 90%);
     }
@@ -97,7 +97,7 @@
       border: none;
       border-bottom: 1px solid hsla(0, 0%, 100%, 0.04);
       border-radius: 0;
-      >%searchResultMessage {
+      > %searchResultMessage {
         &%searchResultMessageHit {
           background-color: hsla(0, 0%, 100%, 0.1);
           border: 2px solid transparent;
@@ -128,7 +128,7 @@
         -webkit-mask-image: linear-gradient(to right, #000 245px, transparent 260px);
         mask-image: linear-gradient(to right, #000 245px, transparent 260px);
       }
-      >%searchResultActionButtons {
+      > %searchResultActionButtons {
         opacity: 1;
       }
     }
@@ -160,7 +160,7 @@
 }
 
 // Search results, a blocked user was hidden from your results
-.resultsBlocked-2lCGyA {
+.resultsBlocked_a701cf {
   background-color: transparent;
   border: none;
 }

@@ -1,50 +1,60 @@
 /* ADD SERVER MODAL */
+
+// MAIN PAGE
 %themeLight {
-  .defaultColor-1GKx81 {
+  .defaultColor__87d87 {
     color: #fff;
   }
-  .subtitle-3m-md1,
-  .subtitle-bIoUVX,
+  .subtitle__89b16 {
+    color: hsla(0, 0%, 100%, 0.7) !important;
+  }
+}
+.container__73245 {
+  background-color: $main-color;
+  &:hover {
+    background-color: $hover-color;
+  }
+  .text__43e5f {
+    color: #fff;
+  }
+  .arrow__5e540 {
+    filter: brightness(0) invert(1);
+  }
+}
+
+// CREATE SERVER
+%themeLight {
+  .subtitle_a75f7f,
   .optionHeader-27AHfD {
     color: hsla(0, 0%, 100%, 0.7) !important;
   }
-  .iconContainer-GFfNaA>svg>circle {
+  .iconContainer_cd2671 > svg > circle {
     fill: $main-color;
   }
-  .sampleLink-5BWNy9 {
-    color: $main-color;
-    font-weight: 500;
-  }
-  %buttonLinkPrimary {
-    color: hsla(0, 0%, 100%, 0.7);
-  }
-  .skip-2hTIXL {
+  .skip_f687eb {
     color: hsla(0, 0%, 100%, 0.7) !important;
   }
 }
 
-// SERVER TEMPLATES
-.container-x8Y1ix {
-  background-color: $main-color;
-  &:hover {
-    background-color: $hover-color;
+// JOIN SERVER
+%themeLight {
+  .input__0c269 {
+    background-color: transparent;
   }
-  .text-PdAsFQ {
-    color: #fff;
-  }
-  .arrow-2yY1Tm {
-    filter: brightness(0) invert(1);
+  .sampleLink__771c4 {
+    color: $main-color;
+    font-weight: 500;
   }
 }
-.rowContainer-3t7486 {
+.rowContainer__6f4c6 {
   background-color: $main-color;
   &:hover {
     background-color: $hover-color;
   }
-  .rowText-3MQqQi {
+  .rowText_e87737 {
     color: #fff;
   }
-  .rowArrow-TIwwIc {
+  .rowArrow_d97795 {
     filter: brightness(0) invert(1);
   }
 }

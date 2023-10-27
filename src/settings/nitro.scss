@@ -1,0 +1,24 @@
+%nitroSettingsCard {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+%nitroSettingsBig {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 3px solid var(--main-color);
+  border-radius: 4px;
+}
+%nitroSettingsSmall {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--main-color);
+  border-radius: 4px;
+}
+%nitroSettingsInner {
+  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.6));
+  border-radius: 4px;
+  box-shadow: none;
+  %buttonInverted%buttonColorBrand:disabled,
+  %buttonInverted%buttonColorGreen:disabled {
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid var(--main-color);
+  }
+}
