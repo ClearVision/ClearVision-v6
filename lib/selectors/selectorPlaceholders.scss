@@ -772,9 +772,6 @@
 .backButton__6a1f0 {
   @extend %gifPickerSearchBackButton !optional;
 }
-.searchHeader-3w5h-0 {
-  @extend %gifPickerSearchHeader !optional;
-}
 .content__30de8 {
   @extend %gifPickerContent !optional;
 }
@@ -802,9 +799,6 @@
 .result_e1fc74 {
   @extend %gifPickerResult !optional;
 }
-.focused-q9B2e4 {
-  @extend %gifPickerResultFocused !optional;
-}
 .favButton__11e5a {
   @extend %gifPickerFavButton !optional;
 }
@@ -814,20 +808,8 @@
 .gif__2aa16 {
   @extend %gifPickerGif !optional;
 }
-.emptyHints-1KtTYR {
-  @extend %gifPickerEmptyHints !optional;
-}
-.placeholder-2Mfkde {
-  @extend %gifPickerPlaceholder !optional;
-}
 .emptyHintCard_f3e81a {
   @extend %gifPickerEmptyHintCard !optional;
-}
-.emptyHintFavorite-1cKHnJ {
-  @extend %gifPickerEmptyHintFavorite !optional;
-}
-.emptyHintText-3PF7lP {
-  @extend %gifPickerEmptyHintText !optional;
 }
 .endContainer__0c909 {
   @extend %gifPickerEndContainer !optional;
@@ -934,9 +916,6 @@
 .descriptionDiscriminator__158a4 {
   @extend %autocompletedescriptiondiscriminator !optional;
 }
-.selector-2IcQBU {
-  @extend %autocompleteSelector !optional;
-}
 .clickable_f8437d {
   @extend %autocompleteSelectorSelected !optional;
 }
@@ -976,9 +955,6 @@
 .optionPillKey_e84f41 {
   @extend %autocompleteOptionPillKey !optional;
 }
-.remainingOptions-2kCt8U {
-  @extend %autocompleteRemainingOptions !optional;
-}
 .spamBanner_adb1b9 {
   @extend %timeoutBar !optional;
 }
@@ -996,36 +972,6 @@
 }
 .inlineCode_d702a4 {
   @extend %inlineCode !optional;
-}
-.welcomeMessage-3_Mcht {
-  @extend %welcomeMessage !optional;
-}
-.h1-1IDj26 {
-  @extend %welcomeMessageH1 !optional;
-}
-.itemContainer-WiE19S {
-  @extend %welcomeMessageItemContainer !optional;
-}
-.icon-2shpbb {
-  @extend %welcomeMessageIcon !optional;
-}
-.exclamation-1mi7Vi {
-  @extend %welcomeMessageIconExclamation !optional;
-}
-.share-1EA-d2 {
-  @extend %welcomeMessageIconShare !optional;
-}
-.mobile-3_KEmF {
-  @extend %welcomeMessageIconMobile !optional;
-}
-.twitter-1TN3uJ {
-  @extend %welcomeMessageIconTwitter !optional;
-}
-.base-34jWEe {
-  @extend %welcomeMessageBase !optional;
-}
-.wrapper-22ayhK {
-  @extend %badge !optional;
 }
 .numberBadge__50328 {
   @extend %numberBadge !optional;
@@ -1177,38 +1123,6 @@
 .gameVerifiedIcon_bcd5fc {
   @extend %gameVerifiedIcon !optional;
 }
-.indicator-9QMksR {
-  @extend %indicator !optional;
-}
-.animationContainer-1fE4lX {
-  @extend %indicatorContainer !optional;
-}
-.animating-1VBoFQ {
-  @extend %indicatorAnimating !optional;
-}
-.notAnimating-2LOPSO {
-  @extend %indicatorNotAnimating !optional;
-}
-.innerCircle-2zWLZe {
-  @extend %indicatorCircleInner !optional;
-}
-.outerCircle-2Uqqis {
-  @extend %indicatorCircleOuter !optional;
-}
-.innerCircle-2zWLZe,
-.outerCircle-2Uqqis {
-  @extend %indicatorCircle !optional;
-}
-.top-1orLYG {
-  @extend %indicatorExclamationTop !optional;
-}
-.bottom-3Mou5l {
-  @extend %indicatorExclamationBottom !optional;
-}
-.top-1orLYG,
-.bottom-3Mou5l {
-  @extend %indicatorExclamation !optional;
-}
 .scrollerWrap_e0b973 {
   @extend %scrollerWrap !optional;
 }
@@ -1220,9 +1134,6 @@
 }
 .mini_d6d84c {
   @extend %sliderMini !optional;
-}
-.input-1hjJtk {
-  @extend %sliderInput !optional;
 }
 .track_a48141 {
   @extend %sliderTrack !optional;
@@ -2302,29 +2213,14 @@ pre {
 .spoilerMarkdownContent__2b8f8 {
   @extend %spoilerMarkdownContent !optional;
 }
-.hidden-3B-Rum {
+.hidden_f44e41 {
   @extend %spoilerHidden !optional;
 }
-.inlineContent-2YnoDy {
-  @extend %spoilerInlineContent !optional;
+.spoilerMarkdownContent__2b8f8 {
+  @extend %spoilerMarkdownContent !optional;
 }
-.spoilerContainer-3wsC0k {
-  @extend %spoilerContainer !optional;
-}
-.spoilerWarning-8ovW0v {
+.spoilerWarning_d02e2d {
   @extend %spoilerWarning !optional;
-}
-.spoiler-3aUoEX {
-  @extend %spoilerImage !optional;
-}
-.hiddenSpoilers-19m4Pg {
-  @extend %spoilerImageHidden !optional;
-}
-.spoilerEmbed__9a546 {
-  @extend %spoilerEmbed !optional;
-}
-.hiddenSpoiler-3pPzRF {
-  @extend %spoilerEmbedHidden !optional;
 }
 .keyboardShortcutsModal__74c71 {
   @extend %keyboardShortcutsModal !optional;
@@ -2335,7 +2231,7 @@ pre {
 .key__06fe6 {
   @extend %keybindShortcutKey !optional;
 }
-.inputWrapper-1YNMmM {
+.inputWrapper__934f5 {
   @extend %inputWrapper !optional;
 }
 .input_d266e7 {
@@ -2449,9 +2345,6 @@ pre {
 .clearIcon__91449 {
   @extend %discoverSearchBoxClearIcon !optional;
 }
-.closeIcon-BMGxx0 {
-  @extend %discoverSearchBoxCloseIcon !optional;
-}
 .categoryItem_b1be5c {
   @extend %discoverCategoryItem !optional;
 }
@@ -2482,9 +2375,6 @@ pre {
 .splash_c32fae {
   @extend %discoverCardSplash !optional;
 }
-.fade-rdt5qH {
-  @extend %discoverCardFade !optional;
-}
 .guildInfo_ef4f03 {
   @extend %discoverGuildInfo !optional;
 }
@@ -2505,21 +2395,6 @@ pre {
 }
 .dotOffline_a11803 {
   @extend %discoverGuildStatusOffline !optional;
-}
-.viewButton-3jDZqV {
-  @extend %discoverViewButton !optional;
-}
-.viewButtonVisible-2AtUPc {
-  @extend %discoverViewButtonVisible !optional;
-}
-.languageSelector-1hjSyO {
-  @extend %discoverLanguageSelector !optional;
-}
-.css-12hk9yc-control {
-  @extend %discoverLanguageSelectorControl !optional;
-}
-.separator-2xbLUz {
-  @extend %discoverSectionSeparator !optional;
 }
 .emptyContainer_a4bd05 {
   @extend %discoverEmptyResults !optional;
@@ -2800,9 +2675,6 @@ pre {
 .queryShortcut__88ea5 {
   @extend %searchPopoutQueryShortcut !optional;
 }
-.keybindShortcutSearchPopout-pt_bn5 {
-  @extend %searchPopoutKeybindShortcut !optional;
-}
 .user__97b4c {
   @extend %searchPopoutOptionUser !optional;
 }
@@ -2909,24 +2781,6 @@ pre {
 .react-datepicker__day--sun {
   @extend %datepickerDaySun !optional;
 }
-.popout-2sKjHu {
-  @extend %selectPopout !optional;
-}
-.filterBrowsingSelectPopout-2kjxuc {
-  @extend %selectPopoutFilterBrowsing !optional;
-}
-.option-1mJRMP {
-  @extend %selectPopoutOption !optional;
-}
-.optionActive-KkAdqq {
-  @extend %selectPopoutOptionActive !optional;
-}
-.optionFocused-8MflSE {
-  @extend %selectPopoutOptionFocused !optional;
-}
-.optionNormal-12VR9V {
-  @extend %selectPopoutOptionNormal !optional;
-}
 .statusItem__3440f {
   @extend %statusPickerItem !optional;
 }
@@ -2936,7 +2790,7 @@ pre {
 .description__76091 {
   @extend %statusPickerDescription !optional;
 }
-.status-2DiCMd {
+.status__1c26d {
   @extend %statusPickerIcon !optional;
 }
 .userProfileOuterUnthemed__48723 {
@@ -2969,13 +2823,10 @@ pre {
 .roles__74a2b {
   @extend %userPopoutRoles !optional;
 }
-.note-Go5ZP2 {
-  @extend %userPopoutNote !optional;
-}
 .textarea_c5a7a3 {
   @extend %userPopoutNoteTextArea !optional;
 }
-.messageInputContainer-2rGDH8 {
+.messageInputContainer__768e6 {
   @extend %userPopoutMessageInputContainer !optional;
 }
 .errorPage_da3c8d {
@@ -3019,9 +2870,6 @@ pre {
 }
 .totalResults__695d3 {
   @extend %searchTotalResults !optional;
-}
-.resultsWrapper-hoiXCY {
-  @extend %searchResultsWrapper !optional;
 }
 .searchResults-2J8dju {
   @extend %searchResults !optional;
@@ -3867,14 +3715,14 @@ pre {
 .css-rzbxvl-option {
   @extend %pruneMemberMenuDropdown !optional;
 }
-.list-3-WAYB {
-  @extend %manageAccountsList !optional;
-}
 .authBox__7196a {
-  @extend %addAccountAuthBox !optional;
+  @extend %loginAuthBox !optional;
 }
-.navRow-dG-XX8 {
-  @extend %addAccountNavRow !optional;
+.list-3-WAYB {
+  @extend %loginAccountsList !optional;
+}
+.navRow_bb8efc {
+  @extend %addAccountFooter !optional;
 }
 .copyInput_c1c679 {
   @extend %copyGiftCode !optional;

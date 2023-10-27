@@ -22,22 +22,6 @@
   }
 }
 
-%themeLight {
-  .subtitle_a75f7f,
-  .optionHeader-27AHfD {
-    color: hsla(0, 0%, 100%, 0.7) !important;
-  }
-  .iconContainer_cd2671 > svg > circle {
-    fill: $main-color;
-  }
-  %buttonLinkPrimary {
-    color: hsla(0, 0%, 100%, 0.7);
-  }
-  .skip_f687eb {
-    color: hsla(0, 0%, 100%, 0.7) !important;
-  }
-}
-
 // CREATE SERVER
 %themeLight {
   .subtitle_a75f7f,

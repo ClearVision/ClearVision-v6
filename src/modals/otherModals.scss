@@ -148,7 +148,6 @@
 %themeDark .item-2OyinQ:hover {
   background-color: var(--hover-color);
 }
-
 .selectorButtonSelected-1VZ6hz {
   background-color: $main-color;
 }
@@ -158,19 +157,6 @@
   background-color: hsla(0, 0%, 0%, 0.4);
 }
 
-// SWITCH ACCOUNT
-%manageAccountsList {
-  background-color: rgba(0, 0, 0, .5);
-}
-.activeIcon_e452f7 > circle:not([fill^='hsl(0']),
-.activeIcon_e452f7 > g > path:not([fill^='hsl(0']) {
-  fill: var(--main-color);
-}
-// ADD ACCOUNT
-%themeDark %addAccountAuthBox,
-%themeDark %addAccountNavRow {
-  background-color: rgba(0, 0, 0, .5);
-}
 // VERIFY PHONE
 %phoneVerification %phoneVerificationInput {
   background-color: hsla(0, 0%, 100%, 0.07);

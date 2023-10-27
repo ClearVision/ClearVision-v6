@@ -38,12 +38,6 @@
     %discoverSearchBoxIconSearch {
       color: $main-color;
     }
-    %discoverSearchBoxCloseIcon {
-      color: $main-color;
-      &:hover {
-        color: $hover-color;
-      }
-    }
   }
   %discoverSearchPage & {
     %discoverSearchBox {
@@ -62,12 +56,6 @@
         color: var(--text-normal);
         &::placeholder {
           color: hsla(0, 0%, 100%, 0.3);
-        }
-      }
-      %discoverSearchBoxCloseIcon {
-        color: $main-color;
-        &:hover {
-          color: $hover-color;
         }
       }
     }
@@ -100,11 +88,6 @@
 }
 %discoverGuildStatusOffline {
   background-color: cv('colors.offline');
-}
-
-// LANGUAGE SELECTOR
-%discoverLanguageSelector > div > div {
-  background-color: hsla(0, 0%, 0%, 0.6);
 }
 
 // SEARCH CATEGORY

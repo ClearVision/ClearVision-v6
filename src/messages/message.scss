@@ -37,14 +37,6 @@
       border-radius: 0;
     }
   }
-  // MESSAGE JUMP
-  > div[style^='border-radius: 2px;'] {
-    &[style$='0);'] {
-      animation: none;
-    }
-    border-radius: 3px !important;
-    animation: cv-message-jump 2s ease-in-out;
-  }
 }
 // GIFS/EMBEDS
 %messageInlineMediaEmbed {

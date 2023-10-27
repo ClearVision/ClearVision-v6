@@ -1,0 +1,16 @@
+/* LOGIN PAGE */
+%themeDark %loginAuthBox {
+  background-color: rgba(0, 0, 0, .5);
+}
+%loginAccountsList {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+// SWITCH ACCOUNTS
+.activeIcon_e452f7 > circle:not([fill^='hsl(0']),
+.activeIcon_e452f7 > g > path:not([fill^='hsl(0']) {
+  fill: $main-color;
+}
+%themeDark %addAccountFooter {
+    background-color: rgba(0, 0, 0, .5);
+}
