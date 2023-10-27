@@ -1,36 +1,33 @@
 div#magane div.stickerWindow {
-    border: 2px solid var(--main-color);
+  border: 2px solid var(--main-color);
 }
 div#magane div.stickerWindow div.stickers h3.getStarted {
-    color: #fff;
+  color: #fff;
 }
 div#magane div.stickerWindow:not(:has(> [style^="display"])) div.stickers *,
 div#magane div.stickerWindow:not(:has(> [style^="display"])) div.packs-toolbar * {
-    display: none;
+  display: none;
 }
 div#magane .stickersModal .modal-content, div#magane .stickersModal .modal-card {
-    background: transparent;
+  background: transparent;
 }
 div#magane .stickersModal .inputQuery {
-    background: rgba(0,0,0,.2);
-    border: 2px solid var(--main-color);
+  background: rgba(0,0,0,.2);
+  border: 2px solid var(--main-color);
 }
 div#magane .button {
-    background: var(--main-color);
-    color: #fff;
+  background: var(--main-color);
+  color: #fff;
 }
 div#magane div.stickerWindow:before {
   content: "";
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   position: absolute;
   z-index: -999;
-  background: var(--background-image) var(--background-position)/var(--background-size) var(--background-repeat) var(--background-attachment);
-  filter: grayscale(var(--background-grayscale)) sepia(var(--background-sepia)) invert(var(--background-invert)) brightness(var(--background-brightness)) contrast(var(--background-contrast)) saturate(var(--background-saturation)) blur(var(--background-blur));
+  @include stretch;
+  background: cv('bg.backdrop.img') cv('bg.backdrop.pos') / cv('bg.backdrop.size') cv('bg.backdrop.repeat') cv('bg.backdrop.attach');
+  @include filters(cv('bg.backdrop'));
 }
 div#magane div.stickerWindow div.stickers, /*top*/
 div#magane div.stickerWindow div.packs-toolbar { /*bottom*/
-    background: var(--background-overlay);
+  background: var(--background-overlay);
 }
