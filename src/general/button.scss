@@ -18,10 +18,10 @@
       background: $hover-color;
     }
     &:disabled {
-      background: $main-color !important;
+      background: var(--danger-color) !important;
     }
     &:active {
-      background: $main-color;
+      background: var(--success-color);
     }
   }
   &%buttonColorRed {

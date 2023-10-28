@@ -1,4 +1,3 @@
-/* ### Powered by DiscordSelectors v0.2.7 ### */
 .appMount_fae9dd {
   @extend %appMount !optional;
 }
@@ -227,6 +226,9 @@
 }
 .name__590d6 {
   @extend %categoryName !optional;
+}
+.overflow__87fe8 {
+  @extend %categoryText !optional;
 }
 .children_d4d259 {
   @extend %categoryButtons !optional;
@@ -4253,4 +4255,7 @@ pre {
 }
 .cardFolder__34393 {
   @extend %channelSettingsCardPanel !optional;
+}
+.iconContainer__6fc72 {
+  @extend %previewServerIconContainer !optional;
 }
