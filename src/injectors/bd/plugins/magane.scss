@@ -1,5 +1,5 @@
 div#magane div.stickerWindow {
-  border: 2px solid var(--main-color);
+  border: 2px solid $main-color;
 }
 div#magane div.stickerWindow div.stickers h3.getStarted {
   color: #fff;
@@ -13,10 +13,10 @@ div#magane .stickersModal .modal-content, div#magane .stickersModal .modal-card 
 }
 div#magane .stickersModal .inputQuery {
   background: rgba(0,0,0,.2);
-  border: 2px solid var(--main-color);
+  border: 2px solid $main-color;
 }
 div#magane .button {
-  background: var(--main-color);
+  background: $main-color;
   color: #fff;
 }
 div#magane div.stickerWindow:before {

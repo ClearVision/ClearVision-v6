@@ -4,12 +4,12 @@
 
 %nitroSettingsBig {
   background-color: rgba(0, 0, 0, 0.2);
-  border: 3px solid var(--main-color);
+  border: 3px solid $main-color;
   border-radius: 4px;
 }
 %nitroSettingsSmall {
   background-color: rgba(0, 0, 0, 0.2);
-  border: 1px solid var(--main-color);
+  border: 1px solid $main-color;
   border-radius: 4px;
 }
 %nitroSettingsInner {
@@ -19,6 +19,6 @@
   %buttonInverted%buttonColorBrand:disabled,
   %buttonInverted%buttonColorGreen:disabled {
     background: rgba(0, 0, 0, 0.6);
-    border: 1px solid var(--main-color);
+    border: 1px solid $main-color;
   }
 }

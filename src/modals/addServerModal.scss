@@ -35,6 +35,15 @@
     color: hsla(0, 0%, 100%, 0.7) !important;
   }
 }
+.backButton__576ea {
+  %buttonContents {
+    color: hsla(0, 0%, 100%, .7);
+    &:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+}
 
 // JOIN SERVER
 %themeLight {

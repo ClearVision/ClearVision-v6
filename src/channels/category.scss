@@ -69,11 +69,11 @@
 
 // ADD CHANNEL ICON
 %categoryAddIcon {
-  color: var(--main-color);
+  color: $main-color;
   opacity: 0.7;
   transition: all 0.3s ease-in-out;
   &:hover {
-    color: var(--main-color);
+    color: $main-color;
     opacity: 1;
   }
 }

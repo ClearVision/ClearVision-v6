@@ -85,7 +85,7 @@
   // ARROW KEY SELECTION OUTLINE
   .theme-dark .focused__036ed:after,
   .theme-dark .result_e1fc74:hover:after {
-    box-shadow: inset 0 0 0 2px var(--main-color), inset 0 0 0 3px rgba(0, 0, 0, 0.7);
+    box-shadow: inset 0 0 0 2px $main-color, inset 0 0 0 3px rgba(0, 0, 0, 0.7);
   }
 
   // HINT CARD

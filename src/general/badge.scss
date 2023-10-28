@@ -27,7 +27,7 @@
 
 // FLOWER STAR BADGE
 %flowerStarContainer {
-  color: var(--main-color);
+  color: $main-color;
   %flowerStarIcon {
     color: #fff;
   }
@@ -39,5 +39,5 @@
 }
 
 %gameVerifiedIcon > svg > path {
-  fill: var(--main-color);
+  fill: $main-color;
 }

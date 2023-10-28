@@ -12,14 +12,14 @@
 }
 
 %threadsPopoutIcon {
-  background-color: var(--main-color);
+  background-color: $main-color;
   color: #fff;
 }
 
 %themeDark %threadsPopoutHeader %threadsPopoutTabBar %threadsPopoutTab {
   color: #fff;
   &%threadsPopoutTabActive {
-    background-color: var(--main-color);
+    background-color: $main-color;
   }
   &:hover:not(%threadsPopoutTabActive) {
     background-color: hsla(0, 0%, 100%, 0.06);

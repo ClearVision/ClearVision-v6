@@ -119,10 +119,10 @@
   }
 }
 %forumTagCount {
-  background-color: var(--main-color);
+  background-color: $main-color;
 }
 %forumSortDropdown {
-  background-color: var(--main-color);
+  background-color: $main-color;
   > *,
   %forumSortDropdownText {
     color: #fff !important;
@@ -224,8 +224,8 @@
 // new posts button
 %forumNewPosts {
   background: rgba(0,0,0,.2);
-  border: 1px solid var(--main-color);
+  border: 1px solid $main-color;
   %textMediumMedium {
-    color: var(--main-color) !important;
+    color: $main-color !important;
   }
 }

@@ -4,7 +4,7 @@
 }
 
 .bd-switch input:checked + .bd-switch-body {
-  --switch-color: var(--main-color);
+  --switch-color: $main-color;
 }
 
 .bd-transparency {

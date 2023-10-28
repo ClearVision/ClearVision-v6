@@ -4,13 +4,13 @@
 }
 .button__6ac9e {
   &:hover {
-    background-color: var(--hover-color);
-    border-color: var(--main-color) !important;
+    background-color: $hover-color;
+    border-color: $main-color !important;
   }
 }
 .iconButton-285DXF {
   &:hover {
-    background-color: var(--hover-color);
-    border-color: var(--main-color) !important;
+    background-color: $hover-color;
+    border-color: $main-color !important;
   }
 }

@@ -92,7 +92,7 @@
   box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.09);
 }
 .cardInputFocused-31lFD1 {
-  box-shadow: 0 0 2px 2px var(--main-color);
+  box-shadow: 0 0 2px 2px $main-color;
 }
 .paymentModalContent {
   background-color: transparent;
@@ -146,7 +146,7 @@
 
 // TIMEOUT
 %themeDark .item-2OyinQ:hover {
-  background-color: var(--hover-color);
+  background-color: $hover-color;
 }
 .selectorButtonSelected-1VZ6hz {
   background-color: $main-color;

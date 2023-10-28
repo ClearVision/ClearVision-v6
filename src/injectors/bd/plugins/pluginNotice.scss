@@ -22,7 +22,7 @@
       background-color: rgba(255, 255, 255, 0.1) !important;
     }
     &.selected {
-      background-color: var(--main-color) !important;
+      background-color: $main-color !important;
     }
   }
 }
