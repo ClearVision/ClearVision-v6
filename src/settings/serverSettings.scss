@@ -373,13 +373,3 @@
 }
 
 // MEMBERS
-%pruneMemberMenuDropdown {
-  background: $hover-color;
-  &:hover {
-    background: $hover-color;
-  }
-}
-%pruneMemberMenu {
-  background-color: rgba(0, 0, 0, 0.5);
-  border: hsla(0, 0%, 100%, 0.07);
-}

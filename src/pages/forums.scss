@@ -62,7 +62,8 @@
 %forumCardName {
   color: #fff !important;
 }
-// tag
+
+// TAGS
 %themeDark %forumTag,
 %themeDark %forumIncreasedTag {
   background: rgba(0, 0, 0, .6);
@@ -82,19 +83,7 @@
   text-align: center;
   padding: 0 10px;
 }
-// icons
-%forumPencilIcon,
-%forumSearchIcon,
-%forumCloseIcon {
-  color: rgba(255, 255, 255, 0.9);
-  width: 20px;
-  height: 20px;
-  left: 10px;
-  top: 10px;
-  &:hover {
-    color: #fff;
-  }
-}
+
 %forumSearch {
   font-family: var(--main-font);
   font-weight: 300;
@@ -121,12 +110,15 @@
 %forumTagCount {
   background-color: $main-color;
 }
-%forumSortDropdown {
+%forumSortDropdownButton {
   background-color: $main-color;
-  > *,
-  %forumSortDropdownText {
+  %forumSortDropdownButtonInner,
+  %forumSortDropdownButtonText {
     color: #fff !important;
   }
+}
+%forumSortDropdownContainer {
+  background-color: transparent;
 }
 %forumTagButton {
   background-color: rgba(0, 0, 0, 0.3);
@@ -217,10 +209,32 @@
   }
 }
 
-// event no messages in forum yet
-%forumNoConversations {
-  background: hsla(0, 0%, 0%, 0.3);
+// EMPTY FORUM
+%forumEmpty {
+  background-color: transparent;
 }
+%forumEmptyCTA {
+  color: $main-color;
+}
+
+// EXAMPLE
+%forumExample,
+%forumExamplePreviewContainer {
+  background-color: transparent;
+}
+%forumExampleTag,
+%forumExamplePost,
+%forumExamplePreview {
+  background-color: hsla(0, 0%, 100%, 0.09);
+}
+%forumExamplePreviewPostIcon,
+%forumExamplePreviewBottomSeparator {
+  background-color: transparent;
+}
+%forumExamplePreviewInput {
+ background-color: hsla(0, 0%, 0%, 0.4);
+}
+
 // new posts button
 %forumNewPosts {
   background: rgba(0,0,0,.2);

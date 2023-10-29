@@ -3366,6 +3366,9 @@ pre {
 .upsellTooltipWrapper_df8272 {
   @extend %upsellTooltipText !optional;
 }
+.reactionTooltip__9384a {
+  @extend %reactionTooltip !optional;
+}
 .wrapper__93f27 {
   @extend %stickersUploadCard !optional;
 }
@@ -3510,20 +3513,11 @@ pre {
 .container__6604b {
   @extend %threadPreview !optional;
 }
-.modal-ZdazA8 {
+.modal__48b3d {
   @extend %threadModal !optional;
 }
-.list-1uSVgu {
+.list__19127 {
   @extend %threadModalList !optional;
-}
-.tabBar-3N44FC {
-  @extend %threadModalTabBar !optional;
-}
-.tab-1tp4jL {
-  @extend %threadModalTab !optional;
-}
-.active-3WMEyE {
-  @extend %threadModalTabActive !optional;
 }
 .hasThread__58ee2 {
   @extend %messageHasThread !optional;
@@ -3621,13 +3615,13 @@ pre {
 .watchButton__0d283 {
   @extend %streamPopoutWatchButton !optional;
 }
-.header-1sd0RU {
+.header__7133e {
   @extend %eventHeader !optional;
 }
-.circle-2tR2Qh {
+.circle__2005c {
   @extend %eventIconCircle !optional;
 }
-.eventCard-2ZL9GD {
+.card__7865b {
   @extend %eventCard !optional;
 }
 .eventStatusBrand__948ce {
@@ -3636,56 +3630,35 @@ pre {
 .eventStatusLabel__4d7cc {
   @extend %eventStatusLabel !optional;
 }
-.eventStatusGreen_ca17ec {
-  @extend %eventStatusLabel !optional;
-}
-.previewCard-E137i2 {
-  @extend %eventStatusGreen !optional;
-}
 .rsvpCount__4657d {
   @extend %eventRSVPCount !optional;
 }
 .rsvpIcon_a79c28 {
   @extend %eventRSVPIcon !optional;
 }
-.container-3EBHNg {
+.container_f3270f {
   @extend %eventInfoHeader !optional;
 }
-.container-3eB5yh {
-  @extend %eventInfoContent !optional;
-}
-.contentContainer-BWAau5 {
+.contentContainer__3b585 {
   @extend %eventInfoContentContainer !optional;
 }
-.circle-1g-jMn {
+.circle_d71ba0 {
   @extend %eventInfoIconCircle !optional;
 }
-.iconBackground-3gHYPJ {
-  @extend %eventIconBackground !optional;
-}
-.progressBar-18rmp1 {
+.progressBar__0a392 {
   @extend %createEventProgressBar !optional;
 }
-.selectedProgressBar-11z5d9 {
+.selectedProgressBar__10383 {
   @extend %createEventProgressBarSelected !optional;
 }
-.container-1hz3gm {
-  @extend %createEventLocationContainer !optional;
-}
-.form-1ejeax {
-  @extend %createEventInfoForm !optional;
-}
-.container-3zZkKh {
+.container__52a36 {
   @extend %createEventCreateStageContainer !optional;
 }
-.textInput-3g8y92 {
+.textInput__210e5 {
   @extend %createEventTextInput !optional;
 }
-.previewCard-E137i2 {
+.previewCard_aef1ab {
   @extend %createEventPreviewCard !optional;
-}
-.iconContainer-36kI2p {
-  @extend %createEventIconContainer !optional;
 }
 .container_e4c233 {
   @extend %stickerSearchContainer !optional;
@@ -3716,12 +3689,6 @@ pre {
 }
 .unreadMentionsIndicatorTop_ada847 {
   @extend %guildUnreadMentionsTop !optional;
-}
-.css-3vaxre-menu {
-  @extend %pruneMemberMenu !optional;
-}
-.css-rzbxvl-option {
-  @extend %pruneMemberMenuDropdown !optional;
 }
 .authBox__7196a {
   @extend %loginAuthBox !optional;
@@ -3841,14 +3808,47 @@ pre {
 .tagsDivider-3LhkLA {
   @extend %forumHeaderBorder !optional;
 }
-.container-2nXUah {
-  @extend %forumNoConversations !optional;
+.container__4abd7 {
+  @extend %forumEmpty !optional;
+}
+.cta__3ca11 {
+  @extend %forumEmptyCTA !optional;
+}
+.container_b634d9 {
+  @extend %forumExample !optional;
+}
+.tag__5bfc0 {
+  @extend %forumExampleTag !optional;
+}
+.post__13d06 {
+  @extend %forumExamplePost !optional;
+}
+.previewContainer__0f3c5 {
+  @extend %forumExamplePreviewContainer !optional;
+}
+.preview_c16c3b {
+  @extend %forumExamplePreview !optional;
+}
+.forumPostIcon__3d972 {
+  @extend %forumExamplePreviewPostIcon !optional;
+}
+.bottomSeparator__3e1ef {
+  @extend %forumExamplePreviewBottomSeparator !optional;
+}
+.chatInput__06d78 {
+  @extend %forumExamplePreviewInput !optional;
 }
 .sortDropdown_ec3016 {
-  @extend %forumSortDropdown !optional;
+  @extend %forumSortDropdownButton !optional;
+}
+.sortDropdownInner__2456c {
+  @extend %forumSortDropdownButtonInner !optional;
 }
 .sortDropdownText_e8ca8d {
-  @extend %forumSortDropdownText !optional;
+  @extend %forumSortDropdownButtonText !optional;
+}
+.container_dbdb0b {
+  @extend %forumSortDropdownContainer !optional;
 }
 .textContentFooter__5a630 {
   @extend %forumContentFooter !optional;
@@ -3873,12 +3873,6 @@ pre {
 }
 .searchIcon-2Nw0OL {
   @extend %forumSearchIcon !optional;
-}
-.closeIcon-3xe5xL {
-  @extend %forumCloseIcon !optional;
-}
-.searchInput-3NGPfp {
-  @extend %forumSearchInput !optional;
 }
 .title__38892 {
   @extend %forumSearch !optional;

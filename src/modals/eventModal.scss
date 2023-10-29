@@ -23,9 +23,6 @@
     color: #fff;
   }
 }
-.card-8UsK4b:hover {
-  background-color: $hover-color;
-}
 
 // EVENT INFO
 %eventInfoHeader {
@@ -52,18 +49,12 @@
   &%createEventProgressBarSelected {
     background-color: $main-color;
   }
-  + .colorMuted-20987_ {
+  + .colorMuted_ae2200 {
     color: hsla(0, 0%, 100%, 0.3);
   }
-  + .colorBrand-21Le_q {
+  + .colorBrand_be5f58 {
     color: $main-color;
   }
-}
-%createEventLocationContainer,
-%createEventInfoForm {
-  margin-left: 2px;
-  margin-right: 2px;
-  margin-bottom: 2px;
 }
 %createEventCreateStageContainer {
   background-color: transparent;
