@@ -981,9 +981,6 @@
 .textBadge__45d79 {
   @extend %textBadge !optional;
 }
-.wrapper__87791 {
-  @extend %inboxBadge !optional;
-}
 .button_afdfd9 {
   @extend %button !optional;
 }
@@ -3531,63 +3528,6 @@ pre {
 .emptyStateIcon__9ee16 {
   @extend %threadMembersEmptyIcon !optional;
 }
-.wrapper-1w686E {
-  @extend %serverBoostWrapper !optional;
-}
-.navigationBar-3r0IQK {
-  @extend %serverBoostNavigationBar !optional;
-}
-.progressBarTrack-31JzOY {
-  @extend %serverBoostProgressBarTrack !optional;
-}
-.progressBarFill-r3JZQ7 {
-  @extend %serverBoostProgressBarFill !optional;
-}
-.progressBarMarker-2F7kNV {
-  @extend %serverBoostProgressBarMarker !optional;
-}
-.progressBarMarkerNumSubscriptionsRequired-4_Rgoj {
-  @extend %serverBoostProgressBarMarkerNumSubReq !optional;
-}
-.progressBarMarkerNextTier-1lj6AI {
-  @extend %serverBoostProgressBarMarkerNextTier !optional;
-}
-.progressBarMarkerUnlocked-2l_py0 {
-  @extend %serverBoostProgressBarUnlocked !optional;
-}
-.progressBarMarkerIndicator-2Vf_sE {
-  @extend %serverBoostProgressBarMarkerIndicator !optional;
-}
-.planCard-3heGy1 {
-  @extend %serverBoostPlanCard !optional;
-}
-.perksTable-2Hjc0m {
-  @extend %perksTable !optional;
-}
-.perksTableRow-n0T8Yj {
-  @extend %perksTableRow !optional;
-}
-.perksTableRowBody-pELwOS {
-  @extend %perksTableRowBody !optional;
-}
-.perksTableRowFocused--UdCIh {
-  @extend %perksTableRowFocused !optional;
-}
-.perksTableRowPerkHighlighted-33Ea3c {
-  @extend %perksTableRowHighlighted !optional;
-}
-.perksTableHighlightedColumnHeader-1f38p4 {
-  @extend %perksTableHighlightedColumnHeader !optional;
-}
-.perksTableHighlightedColumnHeaderCopy-2DMeJr {
-  @extend %perksTableHighlightedColumnHeaderCopy !optional;
-}
-.perksTablePerkCheckmarkTier0-S7zpLb {
-  @extend %perksTablePerkCheckmarkTier0 !optional;
-}
-.perkPopout-2bt1aW {
-  @extend %perkPopout !optional;
-}
 .compactButton__0f247 {
   @extend %waveButton !optional;
 }
@@ -3696,6 +3636,15 @@ pre {
 .list__4e6aa {
   @extend %loginAccountsList !optional;
 }
+.container_c11257 {
+  @extend %loginVerificationContainer !optional;
+}
+.css-19vtg9u-control {
+  @extend %createAccountDate !optional;
+}
+.css-13qdo4d-menu {
+  @extend %createAccountDateDropdown !optional;
+}
 .navRow_bb8efc {
   @extend %addAccountFooter !optional;
 }
@@ -3780,7 +3729,7 @@ pre {
 .container__99b06 {
   @extend %forumCardContainer !optional;
 }
-.mainCard__8a660 {
+.card__691f2 {
   @extend %forumCard !optional;
 }
 .increasedActivityMainCard__916ed {
@@ -3799,14 +3748,11 @@ pre {
 .loadingCard-3pIp9h {
   @extend %forumLoadingCard !optional;
 }
-.headerRow-1MKoR- {
-  @extend %forumHeaderRow !optional;
+.header_c01fde {
+  @extend %forumHeader !optional;
 }
 .replies_c11247 {
   @extend %forumIncreasedReplyPreview !optional;
-}
-.tagsDivider-3LhkLA {
-  @extend %forumHeaderBorder !optional;
 }
 .container__4abd7 {
   @extend %forumEmpty !optional;
@@ -3868,12 +3814,6 @@ pre {
 .disabled__70fda {
   @extend %forumTagDisabled !optional;
 }
-.pencilIcon-1d4fcw {
-  @extend %forumPencilIcon !optional;
-}
-.searchIcon-2Nw0OL {
-  @extend %forumSearchIcon !optional;
-}
 .title__38892 {
   @extend %forumSearch !optional;
 }
@@ -3889,17 +3829,11 @@ pre {
 .clear__72191 {
   @extend %forumTagClear !optional;
 }
-.countContainer-3uQ087 {
-  @extend %forumTagCount !optional;
-}
 .tagsButton_e96762 {
   @extend %forumTagButton !optional;
 }
 .tagsButtonInner_a70c04 {
   @extend %forumTagButtonInner !optional;
-}
-.contentContainer-2xwoXK {
-  @extend %forumContentContainer !optional;
 }
 .uploadInput_bbab2f {
   @extend %forumUploadIcon !optional;
@@ -4054,15 +3988,6 @@ pre {
 }
 .overlay_ef4f80 {
   @extend %serverExperienceGradient !optional;
-}
-.inviteRow-3vmB7i {
-  @extend %inviteModalRow !optional;
-}
-.inviteBannerUpsell-1t_LYM {
-  @extend %inviteModalUpsell !optional;
-}
-.temporaryMembershipContainerBackground-13Hf5U {
-  @extend %inviteModalTemporary !optional;
 }
 .tabBar_d4764b {
   @extend %customizeChannelsHeaderBar !optional;

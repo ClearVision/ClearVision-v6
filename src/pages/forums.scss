@@ -26,11 +26,8 @@
       background: transparent;
     }
   }
-  %forumContentContainer {
-    padding: 10px 0px 0px 0px;
-  }
   %themeDark &%forumOpenCard, // another temporary addition
-    %themeDark &%forumIncreasedOpenCard {
+  %themeDark &%forumIncreasedOpenCard {
     background-color: hsla(0, 0%, 100%, 0.1);
   }
   %input {
@@ -48,15 +45,11 @@
   }
 }
 // header is the "search" area in main page
-%forumHeaderRow {
-  %forumCard,
-  %forumCard:hover {
-    border: 2px solid transparent;
+%forumHeader {
+  border-color: transparent;
+  &:focus-within {
+    box-shadow: 0 0 2px 2px $main-color;
   }
-}
-// thin line between header elements
-%forumHeaderBorder {
-  background: transparent;
 }
 // names
 %forumCardName {
@@ -106,9 +99,6 @@
       color: $hover-color;
     }
   }
-}
-%forumTagCount {
-  background-color: $main-color;
 }
 %forumSortDropdownButton {
   background-color: $main-color;
