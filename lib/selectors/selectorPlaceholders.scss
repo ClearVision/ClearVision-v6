@@ -3492,18 +3492,6 @@ pre {
 .more__14345 {
   @extend %channelThreadPopoutMore !optional;
 }
-.container_c24cbd {
-  @extend %threadContainer !optional;
-}
-.isOpen_d88bb6 {
-  @extend %threadOpen !optional;
-}
-.contentPreview_b317ee {
-  @extend %threadContentPreview !optional;
-}
-.container_def45c {
-  @extend %threadChat !optional;
-}
 .iconWrapper__85630 {
   @extend %threadIconWrapper !optional;
 }
@@ -3726,12 +3714,6 @@ pre {
 .container_b181b6 {
   @extend %forumContainer !optional;
 }
-.container__99b06 {
-  @extend %forumCardContainer !optional;
-}
-.card__691f2 {
-  @extend %forumCard !optional;
-}
 .increasedActivityMainCard__916ed {
   @extend %forumIncreasedCard !optional;
 }
@@ -3747,6 +3729,10 @@ pre {
 }
 .loadingCard-3pIp9h {
   @extend %forumLoadingCard !optional;
+}
+.headerRow__16d8e {
+  @extend %forumHeader !optional;
+
 }
 .header_c01fde {
   @extend %forumHeader !optional;
@@ -3798,6 +3784,18 @@ pre {
 }
 .textContentFooter__5a630 {
   @extend %forumContentFooter !optional;
+}
+.container_c24cbd {
+  @extend %forumCardContainer !optional;
+}
+.isOpen_d88bb6 {
+  @extend %forumOpen !optional;
+}
+.contentPreview_b317ee {
+  @extend %forumContentPreview !optional;
+}
+.container_def45c {
+  @extend %forumChat !optional;
 }
 .pill_f055c3 {
   @extend %forumTag !optional;

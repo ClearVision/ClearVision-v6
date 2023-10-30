@@ -10,8 +10,7 @@
   }
 }
 // temporary addition. increased is the "new" forums view
-%forumIncreasedCard,
-%forumCard {
+%forumIncreasedCard {
   // theme each card w/ border, text preview, etc
   background: hsla(0, 0%, 0%, 0.3);
   border: 2px solid $main-color;
@@ -44,17 +43,47 @@
     border-color: 2px solid $hover-color;
   }
 }
-// header is the "search" area in main page
+// HEADER
 %forumHeader {
   border-color: transparent;
+  background-color: hsla(0, 0%, 0%, 0.6);
   &:focus-within {
     box-shadow: 0 0 2px 2px $main-color;
   }
 }
-// names
+
+// CARDS
+%forumCardContainer {
+  background: rgba(0, 0, 0, calc(var(--background-shading) * 0.3));
+  border: 2px solid $main-color;
+  &:hover {
+    background: rgba(0, 0, 0, calc(var(--background-shading) * 0.3));
+    border: 2px solid $hover-color;
+  }
+  &%forumOpen {
+    background-color: hsla(0, 0%, 100%, 0.1);
+    border-color: $main-color;
+  }
+}
 %forumCardName {
   color: #fff !important;
 }
+%forumContentPreview {
+  background-color: hsla(0, 0%, 100%, 0.05);
+  border-color: hsla(0, 0%, 100%, 0.09);
+}
+%forumLoadingCard {
+  background: hsla(0, 0%, 0%, 0.3);
+}
+%forumUploadIcon {
+  background: $main-color;
+  transition: all 0.15s ease-in-out;
+  &:hover {
+    background: $hover-color;
+    transition: all 0.15s ease-in-out;
+  }
+}
+
 
 // TAGS
 %themeDark %forumTag,
@@ -116,11 +145,11 @@
     color: #fff;
   }
 }
-
 %themeDark %forumContentFooter {
   background: transparent;
 }
-// rules
+
+// RULES
 %forumRules {
   background: rgba(0, 0, 0, 0.3);
   border: 2px solid $main-color;
@@ -142,19 +171,10 @@
   }
 }
 
-%forumLoadingCard {
-  background: hsla(0, 0%, 0%, 0.3);
+// CHAT
+%forumChat {
+  background: transparent;
 }
-%forumUploadIcon {
-  background: $main-color;
-  transition: all 0.15s ease-in-out;
-  &:hover {
-    background: $hover-color;
-    transition: all 0.15s ease-in-out;
-  }
-}
-
-/* FORUM CHAT */
 %forumChatIcon {
   background: $main-color;
 }

@@ -1,7 +1,7 @@
 /* THREAD MODAL */
 %threadModal {
   background-color: hsla(0, 0%, 0%, 0.5) !important;
-  &%threadsPopoutContainer {
+  %threadsPopoutContainer {
     background-color: transparent;
   }
 }
