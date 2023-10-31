@@ -2275,6 +2275,9 @@ pre {
 .badgeList_c193e3 {
   @extend %userModalBadgeList !optional;
 }
+.badgeList_ef4131 {
+  @extend %userModalDMBadgeList !optional;
+}
 .overlayBackground__86b78 {
   @extend %userModalOverlayBackground !optional;
 }
@@ -2800,6 +2803,12 @@ pre {
 }
 .userProfileOuterUnthemed__48723 {
   @extend %userProfileOuterUnthemed !optional;
+}
+.userPanelInnerThemed__1804b {
+  @extend %userProfileDMInnerThemed !optional;
+}
+.userPanelOverlayBackground__34fc8 {
+  @extend %userProfileDMOverlayBackground !optional;
 }
 .userPopoutOuter_d739b2 {
   @extend %userPopoutOuter !optional;
@@ -4171,4 +4180,22 @@ pre {
 }
 .iconContainer__6fc72 {
   @extend %previewServerIconContainer !optional;
+}
+.defaultColor__87d87 {
+  @extend %defaultColor !optional;
+}
+.container__0d1a7 {
+  @extend %addServerContainer !optional;
+}
+.subtitle__89b16 {
+  @extend %addServerSubtitle !optional;
+}
+.container__73245 {
+  @extend %addServerOption !optional;
+}
+.text__43e5f {
+  @extend %addServerOptionText !optional;
+}
+.arrow__5e540 {
+  @extend %addServerOptionArrow !optional;
 }
