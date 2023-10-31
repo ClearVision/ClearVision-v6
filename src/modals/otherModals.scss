@@ -176,10 +176,11 @@
 }
 %activityItem {
   background: rgba(0, 0, 0, 0.4);
+  border: 2px solid $main-color;
   &:hover {
-    background: $hover-color;
+    background: rgba(0, 0, 0, 0.4);
     box-sizing: border-box;
-    border: 2px solid $main-color;
+    border: 2px solid $hover-color;
   }
 }
 %activitiesScroller {
