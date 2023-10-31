@@ -1,15 +1,15 @@
 /* EMOJI PICKER */
 
-.drawerSizingWrapper__30274 {
+%emojiPickerSizer {
   min-width: 430px;
 }
-.contentWrapper__321ed {
+%emojiPickerWrapper {
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 // NAV BAR
-.navButtonActive__735cb {
+%emojiPickerNavButton {
   background-color: $main-color;
 }
 
@@ -80,7 +80,8 @@
 }
 
 // CATEGORIES
-%emojiCategoryList {
+%emojiCategoryList,
+%emojiCategoryListWrapper {
   background-color: transparent;
 }
 %emojiCategoryItem {

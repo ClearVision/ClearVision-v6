@@ -2470,6 +2470,15 @@ pre {
 .emojiPicker_b65ce9 {
   @extend %emojiPicker !optional;
 }
+.contentWrapper__321ed {
+  @extend %emojiPickerWrapper !optional;
+}
+.drawerSizingWrapper__30274 {
+  @extend %emojiPickerSizer !optional;
+}
+.navButtonActive__735cb {
+  @extend %emojiPickerNavButton !optional;
+}
 .header__55964 {
   @extend %emojiPickerHeader !optional;
 }
@@ -2508,6 +2517,9 @@ pre {
 }
 .categoryList_f8c48f {
   @extend %emojiCategoryList !optional;
+}
+.wrapper_cd625e {
+  @extend %emojiCategoryListWrapper !optional;
 }
 .scroller_e89578 {
   @extend %emojiCategoryScroller !optional;
