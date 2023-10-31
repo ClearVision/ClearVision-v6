@@ -546,6 +546,9 @@
 .activity_a8c37a {
   @extend %privateChannelActivity !optional;
 }
+.container_c344de {
+  @extend %privateChannelActivityContainer !optional;
+}
 .activityEmoji_f1bb5e {
   @extend %privateChannelActivityEmoji !optional;
 }
