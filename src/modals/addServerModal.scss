@@ -2,22 +2,25 @@
 
 // MAIN PAGE
 %themeLight {
-  .defaultColor__87d87 {
-    color: #fff;
+  %addServerContainer {
+    %defaultColor {
+      color: #fff;
+    }
+    %addServerSubtitle {
+      color: hsla(0, 0%, 100%, 0.7) !important;
+    }
   }
-  .subtitle__89b16 {
-    color: hsla(0, 0%, 100%, 0.7) !important;
-  }
+  
 }
-.container__73245 {
+%addServerOption {
   background-color: $main-color;
   &:hover {
     background-color: $hover-color;
   }
-  .text__43e5f {
+  %addServerOptionText {
     color: #fff;
   }
-  .arrow__5e540 {
+  %addServerOptionArrow{
     filter: brightness(0) invert(1);
   }
 }

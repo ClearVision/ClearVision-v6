@@ -95,7 +95,7 @@
 }
 
 // BODY
-%userModalBody {
+%userModalOuter%userProfileOuterUnthemed {
   %userModalInfoSection {
     + %userModalInfoSection {
       border-color: hsla(0, 0%, 100%, 0.04);
@@ -145,7 +145,7 @@
 }
 
 // LIST
-%userModalListScroller {
+%userModalOuter%userProfileOuterUnthemed %userModalListScroller {
   %userModalListRow {
     position: relative;
     color: hsla(0, 0%, 100%, 0.5);
