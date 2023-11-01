@@ -3721,12 +3721,6 @@ pre {
 .postTitleText__11fd1 {
   @extend %forumCardName !optional;
 }
-.isOpen__8593d {
-  @extend %forumOpenCard !optional;
-}
-.isOpen__036bf {
-  @extend %forumIncreasedOpenCard !optional;
-}
 .loadingCard-3pIp9h {
   @extend %forumLoadingCard !optional;
 }
@@ -3785,10 +3779,19 @@ pre {
   @extend %forumCardContainer !optional;
 }
 .isOpen_d88bb6 {
-  @extend %forumOpen !optional;
+  @extend %forumCardOpen !optional;
 }
 .contentPreview_b317ee {
   @extend %forumContentPreview !optional;
+}
+.container__99b06 {
+  @extend %forumListContainer !optional;
+}
+.isOpen__8593d {
+  @extend %forumListOpen !optional;
+}
+.isOpen__036bf {
+  @extend %forumIncreasedOpenCard !optional;
 }
 .container_def45c {
   @extend %forumChat !optional;
@@ -3830,6 +3833,9 @@ pre {
   @extend %forumTagButtonInner !optional;
 }
 .uploadInput_bbab2f {
+  @extend %forumUploadButton !optional;
+}
+.uploadIcon_fe2ad4 {
   @extend %forumUploadIcon !optional;
 }
 .iconWrapper__3e4a9 {

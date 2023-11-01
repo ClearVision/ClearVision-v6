@@ -3,20 +3,69 @@
 %themeDark %forumContainer {
   background: rgba(0, 0, 0, calc(#{cv('bg.app.shading')} * 0.3));
 }
-// each card
+
+// SEARCH
+%forumSearch {
+  font-family: var(--main-font);
+  font-weight: 300;
+  padding: 0 5px 0 5px;
+  border-radius: 4px;
+}
+%forumSearchRow {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+// NEW POST
+%forumUploadButton {
+  background: $main-color;
+  transition: all 0.15s ease-in-out;
+  &:hover {
+    background: $hover-color;
+    transition: all 0.15s ease-in-out;
+  }
+}
+%forumUploadIcon {
+  color: #fff;
+}
+
+// GALLERY VIEW
 %forumCardContainer {
-  &%forumOpenCard {
+  background: rgba(0, 0, 0, calc(var(--background-shading) * 0.3));
+  border: 2px solid $main-color;
+  &:hover {
+    background: rgba(0, 0, 0, calc(var(--background-shading) * 0.3));
+    border: 2px solid $hover-color;
+  }
+  &%forumOpen {
+    background-color: hsla(0, 0%, 100%, 0.1);
+    border-color: $main-color;
+  }
+  &%forumCardOpen {
     background: hsla(0, 0%, 0%, 0.3);
   }
 }
-// temporary addition. increased is the "new" forums view
+%forumCardName {
+  color: #fff !important;
+}
+%forumContentPreview {
+  background-color: hsla(0, 0%, 100%, 0.05);
+  border-color: hsla(0, 0%, 100%, 0.09);
+}
+%forumLoadingCard {
+  background: hsla(0, 0%, 0%, 0.3);
+}
+
+// LIST VIEW
+%forumListContainer,
 %forumIncreasedCard {
-  // theme each card w/ border, text preview, etc
   background: hsla(0, 0%, 0%, 0.3);
   border: 2px solid $main-color;
   &:hover {
     background: hsla(0, 0%, 0%, 0.3);
     border: 2px solid $hover-color;
+  }
+  &%forumListOpen {
+    background: hsla(0, 0%, 0%, 0.3);
   }
   %channelTextArea {
     background: hsla(0, 0%, 100%, 0.07);
@@ -43,47 +92,6 @@
     border-color: 2px solid $hover-color;
   }
 }
-// HEADER
-%forumHeader {
-  border-color: transparent;
-  background-color: hsla(0, 0%, 0%, 0.6);
-  &:focus-within {
-    box-shadow: 0 0 2px 2px $main-color;
-  }
-}
-
-// CARDS
-%forumCardContainer {
-  background: rgba(0, 0, 0, calc(var(--background-shading) * 0.3));
-  border: 2px solid $main-color;
-  &:hover {
-    background: rgba(0, 0, 0, calc(var(--background-shading) * 0.3));
-    border: 2px solid $hover-color;
-  }
-  &%forumOpen {
-    background-color: hsla(0, 0%, 100%, 0.1);
-    border-color: $main-color;
-  }
-}
-%forumCardName {
-  color: #fff !important;
-}
-%forumContentPreview {
-  background-color: hsla(0, 0%, 100%, 0.05);
-  border-color: hsla(0, 0%, 100%, 0.09);
-}
-%forumLoadingCard {
-  background: hsla(0, 0%, 0%, 0.3);
-}
-%forumUploadIcon {
-  background: $main-color;
-  transition: all 0.15s ease-in-out;
-  &:hover {
-    background: $hover-color;
-    transition: all 0.15s ease-in-out;
-  }
-}
-
 
 // TAGS
 %themeDark %forumTag,
@@ -106,16 +114,7 @@
   padding: 0 10px;
 }
 
-%forumSearch {
-  font-family: var(--main-font);
-  font-weight: 300;
-  padding: 0 5px 0 5px;
-  background: transparent;
-  border-radius: 4px;
-}
-%forumSearchRow {
-  background-color: rgba(0, 0, 0, 0.3);
-}
+
 // tag box etc
 %forumTagBox {
   background: rgba(0, 0, 0, 0.7);
