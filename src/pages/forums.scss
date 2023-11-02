@@ -3,6 +3,10 @@
 %themeDark %forumContainer {
   background: rgba(0, 0, 0, calc(#{cv('bg.app.shading')} * 0.3));
 }
+// HEADER 
+%forumHeader {
+  background-color: transparent;
+}
 
 // SEARCH
 %forumSearch {
@@ -44,15 +48,9 @@
     background: hsla(0, 0%, 0%, 0.3);
   }
 }
-%forumCardName {
-  color: #fff !important;
-}
 %forumContentPreview {
   background-color: hsla(0, 0%, 100%, 0.05);
   border-color: hsla(0, 0%, 100%, 0.09);
-}
-%forumLoadingCard {
-  background: hsla(0, 0%, 0%, 0.3);
 }
 
 // LIST VIEW
@@ -67,20 +65,9 @@
   &%forumListOpen {
     background: hsla(0, 0%, 0%, 0.3);
   }
-  %channelTextArea {
-    background: hsla(0, 0%, 100%, 0.07);
-    width: 95%;
-    %channelTextAreaScrollable {
-      background: transparent;
-    }
-  }
   %themeDark &%forumOpenCard, // another temporary addition
   %themeDark &%forumIncreasedOpenCard {
     background-color: hsla(0, 0%, 100%, 0.1);
-  }
-  %input {
-    background: transparent;
-    box-shadow: none;
   }
 }
 // fix the increased view's new reply feature
@@ -91,6 +78,17 @@
     background-color: hsla(0, 0%, 100%, 0.05);
     border-color: 2px solid $hover-color;
   }
+}
+
+// SHARED
+%forumCardName {
+  color: #fff !important;
+}
+%forumPinIcon {
+  background-color: $main-color;
+}
+%forumLoading {
+  background: hsla(0, 0%, 0%, 0.3);
 }
 
 // TAGS
