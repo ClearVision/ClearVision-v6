@@ -3017,6 +3017,9 @@ pre {
 .list__41249 {
   @extend %guildSettingsRoleList !optional;
 }
+.row__5f051 {
+  @extend %guildSettingsRoleListRow !optional;
+}
 .header__63c59 {
   @extend %guildSettingsRoleHeader !optional;
 }

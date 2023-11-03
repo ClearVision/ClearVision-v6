@@ -78,24 +78,22 @@
   }
 }
 %guildSettingsRoleList {
-  %topPillItemThemed%tabBarItem {
+  %guildSettingsRoleListRow {
     &:hover {
       &:not(%tabBarItemDisabled) {
         background-color: hsla(0, 0%, 100%, 0.07);
+      }
+    }
+    %roleCircle {
+      &::before {
+        background-color: transparent;
       }
     }
     &%tabBarItemSelected {
       background-color: transparent;
       %roleCircle {
         &::before {
-          content: '';
-          position: absolute;
-          @include stretch;
-          z-index: -1;
           background-color: inherit;
-          opacity: 0.2;
-          border-radius: 4px;
-          transition: all 0.1s ease-in-out;
         }
       }
     }

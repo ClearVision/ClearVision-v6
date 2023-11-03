@@ -81,12 +81,9 @@
 }
 
 // ROLES/MEMBERS DROPDOWN
-.container-1YVRxo {
-  background-color: var(--popout-color);
-}
 %themeDark .header__02652,
 %themeDark .container_e84cda .sectionTag_b0df68 {
-  background-color: transparent;
+  background-color: var(--popout-color);
 }
 .row__3fe26.selected__75860 .rowInner_feb94d {
   background-color: hsla(0, 0%, 100%, 0.1);

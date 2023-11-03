@@ -32,6 +32,20 @@
   color: #fff;
 }
 
+// GET STARTED
+.container_a4e239 {
+	background-color: hsla(0, 0%, 0%, 0.4);
+}
+.stepContainer__2f6a9 {
+	background-color: hsla(0, 0%, 100%, 0.07);
+}
+.stepContainer__2f6a9:hover {
+	background-color: hsla(0, 0%, 100%, 0.09);
+}
+.stepStatus_f620c2 {
+	background-color: transparent !important;
+}
+
 // GALLERY VIEW
 %forumCardContainer {
   background: rgba(0, 0, 0, calc(var(--background-shading) * 0.3));

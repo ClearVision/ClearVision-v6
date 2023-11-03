@@ -201,10 +201,15 @@
 
 // SOUNDBOARD MODAL
 %soundboard {
-  background: rgba(0, 0, 0, calc(var(--background-shading) * 0.7));
+  background-color: var(--popout-color);
   %soundboardSound,
   %soundboardGuildSelected {
-    background: $main-color;
+    background-color: $main-color;
+  }
+  %soundboardSound {
+    &:hover {
+      background-color: $hover-color;
+    }
   }
   %soundboardHint {
     background: rgba(0, 0, 0, calc(var(--background-shading) * 0.3));
