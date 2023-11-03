@@ -2071,12 +2071,6 @@ pre {
 .messageGroupBlocked__9a374 {
   @extend %messageGroupBlocked !optional;
 }
-.revealed-1_RKsf {
-  @extend %messageGroupBlockedRevealed !optional;
-}
-.messageGroupBlockedBtn_a79738 {
-  @extend %messageGroupBlockedButton !optional;
-}
 .header__39b23 {
   @extend %messageHeader !optional;
 }
@@ -2467,9 +2461,6 @@ pre {
 .secured__615be {
   @extend %connectionInfoSecured !optional;
 }
-.itemSubMenu-1vN_Yn {
-  @extend %contextMenuItemSubMenu !optional;
-}
 .emojiPicker_b65ce9 {
   @extend %emojiPicker !optional;
 }
@@ -2548,12 +2539,6 @@ pre {
 .popout__08442 {
   @extend %groupInvitePopout !optional;
 }
-.header-1zd7se {
-  @extend %groupInvitePopoutHeader !optional;
-}
-.title-3hptVQ {
-  @extend %groupInvitePopoutTitle !optional;
-}
 .subtitle__593cd {
   @extend %groupInvitePopoutSubtitle !optional;
 }
@@ -2631,9 +2616,6 @@ pre {
 }
 .check__8d1bd {
   @extend %menuPopoutCheck !optional;
-}
-.container-3cGP6G {
-  @extend %messageOptions !optional;
 }
 .layerContainer_d5a653 {
   @extend %layerContainer !optional;
@@ -3032,6 +3014,9 @@ pre {
 .titleContainer_e558ff {
   @extend %guildSettingsRoleBackContainer !optional;
 }
+.list__41249 {
+  @extend %guildSettingsRoleList !optional;
+}
 .header__63c59 {
   @extend %guildSettingsRoleHeader !optional;
 }
@@ -3096,7 +3081,7 @@ pre {
 .role__631a3 {
   @extend %role !optional;
 }
-.roleWrapper-2IhvNd {
+.roleWrapper__0f174 {
   @extend %roleWrapper !optional;
 }
 .roleCircle_bae511 {
@@ -3113,12 +3098,6 @@ pre {
 }
 .addButton_c648bf {
   @extend %roleAddButton !optional;
-}
-.pointerEvents-9SZWKj {
-  @extend %statusPointerEvents !optional;
-}
-.cursorDefault--wfhy5 {
-  @extend %statusCursorDefault !optional;
 }
 .loading__30066 {
   @extend %loading !optional;
@@ -3140,9 +3119,6 @@ pre {
 }
 .separator__7538d {
   @extend %replySeperator !optional;
-}
-.hasReply-16cIUP {
-  @extend %textAreaHasReply !optional;
 }
 .replying_d7b6ad {
   @extend %replyingToIndicator !optional;
@@ -3171,12 +3147,6 @@ pre {
 .notches__065e9 {
   @extend %micTestNotches !optional;
 }
-.sliderBar-2s16ej {
-  @extend %inputSensitivitySliderBar !optional;
-}
-.speaking-2Crrvt {
-  @extend %inputSensitivitySpeaking !optional;
-}
 .cameraWrapper__1ee6d {
   @extend %cameraWrapper !optional;
 }
@@ -3201,41 +3171,41 @@ pre {
 .none__51a8f {
   @extend %scrollbarNone !optional;
 }
-.segmentContainer-2dq0ta {
+.segmentControl_b89f83 {
   @extend %screenshareSegmentContainer !optional;
 }
-.segmentControlOption-3MnJdT {
+.segmentControlOption__84fb6 {
   @extend %screenshareSegmentControlOption !optional;
 }
-.selected-2xa993 {
+.tabItemSelected__3dfe7 {
   @extend %screenshareSegmentControlSelected !optional;
 }
-.tile-3POX2m {
+.tile__46960 {
   @extend %screenshareTile !optional;
 }
-.sourceThumbnail-ERDcZE {
+.sourceThumbnail__21c87 {
   @extend %screenshareSourceThumbnail !optional;
 }
-.selected-1i-g6T {
+.selected__26467 {
   @extend %screenshareSourceSelected !optional;
 }
-.card-m7VgZ8 {
+.card__7756d {
   @extend %screenshareCard !optional;
+}
+.selectorButton_c6ae93 {
+  @extend %screenshareSettingsSelector !optional;
+}
+.selectorButtonSelected_fbe8fc {
+  @extend %screenshareSettingsSelected !optional;
+}
+.selectorButtonPremiumRequired_ce72d6 {
+  @extend %screenshareSettingsPremiumRequired !optional;
 }
 .card__3662a {
   @extend %serverWelcomeCards !optional;
 }
 .checkmark__0b63d {
   @extend %serverInviteTick !optional;
-}
-.selectorButton-3fWZ0_ {
-  @extend %screenshareSettingsSelector !optional;
-}
-.selectorButtonSelected-3cQUnj {
-  @extend %screenshareSettingsSelected !optional;
-}
-.selectorButtonPremiumRequired-IZXhgV {
-  @extend %screenshareSettingsPremiumRequired !optional;
 }
 .textContainer__709ff {
   @extend %textContainer !optional;
@@ -4192,6 +4162,9 @@ pre {
 }
 .guildSection_ebda04 {
   @extend %emojiInfoGuild !optional;
+}
+.category_f995ff {
+  @extend %channelSettingsCategory !optional;
 }
 .settingCard__00567 {
   @extend %channelSettingsCard !optional;

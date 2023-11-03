@@ -2,11 +2,6 @@
 %standardSidebarView {
   background: transparent;
 }
-%settingsSidebar {
-  height: 100%;
-  width: 260px;
-  padding: 0px 6px 0px 20px;
-}
 %settingsSidebarRegion {
   %settingsSidebarScroller {
     margin: 30px 8px 30px 0;
@@ -18,21 +13,18 @@
     }
   }
 }
-%settingsSide {
-  padding: 30px 0;
-  %settingsHeader {
-    color: $main-color;
-    font-weight: 700;
-  }
-  %settingsSeparator {
-    background: hsla(0, 0%, 100%, 0.07);
-    &:has(+ %settingsHeader) {
-      display: none;
-    }
+%settingsSidebar {
+  height: 100%;
+  width: 260px;
+  padding: 0px 6px 0px 20px;
+  %settingsSide {
+    padding: 30px 0;
   }
 }
 %settingsSidebar {
   %settingsHeader {
+    color: $main-color;
+    font-weight: 700;
     padding-top: 20px;
     display: flex;
     align-items: center;
@@ -56,6 +48,12 @@
       overflow: hidden;
       text-overflow: ellipsis;
     }
+  }
+}
+%settingsSeparator {
+  background: hsla(0, 0%, 100%, 0.07);
+  &:has(+ %settingsHeader) {
+    display: none;
   }
 }
 %standardSidebarView {
