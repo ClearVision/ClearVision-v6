@@ -36,9 +36,13 @@
 %roleRemoveIcon {
   left: calc(100% - 7px);
 }
-%roleCircle {
-  width: 0 !important;
-  height: 0 !important;
+%roleCircle {  
+  %userPopoutRoles &,
+  %guildSettingsMembersRoleWrapper &,
+  %forumSetupRoleList & {
+    width: 0 !important;
+    height: 0 !important;
+  }
   &:not(:empty) {
     margin-left: 6px;
   }

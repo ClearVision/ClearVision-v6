@@ -3084,9 +3084,6 @@ pre {
 .role__631a3 {
   @extend %role !optional;
 }
-.roleWrapper__0f174 {
-  @extend %roleWrapper !optional;
-}
 .roleCircle_bae511 {
   @extend %roleCircle !optional;
 }
@@ -3729,6 +3726,18 @@ pre {
 .increasedActivityMainCard__916ed {
   @extend %forumIncreasedCard !optional;
 }
+.container_a4e239 {
+  @extend %forumSetupContainer !optional;
+}
+.stepContainer__2f6a9 {
+  @extend %forumSetupStepContainer !optional;
+}
+.stepStatus_f620c2 {
+  @extend %forumSetupStepStatus !optional;
+}
+.rolesList__55c4f {
+  @extend %forumSetupRoleList !optional;
+}
 .title__964d5,
 .postTitleText__11fd1 {
   @extend %forumCardName !optional;
@@ -4198,4 +4207,7 @@ pre {
 }
 .arrow__5e540 {
   @extend %addServerOptionArrow !optional;
+}
+.roleWrapper__0f174 {
+  @extend %guildSettingsMembersRoleWrapper !optional;
 }
