@@ -42,20 +42,20 @@
   %forumSetupRoleList & {
     width: 0 !important;
     height: 0 !important;
-  }
-  &:not(:empty) {
-    margin-left: 6px;
-  }
-  &:before {
-    content: '';
-    border-radius: 3px;
-    position: absolute;
-    @include pos(-1px, -1px, -1px, -1px);
-    background: inherit;
-    opacity: 0.2;
-    transition: all 0.1s ease-in-out;
-    pointer-events: none;
-  }
+    &:not(:empty) {
+      margin-left: 6px;
+    }
+    &:before {
+      content: '';
+      border-radius: 3px;
+      position: absolute;
+      @include pos(-1px, -1px, -1px, -1px);
+      background: inherit;
+      opacity: 0.2;
+      transition: all 0.1s ease-in-out;
+      pointer-events: none;
+    }
+  }  
 }
 %roleAddButton {
   background: hsla(0, 0%, 100%, 0.1);
