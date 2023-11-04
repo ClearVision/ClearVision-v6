@@ -184,6 +184,9 @@
 .ui-tab-bar-separator {
   @extend %bdSettingsSidebarSeparator !optional;
 }
+.progressBarContainer__9b571 {
+  @extend %serverBoostProgressBar !optional;
+}
 .containerDefault__23a29 {
   @extend %categoryContainerDefault !optional;
 }
@@ -3038,6 +3041,65 @@ pre {
 .upsellFooter-2aN0L_ {
   @extend %guildSettingsRoleUpsellFooter !optional;
 }
+.roleWrapper__0f174 {
+  @extend %guildSettingsMembersRoleWrapper !optional;
+}
+.textBadge__9e179 {
+  @extend %automodBadge !optional;
+}
+.editCard_dfa091 {
+  @extend %automodEditCard !optional;
+}
+.ruleIconContainer_baf164 {
+  @extend %automodRuleIconContainer !optional;
+}
+.ruleIcon__44d2b {
+  @extend %automodRuleIcon !optional;
+}
+.actionContainer_d21d10 {
+  @extend %automodActionTag !optional;
+}
+.actionIcon__2a5f8 {
+  @extend %automodActionIcon !optional;
+}
+.actionTextHeader__87eb9 {
+  @extend %automodActionText !optional;
+}
+.stepCountIcon_a27a70 {
+  @extend %automodStepIcon !optional;
+}
+.stepperContainer__053f4 {
+  @extend %automodStepperCOntainer !optional;
+}
+.mentionLimitContainer__0f0ff,
+.keywordListContainer_fdf41c,
+.actionContainer__51bd9 {
+  @extend %automodContentCard !optional;
+}
+.collapseable__71e46 {
+  @extend %automodCollapseableCard !optional;
+}
+.toggled_bb1607 {
+  @extend %automodCollapseableCardToggled !optional;
+}
+.keywordsTextArea_d5eadb {
+  @extend %automodKeywordsTextArea !optional;
+}
+.textArea__3f404 {
+  @extend %automodRegexTextArea !optional;
+}
+.resultsList_bec6cd {
+  @extend %automodDropdown !optional;
+}
+.channelLabel__6345a {
+  @extend %automodDropdownChannel !optional;
+}
+.channelIcon__801cb {
+  @extend %automodDropdownChannelIcon !optional;
+}
+.roleLabel_cf92a0 {
+  @extend %automodDropdownRole !optional;
+}
 .activityUserPopout_c7e67d,
 .activityProfile__61b44 {
   @extend %activity !optional;
@@ -4207,7 +4269,4 @@ pre {
 }
 .arrow__5e540 {
   @extend %addServerOptionArrow !optional;
-}
-.roleWrapper__0f174 {
-  @extend %guildSettingsMembersRoleWrapper !optional;
 }
