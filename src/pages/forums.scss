@@ -60,6 +60,7 @@
   }
   &%forumCardOpen {
     background: hsla(0, 0%, 0%, 0.3);
+    border: 2px solid var(--success-color);
   }
 }
 %forumContentPreview {
