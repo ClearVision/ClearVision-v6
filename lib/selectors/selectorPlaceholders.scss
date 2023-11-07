@@ -4273,3 +4273,50 @@ pre {
 .arrow__5e540 {
   @extend %addServerOptionArrow !optional;
 }
+.accountProfileCard__22589 {
+  @extend %userSettingsAccountProfileCard !optional;
+}
+.background_b61fcc {
+  @extend %userSettingsAccountProfileBackground !optional;
+}
+.fieldList_aab0de {
+  @extend %userSettingsAccountProfileFields !optional;
+}
+.avatar__6c108 {
+  @extend %userSettingsAccountProfileAvatar !optional;
+}
+.premiumFeatureBorder__9bbb3 {
+  @extend %userSettingsProfilePremiumBorder !optional;
+}
+.premiumBackground__4ce97 {
+  @extend %userSettingsProfilePremiumBackground !optional;
+}
+.upsellOverlayContainer__08979 {
+  @extend %userSettingsProfileUpsellOverlayContainer !optional;
+}
+.upsellOverlay__688e8 {
+  @extend %userSettingsProfileUpsellOverlay !optional;
+}
+.upsellContainer-TwfTaF {
+  @extend %userSettingsProfileUpsell !optional;
+}
+.container__6968f,
+.container__9c82e,
+.container__9f90c {
+  @extend %userSettingsFamilyContainers !optional;
+}
+.box__6431e {
+  @extend %userSettingsFamilyBox !optional;
+}
+.circle__7dd22 {
+  @extend %userSettingsFamilyCircle !optional;
+}
+.iconContainer__82920 {
+  @extend %userSettingsFamilyIconContainer !optional;
+}
+.defaultIndicator__855a2 {
+  @extend %userSettingsBillingIndicator !optional;
+}
+.description__75831, .descriptionWrapper__0d577 {
+  @extend %userSettingsBillingMethodText !optional
+}

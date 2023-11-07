@@ -1,14 +1,14 @@
 /* USER SETTINGS */
 
 // MY ACCOUNT
-.accountProfileCard__22589 {
+%userSettingsAccountProfileCard {
   background-color: rgba(0, 0, 0, 0.4);
 }
-.background_b61fcc,
-.fieldList_aab0de {
+%userSettingsAccountProfileBackground,
+%userSettingsAccountProfileFields {
   background-color: transparent;
 }
-.avatar__6c108 {
+%userSettingsAccountProfileAvatar {
   background: transparent;
   border-color: transparent;
 }
@@ -44,31 +44,31 @@
   background-color: hsla(0, 0%, 100%, 0.05);
 }
 
-.premiumFeatureBorder__9bbb3 {
+%userSettingsProfilePremiumBorder {
   background: hsla(0, 0%, 0%, 0.4);
   border-color: hsl(302, 100%, 72.5%);
 }
-.premiumBackground__4ce97 {
+%userSettingsProfilePremiumBackground {
   background: transparent;
 }
-.upsellOverlayContainer__08979 {
+%userSettingsProfileUpsellOverlayContainer {
   background: hsla(0, 0%, 0%, 0.4);
   border-color: hsl(302, 100%, 72.5%);
 }
-.theme-dark .upsellOverlay__688e8,
-.upsellContainer-TwfTaF {
-  background: hsla(0, 0%, 0%, 0.4);
+%themeDark {
+  %userSettingsProfileUpsellOverlay,
+  %userSettingsProfileUpsell {
+    background: hsla(0, 0%, 0%, 0.4)
+  }
 }
 
 // FAMILY CENTER
-.container__6968f,
-.container__9c82e,
-.container__9f90c,
-.box__6431e {
+%userSettingsFamilyContainers,
+%userSettingsFamilyBox {
   background-color: hsla(0, 0%, 0%, 0.4);
 }
-.circle__7dd22,
-.iconContainer__82920 {
+%userSettingsFamilyCircle,
+%userSettingsFamilyIconContainer {
   background-color: transparent;
 }
 .row_c1b980 {
@@ -102,7 +102,7 @@
 
 // BILLING
 %themeDark {
-  .defaultIndicator__855a2 {
+  %userSettingsBillingIndicator {
     background-color: $main-color;
   }
   .paymentPane__9cf01,
@@ -130,6 +130,9 @@
   .codeRedemptionRedirect-3SBiCp {
     background-color: rgba(0, 0, 0, 0.4);
     border-color: hsla(0, 0%, 100%, 0.07);
+  }
+  %userSettingsBillingMethodText {
+    color: #fff;
   }
 }
 
