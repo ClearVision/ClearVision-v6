@@ -315,6 +315,9 @@
 .listDefault__205d0 {
   @extend %voiceUserList !optional;
 }
+.clickable__137bc {
+  @extend %voiceUserClickable !optional;
+}
 .draggable__081c0 {
   @extend %voiceUserDraggable !optional;
 }

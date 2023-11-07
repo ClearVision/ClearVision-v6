@@ -69,20 +69,19 @@
 }
 
 // LIST VIEW
-%forumListContainer,
-%forumIncreasedCard {
-  background: hsla(0, 0%, 0%, 0.3);
-  border: 2px solid $main-color;
-  &:hover {
+%themeDark {
+  %forumListContainer,
+  %forumIncreasedCard {
     background: hsla(0, 0%, 0%, 0.3);
-    border: 2px solid $hover-color;
-  }
-  &%forumListOpen {
-    background: hsla(0, 0%, 0%, 0.3);
-  }
-  %themeDark &%forumOpenCard, // another temporary addition
-  %themeDark &%forumIncreasedOpenCard {
-    background-color: hsla(0, 0%, 100%, 0.1);
+    border: 2px solid $main-color;
+    &:hover {
+      background: hsla(0, 0%, 0%, 0.3);
+      border: 2px solid $hover-color;
+    }
+    &%forumListOpen {
+      background: hsla(0, 0%, 0%, 0.3);
+      border: 2px solid var(--success-color);
+    }
   }
 }
 // fix the increased view's new reply feature

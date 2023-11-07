@@ -272,7 +272,11 @@
 // VOICE USER LIST
 %voiceUserList {
   padding-left: 24px;
+  %voiceUserClickable:hover %voiceUserContent {
+    background: rgba(0,0,0,.04);
+  }
 }
+
 %voiceUser {
   z-index: 1;
   %voiceUserContent {
