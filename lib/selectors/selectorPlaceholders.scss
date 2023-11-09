@@ -597,7 +597,7 @@
 .jumpToPresentBar__0ff7f {
   @extend %jumpToPresentBar !optional;
 }
-.hasMore-3e72_v {
+.hasMore_b03f46 {
   @extend %hasMore !optional;
 }
 .messagesErrorBar__06c0a {
@@ -692,9 +692,6 @@
 }
 .action_caa81f {
   @extend %chatGatedAction !optional;
-}
-.actionRed-gYn8D3 {
-  @extend %chatGatedActionRed !optional;
 }
 .resizeHandle_f1a098 {
   @extend %chatResize !optional;
@@ -906,10 +903,10 @@
 .contentTitle_b7c496 {
   @extend %autocompleteTitle !optional;
 }
-.text-xs-medium-2LRpEj {
+.text-xs-medium__30cbe {
   @extend %autocompleteContentMedium !optional;
 }
-.text-xs-normal-3SiVjE {
+.text-xs-normal__56c35 {
   @extend %autocompleteContentNormal !optional;
 }
 .icon__95d3a {
@@ -2206,12 +2203,6 @@ pre {
 .active_f1266e {
   @extend %forumFollowActive !optional;
 }
-.container-2_J666 {
-  @extend %forumGetStartedContainer !optional;
-}
-.stepContainer-SaPPyG {
-  @extend %forumGetStartedStep !optional;
-}
 .staticToolbar__7ef7b {
   @extend %forumSettingsGuidelinesToolbar !optional;
 }
@@ -2415,48 +2406,6 @@ pre {
 }
 .emptyHeader__309f2 {
   @extend %discoverEmptyTitle !optional;
-}
-.container-1YVRxo {
-  @extend %autocompletePopout !optional;
-}
-.positionTop-32hfih {
-  @extend %autocompletePopoutTop !optional;
-}
-.positionBottom-1iS7wM {
-  @extend %autocompletePopoutBottom !optional;
-}
-.autocompleteShadow-1aXK3x {
-  @extend %autocompletePopoutShadow !optional;
-}
-.autocompleteArrowWrapper-32-lNV {
-  @extend %autocompletePopoutArrowWrapper !optional;
-}
-.autocompleteArrow-2CRgr2 {
-  @extend %autocompletePopoutArrow !optional;
-}
-.header-PfVfAO {
-  @extend %autocompletePopoutHeader !optional;
-}
-.autocompleteHeaderBackground-4jKxaW {
-  @extend %autocompletePopoutHeaderBackground !optional;
-}
-.headerText-3k--Lk {
-  @extend %autocompletePopoutHeaderText !optional;
-}
-.input-2Zg2X0 {
-  @extend %autocompletePopoutInput !optional;
-}
-.sectionTag-euh3ZW {
-  @extend %autocompletePopoutSection !optional;
-}
-.autocompleteScroller-13i2_Y {
-  @extend %autocompletePopoutScroller !optional;
-}
-.row-3UUG_l {
-  @extend %autocompletePopoutRow !optional;
-}
-.selected-3LIQAc {
-  @extend %autocompletePopoutSelected !optional;
 }
 .container__0810b {
   @extend %connectionInfo !optional;
@@ -4305,9 +4254,6 @@ pre {
 }
 .upsellOverlay__688e8 {
   @extend %userSettingsProfileUpsellOverlay !optional;
-}
-.upsellContainer-TwfTaF {
-  @extend %userSettingsProfileUpsell !optional;
 }
 .container__6968f,
 .container__9c82e,

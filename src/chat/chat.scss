@@ -38,28 +38,6 @@
   %chatGatedSeparator {
     background: hsla(0, 0%, 100%, 0.07);
   }
-  %chatGatedActionRed {
-    position: relative;
-    background: transparent;
-    color: hsla(0, 0%, 100%, 0.7);
-    z-index: 1;
-    &:after {
-      content: '';
-      position: absolute;
-      @include stretch;
-      background: cv('colors.danger');
-      border-radius: 3px;
-      opacity: 0.5;
-      transition: inherit;
-      z-index: -1;
-    }
-    &:hover {
-      color: #fff;
-      &:after {
-        opacity: 0.7;
-      }
-    }
-  }
 }
 
 // EMPTY CHANNEL

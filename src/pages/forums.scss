@@ -43,8 +43,10 @@
 }
 %forumSetupStepContainer {
 	background-color: hsla(0, 0%, 100%, 0.07);
+  border: 2px solid $main-color;
   &:hover {
     background-color: hsla(0, 0%, 100%, 0.09);
+    border: 2px solid $hover-color;
   }
 }
 %forumSetupStepStatus {
@@ -217,17 +219,6 @@
 }
 
 // admin/creation
-%forumGetStartedContainer {
-  background: hsla(0, 0%, 0%, 0.3);
-  %forumGetStartedStep {
-    background: hsla(0, 0%, 0%, 0.3);
-    border: 2px solid $main-color;
-    &:hover {
-      background: hsla(0, 0%, 0%, 0.3);
-      border: 2px solid $hover-color;
-    }
-  }
-}
 %themeDark %forumSettingsGuidelinesToolbar {
   background: hsla(0, 0%, 0%, 0.6);
   > %channelTextArea {
