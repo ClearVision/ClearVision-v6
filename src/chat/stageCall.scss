@@ -23,9 +23,11 @@
   background-color: $main-color;
 }
 %stageHeaderContainer,
-%stageSpeakers,
 %stageParticipants {
   background-color: hsla(0, 0%, 0%, 0.4);
+}
+%stageSpeakers {
+  background: transparent;
 }
 %stageModIconContainer {
   > svg {
@@ -48,6 +50,12 @@
   background: rgba(0, 0, 0, calc(var(--background-shading) * 0.3));
   &:hover {
     background: rgba(0, 0, 0, calc(var(--background-shading) * 0.6));
+  }
+}
+%stageLeaveButton {
+  background: $main-color;
+  &:hover {
+    background: $hover-color;
   }
 }
 

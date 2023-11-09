@@ -3317,6 +3317,9 @@ pre {
 .participants__5d231 {
   @extend %stageParticipants !optional;
 }
+.primaryButtonColor__236e9 {
+  @extend %stageLeaveButton !optional;
+}
 .tileContainer__88d69 {
   @extend %stageParticipant !optional;
 }
