@@ -1,4 +1,9 @@
-/* SERVER SETTINGS */
+/* GUILD SETTINGS */
+
+// Divider 
+%guildSettingsDivider {
+  border-top: thin solid $main-color;
+}
 
 // OVERVIEW - server banner
 %guildFeatureAvailabilityIndicator {
