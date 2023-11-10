@@ -132,6 +132,11 @@
   padding-left: 7px;
 }
 
+//Accessibility
+%guildSettingsAccessibilityPreview {
+  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
+}
+
 // STICKERS
 %stickersUploadCard {
   background-color: rgba(0, 0, 0, 0.4);
@@ -142,6 +147,17 @@
 %stickersTierLock {
   color: #fff;
   opacity: 0.3;
+}
+
+%guildSettingsStickersUpsellButtons{
+  background: $main-color;
+  &:hover {
+    background: $hover-color;
+  }
+}
+
+%guildSettingsStickersGetBoosted {
+  background: var(--background-overlay);
 }
 
 // SAFETY SETUP
@@ -337,4 +353,25 @@
   .tierBody__615a1 {
     background-color: hsla(0, 0%, 0%, 0.4);
   }
+}
+
+// Subscriptions
+%guildSettingsSubscriptionsUserBenefits {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+%guildSettingsSubscriptionsUserBenefitsCard {
+  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
+}
+
+%guildSettingsSubscriptionsCreatorBenefits {
+  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
+}
+
+%guildSettingsSubscriptionsServerPreview {
+  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
+}
+
+%guildSettingsSubscriptionsServerEmojis {
+  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
 }

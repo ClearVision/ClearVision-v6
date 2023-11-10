@@ -4239,3 +4239,34 @@ pre {
 .description__75831, .descriptionWrapper__0d577 {
   @extend %userSettingsBillingMethodText !optional
 }
+.previewMessage__1075c {
+  @extend %guildSettingsAccessibilityPreview !optional;
+}
+.lookFilled__19298.colorWhite__43488 {
+  @extend %guildSettingsStikcersUpsellButtons !optional;
+}
+.upsellContainer__12e24 {
+  @extend %guildSettingsStickersGetBoosted !optional;
+}
+.clickableContainer__69013 {
+  @extend %guildSettingsSafetySetup !optional;
+}
+.howItWorksContainer_ef4386 {
+  @extend %guildSettingsSubscriptionsUserBenefits !optional;
+}
+.howItWorksImageContainer__91f71 {
+  @extend %guildSettingsSubscriptionsUserBenefitsCard !optional;
+}
+.card_bc6ee2,
+.creatorBenefitCard__1f0b1,
+.earningsPreviewContainer__775cb,
+.avatarCard_edc99, 
+.guildCard__81370 {
+  @extend guildSettingsSubscriptionsCreatorBenefits !optional;
+}
+.viewServerButton__1ce42 {
+  @extend %guildSettingsSubscriptionsServerPreview !optional;
+}
+.emojisContainer__68736 {
+  @extend %guildSettingsSubscriptionsServerEmojis !optional;
+}
