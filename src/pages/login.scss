@@ -8,6 +8,9 @@
 %loginAccountsList {
   background-color: hsla(0, 0%, 100%, .07);
 }
+%loginStartOverButton {
+  color: var(--url-color);
+}
 %loginVerificationContainer {
   background-color: transparent;
 }
