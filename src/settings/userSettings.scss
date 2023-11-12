@@ -136,30 +136,24 @@
 }
 
 // NITRO
-.giftCard__30972 {
+%userSettingsNitroGiftCard {
   background: rgba(0, 0, 0, 0.4);
 }
 
 // SUBSCRIPTIONS
 %themeDark {
-  .noItemsIcon_b1e42b,
-  .noItemsIcon__38ca2 {
+  :is(%userSettingsSubsNoItemsIcons) {
     background-color: transparent;
-    > g > * {
+    > g > :is(path, rect, circle) {
       fill-opacity: 0.8 !important;
       stroke-opacity: 0.8 !important;
     }
   }
 }
-.noItemsCard__4a2f1,
-.noItemsCard_f473e7 {
-  background-color: rgba(0, 0, 0, 0.4);
-}
-.scroller__244e5 {
+.scroller__244e5 { // nitro page
   background-color: transparent;
 }
-.detailsBlock__1191c,
-.banner-WELp4M {
+%userSettingsSubsPayDetailsBlock {
   background-color: rgba(0, 0, 0, 0.4);
 }
 .premiumSubscriptionAccountCredit__6bab4 {
@@ -175,27 +169,31 @@
 }
 
 // SERVER BOOST
-.guildContainer__9d362,
-.wrapper__0df00,
-.boosterRecognitionCard__5fc19,
-.faq__1d001 {
+%userSettingsBoostHeaderBorderRect {
+  stroke: $main-color;
+}
+%userSettingsBoostHeader,
+%userSettingsBoostGuildContainer,
+%userSettingsBoostGuildSearchWrapper,
+%userSettingsBoostRecognitionCard,
+%userSettingsBoostFAQ {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
 // APPEARANCE
-.selectionCircle_f4288e {
+%userSettingsAppearanceSelectionCircle {
 	width: calc(100% + 2px);
   height: calc(100% + 2px);
 	box-shadow: inset 0 0 0 2px $main-color;
 	top: -1px;
 	left: -1px;
 }
-.checkmark__1577e {
+%userSettingsAppearanceCheckmart {
 	color: $main-color;
 }
 
 // ACCESSIBILITY
-%accessibilityMessagePreview {
+%userSettingsAccessibilityMsgPreview {
   background-color: transparent;
 }
 
