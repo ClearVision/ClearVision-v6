@@ -32,8 +32,8 @@
     background: $main-color;
   }
   %autocompleteBase {
-    %autocompleteContentMedium,
-    %autocompleteContentNormal {
+    %textExtraSmallMedium,
+    %textExtraSmallNormal {
       color: #fff !important;
     }
   }

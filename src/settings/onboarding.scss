@@ -1,0 +1,82 @@
+/* COMMUNITY SERVER ONBOARDING */
+
+// POPOUT
+%onboardingEduPopout {
+	background-color: rgba(0, 0, 0,  0.8);
+}
+%onboardingEduPopoutArrow {
+	border-bottom-color: rgba(0, 0, 0,  0.8);
+}
+
+// PROGRESS
+%onboardingProgressBarContainer {
+  %onboardingProgressBar {
+    background-color: hsla(0, 0%, 100%, 0.3);
+    + %textExtraSmallMedium {
+      color: hsla(0, 0%, 100%, 0.3) !important;
+    }
+  }
+  %onboardingProgressBarCurrent {
+    background-color: $main-color;
+    + %textExtraSmallMedium {
+      color: $main-color !important;
+    }
+  }
+  &:hover {
+    %onboardingProgressBar {
+      background-color: $hover-color;
+    }
+  }
+}
+
+// FOOTER
+%onboardingFooterContainer {
+	background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.4)) !important;
+	box-shadow: none;
+}
+
+// DEFAULT CHANNELS
+%onboardingChannelRow {
+	background-color: rgba(0, 0, 0,  0.4);
+  &:hover:not(%onboardingChannelRowDisabled) {
+    background-color: hsla(0, 0%, 100%, 0.05);
+  }
+}
+%onboardingChannelRowSeparator {
+	margin: -1px 0 0;
+	background-color: hsla(0, 0%, 100%, 0.05);
+}
+%onboardingChannelListHeader,
+%onboardingChannelList {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+%onboardingChannelListHeaderContainer {
+	background-color: transparent;
+}
+%onboardingChannelListHeader {
+  %textExtraSmallBold {
+    color: $main-color !important ;
+  }
+}
+%onboardingChannelListProgressBar {
+  background-color: $main-color;
+}
+%onboardingChannelChattableIndicator {
+  background-color: $main-color;
+}
+
+// CUSTOMISATION QUESTIONS
+%onboardingChannelCoverage {
+  background-color: rgba(0, 0, 0, 0.4);
+}  
+%onboardingChannelCoverageProgress {
+  background-color: $main-color !important;
+}
+%onboardingChannelCoverageDetails {
+  background-color: transparent;
+}
+%onboardingChannelCoveragePill {
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 2px solid $main-color;
+}

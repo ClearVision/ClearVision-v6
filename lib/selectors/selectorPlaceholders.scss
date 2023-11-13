@@ -903,12 +903,6 @@
 .contentTitle_b7c496 {
   @extend %autocompleteTitle !optional;
 }
-.text-xs-medium__30cbe {
-  @extend %autocompleteContentMedium !optional;
-}
-.text-xs-normal__56c35 {
-  @extend %autocompleteContentNormal !optional;
-}
 .icon__95d3a {
   @extend %autocompleteIcon !optional;
 }
@@ -2995,10 +2989,58 @@ pre {
   @extend %guildSettingsOnboardingUpsellChannelIcon !optional;
 }
 .educationUpsell_ee1637 {
-  @extend %guildSettingsOnboardingEduPopout !optional;
+  @extend %onboardingEduPopout !optional;
 }
 .educationUpsellArrow__65907 {
-  @extend %guildSettingsOnboardingEduPopoutArrow !optional;
+  @extend %onboardingEduPopoutArrow !optional;
+}
+.progressBarContainer_f5600f {
+  @extend %onboardingProgressBarContainer !optional;
+}
+.progressBar__02515 {
+  @extend %onboardingProgressBar !optional;
+}
+.progressBarCurrent__44486 {
+  @extend %onboardingProgressBarCurrent !optional;
+}
+.container_ecf1d0 {
+  @extend %onboardingFooterContainer !optional;
+}
+.channelRow__33fcb {
+  @extend %onboardingChannelRow !optional;
+}
+.disabled__7b158 {
+  @extend %onboardingChannelRowDisabled !optional;
+}
+.separator_a693be {
+  @extend %onboardingChannelRowSeparator !optional;
+}
+.header__8e9c1 {
+  @extend %onboardingChannelListHeader !optional;
+}
+.container__9e6a7 {
+  @extend %onboardingChannelListHeaderContainer !optional;
+}
+.progressBar_f4b358 {
+  @extend %onboardingChannelListProgressBar !optional;
+}
+.channelList__4e836 {
+  @extend %onboardingChannelList !optional;
+}
+.chattableIndicator__320a3 {
+  @extend %onboardingChannelChattableIndicator !optional;
+}
+.channelCoverage__3b43c {
+  @extend %onboardingChannelCoverage !optional;
+}
+.coverageProgress__7696d {
+  @extend %onboardingChannelCoverageProgress !optional;
+}
+.channelCoverageDetails__1b72e {
+  @extend %onboardingChannelCoverageDetails !optional;
+}
+.channelPill_c6644a {
+  @extend %onboardingChannelCoveragePill !optional;
 }
 .card_bc6ee2 {
   @extend %guildSettingsSubsCard !optional;
@@ -3262,31 +3304,31 @@ pre {
   @extend %userSettingsAccessibilityMsgPreview !optional;
 }
 .micTest__30846 {
-  @extend %micTest !optional;
+  @extend %userSettingsMicTest !optional;
 }
 .container__6d33c {
-  @extend %micTestContainer !optional;
+  @extend %userSettingsMicTestContainer !optional;
 }
 .progress__2cc1d {
-  @extend %micTestProgress !optional;
+  @extend %userSettingsMicTestProgress !optional;
 }
 .notches__065e9 {
-  @extend %micTestNotches !optional;
+  @extend %userSettingsMicTestNotches !optional;
+}
+.soundButtonSettingContainer__548af {
+  @extend %userSettingsEntranceSoundButton !optional;
 }
 .cameraWrapper__1ee6d {
-  @extend %cameraWrapper !optional;
-}
-.media-engine-video {
-  @extend %mediaEngineVideo !optional;
+  @extend %userSettingsVideoCameraWrapper !optional;
 }
 .backgroundOption__745bb {
-  @extend %videoBgOption !optional;
+  @extend %userSettingsVideoBgOption !optional;
 }
 .backgroundOptionRing__1f209 {
-  @extend %videoBgOptionRing !optional;
+  @extend %userSettingsVideoBgOptionRing !optional;
 }
 .backgroundOptionInner__1477f {
-  @extend %videoBgOptionInner !optional;
+  @extend %userSettingsVideoBgOptionInner !optional;
 }
 .auto_a48086 {
   @extend %scrollbarAuto !optional;
@@ -4014,6 +4056,15 @@ pre {
 }
 .heading-lg-semibold__85c17 {
   @extend %headingLargeSemibold !optional;
+}
+.text-xs-normal__56c35 {
+  @extend %textExtraSmallNormal !optional;
+}
+.text-xs-medium__30cbe {
+  @extend %textExtraSmallMedium !optional;
+}
+.text-xs-bold_c1eb0a {
+  @extend %textExtraSmallBold !optional;
 }
 .text-sm-medium__1ba28 {
   @extend %textSmallMedium !optional;
