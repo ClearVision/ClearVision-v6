@@ -2768,6 +2768,10 @@ pre {
 .userPopoutInner_f545a3 {
   @extend %userPopoutInner !optional;
 }
+.userProfileInnerThemedPremiumWithoutBanner__703b1,
+.userProfileInnerThemedWithBanner_d5f991 {
+  @extend %userPopoutInnerThemed !optional;
+}
 .popoutBanner__9f5b9 {
   @extend %userPopoutBanner !optional;
 }
@@ -2957,6 +2961,45 @@ pre {
 .upsellFooter-2aN0L_ {
   @extend %guildSettingsRoleUpsellFooter !optional;
 }
+.testimonialHeroContainer__4a355 {
+  @extend %guildSettingsOnboardingTestimonialContainer !optional;
+}
+.quotes__35cf8 {
+  @extend %guildSettingsOnboardingTestimonialQuotes !optional;
+}
+.testimonial__1b63f {
+  @extend %guildSettingsOnboardingTestimonial !optional;
+}
+.upsellPreview_e0cb61 {
+  @extend %guildSettingsOnboardingUpsell !optional;
+}
+.previewListItem__4f725 {
+  @extend %guildSettingsOnboardingUpsellList !optional;
+}
+.selected__2d410 {
+  @extend %guildSettingsOnboardingUpsellListSelected !optional;
+}
+.checkboxCircle_aed363 {
+  @extend %guildSettingsOnboardingUpsellCheckboxCircle !optional;
+}
+.checkbox__9abca {
+  @extend %guildSettingsOnboardingUpsellCheckbox !optional;
+}
+.userCardInner_d6aa46 {
+  @extend %guildSettingsOnboardingUpsellUserCard !optional;
+}
+.action_c957d9 {
+  @extend %guildSettingsOnboardingUpsellUserAction !optional;
+}
+.channelIconContainer__5df13 {
+  @extend %guildSettingsOnboardingUpsellChannelIcon !optional;
+}
+.educationUpsell_ee1637 {
+  @extend %guildSettingsOnboardingEduPopout !optional;
+}
+.educationUpsellArrow__65907 {
+  @extend %guildSettingsOnboardingEduPopoutArrow !optional;
+}
 .card_bc6ee2 {
   @extend %guildSettingsSubsCard !optional;
 }
@@ -3043,8 +3086,8 @@ pre {
 .roleLabel_cf92a0 {
   @extend %automodDropdownRole !optional;
 }
-.activityUserPopout_c7e67d,
-.activityProfile__61b44 {
+.activityUserPopoutV2__32328,
+.activityProfileV2__4de28 {
   @extend %activity !optional;
 }
 .headerText__7d203 {
@@ -3055,9 +3098,6 @@ pre {
 }
 .activityName__47e51 {
   @extend %activityName !optional;
-}
-.textHover-3f_j3D {
-  @extend %activityNameTextHover !optional;
 }
 .bodyLink__0ab7c {
   @extend %activityBodyLink !optional;
@@ -3975,7 +4015,7 @@ pre {
 .heading-lg-semibold__85c17 {
   @extend %headingLargeSemibold !optional;
 }
-.text-sm-medium_bc6ffc {
+.text-sm-medium__1ba28 {
   @extend %textSmallMedium !optional;
 }
 .text-md-medium_b12de1 {
