@@ -2913,7 +2913,7 @@ pre {
 .link_b006df {
   @extend %settingsSocialLink !optional;
 }
-.guildFeatureAvailabilityIndicator__3fb19 {
+.availabilityIndicator__32891 {
   @extend %guildFeatureAvailabilityIndicator !optional;
 }
 .roleRow_c357d5 {
@@ -3041,6 +3041,51 @@ pre {
 }
 .channelPill_c6644a {
   @extend %onboardingChannelCoveragePill !optional;
+}
+.addPrompt_d0c3a2 {
+  @extend %onboardingAddQuestion !optional;
+}
+.plusIcon__5736c {
+  @extend %onboardingAddQuestionIcon !optional;
+}
+.container_bc63f8 {
+  @extend %onboardingQuestionContainer !optional;
+}
+.example__9c5a6 {
+  @extend %onboardingQuestionExample !optional;
+}
+.badExampleIcon__70659 {
+  @extend %onboardingActionExampleBadIcon !optional;
+}
+.actionItem__36958 {
+  @extend %onboardingActionItem !optional;
+}
+.resourceChannel__1f331 {
+  @extend %onboardingResourceChannel !optional;
+}
+.actionItemEmojiWrapper__09da8 {
+  @extend %onboardingActionItemIcon !optional;
+}
+.addActionItem__209df {
+  @extend %onboardingActionAdd !optional;
+}
+.pillContainer_e97d2d {
+  @extend %onboardingActionPreviewPill !optional;
+}
+.pillItemSelected__3dd13 {
+  @extend %onboardingActionPreviewPillSelected !optional;
+}
+.reviewHeader__0a240 {
+  @extend %onboardingReviewHeader !optional;
+}
+.onboardingStepContainer__4a9d0 {
+  @extend %onboardingReviewStepContainer !optional;
+}
+.iconContainer_ccedf9 {
+  @extend %onboardingReviewIconContainer !optional;
+}
+.channelIcon__7901b {
+  @extend %onboardingReviewIcon !optional;
 }
 .card_bc6ee2 {
   @extend %guildSettingsSubsCard !optional;
@@ -4069,10 +4114,10 @@ pre {
 .text-sm-medium__1ba28 {
   @extend %textSmallMedium !optional;
 }
-.text-md-medium_b12de1 {
+.text-md-medium__5151a {
   @extend %textMediumMedium !optional;
 }
-.text-md-normal__6a4eb {
+.text-md-normal__4afad {
   @extend %textMediumNormal !optional;
 }
 .directoryContainer_d3edd9 {
