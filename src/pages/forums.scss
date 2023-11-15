@@ -232,6 +232,9 @@
 }
 %forumEmptyCTA {
   color: $main-color;
+  %themeDark &:hover {
+    color: $hover-color;
+  }
 }
 
 // EXAMPLE
@@ -254,8 +257,8 @@
 
 // new posts button
 %forumNewPosts {
-  background: rgba(0,0,0,.2);
-  border: 1px solid $main-color;
+  background: rgba( 0, 0, 0, .4);
+  border: 2px solid $main-color;
   %textMediumMedium {
     color: $main-color !important;
   }

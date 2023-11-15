@@ -55,12 +55,12 @@
 }
 
 %browseChannelsSelectAll {
-  %autocompleteContentMedium {
+  %textExtraSmallMedium {
     color: hsla(0, 0%, 100%, 0.5) !important;
     transition: all 0.15s ease-in-out;
   }
   %browseChannelsChecked {
-    & + %autocompleteContentMedium {
+    & + %textExtraSmallMedium {
       color: hsla(0, 0%, 100%, 0.7) !important;
     }
   }
