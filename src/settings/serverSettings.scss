@@ -158,9 +158,11 @@
 }
 %automodEditCard {
   background-color: hsla(0, 0%, 0%, 0.4);
-  &%automodEditCardActive,
-  &%automodEditCardActive%automodEditCardToggled {
+  &%automodEditCardActive {
     background-color: hsla(0, 0%, 0%, 0.4);
+    &%automodEditCardToggled {
+      background-color: hsla(0, 0%, 0%, 0.4);
+    }
   }
 }
 %automodRuleIconContainer {
@@ -195,6 +197,18 @@
   &:active,
   &%automodCollapseableCardToggled:active {
     background-color: hsla(0, 0%, 0%, 0.6);
+  }
+}
+%automodCollapseableHeaderContainer,
+%automodCollapseableHeaderClickable {
+  background-color: transparent;
+}
+%automodCollapseableRadioBackground {
+  &:hover {
+    background-color: transparent;
+  }
+  &%automodCollapseableRadioSelected {
+    background-color: hsla(0, 0%, 100%, 0.07);
   }
 }
 %automodKeywordsTextArea,

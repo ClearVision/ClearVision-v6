@@ -69,7 +69,7 @@
 // UPSELL
 %upsellTooltipText {
   background-color: hsla(0, 0%, 0%, 0.8);
-  &:after {
+  &%upsellTooltipCaretTopCenter:after {
     border-bottom-color: hsla(0, 0%, 0%, 0.8);
   }
 }

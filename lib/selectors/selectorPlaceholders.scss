@@ -2113,6 +2113,9 @@ pre {
 .inlineMediaEmbed__4270e {
   @extend %messageInlineMediaEmbed !optional;
 }
+.spoilerMarkdownContent__2b8f8 {
+  @extend %messageSpoiler !optional;
+}
 .mentioned__58017 {
   @extend %mentioned !optional;
 }
@@ -3024,6 +3027,9 @@ pre {
 .progressBar_f4b358 {
   @extend %onboardingChannelListProgressBar !optional;
 }
+.icon__3117c {
+  @extend %onboardingChannelListProgressIcon !optional;
+}
 .channelList__4e836 {
   @extend %onboardingChannelList !optional;
 }
@@ -3053,6 +3059,15 @@ pre {
 }
 .example__9c5a6 {
   @extend %onboardingQuestionExample !optional;
+}
+.resultsList_ccad0b {
+  @extend %onboardingQuestionDropdown !optional;
+}
+.channelRowLabel__9c6c0 {
+  @extend %onboardingQuestionDropdownChannelLabel !optional;
+}
+.channelIcon__9cdc6 {
+  @extend %onboardingQuestionDropdownChannelIcon !optional;
 }
 .badExampleIcon__70659 {
   @extend %onboardingActionExampleBadIcon !optional;
@@ -3154,6 +3169,18 @@ pre {
 }
 .toggled_bb1607 {
   @extend %automodCollapseableCardToggled !optional;
+}
+.container__74689 {
+  @extend %automodCollapseableHeaderContainer !optional;
+}
+.clickableContainer__69013 {
+  @extend %automodCollapseableHeaderClickable !optional;
+}
+.backgroundModifierContainer__73a0a {
+  @extend %automodCollapseableRadioBackground !optional;
+}
+.selected__93d53 {
+  @extend %automodCollapseableRadioSelected !optional;
 }
 .keywordsTextArea_d5eadb {
   @extend %automodKeywordsTextArea !optional;
@@ -3572,6 +3599,9 @@ pre {
 }
 .upsellTooltipWrapper_df8272 {
   @extend %upsellTooltipText !optional;
+}
+.caretTopCenter__3f88f {
+  @extend %upsellTooltipCaretTopCenter !optional;
 }
 .reactionTooltip__9384a {
   @extend %reactionTooltip !optional;
