@@ -119,6 +119,9 @@
           color: #fff !important;
         }
       }
+      %settingsServerBoostTabItem[aria-selected=true] {
+        background-color: $main-color !important;
+      }
     }
   }
 }

@@ -1203,18 +1203,6 @@
 .premiumLabel_f2cd55 {
   @extend %premiumLabel !optional;
 }
-.card-20tMLf {
-  @extend %nitroSettingsCard !optional;
-}
-.bigPerkCard-1uwmWV {
-  @extend %nitroSettingsBig !optional;
-}
-.smallPerkCard-2sX_-- {
-  @extend %nitroSettingsSmall !optional;
-}
-.innerWrapper-Eo2E86 {
-  @extend %nitroSettingsInner !optional;
-}
 .icon__11372 {
   @extend %serverBoostIcon !optional;
 }
@@ -1474,7 +1462,31 @@
   @extend %librarySearchIconClear !optional;
 }
 .applicationStore_fc7d76 {
-  @extend %nitroHomePage !optional;
+  @extend %nitro !optional;
+}
+.card_e97590 {
+  @extend %nitroCard !optional;
+}
+.cardDescription__46c9d {
+  @extend %nitroCardDescription !optional;
+}
+.perkCard__6fe60 {
+  @extend %nitroPerkCard !optional;
+}
+.customButton_c0cc97 {
+  @extend %nitroExpandButton !optional;
+}
+.cover__590cf {
+  @extend %nitroPerksCover !optional;
+}
+.giftNitro__7b37a {
+  @extend %nitroGiftContainer !optional;
+}
+.textContainer_ebae6b {
+  @extend %nitroGiftTextContainer !optional;
+}
+.innerWrapper_c80bad {
+  @extend %nitroFooterInnerWrapper !optional;
 }
 .topPill__0cdf1 {
   @extend %topPill !optional;
@@ -2910,6 +2922,9 @@ pre {
 .separator_fdbcfd {
   @extend %settingsSeparator !optional;
 }
+.serverBoostTabItem_b19426 {
+  @extend %settingsServerBoostTabItem !optional;
+}
 .socialLinks_c1fc99 {
   @extend %settingsSocialLinks !optional;
 }
@@ -2957,6 +2972,137 @@ pre {
 }
 .upsellFooter-2aN0L_ {
   @extend %guildSettingsRoleUpsellFooter !optional;
+}
+.emojiRow__4661c {
+  @extend %guildSettingsEmojiCard !optional;
+}
+.emojiRow__4661c {
+  @extend %guildSettingsEmojiRow !optional;
+}
+.emojiRemove_b299a6 {
+  @extend %guildSettingsEmojiRemove !optional;
+}
+.emojiAliasInput_dd55f7 {
+  @extend %guildSettingsEmojiAliasInput !optional;
+}
+.emojiInput__4fe54 {
+  @extend %guildSettingsEmojiInput !optional;
+}
+.emojiAliasPlaceholder__71733 {
+  @extend %guildSettingsEmojiAliasPlaceholder !optional;
+}
+.wrapper__93f27 {
+  @extend %guildSettingsStickersUploadCard !optional;
+}
+.tierLock__3e43d {
+  @extend %guildSettingsStickersTierLock !optional;
+}
+.changelog__6d46d {
+  @extend %guildSettingsSafetyChangeLog !optional;
+}
+.safetyChecklist__826c8 {
+  @extend %guildSettingsSafetyChecklist !optional;
+}
+.valuePill__9d21a {
+  @extend %guildSettingsSafetyPill !optional;
+}
+.simpleItemWrapper__2a0a0 {
+  @extend %guildSettingsSafetyItemWrapper !optional;
+}
+.textBadge__9e179 {
+  @extend %automodBadge !optional;
+}
+.editCard_dfa091 {
+  @extend %automodEditCard !optional;
+}
+.active_ef2ec5 {
+  @extend %automodEditCardActive !optional;
+}
+.toggled_bf7bde {
+  @extend %automodEditCardToggled !optional;
+}
+.ruleIconContainer_baf164 {
+  @extend %automodRuleIconContainer !optional;
+}
+.ruleIcon__44d2b {
+  @extend %automodRuleIcon !optional;
+}
+.actionContainer_d21d10 {
+  @extend %automodActionTag !optional;
+}
+.actionIcon__2a5f8 {
+  @extend %automodActionIcon !optional;
+}
+.actionTextHeader__87eb9 {
+  @extend %automodActionText !optional;
+}
+.stepCountIcon_a27a70 {
+  @extend %automodStepIcon !optional;
+}
+.stepperContainer__053f4 {
+  @extend %automodStepperCOntainer !optional;
+}
+.mentionLimitContainer__0f0ff,
+.keywordListContainer_fdf41c,
+.actionContainer__51bd9 {
+  @extend %automodContentCard !optional;
+}
+.collapseable__71e46 {
+  @extend %automodCollapseableCard !optional;
+}
+.toggled_bb1607 {
+  @extend %automodCollapseableCardToggled !optional;
+}
+.container__74689 {
+  @extend %automodCollapseableHeaderContainer !optional;
+}
+.clickableContainer__69013 {
+  @extend %automodCollapseableHeaderClickable !optional;
+}
+.groupCollapsedContainer_d7de68 {
+  @extend %automodCollapsedContainer !optional;
+}
+.pointer_d95271 {
+  @extend %automodCollapseablePointer !optional;
+}
+.backgroundModifierContainer__73a0a {
+  @extend %automodCollapseableRadioBackground !optional;
+}
+.selected__93d53 {
+  @extend %automodCollapseableRadioSelected !optional;
+}
+.keywordsTextArea_d5eadb {
+  @extend %automodKeywordsTextArea !optional;
+}
+.textArea__3f404 {
+  @extend %automodRegexTextArea !optional;
+}
+.resultsList_bec6cd {
+  @extend %automodDropdown !optional;
+}
+.channelLabel__6345a {
+  @extend %automodDropdownChannel !optional;
+}
+.channelIcon__801cb {
+  @extend %automodDropdownChannelIcon !optional;
+}
+.roleLabel_cf92a0 {
+  @extend %automodDropdownRole !optional;
+}
+.auditLog__6c805 {
+  @extend %guildSettingsAuditLog !optional;
+}
+.header_e08fd2 {
+  @extend %guildSettingsAuditHeader !optional;
+}
+.headerExpanded__03c29 {
+  @extend %guildSettingsAuditHeaderExpanded !optional;
+}
+.divider__1505d {
+  @extend %guildSettingsAuditDivider !optional;
+}
+.changeDetails_ecd760 {
+  @extend %guildSettingsAuditChangeDetails !optional;
 }
 .testimonialHeroContainer__4a355 {
   @extend %guildSettingsOnboardingTestimonialContainer !optional;
@@ -3125,80 +3271,6 @@ pre {
 }
 .roleWrapper__0f174 {
   @extend %guildSettingsMembersRoleWrapper !optional;
-}
-.textBadge__9e179 {
-  @extend %automodBadge !optional;
-}
-.editCard_dfa091 {
-  @extend %automodEditCard !optional;
-}
-.active_ef2ec5 {
-  @extend %automodEditCardActive !optional;
-}
-.toggled_bf7bde {
-  @extend %automodEditCardToggled !optional;
-}
-.ruleIconContainer_baf164 {
-  @extend %automodRuleIconContainer !optional;
-}
-.ruleIcon__44d2b {
-  @extend %automodRuleIcon !optional;
-}
-.actionContainer_d21d10 {
-  @extend %automodActionTag !optional;
-}
-.actionIcon__2a5f8 {
-  @extend %automodActionIcon !optional;
-}
-.actionTextHeader__87eb9 {
-  @extend %automodActionText !optional;
-}
-.stepCountIcon_a27a70 {
-  @extend %automodStepIcon !optional;
-}
-.stepperContainer__053f4 {
-  @extend %automodStepperCOntainer !optional;
-}
-.mentionLimitContainer__0f0ff,
-.keywordListContainer_fdf41c,
-.actionContainer__51bd9 {
-  @extend %automodContentCard !optional;
-}
-.collapseable__71e46 {
-  @extend %automodCollapseableCard !optional;
-}
-.toggled_bb1607 {
-  @extend %automodCollapseableCardToggled !optional;
-}
-.container__74689 {
-  @extend %automodCollapseableHeaderContainer !optional;
-}
-.clickableContainer__69013 {
-  @extend %automodCollapseableHeaderClickable !optional;
-}
-.backgroundModifierContainer__73a0a {
-  @extend %automodCollapseableRadioBackground !optional;
-}
-.selected__93d53 {
-  @extend %automodCollapseableRadioSelected !optional;
-}
-.keywordsTextArea_d5eadb {
-  @extend %automodKeywordsTextArea !optional;
-}
-.textArea__3f404 {
-  @extend %automodRegexTextArea !optional;
-}
-.resultsList_bec6cd {
-  @extend %automodDropdown !optional;
-}
-.channelLabel__6345a {
-  @extend %automodDropdownChannel !optional;
-}
-.channelIcon__801cb {
-  @extend %automodDropdownChannelIcon !optional;
-}
-.roleLabel_cf92a0 {
-  @extend %automodDropdownRole !optional;
 }
 .activityUserPopoutV2__32328,
 .activityProfileV2__4de28 {
@@ -3605,12 +3677,6 @@ pre {
 }
 .reactionTooltip__9384a {
   @extend %reactionTooltip !optional;
-}
-.wrapper__93f27 {
-  @extend %stickersUploadCard !optional;
-}
-.tierLock__3e43d {
-  @extend %stickersTierLock !optional;
 }
 .messagesPopoutWrap_b3b384 {
   @extend %messagesPopoutWrap !optional;
