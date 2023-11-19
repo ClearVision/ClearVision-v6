@@ -132,7 +132,7 @@
     'integrations': 'https://clearvision.github.io/icons/puzzle.svg' */
   );
 
-  /*
+  /* OBSOLETE
   $dangerIcons: (
     // LOG OUT
     'logout': 'https://clearvision.github.io/icons/exit.svg',
@@ -181,12 +181,4 @@
       background-image: url(#{$u});
     }
   }
-
-  /* DANGER
-  @each $i, $u in $dangerIcons {
-    %tabBarItem[aria-controls='#{$i}-tab']:before {
-      -webkit-mask: url(#{$u});
-      mask: url(#{$u});
-    }
-  }*/
 }
