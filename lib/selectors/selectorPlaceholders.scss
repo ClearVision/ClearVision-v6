@@ -4379,7 +4379,8 @@ pre {
 .chatHeaderBar__28ee6 {
   @extend %channelHeaderBar !optional;
 }
-.mainTableContainer__5ffe0 {
+.mainTableContainer_ea650e, // this is the one in the server settings
+.mainTableContainer__5ffe0 { // and this is the one in the channel. why are there 2??
   @extend %membersChannelContainer !optional;
 }
 .table_a843c4 {
