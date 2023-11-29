@@ -38,10 +38,17 @@
     }
   }
 }
+
 // GIFS/EMBEDS
 %messageInlineMediaEmbed {
   max-width: max-content;
 }
+
+// SPOILER
+%messageSpoiler {
+  background-color: hsla(0, 0%, 0%, 0.8);
+}
+
 // LINKS
 %markup a,
 %anchor {
@@ -108,10 +115,10 @@
   }
 }
 %threadJumpButton {
-  background-color: var(--main-color);
+  background-color: $main-color;
   color: #fff;
   &:hover {
-    background-color: var(--hover-color);
+    background-color: $hover-color;
     color: #fff;
   }
 }
@@ -133,7 +140,7 @@
 %themeDark %operations {
   color: hsla(0, 0%, 100%, 0.5);
   > a {
-    color: var(--main-color);
+    color: $main-color;
   }
 }
 
@@ -143,7 +150,7 @@
     background-color: hsla(0, 0%, 100%, 0.08);
   }
   &:before {
-    background-color: var(--main-color);
+    background-color: $main-color;
   }
 }
 

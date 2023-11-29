@@ -10,7 +10,7 @@
 %discoverCategoryItem {
   &%discoverCategoryItemSelected {
     %discoverCategoryItemInner {
-      background-color: var(--main-color);
+      background-color: $main-color;
     }
   }
 }
@@ -93,7 +93,7 @@
 // SEARCH CATEGORY
 %categoryPill {
   &%categoryPillSelected {
-    background-color: var(--main-color);
+    background-color: $main-color;
   }
 }
 

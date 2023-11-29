@@ -55,8 +55,8 @@
   &:before {
     height: 26px;
     width: 26px;
-    border-left-color: var(--main-color);
-    border-right-color: var(--main-color);
+    border-left-color: $main-color;
+    border-right-color: $main-color;
   }
   &:after {
     height: 16px;

@@ -39,6 +39,11 @@
   }
 }
 
+// SERVER BOOST
+%themeDark %serverBoostProgressBar {
+	background-color: hsla(0, 0%, 0%, .4);
+}
+
 // CHANNEL CONTENT
 %channelLink {
   transition: all 0.15s ease-in-out;
@@ -177,8 +182,8 @@
         }
       }
     }
-    %autocompleteContentMedium,
-    %autocompleteContentNormal {
+    %textExtraSmallMedium,
+    %textExtraSmallNormal {
       color: #fff !important;
     }
   }
@@ -267,7 +272,11 @@
 // VOICE USER LIST
 %voiceUserList {
   padding-left: 24px;
+  %voiceUserClickable:hover %voiceUserContent {
+    background: rgba(0,0,0,.04);
+  }
 }
+
 %voiceUser {
   z-index: 1;
   %voiceUserContent {

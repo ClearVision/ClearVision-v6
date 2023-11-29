@@ -3,6 +3,7 @@
 // OVERVIEW - server banner
 %guildFeatureAvailabilityIndicator {
   background-color: $main-color;
+  color: #fff;
 }
 
 // ROLES
@@ -77,25 +78,23 @@
     }
   }
 }
-%settingsSide {
-  %topPillItemThemed%tabBarItem {
+%guildSettingsRoleList {
+  %guildSettingsRoleListRow {
     &:hover {
       &:not(%tabBarItemDisabled) {
         background-color: hsla(0, 0%, 100%, 0.07);
       }
     }
+    %roleCircle {
+      &::before {
+        background-color: transparent;
+      }
+    }
     &%tabBarItemSelected {
-      background-color: hsla(0, 0%, 100%, 0.1);
+      background-color: transparent;
       %roleCircle {
         &::before {
-          content: '';
-          position: absolute;
-          @include stretch;
-          z-index: -1;
           background-color: inherit;
-          opacity: 0.2;
-          border-radius: 4px;
-          transition: all 0.1 ease-in-out;
         }
       }
     }
@@ -118,118 +117,170 @@
 
 // EMOJI
 %themeDark {
-  .card_dc88cd:before,
-  .emojiRemove_b299a6 {
+  %guildSettingsEmojiCard:before,
+  %guildSettingsEmojiRemove {
     background-color: hsla(0, 0%, 0%, 0.4);
   }
 }
-.emojiRow__4661c .emojiAliasInput_dd55f7 .emojiInput__4fe54 {
-  color: var(--text-normal);
-  background-color: rgba(255, 255, 255, 0.07);
-  border: none;
-  box-shadow: 0 0 0 2px rgb(255 255 255 / 9%);
-}
-.emojiAliasPlaceholder__71733 {
-  padding-top: 7px;
-  padding-left: 7px;
+%guildSettingsEmojiRow {
+  &:hover {
+    %guildSettingsEmojiAliasPlaceholder {
+      visibility: hidden;
+    }
+  }
+  %guildSettingsEmojiAliasInput {
+    %guildSettingsEmojiInput {
+      color: var(--text-normal);
+      background-color: hsla(0, 0%, 100%, .07);
+      border: none;
+      box-shadow: 0 0 0 2px hsla(0, 0%, 100%, .09);
+    }
+    &:has(%guildSettingsEmojiInput:focus-within) {
+      + %guildSettingsEmojiAliasPlaceholder {
+        visibility: hidden;
+      }
+    }
+  }
 }
 
 // STICKERS
-%stickersUploadCard {
+%guildSettingsStickersUploadCard {
   background-color: rgba(0, 0, 0, 0.4);
   &:hover {
     background-color: $hover-color;
   }
 }
-%stickersTierLock {
+%guildSettingsStickersTierLock {
   color: #fff;
   opacity: 0.3;
 }
 
 // SAFETY SETUP
-.clickableContainer__69013 {
+%guildSettingsSafetyChangeLog,
+%guildSettingsSafetyChecklist {
   background-color: hsla(0, 0%, 0%, 0.4);
 }
-.backgroundModifierContainer__73a0a:hover:not(.disabled__8b7eb):not(.noAction_aabf92) {
-  background: rgba(0, 0, 0, 0.2);
+%guildSettingsSafetyPill {
+	background-color: transparent;
+	border: 2px solid $main-color;
+}
+%guildSettingsSafetyItemWrapper {
+  background-color: transparent;
 }
 
 // AUTOMOD
-.textBadge__9e179 {
+%automodBadge {
   border: none;
   padding: 4px 6px;
 }
-.editCard_dfa091 {
+%automodEditCard {
   background-color: hsla(0, 0%, 0%, 0.4);
-  &.active_ef2ec5,
-  &.active_ef2ec5.toggled_bf7bde {
+  &%automodEditCardActive {
     background-color: hsla(0, 0%, 0%, 0.4);
+    &%automodEditCardToggled {
+      background-color: hsla(0, 0%, 0%, 0.4);
+    }
   }
 }
-.ruleIconContainer_baf164 {
-  background-color: hsla(0, 0%, 100%, 0.1);
+%automodRuleIconContainer {
+  background-color: $main-color;
 }
-.ruleIcon__44d2b {
+%automodRuleIcon {
   color: #fff;
 }
-.actionContainer_d21d10 {
+%automodActionTag {
+  background-color: transparent;
+  border: 2px solid $main-color;
+}
+%automodActionIcon,
+%automodActionText {
+  color: #fff !important;
+}
+%automodStepIcon {
   background-color: hsla(0, 0%, 100%, 0.1);
 }
-.actionIcon__2a5f8,
-.actionTextHeader__87eb9 {
-  color: hsla(0, 0%, 100%, 0.9) !important;
-}
-.stepperContainer__053f4,
-.stepCountIcon_a27a70 {
+%automodStepperCOntainer {
   background-color: hsla(0, 0%, 100%, 0.1);
+  %input {
+    &:focus {
+      box-shadow: none;
+    }
+  }
 }
-.mentionLimitContainer__0f0ff,
-.keywordListContainer_fdf41c,
-.actionContainer__51bd9 {
+%automodContentCard {
   background-color: hsla(0, 0%, 0%, 0.4);
 }
-.keywordsTextArea_d5eadb {
+%automodCollapseableCard {
+  background-color: hsla(0, 0%, 0%, 0.4);
+  &:active {
+    background-color: hsla(0, 0%, 0%, 0.6);
+  }
+  &%automodCollapseableCardToggled:active {
+    background-color: hsla(0, 0%, 0%, 0.6);
+  }
+}
+%automodCollapseableHeaderContainer,
+%automodCollapseableHeaderClickable,
+%automodCollapseablePointer {
+  background-color: transparent;
+}
+%automodCollapsedContainer {
+  background-color: transparent;
+  border: none;
+}
+%automodCollapseableRadioBackground {
+  &%automodCollapseableRadioSelected {
+    background-color: hsla(0, 0%, 100%, 0.07);
+  }
+}
+%automodKeywordsTextArea,
+%automodRegexTextArea {
   color: var(--text-normal);
   background-color: hsla(0, 0%, 100%, 0.07);
   border: none;
   box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.09);
   &:focus {
-    box-shadow: 0 0 2px 2px var(--main-color);
+    box-shadow: 0 0 2px 2px $main-color;
   }
   &::placeholder {
     color: hsla(0, 0%, 100%, 0.3);
   }
 }
-.resultsList-2d3x5p {
+%automodDropdown {
   background-color: hsla(0, 0%, 0%, 0.8);
   border: 1px solid hsla(0, 0%, 100%, 0.07);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-.channelRowLabel-3fw5wf,
-.roleLabel-1ML0Dw {
+%automodDropdownChannel,
+%automodDropdownRole {
   background-color: hsla(0, 0%, 100%, 0.1);
 }
-.channelIcon-36DzP5 {
+%automodDropdownChannelIcon {
   color: #fff;
 }
 
+
 // AUDIT LOG
 %themeDark {
-  .auditLog__6c805 {
+  %guildSettingsAuditLog {
     border-color: hsla(0, 0%, 100%, 0.07);
   }
-  .headerClickable_c4d7a9,
-  .headerDefault__3e003 {
+  %guildSettingsAuditHeader {
     background-color: hsla(0, 0%, 0%, 0.4);
   }
-  .headerExpanded__03c29,
-  .divider__1505d,
-  .changeDetails_ecd760 {
-    background-color: hsla(0, 0%, 0%, 0.7);
+  %guildSettingsAuditHeaderExpanded,
+  %guildSettingsAuditDivider,
+  %guildSettingsAuditChangeDetails {
+    background-color: hsla(0, 0%, 0%, 0.6);
   }
 }
-.selectedBrand-1AtwYE {
-  background-color: $main-color;
+
+// BANS
+.scrollerContainer_c3503a {
+	background-color: hsla(0, 0%, 0%, .4);
+}
+.bannedUser__38b44 {
+	background-color: hsla(0, 0%, 100%, .07);
 }
 
 // SERVER TEMPLATE
@@ -244,6 +295,54 @@
 .upsellFooter__63475 {
   background-color: transparent;
 }
+
+
+// ONBOARDING
+%guildSettingsOnboardingTestimonialContainer {
+	background-color: transparent
+}
+%guildSettingsOnboardingTestimonialQuotes {
+	color: var(--main-color)
+}
+%guildSettingsOnboardingTestimonial {
+  %textSmallMedium {
+    color: #fff !important;
+  }
+}
+%guildSettingsOnboardingUpsell {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+%guildSettingsOnboardingUpsellList {
+	background-color: transparent;
+  &%guildSettingsOnboardingUpsellListSelected {
+    background-color: hsla(0, 0%, 100%, 0.07);
+  }
+}
+%guildSettingsOnboardingUpsellCheckboxCircle {
+	background-color: var(--main-color);
+}
+%guildSettingsOnboardingUpsellCheckbox {
+  &%guildSettingsOnboardingUpsellListSelected {
+    background-color: transparent;
+    border-color: $main-color;
+  }
+}
+%guildSettingsOnboardingUpsellUserCard {
+  background-color: rgba(0, 0, 0, 0.4);
+  &%userPopoutInnerThemed {
+    background-color: transparent;
+  }
+}
+%guildSettingsOnboardingUpsellUserAction {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+%guildSettingsOnboardingUpsellChannelIcon {
+	background-color: $main-color;
+  svg {
+    color: #fff;
+  }
+}
+
 
 // SERVER INSIGHTS
 .analyticsCard_a976ba {
@@ -266,7 +365,7 @@
 .guildDetails_fc2c63 {
   background-color: hsla(0, 0%, 0%, 0.4);
 }
-.featureCard-1RR4Tl,
+.featureCard__0a441,
 .featureIcon__48a2c {
   background-color: hsla(0, 0%, 0%, 0.4);
 }
@@ -277,22 +376,8 @@
   background-color: transparent;
 }
 
-// PARTNER PROGRAM
-.checklistContainer-12xGp5 {
-  background-color: hsla(0, 0%, 0%, 0.4);
-  .checklistHeader-3liG7E {
-    background-color: hsla(0, 0%, 0%, 0.4);
-  }
-  .separator-2qVfIV {
-    background-color: hsla(0, 0%, 100%, 0.06);
-    opacity: 1;
-  }
-}
-.featureCard__0a441 {
-  background-color: hsla(0, 0%, 0%, 0.4);
-}
 
-// directory
+// DISCOVERY
 .checklist__88646 {
   background-color: hsla(0, 0%, 0%, 0.4);
   .header_d08072 {
@@ -301,21 +386,6 @@
   .separator__26ad8 {
     background-color: hsla(0, 0%, 100%, 0.06);
   }
-}
-
-// MEMBERSHIP SCREENING
-.exampleContainer-2O-nVK,
-.exampleModal-1lRfuE {
-  background-color: hsla(0, 0%, 0%, 0.4);
-}
-.guildSidebar-pjuGkm,
-.content-pHpkq8,
-.formFieldWrapper-2LV3S6,
-%themeDark .footer__2f589 {
-  background-color: transparent;
-}
-.fakeButton-3RWbMY {
-  background-color: $main-color;
 }
 
 // WELCOME SCREEN
@@ -334,6 +404,25 @@
   background-color: transparent;
 }
 
+// SERVER SUBSCRIPTIONS
+%guildSettingsSubsCard {
+  background-color: hsla(0, 0%, 0%, 0.4);
+}
+%guildSettingsSubsStepsContainer,
+%guildSettingsSubsStepsImageContainer {
+  background-color: transparent;
+}
+%guildSettingsSubsEarningsPreviewContainer,
+%guildSettingsSubsAvatarCard {
+  background-color: hsla(0, 0%, 100%, 0.07) !important;
+}
+%guildSettingsSubsEmojisContainer {
+  background-color: transparent;
+}
+%guildSettingsSubsViewServerButton {
+  background-color: $main-color;
+}
+
 // SERVER BOOST STATUS
 %themeDark {
   .background__3dd67 {
@@ -348,38 +437,4 @@
   .tierBody__615a1 {
     background-color: hsla(0, 0%, 0%, 0.4);
   }
-}
-
-// MEMBERS
-.searchBar-3joS_I {
-  background-color: hsla(0, 0%, 0%, 0.4);
-}
-%themeDark {
-  .popoutList-10IFAa {
-    background-color: hsla(0, 0%, 0%, 0.4);
-    box-shadow: 0 0 0 1px hsla(0, 0%, 100%, 0.07);
-    .selectableItem__166c5.selected__47180[style*='background: rgb(114, 137, 218)'] {
-      background-color: $main-color !important;
-    }
-  }
-  .popoutListInput-1w4TxY {
-    background-color: hsla(0, 0%, 100%, 0.05);
-  }
-}
-
-// BANS
-.searchBar_f3eb4c {
-  background-color: hsla(0, 0%, 0%, 0.4);
-}
-
-// MEMBERS
-%pruneMemberMenuDropdown {
-  background: var(--hover-color);
-  &:hover {
-    background: var(--hover-color);
-  }
-}
-%pruneMemberMenu {
-  background-color: rgba(0, 0, 0, 0.5);
-  border: hsla(0, 0%, 100%, 0.07);
 }

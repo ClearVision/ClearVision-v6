@@ -38,7 +38,7 @@
   background-color: hsla(0, 0%, 100%, 0.05);
 }
 %themeDark %settingsImageUploaderIcon {
-  background-color: var(--main-color);
+  background-color: $main-color;
   background-image: none;
   &:after {
     content: '';

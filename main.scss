@@ -69,6 +69,7 @@ $version: '6.3.0';
 // HOME
 @import 'src/home/friends';
 @import 'src/home/library';
+@import 'src/home/nitro';
 @import 'src/home/requests';
 
 // MEMBERS
@@ -110,7 +111,6 @@ $version: '6.3.0';
 @import 'src/pages/studentHub.scss';
 
 // POPOUTS
-@import 'src/popouts/autoCompletePopout';
 @import 'src/popouts/connectionInfo';
 @import 'src/popouts/emojiPicker';
 @import 'src/popouts/gifPicker';
@@ -138,10 +138,10 @@ $version: '6.3.0';
 @import 'src/settings/channelSettings';
 @import 'src/settings/content';
 @import 'src/settings/icons';
+@import 'src/settings/onboarding';
 @import 'src/settings/serverSettings';
 @import 'src/settings/sidebar';
 @import 'src/settings/userSettings';
-@import 'src/settings/nitro';
 
 // USERS
 @import 'src/users/activity';
@@ -150,29 +150,33 @@ $version: '6.3.0';
 @import 'src/users/role';
 @import 'src/users/status';
 
-// REPLUGGED/Canary TMP fixes
-@import 'src/replugged/gameActivityToggle.scss';
-@import 'src/replugged/rpSettings.scss';
+// VENCORD
+@import 'src/injectors/ven/shiki.scss';
+@import 'src/injectors/ven/venSettings.scss';
+
+// REPLUGGED
+@import 'src/injectors/rp/gameActivityToggle.scss';
+@import 'src/injectors/rp/rpSettings.scss';
 
 // BETTERDISCORD
-@import 'src/bd/bdSettings';
-@import 'src/bd/customCSS';
-@import 'src/bd/emotePicker';
-@import 'src/bd/icons';
-@import 'src/bd/popouts';
-@import 'src/bd/sidebar';
-@import 'src/bd/sources';
+@import 'src/injectors/bd/bdSettings';
+@import 'src/injectors/bd/customCSS';
+@import 'src/injectors/bd/emotePicker';
+@import 'src/injectors/bd/icons';
+@import 'src/injectors/bd/popouts';
+@import 'src/injectors/bd/sidebar';
+@import 'src/injectors/bd/sources';
 
 // BETTERDISCORD PLUGINS
-@import 'src/bd/plugins/messageButtons';
-@import 'src/bd/plugins/pluginNotice';
-
-@import 'src/bd/plugins/Arashiryuu/memberCount';
-@import 'src/bd/plugins/CapnKitten/HideChannels';
-@import 'src/bd/plugins/DevilBro/badgesEverywhere';
-@import 'src/bd/plugins/DevilBro/dateText';
-@import 'src/bd/plugins/DevilBro/gameActivityToggle';
-@import 'src/bd/plugins/DevilBro/ownerTag';
-@import 'src/bd/plugins/DevilBro/tooltips';
-@import 'src/bd/plugins/Finicalmist/copyCode';
-@import 'src/bd/plugins/noodlebox/lineNumbers';
+@import 'src/injectors/bd/plugins/messageButtons';
+@import 'src/injectors/bd/plugins/pluginNotice';
+@import 'src/injectors/bd/plugins/magane';
+@import 'src/injectors/bd/plugins/Arashiryuu/memberCount';
+@import 'src/injectors/bd/plugins/CapnKitten/HideChannels';
+@import 'src/injectors/bd/plugins/DevilBro/badgesEverywhere';
+@import 'src/injectors/bd/plugins/DevilBro/dateText';
+@import 'src/injectors/bd/plugins/DevilBro/gameActivityToggle';
+@import 'src/injectors/bd/plugins/DevilBro/ownerTag';
+@import 'src/injectors/bd/plugins/DevilBro/tooltips';
+@import 'src/injectors/bd/plugins/Finicalmist/copyCode';
+@import 'src/injectors/bd/plugins/noodlebox/lineNumbers';

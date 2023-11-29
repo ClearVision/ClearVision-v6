@@ -87,7 +87,7 @@
   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.09);
   border: none;
   &:focus-within {
-    box-shadow: 0 0 2px 2px var(--main-color);
+    box-shadow: 0 0 2px 2px $main-color;
   }
   %input {
     background-color: transparent;
@@ -156,7 +156,11 @@
 // DM USER PROFILE
 %userProfileOuterUnthemed {
   background-color: hsla(0, 0%, 0%, 0.4);
-  .userPanelInnerThemed__1804b {
+  %userProfileDMInnerThemed {
     background: transparent;
+  }
+  %userModalDMBadgeList,
+  %userProfileDMOverlayBackground {
+    background: hsla(0, 0%, 0%, 0.4);
   }
 }

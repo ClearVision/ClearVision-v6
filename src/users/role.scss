@@ -1,54 +1,47 @@
 /* USER ROLE */
-%userPopoutRoles,
-%roleWrapper {
-  %role {
-    position: relative;
-    display: flex;
-    flex-direction: row-reverse;
-    border-radius: 3px;
+%role {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  border-radius: 3px;
+  transition: all 0.1s ease-in-out;
+  background: transparent;
+  border-color: transparent;
+  cursor: default;
+  
+  > %roleName {
+    margin-right: 0;
+    margin-left: 4px;
+    color: hsla(0, 0%, 100%, 0.9);
     transition: all 0.1s ease-in-out;
-    background: transparent;
-    cursor: default;
-    &[style] {
-      &:not(:hover) {
-        border-color: transparent !important;
+  }
+  &:hover {
+    %roleCircle {
+      &:before {
+        opacity: 0.3;
       }
     }
-    &:not([style]) {
-      background: hsla(0, 0%, 100%, 0.1);
-      border-color: transparent;
-    }
-
     > %roleName {
-      margin-right: 0;
-      margin-left: 4px;
-      color: hsla(0, 0%, 100%, 0.9);
-      transition: all 0.1s ease-in-out;
-    }
-    &:hover {
-      %roleCircle {
-        &:before {
-          opacity: 0.3;
-        }
-      }
-      > %roleName {
-        color: #fff;
-      }
+      color: #fff;
     }
   }
-  %roleRemoveButton {
-    position: static;
-  }
-  %roleRemoveIcon > path {
-    margin-left: 2px;
-    fill: #fff;
-  }
-  %roleRemoveIcon {
-    left: calc(100% - 7px);
-  }
-  %roleCircle {
-    width: 0;
-    height: 0;
+}
+%roleRemoveButton {
+  position: static;
+}
+%roleRemoveIcon > path {
+  margin-left: 2px;
+  fill: #fff;
+}
+%roleRemoveIcon {
+  left: calc(100% - 7px);
+}
+%roleCircle {  
+  %userPopoutRoles &,
+  %guildSettingsMembersRoleWrapper &,
+  %forumSetupRoleList & {
+    width: 0 !important;
+    height: 0 !important;
     &:not(:empty) {
       margin-left: 6px;
     }
@@ -62,34 +55,22 @@
       transition: all 0.1s ease-in-out;
       pointer-events: none;
     }
-  }
-  %roleAddButton {
-    background: hsla(0, 0%, 100%, 0.1);
-    transition: all 0.1s ease-in-out;
-    cursor: pointer;
-    > svg {
-      width: 7px;
-      height: 7px;
-      color: hsla(0, 0%, 100%, 0.5);
-      transition: inherit;
-    }
-    &:hover {
-      background: hsla(0, 0%, 100%, 0.2);
-      > svg {
-        color: #fff;
-      }
-    }
-  }
+  }  
 }
-%autocompletePopoutRow {
-  &%autocompletePopoutSelected {
-    .rowInner-1mo-C8 {
-      background-color: transparent;
-    }
+%roleAddButton {
+  background: hsla(0, 0%, 100%, 0.1);
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+  > svg {
+    width: 7px;
+    height: 7px;
+    color: hsla(0, 0%, 100%, 0.5);
+    transition: inherit;
   }
   &:hover {
-    .rowInner-1mo-C8 {
-      background-color: transparent;
+    background: hsla(0, 0%, 100%, 0.2);
+    > svg {
+      color: #fff;
     }
   }
 }

@@ -1,14 +1,14 @@
 /* USER SETTINGS */
 
 // MY ACCOUNT
-.accountProfileCard__22589 {
+%userSettingsAccountProfileCard {
   background-color: rgba(0, 0, 0, 0.4);
 }
-.background_b61fcc,
-.fieldList_aab0de {
+%userSettingsAccountProfileBackground,
+%userSettingsAccountProfileFields {
   background-color: transparent;
 }
-.avatar__6c108 {
+%userSettingsAccountProfileAvatar {
   background: transparent;
   border-color: transparent;
 }
@@ -33,42 +33,41 @@
     background-color: hsla(0, 0%, 100%, 0.07);
   }
   &%avatarDecoItemSelected {
-    box-shadow: inset 0 0 0 2px var(--main-color);
+    box-shadow: inset 0 0 0 2px $main-color;
   }
 }
 %avatarDecoItemBadge {
-  background-color: var(--main-color) !important;
+  background-color: $main-color !important;
 }
 %avatarDecoPreview,
 %avatarDecoPreviewSmall {
   background-color: hsla(0, 0%, 100%, 0.05);
 }
 
-.premiumFeatureBorder__9bbb3 {
+%userSettingsProfilePremiumBorder {
   background: hsla(0, 0%, 0%, 0.4);
   border-color: hsl(302, 100%, 72.5%);
 }
-.premiumBackground__4ce97 {
+%userSettingsProfilePremiumBackground {
   background: transparent;
 }
-.upsellOverlayContainer__08979 {
+%userSettingsProfileUpsellOverlayContainer {
   background: hsla(0, 0%, 0%, 0.4);
   border-color: hsl(302, 100%, 72.5%);
 }
-.theme-dark .upsellOverlay__688e8,
-.upsellContainer-TwfTaF {
-  background: hsla(0, 0%, 0%, 0.4);
+%themeDark {
+  %userSettingsProfileUpsellOverlay {
+    background: hsla(0, 0%, 0%, 0.4)
+  }
 }
 
 // FAMILY CENTER
-.container__6968f,
-.container__9c82e,
-.container__9f90c,
-.box__6431e {
+%userSettingsFamilyContainers,
+%userSettingsFamilyBox {
   background-color: hsla(0, 0%, 0%, 0.4);
 }
-.circle__7dd22,
-.iconContainer__82920 {
+%userSettingsFamilyCircle,
+%userSettingsFamilyIconContainer {
   background-color: transparent;
 }
 .row_c1b980 {
@@ -102,7 +101,7 @@
 
 // BILLING
 %themeDark {
-  .defaultIndicator__855a2 {
+  %userSettingsBillingIndicator {
     background-color: $main-color;
   }
   .paymentPane__9cf01,
@@ -131,33 +130,30 @@
     background-color: rgba(0, 0, 0, 0.4);
     border-color: hsla(0, 0%, 100%, 0.07);
   }
+  %userSettingsBillingMethodText {
+    color: #fff;
+  }
 }
 
 // NITRO
-.giftCard__30972 {
+%userSettingsNitroGiftCard {
   background: rgba(0, 0, 0, 0.4);
 }
 
 // SUBSCRIPTIONS
 %themeDark {
-  .noItemsIcon_b1e42b,
-  .noItemsIcon__38ca2 {
+  :is(%userSettingsSubsNoItemsIcons) {
     background-color: transparent;
-    > g > * {
+    > g > :is(path, rect, circle) {
       fill-opacity: 0.8 !important;
       stroke-opacity: 0.8 !important;
     }
   }
 }
-.noItemsCard__4a2f1,
-.noItemsCard_f473e7 {
-  background-color: rgba(0, 0, 0, 0.4);
-}
-.scroller__244e5 {
+.scroller__244e5 { // nitro page
   background-color: transparent;
 }
-.detailsBlock__1191c,
-.banner-WELp4M {
+%userSettingsSubsPayDetailsBlock {
   background-color: rgba(0, 0, 0, 0.4);
 }
 .premiumSubscriptionAccountCredit__6bab4 {
@@ -173,52 +169,68 @@
 }
 
 // SERVER BOOST
-.guildContainer__9d362,
-.wrapper__0df00,
-.boosterRecognitionCard__5fc19,
-.faq__1d001 {
+%userSettingsBoostHeaderBorderRect {
+  stroke: $main-color;
+}
+%userSettingsBoostHeader,
+%userSettingsBoostGuildContainer,
+%userSettingsBoostGuildSearchWrapper,
+%userSettingsBoostRecognitionCard,
+%userSettingsBoostFAQ {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
+// APPEARANCE
+%userSettingsAppearanceSelectionCircle {
+	width: calc(100% + 2px);
+  height: calc(100% + 2px);
+	box-shadow: inset 0 0 0 2px $main-color;
+	top: -1px;
+	left: -1px;
+}
+%userSettingsAppearanceCheckmart {
+	color: $main-color;
+}
+
 // ACCESSIBILITY
-%accessibilityMessagePreview {
+%userSettingsAccessibilityMsgPreview {
   background-color: transparent;
 }
 
 // VOICE
 %themeDark {
-  %micTest {
-    %micTestContainer {
+  %userSettingsMicTest {
+    %userSettingsMicTestContainer {
       background: $main-color !important;
       mask-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='20' fill='yellow'%3E%3Cpath fill-rule='evenodd' d='M 4 2 C 2.895 2 2 2.895 2 4 L 2 16 C 2 17.54 3.667 18.502 5 17.732 C 5.619 17.375 6 16.715 6 16 L 6 4 C 6 2.895 5.105 2 4 2 Z'/%3E%3C/svg%3E");
       -webkit-mask-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='20' fill='yellow'%3E%3Cpath fill-rule='evenodd' d='M 4 2 C 2.895 2 2 2.895 2 4 L 2 16 C 2 17.54 3.667 18.502 5 17.732 C 5.619 17.375 6 16.715 6 16 L 6 4 C 6 2.895 5.105 2 4 2 Z'/%3E%3C/svg%3E");
     }
-    %micTestProgress {
+    %userSettingsMicTestProgress {
       background-color: hsla(0, 0%, 0%, 0.7);
     }
-    %micTestNotches {
+    %userSettingsMicTestNotches {
       rect {
         fill: none;
       }
     }
   }
 }
+%userSettingsEntranceSoundButton {
+  background-color: hsla(0, 0%, 100%, 0.1);
+}
 
 // VIDEO
-%cameraWrapper {
+%userSettingsVideoCameraWrapper {
   background-color: rgba(0, 0, 0, 0.7);
   border-color: hsla(0, 0%, 100%, 0.07);
 }
-%userSettingsVoice %mediaEngineVideo {
-  background-color: rgba(0, 0, 0, 0.4);
-}
-%videoBgOption {
+%userSettingsVideoBgOption {
   background-color: rgba(0, 0, 0, 0.7);
 }
-%videoBgOptionRing {
+%userSettingsVideoBgOptionRing {
   border: 2px solid $main-color;
 }
-%videoBgOptionInner {
+%userSettingsVideoBgOptionInner {
   background-color: transparent;
 }
 
@@ -252,11 +264,11 @@
     border-color: transparent;
     &:not(.disabled__8d382):hover {
       border-color: transparent;
-      box-shadow: 0 0 2px 2px var(--main-color);
+      box-shadow: 0 0 2px 2px $main-color;
     }
     &.recording__97366 {
       color: #fff;
-      box-shadow: 0 0 2px 2px var(--main-color);
+      box-shadow: 0 0 2px 2px $main-color;
       animation: cv-shadow-pulse 1s ease-in infinite;
     }
   }

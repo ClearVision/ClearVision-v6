@@ -1,0 +1,188 @@
+/* COMMUNITY SERVER ONBOARDING */
+
+// POPOUT
+%onboardingEduPopout {
+	background-color: rgba(0, 0, 0,  0.8);
+}
+%onboardingEduPopoutArrow {
+	border-bottom-color: rgba(0, 0, 0,  0.8);
+}
+
+// PROGRESS
+%onboardingProgressBarContainer {
+  %onboardingProgressBar {
+    background-color: hsla(0, 0%, 100%, 0.3);
+    + %textExtraSmallMedium {
+      color: hsla(0, 0%, 100%, 0.3) !important;
+    }
+  }
+  %onboardingProgressBarCurrent {
+    background-color: $main-color;
+    + %textExtraSmallMedium {
+      color: $main-color !important;
+    }
+  }
+  &:hover {
+    %onboardingProgressBar {
+      background-color: $hover-color;
+    }
+  }
+}
+
+// LINKS
+%anchor {
+  %textSmallMedium {
+    color: var(--url-color) !important;
+  }
+}
+
+// FOOTER
+%onboardingFooterContainer {
+	background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.4)) !important;
+	box-shadow: none;
+}
+
+// DEFAULT CHANNELS
+%onboardingChannelRow {
+	background-color: rgba(0, 0, 0,  0.4);
+  &:hover:not(%onboardingChannelRowDisabled) {
+    background-color: hsla(0, 0%, 100%, 0.05);
+  }
+}
+%onboardingChannelRowSeparator {
+	margin: -1px 0 0;
+	background-color: hsla(0, 0%, 100%, 0.05);
+}
+%onboardingChannelListHeader,
+%onboardingChannelList {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+%onboardingChannelListHeaderContainer {
+	background-color: transparent;
+}
+%onboardingChannelListHeader {
+  %textExtraSmallBold {
+    color: $main-color !important ;
+  }
+}
+%onboardingChannelListProgressBar {
+  background-color: $main-color !important;
+}
+%onboardingChannelListProgressIcon {
+  path {
+    &[fill="var(--background-accent)"] {
+      fill: var(--danger-color)
+    }
+    &[fill="var(--brand-500)"] {
+      fill: var(--success-color)
+    }
+  }
+}
+%onboardingChannelChattableIndicator {
+  background-color: $main-color;
+}
+
+// CUSTOMISATION QUESTIONS
+%onboardingChannelCoverage {
+  background-color: rgba(0, 0, 0, 0.4);
+}  
+%onboardingChannelCoverageProgress {
+  background-color: $main-color !important;
+}
+%onboardingChannelCoverageDetails {
+  background-color: transparent;
+}
+%onboardingChannelCoveragePill {
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 2px solid $main-color;
+}
+%onboardingAddQuestion {
+  border-color: hsla(0, 0%, 100%, 0.3);
+  %onboardingAddQuestionIcon {
+    color: $main-color;
+  }
+  %textMediumMedium {
+    color: $main-color !important;
+  }
+  &:hover {
+    border-color: $hover-color;
+    %onboardingAddQuestionIcon {
+      color: $hover-color;
+    }
+    %textMediumMedium {
+      color: $hover-color !important;
+    }
+  }
+}
+%onboardingQuestionContainer {
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 2px solid $main-color;
+}
+%onboardingQuestionExample {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  border: 2px solid $main-color;
+}
+%onboardingQuestionDropdown {
+	background-color: var(--popout-color);
+	border: 1px solid hsla(0, 0%, 100%, 0.07);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+%onboardingQuestionDropdownChannelLabel {
+	background-color: $main-color;
+  %onboardingQuestionDropdownChannelIcon,
+  %textExtraSmallMedium {
+    color: #fff;
+  }
+}
+
+// SERVER GUIDE
+%onboardingActionExampleBadIcon {
+  background-color: $main-color;
+  color: #fff;
+}
+%onboardingActionItem,
+%onboardingResourceChannel {
+  background-color: hsla(0, 0%, 0%, 0.4);
+}
+%onboardingActionItemIcon {
+  background-color: $main-color;
+  color: #fff;
+}
+%onboardingActionAdd {
+  border-color: hsla(0, 0%, 100%, 0.3);
+  color: $main-color;
+  %textMediumNormal {
+    color: $main-color;
+  }
+  &:hover {
+    background-color: transparent;
+    border-color: $hover-color;
+    color: $hover-color;
+    %textMediumNormal {
+      color: $hover-color;
+    }
+  }
+}
+%onboardingActionPreviewPill {
+	background-color: rgba(0, 0, 0, 0.4);
+  %textSmallMedium {
+    color: #fff;
+  }
+}
+%onboardingActionPreviewPillSelected {
+	background-color: $main-color;
+}
+
+// REVIEW
+%onboardingReviewHeader,
+%onboardingReviewStepContainer {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+%onboardingReviewIconContainer {
+  background-color: $main-color;
+}
+%onboardingReviewIcon {
+  color: #fff;
+}

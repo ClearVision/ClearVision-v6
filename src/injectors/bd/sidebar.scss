@@ -11,14 +11,14 @@
       content: '';
       height: 2px;
       flex-grow: 1;
-      background: linear-gradient(to left, var(--main-color) 50%, transparent);
+      background: linear-gradient(to left, $main-color 50%, transparent);
       margin-right: 5px;
     }
     &:after {
       content: '';
       height: 2px;
       flex-grow: 1;
-      background: linear-gradient(to right, var(--main-color) 50%, transparent);
+      background: linear-gradient(to right, $main-color 50%, transparent);
       margin-left: 5px;
     }
   }

@@ -2,6 +2,9 @@
 %userModalOuter {
   &%userProfileOuterUnthemed {
     background: transparent;
+    %userModalOverlayBackground {
+      background-color: hsla(0, 0%, 0%, 0.4);
+    }
     %userModalInner {
       background: rgba(0, 0, 0, 0.7);
       &::before {
@@ -17,9 +20,7 @@
     }
   }
 }
-%userModalOverlayBackground {
-  background-color: hsla(0, 0%, 0%, 0.4);
-}
+
 %userModalProfileBanner {
   -webkit-mask: linear-gradient(to bottom, #000 50%, transparent);
   mask: linear-gradient(to bottom, #000 50%, transparent);
@@ -33,7 +34,7 @@
   padding: 0 20px;
   border-color: hsla(0, 0%, 100%, 0.04);
 }
-%userModalTabBar {
+%userModalOuter%userProfileOuterUnthemed %userModalTabBar {
   %tabBarItem {
     position: relative;
     margin: 10px 0 0;
@@ -94,7 +95,7 @@
 }
 
 // BODY
-%userModalBody {
+%userModalOuter%userProfileOuterUnthemed {
   %userModalInfoSection {
     + %userModalInfoSection {
       border-color: hsla(0, 0%, 100%, 0.04);
@@ -144,7 +145,7 @@
 }
 
 // LIST
-%userModalListScroller {
+%userModalOuter%userProfileOuterUnthemed %userModalListScroller {
   %userModalListRow {
     position: relative;
     color: hsla(0, 0%, 100%, 0.5);

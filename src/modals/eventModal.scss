@@ -3,7 +3,7 @@
   background-color: transparent;
 }
 %eventIconCircle {
-  background-color: var(--main-color);
+  background-color: $main-color;
 }
 %eventCard {
   background-color: hsla(0, 0%, 0%, 0.4);
@@ -22,9 +22,6 @@
   .colorHeaderSecondary-g5teka {
     color: #fff;
   }
-}
-.card-8UsK4b:hover {
-  background-color: var(--hover-color);
 }
 
 // EVENT INFO
@@ -52,18 +49,12 @@
   &%createEventProgressBarSelected {
     background-color: $main-color;
   }
-  + .colorMuted-20987_ {
+  + .colorMuted_ae2200 {
     color: hsla(0, 0%, 100%, 0.3);
   }
-  + .colorBrand-21Le_q {
-    color: var(--main-color);
+  + .colorBrand_be5f58 {
+    color: $main-color;
   }
-}
-%createEventLocationContainer,
-%createEventInfoForm {
-  margin-left: 2px;
-  margin-right: 2px;
-  margin-bottom: 2px;
 }
 %createEventCreateStageContainer {
   background-color: transparent;

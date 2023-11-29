@@ -15,7 +15,7 @@
   }
   &[aria-checked='true'] {
     %radioBar {
-      background-color: var(--radio-bar-accent-color, var(--main-color));
+      background-color: var(--radio-bar-accent-color, $main-color);
     }
   }
   %radioIconChecked {

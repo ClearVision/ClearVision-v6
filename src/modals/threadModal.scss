@@ -1,7 +1,7 @@
 /* THREAD MODAL */
 %threadModal {
-  background-color: hsla(0, 0%, 0%, 0.6) !important;
-  &%threadsPopoutContainer {
+  background-color: hsla(0, 0%, 0%, 0.5) !important;
+  %threadsPopoutContainer {
     background-color: transparent;
   }
 }
@@ -9,18 +9,18 @@
 %themeDark %threadModalList %threadModalTabBar %threadModalTab {
   color: #fff;
   &%threadModalTabActive {
-    background-color: var(--main-color);
+    background-color: $main-color;
   }
   &:hover:not(%threadModalTabActive) {
-    background-color: hsla(0, 0%, 100%, 0.06);
+    background-color: hsla(0, 0%, 100%, 0.07);
     color: #fff;
   }
 }
 
 %threadPreview {
   background-color: hsla(0, 0%, 0%, 0.3);
-  border: 2px solid var(--main-color);
+  border: 2px solid $main-color;
   &:hover {
-    border: 2px solid var(--hover-color);
+    border: 2px solid $hover-color;
   }
 }

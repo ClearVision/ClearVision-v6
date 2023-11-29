@@ -1,7 +1,24 @@
 /* LOGIN PAGE */
 %themeDark %loginAuthBox {
-  background-color: hsla(0, 0%, 0%, .5);
+  background-color: hsla(0, 0%, 0%, .8);
+  a {
+    color: var(--url-color);
+  }
 }
 %loginAccountsList {
-    background-color: hsla(0, 0%, 100%, .15);
+  background-color: hsla(0, 0%, 100%, .07);
+}
+%loginStartOverButton {
+  color: var(--url-color);
+}
+%loginVerificationContainer {
+  background-color: transparent;
+}
+%createAccountDate {
+  background-color: hsla(0, 0%, 100%, .07);
+}
+%createAccountDateDropdown {
+  background-color: hsla(0,0%,0%,.8);
+  border: none;
+  box-shadow: 0 0 10px rgb(0 0 0 / 50%);
 }

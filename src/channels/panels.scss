@@ -31,7 +31,7 @@
 }
 
 // BUTTONS
-%panelButton {
+button%panelButton {
   width: 32px;
   height: 32px;
   opacity: 1;
@@ -63,7 +63,7 @@
     padding: 0;
     &%panelActionButtonActive {
       background-color: #fff;
-      color: var(--main-color);
+      color: $main-color;
       &:hover {
         background: hsla(0, 0%, 100%, 0.95);
         color: $hover-color;

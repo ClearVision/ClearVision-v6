@@ -24,7 +24,7 @@
   right: 0;
   left: 0;
   bottom: 0;
-  background-color: var(--main-color);
+  background-color: $main-color;
   opacity: 0.6;
   pointer-events: none;
   z-index: -1;
@@ -63,27 +63,27 @@
 }
 .interactiveCard_d5a839,
 .interactiveCard_d5a839.selected__715e8 {
-  border: 1px solid var(--main-color);
+  border: 1px solid $main-color;
 }
 .interactiveCard_d5a839:active,
 .interactiveCard_d5a839:hover {
-  border: 1px solid var(--hover-color);
+  border: 1px solid $hover-color;
 }
 .card_d4f6c7 {
   background: rgba(0, 0, 0, 0.4);
 }
-.iconContainer__6fc72 {
-  background: var(--main-color);
+%previewServerIconContainer {
+  background: $main-color;
   color: #fff;
 }
 .container__16581:hover {
-  background: var(--hover-color);
+  background: $hover-color;
 }
 .conversationRoot__11fa6:after,
 .replySpine_ed1feb {
-  border-left: 2px solid var(--main-color);
+  border-left: 2px solid $main-color;
 }
 .conversationMessage__0d40e:after {
-  border-left: 2px solid var(--main-color);
-  border-bottom: 2px solid var(--main-color);
+  border-left: 2px solid $main-color;
+  border-bottom: 2px solid $main-color;
 }

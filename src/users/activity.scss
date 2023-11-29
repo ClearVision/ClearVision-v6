@@ -9,13 +9,6 @@
       &%activityBodyLink:hover {
         text-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 0 1px;
       }
-      &%activityNameTextHover {
-        transition: all 0.1s ease-in-out;
-        &:hover {
-          text-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 0 1px;
-          text-decoration: none;
-        }
-      }
     }
   }
   %activityTimestamp {

@@ -135,6 +135,10 @@
     }
   }
 }
+// Activities popout 
+%privateChannelActivityContainer {
+  background: var(--background-overlay);
+}
 
 // EMPTY PRIVATE CHANNEL
 %privateChannelsEmpty {

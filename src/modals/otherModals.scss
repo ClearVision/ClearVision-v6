@@ -70,32 +70,23 @@
 .spinner-1HUPsi {
   background-color: transparent;
 }
-.paymentNote-3dcb-Z,
-.wrapper-wOVKdL,
+.paymentNote_c68ae0,
+.wrapper_dae547,
 .body__59737 {
   background-color: transparent;
 }
-.table-17_dGF {
+.table_e130b5 {
   background-color: hsla(0, 0%, 0%, 0.4);
 }
-.planOptionDiscount-2nex9n {
+.planOptionDiscount__956f7 {
   background-color: $main-color;
 }
-.contents-1X8z-d {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.body-1d1686 {
-  padding: 16px 2px;
-}
-.cardInput-33x7OF {
+.cardInput__72fe9 {
   background-color: hsla(0, 0%, 100%, 0.07);
   box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.09);
 }
-.cardInputFocused-31lFD1 {
-  box-shadow: 0 0 2px 2px var(--main-color);
-}
-.paymentModalContent {
-  background-color: transparent;
+.cardInputFocused__74be1 {
+  box-shadow: 0 0 2px 2px $main-color;
 }
 
 // SERVER BOOST PAYMENT MODAL
@@ -110,7 +101,7 @@
   }
 }
 %themeDark .iconWrapper__9caa9 {
-  background: hsla(0, 0%, 0%, 0.8);
+  background: hsla(0, 0%, 0%, 0.4);
 }
 .actions_cba988 .input-2g-os5 {
   box-shadow: none;
@@ -133,20 +124,9 @@
   background-color: var(--offline-color);
 }
 
-// INVITE MODAL
-%inviteModalRow:hover {
-  background-color: rgba(255, 255, 255, 0.07);
-}
-%themeDark %inviteModalUpsell {
-  background-color: transparent;
-}
-%inviteModalTemporary {
-  background: rgba(0, 0, 0, 0.07);
-}
-
 // TIMEOUT
 %themeDark .item-2OyinQ:hover {
-  background-color: var(--hover-color);
+  background-color: $hover-color;
 }
 .selectorButtonSelected-1VZ6hz {
   background-color: $main-color;
@@ -187,10 +167,11 @@
 }
 %activityItem {
   background: rgba(0, 0, 0, 0.4);
+  border: 2px solid $main-color;
   &:hover {
-    background: $hover-color;
+    background: rgba(0, 0, 0, 0.4);
     box-sizing: border-box;
-    border: 2px solid $main-color;
+    border: 2px solid $hover-color;
   }
 }
 %activitiesScroller {
@@ -211,10 +192,15 @@
 
 // SOUNDBOARD MODAL
 %soundboard {
-  background: rgba(0, 0, 0, calc(var(--background-shading) * 0.7));
+  background-color: var(--popout-color);
   %soundboardSound,
   %soundboardGuildSelected {
-    background: $main-color;
+    background-color: $main-color;
+  }
+  %soundboardSound {
+    &:hover {
+      background-color: $hover-color;
+    }
   }
   %soundboardHint {
     background: rgba(0, 0, 0, calc(var(--background-shading) * 0.3));

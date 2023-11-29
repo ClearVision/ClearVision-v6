@@ -9,7 +9,7 @@
 %hubCategoryItem {
   &%hubCategoryItemSelected {
     %hubCategoryItemLayout {
-      background-color: var(--main-color);
+      background-color: $main-color;
     }
   }
 }
@@ -48,7 +48,7 @@
     box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.09);
     &:focus-within {
       border: none;
-      box-shadow: 0 0 2px 2px var(--main-color);
+      box-shadow: 0 0 2px 2px $main-color;
     }
     %input {
       border: none;
@@ -61,12 +61,12 @@
       }
     }
     %searchBoxIconSearch {
-      color: var(--main-color);
+      color: $main-color;
     }
     %searchBoxCloseIcon {
-      color: var(--main-color);
+      color: $main-color;
       &:hover {
-        color: var(--hover-color);
+        color: $hover-color;
       }
     }
   }
@@ -78,7 +78,7 @@
     box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.09);
     &:focus-within {
       border: none;
-      box-shadow: 0 0 2px 2px var(--main-color);
+      box-shadow: 0 0 2px 2px $main-color;
     }
     %input {
       border: none;
@@ -91,9 +91,9 @@
       }
     }
     %searchBoxCloseIcon {
-      color: var(--main-color);
+      color: $main-color;
       &:hover {
-        color: var(--hover-color);
+        color: $hover-color;
       }
     }
   }

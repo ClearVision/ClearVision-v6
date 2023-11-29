@@ -1,0 +1,11 @@
+.vc-addon-card {
+	background: var(--background-overlay);
+	border: 2px solid $main-color;
+	&:hover {
+		background: var(--background-overlay);
+		border: 2px solid $hover-color
+	}
+}
+.vc-plugins-info-button svg:not(:hover,:focus) {
+	color: #fff;
+}

@@ -9,7 +9,7 @@
   .footer {
     button {
       &:hover {
-        background-color: var(--hover-color);
+        background-color: $hover-color;
       }
     }
   }
