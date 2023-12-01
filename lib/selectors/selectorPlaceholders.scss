@@ -4155,6 +4155,9 @@ pre {
 .countContainer__51412 {
   @extend %forumTagBoxCount !optional;
 }
+.countContainer__1b48f {
+  @extend %forumTagSelectedCount !optional;
+}
 .clear__72191 {
   @extend %forumTagClear !optional;
 }
