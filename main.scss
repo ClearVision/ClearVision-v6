@@ -151,11 +151,11 @@ $version: '6.3.0';
 @import 'src/users/status';
 
 // VENCORD
-@import 'src/injectors/ven/shiki.scss';
+@import 'src/injectors/ven/plugins.scss';
 @import 'src/injectors/ven/venSettings.scss';
 
 // REPLUGGED
-@import 'src/injectors/rp/gameActivityToggle.scss';
+@import 'src/injectors/rp/plugins.scss';
 @import 'src/injectors/rp/rpSettings.scss';
 
 // BETTERDISCORD
