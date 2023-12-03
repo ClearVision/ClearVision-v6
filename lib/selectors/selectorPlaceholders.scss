@@ -2969,10 +2969,10 @@ pre {
 .previewContainer_c7e80d {
   @extend %guildSettingsRoleIconPreview !optional;
 }
-.upsellContainer-1Ml-W5 {
+.upsellContainer-1Ml-W5 { // OUTDATED CLASS
   @extend %guildSettingsRoleUpsell !optional;
 }
-.upsellFooter-2aN0L_ {
+.upsellFooter-2aN0L_ { // OUTDATED CLASS
   @extend %guildSettingsRoleUpsellFooter !optional;
 }
 .emojiRow__4661c {
@@ -3305,7 +3305,7 @@ pre {
 .avatar__08316 {
   @extend %avatarLarge !optional;
 }
-.avatarOffline-3GF27z {
+.avatarOffline-3GF27z { // OUTDATED CLASS
   @extend %avatarOffline !optional;
 }
 .botTag__4211a {
@@ -3530,10 +3530,10 @@ pre {
 .languageSelector_a1c2f3 {
   @extend %languageSelector !optional;
 }
-.item-1BCeuB {
+.item-1BCeuB { // OUTDATED CLASS
   @extend %languageSelectorItem !optional;
 }
-.selected-22ukbQ {
+.selected-22ukbQ { // OUTDATED CLASS
   @extend %languageSelectorSelected !optional;
 }
 .modalTextContainer_ddfc28 {
@@ -3557,7 +3557,7 @@ pre {
 .gradientContainer__9a5a6 {
   @extend %stageGradientContainer !optional;
 }
-.container-2t1JyW {
+.container-2t1JyW { // OUTDATED CLASS
   @extend %stageHeaderContainer !optional;
 }
 .rowContainer__3f2d1 {
@@ -3572,7 +3572,7 @@ pre {
 .tileContainer__88d69 {
   @extend %stageParticipant !optional;
 }
-.container-36u7Lw {
+.container-36u7Lw { // OUTDATED CLASS
   @extend %stageModIconContainer !optional;
 }
 .container__7b94f {
@@ -3587,10 +3587,10 @@ pre {
 .iconBackground__61963 {
   @extend %stageIconBackground !optional;
 }
-.textInput-2xgsSa {
+.textInput-2xgsSa { // OUTDATED CLASS
   @extend %stagePopoutTextInput !optional;
 }
-.audienceVoiceUserIconContainer-1aQGLF {
+.audienceVoiceUserIconContainer-1aQGLF { // OUTDATED CLASS
   @extend %stageUserIconContainer !optional;
 }
 .container__515b3 {
@@ -3599,10 +3599,10 @@ pre {
 .separator_c99b23 {
   @extend %stageSeparator !optional;
 }
-.categoryPill-1zjNrr {
+.categoryPill-1zjNrr { // OUTDATED CLASS
   @extend %categoryPill !optional;
 }
-.selected-bLcqYK {
+.selected-bLcqYK { // OUTDATED CLASS
   @extend %categoryPillSelected !optional;
 }
 .pageControlContainer_b111b0 {
@@ -3662,13 +3662,13 @@ pre {
 .focused__47631 {
   @extend %quickReactButtonFocused !optional;
 }
-.subscribeTooltipWrapper-3ipXtC {
+.subscribeTooltipWrapper-3ipXtC { // OUTDATED CLASS
   @extend %subscribeTooltipWrapper !optional;
 }
-.subscribeTooltipHeader-15pGbG {
+.subscribeTooltipHeader-15pGbG { // OUTDATED CLASS
   @extend %subscribeTooltipHeader !optional;
 }
-.subscribeTooltipText-2A8MMi-1JoUuw {
+.subscribeTooltipText-2A8MMi-1JoUuw { // OUTDATED CLASS
   @extend %subscribeTooltipText !optional;
 }
 .upsellTooltipWrapper_df8272 {
@@ -3833,13 +3833,13 @@ pre {
 .option_f70eea {
   @extend %serverDeleteReasonOption !optional;
 }
-.checkbox-1ycfTw {
+.checkbox-1ycfTw { // OUTDATED CLASS
   @extend %deleteServerCheckbox !optional;
 }
-.checkboxInner-1aRh1d {
+.checkboxInner-1aRh1d { // OUTDATED CLASS
   @extend %deleteServerCheckboxInner !optional;
 }
-.checkboxElement-uwAa9F {
+.checkboxElement-uwAa9F { // OUTDATED CLASS
   @extend %deleteServerCheckboxElement !optional;
 }
 .streamPreview__1846c {
@@ -3908,7 +3908,7 @@ pre {
 .stickerCategoryGenericSelected__44ec4 {
   @extend %stickerCategoryGenericSelected !optional;
 }
-.upsellContent-1ppSei {
+.upsellContent-1ppSei { // OUTDATED CLASS
   @extend %stickerUpsellContent !optional;
 }
 .row__959bb {
@@ -3938,10 +3938,10 @@ pre {
 .container_c11257 {
   @extend %loginVerificationContainer !optional;
 }
-.css-19vtg9u-control {
+.css-19vtg9u-control { // OUTDATED CLASS
   @extend %createAccountDate !optional;
 }
-.css-13qdo4d-menu {
+.css-13qdo4d-menu { // OUTDATED CLASS
   @extend %createAccountDateDropdown !optional;
 }
 .navRow_bb8efc {
@@ -4197,28 +4197,28 @@ pre {
 .newPostsButton__760c6 {
   @extend %forumNewPosts !optional;
 }
-.heading-lg-bold__02f24 {
+.heading-lg-bold__02f24 { // OUTDATED CLASS
   @extend %headingLargeBold !optional;
 }
-.heading-lg-semibold__85c17 {
+.heading-lg-semibold__85c17 { // OUTDATED CLASS
   @extend %headingLargeSemibold !optional;
 }
-.text-xs-normal__56c35 {
+.text-xs-normal__56c35 { // OUTDATED CLASS
   @extend %textExtraSmallNormal !optional;
 }
-.text-xs-medium__30cbe {
+.text-xs-medium__30cbe { // OUTDATED CLASS
   @extend %textExtraSmallMedium !optional;
 }
-.text-xs-bold_c1eb0a {
+.text-xs-bold_c1eb0a { // OUTDATED CLASS
   @extend %textExtraSmallBold !optional;
 }
-.text-sm-medium__1ba28 {
+.text-sm-medium__1ba28 { // OUTDATED CLASS
   @extend %textSmallMedium !optional;
 }
-.text-md-medium__5151a {
+.text-md-medium__5151a { // OUTDATED CLASS
   @extend %textMediumMedium !optional;
 }
-.text-md-normal__4afad {
+.text-md-normal__4afad { // OUTDATED CLASS
   @extend %textMediumNormal !optional;
 }
 .directoryContainer_d3edd9 {
@@ -4338,16 +4338,16 @@ pre {
 .prompt__1b100 {
   @extend %customizeChannelsPrompt !optional;
 }
-.css-fcsbhh-control {
+.css-fcsbhh-control { // OUTDATED CLASS
   @extend %customizeChannelsSearch !optional;
 }
-.css-1t5q03r-control {
+.css-1t5q03r-control { // OUTDATED CLASS
   @extend %customizeChannelsSearchDropdown !optional;
 }
-.css-153nlb6-option {
+.css-153nlb6-option { // OUTDATED CLASS
   @extend %customizeChannelsSearchOption !optional;
 }
-.css-6sv4e8-menu {
+.css-6sv4e8-menu { // OUTDATED CLASS
   @extend %customizeChannelsSearchMenu !optional;
 }
 .selectValuePill__95251 {
@@ -4371,7 +4371,7 @@ pre {
 .selectAll_a87487 {
   @extend %browseChannelsSelectAll !optional;
 }
-.checked-1pZh2h {
+.checked-1pZh2h { // OUTDATED CLASS
   @extend %browseChannelsChecked !optional;
 }
 .channelRow__96673 {
