@@ -1,22 +1,4 @@
 /* STATUS */
-:is(%avatarMask,%userProfileStatus) rect {
-  &[mask*='online'] {
-    fill: var(--online-color);
-  }
-  &[mask*='idle'] {
-    fill: var(--idle-color);
-  }
-  &[mask*='dnd'] {
-    fill: var(--dnd-color);
-  }
-  &[mask*='streaming'] {
-    fill: var(--streaming-color);
-  }
-  &[mask*='offline'] {
-    fill: var(--offline-color);
-  }
-}
-
 /*status picker*/
 %statusPickerIcon {
   &[style*="rgb(128, 132, 142)"] {
@@ -37,7 +19,7 @@
 }
 
 /*member list, profile*/
-:is(%avatarCursorDefault,%avatarMask) rect {
+:is(%avatarCursorDefault,%avatarMask,%userProfileStatus) rect {
   &[fill*="#80848e"] {
     fill: var(--offline-color);
   }
@@ -54,3 +36,5 @@
     fill: var(--streaming-color);
   }
 }
+/*note: we have to use fill by color anyway for some dumb cases, so 
+the mask part is useless lol*/
