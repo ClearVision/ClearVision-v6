@@ -206,3 +206,7 @@
     background: rgba(0, 0, 0, calc(var(--background-shading) * 0.3));
   }
 }
+// CREATE SERVER MODAL
+%textSmallNormal {
+  color: var(--text-normal) !important;
+}
