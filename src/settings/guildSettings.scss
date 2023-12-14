@@ -122,20 +122,30 @@
 
 // EMOJI
 %themeDark {
-  .card_dc88cd:before,
-  .emojiRemove_b299a6 {
+  %guildSettingsEmojiCard:before,
+  %guildSettingsEmojiRemove {
     background-color: hsla(0, 0%, 0%, 0.4);
   }
 }
-.emojiRow__4661c .emojiAliasInput_dd55f7 .emojiInput__4fe54 {
-  color: var(--text-normal);
-  background-color: rgba(255, 255, 255, 0.07);
-  border: none;
-  box-shadow: 0 0 0 2px rgb(255 255 255 / 9%);
-}
-.emojiAliasPlaceholder__71733 {
-  padding-top: 7px;
-  padding-left: 7px;
+%guildSettingsEmojiRow {
+  &:hover {
+    %guildSettingsEmojiAliasPlaceholder {
+      visibility: hidden;
+    }
+  }
+  %guildSettingsEmojiAliasInput {
+    %guildSettingsEmojiInput {
+      color: var(--text-normal);
+      background-color: hsla(0, 0%, 100%, .07);
+      border: none;
+      box-shadow: 0 0 0 2px hsla(0, 0%, 100%, .09);
+    }
+    &:has(%guildSettingsEmojiInput:focus-within) {
+      + %guildSettingsEmojiAliasPlaceholder {
+        visibility: hidden;
+      }
+    }
+  }
 }
 
 //Accessibility
@@ -144,13 +154,13 @@
 }
 
 // STICKERS
-%stickersUploadCard {
+%guildSettingsStickersUploadCard {
   background-color: rgba(0, 0, 0, 0.4);
   &:hover {
     background-color: $hover-color;
   }
 }
-%stickersTierLock {
+%guildSettingsStickersTierLock {
   color: #fff;
   opacity: 0.3;
 }
@@ -167,9 +177,16 @@
 }
 
 // SAFETY SETUP
-.changelog__6d46d,
-.safetyChecklist__826c8 {
+%guildSettingsSafetyChangeLog,
+%guildSettingsSafetyChecklist {
   background-color: hsla(0, 0%, 0%, 0.4);
+}
+%guildSettingsSafetyPill {
+	background-color: transparent;
+	border: 2px solid $main-color;
+}
+%guildSettingsSafetyItemWrapper {
+  background-color: transparent;
 }
 
 // AUTOMOD
@@ -179,19 +196,22 @@
 }
 %automodEditCard {
   background-color: hsla(0, 0%, 0%, 0.4);
-  &%automodEditCardActive,
-  &%automodEditCardActive%automodEditCardToggled {
+  &%automodEditCardActive {
     background-color: hsla(0, 0%, 0%, 0.4);
+    &%automodEditCardToggled {
+      background-color: hsla(0, 0%, 0%, 0.4);
+    }
   }
 }
 %automodRuleIconContainer {
-  background-color: hsla(0, 0%, 100%, 0.1);
+  background-color: $main-color;
 }
 %automodRuleIcon {
   color: #fff;
 }
 %automodActionTag {
-  background-color: hsla(0, 0%, 100%, 0.1);
+  background-color: transparent;
+  border: 2px solid $main-color;
 }
 %automodActionIcon,
 %automodActionText {
@@ -213,9 +233,25 @@
 }
 %automodCollapseableCard {
   background-color: hsla(0, 0%, 0%, 0.4);
-  &:active,
+  &:active {
+    background-color: hsla(0, 0%, 0%, 0.6);
+  }
   &%automodCollapseableCardToggled:active {
     background-color: hsla(0, 0%, 0%, 0.6);
+  }
+}
+%automodCollapseableHeaderContainer,
+%automodCollapseableHeaderClickable,
+%automodCollapseablePointer {
+  background-color: transparent;
+}
+%automodCollapsedContainer {
+  background-color: transparent;
+  border: none;
+}
+%automodCollapseableRadioBackground {
+  &%automodCollapseableRadioSelected {
+    background-color: hsla(0, 0%, 100%, 0.07);
   }
 }
 %automodKeywordsTextArea,
@@ -247,21 +283,17 @@
 
 // AUDIT LOG
 %themeDark {
-  .auditLog__6c805 {
+  %guildSettingsAuditLog {
     border-color: hsla(0, 0%, 100%, 0.07);
   }
-  .headerClickable_c4d7a9,
-  .headerDefault__3e003 {
+  %guildSettingsAuditHeader {
     background-color: hsla(0, 0%, 0%, 0.4);
   }
-  .headerExpanded__03c29,
-  .divider__1505d,
-  .changeDetails_ecd760 {
-    background-color: hsla(0, 0%, 0%, 0.7);
+  %guildSettingsAuditHeaderExpanded,
+  %guildSettingsAuditDivider,
+  %guildSettingsAuditChangeDetails {
+    background-color: hsla(0, 0%, 0%, 0.6);
   }
-}
-.selectedBrand-1AtwYE {
-  background-color: $main-color;
 }
 
 // BANS

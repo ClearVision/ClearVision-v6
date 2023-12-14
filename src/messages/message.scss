@@ -38,10 +38,17 @@
     }
   }
 }
+
 // GIFS/EMBEDS
 %messageInlineMediaEmbed {
   max-width: max-content;
 }
+
+// SPOILER
+%messageSpoiler {
+  background-color: hsla(0, 0%, 0%, 0.8);
+}
+
 // LINKS
 %markup a,
 %anchor {

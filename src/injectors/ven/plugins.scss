@@ -1,0 +1,26 @@
+/*Shiki code blocks*/
+.shiki-container { 
+    background: rgba(0,0,0,0.2) !important;
+}
+.shiki-btn{
+    background-color: $main-color !important;
+    border-radius: 4px !important;
+    right: 4px !important;
+    bottom: 4px !important;
+}
+.shiki-btn:hover{
+    background-color: $hover-color !important;
+    transition: ease-in-out .2s;
+}
+/*Spotify controls*/
+.theme-dark #vc-spotify-player {
+    background: transparent;
+}
+#vc-spotify-player {
+    border-top: 1px solid var(--background-modifier-accent);
+}
+#vc-spotify-progress-bar > [class^="slider"] [class^="grabber"] {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+    color: var(--main-color);
+}

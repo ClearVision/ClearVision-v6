@@ -147,6 +147,9 @@
     }
   }
 }
+%forumTagSelectedCount {
+  background: $main-color;
+}
 %forumSortDropdownButton {
   background-color: $main-color;
   %forumSortDropdownButtonInner,

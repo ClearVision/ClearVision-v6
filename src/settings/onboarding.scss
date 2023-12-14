@@ -29,6 +29,13 @@
   }
 }
 
+// LINKS
+%anchor {
+  %textSmallMedium {
+    color: var(--url-color) !important;
+  }
+}
+
 // FOOTER
 %onboardingFooterContainer {
 	background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.4)) !important;
@@ -61,6 +68,16 @@
 %onboardingChannelListProgressBar {
   background-color: $main-color !important;
 }
+%onboardingChannelListProgressIcon {
+  path {
+    &[fill="var(--background-accent)"] {
+      fill: var(--danger-color)
+    }
+    &[fill="var(--brand-500)"] {
+      fill: var(--success-color)
+    }
+  }
+}
 %onboardingChannelChattableIndicator {
   background-color: $main-color;
 }
@@ -86,7 +103,16 @@
     color: $main-color;
   }
   %textMediumMedium {
-    color: $main-color;
+    color: $main-color !important;
+  }
+  &:hover {
+    border-color: $hover-color;
+    %onboardingAddQuestionIcon {
+      color: $hover-color;
+    }
+    %textMediumMedium {
+      color: $hover-color !important;
+    }
   }
 }
 %onboardingQuestionContainer {
@@ -97,6 +123,18 @@
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 20px;
   border: 2px solid $main-color;
+}
+%onboardingQuestionDropdown {
+	background-color: var(--popout-color);
+	border: 1px solid hsla(0, 0%, 100%, 0.07);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+%onboardingQuestionDropdownChannelLabel {
+	background-color: $main-color;
+  %onboardingQuestionDropdownChannelIcon,
+  %textExtraSmallMedium {
+    color: #fff;
+  }
 }
 
 // SERVER GUIDE
@@ -120,6 +158,11 @@
   }
   &:hover {
     background-color: transparent;
+    border-color: $hover-color;
+    color: $hover-color;
+    %textMediumNormal {
+      color: $hover-color;
+    }
   }
 }
 %onboardingActionPreviewPill {

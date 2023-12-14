@@ -6,6 +6,10 @@
   background-color: $main-color;
 }
 %eventCard {
+  &:hover {
+    background-color: hsla(0, 0%, 0%, 0.4);
+    border: 2px solid $hover-color;
+  }
   background-color: hsla(0, 0%, 0%, 0.4);
   border: 2px solid $main-color;
 }

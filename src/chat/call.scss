@@ -15,6 +15,9 @@
 }
 %callInviteButton {
   background-color: $main-color;
+  &:hover {
+    background-color: $hover-color;
+  }
 }
 %callUserTile {
   background-color: transparent;

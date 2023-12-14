@@ -61,7 +61,7 @@
     %settingsSide {
       %tabBarItem {
         position: relative;
-        padding: 8px 8px 8px 20px;
+        padding: 8px 20px;
         color: hsla(0, 0%, 100%, 0.4);
         margin: 0;
         background: transparent;
@@ -114,25 +114,13 @@
           }
         }
 
-        // DANGER
-        &[aria-controls='logout-tab'],
-        &[aria-controls='delete-tab'] {
-          color: cv('colors.danger');
-          &:hover {
-            background-color: cv('colors.danger');
-            color: #fff;
-          }
-          &:before {
-            background-color: cv('colors.danger');
-            opacity: 1;
-          }
-          &:hover {
-            &:before {
-              background-color: #fff;
-              opacity: 1;
-            }
-          }
+        // ONBOARDING STEP COUNTER
+        %textMediumNormal {
+          color: #fff !important;
         }
+      }
+      %settingsServerBoostTabItem[aria-selected=true] {
+        background-color: $main-color !important;
       }
     }
   }
