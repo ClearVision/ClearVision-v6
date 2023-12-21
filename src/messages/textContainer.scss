@@ -27,17 +27,6 @@
     color: hsla(0, 0%, 100%, 0.7);
   }
 }
-%languageSelector {
-  background-color: hsla(0, 0%, 0%, 0.8);
-  %languageSelectorItem {
-    &:hover {
-      background-color: hsla(0, 0%, 100%, 0.05);
-    }
-    &%languageSelectorSelected {
-      background-color: $main-color;
-    }
-  }
-}
 %textContainerModal {
   background-color: hsla(0, 0%, 0%, 0.5);
   border: none;

@@ -2969,12 +2969,6 @@ pre {
 .previewContainer_c7e80d {
   @extend %guildSettingsRoleIconPreview !optional;
 }
-.upsellContainer-1Ml-W5 { // OUTDATED CLASS
-  @extend %guildSettingsRoleUpsell !optional;
-}
-.upsellFooter-2aN0L_ { // OUTDATED CLASS
-  @extend %guildSettingsRoleUpsellFooter !optional;
-}
 .emojiRow__4661c {
   @extend %guildSettingsEmojiCard !optional;
 }
@@ -3308,9 +3302,6 @@ pre {
 .avatar__08316 {
   @extend %avatarLarge !optional;
 }
-.avatarOffline-3GF27z { // OUTDATED CLASS
-  @extend %avatarOffline !optional;
-}
 .botTag__4211a {
   @extend %botTag !optional;
 }
@@ -3533,12 +3524,6 @@ pre {
 .languageSelector_a1c2f3 {
   @extend %languageSelector !optional;
 }
-.item-1BCeuB { // OUTDATED CLASS
-  @extend %languageSelectorItem !optional;
-}
-.selected-22ukbQ { // OUTDATED CLASS
-  @extend %languageSelectorSelected !optional;
-}
 .modalTextContainer_ddfc28 {
   @extend %textContainerModal !optional;
 }
@@ -3560,9 +3545,6 @@ pre {
 .gradientContainer__9a5a6 {
   @extend %stageGradientContainer !optional;
 }
-.container-2t1JyW { // OUTDATED CLASS
-  @extend %stageHeaderContainer !optional;
-}
 .rowContainer__3f2d1 {
   @extend %stageSpeakers !optional;
 }
@@ -3575,8 +3557,11 @@ pre {
 .tileContainer__88d69 {
   @extend %stageParticipant !optional;
 }
-.container-36u7Lw { // OUTDATED CLASS
-  @extend %stageModIconContainer !optional;
+.topicFormItem_dc6100 {
+  @extend %stageTopicForm !optional;
+}
+.textInput__27b94 {
+  @extend %stageTopicInput !optional;
 }
 .container__7b94f {
   @extend %stageRequestContainer !optional;
@@ -3590,17 +3575,20 @@ pre {
 .iconBackground__61963 {
   @extend %stageIconBackground !optional;
 }
-.textInput-2xgsSa { // OUTDATED CLASS
-  @extend %stagePopoutTextInput !optional;
-}
-.audienceVoiceUserIconContainer-1aQGLF { // OUTDATED CLASS
-  @extend %stageUserIconContainer !optional;
-}
 .container__515b3 {
   @extend %stageOptionContainer !optional;
 }
 .separator_c99b23 {
   @extend %stageSeparator !optional;
+}
+.audienceContainer_d4eada {
+  @extend %stageAudienceContainer !optional;
+}
+.audienceIconContainer_b469ed {
+  @extend %stageAudienceIconContainer !optional;
+}
+.audienceIcon_f0f8e7 {
+  @extend %stageAudienceIcon !optional;
 }
 .categoryPill-1zjNrr { // OUTDATED CLASS
   @extend %categoryPill !optional;
@@ -4200,28 +4188,28 @@ pre {
 .newPostsButton__760c6 {
   @extend %forumNewPosts !optional;
 }
-.heading-lg-bold__02f24 { // OUTDATED CLASS
+.heading-lg-bold__02f24 {
   @extend %headingLargeBold !optional;
 }
-.heading-lg-semibold__85c17 { // OUTDATED CLASS
+.heading-lg-semibold__85c17 {
   @extend %headingLargeSemibold !optional;
 }
-.text-xs-normal__56c35 { // OUTDATED CLASS
+.text-xs-normal__56c35 {
   @extend %textExtraSmallNormal !optional;
 }
-.text-xs-medium__30cbe { // OUTDATED CLASS
+.text-xs-medium__30cbe {
   @extend %textExtraSmallMedium !optional;
 }
-.text-xs-bold_c1eb0a { // OUTDATED CLASS
+.text-xs-bold_c1eb0a {
   @extend %textExtraSmallBold !optional;
 }
-.text-sm-medium__1ba28 { // OUTDATED CLASS
+.text-sm-medium__1ba28 {
   @extend %textSmallMedium !optional;
 }
-.text-md-medium__5151a { // OUTDATED CLASS
+.text-md-medium__5151a {
   @extend %textMediumMedium !optional;
 }
-.text-md-normal__4afad { // OUTDATED CLASS
+.text-md-normal__4afad {
   @extend %textMediumNormal !optional;
 }
 .text-sm-normal_e612c7 {
