@@ -1,17 +1,21 @@
 /* PREVIEW SERVER */
 
 // WELCOME MODAL
-.optionContainer__5d0b1 {
+%previewServerOptionContainer {
   background-color: $main-color;
   &:hover {
     background-color: $hover-color;
   }
-  .optionArrow__4c748 {
+  %previewServerChannelOptionArrow {
+    color: #fff;
+  }
+  span {
     color: #fff;
   }
 }
-.channelIcon__1565e {
-  background-color: transparent;
+%previewServerChannelIcon,
+%previewServerChannelTitleIcon {
+  color: #fff;
 }
 
 %themeDark .notice__99c03 {

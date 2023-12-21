@@ -3884,9 +3884,6 @@ pre {
 .stickerCategoryGenericSelected__44ec4 {
   @extend %stickerCategoryGenericSelected !optional;
 }
-.upsellContent-1ppSei { // OUTDATED CLASS
-  @extend %stickerUpsellContent !optional;
-}
 .row__959bb {
   @extend %stickerPickerRow !optional;
 }
@@ -3913,12 +3910,6 @@ pre {
 }
 .container_c11257 {
   @extend %loginVerificationContainer !optional;
-}
-.css-19vtg9u-control { // OUTDATED CLASS
-  @extend %createAccountDate !optional;
-}
-.css-13qdo4d-menu { // OUTDATED CLASS
-  @extend %createAccountDateDropdown !optional;
 }
 .navRow_bb8efc {
   @extend %addAccountFooter !optional;
@@ -4317,18 +4308,6 @@ pre {
 .prompt__1b100 {
   @extend %customizeChannelsPrompt !optional;
 }
-.css-fcsbhh-control { // OUTDATED CLASS
-  @extend %customizeChannelsSearch !optional;
-}
-.css-1t5q03r-control { // OUTDATED CLASS
-  @extend %customizeChannelsSearchDropdown !optional;
-}
-.css-153nlb6-option { // OUTDATED CLASS
-  @extend %customizeChannelsSearchOption !optional;
-}
-.css-6sv4e8-menu { // OUTDATED CLASS
-  @extend %customizeChannelsSearchMenu !optional;
-}
 .selectValuePill__95251 {
   @extend %customizeChannelsPill !optional;
 }
@@ -4349,9 +4328,6 @@ pre {
 }
 .selectAll_a87487 {
   @extend %browseChannelsSelectAll !optional;
-}
-.checked-1pZh2h { // OUTDATED CLASS
-  @extend %browseChannelsChecked !optional;
 }
 .channelRow__96673 {
   @extend %browseChannelsRow !optional;
@@ -4527,4 +4503,16 @@ pre {
 }
 .container__60a4a {
   @extend %voiceChannelListeningIcon !optional;
+}
+.optionContainer__5d0b1 {
+  @extend %previewServerOptionContainer !optional;
+}
+.channelIcon__1565e {
+  @extend %previewServerChannelIcon !optional;
+}
+.channelTitleIcon__1896b {
+  @extend %previewServerChannelTitleIcon !optional;
+}
+.optionArrow__4c748 {
+  @extend %previewServerChannelOptionArrow !optional;
 }
