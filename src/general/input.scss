@@ -23,14 +23,4 @@
     box-shadow: none;
     background: none;
   }
-  .copyInput-3QjTFp {
-    %input {
-      background-color: transparent;
-      box-shadow: none;
-      &:focus,
-      &%inputFocused {
-        box-shadow: none;
-      }
-    }
-  }
 }

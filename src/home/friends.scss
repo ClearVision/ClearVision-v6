@@ -134,14 +134,14 @@
   %activeNowCardInset {
     background-color: hsla(0, 0%, 0%, 0.4);
   }
-  .partyMemberOverflow_d12297 {
+  %activeNowPartyOverflow {
     background-color: var(--background-overlay);
   }
 }
 %activeNowCardSection {
   background-color: transparent;
 }
-%themeDark .applicationStreamingPreviewWrapper__97a95 {
+%themeDark %activeNowPreviewWrapper {
   background-color: transparent;
 }
 

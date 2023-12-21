@@ -57,7 +57,7 @@
 
 // INVALID GIFT
 %themeDark {
-  .tile_ebc93b {
+  %messageInvalidGift {
     background-color: hsla(0, 0%, 0%, 0.4);
     &:hover {
       background-color: hsla(0, 0%, 0%, 0.4);
@@ -165,26 +165,23 @@
 }
 
 // PUBLISH TO FOLLOWERS
-.bumpBox_cfd81a {
+%messagePublishBumpBox {
   background: hsla(0, 0%, 0%, 0.4);
 }
-.icon_c766f4,
-.tagline_a404cb {
+%messagePublishIcon,
+%messagePublishTagline {
   color: #fff;
 }
-.closeIcon__1f39d,
-.hidePermanently_a71dd2 {
+%messagePublishCloseIcon,
+%messagePublishPermanentHide {
   color: hsla(0, 0%, 100%, 0.4) !important;
 }
 
 // AUTOMOD MESSAGE
-.embedCard__66fca,
-.footerContainer_a703d5 {
+%messageAutomodCard,
+%messageAutomodFooterContainer {
   background-color: hsla(0, 0%, 0%, 0.4);
 }
-.footerAction_fba33a .text-xs-normal_ccc5fb {
-  color: $main-color !important;
-}
-.footerIcon__61cc7 path {
+%messageAutomodFooterIcon path {
   fill: $main-color;
 }

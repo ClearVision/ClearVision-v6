@@ -41,9 +41,9 @@
   }
 }
 // Show blocked message
-.blockedAction__27053 {
+%messageShowBlocked {
   color: $main-color;
 }
-.blockedSystemMessage_e58a4c:hover .blockedAction__27053 {
+%blockedSystemMessage_e58a4c:hover %messageShowBlocked {
   color: $hover-color;
 }

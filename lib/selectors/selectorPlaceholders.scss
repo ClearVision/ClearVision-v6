@@ -239,6 +239,12 @@
 .addButtonIcon_b776b3 {
   @extend %categoryAddIcon !optional;
 }
+.button_fb39e8 {
+  @extend %categoryNewChannel !optional;
+}
+.buttonIcon__9d124 {
+  @extend %categoryNewChannelIcon !optional;
+}
 .containerDefault__3187b {
   @extend %channelContainerDefault !optional;
 }
@@ -1707,6 +1713,9 @@
 .mulitplePlaceholderUsername__5bd27 {
   @extend %memberPlaceholderUsernameMultiple !optional;
 }
+.addMembersIcon_e97261 {
+  @extend %addMembersIcon !optional;
+}
 .invite__2a93b {
   @extend %activityInvite !optional;
 }
@@ -2056,6 +2065,9 @@ pre {
 .bubble_f48089 {
   @extend %playerMediaBarBubble !optional;
 }
+.hoverButtonGroup__5b423 {
+  @extend %playerMediaDownload !optional;
+}
 .mouse-mode.full-motion {
   @extend %mouseModeFullMotion !optional;
 }
@@ -2080,6 +2092,12 @@ pre {
 .messageGroupBlocked__9a374 {
   @extend %messageGroupBlocked !optional;
 }
+.blockedAction__27053 {
+  @extend %messageShowBlocked !optional;
+}
+.blockedSystemMessage_e58a4c {
+  @extend %messageBlockedSystemMessage !optional;
+}
 .header__39b23 {
   @extend %messageHeader !optional;
 }
@@ -2097,6 +2115,9 @@ pre {
 }
 .container_aed774 {
   @extend %messageSystemContainer !optional;
+}
+.tile_ebc93b {
+  @extend %messageInvalidGift !optional;
 }
 .repliedMessage_e2bf4a {
   @extend %messageReplied !optional;
@@ -2169,6 +2190,33 @@ pre {
 }
 .selected__63428 {
   @extend %messageButtonSelected !optional;
+}
+.bumpBox_cfd81a {
+  @extend %messagePublishBumpBox !optional;
+}
+.icon_c766f4 {
+  @extend %messagePublishIcon !optional;
+}
+.tagline_a404cb {
+  @extend %messagePublishTagline !optional;
+}
+.closeIcon__1f39d {
+  @extend %messagePublishCloseIcon !optional;
+}
+.hidePermanently_a71dd2 {
+  @extend %messagePublishPermanentHide !optional;
+}
+.embedCard__66fca {
+  @extend %messageAutomodCard !optional;
+}
+.footerContainer_a703d5 {
+  @extend %messageAutomodFooterContainer !optional;
+}
+.footerAction_fba33a {
+  @extend %messageAutomodFooterAction !optional;
+}
+.footerIcon__61cc7 {
+  @extend %messageAutomodFooterIcon !optional;
 }
 .blockquoteContainer_f24d1f {
   @extend %blockquoteContainer !optional;
@@ -2634,6 +2682,9 @@ pre {
 }
 .queryContainer_c359fe {
   @extend %searchPopoutQueryContainer !optional;
+}
+.keybindShortcutSearchPopout__1e953 {
+  @extend %searchPopoutKeyboardShortcut !optional;
 }
 .focused_f9cf2c {
   @extend %searchPopoutQueryContainerFocused !optional;
@@ -3643,6 +3694,12 @@ pre {
 }
 .section_efc22d {
   @extend %activeNowCardSection !optional;
+}
+.partyMemberOverflow_d12297 {
+  @extend %activeNowPartyOverflow !optional;
+}
+.applicationStreamingPreviewWrapper__97a95 {
+  @extend %activeNowPreviewWrapper !optional;
 }
 .emptyCard_f82dde {
   @extend %emptyActiveNowCard !optional;
