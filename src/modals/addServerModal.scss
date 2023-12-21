@@ -27,18 +27,17 @@
 
 // CREATE SERVER
 %themeLight {
-  .subtitle_a75f7f,
-  .optionHeader-27AHfD {
+  %createServerTitle {
     color: hsla(0, 0%, 100%, 0.7) !important;
   }
-  .iconContainer_cd2671 > svg > circle {
+  %createServerIconContainer > svg > circle {
     fill: $main-color;
   }
-  .skip_f687eb {
+  %createServerSkip {
     color: hsla(0, 0%, 100%, 0.7) !important;
   }
 }
-.backButton__576ea {
+%createServerBackButton {
   %buttonContents {
     color: hsla(0, 0%, 100%, .7);
     &:hover {
@@ -50,23 +49,23 @@
 
 // JOIN SERVER
 %themeLight {
-  .input__0c269 {
+  %joinServerInput {
     background-color: transparent;
   }
-  .sampleLink__771c4 {
+  %joinServerExample {
     color: $main-color;
     font-weight: 500;
   }
 }
-.rowContainer__6f4c6 {
+%joinServerRow {
   background-color: $main-color;
   &:hover {
     background-color: $hover-color;
   }
-  .rowText_e87737 {
+  %joinServerRowText {
     color: #fff;
   }
-  .rowArrow_d97795 {
+  %joinServerRowArrow {
     filter: brightness(0) invert(1);
   }
 }
