@@ -54,6 +54,16 @@
     background: $hover-color;
   }
 }
+// ICON WHEN HOVERING SERVER
+%stageGuildListenerIcon {
+  background: $main-color;
+  %textExtraSmallNormal {
+    color: #fff !important;
+  }
+  > svg {
+    color: #fff;
+  }
+}
 // STARTING A STAGE CALL
 %stageTopicForm {
   %input {

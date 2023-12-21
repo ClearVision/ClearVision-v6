@@ -79,16 +79,6 @@
     background: $hover-color;
   }
 }
-%deleteServerCheckbox {
-  %deleteServerCheckboxInner {
-    %deleteServerCheckboxElement {
-      &:checked + span {
-        background-color: $main-color;
-        border-color: $main-color;
-      }
-    }
-  }
-}
 
 // STATUS PICKER
 %menuPopoutItem {

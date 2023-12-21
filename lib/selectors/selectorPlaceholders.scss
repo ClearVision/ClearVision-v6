@@ -3590,10 +3590,13 @@ pre {
 .audienceIcon_f0f8e7 {
   @extend %stageAudienceIcon !optional;
 }
-.categoryPill-1zjNrr { // OUTDATED CLASS
+.stageListenerPill_ef06b3 {
+  @extend %stageGuildListenerIcon !optional;
+}
+.categoryPill_c95cea {
   @extend %categoryPill !optional;
 }
-.selected-bLcqYK { // OUTDATED CLASS
+.selected__24846 {
   @extend %categoryPillSelected !optional;
 }
 .pageControlContainer_b111b0 {
@@ -3652,15 +3655,6 @@ pre {
 }
 .focused__47631 {
   @extend %quickReactButtonFocused !optional;
-}
-.subscribeTooltipWrapper-3ipXtC { // OUTDATED CLASS
-  @extend %subscribeTooltipWrapper !optional;
-}
-.subscribeTooltipHeader-15pGbG { // OUTDATED CLASS
-  @extend %subscribeTooltipHeader !optional;
-}
-.subscribeTooltipText-2A8MMi-1JoUuw { // OUTDATED CLASS
-  @extend %subscribeTooltipText !optional;
 }
 .upsellTooltipWrapper_df8272 {
   @extend %upsellTooltipText !optional;
@@ -3823,15 +3817,6 @@ pre {
 }
 .option_f70eea {
   @extend %serverDeleteReasonOption !optional;
-}
-.checkbox-1ycfTw { // OUTDATED CLASS
-  @extend %deleteServerCheckbox !optional;
-}
-.checkboxInner-1aRh1d { // OUTDATED CLASS
-  @extend %deleteServerCheckboxInner !optional;
-}
-.checkboxElement-uwAa9F { // OUTDATED CLASS
-  @extend %deleteServerCheckboxElement !optional;
 }
 .streamPreview__1846c {
   @extend %streamPopoutPreview !optional;
@@ -4536,4 +4521,10 @@ pre {
 }
 .arrow__5e540 {
   @extend %addServerOptionArrow !optional;
+}
+.container__03857 {
+  @extend %voiceChannelListening !optional;
+}
+.container__60a4a {
+  @extend %voiceChannelListeningIcon !optional;
 }
