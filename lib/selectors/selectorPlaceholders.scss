@@ -1442,7 +1442,7 @@
 .divider_c09b64 {
   @extend %headerBarDivider !optional;
 }
-.content_dc3a33 {
+.content__96073 {
   @extend %headerBarModalContent !optional;
 }
 .search_ac353c {
@@ -1757,9 +1757,6 @@
 .artwork__34afd {
   @extend %activityInviteArtwork !optional;
 }
-.artworkActionable__1d4f2 {
-  @extend %activityInviteArtworkActionable !optional;
-}
 .artworkNotActionable__3c8ef {
   @extend %activityInviteArtworkNotActionable !optional;
 }
@@ -2015,12 +2012,6 @@ pre {
 }
 .wrapperControlsHidden__143af {
   @extend %playerControlsHidden !optional;
-}
-.wrapperPaused__19ae3 {
-  @extend %playerPaused !optional;
-}
-.wrapperPlaying__6603b {
-  @extend %playerPlaying !optional;
 }
 .metadata__2d766 {
   @extend %playerMetadata !optional;
@@ -2322,7 +2313,7 @@ pre {
 .inputField__79601 {
   @extend %inputField !optional;
 }
-.modal__4f3da {
+.modal__6a96b {
   @extend %modal !optional;
 }
 .root_a28985 {
@@ -2681,12 +2672,6 @@ pre {
 }
 .upsell__780f6 {
   @extend %emojiPickerPremiumUpsell !optional;
-}
-.contentWrapper_eab878 {
-  @extend %emojiPickerReactionContentWrapper !optional;
-}
-.navButtonActive_b003de {
-  @extend %emojiPickerReactionNavButton !optional;
 }
 .popout__08442 {
   @extend %groupInvitePopout !optional;
@@ -4572,10 +4557,10 @@ pre {
 .newPostsButton__760c6 {
   @extend %forumNewPosts !optional;
 }
-.heading-lg-bold__02f24 {
+.heading-lg-bold_c2517a {
   @extend %headingLargeBold !optional;
 }
-.heading-lg-semibold__85c17 {
+.heading-lg-semibold_a200cd {
   @extend %headingLargeSemibold !optional;
 }
 .text-xs-normal__56c35 {
