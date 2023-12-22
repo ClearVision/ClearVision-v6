@@ -117,41 +117,29 @@
 }
 
 // NO NITRO
-.premiumPromo__2d678 {
+%emojiPickerPremiumPromo {
   background-color: hsla(0, 0%, 0%, 0.9);
 }
-.premiumPromoClose__11b8f {
+%emojiPickerPremiumPromoClose {
   filter: brightness(0) invert(1);
   opacity: 0.6;
   &:hover {
     opacity: 0.8;
   }
 }
-.premiumPromoTitle__68b72 {
+%emojiPickerPremiumPromoTitle {
   color: #fff;
 }
-.premiumPromoTitle__68b72 {
-  color: hsla(0, 0%, 100%, 0.7);
-}
-.notice-1Qe0b_ {
+%emojiPickerPremiumUpsell {
   background-color: transparent;
-}
-.upsell__780f6 {
-  background-color: transparent;
-}
-.perks-2IIbWQ {
-  background-color: transparent;
-}
-.perkRow-10K6XE {
-  border-bottom: none;
 }
 
 // REACTIONS
-.contentWrapper_eab878 {
+%emojiPickerReactionContentWrapper {
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-.navButtonActive_b003de {
+%emojiPickerReactionNavButton {
   background-color: $main-color;
 }

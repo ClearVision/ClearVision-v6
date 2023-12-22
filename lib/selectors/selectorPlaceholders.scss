@@ -480,6 +480,24 @@
 .inner_ab95dc {
   @extend %connectionPanelInner !optional;
 }
+.connection_fff5f6 {
+  @extend %connections !optional;
+}
+.connectionHeader__3c82d {
+  @extend %connectionsHeader !optional;
+}
+.connectionIcon__1428c {
+  @extend %connectionsIcon !optional;
+}
+.connectionAccountLabel_a71192 {
+  @extend %connectionsAccountLabel !optional;
+}
+.connectionDelete__988b5 {
+  @extend %connectionsDelete !optional;
+}
+.metadataContainer__7b316 {
+  @extend %connectionsMetadataContainer !optional;
+}
 .rtcConnectionStatus__40882 {
   @extend %rtcConnectionStatus !optional;
 }
@@ -812,6 +830,12 @@
 }
 .result_e1fc74 {
   @extend %gifPickerResult !optional;
+}
+.focused__036ed {
+  @extend %gifPickerResultFocused !optional;
+}
+.searchSuggestion__5559d {
+  @extend %gifPickerSearchSuggestion !optional;
 }
 .favButton__11e5a {
   @extend %gifPickerFavButton !optional;
@@ -2263,6 +2287,9 @@ pre {
 .staticToolbar__7ef7b {
   @extend %forumSettingsGuidelinesToolbar !optional;
 }
+.addTags_e01f9c {
+  @extend %forumSettingsGuidelinesAddTags !optional;
+}
 .spoilerMarkdownContent__2b8f8 {
   @extend %spoilerMarkdownContent !optional;
 }
@@ -2647,6 +2674,24 @@ pre {
 .unicodeShortcut__1dd6b {
   @extend %emojiCategoryUnicodeShortcut !optional;
 }
+.premiumPromo__2d678 {
+  @extend %emojiPickerPremiumPromo !optional;
+}
+.premiumPromoClose__11b8f {
+  @extend %emojiPickerPremiumPromoClose !optional;
+}
+.premiumPromoTitle__68b72 {
+  @extend %emojiPickerPremiumPromoTitle !optional;
+}
+.upsell__780f6 {
+  @extend %emojiPickerPremiumUpsell !optional;
+}
+.contentWrapper_eab878 {
+  @extend %emojiPickerReactionContentWrapper !optional;
+}
+.navButtonActive_b003de {
+  @extend %emojiPickerReactionNavButton !optional;
+}
 .popout__08442 {
   @extend %groupInvitePopout !optional;
 }
@@ -2948,6 +2993,9 @@ pre {
 .userPopoutOverlayBackground_d8afa4 {
   @extend %userPopoutOverlayBackground !optional;
 }
+.profileCustomizationPreview_ccc6a9 {
+  @extend %userPopoutCustomizationPreview !optional;
+}
 .buttonColor__01bf8 {
   @extend %userPopoutButtonColor !optional;
 }
@@ -3002,6 +3050,9 @@ pre {
 .highlight {
   @extend %searchResultHighlight !optional;
 }
+.resultsBlocked_a701cf {
+  @extend %searchResultBlocked !optional;
+}
 .contentRegion__0bec1 {
   @extend %settingsContentRegion !optional;
 }
@@ -3040,6 +3091,30 @@ pre {
 }
 .cardWrapper_bc8d2a {
   @extend %settingsCardWrapper !optional;
+}
+.outline_cb0aed {
+  @extend %settingsCardOutline !optional;
+}
+.lookFilled__3dba3 {
+  @extend %settingsLookFilled !optional;
+}
+.select__0eb48 {
+  @extend %settingsDropdownSelect !optional;
+}
+.popout_a6e77f {
+  @extend %settingsDropdownPopout !optional;
+}
+.option_be8b2e {
+  @extend %settingsDropdownOption !optional;
+}
+.multi__8d15f {
+  @extend %settingsDropdownMulti !optional;
+}
+.selectedIcon__4b0ba {
+  @extend %settingsDropdownOptionSelectedIcon !optional;
+}
+.focused_a2f507 {
+  @extend %settingsDropdownOptionFocused !optional;
 }
 .customColorPicker__3cb6a {
   @extend %settingsColorPickerCustom !optional;
@@ -3199,6 +3274,45 @@ pre {
 }
 .insightsActions_f32a84 {
   @extend %guildSettingsInsightsActions !optional;
+}
+.checklist__88646 {
+  @extend %guildSettingsDiscoveryChecklist !optional;
+}
+.header_d08072 {
+  @extend %guildSettingsDiscoveryHeader !optional;
+}
+.separator__26ad8 {
+  @extend %guildSettingsDiscoverySeparator !optional;
+}
+.enableContainer__0945b {
+  @extend %guildSettingsWelcomeEnable !optional;
+}
+.previewContainer_b0f5b4 {
+  @extend %guildSettingsWelcomePreview !optional;
+}
+.editCircle_fb533c {
+  @extend %guildSettingsWelcomeEditCircle !optional;
+}
+.welcomeChannel__0122f {
+  @extend %guildSettingsWelcomeChannel !optional;
+}
+.channelIcon__2b0ed {
+  @extend %guildSettingsWelcomeChannelIcon !optional;
+}
+.background__3dd67 {
+  @extend %guildSettingsBoostBackground !optional;
+}
+.tierInProgress_f08e8b {
+  @extend %guildSettingsBoostTierInProgress !optional;
+}
+.tierHeaderLocked__4d099 {
+  @extend %guildSettingsBoostTierLocked !optional;
+}
+.tierHeaderUnlocked_cc60fa {
+  @extend %guildSettingsBoostTierUnlocked !optional;
+}
+.tierBody__615a1 {
+  @extend %guildSettingsBoostTierBody !optional;
 }
 .textBadge__9e179 {
   @extend %automodBadge !optional;
@@ -3933,6 +4047,9 @@ pre {
 .focused__47631 {
   @extend %quickReactButtonFocused !optional;
 }
+.premiumUpsell_e1bfd9 {
+  @extend %quickReactPremiumUpsell !optional;
+}
 .upsellTooltipWrapper_df8272 {
   @extend %upsellTooltipText !optional;
 }
@@ -3963,11 +4080,23 @@ pre {
 .channelHeader__5d30c {
   @extend %messagesPopoutChannelHeader !optional;
 }
+.guildIcon_cccd03 {
+  @extend %messagesPopoutChannelHeaderIcon !optional;
+}
 .messageGroupWrapper_f8c6e9 {
   @extend %pinnedMessageGroupWrapper !optional;
 }
 .jumpButton__0329d {
   @extend %pinnedJumpButton !optional;
+}
+.regionSelectPopout__0127b {
+  @extend %regionSelectPopout !optional;
+}
+.quickSelectPopoutOption__39224 {
+  @extend %regionSelectPopoutOption !optional;
+}
+.regionSelectName__7c81f {
+  @extend %regionSelectName !optional;
 }
 .recentMentionsPopout__826a9 {
   @extend %recentMentionsPopout !optional;
@@ -4760,6 +4889,42 @@ pre {
 .cardFolder__34393 {
   @extend %channelSettingsCardPanel !optional;
 }
+.group__6ae8b {
+  @extend %channelSettingsPermissionsGroup !optional;
+}
+.item_f48d11 {
+  @extend %channelSettingsPermissionsItem !optional;
+}
+.selected__47401 {
+  @extend %channelSettingsPermissionsSelected !optional;
+}
+.deny__71546 {
+  @extend %channelSettingsPermissionsDeny !optional;
+}
+.passthrough__7cd54 {
+  @extend %channelSettingsPermissionsPassthrough !optional;
+}
+.allow_bbc621 {
+  @extend %channelSettingsPermissionsAllow !optional;
+}
+.header__02652 {
+  @extend %channelSettingsRoleDropdownHeader !optional;
+}
+.container_e84cda {
+  @extend %channelSettingsRoleDropdownContainer !optional;
+}
+.sectionTag_b0df68 {
+  @extend %channelSettingsRoleDropdownTag !optional;
+}
+.row__3fe26 {
+  @extend %channelSettingsRoleDropdownRow !optional;
+}
+.rowInner_feb94d {
+  @extend %channelSettingsRoleDropdownRowInner !optional;
+}
+.selected__75860 {
+  @extend %channelSettingsRoleDropdownSelected !optional;
+}
 .iconContainer__6fc72 {
   @extend %previewServerIconContainer !optional;
 }
@@ -4891,4 +5056,10 @@ pre {
 }
 .bodyWave__62812 {
   @extend %serverBoostPageBodyWave !optional;
+}
+.contentWarningPopout__7d8c2 {
+  @extend %everyoneWarningPopout !optional;
+}
+.footer__36118 {
+  @extend %everyoneWarningFooter !optional;
 }

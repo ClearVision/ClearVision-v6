@@ -44,23 +44,23 @@
 }
 
 // PERMISSIONS
-.group__6ae8b {
+%channelSettingsPermissionsGroup {
   border: 1px solid hsla(0, 0%, 100%, 0.07);
 }
-.item_f48d11 {
+%channelSettingsPermissionsItem {
   background-color: hsla(0, 0%, 0%, 0.4);
   border-color: hsla(0, 0%, 100%, 0.07);
   cursor: pointer;
-  &.selected__47401 {
-    &.deny__71546 {
+  &%channelSettingsPermissionsSelected {
+    &%channelSettingsPermissionsDeny {
       background-color: rgba($color: #f04747, $alpha: 0.6);
       border-color: #f04747;
     }
-    &.passthrough__7cd54 {
+    &%channelSettingsPermissionsPassthrough {
       background-color: rgba($color: #faa61a, $alpha: 0.6);
       border-color: #faa61a;
     }
-    &.allow_bbc621 {
+    &%channelSettingsPermissionsAllow {
       background-color: rgba($color: #43b581, $alpha: 0.6);
       border-color: #43b581;
     }
@@ -81,26 +81,10 @@
 }
 
 // ROLES/MEMBERS DROPDOWN
-%themeDark .header__02652,
-%themeDark .container_e84cda .sectionTag_b0df68 {
+%themeDark %channelSettingsRoleDropdownHeader,
+%themeDark %channelSettingsRoleDropdownContainer %channelSettingsRoleDropdownTag {
   background-color: var(--popout-color);
 }
-.row__3fe26.selected__75860 .rowInner_feb94d {
+%channelSettingsRoleDropdownRow%channelSettingsRoleDropdownSelected %channelSettingsRoleDropdownRowInner {
   background-color: hsla(0, 0%, 100%, 0.1);
-}
-
-// FORUMS
-.staticToolbar__7ef7b {
-  background: transparent;
-}
-.addTags_e01f9c {
-  background: $main-color;
-}
-.container-16urgA {
-  border-color: $main-color;
-}
-.placeholderLine-86Fsd9,
-.placeholderMedia-34JHvE,
-.reaction-BL6n45 {
-  background-color: hsla(0, 0%, 100%, 0.15);
 }

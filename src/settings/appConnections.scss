@@ -12,33 +12,33 @@ $colours: (
   'YouTube': #ff0000,
 );
 
-.connection_fff5f6 {
+%connections {
   background-color: hsla(0, 0%, 0%, 0.4);
 }
-.connectionHeader__3c82d {
+%connectionsHeader {
   background-color: transparent;
 }
 
-.connection_fff5f6 {
+%connections {
   @each $i, $u in $colours {
-    &:has(.connectionIcon__1428c[alt*='#{$i}']) {
+    &:has(%connectionsIcon[alt*='#{$i}']) {
       background-color: rgba($u, 0.5);
     }
   }
 }
-.connectionHeader__3c82d {
+%connectionsHeader {
   @each $i, $u in $colours {
-    &:has(.connectionIcon__1428c[alt*='#{$i}']) {
+    &:has(%connectionsIcon[alt*='#{$i}']) {
       background-color: rgba($u, 0.2);
     }
   }
 }
-.connectionAccountLabel_a71192 {
+%connectionsAccountLabel {
   color: hsla(0, 0%, 100%, 0.7) !important;
 }
-.connectionDelete__988b5 {
+%connectionsDelete {
   color: hsla(0, 0%, 100%, 0.7);
 }
-.metadataContainer__7b316 {
+%connectionsMetadataContainer {
   background-color: hsla(0, 0%, 100%, 0.1);
 }

@@ -8,7 +8,7 @@
     %userPopoutOverlayBackground {
       background-color: hsla(0, 0%, 0%, 0.4);
     }
-    &:not(.profileCustomizationPreview_ccc6a9) {
+    &:not(%userPopoutCustomizationPreview) {
       %userPopoutInner {
         &::before {
           content: '';

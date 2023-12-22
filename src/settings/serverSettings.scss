@@ -371,29 +371,29 @@
 
 
 // DISCOVERY
-.checklist__88646 {
+%guildSettingsDiscoveryChecklist {
   background-color: hsla(0, 0%, 0%, 0.4);
-  .header_d08072 {
+  %guildSettingsDiscoveryHeader {
     background-color: hsla(0, 0%, 0%, 0.4);
   }
-  .separator__26ad8 {
+  %guildSettingsDiscoverySeparator {
     background-color: hsla(0, 0%, 100%, 0.06);
   }
 }
 
 // WELCOME SCREEN
-.enableContainer__0945b,
-.previewContainer_b0f5b4 {
+%guildSettingsWelcomeEnable,
+%guildSettingsWelcomePreview {
   background-color: hsla(0, 0%, 0%, 0.4);
 }
-.editCircle_fb533c {
+%guildSettingsWelcomeEditCircle {
   background-color: $main-color;
   color: white;
 }
-.welcomeChannel__0122f {
+%guildSettingsWelcomeChannel {
   background-color: hsla(0, 0%, 100%, 0.05);
 }
-.channelIcon__2b0ed {
+%guildSettingsWelcomeChannelIcon {
   background-color: transparent;
 }
 
@@ -418,16 +418,16 @@
 
 // SERVER BOOST STATUS
 %themeDark {
-  .background__3dd67 {
+  %guildSettingsBoostBackground {
     color: hsla(0, 0%, 0%, 0.4);
   }
-  .tierInProgress_f08e8b {
+  %guildSettingsBoostTierInProgress {
     background-color: hsla(0, 0%, 0%, 0.4);
     border: 3px solid #f47fff;
   }
-  .tierHeaderLocked__4d099,
-  .tierHeaderUnlocked_cc60fa,
-  .tierBody__615a1 {
+  %guildSettingsBoostTierLocked,
+  %guildSettingsBoostTierUnlocked,
+  %guildSettingsBoostTierBody {
     background-color: hsla(0, 0%, 0%, 0.4);
   }
 }
