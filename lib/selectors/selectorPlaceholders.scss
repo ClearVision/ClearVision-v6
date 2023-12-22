@@ -3119,6 +3119,9 @@ pre {
 .previewContainer_c7e80d {
   @extend %guildSettingsRoleIconPreview !optional;
 }
+.container__7712a {
+  @extend %guildSettingsRoleViewAs !optional;
+}
 .emojiRow__4661c {
   @extend %guildSettingsEmojiCard !optional;
 }
@@ -3152,8 +3155,50 @@ pre {
 .valuePill__9d21a {
   @extend %guildSettingsSafetyPill !optional;
 }
+.scrollerContainer_c3503a {
+  @extend %guildSettingsBanContainer !optional;
+}
+.bannedUser__38b44 {
+  @extend %guildSettingsBannedUser !optional;
+}
+.descriptionBox_cca0c3 {
+  @extend %guildSettingsTemplateDescription !optional;
+}
 .simpleItemWrapper__2a0a0 {
   @extend %guildSettingsSafetyItemWrapper !optional;
+}
+.upsellContainer__978df {
+  @extend %guildSettingsCommunityUpsell !optional;
+}
+.upsellFooter__63475 {
+  @extend %guildSettingsCommunityUpsellFooter !optional;
+}
+.guildDetails_fc2c63 {
+  @extend %guildSettingsCommunityGuildDetails !optional;
+}
+.featureCard__0a441 {
+  @extend %guildSettingsCommunityFeatureCard !optional;
+}
+.featureIcon__48a2c {
+  @extend %guildSettingsCommunityFeatureIcon !optional;
+}
+.row_f4c450 {
+  @extend %guildSettingsCommunityRow !optional;
+}
+.analyticsCard_a976ba {
+  @extend %guildSettingsInsightsAnalyticsCard !optional;
+}
+.developerPortalCtaWrapper__21172 {
+  @extend %guildSettingsInsightsDeveloperPortal !optional;
+}
+.notEnoughMembersError__96545 {
+  @extend %guildSettingsInsightsNotEnoughMembers !optional;
+}
+.memberInsightsContainer_a79381 {
+  @extend %guildSettingsInsightsMemberInsights !optional;
+}
+.insightsActions_f32a84 {
+  @extend %guildSettingsInsightsActions !optional;
 }
 .textBadge__9e179 {
   @extend %automodBadge !optional;
@@ -3476,6 +3521,9 @@ pre {
 .addButton_c648bf {
   @extend %roleAddButton !optional;
 }
+.container_d27846 {
+  @extend %roleAssignPopout !optional;
+}
 .loading__30066 {
   @extend %loading !optional;
 }
@@ -3550,6 +3598,21 @@ pre {
 .iconContainer__82920 {
   @extend %userSettingsFamilyIconContainer !optional;
 }
+.row_c1b980 {
+  @extend %userSettingsFamilyRow !optional;
+}
+.authedApp__51b26 {
+  @extend %userSettingsAuthedApp !optional;
+}
+.sessionIcon__540be {
+  @extend %userSettingsDevicesIcon !optional;
+}
+.connectContainer__8050b {
+  @extend %userSettingsConnectionsContainer !optional;
+}
+.accountButtonInner__80e3a {
+  @extend %userSettingsConnectionsButtonInner !optional;
+}
 .giftCard__30972 {
   @extend %userSettingsNitroGiftCard !optional;
 }
@@ -3578,11 +3641,35 @@ pre {
 .detailsBlock__1191c {
   @extend %userSettingsSubsPayDetailsBlock !optional;
 }
+.premiumSubscriptionAccountCredit__6bab4 {
+  @extend %userSettingsSubsAccountCredit !optional;
+}
 .defaultIndicator__855a2 {
   @extend %userSettingsBillingIndicator !optional;
 }
 .description__75831, .descriptionWrapper__0d577 {
   @extend %userSettingsBillingMethodText !optional;
+}
+.paymentPane__9cf01 {
+  @extend %userSettingsBillingPaymentPane !optional;
+}
+.paginator_e620d3 {
+  @extend %userSettingsBillingPaginator !optional;
+}
+.bottomDivider_a59d97 {
+  @extend %userSettingsBillingBottomDivider !optional;
+}
+.hoverablePayment__3ea24 {
+  @extend %userSettingsBillingHoverablePayment !optional;
+}
+.payment__7d702 {
+  @extend %userSettingsBillingPayment !optional;
+}
+.expandedInfo__47bad {
+  @extend %userSettingsBillingExpandedInfo !optional;
+}
+.scroller__244e5 {
+  @extend %userSettingsNitroScroller !optional;
 }
 .selectionCircle_f4288e {
   @extend %userSettingsAppearanceSelectionCircle !optional;
@@ -3619,6 +3706,40 @@ pre {
 }
 .backgroundOptionInner__1477f {
   @extend %userSettingsVideoBgOptionInner !optional;
+}
+.nowPlaying__353c3 {
+  @extend %userSettingsOverlayNowPlaying !optional;
+}
+.wrapper__4beb8 {
+  @extend %userSettingsOverlayWrapper !optional;
+}
+.option_a0c054{
+  @extend %userSettingsOverlayOption !optional;
+}
+.selected_ea51d6 {
+  @extend %userSettingsOverlaySelected !optional;
+}
+.container__0c807 {
+  @extend %userSettingsKeybindContainer !optional;
+}
+.disabled__8d382 {
+  @extend %userSettingsKeybindDisabled !optional;
+}
+.recording__97366 {
+  @extend %userSettingsKeybindRecording !optional;
+}
+.notDetected__2a0c9 {
+  @extend %userSettingsActivityNotDetected !optional;
+}
+.addGamePopout_e4ca8f {
+  @extend %userSettingsActivityAddGame !optional;
+}
+.game__19f4b {
+  @extend %userSettingsActivityGame !optional;
+}
+.gameNameInput_e25dd8 {
+  @extend %userSettingsActivityGameNameInput !optional;
+
 }
 .auto_a48086 {
   @extend %scrollbarAuto !optional;

@@ -104,10 +104,7 @@
   background-color: hsla(0, 0%, 0%, 0.6);
 }
 // View server as role selection bar
-.container-3ssFyj {
-  background-color: hsla(0, 0%, 0%, 0.8);
-}
-.container__7712a {
+%guildSettingsRoleViewAs {
   background-color: hsla(0, 0%, 100%, 0.07);
 }
 
@@ -272,23 +269,23 @@
 }
 
 // BANS
-.scrollerContainer_c3503a {
+%guildSettingsBanContainer {
 	background-color: hsla(0, 0%, 0%, .4);
 }
-.bannedUser__38b44 {
+%guildSettingsBannedUser {
 	background-color: hsla(0, 0%, 100%, .07);
 }
 
 // SERVER TEMPLATE
-.descriptionBox_cca0c3 {
+%guildSettingsTemplateDescription {
   background-color: hsla(0, 0%, 0%, 0.4);
 }
 
 // COMMUNITY OVERVIEW
-.upsellContainer__978df {
+%guildSettingsCommunityUpsell {
   background-color: hsla(0, 0%, 0%, 0.4);
 }
-.upsellFooter__63475 {
+%guildSettingsCommunityUpsellFooter {
   background-color: transparent;
 }
 
@@ -341,35 +338,35 @@
 
 
 // SERVER INSIGHTS
-.analyticsCard_a976ba {
+%guildSettingsInsightsAnalyticsCard {
   background-color: hsla(0, 0%, 0%, 0.4);
 }
-.developerPortalCtaWrapper__21172 {
+%guildSettingsInsightsDeveloperPortal {
   background-color: transparent;
 }
-.notEnoughMembersError__96545 {
+%guildSettingsInsightsNotEnoughMembers {
   background-color: var(--info-warning-background);
 }
-.memberInsightsContainer_a79381 {
+%guildSettingsInsightsMemberInsights {
   background-color: transparent;
 }
-.insightsActions_f32a84 {
+%guildSettingsInsightsActions {
   background-color: transparent;
 }
 
 // ENABLE COMMUNITY
-.guildDetails_fc2c63 {
+%guildSettingsCommunityGuildDetails {
   background-color: hsla(0, 0%, 0%, 0.4);
 }
-.featureCard__0a441,
-.featureIcon__48a2c {
+%guildSettingsCommunityFeatureCard,
+%guildSettingsCommunityFeatureIcon {
   background-color: hsla(0, 0%, 0%, 0.4);
 }
-.checkboxWrapper-2fDzaA.row-31nALW.checked-1pZh2h {
+%checkboxWrapper%guildSettingsCommunityRow {
   background-color: transparent;
-}
-.checkboxWrapper-2fDzaA.row-31nALW {
-  background-color: transparent;
+  &%checkboxChecked {
+    background-color: transparent;
+  }
 }
 
 
