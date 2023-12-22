@@ -22,20 +22,16 @@
 .app_b1f720 {
   @extend %app !optional;
 }
-.app_de4237, /*Canary Fix*/
-.app__00c92 {
+.app_de4237 {
   @extend %shakeable !optional;
 }
-.bg__12180, /*Canary FIx*/
-.bg__7adbf {
+.bg__12180 {
   @extend %bg !optional;
 }
-.layers__1c917, /*Canary Fix*/
-.layers_a40797 {
+.layers__1c917 {
   @extend %layers !optional;
 }
-.layer__2efaa, /*Canary Fix*/
-.layer_e552e0 {
+.layer__2efaa {
   @extend %layer !optional;
 }
 .container__037ed {
