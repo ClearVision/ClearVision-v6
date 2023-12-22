@@ -2079,6 +2079,18 @@ pre {
 .hoverButtonGroup__5b423 {
   @extend %playerMediaDownload !optional;
 }
+.container__79822 {
+  @extend %voiceMessageContainer !optional;
+}
+.playing_eb5c63 {
+  @extend %voiceMessagePlaying !optional;
+}
+.playButtonContainer_d887d6 {
+  @extend %voiceMessagePlayButtonContainer !optional;
+}
+.ripple__74f0d {
+  @extend %voiceMessagePlayingRipple !optional;
+}
 .mouse-mode.full-motion {
   @extend %mouseModeFullMotion !optional;
 }
