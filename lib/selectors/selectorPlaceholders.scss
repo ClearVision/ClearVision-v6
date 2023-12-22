@@ -5056,3 +5056,12 @@ pre {
 .footer__36118 {
   @extend %everyoneWarningFooter !optional;
 }
+.modalHeaderCustomGift_af2c51 {
+  @extend %giftModalHeader !optional;
+}
+.iconBackground_c5c678 {
+  @extend %giftModalIconBackground !optional;
+}
+.spinner_caad3a {
+  @extend %giftModalSpinner !optional;
+}

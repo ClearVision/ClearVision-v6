@@ -175,3 +175,22 @@
 %textSmallNormal {
   color: var(--text-normal) !important;
 }
+
+// GIFT MODAL
+/*other modals, nitro gift*/
+/*header*/
+%giftModalHeader {
+	background: transparent;
+	border-bottom: 1.5px solid $main-color;	
+}
+/*check out the shop icon*/
+%giftModalIconBackground {
+	background: $main-color;
+  > svg {
+    fill: #fff;
+  }
+}
+/*loading screen*/
+%giftModalSpinner {
+	background: rgba(0,0,0,.4);
+}
