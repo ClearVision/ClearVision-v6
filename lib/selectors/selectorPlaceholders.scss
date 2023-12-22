@@ -2374,8 +2374,17 @@ pre {
 .cardInputFocused__74be1 {
   @extend %nitroPaymentCardInputFocused !optional;
 }
+.content__1b8a0 {
+  @extend %serverBoostPerkContent !optional;
+}
 .icon_ae3492 {
   @extend %serverBoostPaymentIcon !optional;
+}
+.upsellFooter__9e85b {
+  @extend %serverBoostPaymentUpsellFooter !optional;
+}
+.perksList__35a93 {
+  @extend %serverBoostPaymentPerksList !optional;
 }
 .iconWrapper__9caa9 {
   @extend %serverBoostPaymentIconWrapper !optional;
@@ -4695,4 +4704,70 @@ pre {
 }
 .optionArrow__4c748 {
   @extend %previewServerChannelOptionArrow !optional;
+}
+.notice__99c03 {
+  @extend %previewServerNotice !optional;
+}
+.header__72166 {
+  @extend %previewServerHeader !optional;
+}
+.container_d4b118 {
+  @extend %previewServerContainer !optional;
+}
+.button__671cf {
+  @extend %previewServerBackButton !optional;
+}
+.communityInfoPill_d3f445 {
+  @extend %previewServerStatus !optional;
+}
+.container__92dc8 {
+  @extend %previewServerHomeContainer !optional;
+}
+.container_acafc1 {
+  @extend %previewServerHomeContainerInner !optional;
+}
+.icon_f71c55 {
+  @extend %previewServerHomeIcon !optional;
+}
+.interactiveCard_d5a839 {
+  @extend %previewServerHomeInteractiveCard !optional;
+}
+.selected__715e8 {
+  @extend %previewServerHomeInteractiveCardSelected !optional;
+}
+.card_d4f6c7 {
+  @extend %previewServerHomeCard !optional;
+}
+.container__16581 {
+  @extend %previewServerConversation !optional;
+}
+.conversationRoot__11fa6 {
+  @extend %previewServerConversationRoot !optional;
+}
+.replySpine_ed1feb {
+  @extend %previewServerConversationReply !optional;
+}
+.conversationMessage__0d40e {
+  @extend %previewServerConversationMessage !optional;
+}
+.innerWrapper__8cde3 {
+  @extend %serverBoostPageBoostPrompt !optional;
+}
+.topPerksCard__9fc01 {
+  @extend %serverBoostPageTopPerksCard !optional;
+}
+.card__67edb {
+  @extend %serverBoostPageCard !optional;
+}
+.wrapper_cf13f4 {
+  @extend %serverBoostPageFaq !optional;
+}
+.scroller__439a2 {
+  @extend %serverBoostPageScroller !optional;
+}
+.headerWave_e4fdee {
+  @extend %serverBoostPageHeaderWave !optional;
+}
+.bodyWave__62812 {
+  @extend %serverBoostPageBodyWave !optional;
 }

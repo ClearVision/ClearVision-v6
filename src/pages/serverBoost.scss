@@ -1,38 +1,28 @@
 /* SERVER BOOST */
-%themeDark {
-  .perksModal-CLcR1c {
-    background-color: transparent;
-  }
-  .ctaBar-Nhk8yY {
-    background-color: hsla(0, 0%, 0%, 0.4);
-    .guildIcon-2xKEtM {
-      background-color: transparent;
-    }
-    .badgeIconWithoutSubscribers-1hjTfX {
-      color: #fff;
-      opacity: 0.8;
-    }
-    .giftIcon-2kmx1K {
-      color: currentColor;
-    }
-  }
-  .tierMarkerBackground-G8FoN4 {
-    background-color: transparent;
-  }
-  .tierMarkerInProgress-2Tdxjz,
-  .barBackground-unEPDT {
-    background-color: hsla(0, 0%, 0%, 0.4) !important;
-  }
-  .tierBody-3ju-rc,
-  .tierHeaderLocked-3ItHYn,
-  .perk-19D_HN {
-    background-color: hsla(0, 0%, 0%, 0.4);
-  }
-  .tierHeaderLocked-3ItHYn {
-    color: hsla(0, 0%, 100%, 0.7);
-  }
-  .tierLock-1uBqZ0 {
-    color: #fff;
-    opacity: 0.3;
-  }
+/*bottom boost this server background*/
+%serverBoostPageBoostPrompt {
+	background: rgba(0,0,0,.2);
+}
+/*perks card eg "hd streaming"*/
+%serverBoostPageTopPerksCard {
+	background: rgba(0,0,0,.4);
+}
+/*give your community a boost*/
+%serverBoostPageCard{
+	background: rgba(0,0,0,.2);
+}
+/*boosting faq*/
+%serverBoostPageFaq {
+	background: rgba(0,0,0,.4);
+}
+/*greater bg, needs more work*/
+%serverBoostPageScroller {
+	background: transparent;
+}
+/*paths*/
+%serverBoostPageHeaderWave > path {
+	display: none;
+}
+%serverBoostPageBodyWave > path {
+	fill: rgba(0,0,0,.8) !important;
 }

@@ -74,7 +74,16 @@
 %serverBoostPaymentActions %input {
   box-shadow: none;
 }
-
+/*Boost this server button in serverboost page*/
+%serverBoostPerkContent {
+	background: transparent;
+  %serverBoostPaymentUpsellFooter {
+    background: hsla(0, 0%, 0%, 0.4);
+  }
+}
+%serverBoostPaymentPerksList {
+	background: rgba(0,0,0,.4);
+}
 // INVITE FROM WEB BROWSER
 %themeDark %webInviteModalContentWrapper {
   background: hsla(0, 0%, 0%, 0.5);
