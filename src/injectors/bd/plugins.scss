@@ -74,6 +74,8 @@ div#magane div.stickerWindow div.packs-toolbar { /*bottom*/
 	background: transparent;
   h3 {
     color: var(--text-normal);
+    padding: 12px 0;
+    flex-direction: column;
     font-size: 11px;
     font-weight: 600;
     text-align: center;
@@ -87,13 +89,12 @@ div#magane div.stickerWindow div.packs-toolbar { /*bottom*/
     width: var(--members-width);
   }
 }
-#MemberCount %membersGroup:before,
-#MemberCount %membersGroup:after{
-	display: none;
-}
 %membersWrap.hasCounter %members {
   padding-top: 30px;
 	margin-top: 0;
+}
+%members %membersGroup:has(.membercount-row) {
+	opacity: 1;
 }
 // COPY CODE - FINICALMIST
 // COPYBUTTON
