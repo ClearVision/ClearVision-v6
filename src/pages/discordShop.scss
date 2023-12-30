@@ -25,3 +25,19 @@
 %shopMockInput {
   background-color: hsla(0, 0%, 100%, 0.07);
 }
+
+// SERVER SHOP
+/* intro container */
+%serverShopIntro {
+	background: var(--background-overlay);
+	border: 2px solid $main-color;
+  &:hover {
+    background: var(--background-overlay);
+    border: 2px solid $hover-color
+  }
+}
+/* support the server perks */
+%serverShopSelected {
+	background: $main-color;
+}
+

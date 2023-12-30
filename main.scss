@@ -151,11 +151,11 @@ $version: '6.3.0';
 @import 'src/users/status';
 
 // VENCORD
-@import 'src/injectors/ven/shiki.scss';
+@import 'src/injectors/ven/plugins.scss';
 @import 'src/injectors/ven/venSettings.scss';
 
 // REPLUGGED
-@import 'src/injectors/rp/gameActivityToggle.scss';
+@import 'src/injectors/rp/plugins.scss';
 @import 'src/injectors/rp/rpSettings.scss';
 
 // BETTERDISCORD
@@ -166,17 +166,4 @@ $version: '6.3.0';
 @import 'src/injectors/bd/popouts';
 @import 'src/injectors/bd/sidebar';
 @import 'src/injectors/bd/sources';
-
-// BETTERDISCORD PLUGINS
-@import 'src/injectors/bd/plugins/messageButtons';
-@import 'src/injectors/bd/plugins/pluginNotice';
-@import 'src/injectors/bd/plugins/magane';
-@import 'src/injectors/bd/plugins/Arashiryuu/memberCount';
-@import 'src/injectors/bd/plugins/CapnKitten/HideChannels';
-@import 'src/injectors/bd/plugins/DevilBro/badgesEverywhere';
-@import 'src/injectors/bd/plugins/DevilBro/dateText';
-@import 'src/injectors/bd/plugins/DevilBro/gameActivityToggle';
-@import 'src/injectors/bd/plugins/DevilBro/ownerTag';
-@import 'src/injectors/bd/plugins/DevilBro/tooltips';
-@import 'src/injectors/bd/plugins/Finicalmist/copyCode';
-@import 'src/injectors/bd/plugins/noodlebox/lineNumbers';
+@import 'src/injectors/bd/plugins';

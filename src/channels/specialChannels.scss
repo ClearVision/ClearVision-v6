@@ -7,25 +7,6 @@
 %customizeChannelsPrompt {
   background: var(--background-overlay);
 }
-/*search bar*/
-%customizeChannelsSearch,
-%customizeChannelsSearch:focus-within {
-  background: rgba(0,0,0,.5);
-  border: 2px solid $main-color;
-}
-/*search bar with dropdown*/
-%customizeChannelsSearchDropdown,
-%customizeChannelsSearchDropdown:hover {
-  background: rgba(0,0,0,.5);
-  border: 2px solid $main-color;
-}
-/*dropdown options*/
-%customizeChannelsSearchOption {
-  background: $main-color;
-}
-%customizeChannelsSearchMenu {
-  background: rgba(0,0,0,.8);
-}
 %customizeChannelsPill {
   background: rgba(0,0,0,.2);
   border: 1px solid $main-color;
@@ -58,11 +39,6 @@
   %textExtraSmallMedium {
     color: hsla(0, 0%, 100%, 0.5) !important;
     transition: all 0.15s ease-in-out;
-  }
-  %browseChannelsChecked {
-    & + %textExtraSmallMedium {
-      color: hsla(0, 0%, 100%, 0.7) !important;
-    }
   }
 }
 

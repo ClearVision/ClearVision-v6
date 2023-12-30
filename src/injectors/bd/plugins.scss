@@ -1,0 +1,259 @@
+// MAGANE
+div#magane div.stickerWindow {
+  border: 2px solid $main-color;
+}
+div#magane div.stickerWindow div.stickers h3.getStarted {
+  color: #fff;
+}
+div#magane div.stickerWindow:not(:has(> [style^="display"])) div.stickers *,
+div#magane div.stickerWindow:not(:has(> [style^="display"])) div.packs-toolbar * {
+  display: none;
+}
+div#magane .stickersModal .modal-content, div#magane .stickersModal .modal-card {
+  background: transparent;
+}
+div#magane .stickersModal .inputQuery {
+  background: rgba(0,0,0,.2);
+  border: 2px solid $main-color;
+}
+div#magane .button {
+  background: $main-color;
+  color: #fff;
+}
+div#magane div.stickerWindow:before {
+  content: "";
+  position: absolute;
+  z-index: -999;
+  @include stretch;
+  background: cv('bg.backdrop.img') cv('bg.backdrop.pos') / cv('bg.backdrop.size') cv('bg.backdrop.repeat') cv('bg.backdrop.attach');
+  @include filters(cv('bg.backdrop'));
+}
+div#magane div.stickerWindow div.stickers, /*top*/
+div#magane div.stickerWindow div.packs-toolbar { /*bottom*/
+  background: var(--background-overlay);
+}
+// MESSAGE BUTTONS
+.replyer,
+.btn-quote,
+.citar-btn {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  border-radius: 3px;
+  transition: background-color 0.3s ease-in-out;
+  &:hover {
+    background-color: $main-color !important;
+  }
+  %messageGroup:not(:hover) & {
+    visibility: visible;
+    opacity: 0;
+  }
+}
+%messageGroup:hover {
+  .replyer {
+    opacity: 1;
+    animation: cv-fade-in 0.3s ease-in-out;
+  }
+  .btn-quote {
+    opacity: 1;
+  }
+  .citar-btn {
+    opacity: 0.8;
+    animation: cv-fade-to-8 0.3s ease-in-out;
+  }
+}
+// PLUGIN NOTICE
+#pluginNotice {
+  #outdatedPlugins {
+    span {
+      color: #fff;
+      @include hover-shadow;
+    }
+  }
+}
+// MEMBERLIST - ARASHIRYUU
+#MemberCount {
+	background: transparent;
+  h3 {
+    color: var(--text-normal);
+    padding: 12px 0;
+    flex-direction: column;
+    font-size: 11px;
+    font-weight: 600;
+    text-align: center;
+  }
+  %membersGroup {
+    &:before, &:after {
+      display: none;
+    }
+  }
+  .membercount-row {
+    width: var(--members-width);
+  }
+}
+%membersWrap.hasCounter %members {
+  padding-top: 30px;
+	margin-top: 0;
+}
+%members %membersGroup:has(.membercount-row) {
+	opacity: 1;
+}
+// COPY CODE - FINICALMIST
+// COPYBUTTON
+%codeHLJS {
+  .copybutton {
+    background: hsla(0, 0%, 100%, 0.1) !important;
+    color: hsla(0, 0%, 100%, 0.7) !important;
+    border: none !important;
+    border-top-left-radius: 3px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+    &:hover {
+      color: #fff !important;
+    }
+    &:active {
+      color: $main-color !important;
+    }
+  }
+  &:hover {
+    .copybutton {
+      opacity: 1;
+    }
+  }
+}
+// LINE NUMBERS - NOODLEBOX
+// LINE NUMBERS
+%codeHLJS > .kawaii-linenumbers {
+  list-style: none;
+  counter-reset: linenumbers;
+  border-left: 2.6ch solid hsla(0, 0%, 100%, 0.04);
+  margin: -6px;
+  padding: 6px;
+  > li {
+    text-indent: -3ch;
+    margin-left: 0;
+    padding: 0;
+    border: none;
+    &:before {
+      content: counter(linenumbers);
+      counter-increment: linenumbers;
+      color: hsla(0, 0%, 100%, 0.3);
+      display: inline-block;
+      width: 2ch;
+      margin-right: 0.5ch;
+      padding-right: 0.5ch;
+      text-align: right;
+      overflow: hidden;
+      vertical-align: top;
+      user-select: none;
+    }
+  }
+}
+// BADGES EVERYWHERE - DEVILBRO
+.BE-badge {
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.7));
+}
+// DATE TEXT - DEVILBRO
+// CREATIONDATE, JOINEDATDATE, LASTMESSAGEDATE
+.creationDate,
+.joinedAtDate,
+.lastMessageDate {
+  font-size: 10px;
+  margin-bottom: -2px;
+}
+// GAMEACTIVITYTOGGLE - DEVILBRO
+%themeDark {
+  .gameActivityToggleAdded_Yd-YxC %accountPanelTagButton,
+  .gameActivityToggleAdded_Yd-YxC %accountPanelTagless {
+    min-width: calc(100% - 140px) !important;
+  }
+}
+// OWNER TAG - DEVILBRO
+.owner-tag {
+  color: hsla(0, 0%, 100%, 0.6);
+  &[style*='background'] {
+    color: #fff;
+  }
+  .BE-badges + & {
+    margin-left: 0;
+  }
+}
+// DEVILBRO TOOLTIPS FIX
+.BDFDB-tooltip {
+  > %tooltipTop {
+    position: relative;
+    margin-top: -36px;
+  }
+  > %tooltipRight {
+    position: relative;
+    margin-left: 10px;
+  }
+}
+
+
+
+
+// Plugins/Themes Searchbar & dropdown filter
+.bd-search-wrapper {
+  background-color: hsla(0, 0%, 0%, 0.4) !important;
+}
+.bd-select {
+  .bd-select-options {
+    background-color: hsla(0, 0%, 0%, 0.4) !important;
+    border: hidden !important;
+  }
+  .bd-select-option {
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1) !important;
+    }
+    &.selected {
+      background-color: $main-color !important;
+    }
+  }
+}
+
+.bd-addon-list .bd-addon-card {
+  background-color: hsla(0, 0%, 0%, 0.4) !important;
+}
+
+.bd-addon-list .bd-addon-header {
+  background-color: var(--backdrop-overlay);
+}
+
+.bd-button {
+  background-color: $main-color;
+  &:hover {
+    background-color: $hover-color;
+  }
+  &:active {
+    background-color: $main-color;
+  }
+}
+.bd-addon-views {
+  .bd-view-button.selected {
+    background-color: $main-color;
+  }
+}
+.bd-switch input:checked + .bd-switch-body {
+  background-color: $main-color !important;
+}
+.bd-switch-body {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+}
+.bd-switch-symbol {
+  color: $main-color !important;
+}
+.bd-toast {
+  background-color: $main-color;
+  &.toast-info {
+    background-color: $main-color;
+  }
+  &.toast-success {
+    background-color: $main-color;
+  }
+}
+.bd-link {
+  color: var(--url-color);
+}
+.bd-settings-title {
+  color: #fff;
+}

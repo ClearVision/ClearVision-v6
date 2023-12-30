@@ -8,12 +8,6 @@
   background-color: hsla(0, 0%, 100%, 0.1);
   border: none;
 }
-.colorHeaderSecondary-g5teka {
-  color: hsla(0, 0%, 100%, 0.7);
-  &:hover {
-    color: hsla(0, 0%, 100%, 0.9);
-  }
-}
 %attachmentName {
   color: hsla(0, 0%, 100%, 0.7);
   &:hover {
@@ -25,17 +19,6 @@
   margin: 0 5px;
   &:hover {
     color: hsla(0, 0%, 100%, 0.7);
-  }
-}
-%languageSelector {
-  background-color: hsla(0, 0%, 0%, 0.8);
-  %languageSelectorItem {
-    &:hover {
-      background-color: hsla(0, 0%, 100%, 0.05);
-    }
-    &%languageSelectorSelected {
-      background-color: $main-color;
-    }
   }
 }
 %textContainerModal {

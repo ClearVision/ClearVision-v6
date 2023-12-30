@@ -4,9 +4,6 @@
 %stageIconBackground {
   background-color: $main-color;
 }
-%stagePopoutTextInput {
-  background-color: transparent;
-}
 
 // STAGE
 %stageContainer {
@@ -22,29 +19,28 @@
 %stageSeparator {
   background-color: $main-color;
 }
-%stageHeaderContainer,
 %stageParticipants {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: transparent;
 }
 %stageSpeakers {
   background: transparent;
-}
-%stageModIconContainer {
-  > svg {
-    fill: #fff;
-    > rect {
-      fill: $main-color;
-    }
-  }
 }
 %stageParticipant {
   &:hover {
     background-color: hsla(0, 0%, 100%, 0.05);
   }
 }
-%stageUserIconContainer {
-  background-color: $main-color;
-  color: #fff;
+// THE AUDIENCE CONTAINER IN VC CHANNELS
+%stageAudienceContainer {
+  %stageAudienceIconContainer {
+    background: $main-color;
+  }
+  %stageAudienceIcon {
+    color: #fff;
+  }
+  %textSmallMedium {
+    color: rgba(255, 255, 255, 0.5) !important;
+  }
 }
 %stageOptionContainer {
   background: rgba(0, 0, 0, calc(var(--background-shading) * 0.3));
@@ -58,7 +54,26 @@
     background: $hover-color;
   }
 }
-
+// ICON WHEN HOVERING SERVER
+%stageGuildListenerIcon {
+  background: $main-color;
+  %textExtraSmallNormal {
+    color: #fff !important;
+  }
+  > svg {
+    color: #fff;
+  }
+}
+// STARTING A STAGE CALL
+%stageTopicForm {
+  %input {
+    background: rgba(0,0,0,.4);
+    box-shadow: 0 0 0 2px $main-color;
+  }
+  %stageTopicInput {
+    background: transparent;
+  }
+}
 // REQUESTS
 %stageRequestContainer {
   background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.6));

@@ -54,7 +54,7 @@
     box-shadow: 0 0 2px 2px $hover-color;
   }
 }
-.premiumUpsell_e1bfd9 {
+%quickReactPremiumUpsell {
   background-color: transparent;
 }
 
@@ -77,16 +77,6 @@
   transition: all 0.15s ease-in-out;
   &:hover {
     background: $hover-color;
-  }
-}
-%deleteServerCheckbox {
-  %deleteServerCheckboxInner {
-    %deleteServerCheckboxElement {
-      &:checked + span {
-        background-color: $main-color;
-        border-color: $main-color;
-      }
-    }
   }
 }
 

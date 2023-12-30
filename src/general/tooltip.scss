@@ -59,13 +59,6 @@
   }
 }
 
-%subscribeTooltipWrapper {
-  background-color: $main-color;
-  &:after {
-    border-bottom-color: $main-color;
-  }
-}
-
 // UPSELL
 %upsellTooltipText {
   background-color: hsla(0, 0%, 0%, 0.8);

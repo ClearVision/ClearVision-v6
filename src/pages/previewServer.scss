@@ -1,23 +1,27 @@
 /* PREVIEW SERVER */
 
 // WELCOME MODAL
-.optionContainer__5d0b1 {
+%previewServerOptionContainer {
   background-color: $main-color;
   &:hover {
     background-color: $hover-color;
   }
-  .optionArrow__4c748 {
+  %previewServerChannelOptionArrow {
+    color: #fff;
+  }
+  span {
     color: #fff;
   }
 }
-.channelIcon__1565e {
-  background-color: transparent;
+%previewServerChannelIcon,
+%previewServerChannelTitleIcon {
+  color: #fff;
 }
 
-%themeDark .notice__99c03 {
+%themeDark %previewServerNotice {
   background-color: transparent;
 }
-.notice__99c03 .header__72166::before {
+%notice__99c03 %previewServerHeader::before {
   content: '';
   position: absolute;
   top: 0;
@@ -31,12 +35,12 @@
   border-radius: 3px;
 }
 
-.container_d4b118 {
+%previewServerContainer {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
 // TOP BAR JOIN AND BACK BUTTON
-.button__671cf:hover {
+%previewServerBackButton:hover {
   background-color: $hover-color;
 }
 
@@ -49,41 +53,44 @@
 }
 
 // SERVER STATUS (E.G. PUBLIC OR PRIVATE)
-.communityInfoPill_d3f445 {
+%previewServerStatus {
   background: rgba(0, 0, 0, 0.6);
 }
 
 // Nyx's fixes
-.container__92dc8,
-.container_acafc1 {
+%previewServerHomeContainer,
+%previewServerHomeContainerInner {
   background: transparent;
 }
-.icon_f71c55 {
+%previewServerHomeIcon {
   border: 4px solid transparent;
 }
-.interactiveCard_d5a839,
-.interactiveCard_d5a839.selected__715e8 {
-  border: 1px solid $main-color;
+%previewServerHomeInteractiveCard {
+  &%previewServerHomeInteractiveCardSelected {
+    border: 1px solid $main-color;
+  }
+  &:hover {
+    border: 1px solid $hover-color;
+  }
+  &:active {
+    border: 1px solid $hover-color;
+  }
 }
-.interactiveCard_d5a839:active,
-.interactiveCard_d5a839:hover {
-  border: 1px solid $hover-color;
-}
-.card_d4f6c7 {
+%previewServerHomeCard {
   background: rgba(0, 0, 0, 0.4);
 }
 %previewServerIconContainer {
   background: $main-color;
   color: #fff;
 }
-.container__16581:hover {
+%previewServerConversation:hover {
   background: $hover-color;
 }
-.conversationRoot__11fa6:after,
-.replySpine_ed1feb {
+%previewServerConversationRoot:after,
+%previewServerConversationReply {
   border-left: 2px solid $main-color;
 }
-.conversationMessage__0d40e:after {
+%previewServerConversationMessage:after {
   border-left: 2px solid $main-color;
   border-bottom: 2px solid $main-color;
 }

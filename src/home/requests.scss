@@ -1,6 +1,6 @@
 %messageReq, //main tab
 %messageReqSpam, //spam
-%messageReqItem.active_a36bbb, 
+%messageReqActive%messageReqItem, 
 %messageReqItem:hover {
   background: $hover-color;
   animation: cv-fade-to-8 0.3s ease-in-out;

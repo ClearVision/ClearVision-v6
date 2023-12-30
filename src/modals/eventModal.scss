@@ -6,6 +6,10 @@
   background-color: $main-color;
 }
 %eventCard {
+  &:hover {
+    background-color: hsla(0, 0%, 0%, 0.4);
+    border: 2px solid $hover-color;
+  }
   background-color: hsla(0, 0%, 0%, 0.4);
   border: 2px solid $main-color;
 }
@@ -18,8 +22,7 @@
 }
 %eventRSVPCount {
   background-color: $main-color;
-  %eventRSVPIcon,
-  .colorHeaderSecondary-g5teka {
+  %eventRSVPIcon {
     color: #fff;
   }
 }
@@ -49,10 +52,10 @@
   &%createEventProgressBarSelected {
     background-color: $main-color;
   }
-  + .colorMuted_ae2200 {
+  + %createEventColorMuted {
     color: hsla(0, 0%, 100%, 0.3);
   }
-  + .colorBrand_be5f58 {
+  + %createEventColorBrand {
     color: $main-color;
   }
 }

@@ -58,8 +58,8 @@
 // ITEM CARDS
 %themeDark {
   %settingsCard {
-    &:not(.outline_cb0aed),
-    &.outline_cb0aed {
+    &:not(%settingsCardOutline),
+    &%settingsCardOutline {
       background-color: rgba(0, 0, 0, 0.4);
       border-color: hsla(0, 0%, 100%, 0.07);
     }
@@ -88,26 +88,26 @@
 }
 
 // DROP DOWN
-.lookFilled__3dba3.select__0eb48 {
+%settingsLookFilled%settingsDropdownSelect {
   background-color: hsla(0, 0%, 100%, 0.07);
   border-color: hsla(0, 0%, 100%, 0.09);
 }
-.popout_a6e77f {
+%settingsDropdownPopout {
   background-color: rgba(0, 0, 0, 0.8);
   border: none;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-.option_be8b2e {
+%settingsDropdownOption {
   &:hover,
   &:focus,
-  &.focused_a2f507 {
+  &%settingsDropdownOptionFocused {
     background-color: hsla(0, 0%, 100%, 0.05);
     border: hsla(0, 0%, 100%, 0.07);
   }
-  &[aria-selected='true']:not(.option_be8b2e.multi__8d15f) {
+  &[aria-selected='true']:not(%settingsDropdownOption%settingsDropdownMulti) {
     background-color: $main-color;
-    .selectedIcon__4b0ba {
+    %settingsDropdownOptionSelectedIcon {
       circle {
         fill: $main-color;
       }

@@ -70,29 +70,26 @@
 %userSettingsFamilyIconContainer {
   background-color: transparent;
 }
-.row_c1b980 {
+// what are connected parents able to see?
+%userSettingsFamilyRow {
   background-color: hsla(0, 0%, 100%, 0.07);
 }
 
 // AUTHORIZED APPS
-.authedApp-1tw-eT {
-  background-color: rgba(0, 0, 0, 0.4);
-  border-color: hsla(0, 0%, 100%, 0.07);
-}
+// removed, covered by %settingsCard theming
 
 // DEVICES
-.sessionIcon__540be {
+%userSettingsDevicesIcon {
   background-color: $main-color;
   color: #fff;
 }
 
 // CONNECTIONS
-.connectContainer__8050b {
+%userSettingsConnectionsContainer {
   background-color: rgba(0, 0, 0, 0.4);
   border-color: hsla(0, 0%, 100%, 0.07);
 }
-.accountButtonInner__80e3a,
-.accountBtnInner-1DCgBm {
+%userSettingsConnectionsButtonInner {
   background-color: hsla(0, 0%, 100%, 0.05);
   &:hover {
     background-color: hsla(0, 0%, 100%, 0.07);
@@ -104,31 +101,27 @@
   %userSettingsBillingIndicator {
     background-color: $main-color;
   }
-  .paymentPane__9cf01,
-  .paginator_e620d3 {
+  %userSettingsBillingPaymentPane,
+  %userSettingsBillingPaginator {
     background-color: transparent;
   }
-  .bottomDivider_a59d97 {
+  %userSettingsBillingBottomDivider {
     border-color: rgba(0, 0, 0, 0.07);
   }
-  .hoverablePayment__3ea24 {
+  %userSettingsBillingHoverablePayment {
     &:hover {
       background-color: rgba(255, 255, 255, 0.05);
     }
   }
-  .payment__7d702 {
+  %userSettingsBillingPayment {
     background-color: transparent;
-    &:not(.hoverablePayment__3ea24) {
+    &:not(%userSettingsBillingHoverablePayment) {
       background-color: hsla(0, 0%, 0%, 0.4);
     }
   }
-  .expandedInfo__47bad {
+  %userSettingsBillingExpandedInfo {
     background-color: transparent;
     box-shadow: 0 0 2px 2px $main-color;
-  }
-  .codeRedemptionRedirect-3SBiCp {
-    background-color: rgba(0, 0, 0, 0.4);
-    border-color: hsla(0, 0%, 100%, 0.07);
   }
   %userSettingsBillingMethodText {
     color: #fff;
@@ -150,13 +143,13 @@
     }
   }
 }
-.scroller__244e5 { // nitro page
+%userSettingsNitroScroller { // nitro page
   background-color: transparent;
 }
 %userSettingsSubsPayDetailsBlock {
   background-color: rgba(0, 0, 0, 0.4);
 }
-.premiumSubscriptionAccountCredit__6bab4 {
+%userSettingsSubsAccountCredit {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -236,21 +229,21 @@
 
 // GAME OVERLAY
 %themeDark {
-  .nowPlaying__353c3 {
+  %userSettingsOverlayNowPlaying {
     background-color: rgba($color: #43b581, $alpha: 0.6);
   }
 }
-.wrapper__4beb8 {
+%userSettingsOverlayWrapper {
   border-color: $main-color;
 }
-.option_a0c054 {
+%userSettingsOverlayOption {
   background-color: hsla(0, 0%, 100%, 0.05);
   opacity: 1;
   &:hover {
     background-color: hsla(0, 0%, 100%, 0.07);
     opacity: 1;
   }
-  &.selected_ea51d6 {
+  &%userSettingsOverlaySelected {
     background-color: $main-color;
     border-color: $main-color;
   }
@@ -258,15 +251,15 @@
 
 // KEYBINDS
 %themeDark {
-  .container__0c807 {
+  %userSettingsKeybindContainer {
     background-color: hsla(0, 0%, 100%, 0.05);
     box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.07);
     border-color: transparent;
-    &:not(.disabled__8d382):hover {
+    &:not(%userSettingsKeybindDisabled):hover {
       border-color: transparent;
       box-shadow: 0 0 2px 2px $main-color;
     }
-    &.recording__97366 {
+    &%userSettingsKeybindRecording {
       color: #fff;
       box-shadow: 0 0 2px 2px $main-color;
       animation: cv-shadow-pulse 1s ease-in infinite;
@@ -276,17 +269,17 @@
 
 // ACTIVITY STATUS
 %themeDark {
-  .notDetected__2a0c9 {
+  %userSettingsActivityNotDetected {
     background-color: hsla(0, 0%, 0%, 0.4);
     border: hsla(0, 0%, 100%, 0.07);
   }
-  .addGamePopout_e4ca8f {
+  %userSettingsActivityAddGame {
     background-color: hsla(0, 0%, 0%, 0.7);
   }
-  .game__19f4b {
+  %userSettingsActivityGame {
     box-shadow: 0 1px 0 0 hsla(0, 0%, 100%, 0.04);
   }
-  .gameNameInput_e25dd8 {
+  %userSettingsActivityGameNameInput {
     &:hover,
     &:focus {
       background-color: hsla(0, 0%, 100%, 0.05);
