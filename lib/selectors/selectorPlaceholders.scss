@@ -992,6 +992,12 @@
 .iconContainer__21954 {
   @extend %timeoutIcon !optional;
 }
+.item__126a6 {
+  @extend %timeoutModalItem !optional;
+}
+.selectorButtonSelected__18241 {
+  @extend %timeoutModalSelected !optional;
+}
 .before_inlineCode__37e14 {
   @extend %inlineCodeBefore !optional;
 }
