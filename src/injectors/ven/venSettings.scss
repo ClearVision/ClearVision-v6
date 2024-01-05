@@ -17,3 +17,11 @@
 		background-color: $hover-color;
 	}
 }
+// plugin authors
+.vc-author-modal-name {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.vc-author-modal-name:before {
+    background: rgba(0, 0, 0, 0.4);
+}

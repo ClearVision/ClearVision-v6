@@ -4512,6 +4512,18 @@ pre {
 .pill_f055c3 {
   @extend %forumTag !optional;
 }
+.messageCountIcon__73000 {
+  @extend %forumMessageCountIcon !optional;
+}
+.newMessageCount_f45ea7 {
+  @extend %forumNewMessageCountText !optional;
+}
+.dots__360d3 {
+  @extend %forumGalleryTypingDots !optional;
+}
+.dots__44c48 {
+  @extend %forumListTypingDots !optional;
+}
 .increasedActivityPill__0f3bd {
   @extend %forumIncreasedTag !optional;
 }
