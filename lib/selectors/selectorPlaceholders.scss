@@ -992,6 +992,12 @@
 .iconContainer__21954 {
   @extend %timeoutIcon !optional;
 }
+.item__126a6 {
+  @extend %timeoutModalItem !optional;
+}
+.selectorButtonSelected__18241 {
+  @extend %timeoutModalSelected !optional;
+}
 .before_inlineCode__37e14 {
   @extend %inlineCodeBefore !optional;
 }
@@ -4511,6 +4517,18 @@ pre {
 }
 .pill_f055c3 {
   @extend %forumTag !optional;
+}
+.messageCountIcon__73000 {
+  @extend %forumMessageCountIcon !optional;
+}
+.newMessageCount_f45ea7 {
+  @extend %forumNewMessageCountText !optional;
+}
+.dots__360d3 {
+  @extend %forumGalleryTypingDots !optional;
+}
+.dots__44c48 {
+  @extend %forumListTypingDots !optional;
 }
 .increasedActivityPill__0f3bd {
   @extend %forumIncreasedTag !optional;

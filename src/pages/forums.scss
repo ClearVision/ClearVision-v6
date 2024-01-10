@@ -132,7 +132,24 @@
   text-align: center;
   padding: 0 10px;
 }
-
+// typing animation & message count
+/*icon*/
+%forumMessageCountIcon > svg {
+  color: var(--channel-color);
+}
+/*post unread, message count, old*/
+/*important needed for inline*/
+%forumNewMessageCountText {
+color: $main-color !important;
+}
+/* the !important is technically not needed but saves a rule
+ in %forumListContainer%forumListOpen %Dots, 
+ which creates an overriding inline rule*/
+%forumGalleryTypingDots, /*old forums*/
+%forumListTypingDots { /*new forums*/
+  background-color: rgba(0,0,0,.6);
+  border: 2px solid $main-color !important; 
+}
 
 // tag box etc
 %forumTagBox {

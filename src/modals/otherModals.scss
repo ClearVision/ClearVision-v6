@@ -96,8 +96,15 @@
 }
 
 // TIMEOUT
-// removed 
-
+/*timeout duration item*/
+%timeoutModalItem%timeoutModalSelected {
+	background: var(--main-color);
+	border-color: var(--main-color);
+}
+%timeoutModalItem:not(%timeoutModalSelected) {
+	background: rgba(0,0,0,.4);
+	border-color: var(--main-color);
+}
 // Tab Help
 // removed 
 
