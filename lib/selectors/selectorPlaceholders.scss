@@ -1496,6 +1496,9 @@
 .applicationStore_fc7d76 {
   @extend %nitro !optional;
 }
+.mainPageScroller__12afb {
+  @extend %nitroScroller !optional;
+}
 .card_e97590 {
   @extend %nitroCard !optional;
 }
@@ -2118,8 +2121,20 @@ pre {
 .contents_f41bb2 {
   @extend %messageContent !optional;
 }
-.messageGroupBlocked__9a374 {
-  @extend %messageGroupBlocked !optional;
+.blockedSystemMessage_e58a4c {
+  @extend %messageBlockedSystemMessage !optional;
+}
+.blockedAction__27053 {
+  @extend %messageBlockedAction !optional;
+}
+.expanded_be53d7 {
+  @extend %messageGroupBlockedExpanded !optional;
+}
+.blockedAction__27053 {
+  @extend %messageGroupBlockedAction !optional;
+}
+.blockedSystemMessage_e58a4c {
+  @extend %messageGroupBlockedSystemMessage !optional;
 }
 .blockedAction__27053 {
   @extend %messageShowBlocked !optional;
@@ -2178,12 +2193,6 @@ pre {
 .spoilerMarkdownContent__2b8f8 {
   @extend %messageSpoiler !optional;
 }
-.mentioned__58017 {
-  @extend %mentioned !optional;
-}
-.interactive {
-  @extend %mentionedInteractive !optional;
-}
 .markup_a7e664 {
   @extend %markup !optional;
 }
@@ -2196,8 +2205,14 @@ pre {
 .mention {
   @extend %mention !optional;
 }
-.channelMention {
-  @extend %channelMention !optional;
+.mentioned__58017 {
+  @extend %mentioned !optional;
+}
+.interactive {
+  @extend %mentionedInteractive !optional;
+}
+.icon_ecf39b {
+  @extend %mentionIcon !optional;
 }
 .anchor_c8ddc0 {
   @extend %anchor !optional;
@@ -3193,8 +3208,8 @@ pre {
 .previewContainer_c7e80d {
   @extend %guildSettingsRoleIconPreview !optional;
 }
-.container__7712a {
-  @extend %guildSettingsRoleViewAs !optional;
+.container__9bb08 {
+  @extend %guildSettingsRoleViewAsDropdown !optional;
 }
 .emojiRow__4661c {
   @extend %guildSettingsEmojiCard !optional;
@@ -3723,7 +3738,7 @@ pre {
 .connectContainer__8050b {
   @extend %userSettingsConnectionsContainer !optional;
 }
-.accountButtonInner__80e3a {
+.inner__51a43 {
   @extend %userSettingsConnectionsButtonInner !optional;
 }
 .giftCard__30972 {

@@ -1,5 +1,4 @@
 /* EMOJI PICKER */
-
 %emojiPickerSizer {
   min-width: 430px;
 }
@@ -132,4 +131,9 @@
 }
 %emojiPickerPremiumUpsell {
   background-color: transparent;
+}
+
+// NITRO EXPIRING NOTICE
+.premiumRetentionNotice__7e7c4 {
+  background-color: hsla(0, 0%, 100%, 0. 1);
 }
