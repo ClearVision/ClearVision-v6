@@ -773,32 +773,8 @@
 .header_f7f1f3 {
   @extend %gifPickerHeader !optional;
 }
-.searchBar__3b162 {
-  @extend %gifPickerSearchBar !optional;
-}
-.inner__999f6 {
-  @extend %gifPickerSearchBarInner !optional;
-}
-.input__74754 {
-  @extend %gifPickerSearchInput !optional;
-}
-.iconLayout__6d744 {
-  @extend %gifPickerSearchIconLayout !optional;
-}
-.iconContainer__3af05 {
-  @extend %gifPickerSearchIconContainer !optional;
-}
-.icon__37cc1 {
-  @extend %gifPickerSearchIcon !optional;
-}
-.visible__50aa8 {
-  @extend %gifPickerSearchIconVisible !optional;
-}
 .clear__76e04 {
   @extend %gifPickerSearchIconClear !optional;
-}
-.backButton__6a1f0 {
-  @extend %gifPickerSearchBackButton !optional;
 }
 .content__30de8 {
   @extend %gifPickerContent !optional;
@@ -1469,29 +1445,26 @@
 .searchAnswer_b452e7 {
   @extend %chatSearchAnswer !optional;
 }
-.libraryFilter_c21584 {
-  @extend %librarySearch !optional;
-}
-.focused__60a69 {
-  @extend %librarySearchFocused !optional;
-}
 .container__7712a {
-  @extend %librarySearchBar !optional;
+  @extend %headerSearchBar !optional;
 }
 .inner__999f6 {
-  @extend %librarySearchBarInner !optional;
+  @extend %headerSearchBarInner !optional;
 }
 .input__74754 {
-  @extend %librarySearchInput !optional;
+  @extend %headerSearchInput !optional;
 }
 .iconLayout__6d744 {
-  @extend %librarySearchIconLayout !optional;
+  @extend %headerSearchIconLayout !optional;
 }
 .icon__37cc1 {
-  @extend %librarySearchIcon !optional;
+  @extend %headerSearchIcon !optional;
 }
 .clear__76e04 {
-  @extend %librarySearchIconClear !optional;
+  @extend %headerSearchIconClear !optional;
+}
+.backButton__6a1f0 {
+  @extend %headerSearchBackButton !optional;
 }
 .applicationStore_fc7d76 {
   @extend %nitro !optional;
