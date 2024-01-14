@@ -5077,3 +5077,12 @@ pre {
 .selected__70739 {
   @extend %serverShopSelected !optional;
 }
+.modal_b38209 {
+  @extend %beforeTalkRuleContainer !optional;
+}
+.fieldBackground_d6edfa {
+  @extend %beforeTalkRulesBackground !optional;
+}
+.termsRow_a03d1d {
+  @extend %beforeTalkRule !optional;
+}

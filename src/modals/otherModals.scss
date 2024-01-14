@@ -201,3 +201,21 @@
 %giftModalSpinner {
 	background: rgba(0,0,0,.4);
 }
+// YOU MUST COMPLETE A FEW MORE STEPS BEFORE YOU CAN TALK
+/*before you talk here popup*/
+%beforeTalkRuleContainer {
+	background: transparent;
+}
+/*border color for terms of acceptance*/
+%beforeTalkRule {
+	border-color: var(--main-color);
+}
+/*agree to rules*/
+%beforeTalkRulesBackground {
+	background: var(--background-overlay);
+  border-color: $main-color;
+  &:hover:not(:focus) {
+    border-color: $hover-color;
+    background: var(--background-overlay);
+  }
+}
