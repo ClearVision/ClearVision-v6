@@ -221,6 +221,9 @@ color: $main-color !important;
 %forumChatStartBox {
   background-color: transparent;
 }
+%forumChatStartBox:after {
+  border-color: transparent;
+}
 %forumMessageButton {
   background-color: hsla(0, 0%, 100%, 0.05);
   border-radius: 3px;
