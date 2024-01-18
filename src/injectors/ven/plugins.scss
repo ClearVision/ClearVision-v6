@@ -1,4 +1,8 @@
 /*Shiki code blocks*/
+.shiki-root {
+  background-color: rgba(0,0,0,calc(var(--background-shading)*0.2)) !important;
+}
+
 .shiki-container { 
     background: rgba(0,0,0,0.2) !important;
 }
