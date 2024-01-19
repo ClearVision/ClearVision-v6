@@ -3,9 +3,25 @@
 	border: 2px solid $main-color;
 	&:hover {
 		background: var(--background-overlay);
-		border: 2px solid $hover-color
+		border: 2px solid $hover-color;
 	}
 }
 .vc-plugins-info-button svg:not(:hover,:focus) {
 	color: #fff;
+}
+
+//update popup
+.vc-notification-root {
+	background-color: rgba(0, 0, 0, 0.8);
+	&:hover {
+		background-color: $hover-color;
+	}
+}
+// plugin authors
+.vc-author-modal-name {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.vc-author-modal-name:before {
+    background: rgba(0, 0, 0, 0.4);
 }

@@ -1,38 +1,14 @@
 /* BLOCKED MESSAGE */
-%messageGroupBlocked {
-  position: relative;
-  background: rgba(0, 0, 0, 0.1) !important;
-  border: none;
-  border-radius: 0;
+%messageBlockedAction {
+  color: $main-color;
+  %messageBlockedSystemMessage:hover & {
+    color: $hover-color;
+  }
+}
+%messageGroupBlockedExpanded {
+  background: hsla(0, 0%, 100%, .1);
+  border-radius: 7px;
   transition: all 0.15s ease-in-out;
-  &:hover {
-    box-shadow: none !important;
-  }
-  %messageGroupBlockedButton {
-    background: transparent !important;
-    color: hsla(0, 0%, 100%, 0.3) !important;
-    transition: all 0.15s ease-in-out;
-    &:after {
-      content: '';
-      position: absolute;
-      @include stretch;
-      border-top: 1px solid;
-      border-bottom: 1px solid;
-      border-color: hsla(0, 0%, 100%, 0.04);
-      transition: all 0.15s ease-in-out;
-      pointer-events: none;
-    }
-    &:hover {
-      color: hsla(0, 0%, 100%, 0.5) !important;
-      &:after {
-        border-color: hsla(0, 0%, 100%, 0.07);
-      }
-    }
-  }
-  %messageGroup {
-    margin-top: -20px;
-    margin-left: 0;
-  }
   + %divider {
     margin-top: 25px;
   }
@@ -40,10 +16,10 @@
     margin-top: 25px;
   }
 }
-// Show blocked message
-%messageShowBlocked {
+// BLOCKED MESSAGE ACTION
+%messageGroupBlockedAction {
   color: $main-color;
 }
-%blockedSystemMessage_e58a4c:hover %messageShowBlocked {
+%messageGroupBlockedSystemMessage:hover %messageGroupBlockedAction {
   color: $hover-color;
 }
