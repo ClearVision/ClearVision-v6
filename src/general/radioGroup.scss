@@ -10,11 +10,8 @@
   }
   %radioBar {
     background-color: rgba(0, 0, 0, 0.4);
-    border-left: 3px solid $main-color;
+    border-left: 3px solid var(--radio-bar-accent-color);
     transition: all 0.15s ease-in-out;
-    &:hover{
-      border-left: 3px solid $hover-color;
-    }
   }
   &[aria-checked='true'] {
     %radioBar {
@@ -27,14 +24,14 @@
 }
 
 %banReasonOther {
-  background-color: rgba(0, 0, 0, 0.4);
-  border-left: 2px solid $main-color;
+  background-color: hsla(0, 0%, 100%, 0.05);
+  border: 2px solid transparent;
   transition: all 0.15s ease-in-out;
   color: #fff;
     &:hover {
-    background-color: hsla(0, 0%, 100%, .05);
+    background-color: hsla(0, 0%, 100%, 0.07);
     color: #fff;
-    border-left: 2px solid $hover-color
+    border: 2px solid $hover-color;
   }
 }
 
