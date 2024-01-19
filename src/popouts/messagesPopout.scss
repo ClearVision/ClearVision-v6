@@ -159,6 +159,11 @@
   }
 }
 
+// INBOX UNREAD ICONS
+%inboxPopoutIcons {
+  background-color: $main-color;
+}
+
 // DATE
 %recentMentionsPopout %dividerDate:after {
   background-color: rgba(0, 0, 0, 0.93);
