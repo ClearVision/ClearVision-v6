@@ -23,18 +23,27 @@
   }
 }
 
+%banReasonOther {
+  background-color: hsla(0, 0%, 100%, 0.05);
+  border: 2px solid transparent;
+  transition: all 0.15s ease-in-out;
+  color: #fff;
+    &:hover {
+    background-color: hsla(0, 0%, 100%, 0.07);
+    color: #fff;
+    border: 2px solid $hover-color;
+  }
+}
+
 // RADIO ACCENTS
 %radioBar {
-  &[style*='--radio-bar-accent-color:var(--status-green-600)'] {
+  &[style*='--radio-bar-accent-color:var(--green-360)'] {
     --radio-bar-accent-color: #43b581 !important;
   }
-  &[style*='--radio-bar-accent-color:var(--status-yellow-560)'] {
+  &[style*='--radio-bar-accent-color:var(--yellow-360)'] {
     --radio-bar-accent-color: #faa61a !important;
   }
-  &[style*='--radio-bar-accent-color:hsl(21, calc(var(--saturation-factor, 1) * 90.7%), 57.6%)'] {
-    --radio-bar-accent-color: #e67727 !important;
-  }
-  &[style*='--radio-bar-accent-color:var(--status-red-500)'] {
+  &[style*='--radio-bar-accent-color:var(--red-400)'] {
     --radio-bar-accent-color: #982929 !important;
   }
 }
