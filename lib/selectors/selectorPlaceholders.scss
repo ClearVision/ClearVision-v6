@@ -5086,6 +5086,9 @@ pre {
 .selected__70739 {
   @extend %serverShopSelected !optional;
 }
+.unread_ade69e {
+  @extend %inboxPopoutPill !optional;
+}
 .modal_b38209 {
   @extend %beforeTalkRuleContainer !optional;
 }
