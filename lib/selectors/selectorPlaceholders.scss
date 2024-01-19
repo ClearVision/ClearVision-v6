@@ -4945,8 +4945,14 @@ pre {
 .arrow__5e540 {
   @extend %addServerOptionArrow !optional;
 }
+.optionHeader_b6da7f {
+  @extend %addServerOptionHeader !optional;
+}
 .subtitle_a75f7f {
   @extend %createServerTitle !optional;
+}
+.subtitle__963da {
+  @extend %createServerSubtitle !optional;
 }
 .iconContainer_cd2671 {
   @extend %createServerIconContainer !optional;
@@ -4956,6 +4962,9 @@ pre {
 }
 .backButton__576ea {
   @extend %createServerBackButton !optional;
+}
+.backButton_c0ce06 {
+  @extend %createServerOtherBackButton !optional;
 }
 .input__0c269 {
   @extend %joinServerInput !optional;

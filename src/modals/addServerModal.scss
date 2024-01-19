@@ -6,8 +6,11 @@
     %defaultColor {
       color: #fff;
     }
-    %addServerSubtitle {
+    %textSmallNormal {
       color: hsla(0, 0%, 100%, 0.7) !important;
+    }
+    %input {
+      color: rgb(220, 221, 222);
     }
   }
   
@@ -24,10 +27,13 @@
     filter: brightness(0) invert(1);
   }
 }
-
+%addServerOptionHeader {
+  color: hsla(0, 0%, 100%, 0.7) !important;
+}
 // CREATE SERVER
 %themeLight {
-  %createServerTitle {
+  %createServerTitle,
+  %createServerSubtitle {
     color: hsla(0, 0%, 100%, 0.7) !important;
   }
   %createServerIconContainer > svg > circle {
@@ -37,6 +43,7 @@
     color: hsla(0, 0%, 100%, 0.7) !important;
   }
 }
+%createServerOtherBackButton,
 %createServerBackButton {
   %buttonContents {
     color: hsla(0, 0%, 100%, .7);
