@@ -2388,6 +2388,9 @@ pre {
 .planOptionDiscount__956f7 {
   @extend %nitroPaymentDiscount !optional;
 }
+.cardNumberWrapper_d609e3 {
+  @extend %nitroPaymentCardInputWrapper !optional;
+}
 .cardInput__72fe9 {
   @extend %nitroPaymentCardInput !optional;
 }

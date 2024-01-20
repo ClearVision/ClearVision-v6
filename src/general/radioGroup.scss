@@ -23,18 +23,6 @@
   }
 }
 
-%banReasonOther {
-  background-color: hsla(0, 0%, 100%, 0.05);
-  border: 2px solid transparent;
-  transition: all 0.15s ease-in-out;
-  color: #fff;
-    &:hover {
-    background-color: hsla(0, 0%, 100%, 0.07);
-    color: #fff;
-    border: 2px solid $hover-color;
-  }
-}
-
 // RADIO ACCENTS
 %radioBar {
   &[style*='--radio-bar-accent-color:var(--green-360)'] {

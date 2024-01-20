@@ -55,14 +55,12 @@
 }
 
 // JOIN SERVER
-%themeLight {
-  %joinServerInput {
-    background-color: transparent;
-  }
-  %joinServerExample {
-    color: $main-color;
-    font-weight: 500;
-  }
+%joinServerInput {
+  background-color: transparent;
+}
+%joinServerExample {
+  color: $main-color;
+  font-weight: 500;
 }
 %joinServerRow {
   background-color: $main-color;
