@@ -1,11 +1,13 @@
 /* CHAT DIVIDER */
 
 // UNREAD
-%dividerUnread {
-  border-color: $main-color;
+// -6px is to account for the 1px height of the divider
+%dividerUnread %dividerDate {
+  color: $main-color;
 }
 %unreadPill {
   background-color: $main-color;
+  top: -6px;
 }
 %unreadPillCapStroke {
   fill: $main-color;
@@ -13,27 +15,29 @@
 }
 // DATE
 %dividerDate {
-  color: $main-color;
-  background: rgba(0, 0, 0, calc(#{cv('bg.app.shading')} * 0.5));
-  text-transform: uppercase;
-  border-radius: 0;
-  position: relative;
-  %dividerUnread & {
-    color: $main-color;
+  background: transparent;
+}
+// change to no border / bg system
+%divider {
+	border: none;
+	height: 1px;
+	background: var(--background-modifier-accent);
+  // change color for when read
+  &%dividerUnread {
+    border: none;
+    height: 1px;
+    background: $main-color;
+    // create gap when date is there
+    &:has(%dividerDate) {
+      border: none;
+      height: 1px;
+      background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0) 55px, $main-color 55px);
+    }
   }
-  &:before {
-    content: '';
-    @include stretch;
-    position: absolute;
-    z-index: -1;
-    background: cv('bg.app.img') cv('bg.app.pos') / cv('bg.app.size') cv('bg.app.repeat') cv('bg.app.attach');
-    @include filters(cv('bg.app'));
-  }
-  &:after {
-    content: '';
-    @include stretch;
-    position: absolute;
-    z-index: -1;
-    background: cv('bg.app.overlay');
+  // create gap when date is there
+  &:has(%dividerDate) {
+    border: none;
+    height: 1px;
+    background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0) 55px, var(--background-modifier-accent) 55px);
   }
 }

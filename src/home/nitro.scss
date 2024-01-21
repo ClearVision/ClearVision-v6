@@ -2,6 +2,9 @@
 %nitro {
 	background-color: rgba(0, 0, 0, calc(#{cv('bg.app.shading')} * 0.5));
 }
+%nitroScroller {
+	background-color: transparent;
+}
 %nitroCard {
 	background-color: hsla(0, 0%, 0%, .4);
 	&:hover {

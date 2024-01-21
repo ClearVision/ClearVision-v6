@@ -1,17 +1,16 @@
 /* HEADER BAR SEARCH BARS */
-%chatSearch %chatSearchBar,
-%librarySearch {
-  width: 140px;
-  height: 28px;
-  padding: 2px;
-  background: hsla(0, 0%, 100%, 0.1);
+
+%chatSearchBar,
+%headerSearchBar {
+  background-color: hsla(0, 0%, 100%, 0.07);
   border-radius: 3px;
   transition: width 0.2s ease-in-out 0.1s;
-}
-%chatSearchFocused %chatSearchBar,
-%chatSearchOpen %chatSearchBar,
-%librarySearchFocused {
-  width: 240px;
+  box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.09);
+  margin: 2px;
+  &:focus-within {
+    box-shadow: 0 0 2px 2px $main-color;
+    transition: all 0.15s ease-in-out;
+  }
 }
 %chatSearch {
   %chatSearchFilter,
@@ -27,26 +26,24 @@
     padding: 0 3px 0 0;
   }
 }
-%librarySearch {
-  %librarySearchBar {
-    background: transparent;
-  }
-  %librarySearchInput {
-    color: #fff;
-    &::placeholder {
-      color: hsla(0, 0%, 100%, 0.3);
-    }
-  }
-  %librarySearchIcon {
-    color: hsla(0, 0%, 100%, 0.5);
-    transition: all 0.15s ease-in-out;
-  }
-  %librarySearchIconLayout:hover {
-    %librarySearchIconClear {
-      color: #fff;
-    }
+%headerSearchInput {
+  color: #fff;
+  &::placeholder {
+    color: hsla(0, 0%, 100%, 0.3);
   }
 }
+%headerSearchIcon {
+  color: hsla(0, 0%, 100%, 0.7);
+  transition: all 0.15s ease-in-out;
+}
+%headerSearchBackButton {
+  color: hsla(0, 0%, 100%, 0.7);
+  transition: all 0.15s ease-in-out;
+  &:hover {
+    color: #fff;
+  }
+}
+
 %searchPopout %searchPopoutQueryContainer %searchPopoutKeyboardShortcut > span {
   display: none;
 }

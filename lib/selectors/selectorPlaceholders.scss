@@ -773,32 +773,8 @@
 .header_f7f1f3 {
   @extend %gifPickerHeader !optional;
 }
-.searchBar__3b162 {
-  @extend %gifPickerSearchBar !optional;
-}
-.inner__999f6 {
-  @extend %gifPickerSearchBarInner !optional;
-}
-.input__74754 {
-  @extend %gifPickerSearchInput !optional;
-}
-.iconLayout__6d744 {
-  @extend %gifPickerSearchIconLayout !optional;
-}
-.iconContainer__3af05 {
-  @extend %gifPickerSearchIconContainer !optional;
-}
-.icon__37cc1 {
-  @extend %gifPickerSearchIcon !optional;
-}
-.visible__50aa8 {
-  @extend %gifPickerSearchIconVisible !optional;
-}
 .clear__76e04 {
   @extend %gifPickerSearchIconClear !optional;
-}
-.backButton__6a1f0 {
-  @extend %gifPickerSearchBackButton !optional;
 }
 .content__30de8 {
   @extend %gifPickerContent !optional;
@@ -1469,32 +1445,32 @@
 .searchAnswer_b452e7 {
   @extend %chatSearchAnswer !optional;
 }
-.libraryFilter_c21584 {
-  @extend %librarySearch !optional;
-}
-.focused__60a69 {
-  @extend %librarySearchFocused !optional;
-}
 .container__7712a {
-  @extend %librarySearchBar !optional;
+  @extend %headerSearchBar !optional;
 }
 .inner__999f6 {
-  @extend %librarySearchBarInner !optional;
+  @extend %headerSearchBarInner !optional;
 }
 .input__74754 {
-  @extend %librarySearchInput !optional;
+  @extend %headerSearchInput !optional;
 }
 .iconLayout__6d744 {
-  @extend %librarySearchIconLayout !optional;
+  @extend %headerSearchIconLayout !optional;
 }
 .icon__37cc1 {
-  @extend %librarySearchIcon !optional;
+  @extend %headerSearchIcon !optional;
 }
 .clear__76e04 {
-  @extend %librarySearchIconClear !optional;
+  @extend %headerSearchIconClear !optional;
+}
+.backButton__6a1f0 {
+  @extend %headerSearchBackButton !optional;
 }
 .applicationStore_fc7d76 {
   @extend %nitro !optional;
+}
+.mainPageScroller__12afb {
+  @extend %nitroScroller !optional;
 }
 .card_e97590 {
   @extend %nitroCard !optional;
@@ -2118,8 +2094,20 @@ pre {
 .contents_f41bb2 {
   @extend %messageContent !optional;
 }
-.messageGroupBlocked__9a374 {
-  @extend %messageGroupBlocked !optional;
+.blockedSystemMessage_e58a4c {
+  @extend %messageBlockedSystemMessage !optional;
+}
+.blockedAction__27053 {
+  @extend %messageBlockedAction !optional;
+}
+.expanded_be53d7 {
+  @extend %messageGroupBlockedExpanded !optional;
+}
+.blockedAction__27053 {
+  @extend %messageGroupBlockedAction !optional;
+}
+.blockedSystemMessage_e58a4c {
+  @extend %messageGroupBlockedSystemMessage !optional;
 }
 .blockedAction__27053 {
   @extend %messageShowBlocked !optional;
@@ -2178,12 +2166,6 @@ pre {
 .spoilerMarkdownContent__2b8f8 {
   @extend %messageSpoiler !optional;
 }
-.mentioned__58017 {
-  @extend %mentioned !optional;
-}
-.interactive {
-  @extend %mentionedInteractive !optional;
-}
 .markup_a7e664 {
   @extend %markup !optional;
 }
@@ -2196,8 +2178,14 @@ pre {
 .mention {
   @extend %mention !optional;
 }
-.channelMention {
-  @extend %channelMention !optional;
+.mentioned__58017 {
+  @extend %mentioned !optional;
+}
+.interactive {
+  @extend %mentionedInteractive !optional;
+}
+.icon_ecf39b {
+  @extend %mentionIcon !optional;
 }
 .anchor_c8ddc0 {
   @extend %anchor !optional;
@@ -2399,6 +2387,9 @@ pre {
 }
 .planOptionDiscount__956f7 {
   @extend %nitroPaymentDiscount !optional;
+}
+.cardNumberWrapper_d609e3 {
+  @extend %nitroPaymentCardInputWrapper !optional;
 }
 .cardInput__72fe9 {
   @extend %nitroPaymentCardInput !optional;
@@ -3193,8 +3184,8 @@ pre {
 .previewContainer_c7e80d {
   @extend %guildSettingsRoleIconPreview !optional;
 }
-.container__7712a {
-  @extend %guildSettingsRoleViewAs !optional;
+.container__9bb08 {
+  @extend %guildSettingsRoleViewAsDropdown !optional;
 }
 .emojiRow__4661c {
   @extend %guildSettingsEmojiCard !optional;
@@ -3723,7 +3714,7 @@ pre {
 .connectContainer__8050b {
   @extend %userSettingsConnectionsContainer !optional;
 }
-.accountButtonInner__80e3a {
+.inner__51a43 {
   @extend %userSettingsConnectionsButtonInner !optional;
 }
 .giftCard__30972 {
@@ -4957,8 +4948,14 @@ pre {
 .arrow__5e540 {
   @extend %addServerOptionArrow !optional;
 }
+.optionHeader_b6da7f {
+  @extend %addServerOptionHeader !optional;
+}
 .subtitle_a75f7f {
   @extend %createServerTitle !optional;
+}
+.subtitle__963da {
+  @extend %createServerSubtitle !optional;
 }
 .iconContainer_cd2671 {
   @extend %createServerIconContainer !optional;
@@ -4968,6 +4965,9 @@ pre {
 }
 .backButton__576ea {
   @extend %createServerBackButton !optional;
+}
+.backButton_c0ce06 {
+  @extend %createServerOtherBackButton !optional;
 }
 .input__0c269 {
   @extend %joinServerInput !optional;
@@ -5088,4 +5088,19 @@ pre {
 }
 .selected__70739 {
   @extend %serverShopSelected !optional;
+}
+.unread_ade69e {
+  @extend %inboxPopoutPill !optional;
+}
+.modal_b38209 {
+  @extend %beforeTalkRuleContainer !optional;
+}
+.fieldBackground_d6edfa {
+  @extend %beforeTalkRulesBackground !optional;
+}
+.termsRow_a03d1d {
+  @extend %beforeTalkRule !optional;
+}
+.banReasonOtherClickable_e4b932 {
+  @extend %banReasonOther !optional;
 }

@@ -52,6 +52,9 @@
 %nitroPaymentDiscount {
   background-color: $main-color;
 }
+%nitroPaymentCardInputWrapper {
+  padding: 2px;
+}
 %nitroPaymentCardInput {
   background-color: hsla(0, 0%, 100%, 0.07);
   box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.09);
@@ -105,8 +108,19 @@
 	background: rgba(0,0,0,.4);
 	border-color: var(--main-color);
 }
-// Tab Help
-// removed 
+
+// BAN MODAL
+%banReasonOther {
+  background-color: hsla(0, 0%, 100%, 0.05);
+  border: 2px solid transparent;
+  transition: all 0.15s ease-in-out;
+  color: #fff;
+    &:hover {
+    background-color: hsla(0, 0%, 100%, 0.07);
+    color: #fff;
+    border: 2px solid $hover-color;
+  }
+}
 
 // SWITCH ACCOUNTS
 %switchAccountsActive > circle:not([fill^='hsl(0']),
@@ -200,4 +214,22 @@
 /*loading screen*/
 %giftModalSpinner {
 	background: rgba(0,0,0,.4);
+}
+// YOU MUST COMPLETE A FEW MORE STEPS BEFORE YOU CAN TALK
+/*before you talk here popup*/
+%beforeTalkRuleContainer {
+	background: transparent;
+}
+/*border color for terms of acceptance*/
+%beforeTalkRule {
+	border-color: var(--main-color);
+}
+/*agree to rules*/
+%beforeTalkRulesBackground {
+	background: var(--background-overlay);
+  border-color: $main-color;
+  &:hover:not(:focus) {
+    border-color: $hover-color;
+    background: var(--background-overlay);
+  }
 }
