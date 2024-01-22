@@ -3849,6 +3849,18 @@ pre {
 .segmentControlOption__84fb6 {
   @extend %screenshareSegmentControlOption !optional;
 }
+.cta__69e2a {
+  @extend %watchStream !optional;
+}
+.status__42e87.interactive__7ee97 {
+  @extend %myScreenControlOptions !optional;
+}
+.overlayTitle_a9f7c6 {
+  @extend %myScreen !optional;
+}
+.videoWrapper_b42a4f {
+  @extend %streamStillRunning !optional;
+}
 .tabItemSelected__3dfe7 {
   @extend %screenshareSegmentControlSelected !optional;
 }
