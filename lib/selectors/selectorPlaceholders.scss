@@ -3372,17 +3372,14 @@ pre {
 .textArea__3f404 {
   @extend %automodRegexTextArea !optional;
 }
-.resultsList_bec6cd {
+.resultsListContainer__4ec00 {
   @extend %automodDropdown !optional;
 }
-.channelLabel__6345a {
-  @extend %automodDropdownChannel !optional;
+.searchRowLabel_b64d40 {
+  @extend %automodDropdownRowLabel !optional;
 }
 .channelIcon__801cb {
   @extend %automodDropdownChannelIcon !optional;
-}
-.roleLabel_cf92a0 {
-  @extend %automodDropdownRole !optional;
 }
 .auditLog__6c805 {
   @extend %guildSettingsAuditLog !optional;
@@ -3504,9 +3501,6 @@ pre {
 .resultsList_ccad0b {
   @extend %onboardingQuestionDropdown !optional;
 }
-.channelRowLabel__9c6c0 {
-  @extend %onboardingQuestionDropdownChannelLabel !optional;
-}
 .channelIcon__9cdc6 {
   @extend %onboardingQuestionDropdownChannelIcon !optional;
 }
@@ -3563,9 +3557,6 @@ pre {
 }
 .viewServerButton__1ce42 {
   @extend %guildSettingsSubsViewServerButton !optional;
-}
-.roleWrapper__0f174 {
-  @extend %guildSettingsMembersRoleWrapper !optional;
 }
 .activityUserPopoutV2__32328,
 .activityProfileV2__4de28 {
@@ -3714,7 +3705,8 @@ pre {
 .connectContainer__8050b {
   @extend %userSettingsConnectionsContainer !optional;
 }
-.inner__51a43 {
+.accountButtonInner__80e3a,
+.accountBtnInner_fe9b67 {
   @extend %userSettingsConnectionsButtonInner !optional;
 }
 .giftCard__30972 {
@@ -3771,9 +3763,6 @@ pre {
 }
 .expandedInfo__47bad {
   @extend %userSettingsBillingExpandedInfo !optional;
-}
-.scroller__244e5 {
-  @extend %userSettingsNitroScroller !optional;
 }
 .selectionCircle_f4288e {
   @extend %userSettingsAppearanceSelectionCircle !optional;

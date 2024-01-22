@@ -37,8 +37,7 @@
   left: calc(100% - 7px);
 }
 %roleCircle {  
-  %userPopoutRoles &,
-  %forumSetupRoleList & {
+  %role & {
     width: 0 !important;
     height: 0 !important;
     &:not(:empty) {
