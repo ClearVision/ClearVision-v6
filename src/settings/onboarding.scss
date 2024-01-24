@@ -129,13 +129,6 @@
 	border: 1px solid hsla(0, 0%, 100%, 0.07);
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-%onboardingQuestionDropdownChannelLabel {
-	background-color: $main-color;
-  %onboardingQuestionDropdownChannelIcon,
-  %textExtraSmallMedium {
-    color: #fff;
-  }
-}
 
 // SERVER GUIDE
 %onboardingActionExampleBadIcon {

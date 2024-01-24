@@ -11,7 +11,7 @@
 
 // VIDEO STREAM
 %callTile {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.7));
 }
 %callInviteButton {
   background-color: $main-color;
@@ -32,6 +32,27 @@
   &%callTileSpeaking {
     box-shadow: inset 0 0 0 2px $main-color;
   }
+}
+
+// WATCH STREAM 
+%watchStream,
+%myScreenControlOptions {
+  background-color: $main-color;
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+
+%myScreen {
+    background: var(--main-color);
+    border-radius: 100px;
+    &:hover {
+        background: var(--hover-color);
+    }
+}
+
+%streamStillRunning {
+  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.7));
 }
 
 // ACTION BUTTON
