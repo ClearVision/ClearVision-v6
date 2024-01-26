@@ -3933,6 +3933,12 @@ pre {
 .tileContainer__88d69 {
   @extend %stageParticipant !optional;
 }
+.toast__4a149 {
+  @extend %stageMessageToast !optional;
+}
+.messageContentWrapper__72f89 {
+  @extend %stageMessageToastWrapper !optional;
+}
 .topicFormItem_dc6100 {
   @extend %stageTopicForm !optional;
 }
@@ -3956,6 +3962,15 @@ pre {
 }
 .separator_c99b23 {
   @extend %stageSeparator !optional;
+}
+.voiceUser__0470a {
+  @extend %stageVoiceUser !optional;
+}
+.overlap_c76e16 {
+  @extend %stageVoiceUserOverlap !optional;
+}
+.avatar_a56eee {
+  @extend %stageVoiceUserAvatar !optional;
 }
 .audienceContainer_d4eada {
   @extend %stageAudienceContainer !optional;
