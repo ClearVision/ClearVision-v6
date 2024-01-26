@@ -986,6 +986,12 @@
 .numberBadge__50328 {
   @extend %numberBadge !optional;
 }
+.base__92a12 {
+  @extend %numberBadgeBase !optional;
+}
+.baseShapeRound__95d0f {
+  @extend %numberBadgeBaseShapeRound !optional;
+}
 .textBadge__45d79 {
   @extend %textBadge !optional;
 }
@@ -1280,6 +1286,9 @@
 .blobContainer__5ee50 {
   @extend %guildContainer !optional;
 }
+.wrapper__3670f {
+  @extend %guildPillWrapper !optional;
+}
 .pill__6b31b {
   @extend %guildPill !optional;
 }
@@ -1294,6 +1303,12 @@
 }
 .icon__0cbed {
   @extend %guildIcon !optional;
+}
+.wrapper__3af0b {
+  @extend %guildSVGWrapper !optional;
+}
+.svg_ad7356 {
+  @extend %guildSVG !optional;
 }
 .childWrapper__01b9c {
   @extend %guildChildWrapper !optional;
@@ -4316,6 +4331,9 @@ pre {
 }
 .unreadMentionsIndicatorTop_ada847 {
   @extend %guildUnreadMentionsTop !optional;
+}
+.unreadMentionsIndicatorBottom_fdb943 {
+  @extend %guildUnreadMentionsBottom !optional;
 }
 .authBox__7196a {
   @extend %loginAuthBox !optional;

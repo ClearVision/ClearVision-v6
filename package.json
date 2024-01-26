@@ -6,12 +6,12 @@
     "build": "npm run clean && npm run build.sass",
     "build.sass": "sass --style=compressed --no-source-map hljs.scss:public/hljs.css main.scss:public/main.css",
     "clean": "rimraf {public,test}",
-    "gradient.clean": "rimraf {gradients}",
+    "addons.clean": "rimraf {addons}",
     "format": "prettier --write .",
     "test": "npm run clean && npm run test.build",
     "test.build": "sass --style=expanded --no-source-map hljs.scss:test/hljs.css main.scss:test/main.css",
-    "gradients": "npm run gradient.clean && npm run gradient.build",
-    "gradient.build": "sass --style=expanded --no-source-map scripts/hljs.scss:gradients/hljs.css scripts/main.scss:gradients/main.css"
+    "addons": "npm run addons.clean && npm run addons.build",
+    "addons.build": "sass --style=expanded --no-source-map scripts/hljs.scss:addons/hljs.css scripts/main.scss:addons/main.css"
   },
   "repository": {
     "type": "git",
@@ -20,9 +20,11 @@
   "author": "Zerthox",
   "contributors": [
     "Leozard",
+    "NyxIsBad",
+    "LeafyLuigi",
+    "BabyBoySnow",
     "Mentalscars",
     "nihaals",
-    "NyxIsBad",
     "OmgDani",
     "untuned",
     "xcruxiex"
