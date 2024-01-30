@@ -25,8 +25,8 @@ div#magane div.stickerWindow:before {
   position: absolute;
   z-index: -999;
   @include stretch;
-  background: cv('bg.backdrop.img') cv('bg.backdrop.pos') / cv('bg.backdrop.size') cv('bg.backdrop.repeat') cv('bg.backdrop.attach');
-  @include filters(cv('bg.backdrop'));
+  background: cv('bg.popout.img') cv('bg.popout.pos') / cv('bg.popout.size') cv('bg.popout.repeat') cv('bg.popout.attach');
+  @include filters(cv('bg.popout'));
 }
 div#magane div.stickerWindow div.stickers, /*top*/
 div#magane div.stickerWindow div.packs-toolbar { /*bottom*/
