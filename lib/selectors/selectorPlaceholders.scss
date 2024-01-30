@@ -43,6 +43,9 @@
 .backdrop__7e89b {
   @extend %backdrop !optional;
 }
+.withLayer__1fe9d {
+  @extend %backdropWithLayer !optional;
+}
 .notice__5fd4c {
   @extend %notice !optional;
 }

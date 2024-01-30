@@ -22,14 +22,6 @@
   }
 }
 %backdrop {
-  &:before {
-    content: '';
-    position: fixed;
-    @include stretch;
-    background: cv('bg.backdrop.img') cv('bg.backdrop.pos') / cv('bg.backdrop.size') cv('bg.backdrop.repeat') cv('bg.backdrop.attach');
-    @include filters(cv('bg.backdrop'));
-    pointer-events: none;
-  }
   &:after {
     content: '';
     position: fixed;
@@ -37,6 +29,9 @@
     background: cv('bg.backdrop.overlay');
     pointer-events: none;
   }
+}
+%backdrop%backdropWithLayer {
+  background: none !important;
 }
 
 %loading {
