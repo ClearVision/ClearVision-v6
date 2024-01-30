@@ -32,7 +32,7 @@
 // LINKS
 %anchor {
   %textSmallMedium {
-    color: var(--url-color) !important;
+    color: #fff !important;
   }
 }
 
@@ -178,4 +178,36 @@
 }
 %onboardingReviewIcon {
   color: #fff;
+}
+
+
+%recommendedDeafultChannels {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+%updateChannelPermissionsMenu {
+  background-color: rgba(0, 0, 0,  0.4);
+}
+
+%updateChannelPermissionsItems {
+  background-color: $hover-color;
+}
+
+%recommendedReadOnly {
+  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
+}
+
+%pickAnEmoji {
+  background-color: transparent;
+  border: none;
+  &:hover {
+      background-color: $hover-color;
+  }
+}
+
+%enterRoles {
+  background-color: rgba(0, 0, 0,  0.4);
+  &:hover {
+      background-color: hsla(0, 0%, 100%, 0.05);
+  }
 }

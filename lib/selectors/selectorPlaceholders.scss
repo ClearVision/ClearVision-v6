@@ -5138,3 +5138,21 @@ pre {
 .banReasonOtherClickable_e4b932 {
   @extend %banReasonOther !optional;
 }
+.channelRow_bba4a8 {
+  @extend %recommendedDeafultChannels !optional;
+}
+.selectableChannelRow_c40337:hover {
+  @extend %updateChannelPermissionsItems !optional;
+}
+.deprivateTableBody_dbf647 {
+  @extend %updateChannelPermissionsMenu !optional;
+}
+.suggestedChannels__158f9 {
+  @extend %recommendedReadOnly !optional;
+}
+.container__25f89 {
+  @extend %pickAnEmoji !optional;
+}
+.searchRowLabel_b64d40 {
+  @extend %enterRoles !optional;
+}
