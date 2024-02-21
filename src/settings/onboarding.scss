@@ -2,10 +2,10 @@
 
 // POPOUT
 %onboardingEduPopout {
-	background-color: rgba(0, 0, 0,  0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 %onboardingEduPopoutArrow {
-	border-bottom-color: rgba(0, 0, 0,  0.8);
+  border-bottom-color: rgba(0, 0, 0, 0.8);
 }
 
 // PROGRESS
@@ -38,27 +38,27 @@
 
 // FOOTER
 %onboardingFooterContainer {
-	background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.4)) !important;
-	box-shadow: none;
+  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.4)) !important;
+  box-shadow: none;
 }
 
 // DEFAULT CHANNELS
 %onboardingChannelRow {
-	background-color: rgba(0, 0, 0,  0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   &:hover:not(%onboardingChannelRowDisabled) {
     background-color: hsla(0, 0%, 100%, 0.05);
   }
 }
 %onboardingChannelRowSeparator {
-	margin: -1px 0 0;
-	background-color: hsla(0, 0%, 100%, 0.05);
+  margin: -1px 0 0;
+  background-color: hsla(0, 0%, 100%, 0.05);
 }
 %onboardingChannelListHeader,
 %onboardingChannelList {
-	background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 %onboardingChannelListHeaderContainer {
-	background-color: transparent;
+  background-color: transparent;
 }
 %onboardingChannelListHeader {
   %textExtraSmallBold {
@@ -70,11 +70,11 @@
 }
 %onboardingChannelListProgressIcon {
   path {
-    &[fill="var(--background-accent)"] {
-      fill: var(--danger-color)
+    &[fill='var(--background-accent)'] {
+      fill: var(--danger-color);
     }
-    &[fill="var(--brand-500)"] {
-      fill: var(--success-color)
+    &[fill='var(--brand-500)'] {
+      fill: var(--success-color);
     }
   }
 }
@@ -85,7 +85,7 @@
 // CUSTOMISATION QUESTIONS
 %onboardingChannelCoverage {
   background-color: rgba(0, 0, 0, 0.4);
-}  
+}
 %onboardingChannelCoverageProgress {
   background-color: $main-color !important;
 }
@@ -125,9 +125,9 @@
   border: 2px solid $main-color;
 }
 %onboardingQuestionDropdown {
-	background-color: var(--popout-color);
-	border: 1px solid hsla(0, 0%, 100%, 0.07);
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: var(--popout-color);
+  border: 1px solid hsla(0, 0%, 100%, 0.07);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 // SERVER GUIDE
@@ -159,19 +159,19 @@
   }
 }
 %onboardingActionPreviewPill {
-	background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   %textSmallMedium {
     color: #fff;
   }
 }
 %onboardingActionPreviewPillSelected {
-	background-color: $main-color;
+  background-color: $main-color;
 }
 
 // REVIEW
 %onboardingReviewHeader,
 %onboardingReviewStepContainer {
-	background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 %onboardingReviewIconContainer {
   background-color: $main-color;
@@ -180,13 +180,12 @@
   color: #fff;
 }
 
-
 %recommendedDeafultChannels {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
 %updateChannelPermissionsMenu {
-  background-color: rgba(0, 0, 0,  0.4);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 %updateChannelPermissionsItems {
@@ -201,13 +200,13 @@
   background-color: transparent;
   border: none;
   &:hover {
-      background-color: $hover-color;
+    background-color: $hover-color;
   }
 }
 
 %enterRoles {
-  background-color: rgba(0, 0, 0,  0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   &:hover {
-      background-color: hsla(0, 0%, 100%, 0.05);
+    background-color: hsla(0, 0%, 100%, 0.05);
   }
 }

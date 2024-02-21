@@ -20,9 +20,9 @@
 }
 // change to no border / bg system
 %divider {
-	border: none;
-	height: 1px;
-	background: var(--background-modifier-accent);
+  border: none;
+  height: 1px;
+  background: var(--background-modifier-accent);
   // change color for when read
   &%dividerUnread {
     border: none;

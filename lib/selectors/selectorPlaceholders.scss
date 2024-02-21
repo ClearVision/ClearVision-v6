@@ -3761,7 +3761,8 @@ pre {
 .defaultIndicator__855a2 {
   @extend %userSettingsBillingIndicator !optional;
 }
-.description__75831, .descriptionWrapper__0d577 {
+.description__75831,
+.descriptionWrapper__0d577 {
   @extend %userSettingsBillingMethodText !optional;
 }
 .paymentPane__9cf01 {
@@ -3824,7 +3825,7 @@ pre {
 .wrapper__4beb8 {
   @extend %userSettingsOverlayWrapper !optional;
 }
-.option_a0c054{
+.option_a0c054 {
   @extend %userSettingsOverlayOption !optional;
 }
 .selected_ea51d6 {
@@ -3850,7 +3851,6 @@ pre {
 }
 .gameNameInput_e25dd8 {
   @extend %userSettingsActivityGameNameInput !optional;
-
 }
 .auto_a48086 {
   @extend %scrollbarAuto !optional;
@@ -4790,7 +4790,8 @@ pre {
   @extend %channelHeaderBar !optional;
 }
 .mainTableContainer_ea650e, // this is the one in the server settings
-.mainTableContainer__5ffe0 { // and this is the one in the channel. why are there 2??
+.mainTableContainer__5ffe0 {
+  // and this is the one in the channel. why are there 2??
   @extend %membersChannelContainer !optional;
 }
 .table_a843c4 {

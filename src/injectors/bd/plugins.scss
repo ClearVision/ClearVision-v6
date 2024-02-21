@@ -5,15 +5,16 @@ div#magane div.stickerWindow {
 div#magane div.stickerWindow div.stickers h3.getStarted {
   color: #fff;
 }
-div#magane div.stickerWindow:not(:has(> [style^="display"])) div.stickers *,
-div#magane div.stickerWindow:not(:has(> [style^="display"])) div.packs-toolbar * {
+div#magane div.stickerWindow:not(:has(> [style^='display'])) div.stickers *,
+div#magane div.stickerWindow:not(:has(> [style^='display'])) div.packs-toolbar * {
   display: none;
 }
-div#magane .stickersModal .modal-content, div#magane .stickersModal .modal-card {
+div#magane .stickersModal .modal-content,
+div#magane .stickersModal .modal-card {
   background: transparent;
 }
 div#magane .stickersModal .inputQuery {
-  background: rgba(0,0,0,.2);
+  background: rgba(0, 0, 0, 0.2);
   border: 2px solid $main-color;
 }
 div#magane .button {
@@ -21,7 +22,7 @@ div#magane .button {
   color: #fff;
 }
 div#magane div.stickerWindow:before {
-  content: "";
+  content: '';
   position: absolute;
   z-index: -999;
   @include stretch;
@@ -29,7 +30,8 @@ div#magane div.stickerWindow:before {
   @include filters(cv('bg.popout'));
 }
 div#magane div.stickerWindow div.stickers, /*top*/
-div#magane div.stickerWindow div.packs-toolbar { /*bottom*/
+div#magane div.stickerWindow div.packs-toolbar {
+  /*bottom*/
   background: var(--background-overlay);
 }
 // MESSAGE BUTTONS
@@ -71,7 +73,7 @@ div#magane div.stickerWindow div.packs-toolbar { /*bottom*/
 }
 // MEMBERLIST - ARASHIRYUU
 #MemberCount {
-	background: transparent;
+  background: transparent;
   h3 {
     color: var(--text-normal);
     padding: 12px 0;
@@ -81,7 +83,8 @@ div#magane div.stickerWindow div.packs-toolbar { /*bottom*/
     text-align: center;
   }
   %membersGroup {
-    &:before, &:after {
+    &:before,
+    &:after {
       display: none;
     }
   }
@@ -91,10 +94,10 @@ div#magane div.stickerWindow div.packs-toolbar { /*bottom*/
 }
 %membersWrap.hasCounter %members {
   padding-top: 30px;
-	margin-top: 0;
+  margin-top: 0;
 }
 %members %membersGroup:has(.membercount-row) {
-	opacity: 1;
+  opacity: 1;
 }
 // COPY CODE - FINICALMIST
 // COPYBUTTON
@@ -188,9 +191,6 @@ div#magane div.stickerWindow div.packs-toolbar { /*bottom*/
     margin-left: 10px;
   }
 }
-
-
-
 
 // Plugins/Themes Searchbar & dropdown filter
 .bd-search-wrapper {

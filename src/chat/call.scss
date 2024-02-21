@@ -34,7 +34,7 @@
   }
 }
 
-// WATCH STREAM 
+// WATCH STREAM
 %watchStream,
 %myScreenControlOptions {
   background-color: $main-color;
@@ -44,11 +44,11 @@
 }
 
 %myScreen {
-    background: var(--main-color);
-    border-radius: 100px;
-    &:hover {
-        background: var(--hover-color);
-    }
+  background: var(--main-color);
+  border-radius: 100px;
+  &:hover {
+    background: var(--hover-color);
+  }
 }
 
 %streamStillRunning {

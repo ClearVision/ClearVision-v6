@@ -1,9 +1,9 @@
 //Voice Channel listening to or playing x game
 %voiceChannelListening {
-	background: rgba(0,0,0,.8);
+  background: rgba(0, 0, 0, 0.8);
 }
 %voiceChannelListeningIcon {
-	background: var(--main-color);
+  background: var(--main-color);
   %textSmallNormal {
     color: #fff !important;
   }
