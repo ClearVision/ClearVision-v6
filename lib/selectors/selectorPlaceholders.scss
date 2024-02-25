@@ -692,6 +692,9 @@
 .chat__52833 {
   @extend %chat !optional;
 }
+.page__0b66e {
+  @extend %page !optional;
+}
 .content__1a4fe {
   @extend %chatContentWrapper !optional;
 }
@@ -3416,6 +3419,30 @@ pre {
 }
 .changeDetails_ecd760 {
   @extend %guildSettingsAuditChangeDetails !optional;
+}
+.testimonialHeroContainer__4a355 {
+  @extend %guildSettingsOnboardingTestimonialContainer !optional;
+}
+.quotes__35cf8 {
+  @extend %guildSettingsOnboardingTestimonialQuotes !optional;
+}
+.testimonial__1b63f {
+  @extend %guildSettingsOnboardingTestimonial !optional;
+}
+.upsellPreview_e0cb61 {
+  @extend %guildSettingsOnboardingUpsell !optional;
+}
+.previewListItem__4f725 {
+  @extend %guildSettingsOnboardingUpsellList !optional;
+}
+.selected__2d410 {
+  @extend %guildSettingsOnboardingUpsellListSelected !optional;
+}
+.checkboxCircle_aed363 {
+  @extend %guildSettingsOnboardingUpsellCheckboxCircle !optional;
+}
+.checkbox__9abca {
+  @extend %guildSettingsOnboardingUpsellCheckbox !optional;
 }
 .educationUpsell_ee1637 {
   @extend %onboardingEduPopout !optional;
