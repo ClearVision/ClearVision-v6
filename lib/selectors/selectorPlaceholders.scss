@@ -3414,39 +3414,6 @@ pre {
 .changeDetails_ecd760 {
   @extend %guildSettingsAuditChangeDetails !optional;
 }
-.testimonialHeroContainer__4a355 {
-  @extend %guildSettingsOnboardingTestimonialContainer !optional;
-}
-.quotes__35cf8 {
-  @extend %guildSettingsOnboardingTestimonialQuotes !optional;
-}
-.testimonial__1b63f {
-  @extend %guildSettingsOnboardingTestimonial !optional;
-}
-.upsellPreview_e0cb61 {
-  @extend %guildSettingsOnboardingUpsell !optional;
-}
-.previewListItem__4f725 {
-  @extend %guildSettingsOnboardingUpsellList !optional;
-}
-.selected__2d410 {
-  @extend %guildSettingsOnboardingUpsellListSelected !optional;
-}
-.checkboxCircle_aed363 {
-  @extend %guildSettingsOnboardingUpsellCheckboxCircle !optional;
-}
-.checkbox__9abca {
-  @extend %guildSettingsOnboardingUpsellCheckbox !optional;
-}
-.userCardInner_d6aa46 {
-  @extend %guildSettingsOnboardingUpsellUserCard !optional;
-}
-.action_c957d9 {
-  @extend %guildSettingsOnboardingUpsellUserAction !optional;
-}
-.channelIconContainer__5df13 {
-  @extend %guildSettingsOnboardingUpsellChannelIcon !optional;
-}
 .educationUpsell_ee1637 {
   @extend %onboardingEduPopout !optional;
 }
@@ -4723,11 +4690,26 @@ pre {
 .action_c957d9 {
   @extend %serverGuideAction !optional;
 }
+.checkCircleCompleted_c66388 {
+  @extend %serverGuideActionCompleted !optional;
+}
 .sidebarCardWrapper__2c840 {
   @extend %serverGuideSidebarCard !optional;
 }
 .row__70f4c {
   @extend %serverGuideRow !optional;
+}
+.channelIconContainer__5df13 {
+  @extend %serverGuideChannelIcon !optional;
+}
+.rulesIconContainer__2a9f3 {
+  @extend %serverGuideRulesIcon !optional;
+}
+.banner_f13f1e {
+  @extend %serverGuideChannelHintBanner !optional;
+}
+.iconCircle_de71da {
+  @extend %serverGuideChannelHintIcon !optional;
 }
 .scroller__5e182 {
   @extend %serverSubscription !optional;
