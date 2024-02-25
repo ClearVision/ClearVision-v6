@@ -121,10 +121,10 @@
 %playerMediaDownload {
   background-color: rgba(0, 0, 0, 0.6);
 }
-// VOICE MESSAGE EMBED 
+// VOICE MESSAGE EMBED
 /*voice message*/
 %themeDark %voiceMessageContainer {
-	background: rgba(0,0,0,.2);
+  background: rgba(0, 0, 0, 0.2);
   &:not(%voiceMessagePlaying) %voiceMessagePlayButtonContainer {
     background: $main-color;
     &:hover {
@@ -138,6 +138,6 @@
     background: var(--success-color);
   }
   %voiceMessagePlayingRipple {
-    background: rgba(0,0,0,.6);
+    background: rgba(0, 0, 0, 0.6);
   }
 }

@@ -8,7 +8,7 @@
   background: var(--background-overlay);
 }
 %customizeChannelsPill {
-  background: rgba(0,0,0,.2);
+  background: rgba(0, 0, 0, 0.2);
   border: 1px solid $main-color;
 }
 /*option buttons*/
@@ -19,7 +19,7 @@
   }
   &%customizeChannelsSelected {
     border: 2px solid var(--success-color);
-    background: rgba(0,0,0,.2);
+    background: rgba(0, 0, 0, 0.2);
   }
 }
 /*profile card*/

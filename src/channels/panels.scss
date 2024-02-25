@@ -40,7 +40,7 @@ button%panelButton {
     color: #fff;
     opacity: 0.5;
     transition: all 0.1s ease-in-out;
-    > path[fill*="var(--interactive-normal)"] {
+    > path[fill*='var(--interactive-normal)'] {
       fill: #fff;
     }
   }

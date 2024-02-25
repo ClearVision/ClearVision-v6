@@ -124,9 +124,9 @@
   %guildSettingsEmojiAliasInput {
     %guildSettingsEmojiInput {
       color: var(--text-normal);
-      background-color: hsla(0, 0%, 100%, .07);
+      background-color: hsla(0, 0%, 100%, 0.07);
       border: none;
-      box-shadow: 0 0 0 2px hsla(0, 0%, 100%, .09);
+      box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.09);
     }
     &:has(%guildSettingsEmojiInput:focus-within) {
       + %guildSettingsEmojiAliasPlaceholder {
@@ -154,8 +154,8 @@
   background-color: hsla(0, 0%, 0%, 0.4);
 }
 %guildSettingsSafetyPill {
-	background-color: transparent;
-	border: 2px solid $main-color;
+  background-color: transparent;
+  border: 2px solid $main-color;
 }
 %guildSettingsSafetyItemWrapper {
   background-color: transparent;
@@ -251,7 +251,6 @@
   color: #fff;
 }
 
-
 // AUDIT LOG
 %themeDark {
   %guildSettingsAuditLog {
@@ -269,10 +268,10 @@
 
 // BANS
 %guildSettingsBanContainer {
-	background-color: hsla(0, 0%, 0%, .4);
+  background-color: hsla(0, 0%, 0%, 0.4);
 }
 %guildSettingsBannedUser {
-	background-color: hsla(0, 0%, 100%, .07);
+  background-color: hsla(0, 0%, 100%, 0.07);
 }
 
 // SERVER TEMPLATE
@@ -319,7 +318,6 @@
     background-color: transparent;
   }
 }
-
 
 // DISCOVERY
 %guildSettingsDiscoveryChecklist {

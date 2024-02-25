@@ -13,7 +13,6 @@
       color: rgb(220, 221, 222);
     }
   }
-  
 }
 %addServerOption {
   background-color: $main-color;
@@ -23,7 +22,7 @@
   %addServerOptionText {
     color: #fff;
   }
-  %addServerOptionArrow{
+  %addServerOptionArrow {
     filter: brightness(0) invert(1);
   }
 }
@@ -46,7 +45,7 @@
 %createServerOtherBackButton,
 %createServerBackButton {
   %buttonContents {
-    color: hsla(0, 0%, 100%, .7);
+    color: hsla(0, 0%, 100%, 0.7);
     &:hover {
       color: #fff;
       text-decoration: underline;

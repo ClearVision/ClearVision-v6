@@ -26,16 +26,16 @@
   background: transparent;
 }
 %stageParticipant {
-  background-color: hsla(0, 0%, 0%, .4);
+  background-color: hsla(0, 0%, 0%, 0.4);
   &:hover {
     background-color: hsla(0, 0%, 100%, 0.05);
   }
 }
 %stageMessageToast {
   %stageMessageToastWrapper {
-    background-color: hsla(0, 0%, 0%, .8);
+    background-color: hsla(0, 0%, 0%, 0.8);
     &:hover {
-      background-color: hsla(0, 0%, 0%, .6);
+      background-color: hsla(0, 0%, 0%, 0.6);
     }
   }
 }
@@ -50,8 +50,8 @@
   }
 }
 %stageAudienceContainer {
-  background-color: hsla(0, 0%, 0%, .8);
-  border: hsla(0, 0%, 0%, .8);
+  background-color: hsla(0, 0%, 0%, 0.8);
+  border: hsla(0, 0%, 0%, 0.8);
   %stageAudienceIconContainer {
     background: $main-color;
   }
@@ -89,7 +89,7 @@
 // STARTING A STAGE CALL
 %stageTopicForm {
   %input {
-    background: rgba(0,0,0,.4);
+    background: rgba(0, 0, 0, 0.4);
     box-shadow: 0 0 0 2px $main-color;
   }
   %stageTopicInput {
