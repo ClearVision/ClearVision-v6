@@ -156,8 +156,10 @@
   border: 2px solid $main-color;
   &:hover {
     background: rgba(0, 0, 0, 0.4);
-    box-sizing: border-box;
     border: 2px solid $hover-color;
+  }
+  &%activityItemDisabled {
+    background: rgba(0, 0, 0, 0.4);
   }
 }
 %activitiesScroller {
