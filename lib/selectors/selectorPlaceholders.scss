@@ -2386,10 +2386,13 @@ pre {
   @extend %quickswitcherInput !optional;
 }
 .scroller__52ae7 {
-  @extend %quickSwitcherScroller !optional;
+  @extend %quickswitcherScroller !optional;
 }
 .result__25f11 {
-  @extend %quickSwitcherResult !optional;
+  @extend %quickswitcherResult !optional;
+}
+.wrapper__4f229 {
+  @extend %quickswitcherPing !optional;
 }
 .paymentNote_c68ae0 {
   @extend %nitroPaymentNote !optional;
@@ -4277,9 +4280,6 @@ pre {
 }
 .container_e4c233 {
   @extend %stickerSearchContainer !optional;
-}
-.wrapper__4f229 {
-  @extend %stickerCategoryWrapper !optional;
 }
 .stickerCategoryGeneric__431fb {
   @extend %stickerCategoryGeneric !optional;
