@@ -1,6 +1,7 @@
 /* CHAT BARS */
 // NEW MESSAGES BAR
 %newMessagesBar {
+  z-index: 999;
   background: transparent;
   transition: all 0.15s ease-in-out;
   &:before {
