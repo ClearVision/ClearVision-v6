@@ -24,3 +24,10 @@
     background: none;
   }
 }
+
+// Remove second border from server invites.
+// TODO: Add to selectors
+.copyInput__3104b .input_d266e7 {
+  background-color: transparent;
+  box-shadow: none;
+}

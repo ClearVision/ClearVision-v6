@@ -40,3 +40,27 @@
 %serverShopSelected {
   background: $main-color;
 }
+
+// Theme some shop stuff
+// TODO: Add to selectors
+.shopCard_f7822b {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  border-color: var(--main-color) !important;
+}
+
+.shopCard_f7822b:hover {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  border-color: var(--hover-color) !important;
+}
+
+.cardBackground_af6852.darkCardBackground__82a32 {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.shopScrollBackgroundPrimary_bb1f42 {
+  background-color:  transparent;
+}
+
+.pageWrapperBackgroundPrimary__74f14 {
+  background-color: transparent;
+}
