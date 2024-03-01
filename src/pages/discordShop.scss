@@ -41,26 +41,23 @@
   background: $main-color;
 }
 
-// Theme some shop stuff
-// TODO: Add to selectors
-.shopCard_f7822b {
+// Theme some shop stuff                                     
+%nitroShopCard {
   background-color: rgba(0, 0, 0, 0.4) !important;
   border-color: var(--main-color) !important;
+  &:hover {
+    border-color: var(--hover-color) !important;
+  }
 }
 
-.shopCard_f7822b:hover {
-  background-color: rgba(0, 0, 0, 0.4) !important;
-  border-color: var(--hover-color) !important;
-}
-
-.cardBackground_af6852.darkCardBackground__82a32 {
+%nitroShopCardBackground%nitroShopCardDarkBackground  {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.shopScrollBackgroundPrimary_bb1f42 {
+%nitroShopBackground {
   background-color:  transparent;
 }
 
-.pageWrapperBackgroundPrimary__74f14 {
+%nitroShopBackgroundPrime {
   background-color: transparent;
 }

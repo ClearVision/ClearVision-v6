@@ -240,16 +240,19 @@
 }
 
 // Webhook previews
-// TOD: Add to selectors
-.footer__03347 {
+%webhookFooter {
   background-color: transparent;
 }
 
-.theme-dark .guildPopout_ea4d8c {
+%themeDark %webhookPopout {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.emojiCounter_facc23 {
+%webhookEmojiRow {
   background-color: var(--main-color);
   color: var(--text-normal) !important;
+}
+
+%webhookBackground {
+  background: var(--background-overlay);
 }

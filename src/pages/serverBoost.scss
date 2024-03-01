@@ -29,14 +29,13 @@
 
 // Boost this server
 // TODO: Add to selectors
-.perkRow_bdbcf6 {
+%boosServerPerkRow {
   border-bottom: 1px solid var(--main-color);
+  &:hover {
+    background-color: hsla(0, 0%, 100%, 0.07);
+  }
 }
 
-.perkRow_bdbcf6:hover {
-  background-color: hsla(0, 0%, 100%, 0.07);
-}
-
-.perks__63e5a {
+%boostServerPerks {
   background-color: rgba(0, 0, 0, 0.4);
 }

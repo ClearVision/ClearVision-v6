@@ -5169,3 +5169,39 @@ pre {
 .searchRowLabel_b64d40 {
   @extend %enterRoles !optional;
 }
+.shopCard_f7822 {
+  @extend %nitroShopCard !optional;
+}
+.cardBackground_af6852 {
+  @extend %nitroShopCardBackground !optional;
+}
+.darkCardBackground__82a32 {
+  @extend %nitroShopCardDarkBackground !optional;
+}
+.shopScrollBackgroundPrimary_bb1f42 {
+  @extend %nitroShopBackground !optional;
+}
+.pageWrapperBackgroundPrimary__74f14 {
+  @extend %nitroShopBackgroundPrime !optional;
+}
+.footer__03347 {
+  @extend %webhookFooter !optional;
+}
+.layer_ec16dd::after {
+  @extend %webhookBackground !optional;
+}
+.guildPopout_ea4d8c {
+  @extend %webhookPopout !optional;
+}
+.emojiCounter_facc23 {
+  @extend %webhookEmojiRow !optional;
+}
+.perkRow_bdbcf6 {
+  @extend %boostServerPerksRow !optional;
+}
+.perks__63e5a {
+  @extend %boostServerPerks !optional;
+}
+.copyInput__3104b .input_d266e7 {
+  @extend %inviteToServer !optional;
+}
