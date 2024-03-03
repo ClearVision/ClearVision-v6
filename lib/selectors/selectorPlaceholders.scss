@@ -2340,6 +2340,9 @@ pre {
 .inputField__79601 {
   @extend %inputField !optional;
 }
+.copyInput__3104b {
+  @extend %inputCopy !optional;
+}
 .modal__6a96b {
   @extend %modal !optional;
 }
@@ -5202,6 +5205,45 @@ pre {
 .perks__63e5a {
   @extend %boostServerPerks !optional;
 }
-.copyInput__3104b .input_d266e7 {
-  @extend %inviteToServer !optional;
+.container__8316e {
+  @extend %modViewHeader !optional;
+}
+.topRow_b0479e {
+  @extend %modViewHeaderTop !optional;
+}
+.bottomRowAction__1d119 {
+  @extend %modViewHeaderBottomAction !optional;
+}
+.bottomRowActionDisabled__413d8 {
+  @extend %modViewHeaderBottomActionDisabled !optional;
+}
+.innerBottomRowAction_ccb714 {
+  @extend %modViewHeaderBottomActionInner !optional;
+}
+.container_c18052 {
+  @extend %modViewBody !optional;
+}
+.header__01d62 {
+  @extend %modViewBodyHeader !optional;
+}
+.modInfoItem__05dd7 {
+  @extend %modViewBodyItem !optional;
+}
+.modInfoAction__40259 {
+  @extend %modViewBodyAction !optional;
+}
+.permissionChiplet__7a040 {
+  @extend %modViewPermissionChiplet !optional;
+}
+.elevatedPermission_af9178 {
+  @extend %modViewElevatedPermissionChiplet !optional;
+}
+.innerContainer__68aae {
+  @extend %modViewActivity !optional;
+}
+.permissionItemContainer__274fd {
+  @extend %modViewPermissionItem !optional;
+}
+.elevatedPermission_c4dcb1 {
+  @extend %modViewElevatedPermissionItem !optional;
 }

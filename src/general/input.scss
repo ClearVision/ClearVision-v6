@@ -23,10 +23,8 @@
     box-shadow: none;
     background: none;
   }
-}
-
-// Remove second border from server invites.
-%inviteToServer {
-  background-color: transparent;
-  box-shadow: none;
+  %inputCopy & {
+    background-color: transparent;
+    box-shadow: none;
+  }
 }
