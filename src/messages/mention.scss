@@ -34,15 +34,15 @@
   }
 }
 // ping bg
-%mentioned {
+%message%mentioned {
   background-color: hsla(0, 0%, 100%, 0.05);
+  &%messageSelected,
+  %mouseModeFullMotion &:hover {
+    background-color: hsla(0, 0%, 100%, 0.08);
+  }
   &::before {
     background-color: $main-color;
   }
-}
-%message%mentioned%messageSelected, 
-%mouseModeFullMotion %message%mentioned:hover {
-  background-color: hsla(0, 0%, 100%, 0.08);
 }
 
 // ICON
