@@ -41,11 +41,12 @@
   background: $main-color;
 }
 
-// Theme some shop stuff                                     
+// Nitro Home shop                                 
 %nitroShopCard {
   background-color: rgba(0, 0, 0, 0.4) !important;
   border-color: var(--main-color) !important;
   &:hover {
+    background-color: rgba(0, 0, 0, 0.6) !important;
     border-color: var(--hover-color) !important;
   }
 }
@@ -55,9 +56,9 @@
 }
 
 %nitroShopBackground {
-  background-color:  transparent;
+  background-color:  rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
 }
 
 %nitroShopBackgroundPrime {
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
 }
