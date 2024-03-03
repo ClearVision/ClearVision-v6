@@ -20,6 +20,7 @@
       font-weight: 600;
     }
   }
+  // the ping itself
   %mentioned {
     %mention%mentionedInteractive {
       background-color: hsla(0, 0%, 100%, 0.1);
@@ -32,15 +33,16 @@
     }
   }
 }
+// ping bg
 %mentioned {
   background-color: hsla(0, 0%, 100%, 0.05);
-  &%message%messageSelected,
-  %mouseModeFullMotion &:hover {
-    background-color: hsla(0, 0%, 100%, 0.08);
-  }
   &::before {
     background-color: $main-color;
   }
+}
+%message%mentioned%messageSelected, 
+%mouseModeFullMotion %message%mentioned:hover {
+  background-color: hsla(0, 0%, 100%, 0.08);
 }
 
 // ICON
