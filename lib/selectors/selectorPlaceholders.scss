@@ -2299,9 +2299,6 @@ pre {
 .focused_db7916 {
   @extend %inputFocused !optional;
 }
-.noBorder_bf418d {
-  @extend %inputNoBorder !optional;
-}
 .inputField__79601 {
   @extend %inputField !optional;
 }
@@ -2422,7 +2419,7 @@ pre {
 .authorize__4ddfc {
   @extend %authModal !optional;
 }
-.scopeTimes__83c10 {
+.iconWrapper__54839 {
   @extend %authModalScopeTimes !optional;
 }
 .footer__04ee2 {
@@ -3079,9 +3076,6 @@ pre {
 }
 .card__4dc22 {
   @extend %settingsCard !optional;
-}
-.cardWrapper_bc8d2a {
-  @extend %settingsCardWrapper !optional;
 }
 .outline_cb0aed {
   @extend %settingsCardOutline !optional;
