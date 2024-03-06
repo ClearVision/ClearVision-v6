@@ -109,7 +109,7 @@ $version: '6.9.0';
 @import 'src/pages/login';
 @import 'src/pages/previewServer';
 @import 'src/pages/serverBoost';
-@import 'src/pages/studentHub.scss';
+@import 'src/pages/studentHub';
 
 // POPOUTS
 @import 'src/popouts/connectionInfo';
@@ -152,12 +152,13 @@ $version: '6.9.0';
 @import 'src/users/status';
 
 // VENCORD
-@import 'src/injectors/ven/plugins.scss';
-@import 'src/injectors/ven/venSettings.scss';
+@import 'src/injectors/ven/plugins';
+@import 'src/injectors/ven/venSettings';
+@import 'src/injectors/ven/icons';
 
 // REPLUGGED
-@import 'src/injectors/rp/plugins.scss';
-@import 'src/injectors/rp/rpSettings.scss';
+@import 'src/injectors/rp/plugins';
+@import 'src/injectors/rp/rpSettings';
 
 // BETTERDISCORD
 @import 'src/injectors/bd/bdSettings';
