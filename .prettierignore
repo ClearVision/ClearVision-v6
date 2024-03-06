@@ -1,0 +1,7 @@
+# Scripts files
+scripts/
+screenshots/
+node_modules/
+addons/
+test/
+build/

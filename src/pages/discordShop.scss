@@ -41,7 +41,7 @@
   background: $main-color;
 }
 
-// Nitro Home shop                                 
+// Nitro Home shop
 %nitroShopCard {
   background-color: rgba(0, 0, 0, 0.4) !important;
   border-color: var(--main-color) !important;
@@ -51,12 +51,12 @@
   }
 }
 
-%nitroShopCardBackground%nitroShopCardDarkBackground  {
+%nitroShopCardBackground%nitroShopCardDarkBackground {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
 %nitroShopBackground {
-  background-color:  rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
+  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
 }
 
 %nitroShopBackgroundPrime {
