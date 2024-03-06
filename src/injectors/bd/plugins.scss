@@ -165,8 +165,8 @@ div#magane div.stickerWindow div.packs-toolbar {
 }
 // GAMEACTIVITYTOGGLE - DEVILBRO
 %themeDark {
-  .gameActivityToggleAdded_Yd-YxC %accountPanelTagButton,
-  .gameActivityToggleAdded_Yd-YxC %accountPanelTagless {
+  %bdGameActivityToggle %accountPanelTagButton,
+  %bdGameActivityToggle %accountPanelTagless {
     min-width: calc(100% - 140px) !important;
   }
 }

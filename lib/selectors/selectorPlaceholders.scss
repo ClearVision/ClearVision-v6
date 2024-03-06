@@ -130,44 +130,6 @@
 .wrapper__35f8f {
   @extend %repluggedInstallWrapper !optional;
 }
-#bda-qem {
-  @extend %bdEmoteMenu !optional;
-}
-#bda-qem-twitch {
-  @extend %bdEmoteMenuTwitch !optional;
-}
-#bda-qem-favourite {
-  @extend %bdEmoteMenuFavourite !optional;
-}
-#bda-qem-emojis {
-  @extend %bdEmoteMenuEmojis !optional;
-}
-#bda-qem-twitch.active,
-#bda-qem-favourite.active,
-#bda-qem-emojis.active {
-  @extend %bdEmoteMenuActive !optional;
-}
-#bda-qem-twitch-container {
-  @extend %bdEmoteMenuTwitchContainer !optional;
-}
-#bda-qem-favourite-container {
-  @extend %bdEmoteMenuFavouriteContainer !optional;
-}
-.emote-menu-inner {
-  @extend %bdEmoteMenuInner !optional;
-}
-.bd-emote-header {
-  @extend %bdEmoteMenuHeader !optional;
-}
-.bd-emote-item {
-  @extend %bdEmoteItem !optional;
-}
-.emote-container {
-  @extend %bdEmoteContainer !optional;
-}
-.emote-icon {
-  @extend %bdEmoteIcon !optional;
-}
 #bd-settings-sidebar {
   @extend %bdSettingsSidebar !optional;
 }
@@ -182,6 +144,9 @@
 }
 .ui-tab-bar-separator {
   @extend %bdSettingsSidebarSeparator !optional;
+}
+.gameActivityToggleAdded_Yd-YxC {
+  @extend %bdGameActivityToggle !optional;
 }
 .progressBarContainer__9b571 {
   @extend %serverBoostProgressBar !optional;
@@ -2697,6 +2662,9 @@ pre {
 .unicodeShortcut__1dd6b {
   @extend %emojiCategoryUnicodeShortcut !optional;
 }
+.categoryItemLockIconContainer__9e6a3 {
+  @extend %emojiCategoryLockIconContainer !optional;
+}
 .premiumPromo__2d678 {
   @extend %emojiPickerPremiumPromo !optional;
 }
@@ -2706,8 +2674,14 @@ pre {
 .premiumPromoTitle__68b72 {
   @extend %emojiPickerPremiumPromoTitle !optional;
 }
+.premiumRetentionNotice__7e7c4 {
+  @extend %emojiPickerPremiumRetentionNotice !optional;
+}
 .upsell__780f6 {
   @extend %emojiPickerPremiumUpsell !optional;
+}
+.upsellContainer__3c02a {
+  @extend %emojiPickerPremiumUpsellContainer !optional;
 }
 .popout__08442 {
   @extend %groupInvitePopout !optional;
