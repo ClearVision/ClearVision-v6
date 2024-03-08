@@ -2419,6 +2419,9 @@ pre {
 .authorize__4ddfc {
   @extend %authModal !optional;
 }
+.inApp__944f6 {
+  @extend %authModalInApp !optional;
+}
 .iconWrapper__54839 {
   @extend %authModalScopeTimes !optional;
 }
