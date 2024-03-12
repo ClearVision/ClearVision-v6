@@ -103,9 +103,6 @@
 }
 
 // SHARED
-%forumCardName {
-  color: #fff !important;
-}
 %forumPinIcon {
   background-color: $main-color;
 }
@@ -205,9 +202,6 @@
   %headingLargeBold,
   %headingLargeSemibold {
     color: $main-color;
-    &:hover {
-      color: $hover-color;
-    }
   }
 }
 
