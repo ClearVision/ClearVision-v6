@@ -173,6 +173,9 @@
 %authModal {
   background-color: transparent;
   border-radius: 5px;
+  &%authModalInApp {
+    background-color: transparent;
+  }
 }
 %authModalScopeTimes {
   background-color: hsla(0, 0%, 100%, 0.15);

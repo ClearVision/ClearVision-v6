@@ -123,21 +123,33 @@
 }
 // VOICE MESSAGE EMBED
 /*voice message*/
+
 %themeDark %voiceMessageContainer {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.6);
   &:not(%voiceMessagePlaying) %voiceMessagePlayButtonContainer {
     background: $main-color;
-    &:hover {
+    &:hover,
+    &:active {
       background: $hover-color;
     }
   }
 }
+%voiceMessagePlayButtonContainer {
+  &:active {
+    %voiceMessagePlayButtonIcon {
+      color: #fff;
+    }
+  }
+}
+%voiceMessagePlayingRipple {
+  background-color: transparent;
+}
 // VOICE MESSAGE PLAYING
 %voiceMessagePlaying {
   %voiceMessagePlayButtonContainer {
-    background: var(--success-color);
+    background: #fff;
   }
-  %voiceMessagePlayingRipple {
-    background: rgba(0, 0, 0, 0.6);
+  %voiceMessagePlayButtonIcon {
+    color: $main-color;
   }
 }

@@ -79,40 +79,6 @@ button%panelButton {
 %themeDark %accountPanel {
   position: relative;
   background: transparent;
-  margin-bottom: 10px;
-  &:before,
-  &:after {
-    bottom: -8px;
-    position: absolute;
-    color: hsla(0, 0%, 100%, 0.3);
-    font-size: 11px;
-    font-weight: 700;
-    transition: all 0.5s ease-in-out;
-  }
-  &:before {
-    content: cv('const:text.account.main');
-    right: 50%;
-    text-align: right;
-    transform: translateX(50%);
-  }
-  &:after {
-    content: cv('const:text.account.version');
-    left: 50%;
-    text-align: left;
-    opacity: 0;
-    transform: translateX(50%) rotateX(90deg);
-  }
-  &:hover {
-    &:before {
-      margin-right: 1px;
-      transform: none;
-    }
-    &:after {
-      margin-left: 1px;
-      opacity: 1;
-      transform: none;
-    }
-  }
   // SOME POSITIONING
   %accountPanelTagButton,
   %accountPanelTagless {
@@ -146,12 +112,9 @@ button%panelButton {
       transition: all 0.15s ease-in-out;
     }
     &:hover {
-      width: 40px !important;
-      height: 40px !important;
       opacity: 1;
       &:after {
         font-size: 10px;
-        line-height: 40px;
         opacity: 1;
       }
       foreignObject {

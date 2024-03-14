@@ -360,15 +360,6 @@
 .headerButton__3af9f {
   @extend %channelsHeaderButton !optional;
 }
-.guildIconContainer_a995c7 {
-  @extend %channelsHeaderGuildBadge !optional;
-}
-.partnered__77913 {
-  @extend %guildPartnered !optional;
-}
-.verified__8167d {
-  @extend %guildVerified !optional;
-}
 .animatedContainer__341f6 {
   @extend %bannerAnimatedContainer !optional;
 }
@@ -1118,6 +1109,9 @@
 }
 .gameVerifiedIcon_bcd5fc {
   @extend %gameVerifiedIcon !optional;
+}
+.redesignIconChildContainer__1bee6 {
+  @extend %guildIconChildContainer !optional;
 }
 .scrollerWrap_e0b973 {
   @extend %scrollerWrap !optional;
@@ -2065,6 +2059,9 @@ pre {
 .playButtonContainer_d887d6 {
   @extend %voiceMessagePlayButtonContainer !optional;
 }
+.playIcon_e14cf9 {
+  @extend %voiceMessagePlayButtonIcon !optional;
+}
 .ripple__74f0d {
   @extend %voiceMessagePlayingRipple !optional;
 }
@@ -2427,6 +2424,9 @@ pre {
 }
 .authorize__4ddfc {
   @extend %authModal !optional;
+}
+.inApp__944f6 {
+  @extend %authModalInApp !optional;
 }
 .iconWrapper__54839 {
   @extend %authModalScopeTimes !optional;
@@ -4252,6 +4252,9 @@ pre {
 .eventStatusLabel__4d7cc {
   @extend %eventStatusLabel !optional;
 }
+.eventStatusContainer__92035 {
+  @extend %eventIconContainer !optional;
+}
 .rsvpCount__4657d {
   @extend %eventRSVPCount !optional;
 }
@@ -4444,9 +4447,11 @@ pre {
 .rolesList__55c4f {
   @extend %forumSetupRoleList !optional;
 }
-.title__964d5,
+.title__964d5 {
+  @extend %forumGalleryCardTitle !optional; 
+}
 .postTitleText__11fd1 {
-  @extend %forumCardName !optional;
+  @extend %forumListCardTitle !optional;
 }
 .pinIcon__39b6e {
   @extend %forumPinIcon !optional;
