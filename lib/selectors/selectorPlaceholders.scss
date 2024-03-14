@@ -930,6 +930,15 @@
 .optionPillKey_e84f41 {
   @extend %autocompleteOptionPillKey !optional;
 }
+.nitroTopDividerContainer__4c8fd {
+  @extend %autocompleteUpsellDividerContainer !optional;
+}
+.premiumEmoji__2dbd7 {
+  @extend %autocompleteUpsellEmoji !optional;
+}
+.premiumHeader_f78f97 {
+  @extend %autocompleteUpsellHeader !optional;
+}
 .spamBanner_adb1b9 {
   @extend %timeoutBar !optional;
 }
