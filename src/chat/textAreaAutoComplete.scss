@@ -73,3 +73,7 @@
 %autocompleteUpsellHeader {
   display: none;
 }
+// REMOVE ENTIRE BOX IF ONLY CONTAINS NITRO AD
+%autocomplete:has(%autocompleteBase + %autocompleteUpsellDividerContainer) {
+  display: none;
+}
