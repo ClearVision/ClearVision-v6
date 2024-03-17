@@ -17,17 +17,17 @@
     background-color: $main-color;
     margin-bottom: 10px;
     %reactionModalColorStandard {
-      color: #fff;
+      color: var(--text-normal)
     }
   }
 }
 
 // QUICKSWITCHER
 %quickswitcher {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--backdrop-overlay);
 }
 %quickswitcherInput {
-  background-color: rgba(255, 255, 255, 0.07);
+  background-color: var(--backdrop-overlay);
 }
 %quickswitcherScroller {
   background-color: transparent;
@@ -68,14 +68,14 @@
 
 // SERVER BOOST PAYMENT MODAL
 %serverBoostPaymentIcon {
-  color: #fff;
+  color: var(--text-normal);
   &:hover {
-    color: #fff;
+    color: var(--text-normal);
     background-color: $hover-color;
   }
 }
 %themeDark %serverBoostPaymentIconWrapper {
-  background: hsla(0, 0%, 0%, 0.4);
+  background: var(--backdrop-overlay);
 }
 %serverBoostPaymentActions %input {
   box-shadow: none;
@@ -117,10 +117,10 @@
   background-color: hsla(0, 0%, 100%, 0.05);
   border: 2px solid transparent;
   transition: all 0.15s ease-in-out;
-  color: #fff;
+  color: var(--text-normal);
   &:hover {
     background-color: hsla(0, 0%, 100%, 0.07);
-    color: #fff;
+    color: var(--text-normal);
     border: 2px solid $hover-color;
   }
 }

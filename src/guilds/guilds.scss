@@ -74,7 +74,7 @@
   &%guildLinkSelected {
     %guildChildWrapper {
       background-color: $main-color;
-      color: #fff;
+      color: var(--text-normal);
     }
   }
 }

@@ -37,7 +37,7 @@ $colours: (
   color: hsla(0, 0%, 100%, 0.7) !important;
 }
 %connectionsDelete {
-  color: hsla(0, 0%, 100%, 0.7);
+  color: cv('colors.danger');
 }
 %connectionsMetadataContainer {
   background-color: hsla(0, 0%, 100%, 0.1);

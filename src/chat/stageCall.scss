@@ -59,7 +59,7 @@
     color: #fff;
   }
   %textSmallMedium {
-    color: rgba(255, 255, 255, 0.9) !important;
+    color: var(--text-normal) !important;
   }
 }
 %stageOptionContainer {
@@ -79,10 +79,10 @@
 %stageGuildListenerIcon {
   background: $main-color;
   %textExtraSmallNormal {
-    color: #fff !important;
+    color: var(--text-normal) !important;
   }
   > svg {
-    color: #fff;
+    color: var(--text-normal);
   }
 }
 

@@ -53,7 +53,7 @@
 }
 %serverLeaveReason {
   %serverDeleteReasonOption {
-    color: #fff;
+    color: var(--text-normal);
     background: hsla(0, 0%, 100%, 0.03);
     border: 1px solid hsla(0, 0%, 100%, 0.05);
     border-top: none;

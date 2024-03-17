@@ -16,7 +16,7 @@
 %pageButtonEnd {
   &:disabled {
     border-color: $main-color;
-    color: #fff;
+    color: var(--text-normal);
     opacity: 0.5;
     cursor: not-allowed;
   }

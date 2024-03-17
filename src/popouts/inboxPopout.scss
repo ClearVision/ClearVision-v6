@@ -16,13 +16,13 @@
 
 // TAB BAR
 %themeDark %messagesPopoutHeader %messagesPopoutTabBar %messagesPopoutTab {
-  color: #fff;
+  color: var(--text-normal);
   &%messagesPopoutTabActive {
     background-color: $main-color;
   }
   &:hover:not(%messagesPopoutTabActive) {
     background-color: hsla(0, 0%, 100%, 0.06);
-    color: #fff;
+    color: var(--text-normal);
   }
 }
 
@@ -76,12 +76,12 @@
 %recentMentionsJumpButton {
   background-color: $main-color;
   %recentMentionsJumpButtonText {
-    color: #fff;
+    color: var(--text-normal);
   }
   &:hover {
     background-color: $hover-color;
     %recentMentionsJumpButtonText {
-      color: #fff;
+      color: var(--text-normal);
     }
   }
 }

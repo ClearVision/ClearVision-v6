@@ -20,7 +20,7 @@
 %nitroExpandButton {
   cursor: pointer;
   background-color: $main-color;
-  color: #fff;
+  color: var(--text-normal);
 }
 %nitroPerksCover {
   background-color: hsla(0, 0%, 0%, 0.6);

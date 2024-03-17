@@ -16,7 +16,7 @@
 }
 %groupInvitePopoutSearchTag {
   background: $main-color;
-  color: #fff;
+  color: var(--text-normal);
 }
 
 // FRIEND
@@ -25,7 +25,7 @@
   %themeDark &%groupInvitePopoutFriendSelected {
     background: hsla(0, 0%, 100%, 0.1);
     %groupInvitePopoutNickname {
-      color: #fff;
+      color: var(--text-normal);
     }
     %groupInvitePopoutDiscordTag {
       color: hsla(0, 0%, 100%, 0.5);

@@ -12,7 +12,7 @@
     background: rgba(cv('const:colors.twitch-purple'), 0.6);
   }
   %noticeTextLink {
-    color: #fff;
+    color: var(--text-normal);
   }
   &%noticeComplete {
     background: rgba(0, 0, 0, 0.6);

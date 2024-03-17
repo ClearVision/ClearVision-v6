@@ -32,7 +32,7 @@
 // LINKS
 %anchor {
   %textSmallMedium {
-    color: #fff !important;
+    color: var(--text-normal) !important;
   }
 }
 
@@ -161,7 +161,7 @@
 %onboardingActionPreviewPill {
   background-color: rgba(0, 0, 0, 0.4);
   %textSmallMedium {
-    color: #fff;
+    color: var(--text-normal);
   }
 }
 %onboardingActionPreviewPillSelected {

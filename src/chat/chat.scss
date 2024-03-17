@@ -23,7 +23,7 @@
 
 // GATED CHANNEL
 %chatContentWrapper > %scrollerWrap {
-  background: rgba(0, 0, 0, 0.5);
+  background: var(--backdrop-overlay);
 }
 %chatGatedContent {
   %chatGatedImage {
@@ -36,7 +36,7 @@
     text-shadow: 0 0 3px #000;
   }
   %chatGatedDescription {
-    color: hsla(0, 0%, 100%, 0.7);
+    color: var(--text-normal);
   }
   %chatGatedSeparator {
     background: hsla(0, 0%, 100%, 0.07);

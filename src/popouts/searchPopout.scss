@@ -28,7 +28,7 @@
         opacity: 1;
       }
       > a {
-        color: #fff;
+        color: var(--text-normal);
       }
     }
   }
@@ -124,7 +124,7 @@
     &%searchPopoutOptionSelected {
       > %searchPopoutChannel {
         > strong {
-          color: #fff;
+          color: var(--channel-text-selected);
         }
         > %searchPopoutChannelIcon,
         > %searchPopoutChannelCategory {
@@ -140,7 +140,7 @@
     > %searchPopoutQueryText {
       color: hsla(0, 0%, 100%, 0.7);
       > strong {
-        color: #fff;
+        color: var(--text-normal);
       }
     }
   }
@@ -154,7 +154,7 @@
       }
       %searchPopoutHintValue {
         background-color: $main-color;
-        color: #fff;
+        color: var(--text-normal);
         transition: all 0.15s ease-in-out;
         &:hover {
           background-color: $hover-color;
@@ -207,7 +207,7 @@
       }
       &:hover {
         background-color: $main-color;
-        color: #fff;
+        color: var(--text-normal);
       }
     }
     > %datepickerDaySelected {

@@ -13,7 +13,7 @@
   &%buttonCallInvite,
   &%buttonColorPrimary {
     background: $main-color;
-    color: #fff;
+    color: var(--text-normal);
     &:hover {
       background: $hover-color;
     }
@@ -97,15 +97,15 @@
     &:hover {
       background-color: transparent;
       border-color: $hover-color;
-      color: #fff;
+      color: var(--text-normal);
     }
   }
   &%buttonColorRed {
     border-color: cv('colors.danger');
-    color: hsla(0, 0%, 100%, 0.8);
+    color: var(--text-normal);
     &:hover {
       background-color: transparent;
-      color: #fff;
+      color: var(--text-normal);
     }
   }
 }
@@ -114,7 +114,7 @@
 %buttonLink {
   &%buttonColorWhite,
   &%buttonColorPrimary {
-    color: #fff;
+    color: var(--text-normal);
   }
   &%buttonColorBrand {
     color: $main-color;

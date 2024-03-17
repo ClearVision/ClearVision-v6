@@ -37,11 +37,11 @@ button%panelButton {
   opacity: 1;
   > %buttonContents > svg {
     @include bg($rep: no-repeat, $pos: center, $size: 18px);
-    color: #fff;
+    color: var(--text-normal);
     opacity: 0.5;
     transition: all 0.1s ease-in-out;
     > path[fill*='var(--interactive-normal)'] {
-      fill: #fff;
+      fill: var(--text-normal);
     }
   }
   &:hover {
@@ -85,8 +85,8 @@ button%panelButton {
     min-width: calc(100% - 100px);
     width: auto;
     &:hover {
-      background-color: hsla(0, 0%, 0%, 0.3);
-      color: #fff;
+      background-color: var(--backdrop-overlay);
+      color: var(--text-normal);
     }
   }
   // AVATAR
@@ -98,7 +98,7 @@ button%panelButton {
       content: 'Status';
       position: absolute;
       @include stretch;
-      color: #fff;
+      color: var(--text-normal);
       font-size: 5px;
       font-weight: 700;
       text-align: center;
@@ -124,17 +124,17 @@ button%panelButton {
   }
   // NAME TAG
   %accountPanelUsername {
-    color: #fff;
+    color: var(--text-normal);
   }
   %accountPanelDiscriminator {
-    color: hsla(0, 0%, 100%, 0.3);
+    color: var(--text-normal);
   }
 }
 
 // CONNECTION PANEL
 %connectionPanel {
   > %flex {
-    background: rgba(0, 0, 0, 0.3);
+    background: var(--backdrop-overlay);
     border-radius: 5px;
     padding: 5px;
   }
@@ -151,11 +151,10 @@ button%panelButton {
     }
   }
   %connectionPanelChannel {
-    color: hsla(0, 0%, 100%, 0.3);
-    opacity: 1;
+    color: var(--text-normal);
     transition: all 0.15s ease-in-out;
     &:hover {
-      color: hsla(0, 0%, 100%, 0.5);
+      color: var(--text-normal);
       text-decoration: none;
     }
   }
@@ -177,7 +176,7 @@ button%panelButton {
         top: 2px;
         bottom: 2px;
         width: 1px;
-        background: hsla(0, 0%, 100%, 0.2);
+        background: var(--backdrop-overlay);
       }
     }
   }
@@ -190,5 +189,5 @@ button%panelButton {
 
 // NOISE CANCELLATION POPOUT
 %noiseCancellationPopout {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: var(--backdrop-overlay);
 }

@@ -18,7 +18,7 @@
 }
 
 %friendActivity {
-  color: hsla(0, 0%, 100%, 0.5);
+  color: var(--text-normal);
   strong {
     color: $main-color;
   }
@@ -36,27 +36,27 @@
 // ACTION BUTTON
 %friendActionButton {
   background-color: hsla(0, 0%, 0%, 0.6);
-  color: #fff;
+  color: var(--text-normal);
   &%friendActionButtonHighlight {
     background-color: hsla(0, 0%, 0%, 0.6);
-    color: #fff;
+    color: var(--text-normal);
   }
   &:hover {
     background-color: $hover-color;
-    color: #fff;
+    color: var(--text-normal);
   }
   &%friendActionAcceptButton {
     color: cv('colors.success');
     &:hover {
       background-color: cv('colors.success');
-      color: #fff !important;
+      color: var(--text-normal) !important;
     }
   }
   &%friendActionDenyButton {
     color: cv('colors.danger');
     &:hover {
       background-color: cv('colors.danger');
-      color: #fff !important;
+      color: var(--text-normal) !important;
     }
   }
 }
@@ -64,7 +64,7 @@
 // ADD FRIENDS BUTTON
 %tabBarItem[aria-controls='add_friend-tab'][aria-selected='false'] {
   background-color: cv('colors.success') !important;
-  color: #fff !important;
+  color: var(--text-normal) !important;
 }
 %tabBarItem[aria-controls='add_friend-tab'][aria-selected='true'] {
   background-color: transparent !important;

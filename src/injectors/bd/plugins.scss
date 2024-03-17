@@ -3,7 +3,7 @@ div#magane div.stickerWindow {
   border: 2px solid $main-color;
 }
 div#magane div.stickerWindow div.stickers h3.getStarted {
-  color: #fff;
+  color: var(--text-normal);
 }
 div#magane div.stickerWindow:not(:has(> [style^='display'])) div.stickers *,
 div#magane div.stickerWindow:not(:has(> [style^='display'])) div.packs-toolbar * {
@@ -19,7 +19,7 @@ div#magane .stickersModal .inputQuery {
 }
 div#magane .button {
   background: $main-color;
-  color: #fff;
+  color: var(--text-normal);
 }
 div#magane div.stickerWindow:before {
   content: '';
@@ -66,7 +66,7 @@ div#magane div.stickerWindow div.packs-toolbar {
 #pluginNotice {
   #outdatedPlugins {
     span {
-      color: #fff;
+      color: var(--text-normal);
       @include hover-shadow;
     }
   }
@@ -104,14 +104,14 @@ div#magane div.stickerWindow div.packs-toolbar {
 %codeHLJS {
   .copybutton {
     background: hsla(0, 0%, 100%, 0.1) !important;
-    color: hsla(0, 0%, 100%, 0.7) !important;
+    color: var(--text-normal) !important;
     border: none !important;
     border-top-left-radius: 3px;
     opacity: 0;
     transition: all 0.3s ease-in-out;
     user-select: none;
     &:hover {
-      color: #fff !important;
+      color: var(--text-normal) !important;
     }
     &:active {
       color: $main-color !important;
@@ -174,7 +174,7 @@ div#magane div.stickerWindow div.packs-toolbar {
 .owner-tag {
   color: hsla(0, 0%, 100%, 0.6);
   &[style*='background'] {
-    color: #fff;
+    color: var(--text-normal);
   }
   .BE-badges + & {
     margin-left: 0;

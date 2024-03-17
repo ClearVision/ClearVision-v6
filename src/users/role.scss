@@ -22,7 +22,7 @@
       }
     }
     > %roleName {
-      color: #fff;
+      color: var(--text-normal);
     }
   }
 }
@@ -68,7 +68,7 @@
   &:hover {
     background: hsla(0, 0%, 100%, 0.2);
     > svg {
-      color: #fff;
+      color: var(--text-normal);
     }
   }
 }

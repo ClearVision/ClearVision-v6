@@ -104,7 +104,7 @@
         }
         &%tabBarItemSelected {
           background: transparent;
-          color: #fff;
+          color: var(--channel-text-selected);
           transition: all 0.15s ease-in-out, background 0.3s 0.2s;
           &%serverBoostTabItem {
             background-color: transparent !important;
@@ -116,7 +116,7 @@
 
         // ONBOARDING STEP COUNTER
         %textMediumNormal {
-          color: #fff !important;
+          color: var(--text-normal) !important;
         }
       }
       %settingsServerBoostTabItem[aria-selected='true'] {

@@ -62,14 +62,14 @@
 %callButtonColorable {
   &%callButtonPrimaryDark {
     background-color: rgba(0, 0, 0, 0.6);
-    color: #fff;
+    color: vark(--text-normal);
     &:hover {
       background-color: $hover-color;
-      color: #fff;
+      color: var(--text-normal);
     }
   }
   &%callButtonWhite {
-    color: #fff;
+    color: var(--text-normal);
     background-color: $main-color;
     &:hover {
       background-color: $hover-color;
@@ -82,7 +82,7 @@
     }
     %callCenterIcon,
     %micSlash {
-      color: #fff;
+      color: var(--text-normal);
     }
     %callCenterIcon {
       &%callButtonActive {
