@@ -23,20 +23,20 @@
   border-top: 1px solid var(--background-modifier-accent);
 }
 #vc-spotify-progress-bar > [class^='slider'] [class^='grabber'] {
-  background-color: var(--main-color);
-  border-color: var(--main-color);
-  color: var(--main-color);
+  background-color: $main-color;
+  border-color: $main-color;
+  color: $main-color;
 }
 // SHOW HIDDEN CHANNELS
 .shc-lock-screen-allowed-users-and-roles-container {
   background-color: rgba(0, 0, 0, 0.8);
 }
 .shc-lock-screen-allowed-users-and-roles-container button {
-  background: var(--main-color);
+  background: $main-color;
   color: #fff;
   border-radius: 10px;
   &:hover {
-    background: var(--hover-color);
+    background: $hover-color;
     color: #fff;
     border-radius: 10px;
   }

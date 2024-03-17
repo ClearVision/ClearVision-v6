@@ -44,10 +44,10 @@
 // Nitro Home shop
 %nitroShopCard {
   background-color: rgba(0, 0, 0, 0.4) !important;
-  border-color: var(--main-color) !important;
+  border-color: $main-color !important;
   &:hover {
     background-color: rgba(0, 0, 0, 0.6) !important;
-    border-color: var(--hover-color) !important;
+    border-color: $hover-color !important;
   }
 }
 
@@ -62,3 +62,37 @@
 %nitroShopBackgroundPrime {
   background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
 }
+
+// Buy Nitro
+%unleashMoreBackground {
+  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.6));
+}
+
+@supports (color:rgba(0,0,0,0))and (top:var(--f)){
+  %giftNitro {
+    color: var(--text-normal) !important;
+    background-color: $main-color !important;
+    border-color: transparent !important;
+    &:hover { 
+      background-color: $hover-color !important;
+      color: var(--text-normal) !important;
+    }
+}
+}
+
+%cardText {
+  color: $main-color;
+}
+
+%mostPopular {
+  display: none; // It had to go - Snow
+}
+
+// Subscribe button
+%buttonInverted%buttonColorBrand {
+  background: $main-color;
+  color: var(--text-normal);
+  &:hover {
+    background: $main-color;
+  }
+} 

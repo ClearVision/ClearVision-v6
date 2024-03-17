@@ -118,7 +118,7 @@
   }
   %serverGuideChannelIcon,
   %serverGuideRulesIcon {
-    background: var(--main-color);
+    background: $main-color;
     & > svg > path {
       fill: #fff;
     }

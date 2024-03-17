@@ -30,7 +30,7 @@
 // Boost this server
 // TODO: Add to selectors
 %boosServerPerkRow {
-  border-bottom: 1px solid var(--main-color);
+  border-bottom: 1px solid $main-color;
   &:hover {
     background-color: hsla(0, 0%, 100%, 0.07);
   }

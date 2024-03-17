@@ -133,12 +133,12 @@
   background-color: transparent;
 }
 %emojiCategoryLockIconContainer {
-  background: var(--main-color);
-  border-color: var(--main-color);
+  background: $main-color;
+  border-color: $main-color;
 }
 %emojiPickerPremiumUpsellContainer {
   background: var(--background-overlay);
-  border: 2px solid var(--main-color);
+  border: 2px solid $main-color;
 }
 // NITRO EXPIRING NOTICE
 %emojiPickerPremiumRetentionNotice {

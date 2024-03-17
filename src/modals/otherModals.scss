@@ -104,12 +104,12 @@
 // TIMEOUT
 /*timeout duration item*/
 %timeoutModalItem%timeoutModalSelected {
-  background: var(--main-color);
-  border-color: var(--main-color);
+  background: $main-color;
+  border-color: $main-color;
 }
 %timeoutModalItem:not(%timeoutModalSelected) {
   background: rgba(0, 0, 0, 0.4);
-  border-color: var(--main-color);
+  border-color: $main-color;
 }
 
 // BAN MODAL
@@ -230,7 +230,7 @@
 }
 /*border color for terms of acceptance*/
 %beforeTalkRule {
-  border-color: var(--main-color);
+  border-color: $main-color;
 }
 /*agree to rules*/
 %beforeTalkRulesBackground {
@@ -252,7 +252,7 @@
 }
 
 %webhookEmojiRow {
-  background-color: var(--main-color);
+  background-color: $main-color;
   color: var(--text-normal) !important;
 }
 

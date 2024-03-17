@@ -292,7 +292,7 @@
     background-color: transparent;
   }
   %guildSettingsOnboardingTestimonialQuotes {
-    color: var(--main-color);
+    color: $main-color;
   }
   %guildSettingsOnboardingTestimonial {
     %textSmallMedium {
@@ -309,7 +309,7 @@
     }
   }
   %guildSettingsOnboardingUpsellCheckboxCircle {
-    background-color: var(--main-color);
+    background-color: $main-color;
   }
   %guildSettingsOnboardingUpsellCheckbox {
     &%guildSettingsOnboardingUpsellListSelected {

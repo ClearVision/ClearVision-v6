@@ -44,10 +44,10 @@
 }
 
 %myScreen {
-  background: var(--main-color);
+  background: $main-color;
   border-radius: 100px;
   &:hover {
-    background: var(--hover-color);
+    background: $hover-color;
   }
 }
 
