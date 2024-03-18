@@ -68,25 +68,22 @@
   background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.6));
 }
 
-@supports (color:rgba(0,0,0,0))and (top:var(--f)){
-  %giftNitro {
+
+%nitroShopGiftNitro {
+  color: var(--text-normal) !important;
+  background-color: $main-color !important;
+  border-color: transparent !important;
+  &:hover { 
+    background-color: $hover-color !important;
     color: var(--text-normal) !important;
-    background-color: $main-color !important;
-    border-color: transparent !important;
-    &:hover { 
-      background-color: $hover-color !important;
-      color: var(--text-normal) !important;
-    }
-}
+  }
 }
 
-%cardText {
+
+%nitroShopCardText {
   color: $main-color;
 }
 
-%mostPopular {
-  display: none; // It had to go - Snow
-}
 
 // Subscribe button
 %buttonInverted%buttonColorBrand {
