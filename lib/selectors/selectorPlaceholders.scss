@@ -4827,6 +4827,9 @@ pre {
 .selected_a76908 {
   @extend %avatarDecoItemSelected !optional;
 }
+.iconBadge__5fd10 {
+  @extend %avatarDecoItemLock !optional;
+}
 .decorationPreview_d09d2f {
   @extend %avatarDecoPreview !optional;
 }
@@ -4842,6 +4845,9 @@ pre {
 .selected_bfc68b {
   @extend %profileEffectItemSelected !optional;
 }
+.lockBadge__7140f {
+  @extend %profileEffectItemLock !optional;
+}
 .effectDescriptionNoGradient__2ac4a {
   @extend %profileEffectDescription !optional;
 }
@@ -4850,9 +4856,6 @@ pre {
 }
 .effectDescriptionContainer_d33b78 {
   @extend %profileEffectDescriptionContainer !optional;
-}
-.iconBadge__2abac {
-  @extend %avatarDecoProfileEffectLock !optional;
 }
 .statusDot__468f8 {
   @extend %userProfileStatus !optional;

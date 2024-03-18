@@ -38,6 +38,9 @@
     box-shadow: inset 0 0 0 2px $main-color;
   }
 }
+%avatarDecoItemLock {
+  background-color: $main-color !important;
+}
 %avatarDecoPreview,
 %avatarDecoPreviewSmall {
   background-color: hsla(0, 0%, 100%, 0.05);
@@ -47,6 +50,7 @@
   border: 2px solid var(--premium-tier-2-purple-for-gradients-2);
 }
 
+// USER PROFILE - PROFILE EFFECT
 %profileEffectItem {
   background-color: hsla(0, 0%, 100%, 0.05);
   &:hover {
@@ -64,8 +68,7 @@
 %profileEffectDescriptionUpsell {
   border: 2px solid var(--premium-tier-2-purple-for-gradients-2);
 }
-
-%avatarDecoProfileEffectLock {
+%profileEffectItemLock {
   background-color: $main-color !important;
 }
 
