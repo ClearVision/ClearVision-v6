@@ -8,10 +8,10 @@
     transition: all 0.15s ease-in-out;
     &%menuPopoutItemHover {
       background-color: $hover-color;
-      color: var(--text-normal);
+      color: #fff;
       %menuPopoutCheckbox,
       %menuPopoutRadio {
-        color: var(--text-normal);
+        color: #fff;
       }
       %menuPopoutCheck {
         color: $main-color;
@@ -19,7 +19,7 @@
     }
     &%menuPopoutSelected:active:not(%menuPopoutHideInteraction) {
       background-color: $hover-color;
-      color: var(--text-normal);
+      color: #fff;
       border-color: $hover-color;
     }
     %menuPopoutCheckbox,
@@ -34,7 +34,7 @@
     color: var(--danger-color);
     &%menuPopoutItemHover {
       background-color: var(--danger-color);
-      color: var(--text-normal);
+      color: #fff;
       %menuPopoutIcon {
         transform: rotateY(180deg);
         transition: all 0.15s ease-in-out;

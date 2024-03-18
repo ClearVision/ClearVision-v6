@@ -56,7 +56,7 @@
     // SELECTED
     &%bdSettingsSidebarItemSelected {
       background: transparent;
-      color: var(--text-normal);
+      color: #fff;
       transition: all 0.15s ease-in-out, background 0.3s 0.2s;
       &:before {
         opacity: 1;

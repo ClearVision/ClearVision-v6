@@ -12,7 +12,7 @@
   // CHANNELS HEADER
   %channelsHeader {
     height: 48px;
-    color: var(--text-normal);
+    color: #fff;
     font-family: cv('font.main');
     font-weight: 600;
     text-shadow: 0 0 3px #000;
@@ -41,7 +41,7 @@
 
 // SERVER BOOST
 %themeDark %serverBoostProgressBar {
-  background-color: var(--backgrop-overlay)
+  background-color: hsla(0, 0%, 0%, 0.4);
 }
 
 // CHANNEL CONTENT
@@ -94,7 +94,7 @@
   animation: cv-fade-to-3 0.15s ease-in-out;
 }
 %channelActionIcon {
-  color: var(--text-normal);
+  color: #fff;
   opacity: 0.3;
   transition: all 0.15s ease-in-out;
   &:hover {
@@ -117,7 +117,7 @@
         %channelContainerDefault & {
           %channelIcon,
           %channelName {
-            color: var(--text-normal);
+            color: hsla(0, 0%, 100%, 0.7);
           }
         }
       }
@@ -155,7 +155,7 @@
   &%channelWrapperSelected {
     %channelName,
     %channelIcon {
-      color: var(--channel-text-selected);
+      color: #fff;
     }
     %channelLink {
       &:before {
@@ -184,7 +184,7 @@
     }
     %textExtraSmallMedium,
     %textExtraSmallNormal {
-      color: var(--text-normal) !important;
+      color: #fff !important;
     }
   }
 
@@ -252,11 +252,11 @@
 }
 %channelUserLimitUsers {
   padding: 0 4px 0 6px;
-  background: var(--channel-color);
+  background: rgba(0, 0, 0, 0.15);
 }
 %channelUserLimitTotal {
   padding: 0 6px 0 4px;
-  background: var(--channel-color);
+  background: hsla(0, 0%, 100%, 0.04);
   box-shadow: inset 1px 0 hsla(0, 0%, 100%, 0.07);
   &:after {
     display: none;
@@ -288,7 +288,7 @@
   &%voiceUserSelected {
     %channels %voiceUserList & {
       %voiceUserContent {
-        background: var(--backdrop-overlay);
+        background: hsla(0, 0%, 100%, 0.04);
       }
       %voiceUserName {
         color: hsla(0, 0%, 100%, 0.7);
@@ -324,7 +324,7 @@
     transition: all 0.1s ease-in-out;
   }
   %voiceUserNameSpeaking {
-    color: var(--text-normal) !important;
+    color: #fff !important;
   }
 }
 %voiceChannelsButton {
@@ -333,7 +333,7 @@
     transition: ease-in-out 0.15s;
   }
   > %textSmallMedium {
-    color: var(--text-normal);
+    color: #fff;
   }
 }
 
@@ -342,11 +342,11 @@
   width: 18px;
   height: 18px;
   margin-right: 3px;
-  color: var(--text-normal);
+  color: hsla(0, 0%, 100%, 0.3);
 }
 %userSummaryMoreUsers {
   padding: 0 4px;
-  background: var(--backdrop-overlay);
+  background: rgba(0, 0, 0, 0.3);
   border-radius: 10px;
 }
 

@@ -30,7 +30,7 @@
     box-shadow: 0 0 2px 2px $main-color;
     transition: all 0.15s ease-in-out;
     %popoutInput {
-      color: var(--text-normal);
+      color: #fff;
       &::placeholder {
         color: hsla(0, 0%, 100%, 0.3);
       }
@@ -56,7 +56,7 @@
 %emojiPickerCategoryHeaderWrapper {
   background-color: transparent;
   %emojiPickerCategoryHeader {
-    color: var(--text-normal);
+    color: #fff;
   }
 }
 %emojiPickerItem {
@@ -96,7 +96,7 @@
 %emojiCategoryItemIcon {
   color: hsla(0, 0%, 100%, 0.7);
   %emojiCategoryItemSelected & {
-    color: var(--text-normal);
+    color: #fff;
   }
 }
 %emojiCategoryGuildIcon {
@@ -127,7 +127,7 @@
   }
 }
 %emojiPickerPremiumPromoTitle {
-  color: var(--text-normal);
+  color: #fff;
 }
 %emojiPickerPremiumUpsell {
   background-color: transparent;

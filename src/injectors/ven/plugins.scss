@@ -33,11 +33,11 @@
 }
 .shc-lock-screen-allowed-users-and-roles-container button {
   background: $main-color;
-  color: var(--text-normal);
+  color: #fff;
   border-radius: 10px;
   &:hover {
     background: $hover-color;
-    color: var(--text-normal);
+    color: #fff;
     border-radius: 10px;
   }
 }

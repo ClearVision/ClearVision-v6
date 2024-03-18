@@ -35,7 +35,7 @@
 // BE THE FIRST TO START A CONVERSATION
 %forumFirstIcon {
   background: $main-color;
-  color: var(--text-normal);
+  color: #fff;
 }
 
 // GET STARTED
@@ -170,7 +170,7 @@
   background-color: $main-color;
   %forumSortDropdownButtonInner,
   %forumSortDropdownButtonText {
-    color: var(--text-normal) !important;
+    color: #fff !important;
   }
 }
 %forumSortDropdownContainer {
@@ -179,7 +179,7 @@
 %forumTagButton {
   background-color: rgba(0, 0, 0, 0.3);
   %forumTagButtonInner {
-    color: var(--text-normal);
+    color: #fff;
   }
 }
 %themeDark %forumContentFooter {
@@ -227,7 +227,7 @@
   &:hover {
     background-color: hsla(0, 0%, 100%, 0.2);
     border-color: hsla(0, 0%, 100%, 0.2);
-    color: var(--text-normal);
+    color: #fff;
   }
   &%forumFollowActive {
     color: $main-color;

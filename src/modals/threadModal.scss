@@ -7,13 +7,13 @@
 }
 
 %themeDark %threadModalList %threadModalTabBar %threadModalTab {
-  color: var(--text-normal);
+  color: #fff;
   &%threadModalTabActive {
     background-color: $main-color;
   }
   &:hover:not(%threadModalTabActive) {
     background-color: hsla(0, 0%, 100%, 0.07);
-    color: var(--text-normal);
+    color: #fff;
   }
 }
 

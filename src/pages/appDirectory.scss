@@ -26,9 +26,9 @@
   background: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
   &%directoryCardClickable:hover {
     background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.6));
-    color: var(--text-normal);
+    color: #fff;
     %textMediumNormal {
-      color: var(--text-normal);
+      color: #fff;
     }
   }
 }
@@ -47,7 +47,7 @@
       transition: all 0.15s ease-in-out;
     }
     %input {
-      color: var(--text-normal);
+      color: #fff;
       box-shadow: none;
       &::placeholder {
         color: hsla(0, 0%, 100%, 0.3);

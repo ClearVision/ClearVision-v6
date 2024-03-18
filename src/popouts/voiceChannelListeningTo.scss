@@ -5,9 +5,9 @@
 %voiceChannelListeningIcon {
   background: $main-color;
   %textSmallNormal {
-    color: var(--text-normal) !important;
+    color: #fff !important;
   }
   > svg {
-    color: var(--text-normal);
+    color: #fff;
   }
 }

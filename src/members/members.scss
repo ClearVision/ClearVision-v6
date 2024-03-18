@@ -143,7 +143,7 @@
     }
     &%memberSelected {
       %memberName {
-        color: var(--text-normal);
+        color: #fff;
       }
       %memberActivityText {
         text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
@@ -151,7 +151,7 @@
       }
       %memberActivityText {
         strong {
-          color: var(--text-normal);
+          color: #fff;
         }
       }
       %memberOwnerIcon {
@@ -230,5 +230,5 @@
 }
 %threadMembersEmptyIcon {
   background-color: $main-color;
-  color: var(--text-normal);
+  color: #fff;
 }

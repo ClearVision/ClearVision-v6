@@ -1,11 +1,11 @@
 /* RADIO */
 %radioItem {
   background-color: transparent;
-  color: var(--text-normal);
+  color: #fff;
   &:hover {
     &:not([aria-checked='true']):not(%radioItemDisabled) {
       background-color: transparent;
-      color: var(--text-normal)
+      color: #fff;
     }
   }
   %radioBar {
@@ -19,7 +19,7 @@
     }
   }
   %radioIconChecked {
-    color: var(--text-normal);
+    color: #fff;
   }
 }
 

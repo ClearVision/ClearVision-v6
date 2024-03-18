@@ -124,7 +124,7 @@
     box-shadow: 0 0 2px 2px $main-color;
   }
   %userSettingsBillingMethodText {
-    color: var(--text-normal);
+    color: #fff;
   }
 }
 
@@ -257,7 +257,7 @@
       box-shadow: 0 0 2px 2px $main-color;
     }
     &%userSettingsKeybindRecording {
-      color: var(--text-normal);
+      color: #fff;
       box-shadow: 0 0 2px 2px $main-color;
       animation: cv-shadow-pulse 1s ease-in infinite;
     }

@@ -19,12 +19,12 @@
   %messageTimestamp,
   %messageTimestampAlt {
     text-align: center;
-    color: var(--text-normal);
+    color: hsla(0, 0%, 100%, 0.5);
   }
 
   // CONTENT
   %messageSystemContainer {
-    color: var(--text-normal);
+    color: hsla(0, 0%, 100%, 0.5);
   }
   %markup {
     color: var(--text-normal);
@@ -76,7 +76,7 @@
       opacity: 1;
     }
     %messageRepliedTextContent {
-      color: var(--text-normal);
+      color: #fff;
     }
     %messageRepliedTextPlaceholder {
       color: $main-color;
@@ -110,10 +110,10 @@
 }
 %threadJumpButton {
   background-color: $main-color;
-  color: var(--text-normal);
+  color: #fff;
   &:hover {
     background-color: $hover-color;
-    color: var(--text-normal);
+    color: #fff;
   }
 }
 
@@ -125,7 +125,7 @@
     &:hover,
     &%messageButtonSelected {
       background-color: hsla(0, 0%, 100%, 0.1);
-      color: var(--text-normal);
+      color: #fff;
     }
   }
 }
@@ -164,7 +164,7 @@
 }
 %messagePublishIcon,
 %messagePublishTagline {
-  color: var(--text-normal);
+  color: #fff;
 }
 %messagePublishCloseIcon,
 %messagePublishPermanentHide {

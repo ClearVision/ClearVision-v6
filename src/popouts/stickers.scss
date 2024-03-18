@@ -11,7 +11,7 @@
     transition: all 0.15s ease-in-out;
   }
   %popoutInput {
-    color: var(--text-normal);
+    color: #fff;
     &::placeholder {
       color: hsla(0, 0%, 100%, 0.3);
     }

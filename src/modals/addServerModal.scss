@@ -4,10 +4,10 @@
 %themeLight {
   %addServerContainer {
     %defaultColor {
-      color: var(--text-normal);
+      color: #fff;
     }
     %textSmallNormal {
-      color: var(--text-normal) !important;
+      color: hsla(0, 0%, 100%, 0.7) !important;
     }
     %input {
       color: rgb(220, 221, 222);
@@ -20,34 +20,34 @@
     background-color: $hover-color;
   }
   %addServerOptionText {
-    color: var(--text-normal);
+    color: #fff;
   }
   %addServerOptionArrow {
     filter: brightness(0) invert(1);
   }
 }
 %addServerOptionHeader {
-  color: var(--text-normal) !important;
+  color: hsla(0, 0%, 100%, 0.7) !important;
 }
 // CREATE SERVER
 %themeLight {
   %createServerTitle,
   %createServerSubtitle {
-    color: var(--text-normal) !important;
+    color: hsla(0, 0%, 100%, 0.7) !important;
   }
   %createServerIconContainer > svg > circle {
     fill: $main-color;
   }
   %createServerSkip {
-    color: var(--text-normal) !important;
+    color: hsla(0, 0%, 100%, 0.7) !important;
   }
 }
 %createServerOtherBackButton,
 %createServerBackButton {
   %buttonContents {
-    color: var(--text-normal);
+    color: hsla(0, 0%, 100%, 0.7);
     &:hover {
-      color: var(--text-normal);
+      color: #fff;
       text-decoration: underline;
     }
   }
@@ -67,7 +67,7 @@
     background-color: $hover-color;
   }
   %joinServerRowText {
-    color: var(--text-normal);
+    color: #fff;
   }
   %joinServerRowArrow {
     filter: brightness(0) invert(1);

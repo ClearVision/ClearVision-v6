@@ -37,11 +37,11 @@ button%panelButton {
   opacity: 1;
   > %buttonContents > svg {
     @include bg($rep: no-repeat, $pos: center, $size: 18px);
-    color: var(--text-normal);
+    color: #fff;
     opacity: 0.5;
     transition: all 0.1s ease-in-out;
     > path[fill*='var(--interactive-normal)'] {
-      fill: var(--text-normal);
+      fill: #fff;
     }
   }
   &:hover {
@@ -85,8 +85,8 @@ button%panelButton {
     min-width: calc(100% - 100px);
     width: auto;
     &:hover {
-      background-color: var(--backdrop-overlay);
-      color: var(--text-normal);
+      background-color: hsla(0, 0%, 0%, 0.3);
+      color: #fff;
     }
   }
   // AVATAR
@@ -98,7 +98,7 @@ button%panelButton {
       content: 'Status';
       position: absolute;
       @include stretch;
-      color: var(--text-normal);
+      color: #fff;
       font-size: 5px;
       font-weight: 700;
       text-align: center;
@@ -124,17 +124,17 @@ button%panelButton {
   }
   // NAME TAG
   %accountPanelUsername {
-    color: var(--text-normal);
+    color: #fff;
   }
   %accountPanelDiscriminator {
-    color: var(--text-normal);
+    color: hsla(0, 0%, 100%, 0.3);
   }
 }
 
 // CONNECTION PANEL
 %connectionPanel {
   > %flex {
-    background: var(--backdrop-overlay);
+    background: rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     padding: 5px;
   }
@@ -151,10 +151,11 @@ button%panelButton {
     }
   }
   %connectionPanelChannel {
-    color: var(--text-normal);
+    color: hsla(0, 0%, 100%, 0.3);
+    opacity: 1;
     transition: all 0.15s ease-in-out;
     &:hover {
-      color: var(--text-normal);
+      color: hsla(0, 0%, 100%, 0.5);
       text-decoration: none;
     }
   }
@@ -176,7 +177,7 @@ button%panelButton {
         top: 2px;
         bottom: 2px;
         width: 1px;
-        background: var(--backdrop-overlay);
+        background: hsla(0, 0%, 100%, 0.2);
       }
     }
   }
@@ -189,5 +190,5 @@ button%panelButton {
 
 // NOISE CANCELLATION POPOUT
 %noiseCancellationPopout {
-  background-color: var(--backdrop-overlay);
+  background-color: rgba(0, 0, 0, 0.7);
 }

@@ -27,7 +27,7 @@
   }
   %headerBarTitle {
     margin-left: 0;
-    color: var(--text-normal);
+    color: #fff;
     text-shadow: 0 0 3px #000;
     font-family: cv('font.main');
   }
@@ -40,7 +40,7 @@
   }
   %headerBarAkaBadge {
     background: hsla(0, 0%, 100%, 0.1);
-    color: var(--text-normal);
+    color: #fff;
   }
   %headerBarNicknames {
     color: hsla(0, 0%, 100%, 0.5);

@@ -14,7 +14,7 @@
       cursor: pointer;
       &:hover {
         background: $hover-color;
-        color: var(--text-normal);
+        color: #fff;
       }
       &:active {
         border: 1px solid $hover-color;

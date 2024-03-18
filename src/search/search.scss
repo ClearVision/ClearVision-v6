@@ -32,12 +32,12 @@
   }
   %searchResultJumpButton {
     background-color: hsla(0, 0%, 100%, 0.04);
-    color: var(--text-normal);
+    color: hsla(0, 0%, 100%, 0.5);
     border-radius: 3px;
     transition: all 0.3s ease-in-out;
     &:hover {
       background-color: $main-color;
-      color: var(--text-normal);
+      color: #fff;
       transition-duration: 0.15s;
     }
   }
@@ -46,7 +46,7 @@
     padding: 0 2px;
     background-color: $hover-color;
     border-radius: 3px;
-    color: var(--text-normal);
+    color: #fff;
     text-shadow: 0 0 3px;
   }
 }

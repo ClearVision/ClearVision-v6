@@ -16,7 +16,7 @@
   %chatSearchFilter,
   %chatSearchAnswer {
     background: $main-color;
-    color: var(--text-normal);
+    color: #fff;
   }
   %chatSearchFilter {
     padding: 0 3px;
@@ -27,20 +27,20 @@
   }
 }
 %headerSearchInput {
-  color: var(--text-normal);
+  color: #fff;
   &::placeholder {
-    color: var(--text-muted);
+    color: hsla(0, 0%, 100%, 0.3);
   }
 }
 %headerSearchIcon {
-  color: var(--text-normal);
+  color: hsla(0, 0%, 100%, 0.7);
   transition: all 0.15s ease-in-out;
 }
 %headerSearchBackButton {
-  color: var(--text-normal);
+  color: hsla(0, 0%, 100%, 0.7);
   transition: all 0.15s ease-in-out;
   &:hover {
-    color: var(--text-normal);
+    color: #fff;
   }
 }
 

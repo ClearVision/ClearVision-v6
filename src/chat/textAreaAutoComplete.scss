@@ -34,7 +34,7 @@
   %autocompleteBase {
     %textExtraSmallMedium,
     %textExtraSmallNormal {
-      color: var(--text-normal) !important;
+      color: #fff !important;
     }
   }
   %autocompleteIconForeground {
@@ -59,7 +59,7 @@
   }
 }
 %themeDark %autocompleteOption {
-  background-color: var(--backdrop-overlay);
+  background-color: hsla(0, 0%, 0%, 0.5);
 }
 %autocompleteOptionals {
   border: none;

@@ -3,13 +3,13 @@
 // OVERVIEW - server banner
 %guildFeatureAvailabilityIndicator {
   background-color: $main-color;
-  color: var(--text-normal);
+  color: #fff;
 }
 
 // ROLES
 %guildSettingsRoleDefaultPermissions {
   background-color: $main-color;
-  color: var(--text-normal);
+  color: #fff;
   &:hover {
     background-color: $hover-color;
   }
@@ -187,7 +187,7 @@
 }
 %automodActionIcon,
 %automodActionText {
-  color: var(--text-normal) !important;
+  color: #fff !important;
 }
 %automodStepIcon {
   background-color: hsla(0, 0%, 100%, 0.1);
@@ -296,7 +296,7 @@
   }
   %guildSettingsOnboardingTestimonial {
     %textSmallMedium {
-      color: var(--text-normal) !important;
+      color: #fff !important;
     }
   }
   %guildSettingsOnboardingUpsell {

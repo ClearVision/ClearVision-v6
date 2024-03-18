@@ -80,18 +80,18 @@
         }
       }
       %privateChannelCloseButton {
-        color: var(--text-normal);
+        color: #fff;
       }
 
       // HOVER
       &:hover {
         background: transparent;
         &:before {
-          background: var(--backdrop-overlay);
+          background: hsla(0, 0%, 100%, 0.1);
         }
         %privateChannelIcon,
         %privateChannelName {
-          color: var(--text-normal);
+          color: hsla(0, 0%, 100%, 0.7);
         }
         %privateChannelCloseButton {
           opacity: 0.3;
@@ -114,15 +114,15 @@
         }
         %privateChannelIcon,
         %privateChannelName {
-          color: var(--text-normal);
+          color: #fff;
         }
         %privateChannelActivityEmoji,
         %privateChannelActivityIcon {
-          filter: drop-shadow(0 0 3px var(--backdrop-overlay));
+          filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.7));
         }
         %privateChannelActivityText {
           strong {
-            color: var(--text-normal);
+            color: #fff;
           }
         }
         %privateChannelCloseButton {
@@ -137,7 +137,7 @@
 }
 // Activities popout
 %privateChannelActivityContainer {
-  background: var(--backdrop-overlay);
+  background: var(--background-overlay);
 }
 
 // EMPTY PRIVATE CHANNEL
@@ -148,7 +148,7 @@
 // PRIVATE CHANNELS SEARCH BAR
 %privateChannelsSearchBar {
   %privateChannelsSearchBarComponent {
-    background: var(--backdrop-overlay);
-    color: var(--text-muted);
+    background: hsla(0, 0%, 100%, 0.1);
+    color: hsla(0, 0%, 100%, 0.3);
   }
 }
