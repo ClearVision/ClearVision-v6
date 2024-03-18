@@ -5169,6 +5169,16 @@ pre {
 .pageWrapperBackgroundPrimary__74f14 {
   @extend %nitroShopBackgroundPrime !optional;
 }
+.buttonWhite__30853 {
+  @extend %nitroShopGiftNitro !optional;
+}
+.title__223b8 {
+  @extend %nitroShopCardText !optional;
+}
+.tier2ColumnOuter__0b5e2,
+.tier2ColumnOuterBackground__96f3a {
+  @extend %nitroShopMostPopular !optional;
+}
 .footer__03347 {
   @extend %webhookFooter !optional;
 }
@@ -5234,14 +5244,4 @@ pre {
 }
 .scroller_a1aadd {
   @extend %unleashMoreBackground !optional;
-}
-.buttonWhite__30853 {
-  @extend %nitroShopGiftNitro !optional;
-}
-.title__223b8 {
-  @extend %nitroShopCardText !optional;
-}
-.tier2ColumnOuter__0b5e2,
-.tier2ColumnOuterBackground__96f3a {
-  @extend %nitroShopMostPopular !optional;
 }
