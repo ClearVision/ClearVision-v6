@@ -1458,23 +1458,17 @@
 .applicationStore_fc7d76 {
   @extend %nitro !optional;
 }
-.mainPageScroller__12afb {
+.scroller_a1aadd {
   @extend %nitroScroller !optional;
+}
+.mainPageScroller__12afb {
+  @extend %nitroPremiumScroller !optional;
 }
 .card_e97590 {
   @extend %nitroCard !optional;
 }
 .cardDescription__46c9d {
   @extend %nitroCardDescription !optional;
-}
-.perkCard__6fe60 {
-  @extend %nitroPerkCard !optional;
-}
-.customButton_c0cc97 {
-  @extend %nitroExpandButton !optional;
-}
-.cover__590cf {
-  @extend %nitroPerksCover !optional;
 }
 .giftNitro__7b37a {
   @extend %nitroGiftContainer !optional;
@@ -1484,6 +1478,12 @@
 }
 .innerWrapper_c80bad {
   @extend %nitroFooterInnerWrapper !optional;
+}
+.allPerksScroller__8740f {
+  @extend %nitroPerksScroller !optional;
+}
+.open__0960c {
+  @extend %nitroPerksScrollerOpen !optional;
 }
 .topPill__0cdf1 {
   @extend %topPill !optional;
@@ -4827,14 +4827,32 @@ pre {
 .selected_a76908 {
   @extend %avatarDecoItemSelected !optional;
 }
-.iconBadge__5fd10 {
-  @extend %avatarDecoItemBadge !optional;
-}
 .decorationPreview_d09d2f {
   @extend %avatarDecoPreview !optional;
 }
 .smallDecorationPreviewsContainer_c0deb8 {
   @extend %avatarDecoPreviewSmall !optional;
+}
+.shopPreviewContainer__15dfd {
+  @extend %avatarDecoPreviewUpsell !optional;
+}
+.effectGridItem__957b0 {
+  @extend %profileEffectItem !optional;
+}
+.selected_bfc68b {
+  @extend %profileEffectItemSelected !optional;
+}
+.effectDescriptionNoGradient__2ac4a {
+  @extend %profileEffectDescription !optional;
+}
+.effectDescriptionBorderWithGradient__33bff {
+  @extend %profileEffectDescriptionUpsell !optional;
+}
+.effectDescriptionContainer_d33b78 {
+  @extend %profileEffectDescriptionContainer !optional;
+}
+.iconBadge__2abac {
+  @extend %avatarDecoProfileEffectLock !optional;
 }
 .statusDot__468f8 {
   @extend %userProfileStatus !optional;
@@ -5172,13 +5190,6 @@ pre {
 .buttonWhite__30853 {
   @extend %nitroShopGiftNitro !optional;
 }
-.title__223b8 {
-  @extend %nitroShopCardText !optional;
-}
-.tier2ColumnOuter__0b5e2,
-.tier2ColumnOuterBackground__96f3a {
-  @extend %nitroShopMostPopular !optional;
-}
 .footer__03347 {
   @extend %webhookFooter !optional;
 }
@@ -5242,6 +5253,6 @@ pre {
 .elevatedPermission_c4dcb1 {
   @extend %modViewElevatedPermissionItem !optional;
 }
-.scroller_a1aadd {
-  @extend %unleashMoreBackground !optional;
+.buttonWhite__30853 {
+  @extend %giftNitro !optional;
 }

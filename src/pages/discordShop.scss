@@ -64,11 +64,6 @@
 }
 
 // Buy Nitro
-%unleashMoreBackground {
-  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.6));
-}
-
-
 %nitroShopGiftNitro {
   color: var(--text-normal) !important;
   background-color: $main-color !important;
@@ -77,11 +72,6 @@
     background-color: $hover-color !important;
     color: var(--text-normal) !important;
   }
-}
-
-
-%nitroShopCardText {
-  color: $main-color;
 }
 
 

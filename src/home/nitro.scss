@@ -1,31 +1,21 @@
 /* NITRO */
 %nitro {
-  background-color: rgba(0, 0, 0, calc(#{cv('bg.app.shading')} * 0.5));
-}
-%nitroScroller {
   background-color: transparent;
+}
+%nitroScroller,
+%nitroPremiumScroller {
+  background-color: rgba(0, 0, 0, calc(#{cv('bg.app.shading')} * 0.5));
+	right: 0%;
+  transition: all .5s ease-in-out;
+  &:has(+%nitroPerksScroller%nitroPerksScrollerOpen) {
+    right: 100%;
+  }
 }
 %nitroCard {
   background-color: hsla(0, 0%, 0%, 0.4);
   &:hover {
     background-color: hsla(0, 0%, 0%, 0.6);
   }
-}
-%nitroCardDescription {
-  background-image: none;
-}
-%nitroPerkCard {
-  background-color: hsla(0, 0%, 0%, 0.4);
-}
-%nitroExpandButton {
-  cursor: pointer;
-  background-color: $main-color;
-  color: #fff;
-}
-%nitroPerksCover {
-  background-color: hsla(0, 0%, 0%, 0.6);
-  background-image: none;
-  backdrop-filter: blur(5px);
 }
 %nitroGiftContainer {
   background-color: hsla(0, 0%, 0%, 0.4);
@@ -35,4 +25,11 @@
 }
 %nitroFooterInnerWrapper {
   background-color: hsla(0, 0%, 0%, 0.8);
+}
+
+
+// PERKS PAGE
+%nitroPerksScroller {
+	background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.6));
+	transition: all .5s ease-in-out;
 }
