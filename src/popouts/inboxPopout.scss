@@ -163,3 +163,8 @@
 %inboxPopoutPill {
   background-color: $main-color;
 }
+
+// CHATTING ABOUT: TOPIC
+%inboxChattingAbout {
+  background-color: hsla(0, 0%, 30%, calc(var(--background-shading) * 0.5));
+}
