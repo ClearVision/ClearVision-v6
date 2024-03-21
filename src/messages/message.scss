@@ -23,11 +23,11 @@
   }
 
   // CONTENT
+  %messageContent {
+    color: var(--text-normal);
+  }
   %messageSystemContainer {
     color: hsla(0, 0%, 100%, 0.5);
-  }
-  %markup {
-    color: var(--text-normal);
   }
 
   // BLOCKQUOTE
@@ -53,6 +53,11 @@
 %markup a,
 %anchor {
   color: var(--url-color);
+}
+%messageSystemContent {
+  %anchorAction {
+    color: var(--url-color);
+  }
 }
 
 // INVALID GIFT

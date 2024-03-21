@@ -126,10 +126,6 @@
 }
 
 // SWITCH ACCOUNTS
-%switchAccountsActive > circle:not([fill^='hsl(0']),
-%switchAccountsActive > g > path:not([fill^='hsl(0']) {
-  fill: $main-color;
-}
 %themeDark %modalRoot {
   %loginAuthBox,
   %addAccountFooter {

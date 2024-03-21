@@ -2147,8 +2147,14 @@ pre {
 .timestamp_cdbd93.alt__6c563 {
   @extend %messageTimestampAlt !optional;
 }
+.messageContent__21e69 {
+  @extend %messageContent !optional;
+}
 .container_aed774 {
   @extend %messageSystemContainer !optional;
+}
+.content__72fdc {
+  @extend %messageSystemContent !optional;
 }
 .tile_ebc93b {
   @extend %messageInvalidGift !optional;
@@ -2209,6 +2215,9 @@ pre {
 }
 .anchorUnderlineOnHover__78236 {
   @extend %anchorUnderlineOnHover !optional;
+}
+.actionAnchor__584b2 {
+  @extend %anchorAction !optional;
 }
 .buttonContainer_dd4b62 {
   @extend %messageButtonContainer !optional;
@@ -4888,6 +4897,12 @@ pre {
 .shop_b31ed2 {
   @extend %shop !optional;
 }
+.shopScrollBackgroundPrimary_bb1f42 {
+  @extend %shopBackground !optional;
+}
+.pageWrapperBackgroundPrimary__74f14 {
+  @extend %shopPageWrapper !optional;
+}
 .skeleton__5ac25 {
   @extend %shopLoadingSkeleton !optional;
 }
@@ -4902,6 +4917,15 @@ pre {
 .cardDescription__435dd,
 .cardSummary__432c0 {
   @extend %shopLoadingCardContent !optional;
+}
+.shopCard_f7822b {
+  @extend %shopCard !optional;
+}
+.cardBackground_af6852 {
+  @extend %shopCardBackground !optional;
+}
+.darkCardBackground__82a32 {
+  @extend %shopCardDarkBackground !optional;
 }
 .modalContent__3d79f {
   @extend %shopModal !optional;
@@ -5199,21 +5223,6 @@ pre {
 }
 .searchRowLabel_b64d40 {
   @extend %enterRoles !optional;
-}
-.shopCard_f7822b {
-  @extend %nitroShopCard !optional;
-}
-.cardBackground_af6852 {
-  @extend %nitroShopCardBackground !optional;
-}
-.darkCardBackground__82a32 {
-  @extend %nitroShopCardDarkBackground !optional;
-}
-.shopScrollBackgroundPrimary_bb1f42 {
-  @extend %nitroShopBackground !optional;
-}
-.pageWrapperBackgroundPrimary__74f14 {
-  @extend %nitroShopBackgroundPrime !optional;
 }
 .buttonWhite__30853 {
   @extend %nitroShopGiftNitro !optional;
