@@ -17,6 +17,9 @@
     background-color: hsla(0, 0%, 0%, 0.6);
   }
 }
+%nitroSeePerksButton {
+  background-color: hsla(0, 0%, 0%, .6);
+}
 %nitroGiftContainer {
   background-color: hsla(0, 0%, 0%, 0.4);
 }
@@ -32,4 +35,33 @@
 %nitroPerksScroller {
 	background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.6));
 	transition: all .5s ease-in-out;
+}
+%nitroPerksBackButton {
+  background-color: hsla(0, 0%, 0%, .6);
+  &:hover {
+    background-color: hsla(0, 0%, 0%, .8);
+  }
+}
+%themeDark {
+  %nitroPerksArrows {
+    background-color: hsla(0, 0%, 0%, .6);
+  }
+}
+%nitroPerksArrowIcon {
+	fill: hsla(0, 0%, 100%, .7);
+}
+%themeDark %nitroPerksArrowInactive {
+	background-color: hsla(0, 0%, 0%, .4);
+  %nitroPerksArrowIcon {
+    fill: hsla(0, 0%, 100%, .3);
+  }
+}
+%nitroPerksProgressBar {
+	background-color: hsla(0, 0%, 0%, .6);
+}
+%nitroPerksProgressDot {
+	background-color: hsla(0, 0%, 100%, .5);
+}
+%nitroPerksProgressDotSelected {
+	background-color: #fff;
 }

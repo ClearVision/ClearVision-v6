@@ -1470,6 +1470,9 @@
 .cardDescription__46c9d {
   @extend %nitroCardDescription !optional;
 }
+.seeAllPerksButton_c90d04 {
+  @extend %nitroSeePerksButton !optional;
+}
 .giftNitro__7b37a {
   @extend %nitroGiftContainer !optional;
 }
@@ -1484,6 +1487,28 @@
 }
 .open__0960c {
   @extend %nitroPerksScrollerOpen !optional;
+}
+.backButton__5b790 {
+  @extend %nitroPerksBackButton !optional;
+}
+.leftArrow__1d2d5
+.rightArrow__0633c {
+  @extend %nitroPerksArrows !optional;
+}
+.inactiveArrow_e0ef05 {
+  @extend %nitroPerksArrowInactive !optional;
+}
+.arrowIcon_c86bb8 {
+  @extend %nitroPerksArrowIcon !optional;
+}
+.cardProgressBar__0e60a {
+  @extend %nitroPerksProgressBar !optional;
+}
+.dot__5c7fb {
+  @extend %nitroPerksProgressDot !optional;
+}
+.selectedDot__3f4ad {
+  @extend %nitroPerksProgressDotSelected !optional;
 }
 .topPill__0cdf1 {
   @extend %topPill !optional;
