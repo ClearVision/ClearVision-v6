@@ -1443,12 +1443,6 @@
 .input__74754 {
   @extend %headerSearchInput !optional;
 }
-.input__321f5 {
-  @extend %headerChannelNameInput !optional;
-}
-.outer_c57160 {
-  @extend %headerChannelNameOuter !optional;
-}
 .iconLayout__6d744 {
   @extend %headerSearchIconLayout !optional;
 }
@@ -1460,6 +1454,12 @@
 }
 .backButton__6a1f0 {
   @extend %headerSearchBackButton !optional;
+}
+.input__321f5 {
+  @extend %headerChannelNameInput !optional;
+}
+.outer_c57160 {
+  @extend %headerChannelNameOuter !optional;
 }
 .applicationStore_fc7d76 {
   @extend %nitro !optional;
@@ -2279,41 +2279,14 @@ pre {
 .reaction_b90ab0 {
   @extend %reaction !optional;
 }
-.reaction_fef95b {
-  @extend %forumReaction !optional;
-}
 .reactionMe_bf6909 {
   @extend %reactionMe !optional;
-}
-.reactionMe__98f57 {
-  @extend %forumReactionMe !optional;
 }
 .reactionInner__00d5f {
   @extend %reactionInner !optional;
 }
-.reactionInner__4135b {
-  @extend %forumReactionInner !optional;
-}
 .reactionCount__60448 {
   @extend %reactionCount !optional;
-}
-.reactionCount_b49901 {
-  @extend %forumReactionCount !optional;
-}
-.addReactButton__59750 {
-  @extend %forumReactAdd !optional;
-}
-.buttonInner__2771e {
-  @extend %forumMessageButton !optional;
-}
-.active_f1266e {
-  @extend %forumFollowActive !optional;
-}
-.staticToolbar__7ef7b {
-  @extend %forumSettingsGuidelinesToolbar !optional;
-}
-.addTags_e01f9c {
-  @extend %forumSettingsGuidelinesAddTags !optional;
 }
 .spoilerMarkdownContent__2b8f8 {
   @extend %spoilerMarkdownContent !optional;
@@ -2449,6 +2422,27 @@ pre {
 }
 .actions_cba988 {
   @extend %serverBoostPaymentActions !optional;
+}
+.innerWrapper__8cde3 {
+  @extend %serverBoostPageBoostPrompt !optional;
+}
+.topPerksCard__9fc01 {
+  @extend %serverBoostPageTopPerksCard !optional;
+}
+.card__67edb {
+  @extend %serverBoostPageCard !optional;
+}
+.wrapper_cf13f4 {
+  @extend %serverBoostPageFaq !optional;
+}
+.scroller__439a2 {
+  @extend %serverBoostPageScroller !optional;
+}
+.headerWave_e4fdee {
+  @extend %serverBoostPageHeaderWave !optional;
+}
+.bodyWave__62812 {
+  @extend %serverBoostPageBodyWave !optional;
 }
 .contentWrapper__85d37 {
   @extend %webInviteModalContentWrapper !optional;
@@ -3572,6 +3566,24 @@ pre {
 .channelIcon__7901b {
   @extend %onboardingReviewIcon !optional;
 }
+.channelRow_bba4a8 {
+  @extend %onboardingRecommendedDefaultChannels !optional;
+}
+.selectableChannelRow_c40337:hover {
+  @extend %onboardingChannelPermissionsItems !optional;
+}
+.deprivateTableBody_dbf647 {
+  @extend %onboardingChannelPermissionsMenu !optional;
+}
+.suggestedChannels__158f9 {
+  @extend %onboardingRecommendedReadOnly !optional;
+}
+.container__25f89 {
+  @extend %onboardingPickAnEmoji !optional;
+}
+.searchRowLabel_b64d40 {
+  @extend %onboardingEnterRoles !optional;
+}
 .card_bc6ee2 {
   @extend %guildSettingsSubsCard !optional;
 }
@@ -4649,6 +4661,33 @@ pre {
 .newPostsButton__760c6 {
   @extend %forumNewPosts !optional;
 }
+.reactionInner__4135b {
+  @extend %forumReactionInner !optional;
+}
+.reactionCount_b49901 {
+  @extend %forumReactionCount !optional;
+}
+.addReactButton__59750 {
+  @extend %forumReactAdd !optional;
+}
+.buttonInner__2771e {
+  @extend %forumMessageButton !optional;
+}
+.active_f1266e {
+  @extend %forumFollowActive !optional;
+}
+.staticToolbar__7ef7b {
+  @extend %forumSettingsGuidelinesToolbar !optional;
+}
+.addTags_e01f9c {
+  @extend %forumSettingsGuidelinesAddTags !optional;
+}
+.reaction_fef95b {
+  @extend %forumReaction !optional;
+}
+.reactionMe__98f57 {
+  @extend %forumReactionMe !optional;
+}
 .heading-lg-bold_c2517a {
   @extend %headingLargeBold !optional;
 }
@@ -4836,7 +4875,7 @@ pre {
   @extend %browseChannelsDisabled !optional;
 }
 .chatHeaderBar__28ee6 {
-  @extend %channelHeaderBar !optional;
+  @extend %channelNotInList !optional;
 }
 .mainTableContainer_ea650e, // this is the one in the server settings
 .mainTableContainer__5ffe0 {
@@ -5044,9 +5083,6 @@ pre {
 .selected__75860 {
   @extend %channelSettingsRoleDropdownSelected !optional;
 }
-.iconContainer__6fc72 {
-  @extend %previewServerIconContainer !optional;
-}
 .defaultColor__87d87 {
   @extend %defaultColor !optional;
 }
@@ -5107,6 +5143,9 @@ pre {
 .container__60a4a {
   @extend %voiceChannelListeningIcon !optional;
 }
+.iconContainer__6fc72 {
+  @extend %previewServerIconContainer !optional;
+}
 .optionContainer__5d0b1 {
   @extend %previewServerOptionContainer !optional;
 }
@@ -5164,27 +5203,6 @@ pre {
 .conversationMessage__0d40e {
   @extend %previewServerConversationMessage !optional;
 }
-.innerWrapper__8cde3 {
-  @extend %serverBoostPageBoostPrompt !optional;
-}
-.topPerksCard__9fc01 {
-  @extend %serverBoostPageTopPerksCard !optional;
-}
-.card__67edb {
-  @extend %serverBoostPageCard !optional;
-}
-.wrapper_cf13f4 {
-  @extend %serverBoostPageFaq !optional;
-}
-.scroller__439a2 {
-  @extend %serverBoostPageScroller !optional;
-}
-.headerWave_e4fdee {
-  @extend %serverBoostPageHeaderWave !optional;
-}
-.bodyWave__62812 {
-  @extend %serverBoostPageBodyWave !optional;
-}
 .contentWarningPopout__7d8c2 {
   @extend %everyoneWarningPopout !optional;
 }
@@ -5220,24 +5238,6 @@ pre {
 }
 .banReasonOtherClickable_e4b932 {
   @extend %banReasonOther !optional;
-}
-.channelRow_bba4a8 {
-  @extend %recommendedDeafultChannels !optional;
-}
-.selectableChannelRow_c40337:hover {
-  @extend %updateChannelPermissionsItems !optional;
-}
-.deprivateTableBody_dbf647 {
-  @extend %updateChannelPermissionsMenu !optional;
-}
-.suggestedChannels__158f9 {
-  @extend %recommendedReadOnly !optional;
-}
-.container__25f89 {
-  @extend %pickAnEmoji !optional;
-}
-.searchRowLabel_b64d40 {
-  @extend %enterRoles !optional;
 }
 .buttonWhite__30853 {
   @extend %nitroShopGiftNitro !optional;
