@@ -10,7 +10,6 @@
   background-color: transparent;
 }
 
-
 // LOADING
 %shopLoadingSkeleton {
   background-color: hsla(0, 0%, 100%, 0.07);
@@ -66,12 +65,11 @@
   color: var(--text-normal) !important;
   background-color: $main-color !important;
   border-color: transparent !important;
-  &:hover { 
+  &:hover {
     background-color: $hover-color !important;
     color: var(--text-normal) !important;
   }
 }
-
 
 // Subscribe button
 %buttonInverted%buttonColorBrand {
@@ -81,4 +79,4 @@
     background: $hover-color;
     color: var(--text-normal);
   }
-} 
+}

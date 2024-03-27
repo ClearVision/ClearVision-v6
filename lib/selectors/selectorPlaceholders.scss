@@ -1497,7 +1497,7 @@
 .backButton__5b790 {
   @extend %nitroPerksBackButton !optional;
 }
-.leftArrow__1d2d5
+.leftArrow__1d2d5,
 .rightArrow__0633c {
   @extend %nitroPerksArrows !optional;
 }
@@ -4497,7 +4497,7 @@ pre {
   @extend %forumSetupRoleList !optional;
 }
 .title__964d5 {
-  @extend %forumGalleryCardTitle !optional; 
+  @extend %forumGalleryCardTitle !optional;
 }
 .postTitleText__11fd1 {
   @extend %forumListCardTitle !optional;
