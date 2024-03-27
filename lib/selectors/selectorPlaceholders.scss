@@ -1443,6 +1443,12 @@
 .input__74754 {
   @extend %headerSearchInput !optional;
 }
+.input__321f5 {
+  @extend %headerChannelNameInput !optional;
+}
+.outer_c57160 {
+  @extend %headerChannelNameOuter !optional;
+}
 .iconLayout__6d744 {
   @extend %headerSearchIconLayout !optional;
 }
