@@ -3866,8 +3866,14 @@ pre {
 .auto_a48086 {
   @extend %scrollbarAuto !optional;
 }
+.auto__76cc7 {
+  @extend %scrollbarChatAuto !optional;
+}
 .thin_b1c063 {
   @extend %scrollbarThin !optional;
+}
+.thin__62e51 {
+  @extend %scrollbarSettingsThin !optional;
 }
 .none__51a8f {
   @extend %scrollbarNone !optional;
