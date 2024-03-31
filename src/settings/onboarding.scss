@@ -2,7 +2,7 @@
 
 // POPOUT
 %onboardingEduPopout {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: var(--popout-color);
 }
 %onboardingEduPopoutArrow {
   border-bottom-color: rgba(0, 0, 0, 0.8);
