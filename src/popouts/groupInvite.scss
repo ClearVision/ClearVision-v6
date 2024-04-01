@@ -2,7 +2,7 @@
 %themeDark {
   %groupInvitePopout {
     &%modalRoot {
-      background-color: var(--popout-color);
+      background-color: cv('bg.general.popout');
     }
   }
 }
