@@ -77,19 +77,3 @@ textarea,
   color: #fff;
   background: $main-color;
 }
-
-
-// FUNNI DAY
-.appMount_c99875:after {
-	content: 'ClearVision has stopped responding, please try again later';
-	position: absolute;
-	width: 90%;
-	height: fit-content;
-	font-size: 5rem;
-	color: #fff;
-	text-align: center;
-	top: 50%;
-	transform: translateY(-50%);
-	z-index: -1;
-	margin: 0 100px ;
-}
