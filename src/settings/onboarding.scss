@@ -2,7 +2,7 @@
 
 // POPOUT
 %onboardingEduPopout {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: cv('bg.general.popout');
 }
 %onboardingEduPopoutArrow {
   border-bottom-color: rgba(0, 0, 0, 0.8);
@@ -125,7 +125,7 @@
   border: 2px solid $main-color;
 }
 %onboardingQuestionDropdown {
-  background-color: var(--popout-color);
+  background-color: cv('bg.general.popout');
   border: 1px solid hsla(0, 0%, 100%, 0.07);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }

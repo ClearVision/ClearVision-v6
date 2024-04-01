@@ -3,7 +3,7 @@
   min-width: 430px;
 }
 %emojiPickerWrapper {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: cv('bg.general.popout');
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -13,12 +13,9 @@
 }
 
 %emojiPicker {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: cv('bg.general.popout');
   min-width: 430px;
   border-radius: 0;
-}
-%emojiPickerHeader {
-  background-color: rgba(0, 0, 0, 0.8);
 }
 
 // SEARCH BAR

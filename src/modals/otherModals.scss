@@ -182,7 +182,7 @@
 
 // SOUNDBOARD MODAL
 %soundboard {
-  background-color: var(--popout-color);
+  background-color: cv('bg.general.popout');
   %soundboardSound,
   %soundboardGuildSelected {
     background-color: $main-color;

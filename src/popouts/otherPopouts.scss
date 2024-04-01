@@ -1,6 +1,6 @@
 // EMOJI INFO POPOUT
 %emojiInfoContainer {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: cv('bg.general.popout');
 }
 %emojiInfoTip {
   background-color: transparent;
@@ -11,7 +11,7 @@
 
 // CHAT TOOLBAR
 %chatToolbar {
-  background-color: hsla(0, 0%, 0%, 0.8);
+  background-color: cv('bg.general.popout');
   &::before {
     border-top: 8px solid hsla(0, 0%, 0%, 0.8);
   }
@@ -27,7 +27,7 @@
 // STREAM POPOUT
 %themeDark {
   %streamPopoutPreview {
-    background-color: hsla(0, 0%, 0%, 0.8);
+    background-color: cv('bg.general.popout');
   }
   %streamPopoutPreviewContainer {
     background-color: transparent;
