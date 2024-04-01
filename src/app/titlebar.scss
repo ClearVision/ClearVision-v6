@@ -26,13 +26,13 @@
       order: 1;
     }
     &:before {
-      content: cv('const:text.titlebar.main');
+      content: "ur mom";
       color: hsla(0, 0%, 100%, 0.7);
       font-size: 14px;
       text-shadow: 0 0 3px #000;
     }
     &:after {
-      content: cv('const:text.titlebar.version');
+      content: "v69.420.69";
       color: hsla(0, 0%, 100%, 0.3);
       font-family: cv('font.code');
       font-size: 10px;
@@ -90,13 +90,13 @@
     order: 1;
   }
   &:before {
-    content: cv('const:text.titlebar.short');
+    content: "ur mom";
     color: $main-color;
     font-weight: 700;
     text-shadow: 0 0 3px;
   }
   &:after {
-    content: '#{$version}';
+    content: 'v69.420.69';
     color: hsla(0, 0%, 100%, 0.3);
   }
 }
