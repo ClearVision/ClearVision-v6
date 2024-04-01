@@ -32,7 +32,7 @@
       text-shadow: 0 0 3px #000;
     }
     &:after {
-      content: 'v69.420.69';
+      content: cv('const:text.titlebar.version');
       color: hsla(0, 0%, 100%, 0.3);
       font-family: cv('font.code');
       font-size: 10px;
@@ -96,7 +96,7 @@
     text-shadow: 0 0 3px;
   }
   &:after {
-    content: 'v69.420.69';
+    content: '#{$version}';
     color: hsla(0, 0%, 100%, 0.3);
   }
 }
