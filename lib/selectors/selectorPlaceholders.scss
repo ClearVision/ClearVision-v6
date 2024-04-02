@@ -2097,6 +2097,9 @@ pre {
 .ripple__74f0d {
   @extend %voiceMessagePlayingRipple !optional;
 }
+.full-motion {
+  @extend %fullMotion !optional;
+}
 .mouse-mode.full-motion {
   @extend %mouseModeFullMotion !optional;
 }
@@ -2999,6 +3002,9 @@ pre {
 }
 .actionColor_db400e {
   @extend %userProfileActionColor !optional;
+}
+.translate__02873 {
+  @extend %userPopoutTranslate !optional;
 }
 .userPopoutOuter__3884e {
   @extend %userPopoutOuter !optional;
