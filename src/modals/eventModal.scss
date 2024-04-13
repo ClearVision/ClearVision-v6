@@ -20,6 +20,9 @@
     color: cv('colors.success');
   }
 }
+%eventIconContainer svg path {
+  fill: $main-color;
+}
 %eventRSVPCount {
   background-color: $main-color;
   %eventRSVPIcon {

@@ -1,12 +1,12 @@
 /* LOGIN PAGE */
 %themeDark %loginAuthBox {
-  background-color: hsla(0, 0%, 0%, .8);
+  background-color: hsla(0, 0%, 0%, 0.8);
   a {
     color: var(--url-color);
   }
 }
 %loginAccountsList {
-  background-color: hsla(0, 0%, 100%, .07);
+  background-color: hsla(0, 0%, 100%, 0.07);
 }
 %loginStartOverButton {
   color: var(--url-color);

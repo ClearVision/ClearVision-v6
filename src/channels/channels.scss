@@ -41,7 +41,7 @@
 
 // SERVER BOOST
 %themeDark %serverBoostProgressBar {
-	background-color: hsla(0, 0%, 0%, .4);
+  background-color: hsla(0, 0%, 0%, 0.4);
 }
 
 // CHANNEL CONTENT
@@ -273,7 +273,7 @@
 %voiceUserList {
   padding-left: 24px;
   %voiceUserClickable:hover %voiceUserContent {
-    background: rgba(0,0,0,.04);
+    background: rgba(0, 0, 0, 0.04);
   }
 }
 

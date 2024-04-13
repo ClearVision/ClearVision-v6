@@ -83,7 +83,7 @@
 // ROLES/MEMBERS DROPDOWN
 %themeDark %channelSettingsRoleDropdownHeader,
 %themeDark %channelSettingsRoleDropdownContainer %channelSettingsRoleDropdownTag {
-  background-color: var(--popout-color);
+  background-color: cv('bg.general.popout');
 }
 %channelSettingsRoleDropdownRow%channelSettingsRoleDropdownSelected %channelSettingsRoleDropdownRowInner {
   background-color: hsla(0, 0%, 100%, 0.1);

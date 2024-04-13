@@ -26,12 +26,32 @@
   background: transparent;
 }
 %stageParticipant {
+  background-color: hsla(0, 0%, 0%, 0.4);
   &:hover {
     background-color: hsla(0, 0%, 100%, 0.05);
   }
 }
+%stageMessageToast {
+  %stageMessageToastWrapper {
+    background-color: hsla(0, 0%, 0%, 0.8);
+    &:hover {
+      background-color: hsla(0, 0%, 0%, 0.6);
+    }
+  }
+}
+
 // THE AUDIENCE CONTAINER IN VC CHANNELS
+%stageVoiceUser {
+  padding-top: 4px;
+}
+%stageVoiceUserOverlap {
+  %stageVoiceUserAvatar {
+    border: none;
+  }
+}
 %stageAudienceContainer {
+  background-color: hsla(0, 0%, 0%, 0.8);
+  border: hsla(0, 0%, 0%, 0.8);
   %stageAudienceIconContainer {
     background: $main-color;
   }
@@ -39,7 +59,7 @@
     color: #fff;
   }
   %textSmallMedium {
-    color: rgba(255, 255, 255, 0.5) !important;
+    color: rgba(255, 255, 255, 0.9) !important;
   }
 }
 %stageOptionContainer {
@@ -54,6 +74,7 @@
     background: $hover-color;
   }
 }
+
 // ICON WHEN HOVERING SERVER
 %stageGuildListenerIcon {
   background: $main-color;
@@ -64,16 +85,18 @@
     color: #fff;
   }
 }
+
 // STARTING A STAGE CALL
 %stageTopicForm {
   %input {
-    background: rgba(0,0,0,.4);
+    background: rgba(0, 0, 0, 0.4);
     box-shadow: 0 0 0 2px $main-color;
   }
   %stageTopicInput {
     background: transparent;
   }
 }
+
 // REQUESTS
 %stageRequestContainer {
   background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.6));

@@ -3,7 +3,7 @@
 %themeDark %forumContainer {
   background: rgba(0, 0, 0, calc(#{cv('bg.app.shading')} * 0.3));
 }
-// HEADER 
+// HEADER
 %forumHeader {
   background-color: transparent;
 }
@@ -40,10 +40,10 @@
 
 // GET STARTED
 %forumSetupContainer {
-	background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: hsla(0, 0%, 0%, 0.4);
 }
 %forumSetupStepContainer {
-	background-color: hsla(0, 0%, 100%, 0.07);
+  background-color: hsla(0, 0%, 100%, 0.07);
   border: 2px solid $main-color;
   &:hover {
     background-color: hsla(0, 0%, 100%, 0.09);
@@ -51,7 +51,7 @@
   }
 }
 %forumSetupStepStatus {
-	background-color: transparent !important;
+  background-color: transparent !important;
 }
 
 // GALLERY VIEW
@@ -103,9 +103,6 @@
 }
 
 // SHARED
-%forumCardName {
-  color: #fff !important;
-}
 %forumPinIcon {
   background-color: $main-color;
 }
@@ -116,7 +113,7 @@
 // TAGS
 %themeDark %forumTag,
 %themeDark %forumIncreasedTag {
-  background: rgba(0, 0, 0, .6);
+  background: rgba(0, 0, 0, 0.6);
   border: 2px solid $main-color;
   &%forumTagClickable:not(%forumTagDisabled):hover {
     background: transparent;
@@ -141,15 +138,16 @@
 /*post unread, message count, old*/
 /*important needed for inline*/
 %forumNewMessageCountText {
-color: $main-color !important;
+  color: $main-color !important;
 }
 /* the !important is technically not needed but saves a rule
  in %forumListContainer%forumListOpen %Dots, 
  which creates an overriding inline rule*/
 %forumGalleryTypingDots, /*old forums*/
-%forumListTypingDots { /*new forums*/
-  background-color: rgba(0,0,0,.6);
-  border: 2px solid $main-color !important; 
+%forumListTypingDots {
+  /*new forums*/
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 2px solid $main-color !important;
 }
 
 // tag box etc
@@ -204,9 +202,6 @@ color: $main-color !important;
   %headingLargeBold,
   %headingLargeSemibold {
     color: $main-color;
-    &:hover {
-      color: $hover-color;
-    }
   }
 }
 
@@ -253,7 +248,6 @@ color: $main-color !important;
   background: $main-color;
 }
 
-
 // EMPTY FORUM
 %forumEmpty {
   background-color: transparent;
@@ -280,12 +274,12 @@ color: $main-color !important;
   background-color: transparent;
 }
 %forumExamplePreviewInput {
- background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: hsla(0, 0%, 0%, 0.4);
 }
 
 // new posts button
 %forumNewPosts {
-  background: rgba( 0, 0, 0, .4);
+  background: rgba(0, 0, 0, 0.4);
   border: 2px solid $main-color;
   %textMediumMedium {
     color: $main-color !important;

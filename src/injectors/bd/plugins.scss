@@ -5,15 +5,16 @@ div#magane div.stickerWindow {
 div#magane div.stickerWindow div.stickers h3.getStarted {
   color: #fff;
 }
-div#magane div.stickerWindow:not(:has(> [style^="display"])) div.stickers *,
-div#magane div.stickerWindow:not(:has(> [style^="display"])) div.packs-toolbar * {
+div#magane div.stickerWindow:not(:has(> [style^='display'])) div.stickers *,
+div#magane div.stickerWindow:not(:has(> [style^='display'])) div.packs-toolbar * {
   display: none;
 }
-div#magane .stickersModal .modal-content, div#magane .stickersModal .modal-card {
+div#magane .stickersModal .modal-content,
+div#magane .stickersModal .modal-card {
   background: transparent;
 }
 div#magane .stickersModal .inputQuery {
-  background: rgba(0,0,0,.2);
+  background: rgba(0, 0, 0, 0.2);
   border: 2px solid $main-color;
 }
 div#magane .button {
@@ -21,15 +22,16 @@ div#magane .button {
   color: #fff;
 }
 div#magane div.stickerWindow:before {
-  content: "";
+  content: '';
   position: absolute;
   z-index: -999;
   @include stretch;
-  background: cv('bg.backdrop.img') cv('bg.backdrop.pos') / cv('bg.backdrop.size') cv('bg.backdrop.repeat') cv('bg.backdrop.attach');
-  @include filters(cv('bg.backdrop'));
+  background: cv('bg.popout.img') cv('bg.popout.pos') / cv('bg.popout.size') cv('bg.popout.repeat') cv('bg.popout.attach');
+  @include filters(cv('bg.popout'));
 }
 div#magane div.stickerWindow div.stickers, /*top*/
-div#magane div.stickerWindow div.packs-toolbar { /*bottom*/
+div#magane div.stickerWindow div.packs-toolbar {
+  /*bottom*/
   background: var(--background-overlay);
 }
 // MESSAGE BUTTONS
@@ -71,7 +73,7 @@ div#magane div.stickerWindow div.packs-toolbar { /*bottom*/
 }
 // MEMBERLIST - ARASHIRYUU
 #MemberCount {
-	background: transparent;
+  background: transparent;
   h3 {
     color: var(--text-normal);
     padding: 12px 0;
@@ -81,7 +83,8 @@ div#magane div.stickerWindow div.packs-toolbar { /*bottom*/
     text-align: center;
   }
   %membersGroup {
-    &:before, &:after {
+    &:before,
+    &:after {
       display: none;
     }
   }
@@ -91,10 +94,10 @@ div#magane div.stickerWindow div.packs-toolbar { /*bottom*/
 }
 %membersWrap.hasCounter %members {
   padding-top: 30px;
-	margin-top: 0;
+  margin-top: 0;
 }
 %members %membersGroup:has(.membercount-row) {
-	opacity: 1;
+  opacity: 1;
 }
 // COPY CODE - FINICALMIST
 // COPYBUTTON
@@ -162,8 +165,8 @@ div#magane div.stickerWindow div.packs-toolbar { /*bottom*/
 }
 // GAMEACTIVITYTOGGLE - DEVILBRO
 %themeDark {
-  .gameActivityToggleAdded_Yd-YxC %accountPanelTagButton,
-  .gameActivityToggleAdded_Yd-YxC %accountPanelTagless {
+  %bdGameActivityToggle %accountPanelTagButton,
+  %bdGameActivityToggle %accountPanelTagless {
     min-width: calc(100% - 140px) !important;
   }
 }
@@ -187,73 +190,4 @@ div#magane div.stickerWindow div.packs-toolbar { /*bottom*/
     position: relative;
     margin-left: 10px;
   }
-}
-
-
-
-
-// Plugins/Themes Searchbar & dropdown filter
-.bd-search-wrapper {
-  background-color: hsla(0, 0%, 0%, 0.4) !important;
-}
-.bd-select {
-  .bd-select-options {
-    background-color: hsla(0, 0%, 0%, 0.4) !important;
-    border: hidden !important;
-  }
-  .bd-select-option {
-    &:hover {
-      background-color: rgba(255, 255, 255, 0.1) !important;
-    }
-    &.selected {
-      background-color: $main-color !important;
-    }
-  }
-}
-
-.bd-addon-list .bd-addon-card {
-  background-color: hsla(0, 0%, 0%, 0.4) !important;
-}
-
-.bd-addon-list .bd-addon-header {
-  background-color: var(--backdrop-overlay);
-}
-
-.bd-button {
-  background-color: $main-color;
-  &:hover {
-    background-color: $hover-color;
-  }
-  &:active {
-    background-color: $main-color;
-  }
-}
-.bd-addon-views {
-  .bd-view-button.selected {
-    background-color: $main-color;
-  }
-}
-.bd-switch input:checked + .bd-switch-body {
-  background-color: $main-color !important;
-}
-.bd-switch-body {
-  background-color: rgba(255, 255, 255, 0.15) !important;
-}
-.bd-switch-symbol {
-  color: $main-color !important;
-}
-.bd-toast {
-  background-color: $main-color;
-  &.toast-info {
-    background-color: $main-color;
-  }
-  &.toast-success {
-    background-color: $main-color;
-  }
-}
-.bd-link {
-  color: var(--url-color);
-}
-.bd-settings-title {
-  color: #fff;
 }

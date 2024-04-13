@@ -29,15 +29,18 @@
 %quickswitcherInput {
   background-color: rgba(255, 255, 255, 0.07);
 }
-%quickSwitcherScroller {
+%quickswitcherScroller {
   background-color: transparent;
   margin-top: 10px;
   &::-webkit-scrollbar-track {
     background-color: transparent !important;
   }
 }
-%quickSwitcherResult[aria-selected='true'] {
+%quickswitcherResult[aria-selected='true'] {
   background: var(--background-modifier-hover);
+}
+%quickswitcherPing {
+  background: $main-color;
 }
 
 // DISCORD NITRO PAYMENT
@@ -79,13 +82,13 @@
 }
 /*Boost this server button in serverboost page*/
 %serverBoostPerkContent {
-	background: transparent;
+  background: transparent;
   %serverBoostPaymentUpsellFooter {
     background: hsla(0, 0%, 0%, 0.4);
   }
 }
 %serverBoostPaymentPerksList {
-	background: rgba(0,0,0,.4);
+  background: rgba(0, 0, 0, 0.4);
 }
 // INVITE FROM WEB BROWSER
 %themeDark %webInviteModalContentWrapper {
@@ -101,12 +104,12 @@
 // TIMEOUT
 /*timeout duration item*/
 %timeoutModalItem%timeoutModalSelected {
-	background: var(--main-color);
-	border-color: var(--main-color);
+  background: $main-color;
+  border-color: $main-color;
 }
 %timeoutModalItem:not(%timeoutModalSelected) {
-	background: rgba(0,0,0,.4);
-	border-color: var(--main-color);
+  background: rgba(0, 0, 0, 0.4);
+  border-color: $main-color;
 }
 
 // BAN MODAL
@@ -115,7 +118,7 @@
   border: 2px solid transparent;
   transition: all 0.15s ease-in-out;
   color: #fff;
-    &:hover {
+  &:hover {
     background-color: hsla(0, 0%, 100%, 0.07);
     color: #fff;
     border: 2px solid $hover-color;
@@ -123,10 +126,6 @@
 }
 
 // SWITCH ACCOUNTS
-%switchAccountsActive > circle:not([fill^='hsl(0']),
-%switchAccountsActive > g > path:not([fill^='hsl(0']) {
-  fill: $main-color;
-}
 %themeDark %modalRoot {
   %loginAuthBox,
   %addAccountFooter {
@@ -156,8 +155,10 @@
   border: 2px solid $main-color;
   &:hover {
     background: rgba(0, 0, 0, 0.4);
-    box-sizing: border-box;
     border: 2px solid $hover-color;
+  }
+  &%activityItemDisabled {
+    background: rgba(0, 0, 0, 0.4);
   }
 }
 %activitiesScroller {
@@ -168,6 +169,9 @@
 %authModal {
   background-color: transparent;
   border-radius: 5px;
+  &%authModalInApp {
+    background-color: transparent;
+  }
 }
 %authModalScopeTimes {
   background-color: hsla(0, 0%, 100%, 0.15);
@@ -178,7 +182,7 @@
 
 // SOUNDBOARD MODAL
 %soundboard {
-  background-color: var(--popout-color);
+  background-color: cv('bg.general.popout');
   %soundboardSound,
   %soundboardGuildSelected {
     background-color: $main-color;
@@ -201,35 +205,53 @@
 /*other modals, nitro gift*/
 /*header*/
 %giftModalHeader {
-	background: transparent;
-	border-bottom: 1.5px solid $main-color;	
+  background: transparent;
+  border-bottom: 1.5px solid $main-color;
 }
 /*check out the shop icon*/
 %giftModalIconBackground {
-	background: $main-color;
+  background: $main-color;
   > svg {
     fill: #fff;
   }
 }
 /*loading screen*/
 %giftModalSpinner {
-	background: rgba(0,0,0,.4);
+  background: rgba(0, 0, 0, 0.4);
 }
 // YOU MUST COMPLETE A FEW MORE STEPS BEFORE YOU CAN TALK
 /*before you talk here popup*/
 %beforeTalkRuleContainer {
-	background: transparent;
+  background: transparent;
 }
 /*border color for terms of acceptance*/
 %beforeTalkRule {
-	border-color: var(--main-color);
+  border-color: $main-color;
 }
 /*agree to rules*/
 %beforeTalkRulesBackground {
-	background: var(--background-overlay);
+  background: var(--background-overlay);
   border-color: $main-color;
   &:hover:not(:focus) {
     border-color: $hover-color;
     background: var(--background-overlay);
   }
+}
+
+// Webhook previews
+%webhookFooter {
+  background-color: transparent;
+}
+
+%themeDark %webhookPopout {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+%webhookEmojiRow {
+  background-color: $main-color;
+  color: var(--text-normal) !important;
+}
+
+%webhookBackground {
+  background: var(--background-overlay);
 }

@@ -68,9 +68,6 @@
     }
   }
 }
-%settingsCardWrapper {
-  background-color: transparent;
-}
 
 // COLOR PICKER
 %themeDark %settingsColorPickerCustom {
@@ -93,7 +90,7 @@
   border-color: hsla(0, 0%, 100%, 0.09);
 }
 %settingsDropdownPopout {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: cv('bg.general.popout');
   border: none;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -116,4 +113,18 @@
       fill: #fff;
     }
   }
+}
+
+// ohnyo
+%settingsAttendeeCTA:after {
+  content: 'ClearVision easter egg, please visit our server for a headpat :)';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  color: hsla(0, 0%, 100%, 0.7);
+  text-align: center;
+  top: 130%;
+  z-index: -1;
+  left: 0;
 }

@@ -1,5 +1,5 @@
 /* CHAT CHANNEL TEXT AREA AUTOCOMPLETE */
-%chat {
+%themeDark {
   %autocomplete {
     background: transparent;
     overflow: hidden;
@@ -7,7 +7,7 @@
 }
 %autocomplete {
   %autocompleteInner {
-    background: rgba(0, 0, 0, 0.8);
+    background: cv('bg.general.popout');
     animation: cv-menu-slide-bottom 0.2s ease-in-out;
     transform-origin: 50% 100%;
   }
@@ -66,4 +66,14 @@
 }
 %autocompleteOptionalCount {
   color: hsla(0, 0%, 100%, 0.7);
+}
+// REMOVE AUTOCOMPLETE NITRO AD
+%autocompleteUpsellDividerContainer,
+%autocompleteUpsellEmoji,
+%autocompleteUpsellHeader {
+  display: none;
+}
+// REMOVE ENTIRE BOX IF ONLY CONTAINS NITRO AD
+%autocomplete:has(%autocompleteBase + %autocompleteUpsellDividerContainer) {
+  display: none;
 }

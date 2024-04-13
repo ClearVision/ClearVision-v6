@@ -3,7 +3,7 @@
   min-width: 430px;
 }
 %emojiPickerWrapper {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: cv('bg.general.popout');
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -13,12 +13,12 @@
 }
 
 %emojiPicker {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: cv('bg.general.popout');
   min-width: 430px;
   border-radius: 0;
 }
 %emojiPickerHeader {
-  background-color: rgba(0, 0, 0, 0.8);
+  background: transparent;
 }
 
 // SEARCH BAR
@@ -132,8 +132,15 @@
 %emojiPickerPremiumUpsell {
   background-color: transparent;
 }
-
+%emojiCategoryLockIconContainer {
+  background: $main-color;
+  border-color: $main-color;
+}
+%emojiPickerPremiumUpsellContainer {
+  background: var(--background-overlay);
+  border: 2px solid $main-color;
+}
 // NITRO EXPIRING NOTICE
-.premiumRetentionNotice__7e7c4 {
+%emojiPickerPremiumRetentionNotice {
   background-color: hsla(0, 0%, 100%, 0.1);
 }

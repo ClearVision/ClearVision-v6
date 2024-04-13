@@ -1,19 +1,9 @@
 /* Plugin & Theme Content Error */
-.bd-modal-wrapper {
-  .header {
-    background-color: var(--backdrop-overlay);
+.bd-modal-root {
+  .bd-modal-footer,
+  .bd-modal-header {
+    background-color: transparent;
+    box-shadow: none;
   }
-  .bd-modal-body {
-    background-color: var(--backdrop-overlay);
-  }
-  .footer {
-    button {
-      &:hover {
-        background-color: $hover-color;
-      }
-    }
-  }
-  .bd-modal-inner {
-    border: transparent;
-  }
+  background-color: var(--background-overlay);
 }

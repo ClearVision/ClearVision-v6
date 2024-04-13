@@ -62,7 +62,7 @@
       %tabBarItem {
         position: relative;
         padding: 8px 20px;
-        color: hsla(0, 0%, 100%, 0.4);
+        color: var(--channel-color);
         margin: 0;
         background: transparent;
         transition: all 0.15s ease-in-out;
@@ -119,7 +119,7 @@
           color: #fff !important;
         }
       }
-      %settingsServerBoostTabItem[aria-selected=true] {
+      %settingsServerBoostTabItem[aria-selected='true'] {
         background-color: $main-color !important;
       }
     }

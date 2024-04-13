@@ -12,7 +12,7 @@
   background: rgba(0, 0, 0, calc(#{cv('bg.app.shading')} * 0.6));
 }
 %membersNotices {
-  width: var(--members-width);
+  width: cv('members-width');
 }
 
 %members {
@@ -49,6 +49,7 @@
 
   // MEMBER
   %member {
+    max-width: calc(var(--members-width) - 16px);
     background: transparent;
     backface-visibility: hidden;
     &%memberOffline {

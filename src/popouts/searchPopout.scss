@@ -1,6 +1,6 @@
 /* SEARCH POPOUT */
 %themeDark %searchPopout {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: cv('bg.general.popout');
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   animation: cv-menu-fold-y 0.2s cubic-bezier(0.2, 0.6, 0.5, 1.1) 0.1s backwards;
   transform-origin: 50% 0;

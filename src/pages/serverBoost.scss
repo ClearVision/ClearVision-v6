@@ -1,28 +1,41 @@
 /* SERVER BOOST */
 /*bottom boost this server background*/
 %serverBoostPageBoostPrompt {
-	background: rgba(0,0,0,.8);
+  background: rgba(0, 0, 0, 0.8);
 }
 /*perks card eg "hd streaming"*/
 %serverBoostPageTopPerksCard {
-	background: rgba(0,0,0,.4);
+  background: rgba(0, 0, 0, 0.4);
 }
 /*give your community a boost*/
-%serverBoostPageCard{
-	background: rgba(0,0,0,.2);
+%serverBoostPageCard {
+  background: rgba(0, 0, 0, 0.2);
 }
 /*boosting faq*/
 %serverBoostPageFaq {
-	background: rgba(0,0,0,.4);
+  background: rgba(0, 0, 0, 0.4);
 }
 /*greater bg, needs more work*/
 %serverBoostPageScroller {
-	background: transparent;
+  background: transparent;
 }
 /*paths*/
 %serverBoostPageHeaderWave > path {
-	display: none;
+  display: none;
 }
 %serverBoostPageBodyWave > path {
-	fill: rgba(0,0,0,.8) !important;
+  fill: rgba(0, 0, 0, 0.8) !important;
+}
+
+// Boost this server
+// TODO: Add to selectors
+%boosServerPerkRow {
+  border-bottom: 1px solid $main-color;
+  &:hover {
+    background-color: hsla(0, 0%, 100%, 0.07);
+  }
+}
+
+%boostServerPerks {
+  background-color: rgba(0, 0, 0, 0.4);
 }

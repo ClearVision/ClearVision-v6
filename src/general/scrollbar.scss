@@ -1,5 +1,12 @@
 /* SCROLLBAR */
-
+// Chrome version fix
+%scrollbarAuto,
+%scrollbarChatAuto,
+%scrollbarThin,
+%scrollbarSettingsThin {
+  scrollbar-width: unset !important;
+  scrollbar-color: unset !important;
+}
 // NORMAL SCROLLBAR
 %scrollbarAuto::-webkit-scrollbar {
   width: 14px;

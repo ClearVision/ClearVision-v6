@@ -1,4 +1,4 @@
-$version: '6.3.0';
+$version: '6.9.0';
 
 /* ### ClearVision v#{$version} by the ClearVision team ### */
 
@@ -43,6 +43,7 @@ $version: '6.3.0';
 @import 'src/chat/textArea';
 @import 'src/chat/textAreaAutoComplete';
 @import 'src/chat/treads';
+@import 'src/chat/modView';
 
 // GENERAL ELEMENTS
 @import 'src/general/badge';
@@ -108,7 +109,7 @@ $version: '6.3.0';
 @import 'src/pages/login';
 @import 'src/pages/previewServer';
 @import 'src/pages/serverBoost';
-@import 'src/pages/studentHub.scss';
+@import 'src/pages/studentHub';
 
 // POPOUTS
 @import 'src/popouts/connectionInfo';
@@ -151,17 +152,17 @@ $version: '6.3.0';
 @import 'src/users/status';
 
 // VENCORD
-@import 'src/injectors/ven/plugins.scss';
-@import 'src/injectors/ven/venSettings.scss';
+@import 'src/injectors/ven/plugins';
+@import 'src/injectors/ven/venSettings';
+@import 'src/injectors/ven/icons';
 
 // REPLUGGED
-@import 'src/injectors/rp/plugins.scss';
-@import 'src/injectors/rp/rpSettings.scss';
+@import 'src/injectors/rp/plugins';
+@import 'src/injectors/rp/rpSettings';
 
 // BETTERDISCORD
 @import 'src/injectors/bd/bdSettings';
 @import 'src/injectors/bd/customCSS';
-@import 'src/injectors/bd/emotePicker';
 @import 'src/injectors/bd/icons';
 @import 'src/injectors/bd/popouts';
 @import 'src/injectors/bd/sidebar';

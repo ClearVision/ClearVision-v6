@@ -1,0 +1,26 @@
+/* Vencord SETTINGS SIDEBAR ICONS */
+%settingsSidebar {
+  // Vencord ICON MAP
+  $ven: (
+    // Settings
+    'settings': 'https://clearvision.github.io/icons/vencord.svg',
+    // Plugins
+    'plugins': 'https://clearvision.github.io/icons/puzzle.svg',
+    // Themes
+    'themes': 'https://clearvision.github.io/icons/palette.svg',
+    // Updater
+    'updater': 'https://clearvision.github.io/icons/sync.svg',
+    // Cloud
+    'cloud': 'https://clearvision.github.io/icons/cloud_sync.svg',
+    // Backup-Restore
+    'backup-restore': 'https://clearvision.github.io/icons/file_archive.svg'
+  );
+
+  %tabBarItem {
+    @each $i, $u in $ven {
+      &.vc-#{$i}:before {
+        background-image: url(#{$u});
+      }
+    }
+  }
+}

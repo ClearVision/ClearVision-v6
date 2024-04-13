@@ -5,10 +5,10 @@
   flex-direction: row-reverse;
   border-radius: 3px;
   transition: all 0.1s ease-in-out;
-  background: transparent;
+  background-color: transparent !important;
   border-color: transparent;
   cursor: default;
-  
+
   > %roleName {
     margin-right: 0;
     margin-left: 4px;
@@ -36,7 +36,7 @@
 %roleRemoveIcon {
   left: calc(100% - 7px);
 }
-%roleCircle {  
+%roleCircle {
   %role & {
     width: 0 !important;
     height: 0 !important;
@@ -53,7 +53,7 @@
       transition: all 0.1s ease-in-out;
       pointer-events: none;
     }
-  }  
+  }
 }
 %roleAddButton {
   background: hsla(0, 0%, 100%, 0.1);

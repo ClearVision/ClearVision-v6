@@ -1,0 +1,58 @@
+/* MOD VIEW */
+%modView %themeDark {
+  // HEADER
+  %modViewHeader {
+    background-color: hsla(0, 0%, 0%, 0.4);
+  }
+  %modViewHeaderTop,
+  %modViewHeaderBottomAction {
+    background-color: transparent !important;
+  }
+  %modViewHeaderBottomAction {
+    &:not(%modViewHeaderBottomActionDisabled) {
+      %modViewHeaderBottomActionInner {
+        background-color: hsla(0, 0%, 100%, 0.05);
+      }
+    }
+  }
+
+  // BODY
+  %modViewBody {
+    background-color: hsla(0, 0%, 0%, 0.4) !important;
+  }
+  %modViewBodyHeader {
+    background-color: transparent !important;
+    box-shadow: none;
+  }
+  %modViewBodyItem {
+    background-color: hsla(0, 0%, 0%, 0.4);
+  }
+  %modViewBodyAction {
+    &:hover {
+      background-color: hsla(0, 0%, 100%, 0.05);
+    }
+  }
+  %modViewPermissionChiplet {
+    background-color: hsla(0, 0%, 100%, 0.07);
+  }
+  %modViewElevatedPermissionChiplet {
+    background-color: hsla(0, 0%, 100%, 0.07);
+    color: var(--danger-color) !important;
+  }
+
+  // SERVER ACTIVITY
+  %modViewActivity {
+    li > div {
+      background-color: hsla(0, 0%, 0%, 0.4) !important;
+    }
+  }
+
+  // MOD PERMISSIONS
+  %modViewPermissionItem {
+    background-color: hsla(0, 0%, 0%, 0.4);
+    &%modViewElevatedPermissionItem {
+      background-color: hsla(0, 0%, 0%, 0.6);
+      border: 1px solid hsla(0, 0%, 100%, 0.05);
+    }
+  }
+}
