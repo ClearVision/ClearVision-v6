@@ -402,6 +402,9 @@
 .buttonActive_ae686f {
   @extend %panelActionButtonActive !optional;
 }
+.lottieIcon_c7076c {
+  @extend %panelActionButtonLottieIcon !optional;
+}
 .container_debb33 {
   @extend %accountPanel !optional;
 }

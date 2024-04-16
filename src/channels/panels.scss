@@ -65,11 +65,14 @@ button%panelButton {
   &%panelActionButtonColor {
     padding: 0;
     &%panelActionButtonActive {
-      background-color: var(--success-color);
+      background-color: #fff;
       color: $main-color;
       &:hover {
         background: hsla(0, 0%, 100%, 0.95);
         color: $hover-color;
+      }
+      %panelActionButtonLottieIcon {
+        --__lottieIconColor: var(--main-color) !important;
       }
     }
   }
