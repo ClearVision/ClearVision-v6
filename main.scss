@@ -78,6 +78,7 @@ $version: '6.9.0';
 @import 'src/members/tags';
 
 // MESSAGES
+@import 'src/messages/poll';
 @import 'src/messages/message';
 @import 'src/messages/activityInvite';
 @import 'src/messages/attachment';

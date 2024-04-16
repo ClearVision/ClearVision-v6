@@ -5325,3 +5325,27 @@ pre {
 .shyButton__30111 {
   @extend %shopNewPill !optional;
 }
+.container__0bd59 {
+  @extend %poll !optional;
+}
+.answerSelectionIcon__262f4 {
+  @extend %pollAnswerSelectionIcon !optional;
+}
+.radioForeground_e46974 {
+  @extend %pollRadioForeground !optional;
+}
+.answer__07489 {
+  @extend %pollAnswer !optional;
+}
+.answerInner_b97752 {
+  @extend %pollAnswerInner !optional;
+}
+.currentlyVoting__54b47 {
+  @extend %pollAnswerCurrentlyVoting !optional;
+}
+.selected__93ede {
+  @extend %pollAnswerSelected !optional;
+}
+.secondaryButtonPresentation_a9ebe0 {
+  @extend %pollSecondaryButton !optional;
+}
