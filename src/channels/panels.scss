@@ -65,7 +65,7 @@ button%panelButton {
   &%panelActionButtonColor {
     padding: 0;
     &%panelActionButtonActive {
-      background-color: #fff;
+      background-color: var(--success-color);
       color: $main-color;
       &:hover {
         background: hsla(0, 0%, 100%, 0.95);
