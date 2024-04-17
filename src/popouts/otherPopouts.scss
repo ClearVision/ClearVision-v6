@@ -72,3 +72,16 @@
   background: var(--background-overlay);
   border-left: 5px solid $main-color;
 }
+
+// MEMBERS ACTIVITY POPOUT
+/*clicked in*/
+%memberActivityInteractionsContainer {
+  background: var(--background-overlay);
+}
+/*clicked in icon*/
+%memberActivityShareToChannelButton {
+  background: var(--main-color);
+  path {
+    fill: #fff;
+  }
+}

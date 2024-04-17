@@ -1,5 +1,5 @@
 // Force bounding box to layer parent
-%themeDark %modalRoot[style*=transform]:has(%userModalOuter) {
+%themeDark %modalRoot[style*='transform']:has(%userModalOuter) {
   transform: none !important;
   z-index: 0;
 }

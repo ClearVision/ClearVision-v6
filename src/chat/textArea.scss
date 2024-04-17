@@ -1,7 +1,8 @@
 /* CHAT CHANNEL TEXT AREA */
 %chatForm {
   margin-top: 1px;
-  &:before {
+  &:before,
+  &:after {
     display: none;
   }
   .charcounter {

@@ -1,0 +1,17 @@
+%poll {
+  background: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
+}
+/* selection */
+%pollAnswerSelectionIcon %pollRadioForeground {
+  fill: $main-color;
+}
+
+%pollAnswer %pollAnswerInner%pollAnswerCurrentlyVoting%pollAnswerSelected {
+  outline: 2px solid $main-color;
+}
+%pollAnswer:hover %pollAnswerInner%pollAnswerCurrentlyVoting {
+  outline: 2px solid $hover-color;
+}
+%pollSecondaryButton {
+  background-color: $main-color;
+}

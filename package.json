@@ -11,7 +11,7 @@
     "test": "npm run clean && npm run test.build",
     "test.build": "sass --style=expanded --no-source-map hljs.scss:test/hljs.css main.scss:test/main.css",
     "addons": "npm run addons.clean && npm run addons.build",
-    "addons.build": "sass --style=expanded --no-source-map scripts/hljs.scss:addons/hljs.css scripts/main.scss:addons/main.css"
+    "addons.build": "sass --style=expanded --no-source-map scripts/cvstuff/main.scss:addons/main.css"
   },
   "repository": {
     "type": "git",
