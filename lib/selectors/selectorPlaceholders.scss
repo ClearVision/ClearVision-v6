@@ -2499,6 +2499,9 @@ pre {
 .badgeList__76720 {
   @extend %userModalDMBadgeList !optional;
 }
+.badgeList__6b2c7 {
+  @extend %accountSettingsBadges !optional;
+}
 .overlayBackground__345c9 {
   @extend %userModalOverlayBackground !optional;
 }
