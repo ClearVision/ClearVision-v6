@@ -12,6 +12,9 @@
   background: transparent;
   border-color: transparent;
 }
+%accountSettingsBadges {
+  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.4)); 
+}
 
 // USER PROFILE
 %avatarOptionBox {
