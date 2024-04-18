@@ -2490,8 +2490,11 @@ pre {
 .userProfileModalInner__84e47 {
   @extend %userModalInner !optional;
 }
-.profileBanner_f0f36c {
-  @extend %userModalProfileBanner !optional;
+.modalBanner_e4ade4 {
+  @extend %userModalBanner !optional;
+}
+.modalBannerPremium_d287e3 {
+  @extend %userModalBannerPremium !optional;
 }
 .badgeList__126b0 {
   @extend %userModalBadgeList !optional;
