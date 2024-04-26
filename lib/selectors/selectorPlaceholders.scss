@@ -2202,6 +2202,9 @@ pre {
 .executedCommand__4fb1a {
   @extend %messageRepliedExecutedCommand !optional;
 }
+.appLauncherOnboardingCommandName_bf880c {
+  @extend %messageRepliedAppLauncherCommandName !optional;
+}
 .commandName_fd97e7 {
   @extend %messageRepliedCommandName !optional;
 }

@@ -88,6 +88,15 @@
     }
   }
   &%messageRepliedExecutedCommand {
+    %messageRepliedAppLauncherCommandName {
+      color: $main-color;
+      background: transparent;
+      text-decoration: underline;
+      &:hover {
+        color: $hover-color;
+        background: transparent;
+      }
+    }
     %messageRepliedCommandName {
       color: $main-color;
     }
