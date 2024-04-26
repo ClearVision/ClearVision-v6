@@ -11,15 +11,18 @@
 %emojiPickerNavButton {
   background-color: $main-color;
 }
-
+%emojiPickerHeader {
+  background-color: cv('bg.general.popout');
+}
 %emojiPicker {
   background-color: cv('bg.general.popout');
   min-width: 430px;
   border-radius: 0;
+  %emojiPickerHeader {
+    background: transparent;
+  }
 }
-%emojiPickerHeader {
-  background: transparent;
-}
+
 
 // SEARCH BAR
 %emojiPickerSearchBar {
