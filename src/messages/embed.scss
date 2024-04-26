@@ -51,3 +51,9 @@
   filter: grayscale(1) brightness(2);
   opacity: 0.3;
 }
+%imageHoverButtonGroup {
+  background-color: rgba(0, 0, 0, 0.5);
+  %imageHoverButton {
+    color: #fff;
+  }
+}

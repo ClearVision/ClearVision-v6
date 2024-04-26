@@ -1947,6 +1947,12 @@ pre {
 .imageError__3af5f {
   @extend %imageError !optional;
 }
+.hoverButtonGroup__745e4 {
+  @extend %imageHoverButtonGroup !optional;
+}
+.hoverButton__78b6a {
+  @extend %imageHoverButton !optional;
+}
 .embedThumbnail__1f402 {
   @extend %embedThumbnail !optional;
 }
