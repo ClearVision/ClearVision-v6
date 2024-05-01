@@ -2097,7 +2097,7 @@ pre {
 .bubble_f48089 {
   @extend %playerMediaBarBubble !optional;
 }
-.hoverButtonGroup__304b2 {
+.hoverButtonGroup__745e4 {
   @extend %playerMediaDownload !optional;
 }
 .container_ce813c {
@@ -3067,8 +3067,8 @@ pre {
 .roles__74a2b {
   @extend %userPopoutRoles !optional;
 }
-.textarea__0461c {
-  @extend %userPopoutNoteTextArea !optional;
+.note_ba0c31 {
+  @extend %userPopoutNote !optional;
 }
 .messageInputContainer_a93946 {
   @extend %userPopoutMessageInputContainer !optional;
@@ -3976,8 +3976,11 @@ pre {
 .selectorButtonSelected__707fb {
   @extend %screenshareSettingsSelected !optional;
 }
-.selectorButtonPremiumRequired__9df5b {
-  @extend %screenshareSettingsPremiumRequired !optional;
+.premiumUpsell__248b1 {
+  @extend %screenshareSettingsUpsell !optional;
+}
+.enhancedSelectorNitroText__4daeb {
+  @extend %screenshareSettingsUpsellText !optional;
 }
 .card__3662a {
   @extend %serverWelcomeCards !optional;
