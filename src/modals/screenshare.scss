@@ -35,7 +35,7 @@
     &%screenshareSettingsSelected {
       background-color: $main-color;
     }
-    %screenshareSettingsUpsell {
+    &%screenshareSettingsUpsell {
       &:hover {
         background-color: #c269c3;
         %screenshareSettingsUpsellText {

@@ -133,15 +133,6 @@
   }
 }
 
-// VERIFY PHONE
-%phoneVerification %phoneVerificationInput {
-  background-color: hsla(0, 0%, 100%, 0.07);
-}
-%phoneVerification {
-  background-color: hsla(0, 0%, 100%, 0.07);
-  border: 1px solid hsla(0, 0%, 100%, 0.07);
-}
-
 // ACTIVITIES
 %activityModalHeader,
 %activityModalDivider {
