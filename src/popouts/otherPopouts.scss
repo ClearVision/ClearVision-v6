@@ -42,6 +42,27 @@
   }
 }
 
+// VC ACTIVITY STATUS POPOUT
+%vcActivityPopout{
+  background-color: var(--popout-color);
+}
+%vcActivityPopoutIcon {
+	background-color: hsla(0, 0%, 100%, .07);
+	border-color: hsla(0, 0%, 100%, 0.09);
+  &:hover {
+    background-color: hsla(0, 0%, 100%, .07);
+    border-color: var(--hover-color);
+  }
+}
+%vcActivityPopoutCustomButton {
+	background-color: var(--main-color);
+	border-color: transparent;
+  &:hover {
+    background-color: var(--hover-color);
+    border-color: transparent;
+  }
+}
+
 // STUDENT HUBS
 %hubPopoutSidebar {
   background: transparent;

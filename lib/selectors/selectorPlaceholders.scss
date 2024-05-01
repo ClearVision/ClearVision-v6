@@ -4345,6 +4345,15 @@ pre {
 .watchButton__5a93d {
   @extend %streamPopoutWatchButton !optional;
 }
+.popout__4c91f {
+  @extend %vcActivityPopout !optional;
+}
+.iconWidget__22dfa {
+  @extend %vcActivityPopoutIcon !optional;
+}
+.setCustomButton__09dbf {
+  @extend %vcActivityPopoutCustomButton !optional;
+}
 .header__3b038 {
   @extend %eventHeader !optional;
 }
