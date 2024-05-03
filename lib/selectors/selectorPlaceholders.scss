@@ -4348,11 +4348,14 @@ pre {
 .popout__4c91f {
   @extend %vcActivityPopout !optional;
 }
+.popout__4c91f {
+  @extend %vcSetActivityPopout !optional;
+}
 .iconWidget__22dfa {
-  @extend %vcActivityPopoutIcon !optional;
+  @extend %vcSetActivityPopoutIcon !optional;
 }
 .setCustomButton__09dbf {
-  @extend %vcActivityPopoutCustomButton !optional;
+  @extend %vcSetActivityPopoutButton !optional;
 }
 .header__3b038 {
   @extend %eventHeader !optional;
@@ -5039,6 +5042,9 @@ pre {
 }
 .modalContent__4d9c6 {
   @extend %shopModal !optional;
+}
+.collectibleInfoContainer_a9bb77 {
+  @extend %shopPreviewInfo !optional;
 }
 .chatPreview__8e939 {
   @extend %shopChatPreview !optional;

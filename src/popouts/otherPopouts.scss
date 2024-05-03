@@ -43,10 +43,11 @@
 }
 
 // VC ACTIVITY STATUS POPOUT
-%vcActivityPopout{
+%vcActivityPopout,
+%vcSetActivityPopout {
   background-color: var(--popout-color);
 }
-%vcActivityPopoutIcon {
+%vcSetActivityPopoutIcon {
 	background-color: hsla(0, 0%, 100%, .07);
 	border-color: hsla(0, 0%, 100%, 0.09);
   &:hover {
@@ -54,7 +55,7 @@
     border-color: var(--hover-color);
   }
 }
-%vcActivityPopoutCustomButton {
+%vcSetActivityPopoutButton {
 	background-color: var(--main-color);
 	border-color: transparent;
   &:hover {
@@ -81,9 +82,9 @@
     &:first-child {
       border-top: 1px solid hsla(0, 0%, 100%, 0.05);
     }
-  }
-  &:hover {
-    background: hsla(0, 0%, 100%, 0.06);
+    &:hover {
+      background: hsla(0, 0%, 100%, 0.06);
+    }
   }
 }
 
