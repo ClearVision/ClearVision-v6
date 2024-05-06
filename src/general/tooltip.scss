@@ -9,7 +9,7 @@
     padding: 0;
   }
   &%tooltipPrimary,
-  %tooltipNested {
+  &%tooltipNested {
     background: rgba(0, 0, 0, 0.9);
     > %tooltipPointer {
       border-top-color: rgba(0, 0, 0, 0.9);
