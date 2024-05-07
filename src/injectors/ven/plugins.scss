@@ -38,13 +38,13 @@
   background-color: $hover-color;
   border-color: $hover-color;
   color: $hover-color;
-  margin-top: 5px;
 }
 
 #vc-spotify-progress-bar > [class^='slider'] [class^='grabber'] {
   background-color: $main-color;
   border-color: $main-color;
   color: $main-color;
+  margin-top: 5px;
 }
 
 // SHOW HIDDEN CHANNELS
