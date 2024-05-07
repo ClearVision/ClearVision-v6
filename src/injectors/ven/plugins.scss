@@ -26,7 +26,11 @@
   background-color: $main-color;
   border-color: $main-color;
   color: $main-color;
+  &:hover {
+    margin-top: 5px;
+  }
 }
+
 // SHOW HIDDEN CHANNELS
 .shc-lock-screen-allowed-users-and-roles-container {
   background-color: rgba(0, 0, 0, 0.8);
