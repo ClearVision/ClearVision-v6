@@ -48,16 +48,16 @@
   background-color: var(--popout-color);
 }
 %vcSetActivityPopoutIcon {
-	background-color: hsla(0, 0%, 100%, .07);
-	border-color: hsla(0, 0%, 100%, 0.09);
+  background-color: hsla(0, 0%, 100%, 0.07);
+  border-color: hsla(0, 0%, 100%, 0.09);
   &:hover {
-    background-color: hsla(0, 0%, 100%, .07);
+    background-color: hsla(0, 0%, 100%, 0.07);
     border-color: var(--hover-color);
   }
 }
 %vcSetActivityPopoutButton {
-	background-color: var(--main-color);
-	border-color: transparent;
+  background-color: var(--main-color);
+  border-color: transparent;
   &:hover {
     background-color: var(--hover-color);
     border-color: transparent;
