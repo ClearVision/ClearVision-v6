@@ -2286,6 +2286,9 @@ pre {
 .embedCard__2a3c7 {
   @extend %messageAutomodCard !optional;
 }
+.selected__197e7 {
+  @extend %messageAutomodCardSelected !optional;
+}
 .footerContainer_b2e9f6 {
   @extend %messageAutomodFooterContainer !optional;
 }

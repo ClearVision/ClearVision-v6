@@ -190,6 +190,14 @@
 %messageAutomodFooterContainer {
   background-color: hsla(0, 0%, 0%, 0.4);
 }
-%messageAutomodFooterIcon path {
-  fill: $main-color;
+%messageAutomodCard {
+  &%messageAutomodCardSelected {
+    background-color: hsla(0, 0%, 0%, 0.4);
+  }
 }
+%messageAutomodFooterAction {
+  %textExtraSmallNormal,
+  %messageAutomodFooterIcon path {
+    color: var(--url-color);
+  }
+} 
