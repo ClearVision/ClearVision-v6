@@ -5027,8 +5027,14 @@ pre {
   @extend %shopBackgroundTemp !optional;
 }
 
+// Maybe obsolete
 .pageWrapperBackgroundPrimary__36469 {
   @extend %shopPageWrapper !optional;
+}
+//
+
+.pageWrapper__18871 {
+  @extend %shopPageWrapperTemp !optional;
 }
 .skeleton__3d497 {
   @extend %shopLoadingSkeleton !optional;
