@@ -5016,9 +5016,17 @@ pre {
 .shop_b31ed2 {
   @extend %shop !optional;
 }
+
+// Maybe obsolete 
 .shopScrollBackgroundPrimary__28f1d {
   @extend %shopBackground !optional;
 }
+//
+
+.shopScroll_caa423 {
+  @extend %shopBackgroundTemp !optional;
+}
+
 .pageWrapperBackgroundPrimary__36469 {
   @extend %shopPageWrapper !optional;
 }
