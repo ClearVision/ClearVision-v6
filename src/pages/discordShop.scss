@@ -102,3 +102,8 @@
 %shopNewPill {
   background: radial-gradient(ellipse at 120%200%, var(--main-color) 10%, transparent 70%);
 }
+
+// Shop what's new
+%shopWhatsNew {
+  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.8));
+}
