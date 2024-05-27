@@ -103,3 +103,8 @@
     }
   }
 }
+
+// REPLY MENTION TOGGLE 
+div[aria-checked="true"] %replyMentionButton {
+  color: $main-color !important;
+}

@@ -2,35 +2,56 @@
 .shiki-plain {
   background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.2)) !important;
 }
+
 .shiki-container {
   background: rgba(0, 0, 0, 0.2) !important;
 }
+
 .shiki-btn {
   background-color: $main-color !important;
   border-radius: 4px !important;
   right: 4px !important;
   bottom: 4px !important;
 }
+
 .shiki-btn:hover {
   background-color: $hover-color !important;
   transition: ease-in-out 0.2s;
 }
+
 /*Spotify controls*/
 %themeDark #vc-spotify-player {
   background: transparent;
 }
+
 #vc-spotify-player {
   border-top: 1px solid var(--background-modifier-accent);
 }
+
+#vc-spotify-player:hover [class^='barFill__'] {
+  background-color: $hover-color;
+  border-color: $hover-color;
+  color: $hover-color;
+}
+
+#vc-spotify-progress-bar:hover > [class^='slider'] [class^='grabber'] {
+  background-color: $hover-color;
+  border-color: $hover-color;
+  color: $hover-color;
+}
+
 #vc-spotify-progress-bar > [class^='slider'] [class^='grabber'] {
   background-color: $main-color;
   border-color: $main-color;
   color: $main-color;
+  margin-top: 5px;
 }
+
 // SHOW HIDDEN CHANNELS
 .shc-lock-screen-allowed-users-and-roles-container {
   background-color: rgba(0, 0, 0, 0.8);
 }
+
 .shc-lock-screen-allowed-users-and-roles-container button {
   background: $main-color;
   color: #fff;
@@ -41,9 +62,11 @@
     border-radius: 10px;
   }
 }
+
 .shc-lock-screen-container {
   background: transparent;
 }
+
 .shc-lock-screen-allowed-users-and-roles-container %emptyChannelRole {
   position: relative;
   background-color: transparent;

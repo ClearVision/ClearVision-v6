@@ -12,6 +12,21 @@
   background: transparent;
   border-color: transparent;
 }
+%accountSettingsBadges {
+  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
+}
+// MY ACCOUNT - VERIFY PHONE
+%phoneVerification {
+  background-color: hsla(0, 0%, 100%, 0.07);
+  border: none;
+  box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.09);
+  &:focus-within {
+    box-shadow: 0 0 2px 2px $main-color;
+  }
+}
+%phoneVerification %phoneVerificationInput {
+  background-color: transparent;
+}
 
 // USER PROFILE
 %avatarOptionBox {

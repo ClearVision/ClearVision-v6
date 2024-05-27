@@ -1222,6 +1222,9 @@
 .tooltipPrimary__51b23 {
   @extend %tooltipPrimary !optional;
 }
+.tooltipNested_ee18f0 {
+  @extend %tooltipNested !optional;
+}
 .tooltipBrand__68214 {
   @extend %tooltipBrand !optional;
 }
@@ -1947,6 +1950,12 @@ pre {
 .imageError__3af5f {
   @extend %imageError !optional;
 }
+.hoverButtonGroup__745e4 {
+  @extend %imageHoverButtonGroup !optional;
+}
+.hoverButton__78b6a {
+  @extend %imageHoverButton !optional;
+}
 .embedThumbnail__1f402 {
   @extend %embedThumbnail !optional;
 }
@@ -2091,7 +2100,7 @@ pre {
 .bubble_f48089 {
   @extend %playerMediaBarBubble !optional;
 }
-.hoverButtonGroup__304b2 {
+.hoverButtonGroup__745e4 {
   @extend %playerMediaDownload !optional;
 }
 .container_ce813c {
@@ -2202,6 +2211,9 @@ pre {
 .executedCommand__4fb1a {
   @extend %messageRepliedExecutedCommand !optional;
 }
+.appLauncherOnboardingCommandName_bf880c {
+  @extend %messageRepliedAppLauncherCommandName !optional;
+}
 .commandName_fd97e7 {
   @extend %messageRepliedCommandName !optional;
 }
@@ -2274,6 +2286,9 @@ pre {
 .embedCard__2a3c7 {
   @extend %messageAutomodCard !optional;
 }
+.selected__197e7 {
+  @extend %messageAutomodCardSelected !optional;
+}
 .footerContainer_b2e9f6 {
   @extend %messageAutomodFooterContainer !optional;
 }
@@ -2336,6 +2351,9 @@ pre {
 }
 .inputField__9fd91 {
   @extend %inputField !optional;
+}
+.multiInputField__5823c {
+  @extend %inputMultiField !optional;
 }
 .copyInput_aaa791 {
   @extend %inputCopy !optional;
@@ -2490,14 +2508,20 @@ pre {
 .userProfileModalInner__84e47 {
   @extend %userModalInner !optional;
 }
-.profileBanner_f0f36c {
-  @extend %userModalProfileBanner !optional;
+.modalBanner_e4ade4 {
+  @extend %userModalBanner !optional;
+}
+.modalBannerPremium_d287e3 {
+  @extend %userModalBannerPremium !optional;
 }
 .badgeList__126b0 {
   @extend %userModalBadgeList !optional;
 }
 .badgeList__76720 {
   @extend %userModalDMBadgeList !optional;
+}
+.badgeList__6b2c7 {
+  @extend %accountSettingsBadges !optional;
 }
 .overlayBackground__345c9 {
   @extend %userModalOverlayBackground !optional;
@@ -3052,8 +3076,8 @@ pre {
 .roles__74a2b {
   @extend %userPopoutRoles !optional;
 }
-.textarea__0461c {
-  @extend %userPopoutNoteTextArea !optional;
+.note_ba0c31 {
+  @extend %userPopoutNote !optional;
 }
 .messageInputContainer_a93946 {
   @extend %userPopoutMessageInputContainer !optional;
@@ -3961,8 +3985,11 @@ pre {
 .selectorButtonSelected__707fb {
   @extend %screenshareSettingsSelected !optional;
 }
-.selectorButtonPremiumRequired__9df5b {
-  @extend %screenshareSettingsPremiumRequired !optional;
+.premiumUpsell__248b1 {
+  @extend %screenshareSettingsUpsell !optional;
+}
+.enhancedSelectorNitroText__4daeb {
+  @extend %screenshareSettingsUpsellText !optional;
 }
 .card__3662a {
   @extend %serverWelcomeCards !optional;
@@ -4323,6 +4350,18 @@ pre {
 }
 .watchButton__5a93d {
   @extend %streamPopoutWatchButton !optional;
+}
+.popout__7a706 {
+  @extend %vcActivityPopout !optional;
+}
+.popout__4c91f {
+  @extend %vcSetActivityPopout !optional;
+}
+.iconWidget__22dfa {
+  @extend %vcSetActivityPopoutIcon !optional;
+}
+.setCustomButton__09dbf {
+  @extend %vcSetActivityPopoutButton !optional;
 }
 .header__3b038 {
   @extend %eventHeader !optional;
@@ -4977,11 +5016,25 @@ pre {
 .shop_b31ed2 {
   @extend %shop !optional;
 }
+
+// Maybe obsolete 
 .shopScrollBackgroundPrimary__28f1d {
   @extend %shopBackground !optional;
 }
+//
+
+.shopScroll_caa423 {
+  @extend %shopBackgroundTemp !optional;
+}
+
+// Maybe obsolete
 .pageWrapperBackgroundPrimary__36469 {
   @extend %shopPageWrapper !optional;
+}
+//
+
+.pageWrapper__18871 {
+  @extend %shopPageWrapperTemp !optional;
 }
 .skeleton__3d497 {
   @extend %shopLoadingSkeleton !optional;
@@ -5009,6 +5062,9 @@ pre {
 }
 .modalContent__4d9c6 {
   @extend %shopModal !optional;
+}
+.collectibleInfoContainer_a9bb77 {
+  @extend %shopPreviewInfo !optional;
 }
 .chatPreview__8e939 {
   @extend %shopChatPreview !optional;

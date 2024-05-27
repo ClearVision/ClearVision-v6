@@ -22,6 +22,10 @@
     box-shadow: none;
     background: none;
   }
+  %inputMultiField {
+    background-color: transparent;
+    box-shadow: none;
+  }
   %inputCopy & {
     background-color: transparent;
     box-shadow: none;

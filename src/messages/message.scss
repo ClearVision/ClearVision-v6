@@ -88,6 +88,15 @@
     }
   }
   &%messageRepliedExecutedCommand {
+    %messageRepliedAppLauncherCommandName {
+      color: $main-color;
+      background: transparent;
+      text-decoration: underline;
+      &:hover {
+        color: $hover-color;
+        background: transparent;
+      }
+    }
     %messageRepliedCommandName {
       color: $main-color;
     }
@@ -181,6 +190,14 @@
 %messageAutomodFooterContainer {
   background-color: hsla(0, 0%, 0%, 0.4);
 }
-%messageAutomodFooterIcon path {
-  fill: $main-color;
+%messageAutomodCard {
+  &%messageAutomodCardSelected {
+    background-color: hsla(0, 0%, 0%, 0.4);
+  }
 }
+%messageAutomodFooterAction {
+  %textExtraSmallNormal,
+  %messageAutomodFooterIcon path {
+    color: var(--url-color);
+  }
+} 
