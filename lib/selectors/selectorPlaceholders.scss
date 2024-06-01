@@ -423,9 +423,6 @@
 .title__4a7a9 {
   @extend %accountPanelUsername !optional;
 }
-.subtext_ce73b4 {
-  @extend %accountPanelDiscriminator !optional;
-}
 .withTagAsButton_e22174 {
   @extend %accountPanelTagButton !optional;
 }
@@ -3805,10 +3802,6 @@ pre {
 .giftCard__4b868 {
   @extend %userSettingsNitroGiftCard !optional;
 }
-.borderRect__8ec00 {
-  // OBSOLETE
-  @extend %userSettingsBoostHeaderBorderRect !optional;
-}
 .header__5c5a9 {
   @extend %userSettingsBoostHeader !optional;
 }
@@ -5016,27 +5009,14 @@ pre {
 .shop_b31ed2 {
   @extend %shop !optional;
 }
-
-// Maybe obsolete 
-.shopScrollBackgroundPrimary__28f1d {
+.shopScroll_caa423 {
   @extend %shopBackground !optional;
 }
-//
-
-.shopScroll_caa423 {
-  @extend %shopBackgroundTemp !optional;
-}
-
-// Maybe obsolete
-.pageWrapperBackgroundPrimary__36469 {
+.pageWrapper__18871 {
   @extend %shopPageWrapper !optional;
 }
-//
 .whatsNewSectionBackground__00412 {
   @extend %shopWhatsNew !optional;
-}
-.pageWrapper__18871 {
-  @extend %shopPageWrapperTemp !optional;
 }
 .skeleton__3d497 {
   @extend %shopLoadingSkeleton !optional;

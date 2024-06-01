@@ -3,24 +3,10 @@
 %shop {
   background-color: transparent;
 }
-
-// Maybe oboslete
 %shopBackground {
   background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
 }
-// 
-
-%shopBackgroundTemp {
-  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));;
-}
-
-// Maybe obsolete
 %shopPageWrapper {
-  background-color: transparent;
-}
-//
-
-%shopPageWrapperTemp {
   background-color: transparent;
 }
 
