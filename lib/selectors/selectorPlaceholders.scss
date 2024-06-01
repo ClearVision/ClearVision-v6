@@ -2517,9 +2517,6 @@ pre {
 .badgeList__126b0 {
   @extend %userModalBadgeList !optional;
 }
-.badgeList__76720 {
-  @extend %userModalDMBadgeList !optional;
-}
 .badgeList__6b2c7 {
   @extend %accountSettingsBadges !optional;
 }
@@ -3033,7 +3030,10 @@ pre {
 .userPanelInnerThemed__651e4 {
   @extend %userProfileDMInnerThemed !optional;
 }
-.userPanelOverlayBackground_a2b6ae {
+.badgeList__76720 {
+  @extend %userProfileDMBadgeList !optional;
+}
+.overlayBackground__345c9 {
   @extend %userProfileDMOverlayBackground !optional;
 }
 .actionColor_db400e {
@@ -5053,13 +5053,10 @@ pre {
 .cardSummary_c7b600 {
   @extend %shopLoadingCardContent !optional;
 }
-.shopCard__3d319 {
+.shopCard__9e3fe {
   @extend %shopCard !optional;
 }
-.cardBackground_d86c0e {
-  @extend %shopCardBackground !optional;
-}
-.darkCardBackground__38c63 {
+.darkCardBackground_d398da {
   @extend %shopCardDarkBackground !optional;
 }
 .modalContent__4d9c6 {
