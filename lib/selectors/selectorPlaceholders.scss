@@ -5396,3 +5396,36 @@ pre {
 .secondaryButtonPresentation_a9ebe0 {
   @extend %pollSecondaryButton !optional;
 }
+.channelRow__9cf96 {
+  @extend %clipsShareTo !optional;
+}
+.upload_c98ecb.sizeClip_bd990b {
+  @extend %clipsUploadModal !optional;
+}
+.gameIcon_fc710a {
+  @extend %clipsUploadGame !optional;
+}
+.text-md-semibold__8664f {
+  @extend %clipsUploadTitle !optional;
+}
+.root__5ebb6 {
+  @extend %clipsInterfaceGeneralInfo !optional;
+}
+.root__57e78 {
+  @extend %clipsInterfaceParticipants !optional;
+}
+.clipForm_f207e0 {
+  @extend %clipsInterfaceOptionsModal !optional;
+}
+.userCountPill_f05558 {
+  @extend %clipsInterfaceParticipantsCounter !optional;
+}
+.timePillBackground_bccedc {
+  @extend %clipsInterfaceTimeScroller !optional;
+}
+.playPauseButtonWrapper_c0143c {
+  @extend %clipsInterfacePlayPause !optional;
+}
+.dragHandle__7b38b {
+  @extend %clipsInterfaceDragHandles !optional;
+}
