@@ -23,6 +23,7 @@
 }
 
 // CARD
+%shopCardNitro,
 %shopCard {
   background-color: rgba(0, 0, 0, 0.4) !important;
   border-color: $main-color !important;
@@ -31,6 +32,7 @@
     border-color: $hover-color !important;
   }
 }
+%shopCardDarkBackgroundNitro, 
 %shopCardDarkBackground {
   background-color: rgba(0, 0, 0, 0.6);
 }

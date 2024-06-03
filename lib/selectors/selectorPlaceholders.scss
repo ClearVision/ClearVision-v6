@@ -5036,6 +5036,12 @@ pre {
 .shopCard__3d319 {
   @extend %shopCard !optional;
 }
+.shopCard__9e3fe {
+  @extend %shopCardNitro !optional;
+}
+.darkCardBackground_d398da {
+  @extend %shopCardDarkBackgroundNitro !optional;
+}
 .darkCardBackground__38c63 {
   @extend %shopCardDarkBackground !optional;
 }
