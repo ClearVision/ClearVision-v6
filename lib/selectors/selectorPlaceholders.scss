@@ -2301,19 +2301,19 @@ pre {
 .blockquoteDivider__5cbad {
   @extend %blockquoteDivider !optional;
 }
-.reactions__2ede2 {
+.reactions_da5b2a {
   @extend %reactions !optional;
 }
-.reaction_ef7e09 {
+.reaction__4a43f {
   @extend %reaction !optional;
 }
-.reactionMe__9fc5c {
+.reactionMe__0fffc {
   @extend %reactionMe !optional;
 }
-.reactionInner_d6d30f {
+.reactionInner_bd636d {
   @extend %reactionInner !optional;
 }
-.reactionCount_b780c8 {
+.reactionCount__2c34d {
   @extend %reactionCount !optional;
 }
 .spoilerMarkdownContent__5c448 {
@@ -4719,10 +4719,16 @@ pre {
 .newPostsButton__5c904 {
   @extend %forumNewPosts !optional;
 }
-.reactionInner_bd636d {
+.reaction_ef7e09 {
+  @extend %forumReaction !optional;
+}
+.reactionMe__9fc5c {
+  @extend %forumReactionMe !optional;
+}
+.reactionInner_d6d30f {
   @extend %forumReactionInner !optional;
 }
-.reactionCount__2c34d {
+.reactionCount_b780c8 {
   @extend %forumReactionCount !optional;
 }
 .addReactButton__4342f {
@@ -4739,12 +4745,6 @@ pre {
 }
 .addTags__282cb {
   @extend %forumSettingsGuidelinesAddTags !optional;
-}
-.reaction__4a43f {
-  @extend %forumReaction !optional;
-}
-.reactionMe__0fffc {
-  @extend %forumReactionMe !optional;
 }
 .heading-lg-bold_f5eeaa {
   @extend %headingLargeBold !optional;
