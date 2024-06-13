@@ -14,7 +14,7 @@
         color: #fff;
       }
       %menuPopoutCheck {
-        color: $main-color;
+        fill: $main-color;
       }
     }
     &%menuPopoutSelected:active:not(%menuPopoutHideInteraction) {
@@ -130,4 +130,7 @@
 // ACCOUNT SWITCHER
 %switchAccountsActive path {
   fill: $main-color;
+  %menuPopoutItemHover & circle {
+    fill: $main-color;
+  }
 }
