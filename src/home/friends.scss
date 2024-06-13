@@ -9,6 +9,14 @@
 %friendsColumn {
   background: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
 }
+%friendsSearch{
+  background-color: hsla(0, 0%, 100%, 0.07);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.09);
+  border: none;
+  &:focus-within {
+    box-shadow: 0 0 2px 2px $main-color;
+  }
+}
 %friendsItem {
   border-top: 1px solid hsla(0, 0%, 100%, 0.1);
   &:hover,

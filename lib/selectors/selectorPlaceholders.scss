@@ -955,14 +955,8 @@
 .inlineCode__0cacf {
   @extend %inlineCode !optional;
 }
-.numberBadge__40d6f {
+.numberBadge_c1210c {
   @extend %numberBadge !optional;
-}
-.base__5ed84 {
-  @extend %numberBadgeBase !optional;
-}
-.baseShapeRound_c1de89 {
-  @extend %numberBadgeBaseShapeRound !optional;
 }
 .textBadge_f05120 {
   @extend %textBadge !optional;
@@ -1288,20 +1282,20 @@
 .svg__34dd4 {
   @extend %guildSVG !optional;
 }
-.childWrapper_a6ce15 {
+.childWrapper__760c6 {
   @extend %guildChildWrapper !optional;
 }
-.acronym_fb7739 {
+.acronym__88ca6 {
   @extend %guildAcronym !optional;
 }
 .iconBadge__19638 {
   @extend %guildBadge !optional;
 }
-.icon__62c73 {
+.icon__95c50 {
   @extend %guildBadgeIcon !optional;
 }
 .isCurrentUserConnected__3bd70 {
-  @extend %guildBadgeParticipating !optional;
+  @extend %guildBadgeConnected !optional;
 }
 .placeholderMask_ca6625 {
   @extend %guildPlaceholderMask !optional;
@@ -1537,6 +1531,9 @@
 }
 .peopleColumn__0c784 {
   @extend %friendsColumn !optional;
+}
+.searchBar__310d8 {
+  @extend %friendsSearch !optional;
 }
 .peopleListItem_dab480 {
   @extend %friendsItem !optional;

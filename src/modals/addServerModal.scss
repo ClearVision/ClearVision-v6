@@ -30,17 +30,8 @@
   color: hsla(0, 0%, 100%, 0.7) !important;
 }
 // CREATE SERVER
-%themeLight {
-  %createServerTitle,
-  %createServerSubtitle {
-    color: hsla(0, 0%, 100%, 0.7) !important;
-  }
-  %createServerIconContainer > svg > circle {
-    fill: $main-color;
-  }
-  %createServerSkip {
-    color: hsla(0, 0%, 100%, 0.7) !important;
-  }
+%createServerIconContainer > svg > circle {
+  fill: $main-color;
 }
 %createServerOtherBackButton,
 %createServerBackButton {
