@@ -48,6 +48,22 @@
   background: hsla(0, 0%, 100%, 0.07);
 }
 
+// HOME & ACRONYM
+%guildChildWrapper {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: hsla(0, 0%, 100%, 0.7);
+  transition: all 0.3s ease-in-out;
+}
+%guildNav {
+  &:hover,
+  &%guildNavSelected {
+    %guildChildWrapper {
+      background-color: $main-color;
+      color: #fff;
+    }
+  }
+}
+
 // PILL
 %guildPill {
   overflow: visible;
@@ -60,22 +76,6 @@
   box-shadow: 0 0 20px -1px $main-color;
   &[style*='height: 8px'] {
     height: 10px !important;
-  }
-}
-
-// ACRONYM
-%guildChildWrapper {
-  background-color: rgba(0, 0, 0, 0.3);
-  color: hsla(0, 0%, 100%, 0.7);
-  transition: all 0.3s ease-in-out;
-}
-%guildLink {
-  &:hover,
-  &%guildLinkSelected {
-    %guildChildWrapper {
-      background-color: $main-color;
-      color: #fff;
-    }
   }
 }
 
