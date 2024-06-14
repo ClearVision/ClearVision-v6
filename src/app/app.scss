@@ -23,7 +23,7 @@ body {
   }
 }
 %backdrop {
-  background: none !important;
+  background: cv('bg.backdrop.overlay');
 }
 
 %loading {
