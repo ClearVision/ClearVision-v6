@@ -201,14 +201,32 @@
 %copyGiftCode {
   background-color: hsla(0, 0%, 100%, 0.07);
 }
+%themeDark %giftQuestContainer {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+%giftQuestProgress {
+  color: $main-color !important;
+}
 
 // SERVER BOOST
-%userSettingsBoostHeader,
+%userSettingsBoostHeaderGradient {
+  fill: rgba(0, 0, 0, 0.6);
+}
+%userSettingsBoostApplied {
+  background-color: transparent;
+}
 %userSettingsBoostGuildContainer,
+%userSettingsBoostContainer,
 %userSettingsBoostGuildSearchWrapper,
 %userSettingsBoostRecognitionCard,
 %userSettingsBoostFAQ {
   background-color: rgba(0, 0, 0, 0.4);
+}
+%userSettingsBoostTransferSearch {
+  background-color: rgba(255, 255, 255, 0.07);
+}
+%userSettingsBoostTransferButton {
+  background-color: $main-color;
 }
 
 // APPEARANCE

@@ -3799,11 +3799,14 @@ pre {
 .giftCard__4b868 {
   @extend %userSettingsNitroGiftCard !optional;
 }
-.header__5c5a9 {
-  @extend %userSettingsBoostHeader !optional;
+.gradient__79da8 {
+  @extend %userSettingsBoostHeaderGradient !optional;
 }
 .guildContainer_fef06f {
   @extend %userSettingsBoostGuildContainer !optional;
+}
+.boostContainer__1f6bc {
+  @extend %userSettingsBoostContainer !optional;
 }
 .wrapper__6b347 {
   @extend %userSettingsBoostGuildSearchWrapper !optional;
@@ -3813,6 +3816,15 @@ pre {
 }
 .faq__1d001 {
   @extend %userSettingsBoostFAQ !optional;
+}
+.appliedBoostContainer_d9ceba {
+  @extend %userSettingsBoostApplied !optional;
+}
+.selectSearch__4ed9d {
+  @extend %userSettingsBoostTransferSearch !optional;
+}
+.selectGuildPseudoCta_bad4c9 {
+  @extend %userSettingsBoostTransferButton !optional;
 }
 .noItemsIcon__299fb,
 .noItemsIcon_ead6f9 {
@@ -4454,6 +4466,12 @@ pre {
 }
 .promotionCard_f4dd43 {
   @extend %giftPromotionCard !optional;
+}
+.outerContainer_a76fe9 {
+  @extend %giftQuestContainer !optional;
+}
+.gridProgressBar__93562 {
+  @extend %giftQuestProgress !optional;
 }
 .phoneField__47dd1 {
   @extend %phoneVerification !optional;
