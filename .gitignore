@@ -8,4 +8,5 @@ test/
 # Script files
 *.bak
 scripts/
+lib/selectors/*.diff
 addons/
