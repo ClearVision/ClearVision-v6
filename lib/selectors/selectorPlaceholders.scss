@@ -736,6 +736,12 @@
 .header_b56bbc {
   @extend %gifPickerHeader !optional;
 }
+.searchBar_b56bbc {
+  @extend %gifPickerSearch !optional;
+}
+.input_c18ec9 {
+  @extend %gifPickerSearchInput !optional;
+}
 .clear__9f79a {
   @extend %gifPickerSearchIconClear !optional;
 }
@@ -1253,7 +1259,7 @@
   @extend %newGuildTooltipPointer !optional;
 }
 .container_cfbfb9 {
-  @extend %newGuilTooltipCard !optional;
+  @extend %newGuildTooltipCard !optional;
 }
 .wrapper_fea3ef {
   @extend %guildsWrapper !optional;
@@ -4272,8 +4278,14 @@ pre {
 .calloutContainer_fd8ff1 {
   @extend %inboxChattingAbout !optional;
 }
+.container_fb4810 {
+  @extend %createThreadContainer !optional;
+}
 .container_e664f3 {
   @extend %threadsPopoutContainer !optional;
+}
+.searchBox_e664f3 {
+  @extend %threadsSearch !optional;
 }
 .header_e664f3 {
   @extend %threadsPopoutHeader !optional;

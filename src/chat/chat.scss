@@ -108,3 +108,14 @@
 div[aria-checked="true"] %replyMentionButton {
   color: $main-color !important;
 }
+
+// THREAD
+%createThreadContainer {
+  background-color: transparent;
+}
+%threadIconWrapper {
+  background-color: $main-color;
+  svg path {
+    fill: #fff;
+  }
+}
