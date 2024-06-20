@@ -1237,6 +1237,24 @@
 .tooltipPointer_f4c8b7 {
   @extend %commandTooltipPointer !optional;
 }
+.upsellTooltipWrapper_dafa63 {
+  @extend %upsellTooltipText !optional;
+}
+.caretTopCenter_dafa63 {
+  @extend %upsellTooltipCaretTopCenter !optional;
+}
+.reactionTooltip_fba897 {
+  @extend %reactionTooltip !optional;
+}
+.container_be6a5c {
+  @extend %newGuildTooltip !optional;
+}
+.tooltipPointer_be6a5c {
+  @extend %newGuildTooltipPointer !optional;
+}
+.container_cfbfb9 {
+  @extend %newGuilTooltipCard !optional;
+}
 .wrapper_fea3ef {
   @extend %guildsWrapper !optional;
 }
@@ -4166,15 +4184,6 @@ pre {
 }
 .premiumUpsell_aae531 {
   @extend %quickReactPremiumUpsell !optional;
-}
-.upsellTooltipWrapper_dafa63 {
-  @extend %upsellTooltipText !optional;
-}
-.caretTopCenter_dafa63 {
-  @extend %upsellTooltipCaretTopCenter !optional;
-}
-.reactionTooltip_fba897 {
-  @extend %reactionTooltip !optional;
 }
 .messagesPopoutWrap_ac90a2 {
   @extend %messagesPopoutWrap !optional;

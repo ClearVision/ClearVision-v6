@@ -76,3 +76,14 @@
   border-radius: 3px;
   font-size: 13px;
 }
+
+// NEW GUILD TOOLTIP
+%newGuildTooltip {
+  background: rgba(0, 0, 0, 0.9);
+}
+%newGuildTooltipPointer {
+  border-right-color: rgba(0, 0, 0, 0.9);
+}
+%newGuildTooltipCard {
+	background-color: hsla(0, 0%, 100%, .1);
+}
