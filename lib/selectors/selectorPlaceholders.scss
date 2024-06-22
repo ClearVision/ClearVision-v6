@@ -46,7 +46,7 @@
 .withLayer_e4f2ae {
   @extend %backdropWithLayer !optional;
 }
-.notice__5fd4c {
+.notice_be03aa {
   @extend %notice !optional;
 }
 .colorDefault__438d3 {
@@ -58,13 +58,13 @@
 .colorDanger__5d2e7 {
   @extend %noticeDanger !optional;
 }
-.colorStreamerMode_cb7f84 {
+.colorStreamerMode_be03aa {
   @extend %noticeStreamerMode !optional;
 }
 .textLink_d572b7 {
   @extend %noticeTextLink !optional;
 }
-.closeButton__90904 {
+.closeButton_be03aa {
   @extend %noticeClose !optional;
 }
 .button__33db6 {
@@ -688,13 +688,13 @@
 .noChannel_e1ef5f {
   @extend %noChannel !optional;
 }
-.image__08515 {
+.image_a3747e {
   @extend %noChannelImage !optional;
 }
-.title__496be {
+.title_a3747e {
   @extend %noChannelTitle !optional;
 }
-.text__0e310 {
+.text_a3747e {
   @extend %noChannelText !optional;
 }
 .wrapper_cdfd51 {
@@ -738,9 +738,6 @@
 }
 .input_c18ec9 {
   @extend %gifPickerSearchInput !optional;
-}
-.clear__9f79a {
-  @extend %gifPickerSearchIconClear !optional;
 }
 .content_b56bbc {
   @extend %gifPickerContent !optional;
@@ -817,7 +814,7 @@
 .textArea_d0696b {
   @extend %textArea !optional;
 }
-.placeholder__443e5 {
+.placeholder_a552a6 {
   @extend %textAreaPlaceholder !optional;
 }
 .textAreaSlate_d0696b {
@@ -943,7 +940,7 @@
 .iconContainer_c06a56 {
   @extend %timeoutIcon !optional;
 }
-.item__126a6 {
+.item_aa2afb {
   @extend %timeoutModalItem !optional;
 }
 .selectorButtonSelected_aa7dff {
@@ -961,7 +958,7 @@
 .numberBadge_df8943 {
   @extend %numberBadge !optional;
 }
-.textBadge_f05120 {
+.textBadge_df8943 {
   @extend %textBadge !optional;
 }
 .button_dd4f85 {
@@ -1453,23 +1450,17 @@
 .searchAnswer_b0fa94 {
   @extend %chatSearchAnswer !optional;
 }
-.container__33507 {
+.searchBar_e0264e {
   @extend %headerSearchBar !optional;
 }
-.inner__999f6 {
+.inner_c18ec9 {
   @extend %headerSearchBarInner !optional;
-}
-.input__48d49 {
-  @extend %headerSearchInput !optional;
 }
 .iconLayout__67261 {
   @extend %headerSearchIconLayout !optional;
 }
 .icon_fb52f0 {
   @extend %headerSearchIcon !optional;
-}
-.clear__9f79a {
-  @extend %headerSearchIconClear !optional;
 }
 .backButton_b56bbc {
   @extend %headerSearchBackButton !optional;
@@ -2043,10 +2034,10 @@ pre {
 .lookFilled_dd4f85.colorBrand_dd4f85 {
   @extend %inviteButtonExpired !optional;
 }
-.wrapper_f316dd {
+.wrapper_f72aac {
   @extend %player !optional;
 }
-.wrapperAudio_f316dd {
+.wrapperAudio_f72aac {
   @extend %playerAudio !optional;
 }
 .wrapperControlsHidden_f316dd {
@@ -2217,9 +2208,6 @@ pre {
 .repliedTextContent_ec86aa {
   @extend %messageRepliedTextContent !optional;
 }
-.repliedTextContentIcon_da8b30 {
-  @extend %messageRepliedTextContentIcon !optional;
-}
 .repliedTextPlaceholder_ec86aa {
   @extend %messageRepliedTextPlaceholder !optional;
 }
@@ -2379,7 +2367,7 @@ pre {
 .root_f9a4c9 {
   @extend %modalRoot !optional;
 }
-.header__352e1 {
+.header_f9a4c9 {
   @extend %modalHeader !optional;
 }
 .footer_f9a4c9 {
@@ -2496,10 +2484,10 @@ pre {
 .contentWrapper_ed5743 {
   @extend %webInviteModalContentWrapper !optional;
 }
-.pillIconOnline_dc6abe {
+.pillIconOnline_b83a05 {
   @extend %webInviteModalOnline !optional;
 }
-.pillIconTotal_dc6abe {
+.pillIconTotal_b83a05 {
   @extend %webInviteModalTotal !optional;
 }
 .activeIcon_e1268c {
@@ -2595,19 +2583,19 @@ pre {
 .search_f69601 {
   @extend %discoverSearch !optional;
 }
-.searchBox__56feb {
+.searchBox_f69601 {
   @extend %discoverSearchBox !optional;
 }
 .searchPageBox_ce978e {
   @extend %discoverSearchPageBox !optional;
 }
-.searchBoxInput__56498 {
+.searchBoxInput_f69601 {
   @extend %discoverSearchBoxInput !optional;
 }
-.searchIcon_d1a3c1 {
+.searchIcon_f69601 {
   @extend %discoverSearchBoxIconSearch !optional;
 }
-.clearIcon__21453 {
+.clearIcon_d83b4d {
   @extend %discoverSearchBoxClearIcon !optional;
 }
 .categoryItem_c72b37 {
