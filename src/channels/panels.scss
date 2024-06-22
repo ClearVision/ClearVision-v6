@@ -32,7 +32,7 @@
 /* Account for account panel width scaling under
   new design */
 %themeDark %accountPanelAvatarWrapper {
-  min-width: calc(100% - 120px);
+  min-width: calc(var(--channels-width) - 120px);
 }
 
 // BUTTONS
