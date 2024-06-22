@@ -75,16 +75,13 @@
       background-color: $hover-color;
     }
     &%callButtonActive {
-      background-color: #fff;
+      background-color: $hover-color;
       &:hover {
-        background-color: hsla(0, 0%, 100%, 0.7);
+        background-color: $hover-color;
       }
     }
-    %callCenterIcon,
-    %micSlash {
-      color: #fff;
-    }
     %callCenterIcon {
+      color: #fff;
       &%callButtonActive {
         color: $main-color;
       }

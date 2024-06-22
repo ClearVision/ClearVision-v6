@@ -610,9 +610,6 @@
 .centerIcon_ef18ee {
   @extend %callCenterIcon !optional;
 }
-.slash__858f6 {
-  @extend %micSlash !optional;
-}
 .colorable_ef18ee {
   @extend %callButtonColorable !optional;
 }
@@ -1405,10 +1402,10 @@
 .topic_bf3bbb {
   @extend %headerBarTopic !optional;
 }
-.akaBadge__27cd4 {
+.akaBadge_d6c26f {
   @extend %headerBarAkaBadge !optional;
 }
-.nicknames__12efb {
+.nicknames_d6c26f {
   @extend %headerBarNicknames !optional;
 }
 .iconWrapper_e44302 {
@@ -2247,7 +2244,7 @@ pre {
 .icon_e62b38 {
   @extend %messageSystemIcon !optional;
 }
-.wrapper_a7c28c {
+.wrapper_bf1b19 {
   @extend %mentionWrapper !optional;
 }
 .mention {
@@ -2955,7 +2952,7 @@ pre {
 .hintValue_b0286e {
   @extend %searchPopoutHintValue !optional;
 }
-.calendarPicker__47c85 {
+.calendarPicker_be05cd  {
   @extend %calendarPicker !optional;
 }
 .react-datepicker {
@@ -3005,30 +3002,6 @@ pre {
 }
 .react-datepicker__day--outside-month {
   @extend %datepickerDayOutsideMonth !optional;
-}
-.react-datepicker__day--weekend {
-  @extend %datepickerDayWeekend !optional;
-}
-.react-datepicker__day--mon {
-  @extend %datepickerDayMon !optional;
-}
-.react-datepicker__day--tue {
-  @extend %datepickerDayTue !optional;
-}
-.react-datepicker__day--wed {
-  @extend %datepickerDayWed !optional;
-}
-.react-datepicker__day--thu {
-  @extend %datepickerDayThu !optional;
-}
-.react-datepicker__day--fri {
-  @extend %datepickerDayFri !optional;
-}
-.react-datepicker__day--sat {
-  @extend %datepickerDaySat !optional;
-}
-.react-datepicker__day--sun {
-  @extend %datepickerDaySun !optional;
 }
 .statusItem_e0f739 {
   @extend %statusPickerItem !optional;
