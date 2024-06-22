@@ -31,8 +31,8 @@
 }
 /* Account for account panel width scaling under
   new design */
-%accountPanelAvatarWrapper {
-  min-width: calc(100% - 120px);
+%themeDark %accountPanelAvatarWrapper {
+  min-width: calc(var(--channels-width) - 120px);
   &:hover {
     background-color: hsla(0, 0%, 100%, .1);
   }
