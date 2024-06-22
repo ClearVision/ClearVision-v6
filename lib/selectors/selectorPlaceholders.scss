@@ -1009,10 +1009,10 @@
 .contents_dd4f85 {
   @extend %buttonContents !optional;
 }
-.button__292b6 {
+.button_e258f5 {
   @extend %buttonCircle !optional;
 }
-.disabled__4d064 {
+.disabled_e258f5 {
   @extend %buttonCircleDisabled !optional;
 }
 .checkboxWrapper_f6cde8 {
@@ -3175,7 +3175,7 @@ pre {
 .attendeeCTA_ca5ce6 {
   @extend %settingsAttendeeCTA !optional;
 }
-.customColorPicker_bbc020 {
+.customColorPicker_b91d66 {
   @extend %settingsColorPickerCustom !optional;
 }
 .container_b6cd66 {
@@ -3220,17 +3220,20 @@ pre {
 .availabilityIndicator_b29edb {
   @extend %guildFeatureAvailabilityIndicator !optional;
 }
-.roleRow_a930f1 {
-  @extend %roleRow !optional;
-}
-.roleRowDisableHover_a930f1 {
-  @extend %roleRowDisabledHover !optional;
-}
 .container_cc7b67 {
   @extend %guildSettingsRoleDefaultPermissions !optional;
 }
 .icon_cc7b67 {
   @extend %guildSettingsRoleDefaultPermissionsIcon !optional;
+}
+.container_c18ec9 {
+  @extend %guildSettingsRoleSearch !optional;
+}
+.roleRow_a930f1 {
+  @extend %guildSettingsRoleRow !optional;
+}
+.roleRowDisableHover_a930f1 {
+  @extend %guildSettingsRoleRowDisabled !optional;
 }
 .titleContainer_e87574 {
   @extend %guildSettingsRoleBackContainer !optional;
@@ -4206,7 +4209,7 @@ pre {
 .messageContainer_ddb5b4 {
   @extend %recentMentionsMessagesContainer !optional;
 }
-.jumpButton_aab0bc {
+.jumpButton_ac3dc2 {
   @extend %recentMentionsJumpButton !optional;
 }
 .text_ac3dc2 {
@@ -4362,8 +4365,8 @@ pre {
 .card_cc2c09 {
   @extend %eventCard !optional;
 }
-.eventStatusBrand__08773 {
-  @extend %eventStatusBrand !optional;
+.newBadgeText_d6a475 {
+  @extend %eventNewBadgeText !optional;
 }
 .eventStatusLabel_d6a475 {
   @extend %eventStatusLabel !optional;
