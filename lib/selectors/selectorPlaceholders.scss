@@ -2658,14 +2658,20 @@ pre {
 .emptyHeader_e37a20 {
   @extend %discoverEmptyTitle !optional;
 }
-.container__13b2a {
-  @extend %connectionInfo !optional;
+.debugPanelStandalone_feab95 {
+  @extend %connectionDebugPopout !optional;
 }
-.popoutBottom__4228a {
-  @extend %connectionInfoBottom !optional;
+.popoutText_c73c22 {
+  @extend %connectionDebugText !optional;
 }
-.secured_d13ee6 {
-  @extend %connectionInfoSecured !optional;
+.popoutTextDetails_c73c22 {
+  @extend %connectionDebugTextDetails !optional;
+}
+.popoutBottom_c73c22 {
+  @extend %connectionDebugBottom !optional;
+}
+.secured_c73c22 {
+  @extend %connectionDebugSecured !optional;
 }
 .emojiPicker_c6ee36 {
   @extend %emojiPicker !optional;
