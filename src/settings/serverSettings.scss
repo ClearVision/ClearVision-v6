@@ -29,7 +29,7 @@
   &:last-child:after {
     background-color: hsla(0, 0%, 100%, 0.1);
   }
-  &:hover:not(%guildSettingsRSoleRowDisabled) {
+  &:hover:not(%guildSettingsRoleRowDisabled) {
     background-color: rgba(255, 255, 255, 0.05);
     %buttonCircle & {
       background-color: hsla(0, 0%, 0%, 0.6);

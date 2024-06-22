@@ -417,9 +417,6 @@
 .nameTag_b2ca13 {
   @extend %accountPanelNameTag !optional;
 }
-.usernameContainer__22048 {
-  @extend %accountPanelUsernameContainer !optional;
-}
 .title_d1da5f {
   @extend %accountPanelUsername !optional;
 }
@@ -1947,13 +1944,13 @@ pre {
 .embedFull_ad0b71 {
   @extend %embedFull !optional;
 }
-.imageWrapper__178ee {
+.imageWrapper_d4597d {
   @extend %imageWrapper !optional;
 }
-.imageWrapperBackground__03a80 {
+.imageWrapperBackground_d4597d {
   @extend %imageWrapperBackground !optional;
 }
-.imageError__3af5f {
+.imageError_d4597d {
   @extend %imageError !optional;
 }
 .hoverButtonGroup_ab8b23 {
@@ -4194,7 +4191,7 @@ pre {
 .regionSelectPopout_ccb5ca {
   @extend %regionSelectPopout !optional;
 }
-.quickSelectPopoutOption_b852b1 {
+.quickSelectPopoutOption_abbf45 {
   @extend %regionSelectPopoutOption !optional;
 }
 .regionSelectName_ccb5ca {
@@ -4260,19 +4257,10 @@ pre {
 .header_e664f3 {
   @extend %threadsPopoutHeader !optional;
 }
-.tabBar_e25e30 {
-  @extend %threadsPopoutTabBar !optional;
-}
-.tab_e864e6 {
-  @extend %threadsPopoutTab !optional;
-}
-.active__90acf {
-  @extend %threadsPopoutTabActive !optional;
-}
 .icon_ebd74a {
   @extend %threadsPopoutIcon !optional;
 }
-.icon_da3997 {
+.icon_f054bd {
   @extend %threadChatIcon !optional;
 }
 .jump_d5deea {
@@ -4437,7 +4425,7 @@ pre {
 .unreadMentionsIndicatorBottom_fea3ef {
   @extend %guildUnreadMentionsBottom !optional;
 }
-.authBox_dc6abe {
+.authBox_b83a05 {
   @extend %loginAuthBox !optional;
 }
 .list_f20a46 {

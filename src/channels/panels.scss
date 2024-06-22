@@ -31,8 +31,11 @@
 }
 /* Account for account panel width scaling under
   new design */
-%themeDark %accountPanelAvatarWrapper {
+%accountPanelAvatarWrapper {
   min-width: calc(100% - 120px);
+  &:hover {
+    background-color: hsla(0, 0%, 100%, .1);
+  }
 }
 
 // BUTTONS

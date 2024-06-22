@@ -1,7 +1,7 @@
 /* Region Selector */
 
 %themeDark %regionSelectPopout {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: cv('bg.general.popout');
 
   %regionSelectPopoutOption {
     background-color: transparent;
