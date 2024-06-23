@@ -517,6 +517,9 @@
 .interactiveSelected_c91bad {
   @extend %privateChannelInteractiveSelected !optional;
 }
+.highlighted_f9647d {
+  @extend %privateChannelHighlighted !optional;
+}
 .avatar_f9647d {
   @extend %privateChannelAvatar !optional;
 }
