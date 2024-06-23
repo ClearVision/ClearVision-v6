@@ -167,12 +167,6 @@
 }
 %automodEditCard {
   background-color: hsla(0, 0%, 0%, 0.4);
-  &%automodEditCardActive {
-    background-color: hsla(0, 0%, 0%, 0.4);
-    &%automodEditCardToggled {
-      background-color: hsla(0, 0%, 0%, 0.4);
-    }
-  }
 }
 %automodRuleIconContainer {
   background-color: $main-color;

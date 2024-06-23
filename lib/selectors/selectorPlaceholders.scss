@@ -1105,7 +1105,7 @@
 .redesignIconChildContainer_ff7d90 {
   @extend %guildIconChildContainer !optional;
 }
-.scrollerWrap_f4f01d {
+.wrapper_fbb822 {
   @extend %scrollerWrap !optional;
 }
 .scrollerBase_eed6a8 {
@@ -1453,10 +1453,7 @@
 .inner_c18ec9 {
   @extend %headerSearchBarInner !optional;
 }
-.iconLayout__67261 {
-  @extend %headerSearchIconLayout !optional;
-}
-.icon_fb52f0 {
+.icon_c18ec9 {
   @extend %headerSearchIcon !optional;
 }
 .backButton_b56bbc {
@@ -1604,9 +1601,6 @@
 .rowWrapperDim_f1629a {
   @extend %libraryTableRowWrapperDim !optional;
 }
-.rowBackground__3fe13 {
-  @extend %libraryTableRowBackground !optional;
-}
 .row_f1629a {
   @extend %libraryTableRow !optional;
 }
@@ -1663,9 +1657,6 @@
 }
 .playButtonContents_db7222 {
   @extend %libraryPlayButtonContents !optional;
-}
-.buttonShine_fb742e {
-  @extend %libraryPlayButtonShine !optional;
 }
 .container_cbd271 {
   @extend %membersContainer !optional;
@@ -2442,17 +2433,17 @@ pre {
 .content_cc6017 {
   @extend %serverBoostPerkContent !optional;
 }
-.icon_bb7288 {
-  @extend %serverBoostPaymentIcon !optional;
+.iconWrapper_cc6793 {
+  @extend %serverBoostPaymentQuantityIconWrapper !optional;
+}
+.icon_cc6793 {
+  @extend %serverBoostPaymentQuantityIcon !optional;
 }
 .upsellFooter_a26a1a {
   @extend %serverBoostPaymentUpsellFooter !optional;
 }
 .perksList_cf948e {
   @extend %serverBoostPaymentPerksList !optional;
-}
-.iconWrapper__0d13e {
-  @extend %serverBoostPaymentIconWrapper !optional;
 }
 .actions_f8746a {
   @extend %serverBoostPaymentActions !optional;
@@ -3379,9 +3370,6 @@ pre {
 .editCard_cd99d3 {
   @extend %automodEditCard !optional;
 }
-.active_ef2ec5 {
-  @extend %automodEditCardActive !optional;
-}
 .toggled_cd99d3 {
   @extend %automodEditCardToggled !optional;
 }
@@ -3790,8 +3778,8 @@ pre {
 .giftCard_cf74b3 {
   @extend %userSettingsNitroGiftCard !optional;
 }
-.gradient_e74e54 {
-  @extend %userSettingsBoostHeaderGradient !optional;
+.wave_e74e54 {
+  @extend %userSettingsBoostHeaderWave !optional;
 }
 .guildContainer_e0d799 {
   @extend %userSettingsBoostGuildContainer !optional;
@@ -3903,7 +3891,7 @@ pre {
 .container_c67e31 {
   @extend %userSettingsKeybindContainer !optional;
 }
-.disabled__97701 {
+.containerDisabled_ebcd80 {
   @extend %userSettingsKeybindDisabled !optional;
 }
 .recording_ebcd80 {
@@ -5081,14 +5069,11 @@ pre {
 .toolbar_de3e42 {
   @extend %chatToolbar !optional;
 }
+.button_de3e42 {
+  @extend %chatToolbarButton !optional;
+}
 .icon_de3e42 {
   @extend %chatToolbarIcon !optional;
-}
-.active__05fbc {
-  @extend %chatToolbarActive !optional;
-}
-.hover_d0ebf2 {
-  @extend %chatToolbarHover !optional;
 }
 .popoutContainer_cf58b5 {
   @extend %emojiInfoContainer !optional;

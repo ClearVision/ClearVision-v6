@@ -67,15 +67,15 @@
 }
 
 // SERVER BOOST PAYMENT MODAL
-%serverBoostPaymentIcon {
+%themeDark %serverBoostPaymentQuantityIconWrapper {
+  background: hsla(0, 0%, 0%, 0.4);
+}
+%serverBoostPaymentQuantityIcon {
   color: #fff;
   &:hover {
     color: #fff;
     background-color: $hover-color;
   }
-}
-%themeDark %serverBoostPaymentIconWrapper {
-  background: hsla(0, 0%, 0%, 0.4);
 }
 %serverBoostPaymentActions %input {
   box-shadow: none;
