@@ -2508,8 +2508,11 @@ pre {
 .actionColor_fc39e7 {
   @extend %userProfileActionColor !optional;
 }
-.translate_f88ae3 {
-  @extend %userPopoutTranslate !optional;
+.banner_c3e427 {
+  @extend %userProfileBanner !optional;
+}
+.bannerPremium_c3e427 {
+  @extend %userProfileBannerPremium !optional;
 }
 .userPopoutOuter_c69a7b {
   @extend %userPopoutOuter !optional;
@@ -2913,6 +2916,9 @@ pre {
 }
 .animatorRight_f88ae3 {
   @extend %popoutAnimatorRight !optional;
+}
+.translate_f88ae3 {
+  @extend %popoutTranslate !optional;
 }
 .input_effbe2 {
   @extend %popoutInput !optional;

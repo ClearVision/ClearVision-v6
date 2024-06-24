@@ -4,7 +4,7 @@
   z-index: 0;
 }
 /* USER PROFILE MODAl */
-.root_f9a4c9 {
+%modalRoot {
   %userProfileOuterUnthemed {
     background: transparent;
     %userModalOverlayBackground {
@@ -23,16 +23,14 @@
         z-index: -1;
       }
     }    
-    .banner_c3e427 {
+    %userProfileBanner {
       -webkit-mask: linear-gradient(to bottom, #000, transparent 93%);
       mask: linear-gradient(to bottom, #000, transparent 93%);
     }
   }
-  .userProfileOuterThemed_c69a7b {
-    .banner_c3e427 {
-      -webkit-mask: linear-gradient(to bottom, #000 50%, transparent);
-      mask: linear-gradient(to bottom, #000 50%, transparent);
-    }
+  %userProfileBannerPremium {
+    -webkit-mask: linear-gradient(to bottom, #000 50%, transparent);
+    mask: linear-gradient(to bottom, #000 50%, transparent);
   }
 }
 
