@@ -1,5 +1,5 @@
 // EMOJI INFO POPOUT
-%fullMotion %popoutTranslate:has(%userPopoutOuter) {
+%fullMotion %popoutTranslate:has(%emojiInfoContainer) {
   position: fixed;
   z-index: 1;
 }
