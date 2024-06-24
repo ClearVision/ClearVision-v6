@@ -208,6 +208,10 @@
 // CHAT
 %forumChat {
   background: transparent;
+  &%forumChatFloating {
+    background-color: hsla(0, 0%, 0%, 0.6);
+    border-color: hsla(0, 0%, 100%, 0.07);
+  }
 }
 %forumChatIcon {
   background: $main-color;

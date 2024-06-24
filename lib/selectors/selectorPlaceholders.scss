@@ -4638,6 +4638,9 @@ pre {
 .container_d1c246 {
   @extend %forumChat !optional;
 }
+.floating_d1c246 {
+  @extend %forumChatFloating !optional;
+}
 .pill_c993da {
   @extend %forumTag !optional;
 }
