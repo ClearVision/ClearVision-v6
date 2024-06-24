@@ -270,6 +270,12 @@
 .actionIcon_f6f816 {
   @extend %channelActionIcon !optional;
 }
+.statusText_e66732 {
+  @extend %channelStatusText !optional;
+}
+.pencilIcon_e66732 {
+  @extend %channelStatusPencilIcon !optional;
+}
 .unread_d8bfb3 {
   @extend %channelUnreadPill !optional;
 }
