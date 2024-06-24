@@ -2493,6 +2493,64 @@ pre {
 .footer_c5a065 {
   @extend %authModalFooter !optional;
 }
+.userProfileOuterUnthemed_c69a7b {
+  @extend %userProfileOuterUnthemed !optional;
+}
+.userPanelInnerThemed_c69a7b {
+  @extend %userProfileDMInnerThemed !optional;
+}
+.badgeList_ab525a {
+  @extend %userProfileDMBadgeList !optional;
+}
+.overlayBackground_c69a7b {
+  @extend %userProfileDMOverlayBackground !optional;
+}
+.actionColor_fc39e7 {
+  @extend %userProfileActionColor !optional;
+}
+.translate_f88ae3 {
+  @extend %userPopoutTranslate !optional;
+}
+.userPopoutOuter_c69a7b {
+  @extend %userPopoutOuter !optional;
+}
+.userPopoutInner_c69a7b {
+  @extend %userPopoutInner !optional;
+}
+.userProfileInnerThemedPremiumWithoutBanner_c69a7b,
+.userProfileInnerThemedWithBanner_c69a7b {
+  @extend %userPopoutInnerThemed !optional;
+}
+.popoutBanner_c3e427 {
+  @extend %userPopoutBanner !optional;
+}
+.popoutNoBannerPremium_c3e427 {
+  @extend %userPopoutNoBannerPremium !optional;
+}
+.popoutBannerPremium_c3e427 {
+  @extend %userPopoutBannerPremium !optional;
+}
+.profileBadges_f89da9 {
+  @extend %userPopoutProfileBadges !optional;
+}
+.userPopoutOverlayBackground_c69a7b {
+  @extend %userPopoutOverlayBackground !optional;
+}
+.profileCustomizationPreview_ab876d {
+  @extend %userPopoutCustomizationPreview !optional;
+}
+.buttonColor_e36233 {
+  @extend %userPopoutButtonColor !optional;
+}
+.roles_fa2f72 {
+  @extend %userPopoutRoles !optional;
+}
+.note_c90ad7 {
+  @extend %userPopoutNote !optional;
+}
+.messageInputContainer_f2c0a8 {
+  @extend %userPopoutMessageInputContainer !optional;
+}
 .userProfileModalOuter_c69a7b {
   @extend %userModalOuter !optional;
 }
@@ -2996,64 +3054,6 @@ pre {
 }
 .status_c7d26b {
   @extend %statusPickerIcon !optional;
-}
-.userProfileOuterUnthemed_c69a7b {
-  @extend %userProfileOuterUnthemed !optional;
-}
-.userPanelInnerThemed_c69a7b {
-  @extend %userProfileDMInnerThemed !optional;
-}
-.badgeList_ab525a {
-  @extend %userProfileDMBadgeList !optional;
-}
-.overlayBackground_c69a7b {
-  @extend %userProfileDMOverlayBackground !optional;
-}
-.actionColor_fc39e7 {
-  @extend %userProfileActionColor !optional;
-}
-.translate_f88ae3 {
-  @extend %userPopoutTranslate !optional;
-}
-.userPopoutOuter_c69a7b {
-  @extend %userPopoutOuter !optional;
-}
-.userPopoutInner_c69a7b {
-  @extend %userPopoutInner !optional;
-}
-.userProfileInnerThemedPremiumWithoutBanner_c69a7b,
-.userProfileInnerThemedWithBanner_c69a7b {
-  @extend %userPopoutInnerThemed !optional;
-}
-.popoutBanner_c3e427 {
-  @extend %userPopoutBanner !optional;
-}
-.popoutNoBannerPremium_c3e427 {
-  @extend %userPopoutNoBannerPremium !optional;
-}
-.popoutBannerPremium_c3e427 {
-  @extend %userPopoutBannerPremium !optional;
-}
-.profileBadges_f89da9 {
-  @extend %userPopoutProfileBadges !optional;
-}
-.userPopoutOverlayBackground_c69a7b {
-  @extend %userPopoutOverlayBackground !optional;
-}
-.profileCustomizationPreview_ab876d {
-  @extend %userPopoutCustomizationPreview !optional;
-}
-.buttonColor_e36233 {
-  @extend %userPopoutButtonColor !optional;
-}
-.roles_fa2f72 {
-  @extend %userPopoutRoles !optional;
-}
-.note_c90ad7 {
-  @extend %userPopoutNote !optional;
-}
-.messageInputContainer_f2c0a8 {
-  @extend %userPopoutMessageInputContainer !optional;
 }
 .errorPage_dd2aa2 {
   @extend %errorPage !optional;
@@ -4940,6 +4940,9 @@ pre {
 .pageButton_b48941 {
   @extend %membersChannelPage !optional;
 }
+.statusDot_ab876d {
+  @extend %userSettingsProfilesPreviewStatus !optional;
+}
 .optionBox_f2f431 {
   @extend %avatarOptionBox !optional;
 }
@@ -4987,9 +4990,6 @@ pre {
 }
 .effectDescriptionContainer_a9d381 {
   @extend %profileEffectDescriptionContainer !optional;
-}
-.statusDot_ab876d {
-  @extend %userProfileStatus !optional;
 }
 .shop_e77fa3 {
   @extend %shop !optional;

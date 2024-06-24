@@ -19,7 +19,7 @@
 }
 
 /*member list, profile*/
-:is(%avatarCursorDefault, %avatarMask, %userProfileStatus) rect {
+:is(%avatarCursorDefault, %avatarMask, %userSettingsProfilesPreviewStatus) rect {
   &[fill*='#80848e'] {
     fill: var(--offline-color);
   }
