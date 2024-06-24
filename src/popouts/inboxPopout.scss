@@ -123,11 +123,9 @@
 // FRIENDS BUTTON
 %friendRequestsButton {
   background: $main-color;
+  color: #fff;
   &:hover {
     background: $hover-color;
-  }
-  > svg > g > path {
-    color: #fff;
   }
 }
 
@@ -141,8 +139,8 @@
 }
 
 // INBOX HEADER BAR
-%topPill {
-  %topPillItemThemed {
+%tabBarTopPill {
+  %tabBarItemThemed {
     background-color: transparent;
     color: hsla(0, 0%, 100%, 0.5);
     transition: all 0.3s ease-in-out;
@@ -150,8 +148,8 @@
       background-color: rgba(0, 0, 0, 0.5);
       color: hsla(0, 0%, 100%, 0.7);
     }
-    &%topPillItemSelected {
-      &%topPillItem {
+    &%tabBarItemSelected {
+      &%tabBarItem {
         background-color: $main-color;
         color: #fff;
       }

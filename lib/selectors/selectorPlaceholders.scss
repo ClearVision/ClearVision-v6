@@ -1183,6 +1183,9 @@
 .item_a0 {
   @extend %tabBarItem !optional;
 }
+.topPill_a0 {
+  @extend %tabBarTopPill !optional;
+}
 .selected_a0 {
   @extend %tabBarItemSelected !optional;
 }
@@ -1528,18 +1531,6 @@
 }
 .selectedDot_b9d4cd {
   @extend %nitroPerksProgressDotSelected !optional;
-}
-.topPill_a0 {
-  @extend %topPill !optional;
-}
-.item_a0 {
-  @extend %topPillItem !optional;
-}
-.selected_a0 {
-  @extend %topPillItemSelected !optional;
-}
-.themed_a0 {
-  @extend %topPillItemThemed !optional;
 }
 .container_c2739c {
   @extend %friends !optional;
