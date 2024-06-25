@@ -2031,67 +2031,49 @@ pre {
 .wrapperControlsHidden_f316dd {
   @extend %playerControlsHidden !optional;
 }
-.metadata__7bef0 {
-  @extend %playerMetadata !optional;
-}
-.audioMetadata_f316dd {
+.audioMetadata_f72aac {
   @extend %playerAudioMetadata !optional;
 }
-.metadataContent_f316dd {
+.metadataContent_f72aac {
   @extend %playerMetadataContent !optional;
 }
-.metadataName__87840 {
-  @extend %playerMetadataName !optional;
-}
-.metadataSize_f316dd {
+.metadataSize_f72aac {
   @extend %playerMetadataSize !optional;
 }
-.metadataDownload_f316dd {
+.metadataDownload_f72aac {
   @extend %playerMetadataDownload !optional;
 }
-.metadataIcon_f316dd {
-  @extend %playerMetadataIcon !optional;
-}
-.audioControls_f316dd {
+.audioControls_f72aac {
   @extend %playerAudioControls !optional;
 }
-.videoControls_f316dd {
+.videoControls_f72aac {
   @extend %playerVideoControls !optional;
 }
-.controlIcon_f316dd {
+.controlIcon_f72aac {
   @extend %playerControlIcon !optional;
 }
-.durationTimeWrapper_f316dd {
-  @extend %playerDurationTimeWrapper !optional;
-}
-.durationTimeDisplay_f316dd {
-  @extend %playerDurationTimeDisplay !optional;
-}
-.durationTimeSeparator_f316dd {
-  @extend %playerDurationTimeSeparator !optional;
-}
-.mediaBarInteraction_f7877e {
+.mediaBarInteraction_d12f5a {
   @extend %playerMediaBarInteraction !optional;
 }
-.mediaBarInteractionDragging_f7877e {
+.mediaBarInteractionDragging_d12f5a {
   @extend %playerMediaBarInteractionDragging !optional;
 }
-.mediaBarWrapper_f7877e {
+.mediaBarWrapperVolume_d12f5a {
   @extend %playerMediaBarWrapper !optional;
 }
-.buffer_f7877e {
+.buffer_d12f5a {
   @extend %playerMediaBarBuffer !optional;
 }
-.mediaBarPreview_f7877e {
+.mediaBarPreview_d12f5a {
   @extend %playerMediaBarPreview !optional;
 }
-.mediaBarGrabber_f7877e {
+.mediaBarGrabber_d12f5a {
   @extend %playerMediaBarGrabber !optional;
 }
-.mediaBarProgress_f7877e {
+.mediaBarProgress_d12f5a {
   @extend %playerMediaBarProgress !optional;
 }
-.bubble_f7877e {
+.bubble_d12f5a {
   @extend %playerMediaBarBubble !optional;
 }
 .hoverButtonGroup_ab8b23 {
@@ -2492,6 +2474,9 @@ pre {
 }
 .footer_c5a065 {
   @extend %authModalFooter !optional;
+}
+.userProfileOuter_c69a7b {
+  @extend %userProfileOuter !optional;
 }
 .userProfileOuterUnthemed_c69a7b {
   @extend %userProfileOuterUnthemed !optional;
