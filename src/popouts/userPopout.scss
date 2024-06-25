@@ -1,6 +1,8 @@
 // Force bounding box to layer parent
 %fullMotion %popoutTranslate:has(%userPopoutOuter) {
   transform: unset !important;
+  position: relative;
+	z-index: 0;
 }
 /* USER POPOUT */
 %userPopoutOuter {

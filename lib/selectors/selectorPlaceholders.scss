@@ -2496,6 +2496,9 @@ pre {
 .userProfileOuterUnthemed_c69a7b {
   @extend %userProfileOuterUnthemed !optional;
 }
+.userProfileOuterThemed_c69a7b {
+  @extend %userProfileOuterThemed !optional;
+}
 .userPanelInnerThemed_c69a7b {
   @extend %userProfileDMInnerThemed !optional;
 }
@@ -2581,8 +2584,8 @@ pre {
 .tabBarContainer_b9fccc {
   @extend %userModalTabBarContainer !optional;
 }
-.tabBar_b9fccc {
-  @extend %userModalTabBar !optional;
+.tabBar_c1519f {
+  @extend %userModalTabBarContainerNew !optional;
 }
 .userInfoSection_a24910 {
   @extend %userModalInfoSection !optional;
@@ -2623,8 +2626,8 @@ pre {
 .guildNick_b26403 {
   @extend %userModalListGuildNick !optional;
 }
-.listDiscriminator_e4be58 {
-  @extend %userModalListDiscriminator !optional;
+.note_c2dcc6 {
+  @extend %userModalNote !optional;
 }
 .pageWrapper_a3a4ce {
   @extend %pageWrapper !optional;

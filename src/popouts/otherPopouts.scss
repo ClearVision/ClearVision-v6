@@ -1,8 +1,4 @@
 // EMOJI INFO POPOUT
-%fullMotion %popoutTranslate:has(%emojiInfoContainer) {
-  position: fixed;
-  z-index: 1;
-}
 %emojiInfoContainer {
   background-color: cv('bg.general.popout');
 }
