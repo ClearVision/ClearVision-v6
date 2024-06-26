@@ -116,8 +116,13 @@
 %userSettingsPrivacyStandingMarker {
 	background-color: hsla(0, 0%, 100%, .1);
 }
-%userSettingsPrivacyStandingMarker %userSettingsPrivacyStandingMarkerEmpty {
-	background-color: hsla(0, 0%, 100%, .1);
+%userSettingsPrivacyStandingMarker {
+  %userSettingsPrivacyStandingMarkerEmpty {
+    background-color: hsla(0, 0%, 100%, .1);
+  }
+  svg circle {
+    fill: #fff;
+  }
 }
 
 // FAMILY CENTER

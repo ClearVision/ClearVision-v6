@@ -1183,6 +1183,12 @@
 .input_cebd1c {
   @extend %switchCheckbox !optional;
 }
+.top_a0 {
+  @extend %tabBarTop !optional;
+}
+.brand_a0 {
+  @extend %tabBarBrand !optional;
+}
 .topPill_a0 {
   @extend %tabBarTopPill !optional;
 }
@@ -3237,12 +3243,6 @@ pre {
 }
 .header_bd05f1 {
   @extend %guildSettingsRoleHeader !optional;
-}
-.top_a0 {
-  @extend %guildSettingsRoleHeaderTabTop !optional;
-}
-.brand_a0 {
-  @extend %guildSettingsRoleHeaderTabBrand !optional;
 }
 .previewContainer_bdfce3 {
   @extend %guildSettingsRoleIconPreview !optional;

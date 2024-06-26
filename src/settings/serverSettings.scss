@@ -65,19 +65,6 @@
     background: cv('bg.app.overlay');
   }
 }
-%guildSettingsRoleHeaderTabTop {
-  %guildSettingsRoleHeaderTabBrand {
-    &%tabBarItem {
-      &:hover {
-        border-bottom-color: $hover-color;
-      }
-      &%tabBarItemSelected,
-      &:active {
-        border-bottom-color: $main-color;
-      }
-    }
-  }
-}
 %guildSettingsRoleList {
   %guildSettingsRoleListRow {
     &:hover {

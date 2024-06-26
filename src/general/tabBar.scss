@@ -1,0 +1,33 @@
+/* TAB BAR */
+%tabBarTop {
+  %tabBarBrand {
+    &%tabBarItem {
+      &:hover {
+        border-bottom-color: $hover-color;
+      }
+      &%tabBarItemSelected,
+      &:active {
+        border-bottom-color: $main-color;
+      }
+    }
+  }
+}
+
+// PILL
+%tabBarTopPill {
+  %tabBarThemed {
+    background-color: transparent;
+    color: hsla(0, 0%, 100%, 0.5);
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: hsla(0, 0%, 100%, 0.7);
+    }
+    &%tabBarItemSelected {
+      &%tabBarItem {
+        background-color: $main-color;
+        color: #fff;
+      }
+    }
+  }
+}
