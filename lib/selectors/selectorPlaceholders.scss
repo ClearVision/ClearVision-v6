@@ -2496,6 +2496,12 @@ pre {
 .userProfileOuterThemed_c69a7b {
   @extend %userProfileOuterThemed !optional;
 }
+.statusBubbleOuter_d0a252 {
+  @extend %userProfileStatusBubbleOuter !optional;
+}
+.statusBubble_d0a252 {
+  @extend %userProfileStatusBubble !optional;
+}
 .userPanelInnerThemed_c69a7b {
   @extend %userProfileDMInnerThemed !optional;
 }
@@ -4975,6 +4981,9 @@ pre {
 }
 .gifIconContainer_f2f431 {
   @extend %avatarGifIconContainer !optional;
+}
+.editingContainer_ba5b9e {
+  @extend %avatarEditingContainer !optional;
 }
 .decorationGridItem_b35b54 {
   @extend %avatarDecoItem !optional;

@@ -28,14 +28,16 @@
         }
       }
     }
-    %userProfileBanner {
-      -webkit-mask: linear-gradient(to bottom, #000, transparent 93%);
-      mask: linear-gradient(to bottom, #000, transparent 93%);
-    }
   }
   %popoutAnimatorLeft > & {
     transform-origin: 100% 50%;
   }
+  
+  // BANNER
+  %userProfileBanner:not(%userProfileBannerPremium) {
+      -webkit-mask: linear-gradient(to bottom, #000, transparent 93%);
+      mask: linear-gradient(to bottom, #000, transparent 93%);
+    }
   %userProfileBannerPremium {
     -webkit-mask: linear-gradient(to bottom, #000 50%, transparent);
     mask: linear-gradient(to bottom, #000 50%, transparent);
@@ -44,6 +46,29 @@
 %userPopoutProfileBadges {
   background-color: hsla(0, 0%, 0%, 0.4);
 }
+
+// STATUS BUBBLE
+%userProfileOuterUnthemed {
+  %userProfileStatusBubbleOuter {
+    background-color: hsla(0, 0%, 0%, .6);
+	  border-color: transparent;
+    &::before {
+      background-color: hsla(0, 0%, 0%, .6);
+    	border-color: transparent;
+      border-radius: 16px 16px 0 0;
+      height: 8px;
+    }
+    &::after {
+      background-color: hsla(0, 0%, 0%, .6);
+	    border-color: transparent;
+    }
+  }
+  %userProfileStatusBubble {
+    background-color: transparent;
+  }
+}
+
+// BODY
 %userPopoutOverlayBackground {
   > %menuPopout {
     background-color: transparent;
@@ -53,11 +78,7 @@
     -webkit-mask: linear-gradient(to bottom, #000 50%, transparent);
     mask: linear-gradient(to bottom, #000 50%, transparent);
   }
-  %userPopoutNameTag {
-    overflow: visible;
-  }
 
-  // BODY
   %userPopoutBodyTitle {
     color: hsla(0, 0%, 100%, 0.7);
     flex-shrink: 0;
