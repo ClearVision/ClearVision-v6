@@ -1114,6 +1114,9 @@
 .redesignIconChildContainer_ff7d90 {
   @extend %guildIconChildContainer !optional;
 }
+.premiumTrialAcknowledgedBadge_b089d3 {
+  @extend %nitroTrialBadge !optional;
+}
 .wrapper_fbb822 {
   @extend %scrollerWrap !optional;
 }
@@ -1180,11 +1183,14 @@
 .input_cebd1c {
   @extend %switchCheckbox !optional;
 }
-.item_a0 {
-  @extend %tabBarItem !optional;
-}
 .topPill_a0 {
   @extend %tabBarTopPill !optional;
+}
+.themed_a0 {
+  @extend %tabBarThemed !optional;
+}
+.item_a0 {
+  @extend %tabBarItem !optional;
 }
 .selected_a0 {
   @extend %tabBarItemSelected !optional;
@@ -2542,6 +2548,9 @@ pre {
 .messageInputContainer_f2c0a8 {
   @extend %userPopoutMessageInputContainer !optional;
 }
+.menu_d4e7c2 {
+  @extend %userPopoutMenu !optional;
+}
 .userProfileModalOuter_c69a7b {
   @extend %userModalOuter !optional;
 }
@@ -3739,6 +3748,21 @@ pre {
 .upsellOverlay_eb49af {
   @extend %userSettingsProfileUpsellOverlay !optional;
 }
+.container_f7ea1b {
+  @extend %userSettingsPrivacyStandingContainer !optional;
+}
+.avatarBackground_bb882a {
+  @extend %userSettingsPrivacyStandingAvatarBG !optional;
+}
+.line_f7ea1b {
+  @extend %userSettingsPrivacyStandingLine !optional;
+}
+.marker_f7ea1b {
+  @extend %userSettingsPrivacyStandingMarker !optional;
+}
+.empty_f7ea1b {
+  @extend %userSettingsPrivacyStandingMarkerEmpty !optional;
+}
 .container_b01337,
 .container_d7c696,
 .container_a2e886 {
@@ -3771,6 +3795,9 @@ pre {
 }
 .giftCard_cf74b3 {
   @extend %userSettingsNitroGiftCard !optional;
+}
+.perkCard_d611db {
+  @extend %userSettingsNitroPerkCard !optional;
 }
 .wave_e74e54 {
   @extend %userSettingsBoostHeaderWave !optional;

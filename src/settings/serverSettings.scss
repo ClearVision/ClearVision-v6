@@ -17,6 +17,7 @@
 %guildSettingsRoleSearch {
 	background-color: hsla(0, 0%, 100%, .07);	
 	box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.09);
+  margin: 2px;
   &:focus-within {
     box-shadow: 0 0 2px 2px $main-color;
   }
