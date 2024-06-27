@@ -164,7 +164,7 @@ div#magane div.stickerWindow div.packs-toolbar {
   margin-bottom: -2px;
 }
 // GAMEACTIVITYTOGGLE - DEVILBRO
-%themeDark %accountPanelAvatarWrapper:has(+ div > [aria-label*='Game Activity']) {
+%themeDark %accountPanelAvatarWrapper:has(+ div > button:nth-child(4)) {
   min-width: 0px !important;
 }
 // OWNER TAG - DEVILBRO
