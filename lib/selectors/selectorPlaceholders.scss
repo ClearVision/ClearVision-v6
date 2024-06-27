@@ -1186,6 +1186,9 @@
 .top_a0 {
   @extend %tabBarTop !optional;
 }
+.side_a0 {
+  @extend %tabBarSide !optional;
+}
 .brand_a0 {
   @extend %tabBarBrand !optional;
 }
@@ -3196,9 +3199,6 @@ pre {
 .sidebar_c25c6d {
   @extend %settingsSidebar !optional;
 }
-.side_a0 {
-  @extend %settingsSide !optional;
-}
 .selectedBackground_ae3c77 {
   @extend %settingsSidebarScrollerSelectedBackground !optional;
 }
@@ -3799,11 +3799,14 @@ pre {
 .accountBtnInner_ec99f9 {
   @extend %userSettingsConnectionsButtonInner !optional;
 }
+.perkCard_d611db {
+  @extend %userSettingsNitroPerkCard !optional;
+}
 .giftCard_cf74b3 {
   @extend %userSettingsNitroGiftCard !optional;
 }
-.perkCard_d611db {
-  @extend %userSettingsNitroPerkCard !optional;
+.expandedProgressBarContainerSettingsPage_c88bb1 {
+  @extend %userSettingsNitroShareCard !optional;
 }
 .wave_e74e54 {
   @extend %userSettingsBoostHeaderWave !optional;

@@ -7,14 +7,6 @@
   > %searchHeader {
     background-color: rgba(0, 0, 0, 0.3);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    %tabBarItem {
-      &%tabBarItemSelected {
-        background-color: $main-color;
-      }
-      &:hover:not(%tabBarItemDisabled) {
-        background-color: $hover-color;
-      }
-    }
   }
 
   // RESULT

@@ -32,7 +32,7 @@
   %popoutAnimatorLeft > & {
     transform-origin: 100% 50%;
   }
-  
+
   // BANNER
   %userProfileBanner:not(%userProfileBannerPremium) {
       -webkit-mask: linear-gradient(to bottom, #000, transparent 93%);
@@ -56,7 +56,7 @@
       background-color: hsla(0, 0%, 0%, .6);
     	border-color: transparent;
       border-radius: 16px 16px 0 0;
-      height: 8px;
+      height: 8.5px;
     }
     &::after {
       background-color: hsla(0, 0%, 0%, .6);

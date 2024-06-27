@@ -202,6 +202,10 @@
 %userSettingsNitroGiftCard {
   background: rgba(0, 0, 0, 0.4);
 }
+%themeDark %userSettingsNitroShareCard {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: none;
+}
 
 // SUBSCRIPTIONS
 %themeDark {
