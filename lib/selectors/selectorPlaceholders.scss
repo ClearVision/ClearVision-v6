@@ -3676,21 +3676,27 @@ pre {
 .botTagInvert_a02df3 {
   @extend %botTagInvert !optional;
 }
+.role_e4010c, //top is old profiles, bottom new profiles
 .role_f9575e {
   @extend %role !optional;
 }
+.roleCircle_a26d7b,
 .roleCircle_f9575e {
   @extend %roleCircle !optional;
 }
+.roleRemoveIcon_e4010c,
 .roleRemoveIcon_f9575e {
   @extend %roleRemoveIcon !optional;
 }
+.roleRemoveButton_e4010c,
 .roleRemoveButton_f9575e {
   @extend %roleRemoveButton !optional;
 }
+.roleName_e4010c,
 .roleName_f9575e {
   @extend %roleName !optional;
 }
+.addButton_e4010c,
 .button_edead5 {
   @extend %roleAddButton !optional;
 }

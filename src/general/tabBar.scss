@@ -31,6 +31,7 @@
         color: #fff;
         &:hover:not(%tabBarItemDisabled) {
         background-color: $main-color;
+        color: #fff;
         }
       }      
     }
