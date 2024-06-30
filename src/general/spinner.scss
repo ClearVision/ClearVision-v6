@@ -50,3 +50,9 @@
     }
   }
 }
+%spinnerPulsingEllipsisPopout {
+	background-color: hsla(0, 0%, 0%, 0.6);
+}
+%spinnerPulsingEllipsis %spinnerPulsingEllipsisItem {
+	background-color: var(--main-color);
+}

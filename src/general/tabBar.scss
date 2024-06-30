@@ -17,20 +17,22 @@
 %tabBarTopPill,
 %tabBarSide {
   %tabBarThemed {
-    color: hsla(0, 0%, 100%, 0.5);
-    transition: all 0.3s ease-in-out;
-    &:hover:not(%tabBarItemDisabled) {
-      background-color: $hover-color;
-      color: hsla(0, 0%, 100%, 0.7);
+    &%tabBarItem {
+      color: hsla(0, 0%, 100%, 0.5);
+      transition: all 0.3s ease-in-out;
+      &:hover:not(%tabBarItemDisabled) {
+        background-color: hsla(0, 0%, 100%, .1);
+        color: hsla(0, 0%, 100%, 0.7);
+      }
     }
     &%tabBarItemSelected {
       &%tabBarItem {
         background-color: $main-color;
         color: #fff;
-      }
-      &:hover:not(%tabBarItemDisabled) {
+        &:hover:not(%tabBarItemDisabled) {
         background-color: $main-color;
-      }
+        }
+      }      
     }
   }
 }

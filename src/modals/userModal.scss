@@ -44,7 +44,7 @@
   border-color: hsla(0, 0%, 100%, 0.04);
 }
 %userModalTabBarContainerNew {
-  border-color: hsla(0, 0%, 49%, 0.04);
+  border-color: hsla(0, 0%, 100%, 0.04);
 }
 %modalRoot {
   %userProfileOuter {
@@ -193,7 +193,7 @@
 }
 // ACTIVITY
 %userModalOuter%userProfileOuterUnthemed {
-  %userProfileActionColor {
+  %userProfileActivityButton {
     background-color: $main-color;
   }
 }

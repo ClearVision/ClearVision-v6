@@ -1165,10 +1165,13 @@
 .path3_b6db20 {
   @extend %spinnerCirclePath3 !optional;
 }
+.spinner_eb1ca6 {
+  @extend %spinnerPulsingEllipsisPopout !optional;
+}
 .pulsingEllipsis_b6db20 {
   @extend %spinnerPulsingEllipsis !optional;
 }
-.pulsingEllipsis_b6db20 .item_b6db20 {
+.item_b6db20 {
   @extend %spinnerPulsingEllipsisItem !optional;
 }
 .container_cebd1c {
@@ -2515,7 +2518,7 @@ pre {
   @extend %userProfileDMOverlayBackground !optional;
 }
 .actionColor_fc39e7 {
-  @extend %userProfileActionColor !optional;
+  @extend %userModalActivityButton !optional;
 }
 .banner_c3e427 {
   @extend %userProfileBanner !optional;
@@ -2551,17 +2554,17 @@ pre {
 .profileCustomizationPreview_ab876d {
   @extend %userPopoutCustomizationPreview !optional;
 }
-.buttonColor_e36233 {
-  @extend %userPopoutButtonColor !optional;
+.activity_cd74cc {
+  @extend %userPopoutActivity !optional;
+}
+.buttonColor_cd74cc {
+  @extend %userPopoutActivityButton !optional;
 }
 .roles_fa2f72 {
   @extend %userPopoutRoles !optional;
 }
 .note_c90ad7 {
   @extend %userPopoutNote !optional;
-}
-.messageInputContainer_f2c0a8 {
-  @extend %userPopoutMessageInputContainer !optional;
 }
 .menu_d4e7c2 {
   @extend %userPopoutMenu !optional;
@@ -3673,22 +3676,22 @@ pre {
 .botTagInvert_a02df3 {
   @extend %botTagInvert !optional;
 }
-.role_e4010c {
+.role_f9575e {
   @extend %role !optional;
 }
-.roleCircle_a26d7b {
+.roleCircle_f9575e {
   @extend %roleCircle !optional;
 }
-.roleRemoveIcon_e4010c {
+.roleRemoveIcon_f9575e {
   @extend %roleRemoveIcon !optional;
 }
-.roleRemoveButton_e4010c {
+.roleRemoveButton_f9575e {
   @extend %roleRemoveButton !optional;
 }
-.roleName_e4010c {
+.roleName_f9575e {
   @extend %roleName !optional;
 }
-.addButton_e4010c {
+.button_edead5 {
   @extend %roleAddButton !optional;
 }
 .container_ac201b {

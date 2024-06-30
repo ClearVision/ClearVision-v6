@@ -68,39 +68,14 @@
   }
 }
 
-// BODY
-%userPopoutOverlayBackground {
-  > %menuPopout {
-    background-color: transparent;
-    animation: none;
-  }
-  %userPopoutNoBannerPremium {
-    -webkit-mask: linear-gradient(to bottom, #000 50%, transparent);
-    mask: linear-gradient(to bottom, #000 50%, transparent);
-  }
-
-  %userPopoutBodyTitle {
-    color: hsla(0, 0%, 100%, 0.7);
-    flex-shrink: 0;
-  }
-  #permissions-popout {
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 1;
-    > %userPopoutRolesList {
-      /*Note!!*/
-      max-height: unset;
-    }
-  }
-}
 // ACTIVITY
-%userProfileOuterUnthemed {
-  %userPopoutButtonColor {
+%userPopoutOuter%userProfileOuterUnthemed {
+  %userPopoutActivity {
+    background-color: hsla(0, 0%, 0%, .4);
+  }
+  %userPopoutActivityButton {
     background-color: $main-color;
   }
-}
-%userPopoutMessageInputContainer {
-  border: none;
 }
 
 // NOTE
@@ -111,10 +86,8 @@
 }
 
 // BOTTOM LEFT PROFILE
-%userPopoutOuter {
-  &%userProfileOuterUnthemed {
-    %userPopoutMenu {
-      background-color: hsla(0, 0%, 0%, .4);
-    }
+%userPopoutOuter%userProfileOuterUnthemed {
+  %userPopoutMenu {
+    background-color: hsla(0, 0%, 0%, .4);
   }
 }
