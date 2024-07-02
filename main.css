@@ -22,7 +22,6 @@
     --members-width:  240px;
     --background-shading:  100%;
     --background-overlay:  rgba(0,  0,  0,  0.6);
-    --background-image:  url(https://clearvision.github.io/images/sapphire.jpg);
     --background-position:  center;
     --background-size:  cover;
     --background-repeat:  no-repeat;
@@ -35,7 +34,6 @@
     --background-sepia:  0%;
     --background-blur:  0px;
     --backdrop-overlay:  rgba(0,  0,  0,  0.8);
-    --backdrop-image:  var(--background-image);
     --backdrop-position:  var(--background-position);
     --backdrop-size:  var(--background-size);
     --backdrop-repeat:  var(--background-repeat);
@@ -47,7 +45,6 @@
     --backdrop-grayscale:  var(--background-grayscale);
     --backdrop-sepia:  var(--background-sepia);
     --backdrop-blur:  var(--background-blur);
-    --user-popout-image:  var(--background-image);
     --user-popout-position:  var(--background-position);
     --user-popout-size:  var(--background-size);
     --user-popout-repeat:  var(--background-repeat);
@@ -60,7 +57,6 @@
     --user-popout-sepia:  var(--background-sepia);
     --user-popout-blur:  calc(var(--background-blur) + 3px);
     --user-popout-overlay:  rgba(0,  0,  0,  0.65);
-    --user-modal-image:  var(--background-image);
     --user-modal-position:  var(--background-position);
     --user-modal-size:  var(--background-size);
     --user-modal-repeat:  var(--background-repeat);
@@ -316,7 +312,6 @@ to {
     background: rgba(0, 0, 0, 0);
 }
 .bg_d4b6c5 {
-    background: var(--background-image) var(--background-position)/var(--background-size) var(--background-repeat) var(--background-attachment);
     filter: grayscale(var(--background-grayscale)) sepia(var(--background-sepia)) invert(var(--background-invert)) brightness(var(--background-brightness)) contrast(var(--background-contrast)) saturate(var(--background-saturation)) blur(var(--background-blur));
     z-index: -9999;
 }
@@ -4820,7 +4815,6 @@ code {
     left: 0;
     position: fixed;
     z-index: -1;
-    background: var(--background-image) var(--background-position)/var(--background-size) var(--background-repeat) var(--background-attachment);
     filter: grayscale(var(--background-grayscale)) sepia(var(--background-sepia)) invert(var(--background-invert)) brightness(var(--background-brightness)) contrast(var(--background-contrast)) saturate(var(--background-saturation)) blur(var(--background-blur));
 }
 .category_d7acc7 {
@@ -7017,7 +7011,6 @@ code {
     left: 0;
     position: absolute;
     z-index: -1;
-    background: var(--background-image) var(--background-position)/var(--background-size) var(--background-repeat) var(--background-attachment);
     filter: grayscale(var(--background-grayscale)) sepia(var(--background-sepia)) invert(var(--background-invert)) brightness(var(--background-brightness)) contrast(var(--background-contrast)) saturate(var(--background-saturation)) blur(var(--background-blur));
 }
 .header_bd05f1:after {
