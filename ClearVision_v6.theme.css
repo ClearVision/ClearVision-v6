@@ -39,7 +39,7 @@
 
   /* APP BACKGROUND */
   --background-shading: 100%; /* app background shading (0 for complete smoothness) [default: 100%] */
-  --background-overlay: rgba(0, 0, 0, 0.6); /* app background overlay color/gradient [default: rgba(0, 0, 0, 0.6)] */
+  --background-overlay: rgba(0, 0, 0, 0.4); /* app background overlay color/gradient [default: rgba(0, 0, 0, 0.6)] */
   --background-position: center; /* app background position [default: center] */
   --background-size: cover; /* app background size [default: cover] */
   --background-repeat: no-repeat; /* app background repeat [default: no-repeat] */
