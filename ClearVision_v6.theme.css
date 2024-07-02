@@ -40,7 +40,6 @@
   /* APP BACKGROUND */
   --background-shading: 100%; /* app background shading (0 for complete smoothness) [default: 100%] */
   --background-overlay: rgb(0,65,73,0.44); /* app background overlay color/gradient [default: rgba(0, 0, 0, 0.6)] */
-  --background-image: url(https://clearvision.github.io/images/sapphire.jpg); /* app background image (link must be HTTPS) [default: url(https://clearvision.github.io/images/sapphire.jpg)]*/
   --background-position: center; /* app background position [default: center] */
   --background-size: cover; /* app background size [default: cover] */
   --background-repeat: no-repeat; /* app background repeat [default: no-repeat] */
@@ -66,7 +65,6 @@
 
   /* MODAL BACKDROP */
   --backdrop-overlay: rgba(0, 0, 0, 0.8); /* modal backdrop overlay color/gradient [default: rgba(0, 0, 0, 0.8)] */
-  --backdrop-image: var(--background-image); /* modal backdrop image (link must be HTTPS) [default: var(--background-image)] */
   --backdrop-position: var(--background-position); /* modal backdrop position [default: var(--background-position)] */
   --backdrop-size: var(--background-size); /* modal backdrop size [default: var(--background-size)] */
   --backdrop-repeat: var(--background-repeat); /* modal backdrop repeat [default: var(--background-repeat)] */
@@ -80,7 +78,6 @@
   --backdrop-blur: var(--background-blur); /* modal backdrop blur [default: var(--background-blur)] */
 
   /* USER POPOUT BACKGROUND */
-  --user-popout-image: var(--background-image); /* app background image (link must be HTTPS) [default: var(--background-image)] */
   --user-popout-position: var(--background-position); /* user popout background position [default: var(--background-position)] */
   --user-popout-size: var(--background-size); /* user popout background size [default: var(--background-size)] */
   --user-popout-repeat: var(--background-repeat); /* user popout background repeat [default: var(--background-repeat)] */
@@ -95,7 +92,6 @@
   --user-popout-overlay: rgba(0, 0, 0, 0.6); /* user popout overlay color [default: rgba(0, 0, 0, .6)] */
 
   /* USER MODAL BACKGROUND */
-  --user-modal-image: var(--background-image); /* app background image (link must be HTTPS) [default: var(--background-image)] */
   --user-modal-position: var(--background-position); /* user modal background position [default: var(--background-position)] */
   --user-modal-size: var(--background-size); /* user modal background size [default: var(--background-size)] */
   --user-modal-repeat: var(--background-repeat); /* user modal background repeat [default: var(--background-repeat)] */
