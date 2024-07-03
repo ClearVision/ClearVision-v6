@@ -200,3 +200,21 @@ button%panelButton {
 %noiseCancellationPopout {
   background-color: rgba(0, 0, 0, 0.7);
 }
+
+// QUEST PANEL
+%themeDark %questPanel {
+	background-color: transparent;
+}
+%questPanelAccepted {
+	background: rgba(0, 0, 0, 0.6) !important;
+}
+%questPanelAcceptedExpandedBackground {
+	background: transparent !important;
+	border-top: 2px solid hsla(0, 0%, 100%, .1);
+}
+%questPanelAcceptedExpandedContent {
+  visibility: hidden;
+  %questPanelExpanded & {
+    visibility: visible;
+  }
+}

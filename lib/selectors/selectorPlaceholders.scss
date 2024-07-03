@@ -438,6 +438,21 @@
 .inner_adcaac {
   @extend %connectionPanelInner !optional;
 }
+.wrapper_c721cc {
+  @extend %questPanel !optional;
+}
+.contentWrapperAccepted_c721cc {
+  @extend %questPanelAccepted !optional;
+}
+.contentWrapperExpanded_c721cc {
+  @extend %questPanelExpanded !optional;
+}
+.postEnrollmentBackground_c3427e {
+  @extend %questPanelAcceptedExpandedBackground !optional;
+}
+.questAcceptedContent_e23249 {
+  @extend %questPanelAcceptedExpandedContent !optional;
+}
 .connection_e2a436 {
   @extend %connections !optional;
 }
