@@ -1908,7 +1908,7 @@ pre {
 .hljs {
   @extend %codeHLJS !optional;
 }
-.codeActions_d6076c {
+.codeActions_f8f345 {
   @extend %codeActions !optional;
 }
 .container_b558d0 {
@@ -2136,7 +2136,7 @@ pre {
 .message_d5deea {
   @extend %message !optional;
 }
-.wrapper_ec86aa {
+.wrapper_f9f2ca {
   @extend %messagesWrapper !optional;
 }
 .selected_d5deea {
@@ -2148,7 +2148,7 @@ pre {
 .cozyMessage_d5deea {
   @extend %messageCozy !optional;
 }
-.contents_ec86aa {
+.contents_f9f2ca {
   @extend %messageContent !optional;
 }
 .blockedSystemMessage_c09d0f {
@@ -2172,22 +2172,22 @@ pre {
 .blockedSystemMessage_c09d0f {
   @extend %messageBlockedSystemMessage !optional;
 }
-.header_ec86aa {
+.header_f9f2ca {
   @extend %messageHeader !optional;
 }
-.headerText_ec86aa {
+.headerText_f9f2ca {
   @extend %messageHeaderText !optional;
 }
-.username_ec86aa {
+.username_f9f2ca {
   @extend %messageUsername !optional;
 }
-.timestamp_ec86aa {
+.timestamp_f9f2ca {
   @extend %messageTimestamp !optional;
 }
-.timestamp_ec86aa.alt_ec86aa {
+.timestamp_f9f2ca.alt_f9f2ca {
   @extend %messageTimestampAlt !optional;
 }
-.messageContent_ec86aa {
+.messageContent_f9f2ca {
   @extend %messageContent !optional;
 }
 .container_e62b38 {
@@ -2199,28 +2199,28 @@ pre {
 .tile_ab47a1 {
   @extend %messageInvalidGift !optional;
 }
-.repliedMessage_ec86aa {
+.repliedMessage_f9f2ca {
   @extend %messageReplied !optional;
 }
-.repliedTextPreview_ec86aa {
+.repliedTextPreview_f9f2ca {
   @extend %messageRepliedTextPreview !optional;
 }
-.clickable_ec86aa {
+.clickable_f9f2ca {
   @extend %messageRepliedTextPreviewClickable !optional;
 }
-.repliedTextContent_ec86aa {
+.repliedTextContent_f9f2ca {
   @extend %messageRepliedTextContent !optional;
 }
-.repliedTextPlaceholder_ec86aa {
+.repliedTextPlaceholder_f9f2ca {
   @extend %messageRepliedTextPlaceholder !optional;
 }
-.executedCommand_ec86aa {
+.executedCommand_f9f2ca {
   @extend %messageRepliedExecutedCommand !optional;
 }
-.appLauncherOnboardingCommandName_ec86aa {
+.appLauncherOnboardingCommandName_f9f2ca {
   @extend %messageRepliedAppLauncherCommandName !optional;
 }
-.commandName_ec86aa {
+.commandName_f9f2ca {
   @extend %messageRepliedCommandName !optional;
 }
 .inlineMediaEmbed_ad0b71 {
@@ -2259,7 +2259,7 @@ pre {
 .actionAnchor_e62b38 {
   @extend %anchorAction !optional;
 }
-.buttonContainer_ec86aa {
+.buttonContainer_f9f2ca {
   @extend %messageButtonContainer !optional;
 }
 .buttons_d5deea {
@@ -2304,10 +2304,10 @@ pre {
 .footerIcon_bc2461 {
   @extend %messageAutomodFooterIcon !optional;
 }
-.blockquoteContainer_d6076c {
+.blockquoteContainer_f8f345 {
   @extend %blockquoteContainer !optional;
 }
-.blockquoteDivider_d6076c {
+.blockquoteDivider_f8f345 {
   @extend %blockquoteDivider !optional;
 }
 .reactions_ec6b19 {
@@ -3682,7 +3682,7 @@ pre {
 .avatar_e9f61e {
   @extend %avatarImage !optional;
 }
-.avatar_ec86aa {
+.avatar_f9f2ca {
   @extend %avatarLarge !optional;
 }
 .botTag_a02df3 {
@@ -4344,10 +4344,10 @@ pre {
 .list_c6aa12 {
   @extend %threadModalList !optional;
 }
-.hasThread_ec86aa {
+.hasThread_f9f2ca {
   @extend %messageHasThread !optional;
 }
-.cozy_ec86aa {
+.cozy_f9f2ca {
   @extend %cozy !optional;
 }
 .emptyStateHeader_b767ed {
