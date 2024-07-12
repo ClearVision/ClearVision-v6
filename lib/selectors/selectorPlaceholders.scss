@@ -321,28 +321,28 @@
 .voiceChannelsButton_a08117 {
   @extend %voiceChannelsButton !optional;
 }
-.container_c47562 {
+.container_d03bba {
   @extend %userSummaryContainer !optional;
 }
-.icon_c47562 {
+.icon_d03bba {
   @extend %userSummaryIcon !optional;
 }
-.avatarContainer_c47562 {
+.avatarContainer_d03bba {
   @extend %userSummaryAvatarContainer !optional;
 }
-.avatarContainerMasked_c47562 {
+.avatarContainerMasked_d03bba {
   @extend %userSummaryAvatarContainerMasked !optional;
 }
-.avatar_c47562 {
+.avatar_d03bba {
   @extend %userSummaryAvatar !optional;
 }
-.clickableAvatar_c47562 {
+.clickableAvatar_d03bba {
   @extend %userSummaryAvatarClickable !optional;
 }
-.emptyUser_c47562 {
+.emptyUser_d03bba {
   @extend %userSummaryEmptyUser !optional;
 }
-.moreUsers_c47562 {
+.moreUsers_d03bba {
   @extend %userSummaryMoreUsers !optional;
 }
 .sidebar_a4d4d9 {
@@ -1273,10 +1273,10 @@
 .tooltipGreen_b6c360 {
   @extend %tooltipGreen !optional;
 }
-.tooltip_f4c8b7 {
+.tooltip_adde9d {
   @extend %commandTooltip !optional;
 }
-.tooltipPointer_f4c8b7 {
+.tooltipPointer_adde9d {
   @extend %commandTooltipPointer !optional;
 }
 .upsellTooltipWrapper_dafa63 {
@@ -1318,13 +1318,13 @@
 .blobContainer_a5ad63 {
   @extend %guildContainer !optional;
 }
-.wrapper_fd07a3 {
+.wrapper_c4cd66 {
   @extend %guildPillWrapper !optional;
 }
 .pill_a5ad63 {
   @extend %guildPill !optional;
 }
-.item_fd07a3 {
+.item_c4cd66 {
   @extend %guildPillItem !optional;
 }
 .wrapper_f90abb {
@@ -1426,16 +1426,16 @@
 .breadcrumbArrow__58361 {
   @extend %breadcrumbArrow !optional;
 }
-.container_e44302 {
+.container_fc4f04 {
   @extend %headerBar !optional;
 }
-.children_e44302 {
+.children_fc4f04 {
   @extend %headerBarChildren !optional;
 }
-.toolbar_e44302 {
+.toolbar_fc4f04 {
   @extend %toolbar !optional;
 }
-.title_e44302 {
+.title_fc4f04 {
   @extend %headerBarTitle !optional;
 }
 .topic_bf3bbb {
@@ -1447,16 +1447,16 @@
 .nicknames_d6c26f {
   @extend %headerBarNicknames !optional;
 }
-.iconWrapper_e44302 {
+.iconWrapper_fc4f04 {
   @extend %headerBarIconWrapper !optional;
 }
-.icon_e44302 {
+.icon_fc4f04 {
   @extend %headerBarIcon !optional;
 }
-.clickable_e44302 {
+.clickable_fc4f04 {
   @extend %headerBarIconClickable !optional;
 }
-.selected_e44302 {
+.selected_fc4f04 {
   @extend %headerBarIconSelected !optional;
 }
 .cloud_ff5f90 {
@@ -1465,10 +1465,10 @@
 .downloadArrow_ff5f90 {
   @extend %headerBarIconUpdateDownloadArrow !optional;
 }
-.iconBadge_e44302 {
+.iconBadge_fc4f04 {
   @extend %headerBarIconBadge !optional;
 }
-.divider_e44302 {
+.divider_fc4f04 {
   @extend %headerBarDivider !optional;
 }
 .content_ed23b8 {
@@ -1781,76 +1781,76 @@
 .addMembersIcon_d9b498 {
   @extend %addMembersIcon !optional;
 }
-.invite_cdcad9 {
+.invite_f61cb8 {
   @extend %activityInvite !optional;
 }
-.coverImageWrapper_cdcad9 {
+.coverImageWrapper_f61cb8 {
   @extend %activityInviteCoverImageWrapper !optional;
 }
-.coverImage_cdcad9 {
+.coverImage_f61cb8 {
   @extend %activityInviteCoverImage !optional;
 }
-.coverImageActionable_cdcad9 {
+.coverImageActionable_f61cb8 {
   @extend %activityInviteCoverImageActionable !optional;
 }
-.coverImageNotActionable_cdcad9 {
+.coverImageNotActionable_f61cb8 {
   @extend %activityInviteCoverImageNotActionable !optional;
 }
-.blurred_cdcad9 {
+.blurred_f61cb8 {
   @extend %activityInviteCoverImageBlurred !optional;
 }
-.artwork_cdcad9 {
+.artwork_f61cb8 {
   @extend %activityInviteArtwork !optional;
 }
-.artworkNotActionable_cdcad9 {
+.artworkNotActionable_f61cb8 {
   @extend %activityInviteArtworkNotActionable !optional;
 }
-.artworkSpotifySessionEnded_cdcad9 {
+.artworkSpotifySessionEnded_f61cb8 {
   @extend %activityInviteArtworkSessionEnded !optional;
 }
-.header_cdcad9 {
+.header_f61cb8 {
   @extend %activityInviteHeader !optional;
 }
-.partyStatus_cdcad9 {
+.partyStatus_f61cb8 {
   @extend %activityInvitePartyStatus !optional;
 }
-.actionAndParty_cdcad9 {
+.actionAndParty_f61cb8 {
   @extend %activityInviteActionAndParty !optional;
 }
-.actionButton_cdcad9 {
+.actionButton_f61cb8 {
   @extend %activityInviteActionButton !optional;
 }
-.name_cdcad9 {
+.name_f61cb8 {
   @extend %activityInviteName !optional;
 }
-.partyMembers_cdcad9 {
+.partyMembers_f61cb8 {
   @extend %activityInvitePartyMembers !optional;
 }
-.partyMember_cdcad9 {
+.partyMember_f61cb8 {
   @extend %activityInvitePartyMember !optional;
 }
-.partyMemberKnown_cdcad9 {
+.partyMemberKnown_f61cb8 {
   @extend %activityInvitePartyMemberKnown !optional;
 }
-.partyAvatar_cdcad9 {
+.partyAvatar_f61cb8 {
   @extend %activityInvitePartyAvatar !optional;
 }
-.partyMemberEmpty_cdcad9 {
+.partyMemberEmpty_f61cb8 {
   @extend %activityInvitePartyMemberEmpty !optional;
 }
-.moreUsers_cdcad9 {
+.moreUsers_f61cb8 {
   @extend %activityInviteMoreUsers !optional;
 }
-.helpIcon_cdcad9 {
+.helpIcon_f61cb8 {
   @extend %activityInviteHelpIcon !optional;
 }
-.details_cdcad9 {
+.details_f61cb8 {
   @extend %activityInviteDetails !optional;
 }
-.state_cdcad9 {
+.state_f61cb8 {
   @extend %activityInviteState !optional;
 }
-.textLink_cdcad9 {
+.textLink_f61cb8 {
   @extend %activityInviteTextLink !optional;
 }
 .attachment_a4623d {
@@ -1977,10 +1977,10 @@ pre {
 .imageError_d4597d {
   @extend %imageError !optional;
 }
-.hoverButtonGroup_ab8b23 {
+.hoverButtonGroup_e5c1dc {
   @extend %imageHoverButtonGroup !optional;
 }
-.hoverButton_ab8b23 {
+.hoverButton_e5c1dc {
   @extend %imageHoverButton !optional;
 }
 .embedThumbnail_ad0b71 {
@@ -2001,7 +2001,7 @@ pre {
 .embedVideoAction_add135 {
   @extend %embedVideoAction !optional;
 }
-.wrapper_c8da25 {
+.wrapper_ab4920 {
   @extend %embedVideoActionsButtonWrapper !optional;
 }
 .embedFooter_ad0b71 {
@@ -2109,7 +2109,7 @@ pre {
 .bubble_d12f5a {
   @extend %playerMediaBarBubble !optional;
 }
-.hoverButtonGroup_ab8b23 {
+.hoverButtonGroup_e5c1dc {
   @extend %playerMediaDownload !optional;
 }
 .container_d6cb89 {
@@ -3651,23 +3651,23 @@ pre {
 .viewServerButton_adff39 {
   @extend %guildSettingsSubsViewServerButton !optional;
 }
-.activityUserPopoutV2_d5089b,
-.activityProfileV2_d5089b {
+.activityUserPopoutV2_c1d9fd,
+.activityProfileV2_c1d9fd {
   @extend %activity !optional;
 }
-.headerText_d5089b {
+.headerText_c1d9fd {
   @extend %activityHeaderText !optional;
 }
-.nameNormal_d5089b {
+.nameNormal_c1d9fd {
   @extend %activityNameNormal !optional;
 }
-.activityName_d5089b {
+.activityName_c1d9fd {
   @extend %activityName !optional;
 }
-.bodyLink_d5089b {
+.bodyLink_c1d9fd {
   @extend %activityBodyLink !optional;
 }
-.timestamp_d5089b {
+.timestamp_c1d9fd {
   @extend %activityTimestamp !optional;
 }
 .wrapper_c51b4e {
@@ -3703,7 +3703,7 @@ pre {
 .roleRemoveIcon_f9575e {
   @extend %roleRemoveIcon !optional;
 }
-.roleRemoveButton_e4010c,
+.roleRemoveButton_f9575e,
 .roleRemoveButton_f9575e {
   @extend %roleRemoveButton !optional;
 }
@@ -4482,7 +4482,7 @@ pre {
 .navRow_be9398 {
   @extend %addAccountFooter !optional;
 }
-.copyInput_f549fd {
+.copyInput_d7e343 {
   @extend %copyGiftCode !optional;
 }
 .promotionCard_e8af36 {
