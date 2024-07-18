@@ -880,34 +880,31 @@
 .buttonContainer_faf5ab {
   @extend %channelInfoButtonContainer !optional;
 }
-.autocomplete_f23da8 {
+.autocomplete_bea0d0 {
   @extend %autocomplete !optional;
 }
-.autocompleteInner_f23da8 {
+.autocompleteInner_bea0d0 {
   @extend %autocompleteInner !optional;
 }
-.contentTitle_f23da8 {
+.contentTitle_bcc24e {
   @extend %autocompleteTitle !optional;
 }
-.icon_f23da8 {
+.icon_bcc24e {
   @extend %autocompleteIcon !optional;
 }
-.iconForeground_f23da8 {
+.iconForeground_bcc24e {
   @extend %autocompleteIconForeground !optional;
 }
-.autocompleteRowSubheading_f23da8 {
+.autocompleteRowSubheading_bcc24e {
   @extend %autocompleteRowSubheading !optional;
 }
-.autocompleteRowContentSecondary_f23da8 {
+.autocompleteRowContentSecondary_bcc24e {
   @extend %autocompleteContentSecondary !optional;
 }
-.descriptionDiscriminator_f23da8 {
-  @extend %autocompletedescriptiondiscriminator !optional;
-}
-.clickable_f23da8 {
+.clickable_bcc24e {
   @extend %autocompleteSelectorSelected !optional;
 }
-.base_f23da8 {
+.base_bcc24e {
   @extend %autocompleteBase !optional;
 }
 .categoryHeader_fe2299 {
@@ -1853,7 +1850,7 @@
 .textLink_f61cb8 {
   @extend %activityInviteTextLink !optional;
 }
-.attachment_a4623d {
+.attachment_b52bef {
   @extend %attachment !optional;
 }
 .embedWrapper_b558d0 {
@@ -1962,10 +1959,10 @@ pre {
 .embedFieldValue_ad0b71 {
   @extend %embedFieldValue !optional;
 }
-.embedImage_ad0b71 {
-  @extend %embedImagea !optional;
+.embedImage_b0068 {
+  @extend %embedImage !optional;
 }
-.embedFull_ad0b71 {
+.embedFull_b0068a {
   @extend %embedFull !optional;
 }
 .imageWrapper_d4597d {
@@ -3703,7 +3700,7 @@ pre {
 .roleRemoveIcon_f9575e {
   @extend %roleRemoveIcon !optional;
 }
-.roleRemoveButton_f9575e,
+.roleRemoveButton_e4010c,
 .roleRemoveButton_f9575e {
   @extend %roleRemoveButton !optional;
 }

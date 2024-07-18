@@ -17,9 +17,6 @@
   %autocompleteContent {
     color: hsla(0, 0%, 100%, 0.6);
   }
-  %autocompleteIconForeground {
-    fill: hsla(0, 0%, 100%, 0.3);
-  }
   %autocompleteDescription,
   %autocompleteDescriptionUsername {
     color: hsla(0, 0%, 100%, 0.3);
@@ -41,7 +38,6 @@
     fill: hsla(0, 0%, 100%, 0.7);
   }
   %autocompleteContentSecondary,
-  %autocompleteDescriptionDiscriminator,
   %autocompleteRowSubheading {
     color: #fff;
   }
