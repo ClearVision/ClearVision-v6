@@ -2662,8 +2662,8 @@ pre {
 .searchBox_f69601 {
   @extend %discoverSearchBox !optional;
 }
-.searchPageBox_ce978e {
-  @extend %discoverSearchPageBox !optional;
+.searchPage_a3a4ce {
+  @extend %discoverSearchPage !optional;
 }
 .searchBoxInput_f69601 {
   @extend %discoverSearchBoxInput !optional;
@@ -2673,6 +2673,9 @@ pre {
 }
 .clearIcon_d83b4d {
   @extend %discoverSearchBoxClearIcon !optional;
+}
+.sidebarContainer_a3a4ce {
+  @extend %discoverCategory !optional;
 }
 .categoryItem_c72b37 {
   @extend %discoverCategoryItem !optional;
@@ -2689,16 +2692,16 @@ pre {
 .loading_eb1ca6 {
   @extend %discoverGuildCardLoading !optional;
 }
-.loaded_eb1ca6 {
+.loaded_e90879 {
   @extend %discoverGuildCardLoaded !optional;
 }
-.card_eb1ca6 {
+.card_e90879 {
   @extend %discoverGuildCard !optional;
 }
 .container_f11cbf {
   @extend %discoverHubCard !optional;
 }
-.iconMask_eb1ca6 {
+.iconMask_e90879 {
   @extend %discoverGuildCardIcon !optional;
 }
 .splash_eb1ca6 {
@@ -4359,9 +4362,6 @@ pre {
 .compactButtonDisabled_fcbce6 {
   @extend %waveButtonDisabled !optional;
 }
-.option_ee4ca6 {
-  @extend %serverDeleteReasonOption !optional;
-}
 .streamPreview_adbea6 {
   @extend %streamPopoutPreview !optional;
 }
@@ -4541,9 +4541,6 @@ pre {
 }
 .splash_f18d6c {
   @extend %hubSplash !optional;
-}
-.sidebarContainer_e5b5f9 {
-  @extend %hubPopoutSidebar !optional;
 }
 .scrollTierBackground_f09e45 {
   @extend %activitiesScroller !optional;
@@ -5117,11 +5114,14 @@ pre {
 .editor_bcfa1e {
   @extend %sidebarPFPUpsell !optional;
 }
-.root_ee4ca6 {
+.root_c3b890 {
   @extend %serverLeave !optional;
 }
 .problemInfo_b58b14 {
   @extend %serverLeaveReason !optional;
+}
+.option_c3b890 {
+  @extend %serverLeaveOption !optional;
 }
 .toolbar_de3e42 {
   @extend %chatToolbar !optional;

@@ -69,17 +69,6 @@
   }
 }
 
-// HELP US UNDERSTAND WHY YOU'RE DELETING THIS SERVER
-%serverDeleteReasonOption {
-  color: #fff;
-  background: $main-color;
-  border-bottom: 1px solid hsla(0, 0%, 100%, 0.08);
-  transition: all 0.15s ease-in-out;
-  &:hover {
-    background: $hover-color;
-  }
-}
-
 // STATUS PICKER
 %menuPopoutItem {
   &#account-status-picker--online {
