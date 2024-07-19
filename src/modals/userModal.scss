@@ -4,8 +4,8 @@
   z-index: 0;
 }
 /* USER PROFILE MODAl */
-%userModalOuter {
-  &%userProfileOuterUnthemed {
+%modalRoot {
+  %userProfileOuterUnthemed {
     background: transparent;
     %userModalOverlayBackground {
       background-color: hsla(0, 0%, 0%, 0.4);
@@ -22,18 +22,18 @@
         height: 100%;
         z-index: -1;
       }
+    }    
+    %userProfileBanner {
+      -webkit-mask: linear-gradient(to bottom, #000, transparent 93%);
+      mask: linear-gradient(to bottom, #000, transparent 93%);
     }
+  }
+  %userProfileBannerPremium {
+    -webkit-mask: linear-gradient(to bottom, #000 50%, transparent);
+    mask: linear-gradient(to bottom, #000 50%, transparent);
   }
 }
 
-%userModalBanner {
-  -webkit-mask: linear-gradient(to bottom, #000, transparent 93%);
-  mask: linear-gradient(to bottom, #000, transparent 93%);
-}
-%userModalBannerPremium {
-  -webkit-mask: linear-gradient(to bottom, #000 50%, transparent);
-  mask: linear-gradient(to bottom, #000 50%, transparent);
-}
 %userModalBadgeList {
   background-color: hsla(0, 0%, 0%, 0.4);
 }
@@ -43,61 +43,71 @@
   padding: 0 20px;
   border-color: hsla(0, 0%, 100%, 0.04);
 }
-%userModalOuter%userProfileOuterUnthemed %userModalTabBar {
-  %tabBarItem {
-    position: relative;
-    margin: 10px 0 0;
-    padding: 0 10px;
-    color: hsla(0, 0%, 100%, 0.5) !important;
-    transition: color 0.15s ease-in-out;
-    z-index: 1;
-    &:before {
-      content: '';
-      position: absolute;
-      @include stretch;
-      background: linear-gradient(to top, transparent, hsla(0, 0%, 100%, 0.07) 50%);
-      border-radius: 3px 3px 0 0;
-      opacity: 0;
-      transition: all 0.15s ease-in-out, bottom 0.2s ease-in-out;
-      z-index: -1;
-    }
-    &:after {
-      content: '';
-      position: absolute;
-      @include pos(100%, 0, 0, 0);
-      background: rgba(0, 0, 0, 0.25);
-      border-radius: 3px 3px 0 0;
-      transition: all 0.2s ease-in-out;
-      z-index: -1;
-    }
-    &:hover,
-    &[style*='color: rgb(255, 255, 255)'] {
+%userModalTabBarContainerNew {
+  border-color: hsla(0, 0%, 100%, 0.04);
+}
+%modalRoot {
+  %userProfileOuter {
+    %tabBarItem {
+      position: relative;
+      height: 30px;
+      padding: 5px 10px 0;
+      transition: color 0.15s ease-in-out;
+      z-index: 1;
+      border-bottom-width: 2px;
       &:before {
-        opacity: 1;
+        content: '';
+        position: absolute;
+        @include stretch;
+        background: linear-gradient(to top, transparent, hsla(0, 0%, 100%, 0.05) 50%);
+        border-radius: 3px 3px 0 0;
+        opacity: 0;
+        transition: all 0.15s ease-in-out, bottom 0.2s ease-in-out;
+        z-index: -1;
       }
-    }
-    &%tabBarItemSelected {
       &:after {
-        top: 0;
-        animation: cv-slide-top 0.2s ease-in-out;
+        content: '';
+        position: absolute;
+        @include pos(100%, 0, 0, 0);
+        background: hsla(0, 0%, 100%, 0.07);
+        border-radius: 3px 3px 0 0;
+        transition: all 0.2s ease-in-out;
+        z-index: -1;
       }
-      &:before {
-        bottom: 100%;
-        animation: cv-slide-bottom 0.2s ease-in-out reverse;
+      &:hover {
+        &:before {
+          opacity: 1;
+        }
+      }
+      &%tabBarItemSelected {
+        &:after {
+          top: 0;
+          animation: cv-slide-top 0.2s ease-in-out;
+        }
+        &:before {
+          bottom: 100%;
+          animation: cv-slide-bottom 0.2s ease-in-out reverse;
+        }
       }
     }
   }
-}
-%userModalOuter {
-  &%userProfileOuterUnthemed {
-    %userModalTabBar {
-      %tabBarItem {
-        &:hover {
-          border-bottom-color: $hover-color;
-        }
-        &%tabBarItemSelected {
-          border-bottom-color: $main-color;
-        }
+  %userProfileOuterUnthemed {
+    %tabBarItem {
+      &:hover {
+        border-bottom-color: $hover-color;
+      }
+      &%tabBarItemSelected {
+        border-bottom-color: $main-color;
+      }
+    }
+  }
+  %userProfileOuterThemed {
+    %tabBarItem {
+      &:hover {
+        border-bottom-color: var(--profile-gradient-secondary-color);
+      }
+      &%tabBarItemSelected {
+        border-bottom-color: var(--profile-gradient-primary-color);
       }
     }
   }
@@ -183,7 +193,12 @@
 }
 // ACTIVITY
 %userModalOuter%userProfileOuterUnthemed {
-  %userProfileActionColor {
+  %userProfileActivityButton {
     background-color: $main-color;
   }
+}
+
+// NOTE
+%userModalNote textarea:focus {
+	background-color: hsla(0, 0%, 100%, .07);
 }

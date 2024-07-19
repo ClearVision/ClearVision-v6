@@ -3,25 +3,14 @@
 %shop {
   background-color: transparent;
 }
-
-// Maybe oboslete
 %shopBackground {
   background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
 }
-// 
-
-%shopBackgroundTemp {
-  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));;
-}
-
-// Maybe obsolete
 %shopPageWrapper {
   background-color: transparent;
 }
-//
-
-%shopPageWrapperTemp {
-  background-color: transparent;
+%shopHeader {
+  background-color: transparent !important;
 }
 
 // LOADING
@@ -37,6 +26,7 @@
 }
 
 // CARD
+%shopCardNitro,
 %shopCard {
   background-color: rgba(0, 0, 0, 0.4) !important;
   border-color: $main-color !important;
@@ -45,6 +35,7 @@
     border-color: $hover-color !important;
   }
 }
+%shopCardDarkBackgroundNitro, 
 %shopCardDarkBackground {
   background-color: rgba(0, 0, 0, 0.6);
 }
@@ -101,4 +92,9 @@
 // Shop new pill
 %shopNewPill {
   background: radial-gradient(ellipse at 120%200%, var(--main-color) 10%, transparent 70%);
+}
+
+// Shop what's new
+%shopWhatsNew {
+  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.8));
 }

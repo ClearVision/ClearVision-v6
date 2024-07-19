@@ -42,7 +42,6 @@ $version: '6.9.0';
 @import 'src/chat/stageCall';
 @import 'src/chat/textArea';
 @import 'src/chat/textAreaAutoComplete';
-@import 'src/chat/treads';
 @import 'src/chat/modView';
 
 // GENERAL ELEMENTS
@@ -56,6 +55,7 @@ $version: '6.9.0';
 @import 'src/general/slider';
 @import 'src/general/spinner';
 @import 'src/general/switch';
+@import 'src/general/tabBar';
 @import 'src/general/tooltip';
 
 // GUILDS
@@ -158,7 +158,7 @@ $version: '6.9.0';
 @import 'src/injectors/ven/icons';
 
 // REPLUGGED
-@import 'src/injectors/rp/plugins';
+// @import 'src/injectors/rp/plugins';
 @import 'src/injectors/rp/rpSettings';
 
 // BETTERDISCORD

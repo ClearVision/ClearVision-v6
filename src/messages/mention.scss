@@ -1,39 +1,32 @@
 /* MENTIONS */
-%themeDark {
-  %mentionWrapper {
-    padding: 1px 4px;
-    border-radius: 5px;
-    line-height: 22px;
-    white-space: nowrap;
-    transition: all 0.15s ease-in-out;
-    background-color: $main-color;
-    color: #fff;
+%mentionWrapper {
+  padding: 1px 4px;
+  border-radius: 5px;
+  line-height: 22px;
+  white-space: nowrap;
+  transition: all 0.15s ease-in-out;
+  background-color: $main-color;
+  color: #fff;
+  &:hover {
+    background-color: $hover-color;
+  }
+  &%mentionIcon {
+    padding-left: 1.2rem;
+  }
+}
+// PINGED
+%mentioned {
+  %mention%mentionedInteractive {
+    background-color: hsla(0, 0%, 100%, 0.1);
+    color: $main-color;
     &:hover {
-      background-color: $hover-color;
-    }
-    &%mentionIcon {
-      padding-left: 1.2rem;
-    }
-  }
-  strong {
-    > %mention {
-      font-weight: 600;
-    }
-  }
-  // the ping itself
-  %mentioned {
-    %mention%mentionedInteractive {
-      background-color: hsla(0, 0%, 100%, 0.1);
-      color: $main-color;
-      &:hover {
-        background-color: hsla(0, 0%, 100%, 0.07);
-        color: $hover-color;
-        text-decoration: none;
-      }
+      background-color: hsla(0, 0%, 100%, 0.07);
+      color: $hover-color;
+      text-decoration: none;
     }
   }
 }
-// ping bg
+// BACKGROUND
 %message%mentioned {
   background-color: hsla(0, 0%, 100%, 0.05);
   &%messageSelected,

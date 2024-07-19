@@ -1,0 +1,39 @@
+/* TAB BAR */
+%tabBarTop {
+  %tabBarBrand {
+    &%tabBarItem {
+      &:hover {
+        border-bottom-color: $hover-color;
+      }
+      &%tabBarItemSelected,
+      &:active {
+        border-bottom-color: $main-color;
+      }
+    }
+  }
+}
+
+// PILL
+%tabBarTopPill,
+%tabBarSide {
+  %tabBarThemed {
+    &%tabBarItem {
+      color: hsla(0, 0%, 100%, 0.5);
+      transition: all 0.3s ease-in-out;
+      &:hover:not(%tabBarItemDisabled) {
+        background-color: hsla(0, 0%, 100%, .1);
+        color: hsla(0, 0%, 100%, 0.7);
+      }
+    }
+    &%tabBarItemSelected {
+      &%tabBarItem {
+        background-color: $main-color;
+        color: #fff;
+        &:hover:not(%tabBarItemDisabled) {
+        background-color: $main-color;
+        color: #fff;
+        }
+      }      
+    }
+  }
+}

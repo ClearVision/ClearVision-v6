@@ -16,8 +16,7 @@
     border-top: 8px solid hsla(0, 0%, 0%, 0.8);
   }
 }
-%chatToolbarActive,
-%chatToolbarHover:hover {
+%chatToolbarButton:hover {
   background-color: hsla(0, 0%, 100%, 0.05);
 }
 %chatToolbarIcon {
@@ -64,27 +63,20 @@
   }
 }
 
-// STUDENT HUBS
-%hubPopoutSidebar {
-  background: transparent;
-}
-
 // LEAVE SERVER REASON
 %serverLeave {
   background-color: transparent;
 }
-%serverLeaveReason {
-  %serverDeleteReasonOption {
-    color: #fff;
-    background: hsla(0, 0%, 100%, 0.03);
-    border: 1px solid hsla(0, 0%, 100%, 0.05);
-    border-top: none;
-    &:first-child {
-      border-top: 1px solid hsla(0, 0%, 100%, 0.05);
-    }
-    &:hover {
-      background: hsla(0, 0%, 100%, 0.06);
-    }
+%serverLeaveOption {
+  color: #fff;
+  background: hsla(0, 0%, 100%, 0.03);
+  border: 1px solid hsla(0, 0%, 100%, 0.05);
+  border-top: none;
+  &:first-child {
+    border-top: 1px solid hsla(0, 0%, 100%, 0.05);
+  }
+  &:hover {
+    background: hsla(0, 0%, 100%, 0.06);
   }
 }
 

@@ -14,7 +14,7 @@
 }
 %channelWrapperSelected,
 %privateChannelInteractiveSelected,
-%topPillItemSelected {
+%tabBarItemSelected {
   %numberBadge,
   %textBadge {
     background: #fff !important;
@@ -44,4 +44,9 @@
 // COMMUNITY GUILD BADGE
 %guildIconChildContainer path[fill='var(--primary-500)'] {
   fill: hsla(0, 0%, 0%, 0.9);
+}
+
+// 1 MONTH FREE NITRO
+%nitroTrialBadge {
+  background-color: $main-color;
 }

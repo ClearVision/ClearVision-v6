@@ -38,9 +38,6 @@
   %chatGatedDescription {
     color: hsla(0, 0%, 100%, 0.7);
   }
-  %chatGatedSeparator {
-    background: hsla(0, 0%, 100%, 0.07);
-  }
 }
 
 // EMPTY CHANNEL
@@ -107,4 +104,15 @@
 // REPLY MENTION TOGGLE 
 div[aria-checked="true"] %replyMentionButton {
   color: $main-color !important;
+}
+
+// THREAD
+%createThreadContainer {
+  background-color: transparent;
+}
+%threadIconWrapper {
+  background-color: $main-color;
+  svg path {
+    fill: #fff;
+  }
 }

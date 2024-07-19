@@ -164,11 +164,8 @@ div#magane div.stickerWindow div.packs-toolbar {
   margin-bottom: -2px;
 }
 // GAMEACTIVITYTOGGLE - DEVILBRO
-%themeDark {
-  %bdGameActivityToggle %accountPanelTagButton,
-  %bdGameActivityToggle %accountPanelTagless {
-    min-width: calc(100% - 140px) !important;
-  }
+%themeDark %accountPanelAvatarWrapper:has(+ div > button:nth-child(4)) {
+  min-width: 0px !important;
 }
 // OWNER TAG - DEVILBRO
 .owner-tag {

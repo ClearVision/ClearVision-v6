@@ -1,26 +1,13 @@
 /* CONNECTION INFO POPOUT */
-%popoutLayer {
-  %connectionInfo {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    > section {
-      background: rgba(0, 0, 0, 0.7);
-      border-radius: 0 0 3px 3px;
-      > p {
-        color: hsla(0, 0%, 100%, 0.5);
-        > strong {
-          color: $main-color;
-        }
-      }
-    }
-  }
+%connectionDebugPopout {
+  background-color: cv('bg.general.popout');  
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-%connectionInfo {
-  > section {
-    %connectionInfoBottom {
-      > a {
-        color: $main-color;
-        @include hover-shadow;
-      }
-    }
+%connectionDebugText {
+  > strong {
+    color: $main-color;
+  }
+  &%connectionDebugTextDetails {
+    color: hsla(0, 0%, 100%, 0.5);
   }
 }

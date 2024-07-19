@@ -48,3 +48,45 @@
 %screenshareUpsell {
   background: transparent;
 }
+
+// CLIPS
+%clipsShareTo {
+  background: rgba(0, 0, 0, 0.4);
+  &:hover {
+    background: $hover-color;
+    opacity: .8;
+  }
+}
+%clipsUploadModal {
+  background-color: transparent;
+}
+%clipsUploadGame {
+  color: $main-color;
+}
+%clipsUploadTitle {
+  color: #fff !important; //Important needed because discord used element style - Snow
+}
+%clipsInterfaceOptionsModal {
+  background: transparent;
+}
+%clipsInterfaceGeneralInfo {
+  background: transparent;
+}
+%clipsInterfaceParticipants {
+  background: transparent;
+}
+%clipsInterfaceParticipantsCounter {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+%clipsInterfaceTimeScroller {
+  background-color: $main-color;
+}
+%clipsInterfacePlayPause {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+%clipsInterfaceDragHandles {
+  background-color: $main-color;
+}
+%clipInChatFooter {
+  background: rgba(0, 0, 0, 0.8);
+}

@@ -13,12 +13,8 @@
   background-color: hsla(0, 0%, 0%, 0.4);
   border: 2px solid $main-color;
 }
-%eventStatusBrand,
-%eventStatusLabel {
-  color: $main-color;
-  %eventStatusGreen {
-    color: cv('colors.success');
-  }
+%eventNewBadgeText {
+  color: #fff;
 }
 %eventIconContainer svg path {
   fill: $main-color;

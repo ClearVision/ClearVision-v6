@@ -29,6 +29,14 @@
     }
   }
 }
+/* Account for account panel width scaling under
+  new design */
+%themeDark %accountPanelAvatarWrapper {
+  min-width: calc(var(--channels-width) - 120px);
+  &:hover {
+    background-color: hsla(0, 0%, 100%, .1);
+  }
+}
 
 // BUTTONS
 button%panelButton {
@@ -129,9 +137,6 @@ button%panelButton {
   %accountPanelUsername {
     color: #fff;
   }
-  %accountPanelDiscriminator {
-    color: hsla(0, 0%, 100%, 0.3);
-  }
 }
 
 // CONNECTION PANEL
@@ -194,4 +199,22 @@ button%panelButton {
 // NOISE CANCELLATION POPOUT
 %noiseCancellationPopout {
   background-color: rgba(0, 0, 0, 0.7);
+}
+
+// QUEST PANEL
+%themeDark %questPanel {
+	background-color: transparent;
+}
+%questPanelAccepted {
+	background: rgba(0, 0, 0, 0.6) !important;
+}
+%questPanelAcceptedExpandedBackground {
+	background: transparent !important;
+	border-top: 2px solid hsla(0, 0%, 100%, .1);
+}
+%questPanelAcceptedExpandedContent {
+  visibility: hidden;
+  %questPanelExpanded & {
+    visibility: visible;
+  }
 }

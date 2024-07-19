@@ -74,3 +74,58 @@
     z-index: 10;
   }
 }
+/* Summaries in chat BETA */
+.topicsPillContainer__2c107 {
+  background: rgba(0, 0, 0, 0.6);
+}
+.topicsPillContainer__2c107:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+.newTopicsBarContainer__8c1e3 {
+  background-color: $main-color;
+  opacity: .5 
+}
+.topicsPillCaret__46c3b {
+  background: $main-color;
+  color: #fff;
+}
+.topicsPillCaret__46c3b:hover {
+  background: $hover-color;
+  color: #fff;
+}
+.topicsPillTextSelected__717ea {
+  background: rgba(0, 0, 0, 0.8);
+}
+.topicsDropdownHeading__6fa9b {
+  background: rgba(0, 0, 0, 0.8);
+}
+.topicsScroller__64e73 {
+  background: rgba(0, 0, 0, 0.8);
+}
+.container_df5675:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+.thumbIcon__954fb {
+  color: #fff;
+  background: $main-color;
+}
+.summaryFeedbackWrapper_a4b82f {
+  display: none;
+}
+.summaryEndIcon__71ddc {
+  color: $main-color;
+  background: transparent;
+  margin-right: 93.5%;
+  width: 2.5rem;
+  height: 3rem;
+  font-weight: 900;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.summaryStartIcon_f4a16a {
+  color: $main-color;
+  width: 2.5rem;
+  height: 3rem;
+  font-weight: 900;
+  margin-left: 42px;
+}

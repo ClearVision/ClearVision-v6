@@ -40,12 +40,25 @@
   }
 }
 
-// GUILD
+// GUILD ICON
 %guildIcon {
   background-color: rgba(0, 0, 0, 0.3);
 }
-%guildPlaceholder {
-  background: hsla(0, 0%, 100%, 0.07);
+
+// HOME & ACRONYM
+%guildChildWrapper {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: hsla(0, 0%, 100%, 0.7);
+  transition: all 0.3s ease-in-out;
+}
+%guildNav {
+  &:hover,
+  &%guildNavSelected {
+    %guildChildWrapper {
+      background-color: $main-color;
+      color: #fff;
+    }
+  }
 }
 
 // PILL
@@ -63,22 +76,6 @@
   }
 }
 
-// ACRONYM
-%guildChildWrapper {
-  background-color: rgba(0, 0, 0, 0.3);
-  color: hsla(0, 0%, 100%, 0.7);
-  transition: all 0.3s ease-in-out;
-}
-%guildLink {
-  &:hover,
-  &%guildLinkSelected {
-    %guildChildWrapper {
-      background-color: $main-color;
-      color: #fff;
-    }
-  }
-}
-
 // PLACEHOLDER
 %guildDragInner {
   background: hsla(0, 0%, 100%, 0.1);
@@ -88,18 +85,18 @@
 %guildBadge {
   background: hsla(0, 0%, 0%, 0.7);
   box-shadow: 0 0 0 1px hsla(0, 0%, 0%, 0.7);
-  &%guildBadgeParticipating {
+  %guildBadgeIcon {
+    padding: 1px;
+    color: $main-color;
+    filter: drop-shadow(0 0 3px $main-color);
+  }
+  &%guildBadgeConnected {
     background: $main-color;
     box-shadow: 0 0 0 1px $main-color;
     %guildBadgeIcon {
       color: #fff;
     }
   }
-}
-%guildBadgeIcon {
-  padding: 1px;
-  color: $main-color;
-  filter: drop-shadow(0 0 3px $main-color);
 }
 
 // FOLDER

@@ -1,5 +1,23 @@
 /* GIF PICKER */
 
+// HEADER
+%gifPickerHeader {
+  background-color: transparent;
+}
+%gifPickerSearch {
+  background-color: rgba(255,255,255,.07);
+  border: none;
+  box-shadow: 0 0 0 2px rgba(255,255,255,.09);
+  margin-top: 2px;
+  &:focus-within {
+    box-shadow: 0 0 2px 2px $main-color;
+    transition: all 0.15s ease-in-out;
+  }
+}
+%gifPickerSearchInput::placeholder {
+	color: hsla(0, 0%, 100%, 0.3);
+}
+
 %gifPickerContent {
   // CATEGORIES
   %gifPickerCategoryFade,
