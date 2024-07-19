@@ -676,22 +676,22 @@
 .chatContent_a7d72e {
   @extend %chatContent !optional;
 }
-.gatedContent_b9693a {
+.gatedContent_def860 {
   @extend %chatGatedContent !optional;
 }
-.image_b9693a {
+.image_def860 {
   @extend %chatGatedImage !optional;
 }
-.title_b9693a {
+.title_def860 {
   @extend %chatGatedTitle !optional;
 }
-.description_b9693a {
+.description_def860 {
   @extend %chatGatedDescription !optional;
 }
 .separator_d76876 {
   @extend %chatGatedSeparator !optional;
 }
-.action_b9693a {
+.action_def860 {
   @extend %chatGatedAction !optional;
 }
 .resizeHandle_d1c246 {
@@ -841,10 +841,10 @@
 .textAreaSlate_d0696b {
   @extend %slateTextArea !optional;
 }
-.button_cecf00 {
+.button_f9af59 {
   @extend %channelTextAreaButton !optional;
 }
-.emojiButton_af14ca {
+.emojiButton_d91a75 {
   @extend %channelTextAreaEmojiButton !optional;
 }
 .typing_d7ebeb {
@@ -1117,7 +1117,7 @@
 .childContainer_c91f7d {
   @extend %flowerStarChild !optional;
 }
-.icon_db1980 {
+.icon_d082f7 {
   @extend %flowerStarIcon !optional;
 }
 .gameVerifiedIcon_fd966d {
@@ -1177,7 +1177,7 @@
 .path3_b6db20 {
   @extend %spinnerCirclePath3 !optional;
 }
-.spinner_eb1ca6 {
+.spinner_e90879 {
   @extend %spinnerPulsingEllipsisPopout !optional;
 }
 .pulsingEllipsis_b6db20 {
@@ -1258,10 +1258,10 @@
 .tooltipBrand_b6c360 {
   @extend %tooltipBrand !optional;
 }
-.hub_db1980 {
+.hub_d082f7 {
   @extend %tooltipHub !optional;
 }
-.icon_db1980 {
+.icon_d082f7 {
   @extend %tooltipHubIcon !optional;
 }
 .tooltipRed_b6c360 {
@@ -1384,16 +1384,16 @@
 .expandedFolderIconWrapper_bc7085 {
   @extend %guildFolderExpandedIconWrapper !optional;
 }
-.icon_f11207 {
+.icon_a64689 {
   @extend %guildFolderIcon !optional;
 }
-.iconSizeSmol_f11207 {
+.iconSizeSmol_a64689 {
   @extend %guildFolderIconSizeSmol !optional;
 }
 .guildIcon_bc7085 {
   @extend %guildFolderGuildIcon !optional;
 }
-.noIcon_f11207 {
+.noIcon_a64689 {
   @extend %guildFolderGuildNoIcon !optional;
 }
 .circleIconButton_db6521 {
@@ -1754,19 +1754,19 @@
 .memberGroupsPlaceholder_cbd271 {
   @extend %memberGroupPlaceholder !optional;
 }
-.placeholder_fb03e5 {
+.placeholder_dac468 {
   @extend %memberPlaceholder !optional;
 }
-.multiplePlaceholder_fb03e5 {
+.multiplePlaceholder_dac468 {
   @extend %memberPlaceholderMultiple !optional;
 }
-.placeholderAvatar_fb03e5 {
+.placeholderAvatar_dac468 {
   @extend %memberPlaceholderAvatar !optional;
 }
 .placeholderUsername_a43b87 {
   @extend %memberPlaceholderUsername !optional;
 }
-.mulitplePlaceholderUsername_fb03e5 {
+.mulitplePlaceholderUsername_dac468 {
   @extend %memberPlaceholderUsernameMultiple !optional;
 }
 .interactionsContainer_a35965 {
@@ -1856,44 +1856,44 @@
 .embedWrapper_b558d0 {
   @extend %attachmentEmbedWrapper !optional;
 }
-.icon_a4623d {
+.icon_b52bef {
   @extend %attachmentIcon !optional;
 }
-.attachmentInner_a4623d {
+.attachmentInner_b52bef {
   @extend %attachmentInner !optional;
 }
-.filenameLinkWrapper_a4623d {
+.filenameLinkWrapper_b52bef {
   @extend %fileNameLinkWrapper !optional;
 }
-.fileNameLink_a4623d {
+.fileNameLink_b52bef {
   @extend %fileNameLink !optional;
 }
-.metadata_a4623d {
+.metadata_b52bef {
   @extend %fileMetadata !optional;
 }
 .downloadButton__3fb6d {
   @extend %attachmentDownloadButton !optional;
 }
-.filenameWrapper_a4623d {
+.filenameWrapper_b52bef {
   @extend %fileNameWrapper !optional;
 }
-.filename_a4623d {
+.filename_b52bef {
   @extend %fileName !optional;
 }
-.size_a4623d {
+.size_b52bef {
   @extend %fileSize !optional;
 }
-.progress_a4623d {
+.progress_b52bef {
   @extend %fileProgress !optional;
 }
 .progressBar_c6473a {
   @extend %fileProgressBar !optional;
 }
-.cancelButton_a4623d {
+.cancelButton_b52bef {
   @extend %attachmentCancelButton !optional;
 }
 .downloadButton__3fb6d,
-.cancelButton_a4623d {
+.cancelButton_b52bef {
   @extend %attachmentButton !optional;
 }
 .inline {
@@ -1911,52 +1911,52 @@ pre {
 .container_b558d0 {
   @extend %embedContainer !optional;
 }
-.embed_ad0b71 {
+.embed_b0068a {
   @extend %embed !optional;
 }
-.grid_ad0b71 {
+.grid_b0068a {
   @extend %embedGrid !optional;
 }
-.embedMargin_ad0b71 {
+.embedMargin_b0068a {
   @extend %embedMargin !optional;
 }
-.embedLink_ad0b71 {
+.embedLink_b0068a {
   @extend %embedLink !optional;
 }
-.embedProvider_ad0b71 {
+.embedProvider_b0068a {
   @extend %embedProvider !optional;
 }
-.embedAuthor_ad0b71 {
+.embedAuthor_b0068a {
   @extend %embedAuthor !optional;
 }
-.embedAuthorName_ad0b71 {
+.embedAuthorName_b0068a {
   @extend %embedAuthorname !optional;
 }
-.embedAuthorNameLink_ad0b71 {
+.embedAuthorNameLink_b0068a {
   @extend %embedAuthorNameLink !optional;
 }
-.embedAuthorIcon_ad0b71 {
+.embedAuthorIcon_b0068a {
   @extend %embedAuthorIcon !optional;
 }
-.embedTitle_ad0b71 {
+.embedTitle_b0068a {
   @extend %embedTitle !optional;
 }
-.embedTitleLink_ad0b71 {
+.embedTitleLink_b0068a {
   @extend %embedTitleLink !optional;
 }
-.embedDescription_ad0b71 {
+.embedDescription_b0068a {
   @extend %embedDescription !optional;
 }
-.embedFields_ad0b71 {
+.embedFields_b0068a {
   @extend %embedFields !optional;
 }
-.embedField_ad0b71 {
+.embedField_b0068a {
   @extend %embedField !optional;
 }
-.embedFieldName_ad0b71 {
+.embedFieldName_b0068a {
   @extend %embedFieldName !optional;
 }
-.embedFieldValue_ad0b71 {
+.embedFieldValue_b0068a {
   @extend %embedFieldValue !optional;
 }
 .embedImage_b0068 {
@@ -1980,19 +1980,19 @@ pre {
 .hoverButton_e5c1dc {
   @extend %imageHoverButton !optional;
 }
-.embedThumbnail_ad0b71 {
+.embedThumbnail_b0068a {
   @extend %embedThumbnail !optional;
 }
-.embedVideo_ad0b71 {
+.embedVideo_b0068a {
   @extend %embedVideo !optional;
 }
-.embedIframe_ad0b71 {
+.embedIframe_b0068a {
   @extend %embedIframe !optional;
 }
-.gifTag_b30195 {
+.gifTag_b11e6c {
   @extend %embedGIFTag !optional;
 }
-.embedVideoActions_ad0b71 {
+.embedVideoActions_b0068a {
   @extend %embedVideoActions !optional;
 }
 .embedVideoAction_add135 {
@@ -2001,49 +2001,49 @@ pre {
 .wrapper_ab4920 {
   @extend %embedVideoActionsButtonWrapper !optional;
 }
-.embedFooter_ad0b71 {
+.embedFooter_b0068a {
   @extend %embedFooter !optional;
 }
-.embedFooterText_ad0b71 {
+.embedFooterText_b0068a {
   @extend %embedFooterText !optional;
 }
-.embedFooterSeparator_ad0b71 {
+.embedFooterSeparator_b0068a {
   @extend %embedFooterSeparator !optional;
 }
-.embedFooterIcon_ad0b71 {
+.embedFooterIcon_b0068a {
   @extend %embedFooterIcon !optional;
 }
-.wrapper_b9fe76 {
+.wrapper_a71a1c {
   @extend %inviteWrapper !optional;
 }
 .h5_c46f6a {
   @extend %inviteTitle !optional;
 }
-.guildIcon_b9fe76 {
+.guildIcon_a71a1c {
   @extend %inviteGuildIcon !optional;
 }
-.guildIconExpired_b9fe76 {
+.guildIconExpired_a71a1c {
   @extend %inviteGuildIconExpired !optional;
 }
-.guildInfo_b9fe76 {
+.guildInfo_a71a1c {
   @extend %inviteGuildInfo !optional;
 }
-.guildName_b9fe76 {
+.guildName_a71a1c {
   @extend %inviteGuildName !optional;
 }
-.guildDetail_b9fe76 {
+.guildDetail_a71a1c {
   @extend %inviteGuildDetail !optional;
 }
-.status_b9fe76 {
+.status_a71a1c {
   @extend %inviteStatus !optional;
 }
-.statusOnline_b9fe76 {
+.statusOnline_a71a1c {
   @extend %inviteStatusOnline !optional;
 }
-.statusOffline_b9fe76 {
+.statusOffline_a71a1c {
   @extend %inviteStatusOffline !optional;
 }
-.button_b9fe76 {
+.button_a71a1c {
   @extend %inviteButton !optional;
 }
 .lookFilled_dd4f85.colorGreen_dd4f85 {
@@ -2220,7 +2220,7 @@ pre {
 .commandName_f9f2ca {
   @extend %messageRepliedCommandName !optional;
 }
-.inlineMediaEmbed_ad0b71 {
+.inlineMediaEmbed_b0068a {
   @extend %messageInlineMediaEmbed !optional;
 }
 .spoilerMarkdownContent_a3d0f7 {
@@ -2689,7 +2689,7 @@ pre {
 .guildList_c8c448 {
   @extend %discoverGuildList !optional;
 }
-.loading_eb1ca6 {
+.loading_e90879 {
   @extend %discoverGuildCardLoading !optional;
 }
 .loaded_e90879 {
@@ -2704,28 +2704,28 @@ pre {
 .iconMask_e90879 {
   @extend %discoverGuildCardIcon !optional;
 }
-.splash_eb1ca6 {
+.splash_e90879 {
   @extend %discoverCardSplash !optional;
 }
-.guildInfo_eb1ca6 {
+.guildInfo_e90879 {
   @extend %discoverGuildInfo !optional;
 }
-.guildIcon_eb1ca6 {
+.guildIcon_e90879 {
   @extend %discoverGuildIcon !optional;
 }
-.avatar_eb1ca6 {
+.avatar_e90879 {
   @extend %discoverGuildAvatar !optional;
 }
-.title_eb1ca6 {
+.title_e90879 {
   @extend %discoverGuildTitle !optional;
 }
-.memberInfo_eb1ca6 {
+.memberInfo_e90879 {
   @extend %discoverGuildMemberInfo !optional;
 }
-.dotOnline_eb1ca6 {
+.dotOnline_e90879 {
   @extend %discoverGuildStatusOnline !optional;
 }
-.dotOffline_eb1ca6 {
+.dotOffline_e90879 {
   @extend %discoverGuildStatusOffline !optional;
 }
 .emptyContainer_e37a20 {
@@ -3094,13 +3094,13 @@ pre {
 .errorPage_dd2aa2 {
   @extend %errorPage !optional;
 }
-.image_b06619 {
+.image_a2a7b5 {
   @extend %errorPageImage !optional;
 }
-.text_b06619 {
+.text_a2a7b5 {
   @extend %errorPageText !optional;
 }
-.note_b06619 {
+.note_a2a7b5 {
   @extend %errorPageNote !optional;
 }
 .children_a6ae9b {
@@ -3703,7 +3703,7 @@ pre {
 .roleRemoveIcon_f9575e {
   @extend %roleRemoveIcon !optional;
 }
-.roleRemoveButton_e4010c,
+.roleRemoveButton_f9575e,
 .roleRemoveButton_f9575e {
   @extend %roleRemoveButton !optional;
 }
@@ -3945,10 +3945,10 @@ pre {
 .container_c67e31 {
   @extend %userSettingsKeybindContainer !optional;
 }
-.containerDisabled_ebcd80 {
+.containerDisabled_fb7bb2 {
   @extend %userSettingsKeybindDisabled !optional;
 }
-.recording_ebcd80 {
+.recording_fb7bb2 {
   @extend %userSettingsKeybindRecording !optional;
 }
 .notDetected_fd966d {
@@ -4032,25 +4032,25 @@ pre {
 .checkmark_f9902b {
   @extend %serverInviteTick !optional;
 }
-.textContainer_ad9cbd {
+.textContainer_d8e2d0 {
   @extend %textContainer !optional;
 }
-.footer_ad9cbd {
+.footer_d8e2d0 {
   @extend %textContainerFooter !optional;
 }
-.languageSelector_ad9cbd {
+.languageSelector_d8e2d0 {
   @extend %languageSelector !optional;
 }
-.modalTextContainer_ad9cbd {
+.modalTextContainer_d8e2d0 {
   @extend %textContainerModal !optional;
 }
-.attachmentName_ad9cbd {
+.attachmentName_d8e2d0 {
   @extend %attachmentName !optional;
 }
-.formattedSize_ad9cbd {
+.formattedSize_d8e2d0 {
   @extend %attachmentSize !optional;
 }
-.languageSelector_ad9cbd {
+.languageSelector_d8e2d0 {
   @extend %textContainerLanguageSelector !optional;
 }
 .container_ed4410 {
@@ -4149,7 +4149,7 @@ pre {
 .endButton_b48941 {
   @extend %pageButtonEnd !optional;
 }
-.disabled_cb56ee {
+.disabled_d6a4eb {
   @extend %pageButtonDisabled !optional;
 }
 .consentCard_ea523e {
@@ -4491,10 +4491,10 @@ pre {
 .gridProgressBar_d7df05 {
   @extend %giftQuestProgress !optional;
 }
-.phoneField_d4eb58 {
+.phoneField_f26de7 {
   @extend %phoneVerification !optional;
 }
-.inputField_d4eb58 {
+.inputField_f26de7 {
   @extend %phoneVerificationInput !optional;
 }
 .maskBackground_ccd3df {
@@ -5153,40 +5153,40 @@ pre {
 .cardFolder_dd864e {
   @extend %channelSettingsCardPanel !optional;
 }
-.group_e3c4bb {
+.group_d25d19 {
   @extend %channelSettingsPermissionsGroup !optional;
 }
-.item_e3c4bb {
+.item_d25d19 {
   @extend %channelSettingsPermissionsItem !optional;
 }
-.selected_e3c4bb {
+.selected_d25d19 {
   @extend %channelSettingsPermissionsSelected !optional;
 }
-.deny_e3c4bb {
+.deny_d25d19 {
   @extend %channelSettingsPermissionsDeny !optional;
 }
-.passthrough_e3c4bb {
+.passthrough_d25d19 {
   @extend %channelSettingsPermissionsPassthrough !optional;
 }
-.allow_e3c4bb {
+.allow_d25d19 {
   @extend %channelSettingsPermissionsAllow !optional;
 }
-.header_bcd8cb {
+.header_cf6b7d {
   @extend %channelSettingsRoleDropdownHeader !optional;
 }
-.container_bcd8cb {
+.container_cf6b7d {
   @extend %channelSettingsRoleDropdownContainer !optional;
 }
-.sectionTag_bcd8cb {
+.sectionTag_cf6b7d {
   @extend %channelSettingsRoleDropdownTag !optional;
 }
-.row_bcd8cb {
+.row_cf6b7d {
   @extend %channelSettingsRoleDropdownRow !optional;
 }
-.rowInner_bcd8cb {
+.rowInner_cf6b7d {
   @extend %channelSettingsRoleDropdownRowInner !optional;
 }
-.selected_bcd8cb {
+.selected_cf6b7d {
   @extend %channelSettingsRoleDropdownSelected !optional;
 }
 .defaultColor_e9e35f {
@@ -5447,7 +5447,7 @@ pre {
 .upload_df1eaf.sizeClip_df1eaf {
   @extend %clipsUploadModal !optional;
 }
-.gameIcon_f394e5 {
+.gameIcon_a9e62c {
   @extend %clipsUploadGame !optional;
 }
 .text-md-semibold__8664f {
