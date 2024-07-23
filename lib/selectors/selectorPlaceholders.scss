@@ -763,7 +763,7 @@
 .content_b56bbc {
   @extend %gifPickerContent !optional;
 }
-.container_af1167 {
+.container_b56bbc {
   @extend %gifPickerContainer !optional;
 }
 .categoryFade_af1167 {
@@ -2659,20 +2659,20 @@ pre {
 .search_f69601 {
   @extend %discoverSearch !optional;
 }
-.searchBox_f69601 {
+.searchBox_d83b4d {
   @extend %discoverSearchBox !optional;
 }
-.searchPage_a3a4ce {
-  @extend %discoverSearchPage !optional;
-}
-.searchBoxInput_f69601 {
+.searchBoxInput_d83b4d{
   @extend %discoverSearchBoxInput !optional;
 }
-.searchIcon_f69601 {
+.searchIcon_d83b4d {
   @extend %discoverSearchBoxIconSearch !optional;
 }
 .clearIcon_d83b4d {
   @extend %discoverSearchBoxClearIcon !optional;
+}
+.searchPage_a3a4ce {
+  @extend %discoverSearchPage !optional;
 }
 .sidebarContainer_a3a4ce {
   @extend %discoverCategory !optional;
@@ -4726,6 +4726,9 @@ pre {
   @extend %forumTagButtonInner !optional;
 }
 .iconWrapper_e378b3 {
+  @extend %forumChatIconWrapper !optional;
+}
+.icon_e378b3 {
   @extend %forumChatIcon !optional;
 }
 .container_b385c8 {
