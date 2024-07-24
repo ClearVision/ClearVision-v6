@@ -213,8 +213,11 @@
     border-color: hsla(0, 0%, 100%, 0.07);
   }
 }
-%forumChatIcon {
+%forumChatIconWrapper {
   background: $main-color;
+}
+%forumChatIcon path {
+  fill: #fff;
 }
 %forumChatHead,
 %forumChatDivider,
