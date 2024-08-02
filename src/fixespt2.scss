@@ -2,6 +2,12 @@
 .theme-dark .activity_cd74cc {
     background: rgba(0, 0, 0, .4);
 }
+.buttonColor_cd74cc {
+    background-color: var(--main-color);
+}
+.buttonColor_cd74cc:hover {
+    background-color: var(--hover-color);
+}
 
 // Report Message Options https://i.imgur.com/u6QqYH2.png
 .childButton_f45bfc {
