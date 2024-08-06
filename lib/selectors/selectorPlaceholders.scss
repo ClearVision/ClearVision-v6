@@ -2388,6 +2388,9 @@ pre {
 .message_ddcc45 {
   @extend %messageDeleteModal !optional;
 }
+.childButton_f45bfc {
+  @extend %messageReportOption !optional;
+}
 .scroller_f2bfbb {
   @extend %reactionModalScroller !optional;
 }
@@ -5359,6 +5362,12 @@ pre {
 }
 .guildPopout_cf5d0a {
   @extend %webhookPopout !optional;
+}
+.contentWrapper_f7506e {
+  @extend %voiceActitvityWrapper !optional;
+}
+.container_e5da8b {
+  @extend %voiceActitvityItem !optional;
 }
 .emojiCounter_cf5d0a {
   @extend %webhookEmojiRow !optional;

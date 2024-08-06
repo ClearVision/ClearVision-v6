@@ -69,12 +69,13 @@
 }
 
 // ACTIVITY
-%userPopoutOuter%userProfileOuterUnthemed {
-  %userPopoutActivity {
-    background-color: hsla(0, 0%, 0%, .4);
-  }
-  %userPopoutActivityButton {
-    background-color: $main-color;
+%userPopoutActivity {
+  background-color: hsla(0, 0%, 0%, .4);
+}
+%userPopoutActivityButton {
+  background-color: $main-color;
+  &:hover {
+    background-color: $hover-color;
   }
 }
 
