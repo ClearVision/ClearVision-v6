@@ -28,8 +28,51 @@ div.container_e5da8b.containerBorderRadius_e5da8b.iconCard_e5da8b {
     border-radius: 10px;
 }
 
+// Some more fixes to Apps Popout https://discord.com/channels/212324635356692500/858733936800956427/1270815649417007175
+div.container_e5da8b.containerBorderRadius_e5da8b { //trending userapps etc
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+div.container_e5da8b.containerBorderRadius_e5da8b:hover {
+    background-color: rgba(255, 255, 255, 0.11); //should be changed in the future to provide better consistency
+}
+
+div.appDetailsContainer_e5da8b.appDetailsRowContainer_e5da8b {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+div.appDetailsContainer_e5da8b.appDetailsRowContainer_e5da8b:hover {
+    background-color: rgba(255, 255, 255, 0.03); //should be changed in the future to provide better consistency
+}
+
+div.clickable_b78bb6 {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+div.clickable_b78bb6:hover {
+    background-color: rgba(255, 255, 255, 0.11); //should be changed in the future to provide better consistency
+}
+div.container_c7c1c7 {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
 // Phone number change https://discord.com/channels/212324635356692500/858733936800956427/1270779759730753586
 div.popoutList_da8701.phoneFieldPopout_ff761b.elevationBorderLow_ff8688 {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
+// Security keys list https://discord.com/channels/212324635356692500/858733936800956427/1270769660039663636
+div.credentialList_eaef52 {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+}
+div.name_d808b0 {
+    color: var(--text-normal);
+}
+button.button_dd4f85.lookBlank_dd4f85.colorTransparent_dd4f85.sizeIcon_dd4f85.grow_dd4f85 {
+    color: var(--text-normal);
+}
+div.credentialItem_eaef52.container_d808b0 {
+    border-radius: 0px;
+}
+div.credentialItem_eaef52.container_d808b0:first-of-type {
+    border: none;
+}
