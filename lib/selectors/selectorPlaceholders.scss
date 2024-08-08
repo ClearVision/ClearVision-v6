@@ -3909,13 +3909,13 @@ pre {
 .micTest_e75a73 {
   @extend %userSettingsMicTest !optional;
 }
-.container_e5cdf3 {
+.container_a1107d {
   @extend %userSettingsMicTestContainer !optional;
 }
-.progress_e5cdf3 {
+.progress_a1107d {
   @extend %userSettingsMicTestProgress !optional;
 }
-.notches_e5cdf3 {
+.notches_a1107d {
   @extend %userSettingsMicTestNotches !optional;
 }
 .soundButtonSettingContainer_c801bb {
@@ -4494,11 +4494,8 @@ pre {
 .gridProgressBar_d7df05 {
   @extend %giftQuestProgress !optional;
 }
-.phoneField_f26de7 {
+.phoneFieldPopout_ff761b {
   @extend %phoneVerification !optional;
-}
-.inputField_f26de7 {
-  @extend %phoneVerificationInput !optional;
 }
 .maskBackground_ccd3df {
   @extend %typingStickerRecommendationHover !optional;
