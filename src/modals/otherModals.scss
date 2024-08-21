@@ -251,12 +251,3 @@
 %webhookBackground {
   background: var(--background-overlay);
 }
-
-// VOICE ACTIVITY
-%voiceActitvityWrapper {
-  background-color: transparent;
-}
-%voiceActitvityItem {
-  border-radius: 0;
-  background-color: rgba(0, 0, 0, .2);
-}

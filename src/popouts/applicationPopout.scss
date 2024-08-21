@@ -1,0 +1,66 @@
+// POPOUT BUTTON
+.button_df39bd {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  height: 48px;
+  width: 48px;
+}
+
+// BACKGROUND
+%voiceActitvityWrapper {
+  background-color: transparent;
+}
+.container_c7c1c7 {
+	background-color: hsla(0, 0%, 0%, .8);
+}
+
+// ITEM
+%voiceActitvityItem {
+  background-color: rgba(0, 0, 0, .2);
+  border-radius: 10px;
+  &:hover {
+    background-color: hsla(0, 0%, 100%, 0.07);
+  }
+  &.rowContainer_e5da8b {
+    background-color: transparent;
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}
+
+// APP DETAILS
+.container_ec8cd2 {
+  background-color: transparent;
+}
+.stickyBanner_e46a21 {
+  visibility: hidden;
+}
+.bannerBackground_e46a21 {
+  -webkit-mask:linear-gradient(to bottom, #000, transparent);
+  mask:linear-gradient(to bottom, #000, transparent);
+}
+.overviewContainerNoVideo_e80fe9,
+.overviewContainerWithVideo_e80fe9 {
+  background-color: transparent;
+}
+
+// BOT APP DETAILS
+.appIcon_ec8cd2 {
+  background-color: rgba(0, 0, 0, .3);
+  border-color: transparent;
+}
+.sortDropdown_fd3eaf {
+  background-color: transparent;
+}
+.commandContainer_f37ac2 {
+  background-color: transparent;
+}
+.command_f37ac2 { 
+  background-color: transparent;
+}
+
+// LEARN MORE
+.container_fb1469 {
+  background-color: transparent;
+}
