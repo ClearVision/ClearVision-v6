@@ -4749,6 +4749,9 @@ pre {
 .linkContainer_ddbb27 {
   @extend %forumRulesLinkContainer !optional;
 }
+.showMoreText_ddbb27 {
+  @extend %forumRulesShowMore !optional;
+}
 .newPostsButton_a6d69a {
   @extend %forumNewPosts !optional;
 }
@@ -4779,32 +4782,26 @@ pre {
 .addTags_faaca1 {
   @extend %forumSettingsGuidelinesAddTags !optional;
 }
-.heading-lg-bold_f5eeaa {
-  @extend %headingLargeBold !optional;
-}
-.heading-lg-semibold__58a54 {
-  @extend %headingLargeSemibold !optional;
-}
-.text-xs-normal__46d75 {
+.text-xs\/normal_dc00ef {
   @extend %textExtraSmallNormal !optional;
 }
-.text-xs-medium_d3e0f1 {
+.text-xs\/medium_dc00ef {
   @extend %textExtraSmallMedium !optional;
 }
-.text-xs-bold__5467c {
+.text-xs\/bold_dc00ef {
   @extend %textExtraSmallBold !optional;
 }
-.text-sm-medium__726be {
+.text-sm\/medium_dc00ef {
   @extend %textSmallMedium !optional;
 }
-.text-md-medium_a84e09 {
+.text-sm\/semibold_dc00ef {
+  @extend %textSmallSemibold !optional;
+}
+.text-md\/medium_dc00ef {
   @extend %textMediumMedium !optional;
 }
-.text-md-normal__6e567 {
+.text-md\/normal_dc00ef {
   @extend %textMediumNormal !optional;
-}
-.text-sm-normal__95a78 {
-  @extend %textSmallNormal !optional;
 }
 .directoryContainer_da3f59 {
   @extend %directoryContainer !optional;
@@ -5357,11 +5354,59 @@ pre {
 .guildPopout_cf5d0a {
   @extend %webhookPopout !optional;
 }
+.button_df39bd {
+  @extend %appPopoutButton !optional;
+}
 .contentWrapper_f7506e {
-  @extend %voiceActitvityWrapper !optional;
+  @extend %appPopoutWrapper !optional;
+}
+.container_c7c1c7 {
+  @extend %appPopoutContainer !optional;
+}
+.container_f8c206 {
+  @extend %appPopoutItemLoading !optional;
 }
 .container_e5da8b {
-  @extend %voiceActitvityItem !optional;
+  @extend %appPopoutItem !optional;
+}
+.rowContainer_e5da8b {
+  @extend %appPopoutRowItem !optional;
+}
+.viewMore_b7ba1b {
+  @extend %appPopoutViewMore !optional;
+}
+.container_ec8cd2 {
+  @extend %appPopoutDetails !optional;
+}
+.stickyBanner_e46a21 {
+  @extend %appPopoutStickyBanner !optional;
+}
+.bannerBackground_e46a21 {
+  @extend %appPopoutBanner !optional;
+}
+.appIcon_ec8cd2 {
+  @extend %appPopoutAppIcon !optional;
+}
+.overviewContainerNoVideo_e80fe9 {
+  @extend %appPopoutAppOverview !optional;
+}
+.overviewContainerWithVideo_e80fe9 {
+  @extend %appPopoutAppOverviewWithVideo !optional;
+}
+.sortDropdown_fd3eaf {
+  @extend %appPopoutDropdown !optional;
+}
+.commandContainer_f37ac2 {
+  @extend %appPopoutCommandContainer !optional;
+}
+.command_f37ac2 {
+  @extend %appPopoutCommand !optional;
+}
+.tagContainer_e80fe9 {
+  @extend %appPopoutTag !optional;
+}
+.container_fb1469 {
+  @extend %appPopoutLearnMore !optional;
 }
 .emojiCounter_cf5d0a {
   @extend %webhookEmojiRow !optional;

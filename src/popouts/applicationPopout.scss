@@ -1,5 +1,5 @@
 // POPOUT BUTTON
-.button_df39bd {
+%appPopoutButton {
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 8px;
   height: 48px;
@@ -7,60 +7,78 @@
 }
 
 // BACKGROUND
-%voiceActitvityWrapper {
-  background-color: transparent;
+%appPopoutWrapper {
+  background-color: hsla(0, 0%, 0%, .8);
 }
-.container_c7c1c7 {
-	background-color: hsla(0, 0%, 0%, .8);
+%appPopoutContainer {
+	background-color: transparent;
 }
 
 // ITEM
-%voiceActitvityItem {
+%appPopoutItemLoading {
+	background-color: transparent;
+}
+%appPopoutItem {
   background-color: rgba(0, 0, 0, .2);
   border-radius: 10px;
   &:hover {
     background-color: hsla(0, 0%, 100%, 0.07);
   }
-  &.rowContainer_e5da8b {
+  &%appPopoutRowItem {
     background-color: transparent;
     &:hover {
       background-color: transparent;
     }
   }
 }
+%appPopoutViewMore {
+  %textMediumMedium {
+    color: $main-color !important;
+  }
+}
 
 // APP DETAILS
-.container_ec8cd2 {
+%appPopoutDetails {
   background-color: transparent;
 }
-.stickyBanner_e46a21 {
+%appPopoutStickyBanner {
   visibility: hidden;
 }
-.bannerBackground_e46a21 {
+%appPopoutBanner {
   -webkit-mask:linear-gradient(to bottom, #000, transparent);
   mask:linear-gradient(to bottom, #000, transparent);
 }
-.overviewContainerNoVideo_e80fe9,
-.overviewContainerWithVideo_e80fe9 {
+%appPopoutAppIcon {
+  background-color: rgba(0, 0, 0, .3);
+  border-color: transparent;
+}
+%appPopoutAppOverview,
+%appPopoutAppOverviewWithVideo {
   background-color: transparent;
 }
 
 // BOT APP DETAILS
-.appIcon_ec8cd2 {
-  background-color: rgba(0, 0, 0, .3);
-  border-color: transparent;
-}
-.sortDropdown_fd3eaf {
+%appPopoutDropdown {
   background-color: transparent;
 }
-.commandContainer_f37ac2 {
+%appPopoutCommandContainer {
   background-color: transparent;
 }
-.command_f37ac2 { 
+%appPopoutCommand { 
   background-color: transparent;
 }
 
+%appPopoutTag {
+  background-color: $main-color;
+  path {
+    fill: #fff;
+  }
+  %textSmallSemibold {
+    color: #fff;
+  }
+}
+
 // LEARN MORE
-.container_fb1469 {
+%appPopoutLearnMore {
   background-color: transparent;
 }
