@@ -195,10 +195,6 @@
     background: rgba(0, 0, 0, calc(var(--background-shading) * 0.3));
   }
 }
-// CREATE SERVER MODAL
-%textSmallNormal {
-  color: var(--text-normal) !important;
-}
 
 // GIFT MODAL
 /*other modals, nitro gift*/
@@ -250,13 +246,4 @@
 }
 %webhookBackground {
   background: var(--background-overlay);
-}
-
-// VOICE ACTIVITY
-%voiceActitvityWrapper {
-  background-color: transparent;
-}
-%voiceActitvityItem {
-  border-radius: 0;
-  background-color: rgba(0, 0, 0, .2);
 }

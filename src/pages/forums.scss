@@ -186,7 +186,7 @@
   background: transparent;
 }
 
-// RULES
+// GUIDELINES
 %forumRules {
   background: rgba(0, 0, 0, 0.3);
   border: 2px solid $main-color;
@@ -199,10 +199,9 @@
   %forumRulesLinkContainer {
     background: rgba(0, 0, 0, 0.8);
   }
-  %headingLargeBold,
-  %headingLargeSemibold {
-    color: $main-color;
-  }
+}
+%forumRulesShowMore {
+  color: $main-color !important;
 }
 
 // CHAT
