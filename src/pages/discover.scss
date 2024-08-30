@@ -99,7 +99,34 @@
     background-color: $main-color;
   }
 }
+
 // EMPTY RESULTS
 %discoverEmptyResults {
   background-color: hsla(0, 0%, 0%, 0.6);
+}
+
+// QUESTS
+%themeDark {
+  %discoverQuest {
+    background-color: transparent;
+  }
+  %discoverQuestContent {
+    background: none;
+    backdrop-filter: none;
+  }
+}
+%discoverQuestHeader:after {
+  background-color: transparent;
+}
+%discoverQuestItem {
+  background-color: hsla(0, 0%, 0%, .4)
+}
+%discoverQuestItemGradient {
+  background: linear-gradient(0deg, hsla(0, 0%, 0%, .9) 10%, hsla(0, 0%, 0%, .6) 25%, transparent 35%);
+}
+%discoverQuestItemDescriptionContainer {
+	background-color: transparent;
+}
+%discoverQuestItemName {
+	color: $main-color !important;
 }

@@ -2677,13 +2677,13 @@ pre {
 .sidebarContainer_a3a4ce {
   @extend %discoverCategory !optional;
 }
-.categoryItem_c72b37 {
+.container_d808b0 {
   @extend %discoverCategoryItem !optional;
 }
-.selectedCategoryItem_c72b37 {
+.selected_d808b0 {
   @extend %discoverCategoryItemSelected !optional;
 }
-.itemInner_c72b37 {
+.layout_d808b0 {
   @extend %discoverCategoryItemInner !optional;
 }
 .guildList_c8c448 {
@@ -2736,6 +2736,27 @@ pre {
 }
 .emptyHeader_e37a20 {
   @extend %discoverEmptyTitle !optional;
+}
+.container_a56260 {
+  @extend %discoverQuest !optional;
+}
+.contentContainer_a56260 {
+  @extend %discoverQuestContent !optional;
+}
+.headerBar_accde0 {
+  @extend %discoverQuestHeader !optional;
+}
+.container_a97111 {
+  @extend %discoverQuestItem !optional;
+}
+.darkThemeGradient_f2bc91 {
+  @extend %discoverQuestItemGradient !optional;
+}
+.rewardDescriptionContainer_c2d7e2 {
+  @extend %discoverQuestItemDescription !optional;
+}
+.questName_c2d7e2 {
+  @extend %discoverQuestItemName !optional;
 }
 .debugPanelStandalone_feab95 {
   @extend %connectionDebugPopout !optional;
@@ -4485,8 +4506,8 @@ pre {
 .gridProgressBar_d7df05 {
   @extend %giftQuestProgress !optional;
 }
-.phoneFieldPopout_ff761b {
-  @extend %phoneVerification !optional;
+.phoneField_f26de7 {
+  @extend %phoneInput !optional;
 }
 .maskBackground_ccd3df {
   @extend %typingStickerRecommendationHover !optional;
@@ -4923,6 +4944,12 @@ pre {
 .overlay_cd377c {
   @extend %serverExperienceGradient !optional;
 }
+.container_f1fd9c {
+  @extend %customizeChannels !optional;
+}
+.header_f1fd9c {
+  @extend %customizeChannelsHeader !optional;
+}
 .tabBar_f1fd9c {
   @extend %customizeChannelsHeaderBar !optional;
 }
@@ -4944,8 +4971,11 @@ pre {
 .role_c6b11b {
   @extend %customizeChannelsProfileRole !optional;
 }
-.container_b55df8 {
+.pageBody_c2efea {
   @extend %browseChannels !optional;
+}
+.container_b55df8 {
+  @extend %browseChannelsTip !optional;
 }
 .selectAll_f04d06 {
   @extend %browseChannelsSelectAll !optional;
