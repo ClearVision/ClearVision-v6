@@ -115,8 +115,8 @@
     backdrop-filter: none;
   }
 }
-%discoverQuestHeader:after {
-  background-color: transparent;
+%discoverQuestTabSelected {
+  border-bottom-color: $main-color;
 }
 %discoverQuestItem {
   background-color: hsla(0, 0%, 0%, .4)
@@ -124,7 +124,7 @@
 %discoverQuestItemGradient {
   background: linear-gradient(0deg, hsla(0, 0%, 0%, .9) 10%, hsla(0, 0%, 0%, .6) 25%, transparent 35%);
 }
-%discoverQuestItemDescriptionContainer {
+%discoverQuestItemDescription {
 	background-color: transparent;
 }
 %discoverQuestItemName {

@@ -2743,8 +2743,8 @@ pre {
 .contentContainer_a56260 {
   @extend %discoverQuestContent !optional;
 }
-.headerBar_accde0 {
-  @extend %discoverQuestHeader !optional;
+.selected_bc4ee1 {
+  @extend %discoverQuestTabSelected !optional;
 }
 .container_a97111 {
   @extend %discoverQuestItem !optional;
@@ -4509,6 +4509,9 @@ pre {
 .phoneField_f26de7 {
   @extend %phoneInput !optional;
 }
+.inputField_f26de7 {
+  @extend %phoneInputField !optional;
+}
 .maskBackground_ccd3df {
   @extend %typingStickerRecommendationHover !optional;
 }
@@ -5023,6 +5026,9 @@ pre {
 }
 .gifIconContainer_f2f431 {
   @extend %avatarGifIconContainer !optional;
+}
+.gifIcon_f2f431 {
+  @extend %avatarGifIcon !optional;
 }
 .editingContainer_ba5b9e {
   @extend %avatarEditingContainer !optional;

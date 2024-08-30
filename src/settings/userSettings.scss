@@ -23,6 +23,9 @@
   &:focus-within {
     box-shadow: 0 0 2px 2px $main-color;
   }
+  %phoneInputField {
+    background-color: transparent;
+  }
 }
 
 // USER PROFILE
@@ -37,7 +40,13 @@
   padding: 0;
 }
 %avatarGifIconContainer {
-  background-color: $main-color;
+  background-color: hsla( 0, 0%, 0%, 0.8);
+}
+%avatarGifIcon {
+  background-color: transparent;
+  path {
+    fill: #fff;
+  }
 }
 %avatarEditingContainer {
   background-color: transparent;
@@ -291,6 +300,7 @@
     }
   }
 }
+
 %userSettingsEntranceSoundButton {
   background-color: hsla(0, 0%, 100%, 0.1);
 }
