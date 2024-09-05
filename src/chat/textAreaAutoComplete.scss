@@ -8,7 +8,6 @@
 %autocomplete {
   %autocompleteInner {
     background: cv('bg.general.popout');
-    backdrop-filter: blur(1px);
     animation: cv-menu-slide-bottom 0.2s ease-in-out;
     transform-origin: 50% 100%;
   }

@@ -182,7 +182,6 @@
 // SOUNDBOARD MODAL
 %soundboard {
   background-color: cv('bg.general.popout');
-  backdrop-filter: blur(1px);
   %soundboardSound,
   %soundboardGuildSelected {
     background-color: $main-color;
