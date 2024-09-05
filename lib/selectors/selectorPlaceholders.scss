@@ -1712,7 +1712,7 @@
 .offline_a31c43 {
   @extend %memberOffline !optional;
 }
-.layout_d808b0 {
+.memberInner_a31c43 {
   @extend %memberLayout !optional;
 }
 .avatar_d808b0 {
@@ -1768,6 +1768,9 @@
 }
 .mulitplePlaceholderUsername_dac468 {
   @extend %memberPlaceholderUsernameMultiple !optional;
+}
+.popoutContentWrapper_a35965 {
+  @extend %memberActivityContentWrapper !optional;
 }
 .interactionsContainer_a35965 {
   @extend %memberActivityInteractionsContainer !optional;
@@ -2532,11 +2535,8 @@ pre {
 .actionColor_fc39e7 {
   @extend %userModalActivityButton !optional;
 }
-.banner_c3e427 {
+.banner_d5fdb1 {
   @extend %userProfileBanner !optional;
-}
-.bannerPremium_c3e427 {
-  @extend %userProfileBannerPremium !optional;
 }
 .userPopoutOuter_c69a7b {
   @extend %userPopoutOuter !optional;
@@ -2683,8 +2683,11 @@ pre {
 .selected_d808b0 {
   @extend %discoverCategoryItemSelected !optional;
 }
-.layout_d808b0 {
+.itemInner_c72b37 {
   @extend %discoverCategoryItemInner !optional;
+}
+.itemInner_f75d68 {
+  @extend %discoverCategoryQuestItemInner !optional;
 }
 .guildList_c8c448 {
   @extend %discoverGuildList !optional;
@@ -2736,6 +2739,9 @@ pre {
 }
 .emptyHeader_e37a20 {
   @extend %discoverEmptyTitle !optional;
+}
+.backdrop_accde0 {
+  @extend %discoverQuestHeaderBackdrop !optional;
 }
 .container_a56260 {
   @extend %discoverQuest !optional;
@@ -3239,7 +3245,7 @@ pre {
   @extend %settingsSidebar !optional;
 }
 .selectedBackground_ae3c77 {
-  @extend %settingsSidebarScrollerSelectedBackground !optional;
+  @extend %settingsSidebarNitroSelected !optional;
 }
 .header_a0 {
   @extend %settingsHeader !optional;
@@ -3249,9 +3255,6 @@ pre {
 }
 .separator_a0 {
   @extend %settingsSeparator !optional;
-}
-.serverBoostTabItem_f7189e {
-  @extend %settingsServerBoostTabItem !optional;
 }
 .socialLinks_c44e94 {
   @extend %settingsSocialLinks !optional;

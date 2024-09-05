@@ -91,6 +91,7 @@
 }
 %settingsDropdownPopout {
   background-color: cv('bg.general.popout');
+  backdrop-filter: blur(1px);
   border: none;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);

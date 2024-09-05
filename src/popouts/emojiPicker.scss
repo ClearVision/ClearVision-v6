@@ -4,6 +4,7 @@
 }
 %emojiPickerWrapper {
   background-color: cv('bg.general.popout');
+  backdrop-filter: blur(1px);
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -13,9 +14,11 @@
 }
 %emojiPickerHeader {
   background-color: cv('bg.general.popout');
+  backdrop-filter: blur(1px);
 }
 %emojiPicker {
   background-color: cv('bg.general.popout');
+  backdrop-filter: blur(1px);
   min-width: 430px;
   border-radius: 0;
   %emojiPickerHeader {

@@ -84,6 +84,7 @@
 %themeDark %channelSettingsRoleDropdownHeader,
 %themeDark %channelSettingsRoleDropdownContainer %channelSettingsRoleDropdownTag {
   background-color: cv('bg.general.popout');
+  backdrop-filter: blur(1px);
 }
 %channelSettingsRoleDropdownRow%channelSettingsRoleDropdownSelected %channelSettingsRoleDropdownRowInner {
   background-color: hsla(0, 0%, 100%, 0.1);

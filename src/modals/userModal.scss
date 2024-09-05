@@ -24,13 +24,9 @@
       }
     }    
     %userProfileBanner {
-      -webkit-mask: linear-gradient(to bottom, #000, transparent 93%);
-      mask: linear-gradient(to bottom, #000, transparent 93%);
+      -webkit-mask: linear-gradient(to bottom, #000 50%, transparent);
+      mask: linear-gradient(to bottom, #000 50%, transparent);
     }
-  }
-  %userProfileBannerPremium {
-    -webkit-mask: linear-gradient(to bottom, #000 50%, transparent);
-    mask: linear-gradient(to bottom, #000 50%, transparent);
   }
 }
 

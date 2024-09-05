@@ -1,6 +1,7 @@
 // EMOJI INFO POPOUT
 %emojiInfoContainer {
   background-color: cv('bg.general.popout');
+  backdrop-filter: blur(1px);
 }
 %emojiInfoTip {
   background-color: transparent;
@@ -12,6 +13,7 @@
 // CHAT TOOLBAR
 %chatToolbar {
   background-color: cv('bg.general.popout');
+  backdrop-filter: blur(1px);
   &::before {
     border-top: 8px solid hsla(0, 0%, 0%, 0.8);
   }
@@ -27,6 +29,7 @@
 %themeDark {
   %streamPopoutPreview {
     background-color: cv('bg.general.popout');
+    backdrop-filter: blur(1px);
   }
   %streamPopoutPreviewContainer {
     background-color: transparent;
@@ -89,12 +92,12 @@
 
 // MEMBERS ACTIVITY POPOUT
 /*clicked in*/
+%memberActivityContentWrapper,
 %memberActivityInteractionsContainer {
-  background: var(--background-overlay);
+  background: transparent;
 }
 /*clicked in icon*/
 %memberActivityShareToChannelButton {
-  background: var(--main-color);
   path {
     fill: #fff;
   }

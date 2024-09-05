@@ -12,7 +12,8 @@
 }
 %discoverCategoryItem {
   &%discoverCategoryItemSelected {
-    %discoverCategoryItemInner {
+    %discoverCategoryItemInner,
+    %discoverCategoryQuestItemInner {
       background-color: $main-color;
     }
   }
@@ -106,6 +107,10 @@
 }
 
 // QUESTS
+%discoverQuestHeaderBackdrop {
+	background-color: rgba($color: #0c1522, $alpha: 0.7);
+	backdrop-filter: blur(5px);
+}
 %themeDark {
   %discoverQuest {
     background-color: transparent;
@@ -116,7 +121,7 @@
   }
 }
 %discoverQuestTabSelected {
-  border-bottom-color: $main-color;
+  border-bottom-color: $main-color !important;
 }
 %discoverQuestItem {
   background-color: hsla(0, 0%, 0%, .4)

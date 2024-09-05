@@ -1,6 +1,7 @@
 %themeDark {
   %everyoneWarningPopout {
     background-color: cv('bg.general.popout');
+    backdrop-filter: blur(1px);
   }
   %everyoneWarningFooter {
     background-color: transparent;

@@ -3,6 +3,7 @@
   %groupInvitePopout {
     &%modalRoot {
       background-color: cv('bg.general.popout');
+      backdrop-filter: blur(1px);
     }
   }
 }
