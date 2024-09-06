@@ -164,6 +164,11 @@
   background: transparent;
 }
 
+// INVITE BOT
+%botInviteModalContent {
+  background-color: hsla(0, 0%, 100%, .05);
+}
+
 // AUTH MODAL
 %authModal {
   background-color: transparent;

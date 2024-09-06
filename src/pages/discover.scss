@@ -11,10 +11,48 @@
   background-color: transparent;
 }
 %discoverCategoryItem {
+  position: relative;
+	z-index: 1;
+  &:before {
+    content: '';
+    position: absolute;
+    @include stretch;
+    transition: all 0.15s ease-in-out;
+    z-index: -1;
+    pointer-events: none;
+    border-radius: 4px;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    @include pos(0, 100%, 0, 0);
+    opacity: 0.9;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+    pointer-events: none;
+    border-radius: 4px;
+  }
+  &:hover {
+    &:before {
+      background: hsla(0, 0%, 100%, 0.1);
+    }
+  }
   &%discoverCategoryItemSelected {
+    &:before {
+      background: hsla(0, 0%, 100%, 0.1);
+    }
+    &:after {
+      right: 0;
+      background: $main-color;
+      animation: cv-channel-select 0.3s ease-in-out;
+    }
+  }
+  &%discoverCategoryItemSelected,
+  &:hover,
+  &:active {
     %discoverCategoryItemInner,
     %discoverCategoryQuestItemInner {
-      background-color: $main-color;
+      background-color: transparent;
     }
   }
 }

@@ -2496,6 +2496,9 @@ pre {
 .activeIcon_e1268c {
   @extend %switchAccountsActive !optional;
 }
+.contentBackground_c5a065 {
+  @extend %botInviteModalContent !optional;
+}
 .authorize_c5a065 {
   @extend %authModal !optional;
 }
@@ -2796,6 +2799,9 @@ pre {
 }
 .searchBar_c6ee36 {
   @extend %emojiPickerSearchBar !optional;
+}
+.label_d1ac9b {
+  @extend %emojiPickerSuperReactionButton !optional;
 }
 .diversitySelectorOptions_cce80d {
   @extend %emojiPickerDiversitySelectorPopout !optional;
