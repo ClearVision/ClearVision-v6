@@ -48,9 +48,22 @@ Download the theme file from [our official support server](https://clearvision.g
 
 Check out our replugged theme [here!](https://github.com/ClearVision/CV-Replugged)
 
+**For using the theme online:** 
+
+There are multiple ways to do this if your client offers using an online version. The suggested two are `https://clearvision.github.io/ClearVision-v6/main.css` or `https://raw.githubusercontent.com/ClearVision/ClearVision-v6/master/ClearVision_v6.theme.css` 
+
+For customizing the theme from there, you'll want to use custom css and add any variables you'd like to change. It should look something like this
+```
+:root {
+  --main-color: red; 
+  --hover-color: yellow;
+}
+```
+
+
 ## Building from source
 
-To build the theme from source, you can simply run `npm install` to install all missing dependencies and `npm run build` to compile the theme into the `/public` folder.
+To build the theme from source, first install npm from the dependecies below, then you can run `npm install` to install all missing dependencies and `npm run build` to compile the theme into the `/public` folder.
 
 ### Dependencies
 
@@ -64,4 +77,4 @@ To build the theme from source, you can simply run `npm install` to install all 
 ## Contributing
 
 You can run `npm run test` to compile the theme.
-The `main.css` file will be in the `/test` directory, which can then be copied into BetterDiscord's Custom CSS.
+The `main.css` file will be in the `/test` directory, which can then be copied into BetterDiscord's Custom CSS, or placed in the themes folder and enabled in settings, make sure any other theme's are disabled for testing.
