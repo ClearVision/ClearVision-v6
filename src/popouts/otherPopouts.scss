@@ -44,7 +44,7 @@
 // VC ACTIVITY STATUS POPOUT
 %vcActivityPopout,
 %vcSetActivityPopout {
-  background-color: var(--popout-color);
+  background-color: cv('bg.general.popout');
 }
 %vcSetActivityPopoutIcon {
   background-color: hsla(0, 0%, 100%, 0.07);
@@ -89,7 +89,9 @@
 
 // MEMBERS ACTIVITY POPOUT
 /*clicked in*/
-%memberActivityContentWrapper,
+%memberActivityContentWrapper {
+  background-color: cv('bg.general.popout');
+}
 %memberActivityInteractionsContainer {
   background: transparent;
 }
