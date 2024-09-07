@@ -173,3 +173,9 @@
 %discoverQuestItemName {
 	color: $main-color !important;
 }
+
+// Idk, probably already here but I'm just getting back into things.
+// It's at the bottom of the servers list. - Snow
+%discover {
+  background: rgba(0, 0, 0, calc(#{cv('bg.app.shading')} * 0.3));
+}
