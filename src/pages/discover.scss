@@ -47,11 +47,8 @@
       animation: cv-channel-select 0.3s ease-in-out;
     }
   }
-  &%discoverCategoryItemSelected,
-  &:hover,
-  &:active {
-    %discoverCategoryItemInner,
-    %discoverCategoryQuestItemInner {
+  &:is(%discoverCategoryItemSelected, :hover, :active) {
+    :is(%discoverCategoryItemInner, %discoverCategoryQuestItemInner) {
       background-color: transparent;
     }
   }

@@ -89,14 +89,13 @@
 
 // MEMBERS ACTIVITY POPOUT
 /*clicked in*/
-%memberActivityContentWrapper {
-  background-color: cv('bg.general.popout');
-}
+%memberActivityContentWrapper,
 %memberActivityInteractionsContainer {
-  background: transparent;
+  background-color: cv('bg.general.popout');
 }
 /*clicked in icon*/
 %memberActivityShareToChannelButton {
+  border-right: 1px solid hsla(0, 0%, 100%, 0.1);
   path {
     fill: #fff;
   }
