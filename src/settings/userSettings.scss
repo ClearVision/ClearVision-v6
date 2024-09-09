@@ -267,6 +267,12 @@
 %userSettingsBoostTransferButton {
   background-color: $main-color;
 }
+%freeBost {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.content_c258fa:after, .content_c258fa:before {
+  border-color: transparent;
+}
 
 // APPEARANCE
 %userSettingsAppearanceSelectionCircle {
