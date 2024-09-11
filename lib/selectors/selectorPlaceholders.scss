@@ -1303,6 +1303,9 @@
 .scroller_fea3ef {
   @extend %guilds !optional;
 }
+.footer_aa1bff {
+  @extend %guildsFooter !optional;
+}
 .listItem_c96c45 {
   @extend %guild !optional;
 }
@@ -2337,6 +2340,9 @@ pre {
 .keyboardShortcutsModal_ad95dc {
   @extend %keyboardShortcutsModal !optional;
 }
+.keybindGroup_ad95dc {
+  @extend %keybindGroup !optional;
+}
 .combo_c90023 {
   @extend %keybindCombo !optional;
 }
@@ -2658,9 +2664,6 @@ pre {
 }
 .pageWrapper_a3a4ce {
   @extend %pageWrapper !optional;
-}
-.footer_aa1bff {
-  @extend %discover !optional;
 }
 .search_f69601 {
   @extend %discoverSearch !optional;
@@ -5354,11 +5357,20 @@ pre {
 .footer_fa823b {
   @extend %everyoneWarningFooter !optional;
 }
+.skuSelectModalHeader_f92df2 {
+  @extend %giftModalSelectTierHeader !optional;
+}
+.skuSelectModalContent_f92df2 {
+  @extend %giftModalSelectTier !optional;
+}
 .modalHeaderCustomGift_a27f2f {
   @extend %giftModalHeader !optional;
 }
-.iconBackground_e4d3f1 {
-  @extend %giftModalIconBackground !optional;
+.customGiftBoxHighlighted_c4afc7 {
+  @extend %giftModalGiftBoxSelected !optional;
+}
+.selectedPlan_bd3462 {
+  @extend %giftModalPlanSelected !optional;
 }
 .spinner_b0f29a {
   @extend %giftModalSpinner !optional;

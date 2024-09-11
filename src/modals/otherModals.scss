@@ -203,22 +203,24 @@
 
 // GIFT MODAL
 /*other modals, nitro gift*/
-/*header*/
+%giftModalSelectTierHeader,
+%giftModalSelectTier {
+  background: transparent;
+}
 %giftModalHeader {
   background: transparent;
-  border-bottom: 1.5px solid $main-color;
 }
-/*check out the shop icon*/
-%giftModalIconBackground {
-  background: $main-color;
-  > svg {
-    fill: #fff;
-  }
+%giftModalGiftBoxSelected {
+  border: 2px solid $main-color;
+}
+%giftModalPlanSelected {
+  outline: 2px solid $main-color;
 }
 /*loading screen*/
 %giftModalSpinner {
   background: rgba(0, 0, 0, 0.4);
 }
+
 // YOU MUST COMPLETE A FEW MORE STEPS BEFORE YOU CAN TALK
 /*before you talk here popup*/
 %beforeTalkRuleContainer {
