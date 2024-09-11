@@ -5372,6 +5372,9 @@ pre {
 .selectedPlan_bd3462 {
   @extend %giftModalPlanSelected !optional;
 }
+.iconBackground_e4d3f1 {
+  @extend %giftModalShopIcon !optional;
+}
 .spinner_b0f29a {
   @extend %giftModalSpinner !optional;
 }

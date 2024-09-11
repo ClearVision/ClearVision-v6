@@ -216,6 +216,9 @@
 %giftModalPlanSelected {
   outline: 2px solid $main-color;
 }
+%giftModalShopIcon {
+  background: $main-color;
+}
 /*loading screen*/
 %giftModalSpinner {
   background: rgba(0, 0, 0, 0.4);
