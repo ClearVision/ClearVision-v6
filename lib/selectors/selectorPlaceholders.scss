@@ -453,6 +453,12 @@
 .questAcceptedContent_e23249 {
   @extend %questPanelAcceptedExpandedContent !optional;
 }
+.listeningAlong_d4626d {
+  @extend %listeningAlongPanel !optional;
+}
+.title_b97bdb {
+  @extend %listeningAlongPanelTitle !optional;
+}
 .connection_e2a436 {
   @extend %connections !optional;
 }
