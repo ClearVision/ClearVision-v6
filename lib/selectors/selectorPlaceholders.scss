@@ -387,6 +387,9 @@
 .panel_bf1a22 {
   @extend %panel !optional;
 }
+.title_b97bdb {
+  @extend %panelTitle !optional;
+}
 .button_adca65 {
   @extend %panelButton !optional;
 }
@@ -455,9 +458,6 @@
 }
 .listeningAlong_d4626d {
   @extend %listeningAlongPanel !optional;
-}
-.title_b97bdb {
-  @extend %listeningAlongPanelTitle !optional;
 }
 .connection_e2a436 {
   @extend %connections !optional;

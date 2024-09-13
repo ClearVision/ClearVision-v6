@@ -222,7 +222,7 @@ button%panelButton {
 // SPOTIFY/YT MUSIC MAYBE?/IDK
 %listeningAlongPanel {
 	background: transparent;
-}
-%listeningAlongPanelTitle {
-	color: $main-color;
+  %panelTitle {
+    color: $main-color;
+  }
 }
