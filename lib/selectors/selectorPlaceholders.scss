@@ -5408,6 +5408,9 @@ pre {
 .buttonWhite_b105e9 {
   @extend %nitroShopGiftNitro !optional;
 }
+.buttonWhite_b105e9 {
+  @extend %nitroShopGiftNitroOpt !optional; // idk if it's this or the one above? - Snow
+}
 .footer_cf5d0a {
   @extend %webhookFooter !optional;
 }
