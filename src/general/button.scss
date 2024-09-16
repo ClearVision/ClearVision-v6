@@ -18,10 +18,10 @@
       background: $hover-color;
     }
     &:disabled {
-      background: var(--danger-color) !important;
+      background: cv('colors.danger');
     }
     &:active {
-      background: var(--success-color);
+      background: cv('colors.success');
     }
   }
   &%buttonColorRed {
@@ -33,13 +33,13 @@
       color: $main-color;
     }
     &:hover {
-      background: hsla(0, 0%, 100%, 0.2) !important;
+      background: hsla(0, 0%, 100%, 0.2);
       > %buttonContents {
         color: #fff;
       }
     }
     &:disabled {
-      background: hsla(0, 0%, 100%, 0.1) !important;
+      background: hsla(0, 0%, 100%, 0.1);
       > %buttonContents {
         color: hsla(0, 0%, 100%, 0.5);
       }
