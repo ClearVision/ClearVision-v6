@@ -25,25 +25,8 @@
   &%buttonColorRed {
     background-color: cv('colors.danger');
   }
+  &%buttonColorBrandInverted,
   &%buttonColorWhite {
-    background: hsla(0, 0%, 100%, 0.1);
-    > %buttonContents {
-      color: $main-color;
-    }
-    &:hover {
-      background: hsla(0, 0%, 100%, 0.2);
-      > %buttonContents {
-        color: #fff;
-      }
-    }
-    &:disabled {
-      background: hsla(0, 0%, 100%, 0.1);
-      > %buttonContents {
-        color: hsla(0, 0%, 100%, 0.5);
-      }
-    }
-  }
-  &%buttonColorBrandInverted {
     background: #fff;
     color: $main-color;
     &:hover,
