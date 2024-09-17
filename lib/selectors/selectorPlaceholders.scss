@@ -994,9 +994,6 @@
 .lookOutlined_dd4f85 {
   @extend %buttonOutlined !optional;
 }
-.lookInverted_a299dc {
-  @extend %buttonInverted !optional;
-}
 .lookLink_dd4f85 {
   @extend %buttonLink !optional;
 }
@@ -1006,8 +1003,8 @@
 .colorBrand_dd4f85 {
   @extend %buttonColorBrand !optional;
 }
-.colorBrandNew__8872c {
-  @extend %buttonColorBrandNew !optional;
+.colorBrandInverted_dd4f85 {
+  @extend %buttonColorBrandInverted !optional;
 }
 .colorPrimary_dd4f85 {
   @extend %buttonColorPrimary !optional;
@@ -1023,9 +1020,6 @@
 }
 .colorLink_dd4f85 {
   @extend %buttonColorLink !optional;
-}
-.colorYellow__818c3 {
-  @extend %buttonColorYellow !optional;
 }
 .buttonColor_d4af21 {
   @extend %buttonCallInvite !optional;
@@ -5408,9 +5402,6 @@ pre {
 .buttonWhite_b105e9 {
   @extend %nitroShopGiftNitro !optional;
 }
-.buttonWhite_b105e9 {
-  @extend %nitroShopGiftNitroOpt !optional; // idk if it's this or the one above? - Snow
-}
 .footer_cf5d0a {
   @extend %webhookFooter !optional;
 }
@@ -5533,9 +5524,6 @@ pre {
 }
 .elevatedPermission_f38b88 {
   @extend %modViewElevatedPermissionItem !optional;
-}
-.buttonWhite_b105e9 {
-  @extend %giftNitro !optional;
 }
 .shyButton_a25714 {
   @extend %shopNewPill !optional;

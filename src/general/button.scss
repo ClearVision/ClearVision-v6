@@ -8,8 +8,6 @@
 %buttonFilled {
   &%buttonColorBrand,
   &%buttonColorGreen,
-  &%buttonColorBrandNew,
-  &%buttonColorBrandNew2,
   &%buttonCallInvite,
   &%buttonColorPrimary {
     background: $main-color;
@@ -45,7 +43,7 @@
       }
     }
   }
-  &%buttonColorWhite {
+  &%buttonColorBrandInverted {
     background: #fff;
     color: $main-color;
     &:hover,
@@ -55,6 +53,9 @@
     }
     &:disabled {
       background: hsla(0, 0%, 100%, 0.3);
+    }
+    %buttonContents > div {
+      color: $main-color;
     }
   }
   // EMBED BUTTON
@@ -65,23 +66,6 @@
       &:active {
         background-color: hsl(139, calc(var(--saturation-factor, 1) * 47.1%), 33.3%);
       }
-    }
-  }
-}
-
-// BUTTON INVERTED
-%buttonInverted {
-  &%buttonColorBrand,
-  &%buttonColorGreen {
-    background: #fff;
-    color: $main-color;
-    &:hover,
-    &:active {
-      background: hsla(0, 0%, 100%, 0.95);
-      color: $hover-color;
-    }
-    &:disabled {
-      background: hsla(0, 0%, 100%, 0.3);
     }
   }
 }

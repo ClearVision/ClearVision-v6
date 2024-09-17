@@ -64,14 +64,3 @@
 %nitroPerksProgressDotSelected {
   background-color: #fff;
 }
-
-// Gift Nitro
-%nitroShopGiftNitroOpt {
- background-color: transparent;
-}
-%themeDark %nitroShopGiftNitroOpt {
-  border-color: $main-color;
-  &:hover {
-    border-color: $hover-color;
-  }
-}

@@ -335,12 +335,11 @@
   }
 }
 %voiceChannelsButton {
+  border: 1px solid $main-color;
   &:hover {
     background: $hover-color;
+    border: 1px solid $hover-color;
     transition: ease-in-out 0.15s;
-  }
-  > %textSmallMedium {
-    color: #fff;
   }
 }
 
