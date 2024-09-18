@@ -78,6 +78,9 @@
     transition: all 0.15s ease-in-out;
   }
 }
+%libraryGameDownloadContainer {
+  background-color: rgba(0, 0, 0, 0.6);
+}
 
 // SETTINGS
 %librarySettingsScroller {

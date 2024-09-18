@@ -1646,6 +1646,9 @@
 .gameIcon_f1629a {
   @extend %libraryTableGameIcon !optional;
 }
+.gameUpdates_f1035a {
+  @extend %libraryGameDownloadContainer !optional;
+}
 .nameCellInfo_f1629a {
   @extend %libraryTableNameCellInfo !optional;
 }
