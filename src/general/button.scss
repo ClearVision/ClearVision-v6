@@ -8,8 +8,6 @@
 %buttonFilled {
   &%buttonColorBrand,
   &%buttonColorGreen,
-  &%buttonColorBrandNew,
-  &%buttonColorBrandNew2,
   &%buttonCallInvite,
   &%buttonColorPrimary {
     background: $main-color;
@@ -18,33 +16,16 @@
       background: $hover-color;
     }
     &:disabled {
-      background: var(--danger-color) !important;
+      background: cv('colors.danger');
     }
     &:active {
-      background: var(--success-color);
+      background: cv('colors.success');
     }
   }
   &%buttonColorRed {
     background-color: cv('colors.danger');
   }
-  &%buttonColorWhite {
-    background: hsla(0, 0%, 100%, 0.1);
-    > %buttonContents {
-      color: $main-color;
-    }
-    &:hover {
-      background: hsla(0, 0%, 100%, 0.2) !important;
-      > %buttonContents {
-        color: #fff;
-      }
-    }
-    &:disabled {
-      background: hsla(0, 0%, 100%, 0.1) !important;
-      > %buttonContents {
-        color: hsla(0, 0%, 100%, 0.5);
-      }
-    }
-  }
+  &%buttonColorBrandInverted,
   &%buttonColorWhite {
     background: #fff;
     color: $main-color;
@@ -55,6 +36,9 @@
     }
     &:disabled {
       background: hsla(0, 0%, 100%, 0.3);
+    }
+    %buttonContents > div {
+      color: $main-color;
     }
   }
   // EMBED BUTTON
@@ -65,23 +49,6 @@
       &:active {
         background-color: hsl(139, calc(var(--saturation-factor, 1) * 47.1%), 33.3%);
       }
-    }
-  }
-}
-
-// BUTTON INVERTED
-%buttonInverted {
-  &%buttonColorBrand,
-  &%buttonColorGreen {
-    background: #fff;
-    color: $main-color;
-    &:hover,
-    &:active {
-      background: hsla(0, 0%, 100%, 0.95);
-      color: $hover-color;
-    }
-    &:disabled {
-      background: hsla(0, 0%, 100%, 0.3);
     }
   }
 }

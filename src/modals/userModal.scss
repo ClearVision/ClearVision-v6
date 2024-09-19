@@ -22,15 +22,17 @@
         height: 100%;
         z-index: -1;
       }
-    }    
-    %userProfileBanner {
-      -webkit-mask: linear-gradient(to bottom, #000, transparent 93%);
-      mask: linear-gradient(to bottom, #000, transparent 93%);
     }
   }
-  %userProfileBannerPremium {
-    -webkit-mask: linear-gradient(to bottom, #000 50%, transparent);
-    mask: linear-gradient(to bottom, #000 50%, transparent);
+}
+%userModalInner {
+  %userProfileBanner {
+    -webkit-mask: linear-gradient(to bottom, #000, transparent 93%);
+	  mask: linear-gradient(to bottom, #000, transparent 93%);
+    &[style*="background-image"] {
+      -webkit-mask: linear-gradient(to bottom, #000 50%, transparent);
+      mask: linear-gradient(to bottom, #000 50%, transparent);
+    }    
   }
 }
 

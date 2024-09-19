@@ -22,14 +22,6 @@
   box-shadow: inset 0 0 20px rgba(0, 0, 0, calc(#{cv('bg.app.shading')} * 0.3));
 }
 
-// GUILD LIST
-%themeDark %guilds {
-  background: transparent;
-}
-%guildsTree {
-  outline: none;
-}
-
 // HOME BUTTON
 %guildChildWrapper > svg {
   width: 100%;
@@ -43,6 +35,11 @@
 // GUILD ICON
 %guildIcon {
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+// GUILD LIST
+%guildsTree {
+  outline: none;
 }
 
 // HOME & ACRONYM
@@ -143,4 +140,9 @@
 // SEPARATOR
 %guildSeparator {
   background: hsla(0, 0%, 100%, 0.1);
+}
+
+// FOOTER - currently only in experiments
+%guildsFooter {
+  background: transparent;
 }

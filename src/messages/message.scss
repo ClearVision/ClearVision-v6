@@ -202,4 +202,18 @@
   %messageAutomodFooterIcon path {
     color: var(--url-color);
   }
-} 
+}
+
+// free nitro trial...idk where to put this - Snow
+%nitroTrial {
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: none;
+  border: 1px solid $main-color;
+  &:hover {
+    border: 1px solid $hover-color;
+  }
+}
+
+%themeDark %nitroTrial:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}

@@ -93,6 +93,13 @@
 
         // SELECTED
         &%tabBarItemSelected {
+          background: transparent;
+          color: #fff;
+          transition: all 0.15s ease-in-out, background 0.3s 0.2s;
+          padding-left: 50px;
+          %settingsSidebarNitroSelected {
+            background-color: transparent;
+          }
           &:before {
             opacity: 1;
           }
@@ -102,25 +109,11 @@
             animation: cv-channel-select 0.3s ease-in-out;
           }
         }
-        &%tabBarItemSelected {
-          background: transparent;
-          color: #fff;
-          transition: all 0.15s ease-in-out, background 0.3s 0.2s;
-          &%serverBoostTabItem {
-            background-color: transparent !important;
-          }
-          %settingsSidebarScrollerSelectedBackground {
-            background-color: transparent;
-          }
-        }
 
         // ONBOARDING STEP COUNTER
         %textMediumNormal {
           color: #fff !important;
         }
-      }
-      %settingsServerBoostTabItem[aria-selected='true'] {
-        background-color: $main-color !important;
       }
     }
   }

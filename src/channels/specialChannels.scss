@@ -1,4 +1,12 @@
 /*CUSTOMIZE CHANNELS*/
+
+%customizeChannelsHeader {
+  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.6)) !important;
+}
+%customizeChannels {
+  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.5)) !important;
+}
+
 /*header*/
 %customizeChannelsHeaderBar {
   border-bottom: none;
@@ -32,7 +40,10 @@
 
 /*BROWSE CHANNELS*/
 %browseChannels {
-  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
+  background-color: transparent;
+}
+%browseChannelsTip {
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 %browseChannelsSelectAll {

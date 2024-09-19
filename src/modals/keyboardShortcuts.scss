@@ -1,26 +1,28 @@
 /* KEYBOARD SHORTCUTS MODAL */
-%themeDark {
-  %keyboardShortcutsModal {
-    background-color: hsla(0, 0%, 0%, 0.5);
-  }
-  %keybindCombo {
-    %keybindShortcutKey {
-      background: transparent;
+
+%keyboardShortcutsModal {
+  background-color: hsla(0, 0%, 0%, 0.5);
+}
+%keybindGroup {
+  background-color: transparent;
+}
+%keybindCombo {
+  %keybindShortcutKey {
+    background: transparent;
+    border: 1px solid $main-color;
+    border-radius: 3px;
+    box-shadow: inset 0 -4px $main-color;
+    color: hsla(0, 0%, 100%, 0.7);
+    transition: all 0.15s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      background: $hover-color;
+      color: #fff;
+    }
+    &:active {
       border: 1px solid $hover-color;
-      border-radius: 3px;
-      box-shadow: inset 0 -4px $main-color;
+      box-shadow: inset 0 -2px $main-color;
       color: hsla(0, 0%, 100%, 0.7);
-      transition: all 0.15s ease-in-out;
-      cursor: pointer;
-      &:hover {
-        background: $hover-color;
-        color: #fff;
-      }
-      &:active {
-        border: 1px solid $hover-color;
-        box-shadow: inset 0 -2px $main-color;
-        color: hsla(0, 0%, 100%, 0.7);
-      }
     }
   }
 }

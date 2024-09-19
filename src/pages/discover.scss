@@ -11,9 +11,45 @@
   background-color: transparent;
 }
 %discoverCategoryItem {
+  position: relative;
+	z-index: 1;
+  &:before {
+    content: '';
+    position: absolute;
+    @include stretch;
+    transition: all 0.15s ease-in-out;
+    z-index: -1;
+    pointer-events: none;
+    border-radius: 4px;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    @include pos(0, 100%, 0, 0);
+    opacity: 0.9;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+    pointer-events: none;
+    border-radius: 4px;
+  }
+  &:hover {
+    &:before {
+      background: hsla(0, 0%, 100%, 0.1);
+    }
+  }
   &%discoverCategoryItemSelected {
-    %discoverCategoryItemInner {
-      background-color: $main-color;
+    &:before {
+      background: hsla(0, 0%, 100%, 0.1);
+    }
+    &:after {
+      right: 0;
+      background: $main-color;
+      animation: cv-channel-select 0.3s ease-in-out;
+    }
+  }
+  &:is(%discoverCategoryItemSelected, :hover, :active) {
+    :is(%discoverCategoryItemInner, %discoverCategoryQuestItemInner) {
+      background-color: transparent;
     }
   }
 }
@@ -99,7 +135,38 @@
     background-color: $main-color;
   }
 }
+
 // EMPTY RESULTS
 %discoverEmptyResults {
   background-color: hsla(0, 0%, 0%, 0.6);
+}
+
+// QUESTS
+%discoverQuestHeaderBackdrop {
+	background-color: rgba($color: #0c1522, $alpha: 0.7);
+	backdrop-filter: blur(5px);
+}
+%themeDark {
+  %discoverQuest {
+    background-color: transparent;
+  }
+  %discoverQuestContent {
+    background: none;
+    backdrop-filter: none;
+  }
+}
+%discoverQuestTabSelected {
+  border-bottom-color: $main-color !important;
+}
+%discoverQuestItem {
+  background-color: hsla(0, 0%, 0%, .4)
+}
+%discoverQuestItemGradient {
+  background: linear-gradient(0deg, hsla(0, 0%, 0%, .9) 10%, hsla(0, 0%, 0%, .6) 25%, transparent 35%);
+}
+%discoverQuestItemDescription {
+	background-color: transparent;
+}
+%discoverQuestItemName {
+	color: $main-color !important;
 }
