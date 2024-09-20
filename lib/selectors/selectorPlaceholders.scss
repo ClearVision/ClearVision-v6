@@ -2325,6 +2325,12 @@ pre {
 .reactionCount_ec6b19 {
   @extend %reactionCount !optional;
 }
+.reactionBtn_ec6b19 {
+  @extend %reactionAdd !optional;
+}
+.forceShowLook_ec6b19 {
+  @extend %reactionAddForceShow !optional;
+}
 .spoilerMarkdownContent_aa9639 {
   @extend %spoilerMarkdownContent !optional;
 }
@@ -5405,7 +5411,7 @@ pre {
 .footer_cf5d0a {
   @extend %webhookFooter !optional;
 }
-.layer_cd0de5::after {
+.layer_cd0de5 {
   @extend %webhookBackground !optional;
 }
 .guildPopout_cf5d0a {

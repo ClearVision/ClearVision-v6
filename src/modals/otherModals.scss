@@ -254,6 +254,6 @@
   background-color: $main-color;
   color: var(--text-normal) !important;
 }
-%webhookBackground {
+%webhookBackground:after {
   background: var(--background-overlay);
 }
