@@ -27,7 +27,7 @@
   }
 }
 %reactionAdd {
-  %reactionAddForceShow {
+  &%reactionAddForceShow {
     background-color: transparent;
     color: hsla(0, 0%, 100%, .7);
     &:hover {
