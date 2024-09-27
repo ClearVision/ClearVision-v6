@@ -2704,8 +2704,14 @@ pre {
 .itemInner_c72b37 {
   @extend %discoverCategoryItemInner !optional;
 }
+.categoryItem_f75d68 {
+  @extend %discoverCategoryQuest !optional;
+}
+.selectedCategoryItem_f75d68 {
+  @extend %discoverCategoryQuestSelected !optional;
+}
 .itemInner_f75d68 {
-  @extend %discoverCategoryQuestItemInner !optional;
+  @extend %discoverCategoryQuestInner !optional;
 }
 .guildList_c8c448 {
   @extend %discoverGuildList !optional;
@@ -2761,13 +2767,10 @@ pre {
 .backdrop_accde0 {
   @extend %discoverQuestHeaderBackdrop !optional;
 }
-.container_a56260 {
+.scroller_b91a2d {
   @extend %discoverQuest !optional;
 }
-.contentContainer_a56260 {
-  @extend %discoverQuestContent !optional;
-}
-.selected_bc4ee1 {
+.selected_a853ca {
   @extend %discoverQuestTabSelected !optional;
 }
 .container_a97111 {

@@ -10,7 +10,8 @@
 %themeDark %discoverCategory {
   background-color: transparent;
 }
-%discoverCategoryItem {
+%discoverCategoryItem,
+%discoverCategoryQuest {
   position: relative;
 	z-index: 1;
   &:before {
@@ -37,6 +38,8 @@
       background: hsla(0, 0%, 100%, 0.1);
     }
   }
+}
+%discoverCategoryItem {
   &%discoverCategoryItemSelected {
     &:before {
       background: hsla(0, 0%, 100%, 0.1);
@@ -48,7 +51,24 @@
     }
   }
   &:is(%discoverCategoryItemSelected, :hover, :active) {
-    :is(%discoverCategoryItemInner, %discoverCategoryQuestItemInner) {
+    %discoverCategoryItemInner {
+      background-color: transparent;
+    }
+  }
+}
+%discoverCategoryQuest {
+  %discoverCategoryQuestSelected {
+    &:before {
+      background: hsla(0, 0%, 100%, 0.1);
+    }
+    &:after {
+      right: 0;
+      background: $main-color;
+      animation: cv-channel-select 0.3s ease-in-out;
+    }
+  }
+  &:is(%discoverCategoryQuestSelected, :hover, :active) {
+    %discoverCategoryQuestItemInner {
       background-color: transparent;
     }
   }
@@ -146,14 +166,8 @@
 	background-color: rgba($color: #0c1522, $alpha: 0.7);
 	backdrop-filter: blur(5px);
 }
-%themeDark {
-  %discoverQuest {
-    background-color: transparent;
-  }
-  %discoverQuestContent {
-    background: none;
-    backdrop-filter: none;
-  }
+%discoverQuest {
+  background-color: transparent;
 }
 %discoverQuestTabSelected {
   border-bottom-color: $main-color !important;
