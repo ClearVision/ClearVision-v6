@@ -68,7 +68,7 @@
     }
   }
   &:is(%discoverCategoryQuestSelected, :hover, :active) {
-    %discoverCategoryQuestItemInner {
+    %discoverCategoryQuestInner {
       background-color: transparent;
     }
   }
