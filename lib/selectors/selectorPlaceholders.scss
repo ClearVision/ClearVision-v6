@@ -151,6 +151,12 @@
 .progressBarContainer_c75f85 {
   @extend %serverBoostProgressBar !optional;
 }
+.subscription_cf84f3 {
+  @extend %readyToBoostContainer !optional;
+}
+.tierPill_cf84f3 {
+  @extend %readyToBoostProgressPill !optional
+}
 .containerDefault_a08117 {
   @extend %categoryContainerDefault !optional;
 }

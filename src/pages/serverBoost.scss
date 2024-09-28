@@ -28,7 +28,6 @@
 }
 
 // Boost this server
-// TODO: Add to selectors
 %boosServerPerkRow {
   border-bottom: 1px solid $main-color;
   &:hover {
@@ -38,4 +37,11 @@
 
 %boostServerPerks {
   background-color: rgba(0, 0, 0, 0.4);
+}
+
+%readyToBoostContainer {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+%readyToBoostProgressPill {
+  background-color: $main-color;
 }
