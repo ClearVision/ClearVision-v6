@@ -40,7 +40,7 @@
   padding: 0;
 }
 %avatarGifIconContainer {
-  background-color: hsla( 0, 0%, 0%, 0.8);
+  background-color: hsla(0, 0%, 0%, 0.8);
 }
 %avatarGifIcon {
   background-color: transparent;
@@ -116,18 +116,18 @@
 
 // PRIVACY AND SAFETY - STANDING
 %themeDark %userSettingsPrivacyStandingContainer%settingsCard {
-	background-color: transparent;
+  background-color: transparent;
 }
 %userSettingsPrivacyStandingAvatarBG {
   background-color: transparent;
 }
 %userSettingsPrivacyStandingLine,
 %userSettingsPrivacyStandingMarker {
-	background-color: hsla(0, 0%, 100%, .1);
+  background-color: hsla(0, 0%, 100%, 0.1);
 }
 %userSettingsPrivacyStandingMarker {
   %userSettingsPrivacyStandingMarkerEmpty {
-    background-color: hsla(0, 0%, 100%, .1);
+    background-color: hsla(0, 0%, 100%, 0.1);
   }
   svg circle {
     fill: #fff;
@@ -169,7 +169,7 @@
   }
 }
 %subEnabledServers {
-  background: rgba(0, 0, 0, 0.6)
+  background: rgba(0, 0, 0, 0.6);
 }
 
 // BILLING
@@ -206,7 +206,7 @@
 
 // NITRO
 %userSettingsNitroPerkCard {
-  background-color: hsla(0, 0%, 0%, .4);
+  background-color: hsla(0, 0%, 0%, 0.4);
 }
 %userSettingsNitroGiftCard {
   background: rgba(0, 0, 0, 0.4);
@@ -241,7 +241,7 @@
   background-color: hsla(0, 0%, 100%, 0.07);
 }
 %themeDark %giftQuestContainer {
-	background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 %giftQuestProgress {
   color: $main-color !important;
@@ -270,7 +270,8 @@
 %freeBoost {
   background-color: rgba(0, 0, 0, 0.4);
 }
-.content_c258fa:after, .content_c258fa:before {
+.content_c258fa:after,
+.content_c258fa:before {
   border-color: transparent;
 }
 

@@ -48,18 +48,18 @@ Download the theme file from [our official support server](https://clearvision.g
 
 Check out our replugged theme [here!](https://github.com/ClearVision/CV-Replugged)
 
-**For using the theme online:** 
+**For using the theme online:**
 
-There are multiple ways to do this if your client offers using an online version. The suggested two are `https://clearvision.github.io/ClearVision-v6/main.css` or `https://raw.githubusercontent.com/ClearVision/ClearVision-v6/master/ClearVision_v6.theme.css` 
+There are multiple ways to do this if your client offers using an online version. The suggested two are `https://clearvision.github.io/ClearVision-v6/main.css` or `https://raw.githubusercontent.com/ClearVision/ClearVision-v6/master/ClearVision_v6.theme.css`
 
 For customizing the theme from there, you'll want to use custom css and add any variables you'd like to change. It should look something like this
+
 ```
 :root {
-  --main-color: red; 
+  --main-color: red;
   --hover-color: yellow;
 }
 ```
-
 
 ## Building from source
 

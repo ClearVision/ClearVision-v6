@@ -28,11 +28,11 @@
 %userModalInner {
   %userProfileBanner {
     -webkit-mask: linear-gradient(to bottom, #000, transparent 93%);
-	  mask: linear-gradient(to bottom, #000, transparent 93%);
-    &[style*="background-image"] {
+    mask: linear-gradient(to bottom, #000, transparent 93%);
+    &[style*='background-image'] {
       -webkit-mask: linear-gradient(to bottom, #000 50%, transparent);
       mask: linear-gradient(to bottom, #000 50%, transparent);
-    }    
+    }
   }
 }
 
@@ -202,5 +202,5 @@
 
 // NOTE
 %userModalNote textarea:focus {
-	background-color: hsla(0, 0%, 100%, .07);
+  background-color: hsla(0, 0%, 100%, 0.07);
 }

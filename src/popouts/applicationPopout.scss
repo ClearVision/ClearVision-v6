@@ -8,20 +8,20 @@
 
 // BACKGROUND
 %appPopoutWrapper {
-  background-color: cv('bg.general.popout'); 
+  background-color: cv('bg.general.popout');
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   box-shadow: none;
 }
 %appPopoutContainer {
-	background-color: transparent;
+  background-color: transparent;
 }
 
 // ITEM
 %appPopoutItemLoading {
-	background-color: transparent;
+  background-color: transparent;
 }
 %appPopoutItem {
-  background-color: rgba(0, 0, 0, .2);
+  background-color: rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   &:hover {
     background-color: hsla(0, 0%, 100%, 0.07);
@@ -44,20 +44,20 @@
   background-color: transparent;
 }
 %appPopoutDetailsBackButton {
-  background-color: hsla(0, 0%, 0%, .3);
+  background-color: hsla(0, 0%, 0%, 0.3);
   &:hover {
-    background-color: hsla(0, 0%, 0%, .5);
+    background-color: hsla(0, 0%, 0%, 0.5);
   }
 }
 %appPopoutStickyBanner {
   visibility: hidden;
 }
 %appPopoutBanner {
-  -webkit-mask:linear-gradient(to bottom, #000, transparent);
-  mask:linear-gradient(to bottom, #000, transparent);
+  -webkit-mask: linear-gradient(to bottom, #000, transparent);
+  mask: linear-gradient(to bottom, #000, transparent);
 }
 %appPopoutAppIcon {
-  background-color: hsla(0, 0%, 0%, .3);
+  background-color: hsla(0, 0%, 0%, 0.3);
   border-color: transparent;
 }
 %appPopoutAppOverview,
@@ -80,10 +80,10 @@
 %appPopoutCommandContainer {
   background-color: transparent;
 }
-%appPopoutCommand { 
+%appPopoutCommand {
   background-color: transparent;
   &:hover {
-    background-color: hsla(0, 0%, 100%, .07);
+    background-color: hsla(0, 0%, 100%, 0.07);
   }
 }
 %appPopoutTag {

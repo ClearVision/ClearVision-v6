@@ -2,7 +2,7 @@
 %fullMotion %popoutTranslate:has(%userPopoutOuter) {
   transform: unset !important;
   position: relative;
-	z-index: 0;
+  z-index: 0;
 }
 /* USER POPOUT */
 %userPopoutOuter {
@@ -36,13 +36,13 @@
   // BANNER
   %userProfileBanner {
     -webkit-mask: linear-gradient(to bottom, #000, transparent 93%);
-	  mask: linear-gradient(to bottom, #000, transparent 93%);
-    &[style*="background-image"] {
+    mask: linear-gradient(to bottom, #000, transparent 93%);
+    &[style*='background-image'] {
       -webkit-mask: linear-gradient(to bottom, #000 50%, transparent);
       mask: linear-gradient(to bottom, #000 50%, transparent);
-    }    
+    }
   }
-} 
+}
 %userPopoutProfileBadges {
   background-color: hsla(0, 0%, 0%, 0.4);
 }
@@ -50,17 +50,17 @@
 // STATUS BUBBLE
 %userProfileOuterUnthemed {
   %userProfileStatusBubbleOuter {
-    background-color: hsla(0, 0%, 0%, .6);
-	  border-color: transparent;
+    background-color: hsla(0, 0%, 0%, 0.6);
+    border-color: transparent;
     &::before {
-      background-color: hsla(0, 0%, 0%, .6);
-    	border-color: transparent;
+      background-color: hsla(0, 0%, 0%, 0.6);
+      border-color: transparent;
       border-radius: 16px 16px 0 0;
       height: 8.5px;
     }
     &::after {
-      background-color: hsla(0, 0%, 0%, .6);
-	    border-color: transparent;
+      background-color: hsla(0, 0%, 0%, 0.6);
+      border-color: transparent;
     }
   }
   %userProfileStatusBubble {
@@ -70,7 +70,7 @@
 
 // ACTIVITY
 %userPopoutActivity {
-  background-color: hsla(0, 0%, 0%, .4);
+  background-color: hsla(0, 0%, 0%, 0.4);
 }
 %userPopoutActivityButton {
   background-color: $main-color;

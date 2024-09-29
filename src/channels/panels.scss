@@ -34,7 +34,7 @@
 %themeDark %accountPanelAvatarWrapper {
   min-width: calc(var(--channels-width) - 120px);
   &:hover {
-    background-color: hsla(0, 0%, 100%, .1);
+    background-color: hsla(0, 0%, 100%, 0.1);
   }
 }
 
@@ -203,14 +203,14 @@ button%panelButton {
 
 // QUEST PANEL
 %themeDark %questPanel {
-	background-color: transparent;
+  background-color: transparent;
 }
 %questPanelAccepted {
-	background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
 }
 %questPanelAcceptedExpandedBackground {
-	background: transparent !important;
-	border-top: 2px solid hsla(0, 0%, 100%, .1);
+  background: transparent !important;
+  border-top: 2px solid hsla(0, 0%, 100%, 0.1);
 }
 %questPanelAcceptedExpandedContent {
   visibility: hidden;
@@ -221,7 +221,7 @@ button%panelButton {
 
 // SPOTIFY/YT MUSIC MAYBE?/IDK
 %listeningAlongPanel {
-	background: transparent;
+  background: transparent;
   %panelTitle {
     color: $main-color;
   }
