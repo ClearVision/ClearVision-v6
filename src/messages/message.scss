@@ -72,7 +72,7 @@
 
 // REPLY
 %messageReplied {
-  &:before {
+  %messageRepliedSpine {
     border-color: $main-color;
   }
   %messageRepliedTextPreview {

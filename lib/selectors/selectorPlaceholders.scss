@@ -2211,6 +2211,9 @@ pre {
 .repliedMessage_f9f2ca {
   @extend %messageReplied !optional;
 }
+.repliedMessageSpine_f9f2ca {
+  @extend %messageRepliedSpine !optional;
+}
 .repliedTextPreview_f9f2ca {
   @extend %messageRepliedTextPreview !optional;
 }
