@@ -80,7 +80,7 @@ button%panelButton {
         color: $hover-color;
       }
       %panelActionButtonLottieIcon {
-        --__lottieIconColor: var(--main-color) !important;
+        --__lottieIconColor: $main-color !important;
       }
     }
   }

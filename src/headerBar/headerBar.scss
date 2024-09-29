@@ -66,8 +66,8 @@
 }
 %headerChannelNameInput:focus {
   background: transparent;
-  box-shadow: inset 0 0 0 1px var(--main-color);
+  box-shadow: inset 0 0 0 1px $main-color;
 }
 %headerChannelNameOuter:hover %headerChannelNameInput {
-  box-shadow: inset 0 0 0 1px var(--main-color);
+  box-shadow: inset 0 0 0 1px $main-color;
 }

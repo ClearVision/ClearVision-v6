@@ -1,6 +1,14 @@
 /* DISCORD SHOP */
-
-%shop {
+%shopPreview {
+  background: rgba(0, 0, 0, 0.6);
+}
+%popularPicksShopAll {
+  background: $main-color;
+  &:hover {
+    background: $hover-color;
+  }
+}
+%shopAll {
   background-color: transparent;
 }
 %shopBackground {
@@ -91,7 +99,7 @@
 
 // Shop new pill
 %shopNewPill {
-  background: radial-gradient(ellipse at 120%200%, var(--main-color) 10%, transparent 70%);
+  background: radial-gradient(ellipse at 120%200%, $main-color 10%, transparent 70%);
 }
 
 // Shop what's new

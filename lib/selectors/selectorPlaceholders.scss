@@ -5103,7 +5103,13 @@ pre {
   @extend %profileEffectDescriptionContainer !optional;
 }
 .shop_e77fa3 {
-  @extend %shop !optional;
+  @extend %shopAll !optional;
+}
+.shopAll_ebba41 {
+  @extend %popularPicksShopAll !optional;
+}
+.shop_ebba41 {
+  @extend %shopPreview !optional;
 }
 .shopScroll_e77fa3 {
   @extend %shopBackground !optional;
