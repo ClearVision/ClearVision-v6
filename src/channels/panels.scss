@@ -79,9 +79,6 @@ button%panelButton {
         background: hsla(0, 0%, 100%, 0.95);
         color: $hover-color;
       }
-      %panelActionButtonLottieIcon {
-        --__lottieIconColor: $main-color !important;
-      }
     }
   }
 }
