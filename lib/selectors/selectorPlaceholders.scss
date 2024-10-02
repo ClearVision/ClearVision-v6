@@ -5624,3 +5624,15 @@ pre {
 .tile_b5b752 {
   @extend %nitroTrial !optional;
 }
+.container_e462a4 {
+  @extend %discoverServersContainer !optional;
+}
+.card_e32e6f {
+  @extend %discoverServersCards !optional;
+}
+.iconMask_c73cee {
+  @extend %discoverServersIcon !optional;
+}
+.navItem_e462a4.selected_e462a4 {
+  @extend %discoverServersChannels !optional;
+}
