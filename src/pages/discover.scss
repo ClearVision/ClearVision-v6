@@ -199,6 +199,9 @@
 
 %themeDark %discoverServersIcon {
   background-color: $main-color;
+  &:hover {
+    background-color: $hover-color;
+  }
 }
 
 %discoverServersChannels {
