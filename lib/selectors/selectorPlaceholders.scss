@@ -2701,26 +2701,14 @@ pre {
 .searchPage_a3a4ce {
   @extend %discoverSearchPage !optional;
 }
-.sidebarContainer_a3a4ce {
+.container_e462a4 {
   @extend %discoverCategory !optional;
 }
-.categoryItem_c72b37 {
+.navItem_e462a4 {
   @extend %discoverCategoryItem !optional;
 }
-.selectedCategoryItem_c72b37 {
+.selected_e462a4 {
   @extend %discoverCategoryItemSelected !optional;
-}
-.itemInner_c72b37 {
-  @extend %discoverCategoryItemInner !optional;
-}
-.categoryItem_f75d68 {
-  @extend %discoverCategoryQuest !optional;
-}
-.selectedCategoryItem_f75d68 {
-  @extend %discoverCategoryQuestSelected !optional;
-}
-.itemInner_f75d68 {
-  @extend %discoverCategoryQuestInner !optional;
 }
 .guildList_c8c448 {
   @extend %discoverGuildList !optional;
@@ -2731,13 +2719,13 @@ pre {
 .loaded_e90879 {
   @extend %discoverGuildCardLoaded !optional;
 }
-.card_e90879 {
+.card_e32e6f {
   @extend %discoverGuildCard !optional;
 }
 .container_f11cbf {
   @extend %discoverHubCard !optional;
 }
-.iconMask_e90879 {
+.iconMask_c73cee {
   @extend %discoverGuildCardIcon !optional;
 }
 .splash_e90879 {
@@ -5623,16 +5611,4 @@ pre {
 }
 .tile_b5b752 {
   @extend %nitroTrial !optional;
-}
-.container_e462a4 {
-  @extend %discoverServersContainer !optional;
-}
-.card_e32e6f {
-  @extend %discoverServersCards !optional;
-}
-.iconMask_c73cee {
-  @extend %discoverServersIcon !optional;
-}
-.navItem_e462a4.selected_e462a4 {
-  @extend %discoverServersChannels !optional;
 }

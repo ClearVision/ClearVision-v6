@@ -7,11 +7,10 @@
 }
 
 // SIDEBAR
-%themeDark %discoverCategory {
+%discoverCategory {
   background-color: transparent;
 }
-%discoverCategoryItem,
-%discoverCategoryQuest {
+%discoverCategoryItem {
   position: relative;
   z-index: 1;
   &:before {
@@ -38,8 +37,6 @@
       background: hsla(0, 0%, 100%, 0.1);
     }
   }
-}
-%discoverCategoryItem {
   &%discoverCategoryItemSelected {
     &:before {
       background: hsla(0, 0%, 100%, 0.1);
@@ -51,26 +48,7 @@
     }
   }
   &:is(%discoverCategoryItemSelected, :hover, :active) {
-    %discoverCategoryItemInner {
-      background-color: transparent;
-    }
-  }
-}
-%discoverCategoryQuest {
-  &%discoverCategoryQuestSelected {
-    &:before {
-      background: hsla(0, 0%, 100%, 0.1);
-    }
-    &:after {
-      right: 0;
-      background: $main-color;
-      animation: cv-channel-select 0.3s ease-in-out;
-    }
-  }
-  &:is(%discoverCategoryQuestSelected, :hover, :active) {
-    %discoverCategoryQuestInner {
-      background-color: transparent;
-    }
+    background-color: transparent;
   }
 }
 
@@ -183,32 +161,4 @@
 }
 %discoverQuestItemName {
   color: $main-color !important;
-}
-
-// Discover Servers
-%discoverServersContainer {
-  background: rgba(0, 0, 0, calc(#{cv('bg.app.shading')} * 0.3));
-}
-
-%themeDark %discoverServersCards {
-  background-color: rgba(0, 0, 0, 0.8);
-  &:hover {
-    background-color: $hover-color;
-  }
-}
-
-%themeDark %discoverServersIcon {
-  background-color: $main-color;
-  &:hover {
-    background-color: $hover-color;
-  }
-}
-
-%discoverServersChannels {
-  background-color: $main-color;
-  color: var(--channel-color);
-  transition: background-color 0.3s ease-in-out;
-  &:hover {
-    background-color: hsla(0, 0%, 100%, 0.1);
-  }
 }
