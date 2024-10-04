@@ -1,3 +1,5 @@
+[prettier-badge]: https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square
+[prettier-link]: https://github.com/prettier/prettier
 [release-badge]: https://img.shields.io/github/v/release/ClearVision/ClearVision-v6?include_prereleases&style=flat-square
 [release-link]: https://github.com/ClearVision/ClearVision-v6/releases
 [license-badge]: https://img.shields.io/github/license/ClearVision/ClearVision-v6?style=flat-square
@@ -8,11 +10,15 @@
 [issues-link]: https://github.com/ClearVision/ClearVision-v6/issues
 [prs-badge]: https://img.shields.io/github/issues-pr/ClearVision/ClearVision-v6?style=flat-square
 [prs-link]: https://github.com/ClearVision/ClearVision-v6/pulls
+[sass-badge]: https://img.shields.io/badge/Sass-CC6699.svg?style=flat-square&logo=sass&logoColor=white
+[sass-link]: https://sass-lang.com/
 
 <div align="center">
 
 # ClearVision v6
 
+[![code style: prettier][prettier-badge]][prettier-link]
+[!Language: sass][sass-badge][sass-link]
 [![Releases][release-badge]][release-link]
 [![License][license-badge]][license-link]
 [![Discord Server][discord-badge]][discord-link]
