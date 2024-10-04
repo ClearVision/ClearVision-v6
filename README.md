@@ -18,7 +18,7 @@
 # ClearVision v6
 
 [![code style: prettier][prettier-badge]][prettier-link]
-[!Language: sass][sass-badge][sass-link]
+[![Language: Sass][sass-badge]][sass-link]
 [![Releases][release-badge]][release-link]
 [![License][license-badge]][license-link]
 [![Discord Server][discord-badge]][discord-link]
