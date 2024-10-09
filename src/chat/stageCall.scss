@@ -7,7 +7,7 @@
 
 // STAGE
 %stageContainer {
-  background: rgba(0, 0, 0, calc(#{cv('bg.app.shading')} * 0.5));
+  background: rgba(0, 0, 0, calc($bg-shading * 0.5));
 }
 %stageCallContainer,
 %stageScroller {
