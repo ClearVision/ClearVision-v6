@@ -13,19 +13,19 @@
 
 // HOME PAGE
 %directoryCategory {
-  background: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
+  background: rgba(0, 0, 0, calc($bg-shading * 0.4));
   &:hover {
     background: $hover-color;
   }
 }
 %directoryCard,
 %directoryNewToApps {
-  background: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
+  background: rgba(0, 0, 0, calc($bg-shading * 0.4));
 }
 %directoryListCard {
-  background: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
+  background: rgba(0, 0, 0, calc($bg-shading * 0.4));
   &%directoryCardClickable:hover {
-    background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.6));
+    background-color: rgba(0, 0, 0, calc($bg-shading * 0.6));
     color: #fff;
     %textMediumNormal {
       color: #fff;
@@ -33,7 +33,7 @@
   }
 }
 %directoryFooter {
-  background: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
+  background: rgba(0, 0, 0, calc($bg-shading * 0.4));
 }
 
 // SEARCH

@@ -145,5 +145,5 @@
 
 // CHATTING ABOUT: TOPIC
 %inboxChattingAbout {
-  background-color: hsla(0, 0%, 30%, calc(var(--background-shading) * 0.5));
+  background-color: hsla(0, 0%, 30%, calc($bg-shading * 0.5));
 }

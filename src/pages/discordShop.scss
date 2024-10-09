@@ -12,7 +12,7 @@
   background-color: transparent;
 }
 %shopBackground {
-  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
+  background-color: rgba(0, 0, 0, calc($bg-shading * 0.4));
 }
 %shopPageWrapper {
   background-color: transparent;
@@ -104,5 +104,5 @@
 
 // Shop what's new
 %shopWhatsNew {
-  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.8));
+  background-color: rgba(0, 0, 0, calc($bg-shading * 0.8));
 }

@@ -5,7 +5,7 @@ div.popoutList_da8701.phoneFieldPopout_ff761b.elevationBorderLow_ff8688 {
 
 // Security keys list https://discord.com/channels/212324635356692500/858733936800956427/1270769660039663636
 div.credentialList_eaef52 {
-  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
+  background-color: rgba(0, 0, 0, calc($bg-shading * 0.4));
   border-radius: 4px;
 }
 div.name_d808b0 {

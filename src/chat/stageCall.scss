@@ -7,7 +7,7 @@
 
 // STAGE
 %stageContainer {
-  background: rgba(0, 0, 0, calc(#{cv('bg.app.shading')} * 0.5));
+  background: rgba(0, 0, 0, calc($bg-shading * 0.5));
 }
 %stageCallContainer,
 %stageScroller {
@@ -63,9 +63,9 @@
   }
 }
 %stageOptionContainer {
-  background: rgba(0, 0, 0, calc(var(--background-shading) * 0.3));
+  background: rgba(0, 0, 0, calc($bg-shading * 0.3));
   &:hover {
-    background: rgba(0, 0, 0, calc(var(--background-shading) * 0.6));
+    background: rgba(0, 0, 0, calc($bg-shading * 0.6));
   }
 }
 %stageLeaveButton {
@@ -99,7 +99,7 @@
 
 // REQUESTS
 %stageRequestContainer {
-  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.6));
+  background-color: rgba(0, 0, 0, calc($bg-shading * 0.6));
 }
 %stageIconBigBackground {
   background-color: $main-color;

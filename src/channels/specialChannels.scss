@@ -1,10 +1,10 @@
 /*CUSTOMIZE CHANNELS*/
 
 %customizeChannelsHeader {
-  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.6)) !important;
+  background-color: rgba(0, 0, 0, calc($bg-shading * 0.6)) !important;
 }
 %customizeChannels {
-  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.5)) !important;
+  background-color: rgba(0, 0, 0, calc($bg-shading * 0.5)) !important;
 }
 
 /*header*/
@@ -54,10 +54,10 @@
 }
 
 %browseChannelsRow {
-  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
+  background-color: rgba(0, 0, 0, calc($bg-shading * 0.4));
   &:hover {
     &:not(%browseChannelsDisabled) {
-      background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.6));
+      background-color: rgba(0, 0, 0, calc($bg-shading * 0.6));
     }
   }
 }
@@ -111,7 +111,7 @@
   %serverGuideAction,
   %serverGuideSidebarCard,
   %serverGuideRow {
-    background: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
+    background: rgba(0, 0, 0, calc($bg-shading * 0.4));
   }
   %serverGuideAction:hover {
     background: $hover-color;
@@ -140,7 +140,7 @@
 }
 /*Cases where we get taken to channels*/
 %serverGuideChannelHintBanner {
-  background: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
+  background: rgba(0, 0, 0, calc($bg-shading * 0.4));
 }
 %serverGuideChannelHintIcon {
   background: $main-color;

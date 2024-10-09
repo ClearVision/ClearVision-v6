@@ -1,6 +1,6 @@
 /*Shiki code blocks*/
 .shiki-plain {
-  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.2)) !important;
+  background-color: rgba(0, 0, 0, calc($bg-shading * 0.2)) !important;
 }
 
 .shiki-container {

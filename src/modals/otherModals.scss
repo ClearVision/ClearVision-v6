@@ -147,7 +147,7 @@
   background: rgba(0, 0, 0, 0.4);
 }
 %activityTag {
-  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.5));
+  background-color: rgba(0, 0, 0, calc($bg-shading * 0.5));
 }
 %activityItem {
   background: rgba(0, 0, 0, 0.4);
@@ -197,7 +197,7 @@
     }
   }
   %soundboardHint {
-    background: rgba(0, 0, 0, calc(var(--background-shading) * 0.3));
+    background: rgba(0, 0, 0, calc($bg-shading * 0.3));
   }
 }
 
