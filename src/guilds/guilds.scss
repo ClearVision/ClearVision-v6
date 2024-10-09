@@ -66,8 +66,8 @@
   width: 12px;
   margin-left: -6px;
   border-radius: 20px;
-  background: $main-color;
-  box-shadow: 0 0 20px -1px $main-color;
+  background: var(--server-unread);
+  box-shadow: 0 0 20px -1px var(--server-unread);
   &[style*='height: 8px'] {
     height: 10px !important;
   }
