@@ -32,7 +32,7 @@
 
 // PERKS PAGE
 %nitroPerksScroller {
-  background-color: rgba(0, 0, 0, calc($bg-shading * 0.6));
+  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.6));
   transition: all 0.5s ease-in-out;
 }
 %nitroPerksBackButton {
