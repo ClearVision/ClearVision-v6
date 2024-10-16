@@ -235,10 +235,10 @@
 }
 // MEMBERS ACTIVITY SECTION (as opposed to just the text under members)
 %memberActivityContainer {
-  background: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
+  background: rgba(0, 0, 0, calc($bg-shading * 0.4));
   border: 2px solid transparent;
   &:hover {
-    background: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
+    background: rgba(0, 0, 0, calc($bg-shading * 0.4));
     border: 2px solid $hover-color;
   }
 }
