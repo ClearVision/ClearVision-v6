@@ -2,7 +2,7 @@
 %panels {
   background: transparent;
   > :first-child {
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, calc(#{cv('bg.app.shading')} * 0.3));
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, calc($bg-shading * 0.3));
   }
 }
 %themeDark %panel {

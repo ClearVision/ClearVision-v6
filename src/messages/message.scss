@@ -24,7 +24,7 @@
 
   // CONTENT
   %messageContent {
-    color: var(--text-normal);
+    color: $text-normal;
   }
   %messageSystemContainer {
     color: hsla(0, 0%, 100%, 0.5);

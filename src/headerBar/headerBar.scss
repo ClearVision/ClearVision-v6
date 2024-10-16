@@ -2,13 +2,13 @@
 %base {
   %headerBar {
     height: 48px;
-    background: rgba(0, 0, 0, calc(#{cv('bg.app.shading')} * 0.6));
-    box-shadow: 0 0 10px rgba(0, 0, 0, calc(#{cv('bg.app.shading')} * 0.6));
+    background: rgba(0, 0, 0, calc($bg-shading * 0.6));
+    box-shadow: 0 0 10px rgba(0, 0, 0, calc($bg-shading * 0.6));
     color: hsla(0, 0%, 100%, 0.5);
   }
   %threadHeaderBar {
-    background: rgba(0, 0, 0, calc(#{cv('bg.app.shading')} * 0.6));
-    box-shadow: 0 0 10px rgba(0, 0, 0, calc(#{cv('bg.app.shading')} * 0.6));
+    background: rgba(0, 0, 0, calc($bg-shading * 0.6));
+    box-shadow: 0 0 10px rgba(0, 0, 0, calc($bg-shading * 0.6));
     color: hsla(0, 0%, 100%, 0.5);
   }
 }

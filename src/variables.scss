@@ -44,6 +44,9 @@ $cv: (
           main: var(--main-font),
           code: var(--code-font),
         ),
+      text: (
+        normal: var(--text-normal),
+      ),
       // GENERAL
       channels-width: var(--channels-width),
       members-width: var(--members-width),
@@ -163,3 +166,5 @@ $cv: (
 // SHORTHANDS
 $main-color: cv('colors.main');
 $hover-color: cv('colors.hover');
+$bg-shading: cv('bg.app.shading');
+$text-normal: cv('text.normal');

@@ -7,7 +7,7 @@
 
 // FRIENDS COLUMN
 %friendsColumn {
-  background: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
+  background: rgba(0, 0, 0, calc($bg-shading * 0.4));
 }
 %friendsSearch {
   background-color: hsla(0, 0%, 100%, 0.07);
@@ -117,7 +117,7 @@
 
 // NOW PLAYING
 %nowPlayingColumn {
-  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.6));
+  background-color: rgba(0, 0, 0, calc($bg-shading * 0.6));
 }
 %nowPlayingColumnContainer {
   background-color: transparent;
@@ -166,8 +166,8 @@
   background-color: hsla(0, 0%, 0%, 0.4);
 }
 %promotedQuestPill {
-  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.8));
-  color: var(--text-normal);
+  background-color: rgba(0, 0, 0, calc($bg-shading * 0.8));
+  color: $text-normal;
 }
 
 // DM USER PROFILE

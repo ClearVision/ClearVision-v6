@@ -62,7 +62,7 @@
 %friendsTable {
   %scroller {
     &::-webkit-scrollbar-track-piece {
-      background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.3)) !important;
+      background-color: rgba(0, 0, 0, calc($bg-shading * 0.3)) !important;
     }
   }
 }
