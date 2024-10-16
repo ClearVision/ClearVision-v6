@@ -167,7 +167,7 @@
 }
 %promotedQuestPill {
   background-color: rgba(0, 0, 0, calc($bg-shading * 0.8));
-  color: var(--text-normal);
+  color: $text-normal;
 }
 
 // DM USER PROFILE
