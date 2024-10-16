@@ -4230,6 +4230,12 @@ pre {
 .emptyText_f02fcf {
   @extend %emptyActiveNowText !optional;
 }
+.wrapper_a18c91 {
+  @extend %promotedQuestActivity !optional;
+}
+.promotedTagBackground_a4a2b0 {
+  @extend %promotedQuestPill !optional;
+}
 .button_a24e84 {
   @extend %quickReactButton !optional;
 }
