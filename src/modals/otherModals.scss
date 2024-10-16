@@ -252,7 +252,7 @@
 }
 %webhookEmojiRow {
   background-color: $main-color;
-  color: var(--text-normal) !important;
+  color: $text-normal !important;
 }
 %webhookBackground:after {
   background: var(--background-overlay);

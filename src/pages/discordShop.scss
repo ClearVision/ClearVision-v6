@@ -78,22 +78,22 @@
 
 // Buy Nitro
 %nitroShopGiftNitro {
-  color: var(--text-normal) !important;
+  color: $text-normal !important;
   background-color: $main-color !important;
   border-color: transparent !important;
   &:hover {
     background-color: $hover-color !important;
-    color: var(--text-normal) !important;
+    color: $text-normal !important;
   }
 }
 
 // Subscribe button
 %buttonInverted%buttonColorBrand {
   background: $main-color;
-  color: var(--text-normal);
+  color: $text-normal;
   &:hover {
     background: $hover-color;
-    color: var(--text-normal);
+    color: $text-normal;
   }
 }
 

@@ -67,7 +67,7 @@
       box-shadow: none;
     }
     %discoverSearchBoxInput {
-      color: var(--text-normal);
+      color: $text-normal;
       &::placeholder {
         color: hsla(0, 0%, 100%, 0.3);
       }
@@ -90,7 +90,7 @@
         box-shadow: none;
       }
       %discoverSearchBoxInput {
-        color: var(--text-normal);
+        color: $text-normal;
         &::placeholder {
           color: hsla(0, 0%, 100%, 0.3);
         }
