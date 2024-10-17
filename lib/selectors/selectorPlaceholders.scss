@@ -4902,14 +4902,20 @@ pre {
 .intentsContainer_f6d180 {
   @extend %directoryAppIntentList !optional;
 }
-.picker_cd703d {
+.picker_cd703d.refresh_cd703d {
   @extend %soundboard !optional;
 }
-.soundButton_f40049 {
+.soundButtonRefresh_f40049 {
   @extend %soundboardSound !optional;
 }
-.categoryIcon_ceda83.selected_ceda83 {
-  @extend %soundboardGuildSelected !optional;
+.soundNameRefresh_f40049 {
+  @extend %soundboardSoundName !optional;
+}
+.soundAddButtonRefresh_c06ee5 {
+  @extend %soundboardAdd !optional;
+}
+.soundAddTextRefresh_c06ee5 {
+  @extend %soundboardAddText !optional;
 }
 .keybindHint_c66e5e {
   @extend %soundboardHint !optional;
