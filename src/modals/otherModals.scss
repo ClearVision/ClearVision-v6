@@ -183,12 +183,28 @@
 %authModalFooter {
   background-color: transparent;
 }
-
 // SOUNDBOARD MODAL
 %soundboard {
   background-color: cv('bg.general.popout');
 }
+%soundboardSound,
+%soundboardGuildSelected {
+  background-color: $main-color;
+}
 %soundboardSound {
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+%soundboardHint {
+  background: rgba(0, 0, 0, calc($bg-shading * 0.3));
+}
+
+// SOUNDBOARD MODAL REFRESH
+%soundboardRefresh {
+  background-color: cv('bg.general.popout');
+}
+%soundboardSoundRefresh {
   background: $main-color;
   box-shadow:  1px 0 0 $main-color, 0 1px 4px 0 $main-color;
   &:hover {
@@ -196,11 +212,11 @@
     box-shadow: 0 1px 0 0 $hover-color,0 1px 4px 0 $hover-color;
   }
 }
-%soundboardName,
-%soundboardAddText {
+%soundboardNameRefresh,
+%soundboardAddTextRefresh {
   color: $text-normal;
 }
-%soundboardAdd {
+%soundboardAddRefresh {
   background-color: $main-color;
 }
 
