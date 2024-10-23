@@ -90,6 +90,7 @@
 %guildSettingsRoleIconPreview {
   background-color: hsla(0, 0%, 0%, 0.6);
 }
+
 // View server as role selection bar
 %guildSettingsRoleViewAsDropdown {
   background-color: hsla(0, 0%, 0%, 0.8);
@@ -408,10 +409,18 @@
   }
 }
 
-// Invites Page
+// INVITES PAGE
 %serverInvitesCancel {
   background-color: rgba(0, 0, 0, 0.4);
   &:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
+}
+
+// MEMBERS MANAGEMENT 
+%guildSettingsMembersMoved {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+%guildSettingsShowMembersInChannelList {
+  background: rgba(0, 0, 0, 0.4);
 }

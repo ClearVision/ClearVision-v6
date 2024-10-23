@@ -3298,6 +3298,12 @@ pre {
 .roleRow_a930f1 {
   @extend %guildSettingsRoleRow !optional;
 }
+.movedTable_dd2627 {
+  @extend %guildSettingsMembersMoved !optional;
+}
+.bannerContainer_cc2901 {
+  @extend %guildSettingsShowMembersInChannelList !optional;
+}
 .roleRowDisableHover_a930f1 {
   @extend %guildSettingsRoleRowDisabled !optional;
 }
