@@ -823,13 +823,13 @@
 .form_a7d72e {
   @extend %chatForm !optional;
 }
-.channelTextArea_d0696b {
+.channelTextArea_bdf0de {
   @extend %channelTextArea !optional;
 }
-.scrollableContainer_d0696b {
+.scrollableContainer_bdf0de {
   @extend %channelTextAreaScrollable !optional;
 }
-.inner_d0696b {
+.inner_bdf0de {
   @extend %channelTextAreaInner !optional;
 }
 .attachWrapper_f298d4 {
@@ -844,13 +844,13 @@
 .attachButtonPlus_f298d4 {
   @extend %channelTextAreaAttachButtonPlus !optional;
 }
-.textArea_d0696b {
+.textArea_bdf0de {
   @extend %textArea !optional;
 }
 .placeholder_a552a6 {
   @extend %textAreaPlaceholder !optional;
 }
-.textAreaSlate_d0696b {
+.textAreaSlate_bdf0de {
   @extend %slateTextArea !optional;
 }
 .button_f9af59 {
@@ -865,10 +865,10 @@
 .text_d7ebeb {
   @extend %channelTextAreaTypingText !optional;
 }
-.attachedBars_d0696b {
+.stackedBars_bdf0de {
   @extend %channelTextAreAttachedBar !optional;
 }
-.stackedAttachedBar_d0696b {
+.stackedAttachedBar_bdf0de {
   @extend %channelTextAreaStackedAttachedBar !optional;
 }
 .upload_df1eaf {
