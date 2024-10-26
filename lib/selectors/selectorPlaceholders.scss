@@ -4911,9 +4911,11 @@ pre {
 .intentsContainer_f6d180 {
   @extend %directoryAppIntentList !optional;
 }
-// No refresh
 .picker_cd703d {
   @extend %soundboard !optional;
+}
+.refresh_cd703d {
+  @extend %refresh !optional;
 }
 .soundButtonRefresh_f40049 {
   @extend %soundboardSound !optional;
