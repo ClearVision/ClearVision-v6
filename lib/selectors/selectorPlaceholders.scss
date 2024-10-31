@@ -5471,6 +5471,9 @@ pre {
 .rowContainer_e5da8b {
   @extend %appPopoutRowItem !optional;
 }
+.rowDivider_e5da8b {
+  @extend %appPopoutRowItemUnderline !optional;
+}
 .viewMore_b7ba1b {
   @extend %appPopoutViewMore !optional;
 }
@@ -5512,6 +5515,12 @@ pre {
 }
 .container_fb1469 {
   @extend %appPopoutLearnMore !optional;
+}
+.clickable_b78bb6 {
+  @extend %appPopoutSearchItem !optional;
+}
+.underline_b78bb6 {
+  @extend %appPopoutSearchItemUnderline !optional;
 }
 .emojiCounter_cf5d0a {
   @extend %webhookEmojiRow !optional;

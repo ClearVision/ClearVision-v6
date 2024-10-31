@@ -23,15 +23,21 @@
 %appPopoutItem {
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  &:hover {
+  &:hover,
+  &:active {
     background-color: hsla(0, 0%, 100%, 0.07);
   }
   &%appPopoutRowItem {
     background-color: transparent;
-    &:hover {
-      background-color: transparent;
+    &:hover,
+    &:active {
+      background-color: hsla(0, 0%, 100%, 0.07);
+      border-radius: 3px;
     }
   }
+}
+%appPopoutRowItemUnderline {
+  right: 4px;
 }
 %appPopoutViewMore {
   %textMediumMedium {
@@ -99,4 +105,17 @@
 // LEARN MORE
 %appPopoutLearnMore {
   background-color: transparent;
+}
+
+// SEARCH
+%appPopoutSearchItem {
+  background-color: transparent;
+  &:hover,
+  &:active {
+    background-color: hsla(0, 0%, 100%, 0.07);
+    border-radius: 3px;
+  }
+}
+%appPopoutSearchItemUnderline {
+	right: 4px
 }
