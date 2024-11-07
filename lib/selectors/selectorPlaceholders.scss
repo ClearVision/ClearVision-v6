@@ -2568,6 +2568,15 @@ pre {
 .connectedAccountContainer_ab12c6 {
   @extend %userProfileConnectedAccountContainer !optional;
 }
+.connectedAccountVerifiedIcon_ab12c6 {
+  @extend %userProfileConnectedAccountVerifiedIcon !optional;
+}
+.connectedAccountOpenIcon_ab12c6 {
+  @extend %userProfileConnectedAccountOpenIcon !optional;
+}
+.listRow_d2d6cb {
+  @extend %userProfileListRow !optional;
+}
 .note_d53fbd {
   @extend %userProfileNote !optional;
 }

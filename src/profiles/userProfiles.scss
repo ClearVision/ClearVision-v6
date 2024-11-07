@@ -1,5 +1,6 @@
 /* USER PROFILES */
 
+// NO NITRO
 %userProfileOuter:not(%userProfileCustomTheme) {
   background: transparent;
   %userProfileInner {
@@ -51,7 +52,7 @@
   }
 
   // BANNER
-  .banner_d5fdb1 {
+  %userProfileBanner {
     -webkit-mask: linear-gradient(to bottom, #000, transparent 93%);
     mask: linear-gradient(to bottom, #000, transparent 93%);
   }
@@ -64,22 +65,105 @@
     background-color: hsla(0, 0%, 0%, 0.4);
   }
 
-  // CONNECTIONS
+  // CONNECTED ACCOUNTS
   %userProfileConnectedAccountContainer {
     background: hsla(0, 0%, 100%, 0.04);
     border-color: transparent;
     border-radius: 5px;
   }
 
+  // LIST
+  %userProfileListRow {
+    transition: all 0.15s ease-in-out;
+    &:hover {
+	    background: linear-gradient(to right, hsla(0, 0%, 100%, 0.04) 10%, hsla(0, 0%, 100%, 0.04) 90%, transparent);
+    }
+  }
+
   // NOTES
   %userProfileNote {
     textarea:focus {
-      background-color: transparent;
+      background-color: hsla(0, 0%, 100%, .07);
     }
+  }
+}
+
+// GENERAL
+// CONNECTED ACCOUNTS
+%userProfileConnectedAccountVerifiedIcon {
+	background: url(https://clearvision.github.io/icons/verified.svg) center/18px no-repeat;
+	opacity: 0.5;
+	z-index: 1;
+  %flowerStar {
+    opacity: 0;
+  }
+  %flowerStarChild {
+    display: none;
+  }
+}
+%userProfileConnectedAccountOpenIcon {
+	background: url(https://clearvision.github.io/icons/popout.svg) center/18px no-repeat;
+  opacity: 0.3;
+  transition: all 0.15s ease-in-out;
+  transform: none;
+  > polygon {
+    display: none;
   }
 }
 
 
 
+/*
+// TAB BAR
+%userModalTabBarContainer {
+  padding: 0 20px;
+  border-color: hsla(0, 0%, 100%, 0.04);
+}
+%userModalTabBarContainerNew {
+  border-color: hsla(0, 0%, 100%, 0.04);
+}
 
-
+%userProfileOuter:not(%userProfileCustomTheme) {
+  %tabBarItem {
+    position: relative;
+    height: 30px;
+    padding: 5px 10px 0;
+    transition: color 0.15s ease-in-out;
+    z-index: 1;
+    border-bottom-width: 2px;
+    &:before {
+      content: '';
+      position: absolute;
+      @include stretch;
+      background: linear-gradient(to top, transparent, hsla(0, 0%, 100%, 0.05) 50%);
+      border-radius: 3px 3px 0 0;
+      opacity: 0;
+      transition: all 0.15s ease-in-out, bottom 0.2s ease-in-out;
+      z-index: -1;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      @include pos(100%, 0, 0, 0);
+      background: hsla(0, 0%, 100%, 0.07);
+      border-radius: 3px 3px 0 0;
+      transition: all 0.2s ease-in-out;
+      z-index: -1;
+    }
+    &:hover {
+      &:before {
+        opacity: 1;
+      }
+    }
+    &%tabBarItemSelected {
+      &:after {
+        top: 0;
+        animation: cv-slide-top 0.2s ease-in-out;
+      }
+      &:before {
+        bottom: 100%;
+        animation: cv-slide-bottom 0.2s ease-in-out reverse;
+      }
+    }
+  }
+}
