@@ -4,7 +4,6 @@
 %userProfileOuter:not(%userProfileCustomTheme) {
   background: transparent;
   %userProfileInner {
-
     // POPOUT
     &%userProfileSmall {
       background: cv('bg.popout.overlay');
@@ -31,7 +30,7 @@
       }
     }
   }
-  
+
   // STATUS
   %userProfileStatusBubbleOuter {
     background-color: hsla(0, 0%, 0%, 0.6);
@@ -76,14 +75,14 @@
   %userProfileListRow {
     transition: all 0.15s ease-in-out;
     &:hover {
-	    background: linear-gradient(to right, hsla(0, 0%, 100%, 0.04) 10%, hsla(0, 0%, 100%, 0.04) 90%, transparent);
+      background: linear-gradient(to right, hsla(0, 0%, 100%, 0.04) 10%, hsla(0, 0%, 100%, 0.04) 90%, transparent);
     }
   }
 
   // NOTES
   %userProfileNote {
     textarea:focus {
-      background-color: hsla(0, 0%, 100%, .07);
+      background-color: hsla(0, 0%, 100%, 0.07);
     }
   }
 }
@@ -91,9 +90,9 @@
 // GENERAL
 // CONNECTED ACCOUNTS
 %userProfileConnectedAccountVerifiedIcon {
-	background: url(https://clearvision.github.io/icons/verified.svg) center/18px no-repeat;
-	opacity: 0.5;
-	z-index: 1;
+  background: url(https://clearvision.github.io/icons/verified.svg) center/18px no-repeat;
+  opacity: 0.5;
+  z-index: 1;
   %flowerStar {
     opacity: 0;
   }
@@ -102,7 +101,7 @@
   }
 }
 %userProfileConnectedAccountOpenIcon {
-	background: url(https://clearvision.github.io/icons/popout.svg) center/18px no-repeat;
+  background: url(https://clearvision.github.io/icons/popout.svg) center/18px no-repeat;
   opacity: 0.3;
   transition: all 0.15s ease-in-out;
   transform: none;
