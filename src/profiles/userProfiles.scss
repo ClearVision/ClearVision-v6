@@ -1,0 +1,85 @@
+/* USER PROFILES */
+
+%userProfileOuter:not(%userProfileCustomTheme) {
+  background: transparent;
+  %userProfileInner {
+
+    // POPOUT
+    &%userProfileSmall {
+      background: cv('bg.popout.overlay');
+      &::before {
+        content: '';
+        position: absolute;
+        @include stretch;
+        background: cv('bg.popout.img') cv('bg.popout.pos') / cv('bg.popout.size') cv('bg.popout.repeat') cv('bg.popout.attach');
+        @include filters(cv('bg.popout'));
+        z-index: -1;
+      }
+    }
+
+    // MODAL
+    &%userProfileFull {
+      background: transparent;
+      &::before {
+        content: '';
+        position: absolute;
+        @include stretch;
+        background: cv('bg.modal.img') cv('bg.modal.pos') / cv('bg.modal.size') cv('bg.modal.repeat') cv('bg.modal.attach');
+        @include filters(cv('bg.modal'));
+        z-index: -1;
+      }
+    }
+  }
+  
+  // STATUS
+  %userProfileStatusBubbleOuter {
+    background-color: hsla(0, 0%, 0%, 0.6);
+    border-color: transparent;
+    &::before {
+      background-color: hsla(0, 0%, 0%, 0.6);
+      border-color: transparent;
+      border-radius: 16px 16px 0 0;
+      height: 8px;
+    }
+    &::after {
+      background-color: hsla(0, 0%, 0%, 0.6);
+      border-color: transparent;
+    }
+  }
+  %userProfileStatusBubble {
+    background-color: transparent;
+  }
+
+  // BANNER
+  .banner_d5fdb1 {
+    -webkit-mask: linear-gradient(to bottom, #000, transparent 93%);
+    mask: linear-gradient(to bottom, #000, transparent 93%);
+  }
+
+  // CONTENT
+  %userProfileOverlay {
+    background-color: hsla(0, 0%, 0%, 0.4);
+  }
+  %userProfileBadgeList {
+    background-color: hsla(0, 0%, 0%, 0.4);
+  }
+
+  // CONNECTIONS
+  %userProfileConnectedAccountContainer {
+    background: hsla(0, 0%, 100%, 0.04);
+    border-color: transparent;
+    border-radius: 5px;
+  }
+
+  // NOTES
+  %userProfileNote {
+    textarea:focus {
+      background-color: transparent;
+    }
+  }
+}
+
+
+
+
+

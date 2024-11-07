@@ -101,7 +101,6 @@ $version: '6.9.0';
 @import 'src/modals/screenshare';
 @import 'src/modals/soundboard';
 @import 'src/modals/threadModal';
-@import 'src/modals/userModal';
 
 // PAGES
 @import 'src/pages/appDirectory';
@@ -127,8 +126,10 @@ $version: '6.9.0';
 @import 'src/popouts/searchPopout';
 @import 'src/popouts/stickers';
 @import 'src/popouts/threadPopout';
-@import 'src/popouts/userPopout';
 @import 'src/popouts/voiceChannelListeningTo';
+
+// PROFILES
+@import 'src/profiles/userProfiles';
 
 // SCREENS
 @import 'src/screens/crash';

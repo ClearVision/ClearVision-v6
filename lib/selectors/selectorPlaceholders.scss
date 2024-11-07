@@ -2535,14 +2535,21 @@ pre {
 .footer_c5a065 {
   @extend %authModalFooter !optional;
 }
-.userProfileOuter_c69a7b {
+
+.outer_c69a7b {
   @extend %userProfileOuter !optional;
 }
-.userProfileOuterUnthemed_c69a7b {
-  @extend %userProfileOuterUnthemed !optional;
+.custom-profile-theme {
+  @extend %userProfileCustomTheme !optional;
 }
-.userProfileOuterThemed_c69a7b {
-  @extend %userProfileOuterThemed !optional;
+.inner_c69a7b {
+  @extend %userProfileInner !optional;
+}
+.biteSize_c69a7b {
+  @extend %userProfileSmall !optional;
+}
+.fullSize_c69a7b {
+  @extend %userProfileFull !optional;
 }
 .statusBubbleOuter_d0a252 {
   @extend %userProfileStatusBubbleOuter !optional;
@@ -2550,136 +2557,29 @@ pre {
 .statusBubble_d0a252 {
   @extend %userProfileStatusBubble !optional;
 }
-.userPanelInnerThemed_c69a7b {
-  @extend %userProfileDMInnerThemed !optional;
-}
-.badgeList_ab525a {
-  @extend %userProfileDMBadgeList !optional;
-}
-.overlayBackground_c69a7b {
-  @extend %userProfileDMOverlayBackground !optional;
-}
-.actionColor_fc39e7 {
-  @extend %userModalActivityButton !optional;
-}
 .banner_d5fdb1 {
   @extend %userProfileBanner !optional;
 }
-.userPopoutOuter_c69a7b {
-  @extend %userPopoutOuter !optional;
+.overlay_c69a7b {
+  @extend %userProfileOverlay !optional;
 }
-.biteSizeInner_c69a7b {
-  @extend %userPopoutInner !optional;
+.container_b64375 {
+  @extend %userProfileBadgeList !optional;
 }
-.userProfileInnerThemedPremiumWithoutBanner_c69a7b,
-.userProfileInnerThemedWithBanner_c69a7b {
-  @extend %userPopoutInnerThemed !optional;
-}
-.popoutBanner_c3e427 {
-  @extend %userPopoutBanner !optional;
-}
-.popoutNoBannerPremium_c3e427 {
-  @extend %userPopoutNoBannerPremium !optional;
-}
-.popoutBannerPremium_c3e427 {
-  @extend %userPopoutBannerPremium !optional;
-}
-.profileBadges_f89da9 {
-  @extend %userPopoutProfileBadges !optional;
-}
-.userPopoutOverlayBackground_c69a7b {
-  @extend %userPopoutOverlayBackground !optional;
-}
-.profileCustomizationPreview_ab876d {
-  @extend %userPopoutCustomizationPreview !optional;
-}
-.activity_cd74cc {
-  @extend %userPopoutActivity !optional;
-}
-.buttonColor_cd74cc {
-  @extend %userPopoutActivityButton !optional;
-}
-.roles_fa2f72 {
-  @extend %userPopoutRoles !optional;
+.connectedAccountContainer_ab12c6 {
+  @extend %userProfileConnectedAccountContainer !optional;
 }
 .note_d53fbd {
-  @extend %userPopoutNote !optional;
+  @extend %userProfileNote !optional;
 }
-.menu_ad5fac {
-  @extend %userPopoutMenu !optional;
-}
-.userProfileModalOuter_c69a7b {
-  @extend %userModalOuter !optional;
-}
-.userProfileModalInner_c69a7b {
-  @extend %userModalInner !optional;
-}
-.modalBanner_c3e427 {
-  @extend %userModalBanner !optional;
-}
-.modalBannerPremium_c3e427 {
-  @extend %userModalBannerPremium !optional;
-}
-.badgeList_ec3b75 {
-  @extend %userModalBadgeList !optional;
-}
-.badgeList_b69b77 {
-  @extend %accountSettingsBadges !optional;
-}
-.overlayBackground_c69a7b {
-  @extend %userModalOverlayBackground !optional;
-}
-.body_b9fccc {
-  @extend %userModalBody !optional;
-}
-.tabBarContainer_b9fccc {
-  @extend %userModalTabBarContainer !optional;
-}
-.tabBar_c1519f {
-  @extend %userModalTabBarContainerNew !optional;
-}
-.userInfoSection_a24910 {
-  @extend %userModalInfoSection !optional;
-}
-.userInfoSectionHeader_a24910 {
-  @extend %userModalInfoSectionHeader !optional;
-}
-.connectedAccounts_f3eb60 {
-  @extend %userModalConnectedAccounts !optional;
-}
-.connectedAccountContainer_f3eb60 {
-  @extend %userModalConnectedAccountContainer !optional;
-}
-.connectedAccountIcon_f3eb60 {
-  @extend %userModalConnectedAccountIcon !optional;
-}
-.connectedAccountName_f3eb60 {
-  @extend %userModalConnectedAccountName !optional;
-}
-.connectedAccountVerifiedIcon_f3eb60 {
-  @extend %userModalConnectedAccountVerifiedIcon !optional;
-}
-.connectedAccountOpenIcon_f3eb60 {
-  @extend %userModalConnectedAccountOpenIcon !optional;
-}
-.listScroller_e4be58 {
-  @extend %userModalListScroller !optional;
-}
-.listRow_e4be58 {
-  @extend %userModalListRow !optional;
-}
-.listRowContent_e4be58 {
-  @extend %userModalListRowConent !optional;
-}
-.listName_e4be58 {
-  @extend %userModalListName !optional;
-}
-.guildNick_b26403 {
-  @extend %userModalListGuildNick !optional;
-}
-.note_c2dcc6 {
-  @extend %userModalNote !optional;
-}
+
+
+
+
+
+
+
+
 .pageWrapper_a3a4ce {
   @extend %pageWrapper !optional;
 }
