@@ -1,7 +1,7 @@
 /* USER PROFILES */
 
 // NO NITRO
-%userProfileOuter:not(%userProfileCustomThemem, %userSettingsProfilePreview) {
+%userProfileOuter:not(%userProfileCustomTheme, %userSettingsProfilePreview) {
   background: transparent;
   %userProfileInner {
     // POPOUT
