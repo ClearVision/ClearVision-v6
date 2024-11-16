@@ -99,7 +99,6 @@ $version: '6.9.0';
 @import 'src/modals/keyboardShortcuts';
 @import 'src/modals/otherModals';
 @import 'src/modals/screenshare';
-@import 'src/modals/soundboard';
 @import 'src/modals/threadModal';
 
 // PAGES
@@ -124,6 +123,7 @@ $version: '6.9.0';
 @import 'src/popouts/inboxPopout';
 @import 'src/popouts/otherPopouts';
 @import 'src/popouts/searchPopout';
+@import 'src/popouts/soundboard';
 @import 'src/popouts/stickers';
 @import 'src/popouts/threadPopout';
 @import 'src/popouts/voiceChannelListeningTo';
