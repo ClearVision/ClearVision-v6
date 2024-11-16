@@ -1309,7 +1309,7 @@
 .scroller_fea3ef {
   @extend %guilds !optional;
 }
-.footer_aa1bff {
+.footer_f8ec41 {
   @extend %guildsFooter !optional;
 }
 .listItem_c96c45 {
@@ -3711,17 +3711,20 @@ pre {
 .avatar_b69b77 {
   @extend %userSettingsAccountProfileAvatar !optional;
 }
+.badgeList_b69b77 {
+  @extend %userSettingsAccountBadgeList !optional;
+}
+.container_f4c122 {
+  @extend %userSettingsProfilePreview !optional;
+}
 .premiumFeatureBorder_c6d722 {
   @extend %userSettingsProfilePremiumBorder !optional;
 }
 .premiumBackground_c6d722 {
   @extend %userSettingsProfilePremiumBackground !optional;
 }
-.upsellOverlayContainer_eb49af {
-  @extend %userSettingsProfileUpsellOverlayContainer !optional;
-}
-.upsellOverlay_eb49af {
-  @extend %userSettingsProfileUpsellOverlay !optional;
+.upsellContainer_ad7baa {
+  @extend %userSettingsProfileUpsellContainer !optional;
 }
 .container_f7ea1b {
   @extend %userSettingsPrivacyStandingContainer !optional;
