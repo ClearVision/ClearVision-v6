@@ -233,6 +233,7 @@
   background-color: $main-color;
   color: #fff;
 }
+
 // MEMBERS ACTIVITY SECTION (as opposed to just the text under members)
 %memberActivityContainer {
   background: rgba(0, 0, 0, calc($bg-shading * 0.4));
@@ -240,5 +241,19 @@
   &:hover {
     background: rgba(0, 0, 0, calc($bg-shading * 0.4));
     border: 2px solid $hover-color;
+  }
+}
+
+// MEMBERS ACTIVITY POPOUT
+/*clicked in*/
+%memberActivityContentWrapper,
+%memberActivityInteractionsContainer {
+  background-color: cv('bg.general.popout');
+}
+/*clicked in icon*/
+%memberActivityShareToChannelButton {
+  border-right: 1px solid hsla(0, 0%, 100%, 0.1);
+  path {
+    fill: #fff;
   }
 }

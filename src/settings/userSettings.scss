@@ -302,6 +302,12 @@
       }
     }
   }
+  %userSettingsVoiceSensitivity {
+    background-color: hsla(0, 0%, 100%, 0.2);
+    &%userSettingsVoiceSensitivitySpeaking {
+      background-color: $main-color;
+    }
+  }
 }
 
 %userSettingsEntranceSoundButton {

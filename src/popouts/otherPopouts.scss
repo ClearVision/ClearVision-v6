@@ -86,17 +86,3 @@
   background: var(--background-overlay);
   border-left: 5px solid $main-color;
 }
-
-// MEMBERS ACTIVITY POPOUT
-/*clicked in*/
-%memberActivityContentWrapper,
-%memberActivityInteractionsContainer {
-  background-color: cv('bg.general.popout');
-}
-/*clicked in icon*/
-%memberActivityShareToChannelButton {
-  border-right: 1px solid hsla(0, 0%, 100%, 0.1);
-  path {
-    fill: #fff;
-  }
-}

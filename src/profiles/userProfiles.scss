@@ -1,6 +1,6 @@
 /* USER PROFILES */
 
-// NO NITRO
+// NO CUSTOM PROFILE
 %userProfileOuter:not(%userProfileCustomTheme, %userSettingsProfilePreview) {
   background: transparent;
   %userProfileInner {
@@ -83,6 +83,20 @@
   %userProfileNote {
     textarea:focus {
       background-color: hsla(0, 0%, 100%, 0.07);
+    }
+  }
+}
+
+// CUSTOM PROFILE
+%userProfileCustomTheme {
+  %userProfileOverlayScroller {
+    &::-webkit-scrollbar-thumb {
+      background: linear-gradient(var(--profile-gradient-primary-color),var(--profile-gradient-secondary-color))
+    }
+  }
+  %userProfileNote {
+    %input {
+      box-shadow: 0 0 2px 2px var(--profile-gradient-primary-color);
     }
   }
 }

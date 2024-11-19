@@ -2559,11 +2559,14 @@ pre {
 .banner_d5fdb1 {
   @extend %userProfileBanner !optional;
 }
+.container_b64375 {
+  @extend %userProfileBadgeList !optional;
+}
 .overlay_c69a7b {
   @extend %userProfileOverlay !optional;
 }
-.container_b64375 {
-  @extend %userProfileBadgeList !optional;
+.scroller_d53fbd {
+  @extend %userProfileOverlayScroller !optional;
 }
 .connectedAccountContainer_ab12c6 {
   @extend %userProfileConnectedAccountContainer !optional;
@@ -3862,6 +3865,12 @@ pre {
 }
 .notches_a1107d {
   @extend %userSettingsMicTestNotches !optional;
+}
+.sliderBar_b6e3f3 {
+  @extend %userSettingsVoiceSensitivity !optional;
+}
+.speaking_b6e3f3 {
+  @extend %userSettingsVoiceSensitivitySpeaking !optional;
 }
 .soundButtonSettingContainer_c801bb {
   @extend %userSettingsEntranceSoundButton !optional;
