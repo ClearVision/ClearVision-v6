@@ -62,10 +62,13 @@
 }
 
 // UPSELL
-%upsellTooltipText {
+%upsellTooltip {
   background-color: hsla(0, 0%, 0%, 0.8);
   &%upsellTooltipCaretTopCenter:after {
     border-bottom-color: hsla(0, 0%, 0%, 0.8);
+  }
+  &%upsellTooltipCaretRightCenter:after {
+    border-left-color: hsla(0, 0%, 0%, 0.8);
   }
 }
 

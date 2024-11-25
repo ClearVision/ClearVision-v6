@@ -522,10 +522,6 @@
 .gameIcon_bf1a22 {
   @extend %activityPanelGameIcon !optional;
 }
-.title_d1da5f {
-  // Duplicate Class
-  @extend %activityPanelTitle !optional;
-}
 .actions_bf1a22 {
   @extend %activityPanelActions !optional;
 }
@@ -1283,10 +1279,13 @@
   @extend %commandTooltipPointer !optional;
 }
 .upsellTooltipWrapper_dafa63 {
-  @extend %upsellTooltipText !optional;
+  @extend %upsellTooltip !optional;
 }
 .caretTopCenter_dafa63 {
   @extend %upsellTooltipCaretTopCenter !optional;
+}
+.caretRightCenter_dafa63 {
+  @extend %upsellTooltipCaretRightCenter !optional;
 }
 .reactionTooltip_fba897 {
   @extend %reactionTooltip !optional;
@@ -2343,6 +2342,9 @@ pre {
 .forceShowLook_ec6b19 {
   @extend %reactionAddForceShow !optional;
 }
+.burstGlow_ec6b19 {
+  @extend %superReactionGlow !optional;
+}
 .spoilerMarkdownContent_aa9639 {
   @extend %spoilerMarkdownContent !optional;
 }
@@ -2550,10 +2552,10 @@ pre {
 .fullSize_c69a7b {
   @extend %userProfileFull !optional;
 }
-.statusBubbleOuter_d0a252 {
+.statusBubbleOuter_d22603 {
   @extend %userProfileStatusBubbleOuter !optional;
 }
-.statusBubble_d0a252 {
+.statusBubble_d22603 {
   @extend %userProfileStatusBubble !optional;
 }
 .banner_d5fdb1 {
@@ -4832,17 +4834,29 @@ pre {
 .soundName_f40049 {
   @extend %soundboardSoundName !optional;
 }
-.soundAddButton_c06ee5 {
-  @extend %soundboardAdd !optional;
+.hoverActiveBackground_f40049 {
+  @extend %soundboardSoundHover !optional;
 }
 .soundAddText_c06ee5 {
   @extend %soundboardAddText !optional;
 }
-.secondaryButtonRefresh_f40049 {
-  @extend %soundboardSecondaryButton !optional;
-}
 .keybindHint_c66e5e {
   @extend %soundboardHint !optional;
+}
+.refresh_cd703d {
+  @extend %soundboardRefresh !optional;
+}
+.soundButtonRefresh_f40049 {
+  @extend %soundboardButtonRefresh !optional;
+}
+.soundNameRefresh_f40049 {
+  @extend %soundboardSoundNameRefresh !optional;
+}
+.soundAddTextRefresh_c06ee5 {
+  @extend %soundboardAddTextRefresh !optional;
+}
+.secondaryButtonRefresh_f40049Refresh {
+  @extend %soundboardSecondaryButton !optional;
 }
 .homeContainer_e85cee {
   @extend %homeContainer !optional;
