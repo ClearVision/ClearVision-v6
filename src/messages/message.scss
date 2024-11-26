@@ -74,15 +74,16 @@
 %messageReplied {
   %messageRepliedSpine {
     border-color: $main-color;
+    &%messageRepliedContentHovered {
+      border-color: $hover-color;
+    }
   }
   %messageRepliedTextPreview {
     opacity: 0.7;
     max-height: unset;
-    &%messageRepliedTextPreviewClickable:hover {
-      opacity: 1;
-    }
-    %messageRepliedTextContent {
       color: #fff;
+    &%messageRepliedSpineHovered {
+      opacity: 1;
     }
     %messageRepliedTextPlaceholder {
       color: $main-color;

@@ -1308,7 +1308,7 @@
 .scroller_fea3ef {
   @extend %guilds !optional;
 }
-.footer_f8ec41 {
+.footer_d71945 {
   @extend %guildsFooter !optional;
 }
 .listItem_c96c45 {
@@ -2210,14 +2210,17 @@ pre {
 .repliedMessage_f9f2ca {
   @extend %messageReplied !optional;
 }
-.repliedMessageSpine_f9f2ca {
+.repliedMessageClickableSpine_f9f2ca {
   @extend %messageRepliedSpine !optional;
+}
+.repliedMessageContentHovered_f9f2ca {
+  @extend %messageRepliedContentHovered !optional;
 }
 .repliedTextPreview_f9f2ca {
   @extend %messageRepliedTextPreview !optional;
 }
-.clickable_f9f2ca {
-  @extend %messageRepliedTextPreviewClickable !optional;
+.repliedMessageClickableSpineHovered_f9f2ca  {
+  @extend %messageRepliedSpineHovered !optional;
 }
 .repliedTextContent_f9f2ca {
   @extend %messageRepliedTextContent !optional;
