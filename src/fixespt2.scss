@@ -20,3 +20,7 @@ div.credentialItem_eaef52.container_d808b0 {
 div.credentialItem_eaef52.container_d808b0:first-of-type {
   border: none;
 }
+// Fix for discovery button background when not stuck to bottom
+div.footer_d71945 {
+    background-color: rgba(0, 0, 0, 0);
+}
