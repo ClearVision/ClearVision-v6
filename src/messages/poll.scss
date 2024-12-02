@@ -31,10 +31,18 @@
 }
 %pollCreatePopoutAddAnswer {
   background-color: $main-color;
+  &:hover {
+    background-color: $hover-color;
+  }
 }
 %pollCreatePopoutAddAnswerIcon {
   color: #fff;
 }
 %pollCreatePopoutAddAnswerLabel {
   color: #fff !important;
+}
+
+// POLL ENDED
+%pollEndContainer {
+  background-color: hsla(0, 0%, 0%, 0.4);
 }

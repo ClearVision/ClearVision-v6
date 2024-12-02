@@ -5544,6 +5544,9 @@ pre {
 .addAnswerButtonLabel_f24a96 {
   @extend %pollCreatePopoutAddAnswerLabel !optional;
 }
+.container_e365d2 {
+  @extend %pollEndContainer !optional;
+}
 .channelRow_b89a4c {
   @extend %clipsShareTo !optional;
 }
