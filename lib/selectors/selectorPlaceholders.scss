@@ -1038,10 +1038,10 @@
 .checkboxWrapper_f6cde8 {
   @extend %checkboxWrapper !optional;
 }
-.checkbox_f6cde8 {
+.checkbox_b97e9a {
   @extend %checkbox !optional;
 }
-.checked_f6cde8 {
+.checkboxSelected_b97e9a {
   @extend %checkboxChecked !optional;
 }
 .flex_ec1a20 {
@@ -1774,7 +1774,7 @@
 .placeholderAvatar_dac468 {
   @extend %memberPlaceholderAvatar !optional;
 }
-.placeholderUsername_a43b87 {
+.placeholderUsername_dac468 {
   @extend %memberPlaceholderUsername !optional;
 }
 .mulitplePlaceholderUsername_dac468 {
@@ -2345,6 +2345,30 @@ pre {
 .forceShowLook_ec6b19 {
   @extend %reactionAddForceShow !optional;
 }
+.popoutContainer_cf58b5 {
+  @extend %reactionInfoContainer !optional;
+}
+.emojiSection_e58351 {
+  @extend %reactionInfoTip !optional;
+}
+.guildSection_e58351 {
+  @extend %reactionInfoGuild !optional;
+}
+.scroller_f2bfbb {
+  @extend %reactionModalScroller !optional;
+}
+.reactors_f2bfbb {
+  @extend %reactionModalReactors !optional;
+}
+.reactionDefault_f2bfbb {
+  @extend %reactionModalDefault !optional;
+}
+.reactionSelected_f2bfbb {
+  @extend %reactionModalSelected !optional;
+}
+.colorStandard_d1aa77 {
+  @extend %reactionModalColorStandard !optional;
+}
 .burstGlow_ec6b19 {
   @extend %superReactionGlow !optional;
 }
@@ -2419,21 +2443,6 @@ pre {
 }
 .childButton_f45bfc {
   @extend %messageReportOption !optional;
-}
-.scroller_f2bfbb {
-  @extend %reactionModalScroller !optional;
-}
-.reactors_f2bfbb {
-  @extend %reactionModalReactors !optional;
-}
-.reactionDefault_f2bfbb {
-  @extend %reactionModalDefault !optional;
-}
-.reactionSelected_f2bfbb {
-  @extend %reactionModalSelected !optional;
-}
-.colorStandard_d1aa77 {
-  @extend %reactionModalColorStandard !optional;
 }
 .quickswitcher_f4e139 {
   @extend %quickswitcher !optional;
@@ -2555,10 +2564,10 @@ pre {
 .fullSize_c69a7b {
   @extend %userProfileFull !optional;
 }
-.statusBubbleOuter_d22603 {
+.statusBubbleOuter_a82ccc {
   @extend %userProfileStatusBubbleOuter !optional;
 }
-.statusBubble_d22603 {
+.statusBubble_a82ccc {
   @extend %userProfileStatusBubble !optional;
 }
 .banner_d5fdb1 {
@@ -5142,15 +5151,6 @@ pre {
 .icon_de3e42 {
   @extend %chatToolbarIcon !optional;
 }
-.popoutContainer_cf58b5 {
-  @extend %emojiInfoContainer !optional;
-}
-.emojiSection_e58351 {
-  @extend %emojiInfoTip !optional;
-}
-.guildSection_e58351 {
-  @extend %emojiInfoGuild !optional;
-}
 .category_c394c4 {
   @extend %channelSettingsCategory !optional;
 }
@@ -5511,9 +5511,6 @@ pre {
 .answerSelectionIcon_cf2c85 {
   @extend %pollAnswerSelectionIcon !optional;
 }
-.radioForeground_b97e9a {
-  @extend %pollRadioForeground !optional;
-}
 .answer_cf2c85 {
   @extend %pollAnswer !optional;
 }
@@ -5528,6 +5525,24 @@ pre {
 }
 .secondaryButtonPresentation_a1531c {
   @extend %pollSecondaryButton !optional;
+}
+.scroller_cbdbf0 {
+  @extend %pollVotesPopoutAnswerScroller !optional;
+}
+.voters_cbdbf0 {
+  @extend %pollVotesPopoutVoters !optional;
+}
+.defaultTextInputWrapper_d274ca {
+  @extend %pollCreatePopoutAnswerInputWrapper !optional;
+}
+.addAnswerButton_f24a96 {
+  @extend %pollCreatePopoutAddAnswer !optional;
+}
+.addAnswerIconDefault_f24a96 {
+  @extend %pollCreatePopoutAddAnswerIcon !optional;
+}
+.addAnswerButtonLabel_f24a96 {
+  @extend %pollCreatePopoutAddAnswerLabel !optional;
 }
 .channelRow_b89a4c {
   @extend %clipsShareTo !optional;

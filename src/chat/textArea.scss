@@ -139,3 +139,17 @@
   background: rgba(255, 255, 255, 0.1);
   padding: 3.5px 0.5px;
 }
+
+// CHAT TOOLBAR
+%chatToolbar {
+  background-color: cv('bg.general.popout');
+  &::before {
+    border-top: 8px solid hsla(0, 0%, 0%, 0.8);
+  }
+}
+%chatToolbarButton:hover {
+  background-color: hsla(0, 0%, 100%, 0.05);
+}
+%chatToolbarIcon {
+  color: hsla(0, 0%, 100%, 0.7);
+}

@@ -79,3 +79,32 @@
     color: #fff;
   }
 }
+
+// EMOJI INFO POPOUT
+%reactionInfoContainer {
+  background-color: cv('bg.general.popout');
+}
+%reactionInfoTip {
+  background-color: transparent;
+}
+%reactionInfoGuild {
+  background-color: transparent;
+}
+
+// REACTIONS LIST
+%themeDark {
+  %reactionModalScroller,
+  %reactionModalReactors {
+    background-color: transparent;
+  }
+  %reactionModalDefault {
+    margin-bottom: 10px;
+  }
+  %reactionModalSelected {
+    background-color: $main-color;
+    margin-bottom: 10px;
+    %reactionModalColorStandard {
+      color: #fff;
+    }
+  }
+}

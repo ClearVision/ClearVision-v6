@@ -12,24 +12,6 @@
   }
 }
 
-// REACTIONS LIST
-%themeDark {
-  %reactionModalScroller,
-  %reactionModalReactors {
-    background-color: transparent;
-  }
-  %reactionModalDefault {
-    margin-bottom: 10px;
-  }
-  %reactionModalSelected {
-    background-color: $main-color;
-    margin-bottom: 10px;
-    %reactionModalColorStandard {
-      color: #fff;
-    }
-  }
-}
-
 // QUICKSWITCHER
 %quickswitcher {
   background-color: rgba(0, 0, 0, 0.5);

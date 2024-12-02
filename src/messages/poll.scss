@@ -1,17 +1,40 @@
+/* POLL */
 %poll {
   background: rgba(0, 0, 0, calc($bg-shading * 0.4));
 }
-/* selection */
-%pollAnswerSelectionIcon %pollRadioForeground {
-  fill: $main-color;
+%pollAnswerInner {
+  background-color: hsla(0, 0%, 100%, 0.07);
 }
-
-%pollAnswer %pollAnswerInner%pollAnswerCurrentlyVoting%pollAnswerSelected {
-  outline: 2px solid $main-color;
-}
-%pollAnswer:hover %pollAnswerInner%pollAnswerCurrentlyVoting {
-  outline: 2px solid $hover-color;
+%pollAnswer {
+  %pollAnswerInner%pollAnswerCurrentlyVoting%pollAnswerSelected {
+    outline: 2px solid $main-color;
+  }
+  &:hover %pollAnswerInner%pollAnswerCurrentlyVoting {
+    outline: 2px solid $hover-color;
+  }
 }
 %pollSecondaryButton {
   background-color: $main-color;
+  color: #fff;
+}
+
+// VIEW VOTES
+%pollVotesPopoutAnswerScroller,
+%pollVotesPopoutVoters {
+  background-color: transparent;
+}
+
+// CREATE POLL
+%pollCreatePopoutAnswerInputWrapper {
+  background: none;
+  border: none;
+}
+%pollCreatePopoutAddAnswer {
+  background-color: $main-color;
+}
+%pollCreatePopoutAddAnswerIcon {
+  color: #fff;
+}
+%pollCreatePopoutAddAnswerLabel {
+  color: #fff !important;
 }

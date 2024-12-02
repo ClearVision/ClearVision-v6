@@ -372,3 +372,21 @@
     opacity: 0.1;
   }
 }
+
+// VC STREAM POPOUT
+%themeDark {
+  %streamPopoutPreview {
+    background-color: cv('bg.general.popout');
+  }
+  %streamPopoutPreviewContainer {
+    background-color: transparent;
+  }
+  %streamPopoutWatchButton {
+    border-color: $main-color;
+    color: hsla(0, 0%, 100%, 0.8);
+    &:not([disabled]):hover {
+      border-color: $hover-color;
+      color: #fff;
+    }
+  }
+}
