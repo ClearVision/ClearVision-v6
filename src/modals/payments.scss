@@ -47,13 +47,26 @@
 %serverBoostPaymentPerksList {
   background: rgba(0, 0, 0, 0.4);
 }
-// INVITE FROM WEB BROWSER
-%themeDark %webInviteModalContentWrapper {
-  background: hsla(0, 0%, 0%, 0.5);
+
+// GIFT MODAL
+/*other modals, nitro gift*/
+%giftModalSelectTierHeader,
+%giftModalSelectTier {
+  background: transparent;
 }
-%webInviteModalOnline {
-  background-color: var(--online-color);
+%giftModalHeader {
+  background: transparent;
 }
-%webInviteModalTotal {
-  background-color: var(--offline-color);
+%giftModalGiftBoxSelected {
+  border: 2px solid $main-color;
+}
+%giftModalPlanSelected {
+  outline: 2px solid $main-color;
+}
+%giftModalShopIcon {
+  background: $main-color;
+}
+/*loading screen*/
+%giftModalSpinner {
+  background: rgba(0, 0, 0, 0.4);
 }
