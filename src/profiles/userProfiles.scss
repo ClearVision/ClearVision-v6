@@ -19,13 +19,15 @@
 
     // MODAL
     &%userProfileFull {
-      background: transparent;
+      background: hsla(0, 0%, 0%, 0.4);
       &::before {
         content: '';
         position: absolute;
         @include stretch;
         background: cv('bg.modal.img') cv('bg.modal.pos') / cv('bg.modal.size') cv('bg.modal.repeat') cv('bg.modal.attach');
         @include filters(cv('bg.modal'));
+        width: 100%;
+        height: 100%;
         z-index: -1;
       }
     }

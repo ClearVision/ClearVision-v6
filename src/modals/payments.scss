@@ -1,0 +1,59 @@
+/* PAYMENTS */
+
+// DISCORD NITRO PAYMENT
+%nitroPaymentNote,
+%nitroPaymentWrapper,
+%nitroPaymentBody {
+  background-color: transparent;
+}
+%nitroPaymentTable {
+  background-color: hsla(0, 0%, 0%, 0.4);
+}
+%nitroPaymentDiscount {
+  background-color: $main-color;
+}
+%nitroPaymentCardInputWrapper {
+  padding: 2px;
+}
+%nitroPaymentCardInput {
+  background-color: hsla(0, 0%, 100%, 0.07);
+  box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.09);
+}
+%nitroPaymentCardInputFocused {
+  box-shadow: 0 0 2px 2px $main-color;
+}
+
+// SERVER BOOST PAYMENT MODAL
+%themeDark %serverBoostPaymentQuantityIconWrapper {
+  background: hsla(0, 0%, 0%, 0.4);
+}
+%serverBoostPaymentQuantityIcon {
+  color: #fff;
+  &:hover {
+    color: #fff;
+    background-color: $hover-color;
+  }
+}
+%serverBoostPaymentActions %input {
+  box-shadow: none;
+}
+/*Boost this server button in serverboost page*/
+%serverBoostPerkContent {
+  background: transparent;
+  %serverBoostPaymentUpsellFooter {
+    background: hsla(0, 0%, 0%, 0.4);
+  }
+}
+%serverBoostPaymentPerksList {
+  background: rgba(0, 0, 0, 0.4);
+}
+// INVITE FROM WEB BROWSER
+%themeDark %webInviteModalContentWrapper {
+  background: hsla(0, 0%, 0%, 0.5);
+}
+%webInviteModalOnline {
+  background-color: var(--online-color);
+}
+%webInviteModalTotal {
+  background-color: var(--offline-color);
+}
