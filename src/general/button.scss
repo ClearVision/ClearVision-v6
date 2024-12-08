@@ -37,9 +37,6 @@
     &:disabled {
       background: hsla(0, 0%, 100%, 0.3);
     }
-    %buttonContents > div {
-      color: $main-color;
-    }
   }
   // EMBED BUTTON
   %embedContainer & {

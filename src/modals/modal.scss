@@ -5,11 +5,7 @@
     background: rgba(0, 0, 0, 0.5);
     box-shadow: none;
     backdrop-filter: blur(1.5px);
-    %modalFooter,
-    %uploadModalFooter,
-    %guildSidebarModal,
-    %formFieldWrapper,
-    %settingsFormFieldWrapper {
+    :is(%modalFooter, %uploadModalFooter, %guildSidebarModal, %formFieldWrapper, %settingsFormFieldWrapper) {
       background: transparent;
       box-shadow: none;
     }

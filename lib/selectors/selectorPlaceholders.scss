@@ -1038,10 +1038,10 @@
 .checkboxWrapper_f6cde8 {
   @extend %checkboxWrapper !optional;
 }
-.checkbox_b97e9a {
+.checkbox_f6cde8 {
   @extend %checkbox !optional;
 }
-.checkboxSelected_b97e9a {
+.checked_f6cde8 {
   @extend %checkboxChecked !optional;
 }
 .flex_ec1a20 {
@@ -2459,68 +2459,71 @@ pre {
 .wrapper_dc0b29 {
   @extend %quickswitcherPing !optional;
 }
-.paymentNote_cc6017 {
-  @extend %nitroPaymentNote !optional;
+.skuSelectModalHeader_f92df2 {
+  @extend %nitroPaymentSelectTierHeader !optional;
+}
+.skuSelectModalContent_f92df2 {
+  @extend %nitroPaymentSelectTier !optional;
+}
+.modalHeader_a27f2f {
+  @extend %nitroPaymentHeader !optional;
 }
 .wrapper_bfc2c6 {
-  @extend %nitroPaymentWrapper !optional;
+  @extend %nitroPaymentBreadcrumb !optional;
 }
 .body_bf926b {
   @extend %nitroPaymentBody !optional;
-}
-.table_df16c1 {
-  @extend %nitroPaymentTable !optional;
 }
 .planOptionDiscount_bd3462 {
   @extend %nitroPaymentDiscount !optional;
 }
 .cardNumberWrapper_c04e45 {
-  @extend %nitroPaymentCardInputWrapper !optional;
+  @extend %paymentCardInputWrapper !optional;
 }
 .cardInput_c04e45 {
-  @extend %nitroPaymentCardInput !optional;
+  @extend %paymentCardInput !optional;
 }
 .cardInputFocused_c04e45 {
-  @extend %nitroPaymentCardInputFocused !optional;
+  @extend %paymentCardInputFocused !optional;
 }
+.spinner_b0f29a {
+  @extend %giftSpinner !optional;
+}
+.customGiftBoxHighlighted_c4afc7 {
+  @extend %giftBoxSelected !optional;
+}
+.modalHeaderCustomGift_a27f2f {
+  @extend %giftNitroHeader !optional;
+}
+.selectedPlan_bd3462 {
+  @extend %giftNitroPlanSelected !optional;
+}
+.headerContainerGift_f8f790 {
+  @extend %giftShopHeader !optional;
+}
+.previewContainerSelected_b74403 {
+  @extend %giftShopItemSelected !optional;
+}
+.navigateToShopButton_dcb6d5 {
+  @extend %giftShopNaviButton !optional;
+}
+
+
+
 .content_cc6017 {
-  @extend %serverBoostPerkContent !optional;
+  @extend %boostPaymentContent !optional;
 }
 .iconWrapper_cc6793 {
-  @extend %serverBoostPaymentQuantityIconWrapper !optional;
+  @extend %boostPaymentQuantityIcon !optional;
 }
 .icon_cc6793 {
-  @extend %serverBoostPaymentQuantityIcon !optional;
+  @extend %boostPaymentQuantityIcon !optional;
 }
 .upsellFooter_a26a1a {
-  @extend %serverBoostPaymentUpsellFooter !optional;
+  @extend %boostPaymentUpsellFooter !optional;
 }
 .perksList_cf948e {
-  @extend %serverBoostPaymentPerksList !optional;
-}
-.actions_f8746a {
-  @extend %serverBoostPaymentActions !optional;
-}
-.innerWrapper_aecbd6 {
-  @extend %serverBoostPageBoostPrompt !optional;
-}
-.topPerksCard_adc107 {
-  @extend %serverBoostPageTopPerksCard !optional;
-}
-.card_d1fdce {
-  @extend %serverBoostPageCard !optional;
-}
-.wrapper_e55051 {
-  @extend %serverBoostPageFaq !optional;
-}
-.scroller_a50853 {
-  @extend %serverBoostPageScroller !optional;
-}
-.headerWave_a586c4 {
-  @extend %serverBoostPageHeaderWave !optional;
-}
-.bodyWave_a586c4 {
-  @extend %serverBoostPageBodyWave !optional;
+  @extend %boostPaymentPerksList !optional;
 }
 .contentWrapper_ed5743 {
   @extend %webInviteModalContentWrapper !optional;
@@ -3067,9 +3070,6 @@ pre {
 }
 .note_a2a7b5 {
   @extend %errorPageNote !optional;
-}
-.children_a6ae9b {
-  @extend %paymentinfo !optional;
 }
 .container_e40c16 {
   @extend %loadingScreen !optional;
@@ -4786,6 +4786,9 @@ pre {
 .text-md\/normal_dc00ef {
   @extend %textMediumNormal !optional;
 }
+.heading-sm\/medium_dc00ef {
+  @extend %headingSmallMedium !optional;
+}
 .directoryContainer_da3f59 {
   @extend %directoryContainer !optional;
 }
@@ -5325,27 +5328,6 @@ pre {
 .footer_fa823b {
   @extend %everyoneWarningFooter !optional;
 }
-.skuSelectModalHeader_f92df2 {
-  @extend %giftModalSelectTierHeader !optional;
-}
-.skuSelectModalContent_f92df2 {
-  @extend %giftModalSelectTier !optional;
-}
-.modalHeaderCustomGift_a27f2f {
-  @extend %giftModalHeader !optional;
-}
-.customGiftBoxHighlighted_c4afc7 {
-  @extend %giftModalGiftBoxSelected !optional;
-}
-.selectedPlan_bd3462 {
-  @extend %giftModalPlanSelected !optional;
-}
-.iconBackground_e4d3f1 {
-  @extend %giftModalShopIcon !optional;
-}
-.spinner_b0f29a {
-  @extend %giftModalSpinner !optional;
-}
 .container_e1e1a4 {
   @extend %serverShopIntro !optional;
 }
@@ -5522,6 +5504,12 @@ pre {
 }
 .selected_cf2c85 {
   @extend %pollAnswerSelected !optional;
+}
+.checkbox_b97e9a {
+  @extend %pollCheckbox !optional;
+}
+.checkboxSelected_b97e9a {
+  @extend %pollCheckboxSelected !optional;
 }
 .secondaryButtonPresentation_a1531c {
   @extend %pollSecondaryButton !optional;
