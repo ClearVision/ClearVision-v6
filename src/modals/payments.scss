@@ -7,13 +7,19 @@
 }
 
 // PURCHASE NITRO
-%nitroPaymentNitroHeader
+%nitroPaymentNitroHeader,
 %nitroPaymentBreadcrumb,
 %nitroPaymentBody {
   background-color: transparent;
 }
 %nitroPaymentDiscount {
   background-color: $main-color;
+}
+%nitroPaymentUpdateTable {
+  background-color: hsla(0, 0%, 100%, 0.07);
+}
+%nitroPaymentUpdateTableDivider {
+  background-color: transparent;
 }
 
 // GIFT MODAL
@@ -31,6 +37,9 @@
 %giftNitroPlanSelected {
   outline: 2px solid $main-color;
 }
+%giftNitroShopIcon {
+  background-color: $main-color;
+}
 
 // GIFT SHOP ITEMS
 %giftShopHeader {
@@ -43,7 +52,7 @@
   background-color: $main-color;
   border-color: transparent;
   %headingSmallMedium {
-    color: hsla(0, 0%, 100%, 0.9)
+    color: hsla(0, 0%, 100%, 0.9) !important;
   }
 }
 
@@ -51,7 +60,7 @@
 %boostPaymentContent {
   background: transparent;
 }
-%themeDark %boostPaymentQuantityIcon {
+%themeDark %boostPaymentQuantityIconWrapper {
   background: hsla(0, 0%, 0%, 0.4);
   &:hover {
     background-color: $hover-color;

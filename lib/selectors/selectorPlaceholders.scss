@@ -2477,6 +2477,12 @@ pre {
 .planOptionDiscount_bd3462 {
   @extend %nitroPaymentDiscount !optional;
 }
+.table_df16c1 {
+  @extend %nitroPaymentUpdateTable !optional;
+}
+.divider_df16c1 {
+  @extend %nitroPaymentUpdateTableDivider !optional;
+}
 .cardNumberWrapper_c04e45 {
   @extend %paymentCardInputWrapper !optional;
 }
@@ -2498,6 +2504,9 @@ pre {
 .selectedPlan_bd3462 {
   @extend %giftNitroPlanSelected !optional;
 }
+.iconBackground_e4d3f1 {
+  @extend %giftNitroShopIcon !optional;
+}
 .headerContainerGift_f8f790 {
   @extend %giftShopHeader !optional;
 }
@@ -2507,14 +2516,11 @@ pre {
 .navigateToShopButton_dcb6d5 {
   @extend %giftShopNaviButton !optional;
 }
-
-
-
 .content_cc6017 {
   @extend %boostPaymentContent !optional;
 }
 .iconWrapper_cc6793 {
-  @extend %boostPaymentQuantityIcon !optional;
+  @extend %boostPaymentQuantityIconWrapper !optional;
 }
 .icon_cc6793 {
   @extend %boostPaymentQuantityIcon !optional;
