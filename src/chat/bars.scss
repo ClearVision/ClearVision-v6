@@ -4,6 +4,8 @@
   z-index: 999;
   background: transparent;
   transition: all 0.15s ease-in-out;
+  display: flex;
+  align-items: center;
   &:before {
     content: '';
     position: absolute;
@@ -13,6 +15,7 @@
     opacity: 0.8;
     z-index: -1;
     transition: all 0.15s ease-in-out;
+    height: 32px;
   }
   &:hover,
   &:active {
