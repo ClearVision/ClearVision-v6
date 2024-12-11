@@ -60,13 +60,15 @@
 }
 
 // UPLOADING
-%attachment {
-  %fileName {
-    color: hsla(0, 0%, 100%, 0.7);
-  }
-  %fileSize {
-    color: hsla(0, 0%, 100%, 0.3);
-  }
+%fileUploading {
+  background: hsla(0, 0%, 100%, 0.06);
+  border-color: hsla(0, 0%, 100%, 0.08);
+}
+%fileName {
+  color: hsla(0, 0%, 100%, 0.7);
+}
+%fileSize {
+  color: hsla(0, 0%, 100%, 0.3);
 }
 %fileProgress {
   background: hsla(0, 0%, 100%, 0.04) !important;

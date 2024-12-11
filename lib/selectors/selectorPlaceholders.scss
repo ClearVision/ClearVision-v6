@@ -1888,16 +1888,16 @@
 .downloadButton__3fb6d {
   @extend %attachmentDownloadButton !optional;
 }
-.filenameWrapper_b52bef {
-  @extend %fileNameWrapper !optional;
+.file_f46c86 {
+  @extend %fileUploading !optional;
 }
-.filename_b52bef {
+.filename_f46c86 {
   @extend %fileName !optional;
 }
-.size_b52bef {
+.size_f46c86 {
   @extend %fileSize !optional;
 }
-.progress_b52bef {
+.progress_c6473a {
   @extend %fileProgress !optional;
 }
 .progressBar_c6473a {
