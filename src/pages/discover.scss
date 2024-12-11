@@ -1,10 +1,15 @@
-/* SERVER DISCOVER */
-%base {
-  %pageWrapper,
-  %hubDiscoverScroller {
-    background: rgba(0, 0, 0, calc($bg-shading * 0.5));
-  }
+/* DISCOVER */
+%discover {
+  background-color: transparent;
 }
+%discoverHeaderBackdrop {
+  background-color: rgba($color: #0c1522, $alpha: 0.7);
+  backdrop-filter: blur(5px);
+}
+%discoverQuestSelected {
+  border-bottom-color: $main-color !important;
+}
+
 
 // SIDEBAR
 %discoverCategory {
@@ -52,53 +57,6 @@
   }
 }
 
-// SEARCH BOX
-%discoverSearch {
-  %discoverSearchBox {
-    background: hsla(0, 0%, 0%, 0.6);
-    border: none;
-    box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.09);
-    &:focus-within {
-      border: none;
-      box-shadow: 0 0 2px 2px $main-color;
-    }
-    %input {
-      border: none;
-      box-shadow: none;
-    }
-    %discoverSearchBoxInput {
-      color: $text-normal;
-      &::placeholder {
-        color: hsla(0, 0%, 100%, 0.3);
-      }
-    }
-    %discoverSearchBoxIconSearch {
-      color: $main-color;
-    }
-  }
-  %discoverSearchPage & {
-    %discoverSearchBox {
-      background: hsla(0, 0%, 100%, 0.07);
-      border: none;
-      box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.09);
-      &:focus-within {
-        border: none;
-        box-shadow: 0 0 2px 2px $main-color;
-      }
-      %input {
-        border: none;
-        box-shadow: none;
-      }
-      %discoverSearchBoxInput {
-        color: $text-normal;
-        &::placeholder {
-          color: hsla(0, 0%, 100%, 0.3);
-        }
-      }
-    }
-  }
-}
-
 // GUILD LIST
 %themeDark {
   %discoverGuildCard,
@@ -126,30 +84,65 @@
 %discoverGuildStatusOffline {
   background-color: cv('colors.offline');
 }
+%discoverGuildLoading {
+  background-color: hsla(0, 0%, 0%, 0.4);
+}
 
-// SEARCH CATEGORY
-%categoryPill {
-  &%categoryPillSelected {
-    background-color: $main-color;
+
+// SEARCH RESULTS
+%discoverSearchHeader {
+  background: rgba(0, 0, 0, calc($bg-shading * 0.6));
+  box-shadow: 0 0 10px rgba(0, 0, 0, calc($bg-shading * 0.6));
+}
+%discoverSearch {
+  background: rgba(0, 0, 0, calc($bg-shading * 0.5));
+}
+%discoverSearchBackButton {
+  background-color: $main-color;
+}
+%discoverSearchEmpty {
+  background-color: transparent;
+}
+%discoverSearchCategory {
+  position: relative;
+  z-index: 1;
+  &:before {
+    content: '';
+    position: absolute;
+    @include stretch;
+    transition: all 0.15s ease-in-out;
+    z-index: -1;
+    pointer-events: none;
+    border-radius: 4px;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    @include pos(0, 100%, 0, 0);
+    opacity: 0.9;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+    pointer-events: none;
+    border-radius: 4px;
+  }
+  &:hover {
+    &:before {
+      background: hsla(0, 0%, 100%, 0.1);
+    }
+  }
+  &%discoverSearchCategorySelected {
+    &:before {
+      background: hsla(0, 0%, 100%, 0.1);
+    }
+    &:after {
+      right: 0;
+      background: $main-color;
+      animation: cv-channel-select 0.3s ease-in-out;
+    }
   }
 }
 
-// EMPTY RESULTS
-%discoverEmptyResults {
-  background-color: hsla(0, 0%, 0%, 0.6);
-}
-
 // QUESTS
-%discoverQuestHeaderBackdrop {
-  background-color: rgba($color: #0c1522, $alpha: 0.7);
-  backdrop-filter: blur(5px);
-}
-%discoverQuest {
-  background-color: transparent;
-}
-%discoverQuestTabSelected {
-  border-bottom-color: $main-color !important;
-}
 %discoverQuestItem {
   background-color: hsla(0, 0%, 0%, 0.4);
 }

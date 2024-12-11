@@ -2483,6 +2483,12 @@ pre {
 .divider_df16c1 {
   @extend %nitroPaymentUpdateTableDivider !optional;
 }
+.body_f4a859 {
+  @extend %nitroPaymentDowngrade !optional;
+}
+.whatYouLoseItem_f4a859 {
+  @extend %nitroPaymentDowngradeCard !optional;
+}
 .cardNumberWrapper_c04e45 {
   @extend %paymentCardInputWrapper !optional;
 }
@@ -2609,6 +2615,15 @@ pre {
 .pageWrapper_a3a4ce {
   @extend %pageWrapper !optional;
 }
+.scroller_b91a2d {
+  @extend %discover !optional;
+}
+.backdrop_accde0 {
+  @extend %discoverHeaderBackdrop !optional;
+}
+.selected_a853ca {
+  @extend %discoverTabSelected !optional;
+}
 .search_f69601 {
   @extend %discoverSearch !optional;
 }
@@ -2678,23 +2693,26 @@ pre {
 .dotOffline_e90879 {
   @extend %discoverGuildStatusOffline !optional;
 }
-.emptyContainer_e37a20 {
-  @extend %discoverEmptyResults !optional;
+.spinner_b6db20 {
+  @extend %discoverGuildLoading !optional;
 }
-.emptyImage_e37a20 {
-  @extend %discoverEmptyImage !optional;
+.headerBar_accde0 {
+  @extend %discoverSearchHeader !optional;
 }
-.emptyHeader_e37a20 {
-  @extend %discoverEmptyTitle !optional;
+.container_b120dc {
+  @extend %discoverSearch !optional;
 }
-.backdrop_accde0 {
-  @extend %discoverQuestHeaderBackdrop !optional;
+.iconButton_accde0 {
+  @extend %discoverSearchBackButton !optional;
 }
-.scroller_b91a2d {
-  @extend %discoverQuest !optional;
+.container_bac4a9 {
+  @extend %discoverSearchEmpty !optional;
 }
-.selected_a853ca {
-  @extend %discoverQuestTabSelected !optional;
+.category_d70b79 {
+  @extend %discoverSearchCategory !optional;
+}
+.selected_d70b79 {
+  @extend %discoverSearchCategorySelected !optional;
 }
 .container_a97111 {
   @extend %discoverQuestItem !optional;
@@ -4107,12 +4125,6 @@ pre {
 }
 .stageListenerPill_a6ae3c {
   @extend %stageGuildListenerIcon !optional;
-}
-.categoryPill_f69601 {
-  @extend %categoryPill !optional;
-}
-.selected_f69601 {
-  @extend %categoryPillSelected !optional;
 }
 .pageControlContainer_b48941 {
   @extend %pageControlContainer !optional;
