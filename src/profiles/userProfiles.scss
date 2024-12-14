@@ -34,7 +34,7 @@
   }
 
   // STATUS
-  %userProfileStatusBubbleOuter {
+  :is(%userProfileStatusBubbleOuter) {
     background-color: hsla(0, 0%, 0%, 0.6);
     border-color: transparent;
     &::before {
@@ -48,7 +48,7 @@
       border-color: transparent;
     }
   }
-  %userProfileStatusBubble {
+  :is(%userProfileStatusBubble) {
     background-color: transparent;
   }
 

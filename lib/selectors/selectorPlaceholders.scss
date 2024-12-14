@@ -2579,10 +2579,12 @@ pre {
 .fullSize_c69a7b {
   @extend %userProfileFull !optional;
 }
-.statusBubbleOuter_a82ccc {
+.statusBubbleOuter_a82ccc,
+.statusBubbleOuter_af9888 {
   @extend %userProfileStatusBubbleOuter !optional;
 }
-.statusBubble_a82ccc {
+.statusBubble_a82ccc,
+.statusBubble_af9888 {
   @extend %userProfileStatusBubble !optional;
 }
 .banner_d5fdb1 {
@@ -4791,6 +4793,9 @@ pre {
 }
 .text-xs\/bold_dc00ef {
   @extend %textExtraSmallBold !optional;
+}
+.text-sm\/normal_dc00ef {
+  @extend %textSmallNormal !optional;
 }
 .text-sm\/medium_dc00ef {
   @extend %textSmallMedium !optional;
