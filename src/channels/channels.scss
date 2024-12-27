@@ -1,42 +1,45 @@
 /* CHANNELS */
-%channelsSidebar {
-  width: cv('channels-width');
+html %appmount %channelsSidebar:not(%channelsSidebarHidden) {
+  width: cv('channels-width') !important;
   background: rgba(0, 0, 0, calc($bg-shading * 0.3));
-  %platformWin & {
-    border-radius: 0;
-  }
+}
+%platformWin %channelsSidebar {
+  border-radius: 0;
 }
 %themeDark %channelsContainer {
   background: transparent;
+}
 
-  // CHANNELS HEADER
-  %channelsHeader {
-    height: 48px;
-    color: #fff;
-    font-family: cv('font.main');
-    font-weight: 600;
-    text-shadow: 0 0 3px #000;
-    &:hover {
-      background-color: hsla(0, 0%, 100%, 0.1);
-    }
+// CHANNELS HEADER
+%channelsHeader {
+  height: 48px;
+  color: #fff;
+  font-family: cv('font.main');
+  font-weight: 600;
+  text-shadow: 0 0 3px #000;
+  &:hover {
+    background-color: hsla(0, 0%, 100%, 0.1);
   }
+}
 
-  // GUILD BANNER
-  %bannerAnimatedContainer {
-    background: transparent;
-    box-shadow: none;
-  }
-  %bannerImage {
-    width: cv('channels-width');
-    -webkit-mask: linear-gradient(to bottom, #000, transparent);
-    mask: linear-gradient(to bottom, #000, transparent);
-  }
-  %threadChannelConnector {
-    color: $main-color;
-  }
-  %threadChannelSpine {
-    background: $main-color;
-  }
+// GUILD BANNER
+%channelBannerAnimatedContainer {
+  background: transparent;
+  box-shadow: none;
+}
+%channelBanner {
+  width: cv('channels-width');
+  -webkit-mask: linear-gradient(to bottom, #000, transparent);
+  mask: linear-gradient(to bottom, #000, transparent);
+}
+%channelBannerImage {
+  width: cv('channels-width');
+}
+%threadChannelConnector {
+  color: $main-color;
+}
+%threadChannelSpine {
+  background: $main-color;
 }
 
 // SERVER BOOST
