@@ -5,9 +5,165 @@
     background: rgba(0, 0, 0, 0.5);
     box-shadow: none;
     backdrop-filter: blur(1.5px);
-    :is(%modalFooter, %uploadModalFooter, %guildSidebarModal, %formFieldWrapper, %settingsFormFieldWrapper) {
+    %modalFooter {
       background: transparent;
       box-shadow: none;
     }
   }
+}
+
+// MESSAGE DELETION CONFIRMATION
+%themeDark %messageDeleteModal {
+  background-color: transparent;
+  box-shadow: 0 0 2px 2px $main-color;
+}
+
+// REPORT MESSAGE
+%messageReportOption {
+  background-color: $main-color;
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+
+// QUICKSWITCHER
+%quickswitcher {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+%quickswitcherInput {
+  background-color: rgba(255, 255, 255, 0.07);
+}
+%quickswitcherScroller {
+  background-color: transparent;
+  margin-top: 10px;
+  &::-webkit-scrollbar-track {
+    background-color: transparent !important;
+  }
+}
+%quickswitcherResult[aria-selected='true'] {
+  background: var(--background-modifier-hover);
+}
+%quickswitcherPing {
+  background: $main-color;
+}
+
+// TIMEOUT
+/*timeout duration item*/
+%timeoutModalItem%timeoutModalSelected {
+  background: $main-color;
+  border-color: $main-color;
+}
+%timeoutModalItem:not(%timeoutModalSelected) {
+  background: rgba(0, 0, 0, 0.4);
+  border-color: $main-color;
+}
+
+// BAN MODAL
+%banReasonOther {
+  background-color: hsla(0, 0%, 100%, 0.05);
+  border: 2px solid transparent;
+  transition: all 0.15s ease-in-out;
+  color: #fff;
+  &:hover {
+    background-color: hsla(0, 0%, 100%, 0.07);
+    color: #fff;
+    border: 2px solid $hover-color;
+  }
+}
+
+// SWITCH ACCOUNTS
+%themeDark %modalRoot {
+  %loginAuthBox,
+  %addAccountFooter {
+    background-color: transparent;
+  }
+}
+
+// ACTIVITIES
+%activityModalHeader,
+%activityModalDivider {
+  background: rgba(0, 0, 0, 0.4);
+}
+%activityTag {
+  background-color: rgba(0, 0, 0, calc($bg-shading * 0.5));
+}
+%activityItem {
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid $main-color;
+  &:hover {
+    background: rgba(0, 0, 0, 0.4);
+    border: 2px solid $hover-color;
+  }
+  &%activityItemDisabled {
+    background: rgba(0, 0, 0, 0.4);
+  }
+}
+%activitiesScroller {
+  background: transparent;
+}
+
+// INVITE BOT
+%botInviteModalContent {
+  background-color: hsla(0, 0%, 100%, 0.05);
+}
+
+// AUTH MODAL
+%authModal {
+  background-color: transparent;
+  border-radius: 5px;
+  &%authModalInApp {
+    background-color: transparent;
+  }
+}
+%authModalScopeTimes {
+  background-color: hsla(0, 0%, 100%, 0.15);
+}
+%authModalFooter {
+  background-color: transparent;
+}
+
+
+// YOU MUST COMPLETE A FEW MORE STEPS BEFORE YOU CAN TALK
+/*before you talk here popup*/
+%beforeTalkRuleContainer {
+  background: transparent;
+}
+/*border color for terms of acceptance*/
+%beforeTalkRule {
+  border-color: $main-color;
+}
+/*agree to rules*/
+%beforeTalkRulesBackground {
+  background: var(--background-overlay);
+  border-color: $main-color;
+  &:hover:not(:focus) {
+    border-color: $hover-color;
+    background: var(--background-overlay);
+  }
+}
+
+// Webhook previews
+%webhookFooter {
+  background-color: transparent;
+}
+%themeDark %webhookPopout {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+%webhookEmojiRow {
+  background-color: $main-color;
+  color: $text-normal !important;
+}
+%webhookBackground:after {
+  background: var(--background-overlay);
+}
+
+// INVITE FROM WEB BROWSER
+%themeDark %webInviteModalContentWrapper {
+  background: hsla(0, 0%, 0%, 0.5);
+}
+%webInviteModalOnline {
+  background-color: var(--online-color);
+}
+%webInviteModalTotal {
+  background-color: var(--offline-color);
 }
