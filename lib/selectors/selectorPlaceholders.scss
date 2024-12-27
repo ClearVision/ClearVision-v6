@@ -354,9 +354,6 @@
 .sidebar_a4d4d9 {
   @extend %channelsSidebar !optional;
 }
-.hidden_a4d4d9 {
-  @extend %channelsSidebarHidden !optional;
-}
 .container_ee69e0 {
   @extend %channelsContainer !optional;
 }
@@ -376,13 +373,13 @@
   @extend %channelsHeaderButton !optional;
 }
 .animatedContainer_fd6364 {
-  @extend %channelBannerAnimatedContainer !optional;
+  @extend %bannerAnimatedContainer !optional;
 }
 .bannerImage_fd6364 {
-  @extend %channelBanner !optional;
+  @extend %bannerImage !optional;
 }
-.bannerImg_fd6364 {
-  @extend %channelBannerImage !optional;
+.bannerVisible_fd6364 {
+  @extend %bannerVisible !optional;
 }
 .unread_edf32f {
   @extend %channelsUnreadIndicator !optional;
@@ -2431,6 +2428,18 @@ pre {
 }
 .footer_f9a4c9 {
   @extend %modalFooter !optional;
+}
+.footer_f82cc7 {
+  @extend %uploadModalFooter !optional;
+}
+.guildSidebar_a74b6f {
+  @extend %guildSidebarModal !optional;
+}
+.formFieldWrapper_ff716d {
+  @extend %formFieldWrapper !optional;
+}
+.settingsFormFieldWrapper__3ff83 {
+  @extend %settingsFormFieldWrapper !optional;
 }
 .message_ddcc45 {
   @extend %messageDeleteModal !optional;
