@@ -35,21 +35,21 @@
 
   // STATUS
   :is(%userProfileStatusBubbleOuter) {
-    background-color: hsla(0, 0%, 0%, 0.6);
+    background: hsla(0, 0%, 0%, 0.6);
     border-color: transparent;
     &::before {
-      background-color: hsla(0, 0%, 0%, 0.6);
+      background: hsla(0, 0%, 0%, 0.6);
       border-color: transparent;
       border-radius: 16px 16px 0 0;
       height: 8px;
     }
     &::after {
-      background-color: hsla(0, 0%, 0%, 0.6);
+      background: hsla(0, 0%, 0%, 0.6);
       border-color: transparent;
     }
   }
   :is(%userProfileStatusBubble) {
-    background-color: transparent;
+    background: transparent;
   }
 
   // BANNER

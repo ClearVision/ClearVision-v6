@@ -6,7 +6,7 @@
   background-color: rgba($color: #0c1522, $alpha: 0.7);
   backdrop-filter: blur(5px);
 }
-%discoverQuestSelected {
+%discoverTabSelected {
   border-bottom-color: $main-color !important;
 }
 
@@ -141,7 +141,7 @@
     }
   }
   %textSmallNormal {
-    color: hsla(0,0%,100%,.7);
+    color: hsla(0,0%,100%,.7) !important;
   }
 }
 

@@ -672,6 +672,9 @@
 .speaking_ba4b17 {
   @extend %callTileSpeaking !optional;
 }
+.channelChatWrapper_d880dc {
+  @extend %callChatWrapper !optional;
+}
 .chat_a7d72e {
   @extend %chat !optional;
 }
