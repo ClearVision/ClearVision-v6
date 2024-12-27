@@ -354,6 +354,9 @@
 .sidebar_a4d4d9 {
   @extend %channelsSidebar !optional;
 }
+.hidden_a4d4d9 {
+  @extend %channelsSidebarHidden !optional;
+}
 .container_ee69e0 {
   @extend %channelsContainer !optional;
 }
@@ -734,18 +737,6 @@
 }
 .wrapper_b75bb9 {
   @extend %chatLoadingWrapperCozy !optional;
-}
-.uploadModalIn_f82cc7 {
-  @extend %uploadModalIn !optional;
-}
-.uploadDropModal_f82cc7 {
-  @extend %uploadDropModal !optional;
-}
-.bgScale_f82cc7 {
-  @extend %uploadDropModalBgScale !optional;
-}
-.inner_f82cc7 {
-  @extend %uploadDropModalInner !optional;
 }
 .divider_d5deea {
   @extend %divider !optional;

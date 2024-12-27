@@ -89,18 +89,6 @@
   background-color: transparent;
 }
 
-// UPLOAD DROP MODAL
-%uploadModalIn {
-  %uploadDropModal {
-    %uploadDropModalBgScale {
-      background-color: $main-color;
-    }
-    %uploadDropModalInner {
-      border: 2px dashed hsla(0, 0%, 100%, 0.5);
-    }
-  }
-}
-
 // REPLY MENTION TOGGLE
 div[aria-checked='true'] %replyMentionButton {
   color: $main-color !important;
