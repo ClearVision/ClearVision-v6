@@ -2,90 +2,106 @@
 // prettier-ignore
 $tagged: (
 	// Admins
-	"194151269399527425": "CV Admin",			// untuned
-	"144881947557101568": "CV Admin",			// Zerthox
+	"CV Admin": (
+		"194151269399527425",	// untuned
+		"144881947557101568",	// Zerthox
+	),
 
 	// Team
-	"332394843743584256": "CV Team",			// cruxie
-	"240437190339854337": "CV Team",			// Leozard
-	"126652966265421824": "CV Team",			// Scars
-	"393900343135830016": "CV Team",			// Nyx
-	"335677038830682112": "CV Team",			// Snow
+	"CV Team": (
+		"332394843743584256",	// cruxie
+		"240437190339854337",	// Leozard
+		"126652966265421824",	// Scars
+		"393900343135830016",	// Nyx
+		"335677038830682112",	// Snow
+	),
 
 	// Contributors
-	"195270435015884800": "CV Contributor",		// Daemonicdeveloper
-	"236579127090610176": "CV Contributor",		// Danielle
-	"97797564866236416":  "CV Contributor",		// Heebeejeebees
-	"150750980097441792": "CV Contributor",		// Orangutan
-	"213067580531933196": "CV Contributor",		// KitKat
-	"858800346884997142": "CV Contributor",		// ShadowDevilsAvenged
-	"310468127534350347": "CV Contributor",		// Miyu
-	"384167892012498944": "CV Contributor",		// Randymations
-	"1141445806386319370": "CV Contributor",        // J-Emil-P
+	"CV Contributor": (
+		"195270435015884800",	// Daemonicdeveloper
+		"236579127090610176",	// Danielle
+		"97797564866236416",	// Heebeejeebees
+		"150750980097441792",	// Orangutan
+		"213067580531933196",	// KitKat
+		"858800346884997142",	// ShadowDevilsAvenged
+		"310468127534350347",	// Miyu
+		"384167892012498944",	// Randymations
+		"1141445806386319370",	// J-Emil-P
+	),
 
 	// Legacy Donators
-	"262989909411758080": "CV Donator",			// coldarchie
-	"168551219135119361": "CV Donator",			// Auroatic
-	"241500427105992704": "CV Donator",			// Ghost_Recon131
-	"151995147150819328": "CV Donator",			// It
-	"157699533134888961": "CV Donator",			// Jayzer
-	"157492606752784384": "CV Donator",			// Kazumi
-	"174525242939670528": "CV Donator",			// lts
-	"78890013378486272":  "CV Donator",			// Macpot
-	"213263668312408066": "CV Donator",			// Nikolas
-	"152431535914614785": "CV Donator",			// Paco
-	"112619227466182656": "CV Donator",			// PieterVMB
-	"297873043265552384": "CV Donator",			// PureFallen
-	"258031697646321666": "CV Donator",			// Rich246™
-	"109933711142719488": "CV Donator",			// Samboy Chips
-	"251260900252712962": "CV Donator",			// viwalon
-	"199184208319610880": "CV Donator",			// xImGaming
-	"122731339890950145": "CV Donator",			// Lilith
-	"436228721033216009": "CV Donator",			// Hattyot
-	"66214870705516544":  "CV Donator",			// Lordmau5
-	"172426681800196096": "CV Donator",			// Luan San
-	"158311402677731328": "CV Donator",			// theLMGN
-	"284122164582416385": "CV Donator",			// Aetheryx
-	"107965218868457472": "CV Donator",			// Mudock Yatho
-	"183795147236966412": "CV Donator",			// blamecoopa
-	"245133485688225793": "CV Donator",			// Shadowcloud
+	"CV Donator": (
+		"262989909411758080",	// coldarchie
+		"168551219135119361",	// Auroatic
+		"241500427105992704",	// Ghost_Recon131
+		"151995147150819328",	// It
+		"157699533134888961",	// Jayzer
+		"157492606752784384",	// Kazumi
+		"174525242939670528",	// lts
+		"78890013378486272",	// Macpot
+		"213263668312408066",	// Nikolas
+		"152431535914614785",	// Paco
+		"112619227466182656",	// PieterVMB
+		"297873043265552384",	// PureFallen
+		"258031697646321666",	// Rich246™
+		"109933711142719488",	// Samboy Chips
+		"251260900252712962",	// viwalon
+		"199184208319610880",	// xImGaming
+		"122731339890950145",	// Lilith
+		"436228721033216009",	// Hattyot
+		"66214870705516544",	// Lordmau5
+		"172426681800196096",	// Luan San
+		"158311402677731328",	// theLMGN
+		"284122164582416385",	// Aetheryx
+		"107965218868457472",	// Mudock Yatho
+		"183795147236966412",	// blamecoopa
+		"245133485688225793",	// Shadowcloud
+	),
 
 	// Testers, commented out for now as we aren't really testing anything.
 	/*
-	"266991742216175616": "CV Tester",			// Alpha$★☆
-	"97549189629636608":  "CV Tester",			// Baked
-	"128948605263413248": "CV Tester",			// Dingus
-	"168481642309091328": "CV Tester",			// Jen
-	"165581066524950530": "CV Tester",			// MoXAriApph
-	"102621249892544512": "CV Tester",			// Shiniyami ߷
-	"94553281296084992":  "CV Tester",			// Squibbus
-	"85410928408924160":  "CV Tester",			// †电离龙†
-	"143476079267414016": "CV Tester",			// Reĝino Kastilo
-	"131917628800237570": "CV Tester",			// FunkoChan
-	"155379920242081793": "CV Tester",			// Dimii04
-	"135130130942132224": "CV Tester",			// MTPyronaut
-	"123340872333918215": "CV Tester",			// Purvesh9211
-	"250721335305568258": "CV Tester",			// Valcreed
-	"297041315852713984": "CV Tester",			// Zou_Yongqi
-	"128006451053592577": "CV Tester",			// Rawrcolond
-	"102009847792291840": "CV Tester",			// SirSuperDeath
-	"513423192484872223": "CV Tester",			// O...O (yes that's a real username)
-	"580867069621567488": "CV Tester",			// skyspell413 / Primrose
+	"CV Tester": (
+		"266991742216175616",	// Alpha$★☆
+		"97549189629636608",	// Baked
+		"128948605263413248",	// Dingus
+		"168481642309091328",	// Jen
+		"165581066524950530",	// MoXAriApph
+		"102621249892544512",	// Shiniyami ߷
+		"94553281296084992",	// Squibbus
+		"85410928408924160",	// †电离龙†
+		"143476079267414016",	// Reĝino Kastilo
+		"131917628800237570",	// FunkoChan
+		"155379920242081793",	// Dimii04
+		"135130130942132224",	// MTPyronaut
+		"123340872333918215",	// Purvesh9211
+		"250721335305568258",	// Valcreed
+		"297041315852713984",	// Zou_Yongqi
+		"128006451053592577",	// Rawrcolond
+		"102009847792291840",	// SirSuperDeath
+		"513423192484872223",	// O...O (yes that's a real username)
+		"580867069621567488",	// skyspell413 / Primrose
+	),
 	*/
 
 	// Translators / Guide Makers
-	"538745942493495298": "CV Translator",		// Kuroikitten
-	"265627010733178892": "CV Guide Maker",		// Big Steve
+	"CV Translator": (
+		"538745942493495298",	// Kuroikitten
+	),
+	"CV Guide Maker": (
+		"265627010733178892",	// Big Steve
+	),
 
 	// Former CV Team Members
-	"309976820109803520": "Former CV Team",		// Leafy
+	"Former CV Team": (
+		"309976820109803520",	// Leafy
+	)
 
 );
 
 // OUTPUT
 %messageContent > img {
-  & ~ %messageHeader > %messageHeaderText > %messageUsername::after {
-    content: none;
+  & ~ %messageHeader %messageUsername::after {
+    content: var(--tag, none);
     color: currentcolor;
     text-shadow: 0 0 2px currentcolor;
     border: 1px solid;
@@ -95,9 +111,30 @@ $tagged: (
     font-size: 10px;
     padding: 0 5px;
   }
-  @each $user_id, $tag in $tagged {
-    &[src*='#{$user_id}'] ~ %messageHeader > %messageHeaderText > %messageUsername::after {
-      content: $tag;
-    }
-  }
+}
+// group = what tag will be used, will be used for content: #{$group}
+// user = string list for what user(s) will have that tag
+// itm = an item in alias when it's a list
+// output --lang is the name, as above
+@each $group, $user in $tagged {
+	// for lists
+	$k: "";
+	@if type-of($user) == list {
+		@if length($user) > 1 {
+			$k: ":is("; // start :is(
+			@for $i from 1 through length($user) {
+				$k: str-insert($k,"[src*=\"" + nth($user,$i) + "\"],",-1);
+			}
+			// remove extra comma, add closing )
+			$k: str-slice($k,0,-2) + ")";
+		} @else {
+			$k: "[src*=\"" + nth($user,1) + "\"]";
+		}
+	} @else {
+	// and for single strings
+		$k: "[src*=\"#{$user}\"]";
+	}
+	%avatarLarge#{$k} ~ %messageHeader {
+		--tag: "#{$group}";
+	}
 }
