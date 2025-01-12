@@ -223,7 +223,7 @@ $lang: (
 		$k: "."+$alias;
 	}
 	#{$k} {
-    --lang: #{$ln};
+		--lang: "#{$ln}";
 	}
 }
 // big undo for embeded text files
