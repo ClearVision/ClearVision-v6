@@ -783,14 +783,11 @@
 .categoryName_af1167 {
   @extend %gifPickerCategoryName !optional;
 }
-.results_bad108 {
-  @extend %gifPickerResults !optional;
-}
 .result_bad108 {
   @extend %gifPickerResult !optional;
 }
-.focused_bad108 {
-  @extend %gifPickerResultFocused !optional;
+.gifFavoriteButton_c5e128 {
+  @extend %gifFavoriteButton !optional;
 }
 .searchSuggestion_de4721 {
   @extend %gifPickerSearchSuggestion !optional;
@@ -2336,7 +2333,7 @@ pre {
 .reactionBtn_ec6b19 {
   @extend %reactionAdd !optional;
 }
-.forceShowLook_ec6b19 {
+.forceShow_ec6b19 {
   @extend %reactionAddForceShow !optional;
 }
 .popoutContainer_cf58b5 {
@@ -2419,6 +2416,9 @@ pre {
 }
 .footer_f9a4c9 {
   @extend %modalFooter !optional;
+}
+.actionButtons_dda074 {
+  @extend %imageModalActionButtons !optional;
 }
 .message_ddcc45 {
   @extend %messageDeleteModal !optional;

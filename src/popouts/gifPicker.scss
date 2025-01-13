@@ -39,8 +39,8 @@
     }
     &:after {
       content: '';
-      width: 100%;
-      height: 100%;
+      position: absolute;
+      @include pos(-1px, -1px, -1px, -1px);
       display: block;
       background: $main-color;
       border-radius: 4px;
@@ -51,49 +51,39 @@
     color: #fff;
     filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.7));
   }
+}
 
-  // RESULTS
-  %gifPickerResult {
-    &:after {
-      transition: all 0.15s ease-in-out;
-    }
-    &[style*='background-color:'] {
-      background: $main-color !important;
-    }
-    &[style*='background-color: rgb(179, 174, 255)'] {
-      filter: brightness(1.3);
-    }
-    &[style*='background-color: rgb(115, 142, 245)'] {
-      filter: grayscale(0.3);
-    }
-    &[style*='background-color: rgb(146, 154, 250)'] {
-      filter: brightness(0.7);
-    }
+// RESULTS
+%gifPickerResult {
+  &:after {
+    transition: all 0.15s ease-in-out;
   }
-  %gifPickerResult:hover {
+  &:hover {
     &:after {
       box-shadow: inset 0 0 0 2px $main-color, inset 0 0 0 3px rgba(0, 0, 0, 0.3);
     }
   }
+}
+%gifFavoriteButton {
+	background-color: hsla(0, 0%, 0%, 0.6);
+}
 
-  // ARROW KEY SELECTION OUTLINE
-  %themeDark %gifPickerResultFocused:after,
-  %themeDark %gifPickerResult:hover:after {
-    box-shadow: inset 0 0 0 2px $main-color, inset 0 0 0 3px rgba(0, 0, 0, 0.7);
-  }
+// ARROW KEY SELECTION OUTLINE
+%gifPickerResult[data-focused=true] {
+  box-shadow: 0 0 0 2px $hover-color, 0 0 0 3px rgba(0, 0, 0, 0.7);
+}
 
-  // HINT CARD
-  %gifPickerEmptyHintCard {
-    background: hsla(0, 0%, 100%, 0.04);
-    color: hsla(0, 0%, 100%, 0.5);
-  }
+// HINT CARD
+%gifPickerEmptyHintCard {
+  background: hsla(0, 0%, 100%, 0.04);
+  color: hsla(0, 0%, 100%, 0.5);
+}
 
-  // END CONTAINER
-  %gifPickerEndContainer {
-    &:after {
-      filter: grayscale(1) brightness(0.7);
-      opacity: 0.3;
-    }
+// END CONTAINER
+%gifPickerEndContainer {
+  &:after {
+    filter: grayscale(1) brightness(0.7);
+    opacity: 0.3;
   }
 }
 

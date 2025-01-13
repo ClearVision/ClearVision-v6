@@ -12,6 +12,12 @@
   }
 }
 
+// IMAGE MODAL
+%imageModalActionButtons {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid var(--main-color);
+}
+
 // MESSAGE DELETION CONFIRMATION
 %themeDark %messageDeleteModal {
   background-color: transparent;
