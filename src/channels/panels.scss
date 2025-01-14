@@ -210,10 +210,11 @@ button%panelButton {
 }
 %questPanelAcceptedExpandedBackground {
   background: transparent !important;
-  border-top: 2px solid hsla(0, 0%, 100%, 0.5);
+  border-top: 2px solid hsla(0, 0%, 100%, 0.05);
 }
-%questPanelContent {
+%questPanelContentExpanded {
   background: rgba(0, 0, 0, 0.6);
+  border-radius: 8px 8px 0 0;
 }
 %questPanelAcceptedExpandedContent {
   visibility: hidden;

@@ -456,11 +456,11 @@
 .contentWrapperAccepted_c721cc {
   @extend %questPanelAccepted !optional;
 }
-.content_fb2cb3 {
-  @extend %questPanelContent !optional;
-}
 .contentWrapperExpanded_c721cc {
   @extend %questPanelExpanded !optional;
+}
+.contentExpanded_e23249 {
+  @extend %questPanelContentExpanded !optional;
 }
 .postEnrollmentBackground_e23249 {
   @extend %questPanelAcceptedExpandedBackground !optional;
