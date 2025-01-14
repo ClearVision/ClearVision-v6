@@ -450,16 +450,16 @@
 .inner_adcaac {
   @extend %connectionPanelInner !optional;
 }
-.wrapper_c721cc {
+.wrapper_e23249 {
   @extend %questPanel !optional;
 }
-.contentWrapperAccepted_c721cc {
+.contentWrapperAccepted_e23249 {
   @extend %questPanelAccepted !optional;
 }
-.contentWrapperExpanded_c721cc {
+.contentWrapperExpanded_e23249 {
   @extend %questPanelExpanded !optional;
 }
-.postEnrollmentBackground_c3427e {
+.postEnrollmentBackground_e23249 {
   @extend %questPanelAcceptedExpandedBackground !optional;
 }
 .questAcceptedContent_e23249 {
@@ -2704,7 +2704,7 @@ pre {
 .darkThemeGradient_f2bc91 {
   @extend %discoverQuestItemGradient !optional;
 }
-.rewardDescriptionContainer_c2d7e2 {
+.container_c2d7e2 {
   @extend %discoverQuestItemDescription !optional;
 }
 .questName_c2d7e2 {
