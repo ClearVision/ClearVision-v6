@@ -2420,6 +2420,18 @@ pre {
 .footer_f9a4c9 {
   @extend %modalFooter !optional;
 }
+.uploadModalIn_f82cc7 {
+  @extend %uploadModalIn !optional;
+}
+.uploadDropModal_f82cc7 {
+  @extend %uploadDropModal !optional;
+}
+.bgScale_f82cc7 {
+  @extend %uploadDropModalBgScale !optional;
+}
+.inner_f82cc7 {
+  @extend %uploadDropModalInner !optional;
+}
 .actionButtons_dda074 {
   @extend %imageModalActionButtons !optional;
 }
