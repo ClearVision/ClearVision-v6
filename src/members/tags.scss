@@ -1,10 +1,18 @@
+@use "sass:list";
+@use "sass:meta";
+@use "sass:string";
 /* TAGGED USERS */
 // prettier-ignore
 $tagged: (
+	// Creator
+	"CV Creator": (
+		"144881947557101568",	// Zerthox
+	),
+
 	// Admins
 	"CV Admin": (
 		"194151269399527425",	// untuned
-		"144881947557101568",	// Zerthox
+		"393900343135830016",	// Nyx
 	),
 
 	// Team
@@ -12,7 +20,6 @@ $tagged: (
 		"332394843743584256",	// cruxie
 		"240437190339854337",	// Leozard
 		"126652966265421824",	// Scars
-		"393900343135830016",	// Nyx
 		"309976820109803520",	// Leafy
 	),
 
@@ -119,16 +126,16 @@ $tagged: (
 @each $group, $user in $tagged {
 	// for lists
 	$k: "";
-	@if type-of($user) == list {
-		@if length($user) > 1 {
+	@if meta.type-of($user) == list {
+		@if list.length($user) > 1 {
 			$k: ":is("; // start :is(
-			@for $i from 1 through length($user) {
-				$k: str-insert($k,"[src*=\"" + nth($user,$i) + "\"],",-1);
+			@for $i from 1 through list.length($user) {
+				$k: string.insert($k,"[src*=\"" + list.nth($user,$i) + "\"],",-1);
 			}
 			// remove extra comma, add closing )
-			$k: str-slice($k,0,-2) + ")";
+			$k: string.slice($k,0,-2) + ")";
 		} @else {
-			$k: "[src*=\"" + nth($user,1) + "\"]";
+			$k: "[src*=\"" + list.nth($user,1) + "\"]";
 		}
 	} @else {
 	// and for single strings
