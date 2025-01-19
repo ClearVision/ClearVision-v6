@@ -104,3 +104,15 @@ div[aria-checked='true'] %replyMentionButton {
     fill: #fff;
   }
 }
+
+// UPLOAD DRAG DROP MODAL
+%uploadModalIn {
+  %uploadDropModal {
+    %uploadDropModalBgScale {
+      background-color: $main-color;
+    }
+    %uploadDropModalInner {
+      border: 2px dashed hsla(0, 0%, 100%, 0.5);
+    }
+  }
+}

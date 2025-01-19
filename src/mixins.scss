@@ -1,3 +1,5 @@
+@use "sass:map";
+@use "sass:meta";
 /// Set background properties separately in one mixin
 /// @param {*} $image [null] - background-image property value
 /// @param {*} $img [null] - background-image property value (alternative param)
@@ -74,13 +76,13 @@
     } @else {
       @content;
     }
-    @if variable-exists(weight) {
+    @if meta.variable-exists(weight) {
       font-weight: $weight;
     }
-    @if variable-exists(style) {
+    @if meta.variable-exists(style) {
       font-style: $style;
     }
-    @if variable-exists(decoration) {
+    @if meta.variable-exists(decoration) {
       font-decoration: $decoration;
     }
   }
@@ -97,7 +99,7 @@
 /// Include background filters
 /// @param {map} $source source map with filter settings
 @mixin filters($source) {
-  filter: #{'grayscale(' + map-get($source, grayscale) + ')'} sepia(map-get($source, sepia)) #{'invert(' + map-get($source, invert) + ')'} brightness(map-get($source, brightness)) contrast(map-get($source, contrast)) #{'saturate(' + map-get($source, saturate) + ')'} blur(map-get($source, blur));
+  filter: #{'grayscale(' + map.get($source, grayscale) + ')'} sepia(map.get($source, sepia)) #{'invert(' + map.get($source, invert) + ')'} brightness(map.get($source, brightness)) contrast(map.get($source, contrast)) #{'saturate(' + map.get($source, saturate) + ')'} blur(map.get($source, blur));
 }
 
 /// Create hover shadow effect
