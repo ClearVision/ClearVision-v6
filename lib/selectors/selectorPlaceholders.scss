@@ -2576,12 +2576,10 @@ pre {
 .fullSize_c69a7b {
   @extend %userProfileFull !optional;
 }
-.statusBubbleOuter_a82ccc,
-.statusBubbleOuter_af9888 {
+.outer_af9888 {
   @extend %userProfileStatusBubbleOuter !optional;
 }
-.statusBubble_a82ccc,
-.statusBubble_af9888 {
+.inner_af9888 {
   @extend %userProfileStatusBubble !optional;
 }
 .banner_d5fdb1 {

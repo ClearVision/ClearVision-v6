@@ -1,5 +1,10 @@
 /* USER PROFILES */
 
+// FIXES POPOUT BG
+%fullMotion %popoutTranslate {
+  transform: unset !important;
+}
+
 // NO CUSTOM PROFILE
 %userProfileOuter:not(%userProfileCustomTheme, %userSettingsProfilePreview) {
   background: transparent;
@@ -34,21 +39,21 @@
   }
 
   // STATUS
-  :is(%userProfileStatusBubbleOuter) {
+  %themeDark & %userProfileStatusBubbleOuter {
     background: hsla(0, 0%, 0%, 0.6);
     border-color: transparent;
     &::before {
       background: hsla(0, 0%, 0%, 0.6);
       border-color: transparent;
-      border-radius: 16px 16px 0 0;
-      height: 8px;
+      height: 10px;
+      border-radius: 10px 10px 0 0;
     }
     &::after {
       background: hsla(0, 0%, 0%, 0.6);
       border-color: transparent;
     }
   }
-  :is(%userProfileStatusBubble) {
+  %userProfileStatusBubble {
     background: transparent;
   }
 
