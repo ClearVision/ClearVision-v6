@@ -11,15 +11,19 @@ html %appMount %channelsSidebar:not(%channelsSidebarHidden) {
 }
 
 // CHANNELS HEADER
-%channelsHeader {
-  height: 48px;
-  color: #fff;
+%channelsHeaderClickable, %channelsHeaderSelected {
+  %channelsHeader {
+    &:hover {
+      background-color: hsla(0, 0%, 100%, 0.1);
+    }
+  }
+}
+%channelsHeaderContent {
+  color: var(--header-primary);
   font-family: cv('font.main');
   font-weight: 600;
   text-shadow: 0 0 3px #000;
-  &:hover {
-    background-color: hsla(0, 0%, 100%, 0.1);
-  }
+  
 }
 
 // GUILD BANNER

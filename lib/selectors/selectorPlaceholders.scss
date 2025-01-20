@@ -363,11 +363,17 @@
 .container_fd6364 {
   @extend %channelsHeaderContainer !optional;
 }
-.header_fd6364 {
-  @extend %channelsHeader !optional;
+.clickable_fd6364 {
+  @extend %channelsHeaderClickable !optional;
 }
 .selected_fd6364 {
   @extend %channelsHeaderSelected !optional;
+}
+.header_fd6364 {
+  @extend %channelsHeader !optional;
+}
+.headerContent_fd6364 {
+  @extend %channelsHeaderContent !optional;
 }
 .name_fd6364 {
   @extend %channelsHeaderName !optional;
