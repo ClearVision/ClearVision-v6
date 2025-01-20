@@ -70,7 +70,7 @@
 
 // ARROW KEY FOCUS SELECTION OUTLINE
 %gifPickerResult[data-focused=true] {
-  box-shadow: 0 0 0 2px var(--focus-color);
+  box-shadow: 0 0 0 2px cv('colors.focus');
 }
 
 // HINT CARD

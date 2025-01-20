@@ -150,10 +150,10 @@
 // TAB FOCUS
 %keyboardMode {
   %guildFocusSimple {
-    box-shadow: 0 0 0 4px var(--focus-color);
+    box-shadow: 0 0 0 4px cv('colors.focus');
   }
   %guildFocus {
-    stroke: var(--focus-color);
+    stroke: cv('colors.focus');
     fill: transparent
   }
 }
