@@ -146,3 +146,14 @@
 %guildsFooter {
   background: transparent;
 }
+
+// TAB FOCUS
+%keyboardMode {
+  %guildFocusSimple {
+    box-shadow: 0 0 0 4px var(--focus-color);
+  }
+  %guildFocus {
+    stroke: var(--focus-color);
+    fill: transparent
+  }
+}

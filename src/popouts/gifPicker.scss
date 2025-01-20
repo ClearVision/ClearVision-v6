@@ -68,9 +68,9 @@
 	background-color: hsla(0, 0%, 0%, 0.6);
 }
 
-// ARROW KEY SELECTION OUTLINE
+// ARROW KEY FOCUS SELECTION OUTLINE
 %gifPickerResult[data-focused=true] {
-  box-shadow: 0 0 0 2px $hover-color, 0 0 0 3px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 0 2px var(--focus-color);
 }
 
 // HINT CARD

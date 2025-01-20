@@ -19,6 +19,15 @@
 .theme-light {
   @extend %themeLight !optional;
 }
+.full-motion {
+  @extend %fullMotion !optional;
+}
+.mouse-mode.full-motion {
+  @extend %mouseModeFullMotion !optional;
+}
+.keyboard-mode {
+  @extend %keyboardMode !optional;
+}
 .app_bd26cc {
   @extend %app !optional;
 }
@@ -45,6 +54,12 @@
 }
 .withLayer_e4f2ae {
   @extend %backdropWithLayer !optional;
+}
+.loading_f3e233 {
+  @extend %loading !optional;
+}
+.focus-rings-ring {
+  @extend %focusRing !optional;
 }
 .notice_be03aa {
   @extend %notice !optional;
@@ -1404,6 +1419,12 @@
 .noIcon_a64689 {
   @extend %guildFolderGuildNoIcon !optional;
 }
+.simpleFocused_c5f96a {
+  @extend %guildFocusSimple !optional;
+}
+.focusStroke_c5f96a {
+  @extend %guildFocus !optional;
+}
 .circleIconButton_db6521 {
   @extend %circleIconButton !optional;
 }
@@ -2134,12 +2155,6 @@ pre {
 }
 .ripple_d6cb89 {
   @extend %voiceMessagePlayingRipple !optional;
-}
-.full-motion {
-  @extend %fullMotion !optional;
-}
-.mouse-mode.full-motion {
-  @extend %mouseModeFullMotion !optional;
 }
 .message_d5deea {
   @extend %message !optional;
@@ -3706,9 +3721,6 @@ pre {
 }
 .container_ac201b {
   @extend %roleAssignPopout !optional;
-}
-.loading_f3e233 {
-  @extend %loading !optional;
 }
 .container_b11c5e {
   @extend %replyContainer !optional;
