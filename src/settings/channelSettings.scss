@@ -81,9 +81,12 @@
 }
 
 // ROLES/MEMBERS DROPDOWN
-%themeDark %channelSettingsRoleDropdownHeader,
-%themeDark %channelSettingsRoleDropdownContainer %channelSettingsRoleDropdownTag {
+%channelSettingsRoleDropdownHeader,
+%channelSettingsRoleDropdownArrow {
   background-color: cv('bg.general.popout');
+}
+%channelSettingsRoleDropdownHeader {
+  background-color: transparent;
 }
 %channelSettingsRoleDropdownRow%channelSettingsRoleDropdownSelected %channelSettingsRoleDropdownRowInner {
   background-color: hsla(0, 0%, 100%, 0.1);

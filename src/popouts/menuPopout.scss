@@ -4,7 +4,6 @@
   animation: cv-menu-fold-y 0.2s cubic-bezier(0.2, 0.6, 0.5, 1.1);
   transform-origin: 50% 0;
   %menuPopoutItem {
-    color: hsla(0, 0%, 100%, 0.7);
     transition: all 0.15s ease-in-out;
     &%menuPopoutItemHover {
       background-color: $hover-color;
@@ -71,44 +70,24 @@
 
 // STATUS PICKER
 %menuPopoutItem {
-  &#account-status-picker--online {
-    &:not(%menuPopoutItemHover) {
-      %statusPickerIcon {
-        background-color: var(--online-color);
-      }
-    }
+  &#set-status-submenu-online {
     &%menuPopoutItemHover {
-      background-color: var(--online-color);
+      background-color: cv('colors.online');
     }
   }
-  &#account-status-picker--idle {
-    &:not(%menuPopoutItemHover) {
-      %statusPickerIcon {
-        background-color: var(--idle-color);
-      }
-    }
+  &#set-status-submenu-idle{
     &%menuPopoutItemHover {
-      background-color: var(--idle-color);
+      background-color: cv('colors.idle');
     }
   }
-  &#account-status-picker--dnd {
-    &:not(%menuPopoutItemHover) {
-      %statusPickerIcon {
-        background-color: var(--dnd-color);
-      }
-    }
+  &#set-status-submenu-dnd {
     &%menuPopoutItemHover {
-      background-color: var(--dnd-color);
+      background-color: cv('colors.dnd');
     }
   }
-  &#account-status-picker--invisible {
-    &:not(%menuPopoutItemHover) {
-      %statusPickerIcon {
-        background-color: var(--offline-color);
-      }
-    }
+  &#set-status-submenu-invisible {
     &%menuPopoutItemHover {
-      background-color: var(--offline-color);
+      background-color: cv('colors.offline');
     }
   }
   %userPopoutBodyInnerWrapper {

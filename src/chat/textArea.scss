@@ -10,15 +10,14 @@
   }
 }
 %channelTextArea {
-  background: rgba(0, 0, 0, 0.6);
+  background: transparent;
   transition: all 0.15s ease-in-out;
-  &:focus-within {
-    box-shadow: 0 0 2px 2px $main-color;
   }
-
   %channelTextAreaScrollable {
-    background: transparent;
+    background: rgba(0, 0, 0, 0.6);
     border: 2px solid transparent;
+    &:focus-within {
+      box-shadow: 0 0 2px 2px $main-color;
   }
   %channelTextAreaAttachButton {
     padding: 10px 10px 10px 12px;

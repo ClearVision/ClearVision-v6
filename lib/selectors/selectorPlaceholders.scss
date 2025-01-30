@@ -1,3 +1,9 @@
+.visual-refresh {
+  @extend %visualRefresh !optional;
+}
+.visual-refresh-chat-input {
+  @extend %visualRefreshChatInput !optional;
+}
 .appMount__51fd7 {
   @extend %appMount !optional;
 }
@@ -2630,6 +2636,9 @@ pre {
 .note_fcb628 {
   @extend %userProfileNote !optional;
 }
+.inner_a99829 {
+  @extend %userProfileMessage !optional;
+}
 .pageWrapper_a3a4ce {
   @extend %pageWrapper !optional;
 }
@@ -5220,14 +5229,14 @@ pre {
 .allow__344e6 {
   @extend %channelSettingsPermissionsAllow !optional;
 }
+.container_d5ae15 {
+  @extend %channelSettingsRoleDropdown !optional;
+}
+.autocompleteArrow_d5ae15 {
+  @extend %channelSettingsRoleDropdownArrow !optional;
+}
 .header_d5ae15 {
   @extend %channelSettingsRoleDropdownHeader !optional;
-}
-.container_d5ae15 {
-  @extend %channelSettingsRoleDropdownContainer !optional;
-}
-.sectionTag_d5ae15 {
-  @extend %channelSettingsRoleDropdownTag !optional;
 }
 .row_d5ae15 {
   @extend %channelSettingsRoleDropdownRow !optional;
@@ -5616,18 +5625,18 @@ pre {
 .tile_ff4e03 {
   @extend %nitroTrial !optional;
 }
-.nonVisualMediaItem_cda674 {
+.nonVisualMediaItem_f4758a {
   @extend %nonVisualMediaItem !optional;
 }
-.container_d8e2d0 {
+.container__4d95d {
   @extend %textContainerParent !optional;
 }
-.downloadButton_d8e2d0 {
+.downloadButton__4d95d {
   @extend %textContainerDownloadButton !optional;
 }
-.toggleExpandSection_d8e2d0 {
+.toggleExpandSection__4d95d {
   @extend %textContainerToggleExpandSection !optional;
 }
-.codeIcon_d8e2d0 {
+.codeIcon__4d95d {
   @extend %textContainerCodeIcon !optional;
 }
