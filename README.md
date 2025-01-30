@@ -37,7 +37,7 @@ Please keep in mind that **we do not manage the theme editor**, and cannot help 
 
 > [Theme Editor](https://bdeditor.dev/theme/clearvision)
 
-_Thank you to @Gibbu to providing this._
+_Thank you to [Gibbu](https://github.com/Gibbu) for providing this._
 
 ## Installing
 

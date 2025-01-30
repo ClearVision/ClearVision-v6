@@ -7,7 +7,6 @@
 # All theme-related files are owned by the entire ClearVision team.
 *.scss                      @ClearVision/clearvision-team
 *.css                       @ClearVision/clearvision-team
-powercord_manifest.json     @ClearVision/clearvision-team
 
 # If, for example, the ClearVision_v6.theme.css file was modified, the ClearVision team would be notified to review that pull request.
 # If the LICENSE file was modified, then the ClearVision administrators would be notified instead.
