@@ -137,6 +137,66 @@
 }
 
 // SAFETY SETUP
+%guildSettingsSafetyCollapseable {
+  background-color: hsla(0, 0%, 0%, 0.4);
+  &:active {
+    background-color: hsla(0, 0%, 0%, 0.6);
+  }
+  &%guildSettingsSafetyCollapseableToggled:active {
+    background-color: hsla(0, 0%, 0%, 0.6);
+  }
+}
+%guildSettingsSafetyCollapsed,
+%guildSettingsSafetyCollapsedPointer {
+  background-color: transparent;
+}
+%guildSettingsSafetyRadio,
+%guildSettingsSafetyRadioClickable {
+	background-color: transparent;
+}
+%guildSettingsSafetyRadioBG {
+	background-color: hsla(0, 0%, 0%, .4);
+  &:hover:not(%guildSettingsSafetyRadioDisabled):not(%guildSettingsSafetyRadioNoAction) {
+    background-color: hsla(0, 0%, 0%, .4);
+  }
+  &%guildSettingsSafetyRadioTransparent {
+    border-left: 3px solid var(--background-accent);
+  }
+  &%guildSettingsSafetyRadioSelected {
+    &%guildSettingsSafetyRadioGreen {
+        background-color: var(--status-positive);
+      &:hover {
+        background-color: var(--status-positive);
+      }
+    }
+    &%guildSettingsSafetyRadioYellow {
+      background-color: var(--status-warning);
+      &:hover {
+        background-color: var(--status-warning);
+      }
+    }
+    &%guildSettingsSafetyRadioOrange {
+      background-color: var(--orange-360);
+      &:hover {
+        background-color: var(--orange-360);
+      }
+    }
+    &%guildSettingsSafetyRadioRed {
+      background-color: var(--status-danger);
+      &:hover {
+        background-color: var(--status-danger);
+      }
+    }
+    &:is(%guildSettingsSafetyRadioAccent, %guildSettingsSafetyRadioTransparent) {
+      background-color: var(--background-accent);
+      &:hover {
+        background-color: var(--background-accent);
+      }
+    }
+  }
+}
+
+// SAFETY SETUP - COMMUNITY SERVER
 %guildSettingsSafetyChangeLog,
 %guildSettingsSafetyChecklist {
   background-color: hsla(0, 0%, 0%, 0.4);
@@ -184,29 +244,6 @@
 }
 %automodContentCard {
   background-color: hsla(0, 0%, 0%, 0.4);
-}
-%automodCollapseableCard {
-  background-color: hsla(0, 0%, 0%, 0.4);
-  &:active {
-    background-color: hsla(0, 0%, 0%, 0.6);
-  }
-  &%automodCollapseableCardToggled:active {
-    background-color: hsla(0, 0%, 0%, 0.6);
-  }
-}
-%automodCollapseableHeaderContainer,
-%automodCollapseableHeaderClickable,
-%automodCollapseablePointer {
-  background-color: transparent;
-}
-%automodCollapsedContainer {
-  background-color: transparent;
-  border: none;
-}
-%automodCollapseableRadioBackground {
-  &%automodCollapseableRadioSelected {
-    background-color: hsla(0, 0%, 100%, 0.07);
-  }
 }
 %automodKeywordsTextArea,
 %automodRegexTextArea {
@@ -315,6 +352,7 @@
     }
   }
 }
+
 // SERVER INSIGHTS
 %guildSettingsInsightsAnalyticsCard {
   background-color: hsla(0, 0%, 0%, 0.4);

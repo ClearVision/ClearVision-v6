@@ -1,5 +1,5 @@
 /* CHANNELS */
-html %appMount %channelsSidebar:not(%channelsSidebarHidden) {
+html:not(%visualRefresh) %channelsSidebar:not(%channelsSidebarHidden) {
   width: cv('channels-width') !important;
   background: rgba(0, 0, 0, calc($bg-shading * 0.3));
 }
@@ -131,7 +131,7 @@ html %appMount %channelsSidebar:not(%channelsSidebarHidden) {
         %channelContainerDefault & {
           %channelIcon,
           %channelName {
-            color: hsla(0, 0%, 100%, 0.7);
+            color: var(--channel-hovered);
           }
         }
       }
@@ -156,10 +156,10 @@ html %appMount %channelsSidebar:not(%channelsSidebarHidden) {
       %channelLink {
         %channelLinkTop {
           %channelName {
-            color: var(--channel-text-selected);
+            color: var(--channel-selected);
           }
           %channelIcon {
-            color: var(--channel-text-selected);
+            color: var(--channel-selected);
           }
         }
       }
@@ -169,7 +169,7 @@ html %appMount %channelsSidebar:not(%channelsSidebarHidden) {
   &%channelWrapperSelected {
     %channelName,
     %channelIcon {
-      color: #fff;
+      color: var(--channel-selected);
     }
     %channelLink {
       &:before {
@@ -183,10 +183,10 @@ html %appMount %channelsSidebar:not(%channelsSidebarHidden) {
       %channelContainerDefault & {
         %channelIcon,
         %channelName {
-          color: var(--channel-text-selected);
+          color: var(--channel-selected);
         }
         %channelIconLive {
-          color: var(--channel-text-selected) !important;
+          color: var(--channel-selected) !important;
         }
       }
       %channelActionIcon {
@@ -223,7 +223,7 @@ html %appMount %channelsSidebar:not(%channelsSidebarHidden) {
       %channelLinkTop {
         %channelIcon,
         %channelName {
-          color: var(--muted-color);
+          color: var(--channel-muted);
         }
       }
     }

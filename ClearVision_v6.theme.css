@@ -20,8 +20,8 @@
   --hover-color: #1e63b3; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] */
   --success-color: #43b581; /* success accent color (hex, rgb or hsl) [default: #43b581] */
   --danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */
-  --url-color: var(--main-color); /* url links accent color [default: var(--main-color)] */
-  --focus-color: var(--main-color) /* focus accent color [default: var(--focus-primary)] */
+  --url-color: var(--main-color); /* url links accent color (hex, rgb or hsl) [default: var(--main-color)] */
+  --focus-color: var(--main-color); /* focus accent color (hex, rgb or hsl) [default: var(--focus-primary)] */
 
   /* STATUS COLORS */
   --online-color: #43b581; /* online status color (hex, rgb or hsl) [default: #43b581] */
@@ -60,11 +60,12 @@
   --home-position: center; /* home button icon position [default: center] */
   --home-size: 40px; /* home button icon size [default: 40px] */
 
-  /* CHANNEL COLORS */
-  --channel-unread: var(--main-color); /* Unread Server channel color. [default:  var(--main-color)] THIS OVERRIDES YOUR MAIN COLOR*/
-  --channel-color: rgba(255, 255, 255, 0.3); /*Read Server channel color  [default: rgba(255,255,255,0.3);]*/
-  --channel-text-selected: #fff; /* Selected channel text color, CV default is #fff */
-  --muted-color: rgba(255, 255, 255, 0.1); /*Muted channel color  [default: rgba(255,255,255,0.1);]*/
+  /* CHANNEL TEXT COLORS */
+  --channel-color: rgba(255, 255, 255, 0.3); /* channel text color [default: rgba(255, 255, 255, 0.3)] */
+  --channel-hovered: rgba(255, 255, 255, 0.7); /* hovered channel text color [default: rgba(255, 255, 255, 0.7)] */
+  --channel-unread: var(--main-color); /* unread channel textcolor [default: var(--main-color)] THIS OVERRIDES YOUR MAIN COLOR*/
+  --channel-selected: #ffffff; /* selected channel text color [default: #ffffff] */
+  --channel-muted: rgba(255, 255, 255, 0.1); /* muted channel text color [default: rgba(255,255,255,0.1)] */
 
   /* MODAL BACKDROP */
   --backdrop-overlay: rgba(0, 0, 0, 0.8); /* modal backdrop overlay color/gradient [default: rgba(0, 0, 0, 0.8)] */

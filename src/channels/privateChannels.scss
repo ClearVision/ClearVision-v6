@@ -73,7 +73,7 @@
   }
   %privateChannelIcon,
   %privateChannelName {
-    color: rgba(255, 255, 255, 0.4);
+    color: var(--channel-color);
     font-size: 14px;
     transition: all 0.15s ease-in-out;
     overflow: hidden;
@@ -97,7 +97,7 @@
     }
     %privateChannelIcon,
     %privateChannelName {
-      color: hsla(0, 0%, 100%, 0.7);
+      color: var(--channel-hovered);
     }
     %privateChannelCloseButton {
       opacity: 0.3;
@@ -120,7 +120,7 @@
     }
     %privateChannelIcon,
     %privateChannelName {
-      color: #fff;
+      color: var(--channel-selected);
     }
     %privateChannelActivityEmoji,
     %privateChannelActivityIcon {

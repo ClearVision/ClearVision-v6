@@ -2714,11 +2714,11 @@ pre {
 .memberInfo_e90879 {
   @extend %discoverGuildMemberInfo !optional;
 }
-.dotOnline_e90879 {
-  @extend %discoverGuildStatusOnline !optional;
+.presenceCountDot__4cb8a {
+  @extend %discoverGuildMembersOnline !optional;
 }
-.dotOffline_e90879 {
-  @extend %discoverGuildStatusOffline !optional;
+.memberCountDot__4cb8a {
+  @extend %discoverGuildMembersOffline !optional;
 }
 .spinner__0b5bb {
   @extend %discoverGuildLoading !optional;
@@ -3317,6 +3317,54 @@ pre {
 .tierLock_f15dca {
   @extend %guildSettingsStickersTierLock !optional;
 }
+.collapseable__217b7 {
+  @extend %guildSettingsSafetyCollapseable !optional;
+}
+.toggled__217b7 {
+  @extend %guildSettingsSafetyCollapseableToggled !optional;
+}
+.groupCollapsedContainer_b6a9f9 {
+  @extend %guildSettingsSafetyCollapsed !optional;
+}
+.pointer_b6a9f9 {
+  @extend %guildSettingsSafetyCollapsedPointer !optional;
+}
+.container__6cd3a {
+  @extend %guildSettingsSafetyRadio !optional;
+}
+.clickableContainer_e5c5d5 {
+  @extend %guildSettingsSafetyRadioClickable !optional;
+}
+.backgroundModifierContainer_e5c5d5 {
+  @extend %guildSettingsSafetyRadioBG !optional;
+}
+.disabled__6cd3a {
+  @extend %guildSettingsSafetyRadioDisabled !optional;
+}
+.noAction__6cd3a {
+  @extend %guildSettingsSafetyRadioNoAction !optional;
+}
+.selected_e5c5d5 {
+  @extend %guildSettingsSafetyRadioSelected !optional;
+}
+.transparent__6cd3a {
+  @extend %guildSettingsSafetyRadioTransparent !optional;
+}
+.statusGreen__6cd3a {
+  @extend %guildSettingsSafetyRadioGreen !optional;
+}
+.statusYellow__6cd3a {
+  @extend %guildSettingsSafetyRadioYellow !optional;
+}
+.statusOrange__6cd3a {
+  @extend %guildSettingsSafetyRadioOrange !optional;
+}
+.statusRed__6cd3a {
+  @extend %guildSettingsSafetyRadioRed !optional;
+}
+.accent__6cd3a {
+  @extend %guildSettingsSafetyRadioAccent !optional;
+}
 .changelog_abe1fa {
   @extend %guildSettingsSafetyChangeLog !optional;
 }
@@ -3444,30 +3492,6 @@ pre {
 .keywordListContainer__09e76,
 .actionContainer__6446f {
   @extend %automodContentCard !optional;
-}
-.collapseable__217b7 {
-  @extend %automodCollapseableCard !optional;
-}
-.toggled__217b7 {
-  @extend %automodCollapseableCardToggled !optional;
-}
-.container_e5c5d5 {
-  @extend %automodCollapseableHeaderContainer !optional;
-}
-.clickableContainer_e5c5d5 {
-  @extend %automodCollapseableHeaderClickable !optional;
-}
-.groupCollapsedContainer_b6a9f9 {
-  @extend %automodCollapsedContainer !optional;
-}
-.pointer_b6a9f9 {
-  @extend %automodCollapseablePointer !optional;
-}
-.backgroundModifierContainer_e5c5d5 {
-  @extend %automodCollapseableRadioBackground !optional;
-}
-.selected_e5c5d5 {
-  @extend %automodCollapseableRadioSelected !optional;
 }
 .keywordsTextArea__6a631 {
   @extend %automodKeywordsTextArea !optional;
@@ -3694,9 +3718,6 @@ pre {
 }
 .mask__44b0c {
   @extend %avatarMask !optional;
-}
-.cursorDefault__44b0c {
-  @extend %avatarCursorDefault !optional;
 }
 .avatar__91a9d {
   @extend %avatarImage !optional;
@@ -5046,9 +5067,6 @@ pre {
 .pageButton_c15210 {
   @extend %membersChannelPage !optional;
 }
-.statusDot_ab876d {
-  @extend %userSettingsProfilesPreviewStatus !optional;
-}
 .optionBox_edf440 {
   @extend %avatarOptionBox !optional;
 }
@@ -5202,14 +5220,17 @@ pre {
 .category__3ddc0 {
   @extend %channelSettingsCategory !optional;
 }
-.settingCard_dd864e {
-  @extend %channelSettingsCard !optional;
+.settingCard__1a4ef {
+  @extend %channelSettingsPermissionsCard !optional;
 }
-.active_dd864e {
-  @extend %channelSettingsCardActive !optional;
+.active__1a4ef {
+  @extend %channelSettingsPermissionsCardActive !optional;
 }
-.cardFolder_dd864e {
-  @extend %channelSettingsCardPanel !optional;
+.cardFolder__1a4ef {
+  @extend %channelSettingsPermissionsCardFolder !optional;
+}
+.scroller__53543 {
+  @extend %channelSettingsPermissionsSidebar !optional;
 }
 .group__344e6 {
   @extend %channelSettingsPermissionsGroup !optional;
@@ -5233,7 +5254,7 @@ pre {
   @extend %channelSettingsRoleDropdown !optional;
 }
 .autocompleteArrow_d5ae15 {
-  @extend %channelSettingsRoleDropdownArrow !optional;
+  @extend %channelSettingsRoleDropdownPointer !optional;
 }
 .header_d5ae15 {
   @extend %channelSettingsRoleDropdownHeader !optional;

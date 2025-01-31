@@ -4,11 +4,12 @@
   --hover-color: #1e63b3;
   --success-color: #43b581;
   --danger-color: #982929;
-  --channel-unread: var(--main-color);
   --channel-color: rgba(255, 255, 255, 0.3);
-  --muted-color: rgba(255, 255, 255, 0.1);
+  --channel-hovered: rgba(255, 255, 255, 0.7);
+  --channel-unread: var(--main-color);
+  --channel-selected: #fff;
+  --channel-muted: rgba(255, 255, 255, 0.1);
   --server-unread: var(--main-color);
-  --channel-text-selected: #fff;
   --url-color: var(--main-color);
   --focus-color: var(--main-color);
   --online-color: #43b581;
