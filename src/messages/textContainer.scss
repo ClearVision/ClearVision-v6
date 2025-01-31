@@ -34,17 +34,17 @@
 }
 
 // DEFAULT THEME PREVIEWS
-$preivewMsg: '1189957093676032070';
+$preivewMsg: '1334890289524903957';
 #message-accessories-#{$preivewMsg} {
   // Preview images + main colors
   $order: (
     'sapphire': #2780e6,
-    'halloween': #e67a27,
+    'ruby': #e62727,
+    'amber': #e67a27,
     'emerald': #33e627,
     'amethyst': #da27e6,
-    'amber': #e67a27,
+    'halloween': #e67a27,
     'winter': #66aacc,
-    'ruby': #e62727
   );
   $list: map.keys($order);
   %nonVisualMediaItem {

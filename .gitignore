@@ -11,3 +11,6 @@ scripts/
 lib/selectors/*.diff
 addons/
 detect_and_replace.py
+
+# Presets
+official_presets/
