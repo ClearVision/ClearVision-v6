@@ -13,13 +13,10 @@
   &[style*='rgb(242, 63, 67)'] {
     background-color: cv('colors.dnd') !important;
   }
-  &[style*='rgb(89, 54, 149)'] {
-    background-color: cv('colors.streaming') !important;
-  }
 }
 
 /*member list, profile*/
-:is(%avatarCursorDefault, %avatarMask, %userSettingsProfilesPreviewStatus) rect {
+%avatarMask rect {
   &[fill*='#80848e'] {
     fill: cv('colors.offline');
   }

@@ -78,10 +78,10 @@
     background-color: hsla(0, 0%, 0%, 0.8);
   }
 }
-%discoverGuildStatusOnline {
+%discoverGuildMembersOnline {
   background-color: cv('colors.online');
 }
-%discoverGuildStatusOffline {
+%discoverGuildMembersOffline {
   background-color: cv('colors.offline');
 }
 %discoverGuildLoading {

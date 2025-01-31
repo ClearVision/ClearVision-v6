@@ -2,7 +2,7 @@
 %themeDark {
   %modal,
   %modalRoot {
-    background: rgba(0, 0, 0, 0.5);
+    background: cv('bg.general.modal');
     box-shadow: none;
     backdrop-filter: blur(1.5px);
     %modalFooter {
@@ -14,7 +14,7 @@
 
 // IMAGE MODAL
 %imageModalActionButtons {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: cv('bg.general.modal');
   border: 1px solid $main-color;
 }
 
@@ -34,7 +34,7 @@
 
 // QUICKSWITCHER
 %quickswitcher {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: cv('bg.general.modal');
 }
 %quickswitcherInput {
   background-color: rgba(255, 255, 255, 0.07);
@@ -66,7 +66,7 @@
 
 // BAN MODAL
 %banReasonOther {
-  background-color: hsla(0, 0%, 100%, 0.05);
+  background-color: cv('bg.general.modal');
   border: 2px solid transparent;
   transition: all 0.15s ease-in-out;
   color: #fff;
@@ -165,11 +165,11 @@
 
 // INVITE FROM WEB BROWSER
 %themeDark %webInviteModalContentWrapper {
-  background: hsla(0, 0%, 0%, 0.5);
+  background: cv('bg.general.modal');
 }
 %webInviteModalOnline {
-  background-color: var(--online-color);
+  background-color: cv('colors.online');
 }
 %webInviteModalTotal {
-  background-color: var(--offline-color);
+  background-color: cv('colors.offline');
 }
