@@ -1,5 +1,8 @@
 @use 'sass:list';
 @use 'sass:map';
+@use "sass:string";
+@use 'sass:meta';
+
 /* Text Container */
 %textContainer {
   background-color: rgba(0, 0, 0, 0.42);
@@ -34,60 +37,82 @@
 }
 
 // DEFAULT THEME PREVIEWS
-$preivewMsg: '1334890289524903957';
-#message-accessories-#{$preivewMsg} {
-  // Preview images + main colors
-  $order: (
-    'sapphire': #2780e6,
-    'ruby': #e62727,
-    'amber': #e67a27,
-    'emerald': #33e627,
-    'amethyst': #da27e6,
-    'halloween': #e67a27,
-    'winter': #66aacc,
-  );
-  $list: map.keys($order);
-  %nonVisualMediaItem {
-    @each $img, $col in $order {
-      // this is done SOLELY because :fist-child and :last-child are shorter than :nth-child(#)
-      @if list.index($list,$img) == 1 {
-        &:first-child {
-          --local-image: url('https://clearvision.github.io/images/#{$img}.jpg');
-          --local-color: #{$col};
-        }
-      } @else if list.index($list,$img) == list.length($order) {
-        &:last-child {
-          --local-image: url('https://clearvision.github.io/images/#{$img}.jpg');
-          --local-color: #{$col};
-        }
-      } @else {
-        &:nth-child(#{list.index($list,$img)}) {
-          --local-image: url('https://clearvision.github.io/images/#{$img}.jpg');
-          --local-color: #{$col};
-        }
-      }
-    }
-  }
+// Format: $themes: (preset: (url?: $backgroundImageURL, colour?: $primaryColour, overlay?: $overlayURL, messages: $messageID $messageID... ), ... )
+// message IDs MUST be strings.
+// parsed twice for validation then outputting css
+$themes: (
+	"sapphire": (
+    url: "https://clearvision.github.io/images/sapphire.jpg",
+    color: #2780e6,
+    message: "1334923587429335090"
+  ),
+  "ruby": (
+    url: "https://clearvision.github.io/images/ruby.jpg",
+    color: #e62727,
+    message: "1334923616902451291"
+  ),
+  "amber": (
+    url: "https://clearvision.github.io/images/amber.jpg",
+    color: #e67a27,
+    message: "1334923643909570610"
+  ),
+  "emerald": (
+    url: "https://clearvision.github.io/images/emerald.jpg",
+    color: #33e627,
+    message: "1334923675551531149"
+  ),
+  "amethyst": (
+    url: "https://clearvision.github.io/images/amethyst.jpg",
+    color: #da27e6,
+    message: "1334923711001657496"
+  ),
+  "halloween": (
+    url: "https://clearvision.github.io/images/halloween.jpg",
+    color: #e67a27,
+    message: "1334923802681016390"
+  ),
+  "winter": (
+    url: "https://clearvision.github.io/images/winter.jpg",
+    color: #66aacc,
+    message: "1334923852886708337"
+  )
+);
+$themesList: map.keys($themes);
+$messageIDs: ();
+@each $presetName,$presetContents in $themes {
+	// ensure message ID exists
+	@if not map.has-key($presetContents,"message") {
+		@error "\"#{$presetName}\" lacks \"message\" key. Set it to a string of the message ID.";
+	} @else {
+		@if meta.type-of(map.get($presetContents,"message")) == number {
+			@error "\"#{$presetName}\" has message ID as a number. Make it a string.";
+		}
+		$messageIDs: list.append($messageIDs,map.get($presetContents,"message"));
+	}
+	// i could do other validation like making sure url is a url but eh cbf.
+}
+$presetListIDs: ":is(";
+@each $id in $messageIDs {
+	$presetListIDs: $presetListIDs+"#message-accessories-"+$id+",";
+	@if list.index($messageIDs,$id) == list.length($messageIDs) {
+		$presetListIDs: string.slice($presetListIDs,0,-2) + ")";
+	}
+}
 
-  %textContainerParent {
-		transform: rotate(0deg);
+#{$presetListIDs} {
+	%textContainerParent {
 		border: none;
 		background-color: transparent;
 	}
 	%textContainer {
-    background: transparent;
-    border: none;
-    &::before,&::after {
-      content: '';
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
+    &::before,
+    &::after {
+      content:'';
+      @include stretch;
       position: absolute;
       z-index: -1;
-      pointer-events: none;
     }
-		&::before {
+    &::before {
       background: var(--local-image) center/ cover no-repeat;
     }
 		&::after {
@@ -95,12 +120,11 @@ $preivewMsg: '1334890289524903957';
     }
 	}
 	%textContainerFooter {
-    background: none;
 		width: 300px;
 	}
-  %textContainerDownloadButton {
-    color: var(--local-color,inherit);
-  }
+	%textContainerDownloadButton {
+		color: var(--local-color,inherit);
+	}
 	:is(
 		%textContainerToggleExpandSection,
 		%attachmentName,
@@ -109,5 +133,33 @@ $preivewMsg: '1334890289524903957';
 		pre
 	) {
 		display: none;
+	}
+}
+
+@each $presetName,$presetContents in $themes {
+	// add background, overlay, color to message id(s)
+	$selector: "";	
+	@if meta.type-of(map.get($presetContents,"message")) == string { // individual message ID
+		$selector: "#message-accessories-"+#{map.get($presetContents,"message")}
+	} @else { // :is() list
+		$selector: ":is(";
+		$messageIDs: map.get($presetContents,"message");
+		@each $id in $messageIDs {
+			$selector: $selector+"#message-accessories-"+$id+",";
+			@if list.index($messageIDs,$id) == list.length($messageIDs) {
+				$selector: string.slice($selector,0,-2) + ")";
+			}
+		}
+	}
+	#{$selector} {
+		@if map.has-key($presetContents,"url") {
+			--local-image: url("#{map.get($presetContents,"url")}");
+		}
+		@if map.has-key($presetContents,"overlay") {
+			--preview-overlay: url("#{map.get($presetContents,"overlay")}");
+		}
+		@if map.has-key($presetContents,"color") {
+			--local-color: #{map.get($presetContents,"color")};
+		}
 	}
 }
