@@ -28,7 +28,6 @@
       &::before {
         content: '';
         position: absolute;
-        @include stretch;
         background: cv('bg.modal.img') cv('bg.modal.pos') / cv('bg.modal.size') cv('bg.modal.repeat') cv('bg.modal.attach');
         @include filters(cv('bg.modal'));
         width: 100%;
@@ -91,15 +90,6 @@
       background-color: hsla(0, 0%, 100%, 0.07);
     }
   }
-
-  // MESSAGE
-  html:not(%visualRefreshChatInput) & %userProfileMessage { 
-    background: rgba( 0, 0, 0, 0.6);
-    border-radius: 8px;
-    &:focus {
-      box-shadow: 0 0 2px 2px $main-color;
-    }
-  }
 }
 
 
@@ -115,9 +105,9 @@
       box-shadow: 0 0 2px 2px var(--profile-gradient-primary-color);
     }
   }
-  html:not(%visualRefreshChatInput) & %userProfileMessage {
-    border-radius: 8px;
-    &:focus-within {
+  %channelTextArea {
+    background: var(--input-background);
+    &:focus-visible {
       box-shadow: 0 0 2px 2px var(--profile-gradient-primary-color);
     }
   }
@@ -144,4 +134,9 @@
   > polygon {
     display: none;
   }
+}
+
+// MESSAGE USER
+html:not(%visualRefreshChatInput) %userProfileMessage {
+  background: transparent;
 }

@@ -16,7 +16,6 @@
   justify-content: center;
   color: $main-color;
   font-weight: 700;
-  text-align: center;
   transition: all 0.3s ease-in-out;
   opacity: 0.7;
   &:before {
@@ -34,16 +33,7 @@
     transition: all 0.3s ease-in-out;
     background: linear-gradient(to right, $main-color 50%, transparent);
     margin-left: 5px;
-  }
-  %categoryMain:hover & {
-    opacity: 1;
-  }
-}
-%categoryName {
-  color: $main-color;
-}
-%categoryButtons {
-  margin-left: 3px;
+  }  
 }
 
 // COLLAPSED
@@ -56,12 +46,26 @@
   }
 }
 
+// HOVER
+%categoryWrapper:hover %categoryName {
+  color: $main-color;
+}
+%categoryMain:hover %categoryName {
+  opacity: 1;
+}
+
 // MUTED
-%categoryWrapperMuted {
+%categoryWrapper%categoryWrapperMuted {
   opacity: 0.5;
+  %categoryName {
+    color: $main-color;
+  }
 }
 
 // ADD CHANNEL ICON
+%categoryButtons {
+  margin-left: 3px;
+}
 %categoryAddIcon {
   color: $main-color;
   opacity: 0.7;
