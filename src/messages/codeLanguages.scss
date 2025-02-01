@@ -1,3 +1,6 @@
+@use "sass:list";
+@use "sass:meta";
+@use "sass:string";
 /* CODEBLOCK LANGUAGES */
 // LANGUAGE MAP
 // STRINGS GET PARSED TWICE; YOU'LL NEED TO DOUBLE THE AMOUNT OF BACK SLASHES.
@@ -212,12 +215,12 @@ $lang: (
 @each $ln, $alias in $lang {
 	// for lists
 	$k: "";
-	@if type-of($alias) == list {
-		@for $i from 1 through length($alias) {
-			$k: str-insert($k,"." + nth($alias,$i) + ",",-1);
+	@if meta.type-of($alias) == list {
+		@for $i from 1 through list.length($alias) {
+			$k: string.insert($k,"." + list.nth($alias,$i) + ",",-1);
 		}
 		// remove extra comma
-		$k: str-slice($k,0,-2);
+		$k: string.slice($k,0,-2);
 	} @else {
 	// and for single strings
 		$k: "."+$alias;
