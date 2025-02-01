@@ -4378,6 +4378,9 @@ pre {
 .iconWrapper__54b20 {
   @extend %threadIconWrapper !optional;
 }
+.icon__54b20 {
+  @extend %threadIcon !optional;
+}
 .container__6764b {
   @extend %threadPreview !optional;
 }
@@ -5055,6 +5058,9 @@ pre {
 .table_b4ec0b {
   @extend %membersChannelTable !optional;
 }
+.newMembersNotice_acdcc0 {
+  @extend %membersChannelNotice !optional;
+}
 .memberRowContainer__71c22 {
   @extend %membersChannelRowContainer !optional;
 }
@@ -5062,10 +5068,7 @@ pre {
   @extend %membersChannelButton !optional;
 }
 .otherRoles__71c22 {
-  @extend %membersChannelRoleList !optional;
-}
-.pageButton_c15210 {
-  @extend %membersChannelPage !optional;
+  @extend %membersChannelOtherRoles !optional;
 }
 .optionBox_edf440 {
   @extend %avatarOptionBox !optional;

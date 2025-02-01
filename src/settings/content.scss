@@ -15,12 +15,10 @@
 %themeDark {
   %settingsCloseButton {
     border-color: hsla(0, 0%, 100%, 0.4);
+    color: hsla(0, 0%, 100%, 0.6);
     &:hover {
       border-color: hsla(0, 0%, 100%, 0.6);
       background-color: transparent;
-    }
-    > svg > path {
-      fill: hsla(0, 0%, 100%, 0.6);
     }
   }
   %settingsCloseButtonKeybind {

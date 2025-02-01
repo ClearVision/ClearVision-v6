@@ -50,7 +50,8 @@
   max-width: none;
 }
 %privateChannelInteractive {
-  position: relative;
+  position: relative;  
+  color: var(--channel-color);
   z-index: 1;
   &:before {
     content: '';
@@ -59,7 +60,6 @@
     border-radius: 3px;
     transition: all 0.15s ease-in-out;
     z-index: -1;
-    pointer-events: none;
   }
   &:after {
     content: '';
@@ -69,11 +69,9 @@
     opacity: 0.9;
     transition: all 0.3s ease-in-out;
     z-index: -1;
-    pointer-events: none;
   }
   %privateChannelIcon,
   %privateChannelName {
-    color: var(--channel-color);
     font-size: 14px;
     transition: all 0.15s ease-in-out;
     overflow: hidden;
@@ -85,9 +83,6 @@
       transition: all 0.15s ease-in-out;
     }
   }
-  %privateChannelCloseButton {
-    color: #fff;
-  }
 
   // HOVER
   &:hover {
@@ -98,12 +93,6 @@
     %privateChannelIcon,
     %privateChannelName {
       color: var(--channel-hovered);
-    }
-    %privateChannelCloseButton {
-      opacity: 0.3;
-      &:hover {
-        opacity: 0.7;
-      }
     }
   }
 
@@ -131,12 +120,6 @@
         color: #fff;
       }
     }
-    %privateChannelCloseButton {
-      opacity: 0.7;
-      &:hover {
-        opacity: 1;
-      }
-    }
   }
 
   // HIGHLIGHT
@@ -144,6 +127,15 @@
     %privateChannelName {
       color: #fff;
     }
+  }
+}
+
+// CLOSE BUTTON
+%privateChannelCloseButton {
+  color: var(--channel-color);
+  opacity: 1;
+  &:hover {
+    color: var(--channel-hovered);
   }
 }
 

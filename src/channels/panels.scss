@@ -39,33 +39,6 @@
 }
 
 // BUTTONS
-button%panelButton {
-  width: 32px;
-  height: 32px;
-  opacity: 1;
-  > %buttonContents > svg {
-    @include bg($rep: no-repeat, $pos: center, $size: 18px);
-    color: #fff;
-    opacity: 0.5;
-    transition: all 0.1s ease-in-out;
-    > path[fill*='var(--interactive-normal)'] {
-      fill: #fff;
-    }
-  }
-  &:hover {
-    &%panelButtonEnabled {
-      background: transparent;
-    }
-    > %buttonContents > svg {
-      opacity: 0.7;
-    }
-  }
-  &%panelButtonDisabled {
-    > %buttonContents > svg {
-      opacity: 0.1;
-    }
-  }
-}
 %panelActionButtons {
   grid-gap: 6px;
 }

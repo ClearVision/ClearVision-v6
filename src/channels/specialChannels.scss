@@ -61,39 +61,27 @@
     }
   }
 }
+
 // MEMBERS LIST
-/*main container*/
 %membersChannelContainer {
-  background: var(--background-overlay);
-  border: 1px solid $main-color;
+  background: rgba(0, 0, 0, 0.4);
   box-shadow: none;
 }
-/*table border*/
-%membersChannelTable {
-  border-top: 1px solid $main-color;
+%membersChannelNotice {
+  background-color: $main-color;
+  &:hover {
+    background-color: $hover-color;
+  }
 }
-/*user hover*/
-%membersChannelRowContainer:hover td {
-  background: $hover-color;
-}
-/*user option buttons*/
 %membersChannelButton {
   background: $main-color;
+  color: #fff;
   &:hover {
     background: $hover-color;
   }
-  &:nth-child(2) path ~ path,
-  &:nth-child(1) path {
-    fill: #fff;
-  }
 }
-/*roles*/
-%membersChannelRoleList {
-  background: var(--background-overlay);
-}
-/*hover page button*/
-%membersChannelPage > span {
-  color: #fff;
+%membersChannelOtherRoles {
+  background: hsla(0, 0%, 100%, 0.1);
 }
 
 // NOT IN CHANNEL LIST

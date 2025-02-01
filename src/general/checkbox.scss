@@ -5,10 +5,5 @@
   &%checkboxChecked {
     background-color: transparent !important;
     border-color: $main-color !important;
-    > svg {
-      > path {
-        fill: #fff;
-      }
-    }
   }
 }
