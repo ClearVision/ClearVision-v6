@@ -2,15 +2,12 @@
 %standardSidebarView {
   background: transparent;
 }
-%settingsSidebarRegion {
-  %settingsSidebarScroller {
-    margin: 30px 8px 30px 0;
-    background: transparent;
-    -webkit-mask-image: linear-gradient(to bottom, transparent, #000 5%, #000 95%, transparent);
-    mask-image: linear-gradient(to bottom, transparent, #000 5%, #000 95%, transparent);
-    &::-webkit-scrollbar {
-      width: 0 !important;
-    }
+%settingsSidebarScroller {
+  margin: 30px 8px 30px 0;
+  background: transparent;
+  mask-image: linear-gradient(to bottom, transparent, #000 5%, #000 95%, transparent);
+  &::-webkit-scrollbar {
+    width: 0 !important;
   }
 }
 %settingsSidebar {
@@ -21,33 +18,31 @@
     padding: 30px 0;
   }
 }
-%settingsSidebar {
-  %settingsHeader {
-    color: $main-color;
-    font-weight: 700;
-    padding-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    &:before {
-      content: '';
-      height: 2px;
-      flex-grow: 1;
-      background: linear-gradient(to left, $main-color 50%, transparent);
-      margin-right: 5px;
-    }
-    &:after {
-      content: '';
-      height: 2px;
-      flex-grow: 1;
-      background: linear-gradient(to right, $main-color 50%, transparent);
-      margin-left: 5px;
-    }
-    > span {
-      max-width: 100%;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
+%settingsHeader {
+  color: $main-color;
+  font-weight: 700;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:before {
+    content: '';
+    height: 2px;
+    flex-grow: 1;
+    background: linear-gradient(to left, $main-color 50%, transparent);
+    margin-right: 5px;
+  }
+  &:after {
+    content: '';
+    height: 2px;
+    flex-grow: 1;
+    background: linear-gradient(to right, $main-color 50%, transparent);
+    margin-left: 5px;
+  }
+  > span {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 %settingsSeparator {
@@ -56,64 +51,63 @@
     display: none;
   }
 }
-%standardSidebarView {
-  %settingsSidebar {
-    %tabBarSide {
-      %tabBarItem {
-        position: relative;
-        padding: 8px 20px;
-        color: var(--channel-color);
-        margin: 0;
-        background: transparent;
-        transition: all 0.15s ease-in-out;
-        cursor: pointer;
+
+%settingsSidebar {
+  %tabBarSide {
+    %tabBarItem {
+      position: relative;
+      padding: 8px 20px;
+      color: var(--channel-color);
+      margin: 0;
+      background: transparent;
+      transition: all 0.15s ease-in-out;
+      cursor: pointer;
+      &:before {
+        opacity: 0.4;
+        transition: inherit;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        @include pos(0, 100%, 0, 0);
+        opacity: 0.9;
+        transition: all 0.3s ease-in-out;
+        z-index: -1;
+        pointer-events: none;
+        border-radius: 4px;
+      }
+
+      // HOVER
+      &:hover {
+        background: hsla(0, 0%, 100%, 0.07);
+        color: hsla(0, 0%, 100%, 0.7);
         &:before {
-          opacity: 0.4;
-          transition: inherit;
+          opacity: 0.7;
+        }
+      }
+
+      // SELECTED
+      &%tabBarItemSelected {
+        background: transparent;
+        color: #fff;
+        transition: all 0.15s ease-in-out, background 0.3s 0.2s;
+        padding-left: 50px;
+        %settingsSidebarNitroSelected {
+          background-color: transparent;
+        }
+        &:before {
+          opacity: 1;
         }
         &:after {
-          content: '';
-          position: absolute;
-          @include pos(0, 100%, 0, 0);
-          opacity: 0.9;
-          transition: all 0.3s ease-in-out;
-          z-index: -1;
-          pointer-events: none;
-          border-radius: 4px;
+          right: 0;
+          background: $main-color;
+          animation: cv-channel-select 0.3s ease-in-out;
         }
+      }
 
-        // HOVER
-        &:hover {
-          background: hsla(0, 0%, 100%, 0.07);
-          color: hsla(0, 0%, 100%, 0.7);
-          &:before {
-            opacity: 0.7;
-          }
-        }
-
-        // SELECTED
-        &%tabBarItemSelected {
-          background: transparent;
-          color: #fff;
-          transition: all 0.15s ease-in-out, background 0.3s 0.2s;
-          padding-left: 50px;
-          %settingsSidebarNitroSelected {
-            background-color: transparent;
-          }
-          &:before {
-            opacity: 1;
-          }
-          &:after {
-            right: 0;
-            background: $main-color;
-            animation: cv-channel-select 0.3s ease-in-out;
-          }
-        }
-
-        // ONBOARDING STEP COUNTER
-        %textMediumNormal {
-          color: #fff !important;
-        }
+      // ONBOARDING STEP COUNTER
+      %textMediumNormal {
+        color: #fff !important;
       }
     }
   }

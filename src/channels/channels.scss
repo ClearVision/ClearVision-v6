@@ -23,7 +23,6 @@ html:not(%visualRefresh) %channelsSidebar:not(%channelsSidebarHidden) {
   font-family: cv('font.main');
   font-weight: 600;
   text-shadow: 0 0 3px #000;
-  
 }
 
 // GUILD BANNER
@@ -33,7 +32,6 @@ html:not(%visualRefresh) %channelsSidebar:not(%channelsSidebarHidden) {
 }
 %channelBanner {
   width: cv('channels-width');
-  -webkit-mask: linear-gradient(to bottom, #000, transparent);
   mask: linear-gradient(to bottom, #000, transparent);
 }
 %channelBannerImage {
@@ -57,14 +55,12 @@ html:not(%visualRefresh) %channelsSidebar:not(%channelsSidebarHidden) {
 }
 %channelLink {
   position: relative;
-  background: transparent !important;
   &:before {
     content: '';
     position: absolute;
     @include stretch;
     transition: all 0.15s ease-in-out;
     z-index: -1;
-    pointer-events: none;
     border-radius: 4px;
   }
   &:after {
@@ -74,7 +70,6 @@ html:not(%visualRefresh) %channelsSidebar:not(%channelsSidebarHidden) {
     opacity: 0.9;
     transition: all 0.3s ease-in-out;
     z-index: -1;
-    pointer-events: none;
     border-radius: 4px;
   }
   %channelIcon {
@@ -91,24 +86,20 @@ html:not(%visualRefresh) %channelsSidebar:not(%channelsSidebarHidden) {
       opacity: 1;
     }
   }
-  %channelName {
-    color: var(--channel-color);
-    transition: all 0.15s ease-in-out;
-  }
+}
+%channelName {
+  color: var(--channel-color);
+  transition: all 0.15s ease-in-out;
 }
 %channelButtons {
   margin-left: 1px;
   animation: cv-fade-to-3 0.15s ease-in-out;
 }
 %channelActionIcon {
-  color: #fff;
-  opacity: 0.3;
+  color: var(--channel-color);
   transition: all 0.15s ease-in-out;
-  path {
-    fill: #fff;
-  }
   &:hover {
-    opacity: 0.7;
+    color: var(--channel-hovered);
   }
 }
 %channelStatusText,
@@ -118,60 +109,36 @@ html:not(%visualRefresh) %channelsSidebar:not(%channelsSidebarHidden) {
 %channelWrapper {
   // HOVER
   &:hover {
-    %channelName,
-    %channelIcon {
-      color: #fff;
-    }
     %channelLink {
-      background: var(--bg-overlay-hover, var(--background-modifier-hover));
-      &:before {
-        background: hsla(0, 0%, 100%, 0.1);
-      }
-      %channelLinkTop {
-        %channelContainerDefault & {
-          %channelIcon,
-          %channelName {
-            color: var(--channel-hovered);
-          }
-        }
-      }
+      background: var(--background-modifier-hover);
+    }
+    :is(%channelName, %channelIcon) {
+      color: var(--channel-hovered); 
     }
   }
   // UNREAD
   &%channelWrapperUnread {
-    %channelLink {
-      %channelLinkTop {
-        %channelName {
-          color: var(--channel-unread);
-          text-shadow: 0 0 3px;
-        }
-        %channelIcon {
-          color: var(--channel-unread);
-          filter: drop-shadow(0 0 3px);
-          opacity: 1;
-        }
-      }
+    %channelName {
+      color: var(--channel-unread);
+      text-shadow: 0 0 3px;
+    }
+    %channelIcon {
+      color: var(--channel-unread);
+      filter: drop-shadow(0 0 3px);
     }
     &:hover {
-      %channelLink {
-        %channelLinkTop {
-          %channelName {
-            color: var(--channel-selected);
-          }
-          %channelIcon {
-            color: var(--channel-selected);
-          }
-        }
+      :is(%channelName, %channelIcon) {
+        color: var(--channel-selected);
       }
     }
   }
   // SELECTED
   &%channelWrapperSelected {
-    %channelName,
-    %channelIcon {
+    :is(%channelName, %channelIcon) {
       color: var(--channel-selected);
     }
     %channelLink {
+      background-color: transparent;
       &:before {
         background: hsla(0, 0%, 100%, 0.1);
       }
@@ -179,21 +146,6 @@ html:not(%visualRefresh) %channelsSidebar:not(%channelsSidebarHidden) {
         right: 0;
         background: $main-color;
         animation: cv-channel-select 0.3s ease-in-out;
-      }
-      %channelContainerDefault & {
-        %channelIcon,
-        %channelName {
-          color: var(--channel-selected);
-        }
-        %channelIconLive {
-          color: var(--channel-selected) !important;
-        }
-      }
-      %channelActionIcon {
-        opacity: 0.7;
-        &:hover {
-          opacity: 1;
-        }
       }
     }
     %textExtraSmallMedium,
@@ -204,42 +156,24 @@ html:not(%visualRefresh) %channelsSidebar:not(%channelsSidebarHidden) {
 
   // CONNECTED
   &%channelWrapperConnected {
-    %channelLink {
-      %channelLinkTop {
-        %channelName {
-          color: $main-color;
-          text-shadow: 0 0 3px;
-        }
-        %channelIcon {
-          color: $main-color;
-          filter: drop-shadow(0 0 3px);
-        }
-      }
+    %channelName {
+      color: var(--channel-unread);
+      text-shadow: 0 0 3px;
+    }
+    %channelIcon {
+      color: var(--channel-unread);
+      filter: drop-shadow(0 0 3px);
     }
   }
   // MUTED
   &%channelWrapperMuted {
-    %channelLink {
-      %channelLinkTop {
-        %channelIcon,
-        %channelName {
-          color: var(--channel-muted);
-        }
-      }
+    :is(%channelName, %channelIcon) {
+      color: var(--channel-muted);
     }
     &:hover {
-      %channelLink {
-        %channelLinkTop {
-          &:before {
-            background: hsla(0, 0%, 100%, 0.07);
-          }
-          %channelContainerDefault & {
-            %channelIcon,
-            %channelName {
-              color: var(--channel-color);
-            }
-          }
-        }
+      :is(%channelName, %channelIcon) {
+        color: var(--channel-color);
+        
       }
     }
   }

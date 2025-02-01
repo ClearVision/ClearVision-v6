@@ -14,7 +14,6 @@
 }
 %headerBar {
   %headerBarChildren {
-    -webkit-mask: linear-gradient(to left, transparent, #000 20px);
     mask: linear-gradient(to left, transparent, #000 20px);
     &:after {
       display: none;

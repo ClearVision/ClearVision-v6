@@ -12,56 +12,55 @@
 %channelTextArea {
   background: transparent;
   transition: all 0.15s ease-in-out;
+}
+%channelTextAreaScrollable {
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid transparent;
+  &:focus-within {
+    box-shadow: 0 0 2px 2px $main-color;
   }
-  %channelTextAreaScrollable {
-    background: rgba(0, 0, 0, 0.6);
-    border: 2px solid transparent;
-    &:focus-within {
-      box-shadow: 0 0 2px 2px $main-color;
-  }
-  %channelTextAreaAttachButton {
-    padding: 10px 10px 10px 12px;
+}
+%channelTextAreaAttachButton {
+  padding: 10px 10px 10px 12px;
 
-    %channelTextAreaAttachButtonPlus {
-      color: hsla(0, 0%, 100%, 0.7);
-      transition: all 0.15s ease-in-out;
-    }
-    &:hover {
-      %channelTextAreaAttachButtonPlus {
-        color: hsla(0, 0%, 100%, 0.9);
-      }
-    }
-  }
-  %textArea {
-    %textAreaPlaceholder {
-      color: hsla(0, 0%, 100%, 0.4);
-    }
-    &%slateTextArea {
-      margin-left: 10px;
-    }
-  }
-
-  // BUTTONS
-  %channelTextAreaButton {
+  %channelTextAreaAttachButtonPlus {
     color: hsla(0, 0%, 100%, 0.7);
     transition: all 0.15s ease-in-out;
-    &:hover {
+  }
+  &:hover {
+    %channelTextAreaAttachButtonPlus {
       color: hsla(0, 0%, 100%, 0.9);
     }
   }
+}
+%textArea {
+  margin-left: 10px;
+}
+%textAreaPlaceholder {
+  color: hsla(0, 0%, 100%, 0.4);
+}
 
-  // TYPING
-  %channelTextAreaTyping {
-    background: transparent;
-    %channelTextAreaTypingText {
-      color: hsla(0, 0%, 100%, 0.5);
-      > strong {
-        color: hsla(0, 0%, 100%, 0.7);
-        font-weight: 700;
-      }
+// BUTTONS
+%channelTextAreaButton {
+  color: hsla(0, 0%, 100%, 0.7);
+  transition: all 0.15s ease-in-out;
+  &:hover {
+    color: hsla(0, 0%, 100%, 0.9);
+  }
+}
+
+// TYPING
+%channelTextAreaTyping {
+  background: transparent;
+  %channelTextAreaTypingText {
+    color: hsla(0, 0%, 100%, 0.5);
+    > strong {
+      color: hsla(0, 0%, 100%, 0.7);
+      font-weight: 700;
     }
   }
 }
+
 
 // LINK
 %fakeLink {

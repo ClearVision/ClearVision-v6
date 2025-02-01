@@ -39,14 +39,8 @@
     opacity: 1;
   }
 }
-%channelsSidebar {
-  %categoryContainer {
-    %categoryWrapper {
-      %categoryName {
-        color: $main-color;
-      }
-    }
-  }
+%categoryName {
+  color: $main-color;
 }
 %categoryButtons {
   margin-left: 3px;
