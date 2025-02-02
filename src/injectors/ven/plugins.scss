@@ -1,20 +1,20 @@
 /*Shiki code blocks*/
-.shiki-plain {
+.vc-shiki-plain {
   background-color: rgba(0, 0, 0, calc($bg-shading * 0.2)) !important;
 }
 
-.shiki-container {
+.vc-shiki-container {
   background: rgba(0, 0, 0, 0.2) !important;
 }
 
-.shiki-btn {
+.vc-shiki-btn {
   background-color: $main-color !important;
   border-radius: 4px !important;
   right: 4px !important;
   bottom: 4px !important;
 }
 
-.shiki-btn:hover {
+.vc-shiki-btn:hover {
   background-color: $hover-color !important;
   transition: ease-in-out 0.2s;
 }
