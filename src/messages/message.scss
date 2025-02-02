@@ -57,7 +57,7 @@
 
 // REPLY
 %messageReplied {
-  color: var(--text-normal)
+  color: var(--text-normal);
 }
 %messageRepliedSpine {
   border-color: $main-color;
@@ -174,7 +174,7 @@
   }
 }
 %messageAutomodFooterIcon path {
-  fill: $main-color
+  fill: $main-color;
 }
 
 // free nitro trial...idk where to put this - Snow
