@@ -125,9 +125,6 @@
 %nowPlayingColumnScroller {
   border-left: none;
 }
-%consentCard {
-  background-color: hsla(0, 0%, 0%, 0.4);
-}
 
 // ACTIVE NOW
 %themeDark {
@@ -149,7 +146,7 @@
 %activeNowCardSection {
   background-color: transparent;
 }
-%themeDark %activeNowPreviewWrapper {
+%themeDark %activeNowStreamPreview {
   background-color: transparent;
 }
 

@@ -70,35 +70,39 @@
     transition: all 0.3s ease-in-out;
     z-index: -1;
   }
-  %privateChannelIcon,
-  %privateChannelName {
-    font-size: 14px;
+}
+%privateChannelIcon,
+%privateChannelName {
+  font-size: 14px;
+  transition: all 0.15s ease-in-out;
+  overflow: hidden;
+}
+%privateChannelActivityText {
+  color: var(--channel-color) !important;
+  transition: all 0.15s ease-in-out;
+  strong {
+    color: $main-color;
+    font-weight: 700;
     transition: all 0.15s ease-in-out;
-    overflow: hidden;
   }
-  %privateChannelActivityText {
-    strong {
-      color: $main-color;
-      font-weight: 700;
-      transition: all 0.15s ease-in-out;
-    }
-  }
-
+}
+%privateChannelInteractive {
   // HOVER
   &:hover {
+    color: var(--channel-hovered);
     background: transparent;
     &:before {
       background: hsla(0, 0%, 100%, 0.1);
     }
-    %privateChannelIcon,
-    %privateChannelName {
-      color: var(--channel-hovered);
+    %privateChannelActivityText {
+      color: var(--channel-hovered) !important;
     }
   }
 
   // SELECTED
   &%privateChannelInteractiveSelected {
     background: transparent;
+    color: var(--channel-selected);
     &:before {
       background: hsla(0, 0%, 100%, 0.1);
     }
@@ -107,15 +111,12 @@
       background: $main-color;
       animation: cv-channel-select 0.3s ease-in-out;
     }
-    %privateChannelIcon,
-    %privateChannelName {
-      color: var(--channel-selected);
-    }
     %privateChannelActivityEmoji,
     %privateChannelActivityIcon {
       filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.7));
     }
     %privateChannelActivityText {
+      color: var(--channel-selected) !important;
       strong {
         color: #fff;
       }

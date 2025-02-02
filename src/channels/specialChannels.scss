@@ -1,25 +1,20 @@
-/*CUSTOMIZE CHANNELS*/
-
+// CUSTOMIZE CHANNELS
 %customizeChannelsHeader {
   background-color: rgba(0, 0, 0, calc($bg-shading * 0.6)) !important;
 }
 %customizeChannels {
   background-color: rgba(0, 0, 0, calc($bg-shading * 0.5)) !important;
 }
-
-/*header*/
-%customizeChannelsHeaderBar {
+%customizeChannelsTabBar {
   border-bottom: none;
 }
-/*main section*/
-%customizeChannelsPrompt {
-  background: var(--background-overlay);
+%customizeChannelsCard {
+  background: rgba(0, 0, 0, 0.4);
 }
 %customizeChannelsPill {
   background: rgba(0, 0, 0, 0.2);
   border: 1px solid $main-color;
 }
-/*option buttons*/
 %customizeChannelsOption {
   border: 2px solid $main-color;
   &:hover {
@@ -32,27 +27,25 @@
 }
 /*profile card*/
 %customizeChannelsProfile {
-  background: var(--background-overlay);
+  background: rgba(0, 0, 0, 0.4);
 }
 %customizeChannelsProfileRole {
-  background: rgba(0, 0, 0, 0.2);
+  background: hsla(0, 0%, 100%, 0.1);
 }
 
-/*BROWSE CHANNELS*/
+// BROWSE CHANNELS
 %browseChannels {
   background-color: transparent;
 }
 %browseChannelsTip {
   background-color: rgba(0, 0, 0, 0.4);
 }
-
 %browseChannelsSelectAll {
   %textExtraSmallMedium {
     color: hsla(0, 0%, 100%, 0.5) !important;
     transition: all 0.15s ease-in-out;
   }
 }
-
 %browseChannelsRow {
   background-color: rgba(0, 0, 0, calc($bg-shading * 0.4));
   &:hover {
@@ -133,6 +126,7 @@
 %serverGuideChannelHintIcon {
   background: $main-color;
 }
+
 /* SERVER SUBSCRIPTIONS */
 %serverSubscription {
   background: var(--background-overlay);
@@ -144,6 +138,7 @@
 %serverSubscriptionPreview {
   background: rgba(0, 0, 0, 0.2);
 }
+
 /* CUSTOMIZE YOUR EXPERIENCE */
 %serverExperienceNav {
   background: rgba(0, 0, 0, 0.4);

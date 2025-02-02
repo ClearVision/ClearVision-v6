@@ -45,7 +45,7 @@
   }
 }
 
-  // MEMBER
+// MEMBER
 %member {
   max-width: calc(var(--members-width) - 16px);
   background: transparent;
@@ -118,6 +118,7 @@
   overflow: hidden;
 }
 %member {
+  // HOVER
   &:is(:hover, %memberSelected) {
     %memberInner {
       background: transparent;
@@ -131,6 +132,7 @@
       }
     }
   }
+  // SELECTED
   &%memberSelected {
     %memberUsernameInner {
       -webkit-text-fill-color: #fff;

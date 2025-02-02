@@ -117,10 +117,10 @@
 
 // TIMEOUT
 %timeoutBar {
-  background: rgba(0, 0, 0, 0.6);
+  background: cv('bg.general.popout');
 }
 %timeoutPopup {
-  background: rgba(0, 0, 0, 0.5);
+  background: cv('bg.general.popout');
   %timeoutIcon {
     background: rgba(0, 0, 0, 0.2);
   }

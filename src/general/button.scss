@@ -6,10 +6,11 @@
 
 // BUTTON FILLED
 %buttonFilled {
-  &%buttonColorBrand,
-  &%buttonColorGreen,
-  &%buttonCallInvite,
-  &%buttonColorPrimary {
+  &:is(
+  %buttonColorBrand,
+  %buttonColorGreen,
+  %buttonCallInvite,
+  %buttonColorPrimary) {
     background: $main-color;
     color: #fff;
     &:hover {
@@ -25,12 +26,10 @@
   &%buttonColorRed {
     background-color: cv('colors.danger');
   }
-  &%buttonColorBrandInverted,
-  &%buttonColorWhite {
+  &:is(%buttonColorBrandInverted, &%buttonColorWhite) {
     background: #fff;
     color: $main-color;
-    &:hover,
-    &:active {
+    &:is(:hover, :active) {
       background: hsla(0, 0%, 100%, 0.95);
       color: $hover-color;
     }
@@ -52,10 +51,11 @@
 
 // BUTTON OUTLINED
 %buttonOutlined {
-  &%buttonColorWhite,
-  &%buttonColorPrimary,
-  &%buttonColorGreen,
-  &%buttonColorBrand {
+  &:is(
+  %buttonColorWhite,
+  %buttonColorPrimary,
+  %buttonColorGreen,
+  %buttonColorBrand) {
     border-color: $main-color;
     color: hsla(0, 0%, 100%, 0.8);
     &:hover {
@@ -76,8 +76,9 @@
 
 // BUTTON LINK
 %buttonLink {
-  &%buttonColorWhite,
-  &%buttonColorPrimary {
+  &:is(
+  %buttonColorWhite,
+  %buttonColorPrimary) {
     color: #fff;
   }
   &%buttonColorBrand {

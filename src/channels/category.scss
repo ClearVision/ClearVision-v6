@@ -60,6 +60,9 @@
   %categoryName {
     color: $main-color;
   }
+  &:hover %categoryName {
+    color: $hover-color;
+  }
 }
 
 // ADD CHANNEL ICON

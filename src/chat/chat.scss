@@ -96,7 +96,7 @@ div[aria-checked='true'] %replyMentionButton {
 
 // THREAD
 %createThreadContainer {
-  background-color: transparent;
+  background: rgba(0, 0, 0, calc($bg-shading * 0.5));
 }
 %threadIconWrapper {
   background-color: $main-color;

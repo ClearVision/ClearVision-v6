@@ -17,22 +17,8 @@
 %previewServerChannelTitleIcon {
   color: #fff;
 }
-
-%themeDark %previewServerNotice {
-  background-color: transparent;
-}
-%notice__99c03 %previewServerHeader::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background-color: $main-color;
-  opacity: 0.6;
-  pointer-events: none;
-  z-index: -1;
-  border-radius: 3px;
+%previewServerNotice {
+  background-color: rgba(0, 0, 0, calc($bg-shading * 0.6));
 }
 
 %previewServerContainer {
