@@ -15,188 +15,180 @@
   width: cv('members-width');
 }
 
-%members {
-  // GROUP
-  %membersGroup {
-    padding-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: $main-color;
-    font-size: 11px;
-    font-weight: 700;
-    text-align: center;
-    transition: all 0.15s ease-in-out;
-    opacity: 0.7;
-    &:hover {
-      opacity: 1;
-    }
-    &:before {
-      content: '';
-      height: 2px;
-      flex-grow: 1;
-      background: linear-gradient(to left, currentColor 50%, transparent);
-      margin-right: 5px;
-    }
-    &:after {
-      content: '';
-      height: 2px;
-      flex-grow: 1;
-      background: linear-gradient(to right, currentColor 50%, transparent);
-      margin-left: 5px;
-    }
+
+// GROUP
+%membersGroup {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  color: $main-color;
+  font-size: 11px;
+  font-weight: 700;
+  transition: all 0.15s ease-in-out;
+  opacity: 0.7;
+  &:hover {
+    opacity: 1;
   }
+  &:before {
+    content: '';
+    height: 2px;
+    flex-grow: 1;
+    background: linear-gradient(to left, currentColor 50%, transparent);
+    margin-right: 5px;
+  }
+  &:after {
+    content: '';
+    height: 2px;
+    flex-grow: 1;
+    background: linear-gradient(to right, currentColor 50%, transparent);
+    margin-left: 5px;
+  }
+}
 
   // MEMBER
-  %member {
-    max-width: calc(var(--members-width) - 16px);
-    background: transparent;
-    backface-visibility: hidden;
-    &%memberOffline {
+%member {
+  max-width: calc(var(--members-width) - 16px);
+  background: transparent;
+  backface-visibility: hidden;
+  &%memberOffline {
+    %memberAvatar {
+      filter: grayscale(100%) blur(1px);
+      transition: all 0.5s ease-in-out;
+    }
+    &:hover {
       %memberAvatar {
-        filter: grayscale(100%) blur(1px);
-        transition: all 0.5s ease-in-out;
-      }
-      &:hover {
-        %memberAvatar {
-          filter: none;
-        }
+        filter: none;
       }
     }
-    %memberLayout {
-      position: relative;
+  }
+}
+%memberInner {
+  position: relative;
+  background: transparent;
+  transition: all 0.15s ease-in-out, transform 0.1s ease-in-out;
+  z-index: 1;
+  &:active {
+    transform: scale(0.9);
+  }
+}
+%memberUsernameInner {
+  max-width: 100%;
+  overflow: visible;
+  transition: all 0.15s ease-in-out;
+  &:before {
+    content: '';
+    position: absolute;
+    @include stretch;
+    background: linear-gradient(to right, hsla(0, 0%, 100%, 0.07) 90%, transparent);
+    border-radius: 3px;
+    opacity: 0;
+    transition: all 0.15s ease-in-out;
+    z-index: -1;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    @include pos(0, 100%, 0, 0);
+    background: linear-gradient(to right, $main-color 90%, transparent);
+    border-radius: 3px;
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+  }
+  &[style^='color:'] {
+    &:before,
+    &:after {
+      background: linear-gradient(to right, currentColor 90%, transparent);
+    }
+  }
+}
+%memberActivityText {
+  color: hsla(0, 0%, 100%, 0.4) !important;
+  transition: all 0.15s ease-in-out;
+  strong {
+    color: $main-color;
+    font-weight: 700;
+    transition: all 0.15s ease-in-out;
+  }
+}
+%memberName {
+  font-size: 14px;
+  color: hsla(0, 0%, 100%, 0.6);
+  transition: all 0.15s ease-in-out;
+  overflow: hidden;
+}
+%member {
+  &:is(:hover, %memberSelected) {
+    %memberInner {
       background: transparent;
-      transition: all 0.15s ease-in-out, transform 0.1s ease-in-out;
-      z-index: 1;
-      &:active {
-        transform: scale(0.9);
-      }
     }
-    %memberUsername > span {
-      max-width: 100%;
-      overflow: visible;
-      transition: all 0.15s ease-in-out;
+    %memberUsernameInner {
       &:before {
-        content: '';
-        position: absolute;
-        @include stretch;
-        background: linear-gradient(to right, hsla(0, 0%, 100%, 0.07) 90%, transparent);
-        border-radius: 3px;
-        opacity: 0;
-        transition: all 0.15s ease-in-out;
-        z-index: -1;
-        pointer-events: none;
+        opacity: 1;
       }
+      &[style^='color:']:before {
+        opacity: 0.07;
+      }
+    }
+  }
+  &%memberSelected {
+    %memberUsernameInner {
+      -webkit-text-fill-color: #fff;
+      text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
       &:after {
-        content: '';
-        position: absolute;
-        @include pos(0, 100%, 0, 0);
-        background: linear-gradient(to right, $main-color 90%, transparent);
-        border-radius: 3px;
-        opacity: 0.8;
-        transition: all 0.3s ease-in-out;
-        z-index: -1;
-        pointer-events: none;
+        right: 0;
       }
-      &[style^='color:'] {
-        &:before,
-        &:after {
-          background: linear-gradient(to right, currentColor 90%, transparent);
-        }
-      }
-    }
-    &:hover,
-    &%memberSelected {
-      %memberUsername > span {
-        &:before {
-          opacity: 1;
-        }
-        &[style^='color:']:before {
-          opacity: 0.07;
-        }
-      }
-    }
-    &%memberSelected {
-      %memberUsername > span {
-        -webkit-text-fill-color: #fff;
-        text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
-        &:after {
-          right: 0;
-        }
-      }
-    }
-    %memberName {
-      font-size: 14px;
-      color: hsla(0, 0%, 100%, 0.6);
-      transition: all 0.15s ease-in-out;
-      overflow: hidden;
     }
     %memberActivityText {
-      color: hsla(0, 0%, 100%, 0.4);
-      transition: all 0.15s ease-in-out;
+      text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+      color: hsla(0, 0%, 100%, 0.7) !important;
     }
     %memberActivityText {
       strong {
-        color: $main-color;
-        font-weight: 700;
-        transition: all 0.15s ease-in-out;
-      }
-    }
-    &%memberSelected {
-      %memberName {
         color: #fff;
       }
-      %memberActivityText {
-        text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
-        color: hsla(0, 0%, 100%, 0.7);
-      }
-      %memberActivityText {
-        strong {
-          color: #fff;
-        }
-      }
-      %memberOwnerIcon {
-        filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.7));
-        opacity: 0.7;
-      }
-      %memberActivityIcon,
-      %memberActivityEmoji {
-        filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.7));
-      }
+    }
+    %memberOwnerIcon {
+      filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.7));
+      opacity: 0.7;
+    }
+    %memberActivityIcon,
+    %memberActivityEmoji {
+      filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.7));
     }
   }
+}
 
-  // PLACEHOLDERS
-  %memberGroupPlaceholder {
-    margin: 0 25%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-basis: 50%;
-    color: hsla(0, 0%, 100%, 0.3);
-    &:before,
-    &:after {
-      content: '';
-      height: 2px;
-      flex-grow: 1;
-    }
-    &:before {
-      background: linear-gradient(to left, currentColor 50%, transparent);
-      margin-right: calc(50% + 5px);
-      margin-left: -50%;
-    }
-    &:after {
-      background: linear-gradient(to right, currentColor 50%, transparent);
-      margin-right: -50%;
-      margin-left: calc(50% + 5px);
-    }
+// PLACEHOLDERS
+%memberGroupPlaceholder {
+  margin: 0 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 50%;
+  color: hsla(0, 0%, 100%, 0.3);
+  &:before,
+  &:after {
+    content: '';
+    height: 2px;
+    flex-grow: 1;
   }
-  %memberGroupPlaceholder,
-  %memberPlaceholderAvatar,
-  %memberPlaceholderUsername,
-  %memberPlaceholderUsernameMultiple {
-    background: hsla(0, 0%, 100%, 0.3);
+  &:before {
+    background: linear-gradient(to left, currentColor 50%, transparent);
+    margin-right: calc(50% + 5px);
+    margin-left: -50%;
   }
+  &:after {
+    background: linear-gradient(to right, currentColor 50%, transparent);
+    margin-right: -50%;
+    margin-left: calc(50% + 5px);
+  }
+}
+%memberGroupPlaceholder,
+%memberPlaceholderAvatar,
+%memberPlaceholderUsername,
+%memberPlaceholderUsernameMultiple {
+  background: hsla(0, 0%, 100%, 0.3);
 }
 %addMembersIcon {
   background-color: var(--background-overlay);
@@ -253,7 +245,4 @@
 /*clicked in icon*/
 %memberActivityShareToChannelButton {
   border-right: 1px solid hsla(0, 0%, 100%, 0.1);
-  path {
-    fill: #fff;
-  }
 }
