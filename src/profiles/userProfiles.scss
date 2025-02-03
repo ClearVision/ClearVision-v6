@@ -24,7 +24,7 @@
 
     // MODAL
     &%userProfileFull {
-      background: hsla(0, 0%, 0%, 0.4);
+      background: cv('bg.general.card');
       &::before {
         content: '';
         position: absolute;
@@ -63,10 +63,10 @@
 
   // CONTENT
   %userProfileOverlay {
-    background-color: hsla(0, 0%, 0%, 0.4);
+    background-color: cv('bg.general.card');
   }
   %userProfileBadgeList {
-    background-color: hsla(0, 0%, 0%, 0.4);
+    background-color: cv('bg.general.card');
   }
 
   // CONNECTED ACCOUNTS

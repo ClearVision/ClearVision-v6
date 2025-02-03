@@ -46,7 +46,7 @@ html:not(%visualRefresh) %channelsSidebar:not(%channelsSidebarHidden) {
 
 // SERVER BOOST
 %themeDark %serverBoostProgressBar {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: cv('bg.general.card');
 }
 
 // CHANNEL CONTENT

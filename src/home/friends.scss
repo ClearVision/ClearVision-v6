@@ -36,7 +36,7 @@
   background: hsla(0, 0%, 0%, 0.2);
   border: 2px solid $main-color;
   &:hover {
-    background: hsla(0, 0%, 0%, 0.4);
+    background: cv('bg.general.card');
     border: 2px solid $hover-color;
   }
 }
@@ -129,7 +129,7 @@
 // ACTIVE NOW
 %themeDark {
   %activeNowOuterCard {
-    background-color: hsla(0, 0%, 0%, 0.4);
+    background-color: cv('bg.general.card');
     border: 1px solid transparent;
     &%activeNowCardInteractive:hover,
     &%activeNowCardActive {
@@ -137,7 +137,7 @@
     }
   }
   %activeNowCardInset {
-    background-color: hsla(0, 0%, 0%, 0.4);
+    background-color: cv('bg.general.card');
   }
   %activeNowPartyOverflow {
     background-color: var(--background-overlay);
@@ -152,7 +152,7 @@
 
 // IT'S QUIET FOR NOW...
 %emptyActiveNowCard {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: cv('bg.general.card');
 }
 %emptyActiveNowText {
   color: hsla(0, 0%, 100%, 0.3);
@@ -160,7 +160,7 @@
 
 // PROMOTED QUEST
 %promotedQuestActivity {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: cv('bg.general.card');
 }
 %promotedQuestPill {
   background-color: rgba(0, 0, 0, calc($bg-shading * 0.8));
@@ -169,12 +169,12 @@
 
 // DM USER PROFILE
 %userProfileOuterUnthemed {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: cv('bg.general.card');
   %userProfileDMInnerThemed {
     background: transparent;
   }
   %userModalDMBadgeList,
   %userProfileDMOverlayBackground {
-    background: hsla(0, 0%, 0%, 0.4);
+    background: cv('bg.general.card');
   }
 }

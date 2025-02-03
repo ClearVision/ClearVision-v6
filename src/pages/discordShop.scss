@@ -27,7 +27,7 @@
 }
 %shopLoadingBanner,
 %shopLoadingCard {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: cv('bg.general.card');
 }
 %shopLoadingCardContent {
   background-color: hsla(0, 0%, 100%, 0.07);
@@ -36,11 +36,11 @@
 // CARD
 %shopCardNitro,
 %shopCard {
-  background-color: rgba(0, 0, 0, 0.4) !important;
-  border-color: $main-color !important;
+  background-color: cv('bg.general.card');
+  border-color: $main-color;
   &:hover {
-    background-color: rgba(0, 0, 0, 0.6) !important;
-    border-color: $hover-color !important;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-color: $hover-color;
   }
 }
 %shopCardDarkBackgroundNitro,

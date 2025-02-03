@@ -40,7 +40,7 @@
 
 // GET STARTED
 %forumSetupContainer {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: cv('bg.general.card');
 }
 %forumSetupStepContainer {
   background-color: hsla(0, 0%, 100%, 0.07);
@@ -280,12 +280,12 @@
   background-color: transparent;
 }
 %forumExamplePreviewInput {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: cv('bg.general.card');
 }
 
 // new posts button
 %forumNewPosts {
-  background: rgba(0, 0, 0, 0.4);
+  background: cv('bg.general.card');
   border: 2px solid $main-color;
   %textMediumMedium {
     color: $main-color !important;

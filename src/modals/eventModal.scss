@@ -6,12 +6,12 @@
   background-color: $main-color;
 }
 %eventCard {
+  background-color: cv('bg.general.card');
+  border: 2px solid $main-color;
   &:hover {
-    background-color: hsla(0, 0%, 0%, 0.4);
+    background-color: cv('bg.general.card');
     border: 2px solid $hover-color;
   }
-  background-color: hsla(0, 0%, 0%, 0.4);
-  border: 2px solid $main-color;
 }
 %eventNewBadgeText {
   color: #fff;
@@ -65,7 +65,7 @@
   background: transparent;
 }
 %themeDark %createEventPreviewCard {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: cv('bg.general.popout');
   border: 2px solid $main-color;
 }
 %createEventIconContainer {

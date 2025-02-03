@@ -49,9 +49,9 @@
 
 // INVALID GIFT
 %messageInvalidGift {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: cv('bg.general.card');
   %themeDark &:hover {
-    background-color: hsla(0, 0%, 0%, 0.4);
+    background-color: cv('bg.general.card');
   }
 }
 
@@ -90,7 +90,7 @@
   border-color: $main-color;
 }
 %messageThreadEmbed {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: cv('bg.general.card');
 }
 %messageThreadCTA {
   color: $main-color;
@@ -147,7 +147,7 @@
 
 // PUBLISH TO FOLLOWERS
 %messagePublishBumpBox {
-  background: hsla(0, 0%, 0%, 0.4);
+  background: cv('bg.general.card');
 }
 %messagePublishIcon,
 %messagePublishTagline {
@@ -161,11 +161,11 @@
 // AUTOMOD MESSAGE
 %messageAutomodCard,
 %messageAutomodFooter {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: cv('bg.general.card');
 }
 %messageAutomodCard {
   &%messageAutomodCardSelected {
-    background-color: hsla(0, 0%, 0%, 0.4);
+    background-color: cv('bg.general.card');
   }
 }
 %messageAutomodFooterAction {
@@ -179,9 +179,9 @@
 
 // free nitro trial...idk where to put this - Snow
 %nitroTrial {
-  background: rgba(0, 0, 0, 0.4);
+  background: cv('bg.general.card');
   box-shadow: none;
   %themeDark &:hover {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: cv('bg.general.card');
   }
 }

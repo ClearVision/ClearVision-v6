@@ -19,15 +19,15 @@
 }
 // plugin authors
 .vc-author-modal-name {
-  background: rgba(0, 0, 0, 0.4);
+  background: cv('bg.general.card');
 }
 
 .vc-author-modal-name:before {
-  background: rgba(0, 0, 0, 0.4);
+  background: cv('bg.general.card');
 }
 // vencord quick action pills
 .vc-settings-quickActions-pill {
-  background: rgba(0, 0, 0, 0.4);
+  background: cv('bg.general.card');
   color: $text-normal;
   border: 1px solid $main-color;
   transition: all 0.5s ease-in-out;

@@ -26,7 +26,7 @@
   background: transparent;
 }
 %stageParticipant {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: cv('bg.general.card');
   &:hover {
     background-color: hsla(0, 0%, 100%, 0.05);
   }
@@ -89,7 +89,7 @@
 // STARTING A STAGE CALL
 %stageTopicForm {
   %input {
-    background: rgba(0, 0, 0, 0.4);
+    background: cv('bg.general.card');
     box-shadow: 0 0 0 2px $main-color;
   }
   %stageTopicInput {

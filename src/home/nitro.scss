@@ -12,7 +12,7 @@
   }
 }
 %nitroCard {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: cv('bg.general.card');
   &:hover {
     background-color: hsla(0, 0%, 0%, 0.6);
   }
@@ -21,7 +21,7 @@
   background-color: hsla(0, 0%, 0%, 0.6);
 }
 %nitroGiftContainer {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: cv('bg.general.card');
 }
 %themeDark %nitroGiftTextContainer {
   background-image: none;
@@ -50,7 +50,7 @@
   fill: hsla(0, 0%, 100%, 0.7);
 }
 %themeDark %nitroPerksArrowInactive {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: cv('bg.general.card');
   %nitroPerksArrowIcon {
     fill: hsla(0, 0%, 100%, 0.3);
   }

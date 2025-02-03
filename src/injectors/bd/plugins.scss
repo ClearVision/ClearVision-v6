@@ -38,7 +38,7 @@ div#magane div.stickerWindow div.packs-toolbar {
 .replyer,
 .btn-quote,
 .citar-btn {
-  background-color: rgba(0, 0, 0, 0.4) !important;
+  background-color: cv('bg.general.card') !important;
   border-radius: 3px;
   transition: background-color 0.3s ease-in-out;
   &:hover {

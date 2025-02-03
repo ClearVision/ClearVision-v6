@@ -5,7 +5,7 @@
 }
 /*perks card eg "hd streaming"*/
 %serverBoostPageTopPerksCard {
-  background: rgba(0, 0, 0, 0.4);
+  background: cv('bg.general.card');
 }
 /*give your community a boost*/
 %serverBoostPageCard {
@@ -13,7 +13,7 @@
 }
 /*boosting faq*/
 %serverBoostPageFaq {
-  background: rgba(0, 0, 0, 0.4);
+  background: cv('bg.general.card');
 }
 /*greater bg, needs more work*/
 %serverBoostPageScroller {
@@ -36,7 +36,7 @@
 }
 
 %boostServerPerks {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: cv('bg.general.card');
 }
 
 %readyToBoostContainer {

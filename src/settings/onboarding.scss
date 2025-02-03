@@ -5,7 +5,7 @@
   background-color: cv('bg.general.popout');
 }
 %onboardingEduPopoutArrow {
-  border-bottom-color: rgba(0, 0, 0, 0.8);
+  border-bottom-color: cv('bg.general.card');
 }
 
 // PROGRESS
@@ -44,7 +44,7 @@
 
 // DEFAULT CHANNELS
 %onboardingChannelRow {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: cv('bg.general.card');
   &:hover:not(%onboardingChannelRowDisabled) {
     background-color: hsla(0, 0%, 100%, 0.05);
   }
@@ -55,7 +55,7 @@
 }
 %onboardingChannelListHeader,
 %onboardingChannelList {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: cv('bg.general.card');
 }
 %onboardingChannelListHeaderContainer {
   background-color: transparent;
@@ -84,7 +84,7 @@
 
 // CUSTOMISATION QUESTIONS
 %onboardingChannelCoverage {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: cv('bg.general.card');
 }
 %onboardingChannelCoverageProgress {
   background-color: $main-color !important;
@@ -94,7 +94,7 @@
 }
 %onboardingChannelCoveragePill {
   border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: cv('bg.general.card');
   border: 2px solid $main-color;
 }
 %onboardingAddQuestion {
@@ -116,11 +116,11 @@
   }
 }
 %onboardingQuestionContainer {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: cv('bg.general.card');
   border: 2px solid $main-color;
 }
 %onboardingQuestionExample {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: cv('bg.general.card');
   border-radius: 20px;
   border: 2px solid $main-color;
 }
@@ -137,7 +137,7 @@
 }
 %onboardingActionItem,
 %onboardingResourceChannel {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: cv('bg.general.card');
 }
 %onboardingActionItemIcon {
   background-color: $main-color;
@@ -159,7 +159,7 @@
   }
 }
 %onboardingActionPreviewPill {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: cv('bg.general.card');
   %textSmallMedium {
     color: #fff;
   }
@@ -171,7 +171,7 @@
 // REVIEW
 %onboardingReviewHeader,
 %onboardingReviewStepContainer {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: cv('bg.general.card');
 }
 %onboardingReviewIconContainer {
   background-color: $main-color;
@@ -181,11 +181,11 @@
 }
 
 %onboardingRecommendedDefaultChannels {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: cv('bg.general.card');
 }
 
 %onboardingChannelPermissionsMenu {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: cv('bg.general.card');
 }
 
 %onboardingChannelPermissionsItems {
@@ -205,7 +205,7 @@
 }
 
 %onboardingEnterRoles {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: cv('bg.general.card');
   &:hover {
     background-color: hsla(0, 0%, 100%, 0.05);
   }

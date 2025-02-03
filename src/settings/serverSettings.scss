@@ -100,7 +100,7 @@
 %themeDark {
   %guildSettingsEmojiCard:before,
   %guildSettingsEmojiRemove {
-    background-color: hsla(0, 0%, 0%, 0.4);
+    background-color: cv('bg.general.popout');
   }
 }
 %guildSettingsEmojiRow {
@@ -126,7 +126,7 @@
 
 // STICKERS
 %guildSettingsStickersUploadCard {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: cv('bg.general.popout');
   &:hover {
     background-color: $hover-color;
   }
@@ -138,7 +138,7 @@
 
 // SAFETY SETUP
 %guildSettingsSafetyCollapseable {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: cv('bg.general.popout');
   &:active {
     background-color: hsla(0, 0%, 0%, 0.6);
   }
@@ -199,7 +199,7 @@
 // SAFETY SETUP - COMMUNITY SERVER
 %guildSettingsSafetyChangeLog,
 %guildSettingsSafetyChecklist {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: cv('bg.general.popout');
 }
 %guildSettingsSafetyPill {
   background-color: transparent;
@@ -215,7 +215,7 @@
   padding: 4px 6px;
 }
 %automodEditCard {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: cv('bg.general.popout');
 }
 %automodRuleIconContainer {
   background-color: $main-color;
@@ -243,7 +243,7 @@
   }
 }
 %automodContentCard {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: cv('bg.general.popout');
 }
 %automodKeywordsTextArea,
 %automodRegexTextArea {
@@ -276,7 +276,7 @@
     border-color: transparent;
   }
   %guildSettingsAuditHeader {
-    background-color: hsla(0, 0%, 0%, 0.4);
+    background-color: cv('bg.general.popout');
   }
   %guildSettingsAuditHeaderExpanded,
   %guildSettingsAuditDivider,
@@ -287,7 +287,7 @@
 
 // BANS
 %guildSettingsBanContainer {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: cv('bg.general.popout');
 }
 %guildSettingsBannedUser {
   background-color: hsla(0, 0%, 100%, 0.07);
@@ -295,12 +295,12 @@
 
 // SERVER TEMPLATE
 %guildSettingsTemplateDescription {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: cv('bg.general.popout');
 }
 
 // COMMUNITY OVERVIEW
 %guildSettingsCommunityUpsell {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: cv('bg.general.popout');
 }
 %guildSettingsCommunityUpsellFooter {
   background-color: transparent;
@@ -319,7 +319,7 @@
     }
   }
   %guildSettingsOnboardingUpsell {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: cv('bg.general.popout');
   }
   %guildSettingsOnboardingUpsellList {
     background-color: transparent;
@@ -337,13 +337,13 @@
     }
   }
   %serverGuideMessageInner {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: cv('bg.general.popout');
     &%userPopoutInnerThemed {
       background-color: transparent;
     }
   }
   %serverGuideAction {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: cv('bg.general.popout');
   }
   %serverGuideChannelIcon {
     background-color: $main-color;
@@ -355,7 +355,7 @@
 
 // SERVER INSIGHTS
 %guildSettingsInsightsAnalyticsCard {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: cv('bg.general.popout');
 }
 %guildSettingsInsightsDeveloperPortal {
   background-color: transparent;
@@ -372,11 +372,11 @@
 
 // ENABLE COMMUNITY
 %guildSettingsCommunityGuildDetails {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: cv('bg.general.popout');
 }
 %guildSettingsCommunityFeatureCard,
 %guildSettingsCommunityFeatureIcon {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: cv('bg.general.popout');
 }
 %checkboxWrapper%guildSettingsCommunityRow {
   background-color: transparent;
@@ -387,9 +387,9 @@
 
 // DISCOVERY
 %guildSettingsDiscoveryChecklist {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: cv('bg.general.popout');
   %guildSettingsDiscoveryHeader {
-    background-color: hsla(0, 0%, 0%, 0.4);
+    background-color: cv('bg.general.popout');
   }
   %guildSettingsDiscoverySeparator {
     background-color: hsla(0, 0%, 100%, 0.06);
@@ -399,7 +399,7 @@
 // WELCOME SCREEN
 %guildSettingsWelcomeEnable,
 %guildSettingsWelcomePreview {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: cv('bg.general.popout');
 }
 %guildSettingsWelcomeEditCircle {
   background-color: $main-color;
@@ -414,7 +414,7 @@
 
 // SERVER SUBSCRIPTIONS
 %guildSettingsSubsCard {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: cv('bg.general.popout');
 }
 %guildSettingsSubsStepsContainer,
 %guildSettingsSubsStepsImageContainer {
@@ -434,22 +434,22 @@
 // SERVER BOOST STATUS
 %themeDark {
   %guildSettingsBoostBackground {
-    color: hsla(0, 0%, 0%, 0.4);
+    color: cv('bg.general.popout');
   }
   %guildSettingsBoostTierInProgress {
-    background-color: hsla(0, 0%, 0%, 0.4);
+    background-color: cv('bg.general.popout');
     border: 3px solid #f47fff;
   }
   %guildSettingsBoostTierLocked,
   %guildSettingsBoostTierUnlocked,
   %guildSettingsBoostTierBody {
-    background-color: hsla(0, 0%, 0%, 0.4);
+    background-color: cv('bg.general.popout');
   }
 }
 
 // INVITES PAGE
 %serverInvitesCancel {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: cv('bg.general.popout');
   &:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
@@ -460,5 +460,5 @@
   background-color: rgba(0, 0, 0, 0.6);
 }
 %guildSettingsShowMembersInChannelList {
-  background: rgba(0, 0, 0, 0.4);
+  background: cv('bg.general.popout');
 }

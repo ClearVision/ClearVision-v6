@@ -9,7 +9,7 @@
   border-bottom: none;
 }
 %customizeChannelsCard {
-  background: rgba(0, 0, 0, 0.4);
+  background: cv('bg.general.card');
 }
 %customizeChannelsPill {
   background: rgba(0, 0, 0, 0.2);
@@ -27,7 +27,7 @@
 }
 /*profile card*/
 %customizeChannelsProfile {
-  background: rgba(0, 0, 0, 0.4);
+  background: cv('bg.general.card');
 }
 %customizeChannelsProfileRole {
   background: hsla(0, 0%, 100%, 0.1);
@@ -38,7 +38,7 @@
   background-color: transparent;
 }
 %browseChannelsTip {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: cv('bg.general.card');
 }
 %browseChannelsSelectAll {
   %textExtraSmallMedium {
@@ -57,7 +57,7 @@
 
 // MEMBERS LIST
 %membersChannelContainer {
-  background: rgba(0, 0, 0, 0.4);
+  background: cv('bg.general.card');
   box-shadow: none;
 }
 %membersChannelNotice {
@@ -129,10 +129,10 @@
 
 /* SERVER SUBSCRIPTIONS */
 %serverSubscription {
-  background: var(--background-overlay);
+  background: cv('bg.general.card');
 }
 %serverSubscriptionTier {
-  background: rgba(0, 0, 0, 0.4);
+  background: cv('bg.general.card');
 }
 %serverSubscriptionPerk,
 %serverSubscriptionPreview {
@@ -141,11 +141,11 @@
 
 /* CUSTOMIZE YOUR EXPERIENCE */
 %serverExperienceNav {
-  background: rgba(0, 0, 0, 0.4);
+  background: cv('bg.general.card');
 }
 %serverExperiencePrompt,
 %serverExperienceTerms {
-  background: rgba(0, 0, 0, 0.3);
+  background: cv('bg.general.card');
 }
 %serverExperienceGradient {
   display: none;

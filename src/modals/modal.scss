@@ -60,7 +60,7 @@
   border-color: $main-color;
 }
 %timeoutModalItem:not(%timeoutModalSelected) {
-  background: rgba(0, 0, 0, 0.4);
+  background: cv('bg.general.card');
   border-color: $main-color;
 }
 
@@ -88,20 +88,20 @@
 // ACTIVITIES
 %activityModalHeader,
 %activityModalDivider {
-  background: rgba(0, 0, 0, 0.4);
+  background: cv('bg.general.card');
 }
 %activityTag {
   background-color: rgba(0, 0, 0, calc($bg-shading * 0.5));
 }
 %activityItem {
-  background: rgba(0, 0, 0, 0.4);
+  background: cv('bg.general.card');
   border: 2px solid $main-color;
   &:hover {
-    background: rgba(0, 0, 0, 0.4);
+    background: cv('bg.general.card');
     border: 2px solid $hover-color;
   }
   &%activityItemDisabled {
-    background: rgba(0, 0, 0, 0.4);
+    background: cv('bg.general.card');
   }
 }
 %activitiesScroller {

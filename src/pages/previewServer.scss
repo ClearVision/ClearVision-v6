@@ -32,7 +32,7 @@
 
 // WELCOME TO SERVER CARDS
 %serverWelcomeCards {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: cv('bg.general.card');
 }
 %serverInviteTick {
   background-color: $main-color;
@@ -63,7 +63,7 @@
   }
 }
 %previewServerHomeCard {
-  background: rgba(0, 0, 0, 0.4);
+  background: cv('bg.general.card');
 }
 %previewServerIconContainer {
   background: $main-color;

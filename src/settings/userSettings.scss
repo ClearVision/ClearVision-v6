@@ -2,7 +2,7 @@
 
 // MY ACCOUNT
 %userSettingsAccountProfileCard {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: cv('bg.general.card');
 }
 %userSettingsAccountProfileBackground,
 %userSettingsAccountProfileFields {
@@ -101,14 +101,14 @@
 
 // USER PROFILE - SERVER PROFILES UPSELL
 %userSettingsProfilePremiumBorder {
-  background: hsla(0, 0%, 0%, 0.4);
+  background: cv('bg.general.card');
   border: 2px solid var(--premium-tier-2-purple-for-gradients-2);
 }
 %userSettingsProfilePremiumBackground {
   background: transparent;
 }
 %userSettingsProfileUpsellContainer {
-  background: hsla(0, 0%, 0%, 0.4);
+  background: cv('bg.general.card');
 }
 
 // PRIVACY AND SAFETY - STANDING
@@ -134,7 +134,7 @@
 // FAMILY CENTER
 %userSettingsFamilyContainers,
 %userSettingsFamilyBox {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: cv('bg.general.card');
 }
 %userSettingsFamilyCircle,
 %userSettingsFamilyIconContainer {
@@ -156,7 +156,7 @@
 
 // CONNECTIONS
 %userSettingsConnectionsContainer {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: cv('bg.general.card');
   border-color: hsla(0, 0%, 100%, 0.07);
 }
 %userSettingsConnectionsButtonInner {
@@ -170,46 +170,43 @@
 }
 
 // BILLING
+%userSettingsBillingIndicator {
+  background-color: $main-color;
+}
+%userSettingsBillingMethodText {
+  color: var(--text-normal);
+}
+%userSettingsBillingPaymentPane {
+  background-color: cv('bg.general.card');
+}
+%userSettingsBillingPayment,
+%userSettingsBillingPaginator {
+  background-color: transparent;
+}
 %themeDark {
-  %userSettingsBillingIndicator {
-    background-color: $main-color;
-  }
-  %userSettingsBillingPaymentPane,
-  %userSettingsBillingPaginator {
-    background-color: transparent;
-  }
   %userSettingsBillingBottomDivider {
-    border-color: rgba(0, 0, 0, 0.07);
+    border-color: hsla(0, 0%, 100%, 0.07);
   }
   %userSettingsBillingHoverablePayment {
     &:hover {
       background-color: rgba(255, 255, 255, 0.05);
     }
   }
-  %userSettingsBillingPayment {
-    background-color: transparent;
-    &:not(%userSettingsBillingHoverablePayment) {
-      background-color: hsla(0, 0%, 0%, 0.4);
-    }
-  }
-  %userSettingsBillingExpandedInfo {
-    background-color: transparent;
-    box-shadow: 0 0 2px 2px $main-color;
-  }
-  %userSettingsBillingMethodText {
-    color: #fff;
-  }
+}
+%userSettingsBillingExpandedInfo {
+  background-color: transparent;
+  box-shadow: 0 0 2px 2px $main-color;
 }
 
 // NITRO
 %userSettingsNitroPerkCard {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: cv('bg.general.card');
 }
 %userSettingsNitroGiftCard {
-  background: rgba(0, 0, 0, 0.4);
+  background: cv('bg.general.card');
 }
-%themeDark %userSettingsNitroShareCard {
-  background: rgba(0, 0, 0, 0.4);
+%userSettingsNitroShareCard {
+  background: cv('bg.general.card');
   backdrop-filter: none;
 }
 
@@ -217,28 +214,24 @@
 %themeDark {
   :is(%userSettingsSubsNoItemsIcons) {
     background-color: transparent;
-    > g > :is(path, rect, circle) {
-      fill-opacity: 0.8 !important;
-      stroke-opacity: 0.8 !important;
-    }
   }
 }
 %userSettingsSubsPayDetailsBlock {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: cv('bg.general.card');
 }
 %userSettingsSubsAccountCredit {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: cv('bg.general.card');
 }
 
 // GIFT INVENTORY
 %giftPromotionCard {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: cv('bg.general.card');
 }
 %copyGiftCode {
   background-color: hsla(0, 0%, 100%, 0.07);
 }
 %themeDark %giftQuestContainer {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: cv('bg.general.card');
 }
 %giftQuestProgress {
   color: $main-color !important;
@@ -256,7 +249,7 @@
 %userSettingsBoostGuildSearchWrapper,
 %userSettingsBoostRecognitionCard,
 %userSettingsBoostFAQ {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: cv('bg.general.card');
 }
 %userSettingsBoostTransferSearch {
   background-color: rgba(255, 255, 255, 0.07);
@@ -265,7 +258,7 @@
   background-color: $main-color;
 }
 %freeBoost {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: cv('bg.general.card');
 }
 .content_c258fa:after,
 .content_c258fa:before {
@@ -375,7 +368,7 @@
 // ACTIVITY STATUS
 %themeDark {
   %userSettingsActivityNotDetected {
-    background-color: hsla(0, 0%, 0%, 0.4);
+    background-color: cv('bg.general.card');
     border: hsla(0, 0%, 100%, 0.07);
   }
   %userSettingsActivityAddGame {

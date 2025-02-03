@@ -62,7 +62,7 @@
   %discoverGuildCard,
   %discoverHubCard,
   %discoverGuildCardIcon {
-    background-color: hsla(0, 0%, 0%, 0.4);
+    background-color: cv('bg.general.card');
     transition: all 0.15s ease-in-out;
     &:hover,
     &:hover %discoverGuildCardIcon {
@@ -85,7 +85,7 @@
   background-color: cv('colors.offline');
 }
 %discoverGuildLoading {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: cv('bg.general.card');
 }
 
 
@@ -147,7 +147,7 @@
 
 // QUESTS
 %discoverQuestItem {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: cv('bg.general.card');
 }
 %discoverQuestItemGradient {
   background: linear-gradient(0deg, hsla(0, 0%, 0%, 0.9) 10%, hsla(0, 0%, 0%, 0.6) 25%, transparent 35%);

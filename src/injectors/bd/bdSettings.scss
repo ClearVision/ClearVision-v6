@@ -13,11 +13,11 @@
 // PLUGINS/THEMES
 // Plugins/Themes Searchbar & dropdown filter
 .bd-search-wrapper {
-  background-color: hsla(0, 0%, 0%, 0.4) !important;
+  background-color: cv('bg.general.card') !important;
 }
 .bd-select {
   .bd-select-options {
-    background-color: hsla(0, 0%, 0%, 0.4) !important;
+    background-color: cv('bg.general.card') !important;
     border: hidden !important;
   }
   .bd-select-option {
@@ -34,7 +34,7 @@
 }
 // ADDONS
 .bd-addon-list .bd-addon-card {
-  background-color: hsla(0, 0%, 0%, 0.4) !important;
+  background-color: cv('bg.general.card') !important;
 }
 
 .bd-addon-list .bd-addon-header {

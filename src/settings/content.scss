@@ -54,22 +54,20 @@
 }
 
 // ITEM CARDS
-%themeDark {
-  %settingsCard {
-    &:not(%settingsCardOutline),
-    &%settingsCardOutline {
-      background-color: rgba(0, 0, 0, 0.4);
-      border-color: hsla(0, 0%, 100%, 0.07);
-    }
-    a {
-      color: var(--url-color);
-    }
+%settingsCard {
+  &:not(%settingsCardOutline),
+  &%settingsCardOutline {
+    background-color: cv('bg.general.card');
+    border-color: hsla(0, 0%, 100%, 0.07);
+  }
+  %anchor {
+    color: var(--url-color);
   }
 }
 
 // COLOR PICKER
 %themeDark %settingsColorPickerCustom {
-  background-color: hsla(0, 0%, 0%, 0.8);
+  background-color: cv('bg.general.popout');
   border-color: transparent;
   border-radius: 5px;
 }

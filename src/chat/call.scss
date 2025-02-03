@@ -24,7 +24,7 @@
   background-color: transparent;
 }
 %callParticipantsButton {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: cv('bg.general.card');
   &:hover {
     background-color: rgba(0, 0, 0, 0.6);
   }

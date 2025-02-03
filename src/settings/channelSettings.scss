@@ -51,7 +51,7 @@
   border: 1px solid hsla(0, 0%, 100%, 0.07);
 }
 %channelSettingsPermissionsItem {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: cv('bg.general.card');
   border-color: hsla(0, 0%, 100%, 0.07);
   cursor: pointer;
   &%channelSettingsPermissionsSelected {
@@ -70,9 +70,9 @@
   }
 }
 %channelSettingsPermissionsCard {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: cv('bg.general.card');
   &%channelSettingsCardPermissionsActive {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: cv('bg.general.card');
   }
 }
 %channelSettingsCardPermissionsFolder {
@@ -80,7 +80,7 @@
 }
 
 %integrationsIconWrapper {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: cv('bg.general.card');
 }
 
 // ROLES/MEMBERS DROPDOWN
