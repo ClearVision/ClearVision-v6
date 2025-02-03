@@ -1,47 +1,24 @@
 /* SERVER BOOST */
-/*bottom boost this server background*/
-%serverBoostPageBoostPrompt {
-  background: rgba(0, 0, 0, 0.8);
+%serverBoost {
+  background-color: transparent;
 }
-/*perks card eg "hd streaming"*/
-%serverBoostPageTopPerksCard {
-  background: cv('bg.general.card');
+%serverBoostNewBadge {
+  color: #fff
 }
-/*give your community a boost*/
-%serverBoostPageCard {
-  background: rgba(0, 0, 0, 0.2);
+%serverBoostHeaderWave {
+  color: rgba(0, 0, 0, 0.6);
 }
-/*boosting faq*/
-%serverBoostPageFaq {
-  background: cv('bg.general.card');
-}
-/*greater bg, needs more work*/
-%serverBoostPageScroller {
-  background: transparent;
-}
-/*paths*/
-%serverBoostPageHeaderWave > path {
+%serverBoostBottomWave {
   display: none;
 }
-%serverBoostPageBodyWave > path {
-  fill: rgba(0, 0, 0, 0.8) !important;
-}
-
-// Boost this server
-%boosServerPerkRow {
-  border-bottom: 1px solid $main-color;
-  &:hover {
-    background-color: hsla(0, 0%, 100%, 0.07);
-  }
-}
-
-%boostServerPerks {
+%serverBoostTopPerks,
+%serverBoostPerks,
+%serverBoostFAQ {
   background-color: cv('bg.general.card');
 }
-
-%readyToBoostContainer {
-  background-color: rgba(0, 0, 0, 0.6);
+%serverBoostFooterInner {
+  background-color: cv('bg.general.popout');
 }
-%readyToBoostProgressPill {
-  background-color: $main-color;
+%serverBoostFooterGuildIcon {
+  background-color: transparent;
 }

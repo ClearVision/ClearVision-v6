@@ -169,14 +169,32 @@
 .gameActivityToggleAdded_Yd-YxC {
   @extend %bdGameActivityToggle !optional;
 }
-.progressBarContainer_eff079 {
-  @extend %serverBoostProgressBar !optional;
+.scroller__6fd0e {
+  @extend %serverBoost !optional;
 }
-.subscription_d970da {
-  @extend %readyToBoostContainer !optional;
+.tierCardNewFeatureBadge_be48d0 {
+  @extend %serverBoostNewBadge !optional;
 }
-.tierPill_d970da {
-  @extend %readyToBoostProgressPill !optional;
+.headerWave__1dfae {
+  @extend %serverBoostHeaderWave !optional;
+}
+.bodyWave__1dfae {
+  @extend %serverBoostBottomWave !optional;
+}
+.topPerksCard__3add8 {
+  @extend %serverBoostTopPerks !optional;
+}
+.card__4d7bb {
+  @extend %serverBoostPerks !optional;
+}
+.wrapper__5b98e {
+  @extend %serverBoostFAQ !optional;
+}
+.innerWrapper_b4589b {
+  @extend %serverBoostFooterInner !optional;
+}
+.guildIcon_b4589b {
+  @extend %serverBoostFooterGuildIcon !optional;
 }
 .containerDefault__29444 {
   @extend %categoryContainerDefault !optional;
@@ -647,6 +665,9 @@
 }
 .bar__7aaec {
   @extend %barBrand !optional;
+}
+.barButtonBase__0f481 {
+  @extend %barbutton !optional;
 }
 .wrapper_cb9592 {
   @extend %callWrapper !optional;
@@ -1244,12 +1265,6 @@
 }
 .disabled_b3f026 {
   @extend %tabBarItemDisabled !optional;
-}
-.premiumLabel_e681d1 {
-  @extend %premiumLabel !optional;
-}
-.icon_cbe0b4 {
-  @extend %serverBoostIcon !optional;
 }
 .tooltip__382e7 {
   @extend %tooltip !optional;
@@ -2057,7 +2072,7 @@ pre {
 .wrapper_d5f3cd {
   @extend %inviteWrapper !optional;
 }
-.h5_b717a1 {
+.header_d5f3cd {
   @extend %inviteTitle !optional;
 }
 .guildIcon_d5f3cd {
@@ -2083,15 +2098,6 @@ pre {
 }
 .statusOffline_d5f3cd {
   @extend %inviteStatusOffline !optional;
-}
-.button_d5f3cd {
-  @extend %inviteButton !optional;
-}
-.lookFilled__201d5.colorGreen__201d5 {
-  @extend %inviteButtonJoin !optional;
-}
-.lookFilled__201d5.colorBrand__201d5 {
-  @extend %inviteButtonExpired !optional;
 }
 .wrapper_cf09d8 {
   @extend %player !optional;
@@ -3896,8 +3902,8 @@ pre {
 .appliedBoostContainer_ceb06a {
   @extend %userSettingsBoostApplied !optional;
 }
-.selectSearch__39466 {
-  @extend %userSettingsBoostTransferSearch !optional;
+.selectGuild__39466 {
+  @extend %userSettingsBoostTransferSelect !optional;
 }
 .selectGuildPseudoCta__39466 {
   @extend %userSettingsBoostTransferButton !optional;
@@ -5263,9 +5269,6 @@ pre {
 }
 .selected_d5ae15 {
   @extend %channelSettingsRoleDropdownSelected !optional;
-}
-.defaultColor_e9e35f {
-  @extend %defaultColor !optional;
 }
 .container__024d4 {
   @extend %addServerContainer !optional;

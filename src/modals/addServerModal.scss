@@ -1,16 +1,6 @@
 /* ADD SERVER MODAL */
 
 // MAIN PAGE
-%themeLight {
-  %addServerContainer {
-    %defaultColor {
-      color: #fff;
-    }
-    %input {
-      color: rgb(220, 221, 222);
-    }
-  }
-}
 %addServerOption {
   background-color: $main-color;
   &:hover {
@@ -42,7 +32,7 @@
 }
 
 // JOIN SERVER
-%joinServerInput {
+html:not(%visualRefresh) %joinServerInput {
   background-color: transparent;
 }
 %joinServerExample {

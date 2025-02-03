@@ -1,67 +1,59 @@
 /* INVITE LINK */
-%themeDark %inviteWrapper {
+%inviteWrapper {
   background: cv('bg.general.card');
-  border-color: transparent;
-  %inviteTitle {
-    color: hsla(0, 0%, 100%, 0.5);
+}
+%inviteTitle {
+  color: hsla(0, 0%, 100%, 0.5);
+}
+%inviteGuildName {
+  color: $main-color;
+  @include hover-shadow;
+}
+%inviteGuildIcon {
+  background-color: hsla(0, 0%, 100%, 0.07);
+}
+%inviteGuildIconExpired {
+  position: relative;
+  background-size: 0;
+  background: hsla(0, 0%, 100%, 0.04);
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    left: 50%;
+    width: 6px;
+    background: cv('colors.danger');
+    border-radius: 1px;
   }
-  %inviteGuildName {
-    color: $main-color;
-    @include hover-shadow;
+  &:after {
+    transform: translateX(-50%) rotate(45deg);
   }
-  %inviteGuildIcon {
-    background-color: hsla(0, 0%, 100%, 0.04);
+  &:before {
+    transform: translateX(-50%) rotate(-45deg);
   }
-  %inviteGuildIconExpired {
-    position: relative;
-    background-size: 0;
-    background: hsla(0, 0%, 100%, 0.04);
-    &:before,
-    &:after {
-      content: '';
-      position: absolute;
-      top: 10%;
-      bottom: 10%;
-      left: 50%;
-      width: 6px;
-      background: cv('colors.danger');
-      border-radius: 1px;
-    }
-    &:after {
-      transform: translateX(-50%) rotate(45deg);
-    }
-    &:before {
-      transform: translateX(-50%) rotate(-45deg);
-    }
-  }
-  %inviteGuildDetail {
-    padding-left: 1px;
-    margin-left: -1px;
-    color: hsla(0, 0%, 100%, 0.3);
-  }
-  %inviteStatusOnline {
-    background: cv('colors.online');
-    color: cv('colors.online');
-  }
-  %inviteStatusOffline {
-    background: cv('colors.offline');
-    color: cv('colors.offline');
-  }
-  %inviteButton {
-    border-color: transparent;
-  }
-  %inviteButtonJoin {
+}
+%inviteGuildDetail {
+  color: hsla(0, 0%, 100%, 0.3);
+}
+%inviteStatusOnline {
+  background: cv('colors.online');
+}
+%inviteStatusOffline {
+  background: cv('colors.offline');
+}
+%inviteWrapper {
+  %buttonFilled%buttonColorGreen {
     background: transparent;
     border: 1px solid cv('colors.success');
-    transition: all 0.3s ease-in-out;
     &:hover {
       background: cv('colors.success');
     }
   }
-  %inviteButtonExpired {
+  %buttonFilled%buttonColorBrand {
     background: transparent;
     border: 1px solid cv('colors.danger');
-    transition: all 0.3s ease-in-out;
     &:hover {
       background: cv('colors.danger');
     }
