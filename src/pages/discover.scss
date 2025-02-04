@@ -1,6 +1,6 @@
 /* DISCOVER */
 %discover {
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, calc($bg-shading * 0.4));;
 }
 %discoverHeaderBackdrop {
   background-color: rgba($color: #0c1522, $alpha: 0.7);
@@ -59,9 +59,9 @@
 
 // GUILD LIST
 %themeDark {
-  %discoverGuildCard,
+  :is(%discoverGuildCard,
   %discoverHubCard,
-  %discoverGuildCardIcon {
+  %discoverGuildCardIcon) {
     background-color: cv('bg.general.card');
     transition: all 0.15s ease-in-out;
     &:hover,
@@ -99,6 +99,9 @@
 }
 %discoverSearchBackButton {
   background-color: $main-color;
+  &:hover {
+    background-color: $hover-color;
+  }
 }
 %discoverSearchEmpty {
   background-color: transparent;
@@ -157,4 +160,40 @@
 }
 %discoverQuestItemName {
   color: $main-color !important;
+}
+
+// APPS
+%themeDark %discoverAppListAvatar {
+  background-color: cv('bg.general.card');
+  border-color: transparent;
+}
+%discoverGuildCard %discoverAppListAvatar {
+  background-color: hsla(0, 0%, 0%, 0.6);
+  border-color: transparent;
+}
+%discoverAppAvatar {
+  background-color: cv('bg.general.card');
+  border-color: transparent;
+}
+%discoverAppCategory {
+  background-color: hsla(0, 0%, 100%, 0.1);
+  &:hover {
+    background-color: hsla(0, 0%, 100%, 0.15);
+  }
+}
+%discoverAppSupportServer,
+%discoverAppCommands,
+%discoverAppCommand,
+%discoverAppPermissionList,
+%discoverAppDataAccess {
+  background: cv('bg.general.card');
+  border: none;
+}
+%discoverAppMoreApps {
+  background: cv('bg.general.card');
+  border: none;
+  &:focus,
+  &:hover {
+    background-color: hsla(0, 0%, 0%, 0.6);
+  }
 }

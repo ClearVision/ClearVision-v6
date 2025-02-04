@@ -51,11 +51,7 @@
       background: cv('colors.success');
     }
   }
-  %buttonFilled%buttonColorBrand {
-    background: transparent;
-    border: 1px solid cv('colors.danger');
-    &:hover {
-      background: cv('colors.danger');
-    }
-  }
+}
+%inviteExpired {
+  color: cv('colors.danger');
 }

@@ -2099,6 +2099,9 @@ pre {
 .statusOffline_d5f3cd {
   @extend %inviteStatusOffline !optional;
 }
+.inviteDestinationExpired_d5f3cd {
+  @extend %inviteExpired !optional;
+}
 .wrapper_cf09d8 {
   @extend %player !optional;
 }
@@ -2768,6 +2771,33 @@ pre {
 .questName__956c6 {
   @extend %discoverQuestItemName !optional;
 }
+.avatar_f215b9 {
+  @extend %discoverAppListAvatar !optional;
+}
+.avatar_efaad4 {
+  @extend %discoverAppAvatar !optional;
+}
+.category_ed45d7 {
+  @extend %discoverAppCategory !optional;
+}
+.card__6faf3 {
+  @extend %discoverAppSupportServer !optional;
+}
+.contentContainer_c6b177 {
+  @extend %discoverAppCommands !optional;
+}
+.commandName_c6b177 {
+  @extend %discoverAppCommand !optional;
+}
+.list__83c7c {
+  @extend %discoverAppPermissionList !optional;
+}
+.contentContainer__8f46b {
+  @extend %discoverAppDataAccess !optional;
+}
+.appContainer__5a4b6 {
+  @extend %discoverAppMoreApps !optional;
+}
 .container__50387 {
   @extend %connectionDebugPopout !optional;
 }
@@ -3350,10 +3380,10 @@ pre {
 .container__6cd3a {
   @extend %guildSettingsSafetyRadio !optional;
 }
-.clickableContainer_e5c5d5 {
+.clickableContainer__6cd3a {
   @extend %guildSettingsSafetyRadioClickable !optional;
 }
-.backgroundModifierContainer_e5c5d5 {
+.backgroundModifierContainer__6cd3a {
   @extend %guildSettingsSafetyRadioBG !optional;
 }
 .disabled__6cd3a {
@@ -3362,7 +3392,7 @@ pre {
 .noAction__6cd3a {
   @extend %guildSettingsSafetyRadioNoAction !optional;
 }
-.selected_e5c5d5 {
+.selected__6cd3a {
   @extend %guildSettingsSafetyRadioSelected !optional;
 }
 .transparent__6cd3a {
@@ -3826,21 +3856,6 @@ pre {
 }
 .upsellContainer__0b69f {
   @extend %userSettingsProfileUpsellContainer !optional;
-}
-.container_d878e7 {
-  @extend %userSettingsPrivacyStandingContainer !optional;
-}
-.avatarBackground_eb2508 {
-  @extend %userSettingsPrivacyStandingAvatarBG !optional;
-}
-.line_d878e7 {
-  @extend %userSettingsPrivacyStandingLine !optional;
-}
-.marker_d878e7 {
-  @extend %userSettingsPrivacyStandingMarker !optional;
-}
-.empty_d878e7 {
-  @extend %userSettingsPrivacyStandingMarkerEmpty !optional;
 }
 .container__5dbf8,
 .container__8cc9a,
@@ -4856,57 +4871,6 @@ pre {
 }
 .heading-sm\/medium_cf4812 {
   @extend %headingSmallMedium !optional;
-}
-.directoryContainer_da3f59 {
-  @extend %directoryContainer !optional;
-}
-.category_d7acc7 {
-  @extend %directoryCategory !optional;
-}
-.card_e90143 {
-  @extend %directoryCard !optional;
-}
-.container_d9c848 {
-  @extend %directoryListCard !optional;
-}
-.container_f9d8eb {
-  @extend %directoryNewToApps !optional;
-}
-.clickable_d9c848 {
-  @extend %directoryCardClickable !optional;
-}
-.container_bf1c84 {
-  @extend %directoryFooter !optional;
-}
-.search_aabd24 {
-  @extend %directorySearchBar !optional;
-}
-.category_fa8ebf.activeCategory_fa8ebf {
-  @extend %directorySearchCategoryActive !optional;
-}
-.category_d169f5 {
-  @extend %directoryAppCategory !optional;
-}
-.card__6faf3 {
-  @extend %directoryAppSupportServer !optional;
-}
-.list_e0307d {
-  @extend %directoryAppCommandList !optional;
-}
-.commandName_e0307d {
-  @extend %directoryAppCommand !optional;
-}
-.cardHeader_a11d84 {
-  @extend %directoryAppPremiumCardHeader !optional;
-}
-.benefitsContainer_a11d84 {
-  @extend %directoryAppPremiumContainer !optional;
-}
-.list__83c7c {
-  @extend %directoryAppPermissionList !optional;
-}
-.intentsContainer_f6d180 {
-  @extend %directoryAppIntentList !optional;
 }
 .picker__09f65 {
   @extend %soundboard !optional;

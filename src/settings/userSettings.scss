@@ -10,10 +10,9 @@
 }
 %userSettingsAccountProfileAvatar {
   background: transparent;
-  border-color: transparent;
 }
 %userSettingsAccountBadgeList {
-  background-color: rgba(0, 0, 0, calc($bg-shading * 0.4));
+  background-color: cv('bg.general.card');
 }
 // MY ACCOUNT - VERIFY PHONE
 %phoneInput {
@@ -47,9 +46,7 @@
 }
 %avatarGifIcon {
   background-color: transparent;
-  path {
-    fill: #fff;
-  }
+  color: #fff;
 }
 %avatarEditingContainer {
   background-color: transparent;
@@ -111,25 +108,7 @@
   background: cv('bg.general.card');
 }
 
-// PRIVACY AND SAFETY - STANDING
-%themeDark %userSettingsPrivacyStandingContainer%settingsCard {
-  background-color: transparent;
-}
-%userSettingsPrivacyStandingAvatarBG {
-  background-color: transparent;
-}
-%userSettingsPrivacyStandingLine,
-%userSettingsPrivacyStandingMarker {
-  background-color: hsla(0, 0%, 100%, 0.1);
-}
-%userSettingsPrivacyStandingMarker {
-  %userSettingsPrivacyStandingMarkerEmpty {
-    background-color: hsla(0, 0%, 100%, 0.1);
-  }
-  svg circle {
-    fill: #fff;
-  }
-}
+// PRIVACY AND SAFETY 
 
 // FAMILY CENTER
 %userSettingsFamilyContainers,
