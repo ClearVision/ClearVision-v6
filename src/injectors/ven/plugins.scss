@@ -1,19 +1,19 @@
 /*Shiki code blocks*/
+.vc-shiki-root {
+  background: rgba(0, 0, 0, 0.6) !important;
+}
 .vc-shiki-plain {
   background-color: rgba(0, 0, 0, calc($bg-shading * 0.2)) !important;
 }
-
 .vc-shiki-container {
   background: rgba(0, 0, 0, 0.2) !important;
 }
-
 .vc-shiki-btn {
   background-color: $main-color !important;
   border-radius: 4px !important;
   right: 4px !important;
   bottom: 4px !important;
 }
-
 .vc-shiki-btn:hover {
   background-color: $hover-color !important;
   transition: ease-in-out 0.2s;
@@ -23,28 +23,27 @@
 %themeDark #vc-spotify-player {
   background: transparent;
 }
-
 #vc-spotify-player {
   border-top: 1px solid var(--background-modifier-accent);
 }
-
-#vc-spotify-player:hover [class^='barFill__'] {
-  background-color: $hover-color;
-  border-color: $hover-color;
-  color: $hover-color;
-}
-
-#vc-spotify-progress-bar:hover > [class^='slider'] [class^='grabber'] {
-  background-color: $hover-color;
-  border-color: $hover-color;
-  color: $hover-color;
-}
-
-#vc-spotify-progress-bar > [class^='slider'] [class^='grabber'] {
-  background-color: $main-color;
-  border-color: $main-color;
+#vc-spotify-progress-bar .barFill_a562c8 {
+  background: $main-color;
+  transition: background .5s ease-in-out;
+  &:hover {
+      background: $hover-color;
+  }
+} 
+ #vc-spotify-progress-bar .slider_a562c8 .grabber_a562c8 {
+  background: $main-color;
+  border: 1px solid $main-color;
   color: $main-color;
-  margin-top: 5px;
+  margin-top: 5px; /* they said this was fixed upstream, but it's still off-center lol */
+  transition: background .5s ease-in-out;
+  &:hover {
+      background-color: $hover-color; 
+      border: 1px solid $hover-color;
+      color: $hover-color; 
+  }
 }
 
 // SHOW HIDDEN CHANNELS
@@ -52,7 +51,6 @@
 .shc-lock-screen-allowed-users-and-roles-container {
   background-color: rgba(0, 0, 0, 0.8);
 }
-
 .shc-lock-screen-allowed-users-and-roles-container button {
   background: transparent;
   color: #fff;
@@ -65,11 +63,9 @@
     z-index: 10;
   }
 }
-
 .shc-lock-screen-container {
   background: transparent;
 }
-
 .shc-lock-screen-allowed-users-and-roles-container %emptyChannelRole {
   position: relative;
   background-color: transparent;
@@ -80,11 +76,9 @@
     background-color: $hover-color;
   }
 }
-
 .scroller_ccc074 {
   background-color: rgba(0, 0, 0, 0.8);
 }
-
 /* Summaries in chat BETA */
 .topicsPillContainer__2c107 {
   background: rgba(0, 0, 0, 0.6);
