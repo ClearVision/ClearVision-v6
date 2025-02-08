@@ -71,11 +71,11 @@
 }
 %channelSettingsPermissionsCard {
   background-color: cv('bg.general.card');
-  &%channelSettingsCardPermissionsActive {
+  &%channelSettingsPermissionsCardActive {
     background-color: cv('bg.general.card');
   }
 }
-%channelSettingsCardPermissionsFolder {
+%channelSettingsPermissionsCardFolder {
   background-color: transparent;
 }
 
