@@ -67,6 +67,7 @@ textarea,
 // SELECTION
 ::selection {
   background: $main-color;
+  color: var(--text-normal);
 }
 
 // TAB FOCUS
