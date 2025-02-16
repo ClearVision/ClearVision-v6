@@ -107,7 +107,7 @@
   }
   %channelTextArea {
     background: var(--input-background);
-    &:focus-visible {
+    &:focus-within {
       box-shadow: 0 0 2px 2px var(--profile-gradient-primary-color);
     }
   }

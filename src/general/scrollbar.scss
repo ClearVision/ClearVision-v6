@@ -8,12 +8,38 @@
   scrollbar-color: unset !important;
 }
 // NORMAL SCROLLBAR
-%scrollbarAuto::-webkit-scrollbar {
-  width: 14px;
+%scrollbarAuto {
+  &::-webkit-scrollbar {
+    width: 14px;
+  }
+  &::-webkit-scrollbar-thumb,
+  &::-webkit-scrollbar-track {
+    border: 3px solid transparent;
+    border-radius: 7px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $main-color;
+    &:active {
+      background-color: $hover-color;
+    }
+  }
 }
 // THIN SCROLLBAR
-%scrollbarThin::-webkit-scrollbar {
-  width: 10px;
+%scrollbarThin {
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-thumb,
+  &::-webkit-scrollbar-track {
+    border: 3px solid transparent;
+    border-radius: 7px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $main-color;
+    &:active {
+      background-color: $hover-color;
+    }
+  }
 }
 
 // NO SCROLLBAR
@@ -22,23 +48,6 @@
 }
 
 // CONTENT
-::-webkit-scrollbar-thumb,
-::-webkit-scrollbar-track,
-::-webkit-scrollbar-track-piece {
-  border: 3px solid transparent !important;
-  border-radius: 7px !important;
-  background-clip: padding-box !important;
-}
-::-webkit-scrollbar-thumb {
-  background-color: $main-color !important;
-  &:active {
-    background-color: $hover-color !important;
-  }
-}
-::-webkit-scrollbar-track,
-::-webkit-scrollbar-track-piece {
-  background-color: transparent !important;
-}
 %channels,
 %membersWrap,
 %channelsPrivate {

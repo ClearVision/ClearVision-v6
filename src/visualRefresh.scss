@@ -1,0 +1,40 @@
+%visualRefresh {
+
+  // APP BG
+  %appMount {
+    background: var(--background-overlay);
+  }
+  %bg {
+    background: cv('bg.app.img') cv('bg.app.pos') / cv('bg.app.size') cv('bg.app.repeat') cv('bg.app.attach');
+    @include filters(cv('bg.app'));
+    z-index: -9999;
+  }
+
+  // GUILDS
+  %guildsWrapper,
+  // ACC PANEL
+  %panels,
+  // SETTINGS
+  %standardSidebarView,
+  // FRIENDS LIST APPARENTLY
+  .tabBody__133bf {
+    background-color: transparent;
+  }
+
+  // CHAT BG
+  %chatContent {
+    background: rgba(0, 0, 0, calc($bg-shading * 0.5));
+  }
+
+  // CHANNELS
+  %channelsContainer,
+  %privateChannels {
+    background: rgba(0, 0, 0, calc($bg-shading * 0.3));
+  }
+}
+
+%visualRefreshChatInput {
+  %channelTextArea {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
