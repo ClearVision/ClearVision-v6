@@ -4035,13 +4035,15 @@ pre {
 .gameNameInput_cc46f0 {
   @extend %userSettingsActivityGameNameInput !optional;
 }
+.auto__99f8c,
 .auto_d125d2 {
   @extend %scrollbarAuto !optional;
 }
-.thin__d125d2 {
+.thin__99f8c,
+.thin_d125d2 {
   @extend %scrollbarThin !optional;
 }
-.none__d125d2 {
+.none__99f8c {
   @extend %scrollbarNone !optional;
 }
 .segmentControl_a2de16 {

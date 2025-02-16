@@ -6,9 +6,6 @@
   margin: 30px 8px 30px 0;
   background: transparent;
   mask-image: linear-gradient(to bottom, transparent, #000 5%, #000 95%, transparent);
-  &::-webkit-scrollbar {
-    width: 0 !important;
-  }
 }
 %settingsSidebar {
   height: 100%;

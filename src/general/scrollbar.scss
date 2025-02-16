@@ -6,7 +6,7 @@
   scrollbar-color: unset !important;
 }
 // NORMAL SCROLLBAR
-%scrollbarAuto {
+:is(%scrollbarAuto) {
   &::-webkit-scrollbar {
     width: 14px;
   }
@@ -21,15 +21,18 @@
       background-color: $hover-color;
     }
   }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
 }
 // THIN SCROLLBAR
-%scrollbarThin {
+:is(%scrollbarThin) {
   &::-webkit-scrollbar {
     width: 8px;
   }
   &::-webkit-scrollbar-thumb,
   &::-webkit-scrollbar-track {
-    border: 3px solid transparent;
+    border: 2px solid transparent;
     border-radius: 7px;
   }
   &::-webkit-scrollbar-thumb {
@@ -38,15 +41,16 @@
       background-color: $hover-color;
     }
   }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
 }
 
 // NO SCROLLBAR
 %scrollbarNone::-webkit-scrollbar {
   width: 0px;
 }
-::-webkit-scrollbar-track {
-  background: transparent !important;
-}
+
 // CONTENT
 %channels,
 %membersWrap,
