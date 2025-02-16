@@ -1,9 +1,7 @@
 /* SCROLLBAR */
 // Chrome version fix
 %scrollbarAuto,
-%scrollbarChatAuto,
-%scrollbarThin,
-%scrollbarSettingsThin {
+%scrollbarThin {
   scrollbar-width: unset !important;
   scrollbar-color: unset !important;
 }
@@ -46,7 +44,9 @@
 %scrollbarNone::-webkit-scrollbar {
   width: 0px;
 }
-
+::-webkit-scrollbar-track {
+  background: transparent !important;
+}
 // CONTENT
 %channels,
 %membersWrap,
