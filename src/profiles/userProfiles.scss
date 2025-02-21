@@ -97,7 +97,7 @@
 %userProfileCustomTheme {
   %userProfileOverlayScroller {
     &::-webkit-scrollbar-thumb {
-      background: linear-gradient(var(--profile-gradient-primary-color),var(--profile-gradient-secondary-color))
+      background-color: (--profile-gradient-secondary-color);
     }
   }
   %userProfileNote {

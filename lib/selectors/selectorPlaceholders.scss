@@ -1173,12 +1173,6 @@
 .premiumTrialAcknowledgedBadge__4c1e4 {
   @extend %nitroTrialBadge !optional;
 }
-.wrapper__28a87 {
-  @extend %scrollerWrap !optional;
-}
-.scrollerBase__99f8c {
-  @extend %scroller !optional;
-}
 .slider_a562c8 {
   @extend %slider !optional;
 }
@@ -1798,16 +1792,13 @@
 .container__0f2e8 {
   @extend %memberActivityContainer !optional;
 }
-.activity__5d473 {
-  @extend %memberActivity !optional;
-}
 .activityEmoji__5d473 {
   @extend %memberActivityEmoji !optional;
 }
 .activityText__5d473 {
   @extend %memberActivityText !optional;
 }
-.icon_ad923e {
+.icon_c9d15c {
   @extend %memberActivityIcon !optional;
 }
 .memberGroupsPlaceholder_c8ffbb {
@@ -4043,7 +4034,8 @@ pre {
 .thin_d125d2 {
   @extend %scrollbarThin !optional;
 }
-.none__99f8c {
+.none__99f8c,
+.none_d125d2 {
   @extend %scrollbarNone !optional;
 }
 .segmentControl_a2de16 {
