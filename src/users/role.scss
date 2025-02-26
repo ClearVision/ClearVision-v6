@@ -1,7 +1,6 @@
 /* USER ROLE */
 %role {
   position: relative;
-  display: flex;
   flex-direction: row-reverse;
   border-radius: 3px;
   transition: all 0.1s ease-in-out;
@@ -9,7 +8,7 @@
   border-color: transparent;
   cursor: default;
 
-  > %roleName {
+  %roleName {
     margin-right: 0;
     margin-left: 4px;
     color: hsla(0, 0%, 100%, 0.9);
@@ -20,9 +19,6 @@
       &:before {
         opacity: 0.3;
       }
-    }
-    > %roleName {
-      color: #fff;
     }
   }
 }
@@ -38,8 +34,8 @@
 }
 %roleCircle {
   %role & {
-    width: 0 !important;
-    height: 0 !important;
+    width: 0;
+    height: 0;
     &:not(:empty) {
       margin-left: 6px;
     }
