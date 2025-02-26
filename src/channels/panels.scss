@@ -5,30 +5,14 @@
     box-shadow: 0 -2px 10px rgba(0, 0, 0, calc($bg-shading * 0.3));
   }
 }
-%themeDark %panelContainer {
-  background-color: transparent;
+%themeDark {
+  %panel,
+  %panelContainer {
+    background-color: transparent;
+  }  
 }
 
 // ACCOUNT & CONNECTION PANELS
-%accountPanel {
-  > %flex {
-    background: rgba(0, 0, 0, 0.3);
-    border-radius: 15px;
-    > :nth-child(n + 2) {
-      position: relative;
-      margin-left: -1px;
-      &:before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 2px;
-        bottom: 2px;
-        width: 1px;
-        background: hsla(0, 0%, 100%, 0.2);
-      }
-    }
-  }
-}
 /* Account for account panel width scaling under
   new design */
 %themeDark %accountPanelAvatarWrapper {
@@ -60,9 +44,8 @@
 }
 
 // ACCOUNT PANEL
-%themeDark %accountPanel {
+%themeDark %panelContainer {
   position: relative;
-  background: transparent;
   // SOME POSITIONING
   %accountPanelTagButton,
   %accountPanelTagless {
@@ -75,8 +58,6 @@
   }
   // AVATAR
   %accountPanelAvatar {
-    width: 32px !important;
-    height: 32px !important;
     transition: all 0.15s ease-in-out;
     &:after {
       content: 'Status';
@@ -106,19 +87,10 @@
       }
     }
   }
-  // NAME TAG
-  %accountPanelUsername {
-    color: #fff;
-  }
 }
 
 // CONNECTION PANEL
 %connectionPanel {
-  > %flex {
-    background: rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
-    padding: 5px;
-  }
   border-color: transparent;
   background: transparent;
   %connectionPanelInner {

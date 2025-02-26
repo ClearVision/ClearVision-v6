@@ -438,6 +438,9 @@
 .panels_c48ade {
   @extend %panels !optional;
 }
+.panel__5dec7 {
+  @extend %panel !optional;
+}
 .container__37e49 {
   @extend %panelContainer !optional;
 }
@@ -467,9 +470,6 @@
 }
 .lottieIcon__5eb9b {
   @extend %panelActionButtonLottieIcon !optional;
-}
-.content__37e49 {
-  @extend %accountPanel !optional;
 }
 .avatarWrapper__37e49 {
   @extend %accountPanelAvatarWrapper !optional;
@@ -1085,57 +1085,6 @@
 }
 .checked_f525d3 {
   @extend %checkboxChecked !optional;
-}
-.flex_abf706 {
-  @extend %flex !optional;
-}
-.alignStart_abf706 {
-  @extend %flexAlignStart !optional;
-}
-.alignEnd_abf706 {
-  @extend %flexAlignEnd !optional;
-}
-.alignCenter_abf706 {
-  @extend %flexAlignCenter !optional;
-}
-.alignStretch_abf706 {
-  @extend %flexAlignStretch !optional;
-}
-.alignBaseline_abf706 {
-  @extend %flexAlignBaseline !optional;
-}
-.justifyStart_abf706 {
-  @extend %flexJustifyStart !optional;
-}
-.justifyEnd_abf706 {
-  @extend %flexJustifyEnd !optional;
-}
-.justifyCenter_abf706 {
-  @extend %flexJustifyCenter !optional;
-}
-.justifyAround_abf706 {
-  @extend %flexJustifyAround !optional;
-}
-.justifyBetween_abf706 {
-  @extend %flexJustifyBetween !optional;
-}
-.noWrap_abf706 {
-  @extend %flexNoWrap !optional;
-}
-.wrap_abf706 {
-  @extend %flexWrap !optional;
-}
-.wrapReverse_abf706 {
-  @extend %flexWrapReverse !optional;
-}
-.directionRow__65900 {
-  @extend %flexDirectionRow !optional;
-}
-.directionRowReverse_f644aa {
-  @extend %flexDirectionRowReverse !optional;
-}
-.directionColumn__959e9 {
-  @extend %flexDirectionColumn !optional;
 }
 .spacer__03448 {
   @extend %spacer !optional;
