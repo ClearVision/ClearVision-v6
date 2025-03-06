@@ -684,12 +684,15 @@
 .video__94748 {
   @extend %callVideo !optional;
 }
-.controlButton__1405b {
-  @extend %callControlButton !optional;
+.buttonSection__1405b.experimentButtonSection__1405b {
+  @extend %callExperimentButtons !optional;
 }
+
+
 .centerButton_f1ceac {
-  @extend %callCenterButton !optional;
+  @extend %callCenterButton !optional; //only disconnect still use it
 }
+/* unsure if removed
 .centerIcon_f1ceac {
   @extend %callCenterIcon !optional;
 }
@@ -710,7 +713,7 @@
 }
 .participantsButton__211d1 {
   @extend %callParticipantsButton !optional;
-}
+}*/
 .tile__90dc5 {
   @extend %callTile !optional;
 }

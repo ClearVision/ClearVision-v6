@@ -22,13 +22,13 @@
 }
 %callUserTile {
   background-color: transparent;
-}
+}/*
 %callParticipantsButton {
   background-color: cv('bg.general.card');
   &:hover {
     background-color: rgba(0, 0, 0, 0.6);
   }
-}
+}*/
 %callTileBorder {
   &%callTileSpeaking {
     box-shadow: inset 0 0 0 2px $main-color;
@@ -56,10 +56,8 @@
   background-color: rgba(0, 0, 0, calc($bg-shading * 0.7));
 }
 
+/* unsure if removed
 // ACTION BUTTON
-%button%callCenterButton {
-  border-radius: 50%;
-}
 %callButtonColorable {
   &%callButtonPrimaryDark {
     background-color: rgba(0, 0, 0, 0.6);
@@ -91,6 +89,11 @@
   &%callButtonRed {
     background-color: var(--danger-color);
   }
+}
+*/
+// BUTTONS
+%callExperimentButtons {
+  background-color: cv('bg.general.card');
 }
 
 
