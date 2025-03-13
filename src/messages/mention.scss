@@ -14,18 +14,6 @@
     padding-left: 1.2rem;
   }
 }
-// PINGED
-%mentioned {
-  %mention%mentionedInteractive {
-    background-color: hsla(0, 0%, 100%, 0.1);
-    color: $main-color;
-    &:hover {
-      background-color: hsla(0, 0%, 100%, 0.07);
-      color: $hover-color;
-      text-decoration: none;
-    }
-  }
-}
 // BACKGROUND
 %message%mentioned {
   background-color: hsla(0, 0%, 100%, 0.05);

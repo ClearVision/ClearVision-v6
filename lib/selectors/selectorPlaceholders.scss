@@ -685,9 +685,11 @@
   @extend %callVideo !optional;
 }
 .buttonSection__1405b.experimentButtonSection__1405b {
-  @extend %callExperimentButtons !optional;
+  @extend %callExperimentButtonSection !optional;
 }
-
+.experimentButton_f1ceac {
+  @extend %callExperimentButton !optional;
+}
 
 .centerButton_f1ceac {
   @extend %callCenterButton !optional; //only disconnect still use it

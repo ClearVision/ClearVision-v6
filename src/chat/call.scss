@@ -56,8 +56,10 @@
   background-color: rgba(0, 0, 0, calc($bg-shading * 0.7));
 }
 
-/* unsure if removed
 // ACTION BUTTON
+%callCenterButton:not(%callExperimentButton) {
+  border-radius: 50%;
+}
 %callButtonColorable {
   &%callButtonPrimaryDark {
     background-color: rgba(0, 0, 0, 0.6);
@@ -90,9 +92,9 @@
     background-color: var(--danger-color);
   }
 }
-*/
-// BUTTONS
-%callExperimentButtons {
+
+// new experiment BUTTONS
+%callExperimentButtonSection {
   background-color: cv('bg.general.card');
 }
 
