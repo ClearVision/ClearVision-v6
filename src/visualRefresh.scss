@@ -1,5 +1,4 @@
 %visualRefresh {
-
   // APP BG
   %appMount {
     background: var(--background-overlay);
@@ -10,18 +9,19 @@
     z-index: -9999;
   }
 
-  // GUILDS
+  // TRANSPARENT BACKGROUNDS
   %guildsWrapper,
-  // ACC PANEL
   %panels,
   %channelsHeader,
-  %channelsSidebar::after
-  // SETTINGS
+  %channelsSidebar::after,
   %standardSidebarView,
   %settingsSidebarScroller,
-  // FRIENDS LIST APPARENTLY
-  .tabBody__133bf {
-    background-color: transparent;
+  .tabBody__133bf,
+  %channelsHeaderClickable,
+  %channelTextAreAttachedBar,
+  %dividerDate,
+  .childWrapperNoHoverBg__6e9f8 {
+    background: transparent;
   }
 
   // CHAT BG
@@ -34,10 +34,80 @@
   %privateChannels {
     background: rgba(0, 0, 0, calc($bg-shading * 0.3));
   }
-}
 
-%visualRefreshChatInput {
-  %channelTextArea {
+  // CHAT INPUT
+  %channelTextArea,
+  .channelTextArea_f75fb0 {
     background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  %forumChatHead, 
+  .header__34c2c,
+  .channelAttachmentArea_b77158 {
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  %channelTextAreaUpload {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid $main-color;
+  }
+
+  %guildExpandedFolderBackground {
+    background-color: $main-color;
+  }
+
+  .picker__09f65 {
+    background: var(--popout-color);
+  }
+
+  .wrapper__4e6ce {
+    background: transparent;
+  }
+
+  %barBrand {
+    background-color: $main-color;
+    border: none;
+  }
+
+  %memberActivityContainer {
+    background: var(--card-color);
+    border: 1px solid $main-color;
+  }
+
+  %emojiPickerInspector {
+    background-color: transparent;
+    border-top: var(--border-faint);
+  }
+
+  // VENCORD READ ALL
+  html:not(.visual-refresh .scroller_ef3116) button.vc-ranb-button.button__201d5.lookFilled__201d5.sizeMin__201d5.grow__201d5 {
+    position: static;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 50px;
+    color: var(--text-normal);
+    box-sizing: border-box;
+    padding: 4px 8px;
+    overflow: visible;
+    z-index: 1;
+    transition: all 0.6s linear;
+    &:hover {
+      background: $hover-color;
+    }
+  }
+
+  .popout__3f413, .popout__3f413.popoutPositionTop__3f413 {
+    background: rgba(0, 0, 0, 0.8);
+  } 
+
+  %messageButtonWrapper {
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  .embedFull__623de {
+    background: rgba(0, 0, 0, 0.6) !important;
+  }
+
+  %membersContainer {
+    border-left: none;
   }
 }
