@@ -9,18 +9,25 @@
     z-index: -9999;
   }
 
-  // TRANSPARENT BACKGROUNDS
+  // GUILDS
   %guildsWrapper,
+  // ACC PANEL
   %panels,
   %channelsHeader,
   %channelsSidebar::after,
+  // SETTINGS
   %standardSidebarView,
   %settingsSidebarScroller,
-  .tabBody__133bf,
+  // FRIENDS LIST APPARENTLY
+  %friendsList,
+  // CHANNELS HEADER
   %channelsHeaderClickable,
+  // CHANNELS ATTACH BAR
   %channelTextAreAttachedBar,
+  // DATE DIVIDER
   %dividerDate,
-  .childWrapperNoHoverBg__6e9f8 {
+  // HOME ICON BACKGROUND WHEN NO HOVER
+  %homeIconBackground {
     background: transparent;
   }
 
@@ -41,73 +48,104 @@
     background-color: rgba(0, 0, 0, 0.6);
   }
 
+  // FORUM HEADER & ATTACHMENT AREA
   %forumChatHead, 
   .header__34c2c,
   .channelAttachmentArea_b77158 {
     background: rgba(0, 0, 0, 0.6);
   }
 
+  // UPLOAD AREA
   %channelTextAreaUpload {
     background: rgba(0, 0, 0, 0.4);
     border: 1px solid $main-color;
   }
 
+  // GUILD EXPANDED FOLDER BG
   %guildExpandedFolderBackground {
     background-color: $main-color;
   }
 
-  .picker__09f65 {
-    background: var(--popout-color);
-  }
-
-  .wrapper__4e6ce {
-    background: transparent;
-  }
-
+  // BRAND BAR IDK WTF THIS WAS 
   %barBrand {
     background-color: $main-color;
     border: none;
   }
 
+  // MEMBER ACTIVITY IN CHAT
   %memberActivityContainer {
     background: var(--card-color);
     border: 1px solid $main-color;
   }
 
+  // EMOJI PICKER
+  %emojiPicker {
+    background-color: transparent;
+    }
+
   %emojiPickerInspector {
     background-color: transparent;
     border-top: var(--border-faint);
-  }
-
-  // VENCORD READ ALL
-  html:not(.visual-refresh .scroller_ef3116) button.vc-ranb-button.button__201d5.lookFilled__201d5.sizeMin__201d5.grow__201d5 {
-    position: static;
-    background: rgba(0, 0, 0, 0.4);
-    border-radius: 50px;
-    color: var(--text-normal);
-    box-sizing: border-box;
-    padding: 4px 8px;
-    overflow: visible;
-    z-index: 1;
-    transition: all 0.6s linear;
-    &:hover {
-      background: $hover-color;
     }
-  }
 
+  %emojiPickerGuildBar {
+    background: transparent;
+    }
+
+  %emojiPickerWrapper {
+    background-color: transparent;
+    }
+
+  %emojiPickerCategoryHeaderWrapper {
+    background-color: $main-color;
+  }
+// REMOVE WEIRD DOUBLE BORDER ON SEARCH IN EMOJI PICKER
+:where(.visual-refresh) .container_a45028:focus-within {
+  border-color: none;
+}
+
+// VENCORD READ ALL
+.vc-ranb-button {
+  border-radius: 50px !important; // !IMPORTANT BECAUSE VENCORD USED INLINE STYLING
+  &:hover {background-color: $hover-color;}
+}
+
+html:not(.visual-refresh .scroller_ef3116) button.vc-ranb-button.button__201d5.lookFilled__201d5.sizeMin__201d5.grow__201d5 {
+  position: static;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 50px;
+  color: var(--text-normal);
+  box-sizing: border-box;
+  padding: 4px 8px;
+  overflow: visible;
+  z-index: 1;
+  transition: all 0.6s linear;
+  border-color: none;
+  &:hover { background: $hover-color;}
+}
+
+  // POPOUT GOING UP
   .popout__3f413, .popout__3f413.popoutPositionTop__3f413 {
-    background: rgba(0, 0, 0, 0.8);
+    background: var(--popout-color);
   } 
 
+  // MESSAGE BUTTON WRAPPER
   %messageButtonWrapper {
     background: rgba(0, 0, 0, 0.7);
   }
 
-  .embedFull__623de {
-    background: rgba(0, 0, 0, 0.6) !important;
+  // EMBED MESSAGE BACKGROUND
+  %embedBackground {
+    background: rgba(0, 0, 0, 0.6) !important; // !IMPORTANT BECAUSE DISCORD USED INLINE STYLE
   }
 
+  // GUILD MEMBERS LIST
   %membersContainer {
     border-left: none;
   }
+
+  //  SOUNDBOARD (DUH)
+  %soundboard {
+    background: var(--popout-color);
+    }
 }

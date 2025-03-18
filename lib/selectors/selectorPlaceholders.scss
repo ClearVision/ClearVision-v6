@@ -2767,6 +2767,9 @@ pre {
 .secured_effb26 {
   @extend %connectionDebugSecured !optional;
 }
+.wrapper__4e6ce {
+  @extend %emojiPickerGuildBar !optional;
+}
 .emojiPicker_c0e32c {
   @extend %emojiPicker !optional;
 }
@@ -4824,7 +4827,7 @@ pre {
   @extend %headingSmallMedium !optional;
 }
 .picker__09f65 {
-  @extend %soundboard !optional;
+  @extend %soundboard !optional; //also used in emoji picket
 }
 .soundButton__6d4ed {
   @extend %soundboardButton !optional;
@@ -5574,4 +5577,13 @@ pre {
 }
 .codeIcon__4d95d {
   @extend %textContainerCodeIcon !optional;
+}
+.tabBody__133bf {
+  @extend %friendsList !optional
+}
+.childWrapperNoHoverBg__6e9f8 {
+  @extend %homeIconBackground !optional
+}
+.embedFull__623de {
+  @extend %embedBackground !optional;
 }
