@@ -30,12 +30,23 @@
       color: hsla(0, 0%, 100%, 0.7);
       font-size: 14px;
       text-shadow: 0 0 3px #000;
+      background-image: url('https://i.imgur.com/SelZS1H.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: left center;
+      padding-left: 18px;
+      margin-right: 10px;
+      margin-left: 1.5rem;
+      order: 2;
     }
     &:after {
       content: cv('const:text.titlebar.version');
       color: hsla(0, 0%, 100%, 0.3);
       font-family: cv('font.code');
       font-size: 10px;
+      margin-left: -5px;
+      margin-bottom: 3px;
+      order: 3;
     }
     > svg {
       filter: drop-shadow(0 0 5px $main-color);
