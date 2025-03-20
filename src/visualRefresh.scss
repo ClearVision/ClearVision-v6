@@ -28,7 +28,11 @@
   // DATE DIVIDER
   %dividerDate,
   // HOME ICON BACKGROUND WHEN NO HOVER
-  %homeIconBackground {
+  %homeIconBackground,
+  // ADD A REACTION EMOJI PICKER HEADER
+  %emojiPickerHeader,
+  // AGE RESTRICTED NSFW CHANNEL
+  %ageRestricted  {
     background: rgba(0, 0, 0, calc($bg-shading * 0.1));
   }
 
@@ -56,8 +60,6 @@
   .channelAttachmentArea_b77158 {
     background: rgba(0, 0, 0, calc( $bg-shading * 0.6));
   }
-
-
 
   // UPLOAD AREA
   %channelTextAreaUpload {
@@ -185,4 +187,12 @@ html:not(.visual-refresh .scroller_ef3116) button.vc-ranb-button.button__201d5.l
 // TODO: CHANGE THIS TO SELECTORS, PROBABLY NEEDS MORE ADJUSTMENT
 .visual-refresh .voiceFiltersFooter_e2f668, .visual-refresh .voiceFiltersPopout_e2f668 {
   background: $popout-color;
+}
+
+// a different double border for a differ emoji picker? (add a reaction)
+:where(.visual-refresh) .container_a45028 {
+  border: none;
+  &:focus-within {
+    border-color: none;
+  }
 }
