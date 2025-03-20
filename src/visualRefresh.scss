@@ -34,7 +34,9 @@
   // AGE RESTRICTED NSFW CHANNEL
   %ageRestricted,
   // follow this channel, and maybe more.
-  %channelInfo  {
+  %channelInfo,
+  %startingCall,
+  %chatLoadingWrapper  {
     background: rgba(0, 0, 0, calc($bg-shading * 0.1));
   }
 
@@ -170,14 +172,6 @@ html:not(.visual-refresh .scroller_ef3116) button.vc-ranb-button.button__201d5.l
     background-color: rgba(0, 0, 0, calc( $bg-shading * 0.6));
     border-color: none;
     box-shadow: none;
-  }
-
-  %chatLoadingWrapper {
-    background: transparent;
-  }
-
-  %startingCall {
-    background: transparent;
   }
 
   %forumChat {
