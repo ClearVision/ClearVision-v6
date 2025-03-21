@@ -654,8 +654,7 @@
 .newMessagesBar__0f481 {
   @extend %newMessagesBar !optional;
 }
-.jumpToPresentBar__0f481,
-.bottomBar__0f481 {
+.jumpToPresentBar__0f481 {
   @extend %jumpToPresentBar !optional;
 }
 .hasMore__8db19 {
@@ -792,9 +791,6 @@
 .wrapper_d852db {
   @extend %chatLoadingWrapper !optional;
 }
-.cozy_fc8177 {
-  @extend %chatLoadingCozy !optional;
-}
 .wrapper_fc8177 {
   @extend %chatLoadingWrapperCozy !optional;
 }
@@ -869,9 +865,6 @@
 }
 .form_f75fb0 {
   @extend %chatForm !optional;
-}
-.channelTextArea_f75fb0 {
-  @extend %channelTextAreaNoPermissions !optional;
 }
 .channelTextArea__74017 {
   @extend %channelTextArea !optional;
@@ -5586,14 +5579,11 @@ pre {
   @extend %textContainerCodeIcon !optional;
 }
 .tabBody__133bf {
-  @extend %friendsList !optional;
+  @extend %friendsList !optional
 }
 .childWrapperNoHoverBg__6e9f8 {
-  @extend %homeIconBackground !optional;
+  @extend %homeIconBackground !optional
 }
 .embedFull__623de {
   @extend %embedBackground !optional;
-}
-.root_bfe55a {
-  @extend %startingCall !optional;
 }

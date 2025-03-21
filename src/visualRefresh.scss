@@ -1,5 +1,4 @@
 %visualRefresh {
-
   // APP BG
   %appMount {
     background: var(--background-overlay);
@@ -29,7 +28,7 @@
   %dividerDate,
   // HOME ICON BACKGROUND WHEN NO HOVER
   %homeIconBackground {
-    background: rgba(0, 0, 0, calc($bg-shading * 0.1));
+    background: transparent;
   }
 
   // CHAT BG
@@ -44,24 +43,21 @@
   }
 
   // CHAT INPUT
-  %visualRefreshChatInput {
-    %channelTextArea {
-      background-color: rgba(0, 0, 0, calc( $bg-shading * 0.6));
-    }
+  %channelTextArea,
+  .channelTextArea_f75fb0 {
+    background-color: rgba(0, 0, 0, 0.6);
   }
 
   // FORUM HEADER & ATTACHMENT AREA
   %forumChatHead, 
   .header__34c2c,
   .channelAttachmentArea_b77158 {
-    background: rgba(0, 0, 0, calc( $bg-shading * 0.6));
+    background: rgba(0, 0, 0, 0.6);
   }
-
-
 
   // UPLOAD AREA
   %channelTextAreaUpload {
-    background: rgba(0, 0, 0, calc( $bg-shading * 0.4));
+    background: rgba(0, 0, 0, 0.4);
     border: 1px solid $main-color;
   }
 
@@ -84,20 +80,20 @@
 
   // EMOJI PICKER
   %emojiPicker {
-    background-color: var(--popout-color);
+    background-color: transparent;
     }
 
   %emojiPickerInspector {
-    background-color: rgba(0, 0, 0, calc($bg-shading * 0.1));
+    background-color: transparent;
     border-top: var(--border-faint);
     }
 
   %emojiPickerGuildBar {
-    background:  rgba(0, 0, 0, calc($bg-shading * 0.1));
+    background: transparent;
     }
 
   %emojiPickerWrapper {
-    background-color: var(--popout-color);
+    background-color: transparent;
     }
 
   %emojiPickerCategoryHeaderWrapper {
@@ -118,7 +114,7 @@ html:not(.visual-refresh .scroller_ef3116) button.vc-ranb-button.button__201d5.l
   position: static;
   background: rgba(0, 0, 0, 0.4);
   border-radius: 50px;
-  color: $text-normal;
+  color: var(--text-normal);
   box-sizing: border-box;
   padding: 4px 8px;
   overflow: visible;
@@ -152,33 +148,6 @@ html:not(.visual-refresh .scroller_ef3116) button.vc-ranb-button.button__201d5.l
   %soundboard {
     background: var(--popout-color);
     }
-
-  %channelTextAreaNoPermissions {
-    background: rgba(0, 0, 0, calc( $bg-shading * 0.8));
-  }
-
-  %jumpToPresentBar {
-    background-color: rgba(0, 0, 0, calc($bg-shading * 0.6));
-    &:hover {background-color: rgba(0, 0, 0, calc($bg-shading * 0.8));}
-  }
-
-  %fileUploading {
-    background-color: rgba(0, 0, 0, calc( $bg-shading * 0.6));
-    border-color: none;
-    box-shadow: none;
-  }
-
-  %chatLoadingWrapper {
-    background: transparent;
-  }
-
-  %startingCall {
-    background: transparent;
-  }
-
-  %forumChat {
-    background-color: hsla(0, 0%, 95%, .1);
-  }
 }
 
 // NEW VOICE FILTER THINGY
