@@ -1,6 +1,6 @@
 @use 'sass:list';
 @use 'sass:map';
-@use "sass:string";
+@use 'sass:string';
 @use 'sass:meta';
 
 /* Text Container */
@@ -41,73 +41,73 @@
 // message IDs MUST be strings.
 // parsed twice for validation then outputting css
 $themes: (
-	"sapphire": (
-    url: "https://clearvision.github.io/images/sapphire.jpg",
+  'sapphire': (
+    url: 'https://clearvision.github.io/images/sapphire.jpg',
     color: #2780e6,
-    message: "1334923587429335090"
+    message: '1334923587429335090',
   ),
-  "ruby": (
-    url: "https://clearvision.github.io/images/ruby.jpg",
+  'ruby': (
+    url: 'https://clearvision.github.io/images/ruby.jpg',
     color: #e62727,
-    message: "1334923616902451291"
+    message: '1334923616902451291',
   ),
-  "amber": (
-    url: "https://clearvision.github.io/images/amber.jpg",
+  'amber': (
+    url: 'https://clearvision.github.io/images/amber.jpg',
     color: #e67a27,
-    message: "1334923643909570610"
+    message: '1334923643909570610',
   ),
-  "emerald": (
-    url: "https://clearvision.github.io/images/emerald.jpg",
+  'emerald': (
+    url: 'https://clearvision.github.io/images/emerald.jpg',
     color: #33e627,
-    message: "1334923675551531149"
+    message: '1334923675551531149',
   ),
-  "amethyst": (
-    url: "https://clearvision.github.io/images/amethyst.jpg",
+  'amethyst': (
+    url: 'https://clearvision.github.io/images/amethyst.jpg',
     color: #da27e6,
-    message: "1334923711001657496"
+    message: '1334923711001657496',
   ),
-  "halloween": (
-    url: "https://clearvision.github.io/images/halloween.jpg",
+  'halloween': (
+    url: 'https://clearvision.github.io/images/halloween.jpg',
     color: #e67a27,
-    message: "1334923802681016390"
+    message: '1334923802681016390',
   ),
-  "winter": (
-    url: "https://clearvision.github.io/images/winter.jpg",
+  'winter': (
+    url: 'https://clearvision.github.io/images/winter.jpg',
     color: #66aacc,
-    message: "1334923852886708337"
-  )
+    message: '1334923852886708337',
+  ),
 );
 $themesList: map.keys($themes);
 $messageIDs: ();
-@each $presetName,$presetContents in $themes {
-	// ensure message ID exists
-	@if not map.has-key($presetContents,"message") {
-		@error "\"#{$presetName}\" lacks \"message\" key. Set it to a string of the message ID.";
-	} @else {
-		@if meta.type-of(map.get($presetContents,"message")) == number {
-			@error "\"#{$presetName}\" has message ID as a number. Make it a string.";
-		}
-		$messageIDs: list.append($messageIDs,map.get($presetContents,"message"));
-	}
-	// i could do other validation like making sure url is a url but eh cbf.
+@each $presetName, $presetContents in $themes {
+  // ensure message ID exists
+  @if not map.has-key($presetContents, 'message') {
+    @error "\"#{$presetName}\" lacks \"message\" key. Set it to a string of the message ID.";
+  } @else {
+    @if meta.type-of(map.get($presetContents, 'message')) == number {
+      @error "\"#{$presetName}\" has message ID as a number. Make it a string.";
+    }
+    $messageIDs: list.append($messageIDs, map.get($presetContents, 'message'));
+  }
+  // i could do other validation like making sure url is a url but eh cbf.
 }
-$presetListIDs: ":is(";
+$presetListIDs: ':is(';
 @each $id in $messageIDs {
-	$presetListIDs: $presetListIDs+"#message-accessories-"+$id+",";
-	@if list.index($messageIDs,$id) == list.length($messageIDs) {
-		$presetListIDs: string.slice($presetListIDs,0,-2) + ")";
-	}
+  $presetListIDs: $presetListIDs + '#message-accessories-' + $id + ',';
+  @if list.index($messageIDs, $id) == list.length($messageIDs) {
+    $presetListIDs: string.slice($presetListIDs, 0, -2) + ')';
+  }
 }
 
 #{$presetListIDs} {
-	%textContainerParent {
-		border: none;
-		background-color: transparent;
-	}
-	%textContainer {
+  %textContainerParent {
+    border: none;
+    background-color: transparent;
+  }
+  %textContainer {
     &::before,
     &::after {
-      content:'';
+      content: '';
       @include stretch;
       position: absolute;
       z-index: -1;
@@ -115,51 +115,47 @@ $presetListIDs: ":is(";
     &::before {
       background: var(--local-image) center/ cover no-repeat;
     }
-		&::after {
-      background: var(--preview-overlay,url('https://clearvision.github.io/images/preview_overlay.png')) center/ cover no-repeat;
+    &::after {
+      background: var(--preview-overlay, url('https://clearvision.github.io/images/preview_overlay.png')) center/ cover no-repeat;
     }
-	}
-	%textContainerFooter {
-		width: 300px;
-	}
-	%textContainerDownloadButton {
-		color: var(--local-color,inherit);
-	}
-	:is(
-		%textContainerToggleExpandSection,
-		%attachmentName,
-		%attachmentSize,
-		%textContainerCodeIcon,
-		pre
-	) {
-		display: none;
-	}
+  }
+  %textContainerFooter {
+    width: 300px;
+  }
+  %textContainerDownloadButton {
+    color: var(--local-color, inherit);
+  }
+  :is(%textContainerToggleExpandSection, %attachmentName, %attachmentSize, %textContainerCodeIcon, pre) {
+    display: none;
+  }
 }
 
-@each $presetName,$presetContents in $themes {
-	// add background, overlay, color to message id(s)
-	$selector: "";	
-	@if meta.type-of(map.get($presetContents,"message")) == string { // individual message ID
-		$selector: "#message-accessories-"+#{map.get($presetContents,"message")}
-	} @else { // :is() list
-		$selector: ":is(";
-		$messageIDs: map.get($presetContents,"message");
-		@each $id in $messageIDs {
-			$selector: $selector+"#message-accessories-"+$id+",";
-			@if list.index($messageIDs,$id) == list.length($messageIDs) {
-				$selector: string.slice($selector,0,-2) + ")";
-			}
-		}
-	}
-	#{$selector} {
-		@if map.has-key($presetContents,"url") {
-			--local-image: url("#{map.get($presetContents,"url")}");
-		}
-		@if map.has-key($presetContents,"overlay") {
-			--preview-overlay: url("#{map.get($presetContents,"overlay")}");
-		}
-		@if map.has-key($presetContents,"color") {
-			--local-color: #{map.get($presetContents,"color")};
-		}
-	}
+@each $presetName, $presetContents in $themes {
+  // add background, overlay, color to message id(s)
+  $selector: '';
+  @if meta.type-of(map.get($presetContents, 'message')) == string {
+    // individual message ID
+    $selector: '#message-accessories-' +#{map.get($presetContents, 'message')};
+  } @else {
+    // :is() list
+    $selector: ':is(';
+    $messageIDs: map.get($presetContents, 'message');
+    @each $id in $messageIDs {
+      $selector: $selector + '#message-accessories-' + $id + ',';
+      @if list.index($messageIDs, $id) == list.length($messageIDs) {
+        $selector: string.slice($selector, 0, -2) + ')';
+      }
+    }
+  }
+  #{$selector} {
+    @if map.has-key($presetContents, 'url') {
+      --local-image: url('#{map.get($presetContents,'url')}');
+    }
+    @if map.has-key($presetContents, 'overlay') {
+      --preview-overlay: url('#{map.get($presetContents,'overlay')}');
+    }
+    @if map.has-key($presetContents, 'color') {
+      --local-color: #{map.get($presetContents, 'color')};
+    }
+  }
 }

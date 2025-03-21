@@ -70,7 +70,9 @@
       // SELECTED
       &%tabBarItemSelected {
         background: transparent;
-        transition: all 0.15s ease-in-out, background 0.3s 0.2s;
+        transition:
+          all 0.15s ease-in-out,
+          background 0.3s 0.2s;
         padding-left: 50px;
         &:after {
           right: 0;
@@ -89,7 +91,7 @@
 %settingsSidebarNitroSelected {
   background-color: transparent;
 }
-%settingsSidebarServerBoost[aria-selected=true] {
+%settingsSidebarServerBoost[aria-selected='true'] {
   background-color: transparent !important;
 }
 

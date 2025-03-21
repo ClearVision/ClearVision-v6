@@ -1,6 +1,6 @@
 /* DISCOVER */
 %discover {
-  background-color: rgba(0, 0, 0, calc($bg-shading * 0.4));;
+  background-color: rgba(0, 0, 0, calc($bg-shading * 0.4));
 }
 %discoverHeaderBackdrop {
   background-color: rgba($color: #0c1522, $alpha: 0.7);
@@ -9,7 +9,6 @@
 %discoverTabSelected {
   border-bottom-color: $main-color !important;
 }
-
 
 // SIDEBAR
 %discoverCategory {
@@ -59,9 +58,7 @@
 
 // GUILD LIST
 %themeDark {
-  :is(%discoverGuildCard,
-  %discoverHubCard,
-  %discoverGuildCardIcon) {
+  :is(%discoverGuildCard, %discoverHubCard, %discoverGuildCardIcon) {
     background-color: cv('bg.general.card');
     transition: all 0.15s ease-in-out;
     &:hover,
@@ -87,7 +84,6 @@
 %discoverGuildLoading {
   background-color: cv('bg.general.card');
 }
-
 
 // SEARCH RESULTS
 %discoverSearchHeader {
@@ -144,7 +140,7 @@
     }
   }
   %textSmallNormal {
-    color: hsla(0,0%,100%,.7) !important;
+    color: hsla(0, 0%, 100%, 0.7) !important;
   }
 }
 

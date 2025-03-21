@@ -68,7 +68,9 @@
 }
 %emojiPickerItem {
   border-radius: 3px;
-  transition: all 0.15s ease-in-out, filter 0s;
+  transition:
+    all 0.15s ease-in-out,
+    filter 0s;
   &%emojiPickerItemSelected {
     background-color: hsla(0, 0%, 100%, 0.07);
   }

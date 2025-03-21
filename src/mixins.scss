@@ -1,5 +1,5 @@
-@use "sass:map";
-@use "sass:meta";
+@use 'sass:map';
+@use 'sass:meta';
 /// Set background properties separately in one mixin
 /// @param {*} $image [null] - background-image property value
 /// @param {*} $img [null] - background-image property value (alternative param)

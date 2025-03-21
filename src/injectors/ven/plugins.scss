@@ -28,21 +28,21 @@
 }
 #vc-spotify-progress-bar %sliderBarFill {
   background: $main-color;
-  transition: background .5s ease-in-out;
+  transition: background 0.5s ease-in-out;
   &:hover {
-      background: $hover-color;
+    background: $hover-color;
   }
-} 
- #vc-spotify-progress-bar %slider %sliderGrabber {
+}
+#vc-spotify-progress-bar %slider %sliderGrabber {
   background: $main-color;
   border: 1px solid $main-color;
   color: $main-color;
   margin-top: 5px; /* they said this was fixed upstream, but it's still off-center lol */
-  transition: background .5s ease-in-out;
+  transition: background 0.5s ease-in-out;
   &:hover {
-      background-color: $hover-color; 
-      border: 1px solid $hover-color;
-      color: $hover-color; 
+    background-color: $hover-color;
+    border: 1px solid $hover-color;
+    color: $hover-color;
   }
 }
 

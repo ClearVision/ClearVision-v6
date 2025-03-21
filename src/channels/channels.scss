@@ -11,7 +11,8 @@ html:not(%visualRefresh) %channelsSidebar:not(%channelsSidebarHidden) {
 }
 
 // CHANNELS HEADER
-%channelsHeaderClickable, %channelsHeaderSelected {
+%channelsHeaderClickable,
+%channelsHeaderSelected {
   %channelsHeader {
     &:hover {
       background-color: hsla(0, 0%, 100%, 0.1);
@@ -104,7 +105,7 @@ html:not(%visualRefresh) %channelsSidebar:not(%channelsSidebarHidden) {
       background: var(--background-modifier-hover);
     }
     :is(%channelName, %channelIcon) {
-      color: var(--channel-hovered); 
+      color: var(--channel-hovered);
     }
   }
   // UNREAD
@@ -164,7 +165,6 @@ html:not(%visualRefresh) %channelsSidebar:not(%channelsSidebarHidden) {
     &:hover {
       :is(%channelName, %channelIcon) {
         color: var(--channel-color);
-        
       }
     }
   }
@@ -243,7 +243,9 @@ html:not(%visualRefresh) %channelsSidebar:not(%channelsSidebarHidden) {
       height: 1.7em;
       background: linear-gradient(to right, $main-color 10%, transparent);
       opacity: 0.5;
-      transition: all 0.1s ease-in-out, width 0.15s ease-in-out;
+      transition:
+        all 0.1s ease-in-out,
+        width 0.15s ease-in-out;
       pointer-events: none;
       z-index: -1;
       border-radius: 999px;
@@ -252,7 +254,9 @@ html:not(%visualRefresh) %channelsSidebar:not(%channelsSidebarHidden) {
     }
   }
   %voiceUserAvatarSpeaking {
-    box-shadow: 0 0 0 2px $main-color, inset 0 0 3px rgba(0, 0, 0, 0.5);
+    box-shadow:
+      0 0 0 2px $main-color,
+      inset 0 0 3px rgba(0, 0, 0, 0.5);
     &:after {
       @include pos($top: -2px, $bottom: -2px);
       width: 150px;

@@ -60,16 +60,18 @@
   }
   &:hover {
     &:after {
-      box-shadow: inset 0 0 0 2px $main-color, inset 0 0 0 3px rgba(0, 0, 0, 0.3);
+      box-shadow:
+        inset 0 0 0 2px $main-color,
+        inset 0 0 0 3px rgba(0, 0, 0, 0.3);
     }
   }
 }
 %gifFavoriteButton {
-	background-color: hsla(0, 0%, 0%, 0.6);
+  background-color: hsla(0, 0%, 0%, 0.6);
 }
 
 // ARROW KEY FOCUS SELECTION OUTLINE
-%gifPickerResult[data-focused=true] {
+%gifPickerResult[data-focused='true'] {
   box-shadow: 0 0 0 2px cv('colors.focus');
 }
 

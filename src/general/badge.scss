@@ -2,7 +2,9 @@
 %numberBadge,
 %textBadge {
   background: $main-color !important;
-  box-shadow: 0 0 10px -3px $main-color, 0 0 0 1px $main-color;
+  box-shadow:
+    0 0 10px -3px $main-color,
+    0 0 0 1px $main-color;
   color: #fff;
   font-weight: 600;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);

@@ -1,5 +1,5 @@
-@use "sass:map";
-@use "sass:string";
+@use 'sass:map';
+@use 'sass:string';
 /// Get a variable from the ClearVision variables map
 /// @param {string} $id identification for a variable
 /// @return {*} variable

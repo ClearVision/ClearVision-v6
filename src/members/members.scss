@@ -15,7 +15,6 @@
   width: cv('members-width');
 }
 
-
 // GROUP
 %membersGroup {
   padding-top: 20px;
@@ -66,7 +65,9 @@
   position: relative;
   padding: 0 16px 0 8px;
   width: unset;
-  transition: all 0.15s ease-in-out, transform 0.1s ease-in-out;
+  transition:
+    all 0.15s ease-in-out,
+    transform 0.1s ease-in-out;
   z-index: 1;
   &:active {
     transform: scale(0.9);

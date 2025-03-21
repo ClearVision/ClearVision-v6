@@ -6,11 +6,7 @@
 
 // BUTTON FILLED
 %buttonFilled {
-  &:is(
-  %buttonColorBrand,
-  %buttonColorGreen,
-  %buttonCallInvite,
-  %buttonColorPrimary) {
+  &:is(%buttonColorBrand, %buttonColorGreen, %buttonCallInvite, %buttonColorPrimary) {
     background: $main-color;
     color: #fff;
     &:hover {
@@ -51,11 +47,7 @@
 
 // BUTTON OUTLINED
 %buttonOutlined {
-  &:is(
-  %buttonColorWhite,
-  %buttonColorPrimary,
-  %buttonColorGreen,
-  %buttonColorBrand) {
+  &:is(%buttonColorWhite, %buttonColorPrimary, %buttonColorGreen, %buttonColorBrand) {
     border-color: $main-color;
     color: hsla(0, 0%, 100%, 0.8);
     &:hover {
@@ -76,9 +68,7 @@
 
 // BUTTON LINK
 %buttonLink {
-  &:is(
-  %buttonColorWhite,
-  %buttonColorPrimary) {
+  &:is(%buttonColorWhite, %buttonColorPrimary) {
     color: #fff;
   }
   &%buttonColorBrand {

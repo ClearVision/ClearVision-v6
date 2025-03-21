@@ -71,7 +71,9 @@
   color: #fff;
   transform: translateX(-50%) rotateX(-90deg);
   transform-origin: 50% 100%;
-  transition: all 0.15s ease-in-out, left 0s;
+  transition:
+    all 0.15s ease-in-out,
+    left 0s;
   &:before {
     border-top-color: $main-color;
   }

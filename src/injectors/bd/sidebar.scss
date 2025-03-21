@@ -28,7 +28,9 @@
     color: hsla(0, 0%, 100%, 0.3);
     padding: 8px 0 8px 20px;
     margin: 0;
-    transition: all 0.15s ease-in-out, background-size 0.3s ease-in-out;
+    transition:
+      all 0.15s ease-in-out,
+      background-size 0.3s ease-in-out;
     cursor: pointer;
     &:before {
       opacity: 0.3;
@@ -57,7 +59,9 @@
     &%bdSettingsSidebarItemSelected {
       background: transparent;
       color: #fff;
-      transition: all 0.15s ease-in-out, background 0.3s 0.2s;
+      transition:
+        all 0.15s ease-in-out,
+        background 0.3s 0.2s;
       &:before {
         opacity: 1;
       }

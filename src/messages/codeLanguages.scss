@@ -1,211 +1,767 @@
-@use "sass:list";
-@use "sass:meta";
-@use "sass:string";
+@use 'sass:list';
+@use 'sass:meta';
+@use 'sass:string';
 /* CODEBLOCK LANGUAGES */
 // LANGUAGE MAP
 // STRINGS GET PARSED TWICE; YOU'LL NEED TO DOUBLE THE AMOUNT OF BACK SLASHES.
 $lang: (
-	"1C:Enterprise": ("\\31 c"), // "1c"
-	"ABNF": ("abnf"),
-	"Apache Access Log": ("accesslog"),
-	"ActionScript": ("actionscript", "as"),
-	"Ada": ("ada"),
-	"AngelScript": ("angelscript", "asc"),
-	"Apache config": ("apache", "apacheconf"),
-	"AppleScript": ("applescript", "osascript"),
-	"ArcGIS Arcade": ("arcade"),
-	"Arduino": ("arduino"),
-	"ARM Assembly": ("armasm", "arm"),
-	"AsciiDoc": ("asciidoc", "adoc"),
-	"AspectJ": ("aspectj"),
-	"AutoHotKey": ("autohotkey", "ahk"),
-	"AutoIt": ("autoit"),
-	"AVR Assembly": ("avrasm"),
-	"Awk": ("awk"),
-	"Bash": ("bash", "sh"),
-	"BASIC": ("basic"),
-	"BNF": ("bnf"),
-	"Brainfuck": ("brainfuck", "bf"),
-	"C": ("c", "h"),
-	"C/AL": ("cal"),
-	"Cap’n Proto": ("capnproto", "capnp"),
-	"Ceylon": ("ceylon"),
-	"Clean": ("clean", "icl", "dcl"),
-	"Clojure": ("clojure", "clj", "edn"),
-	"Clojure REPL": ("clojure-repl"),
-	"CMake": ("cmake", "cmake\\.in"),
-	"CoffeeScript": ("coffeescript", "coffee", "cson", "iced"),
-	"Coq": ("coq"),
-	"Caché Object Script": ("cos", "cls"),
-	"C++": ("cpp", "cc", "c\\\+\\\+", "h\\\+\\\+", "hpp", "hh", "hxx", "cxx"),
-	"crmsh": ("crmsh", "crm", "pcmk"),
-	"Crystal": ("crystal", "cr"),
-	"C#": ("csharp", "cs"),
-	"CSP": ("csp"),
-	"CSS": ("css"),
-	"D": ("d"),
-	"Dart": ("dart"),
-	"Delphi": ("delphi", "dpr", "dfm", "pas", "pascal"),
-	"Diff": ("diff", "patch"),
-	"Django": ("django", "jinja"),
-	"DNS Zone": ("dns", "bind", "zone"),
-	"Dockerfile": ("dockerfile", "docker"),
-	"Batch file (DOS)": ("dos", "bat", "cmd"),
-	"dsconfig": ("dsconfig"),
-	"Device Tree": ("dts"),
-	"Dust": ("dust", "dst"),
-	"EBNF": ("ebnf"),
-	"Elixir": ("elixir", "ex", "exs"),
-	"Elm": ("elm"),
-	"eRuby": ("erb"),
-	"Erlang REPL": ("erlang-repl"),
-	"Erlang": ("erlang", "erl"),
-	"Excel formulae": ("excel", "xlsx", "xls"),
-	"FIX": ("fix"),
-	"Flix": ("flix"),
-	"Fortran": ("fortran", "f90", "f95"),
-	"F#": ("fsharp", "fs"),
-	"GAMS": ("gams", "gms"),
-	"GAUSS": ("gauss", "gss"),
-	"G-code (ISO 6983)": ("gcode", "nc"),
-	"Gherkin": ("gherkin", "feature"),
-	"OpenGL Shading": ("glsl"),
-	"GML": ("gml"),
-	"Go": ("go", "golang"),
-	"Golo": ("golo"),
-	"Gradle": ("gradle"),
-	"GraphQL": ("graphql", "gql"),
-	"Groovy": ("groovy"),
-	"HAML": ("haml"),
-	"Handlebars": ("handlebars", "hbs", "html\\.hbs", "html\\.handlebars", "htmlbars"),
-	"Haskell": ("haskell", "hs"),
-	"Haxe": ("haxe", "hx"),
-	"HSP": ("hsp"),
-	"HTML/XML": ("xml", "html", "xhtml", "rss", "atom", "xjb", "xsd", "xsl", "plist", "wsf", "svg"),
-	"HTTP": ("http", "https"),
-	"Hy": ("hy", "hylang"),
-	"Inform 7": ("inform7", "i7"),
-	"TOML, also INI": ("ini", "toml"),
-	"IRPF90": ("irpf90"),
-	"ISBL": ("isbl"),
-	"Java": ("java", "jsp"),
-	"JavaScript": ("javascript", "js", "jsx", "mjs", "cjs"),
-	"JBoss CLI": ("jboss-cli", "wildfly-cli"),
-	"JSON": ("json"),
-	"Julia": ("julia", "jldoctest"),
-	"Julia REPL": ("julia-repl"),
-	"Kotlin": ("kotlin", "kt", "kts"),
-	"Lasso": ("lasso", "ls", "lassoscript"),
-	"LaTeX": ("latex", "tex"),
-	"LDIF": ("ldif"),
-	"Leaf": ("leaf"),
-	"Less": ("less"),
-	"Lisp": ("lisp"),
-	"LiveCode": ("livecodeserver"),
-	"LiveScript": ("livescript", "ls"),
-	"LLVM IR": ("llvm"),
-	"LSL": ("lsl"),
-	"Lua": ("lua"),
-	"Makefile": ("makefile", "mk", "mak", "make"),
-	"Markdown": ("markdown", "md", "mkdown", "mkd"),
-	"Mathematica": ("mathematica", "mma", "wl"),
-	"Matlab": ("matlab"),
-	"Maxima": ("maxima"),
-	"MEL": ("mel"),
-	"Mercury": ("mercury", "m", "moo"),
-	"MIPS Assembly": ("mipsasm", "mips"),
-	"Mizar": ("mizar"),
-	"Mojolicious": ("mojolicious"),
-	"Monkey": ("monkey"),
-	"MoonScript": ("moonscript", "moon"),
-	"N1QL": ("n1ql"),
-	"Nested Text": ("nestedtext", "nt"),
-	"Nginx config": ("nginx", "nginxconf"),
-	"Nim": ("nim"),
-	"Nix": ("nix", "nixos"),
-	"Node REPL": ("node-repl"),
-	"NSIS": ("nsis"),
-	"Objective-C": ("objectivec", "mm", "objc", "obj-c", "obj-c\\\+\\\+", "objective-c\\\+\\\+"),
-	"OCaml": ("ocaml", "ml"),
-	"OpenSCAD": ("openscad", "scad"),
-	"Oxygene": ("oxygene"),
-	"Parser3": ("parser3"),
-	"Perl": ("perl", "pl", "pm"),
-	"Packet Filter config": ("pf", "pf\\.conf"),
-	"PostgreSQL": ("pgsql", "postgres", "postgresql"),
-	"PHP": ("php"),
-	"PHP template": ("php-template"),
-	"Plain Text": ("plaintext", "text", "txt", "hljs[class$=hljs]"),
-	"Pony": ("pony"),
-	"PowerShell": ("powershell", "pwsh", "ps", "ps1"),
-	"Processing": ("processing", "pde"),
-	"Prolog": ("prolog"),
-	".properties": ("properties"),
-	"Protocol Buffers": ("protobuf"),
-	"Puppet": ("puppet", "pp"),
-	"PureBASIC": ("purebasic", "pb", "pbi"),
-	"Python": ("python", "py", "gyp", "ipython"),
-	"Python REPL": ("python-repl", "pycon"),
-	"Python profiler": ("profile"),
-	"Q": ("q", "k", "kdb"),
-	"QML": ("qml", "qt"),
-	"R": ("r"),
-	"ReasonML": ("reasonml", "re"),
-	"RenderMan RIB": ("rib"),
-	"Roboconf": ("roboconf", "graph", "instances"),
-	"RouterOS": ("routeros", "mikrotik"),
-	"RenderMan RSL": ("rsl"),
-	"Ruby": ("ruby", "rb", "gemspec", "podspec", "thor", "irb"),
-	"Oracle Rules Language": ("ruleslanguage"),
-	"Rust": ("rust", "rs"),
-	"SAS": ("sas"),
-	"Scala": ("scala"),
-	"Scheme": ("scheme", "scm"),
-	"Scilab": ("scilab", "sci"),
-	"SCSS": ("scss"),
-	"Shell Session": ("shell", "console", "shellsession"),
-	"Smali": ("smali"),
-	"Smalltalk": ("smalltalk", "st"),
-	"SML": ("sml", "ml"),
-	"SQF": ("sqf"),
-	"SQL": ("sql"),
-	"Stan": ("stan", "stanfuncs"),
-	"Stata": ("stata", "do", "ado"),
-	"STEP Part 21": ("step21", "p21", "step", "stp"),
-	"Stylus": ("stylus", "styl"),
-	"SubUnit": ("subunit"),
-	"Swift": ("swift"),
-	"Tagger Script": ("taggerscript"),
-	"TAP": ("tap"),
-	"Tcl": ("tcl", "tk"),
-	"Thrift": ("thrift"),
-	"TP": ("tp"),
-	"Twig": ("twig", "craftcms"),
-	"TypeScript": ("typescript", "ts", "tsx"),
-	"Vala": ("vala"),
-	"Visual Basic .NET": ("vbnet", "vb"),
-	"VBScript": ("vbscript", "vbs"),
-	"VBScript in HTML": ("vbscript-html"),
-	"Verilog": ("verilog", "v", "sv", "svh"),
-	"VHDL": ("vhdl"),
-	"Vim Script": ("vim"),
-	"WebAssembly": ("wasm"),
-	"Wren": ("wren"),
-	"X++": ("axapta", "x\\\+\\\+"),
-	"x86 Assembly": ("x86asm"),
-	"XL": ("xl", "tao"),
-	"XQuery": ("xquery", "xpath", "xq"),
-	"YAML": ("yaml", "yml"),
-	"Zephir": ("zephir", "zep"),
+  '1C:Enterprise': (
+    '\\31 c',
+  ),
+  // "1c"
+  'ABNF': (
+      'abnf',
+    ),
+  'Apache Access Log': (
+    'accesslog',
+  ),
+  'ActionScript': (
+    'actionscript',
+    'as',
+  ),
+  'Ada': (
+    'ada',
+  ),
+  'AngelScript': (
+    'angelscript',
+    'asc',
+  ),
+  'Apache config': (
+    'apache',
+    'apacheconf',
+  ),
+  'AppleScript': (
+    'applescript',
+    'osascript',
+  ),
+  'ArcGIS Arcade': (
+    'arcade',
+  ),
+  'Arduino': (
+    'arduino',
+  ),
+  'ARM Assembly': (
+    'armasm',
+    'arm',
+  ),
+  'AsciiDoc': (
+    'asciidoc',
+    'adoc',
+  ),
+  'AspectJ': (
+    'aspectj',
+  ),
+  'AutoHotKey': (
+    'autohotkey',
+    'ahk',
+  ),
+  'AutoIt': (
+    'autoit',
+  ),
+  'AVR Assembly': (
+    'avrasm',
+  ),
+  'Awk': (
+    'awk',
+  ),
+  'Bash': (
+    'bash',
+    'sh',
+  ),
+  'BASIC': (
+    'basic',
+  ),
+  'BNF': (
+    'bnf',
+  ),
+  'Brainfuck': (
+    'brainfuck',
+    'bf',
+  ),
+  'C': (
+    'c',
+    'h',
+  ),
+  'C/AL': (
+    'cal',
+  ),
+  'Cap’n Proto': (
+    'capnproto',
+    'capnp',
+  ),
+  'Ceylon': (
+    'ceylon',
+  ),
+  'Clean': (
+    'clean',
+    'icl',
+    'dcl',
+  ),
+  'Clojure': (
+    'clojure',
+    'clj',
+    'edn',
+  ),
+  'Clojure REPL': (
+    'clojure-repl',
+  ),
+  'CMake': (
+    'cmake',
+    'cmake\\.in',
+  ),
+  'CoffeeScript': (
+    'coffeescript',
+    'coffee',
+    'cson',
+    'iced',
+  ),
+  'Coq': (
+    'coq',
+  ),
+  'Caché Object Script': (
+    'cos',
+    'cls',
+  ),
+  'C++': (
+    'cpp',
+    'cc',
+    'c\\\+\\\+',
+    'h\\\+\\\+',
+    'hpp',
+    'hh',
+    'hxx',
+    'cxx',
+  ),
+  'crmsh': (
+    'crmsh',
+    'crm',
+    'pcmk',
+  ),
+  'Crystal': (
+    'crystal',
+    'cr',
+  ),
+  'C#': (
+    'csharp',
+    'cs',
+  ),
+  'CSP': (
+    'csp',
+  ),
+  'CSS': (
+    'css',
+  ),
+  'D': (
+    'd',
+  ),
+  'Dart': (
+    'dart',
+  ),
+  'Delphi': (
+    'delphi',
+    'dpr',
+    'dfm',
+    'pas',
+    'pascal',
+  ),
+  'Diff': (
+    'diff',
+    'patch',
+  ),
+  'Django': (
+    'django',
+    'jinja',
+  ),
+  'DNS Zone': (
+    'dns',
+    'bind',
+    'zone',
+  ),
+  'Dockerfile': (
+    'dockerfile',
+    'docker',
+  ),
+  'Batch file (DOS)': (
+    'dos',
+    'bat',
+    'cmd',
+  ),
+  'dsconfig': (
+    'dsconfig',
+  ),
+  'Device Tree': (
+    'dts',
+  ),
+  'Dust': (
+    'dust',
+    'dst',
+  ),
+  'EBNF': (
+    'ebnf',
+  ),
+  'Elixir': (
+    'elixir',
+    'ex',
+    'exs',
+  ),
+  'Elm': (
+    'elm',
+  ),
+  'eRuby': (
+    'erb',
+  ),
+  'Erlang REPL': (
+    'erlang-repl',
+  ),
+  'Erlang': (
+    'erlang',
+    'erl',
+  ),
+  'Excel formulae': (
+    'excel',
+    'xlsx',
+    'xls',
+  ),
+  'FIX': (
+    'fix',
+  ),
+  'Flix': (
+    'flix',
+  ),
+  'Fortran': (
+    'fortran',
+    'f90',
+    'f95',
+  ),
+  'F#': (
+    'fsharp',
+    'fs',
+  ),
+  'GAMS': (
+    'gams',
+    'gms',
+  ),
+  'GAUSS': (
+    'gauss',
+    'gss',
+  ),
+  'G-code (ISO 6983)': (
+    'gcode',
+    'nc',
+  ),
+  'Gherkin': (
+    'gherkin',
+    'feature',
+  ),
+  'OpenGL Shading': (
+    'glsl',
+  ),
+  'GML': (
+    'gml',
+  ),
+  'Go': (
+    'go',
+    'golang',
+  ),
+  'Golo': (
+    'golo',
+  ),
+  'Gradle': (
+    'gradle',
+  ),
+  'GraphQL': (
+    'graphql',
+    'gql',
+  ),
+  'Groovy': (
+    'groovy',
+  ),
+  'HAML': (
+    'haml',
+  ),
+  'Handlebars': (
+    'handlebars',
+    'hbs',
+    'html\\.hbs',
+    'html\\.handlebars',
+    'htmlbars',
+  ),
+  'Haskell': (
+    'haskell',
+    'hs',
+  ),
+  'Haxe': (
+    'haxe',
+    'hx',
+  ),
+  'HSP': (
+    'hsp',
+  ),
+  'HTML/XML': (
+    'xml',
+    'html',
+    'xhtml',
+    'rss',
+    'atom',
+    'xjb',
+    'xsd',
+    'xsl',
+    'plist',
+    'wsf',
+    'svg',
+  ),
+  'HTTP': (
+    'http',
+    'https',
+  ),
+  'Hy': (
+    'hy',
+    'hylang',
+  ),
+  'Inform 7': (
+    'inform7',
+    'i7',
+  ),
+  'TOML, also INI': (
+    'ini',
+    'toml',
+  ),
+  'IRPF90': (
+    'irpf90',
+  ),
+  'ISBL': (
+    'isbl',
+  ),
+  'Java': (
+    'java',
+    'jsp',
+  ),
+  'JavaScript': (
+    'javascript',
+    'js',
+    'jsx',
+    'mjs',
+    'cjs',
+  ),
+  'JBoss CLI': (
+    'jboss-cli',
+    'wildfly-cli',
+  ),
+  'JSON': (
+    'json',
+  ),
+  'Julia': (
+    'julia',
+    'jldoctest',
+  ),
+  'Julia REPL': (
+    'julia-repl',
+  ),
+  'Kotlin': (
+    'kotlin',
+    'kt',
+    'kts',
+  ),
+  'Lasso': (
+    'lasso',
+    'ls',
+    'lassoscript',
+  ),
+  'LaTeX': (
+    'latex',
+    'tex',
+  ),
+  'LDIF': (
+    'ldif',
+  ),
+  'Leaf': (
+    'leaf',
+  ),
+  'Less': (
+    'less',
+  ),
+  'Lisp': (
+    'lisp',
+  ),
+  'LiveCode': (
+    'livecodeserver',
+  ),
+  'LiveScript': (
+    'livescript',
+    'ls',
+  ),
+  'LLVM IR': (
+    'llvm',
+  ),
+  'LSL': (
+    'lsl',
+  ),
+  'Lua': (
+    'lua',
+  ),
+  'Makefile': (
+    'makefile',
+    'mk',
+    'mak',
+    'make',
+  ),
+  'Markdown': (
+    'markdown',
+    'md',
+    'mkdown',
+    'mkd',
+  ),
+  'Mathematica': (
+    'mathematica',
+    'mma',
+    'wl',
+  ),
+  'Matlab': (
+    'matlab',
+  ),
+  'Maxima': (
+    'maxima',
+  ),
+  'MEL': (
+    'mel',
+  ),
+  'Mercury': (
+    'mercury',
+    'm',
+    'moo',
+  ),
+  'MIPS Assembly': (
+    'mipsasm',
+    'mips',
+  ),
+  'Mizar': (
+    'mizar',
+  ),
+  'Mojolicious': (
+    'mojolicious',
+  ),
+  'Monkey': (
+    'monkey',
+  ),
+  'MoonScript': (
+    'moonscript',
+    'moon',
+  ),
+  'N1QL': (
+    'n1ql',
+  ),
+  'Nested Text': (
+    'nestedtext',
+    'nt',
+  ),
+  'Nginx config': (
+    'nginx',
+    'nginxconf',
+  ),
+  'Nim': (
+    'nim',
+  ),
+  'Nix': (
+    'nix',
+    'nixos',
+  ),
+  'Node REPL': (
+    'node-repl',
+  ),
+  'NSIS': (
+    'nsis',
+  ),
+  'Objective-C': (
+    'objectivec',
+    'mm',
+    'objc',
+    'obj-c',
+    'obj-c\\\+\\\+',
+    'objective-c\\\+\\\+',
+  ),
+  'OCaml': (
+    'ocaml',
+    'ml',
+  ),
+  'OpenSCAD': (
+    'openscad',
+    'scad',
+  ),
+  'Oxygene': (
+    'oxygene',
+  ),
+  'Parser3': (
+    'parser3',
+  ),
+  'Perl': (
+    'perl',
+    'pl',
+    'pm',
+  ),
+  'Packet Filter config': (
+    'pf',
+    'pf\\.conf',
+  ),
+  'PostgreSQL': (
+    'pgsql',
+    'postgres',
+    'postgresql',
+  ),
+  'PHP': (
+    'php',
+  ),
+  'PHP template': (
+    'php-template',
+  ),
+  'Plain Text': (
+    'plaintext',
+    'text',
+    'txt',
+    'hljs[class$=hljs]',
+  ),
+  'Pony': (
+    'pony',
+  ),
+  'PowerShell': (
+    'powershell',
+    'pwsh',
+    'ps',
+    'ps1',
+  ),
+  'Processing': (
+    'processing',
+    'pde',
+  ),
+  'Prolog': (
+    'prolog',
+  ),
+  '.properties': (
+    'properties',
+  ),
+  'Protocol Buffers': (
+    'protobuf',
+  ),
+  'Puppet': (
+    'puppet',
+    'pp',
+  ),
+  'PureBASIC': (
+    'purebasic',
+    'pb',
+    'pbi',
+  ),
+  'Python': (
+    'python',
+    'py',
+    'gyp',
+    'ipython',
+  ),
+  'Python REPL': (
+    'python-repl',
+    'pycon',
+  ),
+  'Python profiler': (
+    'profile',
+  ),
+  'Q': (
+    'q',
+    'k',
+    'kdb',
+  ),
+  'QML': (
+    'qml',
+    'qt',
+  ),
+  'R': (
+    'r',
+  ),
+  'ReasonML': (
+    'reasonml',
+    're',
+  ),
+  'RenderMan RIB': (
+    'rib',
+  ),
+  'Roboconf': (
+    'roboconf',
+    'graph',
+    'instances',
+  ),
+  'RouterOS': (
+    'routeros',
+    'mikrotik',
+  ),
+  'RenderMan RSL': (
+    'rsl',
+  ),
+  'Ruby': (
+    'ruby',
+    'rb',
+    'gemspec',
+    'podspec',
+    'thor',
+    'irb',
+  ),
+  'Oracle Rules Language': (
+    'ruleslanguage',
+  ),
+  'Rust': (
+    'rust',
+    'rs',
+  ),
+  'SAS': (
+    'sas',
+  ),
+  'Scala': (
+    'scala',
+  ),
+  'Scheme': (
+    'scheme',
+    'scm',
+  ),
+  'Scilab': (
+    'scilab',
+    'sci',
+  ),
+  'SCSS': (
+    'scss',
+  ),
+  'Shell Session': (
+    'shell',
+    'console',
+    'shellsession',
+  ),
+  'Smali': (
+    'smali',
+  ),
+  'Smalltalk': (
+    'smalltalk',
+    'st',
+  ),
+  'SML': (
+    'sml',
+    'ml',
+  ),
+  'SQF': (
+    'sqf',
+  ),
+  'SQL': (
+    'sql',
+  ),
+  'Stan': (
+    'stan',
+    'stanfuncs',
+  ),
+  'Stata': (
+    'stata',
+    'do',
+    'ado',
+  ),
+  'STEP Part 21': (
+    'step21',
+    'p21',
+    'step',
+    'stp',
+  ),
+  'Stylus': (
+    'stylus',
+    'styl',
+  ),
+  'SubUnit': (
+    'subunit',
+  ),
+  'Swift': (
+    'swift',
+  ),
+  'Tagger Script': (
+    'taggerscript',
+  ),
+  'TAP': (
+    'tap',
+  ),
+  'Tcl': (
+    'tcl',
+    'tk',
+  ),
+  'Thrift': (
+    'thrift',
+  ),
+  'TP': (
+    'tp',
+  ),
+  'Twig': (
+    'twig',
+    'craftcms',
+  ),
+  'TypeScript': (
+    'typescript',
+    'ts',
+    'tsx',
+  ),
+  'Vala': (
+    'vala',
+  ),
+  'Visual Basic .NET': (
+    'vbnet',
+    'vb',
+  ),
+  'VBScript': (
+    'vbscript',
+    'vbs',
+  ),
+  'VBScript in HTML': (
+    'vbscript-html',
+  ),
+  'Verilog': (
+    'verilog',
+    'v',
+    'sv',
+    'svh',
+  ),
+  'VHDL': (
+    'vhdl',
+  ),
+  'Vim Script': (
+    'vim',
+  ),
+  'WebAssembly': (
+    'wasm',
+  ),
+  'Wren': (
+    'wren',
+  ),
+  'X++': (
+    'axapta',
+    'x\\\+\\\+',
+  ),
+  'x86 Assembly': (
+    'x86asm',
+  ),
+  'XL': (
+    'xl',
+    'tao',
+  ),
+  'XQuery': (
+    'xquery',
+    'xpath',
+    'xq',
+  ),
+  'YAML': (
+    'yaml',
+    'yml',
+  ),
+  'Zephir': (
+    'zephir',
+    'zep',
+  ),
 );
-
 
 //////////////////
 /// Function Below:
 /// From the list above, Name: [(shortcode1, shortcode2..)|shortcode],...
 /// For multiple shortcodes, each gets passed into a list with an appended full stop for class.
 /// For singular shortcode, a full stop is appended.
-/// For names being variables, the string returns unquoted. 
+/// For names being variables, the string returns unquoted.
 //////////////////
 
 // ln = lang name, this text is the ::before content, thrown into a variable beforehand
@@ -213,34 +769,34 @@ $lang: (
 // itm = an item in alias when it's a list
 // output --lang is the name, as above
 @each $ln, $alias in $lang {
-	// for lists
-	$k: "";
-	@if meta.type-of($alias) == list {
-		@for $i from 1 through list.length($alias) {
-			$k: string.insert($k,"." + list.nth($alias,$i) + ",",-1);
-		}
-		// remove extra comma
-		$k: string.slice($k,0,-2);
-	} @else {
-	// and for single strings
-		$k: "."+$alias;
-	}
-	#{$k} {
-		--lang: "#{$ln}";
-	}
+  // for lists
+  $k: '';
+  @if meta.type-of($alias) == list {
+    @for $i from 1 through list.length($alias) {
+      $k: string.insert($k, '.' + list.nth($alias, $i) + ',', -1);
+    }
+    // remove extra comma
+    $k: string.slice($k, 0, -2);
+  } @else {
+    // and for single strings
+    $k: '.' + $alias;
+  }
+  #{$k} {
+    --lang: '#{$ln}';
+  }
 }
 // big undo for embeded text files
 %textContainer %codeHLJS {
-	--lang: none;
-	transform: unset;
+  --lang: none;
+  transform: unset;
 }
 %codeHLJS::before {
-	content: var(--lang);
-	position: absolute;
-	top: 0.25rem;
-	right: 0.25rem;
-	font-size: 0.625rem;
-	line-height: 0.875rem;
-	color: var(--text-muted);
-	font-style: italic;
+  content: var(--lang);
+  position: absolute;
+  top: 0.25rem;
+  right: 0.25rem;
+  font-size: 0.625rem;
+  line-height: 0.875rem;
+  color: var(--text-muted);
+  font-style: italic;
 }
