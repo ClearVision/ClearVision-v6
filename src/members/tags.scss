@@ -1,6 +1,6 @@
-@use 'sass:list';
-@use 'sass:meta';
-@use 'sass:string';
+@use "sass:list";
+@use "sass:meta";
+@use "sass:string";
 /* TAGGED USERS */
 // prettier-ignore
 $tagged: (
@@ -127,24 +127,24 @@ $tagged: (
 // itm = an item in alias when it's a list
 // output --lang is the name, as above
 @each $group, $user in $tagged {
-  // for lists
-  $k: '';
-  @if meta.type-of($user) == list {
-    @if list.length($user) > 1 {
-      $k: ':is('; // start :is(
-      @for $i from 1 through list.length($user) {
-        $k: string.insert($k, '[src*="' + list.nth($user, $i) + '"],', -1);
-      }
-      // remove extra comma, add closing )
-      $k: string.slice($k, 0, -2) + ')';
-    } @else {
-      $k: '[src*="' + list.nth($user, 1) + '"]';
-    }
-  } @else {
-    // and for single strings
-    $k: '[src*="#{$user}"]';
-  }
-  %avatarLarge#{$k} ~ %messageHeader {
-    --tag: '#{$group}';
-  }
+	// for lists
+	$k: "";
+	@if meta.type-of($user) == list {
+		@if list.length($user) > 1 {
+			$k: ":is("; // start :is(
+			@for $i from 1 through list.length($user) {
+				$k: string.insert($k,"[src*=\"" + list.nth($user,$i) + "\"],",-1);
+			}
+			// remove extra comma, add closing )
+			$k: string.slice($k,0,-2) + ")";
+		} @else {
+			$k: "[src*=\"" + list.nth($user,1) + "\"]";
+		}
+	} @else {
+	// and for single strings
+		$k: "[src*=\"#{$user}\"]";
+	}
+	%avatarLarge#{$k} ~ %messageHeader {
+		--tag: "#{$group}";
+	}
 }

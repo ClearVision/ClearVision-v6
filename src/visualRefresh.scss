@@ -1,4 +1,5 @@
 %visualRefresh {
+
   // APP BG
   %appMount {
     background: var(--background-overlay);
@@ -38,7 +39,7 @@
   %chatLoadingWrapper,
   // INBOX
   %messagesPopoutChannelHeader,
-  %messagesPopoutHeader {
+  %messagesPopoutHeader  {
     background: rgba(0, 0, 0, calc($bg-shading * 0.1));
   }
 
@@ -56,20 +57,20 @@
   // CHAT INPUT
   %visualRefreshChatInput {
     %channelTextArea {
-      background-color: rgba(0, 0, 0, calc($bg-shading * 0.6));
+      background-color: rgba(0, 0, 0, calc( $bg-shading * 0.6));
     }
   }
 
   // FORUM HEADER & ATTACHMENT AREA
-  %forumChatHead,
+  %forumChatHead, 
   .header__34c2c,
   .channelAttachmentArea_b77158 {
-    background: rgba(0, 0, 0, calc($bg-shading * 0.6));
+    background: rgba(0, 0, 0, calc( $bg-shading * 0.6));
   }
 
   // UPLOAD AREA
   %channelTextAreaUpload {
-    background: rgba(0, 0, 0, calc($bg-shading * 0.4));
+    background: rgba(0, 0, 0, calc( $bg-shading * 0.4));
     border: 1px solid $main-color;
   }
 
@@ -78,7 +79,7 @@
     background-color: $main-color;
   }
 
-  // BRAND BAR IDK WTF THIS WAS
+  // BRAND BAR IDK WTF THIS WAS 
   %barBrand {
     background-color: $main-color;
     border: none;
@@ -93,30 +94,29 @@
   // EMOJI PICKER
   %emojiPicker {
     background-color: $popout-color;
-  }
+    }
 
   %emojiPickerInspector {
     background-color: rgba(0, 0, 0, calc($bg-shading * 0.1));
     border-top: var(--border-faint);
-  }
+    }
 
   %emojiPickerGuildBar {
-    background: rgba(0, 0, 0, calc($bg-shading * 0.1));
-  }
+    background:  rgba(0, 0, 0, calc($bg-shading * 0.1));
+    }
 
   %emojiPickerWrapper {
     background-color: $popout-color;
-  }
+    }
 
   %emojiPickerCategoryHeaderWrapper {
     background-color: $main-color;
   }
 
   // POPOUT GOING UP
-  .popout__3f413,
-  .popout__3f413.popoutPositionTop__3f413 {
+  .popout__3f413, .popout__3f413.popoutPositionTop__3f413 {
     background: $popout-color;
-  }
+  } 
 
   // MESSAGE BUTTON WRAPPER
   %messageButtonWrapper {
@@ -136,27 +136,25 @@
   //  SOUNDBOARD (DUH)
   %soundboard {
     background: $popout-color;
-  }
+    }
 
   %channelTextAreaNoPermissions {
-    background: rgba(0, 0, 0, calc($bg-shading * 0.8));
+    background: rgba(0, 0, 0, calc( $bg-shading * 0.8));
   }
 
   %jumpToPresentBar {
     background-color: rgba(0, 0, 0, calc($bg-shading * 0.6));
-    &:hover {
-      background-color: rgba(0, 0, 0, calc($bg-shading * 0.8));
-    }
+    &:hover {background-color: rgba(0, 0, 0, calc($bg-shading * 0.8));}
   }
 
   %fileUploading {
-    background-color: rgba(0, 0, 0, calc($bg-shading * 0.6));
+    background-color: rgba(0, 0, 0, calc( $bg-shading * 0.6));
     border-color: none;
     box-shadow: none;
   }
 
   %forumChat {
-    background-color: hsla(0, 0%, 95%, 0.1);
+    background-color: hsla(0, 0%, 95%, .1);
   }
 
   // INBOX
@@ -176,15 +174,14 @@
     border: 1px solid $main-color;
   }
 
-  %InboxHeaderContainer {
+  %InboxHeaderContainer  {
     background-color: $popout-color;
   }
 }
 
 // NEW VOICE FILTER THINGY
 // TODO: CHANGE THIS TO SELECTORS, PROBABLY NEEDS MORE ADJUSTMENT
-.visual-refresh .voiceFiltersFooter_e2f668,
-.visual-refresh .voiceFiltersPopout_e2f668 {
+.visual-refresh .voiceFiltersFooter_e2f668, .visual-refresh .voiceFiltersPopout_e2f668 {
   background: $popout-color;
 }
 
@@ -196,9 +193,7 @@
 // VENCORD READ ALL
 .vc-ranb-button {
   border-radius: 50px !important; // !IMPORTANT BECAUSE VENCORD USED INLINE STYLING
-  &:hover {
-    background-color: $hover-color;
-  }
+  &:hover {background-color: $hover-color;}
 }
 
 html:not(.visual-refresh .scroller_ef3116) button.vc-ranb-button.button__201d5.lookFilled__201d5.sizeMin__201d5.grow__201d5 {
@@ -212,9 +207,7 @@ html:not(.visual-refresh .scroller_ef3116) button.vc-ranb-button.button__201d5.l
   z-index: 1;
   transition: all 0.6s linear;
   border-color: none;
-  &:hover {
-    background: $hover-color;
-  }
+  &:hover { background: $hover-color;}
 }
 
 // a different double border for a differ emoji picker? (add a reaction)

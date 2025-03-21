@@ -50,7 +50,7 @@
   max-width: none;
 }
 %privateChannelInteractive {
-  position: relative;
+  position: relative;  
   color: var(--channel-color);
   z-index: 1;
   &:before {
