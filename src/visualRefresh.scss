@@ -84,7 +84,7 @@
 
   // EMOJI PICKER
   %emojiPicker {
-    background-color: $popout-color;
+    background-color: var(--popout-color);
     }
 
   %emojiPickerInspector {
@@ -97,7 +97,7 @@
     }
 
   %emojiPickerWrapper {
-    background-color: $popout-color;
+    background-color: var(--popout-color);
     }
 
   %emojiPickerCategoryHeaderWrapper {
@@ -130,7 +130,7 @@ html:not(.visual-refresh .scroller_ef3116) button.vc-ranb-button.button__201d5.l
 
   // POPOUT GOING UP
   .popout__3f413, .popout__3f413.popoutPositionTop__3f413 {
-    background: $popout-color;
+    background: var(--popout-color);
   } 
 
   // MESSAGE BUTTON WRAPPER
@@ -150,7 +150,7 @@ html:not(.visual-refresh .scroller_ef3116) button.vc-ranb-button.button__201d5.l
 
   //  SOUNDBOARD (DUH)
   %soundboard {
-    background: $popout-color;
+    background: var(--popout-color);
     }
 
   %channelTextAreaNoPermissions {
@@ -184,5 +184,5 @@ html:not(.visual-refresh .scroller_ef3116) button.vc-ranb-button.button__201d5.l
 // NEW VOICE FILTER THINGY
 // TODO: CHANGE THIS TO SELECTORS, PROBABLY NEEDS MORE ADJUSTMENT
 .visual-refresh .voiceFiltersFooter_e2f668, .visual-refresh .voiceFiltersPopout_e2f668 {
-  background: $popout-color;
+  background: var(--popout-color);
 }
