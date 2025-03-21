@@ -32,9 +32,7 @@
   // ADD A REACTION EMOJI PICKER HEADER
   %emojiPickerHeader,
   // AGE RESTRICTED NSFW CHANNEL
-  %ageRestricted,
-  // follow this channel, and maybe more.
-  %channelInfo  {
+  %ageRestricted  {
     background: rgba(0, 0, 0, calc($bg-shading * 0.1));
   }
 
