@@ -112,6 +112,30 @@
   %emojiPickerCategoryHeaderWrapper {
     background-color: $main-color;
   }
+// REMOVE WEIRD DOUBLE BORDER ON SEARCH IN EMOJI PICKER
+:where(.visual-refresh) .container_a45028:focus-within {
+  border-color: none;
+}
+
+// VENCORD READ ALL
+.vc-ranb-button {
+  border-radius: 50px !important; // !IMPORTANT BECAUSE VENCORD USED INLINE STYLING
+  &:hover {background-color: $hover-color;}
+}
+
+html:not(.visual-refresh .scroller_ef3116) button.vc-ranb-button.button__201d5.lookFilled__201d5.sizeMin__201d5.grow__201d5 {
+  position: static;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 50px;
+  color: $text-normal;
+  box-sizing: border-box;
+  padding: 4px 8px;
+  overflow: visible;
+  z-index: 1;
+  transition: all 0.6s linear;
+  border-color: none;
+  &:hover { background: $hover-color;}
+}
 
   // POPOUT GOING UP
   .popout__3f413, .popout__3f413.popoutPositionTop__3f413 {
@@ -183,31 +207,6 @@
 // TODO: CHANGE THIS TO SELECTORS, PROBABLY NEEDS MORE ADJUSTMENT
 .visual-refresh .voiceFiltersFooter_e2f668, .visual-refresh .voiceFiltersPopout_e2f668 {
   background: $popout-color;
-}
-
-// REMOVE WEIRD DOUBLE BORDER ON SEARCH IN EMOJI PICKER
-:where(.visual-refresh) .container_a45028:focus-within {
-  border-color: none;
-}
-
-// VENCORD READ ALL
-.vc-ranb-button {
-  border-radius: 50px !important; // !IMPORTANT BECAUSE VENCORD USED INLINE STYLING
-  &:hover {background-color: $hover-color;}
-}
-
-html:not(.visual-refresh .scroller_ef3116) button.vc-ranb-button.button__201d5.lookFilled__201d5.sizeMin__201d5.grow__201d5 {
-  position: static;
-  background: rgba(0, 0, 0, 0.4);
-  border-radius: 50px;
-  color: $text-normal;
-  box-sizing: border-box;
-  padding: 4px 8px;
-  overflow: visible;
-  z-index: 1;
-  transition: all 0.6s linear;
-  border-color: none;
-  &:hover { background: $hover-color;}
 }
 
 // a different double border for a differ emoji picker? (add a reaction)
