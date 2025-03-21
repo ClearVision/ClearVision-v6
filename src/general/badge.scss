@@ -12,7 +12,6 @@
   font-size: 12px;
   line-height: 12px;
   margin-right: 5px;
-  z-index: 1;
 }
 %channelWrapperSelected,
 %privateChannelInteractiveSelected,
@@ -56,5 +55,4 @@
 // HOME ICON BADGE
 %homeNumberBadge {
   margin-right: -5px;
-  z-index: 1;
 }
