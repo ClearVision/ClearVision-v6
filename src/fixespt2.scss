@@ -15,3 +15,18 @@
 .credentialItem__6c75d.container__91a9d:first-of-type {
   border: none;
 }
+
+// notice
+#app-mount::before {
+  content: "v6 is discontinued, please download v7 from the clearvision discord, github or bd website";
+  text-align: center;
+  position: absolute;
+  color: #fff;
+  white-space: pre-wrap;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: #000;
+  display: block;
+  z-index: 9999;
+  align-self: center;
+}
