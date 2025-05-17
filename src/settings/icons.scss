@@ -4,10 +4,16 @@
   $userSettingsIcons: (
     // MY ACCOUNT
     'my-account': 'https://clearvision.github.io/icons/person.svg',
+    // GAMES (GAME REVAMP)
+    'game-activity': 'https://clearvision.github.io/icons/games.svg',
     // USER PROFILE
     'profile-customization': 'https://clearvision.github.io/icons/user_profile.svg',
-    // PRIVACY & SAFETY
+    // PRIVACY & SAFETY (DISCONTINUES AFTER PRIVACY REVAMP)
     'privacy-&-safety': 'https://clearvision.github.io/icons/security.svg',
+    // DATA & PRIVACY (PRIVACY REVAMP)
+    'data-&-privacy': 'https://clearvision.github.io/icons/security.svg',
+    // CONTENT & SOCIAL (PRIVACY REVAMP)
+    'content-&-social': 'https://clearvision.github.io/icons/security.svg',
     // FAMILY CENTER
     'family-center': 'https://clearvision.github.io/icons/family.svg',
     // AUTHORISED APPS
@@ -38,6 +44,8 @@
     'accessibility': 'https://clearvision.github.io/icons/accessibility.svg',
     // VOICE & VIDEO
     'voice-&-video': 'https://clearvision.github.io/icons/mic.svg',
+    // THE LAST MEADOW (APRIL FOOLS 2025)
+    'game-activity': 'https://clearvision.github.io/icons/games.svg',
     // TEXT & IMAGES
     'text-&-images': 'https://clearvision.github.io/icons/chat.svg',
     // NOTIFICATIONS
@@ -57,7 +65,7 @@
 
     // ACTIVITY PRIVACY
     'activity-privacy': 'https://clearvision.github.io/icons/controller-off.svg',
-    // REGISTERED GAMES
+    // REGISTERED GAMES (DISCONTINUES AFTER GAME REVAMP)
     'game-activity': 'https://clearvision.github.io/icons/games.svg',
     // OVERLAY
     'overlay': 'https://clearvision.github.io/icons/aspect_ratio.svg',
@@ -69,7 +77,14 @@
   );
 
   $serverSettingsIcons: (
-    // OVERVIEW
+    // SERVER PROFILE (GUILD REVAMP)
+    'overview': 'https://clearvision.github.io/icons/info.svg',
+    // BOOST PERKS (GUILD REVAMP)
+    'boost_perks': 'https://clearvision.github.io/icons/server_boost.svg',
+    // ENGAGEMENT (GUILD REVAMP)
+    'engagement': 'https://clearvision.github.io/icons/people.svg',
+
+    // OVERVIEW (DISCONTINUES AFTER GUILD REVAMP)
     'overview': 'https://clearvision.github.io/icons/info.svg',
     // ROLES
     'roles': 'https://clearvision.github.io/icons/flag.svg',
@@ -79,7 +94,7 @@
     'stickers': 'https://clearvision.github.io/icons/sticker.svg',
     // SOUNDBOARD
     'soundboard': 'https://clearvision.github.io/icons/music.svg',
-    // WIDGET
+    // WIDGET (DISCONTINUES AFTER GUILD REVAMP)
     'widget': 'https://clearvision.github.io/icons/widgets.svg',
     // SERVER TEMPLATE
     'guild_templates': 'https://clearvision.github.io/icons/website.svg',
@@ -106,7 +121,7 @@
     'onboarding': 'https://clearvision.github.io/icons/rocket_launch.svg',
     // SERVER INSIGHTS
     'analytics': 'https://clearvision.github.io/icons/insights.svg',
-    // PARTNER PROGRAM
+    // PARTNER PROGRAM (DISCONTINUES AFTER GUILD REVAMP)
     'partner': 'https://clearvision.github.io/icons/handshake.svg',
     // DISCOVERY
     'discovery': 'https://clearvision.github.io/icons/explore.svg',
@@ -115,13 +130,17 @@
 
     // SERVER BOOST STATUS
     'guild_premium': 'https://clearvision.github.io/icons/server_boost.svg',
-    // MONETIZATION
+    // MONETIZATION (DISCONTINUES AFTER GUILD REVAMP)
     'role_subscriptions': 'https://clearvision.github.io/icons/subscriptions.svg',
 
-    // MEMBERS
+    // MEMBERS (DISCONTINUES AFTER GUILD REVAMP)
     'members': 'https://clearvision.github.io/icons/group.svg',
-    // INVITES
+    // INVITES (DISCONTINUES AFTER GUILD REVAMP)
     'instant_invites': 'https://clearvision.github.io/icons/person_add.svg'
+    // INVITES (GUILD REVAMP)
+    'invites': 'https://clearvision.github.io/icons/person_add.svg'
+    // ACCESS (GUILD REVAMP)
+    'access': 'https://clearvision.github.io/icons/security.svg',
   );
 
   $channelSettingsIcons: (
