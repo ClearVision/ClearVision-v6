@@ -4,12 +4,12 @@
   "private": true,
   "scripts": {
     "build": "npm run clean && npm run build.sass",
-    "build.sass": "sass --style=compressed --no-source-map hljs.scss:public/hljs.css main.scss:public/main.css",
+    "build.sass": "sass --style=compressed --no-source-map hljs.scss:public/hljs.css main.scss:public/main.css main_duplicate.scss:public/main_duplicate.css",
     "clean": "rimraf {public,test}",
     "addons.clean": "rimraf {addons}",
     "format": "prettier --write .",
     "test": "npm run clean && npm run test.build",
-    "test.build": "sass --style=expanded --no-source-map hljs.scss:test/hljs.css main.scss:test/main.css",
+    "test.build": "sass --style=expanded --no-source-map hljs.scss:test/hljs.css main.scss:test/main.css main_duplicate.scss:public/main_duplicate.css",
     "addons": "npm run addons.clean && npm run addons.build",
     "addons.build": "sass --style=expanded --no-source-map scripts/cvstuff/main.scss:addons/main.css"
   },
