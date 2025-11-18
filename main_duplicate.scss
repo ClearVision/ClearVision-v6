@@ -1,0 +1,175 @@
+$version: '6.9.0';
+
+/* ### ClearVision v#{$version} by the ClearVision team ### */
+
+// SELECTORS
+@import 'lib/selectors/selectorPlaceholders';
+
+// DEFAULT SETTINGS
+@import 'src/defaultSettings';
+
+// FUNCTIONS
+@import 'src/functions';
+
+// VARIABLES
+@import 'src/variables';
+
+// MIXINS
+@import 'src/mixins';
+
+// KEYFRAMES
+@import 'src/keyframes';
+
+// APP
+@import 'src/app/app';
+
+@import 'src/app/notice';
+@import 'src/app/titlebar';
+
+// CHANNEL
+@import 'src/channels/specialChannels';
+@import 'src/channels/channels';
+@import 'src/channels/category';
+@import 'src/channels/indicators';
+@import 'src/channels/panels';
+@import 'src/channels/privateChannels';
+
+// CHAT
+@import 'src/chat/chat';
+@import 'src/chat/bars';
+@import 'src/chat/call';
+@import 'src/chat/divider';
+@import 'src/chat/stageCall';
+@import 'src/chat/textArea';
+@import 'src/chat/textAreaAutoComplete';
+@import 'src/chat/modView';
+
+// GENERAL ELEMENTS
+@import 'src/general/badge';
+@import 'src/general/button';
+@import 'src/general/checkbox';
+@import 'src/general/input';
+@import 'src/general/pageControl';
+@import 'src/general/radioGroup';
+@import 'src/general/scrollbar';
+@import 'src/general/slider';
+@import 'src/general/spinner';
+@import 'src/general/switch';
+@import 'src/general/tabBar';
+@import 'src/general/tooltip';
+
+// GUILDS
+@import 'src/guilds/guilds';
+
+// HEADER BAR
+@import 'src/headerBar/headerBar';
+@import 'src/headerBar/breadcrumbs';
+@import 'src/headerBar/searchBars';
+@import 'src/headerBar/toolbar';
+
+// HOME
+@import 'src/home/friends';
+@import 'src/home/library';
+@import 'src/home/nitro';
+@import 'src/home/requests';
+
+// MEMBERS
+@import 'src/members/members';
+@import 'src/members/tags';
+
+// MESSAGES
+@import 'src/messages/poll';
+@import 'src/messages/message';
+@import 'src/messages/activityInvite';
+@import 'src/messages/attachment';
+@import 'src/messages/blocked';
+@import 'src/messages/codeblock';
+@import 'src/messages/codeLanguages';
+@import 'src/messages/embed';
+@import 'src/messages/inviteLink';
+@import 'src/messages/mediaPlayer';
+@import 'src/messages/mention';
+@import 'src/messages/reaction';
+@import 'src/messages/textContainer';
+
+// MODALS
+@import 'src/modals/modal';
+@import 'src/modals/eventModal';
+@import 'src/modals/addServerModal';
+@import 'src/modals/keyboardShortcuts';
+@import 'src/modals/payments';
+@import 'src/modals/screenshare';
+@import 'src/modals/threadModal';
+
+// PAGES
+@import 'src/pages/discordShop';
+@import 'src/pages/discover';
+@import 'src/pages/forums';
+@import 'src/pages/login';
+@import 'src/pages/previewServer';
+@import 'src/pages/serverBoost';
+@import 'src/pages/studentHub';
+
+// POPOUTS
+@import 'src/popouts/applicationPopout';
+@import 'src/popouts/connectionInfo';
+@import 'src/popouts/emojiPicker';
+@import 'src/popouts/gifPicker';
+@import 'src/popouts/groupInvite';
+@import 'src/popouts/mentionEveryone';
+@import 'src/popouts/menuPopout';
+@import 'src/popouts/regionSelectorPopout';
+@import 'src/popouts/inboxPopout';
+@import 'src/popouts/otherPopouts';
+@import 'src/popouts/searchPopout';
+@import 'src/popouts/soundboard';
+@import 'src/popouts/stickers';
+@import 'src/popouts/threadPopout';
+@import 'src/popouts/voiceChannelListeningTo';
+
+// PROFILES
+@import 'src/profiles/userProfiles';
+
+// SCREENS
+@import 'src/screens/crash';
+@import 'src/screens/loading';
+
+// SEARCH
+@import 'src/search/search';
+
+// SETTINGS
+@import 'src/settings/appConnections';
+@import 'src/settings/channelSettings';
+@import 'src/settings/content';
+@import 'src/settings/icons';
+@import 'src/settings/onboarding';
+@import 'src/settings/serverSettings';
+@import 'src/settings/sidebar';
+@import 'src/settings/userSettings';
+
+// USERS
+@import 'src/users/activity';
+@import 'src/users/avatar';
+@import 'src/users/botTag';
+@import 'src/users/role';
+@import 'src/users/status';
+
+// VENCORD
+@import 'src/injectors/ven/plugins';
+@import 'src/injectors/ven/venSettings';
+@import 'src/injectors/ven/icons';
+
+// REPLUGGED
+@import 'src/injectors/rp/rpSettings';
+
+// BETTERDISCORD
+@import 'src/injectors/bd/bdSettings';
+@import 'src/injectors/bd/customCSS';
+@import 'src/injectors/bd/icons';
+@import 'src/injectors/bd/popouts';
+@import 'src/injectors/bd/sidebar';
+@import 'src/injectors/bd/plugins';
+
+// FIXES
+@import 'src/fixespt2';
+@import 'src/visualRefresh'
