@@ -29,16 +29,6 @@
 
 </div>
 
-## Theme Editor
-
-You can now customize the theme with a preview before downloading it to your computer.
-
-Please keep in mind that **we do not manage the theme editor**, and cannot help with any bugs that come from using it.
-
-> [Theme Editor](https://bdeditor.dev/theme/clearvision)
-
-_Thank you to [Gibbu](https://github.com/Gibbu) for providing this._
-
 ## Installing
 
 Note: ClearVision doesn't actively support plugins (as in, we don't seek out and actively theme fixes to every new plugin). However, when a plugin is widely used, we try our best to stay compatible.
