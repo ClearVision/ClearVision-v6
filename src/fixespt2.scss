@@ -1,10 +1,12 @@
 // notice
-html[lang][lang][lang][lang][lang][lang][lang][lang][lang][lang]::before {
-  content: "ClearVision v6 is discontinued, please download v7 from the ClearVision Github, Discord or BD website.\aNavigate to #download-official-presets in the ClearVision Discord server to download v7.\aNo support will be provided to v6." !important;
-  text-align: center !important;
+html[lang][lang][lang][lang][lang][lang][lang][lang][lang][lang][lang][lang][lang]::before {
+  content: "ClearVision v6 is discontinued, please download v7 from the ClearVision Github, Discord or BD website.\aNavigate to #download-official-presets in the ClearVision Discord server to download v7.\aNo support will be provided to v6.\aVersion 6 of ClearVision will eventually be unusable in the future by means of Discord updating their CSS.\aWe are not affiliated with BD Editor." !important;
+  text-align: start !important;
   position: absolute !important;
   color: #fff !important;
   padding: 10px !important;
   background-color: #000 !important;
   z-index: 9999 !important;
+  display: block !important;
+  white-space: pre !important;
 }
